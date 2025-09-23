@@ -1,0 +1,229 @@
+sources:
+  - name: pubmed
+    type: literature
+    config:
+      base_url: "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
+      endpoints:
+        search: "esearch.fcgi"
+        fetch: "efetch.fcgi"
+        summary: "esummary.fcgi"
+      parameters:
+        db: "pubmed"
+        retmax: 100
+        sort: "relevance"
+      fields:
+        - PMID
+        - Title
+        - Abstract
+        - Journal
+        - PublicationDate
+        - Authors
+        - Keywords
+        - MeSH
+      filters:
+        publication_types:
+          - "Clinical Trial"
+          - "Meta-Analysis"
+          - "Practice Guideline"
+          - "Systematic Review"
+        languages: ["eng", "chi"]
+        date_range: "5years"
+
+  - name: clinical_trials
+    type: trials
+    config:
+      base_url: "https://clinicaltrials.gov/api/"
+      endpoints:
+        search: "query/study_fields"
+        full: "query/full_studies"
+      parameters:
+        fmt: json
+        max_studies: 100
+      fields:
+        - NCTId
+        - BriefTitle
+        - OfficialTitle
+        - BriefSummary
+        - DetailedDescription
+        - Phase
+        - StudyType
+        - Condition
+        - Intervention
+        - Outcome
+      filters:
+        status:
+          - "Recruiting"
+          - "Active, not recruiting"
+          - "Completed"
+        phase:
+          - "Phase 2"
+          - "Phase 3"
+          - "Phase 4"
+
+  - name: guidelines
+    type: clinical_guidelines
+    config:
+      sources:
+        - name: "ADA"
+          url: "https://professional.diabetes.org/content/clinical-practice-recommendations"
+          format: "pdf"
+        - name: "Endocrine Society"
+          url: "https://www.endocrine.org/clinical-practice-guidelines"
+          format: "pdf"
+        - name: "AACE"
+          url: "https://pro.aace.com/disease-state-resources"
+          format: "pdf"
+      update_frequency: "yearly"
+      language: "en"
+      
+  - name: cohort_data
+    type: research_data
+    config:
+      databases:
+        - name: "NHANES"
+          url: "https://wwwn.cdc.gov/nchs/nhanes/"
+          format: "sas/csv"
+          years: ["2017-2018", "2019-2020"]
+        - name: "UK Biobank"
+          url: "https://www.ukbiobank.ac.uk/"
+          format: "csv"
+          fields:
+            - "diabetes"
+            - "metabolic_syndrome"
+            - "obesity"
+        - name: "China Health and Nutrition Survey"
+          url: "https://www.cpc.unc.edu/projects/china"
+          format: "stata/csv"
+          years: ["2015", "2020"]
+
+  - name: genetic_data
+    type: omics
+    config:
+      databases:
+        - name: "GWAS Catalog"
+          url: "https://www.ebi.ac.uk/gwas/"
+          disease_terms:
+            - "type 2 diabetes"
+            - "obesity"
+            - "metabolic syndrome"
+        - name: "dbGaP"
+          url: "https://www.ncbi.nlm.nih.gov/gap/"
+          study_types:
+            - "GWAS"
+            - "WGS"
+            - "RNA-Seq"
+        - name: "GEO"
+          url: "https://www.ncbi.nlm.nih.gov/geo/"
+          data_types:
+            - "Expression"
+            - "Methylation"
+            - "ChIP-Seq"
+
+  - name: drug_databases
+    type: pharmacology
+    config:
+      sources:
+        - name: "DrugBank"
+          url: "https://go.drugbank.com/"
+          categories:
+            - "Antidiabetic"
+            - "Anti-obesity"
+            - "Lipid lowering"
+        - name: "PharmGKB"
+          url: "https://www.pharmgkb.org/"
+          disease_areas:
+            - "Diabetes"
+            - "Metabolic disorders"
+        - name: "ChEMBL"
+          url: "https://www.ebi.ac.uk/chembl/"
+          target_classes:
+            - "SGLT2"
+            - "GLP1R"
+            - "DPP4"
+
+processors:
+  pubmed:
+    - name: abstract_processor
+      type: text
+      pipeline:
+        - extract_entities
+        - classify_study_type
+        - extract_conclusions
+    - name: mesh_processor
+      type: taxonomy
+      pipeline:
+        - map_to_ontology
+        - extract_relationships
+
+  clinical_trials:
+    - name: trial_processor
+      type: structured
+      pipeline:
+        - validate_endpoints
+        - extract_interventions
+        - analyze_outcomes
+
+  guidelines:
+    - name: pdf_processor
+      type: document
+      pipeline:
+        - extract_recommendations
+        - classify_evidence_levels
+        - extract_algorithms
+
+  cohort_data:
+    - name: data_processor
+      type: tabular
+      pipeline:
+        - clean_data
+        - harmonize_variables
+        - calculate_statistics
+
+  genetic_data:
+    - name: variant_processor
+      type: genomic
+      pipeline:
+        - annotate_variants
+        - pathway_analysis
+        - phenotype_association
+
+  drug_data:
+    - name: compound_processor
+      type: chemical
+      pipeline:
+        - structure_analysis
+        - target_prediction
+        - interaction_mapping
+
+cache:
+  enabled: true
+  backend: redis
+  ttl:
+    pubmed: 86400  # 24 hours
+    clinical_trials: 86400
+    guidelines: 2592000  # 30 days
+    cohort_data: 604800  # 7 days
+    genetic_data: 604800
+    drug_data: 604800
+
+monitoring:
+  metrics:
+    - api_calls
+    - cache_hits
+    - processing_time
+    - error_rate
+  alerts:
+    - type: rate_limit
+      threshold: 90%
+    - type: error_rate
+      threshold: 5%
+    - type: latency
+      threshold: 5000ms
+
+logging:
+  level: INFO
+  handlers:
+    - console
+    - file
+  rotation: daily
+  retention: 30days

@@ -1,0 +1,44 @@
+thresholds:
+  default:
+    hypoglycemia: 3.9
+    target_lower: 3.9
+    target_upper: 10.0
+    hyperglycemia: 13.9
+    severe_hypo: 3.0
+    severe_hyper: 16.7
+  
+  pregnancy:
+    target_lower: 3.9
+    target_upper: 7.8
+    hypoglycemia: 3.3
+    hyperglycemia: 10.0
+    severe_hypo: 3.0
+    severe_hyper: 14.0
+
+styles:
+  high_priority:
+    color: '#FF4444'
+    fontsize: 10
+    fontweight: bold
+    bbox:
+      boxstyle: round,pad=0.3
+      facecolor: '#FF4444'
+      alpha: 0.8
+  
+  medium_priority:
+    color: '#FF8800'
+    fontsize: 9
+    fontweight: normal
+    bbox:
+      boxstyle: round,pad=0.3
+      facecolor: '#FF8800'
+      alpha: 0.7
+  
+  low_priority:
+    color: '#4488FF'
+    fontsize: 8
+    fontweight: normal
+    bbox:
+      boxstyle: round,pad=0.3
+      facecolor: '#4488FF'
+      alpha: 0.6

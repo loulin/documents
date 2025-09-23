@@ -1,0 +1,84 @@
+# CRF Research Mining Agent Configuration v2
+
+# 1. 数据源路径配置
+data_sources:
+  patient_demographics: './data/demographics.csv'
+  clinical_data: './data/clinical_data.csv'
+  phq9: './data/phq9_scores.csv'
+  # ... add other data paths here
+
+# 2. 关键列名映射 (让Agent适配不同命名风格的数据表)
+column_mapping:
+  patient_id: 'patient_id'
+  age: 'age'
+  gender: 'gender'
+  diabetes_type: 'diabetes_type'
+  complications: 'complications'
+  hba1c: 'hba1c'
+  bmi: 'bmi'
+  systolic_bp: 'systolic_bp'
+  diastolic_bp: 'diastolic_bp'
+  phq9_total: 'total_score'
+  # ... add other column mappings here
+
+# 3. 数据质量检查配置
+quality_checks:
+  # 定义临床合理性检查的范围
+  clinical_ranges:
+    hba1c: { min: 3.0, max: 18.0, reference: "正常参考范围: 4.0-6.0%" }
+    bmi: { min: 10, max: 60, reference: "正常参考范围: 18.5-24.9 kg/m²" }
+    age: { min: 0, max: 120, reference: "合理范围: 0-120岁" }
+    systolic_bp: { min: 70, max: 250, reference: "正常参考范围: 90-140 mmHg" }
+    diastolic_bp: { min: 40, max: 150, reference: "正常参考范围: 60-90 mmHg" }
+  
+  # 定义逻辑一致性检查
+  logical_consistency:
+    - rule: "systolic_bp > diastolic_bp"
+      description: "收缩压必须大于舒张压"
+      
+# 4. 研究机会发现配置
+analyses:
+  - id: "age_diabetes_association"
+    enabled: true
+    type: "crosstab_chi2"
+    title: "年龄与糖尿病类型的关联性研究"
+    datasets: ['patient_demographics'] # 所需数据集
+    variables:
+      - "age"
+      - "diabetes_type"
+    params:
+      bins: [0, 30, 50, 70, 100]
+      labels: ['<30', '30-50', '50-70', '>70']
+      p_value_threshold: 0.05
+    insight_template:
+      value_level: "HIGH"
+      publication_type: "CROSS_SECTIONAL"
+      statistical_methods: ['卡方检验', '描述性统计', '多元逻辑回归']
+      expected_impact_factor: "2-4分期刊"
+      implementation_difficulty: "低"
+      recommendations:
+        - "进一步分析年龄相关的发病机制"
+        - "考虑纳入更多混杂因素控制"
+        - "可扩展为多中心研究"
+
+  - id: "depression_prevalence"
+    enabled: true
+    type: "prevalence"
+    title: "糖尿病患者抑郁症状流行病学研究"
+    datasets: ['phq9']
+    variables:
+      - "phq9_total"
+    params:
+      operator: ">="
+      threshold: 10 # PHQ-9 >= 10 定义为有抑郁症状
+      prevalence_threshold: 0.2 # 患病率 > 20% 时触发洞察
+    insight_template:
+      value_level: "VERY_HIGH"
+      publication_type: "ORIGINAL_RESEARCH"
+      statistical_methods: ['描述性分析', '相关性分析', '多元线性回归']
+      expected_impact_factor: "4-6分期刊"
+      implementation_difficulty: "低"
+      recommendations:
+        - "分析抑郁与血糖控制的双向关系"
+        - "探讨抑郁对治疗依从性的影响"
+        - "制定心理干预策略"

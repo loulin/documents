@@ -1,0 +1,21 @@
+# 领域配置示例
+domain_id: endocrinology
+name: 内分泌学
+description: 内分泌系统相关疾病研究领域
+version: "1.0.0"
+ontology_path: endocrinology/ontology.json
+rules_path: endocrinology/rules.json
+metrics_path: endocrinology/metrics.json
+validators_path: endocrinology/validators
+expert_rules_path: endocrinology/expert_rules.json
+metadata:
+  supported_languages: ["en", "zh"]
+  last_updated: "2025-08-17"
+  maintainer: "endocrinology_team"
+  references:
+    - "Guidelines for Diabetes Management 2025"
+    - "Endocrine Society Clinical Practice Guidelines"
+  domain_specific_settings:
+    glucose_units: "mmol/L"
+    hba1c_format: "percentage"
+    risk_assessment_period: "3months"

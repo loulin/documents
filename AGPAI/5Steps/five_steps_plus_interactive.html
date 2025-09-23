@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五步法Plus - 智能学习CGM分析系统</title>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            text-align: center;
+        }
+        .content {
+            display: flex;
+            height: 80vh;
+        }
+        .left-panel {
+            flex: 1;
+            padding: 20px;
+            border-right: 1px solid #eee;
+        }
+        .right-panel {
+            flex: 1;
+            padding: 20px;
+        }
+        .panel-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .file-upload {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 2px dashed #ddd;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .file-upload input {
+            margin: 10px 0;
+        }
+        .btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .btn:hover {
+            background: #5a6fd8;
+        }
+        .btn-success {
+            background: #28a745;
+        }
+        .btn-success:hover {
+            background: #218838;
+        }
+        .btn-warning {
+            background: #ffc107;
+            color: #212529;
+        }
+        .btn-warning:hover {
+            background: #e0a800;
+        }
+        .editor-container {
+            height: 400px;
+            margin-bottom: 20px;
+        }
+        .status-bar {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        .changes-panel {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .change-item {
+            background: white;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-left: 4px solid #667eea;
+            border-radius: 3px;
+        }
+        .original-text {
+            color: #dc3545;
+            text-decoration: line-through;
+            font-size: 12px;
+        }
+        .modified-text {
+            color: #28a745;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        .patient-info {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>五步法Plus - 智能学习CGM分析系统</h1>
+            <p>AI生成建议 + 医生智慧修改 = 持续优化的临床决策支持</p>
+        </div>
+        
+        <div class="content">
+            <!-- 左侧面板：数据输入和AI分析 -->
+            <div class="left-panel">
+                <div class="panel-title">📊 数据分析</div>
+                
+                <div class="file-upload">
+                    <div>上传CGM数据文件</div>
+                    <input type="file" id="fileInput" accept=".xlsx,.csv" />
+                    <div>
+                        <button class="btn" onclick="analyzeData()">开始AI分析</button>
+                        <button class="btn btn-warning" onclick="loadSampleData()">使用示例数据</button>
+                    </div>
+                </div>
+                
+                <div class="patient-info" id="patientInfo" style="display:none;">
+                    <h4>患者信息</h4>
+                    <div id="patientDetails"></div>
+                </div>
+                
+                <div class="loading" id="loadingPanel">
+                    <div class="spinner"></div>
+                    <p>AI正在分析CGM数据...</p>
+                </div>
+                
+                <div class="status-bar" id="statusBar">
+                    <strong>状态：</strong> 等待数据上传
+                </div>
+                
+                <div class="changes-panel" id="changesPanel" style="display:none;">
+                    <div class="panel-title">📝 修改记录</div>
+                    <div id="changesList"></div>
+                </div>
+            </div>
+            
+            <!-- 右侧面板：富文本编辑器 -->
+            <div class="right-panel">
+                <div class="panel-title">✏️ 报告编辑与优化</div>
+                
+                <div class="status-bar">
+                    <strong>编辑模式：</strong> 
+                    <span id="editMode">等待AI生成初始建议</span>
+                    <button class="btn btn-success" id="saveBtn" onclick="saveReport()" style="float:right; display:none;">
+                        保存最终报告
+                    </button>
+                </div>
+                
+                <!-- 富文本编辑器 -->
+                <div class="editor-container">
+                    <div id="editor"></div>
+                </div>
+                
+                <div style="text-align: center;">
+                    <button class="btn" onclick="previewReport()" id="previewBtn" style="display:none;">
+                        预览报告
+                    </button>
+                    <button class="btn btn-success" onclick="generateFinalReport()" id="finalBtn" style="display:none;">
+                        生成最终报告
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 初始化富文本编辑器
+        var quill = new Quill('#editor', {
+            theme: 'snow',
+            modules: {
+                toolbar: [
+                    ['bold', 'italic', 'underline', 'strike'],
+                    ['blockquote', 'code-block'],
+                    [{ 'header': 1 }, { 'header': 2 }],
+                    [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+                    [{ 'color': [] }, { 'background': [] }],
+                    ['clean']
+                ]
+            }
+        });
+
+        // 全局变量
+        let originalReport = '';
+        let currentPatientData = null;
+        let changeHistory = [];
+
+        // 监听编辑器内容变化
+        quill.on('text-change', function(delta, oldDelta, source) {
+            if (source === 'user' && originalReport) {
+                detectChanges();
+            }
+        });
+
+        // 使用示例数据
+        function loadSampleData() {
+            updateStatus('加载示例数据...');
+            
+            // 模拟示例患者数据
+            currentPatientData = {
+                patientId: '吕广仁-92098',
+                fileName: '示例数据',
+                analysisTime: new Date().toLocaleString('zh-CN'),
+                wearDays: 14.0,
+                validDataPct: 99.6,
+                standardTir: 88.6,
+                strictTir: 58.5,
+                lenientTir: 97.9,
+                meanGlucose: 7.96,
+                tbr: 0.1,
+                cv: 26.6,
+                strictTar: 41.4
+            };
+            
+            showPatientInfo();
+            analyzeWithSampleData();
+        }
+
+        // AI分析函数
+        function analyzeData() {
+            const fileInput = document.getElementById('fileInput');
+            if (!fileInput.files.length && !currentPatientData) {
+                alert('请先上传CGM数据文件或使用示例数据');
+                return;
+            }
+            
+            showLoading(true);
+            updateStatus('AI正在生成五步法分析报告...');
+            
+            // 模拟AI分析过程
+            setTimeout(function() {
+                generateAIReport();
+            }, 2000);
+        }
+
+        // 使用示例数据分析
+        function analyzeWithSampleData() {
+            showLoading(true);
+            updateStatus('AI正在分析示例数据...');
+            
+            setTimeout(function() {
+                generateAIReport();
+            }, 1500);
+        }
+
+        // 生成AI报告
+        function generateAIReport() {
+            const reportContent = `
+            <h2>AGP 报告分层评估解读: v3.0</h2>
+            <hr>
+            <p><strong>患者ID:</strong> ${currentPatientData.patientId}<br>
+            <strong>分析时间:</strong> ${currentPatientData.analysisTime}<br>
+            <strong>血糖管理等级:</strong> 血糖控制亚优，需要调整<br>
+            <strong>评估类型:</strong> 严格评估<br>
+            <strong>主要建议:</strong> 需要强化生活方式管理<br>
+            <strong>随访频率:</strong> 月度监测</p>
+            <hr>
+
+            <h3>一. 数据质量评估</h3>
+            <p>1. 佩戴天数: <strong>${currentPatientData.wearDays} 天</strong> (标准: ≥14天)<br>
+            2. 有效数据: <strong>${currentPatientData.validDataPct}%</strong> (标准: ≥70%)<br>
+            3. 评估结论: <strong>数据充分可信</strong></p>
+
+            <h3>二. 分层血糖达标评估</h3>
+            <h4>三层目标范围TIR对比</h4>
+            <p>1. <strong>标准TIR (3.9-10.0 mmol/L): ${currentPatientData.standardTir}%</strong> (糖尿病目标: >70%)<br>
+            2. <strong>严格TIR (3.9-7.8 mmol/L): ${currentPatientData.strictTir}%</strong> (代谢健康目标: >80%)<br>
+            3. <strong>宽松TIR (3.9-13.9 mmol/L): ${currentPatientData.lenientTir}%</strong> (基础安全目标: >50%)<br>
+            4. <strong>平均葡萄糖: ${currentPatientData.meanGlucose} mmol/L</strong></p>
+
+            <h4>分层评估结果</h4>
+            <p>1. <strong>评估路径:</strong> 标准TIR ≥ 70%，启动严格评估<br>
+            2. <strong>严格评估等级:</strong> 血糖控制亚优，需要调整<br>
+            3. <strong>临床意义:</strong> 血糖控制良好，按代谢健康人群标准评估</p>
+
+            <h3>三. 低血糖风险评估</h3>
+            <p>1. <strong>TBR (&lt;3.9 mmol/L): ${currentPatientData.tbr}%</strong> (安全目标: &lt;4%)<br>
+            2. <strong>低血糖风险:</strong> 较低，低血糖风险较低</p>
+
+            <h3>四. 血糖稳定性评估</h3>
+            <p>1. <strong>血糖变异系数 (CV): ${currentPatientData.cv}%</strong> (理想目标: ≤36%)<br>
+            2. <strong>稳定性:</strong> 尚可，血糖波动在临床可接受范围内</p>
+
+            <h3>五. 高血糖负担评估 (严格标准)</h3>
+            <p>1. <strong>TAR (>7.8 mmol/L): ${currentPatientData.strictTar}%</strong> (代谢健康目标: <20%)<br>
+            2. <strong>高血糖负担:</strong> 偏高，建议调整生活方式</p>
+
+            <h3>综合评估与建议</h3>
+            <p>1. <strong>最终评级:</strong> 血糖控制亚优，需要调整<br>
+            2. <strong>主要建议:</strong> 需要强化生活方式管理<br>
+            3. <strong>随访计划:</strong> 月度监测<br>
+            4. <strong>下次CGM:</strong> 建议4周后</p>
+
+            <hr>
+            <p><strong>分层评估报告生成完毕</strong><br>
+            <strong>免责声明:</strong> 本报告仅供临床参考，具体治疗方案请遵医嘱</p>
+            `;
+
+            // 将AI生成的报告加载到编辑器
+            quill.root.innerHTML = reportContent;
+            originalReport = reportContent;
+            
+            showLoading(false);
+            updateStatus('AI分析完成，请在右侧编辑器中修改建议');
+            document.getElementById('editMode').textContent = '可以开始修改AI建议';
+            document.getElementById('saveBtn').style.display = 'inline-block';
+            document.getElementById('previewBtn').style.display = 'inline-block';
+            document.getElementById('finalBtn').style.display = 'inline-block';
+        }
+
+        // 显示患者信息
+        function showPatientInfo() {
+            const patientInfo = document.getElementById('patientInfo');
+            const patientDetails = document.getElementById('patientDetails');
+            
+            patientDetails.innerHTML = `
+                <p><strong>患者ID:</strong> ${currentPatientData.patientId}</p>
+                <p><strong>文件名:</strong> ${currentPatientData.fileName}</p>
+                <p><strong>分析时间:</strong> ${currentPatientData.analysisTime}</p>
+            `;
+            
+            patientInfo.style.display = 'block';
+        }
+
+        // 检测修改
+        function detectChanges() {
+            const currentContent = quill.root.innerHTML;
+            if (currentContent !== originalReport) {
+                // 这里可以实现更复杂的diff算法
+                const changeCount = changeHistory.length + 1;
+                addChangeRecord(`修改 #${changeCount}`, originalReport, currentContent);
+            }
+        }
+
+        // 添加修改记录
+        function addChangeRecord(title, original, modified) {
+            const change = {
+                timestamp: new Date().toLocaleString('zh-CN'),
+                title: title,
+                original: original,
+                modified: modified
+            };
+            
+            changeHistory.push(change);
+            displayChanges();
+        }
+
+        // 显示修改记录
+        function displayChanges() {
+            const changesPanel = document.getElementById('changesPanel');
+            const changesList = document.getElementById('changesList');
+            
+            if (changeHistory.length > 0) {
+                changesPanel.style.display = 'block';
+                
+                changesList.innerHTML = changeHistory.map((change, index) => `
+                    <div class="change-item">
+                        <strong>${change.title}</strong>
+                        <small style="float:right; color:#666;">${change.timestamp}</small>
+                        <div style="margin-top:8px;">
+                            <div class="original-text">原文: ${change.original.substring(0, 100)}...</div>
+                            <div class="modified-text">修改: ${change.modified.substring(0, 100)}...</div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+        }
+
+        // 保存报告
+        function saveReport() {
+            const finalContent = quill.root.innerHTML;
+            
+            // 记录最终修改
+            if (finalContent !== originalReport) {
+                addChangeRecord('最终版本', originalReport, finalContent);
+            }
+            
+            // 这里可以发送到后端保存
+            console.log('保存最终报告:', {
+                patientId: currentPatientData.patientId,
+                originalReport: originalReport,
+                finalReport: finalContent,
+                changes: changeHistory
+            });
+            
+            alert('报告已保存！修改记录已记录用于系统学习优化。');
+        }
+
+        // 预览报告
+        function previewReport() {
+            const content = quill.root.innerHTML;
+            const newWindow = window.open('', '_blank');
+            newWindow.document.write(`
+                <html>
+                <head>
+                    <title>CGM分析报告预览</title>
+                    <style>
+                        body { font-family: Microsoft YaHei, Arial, sans-serif; padding: 20px; }
+                        h2, h3, h4 { color: #333; }
+                        hr { margin: 20px 0; }
+                    </style>
+                </head>
+                <body>${content}</body>
+                </html>
+            `);
+        }
+
+        // 生成最终报告
+        function generateFinalReport() {
+            saveReport();
+            previewReport();
+        }
+
+        // 更新状态栏
+        function updateStatus(message) {
+            document.getElementById('statusBar').innerHTML = `<strong>状态：</strong> ${message}`;
+        }
+
+        // 显示/隐藏加载动画
+        function showLoading(show) {
+            document.getElementById('loadingPanel').style.display = show ? 'block' : 'none';
+        }
+
+        // 初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            updateStatus('系统已就绪，请上传CGM数据或使用示例数据开始分析');
+        });
+    </script>
+</body>
+</html>

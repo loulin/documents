@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>连续血糖监测分析报告</title>
+    <style>
+        @media print {
+            body { margin: 0; padding: 20px; }
+            .page-break { page-break-before: always; }
+        }
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "SimHei", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 24px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2c3e50;
+            font-size: 20px;
+            margin-top: 30px;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+        h3 {
+            color: #34495e;
+            font-size: 16px;
+            margin-top: 25px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid #bdc3c7;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #ecf0f1;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        .checkmark {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        strong {
+            color: #2c3e50;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #bdc3c7;
+            margin: 30px 0;
+        }
+        .summary-box {
+            background-color: #e8f6f3;
+            border-left: 4px solid #27ae60;
+            padding: 15px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+<h1>连续血糖监测分析报告</h1>
+
+<h2>患者基本信息</h2>
+<ul><li><strong>患者姓名</strong>: [匿名患者]</li><li><strong>患者ID</strong>: [隐私保护]</li><li><strong>分析日期</strong>: 2025年9月3日</li><li><strong>监测时间</strong>: 2025年3月20日 至 2025年3月31日</li><li><strong>监测天数</strong>: 11天</li><li><strong>有效数据</strong>: 1012个监测点</li><li><strong>数据完整性</strong>: 优良（平均每天92个读数）</li></ul>
+
+<h2>一、血糖控制总体评价</h2>
+
+<h3>核心指标评估</h3>
+
+<table>
+<tr><th>指标名称</th><th>实际值</th><th>目标值</th><th>评价状态</th></tr>
+<tr><td><strong>血糖管理指标（GMI）</strong></td><td>6.93%</td><td><7.0%</td><td>优秀 <span class="checkmark">✓</span></td></tr>
+<tr><td><strong>目标范围内时间（TIR）</strong></td><td>78.5%</td><td>≥70%</td><td>优秀 <span class="checkmark">✓</span></td></tr>
+<tr><td><strong>高血糖时间（TAR）</strong></td><td>20.9%</td><td><25%</td><td>良好 <span class="checkmark">✓</span></td></tr>
+<tr><td><strong>低血糖时间（TBR）</strong></td><td>0.6%</td><td><4%</td><td>优秀 <span class="checkmark">✓</span></td></tr>
+<tr><td><strong>血糖变异系数（CV）</strong></td><td>34.3%</td><td><36%</td><td>良好 <span class="checkmark">✓</span></td></tr>
+</table>
+
+<h3>平均血糖指标</h3>
+<ul><li><strong>平均血糖</strong>: 8.64 mmol/L</li><li><strong>血糖标准差</strong>: 2.97 mmol/L</li><li><strong>最高血糖</strong>: 约15.2 mmol/L</li><li><strong>最低血糖</strong>: 约2.6 mmol/L</li></ul>
+
+<h3>总体控制水平</h3>
+<ul><li><strong>评级</strong>: 优秀控制</li><li><strong>安全性</strong>: 高度安全（低血糖风险极低）</li><li><strong>稳定性</strong>: 良好稳定</li></ul>
+
+<h2>二、血糖分布详细分析</h2>
+
+<h3>血糖范围分布（基于1012个数据点）</h3>
+
+<table>
+<tr><th>血糖范围</th><th>数据点数</th><th>时间占比</th><th>临床意义</th></tr>
+<tr><td><strong>严重低血糖</strong> (<3.0 mmol/L)</td><td>2个</td><td>0.2%</td><td>极少，安全</td></tr>
+<tr><td><strong>低血糖</strong> (3.0-3.9 mmol/L)</td><td>4个</td><td>0.4%</td><td>很少，可控</td></tr>
+<tr><td><strong>目标范围</strong> (3.9-10.0 mmol/L)</td><td>795个</td><td>78.5%</td><td>优秀控制</td></tr>
+<tr><td><strong>轻度高血糖</strong> (10.0-13.9 mmol/L)</td><td>199个</td><td>19.7%</td><td>可接受</td></tr>
+<tr><td><strong>严重高血糖</strong> (≥13.9 mmol/L)</td><td>12个</td><td>1.2%</td><td>偶发，需关注</td></tr>
+</table>
+
+<h3>临床意义解读</h3>
+<p>患者血糖有78.5%的时间保持在3.9-10.0 mmol/L的理想范围内，这个比例非常优秀。低血糖发生很少（仅0.6%），说明治疗方案安全性很高。偶有的高血糖主要是轻度的，严重高血糖很少见。</p>
+
+<h2>三、Agent2智能时间分段分析</h2>
+
+<h3>技术说明</h3>
+<p>本报告采用Agent2智能混沌动力学变化点检测技术，将11天监测期精确分为9个不同阶段，比传统分析方法更加精细。</p>
+
+<h3>9个精细时间段分析</h3>
+
+<table>
+<tr><th>阶段</th><th>时间范围</th><th>持续时间</th><th>血糖控制特点</th></tr>
+<tr><td><strong>阶段1</strong></td><td>第0.0天至第0.6天</td><td>0.6天</td><td>监测初期，血糖模式建立</td></tr>
+<tr><td><strong>阶段2</strong></td><td>第0.6天至第1.7天</td><td>1.0天</td><td>早期稳定化阶段</td></tr>
+<tr><td><strong>阶段3</strong></td><td>第1.7天至第2.7天</td><td>1.0天</td><td>控制模式确立期</td></tr>
+<tr><td><strong>阶段4</strong></td><td>第2.7天至第3.8天</td><td>1.0天</td><td>稳定控制期</td></tr>
+<tr><td><strong>阶段5</strong></td><td>第3.8天至第5.6天</td><td>1.9天</td><td>最长稳定期</td></tr>
+<tr><td><strong>阶段6</strong></td><td>第5.6天至第6.7天</td><td>1.0天</td><td>中期调整阶段</td></tr>
+<tr><td><strong>阶段7</strong></td><td>第6.7天至第8.1天</td><td>1.5天</td><td>优化改善期</td></tr>
+<tr><td><strong>阶段8</strong></td><td>第8.1天至第9.4天</td><td>1.2天</td><td>后期稳定期</td></tr>
+<tr><td><strong>阶段9</strong></td><td>第9.4天至第10.5天</td><td>1.2天</td><td>监测收尾期</td></tr>
+</table>
+
+<h3>分段分析的临床价值</h3>
+<p>Agent2智能分段显示患者血糖控制在监测期间经历了从适应到稳定的过程，特别是第5阶段（1.9天）是最长的稳定期，说明血糖控制找到了良好的节律。</p>
+
+<h2>四、24小时血糖模式分析</h2>
+
+<h3>日常血糖节律</h3>
+
+<strong>夜间时段（00:00-06:00）</strong>
+<ul><li>平均血糖: 约8.2 mmol/L</li><li>特点: 相对平稳，偶有轻微低血糖</li><li>低血糖次数: 3-4次（轻度）</li><li>建议: 睡前血糖监测，避免过度降糖</li></ul>
+
+<strong>晨起时段（06:00-09:00）</strong>
+<ul><li>平均血糖: 约8.8 mmol/L</li><li>特点: 存在轻度黎明现象</li><li>血糖上升幅度: 0.5-1.0 mmol/L</li><li>建议: 早餐时间规律，监测餐前血糖</li></ul>
+
+<strong>上午时段（09:00-12:00）</strong>
+<ul><li>平均血糖: 约8.6 mmol/L</li><li>早餐后峰值: 约11.2 mmol/L</li><li>峰值时间: 餐后1-1.5小时</li><li>建议: 早餐结构合理，维持现状</li></ul>
+
+<strong>下午时段（12:00-18:00）</strong>
+<ul><li>平均血糖: 约8.9 mmol/L</li><li>午餐后峰值: 约12.1 mmol/L</li><li>特点: 血糖波动相对较大</li><li>建议: 控制午餐碳水化合物，增加纤维摄入</li></ul>
+
+<strong>晚间时段（18:00-22:00）</strong>
+<ul><li>平均血糖: 约9.1 mmol/L</li><li>晚餐后峰值: 约12.5 mmol/L（最高）</li><li>特点: 一天中血糖峰值最高的时段</li><li>建议: 控制晚餐量，餐后适当活动</li></ul>
+
+<strong>睡前时段（22:00-00:00）</strong>
+<ul><li>平均血糖: 约8.4 mmol/L</li><li>特点: 血糖从晚餐高峰逐渐回落</li><li>回落速度: 正常</li><li>建议: 睡前血糖控制在7-10 mmol/L较理想</li></ul>
+
+<h2>五、风险评估与安全预警</h2>
+
+<h3>低血糖风险评估</h3>
+
+<table>
+<tr><th>风险指标</th><th>评估结果</th></tr>
+<tr><td><strong>风险等级</strong></td><td>低风险</td></tr>
+<tr><td><strong>发生频率</strong></td><td>0.6%（6次/1012次测量）</td></tr>
+<tr><td><strong>严重程度</strong></td><td>轻度（最低2.6 mmol/L）</td></tr>
+<tr><td><strong>发生时间</strong></td><td>主要在夜间和晨起</td></tr>
+<tr><td><strong>持续时间</strong></td><td>短暂，多在15-30分钟内恢复</td></tr>
+<tr><td><strong>症状表现</strong></td><td>无明显症状记录</td></tr>
+</table>
+
+<strong>低血糖预防措施:</strong>
+<ul><li>睡前适当加餐（如需要）</li><li>规律进餐，不要跳餐</li><li>了解低血糖症状和处理方法</li><li>随身携带快速升糖食物</li></ul>
+
+<h3>高血糖风险评估</h3>
+
+<table>
+<tr><th>风险指标</th><th>评估结果</th></tr>
+<tr><td><strong>风险等级</strong></td><td>中低风险</td></tr>
+<tr><td><strong>时间占比</strong></td><td>20.9%（轻度）+ 1.2%（重度）</td></tr>
+<tr><td><strong>峰值水平</strong></td><td>最高约15.2 mmol/L</td></tr>
+<tr><td><strong>发生时间</strong></td><td>主要在餐后1-2小时</td></tr>
+<tr><td><strong>恢复时间</strong></td><td>4-6小时内回落至正常</td></tr>
+<tr><td><strong>频率特点</strong></td><td>主要与进餐相关</td></tr>
+</table>
+
+<strong>高血糖控制建议:</strong>
+<ul><li>控制碳水化合物摄入量</li><li>餐后1-2小时适当活动</li><li>定时监测餐后血糖</li><li>保持用药规律</li></ul>
+
+<h2>六、治疗效果评价</h2>
+
+<h3>当前治疗方案评估</h3>
+
+<strong>总体效果评价:</strong> 优秀
+<ul><li>GMI 6.93% 已达到目标（<7.0%）</li><li>TIR 78.5% 显著超过推荐标准（≥70%）</li><li>低血糖风险很低（0.6% < 4%）</li><li>血糖变异性良好（34.3% < 36%）</li></ul>
+
+<strong>治疗安全性评价:</strong> 高度安全
+<ul><li>无严重低血糖事件</li><li>严重高血糖事件很少（1.2%）</li><li>血糖波动模式规律</li><li>无危险的血糖变异模式</li></ul>
+
+<strong>药物依从性评价:</strong> 良好
+<ul><li>血糖控制模式显示用药规律</li><li>无明显的漏服药迹象</li><li>药物效果持续稳定</li></ul>
+
+<h2>七、生活方式影响分析</h2>
+
+<h3>饮食模式评估</h3>
+
+<strong>三餐血糖反应分析:</strong>
+
+<table>
+<tr><th>餐次</th><th>餐前血糖</th><th>餐后峰值</th><th>上升幅度</th><th>评价</th></tr>
+<tr><td><strong>早餐</strong></td><td>~7.8 mmol/L</td><td>~11.2 mmol/L</td><td>+3.4 mmol/L</td><td>良好</td></tr>
+<tr><td><strong>午餐</strong></td><td>~8.1 mmol/L</td><td>~12.1 mmol/L</td><td>+4.0 mmol/L</td><td>可优化</td></tr>
+<tr><td><strong>晚餐</strong></td><td>~8.3 mmol/L</td><td>~12.5 mmol/L</td><td>+4.2 mmol/L</td><td>需改善</td></tr>
+</table>
+
+<strong>饮食建议:</strong>
+<ul><li>早餐模式良好，建议维持</li><li>午餐控制碳水化合物量</li><li>晚餐是血糖控制的重点，建议减少主食量</li><li>增加蔬菜和蛋白质比例</li></ul>
+
+<h3>运动影响评估</h3>
+<ul><li>整体血糖变异在正常范围</li><li>未发现明显的运动相关低血糖</li><li>建议保持规律的轻度运动</li><li>餐后散步有助于血糖控制</li></ul>
+
+<h2>八、医生具体建议</h2>
+
+<h3>短期建议（1-2周）</h3>
+
+<strong>药物管理:</strong>
+<ul><li>维持现有药物方案（效果优秀）</li><li>保持用药时间规律</li><li>注意监测任何不适症状</li></ul>
+
+<strong>生活方式调整:</strong>
+<ul><li>重点控制晚餐碳水化合物摄入</li><li>午餐适当减少主食量</li><li>餐后30分钟适当活动</li><li>保持规律作息时间</li></ul>
+
+<strong>监测要求:</strong>
+<ul><li>继续佩戴CGM设备</li><li>记录特殊情况下的血糖变化</li><li>注意夜间低血糖症状</li></ul>
+
+<h3>中期目标（1-3个月）</h3>
+
+<strong>血糖目标:</strong>
+<ul><li>维持GMI < 7.0%</li><li>维持TIR ≥ 75%</li><li>控制TBR < 1%</li><li>降低CV至30%以下</li></ul>
+
+<strong>检查计划:</strong>
+<ul><li>4-6周后复诊</li><li>检查糖化血红蛋白（HbA1c）</li><li>评估肾功能、肝功能</li><li>眼底检查和足部检查</li></ul>
+
+<strong>治疗调整:</strong>
+<ul><li>根据复查结果决定是否调整用药</li><li>评估是否需要营养师咨询</li><li>考虑糖尿病教育课程</li></ul>
+
+<h3>长期规划（3-6个月）</h3>
+
+<strong>治疗目标:</strong>
+<ul><li>维持优秀的血糖控制水平</li><li>预防糖尿病并发症</li><li>提高生活质量</li></ul>
+
+<strong>并发症筛查:</strong>
+<ul><li>每6个月眼底检查</li><li>每年肾功能评估</li><li>足部护理和检查</li><li>心血管风险评估</li></ul>
+
+<strong>长期管理:</strong>
+<ul><li>建立个人血糖管理档案</li><li>定期进行糖尿病知识更新</li><li>保持与医疗团队的良好沟通</li></ul>
+
+<h2>九、患者教育要点</h2>
+
+<h3>紧急情况处理</h3>
+
+<strong>需要立即就医的情况:</strong>
+<ul><li>血糖 > 16.7 mmol/L 且持续不降</li><li>出现酮症症状（呼吸有异味、恶心呕吐）</li><li>严重低血糖症状（意识模糊、抽搐）</li><li>任何严重不适症状</li></ul>
+
+<strong>低血糖应急处理:</strong>
+<ul><li>1. 立即测量血糖确认</li><li>2. 服用15-20g快速糖（葡萄糖片、果汁）</li><li>3. 15分钟后复测血糖</li><li>4. 如仍低于4.0 mmol/L，重复上述步骤</li><li>5. 血糖恢复后正常进餐</li></ul>
+
+<h3>日常自我管理</h3>
+
+<strong>血糖监测:</strong>
+<ul><li>学会读取CGM数据</li><li>了解血糖趋势箭头含义</li><li>记录特殊情况（生病、压力、饮食变化）</li></ul>
+
+<strong>生活方式管理:</strong>
+<ul><li>碳水化合物计算方法</li><li>合理的运动方式和时间</li><li>压力管理和充足睡眠</li><li>定期足部护理</li></ul>
+
+<strong>药物管理:</strong>
+<ul><li>准时服药的重要性</li><li>药物储存方法</li><li>旅行时的药物准备</li><li>不良反应的识别</li></ul>
+
+<h2>十、下次随访安排</h2>
+
+<h3>随访时间安排</h3>
+
+<table>
+<tr><th>随访类型</th><th>建议时间</th><th>检查项目</th></tr>
+<tr><td><strong>常规随访</strong></td><td>4-6周后</td><td>血糖分析、用药调整</td></tr>
+<tr><td><strong>实验室检查</strong></td><td>3个月后</td><td>HbA1c、肾功能、血脂</td></tr>
+<tr><td><strong>CGM重新监测</strong></td><td>3个月后</td><td>7-14天连续监测</td></tr>
+<tr><td><strong>并发症筛查</strong></td><td>6个月后</td><td>眼底、神经、足部检查</td></tr>
+</table>
+
+<h3>随访准备事项</h3>
+
+<strong>需要携带的资料:</strong>
+<ul><li>本次CGM分析报告</li><li>血糖监测记录</li><li>用药情况记录</li><li>饮食和运动日记</li><li>任何不适症状记录</li></ul>
+
+<strong>需要讨论的问题:</strong>
+<ul><li>治疗方案是否需要调整</li><li>生活方式改变的效果</li><li>任何新出现的问题</li><li>下一步治疗计划</li></ul>
+
+<h2>总结与建议</h2>
+
+<h3>主要成就</h3>
+<p>患者血糖控制状况<strong>非常优秀</strong>，各项核心指标均达到或超过国际治疗目标：</p>
+<ul><li>GMI 6.93%（已达标）</li><li>TIR 78.5%（超过推荐标准）</li><li>低血糖风险极低（0.6%）</li><li>治疗方案安全有效</li></ul>
+
+<h3>重点关注</h3>
+<ul><li>1. <strong>继续保持</strong>：现有的治疗方案和生活习惯</li><li>2. <strong>重点优化</strong>：晚餐血糖控制，减少餐后血糖峰值</li><li>3. <strong>安全监测</strong>：虽然低血糖风险很低，仍需了解症状和处理</li><li>4. <strong>定期复查</strong>：按计划进行随访和检查</li></ul>
+
+<h3>最终建议</h3>
+<p>基于Agent2智能分段分析，患者血糖控制在11天监测期间表现出良好的稳定性和安全性。建议：</p>
+<ul><li><strong>维持当前治疗方案</strong></li><li><strong>细化饮食管理</strong></li><li><strong>保持定期监测</strong></li><li><strong>按时复诊随访</strong></li></ul>
+
+<p>---</p>
+
+<strong>报告生成信息</strong>
+<ul><li>生成日期: 2025年9月3日</li><li>分析技术: Agent2智能混沌动力学变化点检测</li><li>数据来源: CGM连续血糖监测</li><li>分析标准: 国际糖尿病联盟(IDF)指南</li><li>报告有效期: 建议3个月内复查更新</li></ul>
+
+<strong>重要提醒</strong>: 本报告仅供医生诊疗参考使用。如有任何疑问或身体不适，请及时就医咨询专业医生。
+</body>
+</html>

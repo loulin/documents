@@ -1,0 +1,213 @@
+version: '3.8'
+
+services:
+  # Neo4j 图数据库
+  neo4j:
+    image: neo4j:4.4
+    container_name: endocrine-kg-neo4j
+    environment:
+      NEO4J_AUTH: neo4j/endocrine123
+      NEO4J_dbms_memory_pagecache_size: 1G
+      NEO4J_dbms_memory_heap_max__size: 1G
+      NEO4J_dbms_security_procedures_unrestricted: gds.*,apoc.*
+      NEO4J_dbms_security_procedures_allowlist: gds.*,apoc.*
+    volumes:
+      - neo4j_data:/data
+      - neo4j_logs:/logs
+      - neo4j_import:/import
+      - ./comprehensive_endocrine_knowledge_graph.json:/import/knowledge_graph.json
+    ports:
+      - "7474:7474"  # HTTP
+      - "7687:7687"  # Bolt
+    networks:
+      - endocrine-kg-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "cypher-shell", "-u", "neo4j", "-p", "endocrine123", "MATCH () RETURN count(*) as count"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Redis 缓存服务
+  redis:
+    image: redis:7-alpine
+    container_name: endocrine-kg-redis
+    command: redis-server --appendonly yes --maxmemory 512mb --maxmemory-policy allkeys-lru
+    volumes:
+      - redis_data:/data
+    ports:
+      - "6379:6379"
+    networks:
+      - endocrine-kg-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # MongoDB 文档数据库 
+  mongodb:
+    image: mongo:6.0
+    container_name: endocrine-kg-mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: endocrine123
+      MONGO_INITDB_DATABASE: endocrine_kg
+    volumes:
+      - mongodb_data:/data/db
+      - mongodb_config:/data/configdb
+    ports:
+      - "27017:27017"
+    networks:
+      - endocrine-kg-network
+    restart: unless-stopped
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/endocrine_kg --quiet
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # API 服务器
+  api-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: endocrine-kg-api
+    environment:
+      # 数据库连接
+      NEO4J_URI: bolt://neo4j:7687
+      NEO4J_USER: neo4j
+      NEO4J_PASSWORD: endocrine123
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      MONGODB_URI: mongodb://admin:endocrine123@mongodb:27017/endocrine_kg?authSource=admin
+      
+      # API 配置
+      API_HOST: 0.0.0.0
+      API_PORT: 8000
+      LOG_LEVEL: info
+      
+      # AI 服务配置
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      OPENAI_MODEL: gpt-4
+      
+      # 安全配置
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:-your-secret-key}
+      CORS_ORIGINS: "*"
+      
+      # 性能配置
+      WORKERS: 4
+      MAX_REQUESTS: 1000
+      TIMEOUT: 60
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+    ports:
+      - "8000:8000"
+    networks:
+      - endocrine-kg-network
+    depends_on:
+      neo4j:
+        condition: service_healthy
+      redis:
+        condition: service_healthy  
+      mongodb:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Nginx 反向代理
+  nginx:
+    image: nginx:alpine
+    container_name: endocrine-kg-nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./ssl:/etc/nginx/ssl
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - endocrine-kg-network
+    depends_on:
+      - api-server
+    restart: unless-stopped
+
+  # Elasticsearch (可选：全文搜索)
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.7.0
+    container_name: endocrine-kg-elasticsearch
+    environment:
+      - discovery.type=single-node
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+      - xpack.security.enabled=false
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+    networks:
+      - endocrine-kg-network
+    restart: unless-stopped
+    profiles:
+      - full-stack
+
+  # Kibana (可选：数据可视化)
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.7.0
+    container_name: endocrine-kg-kibana
+    environment:
+      ELASTICSEARCH_HOSTS: http://elasticsearch:9200
+    ports:
+      - "5601:5601"
+    networks:
+      - endocrine-kg-network
+    depends_on:
+      - elasticsearch
+    restart: unless-stopped
+    profiles:
+      - full-stack
+
+  # Grafana 监控面板 (可选)
+  grafana:
+    image: grafana/grafana:latest
+    container_name: endocrine-kg-grafana
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: endocrine123
+    volumes:
+      - grafana_data:/var/lib/grafana
+    ports:
+      - "3000:3000"
+    networks:
+      - endocrine-kg-network
+    restart: unless-stopped
+    profiles:
+      - monitoring
+
+volumes:
+  neo4j_data:
+    driver: local
+  neo4j_logs:
+    driver: local
+  neo4j_import:
+    driver: local
+  redis_data:
+    driver: local
+  mongodb_data:
+    driver: local
+  mongodb_config:
+    driver: local
+  elasticsearch_data:
+    driver: local
+  grafana_data:
+    driver: local
+
+networks:
+  endocrine-kg-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16

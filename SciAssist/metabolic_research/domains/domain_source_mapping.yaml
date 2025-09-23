@@ -1,0 +1,215 @@
+# 领域数据源映射配置
+domains:
+  endocrinology:
+    description: "内分泌代谢疾病领域"
+    sources:
+      - name: pubmed
+        priority: high
+        search_terms:
+          - "diabetes mellitus"
+          - "metabolic syndrome"
+          - "obesity"
+          - "thyroid disorders"
+          - "adrenal disorders"
+        mesh_trees:
+          - "C19" # 内分泌系统疾病
+          - "C18" # 代谢疾病
+          - "D06" # 激素
+        journals:
+          - "Diabetes"
+          - "Diabetes Care"
+          - "Journal of Clinical Endocrinology & Metabolism"
+          - "Obesity"
+          
+      - name: clinical_trials
+        priority: high
+        conditions:
+          - "Type 2 Diabetes"
+          - "Obesity"
+          - "Metabolic Syndrome"
+          - "Thyroid Disease"
+        interventions:
+          - "Drug"
+          - "Behavioral"
+          - "Device"
+          
+      - name: genetic_data
+        priority: medium
+        phenotypes:
+          - "fasting glucose"
+          - "HbA1c"
+          - "BMI"
+          - "insulin resistance"
+        pathways:
+          - "glucose metabolism"
+          - "lipid metabolism"
+          - "insulin signaling"
+
+  cardiology:
+    description: "心血管疾病领域"
+    sources:
+      - name: pubmed
+        priority: high
+        search_terms:
+          - "coronary artery disease"
+          - "heart failure"
+          - "hypertension"
+          - "arrhythmia"
+        mesh_trees:
+          - "C14" # 心血管疾病
+          - "D27" # 化学品和药物
+        journals:
+          - "Circulation"
+          - "Journal of the American College of Cardiology"
+          - "European Heart Journal"
+          
+      - name: clinical_trials
+        priority: high
+        conditions:
+          - "Coronary Artery Disease"
+          - "Heart Failure"
+          - "Hypertension"
+        interventions:
+          - "Drug"
+          - "Device"
+          - "Procedure"
+          
+      - name: genetic_data
+        priority: medium
+        phenotypes:
+          - "blood pressure"
+          - "lipid levels"
+          - "cardiac function"
+        pathways:
+          - "blood pressure regulation"
+          - "cardiac muscle contraction"
+
+  oncology:
+    description: "肿瘤学领域"
+    sources:
+      - name: pubmed
+        priority: high
+        search_terms:
+          - "neoplasms"
+          - "cancer"
+          - "tumor"
+          - "carcinoma"
+        mesh_trees:
+          - "C04" # 肿瘤
+          - "D27" # 抗肿瘤药物
+        journals:
+          - "Cancer Cell"
+          - "Journal of Clinical Oncology"
+          - "Nature Cancer"
+          
+      - name: clinical_trials
+        priority: high
+        conditions:
+          - "Cancer"
+          - "Solid Tumor"
+          - "Leukemia"
+          - "Lymphoma"
+        phases:
+          - "Phase 1"  # 肿瘤新药早期试验更重要
+          - "Phase 2"
+          - "Phase 3"
+          
+      - name: genetic_data
+        priority: high  # 基因组学数据在肿瘤领域更重要
+        data_types:
+          - "Somatic Mutation"
+          - "Copy Number"
+          - "Gene Expression"
+        pathways:
+          - "cell cycle"
+          - "apoptosis"
+          - "DNA repair"
+
+# 通用数据源配置
+common_sources:
+  - name: guidelines
+    priority: high
+    required: true  # 所有领域都需要
+    
+  - name: cohort_data
+    priority: medium
+    optional: true  # 根据领域具体需求选用
+    
+  - name: drug_databases
+    priority: medium
+    required: true
+
+# 数据源优先级规则
+priority_rules:
+  high:
+    cache_ttl: 86400  # 24小时
+    update_frequency: "daily"
+    alert_threshold: 90%
+    
+  medium:
+    cache_ttl: 604800  # 7天
+    update_frequency: "weekly"
+    alert_threshold: 80%
+    
+  low:
+    cache_ttl: 2592000  # 30天
+    update_frequency: "monthly"
+    alert_threshold: 70%
+
+# 数据源依赖关系
+dependencies:
+  pubmed:
+    - mesh_terms
+    - journal_info
+  
+  clinical_trials:
+    - condition_terms
+    - drug_names
+    
+  genetic_data:
+    - gene_annotations
+    - pathway_databases
+
+# 数据源访问控制
+access_control:
+  public:
+    - pubmed
+    - clinical_trials
+    - guidelines
+    
+  restricted:
+    - genetic_data
+    - cohort_data
+    
+  private:
+    - drug_databases
+
+# 数据同步策略
+sync_strategy:
+  real_time:
+    - clinical_trials.status
+    - drug_databases.alerts
+    
+  daily:
+    - pubmed.new_articles
+    - guidelines.updates
+    
+  weekly:
+    - genetic_data
+    - cohort_data
+
+# 错误处理策略
+error_handling:
+  retry:
+    max_attempts: 3
+    backoff_factor: 2
+    
+  fallback:
+    enabled: true
+    max_age: 86400  # 使用最长24小时前的缓存数据
+    
+  notification:
+    channels:
+      - email
+      - slack
+    threshold: 5  # 连续失败5次后通知

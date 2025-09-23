@@ -1,0 +1,151 @@
+# API访问配置
+api_access:
+  dra_integrated:
+    - name: pubmed
+      description: "通过DRA集成的NCBI E-utilities"
+      auth_type: "none"
+      rate_limit: 3 # requests per second
+      notes: "免费公开访问"
+      
+    - name: clinical_trials
+      description: "ClinicalTrials.gov API"
+      auth_type: "none"
+      rate_limit: 5
+      notes: "免费公开访问"
+      
+    - name: gwas_catalog
+      description: "EBI GWAS Catalog API"
+      auth_type: "none"
+      rate_limit: 2
+      notes: "免费公开访问"
+      
+    - name: geo
+      description: "NCBI GEO API"
+      auth_type: "none"
+      rate_limit: 3
+      notes: "免费公开访问"
+
+  api_key_required:
+    - name: drugbank
+      description: "DrugBank API"
+      auth_type: "api_key"
+      rate_limit: 10
+      registration_url: "https://go.drugbank.com/api_accounts/new"
+      subscription_type: "commercial"
+      config:
+        api_key: "${DRUGBANK_API_KEY}"
+        base_url: "https://api.drugbank.com/v1/"
+      
+    - name: pharmgkb
+      description: "PharmGKB API"
+      auth_type: "api_key"
+      rate_limit: 5
+      registration_url: "https://www.pharmgkb.org/account/register"
+      subscription_type: "academic"
+      config:
+        api_key: "${PHARMGKB_API_KEY}"
+        base_url: "https://api.pharmgkb.org/v1/"
+      
+    - name: chembl
+      description: "ChEMBL API"
+      auth_type: "api_key"
+      rate_limit: 5
+      registration_url: "https://www.ebi.ac.uk/chembl/api/data"
+      subscription_type: "free"
+      config:
+        api_key: "${CHEMBL_API_KEY}"
+        base_url: "https://www.ebi.ac.uk/chembl/api/data/"
+
+  institutional_access:
+    - name: uk_biobank
+      description: "UK Biobank数据访问"
+      auth_type: "institutional"
+      access_requirements:
+        - "研究申请表"
+        - "伦理审批"
+        - "数据管理计划"
+      registration_url: "https://www.ukbiobank.ac.uk/enable-your-research/apply-for-access"
+      config:
+        access_id: "${UKBIOBANK_ACCESS_ID}"
+        secure_token: "${UKBIOBANK_TOKEN}"
+      
+    - name: nhanes
+      description: "NHANES数据访问"
+      auth_type: "institutional"
+      access_requirements:
+        - "研究机构证明"
+        - "数据使用协议"
+      registration_url: "https://wwwn.cdc.gov/nchs/nhanes/default.aspx"
+      config:
+        access_key: "${NHANES_ACCESS_KEY}"
+        
+    - name: chns
+      description: "中国健康与营养调查"
+      auth_type: "institutional"
+      access_requirements:
+        - "项目申请"
+        - "数据使用协议"
+        - "费用支付"
+      registration_url: "https://www.cpc.unc.edu/projects/china/data"
+      config:
+        project_id: "${CHNS_PROJECT_ID}"
+        access_token: "${CHNS_ACCESS_TOKEN}"
+
+# API密钥管理
+key_management:
+  storage:
+    type: "vault"
+    path: "secrets/api_keys"
+    
+  rotation:
+    enabled: true
+    frequency: "90days"
+    
+  monitoring:
+    usage_alerts: true
+    expiration_alerts: true
+    threshold: 80%  # 使用量达到限额的80%时告警
+
+# 访问控制
+access_control:
+  ip_whitelist:
+    enabled: true
+    addresses:
+      - "research_network_range"
+      - "vpn_range"
+      
+  authentication:
+    method: "oauth2"
+    provider: "institutional_sso"
+    
+  audit:
+    enabled: true
+    log_level: "detailed"
+
+# 错误处理
+error_handling:
+  rate_limit_exceeded:
+    action: "delay_retry"
+    max_retries: 3
+    delay_factor: 2
+    
+  authentication_failed:
+    action: "notify_admin"
+    retry: false
+    
+  connection_error:
+    action: "retry"
+    max_retries: 5
+    delay_factor: 1.5
+
+# 数据同步设置
+sync_settings:
+  dra_integration:
+    enabled: true
+    sync_frequency: "daily"
+    error_threshold: 5
+    
+  direct_apis:
+    connection_timeout: 30
+    read_timeout: 60
+    max_concurrent_requests: 10

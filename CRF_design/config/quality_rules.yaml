@@ -1,0 +1,66 @@
+# --------------------------------------------------------------------------
+# CRF Research Mining Agent - Data Quality Rules Configuration
+# --------------------------------------------------------------------------
+#
+# Defines the rules for assessing data quality for each dataset.
+#
+# Instructions:
+# 1. Create a top-level key for each dataset name that matches data_sources.yaml.
+# 2. Under each dataset, you can define rules for specific columns.
+# 3. You can also use special keys:
+#    - __ALL_NUMERIC__: Rules to apply to all numeric columns in the dataset.
+#    - __ALL_DATE__: Rules to apply to all date-like columns in the dataset.
+#
+# Rule Definition:
+#   - type: The type of check to perform.
+#   - params: Parameters for the check (if any).
+#   - message: The error message to display if the check fails.
+#
+# Supported Rule Types:
+#   - range: Checks if values fall within a [min, max] boundary.
+#     params: [min_value, max_value]
+#
+#   - expression: Checks if a pandas query expression is true.
+#     params: "your_expression_string" (e.g., "systolic_bp > diastolic_bp")
+#
+#   - outlier_iqr: Detects outliers using the IQR method.
+#     params: multiplier (e.g., 1.5)
+#
+# --------------------------------------------------------------------------
+
+# Rules for the 'patient_demographics' dataset
+patient_demographics:
+  age:
+    - type: range
+      params: [0, 120]
+      message: "发现年龄值超出[0, 120]范围"
+  bmi:
+    - type: range
+      params: [10, 60]
+      message: "发现BMI值超出[10, 60]范围"
+
+# Rules for the 'clinical_data' dataset
+clinical_data:
+  hba1c:
+    - type: range
+      params: [3, 18]
+      message: "发现HbA1c值超出[3, 18]范围"
+  systolic_bp:
+    - type: expression
+      # This expression checks for records where systolic pressure is NOT greater than diastolic.
+      params: "systolic_bp > diastolic_bp"
+      message: "发现收缩压小于或等于舒张压的记录"
+  diastolic_bp:
+    - type: range
+      params: [40, 150]
+      message: "发现舒张压超出[40, 150]范围"
+
+# Generic rules that can apply to any dataset if not overridden above
+__GENERIC__:
+  __ALL_NUMERIC__:
+    - type: outlier_iqr
+      params: 1.5
+      message: "字段存在潜在异常值"
+  __ALL_DATE__:
+    - type: is_date
+      message: "日期格式不一致或无法解析"

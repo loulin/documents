@@ -1,0 +1,117 @@
+# --------------------------------------------------------------------------
+# CRF Research Mining Agent - Analysis Configuration
+# --------------------------------------------------------------------------
+#
+# Defines the research analyses to be performed by the agent.
+# The agent will execute each analysis in this list sequentially.
+#
+# Each item in the list is an analysis object with the following structure:
+#
+# - id: A unique identifier for the analysis.
+#
+#   title: The title for the research insight if the analysis is successful.
+#
+#   description_template: A template for the insight's description.
+#     You can use placeholders like {p_value}, {correlation}, etc.,
+#     which will be filled with the analysis results.
+#
+#   datasets: A list of data sources required for the analysis.
+#     - name: A short name to use within this analysis block.
+#     - source: The name of the dataset from data_sources.yaml.
+#
+#   variables: (Optional) Define new variables derived from existing columns.
+#     <new_variable_name>:
+#       type: The method to create the variable (e.g., 'cut' for binning).
+#       source_column: The original column to use.
+#       params: Parameters for the creation method.
+#
+#   analysis: The core statistical analysis to perform.
+#     type: The type of analysis (e.g., 'chi2_contingency').
+#     params: Parameters for the analysis, referencing columns or created variables.
+#
+#   trigger: The condition that must be met to generate an insight.
+#     metric: The result from the analysis to check (e.g., 'p_value').
+#     operator: The comparison operator (e.g., 'lt' for less than, 'gt' for greater than).
+#     value: The threshold value.
+#
+#   insight: The metadata for the ResearchInsight object to be created if triggered.
+#
+# --------------------------------------------------------------------------
+
+- id: age_diabetes_association
+  title: "年龄与糖尿病类型的关联性研究"
+  description_template: "发现不同年龄组糖尿病类型分布存在显著差异 (p-value: {p_value:.3f})"
+  
+  datasets:
+    - name: demo
+      source: patient_demographics
+      
+  variables:
+    age_binned:
+      type: cut
+      source_column: age
+      params:
+        bins: [0, 30, 50, 70, 100]
+        labels: ['<30', '30-50', '50-70', '>70']
+        
+  analysis:
+    type: chi2_contingency
+    params:
+      index: age_binned
+      columns: diabetes_type
+      
+  trigger:
+    metric: p_value
+    operator: lt
+    value: 0.05
+    
+  insight:
+    value_level: HIGH
+    publication_type: CROSS_SECTIONAL
+    key_variables: ['age', 'diabetes_type']
+    statistical_methods: ['卡方检验', '描述性统计', '多元逻辑回归']
+    expected_impact_factor: "2-4分期刊"
+    implementation_difficulty: "低"
+    recommendations:
+      - "进一步分析年龄相关的发病机制"
+      - "考虑纳入更多混杂因素控制"
+      - "可扩展为多中心研究"
+
+- id: gender_complication_association
+  title: "性别对糖尿病并发症发生率的影响"
+  description_template: "在并发症发生率上发现性别差异 (男性: {male_rate:.1%}, 女性: {female_rate:.1%})"
+  
+  datasets:
+    - name: demo
+      source: patient_demographics
+      
+  variables:
+    has_complication:
+      type: str_contains
+      source_column: complications
+      params:
+        pattern: 'nephropathy|retinopathy|neuropathy'
+        na_fill: false
+        
+  analysis:
+    type: group_by_rate_diff
+    params:
+      group_by_col: gender
+      rate_col: has_complication
+      
+  trigger:
+    metric: rate_difference
+    operator: gt
+    value: 0.1
+    
+  insight:
+    value_level: MODERATE
+    publication_type: OBSERVATIONAL_STUDY
+    key_variables: ['gender', 'complications', 'age', 'duration']
+    statistical_methods: ['t检验', '逻辑回归', 'Cox比例风险模型']
+    expected_impact_factor: "3-5分期刊"
+    implementation_difficulty: "中等"
+    recommendations:
+      - "探讨性别差异的生物学机制"
+      - "分析激素水平的影响"
+      - "考虑生活方式因素"

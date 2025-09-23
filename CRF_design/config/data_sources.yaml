@@ -1,0 +1,51 @@
+# --------------------------------------------------------------------------
+# CRF Research Mining Agent - Data Source Configuration
+# --------------------------------------------------------------------------
+#
+# Defines the datasets to be loaded by the agent.
+#
+# Instructions:
+# 1. For each dataset, create a top-level key (e.g., 'patient_demographics').
+# 2. Under each key, specify the following:
+#    - path: The absolute path to the data file (.csv or .json).
+#    - primary_key: The column name used to identify unique subjects/records.
+#
+# Example:
+#
+# patient_demographics:
+#   path: /path/to/your/demographics.csv
+#   primary_key: patient_id
+#
+# --------------------------------------------------------------------------
+
+patient_demographics:
+  path: /Users/williamsun/Documents/gplus/crf_data/simulated_patient_demographics.csv # 模拟数据文件路径
+  primary_key: patient_id
+
+phq9:
+  path: /path/to/your/phq9_scores.csv # 请替换为实际文件路径
+  primary_key: patient_id
+
+gad7:
+  path: /path/to/your/gad7_scores.csv # 请替换为实际文件路径
+  primary_key: patient_id
+
+mmas8:
+  path: /path/to/your/mmas8_scores.csv # 请替换为实际文件路径
+  primary_key: patient_id
+
+clinical_data:
+  path: /path/to/your/clinical_data.csv # 请替换为实际文件路径
+  primary_key: patient_id
+
+ipaq:
+  path: /path/to/your/ipaq_data.csv # 请替换为实际文件路径
+  primary_key: patient_id
+
+psqi:
+  path: /path/to/your/psqi_data.csv # 请替换为实际文件路径
+  primary_key: patient_id
+
+longitudinal_data:
+  path: /path/to/your/longitudinal_data.csv # 请替换为实际文件路径
+  primary_key: patient_id

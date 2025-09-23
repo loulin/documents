@@ -1,0 +1,65 @@
+# FastAPI 和相关组件
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+python-multipart==0.0.6
+
+# 数据库驱动
+neo4j==5.15.0
+redis==5.0.1
+pymongo==4.6.0
+
+# AI/ML 库
+openai==1.3.7
+transformers==4.36.0
+torch==2.1.1
+scikit-learn==1.3.0
+numpy==1.24.3
+
+# 医学NLP库
+spacy==3.7.2
+scispacy==0.5.3
+https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.3/en_core_sci_sm-0.5.3.tar.gz
+https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.3/en_ner_bc5cdr_md-0.5.3.tar.gz
+
+# 中文NLP支持
+jieba==0.42.1
+
+# 数据处理
+pandas==2.0.3
+networkx==3.2.1
+
+# 图像处理 (可选)
+Pillow==10.1.0
+
+# 文本处理
+nltk==3.8.1
+textblob==0.17.1
+
+# API文档和验证
+email-validator==2.1.0
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# 日志和监控
+loguru==0.7.2
+prometheus-client==0.19.0
+
+# 配置管理
+python-dotenv==1.0.0
+pydantic-settings==2.1.0
+
+# 开发工具
+pytest==7.4.3
+pytest-asyncio==0.21.1
+black==23.11.0
+flake8==6.1.0
+mypy==1.7.1
+
+# 性能优化
+cachetools==5.3.2
+aioredis==2.0.1
+
+# 安全
+cryptography==41.0.8
+httpx==0.25.2

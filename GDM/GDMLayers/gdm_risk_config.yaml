@@ -1,0 +1,621 @@
+
+version: "1.0.0"
+
+# 风险评估权重配置
+weights:
+  # 包含CGM数据时的权重 (基于Diabetes Care 2024研究)
+  with_cgm:
+    primary: 0.25
+    maternal: 0.20
+    fetal: 0.20
+    longterm: 0.08
+    cgm: 0.27
+  # 不包含CGM数据时的权重
+  without_cgm:
+    primary: 0.40
+    maternal: 0.25
+    fetal: 0.25
+    longterm: 0.10
+    cgm: 0.00
+
+# 风险分层阈值
+risk_thresholds:
+  low:
+    min: 0
+    max: 20
+    description: '低风险'
+    gdm_rate: '5-10%'
+  moderate:
+    min: 20
+    max: 40
+    description: '中风险'
+    gdm_rate: '15-25%'
+  high:
+    min: 40
+    max: 65
+    description: '高风险'
+    gdm_rate: '35-55%'
+  very_high:
+    min: 65
+    max: 100
+    description: '极高风险'
+    gdm_rate: '>60%'
+
+# 风险因子定义
+risk_factors:
+  # 1. 发病风险
+  primary_risk:
+    max_score: 20 # 更新最大分值以包含所有因子
+    factors:
+      - id: previous_gdm
+        name: '既往GDM史'
+        score: 4
+        path: 'medical_history.previous_gdm'
+        type: boolean
+        evidence: 'OR=13.2, 95%CI:10.5-16.8'
+        source: 'Kim C, et al. Diabetes Care 2007'
+      - id: obesity
+        name: '肥胖'
+        score: 2
+        path: 'anthropometric_data.pre_pregnancy_bmi'
+        type: range
+        range: {min: 28}
+        value_template: "BMI {value} kg/m²"
+        evidence: 'OR=3.01, 95%CI:2.34-3.87'
+        source: 'Torloni MR, et al. Obes Rev 2009'
+      - id: family_history
+        name: '糖尿病家族史'
+        score: 2
+        path: 'medical_history.family_diabetes'
+        type: category
+        categories: ['first_degree', 'both_parents']
+        value_map: {'first_degree': '一级亲属', 'both_parents': '父母双方'}
+        evidence: 'OR=2.87, 95%CI:2.44-3.37'
+        source: 'Williams MA, et al. Am J Epidemiol 1999'
+      - id: advanced_age
+        name: '高龄'
+        score: 2
+        path: 'demographic_data.age'
+        type: range
+        range: {min: 35}
+        value_template: "{value}岁"
+        evidence: 'OR=2.10, 95%CI:1.85-2.38'
+        source: 'Solomon CG, et al. NEJM 1997'
+      - id: steroid_use
+        name: '长期糖皮质激素使用'
+        score: 2
+        path: 'medical_history.steroid_use'
+        type: boolean
+        evidence: '糖皮质激素增加GDM风险OR=1.77'
+        source: 'Galtier-Dereure F, et al. Diabetes Care 1995'
+      - id: overweight
+        name: '超重'
+        score: 1
+        path: 'anthropometric_data.pre_pregnancy_bmi'
+        type: range
+        range: {min: 24, max: 28}
+        value_template: "BMI {value} kg/m²"
+        evidence: 'OR=1.97, 95%CI:1.77-2.19'
+        source: 'Torloni MR, et al. Obes Rev 2009'
+      - id: pcos
+        name: '多囊卵巢综合征'
+        score: 1
+        path: 'medical_history.pcos'
+        type: boolean
+        evidence: 'OR=2.94, 95%CI:1.70-5.08'
+        source: 'Boomsma CM, et al. Hum Reprod Update 2006'
+      - id: poor_obstetric_history
+        name: '不良孕产史'
+        score: 1 # 基础分1分，多项叠加
+        type: multi_boolean
+        paths: ['medical_history.previous_macrosomia', 'medical_history.previous_stillbirth']
+        value_map: {'previous_macrosomia': '巨大儿史', 'previous_stillbirth': '死胎史'}
+        max_score: 2
+        evidence: 'OR=1.54-2.23'
+        source: 'Kim C, et al. Diabetes Care 2007'
+      - id: asian_ethnicity
+        name: '亚洲人种'
+        score: 1
+        path: 'demographic_data.ethnicity'
+        type: category
+        categories: ['han', 'mixed']
+        value_map: {'han': '汉族', 'mixed': '混血'}
+        evidence: 'OR=1.84, 95%CI:1.50-2.26'
+        source: 'Hedderson MM, et al. Am J Obstet Gynecol 2010'
+      - id: abdominal_obesity
+        name: '腹型肥胖'
+        score: 1
+        path: 'anthropometric_data.waist_circumference'
+        type: range
+        range: {min: 80}
+        value_template: "{value} cm"
+        evidence: '腰围≥80cm增加GDM风险OR=1.46'
+        source: 'Bo S, et al. Diabetes Care 2001'
+      - id: antipsychotic_use
+        name: '抗精神病药物使用'
+        score: 1
+        path: 'medical_history.antipsychotic_use'
+        type: boolean
+        evidence: '抗精神病药增加糖尿病风险OR=1.32'
+        source: 'Newcomer JW, et al. Neuropsychopharmacology 2007'
+      - id: thyroid_disease
+        name: '甲状腺疾病'
+        score: 1
+        path: 'medical_history.thyroid_disease'
+        type: boolean
+        evidence: '甲状腺疾病增加GDM风险OR=1.15'
+        source: 'Mannisto T, et al. J Clin Endocrinol Metab 2013'
+      - id: assisted_reproduction
+        name: '辅助生殖技术助孕'
+        score: 1
+        path: 'current_pregnancy.assisted_reproduction'
+        type: boolean
+        evidence: 'ART增加GDM风险OR=1.53'
+        source: 'Qin J, et al. Fertil Steril 2013'
+      - id: smoking
+        name: '吸烟'
+        score: 1
+        path: 'lifestyle.smoking'
+        type: boolean
+        evidence: '吸烟增加GDM风险OR=1.25'
+        source: 'England LJ, et al. Obstet Gynecol 2004'
+      - id: sedentary_lifestyle
+        name: '缺乏运动'
+        score: 1
+        path: 'lifestyle.exercise_level'
+        type: category
+        categories: ['none']
+        evidence: '缺乏运动增加GDM风险OR=1.69'
+        source: 'Zhang C, et al. JAMA 2006'
+      # 生化指标
+      - id: fasting_glucose_high
+        name: '空腹血糖异常'
+        score: 3
+        path: 'laboratory_data.fasting_glucose'
+        type: range
+        range: {min: 5.1}
+        value_template: "{value} mmol/L"
+        evidence: 'IADPSG诊断标准'
+        source: 'IADPSG 2010'
+      - id: fasting_glucose_borderline
+        name: '空腹血糖偏高'
+        score: 2
+        path: 'laboratory_data.fasting_glucose'
+        type: range
+        range: {min: 4.8, max: 5.1}
+        value_template: "{value} mmol/L"
+        evidence: '接近诊断阈值'
+        source: 'HAPO Study 2008'
+      - id: fasting_glucose_elevated
+        name: '空腹血糖轻度升高'
+        score: 1
+        path: 'laboratory_data.fasting_glucose'
+        type: range
+        range: {min: 4.5, max: 4.8}
+        value_template: "{value} mmol/L"
+        evidence: '轻度升高'
+        source: 'Clinical observation'
+      - id: hba1c_diabetic
+        name: '糖化血红蛋白异常'
+        score: 3
+        path: 'laboratory_data.hba1c'
+        type: range
+        range: {min: 6.5}
+        value_template: "{value}%"
+        evidence: 'ADA诊断标准'
+        source: 'ADA 2023'
+      - id: hba1c_prediabetic
+        name: '糖化血红蛋白偏高'
+        score: 1
+        path: 'laboratory_data.hba1c'
+        type: range
+        range: {min: 5.7, max: 6.5}
+        value_template: "{value}%"
+        evidence: '糖尿病前期范围'
+        source: 'ADA 2023'
+      - id: random_glucose_diabetic
+        name: '随机血糖异常'
+        score: 3
+        path: 'laboratory_data.random_glucose'
+        type: range
+        range: {min: 11.1}
+        value_template: "{value} mmol/L"
+        evidence: '随机血糖≥11.1mmol/L提示糖尿病'
+        source: 'ADA 2023'
+      - id: random_glucose_impaired
+        name: '随机血糖升高'
+        score: 2
+        path: 'laboratory_data.random_glucose'
+        type: range
+        range: {min: 7.8, max: 11.1}
+        value_template: "{value} mmol/L"
+        evidence: '随机血糖7.8-11.0mmol/L示糖耐量异常'
+        source: 'WHO 2019'
+      - id: elevated_crp
+        name: 'C反应蛋白升高'
+        score: 1
+        path: 'laboratory_data.crp'
+        type: range
+        range: {min: 3.0} # 严格应为 > 3
+        value_template: "{value} mg/L"
+        evidence: '炎症标志物'
+        source: 'Wolf M, et al. Am J Obstet Gynecol 2003'
+      - id: elevated_wbc
+        name: '白细胞计数升高'
+        score: 1
+        path: 'laboratory_data.wbc_count'
+        type: range
+        range: {min: 12.0} # 严格应为 > 12
+        value_template: "{value} ×10^9/L"
+        evidence: '炎症反应指标'
+        source: 'Clinical observation'
+      - id: hypertriglyceridemia
+        name: '高甘油三酯血症'
+        score: 1
+        path: 'laboratory_data.triglycerides'
+        type: range
+        range: {min: 2.3}
+        value_template: "{value} mmol/L"
+        evidence: '脂代谢异常增加GDM风险'
+        source: 'Wiznitzer A, et al. Am J Obstet Gynecol 2009'
+      - id: low_hdl
+        name: 'HDL胆固醇降低'
+        score: 1
+        path: 'laboratory_data.hdl_cholesterol'
+        type: range
+        range: {max: 1.0} # 严格应为 < 1.0
+        value_template: "{value} mmol/L"
+        evidence: '低HDL与胰岛素抵抗相关'
+        source: 'Koukkou E, et al. Diabet Med 1996'
+
+  # 2. 母体并发症风险
+  maternal_complications:
+    max_score: 12
+    factors:
+      - id: very_advanced_age
+        name: '高龄（≥40岁）'
+        score: 3
+        path: 'demographic_data.age'
+        type: range
+        range: {min: 40}
+        value_template: "{value}岁"
+        evidence: '妊娠高血压风险增加2.5倍'
+        source: 'Schneider S, et al. 2012'
+      - id: advanced_maternal_age
+        name: '高龄（35-39岁）'
+        score: 2
+        path: 'demographic_data.age'
+        type: range
+        range: {min: 35, max: 40}
+        value_template: "{value}岁"
+        evidence: '子痫前期风险OR=1.68'
+        source: 'Bellamy L, et al. 2009'
+      - id: severe_obesity
+        name: '重度肥胖'
+        score: 3
+        path: 'anthropometric_data.pre_pregnancy_bmi'
+        type: range
+        range: {min: 30}
+        value_template: "BMI {value} kg/m²"
+        evidence: '剖宫产风险OR=2.1'
+        source: 'Wendland EM, et al. 2012'
+      - id: obesity_maternal
+        name: '肥胖'
+        score: 2
+        path: 'anthropometric_data.pre_pregnancy_bmi'
+        type: range
+        range: {min: 28, max: 30}
+        value_template: "BMI {value} kg/m²"
+        evidence: '产后出血风险增加'
+        source: 'Yogev Y, et al. 2004'
+      - id: chronic_hypertension
+        name: '慢性高血压'
+        score: 2
+        path: 'medical_history.hypertension'
+        type: boolean
+        evidence: '妊娠高血压风险OR=5.1'
+        source: 'ACOG Practice Bulletin 2019'
+      - id: multiple_pregnancy
+        name: '多胎妊娠'
+        score: 2
+        path: 'current_pregnancy.multiple_pregnancy'
+        type: boolean
+        evidence: '并发症风险显著增加'
+        source: 'ACOG Practice Bulletin 2021'
+      - id: previous_preterm
+        name: '既往早产史'
+        score: 1
+        path: 'medical_history.previous_preterm_birth'
+        type: boolean
+        evidence: '早产史提示高危妊娠'
+        source: 'Goldenberg RL, et al. Obstet Gynecol 2008'
+      - id: kidney_disease
+        name: '肾脏疾病'
+        score: 2
+        path: 'medical_history.kidney_disease'
+        type: boolean
+        evidence: '肾脏疾病增加妊娠并发症'
+        source: 'Williams D, et al. Nephrol Dial Transplant 2016'
+      - id: autoimmune_disease
+        name: '自身免疫性疾病'
+        score: 1
+        path: 'medical_history.autoimmune_disease'
+        type: boolean
+        evidence: '自身免疫病增加妊娠风险'
+        source: 'Borella E, et al. Autoimmun Rev 2014'
+      - id: hypertension
+        name: '妊娠期高血压'
+        score: 3
+        type: multi_condition
+        condition: "data.get('clinical_measurements', {}).get('systolic_bp', 0) >= 140 or data.get('clinical_measurements', {}).get('diastolic_bp', 0) >= 90"
+        value_template: "{sbp}/{dbp} mmHg"
+        evidence: '高血压直接增加母体风险'
+        source: 'ACOG Practice Bulletin 2019'
+      - id: elevated_bp
+        name: '血压偏高'
+        score: 1
+        type: multi_condition
+        condition: "(data.get('clinical_measurements', {}).get('systolic_bp', 0) >= 130 and data.get('clinical_measurements', {}).get('systolic_bp', 0) < 140) or (data.get('clinical_measurements', {}).get('diastolic_bp', 0) >= 80 and data.get('clinical_measurements', {}).get('diastolic_bp', 0) < 90)"
+        value_template: "{sbp}/{dbp} mmHg"
+        evidence: '血压升高增加并发症风险'
+        source: 'Whelton PK, et al. Hypertension 2018'
+
+  # 3. 胎儿风险
+  fetal_risks:
+    max_score: 10
+    factors:
+      - id: fetal_macrosomia_risk
+        name: '巨大儿风险'
+        score: 3
+        path: 'anthropometric_data.pre_pregnancy_bmi'
+        type: range
+        range: {min: 30}
+        value_template: "母体BMI {value}"
+        evidence: '巨大儿风险OR=2.36'
+        source: 'HAPO Study 2008'
+      - id: fetal_growth_risk
+        name: '胎儿生长异常风险'
+        score: 2
+        path: 'anthropometric_data.pre_pregnancy_bmi'
+        type: range
+        range: {min: 28, max: 30}
+        value_template: "母体BMI {value}"
+        evidence: '胎儿过度生长风险增加'
+        source: 'Metzger BE, et al. 2008'
+      - id: recurrent_macrosomia
+        name: '复发性巨大儿风险'
+        score: 2
+        path: 'medical_history.previous_macrosomia'
+        type: boolean
+        evidence: '再次发生风险OR=3.2'
+        source: 'Boney CM, et al. 2005'
+      - id: advanced_age_fetal_risk
+        name: '高龄相关胎儿风险'
+        score: 2
+        path: 'demographic_data.age'
+        type: range
+        range: {min: 40}
+        value_template: "{value}岁"
+        evidence: '新生儿重症监护风险增加'
+        source: 'HAPO Study 2008'
+      - id: multiple_fetal_risk
+        name: '多胎胎儿风险'
+        score: 1
+        path: 'current_pregnancy.multiple_pregnancy'
+        type: boolean
+        evidence: '呼吸窘迫风险增加'
+        source: 'Langer O, et al. 2005'
+      - id: large_for_gestational_age
+        name: '胎儿偏大'
+        score: 3
+        path: 'ultrasound_data.fetal_weight_percentile'
+        type: range
+        range: {min: 90}
+        value_template: "第{value}百分位"
+        evidence: '≥90百分位提示巨大儿风险'
+        source: 'HAPO Study 2008'
+      - id: above_average_fetal_weight
+        name: '胎儿体重偏大'
+        score: 1
+        path: 'ultrasound_data.fetal_weight_percentile'
+        type: range
+        range: {min: 75, max: 90}
+        value_template: "第{value}百分位"
+        evidence: '75-89百分位增加并发症风险'
+        source: 'Metzger BE, et al. 2008'
+      - id: polyhydramnios
+        name: '羊水过多'
+        score: 2
+        path: 'ultrasound_data.polyhydramnios'
+        type: boolean
+        evidence: '羊水过多增加胎儿并发症风险'
+        source: 'Dashe JS, et al. Obstet Gynecol 2000'
+      - id: elevated_afi
+        name: '羊水指数增高'
+        score: 2
+        path: 'ultrasound_data.amniotic_fluid_index'
+        type: range
+        range: {min: 24} # > 24
+        value_template: "AFI {value} cm"
+        evidence: 'AFI>24cm诊断羊水过多'
+        source: 'Moore TR, et al. Am J Obstet Gynecol 1990'
+      - id: borderline_afi
+        name: '羊水指数偏高'
+        score: 1
+        path: 'ultrasound_data.amniotic_fluid_index'
+        type: range
+        range: {min: 20, max: 24}
+        value_template: "AFI {value} cm"
+        evidence: 'AFI 20-24cm边界性增高'
+        source: 'Clinical observation'
+      - id: previous_unexplained_death
+        name: '既往不明原因围产儿死亡'
+        score: 2
+        path: 'medical_history.previous_unexplained_perinatal_death'
+        type: boolean
+        evidence: '提示潜在胎儿风险因素'
+        source: 'Silver RM, et al. Obstet Gynecol 2007'
+
+  # 4. 长期风险
+  longterm_risks:
+    max_score: 8
+    factors:
+      - id: future_diabetes_risk
+        name: '未来糖尿病风险'
+        score: 4
+        path: 'medical_history.previous_gdm'
+        type: boolean
+        evidence: '产后糖尿病风险OR=7.43'
+        source: 'Bellamy L, et al. 2009'
+      - id: strong_genetic_risk
+        name: '强遗传背景'
+        score: 2
+        path: 'medical_history.family_diabetes'
+        type: category
+        categories: ['both_parents']
+        value_map: {'both_parents': '父母均有糖尿病'}
+        evidence: '遗传风险显著增加'
+        source: 'InterAct Consortium 2013'
+      - id: genetic_predisposition
+        name: '遗传易感性'
+        score: 1
+        path: 'medical_history.family_diabetes'
+        type: category
+        categories: ['first_degree']
+        value_map: {'first_degree': '一级亲属糖尿病'}
+        evidence: '长期代谢风险增加'
+        source: 'Carr DB, et al. 2006'
+      - id: age_related_longterm_risk
+        name: '年龄相关长期风险'
+        score: 1
+        path: 'demographic_data.age'
+        type: range
+        range: {min: 35}
+        value_template: "{value}岁"
+        evidence: '心血管疾病风险增加'
+        source: 'Carr DB, et al. 2006'
+
+  # 5. CGM 风险
+  cgm_risk:
+    max_score: 12
+    model_version: '2024_diabetes_care'
+    factors:
+      - id: high_glucose_variability
+        name: '血糖变异性过高'
+        score: 4
+        path: 'cgm_data.glucose_variability_cv'
+        type: range
+        range: {min: 36} # > 36
+        value_template: "{value}%"
+        threshold: ">36%"
+        evidence: "aRR=1.99, 95%CI:1.23-3.22"
+        reference: "Diabetes Care 2024"
+      - id: moderate_glucose_variability
+        name: '血糖变异性中等'
+        score: 2
+        path: 'cgm_data.glucose_variability_cv'
+        type: range
+        range: {min: 25, max: 36}
+        value_template: "{value}%"
+        threshold: "25-36%"
+        evidence: "亚洲人群特异性阈值"
+        reference: "Diabetes Care 2024"
+      - id: high_glycemic_excursions
+        name: '血糖波动幅度过大'
+        score: 3
+        path: 'cgm_data.mean_amplitude_glycemic_excursions'
+        type: range
+        range: {min: 2.5} # > 2.5
+        value_template: "{value} mmol/L"
+        threshold: ">2.5 mmol/L"
+        evidence: "aRR=1.64, 95%CI:1.25-2.15"
+        reference: "Diabetes Care 2024"
+      - id: moderate_glycemic_excursions
+        name: '血糖波动幅度中等'
+        score: 1
+        path: 'cgm_data.mean_amplitude_glycemic_excursions'
+        type: range
+        range: {min: 1.5, max: 2.5}
+        value_template: "{value} mmol/L"
+        threshold: "1.5-2.5 mmol/L"
+        evidence: "渐进风险增加"
+        reference: "Diabetes Care 2024"
+      - id: elevated_gmi
+        name: '血糖管理指数升高'
+        score: 3
+        path: 'cgm_data.glucose_management_index'
+        type: range
+        range: {min: 6.8} # > 6.8
+        value_template: "{value}%"
+        threshold: ">6.8%"
+        evidence: "aRR=1.56, 95%CI:1.28-1.91; LGA风险aRR=3.23"
+        reference: "Diabetes Care 2024"
+      - id: borderline_gmi
+        name: '血糖管理指数边界'
+        score: 1
+        path: 'cgm_data.glucose_management_index'
+        type: range
+        range: {min: 6.5, max: 6.8}
+        value_template: "{value}%"
+        threshold: "6.5-6.8%"
+        evidence: "糖尿病诊断阈值"
+        reference: "Diabetes Care 2024"
+      - id: poor_glucose_stability
+        name: '血糖稳定性差'
+        score: 2
+        path: 'cgm_data.continuous_overlapping_net_glycemic_action'
+        type: range
+        range: {min: 1.5} # > 1.5
+        value_template: "{value}"
+        threshold: ">1.5"
+        evidence: "aRR=1.47, 95%CI:1.17-1.85"
+        reference: "Diabetes Care 2024"
+      - id: high_lability_index
+        name: '血糖不稳定指数高'
+        score: 2
+        path: 'cgm_data.lability_index'
+        type: range
+        range: {min: 2.0} # > 2.0
+        value_template: "{value}"
+        threshold: ">2.0"
+        evidence: "剖宫产风险aRR=2.63, 95%CI:1.16-5.97"
+        reference: "Diabetes Care 2024"
+      - id: high_nocturnal_glucose
+        name: '夜间血糖升高'
+        score: 1
+        path: 'cgm_data.nocturnal_average_glucose'
+        type: range
+        range: {min: 6.1}
+        value_template: "{value} mmol/L"
+        threshold: "≥6.1 mmol/L"
+        evidence: "OR=2.38, 95%CI:1.05-5.41"
+        source: "DiGest Trial 2024"
+      - id: high_tar
+        name: '高血糖时间增加'
+        score: 2
+        path: 'cgm_data.time_above_range'
+        type: range
+        range: {min: 10}
+        value_template: "{value}%"
+        threshold: "≥10%"
+        evidence: "OR=2.56, 95%CI:1.17-5.62"
+        source: "Frontiers Endocrinol 2023"
+      - id: high_average_glucose
+        name: '平均血糖升高'
+        score: 2
+        path: 'cgm_data.average_glucose'
+        type: range
+        range: {min: 6.1}
+        value_template: "{value} mmol/L"
+        threshold: "≥6.1 mmol/L"
+        evidence: "OR=2.44, 95%CI:1.22-4.88"
+        source: "Lancet Regional Health 2023"
+      - id: early_cgm_abnormal
+        name: '孕早期CGM异常模式'
+        score: 1
+        path: 'cgm_data.early_trimester_cgm'
+        type: boolean
+        value_template: "一胎期数据可用"
+        threshold: "任何异常模式"
+        evidence: "增强预测价值"
+        source: "Diabetes Care 2024"

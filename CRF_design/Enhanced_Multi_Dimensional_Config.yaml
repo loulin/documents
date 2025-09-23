@@ -1,0 +1,519 @@
+# CRF Research Mining Agent - 多维度增强配置文件 v3.0
+# 扩展参数维度，支持更全面的临床研究数据挖掘
+
+# ==================== 1. 扩展数据源配置 ====================
+data_sources:
+  # 基础数据
+  patient_demographics: './data/demographics.csv'
+  clinical_data: './data/clinical_data.csv'
+  
+  # 心理健康量表
+  phq9: './data/phq9_scores.csv'
+  gad7: './data/gad7_scores.csv' 
+  psqi: './data/sleep_quality.csv'
+  
+  # 生活方式和依从性
+  mmas8: './data/medication_adherence.csv'
+  ipaq: './data/physical_activity.csv'
+  ffq: './data/food_frequency.csv'
+  
+  # 临床检验
+  laboratory: './data/lab_results.csv'
+  lipid_profile: './data/lipids.csv'
+  kidney_function: './data/renal_function.csv'
+  liver_function: './data/hepatic_function.csv'
+  
+  # 并发症和器官功能
+  complications: './data/diabetic_complications.csv'
+  cardiovascular: './data/cvd_assessment.csv'
+  neuropathy: './data/nerve_function.csv'
+  retinopathy: './data/eye_examination.csv'
+  nephropathy: './data/kidney_assessment.csv'
+  
+  # 治疗和管理
+  medications: './data/current_medications.csv'
+  insulin_therapy: './data/insulin_regimens.csv'
+  cgm_data: './data/continuous_glucose.csv'
+  self_monitoring: './data/smbg_records.csv'
+  
+  # 社会经济和环境
+  socioeconomic: './data/ses_factors.csv'
+  healthcare_access: './data/medical_access.csv'
+  family_support: './data/social_support.csv'
+
+# ==================== 2. 扩展列名映射 ====================
+column_mapping:
+  # 基础人口学
+  patient_id: 'patient_id'
+  age: 'age'
+  gender: 'gender'
+  diabetes_type: 'diabetes_type'
+  diabetes_duration: 'duration_years'
+  
+  # 体格检查
+  height: 'height_cm'
+  weight: 'weight_kg'
+  bmi: 'bmi'
+  waist_circumference: 'waist_cm'
+  hip_circumference: 'hip_cm'
+  waist_hip_ratio: 'whr'
+  
+  # 血压和心血管
+  systolic_bp: 'systolic_bp'
+  diastolic_bp: 'diastolic_bp'
+  pulse_pressure: 'pulse_pressure'
+  heart_rate: 'heart_rate'
+  arterial_stiffness: 'pwv'  # 脉搏波速度
+  
+  # 血糖相关
+  hba1c: 'hba1c'
+  fbg: 'fasting_glucose'
+  ppg: 'postprandial_glucose'
+  gir: 'glucose_infusion_rate'  # 葡萄糖输注率
+  c_peptide: 'c_peptide_level'
+  insulin_level: 'fasting_insulin'
+  homa_ir: 'homa_ir_index'  # 胰岛素抵抗指数
+  homa_beta: 'homa_beta_index'  # β细胞功能
+  
+  # 血脂
+  total_cholesterol: 'tc'
+  ldl_cholesterol: 'ldl_c'
+  hdl_cholesterol: 'hdl_c'
+  triglycerides: 'tg'
+  non_hdl_cholesterol: 'non_hdl_c'
+  apolipoprotein_a1: 'apo_a1'
+  apolipoprotein_b: 'apo_b'
+  lipoprotein_a: 'lp_a'
+  
+  # 肾功能
+  creatinine: 'serum_creatinine'
+  urea_nitrogen: 'bun'
+  egfr: 'estimated_gfr'
+  uric_acid: 'ua'
+  albuminuria: 'urine_albumin'
+  acr: 'albumin_creatinine_ratio'
+  
+  # 肝功能
+  alt: 'alanine_aminotransferase'
+  ast: 'aspartate_aminotransferase'
+  ggt: 'gamma_glutamyl_transferase'
+  alp: 'alkaline_phosphatase'
+  total_bilirubin: 'tbil'
+  direct_bilirubin: 'dbil'
+  albumin: 'serum_albumin'
+  
+  # 炎症标记物
+  hs_crp: 'high_sensitivity_crp'
+  il6: 'interleukin_6'
+  tnf_alpha: 'tumor_necrosis_factor_alpha'
+  fibrinogen: 'fibrinogen_level'
+  
+  # 凝血功能
+  pt: 'prothrombin_time'
+  aptt: 'activated_partial_thromboplastin_time'
+  inr: 'international_normalized_ratio'
+  d_dimer: 'd_dimer_level'
+  
+  # 内分泌
+  tsh: 'thyroid_stimulating_hormone'
+  ft3: 'free_triiodothyronine'
+  ft4: 'free_thyroxine'
+  cortisol: 'serum_cortisol'
+  testosterone: 'total_testosterone'
+  estradiol: 'estradiol_level'
+  
+  # 维生素和微量元素
+  vitamin_d: 'vitamin_d3_level'
+  vitamin_b12: 'cobalamin_level'
+  folate: 'folic_acid_level'
+  iron: 'serum_iron'
+  ferritin: 'serum_ferritin'
+  zinc: 'serum_zinc'
+  magnesium: 'serum_magnesium'
+  
+  # 心理健康量表
+  phq9_total: 'phq9_score'
+  gad7_total: 'gad7_score'
+  psqi_total: 'psqi_global_score'
+  mmas8_total: 'adherence_score'
+  
+  # 生活方式
+  smoking_status: 'smoking_history'
+  alcohol_consumption: 'alcohol_intake'
+  exercise_frequency: 'physical_activity_level'
+  sleep_duration: 'average_sleep_hours'
+  stress_level: 'perceived_stress_score'
+
+# ==================== 3. 多维度数据质量检查 ====================
+quality_checks:
+  clinical_ranges:
+    # 基础生理指标
+    age: { min: 0, max: 120, reference: "0-120岁" }
+    height_cm: { min: 100, max: 250, reference: "100-250cm" }
+    weight_kg: { min: 20, max: 200, reference: "20-200kg" }
+    bmi: { min: 10, max: 60, reference: "正常18.5-24.9" }
+    waist_cm: { min: 40, max: 200, reference: "男<90cm,女<85cm" }
+    
+    # 血压心率
+    systolic_bp: { min: 70, max: 250, reference: "正常<120mmHg" }
+    diastolic_bp: { min: 40, max: 150, reference: "正常<80mmHg" }
+    heart_rate: { min: 40, max: 200, reference: "正常60-100次/分" }
+    pulse_pressure: { min: 20, max: 120, reference: "正常30-50mmHg" }
+    
+    # 血糖代谢
+    hba1c: { min: 3.0, max: 18.0, reference: "正常4.0-6.0%" }
+    fasting_glucose: { min: 2.0, max: 35.0, reference: "正常3.9-6.1mmol/L" }
+    postprandial_glucose: { min: 3.0, max: 40.0, reference: "正常<7.8mmol/L" }
+    c_peptide: { min: 0.1, max: 15.0, reference: "正常1.1-4.4ng/mL" }
+    fasting_insulin: { min: 0.5, max: 300, reference: "正常2.6-24.9mIU/L" }
+    homa_ir: { min: 0.1, max: 30, reference: "正常<2.5" }
+    homa_beta: { min: 0, max: 1000, reference: "正常>50%" }
+    
+    # 血脂
+    total_cholesterol: { min: 1.0, max: 15.0, reference: "理想<5.18mmol/L" }
+    ldl_cholesterol: { min: 0.3, max: 12.0, reference: "理想<2.59mmol/L" }
+    hdl_cholesterol: { min: 0.2, max: 4.0, reference: "男>1.04,女>1.30mmol/L" }
+    triglycerides: { min: 0.2, max: 50.0, reference: "正常<1.70mmol/L" }
+    non_hdl_cholesterol: { min: 0.5, max: 13.0, reference: "理想<3.37mmol/L" }
+    
+    # 肾功能
+    serum_creatinine: { min: 20, max: 1500, reference: "男44-133,女70-106μmol/L" }
+    bun: { min: 1.0, max: 50.0, reference: "正常2.9-8.2mmol/L" }
+    estimated_gfr: { min: 5, max: 200, reference: "正常>90mL/min/1.73m²" }
+    uric_acid: { min: 100, max: 1000, reference: "男208-428,女155-357μmol/L" }
+    albumin_creatinine_ratio: { min: 0, max: 5000, reference: "正常<30mg/g" }
+    
+    # 肝功能
+    alanine_aminotransferase: { min: 0, max: 1000, reference: "男9-50,女7-40U/L" }
+    aspartate_aminotransferase: { min: 0, max: 1000, reference: "男15-40,女13-35U/L" }
+    gamma_glutamyl_transferase: { min: 0, max: 500, reference: "男10-60,女7-45U/L" }
+    total_bilirubin: { min: 0, max: 500, reference: "正常3.4-20.5μmol/L" }
+    serum_albumin: { min: 15, max: 60, reference: "正常40-55g/L" }
+    
+    # 炎症标记物
+    high_sensitivity_crp: { min: 0.1, max: 200, reference: "低风险<1.0mg/L" }
+    fibrinogen: { min: 1.0, max: 10.0, reference: "正常2.0-4.0g/L" }
+    
+    # 内分泌
+    thyroid_stimulating_hormone: { min: 0.01, max: 100, reference: "正常0.27-4.2mIU/L" }
+    free_thyroxine: { min: 5, max: 50, reference: "正常12-22pmol/L" }
+    vitamin_d3_level: { min: 5, max: 375, reference: "充足>75nmol/L" }
+    
+    # 心理健康量表
+    phq9_score: { min: 0, max: 27, reference: "0-4正常,≥10抑郁" }
+    gad7_score: { min: 0, max: 21, reference: "0-4正常,≥10焦虑" }
+    psqi_global_score: { min: 0, max: 21, reference: "≤7睡眠质量良好" }
+    adherence_score: { min: 0, max: 8, reference: "<6低依从性" }
+
+  # 扩展逻辑一致性检查
+  logical_consistency:
+    - rule: "systolic_bp > diastolic_bp"
+      description: "收缩压必须大于舒张压"
+    - rule: "weight_kg > 0 and height_cm > 0"
+      description: "身高体重必须为正值"
+    - rule: "ldl_cholesterol + hdl_cholesterol <= total_cholesterol"
+      description: "LDL+HDL应小于等于总胆固醇"
+    - rule: "diabetes_duration >= 0"
+      description: "糖尿病病程不能为负"
+    - rule: "age >= diabetes_duration"
+      description: "年龄应大于等于糖尿病病程"
+    - rule: "estimated_gfr <= 200"
+      description: "肾小球滤过率不应超过200"
+    - rule: "bmi == weight_kg / (height_cm/100)^2"
+      description: "BMI计算一致性检查"
+      tolerance: 0.1  # 允许0.1的计算误差
+
+# ==================== 4. 多维度研究机会发现 ====================
+analyses:
+  # ========== 代谢综合征相关分析 ==========
+  - id: "metabolic_syndrome_prevalence"
+    enabled: true
+    type: "prevalence"
+    title: "糖尿病患者代谢综合征患病率研究"
+    datasets: ['patient_demographics', 'clinical_data', 'lipid_profile']
+    variables:
+      age_group: 
+        type: "cut"
+        source_column: "age"
+        params:
+          bins: [0, 45, 65, 100]
+          labels: ['<45', '45-65', '≥65']
+      metabolic_syndrome:
+        type: "expression" 
+        expression: "(waist_cm > 90 & gender=='male') | (waist_cm > 80 & gender=='female') & (triglycerides >= 1.7) & (hdl_cholesterol < 1.04 & gender=='male') | (hdl_cholesterol < 1.3 & gender=='female') & (systolic_bp >= 130 | diastolic_bp >= 85)"
+    trigger:
+      metric: "prevalence_rate"
+      operator: "gt"
+      value: 0.60  # 患病率>60%时触发
+    insight_template:
+      value_level: "HIGH"
+      publication_type: "CROSS_SECTIONAL"
+      expected_impact_factor: "3-5分期刊"
+      
+  # ========== 心血管风险分层分析 ==========  
+  - id: "cardiovascular_risk_stratification"
+    enabled: true
+    type: "risk_stratification"
+    title: "糖尿病患者心血管风险多因素分析"
+    datasets: ['clinical_data', 'lipid_profile', 'cardiovascular']
+    variables:
+      cv_high_risk:
+        type: "expression"
+        expression: "(ldl_cholesterol >= 2.6) | (systolic_bp >= 140) | (smoking_status == 1) | (diabetes_duration >= 10)"
+    analysis:
+      type: "logistic_regression"
+      dependent: "cv_high_risk"
+      independent: ['age', 'hba1c', 'ldl_cholesterol', 'systolic_bp', 'smoking_status']
+    trigger:
+      metric: "model_auc"
+      operator: "gte"
+      value: 0.70  # AUC≥0.70有预测价值
+    insight_template:
+      value_level: "VERY_HIGH"
+      publication_type: "ORIGINAL_RESEARCH"
+      expected_impact_factor: "5-8分期刊"
+      
+  # ========== 微血管并发症进展分析 ==========
+  - id: "microvascular_complications_progression"
+    enabled: true
+    type: "progression_analysis"
+    title: "糖尿病微血管并发症进展风险因素"
+    datasets: ['clinical_data', 'complications', 'kidney_function']
+    variables:
+      microvascular_complications:
+        type: "expression"
+        expression: "(estimated_gfr < 60) | (albumin_creatinine_ratio >= 30) | (retinopathy_grade >= 2) | (neuropathy_score >= 3)"
+      duration_group:
+        type: "cut"
+        source_column: "diabetes_duration"
+        params:
+          bins: [0, 5, 10, 20, 50]
+          labels: ['<5年', '5-10年', '10-20年', '≥20年']
+    analysis:
+      type: "survival_analysis"
+      time_to_event: "complications_onset_years"
+      event: "microvascular_complications"
+    trigger:
+      metric: "hazard_ratio"
+      operator: "gt"
+      value: 1.5  # HR>1.5有临床意义
+    insight_template:
+      value_level: "VERY_HIGH"
+      publication_type: "LONGITUDINAL"
+      expected_impact_factor: "6-10分期刊"
+      
+  # ========== 心理-代谢相互作用分析 ==========
+  - id: "psycho_metabolic_interaction"
+    enabled: true
+    type: "interaction_analysis"
+    title: "糖尿病患者心理健康与代谢控制的双向关系"
+    datasets: ['phq9', 'gad7', 'clinical_data', 'mmas8']
+    variables:
+      psychological_distress:
+        type: "expression"
+        expression: "(phq9_score >= 10) | (gad7_score >= 10)"
+      poor_glycemic_control:
+        type: "expression"
+        expression: "hba1c >= 8.0"
+      medication_adherence:
+        type: "cut"
+        source_column: "adherence_score"
+        params:
+          bins: [0, 6, 8, 10]
+          labels: ['低依从性', '中等依从性', '高依从性']
+    analysis:
+      type: "mediation_analysis"  # 中介分析
+      mediator: "medication_adherence"
+      independent: "psychological_distress"
+      dependent: "poor_glycemic_control"
+    trigger:
+      metric: "mediation_effect"
+      operator: "gt"
+      value: 0.20  # 中介效应>20%
+    insight_template:
+      value_level: "VERY_HIGH"
+      publication_type: "ORIGINAL_RESEARCH"
+      expected_impact_factor: "8-12分期刊"
+      
+  # ========== 生活方式聚类分析 ==========
+  - id: "lifestyle_clustering_patterns"
+    enabled: true
+    type: "cluster_analysis" 
+    title: "糖尿病患者生活方式模式聚类及代谢结局"
+    datasets: ['ipaq', 'ffq', 'clinical_data', 'socioeconomic']
+    variables:
+      lifestyle_score:
+        type: "composite_score"
+        components:
+          - physical_activity_level: 0.3
+          - diet_quality_score: 0.3  
+          - smoking_status: -0.2  # 负向计分
+          - alcohol_moderate: 0.1
+          - sleep_quality_score: 0.1
+    analysis:
+      type: "k_means_clustering"
+      n_clusters: 4
+      features: ['lifestyle_score', 'education_level', 'income_level', 'social_support_score']
+    trigger:
+      metric: "silhouette_score"
+      operator: "gt"
+      value: 0.40  # 聚类质量>0.40
+    insight_template:
+      value_level: "HIGH"
+      publication_type: "CROSS_SECTIONAL"
+      expected_impact_factor: "4-6分期刊"
+      
+  # ========== 治疗反应异质性分析 ==========
+  - id: "treatment_response_heterogeneity"
+    enabled: true
+    type: "heterogeneity_analysis"
+    title: "糖尿病治疗反应异质性的精准医学分析"
+    datasets: ['medications', 'insulin_therapy', 'clinical_data', 'laboratory']
+    variables:
+      treatment_response:
+        type: "expression"
+        expression: "(hba1c_baseline - hba1c_followup) / hba1c_baseline"  # HbA1c改善率
+      treatment_intensity:
+        type: "composite_score"
+        components:
+          - insulin_units_per_kg: 0.4
+          - oral_medication_count: 0.3
+          - injection_frequency: 0.3
+    analysis:
+      type: "random_forest_analysis"
+      target: "treatment_response"
+      predictors: ['age', 'bmi', 'c_peptide', 'homa_ir', 'diabetes_duration', 'treatment_intensity']
+    trigger:
+      metric: "feature_importance"
+      operator: "gt"
+      value: 0.15  # 重要特征贡献>15%
+    insight_template:
+      value_level: "VERY_HIGH"
+      publication_type: "ORIGINAL_RESEARCH"
+      expected_impact_factor: "10-15分期刊"
+      
+  # ========== 炎症-代谢网络分析 ==========
+  - id: "inflammation_metabolism_network"
+    enabled: true
+    type: "network_analysis"
+    title: "糖尿病患者炎症-代谢分子网络分析"
+    datasets: ['laboratory', 'clinical_data', 'lipid_profile']
+    variables:
+      inflammatory_burden:
+        type: "composite_z_score"  # 标准化综合评分
+        components: ['high_sensitivity_crp', 'il6', 'tnf_alpha', 'fibrinogen']
+      metabolic_dysfunction:
+        type: "composite_z_score"
+        components: ['homa_ir', 'triglycerides', 'hdl_cholesterol', 'waist_circumference']
+    analysis:
+      type: "correlation_network"
+      correlation_threshold: 0.30
+      network_metrics: ['centrality', 'clustering_coefficient', 'path_length']
+    trigger:
+      metric: "network_density"
+      operator: "gt" 
+      value: 0.25  # 网络密度>0.25表示强关联
+    insight_template:
+      value_level: "VERY_HIGH"
+      publication_type: "ORIGINAL_RESEARCH"
+      expected_impact_factor: "8-15分期刊"
+      
+  # ========== 社会决定因素分析 ==========
+  - id: "social_determinants_health_outcomes"
+    enabled: true
+    type: "social_epidemiology"
+    title: "社会决定因素对糖尿病管理结局的影响"
+    datasets: ['socioeconomic', 'healthcare_access', 'family_support', 'clinical_data']
+    variables:
+      social_vulnerability_index:
+        type: "composite_score"
+        components:
+          - income_level: 0.25
+          - education_level: 0.25
+          - healthcare_access_score: 0.25
+          - social_support_score: 0.25
+      health_outcome_composite:
+        type: "composite_score"
+        components:
+          - hba1c_control: 0.4  # HbA1c<7%
+          - blood_pressure_control: 0.3  # <130/80
+          - lipid_control: 0.3  # LDL<2.6
+    analysis:
+      type: "multilevel_regression"
+      levels: ['individual', 'household', 'community']
+      random_effects: ['community_id']
+    trigger:
+      metric: "variance_explained_community"
+      operator: "gt"
+      value: 0.10  # 社区层面解释方差>10%
+    insight_template:
+      value_level: "VERY_HIGH"
+      publication_type: "ORIGINAL_RESEARCH"
+      expected_impact_factor: "6-12分期刊"
+
+# ==================== 5. 发表策略配置 ====================
+publication_strategy:
+  impact_factor_mapping:
+    VERY_HIGH:
+      target_journals: ["Diabetes Care", "Diabetologia", "Nature Medicine", "Lancet Diabetes"]
+      impact_range: "8-25分"
+      submission_priority: 1
+    HIGH:
+      target_journals: ["Diabetes Research", "Journal of Diabetes", "Cardiovascular Diabetology"]
+      impact_range: "4-8分"
+      submission_priority: 2
+    MODERATE:
+      target_journals: ["Diabetes Technology", "Primary Care Diabetes", "Diabetes Therapy"]
+      impact_range: "2-4分"
+      submission_priority: 3
+      
+  research_type_strategy:
+    ORIGINAL_RESEARCH: 
+      recommended_sample_size: 500
+      statistical_power: 0.80
+      alpha_level: 0.05
+    LONGITUDINAL:
+      recommended_follow_up: "≥2年"
+      minimum_time_points: 3
+      loss_to_followup_threshold: 0.20
+    CROSS_SECTIONAL:
+      minimum_sample_size: 300
+      response_rate_threshold: 0.70
+
+# ==================== 6. 质量控制阈值 ====================
+quality_thresholds:
+  data_completeness:
+    excellent: 0.95  # 完整度>95%
+    good: 0.85      # 完整度85-95%
+    acceptable: 0.70  # 完整度70-85%
+    poor: 0.70      # 完整度<70%
+    
+  statistical_power:
+    minimum_power: 0.80
+    preferred_power: 0.90
+    
+  effect_size_thresholds:
+    small: 0.10     # 小效应量
+    medium: 0.20    # 中效应量  
+    large: 0.35     # 大效应量
+    
+  clinical_significance:
+    hba1c_reduction: 0.5  # HbA1c下降≥0.5%有临床意义
+    ldl_reduction: 0.4    # LDL-C下降≥0.4mmol/L
+    weight_loss: 0.05     # 体重下降≥5%
+    blood_pressure_reduction: 5  # 血压下降≥5mmHg
+
+# ==================== 7. 多中心扩展配置 ====================
+multicenter_settings:
+  center_heterogeneity_check: true
+  minimum_centers: 3
+  center_sample_size_balance: 0.20  # 各中心样本量差异<20%
+  
+  between_center_variation_threshold: 
+    clinical_measures: 0.15  # 临床指标中心间变异<15%
+    questionnaire_scores: 0.20  # 量表评分变异<20%
+    
+  harmonization_requirements:
+    laboratory_standardization: true
+    questionnaire_language_validation: true
+    staff_training_certification: true

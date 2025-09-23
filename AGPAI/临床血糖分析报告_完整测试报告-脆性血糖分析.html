@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>连续血糖监测分析报告</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+            padding: 20px;
+        }
+
+        .report-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c5aa0 0%, #4a7bc8 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .header .subtitle {
+            font-size: 1.1em;
+            opacity: 0.95;
+            margin-bottom: 20px;
+        }
+
+        .patient-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 1.5em;
+            color: #2c5aa0;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title::before {
+            content: "●";
+            color: #4a7bc8;
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        .key-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .metric-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            position: relative;
+        }
+
+        .metric-card.excellent {
+            background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+            border-color: #28a745;
+        }
+
+        .metric-card.good {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+            border-color: #ffc107;
+        }
+
+        .metric-card.needs-improvement {
+            background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+            border-color: #dc3545;
+        }
+
+        .metric-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c5aa0;
+        }
+
+        .metric-label {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .metric-status {
+            font-size: 0.8em;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-weight: bold;
+            margin-top: 5px;
+            display: inline-block;
+        }
+
+        .status-excellent { background: #28a745; color: white; }
+        .status-good { background: #ffc107; color: #212529; }
+        .status-needs-improvement { background: #dc3545; color: white; }
+
+        .time-periods {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+
+        .period-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .period-card {
+            background: white;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .period-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 10px;
+        }
+
+        .period-duration {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .period-metrics {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            font-size: 0.85em;
+        }
+
+        .medication-timeline {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #dee2e6;
+            position: relative;
+        }
+
+        .timeline-item:last-child {
+            border-bottom: none;
+        }
+
+        .timeline-date {
+            background: #2c5aa0;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+            min-width: 100px;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        .timeline-content {
+            flex: 1;
+        }
+
+        .timeline-medication {
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 5px;
+        }
+
+        .timeline-details {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .recommendations {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border: 1px solid #2196f3;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+
+        .recommendation-category {
+            margin-bottom: 20px;
+        }
+
+        .recommendation-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #1976d2;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .recommendation-title::before {
+            content: "→";
+            margin-right: 8px;
+            font-size: 1.2em;
+        }
+
+        .recommendation-list {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .recommendation-list li {
+            padding: 5px 0;
+            position: relative;
+        }
+
+        .recommendation-list li::before {
+            content: "•";
+            color: #2196f3;
+            position: absolute;
+            left: -15px;
+            font-weight: bold;
+        }
+
+        .analysis-summary {
+            background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+            border: 1px solid #ff9800;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+
+        .footer {
+            background: #2c5aa0;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .footer-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 10px;
+            color: #bbdefb;
+        }
+
+        .footer-section p {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .chart-placeholder {
+            background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+            border: 2px dashed #ccc;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            margin: 20px 0;
+            color: #666;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .report-container { box-shadow: none; }
+            .chart-placeholder { display: none; }
+        }
+
+        @media (max-width: 768px) {
+            .patient-info { grid-template-columns: 1fr; }
+            .content { padding: 20px; }
+            .metric-value { font-size: 2em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="report-container">
+        <!-- 报告头部 -->
+        <div class="header">
+            <h1>🩺 连续血糖监测分析报告</h1>
+            <div class="subtitle">基于人工智能的血糖管理评估</div>
+            
+            <div class="patient-info">
+                <div>
+                    <div class="info-item">
+                        <span>患者姓名：</span>
+                        <span>完整测试报告-脆性血糖分析</span>
+                    </div>
+                    <div class="info-item">
+                        <span>监测期间：</span>
+                        <span>2025年7月28日 - 8月9日</span>
+                    </div>
+                    <div class="info-item">
+                        <span>监测天数：</span>
+                        <span>13天</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="info-item">
+                        <span>数据点数：</span>
+                        <span>1,248个</span>
+                    </div>
+                    <div class="info-item">
+                        <span>报告生成：</span>
+                        <span>2025年9月3日</span>
+                    </div>
+                    <div class="info-item">
+                        <span>分析版本：</span>
+                        <span>Agent5 v1.2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- 核心指标总览 -->
+            <div class="section">
+                <div class="section-title">核心血糖控制指标</div>
+                
+                <div class="key-metrics">
+                    <div class="metric-card needs-improvement">
+                        <div class="metric-value">7.65%</div>
+                        <div class="metric-label">血糖管理指标 (GMI)</div>
+                        <div class="metric-status status-needs-improvement">需要改善</div>
+                        <p style="font-size: 0.8em; margin-top: 10px; color: #666;">目标: < 7.0%</p>
+                    </div>
+                    
+                    <div class="metric-card needs-improvement">
+                        <div class="metric-value">53.4%</div>
+                        <div class="metric-label">目标范围内时间 (TIR)</div>
+                        <div class="metric-status status-needs-improvement">需要改善</div>
+                        <p style="font-size: 0.8em; margin-top: 10px; color: #666;">目标: ≥ 70%</p>
+                    </div>
+                    
+                    <div class="metric-card good">
+                        <div class="metric-value">27.2%</div>
+                        <div class="metric-label">血糖变异系数 (CV)</div>
+                        <div class="metric-status status-good">良好</div>
+                        <p style="font-size: 0.8em; margin-top: 10px; color: #666;">目标: < 36%</p>
+                    </div>
+                    
+                    <div class="metric-card excellent">
+                        <div class="metric-value">0.2%</div>
+                        <div class="metric-label">低血糖时间 (TBR)</div>
+                        <div class="metric-status status-excellent">优秀</div>
+                        <p style="font-size: 0.8em; margin-top: 10px; color: #666;">目标: < 4%</p>
+                    </div>
+                </div>
+
+                <div class="analysis-summary">
+                    <h4 style="color: #f57c00; margin-bottom: 15px;">📊 总体血糖控制评估</h4>
+                    <p><strong>当前状态：</strong>血糖控制需要进一步优化。GMI为7.65%，略高于理想目标(7.0%)；目标范围内时间为53.4%，低于推荐标准(70%)。</p>
+                    <p style="margin-top: 10px;"><strong>积极方面：</strong>低血糖风险控制良好(0.2%)，血糖变异性在正常范围内(27.2%)，显示治疗方案相对安全。</p>
+                    <p style="margin-top: 10px;"><strong>需要关注：</strong>检测到中等程度的血糖脆性特征，需要个性化的治疗调整。</p>
+                </div>
+            </div>
+
+            <!-- 血糖监测图表占位符 -->
+            <div class="section">
+                <div class="section-title">血糖波动趋势图</div>
+                <div class="chart-placeholder">
+                    <h3>📈 13天连续血糖监测曲线</h3>
+                    <p>显示血糖值随时间的变化趋势</p>
+                    <p style="margin-top: 10px; font-size: 0.9em;">
+                        • 绿色区域：目标范围 (3.9-10.0 mmol/L)<br>
+                        • 黄色区域：轻度高血糖 (10.0-13.9 mmol/L)<br>
+                        • 红色区域：重度高血糖 (>13.9 mmol/L)<br>
+                        • 蓝色区域：低血糖 (<3.9 mmol/L)
+                    </p>
+                </div>
+            </div>
+
+            <!-- 治疗阶段分析 -->
+            <div class="section">
+                <div class="section-title">智能分段分析：4个关键治疗阶段</div>
+                
+                <div class="time-periods">
+                    <p style="margin-bottom: 20px; color: #666; font-size: 0.95em;">
+                        <strong>分析说明：</strong>基于AI智能算法，将您的监测期间分为4个具有不同血糖控制特征的阶段，帮助识别治疗效果和调整时机。
+                    </p>
+                    
+                    <div class="period-grid">
+                        <div class="period-card">
+                            <div class="period-title">🔵 第一阶段</div>
+                            <div class="period-duration">第1天 - 第4天 (4.3天)</div>
+                            <div class="period-metrics">
+                                <div>平均血糖</div><div>待计算</div>
+                                <div>TIR</div><div>待计算</div>
+                                <div>特征</div><div>基线期</div>
+                                <div>用药</div><div>二甲双胍</div>
+                            </div>
+                        </div>
+                        
+                        <div class="period-card">
+                            <div class="period-title">🟡 第二阶段</div>
+                            <div class="period-duration">第6天 - 第9天 (3.2天)</div>
+                            <div class="period-metrics">
+                                <div>平均血糖</div><div>待计算</div>
+                                <div>TIR</div><div>待计算</div>
+                                <div>特征</div><div>调整期</div>
+                                <div>用药</div><div>+达格列净</div>
+                            </div>
+                        </div>
+                        
+                        <div class="period-card">
+                            <div class="period-title">🟠 第三阶段</div>
+                            <div class="period-duration">第9天 - 第11天 (2.0天)</div>
+                            <div class="period-metrics">
+                                <div>平均血糖</div><div>待计算</div>
+                                <div>TIR</div><div>待计算</div>
+                                <div>特征</div><div>优化期</div>
+                                <div>用药</div><div>+西格列汀</div>
+                            </div>
+                        </div>
+                        
+                        <div class="period-card">
+                            <div class="period-title">🟢 第四阶段</div>
+                            <div class="period-duration">第11天 - 第13天 (2.2天)</div>
+                            <div class="period-metrics">
+                                <div>平均血糖</div><div>待计算</div>
+                                <div>TIR</div><div>待计算</div>
+                                <div>特征</div><div>稳定期</div>
+                                <div>用药</div><div>三联治疗</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 用药时间轴 -->
+            <div class="section">
+                <div class="section-title">用药调整时间轴</div>
+                
+                <div class="medication-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">7月20日</div>
+                        <div class="timeline-content">
+                            <div class="timeline-medication">💊 开始：二甲双胍片</div>
+                            <div class="timeline-details">0.5g，每日3次，三餐前30分钟 | 基础降糖，改善胰岛素抵抗</div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">8月2日</div>
+                        <div class="timeline-content">
+                            <div class="timeline-medication">💊 加入：达格列净片</div>
+                            <div class="timeline-details">10mg，每日1次，早餐前 | SGLT-2抑制，促进葡萄糖排泄</div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">8月6日</div>
+                        <div class="timeline-content">
+                            <div class="timeline-medication">💊 加入：西格列汀片</div>
+                            <div class="timeline-details">100mg，每日1次，早餐后 | DPP-4抑制，改善餐后血糖</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 医疗建议 -->
+            <div class="section">
+                <div class="section-title">个性化治疗建议</div>
+                
+                <div class="recommendations">
+                    <div class="recommendation-category">
+                        <div class="recommendation-title">🏥 短期建议 (1-2周)</div>
+                        <ul class="recommendation-list">
+                            <li>继续当前三联用药方案，观察血糖改善趋势</li>
+                            <li>加强餐后2小时血糖监测，评估西格列汀效果</li>
+                            <li>注意监测体重变化，达格列净可能影响体重</li>
+                            <li>保持规律的用药时间和饮食习惯</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="recommendation-category">
+                        <div class="recommendation-title">📅 中期建议 (1-3个月)</div>
+                        <ul class="recommendation-list">
+                            <li>根据血糖改善情况，考虑调整二甲双胍剂量</li>
+                            <li>评估是否需要增加胰岛素治疗</li>
+                            <li>制定个性化的生活方式干预计划</li>
+                            <li>建议每月进行一次CGM监测分析</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="recommendation-category">
+                        <div class="recommendation-title">🎯 长期目标 (3-6个月)</div>
+                        <ul class="recommendation-list">
+                            <li>目标GMI降至7.0%以下</li>
+                            <li>目标TIR提升至70%以上</li>
+                            <li>建立长期血糖管理档案</li>
+                            <li>预防糖尿病并发症</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 患者须知 -->
+            <div class="section">
+                <div class="section-title">患者重要须知</div>
+                
+                <div style="background: #f8f9fa; border-left: 4px solid #28a745; padding: 20px; border-radius: 5px; margin-bottom: 20px;">
+                    <h4 style="color: #28a745; margin-bottom: 10px;">✅ 做得好的方面</h4>
+                    <ul style="margin-left: 20px;">
+                        <li>低血糖风险控制得很好，仅有0.2%的时间处于低血糖</li>
+                        <li>血糖变异性在正常范围内，说明血糖波动不算剧烈</li>
+                        <li>用药依从性良好，按医嘱规律服药</li>
+                    </ul>
+                </div>
+                
+                <div style="background: #f8f9fa; border-left: 4px solid #ffc107; padding: 20px; border-radius: 5px; margin-bottom: 20px;">
+                    <h4 style="color: #f57c00; margin-bottom: 10px;">⚠️ 需要注意的方面</h4>
+                    <ul style="margin-left: 20px;">
+                        <li>目标范围内时间偏低，需要进一步优化血糖控制</li>
+                        <li>检测到血糖脆性特征，血糖容易受外界因素影响</li>
+                        <li>建议加强血糖自我监测，及时发现异常</li>
+                    </ul>
+                </div>
+                
+                <div style="background: #f8f9fa; border-left: 4px solid #17a2b8; padding: 20px; border-radius: 5px;">
+                    <h4 style="color: #17a2b8; margin-bottom: 10px;">💡 生活建议</h4>
+                    <ul style="margin-left: 20px;">
+                        <li>保持规律的饮食和运动习惯</li>
+                        <li>避免情绪波动和压力过大</li>
+                        <li>定期监测血压和体重</li>
+                        <li>如有不适症状及时就医</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 报告底部 -->
+        <div class="footer">
+            <div class="footer-info">
+                <div class="footer-section">
+                    <h4>📋 报告信息</h4>
+                    <p>分析系统：Agent5 v1.2</p>
+                    <p>数据质量：A级(优秀)</p>
+                    <p>置信度：高</p>
+                    <p>报告类型：综合分析</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>🩺 医疗提示</h4>
+                    <p>本报告仅供医疗参考</p>
+                    <p>具体治疗请遵医嘱</p>
+                    <p>如有紧急情况请及时就医</p>
+                    <p>建议定期复查</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>📞 联系方式</h4>
+                    <p>主治医师：请填写</p>
+                    <p>科室电话：请填写</p>
+                    <p>紧急联系：请填写</p>
+                    <p>复查时间：请填写</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.3); font-size: 0.9em;">
+                <p>🔬 基于人工智能的血糖分析报告 | 生成时间：2025年9月3日</p>
+                <p style="margin-top: 5px; opacity: 0.8;">请将此报告在下次就诊时携带，以便医生了解您的血糖控制情况</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
