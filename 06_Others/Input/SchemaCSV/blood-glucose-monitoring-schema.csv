@@ -1,0 +1,49 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+measurementDate,测量日期,String,进行血糖测量的日期,2025-08-15
+measurementTime,测量时间,String,具体测量时间,07:30
+glucoseValue,血糖值,Number,"血糖浓度。<br>单位: mmol/L",6.2
+glucoseUnit,血糖单位,String,"血糖值单位。<br>**建议值**: `mmol/L`, `mg/dL`",mmol/L
+measurementType,测量类型,String,"血糖测量的时间类型。<br>**建议值**: `空腹`, `餐前`, `餐后1小时`, `餐后2小时`, `睡前`, `凌晨3点`, `随机`",空腹
+mealRelation,与进餐关系,String,"测量与进餐的时间关系。<br>**建议值**: `餐前`, `餐后`, `空腹`, `随机`",空腹
+timeSinceLastMeal,距上次进餐时间,Number,"距离上次进餐的小时数。<br>单位: 小时",12
+mealContent,进餐内容,String,最近一餐的主要内容描述,晚餐：米饭+红烧肉+青菜
+measurementMethod,测量方法,String,"血糖测量方法。<br>**建议值**: `血糖仪`, `连续血糖监测(CGM)`, `实验室检测`, `动脉血气`",血糖仪
+deviceBrand,设备品牌,String,使用的血糖仪品牌或型号,三诺安稳血糖仪
+testStripLot,试纸批号,String,血糖试纸的批号,20250801
+calibrationCode,校准码,String,血糖仪校准码（如果适用）,25
+sampleType,样本类型,String,"血样类型。<br>**建议值**: `末梢血`, `静脉血`, `动脉血`",末梢血
+fingerstickSite,采血部位,String,"末梢采血的具体部位。<br>**建议值**: `左手食指`, `左手中指`, `右手食指`, `右手中指`, `其他`",左手食指
+sampleVolume,样本量,Number,"血样体积。<br>单位: μL",1.0
+temperatureCorrection,温度校正,String,"是否进行了温度校正。<br>**建议值**: `是`, `否`, `不适用`",否
+ambientTemperature,环境温度,Number,"测量时的环境温度。<br>单位: ℃",25
+hematocritValue,红细胞比容,Number,"红细胞比容值（如果检测）。<br>单位: %",42
+interferenceFactors,干扰因素,String,"可能影响测量的因素。<br>**建议值**: `无`, `维生素C`, `药物`, `脱水`, `低血压`",无
+qualityControlCheck,质控检查,String,"是否进行了质控检查。<br>**建议值**: `是`, `否`, `不适用`",否
+glucoseRange,血糖范围,String,"血糖值的临床范围分类。<br>**建议值**: `正常`, `轻度升高`, `中度升高`, `明显升高`, `低血糖`",正常
+hypoglycemiaSymptoms,低血糖症状,String,"是否有低血糖症状。<br>**建议值**: `无`, `轻微`, `中度`, `严重`",无
+hyperglycemiaSymptoms,高血糖症状,String,"是否有高血糖症状。<br>**建议值**: `无`, `轻微`, `中度`, `严重`",无
+symptoms.detailed,具体症状,String,患者描述的具体症状,无特殊不适
+exerciseHistory,运动情况,String,测量前的运动情况,昨晚散步30分钟
+stressLevel,压力状况,String,"患者的压力或应激状况。<br>**建议值**: `正常`, `轻度压力`, `中度压力`, `重度压力`",正常
+illnessStatus,疾病状态,String,"是否处于疾病状态。<br>**建议值**: `健康`, `感冒`, `发热`, `其他疾病`",健康
+medicationTaken,服药情况,String,测量前是否服用了影响血糖的药物,已服用二甲双胍
+insulinAdministered,胰岛素注射,String,"是否注射了胰岛素。<br>**建议值**: `否`, `是-速效`, `是-短效`, `是-中效`, `是-长效`",否
+alcoholConsumption,饮酒情况,String,测量前是否饮酒,无
+sleepQuality,睡眠质量,String,"前一晚的睡眠质量。<br>**建议值**: `良好`, `一般`, `较差`, `失眠`",良好
+menstrualCycle,月经周期,String,女性患者的月经周期状态（如果适用）,不适用
+pregnancyStatus,妊娠状态,String,"是否怀孕（女性患者）。<br>**建议值**: `否`, `是`, `不确定`, `不适用`",不适用
+previousGlucoseValue,上次血糖值,Number,上次测量的血糖值,5.8
+timeSincePreviousMeasurement,距上次测量时间,Number,"距离上次测量的小时数。<br>单位: 小时",24
+trendDirection,变化趋势,String,"与上次测量相比的变化趋势。<br>**建议值**: `稳定`, `上升`, `下降`, `波动`",稳定
+alertThreshold,预警阈值,String,"是否触发预警阈值。<br>**建议值**: `正常范围`, `接近上限`, `接近下限`, `超出上限`, `超出下限`",正常范围
+actionTaken,采取措施,String,基于测量结果采取的措施,继续监测
+measurementReliability,测量可靠性,String,"测量结果的可靠性评估。<br>**建议值**: `可靠`, `一般`, `需重测`",可靠
+dataSource,数据来源,String,"数据的来源。<br>**建议值**: `患者自测`, `医护测量`, `CGM设备`, `实验室`",患者自测
+uploaderInfo,上传者信息,String,数据上传者的身份信息,患者本人
+dataTransmissionTime,数据传输时间,String,数据上传或传输的时间,2025-08-15 07:35
+locationInfo,测量地点,String,"测量时的地点信息。<br>**建议值**: `家中`, `医院`, `诊所`, `工作场所`, `其他`",家中
+deviceBatteryLevel,设备电量,String,"血糖仪电量状态。<br>**建议值**: `充足`, `中等`, `较低`, `需更换`",充足
+stripExpiryDate,试纸有效期,String,血糖试纸的有效期,2026-06-30
+storageConditions,存储条件,String,试纸和设备的存储条件,常温干燥保存
+diagnosisImpression,诊断/印象,String,医护人员对血糖监测结果的评估。,血糖控制良好
+recommendation,建议,String,基于血糖监测结果的医疗建议。,继续目前治疗方案

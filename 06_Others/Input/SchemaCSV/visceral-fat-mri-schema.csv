@@ -1,0 +1,15 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行MRI扫描的日期,2025-08-15
+scanLevel,扫描层面,String,"进行脂肪测量的主要扫描层面。<br>**建议值**: `L4-L5椎间盘水平`, `多层扫描`",L4-L5椎间盘水平
+visceralAdiposeTissueArea,内脏脂肪面积(cm²),Number,内脏脂肪组织（VAT）的横截面积。,120
+subcutaneousAdiposeTissueArea,皮下脂肪面积(cm²),Number,皮下脂肪组织（SAT）的横截面积。,180
+vatSatRatio,VAT/SAT比值,Number,内脏脂肪面积与皮下脂肪面积的比值。,0.67
+totalAdiposeTissueArea,总脂肪面积(cm²),Number,总脂肪组织（VAT + SAT）的横截面积。,300
+fatMRISignal,脂肪MRI信号,String,"脂肪组织的MRI信号强度信息，用于区分不同类型的脂肪。<br>**建议值**: `高信号`, `低信号`, `等信号`",高信号
+skeletalMuscleArea,骨骼肌面积(cm²),Number,骨骼肌的横截面积，用于评估肌肉量和肌少症。,150
+multiSliceVatSatAreas.sliceLevel,多层面脂肪面积列表.扫描层面,String,记录多层或全身扫描的详细结果，例如不同层面的VAT/SAT面积。扫描的椎体层面（如：L1, L4, T12）,L4
+multiSliceVatSatAreas.vatArea,多层面脂肪面积列表.内脏脂肪面积(cm²),Number,记录多层或全身扫描的详细结果，例如不同层面的VAT/SAT面积。该层面内脏脂肪面积,110
+multiSliceVatSatAreas.satArea,多层面脂肪面积列表.皮下脂肪面积(cm²),Number,记录多层或全身扫描的详细结果，例如不同层面的VAT/SAT面积。该层面皮下脂肪面积,170
+riskAssessment,风险评估,String,"基于内脏脂肪面积的代谢风险评估。<br>**建议值**: `低风险 (<100 cm²)`, `中风险 (100-150 cm²)`, `高风险 (>150 cm²)`",中风险
+diagnosisImpression,诊断/印象,String,医生对内脏脂肪测量结果的综合诊断或印象。,内脏脂肪堆积
+recommendation,建议,String,医生根据测量结果提出的建议。,建议控制体重

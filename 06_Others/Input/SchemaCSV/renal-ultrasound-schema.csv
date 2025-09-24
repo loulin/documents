@@ -1,0 +1,61 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行肾脏超声检查的日期,2025-08-15
+kidneySide,肾脏侧别,String,"检查的肾脏。<br>**建议值**: `左肾`, `右肾`, `双肾`",双肾
+leftKidney.length.value,左肾.长度.值,Number,左肾的详细检查信息。肾脏的最大长度。测量数值,100
+leftKidney.length.unit,左肾.长度.单位,String,左肾的详细检查信息。肾脏的最大长度。测量单位,mm
+leftKidney.width.value,左肾.宽度.值,Number,左肾的详细检查信息。肾脏的最大宽度。测量数值,50
+leftKidney.width.unit,左肾.宽度.单位,String,左肾的详细检查信息。肾脏的最大宽度。测量单位,mm
+leftKidney.thickness.value,左肾.厚度.值,Number,左肾的详细检查信息。肾脏的最大厚度。测量数值,40
+leftKidney.thickness.unit,左肾.厚度.单位,String,左肾的详细检查信息。肾脏的最大厚度。测量单位,mm
+leftKidney.cortexThickness.value,左肾.皮质厚度.值,Number,左肾的详细检查信息。肾皮质的厚度。测量数值,15
+leftKidney.cortexThickness.unit,左肾.皮质厚度.单位,String,左肾的详细检查信息。肾皮质的厚度。测量单位,mm
+leftKidney.echogenicity,左肾.回声,String,"左肾的详细检查信息。肾实质的回声情况。<br>**建议值**: `正常`, `增强`, `减低`",正常
+leftKidney.cysts.size.value,左肾.囊肿列表.大小.值,Number,左肾的详细检查信息。肾脏囊肿列表，每个对象描述一个囊肿的详细信息。囊肿的大小。测量数值,10
+leftKidney.cysts.size.unit,左肾.囊肿列表.大小.单位,String,左肾的详细检查信息。肾脏囊肿列表，每个对象描述一个囊肿的详细信息。囊肿的大小。测量单位,mm
+leftKidney.cysts.location,左肾.囊肿列表.位置,String,左肾的详细检查信息。肾脏囊肿列表，每个对象描述一个囊肿的详细信息。囊肿的具体位置（如：皮质、髓质）,皮质
+leftKidney.cysts.number,左肾.囊肿列表.数量,Number,左肾的详细检查信息。肾脏囊肿列表，每个对象描述一个囊肿的详细信息。囊肿的数量（如果报告中明确指出）,1
+leftKidney.stones.size.value,左肾.结石列表.大小.值,Number,左肾的详细检查信息。肾脏结石列表，每个对象描述一个结石的详细信息。结石的大小。测量数值,5
+leftKidney.stones.size.unit,左肾.结石列表.大小.单位,String,左肾的详细检查信息。肾脏结石列表，每个对象描述一个结石的详细信息。结石的大小。测量单位,mm
+leftKidney.stones.location,左肾.结石列表.位置,String,"左肾的详细检查信息。肾脏结石列表，每个对象描述一个结石的详细信息。结石的具体位置。<br>**建议值**: `肾上盏`, `肾中盏`, `肾下盏`, `肾盂`",肾盂
+leftKidney.stones.number,左肾.结石列表.数量,Number,左肾的详细检查信息。肾脏结石列表，每个对象描述一个结石的详细信息。结石的数量（如果报告中明确指出）,1
+leftKidney.hydronephrosis.present,左肾.肾盂积水.是否存在,String,"左肾的详细检查信息。肾盂积水的详细信息。是否存在肾盂积水。<br>**建议值**: `无`, `有`",有
+leftKidney.hydronephrosis.grade,左肾.肾盂积水.程度,String,"左肾的详细检查信息。肾盂积水的详细信息。肾盂积水的程度。<br>**建议值**: `轻度`, `中度`, `重度`",轻度
+leftKidney.mass.present,左肾.占位.是否存在,String,"左肾的详细检查信息。肾脏占位的详细信息。肾脏是否存在占位。<br>**建议值**: `无`, `有`",有
+leftKidney.mass.size.value,左肾.占位.大小.值,Number,左肾的详细检查信息。肾脏占位的详细信息。肾脏占位的大小。测量数值,20
+leftKidney.mass.size.unit,左肾.占位.大小.单位,String,左肾的详细检查信息。肾脏占位的详细信息。肾脏占位的大小。测量单位,mm
+leftKidney.mass.description,左肾.占位.描述,String,"左肾的详细检查信息。肾脏占位的详细信息。肾脏占位的性质描述。<br>**建议值**: `囊性`, `实性`, `囊实性`",囊性
+leftKidney.perirenalFluid,左肾.肾周积液,String,"左肾的详细检查信息。肾周围是否存在积液。<br>**建议值**: `无`, `有`",无
+rightKidney.length.value,右肾.长度.值,Number,右肾的详细检查信息。肾脏的最大长度。测量数值,105
+rightKidney.length.unit,右肾.长度.单位,String,右肾的详细检查信息。肾脏的最大长度。测量单位,mm
+rightKidney.width.value,右肾.宽度.值,Number,右肾的详细检查信息。肾脏的最大宽度。测量数值,52
+rightKidney.width.unit,右肾.宽度.单位,String,右肾的详细检查信息。肾脏的最大宽度。测量单位,mm
+rightKidney.thickness.value,右肾.厚度.值,Number,右肾的详细检查信息。肾脏的最大厚度。测量数值,41
+rightKidney.thickness.unit,右肾.厚度.单位,String,右肾的详细检查信息。肾脏的最大厚度。测量单位,mm
+rightKidney.cortexThickness.value,右肾.皮质厚度.值,Number,右肾的详细检查信息。肾皮质的厚度。测量数值,16
+rightKidney.cortexThickness.unit,右肾.皮质厚度.单位,String,右肾的详细检查信息。肾皮质的厚度。测量单位,mm
+rightKidney.echogenicity,右肾.回声,String,"右肾的详细检查信息。肾实质的回声情况。<br>**建议值**: `正常`, `增强`, `减低`",正常
+rightKidney.cysts.size.value,右肾.囊肿列表.大小.值,Number,右肾的详细检查信息。肾脏囊肿列表，每个对象描述一个囊肿的详细信息。囊肿的大小。测量数值,12
+rightKidney.cysts.size.unit,右肾.囊肿列表.大小.单位,String,右肾的详细检查信息。肾脏囊肿列表，每个对象描述一个囊肿的详细信息。囊肿的大小。测量单位,mm
+rightKidney.cysts.location,右肾.囊肿列表.位置,String,右肾的详细检查信息。肾脏囊肿列表，每个对象描述一个囊肿的详细信息。囊肿的具体位置（如：皮质、髓质）,皮质
+rightKidney.cysts.number,右肾.囊肿列表.数量,Number,右肾的详细检查信息。肾脏囊肿列表，每个对象描述一个囊肿的详细信息。囊肿的数量（如果报告中明确指出）,1
+rightKidney.stones.size.value,右肾.结石列表.大小.值,Number,右肾的详细检查信息。肾脏结石列表，每个对象描述一个结石的详细信息。结石的大小。测量数值,6
+rightKidney.stones.size.unit,右肾.结石列表.大小.单位,String,右肾的详细检查信息。肾脏结石列表，每个对象描述一个结石的详细信息。结石的大小。测量单位,mm
+rightKidney.stones.location,右肾.结石列表.位置,String,"右肾的详细检查信息。肾脏结石列表，每个对象描述一个结石的详细信息。结石的具体位置。<br>**建议值**: `肾上盏`, `肾中盏`, `肾下盏`, `肾盂`",肾盏
+rightKidney.stones.number,右肾.结石列表.数量,Number,右肾的详细检查信息。肾脏结石列表，每个对象描述一个结石的详细信息。结石的数量（如果报告中明确指出）,1
+rightKidney.hydronephrosis.present,右肾.肾盂积水.是否存在,String,"右肾的详细检查信息。肾盂积水的详细信息。是否存在肾盂积水。<br>**建议值**: `无`, `有`",有
+rightKidney.hydronephrosis.grade,右肾.肾盂积水.程度,String,"右肾的详细检查信息。肾盂积水的详细信息。肾盂积水的程度。<br>**建议值**: `轻度`, `中度`, `重度`",中度
+rightKidney.mass.present,右肾.占位.是否存在,String,"右肾的详细检查信息。肾脏占位的详细信息。肾脏是否存在占位。<br>**建议值**: `无`, `有`",有
+rightKidney.mass.size.value,右肾.占位.大小.值,Number,右肾的详细检查信息。肾脏占位的详细信息。肾脏占位的大小。测量数值,25
+rightKidney.mass.size.unit,右肾.占位.大小.单位,String,右肾的详细检查信息。肾脏占位的详细信息。肾脏占位的大小。测量单位,mm
+rightKidney.mass.description,右肾.占位.描述,String,"右肾的详细检查信息。肾脏占位的详细信息。肾脏占位的性质描述。<br>**建议值**: `囊性`, `实性`, `囊实性`",实性
+rightKidney.perirenalFluid,右肾.肾周积液,String,"右肾的详细检查信息。肾周围是否存在积液。<br>**建议值**: `无`, `有`",无
+leftUreter.dilation,左输尿管.扩张,String,"左输尿管的详细检查信息。输尿管是否存在扩张。<br>**建议值**: `无`, `有`",无
+leftUreter.stone,左输尿管.结石,String,"左输尿管的详细检查信息。输尿管是否存在结石。<br>**建议值**: `无`, `有`",无
+rightUreter.dilation,右输尿管.扩张,String,"右输尿管的详细检查信息。输尿管是否存在扩张。<br>**建议值**: `无`, `有`",无
+rightUreter.stone,右输尿管.结石,String,"右输尿管的详细检查信息。输尿管是否存在结石。<br>**建议值**: `无`, `有`",无
+bladder.filling,膀胱.充盈,String,"膀胱的详细检查信息。膀胱充盈情况。<br>**建议值**: `充盈良好`, `充盈欠佳`, `未充盈`",良好
+bladder.wall,膀胱.膀胱壁,String,"膀胱的详细检查信息。膀胱壁情况。<br>**建议值**: `光滑`, `毛糙`, `增厚`",光滑
+bladder.mass,膀胱.占位,String,"膀胱的详细检查信息。膀胱是否存在占位。<br>**建议值**: `无`, `有`",无
+bladder.stone,膀胱.结石,String,"膀胱的详细检查信息。膀胱是否存在结石。<br>**建议值**: `无`, `有`",无
+diagnosisImpression,诊断/印象,String,医生对肾脏超声检查的诊断或初步印象。,双肾多发囊肿
+recommendation,建议,String,医生根据检查结果提出的建议。,定期复查

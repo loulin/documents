@@ -1,0 +1,130 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行骨代谢检查的日期,2025-08-15
+clinicalIndication,检查适应症,String,"进行骨代谢检查的临床指征。<br>**建议值**: `骨质疏松筛查`, `继发性骨病`, `内分泌性骨病`, `代谢性骨病`, `骨折风险评估`",骨质疏松筛查
+boneDensity.lumbarSpine.t_score,骨密度.腰椎.T值,Number,"腰椎L1-L4 T值。<br>**分级**: >-1.0(正常), -1.0至-2.5(骨量减少), <-2.5(骨质疏松)",-2.1
+boneDensity.lumbarSpine.z_score,骨密度.腰椎.Z值,Number,"腰椎L1-L4 Z值。<br>**异常**: <-2.0",-1.5
+boneDensity.lumbarSpine.bmd,骨密度.腰椎.BMD,Number,"腰椎骨密度值。<br>单位: g/cm²",0.858
+boneDensity.femur.neck.t_score,骨密度.股骨.股骨颈T值,Number,"股骨颈T值。<br>**分级**: >-1.0(正常), -1.0至-2.5(骨量减少), <-2.5(骨质疏松)",-2.3
+boneDensity.femur.neck.z_score,骨密度.股骨.股骨颈Z值,Number,"股骨颈Z值。<br>**异常**: <-2.0",-1.8
+boneDensity.femur.neck.bmd,骨密度.股骨.股骨颈BMD,Number,"股骨颈骨密度值。<br>单位: g/cm²",0.735
+boneDensity.femur.total.t_score,骨密度.股骨.全髋T值,Number,"全髋T值",-2.0
+boneDensity.femur.total.z_score,骨密度.股骨.全髋Z值,Number,"全髋Z值",-1.6
+boneDensity.femur.total.bmd,骨密度.股骨.全髋BMD,Number,"全髋骨密度值。<br>单位: g/cm²",0.782
+boneDensity.radius.distal.t_score,骨密度.桡骨.远端T值,Number,"桡骨远端T值",-1.8
+boneDensity.radius.distal.z_score,骨密度.桡骨.远端Z值,Number,"桡骨远端Z值",-1.2
+boneDensity.radius.distal.bmd,骨密度.桡骨.远端BMD,Number,"桡骨远端骨密度值。<br>单位: g/cm²",0.425
+trabecularBoneScore,骨小梁评分 (TBS),Number,"腰椎骨小梁评分。<br>**分级**: >1.350(正常), 1.200-1.350(部分降解), <1.200(降解)",1.285
+boneTurnoverMarkers.formation.p1np,骨转换标志物.骨形成.P1NP,Number,"I型前胶原氨基端前肽。<br>单位: μg/L<br>**参考范围**: 绝经前女性15-59，绝经后女性16-96",85.2
+boneTurnoverMarkers.formation.osteocalcin,骨转换标志物.骨形成.骨钙素,Number,"骨钙素。<br>单位: μg/L<br>**参考范围**: 绝经前女性11-43，绝经后女性15-46",38.5
+boneTurnoverMarkers.formation.bap,骨转换标志物.骨形成.骨特异性碱性磷酸酶,Number,"骨特异性碱性磷酸酶。<br>单位: μg/L<br>**参考范围**: 成人3.7-20.9",28.6
+boneTurnoverMarkers.resorption.ctx,骨转换标志物.骨吸收.CTX,Number,"I型胶原羧基端肽。<br>单位: ng/mL<br>**参考范围**: 绝经前女性0.025-0.573，绝经后女性0.104-1.008",0.845
+boneTurnoverMarkers.resorption.ntx,骨转换标志物.骨吸收.NTX,Number,"I型胶原氨基端肽。<br>单位: nmol BCE/mmol Cr<br>**参考范围**: 成人5.4-24.2",32.8
+boneTurnoverMarkers.resorption.trapP,骨转换标志物.骨吸收.抗酒石酸酸性磷酸酶,Number,"TRAP 5b。<br>单位: U/L<br>**参考范围**: 成人1.2-4.9",6.2
+boneTurnoverMarkers.resorption.hydroxyproline,骨转换标志物.骨吸收.羟脯氨酸,Number,"24小时尿羟脯氨酸。<br>单位: mg/24h",45.8
+calciumMetabolism.serumCalcium.total,钙代谢.血钙.总钙,Number,"血清总钙。<br>单位: mmol/L<br>**参考范围**: 2.11-2.52",2.38
+calciumMetabolism.serumCalcium.ionized,钙代谢.血钙.离子钙,Number,"血清离子钙。<br>单位: mmol/L<br>**参考范围**: 1.15-1.29",1.22
+calciumMetabolism.serumCalcium.albuminCorrected,钙代谢.血钙.白蛋白校正钙,Number,"白蛋白校正血钙。<br>单位: mmol/L<br>**校正公式**: 总钙+0.02×(40-白蛋白)",2.42
+calciumMetabolism.urineCalcium.24hour,钙代谢.尿钙.24小时尿钙,Number,"24小时尿钙。<br>单位: mmol/24h<br>**参考范围**: 2.5-7.5",5.8
+calciumMetabolism.urineCalcium.creatinineRatio,钙代谢.尿钙.钙肌酐比,Number,"尿钙肌酐比。<br>单位: mmol/mmol<br>**参考范围**: <1.0",0.65
+calciumMetabolism.calciumAbsorption,钙代谢.钙吸收率,Number,"钙吸收率（如果测定）。<br>单位: %",28.5
+phosphateMetabolism.serumPhosphate,磷代谢.血磷,Number,"血清磷。<br>单位: mmol/L<br>**参考范围**: 0.85-1.51",1.15
+phosphateMetabolism.urinePhosphate.24hour,磷代谢.尿磷.24小时尿磷,Number,"24小时尿磷。<br>单位: mmol/24h<br>**参考范围**: 12.9-42.0",25.8
+phosphateMetabolism.urinePhosphate.creatinineRatio,磷代谢.尿磷.磷肌酐比,Number,"尿磷肌酐比。<br>单位: mmol/mmol",2.85
+phosphateMetabolism.tmp_gfr,磷代谢.肾磷阈,Number,"肾磷阈/GFR。<br>单位: mmol/L<br>**参考范围**: 0.8-1.35",1.05
+magnesiumMetabolism.serumMagnesium,镁代谢.血镁,Number,"血清镁。<br>单位: mmol/L<br>**参考范围**: 0.75-1.02",0.88
+magnesiumMetabolism.urineMagnesium,镁代谢.尿镁,Number,"24小时尿镁。<br>单位: mmol/24h<br>**参考范围**: 3.0-5.0",4.2
+vitaminDMetabolism.25ohVitaminD,维生素D代谢.25羟维生素D,Number,"25(OH)维生素D。<br>单位: nmol/L<br>**分级**: <30(缺乏), 30-75(不足), >75(充足)",45.8
+vitaminDMetabolism.1_25ohVitaminD,维生素D代谢.1_25双羟维生素D,Number,"1,25(OH)₂维生素D。<br>单位: pmol/L<br>**参考范围**: 48-190",125.6
+vitaminDMetabolism.24_25ohVitaminD,维生素D代谢.24_25双羟维生素D,Number,"24,25(OH)₂维生素D。<br>单位: nmol/L",8.5
+vitaminDMetabolism.vitaminDBindingProtein,维生素D代谢.维生素D结合蛋白,Number,"VDBP。<br>单位: mg/L<br>**参考范围**: 200-500",350
+vitaminDMetabolism.freeVitaminD,维生素D代谢.游离维生素D,Number,"游离25(OH)维生素D。<br>单位: pmol/L",15.2
+parathyroidHormone.intact,甲状旁腺激素.完整PTH,Number,"完整PTH。<br>单位: pmol/L<br>**参考范围**: 1.6-6.9",8.5
+parathyroidHormone.midRegion,甲状旁腺激素.中段PTH,Number,"中段PTH（如果检测）。<br>单位: pmol/L",6.8
+parathyroidHormone.pthRelatedProtein,甲状旁腺激素.PTHrP,Number,"PTH相关蛋白。<br>单位: pmol/L<br>**参考范围**: <2.5",1.8
+calcitonin,降钙素,Number,"血清降钙素。<br>单位: pg/mL<br>**参考范围**: 男性<11.5，女性<4.6",3.2
+fgf23,成纤维细胞生长因子23,Number,"FGF23。<br>单位: pg/mL<br>**参考范围**: 23.2-95.4",68.5
+klotho,Klotho蛋白,Number,"血清Klotho。<br>单位: pg/mL<br>**参考范围**: 562-1436",856
+sclerostin,硬化蛋白,Number,"血清硬化蛋白。<br>单位: pmol/L<br>**参考范围**: 性别年龄相关",28.5
+dkk1,Dickkopf-1,Number,"DKK1蛋白。<br>单位: pmol/L",15.8
+rankl,RANKL,Number,"RANK配体。<br>单位: pmol/L",2.5
+osteoprotegerin,骨保护素 (OPG),Number,"骨保护素。<br>单位: pmol/L<br>**参考范围**: 3.2-6.5",4.8
+ranklOpgRatio,RANKL/OPG比值,Number,"RANKL与OPG比值",0.52
+wnt3a,Wnt3a,Number,"Wnt3a蛋白。<br>单位: pg/mL",125.6
+lrp5,LRP5,Number,"低密度脂蛋白受体相关蛋白5。<br>单位: ng/mL",85.2
+fraxRiskAssessment.tenYearHipFracture,FRAX风险评估.10年髋部骨折风险,Number,"FRAX 10年髋部骨折风险。<br>单位: %",8.5
+fraxRiskAssessment.tenYearMajorFracture,FRAX风险评估.10年主要骨折风险,Number,"FRAX 10年主要骨折风险。<br>单位: %",15.2
+vertebralFractureAssessment.present,椎体骨折评估.是否存在,String,"是否存在椎体骨折。<br>**建议值**: `否`, `是`",是
+vertebralFractureAssessment.number,椎体骨折评估.骨折数量,Number,"椎体骨折数量",2
+vertebralFractureAssessment.severity,椎体骨折评估.严重程度,String,"椎体骨折严重程度。<br>**建议值**: `轻度`, `中度`, `重度`",中度
+vertebralFractureAssessment.location,椎体骨折评估.骨折部位,String,"椎体骨折部位",T12、L1
+fractureHistory.previousFractures,骨折史.既往骨折,String,"既往骨折史。<br>**建议值**: `无`, `有-请注明部位和时间`",有-左腕骨折(2020年)
+fractureHistory.fragility_fractures,骨折史.脆性骨折,String,"脆性骨折史。<br>**建议值**: `无`, `有`",有
+fractureHistory.traumaticFractures,骨折史.外伤性骨折,String,"外伤性骨折史。<br>**建议值**: `无`, `有`",无
+clinicalRiskFactors.age,临床危险因素.年龄,Number,"患者年龄。<br>单位: 岁",68
+clinicalRiskFactors.sex,临床危险因素.性别,String,"患者性别。<br>**建议值**: `男`, `女`",女
+clinicalRiskFactors.menopauseStatus,临床危险因素.绝经状态,String,"绝经状态（女性）。<br>**建议值**: `绝经前`, `围绝经期`, `绝经后`",绝经后
+clinicalRiskFactors.menopauseAge,临床危险因素.绝经年龄,Number,"绝经年龄（女性）。<br>单位: 岁",52
+clinicalRiskFactors.bodyMassIndex,临床危险因素.体质指数,Number,"体质指数。<br>单位: kg/m²",22.5
+clinicalRiskFactors.lowBodyWeight,临床危险因素.低体重,String,"是否低体重。<br>**建议值**: `否`, `是`",是
+clinicalRiskFactors.familyHistory,临床危险因素.家族史,String,"骨质疏松或髋部骨折家族史。<br>**建议值**: `无`, `有`",有
+clinicalRiskFactors.smoking,临床危险因素.吸烟,String,"吸烟状况。<br>**建议值**: `从不`, `既往`, `目前`",既往
+clinicalRiskFactors.alcohol,临床危险因素.饮酒,String,"饮酒情况。<br>**建议值**: `否`, `适量`, `过量`",适量
+clinicalRiskFactors.physicalActivity,临床危险因素.体力活动,String,"体力活动水平。<br>**建议值**: `充足`, `不足`, `久坐`",不足
+clinicalRiskFactors.sunExposure,临床危险因素.日晒,String,"日晒情况。<br>**建议值**: `充足`, `不足`, `避免`",不足
+secondaryOsteoporosis.glucocorticoids,继发性骨质疏松.糖皮质激素,String,"糖皮质激素使用史。<br>**建议值**: `未使用`, `既往使用`, `目前使用`",目前使用
+secondaryOsteoporosis.endocrineDiseases,继发性骨质疏松.内分泌疾病,String,"内分泌疾病。<br>**建议值**: `无`, `甲亢`, `甲旁亢`, `性腺功能减退`, `糖尿病`",甲亢
+secondaryOsteoporosis.malabsorption,继发性骨质疏松.吸收不良,String,"胃肠道疾病。<br>**建议值**: `无`, `乳糜泻`, `炎症性肠病`, `胃切除术后`",无
+secondaryOsteoporosis.chronicalKidneyDisease,继发性骨质疏松.慢性肾脏病,String,"慢性肾脏病。<br>**建议值**: `无`, `CKD 3期`, `CKD 4期`, `CKD 5期`",无
+secondaryOsteoporosis.liverDisease,继发性骨质疏松.肝脏疾病,String,"肝脏疾病。<br>**建议值**: `无`, `慢性肝病`, `原发性胆汁性肝硬化`",无
+secondaryOsteoporosis.rheumatologicDiseases,继发性骨质疏松.风湿性疾病,String,"风湿性疾病。<br>**建议值**: `无`, `类风湿关节炎`, `强直性脊柱炎`, `系统性红斑狼疮`",无
+secondaryOsteoporosis.malignancy,继发性骨质疏松.恶性肿瘤,String,"恶性肿瘤。<br>**建议值**: `无`, `有-请注明类型`",无
+medications.currentOsteoporosisMedications,药物治疗.目前抗骨质疏松药物,String,"目前使用的抗骨质疏松药物。<br>**建议值**: `无`, `双膦酸盐`, `德诺单抗`, `特立帕肽`, `罗莫珠单抗`",阿仑膦酸钠
+medications.calciumSupplementation,药物治疗.钙剂补充,String,"钙剂补充情况。<br>**建议值**: `无`, `有-请注明剂量`",碳酸钙 600mg bid
+medications.vitaminDSupplementation,药物治疗.维生素D补充,String,"维生素D补充情况。<br>**建议值**: `无`, `有-请注明剂量`",骨化三醇 0.25μg bid
+medications.otherSupplements,药物治疗.其他补充剂,String,其他骨健康相关补充剂,镁剂
+medications.adherence,药物治疗.依从性,String,"用药依从性。<br>**建议值**: `良好`, `一般`, `较差`",一般
+fallRiskAssessment.fallHistory,跌倒风险评估.跌倒史,String,"既往跌倒史。<br>**建议值**: `无`, `1年内1次`, `1年内多次`",1年内1次
+fallRiskAssessment.balanceDisorder,跌倒风险评估.平衡障碍,String,"平衡功能障碍。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+fallRiskAssessment.visionImpairment,跌倒风险评估.视力障碍,String,"视力障碍。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+fallRiskAssessment.cognitiveImpairment,跌倒风险评估.认知障碍,String,"认知功能障碍。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+fallRiskAssessment.medicationsIncreaseFallRisk,跌倒风险评估.增加跌倒风险药物,String,"使用增加跌倒风险的药物。<br>**建议值**: `否`, `是-请注明类型`",是-镇静剂
+fallRiskAssessment.environmentalHazards,跌倒风险评估.环境危险因素,String,"环境危险因素。<br>**建议值**: `少`, `一般`, `较多`",一般
+laboratoryFindings.alkalinePhosphatase,实验室检查.碱性磷酸酶,Number,"血清碱性磷酸酶。<br>单位: U/L<br>**参考范围**: 45-125",156
+laboratoryFindings.albumin,实验室检查.白蛋白,Number,"血清白蛋白。<br>单位: g/L<br>**参考范围**: 40-55",38
+laboratoryFindings.creatinine,实验室检查.肌酐,Number,"血清肌酐。<br>单位: μmol/L<br>**参考范围**: 女性41-73",78
+laboratoryFindings.tsh,实验室检查.TSH,Number,"促甲状腺激素。<br>单位: mU/L<br>**参考范围**: 0.27-4.2",0.85
+laboratoryFindings.freeT4,实验室检查.游离T4,Number,"游离甲状腺素。<br>单位: pmol/L<br>**参考范围**: 12-22",18.5
+laboratoryFindings.proteinElectrophoresis,实验室检查.蛋白电泳,String,"血清蛋白电泳结果。<br>**建议值**: `正常`, `异常-请注明`",正常
+laboratoryFindings.immunoglobulins,实验室检查.免疫球蛋白,String,"免疫球蛋白检测结果",正常
+imagingFindings.dxaScanQuality,影像学检查.DXA扫描质量,String,"DXA扫描质量。<br>**建议值**: `优`, `良`, `可`",良
+imagingFindings.spinalXray,影像学检查.脊柱X线,String,"脊柱X线检查结果",椎体压缩性骨折
+imagingFindings.ctScan,影像学检查.CT检查,String,"CT检查结果（如果进行）",骨质疏松性改变
+imagingFindings.mriScan,影像学检查.MRI检查,String,"MRI检查结果（如果进行）",椎体信号异常
+imagingFindings.boneScan,影像学检查.骨扫描,String,"骨扫描结果（如果进行）",多发异常摄取
+boneHistomorphometry.performed,骨组织形态计量学.是否进行,String,"是否进行骨活检。<br>**建议值**: `否`, `是`",否
+boneHistomorphometry.findings,骨组织形态计量学.检查结果,String,"骨组织形态计量学结果（如果进行）",未进行
+treatmentResponse.boneDensityChange,治疗反应.骨密度变化,Number,"治疗后骨密度变化。<br>单位: %",3.5
+treatmentResponse.boneTurnoverMarkerChange,治疗反应.骨转换标志物变化,String,"骨转换标志物变化趋势。<br>**建议值**: `下降`, `稳定`, `上升`",下降
+treatmentResponse.clinicalResponse,治疗反应.临床反应,String,"临床症状改善情况。<br>**建议值**: `明显改善`, `部分改善`, `无改善`",部分改善
+monitoringPlan.dxaFrequency,监测计划.DXA复查频率,String,"DXA检查频率",每2年复查
+monitoringPlan.boneTurnoverMarkerFrequency,监测计划.骨转换标志物频率,String,"骨转换标志物检查频率",每6个月复查
+monitoringPlan.clinicalAssessment,监测计划.临床评估,String,"临床评估计划",每3个月门诊随访
+riskStratification.fractureRisk,危险分层.骨折风险,String,"骨折风险分层。<br>**建议值**: `低`, `中`, `高`, `极高`",高
+riskStratification.treatmentIndication,危险分层.治疗指征,String,"治疗指征评估。<br>**建议值**: `无需治疗`, `生活方式干预`, `药物治疗`",药物治疗
+prognosisAssessment.shortTerm,预后评估.短期预后,String,"短期预后评估。<br>**建议值**: `良好`, `一般`, `较差`",一般
+prognosisAssessment.longTerm,预后评估.长期预后,String,"长期预后评估。<br>**建议值**: `良好`, `一般`, `较差`",一般
+qualityOfLife.mobilitylimitation,生活质量.活动受限,String,"活动能力受限程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+qualityOfLife.painLevel,生活质量.疼痛程度,Number,"疼痛数字评分。<br>**范围**: 0-10",4
+qualityOfLife.fearOfFalling,生活质量.跌倒恐惧,String,"对跌倒的恐惧程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+patientEducation.diseaseKnowledge,患者教育.疾病认知,String,"患者对骨质疏松的认知。<br>**建议值**: `差`, `一般`, `良好`",一般
+patientEducation.lifestyleModification,患者教育.生活方式指导,String,"生活方式指导教育。<br>**建议值**: `未接受`, `已接受`",已接受
+patientEducation.fallPrevention,患者教育.跌倒预防,String,"跌倒预防教育。<br>**建议值**: `未接受`, `已接受`",已接受
+specialConsiderations.pregnancy,特殊考虑.妊娠期,String,"妊娠期特殊考虑。<br>**建议值**: `不适用`, `需要考虑`",不适用
+specialConsiderations.lactation,特殊考虑.哺乳期,String,"哺乳期特殊考虑。<br>**建议值**: `不适用`, `需要考虑`",不适用
+specialConsiderations.menopause,特殊考虑.绝经期,String,"绝经期特殊考虑。<br>**建议值**: `不适用`, `需要考虑`",需要考虑
+multidisciplinaryApproach.endocrinology,多学科协作.内分泌科,String,"内分泌科参与。<br>**建议值**: `主管`, `会诊`, `未参与`",主管
+multidisciplinaryApproach.rheumatology,多学科协作.风湿科,String,"风湿科参与。<br>**建议值**: `主管`, `会诊`, `未参与`",未参与
+multidisciplinaryApproach.orthopedics,多学科协作.骨科,String,"骨科参与。<br>**建议值**: `主管`, `会诊`, `未参与`",会诊
+multidisciplinaryApproach.geriatrics,多学科协作.老年科,String,"老年科参与。<br>**建议值**: `主管`, `会诊`, `未参与`",会诊
+diagnosisImpression,诊断/印象,String,医生对骨代谢检查结果的综合诊断或印象。,绝经后骨质疏松症，椎体压缩性骨折
+recommendation,建议,String,医生根据检查结果提出的建议。,抗骨质疏松药物治疗，钙剂和维生素D补充，跌倒预防

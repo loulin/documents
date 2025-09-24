@@ -1,0 +1,209 @@
+fieldName,fieldNameCN,dataType,description,examples
+examDate,检查日期,String,检查日期，格式YYYY-MM-DD,2024-12-01
+patientID,患者唯一标识符,String,患者的唯一标识符,P202401001
+patientName,患者姓名,String,患者的姓名,张三
+clinicalIndication,临床适应症,String,进行血糖监测技能评估的临床适应症,血糖监测技能评估
+diagnosisImpression,诊断印象,String,基于评估结果的诊断印象,监测技能基本掌握/需要改进
+recommendation,建议,String,基于评估结果的建议,加强血糖监测技能培训和规范化指导
+
+# 基本信息
+ageAtAssessment,评估时年龄,Number,患者评估时的年龄（岁）,58
+gender,性别,String,患者性别,男/女
+diabetesType,糖尿病类型,String,患者的糖尿病类型,1型糖尿病/2型糖尿病/妊娠糖尿病/其他特殊类型
+diabetesDuration,糖尿病病程,Number,患者糖尿病诊断时间（年）,12.3
+bgmExperienceDuration,血糖监测经验时长,Number,血糖自我监测经验时长（年）,10.5
+currentTreatment,当前治疗方案,String,患者当前的治疗方案,口服药物/胰岛素/联合治疗/生活方式干预
+hbA1cLevel,糖化血红蛋白,Number,最近一次糖化血红蛋白水平（%）,7.6
+
+# 血糖监测知识评估
+overallBGMKnowledge,血糖监测知识总分,Number,血糖监测相关知识总评分（0-100分）,74
+normalGlucoseRangeKnowledge,正常血糖范围知识,Number,正常血糖范围知识评分（1-5分）,3.8
+targetGlucoseRangeKnowledge,目标血糖范围知识,Number,个人目标血糖范围知识评分（1-5分）,3.6
+monitoringTimingKnowledge,监测时机知识,Number,血糖监测时机选择知识评分（1-5分）,3.4
+factorsAffectingBGKnowledge,影响血糖因素知识,Number,影响血糖因素认知评分（1-5分）,3.2
+hypoglycemiaKnowledge,低血糖知识,Number,低血糖定义和症状知识评分（1-5分）,3.5
+hyperglycemiaKnowledge,高血糖知识,Number,高血糖定义和症状知识评分（1-5分）,3.3
+
+# 血糖仪操作技能
+glucometerFamiliarity,血糖仪熟悉度,Number,对血糖仪熟悉程度评分（1-5分）,4.0
+deviceSetupSkill,设备设置技能,Number,血糖仪设置和校准技能评分（1-5分）,3.6
+testStripHandling,试纸处理技能,Number,试纸正确处理和保存技能评分（1-5分）,3.8
+qualityControlUnderstanding,质量控制理解,Number,血糖仪质量控制理解评分（1-5分）,2.8
+errorCodeInterpretation,错误代码解读,Number,血糖仪错误代码解读能力评分（1-5分）,3.0
+maintenanceSkill,设备维护技能,Number,血糖仪维护保养技能评分（1-5分）,3.2
+
+# 采样技能评估
+handHygienePerformance,手卫生执行,Number,采样前手卫生执行情况评分（1-5分）,4.2
+prickingSiteSelection,采血部位选择,Number,采血部位选择合理性评分（1-5分）,3.6
+lancetUsageSkill,采血针使用技能,Number,采血针正确使用技能评分（1-5分）,3.8
+sampleCollectionTechnique,样本采集技术,Number,血样采集技术正确性评分（1-5分）,3.4
+sampleSizeAdequacy,样本量充足性,Number,血样量充足性掌握评分（1-5分）,3.2
+fingerRotationPractice,手指轮换实践,Number,采血手指轮换实践评分（1-5分）,2.8
+
+# 测试执行技能
+testTimingAccuracy,测试时机准确性,Number,血糖测试时机选择准确性评分（1-5分）,3.4
+procedureStepSequence,操作步骤顺序,Number,血糖测试操作步骤正确性评分（1-5分）,3.8
+resultReadingAccuracy,结果读取准确性,Number,血糖结果读取准确性评分（1-5分）,4.0
+testRepeatDecision,重复测试决策,Number,何时需要重复测试判断能力评分（1-5分）,2.6
+interferenceRecognition,干扰因素识别,Number,测试干扰因素识别能力评分（1-5分）,2.4
+troubleshootingSkill,故障排除技能,Number,血糖仪故障排除技能评分（1-5分）,2.8
+
+# 结果记录和管理
+recordKeepingConsistency,记录保持一致性,Number,血糖记录保持一致性评分（1-5分）,3.2
+dataEntryAccuracy,数据录入准确性,Number,血糖数据录入准确性评分（1-5分）,3.6
+logbookMaintenance,血糖日志维护,Number,血糖日志维护质量评分（1-5分）,3.0
+digitalDataManagement,数字化数据管理,Number,数字化血糖数据管理能力评分（1-5分）,2.8
+trendIdentification,趋势识别,Number,血糖趋势识别能力评分（1-5分）,2.6
+patternAnalysis,模式分析,Number,血糖模式分析能力评分（1-5分）,2.4
+
+# 结果解读能力
+normalResultInterpretation,正常结果解读,Number,正常血糖结果解读能力评分（1-5分）,3.5
+abnormalResultInterpretation,异常结果解读,Number,异常血糖结果解读能力评分（1-5分）,3.0
+contextualInterpretation,情境解读,Number,结合情境解读血糖结果能力评分（1-5分）,2.8
+trendInterpretation,趋势解读,Number,血糖趋势变化解读能力评分（1-5分）,2.6
+actionTriggerIdentification,行动触发识别,Number,识别需要采取行动的血糖水平评分（1-5分）,3.2
+medicalConsultationTrigger,医疗咨询触发,Number,识别需要医疗咨询的情况评分（1-5分）,3.0
+
+# 监测频率和时机
+monitoringFrequencyAdherence,监测频率依从性,Number,按要求监测频率依从性评分（1-5分）,3.4
+fastingGlucoseMonitoring,空腹血糖监测,Number,空腹血糖监测执行情况评分（1-5分）,3.6
+postprandialMonitoring,餐后血糖监测,Number,餐后血糖监测执行情况评分（1-5分）,3.2
+bedtimeMonitoring,睡前血糖监测,Number,睡前血糖监测执行情况评分（1-5分）,2.8
+exerciseRelatedMonitoring,运动相关监测,Number,运动前后血糖监测执行评分（1-5分）,2.4
+sicknessMonitoring,疾病期监测,Number,疾病期间增加监测执行评分（1-5分）,2.6
+
+# 特殊情况监测技能
+hypoglycemiaMonitoring,低血糖监测,Number,疑似低血糖时监测技能评分（1-5分）,3.2
+ketoneTestingSkill,酮体测试技能,Number,尿酮或血酮测试技能评分（1-5分）,2.4
+travelMonitoring,旅行监测,Number,旅行期间血糖监测管理评分（1-5分）,2.6
+illnessMonitoring,疾病期监测,Number,疾病期间血糖监测管理评分（1-5分）,2.8
+stressMonitoring,应激监测,Number,应激状态下血糖监测评分（1-5分）,2.2
+exerciseMonitoring,运动监测,Number,运动相关血糖监测评分（1-5分）,2.4
+
+# 安全操作技能
+sharpsDisposal,锐器处理,String,采血针处理方式,专用容器/硬质容器/塑料瓶/垃圾桶
+infectionPrevention,感染预防,Number,采血感染预防措施执行评分（1-5分）,3.8
+crossContaminationPrevention,交叉感染预防,Number,防止交叉感染措施执行评分（1-5分）,3.6
+equipmentCleaning,设备清洁,Number,血糖仪清洁维护执行评分（1-5分）,3.4
+safeStoragePractice,安全储存实践,Number,试纸和设备安全储存实践评分（1-5分）,3.2
+childSafetyAwareness,儿童安全意识,Number,血糖监测用品儿童安全意识评分（1-5分）,3.0
+
+# 质量控制技能
+testStripStorageCompliance,试纸储存合规性,Number,试纸储存条件合规性评分（1-5分）,3.4
+expirationDateAwareness,有效期意识,Number,试纸和校准液有效期管理评分（1-5分）,3.6
+qualityControlTesting,质量控制测试,Number,定期质量控制测试执行评分（1-5分）,2.4
+calibrationUnderstanding,校准理解,Number,血糖仪校准必要性理解评分（1-5分）,2.8
+temperatureAwareness,温度意识,Number,环境温度对测试影响认知评分（1-5分）,2.6
+controlSolutionUse,控制液使用,Number,控制液正确使用技能评分（1-5分）,2.2
+
+# 技术故障处理
+errorMessageResponse,错误信息响应,Number,血糖仪错误信息正确响应评分（1-5分）,2.8
+deviceMalfunctionHandling,设备故障处理,Number,设备故障基本处理能力评分（1-5分）,2.6
+testFailureResponse,测试失败响应,Number,测试失败时正确响应评分（1-5分）,2.4
+backupPlanImplementation,备用计划实施,Number,血糖仪故障时备用计划实施评分（1-5分）,2.2
+technicalSupportSeeking,技术支持寻求,Number,寻求技术支持能力评分（1-5分）,2.8
+problemDocumentation,问题记录,Number,技术问题记录能力评分（1-5分）,2.4
+
+# 数据应用技能
+treatmentAdjustmentSkill,治疗调整技能,Number,根据血糖结果调整治疗的技能评分（1-5分）,2.6
+insulinAdjustmentSkill,胰岛素调整技能,Number,根据血糖调整胰岛素剂量技能评分（1-5分）,2.4
+dietAdjustmentSkill,饮食调整技能,Number,根据血糖调整饮食的技能评分（1-5分）,2.8
+exerciseAdjustmentSkill,运动调整技能,Number,根据血糖调整运动计划技能评分（1-5分）,2.2
+medicalConsultationDecision,医疗咨询决策,Number,根据血糖结果决定就医的技能评分（1-5分）,3.2
+emergencyActionSkill,紧急行动技能,Number,血糖异常紧急情况处理技能评分（1-5分）,3.0
+
+# 沟通和教育技能
+resultCommunicationSkill,结果沟通技能,Number,向医护人员沟通血糖结果技能评分（1-5分）,3.4
+dataPreparationSkill,数据准备技能,Number,为医疗访问准备血糖数据技能评分（1-5分）,3.0
+familySharingSkill,家庭分享技能,Number,与家人分享血糖信息技能评分（1-5分）,2.8
+peerSharingSkill,同伴分享技能,Number,与其他患者分享监测经验技能评分（1-5分）,2.4
+teachingSkill,教学技能,Number,教授他人血糖监测技能评分（1-5分）,2.2
+advocacySkill,倡导技能,Number,为改善监测条件倡导的技能评分（1-5分）,2.0
+
+# 心理和行为因素
+monitoringAnxiety,监测焦虑,Number,血糖监测焦虑程度评分（1-5分），1分为无焦虑,2.4
+painTolerance,疼痛耐受,Number,采血疼痛耐受程度评分（1-5分）,3.2
+selfEfficacy,监测自我效能,Number,血糖监测自信程度评分（1-5分）,3.6
+motivationLevel,动机水平,Number,坚持血糖监测动机强度评分（1-5分）,3.4
+haibFormation,习惯形成,Number,血糖监测习惯形成程度评分（1-5分）,3.2
+attitudesTowardMonitoring,监测态度,Number,对血糖监测态度积极程度评分（1-5分）,3.0
+
+# 社会支持和环境
+familySupport,家庭支持,Number,家庭对血糖监测支持程度评分（1-5分）,3.6
+caregiverAssistance,照护者协助,String,照护者监测协助情况,完全协助/部分协助/紧急协助/无协助
+workplaceSupport,工作场所支持,Number,工作场所监测支持程度评分（1-5分）,2.8
+schoolSupport,学校支持,Number,学校监测支持程度评分（1-5分）,不适用/3.2
+peerSupport,同伴支持,Number,其他患者监测支持程度评分（1-5分）,2.4
+communitySupport,社区支持,Number,社区糖尿病监测支持程度评分（1-5分）,2.2
+
+# 经济因素
+testStripAffordability,试纸承受能力,String,试纸费用承受能力,完全承受/基本承受/部分困难/严重困难
+deviceAffordability,设备承受能力,String,血糖仪费用承受能力,完全承受/基本承受/部分困难/严重困难
+insuranceCoverage,保险覆盖,Number,医疗保险监测用品覆盖比例（%）,70
+costSavingBehavior,费用节省行为,String,是否有节省监测费用行为,减少监测频率/重复使用试纸/购买便宜产品/无节省行为
+economicImpactOnFrequency,经济对频率影响,Number,经济因素对监测频率影响评分（1-5分）,2.6
+financialAssistanceAwareness,经济援助认知,String,对监测用品援助项目认知,了解并使用/了解未使用/不了解
+
+# 技术设备整合
+smartGlucometerUse,智能血糖仪使用,String,是否使用智能血糖仪,是/否
+dataSync능력,数据同步能力,Number,血糖数据自动同步能力评分（1-5分）,2.8
+mobileAppIntegration,手机应用整合,Number,血糖监测手机应用使用能力评分（1-5分）,2.6
+cloudDataManagement,云端数据管理,Number,云端血糖数据管理能力评分（1-5分）,2.4
+CGMUnderstanding,连续血糖监测理解,Number,连续血糖监测系统理解评分（1-5分）,2.2
+deviceCompatibility,设备兼容性,Number,不同设备间数据兼容性管理评分（1-5分）,2.0
+
+# 教育和培训背景
+initialTrainingReceived,初始培训接受,String,是否接受过正规监测培训,是/否
+trainingProvider,培训提供者,String,监测培训提供者,内分泌医生/糖尿病护士/药师/自学/其他
+trainingQuality,培训质量,Number,接受培训质量评分（1-5分）,3.4
+ongoingEducation,持续教育,String,持续监测教育参与情况,积极参与/偶尔参与/很少参与/从不参与
+updateAwareness,更新认知,Number,监测技术更新认知程度评分（1-5分）,2.8
+refresherNeed,复习需求,String,是否需要监测技能复习培训,急需/需要/不太需要/不需要
+
+# 特殊人群考虑
+visualImpairmentAdaptation,视力障碍适应,Number,视力问题时监测适应能力评分（1-5分）,不适用/2.6
+dexterityLimitation,灵活性限制,Number,手部灵活性限制时适应能力评分（1-5分）,不适用/2.8
+cognitiveAdaptation,认知适应,Number,认知功能变化时监测适应评分（1-5分）,不适用/3.0
+pediatricConsiderations,儿科考虑,Number,儿童监测特殊考虑执行评分（1-5分）,不适用/3.2
+geriatricConsiderations,老年考虑,Number,老年患者监测特殊考虑执行评分（1-5分）,3.4
+pregnancyConsiderations,妊娠考虑,Number,妊娠期监测特殊考虑执行评分（1-5分）,不适用/4.0
+
+# 质量改进
+errorTracking,错误追踪,String,是否追踪监测错误,详细记录/简单记录/偶尔记录/不记录
+improvementGoalSetting,改进目标设定,Number,监测技能改进目标设定能力评分（1-5分）,2.8
+selfAssessmentAccuracy,自我评估准确性,Number,监测技能自我评估准确性评分（1-5分）,3.0
+feedbackUtilization,反馈利用,Number,利用监测技能反馈改进能力评分（1-5分）,3.2
+bestPracticeAdoption,最佳实践采纳,Number,采纳监测最佳实践意愿评分（1-5分）,3.0
+continuousImprovement,持续改进,Number,持续改进监测技能承诺程度评分（1-5分）,2.8
+
+# 法律和伦理考虑
+privacyAwareness,隐私意识,Number,血糖数据隐私保护意识评分（1-5分）,3.0
+consentUnderstanding,知情同意理解,Number,监测数据使用知情同意理解评分（1-5分）,2.8
+dataOwnershipUnderstanding,数据所有权理解,Number,血糖数据所有权理解评分（1-5分）,2.6
+ethicalSharingPractices,伦理分享实践,Number,血糖数据伦理分享实践评分（1-5分）,2.4
+legalComplianceAwareness,法规合规意识,Number,监测相关法规合规意识评分（1-5分）,2.2
+informedDecisionMaking,知情决策制定,Number,监测相关知情决策制定能力评分（1-5分）,2.8
+
+# 综合评估结果
+overallMonitoringCompetency,总体监测胜任力,Number,总体血糖监测胜任力评分（0-100分）,72
+technicalProficiency,技术熟练度,String,血糖监测技术熟练度,熟练/基本掌握/需要改进/需要重新培训
+safetyCompliance,安全合规性,String,监测安全合规性,完全合规/基本合规/部分违规/严重违规
+dataQuality,数据质量,String,血糖数据质量,高质量/中等质量/需要改进/质量差
+clinicalUtility,临床实用性,String,监测数据临床实用性,高实用性/中等实用性/有限实用性/无实用性
+independenceLevel,独立性水平,String,监测独立性水平,完全独立/基本独立/需要协助/需要监督
+
+# 改进建议
+skillTrainingPriority,技能培训优先级,String,技能培训优先级,高优先级/中优先级/低优先级/无需培训
+technologyUpgradeRecommendation,技术升级建议,String,技术设备升级建议,急需升级/建议升级/可考虑升级/无需升级
+educationFocusAreas,教育重点领域,String,教育重点领域,技术操作/结果解读/数据管理/质量控制
+supportServiceNeeds,支持服务需求,String,支持服务需求,技术支持/心理支持/经济支持/社会支持
+environmentalModifications,环境改善建议,String,监测环境改善建议,家庭环境/工作环境/学校环境/无需改善
+followUpPlan,随访计划,String,监测技能随访计划,1个月后/3个月后/6个月后/按需随访
+
+# 评估工具和方法
+assessmentMethod,评估方法,String,评估方法,实际操作演示/理论考核/观察评估/综合评估
+evaluatorCredentials,评估者资质,String,评估者专业资质,糖尿病专科护士/内分泌医生/糖尿病教育者/其他
+assessmentDuration,评估用时,Number,完成监测技能评估所用时间（分钟）,25
+standardizedProtocolUsed,标准化方案使用,String,是否使用标准化评估方案,是/否
+reliabilityCheck,可靠性检查,String,评估结果可靠性检查,已验证/部分验证/需要验证
+validationStatus,验证状态,String,评估工具验证状态,已验证/正在验证/需要验证

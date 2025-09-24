@@ -1,0 +1,36 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行尿常规检查的日期,2025-08-15
+specificGravity,比重 (SG),Number,"尿液比重，反映肾脏浓缩功能。<br>**参考范围**: 1.003-1.030",1.018
+pH,酸碱度 (pH),Number,"尿液酸碱度。<br>**参考范围**: 4.6-8.0",6.0
+protein,蛋白质 (PRO),String,"尿蛋白定性检测。<br>**建议值**: `阴性(-)`, `微量(±)`, `1+`, `2+`, `3+`, `4+`",阴性(-)
+glucose,葡萄糖 (GLU),String,"尿糖定性检测。<br>**建议值**: `阴性(-)`, `微量(±)`, `1+`, `2+`, `3+`, `4+`",阴性(-)
+ketones,酮体 (KET),String,"尿酮体定性检测。<br>**建议值**: `阴性(-)`, `微量(±)`, `1+`, `2+`, `3+`, `4+`",阴性(-)
+urobilinogen,尿胆原 (UBG),String,"尿胆原定性检测。<br>**建议值**: `正常`, `1+`, `2+`, `3+`, `4+`",正常
+bilirubin,胆红素 (BIL),String,"尿胆红素定性检测。<br>**建议值**: `阴性(-)`, `1+`, `2+`, `3+`, `4+`",阴性(-)
+blood,隐血 (BLD),String,"尿隐血定性检测。<br>**建议值**: `阴性(-)`, `微量(±)`, `1+`, `2+`, `3+`, `4+`",阴性(-)
+nitrite,亚硝酸盐 (NIT),String,"亚硝酸盐检测，细菌感染指标。<br>**建议值**: `阴性(-)`, `阳性(+)`",阴性(-)
+leukocyteEsterase,白细胞酯酶 (LEU),String,"白细胞酯酶，感染指标。<br>**建议值**: `阴性(-)`, `微量(±)`, `1+`, `2+`, `3+`, `4+`",阴性(-)
+ascorbicAcid,抗坏血酸 (VC),String,"抗坏血酸检测。<br>**建议值**: `阴性(-)`, `1+`, `2+`, `3+`, `4+`",阴性(-)
+redBloodCells,红细胞 (RBC),String,"镜检红细胞计数。<br>单位: 个/HP<br>**参考范围**: 0-3",0-1
+whiteBloodCells,白细胞 (WBC),String,"镜检白细胞计数。<br>单位: 个/HP<br>**参考范围**: 0-5",0-2
+epithelialCells,上皮细胞,String,"镜检上皮细胞。<br>**建议值**: `少许`, `中等量`, `较多`",少许
+squamousEpithelialCells,鳞状上皮细胞,String,"镜检鳞状上皮细胞计数。<br>单位: 个/HP",0-3
+transitionalEpithelialCells,移行上皮细胞,String,"镜检移行上皮细胞计数。<br>单位: 个/HP",0-2
+renalTubularEpithelialCells,肾小管上皮细胞,String,"镜检肾小管上皮细胞计数。<br>单位: 个/HP",0
+casts.hyaline,管型.透明管型,String,"透明管型计数。<br>单位: 个/LP<br>**参考范围**: 0-2",0
+casts.granular,管型.颗粒管型,String,"颗粒管型计数。<br>单位: 个/LP",0
+casts.cellular,管型.细胞管型,String,"细胞管型计数。<br>单位: 个/LP",0
+casts.waxy,管型.蜡样管型,String,"蜡样管型计数。<br>单位: 个/LP",0
+crystals.type,结晶.类型,String,"尿液中结晶类型。<br>**建议值**: `无`, `尿酸结晶`, `草酸钙结晶`, `磷酸盐结晶`, `其他`",无
+crystals.amount,结晶.数量,String,"结晶数量描述。<br>**建议值**: `无`, `少许`, `中等量`, `较多`",无
+bacteria,细菌,String,"镜检细菌。<br>**建议值**: `无`, `少许`, `中等量`, `较多`",无
+mucusThreads,粘液丝,String,"粘液丝。<br>**建议值**: `无`, `少许`, `中等量`, `较多`",少许
+spermCount,精子,String,"精子计数（男性）。<br>**建议值**: `无`, `少许`, `中等量`, `较多`",无
+trichomonas,滴虫,String,"滴虫检查。<br>**建议值**: `未见`, `见到`",未见
+yeast,酵母菌,String,"酵母菌检查。<br>**建议值**: `未见`, `见到`",未见
+proteinQuantitative,蛋白质定量,Number,"24小时尿蛋白定量（如果检测）。<br>单位: mg/24h<br>**参考范围**: <150",80
+microalbumin,微量白蛋白,Number,"尿微量白蛋白（如果检测）。<br>单位: mg/L<br>**参考范围**: <30",15
+creatinine,肌酐,Number,"尿肌酐（如果检测）。<br>单位: mmol/L",8.5
+albuminCreatinineRatio,白蛋白肌酐比,Number,"尿白蛋白肌酐比（如果检测）。<br>单位: mg/mmol<br>**参考范围**: <3.5",2.2
+diagnosisImpression,诊断/印象,String,医生对尿常规检查结果的综合诊断或印象。,尿常规正常
+recommendation,建议,String,医生根据检查结果提出的建议。,多饮水

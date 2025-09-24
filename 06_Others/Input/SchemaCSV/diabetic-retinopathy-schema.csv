@@ -1,0 +1,240 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行糖尿病视网膜病变检查的日期,2025-08-15
+clinicalIndication,检查适应症,String,"进行糖尿病视网膜病变检查的临床指征。<br>**建议值**: `糖尿病筛查`, `视力下降`, `眼底出血`, `黄斑水肿`, `新生血管`, `既往激光治疗随访`",糖尿病筛查
+diabeticRetinopathySeverity.etdrsClassification,糖尿病视网膜病变严重程度.ETDRS分级,String,"ETDRS分级。<br>**建议值**: `无视网膜病变`, `轻度非增殖性`, `中度非增殖性`, `重度非增殖性`, `极重度非增殖性`, `轻度增殖性`, `中度增殖性`, `高危增殖性`",中度非增殖性
+diabeticRetinopathySeverity.clinicalClassification,糖尿病视网膜病变严重程度.临床分级,String,"临床分级。<br>**建议值**: `无`, `轻度背景性`, `中度背景性`, `重度背景性`, `增殖前期`, `增殖性`",中度背景性
+diabeticRetinopathySeverity.riskOfProgression,糖尿病视网膜病变严重程度.进展风险,String,"1年内进展风险。<br>**建议值**: `低`, `中`, `高`",中
+visualAcuity.bestCorrected.rightEye,视力.最佳矫正.右眼,String,"右眼最佳矫正视力",20/25
+visualAcuity.bestCorrected.leftEye,视力.最佳矫正.左眼,String,"左眼最佳矫正视力",20/30
+visualAcuity.uncorrected.rightEye,视力.未矫正.右眼,String,"右眼未矫正视力",20/40
+visualAcuity.uncorrected.leftEye,视力.未矫正.左眼,String,"左眼未矫正视力",20/50
+visualAcuity.pinhole.rightEye,视力.针孔.右眼,String,"右眼针孔视力",20/30
+visualAcuity.pinhole.leftEye,视力.针孔.左眼,String,"左眼针孔视力",20/35
+visualAcuity.nearVision.rightEye,视力.近视力.右眼,String,"右眼近视力",J2
+visualAcuity.nearVision.leftEye,视力.近视力.左眼,String,"左眼近视力",J3
+visualAcuity.logmarScore.rightEye,视力.LogMAR评分.右眼,Number,"右眼LogMAR评分",0.1
+visualAcuity.logmarScore.leftEye,视力.LogMAR评分.左眼,Number,"左眼LogMAR评分",0.18
+intraoculorPressure.rightEye,眼压.右眼,Number,"右眼眼压。<br>单位: mmHg<br>**正常**: 10-21",16
+intraoculorPressure.leftEye,眼压.左眼,Number,"左眼眼压。<br>单位: mmHg<br>**正常**: 10-21",18
+intraoculorPressure.method,眼压.测量方法,String,"眼压测量方法。<br>**建议值**: `Goldmann压平`, `非接触式`, `Rebound`, `Schiötz`",Goldmann压平
+pupilExamination.rightEye.size,瞳孔检查.右眼.瞳孔大小,Number,"右眼瞳孔直径。<br>单位: mm",3.5
+pupilExamination.leftEye.size,瞳孔检查.左眼.瞳孔大小,Number,"左眼瞳孔直径。<br>单位: mm",3.5
+pupilExamination.rightEye.lightReflex,瞳孔检查.右眼.对光反射,String,"右眼对光反射。<br>**建议值**: `正常`, `迟钝`, `消失`",正常
+pupilExamination.leftEye.lightReflex,瞳孔检查.左眼.对光反射,String,"左眼对光反射。<br>**建议值**: `正常`, `迟钝`, `消失`",正常
+pupilExamination.relativePupillaryDefect,瞳孔检查.相对性瞳孔传入缺陷,String,"RAPD检查。<br>**建议值**: `阴性`, `右眼阳性`, `左眼阳性`",阴性
+slitLampExamination.conjunctiva.rightEye,裂隙灯检查.结膜.右眼,String,"右眼结膜检查",充血(+)
+slitLampExamination.conjunctiva.leftEye,裂隙灯检查.结膜.左眼,String,"左眼结膜检查",充血(+)
+slitLampExamination.cornea.rightEye,裂隙灯检查.角膜.右眼,String,"右眼角膜检查",透明
+slitLampExamination.cornea.leftEye,裂隙灯检查.角膜.左眼,String,"左眼角膜检查",透明
+slitLampExamination.anteriorChamber.rightEye,裂隙灯检查.前房.右眼,String,"右眼前房检查",深度正常，无炎症细胞
+slitLampExamination.anteriorChamber.leftEye,裂隙灯检查.前房.左眼,String,"左眼前房检查",深度正常，无炎症细胞
+slitLampExamination.iris.rightEye,裂隙灯检查.虹膜.右眼,String,"右眼虹膜检查",纹理清晰，无新生血管
+slitLampExamination.iris.leftEye,裂隙灯检查.虹膜.左眼,String,"左眼虹膜检查",纹理清晰，无新生血管
+slitLampExamination.lens.rightEye,裂隙灯检查.晶状体.右眼,String,"右眼晶状体检查",轻度核性白内障
+slitLampExamination.lens.leftEye,裂隙灯检查.晶状体.左眼,String,"左眼晶状体检查",轻度核性白内障
+slitLampExamination.vitrous.rightEye,裂隙灯检查.玻璃体.右眼,String,"右眼玻璃体检查",透明，无出血
+slitLampExamination.vitrous.leftEye,裂隙灯检查.玻璃体.左眼,String,"左眼玻璃体检查",透明，少量漂浮物
+fundusExamination.opticDisc.rightEye.appearance,眼底检查.视盘.右眼.外观,String,"右眼视盘外观",边界清楚，色泽正常
+fundusExamination.opticDisc.leftEye.appearance,眼底检查.视盘.左眼.外观,String,"左眼视盘外观",边界清楚，色泽正常
+fundusExamination.opticDisc.rightEye.cupDiscRatio,眼底检查.视盘.右眼.杯盘比,Number,"右眼杯盘比。<br>**正常**: <0.6",0.4
+fundusExamination.opticDisc.leftEye.cupDiscRatio,眼底检查.视盘.左眼.杯盘比,Number,"左眼杯盘比。<br>**正常**: <0.6",0.4
+fundusExamination.opticDisc.rightEye.neovascularization,眼底检查.视盘.右眼.新生血管,String,"右眼视盘新生血管。<br>**建议值**: `无`, `有`",无
+fundusExamination.opticDisc.leftEye.neovascularization,眼底检查.视盘.左眼.新生血管,String,"左眼视盘新生血管。<br>**建议值**: `无`, `有`",无
+fundusExamination.macula.rightEye.appearance,眼底检查.黄斑.右眼.外观,String,"右眼黄斑外观",中心凹反射存在
+fundusExamination.macula.leftEye.appearance,眼底检查.黄斑.左眼.外观,String,"左眼黄斑外观",中心凹反射存在
+fundusExamination.macula.rightEye.edema,眼底检查.黄斑.右眼.水肿,String,"右眼黄斑水肿。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+fundusExamination.macula.leftEye.edema,眼底检查.黄斑.左眼.水肿,String,"左眼黄斑水肿。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+fundusExamination.macula.rightEye.exudates,眼底检查.黄斑.右眼.渗出,String,"右眼黄斑区渗出。<br>**建议值**: `无`, `少量`, `中量`, `大量`",少量
+fundusExamination.macula.leftEye.exudates,眼底检查.黄斑.左眼.渗出,String,"左眼黄斑区渗出。<br>**建议值**: `无`, `少量`, `中量`, `大量`",中量
+fundusExamination.macula.rightEye.hemorrhages,眼底检查.黄斑.右眼.出血,String,"右眼黄斑区出血。<br>**建议值**: `无`, `点状`, `片状`, `深层`",无
+fundusExamination.macula.leftEye.hemorrhages,眼底检查.黄斑.左眼.出血,String,"左眼黄斑区出血。<br>**建议值**: `无`, `点状`, `片状`, `深层`",点状
+fundusExamination.vessels.rightEye.arteriovenousRatio,眼底检查.血管.右眼.动静脉比值,Number,"右眼动静脉比值。<br>**正常**: 2:3至3:4",0.6
+fundusExamination.vessels.leftEye.arteriovenousRatio,眼底检查.血管.左眼.动静脉比值,Number,"左眼动静脉比值。<br>**正常**: 2:3至3:4",0.65
+fundusExamination.vessels.rightEye.arterialNarrowing,眼底检查.血管.右眼.动脉狭窄,String,"右眼动脉狭窄。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+fundusExamination.vessels.leftEye.arterialNarrowing,眼底检查.血管.左眼.动脉狭窄,String,"左眼动脉狭窄。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+fundusExamination.vessels.rightEye.arteriovenousNicking,眼底检查.血管.右眼.动静脉交叉压迫,String,"右眼动静脉交叉压迫。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+fundusExamination.vessels.leftEye.arteriovenousNicking,眼底检查.血管.左眼.动静脉交叉压迫,String,"左眼动静脉交叉压迫。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+fundusExamination.vessels.rightEye.copperWiring,眼底检查.血管.右眼.铜丝样改变,String,"右眼动脉铜丝样改变。<br>**建议值**: `无`, `有`",无
+fundusExamination.vessels.leftEye.copperWiring,眼底检查.血管.左眼.铜丝样改变,String,"左眼动脉铜丝样改变。<br>**建议值**: `无`, `有`",无
+fundusExamination.vessels.rightEye.silverWiring,眼底检查.血管.右眼.银丝样改变,String,"右眼动脉银丝样改变。<br>**建议值**: `无`, `有`",无
+fundusExamination.vessels.leftEye.silverWiring,眼底检查.血管.左眼.银丝样改变,String,"左眼动脉银丝样改变。<br>**建议值**: `无`, `有`",无
+fundusExamination.retina.rightEye.microaneurysms,眼底检查.视网膜.右眼.微血管瘤,String,"右眼微血管瘤。<br>**建议值**: `无`, `少量(<5个)`, `中量(5-15个)`, `多量(>15个)`",中量
+fundusExamination.retina.leftEye.microaneurysms,眼底检查.视网膜.左眼.微血管瘤,String,"左眼微血管瘤。<br>**建议值**: `无`, `少量(<5个)`, `中量(5-15个)`, `多量(>15个)`",多量
+fundusExamination.retina.rightEye.dotBlotHemorrhages,眼底检查.视网膜.右眼.点片状出血,String,"右眼点片状出血。<br>**建议值**: `无`, `少量`, `中量`, `多量`",少量
+fundusExamination.retina.leftEye.dotBlotHemorrhages,眼底检查.视网膜.左眼.点片状出血,String,"左眼点片状出血。<br>**建议值**: `无`, `少量`, `中量`, `多量`",中量
+fundusExamination.retina.rightEye.flameShapedHemorrhages,眼底检查.视网膜.右眼.火焰状出血,String,"右眼火焰状出血。<br>**建议值**: `无`, `少量`, `中量`, `多量`",无
+fundusExamination.retina.leftEye.flameShapedHemorrhages,眼底检查.视网膜.左眼.火焰状出血,String,"左眼火焰状出血。<br>**建议值**: `无`, `少量`, `中量`, `多量`",少量
+fundusExamination.retina.rightEye.hardExudates,眼底检查.视网膜.右眼.硬性渗出,String,"右眼硬性渗出。<br>**建议值**: `无`, `少量`, `中量`, `多量`",少量
+fundusExamination.retina.leftEye.hardExudates,眼底检查.视网膜.左眼.硬性渗出,String,"左眼硬性渗出。<br>**建议值**: `无`, `少量`, `中量`, `多量`",中量
+fundusExamination.retina.rightEye.softExudates,眼底检查.视网膜.右眼.软性渗出,String,"右眼软性渗出(棉絮斑)。<br>**建议值**: `无`, `少量`, `中量`, `多量`",无
+fundusExamination.retina.leftEye.softExudates,眼底检查.视网膜.左眼.软性渗出,String,"左眼软性渗出(棉絮斑)。<br>**建议值**: `无`, `少量`, `中量`, `多量`",少量
+fundusExamination.retina.rightEye.veinBeading,眼底检查.视网膜.右眼.静脉串珠样改变,String,"右眼静脉串珠样改变。<br>**建议值**: `无`, `有`",无
+fundusExamination.retina.leftEye.veinBeading,眼底检查.视网膜.左眼.静脉串珠样改变,String,"左眼静脉串珠样改变。<br>**建议值**: `无`, `有`",无
+fundusExamination.retina.rightEye.irma,眼底检查.视网膜.右眼.视网膜内微血管异常,String,"右眼IRMA。<br>**建议值**: `无`, `有`",无
+fundusExamination.retina.leftEye.irma,眼底检查.视网膜.左眼.视网膜内微血管异常,String,"左眼IRMA。<br>**建议值**: `无`, `有`",有
+fundusExamination.retina.rightEye.neovascularization,眼底检查.视网膜.右眼.新生血管,String,"右眼视网膜新生血管。<br>**建议值**: `无`, `视盘新生血管`, `视网膜新生血管`, `虹膜新生血管`",无
+fundusExamination.retina.leftEye.neovascularization,眼底检查.视网膜.左眼.新生血管,String,"左眼视网膜新生血管。<br>**建议值**: `无`, `视盘新生血管`, `视网膜新生血管`, `虹膜新生血管`",无
+fundusExamination.retina.rightEye.fibrousProliferation,眼底检查.视网膜.右眼.纤维增殖,String,"右眼纤维增殖。<br>**建议值**: `无`, `有`",无
+fundusExamination.retina.leftEye.fibrousProliferation,眼底检查.视网膜.左眼.纤维增殖,String,"左眼纤维增殖。<br>**建议值**: `无`, `有`",无
+fundusExamination.retina.rightEye.retinalDetachment,眼底检查.视网膜.右眼.视网膜脱离,String,"右眼视网膜脱离。<br>**建议值**: `无`, `局限性`, `广泛性`",无
+fundusExamination.retina.leftEye.retinalDetachment,眼底检查.视网膜.左眼.视网膜脱离,String,"左眼视网膜脱离。<br>**建议值**: `无`, `局限性`, `广泛性`",无
+fundusExamination.periphery.rightEye.peripheralRetina,眼底检查.周边.右眼.周边视网膜,String,"右眼周边视网膜检查",未见明显异常
+fundusExamination.periphery.leftEye.peripheralRetina,眼底检查.周边.左眼.周边视网膜,String,"左眼周边视网膜检查",散在微血管瘤
+fundusExamination.periphery.rightEye.peripheralNeovascularization,眼底检查.周边.右眼.周边新生血管,String,"右眼周边新生血管。<br>**建议值**: `无`, `有`",无
+fundusExamination.periphery.leftEye.peripheralNeovascularization,眼底检查.周边.左眼.周边新生血管,String,"左眼周边新生血管。<br>**建议值**: `无`, `有`",无
+fundusPhotography.performed,眼底照相.是否进行,String,"是否进行眼底照相。<br>**建议值**: `是`, `否`",是
+fundusPhotography.fields,眼底照相.视野,String,"拍摄视野。<br>**建议值**: `7视野`, `9视野`, `超广角`",7视野
+fundusPhotography.quality,眼底照相.图像质量,String,"图像质量。<br>**建议值**: `优秀`, `良好`, `可接受`, `不可接受`",良好
+fundusPhotography.findings.rightEye,眼底照相.检查结果.右眼,String,"右眼眼底照相结果",中度非增殖性糖尿病视网膜病变
+fundusPhotography.findings.leftEye,眼底照相.检查结果.左眼,String,"左眼眼底照相结果",中度非增殖性糖尿病视网膜病变伴黄斑水肿
+fluoresceinAngiography.performed,荧光素眼底血管造影.是否进行,String,"是否进行FFA。<br>**建议值**: `是`, `否`",是
+fluoresceinAngiography.indication,荧光素眼底血管造影.检查指征,String,"FFA检查指征",黄斑水肿评估
+fluoresceinAngiography.complications,荧光素眼底血管造影.并发症,String,"FFA并发症。<br>**建议值**: `无`, `轻度恶心`, `皮疹`, `过敏反应`",无
+fluoresceinAngiography.capillaryNonperfusion.rightEye,荧光素眼底血管造影.毛细血管无灌注.右眼,String,"右眼毛细血管无灌注。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+fluoresceinAngiography.capillaryNonperfusion.leftEye,荧光素眼底血管造影.毛细血管无灌注.左眼,String,"左眼毛细血管无灌注。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+fluoresceinAngiography.maculaEdema.rightEye,荧光素眼底血管造影.黄斑水肿.右眼,String,"右眼黄斑水肿类型。<br>**建议值**: `无`, `局限性`, `弥漫性`, `缺血性`",无
+fluoresceinAngiography.maculaEdema.leftEye,荧光素眼底血管造影.黄斑水肿.左眼,String,"左眼黄斑水肿类型。<br>**建议值**: `无`, `局限性`, `弥漫性`, `缺血性`",弥漫性
+fluoresceinAngiography.leakage.rightEye,荧光素眼底血管造影.渗漏.右眼,String,"右眼荧光渗漏",微血管瘤轻度渗漏
+fluoresceinAngiography.leakage.leftEye,荧光素眼底血管造影.渗漏.左眼,String,"左眼荧光渗漏",黄斑区明显渗漏
+fluoresceinAngiography.neovascularization.rightEye,荧光素眼底血管造影.新生血管.右眼,String,"右眼新生血管。<br>**建议值**: `无`, `有`",无
+fluoresceinAngiography.neovascularization.leftEye,荧光素眼底血管造影.新生血管.左眼,String,"左眼新生血管。<br>**建议值**: `无`, `有`",无
+oct.performed,光学相干断层扫描.是否进行,String,"是否进行OCT。<br>**建议值**: `是`, `否`",是
+oct.centralMacularThickness.rightEye,光学相干断层扫描.中心黄斑厚度.右眼,Number,"右眼中心黄斑厚度。<br>单位: μm<br>**正常**: <250",235
+oct.centralMacularThickness.leftEye,光学相干断层扫描.中心黄斑厚度.左眼,Number,"左眼中心黄斑厚度。<br>单位: μm<br>**正常**: <250",385
+oct.maculaVolume.rightEye,光学相干断层扫描.黄斑体积.右眼,Number,"右眼黄斑体积。<br>单位: mm³<br>**正常**: 7.0-10.0",8.5
+oct.maculaVolume.leftEye,光学相干断层扫描.黄斑体积.左眼,Number,"左眼黄斑体积。<br>单位: mm³<br>**正常**: 7.0-10.0",12.8
+oct.cystoidSpaces.rightEye,光学相干断层扫描.囊样间隙.右眼,String,"右眼囊样间隙。<br>**建议值**: `无`, `有`",无
+oct.cystoidSpaces.leftEye,光学相干断层扫描.囊样间隙.左眼,String,"左眼囊样间隙。<br>**建议值**: `无`, `有`",有
+oct.subretinalFluid.rightEye,光学相干断层扫描.视网膜下积液.右眼,String,"右眼视网膜下积液。<br>**建议值**: `无`, `有`",无
+oct.subretinalFluid.leftEye,光学相干断层扫描.视网膜下积液.左眼,String,"左眼视网膜下积液。<br>**建议值**: `无`, `有`",有
+oct.epiretinalMembrane.rightEye,光学相干断层扫描.视网膜前膜.右眼,String,"右眼视网膜前膜。<br>**建议值**: `无`, `有`",无
+oct.epiretinalMembrane.leftEye,光学相干断层扫描.视网膜前膜.左眼,String,"左眼视网膜前膜。<br>**建议值**: `无`, `有`",无
+oct.vitreomacularTraction.rightEye,光学相干断层扫描.玻璃体黄斑牵拉.右眼,String,"右眼玻璃体黄斑牵拉。<br>**建议值**: `无`, `有`",无
+oct.vitreomacularTraction.leftEye,光学相干断层扫描.玻璃体黄斑牵拉.左眼,String,"左眼玻璃体黄斑牵拉。<br>**建议值**: `无`, `有`",无
+oct.retinalPigmentEpithelium.rightEye,光学相干断层扫描.视网膜色素上皮.右眼,String,"右眼RPE检查",连续性良好
+oct.retinalPigmentEpithelium.leftEye,光学相干断层扫描.视网膜色素上皮.左眼,String,"左眼RPE检查",局部不规则
+oct.choroidalThickness.rightEye,光学相干断层扫描.脉络膜厚度.右眼,Number,"右眼脉络膜厚度。<br>单位: μm",285
+oct.choroidalThickness.leftEye,光学相干断层扫描.脉络膜厚度.左眼,Number,"左眼脉络膜厚度。<br>单位: μm",265
+octAngiography.performed,OCT血管造影.是否进行,String,"是否进行OCTA。<br>**建议值**: `是`, `否`",否
+octAngiography.capillaryDensity.rightEye,OCT血管造影.毛细血管密度.右眼,Number,"右眼毛细血管密度。<br>单位: %（如进行）",未进行
+octAngiography.capillaryDensity.leftEye,OCT血管造影.毛细血管密度.左眼,Number,"左眼毛细血管密度。<br>单位: %（如进行）",未进行
+octAngiography.fovealAvascularZone.rightEye,OCT血管造影.中心凹无血管区.右眼,Number,"右眼FAZ面积。<br>单位: mm²（如进行）",未进行
+octAngiography.fovealAvascularZone.leftEye,OCT血管造影.中心凹无血管区.左眼,Number,"左眼FAZ面积。<br>单位: mm²（如进行）",未进行
+octAngiography.microaneurysms.rightEye,OCT血管造影.微血管瘤.右眼,Number,"右眼微血管瘤数量（如进行）",未进行
+octAngiography.microaneurysms.leftEye,OCT血管造影.微血管瘤.左眼,Number,"左眼微血管瘤数量（如进行）",未进行
+visualFieldTesting.performed,视野检查.是否进行,String,"是否进行视野检查。<br>**建议值**: `是`, `否`",是
+visualFieldTesting.method,视野检查.检查方法,String,"视野检查方法。<br>**建议值**: `Goldmann`, `Humphrey`, `Octopus`",Humphrey
+visualFieldTesting.rightEye.meanDeviation,视野检查.右眼.平均缺损,Number,"右眼MD值。<br>单位: dB",−2.5
+visualFieldTesting.leftEye.meanDeviation,视野检查.左眼.平均缺损,Number,"左眼MD值。<br>单位: dB",−4.8
+visualFieldTesting.rightEye.patternStandardDeviation,视野检查.右眼.模式标准差,Number,"右眼PSD值。<br>单位: dB",3.2
+visualFieldTesting.leftEye.patternStandardDeviation,视野检查.左眼.模式标准差,Number,"左眼PSD值。<br>单位: dB",5.8
+visualFieldTesting.rightEye.defects,视野检查.右眼.缺损,String,"右眼视野缺损",散在暗点
+visualFieldTesting.leftEye.defects,视野检查.左眼.缺损,String,"左眼视野缺损",弓形暗点
+riskFactors.diabetesDuration,危险因素.糖尿病病程,Number,"糖尿病病程。<br>单位: 年",15
+riskFactors.diabetesType,危险因素.糖尿病类型,String,"糖尿病类型。<br>**建议值**: `1型`, `2型`, `妊娠期`, `其他`",2型
+riskFactors.glycemicControl.currentHba1c,危险因素.血糖控制.当前HbA1c,Number,"当前HbA1c。<br>单位: %",8.5
+riskFactors.glycemicControl.averageHba1c,危险因素.血糖控制.平均HbA1c,Number,"近2年平均HbA1c。<br>单位: %",8.2
+riskFactors.glycemicControl.timeInRange,危险因素.血糖控制.目标范围内时间,Number,"血糖目标范围内时间。<br>单位: %",68
+riskFactors.hypertension.present,危险因素.高血压.是否存在,String,"高血压病史。<br>**建议值**: `无`, `有`",有
+riskFactors.hypertension.duration,危险因素.高血压.病程,Number,"高血压病程。<br>单位: 年",8
+riskFactors.hypertension.control,危险因素.高血压.控制情况,String,"血压控制情况。<br>**建议值**: `良好`, `一般`, `较差`",一般
+riskFactors.hyperlipidemia.present,危险因素.高脂血症.是否存在,String,"高脂血症病史。<br>**建议值**: `无`, `有`",有
+riskFactors.hyperlipidemia.control,危险因素.高脂血症.控制情况,String,"血脂控制情况。<br>**建议值**: `良好`, `一般`, `较差`",一般
+riskFactors.smoking.status,危险因素.吸烟.状况,String,"吸烟状况。<br>**建议值**: `从不`, `既往`, `目前`",既往
+riskFactors.pregnancy.current,危险因素.妊娠.当前妊娠,String,"当前妊娠状况。<br>**建议值**: `否`, `是`",否
+riskFactors.pregnancy.history,危险因素.妊娠.妊娠史,String,"妊娠史（女性）",3次妊娠
+riskFactors.age,危险因素.年龄,Number,"患者年龄。<br>单位: 岁",58
+riskFactors.sex,危险因素.性别,String,"患者性别。<br>**建议值**: `男`, `女`",女
+riskFactors.ethnicity,危险因素.种族,String,"患者种族",汉族
+riskFactors.familyHistory,危险因素.家族史,String,"糖尿病或眼病家族史",父母均有糖尿病史
+riskFactors.chronickidneyDisease,危险因素.慢性肾脏病,String,"慢性肾脏病。<br>**建议值**: `无`, `有`",有
+riskFactors.cardiovascularDisease,危险因素.心血管疾病,String,"心血管疾病史。<br>**建议值**: `无`, `有`",有
+laboratoryTests.hba1c,实验室检查.糖化血红蛋白,Number,"糖化血红蛋白。<br>单位: %",8.5
+laboratoryTests.fastingGlucose,实验室检查.空腹血糖,Number,"空腹血糖。<br>单位: mmol/L",9.2
+laboratoryTests.postprandialGlucose,实验室检查.餐后血糖,Number,"餐后2小时血糖。<br>单位: mmol/L",13.8
+laboratoryTests.renalFunction.creatinine,实验室检查.肾功能.肌酐,Number,"血肌酐。<br>单位: μmol/L",125
+laboratoryTests.renalFunction.estimatedGfr,实验室检查.肾功能.估算肾小球滤过率,Number,"eGFR。<br>单位: mL/min/1.73m²",58
+laboratoryTests.renalFunction.albuminCreatinineRatio,实验室检查.肾功能.白蛋白肌酐比,Number,"尿白蛋白肌酐比。<br>单位: mg/g",185
+laboratoryTests.lipidProfile.totalCholesterol,实验室检查.血脂.总胆固醇,Number,"总胆固醇。<br>单位: mmol/L",5.8
+laboratoryTests.lipidProfile.ldlCholesterol,实验室检查.血脂.LDL胆固醇,Number,"LDL胆固醇。<br>单位: mmol/L",3.5
+laboratoryTests.lipidProfile.hdlCholesterol,实验室检查.血脂.HDL胆固醇,Number,"HDL胆固醇。<br>单位: mmol/L",1.0
+laboratoryTests.lipidProfile.triglycerides,实验室检查.血脂.甘油三酯,Number,"甘油三酯。<br>单位: mmol/L",2.8
+laboratoryTests.bloodPressure.systolic,实验室检查.血压.收缩压,Number,"收缩压。<br>单位: mmHg",148
+laboratoryTests.bloodPressure.diastolic,实验室检查.血压.舒张压,Number,"舒张压。<br>单位: mmHg",92
+previousTreatment.panretinalPhotocoagulation.performed,既往治疗.全视网膜光凝.是否进行,String,"是否进行PRP。<br>**建议值**: `是`, `否`",否
+previousTreatment.panretinalPhotocoagulation.sessions,既往治疗.全视网膜光凝.治疗次数,Number,"PRP治疗次数（如进行）",0
+previousTreatment.panretinalPhotocoagulation.spots,既往治疗.全视网膜光凝.激光点数,Number,"PRP总激光点数（如进行）",0
+previousTreatment.panretinalPhotocoagulation.complications,既往治疗.全视网膜光凝.并发症,String,"PRP并发症（如进行）",无
+previousTreatment.focalLaserTherapy.performed,既往治疗.局部激光治疗.是否进行,String,"是否进行局部激光。<br>**建议值**: `是`, `否`",否
+previousTreatment.focalLaserTherapy.sessions,既往治疗.局部激光治疗.治疗次数,Number,"局部激光治疗次数（如进行）",0
+previousTreatment.focalLaserTherapy.response,既往治疗.局部激光治疗.治疗反应,String,"局部激光治疗反应（如进行）。<br>**建议值**: `完全缓解`, `部分缓解`, `无效`, `恶化`",无
+previousTreatment.intravitrea lInjections.performed,既往治疗.玻璃体内注射.是否进行,String,"是否进行玻璃体内注射。<br>**建议值**: `是`, `否`",否
+previousTreatment.intravitrealInjections.agent,既往治疗.玻璃体内注射.药物类型,String,"注射药物类型（如进行）。<br>**建议值**: `Anti-VEGF`, `激素`, `其他`",无
+previousTreatment.intravitrealInjections.sessions,既往治疗.玻璃体内注射.注射次数,Number,"注射次数（如进行）",0
+previousTreatment.intravitrealInjections.response,既往治疗.玻璃体内注射.治疗反应,String,"注射治疗反应（如进行）。<br>**建议值**: `显著改善`, `轻度改善`, `稳定`, `恶化`",无
+previousTreatment.vitrectomy.performed,既往治疗.玻璃体切除术.是否进行,String,"是否进行玻璃体切除术。<br>**建议值**: `是`, `否`",否
+previousTreatment.vitrectomy.indication,既往治疗.玻璃体切除术.手术指征,String,"手术指征（如进行）。<br>**建议值**: `玻璃体出血`, `牵拉性视网膜脱离`, `黄斑前膜`, `其他`",无
+previousTreatment.vitrectomy.complications,既往治疗.玻璃体切除术.并发症,String,"手术并发症（如进行）",无
+currentTreatmentPlan.immediate.panretinalPhotocoagulation,当前治疗计划.即刻治疗.全视网膜光凝,String,"PRP治疗计划。<br>**建议值**: `不需要`, `建议`, `急需`",不需要
+currentTreatmentPlan.immediate.focalLaserTherapy,当前治疗计划.即刻治疗.局部激光治疗,String,"局部激光治疗计划。<br>**建议值**: `不需要`, `建议`, `急需`",建议
+currentTreatmentPlan.immediate.intrav itrealInjections,当前治疗计划.即刻治疗.玻璃体内注射,String,"玻璃体内注射计划。<br>**建议值**: `不需要`, `建议`, `急需`",建议
+currentTreatmentPlan.immediate.vitrectomy,当前治疗计划.即刻治疗.玻璃体切除术,String,"玻璃体切除术计划。<br>**建议值**: `不需要`, `建议`, `急需`",不需要
+currentTreatmentPlan.systemic.glucoseControl,当前治疗计划.全身治疗.血糖控制,String,"血糖控制目标",HbA1c <7.0%
+currentTreatmentPlan.systemic.bloodPressureControl,当前治疗计划.全身治疗.血压控制,String,"血压控制目标",<130/80 mmHg
+currentTreatmentPlan.systemic.lipidControl,当前治疗计划.全身治疗.血脂控制,String,"血脂控制目标",LDL-C <2.6 mmol/L
+currentTreatmentPlan.systemic.aspirinTherapy,当前治疗计划.全身治疗.阿司匹林治疗,String,"阿司匹林治疗。<br>**建议值**: `推荐`, `不推荐`, `禁忌`",推荐
+currentTreatmentPlan.lifestyle.dietaryModification,当前治疗计划.生活方式.饮食调节,String,"饮食调节建议",糖尿病饮食指导
+currentTreatmentPlan.lifestyle.exerciseProgram,当前治疗计划.生活方式.运动计划,String,"运动计划建议",有氧运动30分钟，每周5次
+currentTreatmentPlan.lifestyle.smokingCessation,当前治疗计划.生活方式.戒烟,String,"戒烟指导",已戒烟，继续维持
+currentTreatmentPlan.lifestyle.weightManagement,当前治疗计划.生活方式.体重管理,String,"体重管理建议",减重5-10%
+followUp.nextVisit,随访.下次随访,String,"下次随访时间",3个月后
+followUp.frequency.stable,随访.随访频率.稳定期,String,"稳定期随访频率",每年检查
+followUp.frequency.deteriorating,随访.随访频率.恶化期,String,"恶化期随访频率",每3-6个月检查
+followUp.monitoringParameters,随访.监测参数,String,"需要监测的参数",视力、眼底、OCT、血糖控制
+followUp.warningSign s,随访.警告征象,String,"需要紧急就诊的警告征象",急性视力下降、视野缺损、飞蚊症增多
+followUp.urgentReferralCriteria,随访.紧急转诊标准,String,"紧急转诊标准",高危增殖性糖尿病视网膜病变
+prognosisAssessment.visual.shortTerm,预后评估.视觉.短期预后,String,"短期视觉预后（1年内）。<br>**建议值**: `良好`, `一般`, `较差`",一般
+prognosisAssessment.visual.longTerm,预后评估.视觉.长期预后,String,"长期视觉预后（5年以上）。<br>**建议值**: `良好`, `一般`, `较差`",一般
+prognosisAssessment.progression.likelihood,预后评估.进展.可能性,String,"病变进展可能性。<br>**建议值**: `低`, `中`, `高`",中
+prognosisAssessment.progression.timeframe,预后评估.进展.时间框架,String,"预计进展时间框架",2-3年内可能进展
+prognosisAssessment.visualImpairment.risk,预后评估.视力损害.风险,String,"视力损害风险。<br>**建议值**: `低`, `中`, `高`",中
+prognosisAssessment.blindness.risk,预后评估.失明.风险,String,"失明风险。<br>**建议值**: `低`, `中`, `高`",低
+qualityOfLife.visionRelated.activities,生活质量.视力相关.日常活动,String,"日常活动影响。<br>**建议值**: `无影响`, `轻度影响`, `中度影响`, `重度影响`",轻度影响
+qualityOfLife.visionRelated.driving,生活质量.视力相关.驾驶,String,"驾驶能力影响。<br>**建议值**: `无影响`, `轻度影响`, `中度影响`, `重度影响`",轻度影响
+qualityOfLife.visionRelated.reading,生活质量.视力相关.阅读,String,"阅读能力影响。<br>**建议值**: `无影响`, `轻度影响`, `中度影响`, `重度影响`",无影响
+qualityOfLife.psychological.anxiety,生活质量.心理.焦虑,String,"焦虑程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+qualityOfLife.psychological.depression,生活质量.心理.抑郁,String,"抑郁程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+qualityOfLife.social.workProductivity,生活质量.社会.工作效率,String,"工作效率影响。<br>**建议值**: `无影响`, `轻度影响`, `中度影响`, `重度影响`",无影响
+qualityOfLife.social.socialActivities,生活质量.社会.社交活动,String,"社交活动影响。<br>**建议值**: `无影响`, `轻度影响`, `中度影响`, `重度影响`",无影响
+economicBurden.directCosts.examinations,经济负担.直接费用.检查费用,String,"年度眼科检查费用",约5000元
+economicBurden.directCosts.treatments,经济负担.直接费用.治疗费用,String,"治疗费用估算",局部激光治疗约3000元
+economicBurden.indirectCosts.lostProductivity,经济负担.间接费用.生产力损失,String,"生产力损失评估",轻微影响
+economicBurden.indirectCosts.caregiverBurden,经济负担.间接费用.照护负担,String,"照护者负担",家人陪同就诊
+patientEducation.diseaseKnowledge,患者教育.疾病认知,String,"患者对糖尿病视网膜病变的认知程度。<br>**建议值**: `差`, `一般`, `良好`",一般
+patientEducation.selfMonitoring,患者教育.自我监测,String,"自我监测技能掌握。<br>**建议值**: `差`, `一般`, `良好`",一般
+patientEducation.treatmentAdherence,患者教育.治疗依从性,String,"治疗依从性教育。<br>**建议值**: `差`, `一般`, `良好`",一般
+patientEducation.lifestyleModification,患者教育.生活方式改变,String,"生活方式改变教育。<br>**建议值**: `差`, `一般`, `良好`",良好
+multidisciplinaryCare.endocrinology,多学科协作.内分泌科,String,"内分泌科协作。<br>**建议值**: `密切协作`, `定期会诊`, `必要时会诊`",密切协作
+multidisciplinaryCare.cardiology,多学科协作.心内科,String,"心内科协作。<br>**建议值**: `密切协作`, `定期会诊`, `必要时会诊`",必要时会诊
+multidisciplinaryCare.nephrology,多学科协作.肾内科,String,"肾内科协作。<br>**建议值**: `密切协作`, `定期会诊`, `必要时会诊`",定期会诊
+multidisciplinaryCare.retinalSpecialist,多学科协作.视网膜专科,String,"视网膜专科协作。<br>**建议值**: `主管`, `会诊`, `转诊`",主管
+screeningHistory.previousExaminations,筛查史.既往检查,String,"既往眼底检查史",2年前最后一次眼底检查
+screeningHistory.complianceWithScreening,筛查史.筛查依从性,String,"筛查依从性。<br>**建议值**: `良好`, `一般`, `较差`",较差
+screeningHistory.diabetesEducation,筛查史.糖尿病教育,String,"糖尿病教育接受情况",已接受基础糖尿病教育
+specialConsiderations.pregnancy,特殊考虑.妊娠,String,"妊娠期特殊考虑。<br>**建议值**: `不适用`, `需要考虑`",不适用
+specialConsiderations.pediatric,特殊考虑.儿科,String,"儿科特殊考虑。<br>**建议值**: `不适用`, `需要考虑`",不适用
+specialConsiderations.elderly,特殊考虑.老年,String,"老年患者特殊考虑。<br>**建议值**: `不适用`, `需要考虑`",不适用
+specialConsiderations.cognitiveImpairment,特殊考虑.认知功能障碍,String,"认知功能障碍特殊考虑。<br>**建议值**: `无`, `需要考虑`",无
+specialConsiderations.physicalDisability,特殊考虑.身体残疾,String,"身体残疾特殊考虑。<br>**建议值**: `无`, `需要考虑`",无
+complications.secondaryGlaucoma,并发症.继发性青光眼,String,"继发性青光眼。<br>**建议值**: `无`, `有`",无
+complications.cataract,并发症.白内障,String,"白内障。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+complications.vitreousHemorrhage,并发症.玻璃体出血,String,"玻璃体出血。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+complications.retinalDetachment,并发症.视网膜脱离,String,"视网膜脱离。<br>**建议值**: `无`, `威胁中心凹`, `累及中心凹`",无
+complications.rubeosis,并发症.虹膜新生血管,String,"虹膜新生血管。<br>**建议值**: `无`, `有`",无
+researchParticipation.clinicalTrials,研究参与.临床试验,String,"临床试验参与意愿。<br>**建议值**: `愿意`, `不愿意`, `考虑中`",考虑中
+researchParticipation.registryStudies,研究参与.登记研究,String,"登记研究参与",愿意参加糖尿病视网膜病变登记研究
+technologyConsiderations.artificialIntelligence,技术考虑.人工智能,String,"AI辅助诊断应用",已应用AI筛查系统
+technologyConsiderations.telemedicine,技术考虑.远程医疗,String,"远程医疗应用",可考虑远程筛查
+technologyConsiderations.digitalImaging,技术考虑.数字成像,String,"数字成像技术应用",使用数字眼底照相
+diagnosisImpression,诊断/印象,String,医生对糖尿病视网膜病变检查结果的综合诊断或印象。,双眼中度非增殖性糖尿病视网膜病变，左眼糖尿病性黄斑水肿
+recommendation,建议,String,医生根据检查结果提出的建议。,左眼黄斑区局部激光治疗和抗VEGF注射，强化血糖血压控制，3个月后复查

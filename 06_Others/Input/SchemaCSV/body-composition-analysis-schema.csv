@@ -1,0 +1,22 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行体成分分析的日期,2025-08-15
+measurementMethod,测量方法,String,"用于体成分分析的方法。<br>**建议值**: `DEXA`, `BIA`, `水下称重`, `空气置换法`",BIA
+bodyWeight,体重(kg),Number,测量时的体重。,70.5
+bodyHeight,身高(cm),Number,测量时的身高。,175.0
+bmi,体质指数 (BMI),Number,"体重指数，根据身高和体重计算。<br>**计算公式**: 体重(kg) / (身高(m)²)",23.0
+bodyFatMass,脂肪量(kg),Number,身体的总脂肪量。,18.2
+leanBodyMass,去脂体重(kg),Number,身体的去脂体重（不含脂肪的体重）。,52.3
+skeletalMuscleMass,骨骼肌量(kg),Number,"身体的骨骼肌总量。<br>**建议值**: `偏低`, `正常`, `偏高`",30.5
+bodyFatPercentage,体脂百分比(%),Number,"身体脂肪占总体重的百分比。<br>**建议值**: `偏低`, `正常`, `偏高`, `肥胖`",25.8
+totalBodyWater,总体水分(kg),Number,身体的总水分量。,40.1
+intracellularWater,细胞内液(kg),Number,身体的细胞内液量。,25.5
+extracellularWater,细胞外液(kg),Number,身体的细胞外液量。,14.6
+resistance,电阻(Ohm),Number,身体对电流的阻力，BIA测量特有。,500
+reactance,电抗(Ohm),Number,身体组织对电流的容抗，BIA测量特有。,50
+phaseAngle,相位角(度),Number,由电阻和电抗计算得出，BIA测量特有。,5.7
+waistCircumference,腰围(cm),Number,腰部的周长。,85.0
+hipCircumference,臀围(cm),Number,臀部的周长。,95.0
+waistHipRatio,腰臀比,Number,腰围与臀围的比值。,0.89
+visceralFatArea,内脏脂肪面积(cm²),Number,内脏脂肪的横截面积（部分设备可测量）。,90
+diagnosisImpression,诊断/印象,String,医生对体成分分析结果的综合诊断或印象。,体脂率偏高
+recommendation,建议,String,医生根据测量结果提出的建议。,建议增加运动

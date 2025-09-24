@@ -1,0 +1,13 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行肝脏硬度检查的日期,2025-08-15
+measurementMethod,测量方法,String,"肝脏硬度测量的具体技术。<br>**建议值**: `瞬时弹性成像 (TE/FibroScan)`, `二维剪切波弹性成像 (2D-SWE)`, `点剪切波弹性成像 (pSWE/ARFI)`",瞬时弹性成像 (TE/FibroScan)
+liverStiffnessValue,肝脏硬度值,Number,肝脏硬度测量结果的平均值,7.5
+liverStiffnessUnit,肝脏硬度单位,String,"肝脏硬度值的单位。<br>**建议值**: `kPa`",kPa
+iqrValue,IQR值 (四分位距),Number,测量结果的四分位距，反映测量值的离散程度,1.2
+measurementSuccessRate,测量成功率,String,测量成功率的百分比,90%
+capValue,CAP值,Number,CAP（Controlled Attenuation Parameter）值，用于评估肝脏脂肪变性程度，单位dB/m。,250
+fibrosisStage,肝纤维化分期,String,"根据肝脏硬度值推断的肝纤维化分期。<br>**建议值**: `F0 (无纤维化)`, `F1 (轻度纤维化)`, `F2 (中度纤维化)`, `F3 (重度纤维化)`, `F4 (肝硬化)`",F2 (中度纤维化)
+previousStiffnessValue,上次硬度值,Number,上次肝脏硬度测量值，用于趋势分析。,6.8
+previousExamDate,上次检查日期,String,上次肝脏硬度检查日期。,2024-08-15
+diagnosisImpression,诊断/印象,String,医生对肝脏硬度检查的诊断或初步印象。,肝纤维化
+recommendation,建议,String,医生根据检查结果提出的建议。,定期随访

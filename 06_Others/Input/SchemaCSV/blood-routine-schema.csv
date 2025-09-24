@@ -1,0 +1,28 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行血常规检查的日期,2025-08-15
+hemoglobin,血红蛋白 (Hb),Number,"血红蛋白浓度，反映贫血程度。<br>单位: g/L<br>**参考范围**: 男性130-175，女性115-150",140
+redBloodCellCount,红细胞计数 (RBC),Number,"红细胞数量。<br>单位: ×10¹²/L<br>**参考范围**: 男性4.3-5.8，女性3.8-5.1",4.5
+hematocrit,红细胞比容 (HCT),Number,"红细胞在血液中的体积百分比。<br>单位: %<br>**参考范围**: 男性40-50，女性35-45",42
+meanCorpuscularVolume,平均红细胞体积 (MCV),Number,"平均红细胞体积。<br>单位: fL<br>**参考范围**: 82-100",88
+meanCorpuscularHemoglobin,平均红细胞血红蛋白量 (MCH),Number,"每个红细胞中血红蛋白的平均含量。<br>单位: pg<br>**参考范围**: 27-34",31
+meanCorpuscularHemoglobinConcentration,平均红细胞血红蛋白浓度 (MCHC),Number,"红细胞中血红蛋白的平均浓度。<br>单位: g/L<br>**参考范围**: 316-354",335
+redCellDistributionWidth,红细胞分布宽度 (RDW),Number,"红细胞大小的变异系数。<br>单位: %<br>**参考范围**: 11.5-14.5",13.2
+whiteBloodCellCount,白细胞计数 (WBC),Number,"白细胞总数。<br>单位: ×10⁹/L<br>**参考范围**: 3.5-9.5",6.8
+neutrophilCount,中性粒细胞计数 (NEUT#),Number,"中性粒细胞绝对计数。<br>单位: ×10⁹/L<br>**参考范围**: 1.8-6.3",4.2
+neutrophilPercentage,中性粒细胞百分比 (NEUT%),Number,"中性粒细胞占白细胞的百分比。<br>单位: %<br>**参考范围**: 40-75",62
+lymphocyteCount,淋巴细胞计数 (LYMPH#),Number,"淋巴细胞绝对计数。<br>单位: ×10⁹/L<br>**参考范围**: 1.1-3.2",2.1
+lymphocytePercentage,淋巴细胞百分比 (LYMPH%),Number,"淋巴细胞占白细胞的百分比。<br>单位: %<br>**参考范围**: 20-50",31
+monocyteCount,单核细胞计数 (MONO#),Number,"单核细胞绝对计数。<br>单位: ×10⁹/L<br>**参考范围**: 0.1-0.6",0.3
+monocytePercentage,单核细胞百分比 (MONO%),Number,"单核细胞占白细胞的百分比。<br>单位: %<br>**参考范围**: 3-10",5
+eosinophilCount,嗜酸性粒细胞计数 (EOS#),Number,"嗜酸性粒细胞绝对计数。<br>单位: ×10⁹/L<br>**参考范围**: 0.02-0.52",0.15
+eosinophilPercentage,嗜酸性粒细胞百分比 (EOS%),Number,"嗜酸性粒细胞占白细胞的百分比。<br>单位: %<br>**参考范围**: 1-8",2
+basophilCount,嗜碱性粒细胞计数 (BASO#),Number,"嗜碱性粒细胞绝对计数。<br>单位: ×10⁹/L<br>**参考范围**: 0-0.06",0.02
+basophilPercentage,嗜碱性粒细胞百分比 (BASO%),Number,"嗜碱性粒细胞占白细胞的百分比。<br>单位: %<br>**参考范围**: 0-1",0
+plateletCount,血小板计数 (PLT),Number,"血小板数量。<br>单位: ×10⁹/L<br>**参考范围**: 125-350",280
+meanPlateletVolume,平均血小板体积 (MPV),Number,"血小板的平均体积。<br>单位: fL<br>**参考范围**: 7.4-12.5",9.8
+plateletDistributionWidth,血小板分布宽度 (PDW),Number,"血小板大小的变异系数。<br>单位: %<br>**参考范围**: 9-18",15.2
+plateletcrit,血小板压积 (PCT),Number,"血小板在血液中的体积百分比。<br>单位: %<br>**参考范围**: 0.108-0.282",0.22
+abnormalCells,异常细胞,String,"血涂片中发现的异常细胞。<br>**建议值**: `无`, `有-请注明类型`",无
+reticulocyteCount,网织红细胞计数,Number,"网织红细胞计数（如果检测）。<br>单位: %<br>**参考范围**: 0.5-1.5",1.0
+diagnosisImpression,诊断/印象,String,医生对血常规检查结果的综合诊断或印象。,血常规正常
+recommendation,建议,String,医生根据检查结果提出的建议。,定期复查

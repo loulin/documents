@@ -1,0 +1,102 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行血脂代谢检查的日期,2025-08-15
+fastingStatus,空腹状态,String,"采血前禁食时间。<br>**建议值**: `非空腹`, `8-12小时空腹`, `>12小时空腹`",8-12小时空腹
+totalCholesterol,总胆固醇 (TC),Number,"血清总胆固醇。<br>单位: mmol/L<br>**分层**: <5.2(合适), 5.2-6.2(边缘), >6.2(高)",5.8
+lowDensityLipoprotein,低密度脂蛋白胆固醇 (LDL-C),Number,"LDL胆固醇。<br>单位: mmol/L<br>**分层**: <3.4(合适), 3.4-4.1(边缘), ≥4.1(高)",3.8
+highDensityLipoprotein,高密度脂蛋白胆固醇 (HDL-C),Number,"HDL胆固醇。<br>单位: mmol/L<br>**分层**: 男性<1.04(低), 女性<1.29(低), >1.55(高)",1.15
+triglycerides,甘油三酯 (TG),Number,"甘油三酯。<br>单位: mmol/L<br>**分层**: <1.7(正常), 1.7-2.3(边缘), 2.3-5.6(高), >5.6(极高)",2.5
+nonHdlCholesterol,非HDL胆固醇 (Non-HDL-C),Number,"非HDL胆固醇。<br>单位: mmol/L<br>**计算公式**: TC-HDL-C<br>**目标值**: <4.3",4.65
+remainantCholesterol,残余胆固醇 (RC),Number,"残余胆固醇。<br>单位: mmol/L<br>**计算公式**: TC-HDL-C-LDL-C",0.85
+totalCholesterolHdlRatio,总胆固醇HDL比值 (TC/HDL-C),Number,"总胆固醇与HDL胆固醇比值。<br>**目标值**: <5.0",5.04
+ldlHdlRatio,低密度脂蛋白HDL比值 (LDL-C/HDL-C),Number,"LDL胆固醇与HDL胆固醇比值。<br>**目标值**: <3.5",3.30
+triglyceideHdlRatio,甘油三酯HDL比值 (TG/HDL-C),Number,"甘油三酯与HDL胆固醇比值。<br>**目标值**: <3.5",2.17
+apolipoproteinA1,载脂蛋白A1 (ApoA1),Number,"载脂蛋白A1。<br>单位: g/L<br>**参考范围**: 1.04-2.02",1.35
+apolipoproteinB,载脂蛋白B (ApoB),Number,"载脂蛋白B。<br>单位: g/L<br>**参考范围**: 0.52-1.63<br>**目标值**: <0.9",1.15
+apolipoproteinBToA1Ratio,载脂蛋白B/A1比值 (ApoB/ApoA1),Number,"载脂蛋白B与A1比值。<br>**目标值**: <0.8",0.85
+lipoproteinA,脂蛋白(a) [Lp(a)],Number,"脂蛋白(a)。<br>单位: mg/L<br>**参考范围**: <300<br>**高风险值**: >500",420
+smallDenseLdl,小而密LDL (sdLDL),Number,"小而密LDL胆固醇。<br>单位: mmol/L<br>**高风险值**: >1.1",1.25
+smallDenseLdlPercentage,小而密LDL百分比,Number,"小而密LDL占总LDL百分比。<br>单位: %<br>**高风险值**: >50%",45
+ldlParticleNumber,LDL颗粒数量 (LDL-P),Number,"LDL颗粒数量。<br>单位: nmol/L<br>**目标值**: <1000",1250
+ldlParticleSize,LDL颗粒大小,Number,"LDL颗粒平均直径。<br>单位: nm<br>**小颗粒值**: <25.5nm",24.8
+hdlSubfractions.hdl2c,HDL亚组分.HDL2-C,Number,"HDL2胆固醇。<br>单位: mmol/L",0.65
+hdlSubfractions.hdl3c,HDL亚组分.HDL3-C,Number,"HDL3胆固醇。<br>单位: mmol/L",0.50
+vldlCholesterol,极低密度脂蛋白胆固醇 (VLDL-C),Number,"VLDL胆固醇。<br>单位: mmol/L<br>**估算公式**: TG/2.2",1.14
+idlCholesterol,中间密度脂蛋白胆固醇 (IDL-C),Number,"IDL胆固醇。<br>单位: mmol/L",0.35
+cholesterolEsters,胆固醇酯,Number,"胆固醇酯。<br>单位: mmol/L",4.35
+freeCholesterol,游离胆固醇,Number,"游离胆固醇。<br>单位: mmol/L",1.45
+cholesterylEsterTransferProtein,胆固醇酯转移蛋白 (CETP),Number,"CETP活性。<br>单位: nmol/mL/h",85
+lecithinCholesterolAcyltransferase,卵磷脂胆固醇酰基转移酶 (LCAT),Number,"LCAT活性。<br>单位: nmol/mL/h",65
+hepaticLipase,肝脂酶 (HL),Number,"肝脂酶活性。<br>单位: nmol/mL/h",125
+lipoproteinLipase,脂蛋白脂酶 (LPL),Number,"脂蛋白脂酶活性。<br>单位: nmol/mL/h",95
+phospholipids,磷脂,Number,"血清磷脂。<br>单位: mmol/L",2.8
+sphingomyelin,鞘磷脂,Number,"血清鞘磷脂。<br>单位: μmol/L",450
+ceramides,神经酰胺,Number,"血清神经酰胺。<br>单位: μmol/L",3.2
+oxidizedLdl,氧化LDL (ox-LDL),Number,"氧化低密度脂蛋白。<br>单位: mg/L<br>**参考范围**: <60",75
+malondialdehydeModifiedLdl,丙二醛修饰LDL (MDA-LDL),Number,"MDA修饰LDL。<br>单位: mg/L",55
+geneticMarkers.ldlrMutation,遗传标记.LDLR基因突变,String,"LDLR基因突变检测。<br>**建议值**: `未检测`, `阴性`, `阳性-请注明突变位点`",未检测
+geneticMarkers.apobMutation,遗传标记.APOB基因突变,String,"APOB基因突变检测。<br>**建议值**: `未检测`, `阴性`, `阳性-请注明突变位点`",未检测
+geneticMarkers.pcsk9Mutation,遗传标记.PCSK9基因突变,String,"PCSK9基因突变检测。<br>**建议值**: `未检测`, `阴性`, `阳性-请注明突变位点`",未检测
+geneticMarkers.ldlrapMutation,遗传标记.LDLRAP基因突变,String,"LDLRAP基因突变检测。<br>**建议值**: `未检测`, `阴性`, `阳性-请注明突变位点`",未检测
+familialHypercholesterolemia.dlcnScore,家族性高胆固醇血症.DLCN评分,Number,"Dutch脂质诊所网络评分。<br>**分级**: <3(不太可能), 3-5(可能), 6-8(很可能), >8(确定)",4
+familialHypercholesterolemia.simonBroomsCriteria,家族性高胆固醇血症.Simon Brooms标准,String,"Simon Brooms诊断标准。<br>**建议值**: `不符合`, `可能`, `很可能`, `确定`",可能
+familialHypercholesterolemia.makeICriteria,家族性高胆固醇血症.MEDPED标准,String,"MEDPED诊断标准。<br>**建议值**: `不符合`, `符合`",不符合
+xanthomas.tendinous,黄瘤.腱黄瘤,String,"腱黄瘤存在情况。<br>**建议值**: `无`, `有`",无
+xanthomas.eyelid,黄瘤.眼睑黄瘤,String,"眼睑黄瘤存在情况。<br>**建议值**: `无`, `有`",无
+xanthomas.palmar,黄瘤.掌纹黄瘤,String,"掌纹黄瘤存在情况。<br>**建议值**: `无`, `有`",无
+xanthomas.tuberous,黄瘤.结节性黄瘤,String,"结节性黄瘤存在情况。<br>**建议值**: `无`, `有`",无
+cornealArcus,角膜弓,String,"角膜弓存在情况。<br>**建议值**: `无`, `有`",无
+familyHistory.prematureChd,家族史.早发冠心病,String,"家族早发冠心病史。<br>**建议值**: `无`, `一级亲属男性<55岁女性<65岁`, `二级亲属`",一级亲属男性<55岁女性<65岁
+familyHistory.hypercholesterolemia,家族史.高胆固醇血症,String,"家族高胆固醇血症史。<br>**建议值**: `无`, `有`",有
+familyHistory.xanthomas,家族史.黄瘤,String,"家族黄瘤史。<br>**建议值**: `无`, `有`",无
+comorbidities.diabetes,合并症.糖尿病,String,"糖尿病合并情况。<br>**建议值**: `无`, `糖尿病前期`, `2型糖尿病`, `1型糖尿病`",2型糖尿病
+comorbidities.hypertension,合并症.高血压,String,"高血压合并情况。<br>**建议值**: `无`, `1级`, `2级`, `3级`",2级
+comorbidities.obesity,合并症.肥胖,String,"肥胖合并情况。<br>**建议值**: `否`, `超重`, `肥胖`, `重度肥胖`",超重
+comorbidities.metabolicSyndrome,合并症.代谢综合征,String,"代谢综合征合并情况。<br>**建议值**: `否`, `是`",是
+comorbidities.coronaryHeartDisease,合并症.冠心病,String,"冠心病合并情况。<br>**建议值**: `无`, `稳定性心绞痛`, `急性冠脉综合征`, `心肌梗死史`",无
+comorbidities.stroke,合并症.脑卒中,String,"脑卒中合并情况。<br>**建议值**: `无`, `缺血性`, `出血性`, `TIA`",无
+comorbidities.peripheralArteryDisease,合并症.外周动脉疾病,String,"外周动脉疾病合并情况。<br>**建议值**: `无`, `有`",无
+comorbidities.chronicKidneyDisease,合并症.慢性肾脏病,String,"慢性肾脏病合并情况。<br>**建议值**: `无`, `G1`, `G2`, `G3a`, `G3b`, `G4`, `G5`",无
+comorbidities.hypothyroidism,合并症.甲状腺功能减退,String,"甲减合并情况。<br>**建议值**: `无`, `亚临床`, `临床`",无
+comorbidities.liverDisease,合并症.肝脏疾病,String,"肝脏疾病合并情况。<br>**建议值**: `无`, `脂肪肝`, `肝炎`, `肝硬化`",脂肪肝
+cardiovascularRiskAssessment.ascvdRisk,心血管风险评估.ASCVD风险,Number,"10年ASCVD风险。<br>单位: %<br>**分层**: <5%(低), 5-7.5%(中等), 7.5-20%(高), >20%(极高)",12.5
+cardiovascularRiskAssessment.framinghamRisk,心血管风险评估.Framingham风险,Number,"Framingham 10年风险。<br>单位: %",15.8
+cardiovascularRiskAssessment.scoreRisk,心血管风险评估.SCORE风险,Number,"SCORE 10年风险。<br>单位: %",8.2
+cardiovascularRiskAssessment.riskCategory,心血管风险评估.风险分层,String,"心血管风险分层。<br>**建议值**: `低危`, `中危`, `高危`, `极高危`",高危
+lipidTargets.ldlcTarget,血脂目标.LDL-C目标,Number,"个体化LDL-C目标值。<br>单位: mmol/L",2.6
+lipidTargets.nonHdlcTarget,血脂目标.Non-HDL-C目标,Number,"个体化Non-HDL-C目标值。<br>单位: mmol/L",3.4
+lipidTargets.apobTarget,血脂目标.ApoB目标,Number,"个体化ApoB目标值。<br>单位: g/L",0.8
+currentMedications.statins,目前用药.他汀类,String,"他汀类药物使用情况。<br>**建议值**: `未使用`, `使用-请注明药物和剂量`",阿托伐他汀 20mg qn
+currentMedications.ezetimibe,目前用药.依折麦布,String,"依折麦布使用情况。<br>**建议值**: `未使用`, `使用-请注明剂量`",依折麦布 10mg qd
+currentMedications.pcsk9Inhibitors,目前用药.PCSK9抑制剂,String,"PCSK9抑制剂使用情况。<br>**建议值**: `未使用`, `使用-请注明药物和剂量`",未使用
+currentMedications.fibrates,目前用药.贝特类,String,"贝特类药物使用情况。<br>**建议值**: `未使用`, `使用-请注明药物和剂量`",未使用
+currentMedications.niacin,目前用药.烟酸类,String,"烟酸类药物使用情况。<br>**建议值**: `未使用`, `使用-请注明剂量`",未使用
+currentMedications.omega3,目前用药.Omega-3,String,"Omega-3脂肪酸使用情况。<br>**建议值**: `未使用`, `使用-请注明剂量`",未使用
+treatmentResponse.statinResponse,治疗反应.他汀反应,String,"对他汀类药物的治疗反应。<br>**建议值**: `良好`, `中等`, `较差`, `不耐受`",中等
+treatmentResponse.statinInduced.myopathy,治疗反应.他汀相关.肌病,String,"他汀相关肌病。<br>**建议值**: `无`, `肌痛`, `肌炎`, `横纹肌溶解`",无
+treatmentResponse.statinInduced.diabetes,治疗反应.他汀相关.糖尿病,String,"他汀相关糖尿病。<br>**建议值**: `无`, `新发糖尿病`",无
+treatmentResponse.statinInduced.liverToxicity,治疗反应.他汀相关.肝毒性,String,"他汀相关肝毒性。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+lifestyleFactors.diet,生活方式.饮食,String,"饮食模式评估。<br>**建议值**: `健康`, `一般`, `不健康`",一般
+lifestyleFactors.exercise,生活方式.运动,String,"运动习惯评估。<br>**建议值**: `规律`, `偶尔`, `很少`, `从不`",偶尔
+lifestyleFactors.weight,生活方式.体重管理,String,"体重管理情况。<br>**建议值**: `良好`, `一般`, `较差`",一般
+lifestyleFactors.smoking,生活方式.吸烟,String,"吸烟状况。<br>**建议值**: `从不`, `已戒烟`, `目前吸烟`",已戒烟
+lifestyleFactors.alcohol,生活方式.饮酒,String,"饮酒习惯。<br>**建议值**: `不饮酒`, `适量`, `过量`",适量
+dietaryAssessment.saturatedFat,饮食评估.饱和脂肪酸,Number,"饱和脂肪酸摄入量。<br>单位: g/day<br>**推荐值**: <总能量7%",25
+dietaryAssessment.transFat,饮食评估.反式脂肪酸,Number,"反式脂肪酸摄入量。<br>单位: g/day<br>**推荐值**: <总能量1%",2.5
+dietaryAssessment.cholesterol,饮食评估.胆固醇,Number,"胆固醇摄入量。<br>单位: mg/day<br>**推荐值**: <300mg",350
+dietaryAssessment.fiber,饮食评估.膳食纤维,Number,"膳食纤维摄入量。<br>单位: g/day<br>**推荐值**: >25g",18
+dietaryAssessment.omega3,饮食评估.Omega-3脂肪酸,Number,"Omega-3脂肪酸摄入量。<br>单位: g/day<br>**推荐值**: >1g",0.5
+bodyMeasurements.bodyMassIndex,体格测量.体质指数,Number,"体质指数。<br>单位: kg/m²<br>**目标值**: 18.5-24.9",27.5
+bodyMeasurements.waistCircumference,体格测量.腰围,Number,"腰围。<br>单位: cm<br>**目标值**: 男性<90，女性<85",92
+treatmentGoals.primaryPrevention,治疗目标.一级预防,String,"一级预防目标值设定",LDL-C <2.6 mmol/L
+treatmentGoals.secondaryPrevention,治疗目标.二级预防,String,"二级预防目标值设定",不适用
+monitoringPlan.frequency,监测计划.复查频率,String,"血脂监测频率建议",治疗后6-8周复查
+monitoringPlan.parameters,监测计划.监测参数,String,需要监测的主要参数,血脂全套、肝功能、肌酶
+adherence.medication,依从性.用药依从性,String,"用药依从性评估。<br>**建议值**: `良好`, `一般`, `较差`",一般
+adherence.lifestyle,依从性.生活方式依从性,String,"生活方式干预依从性。<br>**建议值**: `良好`, `一般`, `较差`",较差
+clinicalEndpoints.targetAchievement,临床终点.目标达成,String,"血脂目标达成情况。<br>**建议值**: `已达标`, `未达标`",未达标
+clinicalEndpoints.cardiovascularEvents,临床终点.心血管事件,String,"心血管事件发生情况。<br>**建议值**: `无`, `心绞痛`, `心肌梗死`, `脑卒中`, `其他`",无
+qualityOfLife,生活质量,String,"生活质量评估。<br>**建议值**: `良好`, `一般`, `较差`",一般
+patientEducation,患者教育,String,"患者教育完成情况。<br>**建议值**: `未接受`, `基础教育`, `强化教育`",基础教育
+costEffectiveness,成本效益,String,"治疗成本效益评估",中等
+diagnosisImpression,诊断/印象,String,医生对血脂代谢检查结果的综合诊断或印象。,混合性高脂血症，疑似家族性高胆固醇血症
+recommendation,建议,String,医生根据检查结果提出的建议。,强化他汀治疗，联合依折麦布，生活方式干预

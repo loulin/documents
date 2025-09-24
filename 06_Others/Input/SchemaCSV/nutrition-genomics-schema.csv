@@ -1,0 +1,129 @@
+fieldName,fieldNameCN,dataType,description,examples
+examDate,检查日期,String,"检查日期，格式YYYY-MM-DD",2024-12-01
+patientID,患者ID,String,患者唯一标识符,P001234
+patientName,患者姓名,String,患者姓名,张三
+clinicalIndication,临床适应症,String,检查的临床适应症,营养代谢异常基因筛查
+diagnosisImpression,诊断印象,String,基于检查结果的诊断印象,营养代谢基因多态性检测结果
+recommendation,建议,String,基于检查结果的建议,个体化营养干预方案制定
+
+# 基本信息
+testingInstitution,检测机构,String,进行基因检测的实验室或机构,华大基因
+testingMethod,检测方法,String,基因检测使用的技术方法,全基因组SNP芯片检测
+sampleType,样本类型,String,检测使用的样本类型,血液/唾液/口腔拭子
+collectionDate,采样日期,String,样本采集日期,2024-11-28
+reportDate,报告日期,String,检测报告出具日期,2024-12-01
+reportNumber,报告编号,String,基因检测报告编号,NGS2024120001
+
+# 营养素代谢相关基因
+vitaminDMetabolism,维生素D代谢能力,String,VDR基因多态性影响的维生素D代谢能力,正常/轻度异常/异常
+vitaminB12Absorption,维生素B12吸收能力,String,FUT2基因影响的维生素B12吸收能力,正常/降低
+folateMetabolism,叶酸代谢能力,String,MTHFR基因多态性影响的叶酸代谢,正常/中等/差
+vitaminCNeed,维生素C需求量,String,基于基因型的维生素C需求评估,标准需求/高需求
+vitaminEEfficiency,维生素E利用效率,String,TTPA基因影响的维生素E利用效率,高效/中等/低效
+calciumAbsorption,钙吸收能力,String,VDR、CaSR基因影响的钙吸收能力,良好/一般/差
+ironMetabolism,铁代谢能力,String,HFE基因多态性影响的铁代谢,正常/轻度异常/异常
+zincUtilization,锌利用效率,String,MT基因家族影响的锌利用效率,高效/中等/低效
+magnesiumNeed,镁需求量,String,基于基因型的镁需求评估,标准需求/高需求
+
+# 脂质代谢相关基因
+fatMetabolism,脂肪代谢能力,String,PPARA、PPARG基因影响的脂肪代谢,高效/中等/低效
+omega3Response,Omega-3反应性,String,FADS基因群影响的Omega-3脂肪酸代谢,高反应/中等反应/低反应
+cholesterolSynthesis,胆固醇合成能力,String,HMGCR基因影响的胆固醇合成,正常/升高/降低
+saturatedFatSensitivity,饱和脂肪敏感性,String,APOE基因型影响的饱和脂肪敏感性,低敏感/中等敏感/高敏感
+transFatRisk,反式脂肪风险,String,基因型决定的反式脂肪健康风险,低风险/中等风险/高风险
+
+# 糖代谢相关基因
+glucoseMetabolism,葡萄糖代谢能力,String,GLUT4、IRS1基因影响的葡萄糖代谢,高效/中等/低效
+insulinSensitivity,胰岛素敏感性,String,基因型决定的胰岛素敏感性,高敏感/中等/低敏感
+sugarAddiction,糖成瘾倾向,String,DRD2基因影响的糖分摄入倾向,低倾向/中等/高倾向
+lactoseIntolerance,乳糖不耐受,String,LCT基因决定的乳糖耐受能力,耐受/部分耐受/不耐受
+fructoseMetabolism,果糖代谢能力,String,ALDOB基因影响的果糖代谢,正常/轻度异常/异常
+
+# 蛋白质代谢相关基因
+proteinMetabolism,蛋白质代谢能力,String,氨基酸代谢相关基因的综合评估,高效/中等/低效
+aminoacidRequirement,氨基酸需求特点,String,基于基因型的氨基酸需求模式,标准需求/高需求/特殊需求
+proteinDigestion,蛋白质消化能力,String,蛋白酶基因影响的蛋白质消化,良好/一般/差
+leucineResponse,亮氨酸反应性,String,mTOR通路基因影响的亮氨酸反应,高反应/中等/低反应
+
+# 食物敏感性和耐受性基因
+glutenSensitivity,麸质敏感性,String,HLA-DQ基因影响的麸质敏感性,低敏感/中等/高敏感
+histamineIntolerance,组胺不耐受,String,DAO、HNMT基因影响的组胺代谢,正常/轻度异常/异常
+alcoholMetabolism,酒精代谢能力,String,ADH、ALDH基因影响的酒精代谢,快代谢/中等/慢代谢
+caffeineMetabolism,咖啡因代谢,String,CYP1A2基因影响的咖啡因代谢速度,快代谢/慢代谢
+saltSensitivity,盐敏感性,String,ACE、AGT基因影响的盐敏感性,低敏感/中等/高敏感
+
+# 抗氧化和解毒基因
+antioxidantCapacity,抗氧化能力,String,SOD、GPX基因影响的抗氧化能力,强/中等/弱
+detoxificationCapacity,解毒能力,String,GST基因家族影响的解毒能力,强/中等/弱
+inflammationResponse,炎症反应倾向,String,IL6、TNF基因影响的炎症反应,低倾向/中等/高倾向
+
+# 食欲调节相关基因
+appetiteControl,食欲控制能力,String,LEP、LEPR基因影响的食欲调节,良好/一般/差
+satietyResponse,饱腹感反应,String,MC4R基因影响的饱腹感,敏感/中等/迟钝
+foodReward,食物奖赏敏感性,String,DRD2基因影响的食物奖赏反应,低敏感/中等/高敏感
+emotionalEating,情绪化进食倾向,String,COMT基因影响的情绪化进食,低倾向/中等/高倾向
+
+# 体重管理相关基因
+weightManagement,体重管理能力,String,FTO基因影响的体重管理,容易/中等/困难
+metabolicRate,基础代谢率,String,UCP基因影响的基础代谢率,高/中等/低
+fatDistribution,脂肪分布模式,String,基因决定的脂肪分布倾向,腹型/梨型/均匀型
+exerciseResponse,运动反应性,String,ACTN3基因影响的运动代谢反应,高反应/中等/低反应
+
+# 营养需求个体化建议
+proteinRecommendation,蛋白质推荐摄入,String,基于基因型的蛋白质摄入建议,标准量/增加量/减少量
+carbohydrateRecommendation,碳水化合物推荐,String,基于基因型的碳水化合物摄入建议,标准量/增加量/减少量
+fatRecommendation,脂肪推荐摄入,String,基于基因型的脂肪摄入建议,标准量/增加量/减少量
+fiberRecommendation,膳食纤维推荐,String,基于基因型的膳食纤维摄入建议,标准量/增加量
+waterRecommendation,水分推荐摄入,String,基于基因型的水分摄入建议,标准量/增加量
+
+# 特殊营养素推荐
+omega3Recommendation,Omega-3推荐量,String,基于基因型的Omega-3脂肪酸推荐摄入,标准量/增加量
+antioxidantRecommendation,抗氧化剂推荐,String,基于基因型的抗氧化营养素推荐,标准量/增加量
+probioticRecommendation,益生菌推荐,String,基于基因型的益生菌补充建议,不需要/标准补充/加强补充
+mineralRecommendation,矿物质推荐,String,基于基因型的矿物质补充建议,标准量/个性化调整
+
+# 饮食模式推荐
+dietPatternRecommendation,饮食模式推荐,String,基于基因型的最适饮食模式,地中海式/低脂式/低碳水/高蛋白
+mealTimingRecommendation,进餐时间推荐,String,基于昼夜节律基因的进餐时间建议,标准时间/早进餐/晚进餐
+fastingCompatibility,间歇性禁食适应性,String,基于基因型的间歇性禁食适应性,适合/不太适合/不适合
+
+# 生活方式整合建议
+exerciseNutritionIntegration,运动营养整合,String,运动与营养的基因型整合建议,标准方案/个性化方案
+sleepNutritionRelation,睡眠营养关联,String,基于基因型的睡眠与营养关联建议,标准关注/特殊关注
+stressNutritionManagement,压力营养管理,String,基于基因型的压力相关营养管理,标准管理/强化管理
+
+# 风险评估
+nutritionRelatedDiseaseRisk,营养相关疾病风险,String,基于基因型的营养相关疾病风险评估,低风险/中等风险/高风险
+metabolicSyndromeRisk,代谢综合征风险,String,营养基因影响的代谢综合征风险,低风险/中等风险/高风险
+cardiacNutritionRisk,心血管营养风险,String,心血管疾病相关的营养基因风险,低风险/中等风险/高风险
+
+# 监测建议
+nutritionMonitoringFrequency,营养监测频率,String,基于基因风险的营养状态监测频率,年度监测/半年监测/季度监测
+biomarkerTracking,生物标志物追踪,String,建议重点监测的营养生物标志物,标准指标/扩展指标/个性化指标
+supplementationMonitoring,补充剂监测,String,营养补充剂使用的监测建议,不需要/定期监测/密切监测
+
+# 遗传咨询
+geneticCounselingNeed,遗传咨询需求,String,是否需要专业的营养遗传咨询,不需要/建议咨询/强烈建议
+familyScreeningRecommendation,家族筛查推荐,String,是否推荐家族成员进行营养基因检测,不推荐/可考虑/推荐
+pediatricNutritionGuidance,儿童营养指导,String,对儿童营养的基因指导建议,标准指导/个性化指导
+
+# 质量控制
+testQualityScore,检测质量评分,Number,基因检测的质量控制评分(0-100),95
+coverageCompleteness,覆盖度完整性,Number,目标基因区域的覆盖完整性(%),98.5
+confidenceLevel,置信水平,String,检测结果的置信水平,高置信/中等置信/低置信
+
+# 报告信息
+reportVersion,报告版本,String,营养基因组学报告的版本号,v2.1.0
+referenceDatabase,参考数据库,String,使用的基因变异参考数据库,dbSNP+ClinVar+OMIM
+analysisMethod,分析方法,String,基因数据分析使用的生物信息学方法,标准流程/高级分析
+interpretationDate,解读日期,String,基因数据解读完成日期,2024-12-01
+
+# 随访建议
+followupSchedule,随访计划,String,基于基因检测结果的随访建议,3个月/6个月/1年
+reassessmentTiming,重新评估时机,String,建议重新进行营养基因评估的时间,5年/10年/不需要
+lifestyleModificationGoals,生活方式修改目标,String,基于基因检测的生活方式修改目标,短期目标/长期目标
+
+# 备注和其他
+specialConsiderations,特殊考虑事项,String,需要特别注意的营养基因相关事项,无/有特殊情况
+limitationsNote,局限性说明,String,营养基因检测结果的局限性说明,标准局限性/特殊局限性
+futureTestingRecommendations,未来检测建议,String,建议的后续营养相关基因检测,无/有推荐

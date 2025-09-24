@@ -1,0 +1,68 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行糖尿病综合检查的日期,2025-08-15
+diabetesType,糖尿病类型,String,"糖尿病分型。<br>**建议值**: `1型糖尿病`, `2型糖尿病`, `妊娠糖尿病`, `特殊类型糖尿病`, `糖尿病前期`",2型糖尿病
+diabetesDuration,糖尿病病程,Number,"糖尿病诊断至今的年数。<br>单位: 年",5
+fastingGlucose,空腹血糖 (FPG),Number,"空腹血糖浓度。<br>单位: mmol/L<br>**参考范围**: 3.9-6.1",7.2
+postprandialGlucose,餐后2小时血糖 (2hPG),Number,"餐后2小时血糖浓度。<br>单位: mmol/L<br>**参考范围**: <7.8",12.5
+hemoglobinA1c,糖化血红蛋白 (HbA1c),Number,"糖化血红蛋白。<br>单位: %<br>**目标值**: <7.0（一般患者）",8.5
+fructosamine,果糖胺,Number,"血清果糖胺，反映2-3周血糖控制。<br>单位: μmol/L<br>**参考范围**: 205-285",320
+oralGlucoseToleranceTest.baseline,OGTT.基础血糖,Number,"OGTT基础血糖值。<br>单位: mmol/L",6.8
+oralGlucoseToleranceTest.glucose30min,OGTT.30分钟血糖,Number,"OGTT 30分钟血糖值。<br>单位: mmol/L",9.5
+oralGlucoseToleranceTest.glucose60min,OGTT.60分钟血糖,Number,"OGTT 60分钟血糖值。<br>单位: mmol/L",12.8
+oralGlucoseToleranceTest.glucose120min,OGTT.120分钟血糖,Number,"OGTT 120分钟血糖值。<br>单位: mmol/L",11.2
+oralGlucoseToleranceTest.glucose180min,OGTT.180分钟血糖,Number,"OGTT 180分钟血糖值。<br>单位: mmol/L",8.9
+insulinBaseline,基础胰岛素,Number,"空腹胰岛素水平。<br>单位: mU/L<br>**参考范围**: 2.6-24.9",15.2
+insulin30min,30分钟胰岛素,Number,"OGTT 30分钟胰岛素水平。<br>单位: mU/L",45.6
+insulin60min,60分钟胰岛素,Number,"OGTT 60分钟胰岛素水平。<br>单位: mU/L",52.3
+insulin120min,120分钟胰岛素,Number,"OGTT 120分钟胰岛素水平。<br>单位: mU/L",38.7
+cPeptideBaseline,基础C肽,Number,"空腹C肽水平。<br>单位: ng/mL<br>**参考范围**: 1.1-4.4",2.1
+cPeptide30min,30分钟C肽,Number,"OGTT 30分钟C肽水平。<br>单位: ng/mL",3.8
+cPeptide60min,60分钟C肽,Number,"OGTT 60分钟C肽水平。<br>单位: ng/mL",4.2
+cPeptide120min,120分钟C肽,Number,"OGTT 120分钟C肽水平。<br>单位: ng/mL",3.5
+homaIR,胰岛素抵抗指数 (HOMA-IR),Number,"胰岛素抵抗指数。<br>**计算公式**: (空腹胰岛素×空腹血糖)/22.5<br>**参考值**: <2.5",4.8
+homaB,胰岛β细胞功能指数 (HOMA-β),Number,"β细胞功能指数。<br>**计算公式**: (20×空腹胰岛素)/(空腹血糖-3.5)",85.6
+matsudaIndex,Matsuda指数,Number,"胰岛素敏感性指数。<br>**参考值**: >2.5",1.8
+dispositionIndex,处置指数 (DI),Number,"胰岛素分泌和敏感性综合指数",1200
+autoAntibodies.gad,胰岛自身抗体.GAD抗体,String,"谷氨酸脱羧酶抗体。<br>**建议值**: `阴性`, `阳性`",阴性
+autoAntibodies.ia2,胰岛自身抗体.IA-2抗体,String,"蛋白酪氨酸磷酸酶抗体。<br>**建议值**: `阴性`, `阳性`",阴性
+autoAntibodies.znT8,胰岛自身抗体.ZnT8抗体,String,"锌转运体8抗体。<br>**建议值**: `阴性`, `阳性`",阴性
+autoAntibodies.ica,胰岛自身抗体.ICA抗体,String,"胰岛细胞抗体。<br>**建议值**: `阴性`, `阳性`",阴性
+ketones.serum,酮体.血酮,Number,"血清酮体浓度。<br>单位: mmol/L<br>**参考范围**: <0.6",0.2
+ketones.urine,酮体.尿酮,String,"尿酮体定性。<br>**建议值**: `阴性(-)`, `1+`, `2+`, `3+`, `4+`",阴性(-)
+diabeticComplications.retinopathy,糖尿病并发症.视网膜病变,String,"糖尿病视网膜病变分期。<br>**建议值**: `无`, `轻度非增殖性`, `中度非增殖性`, `重度非增殖性`, `增殖性`",无
+diabeticComplications.nephropathy,糖尿病并发症.肾病,String,"糖尿病肾病分期。<br>**建议值**: `无`, `微量白蛋白尿`, `大量白蛋白尿`, `肾功能下降`, `终末期肾病`",微量白蛋白尿
+diabeticComplications.neuropathy,糖尿病并发症.神经病变,String,"糖尿病神经病变类型。<br>**建议值**: `无`, `感觉神经病变`, `运动神经病变`, `自主神经病变`, `混合型`",感觉神经病变
+diabeticComplications.macrovascular,糖尿病并发症.大血管病变,String,"糖尿病大血管并发症。<br>**建议值**: `无`, `冠心病`, `脑血管病`, `下肢血管病`, `多发病变`",无
+microalbumin,尿微量白蛋白,Number,"尿微量白蛋白。<br>单位: mg/L<br>**参考范围**: <30",45
+albuminCreatinineRatio,白蛋白肌酐比 (ACR),Number,"尿白蛋白肌酐比。<br>单位: mg/mmol<br>**参考范围**: <3.5",5.2
+estimatedGFR,估算肾小球滤过率 (eGFR),Number,"估算肾小球滤过率。<br>单位: mL/min/1.73m²<br>**参考范围**: >90",85
+diabeticFootExam.sensation,糖尿病足检查.感觉检查,String,"足部感觉检查结果。<br>**建议值**: `正常`, `轻度减退`, `中度减退`, `重度减退`, `消失`",轻度减退
+diabeticFootExam.dorsalisPedis,糖尿病足检查.足背动脉,String,"足背动脉搏动。<br>**建议值**: `正常`, `减弱`, `消失`",正常
+diabeticFootExam.posteriorTibial,糖尿病足检查.胫后动脉,String,"胫后动脉搏动。<br>**建议值**: `正常`, `减弱`, `消失`",正常
+diabeticFootExam.skinCondition,糖尿病足检查.皮肤状况,String,"足部皮肤状况。<br>**建议值**: `正常`, `干燥`, `破溃`, `感染`, `坏疽`",干燥
+ankleArmIndex,踝臂指数 (ABI),Number,"踝臂血压指数。<br>**参考范围**: 0.9-1.3",1.05
+currentMedications,目前用药,String,目前使用的降糖药物,二甲双胍 500mg bid
+insulinRegimen,胰岛素方案,String,胰岛素治疗方案（如适用）,无
+hypoglycemiaEpisodes,低血糖发作,Number,"最近3个月低血糖发作次数。<br>单位: 次",2
+severeHypoglycemia,严重低血糖,String,"是否发生过严重低血糖。<br>**建议值**: `否`, `是`",否
+diabetesEducationCompleted,糖尿病教育,String,"是否接受过糖尿病教育。<br>**建议值**: `否`, `是-基础`, `是-强化`",是-基础
+bloodGlucoseMonitoringFrequency,血糖监测频率,String,"自我血糖监测频率。<br>**建议值**: `未监测`, `偶尔`, `每周几次`, `每日1-2次`, `每日3-4次`, `每日>4次`",每日1-2次
+cgmUsage,CGM使用情况,String,"连续血糖监测使用情况。<br>**建议值**: `未使用`, `间歇使用`, `持续使用`",未使用
+dietCompliance,饮食依从性,String,"饮食治疗依从性。<br>**建议值**: `良好`, `一般`, `较差`",一般
+exerciseRegular,规律运动,String,"是否进行规律运动。<br>**建议值**: `是`, `否`, `偶尔`",偶尔
+smokingStatus,吸烟状况,String,"吸烟状况。<br>**建议值**: `从不吸烟`, `已戒烟`, `目前吸烟`",已戒烟
+alcoholConsumption,饮酒情况,String,"饮酒情况。<br>**建议值**: `不饮酒`, `少量饮酒`, `中等量饮酒`, `大量饮酒`",少量饮酒
+bodyMassIndex,体质指数 (BMI),Number,"体质指数。<br>单位: kg/m²<br>**目标值**: 18.5-24.9",28.5
+waistCircumference,腰围,Number,"腰围测量。<br>单位: cm<br>**目标值**: 男性<90，女性<85",95
+bloodPressure.systolic,血压.收缩压,Number,"收缩压。<br>单位: mmHg<br>**目标值**: <130",135
+bloodPressure.diastolic,血压.舒张压,Number,"舒张压。<br>单位: mmHg<br>**目标值**: <80",85
+lipidProfile.totalCholesterol,血脂.总胆固醇,Number,"总胆固醇。<br>单位: mmol/L<br>**目标值**: <4.5",5.2
+lipidProfile.ldlCholesterol,血脂.低密度脂蛋白,Number,"LDL胆固醇。<br>单位: mmol/L<br>**目标值**: <2.6",3.1
+lipidProfile.hdlCholesterol,血脂.高密度脂蛋白,Number,"HDL胆固醇。<br>单位: mmol/L<br>**目标值**: 男性>1.04，女性>1.29",1.15
+lipidProfile.triglycerides,血脂.甘油三酯,Number,"甘油三酯。<br>单位: mmol/L<br>**目标值**: <1.7",2.8
+riskStratification,危险分层,String,"糖尿病患者危险分层。<br>**建议值**: `低危`, `中危`, `高危`, `极高危`",中危
+treatmentGoals.hba1c,治疗目标.HbA1c,Number,"个体化HbA1c目标值。<br>单位: %",7.5
+treatmentGoals.bloodPressure,治疗目标.血压,String,个体化血压目标值,<140/90 mmHg
+treatmentGoals.ldl,治疗目标.LDL,Number,"个体化LDL目标值。<br>单位: mmol/L",2.6
+diagnosisImpression,诊断/印象,String,医生对糖尿病检查结果的综合诊断或印象。,2型糖尿病，血糖控制欠佳
+recommendation,建议,String,医生根据检查结果提出的建议。,调整药物治疗方案，加强血糖监测

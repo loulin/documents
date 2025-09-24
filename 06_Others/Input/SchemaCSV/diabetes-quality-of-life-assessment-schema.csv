@@ -1,0 +1,201 @@
+fieldName,fieldNameCN,dataType,description,examples
+examDate,检查日期,String,检查日期，格式YYYY-MM-DD,2024-12-01
+patientID,患者唯一标识符,String,患者的唯一标识符,P202401001
+patientName,患者姓名,String,患者的姓名,张三
+clinicalIndication,临床适应症,String,进行生活质量评估的临床适应症,糖尿病生活质量评估
+diagnosisImpression,诊断印象,String,基于评估结果的诊断印象,生活质量轻度下降
+recommendation,建议,String,基于评估结果的建议,加强心理支持和疾病教育
+
+# 基本信息
+ageAtAssessment,评估时年龄,Number,患者评估时的年龄（岁）,45
+gender,性别,String,患者性别,男/女
+educationLevel,教育程度,String,患者的教育程度,小学/初中/高中/专科/本科/研究生
+maritalStatus,婚姻状况,String,患者的婚姻状况,已婚/未婚/离异/丧偶
+employmentStatus,就业状况,String,患者的就业状况,在职/退休/失业/学生/其他
+monthlyIncome,月收入,Number,患者或家庭月收入（元）,5000
+insuranceType,医疗保险类型,String,患者的医疗保险类型,职工医保/居民医保/新农合/商业保险/自费
+
+# 糖尿病病史
+diabetesType,糖尿病类型,String,患者的糖尿病类型,1型糖尿病/2型糖尿病/妊娠糖尿病/其他特殊类型
+diabetesDuration,糖尿病病程,Number,患者糖尿病诊断时间（年）,5.2
+currentTreatment,当前治疗方案,String,患者当前的治疗方案,口服药物/胰岛素/联合治疗/生活方式干预
+hbA1cLevel,糖化血红蛋白,Number,最近一次糖化血红蛋白水平（%）,7.5
+complicationsPresent,并发症情况,String,是否存在糖尿病并发症,是/否
+complicationsList,并发症列表,String,具体的并发症类型,糖尿病肾病/糖尿病视网膜病变/糖尿病神经病变/心血管疾病
+
+# 身体健康相关生活质量
+physicalFunctioningScore,身体功能评分,Number,身体功能限制程度评分（0-100分），100分为无限制,85
+physicalRoleLimitationScore,身体角色限制评分,Number,因身体健康问题导致的角色限制评分（0-100分）,75
+bodilyPainScore,身体疼痛评分,Number,身体疼痛程度和疼痛对工作的影响评分（0-100分）,80
+generalHealthScore,一般健康状况评分,Number,对当前健康状况的总体评价评分（0-100分）,70
+vitalityScore,活力评分,Number,精力和疲劳程度评分（0-100分），100分为精力充沛,65
+socialFunctioningScore,社会功能评分,Number,因身体健康和情感问题对社会活动的影响评分（0-100分）,78
+emotionalRoleLimitationScore,情感角色限制评分,Number,因情感问题导致的角色限制评分（0-100分）,72
+mentalHealthScore,心理健康评分,Number,心理健康状况评分（0-100分），100分为心理健康,68
+
+# 糖尿病特异性生活质量
+diabetesImpactScore,糖尿病影响评分,Number,糖尿病对日常生活影响的总体评分（1-5分），1分影响最小,3.2
+treatmentSatisfactionScore,治疗满意度评分,Number,对当前糖尿病治疗的满意度评分（1-5分），5分最满意,3.8
+hypoglycemiaFearScore,低血糖恐惧评分,Number,对低血糖的恐惧程度评分（1-5分），5分最恐惧,2.5
+dietaryFreedomScore,饮食自由度评分,Number,饮食限制对生活质量的影响评分（1-5分），5分影响最小,2.8
+socialBurdenScore,社会负担评分,Number,糖尿病带来的社会负担感评分（1-5分），1分负担最轻,3.5
+
+# 日常生活活动能力
+adlBasicScore,基本日常生活活动评分,Number,基本日常生活活动能力评分（0-100分），100分为完全独立,95
+adlInstrumentalScore,工具性日常生活活动评分,Number,工具性日常生活活动能力评分（0-100分）,88
+mobilityScore,活动能力评分,Number,行走和活动能力评分（1-5分），5分为无限制,4
+selfCareScore,自理能力评分,Number,个人卫生和自理能力评分（1-5分）,4.5
+houseworkCapacityScore,家务劳动能力评分,Number,完成家务劳动的能力评分（1-5分）,3.8
+workCapacityScore,工作能力评分,Number,完成工作任务的能力评分（1-5分）,3.5
+
+# 睡眠质量
+sleepQualityScore,睡眠质量评分,Number,总体睡眠质量评分（1-5分），5分为睡眠质量极好,3.2
+sleepLatency,入睡时间,Number,通常需要多长时间入睡（分钟）,25
+sleepDuration,睡眠时长,Number,每晚实际睡眠时间（小时）,6.5
+sleepEfficiency,睡眠效率,Number,睡眠效率（实际睡眠时间/卧床时间*100%）,82
+sleepDisturbance,睡眠干扰,String,是否存在睡眠干扰,是/否
+sleepDisturbanceType,睡眠干扰类型,String,睡眠干扰的具体类型,夜尿/低血糖/疼痛/焦虑
+dayTimeDysfunction,日间功能障碍,String,白天是否因睡眠问题影响功能,是/否
+
+# 情绪和心理状态
+depressionScore,抑郁评分,Number,抑郁症状评分（PHQ-9，0-27分），0分为无抑郁症状,8
+anxietyScore,焦虑评分,Number,焦虑症状评分（GAD-7，0-21分），0分为无焦虑症状,6
+stressLevel,压力水平,Number,感知压力水平评分（1-10分），10分为压力极大,6
+copingStrategy,应对策略,String,主要的压力应对策略,积极应对/消极应对/回避应对
+emotionalSupport,情感支持,Number,获得情感支持的程度评分（1-5分），5分为支持充分,3.5
+moodStability,情绪稳定性,Number,情绪稳定性评分（1-5分），5分为非常稳定,3.2
+
+# 社会关系和支持
+familySupport,家庭支持度,Number,家庭对糖尿病管理的支持程度评分（1-5分）,4.2
+friendsSupport,朋友支持度,Number,朋友对糖尿病管理的支持程度评分（1-5分）,3.5
+medicalTeamSupport,医疗团队支持度,Number,医疗团队支持程度评分（1-5分）,4.0
+socialParticipation,社会参与度,Number,参与社会活动的程度评分（1-5分）,3.2
+socialIsolation,社会孤立感,Number,社会孤立感程度评分（1-5分），1分为无孤立感,2.8
+relationshipQuality,人际关系质量,Number,总体人际关系质量评分（1-5分）,3.6
+
+# 经济状况影响
+financialStrain,经济压力,Number,糖尿病治疗带来的经济压力评分（1-5分），5分压力最大,3.5
+medicationAffordability,药物负担能力,String,药物费用的承受能力,完全承受/基本承受/部分困难/严重困难
+medicalCostBurden,医疗费用负担,Number,医疗费用占家庭收入比例（%）,15
+insuranceCoverage,保险覆盖度,Number,医疗保险覆盖医疗费用的比例（%）,70
+financialWorry,经济担忧,Number,对未来医疗费用的担忧程度评分（1-5分）,3.8
+
+# 工作和学习
+workProductivity,工作效率,Number,工作效率评分（1-5分），5分为效率极高,3.5
+workAbsenteeism,工作缺勤,Number,因糖尿病导致的月平均缺勤天数,1.2
+workLimitation,工作限制,String,糖尿病对工作的限制情况,无限制/轻度限制/中度限制/重度限制
+careerDevelopment,职业发展,Number,糖尿病对职业发展影响评分（1-5分），1分为无影响,2.5
+studyCapacity,学习能力,Number,学习新知识的能力评分（1-5分）,3.8
+concentrationLevel,注意力水平,Number,注意力集中程度评分（1-5分）,3.5
+
+# 饮食相关生活质量
+dietSatisfaction,饮食满意度,Number,对糖尿病饮食的满意度评分（1-5分）,3.2
+mealFlexibility,饮食灵活性,Number,饮食安排的灵活性评分（1-5分）,2.8
+socialEatingComfort,社交进餐舒适度,Number,在社交场合进餐的舒适度评分（1-5分）,2.5
+foodVariety,食物多样性,Number,食物选择多样性评分（1-5分）,3.0
+mealPlanningDifficulty,饮食计划困难度,Number,制定和执行饮食计划的困难度评分（1-5分）,3.2
+hungerManagement,饥饿感管理,Number,管理饥饿感的能力评分（1-5分）,3.0
+
+# 运动相关生活质量
+exerciseSatisfaction,运动满意度,Number,对运动锻炼的满意度评分（1-5分）,3.5
+exerciseBarriers,运动障碍,String,运动锻炼的主要障碍,时间不足/身体限制/场地限制/动机不足
+exerciseMotivation,运动动机,Number,运动锻炼的动机强度评分（1-5分）,3.8
+exerciseEnjoyment,运动乐趣,Number,运动锻炼的乐趣程度评分（1-5分）,3.2
+physicalActivity,身体活动水平,String,日常身体活动水平,久坐/轻度活动/中度活动/高强度活动
+exerciseConfidence,运动信心,Number,独立进行运动的信心评分（1-5分）,3.5
+
+# 血糖管理相关生活质量
+glucoseMonitoringBurden,血糖监测负担,Number,血糖监测的负担程度评分（1-5分），5分为负担极重,2.8
+injectionComfort,注射舒适度,Number,胰岛素注射的舒适度评分（1-5分），5分为非常舒适,3.5
+medicationReminder,用药提醒依赖,Number,对用药提醒的依赖程度评分（1-5分）,3.0
+treatmentComplexity,治疗复杂性,Number,治疗方案复杂性评分（1-5分），5分为非常复杂,3.2
+selfManagementConfidence,自我管理信心,Number,糖尿病自我管理信心评分（1-5分）,3.8
+treatmentFlexibility,治疗灵活性,Number,治疗方案灵活性评分（1-5分）,3.0
+
+# 并发症恐惧和担忧
+complicationFear,并发症恐惧,Number,对糖尿病并发症的恐惧程度评分（1-5分）,3.5
+futureHealthWorry,未来健康担忧,Number,对未来健康状况的担忧程度评分（1-5分）,3.8
+disabilityFear,残疾恐惧,Number,对可能致残的恐惧程度评分（1-5分）,3.2
+deathAnxiety,死亡焦虑,Number,与糖尿病相关的死亡焦虑评分（1-5分）,2.8
+hospitalFear,住院恐惧,Number,对住院治疗的恐惧程度评分（1-5分）,2.5
+procedureFear,医疗操作恐惧,Number,对医疗检查和操作的恐惧程度评分（1-5分）,2.8
+
+# 性生活质量
+sexualSatisfaction,性生活满意度,Number,性生活满意度评分（1-5分），5分为非常满意,3.0
+sexualFunction,性功能,Number,性功能状况评分（1-5分），5分为功能良好,3.2
+sexualDesire,性欲望,Number,性欲望强度评分（1-5分），5分为欲望强烈,3.0
+sexualConfidence,性自信,Number,性生活自信程度评分（1-5分）,3.2
+intimacyQuality,亲密关系质量,Number,与伴侣亲密关系质量评分（1-5分）,3.5
+sexualCommunication,性沟通,Number,与伴侣性沟通质量评分（1-5分）,3.2
+
+# 自我形象和自尊
+bodyImage,身体形象,Number,对自己身体形象的满意度评分（1-5分）,3.0
+selfEsteem,自尊心,Number,总体自尊心水平评分（1-5分）,3.2
+selfWorth,自我价值感,Number,自我价值感评分（1-5分）,3.5
+identityChanges,身份认同变化,String,糖尿病诊断后身份认同的变化,无变化/轻微变化/明显变化/巨大变化
+stigmaExperience,病耻感体验,Number,因糖尿病经历病耻感的程度评分（1-5分）,2.5
+confidenceLevel,自信水平,Number,总体自信水平评分（1-5分）,3.2
+
+# 健康行为
+medicationAdherence,用药依从性,Number,用药依从性评分（1-5分），5分为完全依从,4.0
+dietAdherence,饮食依从性,Number,饮食计划依从性评分（1-5分）,3.5
+exerciseAdherence,运动依从性,Number,运动计划依从性评分（1-5分）,3.2
+glucoseMonitoringAdherence,血糖监测依从性,Number,血糖监测依从性评分（1-5分）,3.8
+appointmentAdherence,随访依从性,Number,医疗随访依从性评分（1-5分）,4.2
+healthBehaviorChange,健康行为改变,String,诊断后健康行为的改变程度,无改变/轻微改变/明显改变/彻底改变
+
+# 疾病认知和接受
+diabetesKnowledge,糖尿病知识,Number,糖尿病相关知识掌握程度评分（1-5分）,3.8
+diseaseAcceptance,疾病接受度,Number,对糖尿病诊断的接受程度评分（1-5分）,3.5
+treatmentMotivation,治疗动机,Number,接受治疗的动机强度评分（1-5分）,4.0
+prognosisAwareness,预后认知,Number,对糖尿病预后的认知程度评分（1-5分）,3.5
+selfEfficacy,自我效能感,Number,管理糖尿病的自我效能感评分（1-5分）,3.6
+healthLocus,健康控制点,String,对健康的控制观念,内控型/外控型/机遇型
+
+# 医疗服务满意度
+doctorCommunication,医生沟通满意度,Number,与医生沟通的满意度评分（1-5分）,4.0
+nursingCare,护理服务满意度,Number,护理服务满意度评分（1-5分）,3.8
+medicalAccessibility,医疗可及性,Number,医疗服务可及性评分（1-5分）,3.5
+appointmentConvenience,预约便利性,Number,医疗预约便利性评分（1-5分）,3.2
+healthEducation,健康教育满意度,Number,健康教育服务满意度评分（1-5分）,3.6
+medicalEnvironment,医疗环境满意度,Number,医疗环境满意度评分（1-5分）,3.8
+
+# 家庭功能
+familyAdaptability,家庭适应性,Number,家庭对糖尿病的适应能力评分（1-5分）,3.5
+familyCohesion,家庭凝聚力,Number,家庭凝聚力评分（1-5分），5分为凝聚力强,3.8
+familyCommunication,家庭沟通,Number,家庭沟通质量评分（1-5分）,3.6
+familyConflict,家庭冲突,Number,因糖尿病导致的家庭冲突程度评分（1-5分）,2.5
+caregiverBurden,照护者负担,Number,主要照护者的负担程度评分（1-5分）,3.2
+familySupport,家庭支持,Number,家庭提供的支持质量评分（1-5分）,4.0
+
+# 精神健康专业评估
+mentalHealthService,心理健康服务利用,String,是否使用过心理健康服务,是/否
+counselingNeed,心理咨询需求,Number,心理咨询需求程度评分（1-5分）,3.0
+psychiatricHistory,精神病史,String,既往精神疾病史,无/有
+suicidalIdeation,自杀意念,String,是否存在自杀意念,无/有
+selfHarmBehavior,自伤行为,String,是否存在自伤行为,无/有
+mentalHealthMedication,精神科用药,String,是否使用精神科药物,无/有
+
+# 综合评估
+overallQOLScore,总体生活质量评分,Number,总体生活质量评分（1-10分），10分为生活质量极好,6.5
+functionalStatus,功能状态,String,总体功能状态评估,良好/一般/较差/差
+independenceLevel,独立性水平,String,生活独立性水平,完全独立/部分独立/需要帮助/完全依赖
+rehabilitationNeed,康复需求,String,是否需要康复治疗,不需要/需要
+socialServiceNeed,社会服务需求,String,是否需要社会服务支持,不需要/需要
+futureCarePlanning,未来护理计划,String,未来护理需求评估,无特殊需求/定期随访/加强管理/专业护理
+
+# 评估工具和方法
+assessmentTools,评估工具,String,使用的生活质量评估工具,SF-36/WHOQOL/DQOL/ADDQoL
+assessorType,评估者类型,String,进行评估的人员类型,患者自评/医生评估/护士评估/心理师评估
+assessmentDuration,评估用时,Number,完成评估所用时间（分钟）,45
+assessmentSetting,评估环境,String,评估进行的环境,门诊/病房/家庭/网络
+languageUsed,使用语言,String,评估使用的语言,中文/英文/方言
+culturalFactors,文化因素,String,影响评估的文化因素,无/有
+
+# 随访和管理
+followUpPlan,随访计划,String,生活质量随访计划,1个月后复评/3个月后复评/6个月后复评
+interventionRecommended,干预建议,String,推荐的生活质量改善干预,心理支持/健康教育/康复治疗/社会支持
+priorityAreas,优先改善领域,String,需要优先改善的生活质量领域,身体健康/心理健康/社会功能/疾病管理
+goalSetting,目标设定,String,生活质量改善目标,短期目标/中期目标/长期目标
+progressMonitoring,进展监测,String,生活质量进展监测方法,定期评估/量表跟踪/日记记录
+careCoordination,护理协调,String,多学科护理协调计划,内分泌科/心理科/营养科/康复科

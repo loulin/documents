@@ -1,0 +1,250 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行妊娠期糖尿病检查的日期,2025-08-15
+clinicalIndication,检查适应症,String,"进行妊娠期糖尿病检查的临床指征。<br>**建议值**: `常规筛查`, `高危筛查`, `症状评估`, `血糖监测`, `妊娠并发症评估`",高危筛查
+gestationalAge.weeks,妊娠周数.周,Number,"妊娠周数。<br>单位: 周",28
+gestationalAge.days,妊娠周数.天,Number,"妊娠天数。<br>单位: 天",3
+gestationalAge.trimester,妊娠周数.妊娠期,String,"妊娠期。<br>**建议值**: `早期(≤13周)`, `中期(14-27周)`, `晚期(≥28周)`",晚期
+gdmDiagnosis.iadjspsoCriteria,GDM诊断.IADPSG标准,String,"IADPSG诊断标准。<br>**建议值**: `阴性`, `阳性`",阳性
+gdmDiagnosis.whoCriteria,GDM诊断.WHO标准,String,"WHO诊断标准。<br>**建议值**: `阴性`, `阳性`",阳性
+gdmDiagnosis.severityClassification,GDM诊断.严重程度分级,String,"GDM严重程度。<br>**建议值**: `A1(饮食控制)`, `A2(需要胰岛素)`",A1
+gdmDiagnosis.onsetTiming,GDM诊断.发病时间,String,"GDM发病时间。<br>**建议值**: `早发(<20周)`, `典型(24-28周)`, `晚发(>28周)`",典型
+oralGlucoseToleranceTest.screeningMethod,口服葡萄糖耐量试验.筛查方法,String,"筛查方法。<br>**建议值**: `一步法(75g OGTT)`, `两步法(50g GCT+100g OGTT)`",一步法
+oralGlucoseToleranceTest.fastingPreparation,口服葡萄糖耐量试验.禁食准备,String,"禁食准备情况",禁食8-14小时
+oralGlucoseToleranceTest.fastingGlucose,口服葡萄糖耐量试验.空腹血糖,Number,"OGTT空腹血糖。<br>单位: mmol/L<br>**IADPSG阈值**: ≥5.1",5.3
+oralGlucoseToleranceTest.glucose1hour,口服葡萄糖耐量试验.1小时血糖,Number,"OGTT 1小时血糖。<br>单位: mmol/L<br>**IADPSG阈值**: ≥10.0",10.8
+oralGlucoseToleranceTest.glucose2hour,口服葡萄糖耐量试验.2小时血糖,Number,"OGTT 2小时血糖。<br>单位: mmol/L<br>**IADPSG阈值**: ≥8.5",9.2
+oralGlucoseToleranceTest.abnormalValues,口服葡萄糖耐量试验.异常值数量,Number,"OGTT异常值数量(共3个时间点)",2
+oralGlucoseToleranceTest.testTolerance,口服葡萄糖耐量试验.试验耐受性,String,"试验耐受性。<br>**建议值**: `良好`, `轻度不适`, `恶心呕吐`, `无法完成`",轻度不适
+glucoseChallengeTest.performed,葡萄糖激发试验.是否进行,String,"是否进行50g GCT。<br>**建议值**: `是`, `否`",否
+glucoseChallengeTest.glucose1hour,葡萄糖激发试验.1小时血糖,Number,"GCT 1小时血糖。<br>单位: mmol/L<br>**阈值**: ≥7.8（如进行）",未进行
+pregnancyHistory.gravida,妊娠史.妊娠次数,Number,"妊娠次数（包括本次）",3
+pregnancyHistory.para,妊娠史.分娩次数,Number,"分娩次数",2
+pregnancyHistory.abortions,妊娠史.流产次数,Number,"流产次数",0
+pregnancyHistory.previousGdm,妊娠史.既往GDM,String,"既往妊娠期糖尿病史。<br>**建议值**: `无`, `有`",有
+pregnancyHistory.previousMacrosomia,妊娠史.既往巨大儿,String,"既往巨大儿分娩史。<br>**建议值**: `无`, `有`",有
+pregnancyHistory.previousIntrauterineDeath,妊娠史.既往宫内死胎,String,"既往宫内死胎史。<br>**建议值**: `无`, `有`",无
+pregnancyHistory.previousNeonatalDeath,妊娠史.既往新生儿死亡,String,"既往新生儿死亡史。<br>**建议值**: `无`, `有`",无
+pregnancyHistory.previousCongenitalAnomalies,妊娠史.既往先天畸形,String,"既往胎儿先天畸形史。<br>**建议值**: `无`, `有`",无
+pregnancyHistory.previousPregnancyComplications,妊娠史.既往妊娠并发症,String,"既往妊娠并发症",妊娠期高血压
+prepregnancyFactors.prepregnancyWeight,孕前因素.孕前体重,Number,"孕前体重。<br>单位: kg",68
+prepregnancyFactors.prepregnancyBmi,孕前因素.孕前BMI,Number,"孕前体质指数。<br>单位: kg/m²",26.5
+prepregnancyFactors.bmiCategory,孕前因素.BMI分类,String,"BMI分类。<br>**建议值**: `偏瘦(<18.5)`, `正常(18.5-24.9)`, `超重(25-29.9)`, `肥胖(≥30)`",超重
+prepregnancyFactors.prepregnancyDiabetes,孕前因素.孕前糖尿病,String,"孕前糖尿病史。<br>**建议值**: `无`, `1型`, `2型`, `其他`",无
+prepregnancyFactors.prediabetes,孕前因素.糖尿病前期,String,"孕前糖尿病前期。<br>**建议值**: `无`, `有`",有
+prepregnancyFactors.metabolicSyndrome,孕前因素.代谢综合征,String,"孕前代谢综合征。<br>**建议值**: `无`, `有`",无
+prepregnancyFactors.pcos,孕前因素.多囊卵巢综合征,String,"多囊卵巢综合征史。<br>**建议值**: `无`, `有`",有
+currentPregnancy.conceptDion,本次妊娠.受孕方式,String,"受孕方式。<br>**建议值**: `自然受孕`, `辅助生殖技术`",自然受孕
+currentPregnancy.multipleGest ation,本次妊娠.多胎妊娠,String,"多胎妊娠。<br>**建议值**: `单胎`, `双胎`, `多胎`",单胎
+currentPregnancy.gestationalWeightGain,本次妊娠.妊娠期体重增长,Number,"妊娠期体重增长。<br>单位: kg",12.5
+currentPregnancy.weightGainRate,本次妊娠.体重增长速度,Number,"每周体重增长。<br>单位: kg/周",0.45
+currentPregnancy.appropriateWeightGain,本次妊娠.适宜体重增长,String,"体重增长是否适宜。<br>**建议值**: `适宜`, `过少`, `过多`",过多
+currentPregnancy.maternalAge,本次妊娠.孕产妇年龄,Number,"孕产妇年龄。<br>单位: 岁",32
+currentPregnancy.advancedMaternalAge,本次妊娠.高龄产妇,String,"高龄产妇(≥35岁)。<br>**建议值**: `否`, `是`",否
+maternalSymptoms.polyuria,孕妇症状.多尿,String,"多尿症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+maternalSymptoms.polydipsia,孕妇症状.多饮,String,"多饮症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+maternalSymptoms.fatigue,孕妇症状.乏力,String,"乏力症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+maternalSymptoms.blurredVision,孕妇症状.视觉模糊,String,"视觉模糊。<br>**建议值**: `无`, `偶尔`, `频繁`",无
+maternalSymptoms.recurrentInfections,孕妇症状.反复感染,String,"反复感染。<br>**建议值**: `无`, `有`",无
+maternalSymptoms.nausea Vomiting,孕妇症状.恶心呕吐,String,"恶心呕吐程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+bloodGlucoseMonitoring.frequency,血糖监测.监测频率,String,"血糖监测频率",餐前餐后各4次/日
+bloodGlucoseMonitoring.fastingGlucose.average,血糖监测.空腹血糖.平均值,Number,"平均空腹血糖。<br>单位: mmol/L<br>**目标**: <5.3",5.1
+bloodGlucoseMonitoring.fastingGlucose.range,血糖监测.空腹血糖.变异范围,String,"空腹血糖变异范围",4.8-5.5 mmol/L
+bloodGlucoseMonitoring.preprandialGlucose.average,血糖监测.餐前血糖.平均值,Number,"平均餐前血糖。<br>单位: mmol/L<br>**目标**: <5.3",5.2
+bloodGlucoseMonitoring.preprandialGlucose.range,血糖监测.餐前血糖.变异范围,String,"餐前血糖变异范围",4.9-5.8 mmol/L
+bloodGlucoseMonitoring.postprandial1hour.average,血糖监测.餐后1小时血糖.平均值,Number,"平均餐后1小时血糖。<br>单位: mmol/L<br>**目标**: <7.8",8.2
+bloodGlucoseMonitoring.postprandial1hour.range,血糖监测.餐后1小时血糖.变异范围,String,"餐后1小时血糖变异范围",7.2-9.5 mmol/L
+bloodGlucoseMonitoring.postprandial2hour.average,血糖监测.餐后2小时血糖.平均值,Number,"平均餐后2小时血糖。<br>单位: mmol/L<br>**目标**: <6.7",7.8
+bloodGlucoseMonitoring.postprandial2hour.range,血糖监测.餐后2小时血糖.变异范围,String,"餐后2小时血糖变异范围",6.8-8.9 mmol/L
+bloodGlucoseMonitoring.hypoglycemicEpisodes,血糖监测.低血糖发作,Number,"低血糖发作次数",2
+bloodGlucoseMonitoring.severeHypoglycemia,血糖监测.严重低血糖,String,"严重低血糖发作。<br>**建议值**: `无`, `有`",无
+bloodGlucoseMonitoring.glucoseVariability,血糖监测.血糖变异性,String,"血糖变异性评估。<br>**建议值**: `良好`, `一般`, `较大`",一般
+glycatedHemoglobin.hba1c,糖化血红蛋白.HbA1c,Number,"糖化血红蛋白。<br>单位: %<br>**目标**: <6.0%",6.2
+glycatedHemoglobin.fructosamine,糖化血红蛋白.果糖胺,Number,"血清果糖胺。<br>单位: μmol/L<br>**参考范围**: 205-285",265
+glycatedHemoglobin.glycatedAlbumin,糖化血红蛋白.糖化白蛋白,Number,"糖化白蛋白。<br>单位: %<br>**参考范围**: 11.0-16.0%",14.8
+continuousGlucoseMonitoring.performed,连续血糖监测.是否进行,String,"是否进行CGM。<br>**建议值**: `是`, `否`",是
+continuousGlucoseMonitoring.timeInRange,连续血糖监测.目标范围内时间,Number,"目标范围内时间。<br>单位: %<br>**目标**: >70%",68
+continuousGlucoseMonitoring.timeAboveRange,连续血糖监测.高于目标时间,Number,"高于目标范围时间。<br>单位: %",25
+continuousGlucoseMonitoring.timeBelowRange,连续血糖监测.低于目标时间,Number,"低于目标范围时间。<br>单位: %",7
+continuousGlucoseMonitoring.averageGlucose,连续血糖监测.平均血糖,Number,"平均血糖。<br>单位: mmol/L",6.8
+continuousGlucoseMonitoring.glucoseVariability,连续血糖监测.血糖变异性,Number,"血糖变异系数。<br>单位: %",28
+insulinResistanceMarkers.fastingInsulin,胰岛素抵抗标志物.空腹胰岛素,Number,"空腹胰岛素。<br>单位: pmol/L",185
+insulinResistanceMarkers.homaIr,胰岛素抵抗标志物.HOMA-IR,Number,"胰岛素抵抗指数。<br>**正常**: <2.5",4.2
+insulinResistanceMarkers.cPeptide,胰岛素抵抗标志物.C肽,Number,"空腹C肽。<br>单位: nmol/L",1.85
+insulinResistanceMarkers.proinsulin,胰岛素抵抗标志物.胰岛素原,Number,"胰岛素原。<br>单位: pmol/L",25.8
+inflammatoryMarkers.crp,炎症标志物.C反应蛋白,Number,"C反应蛋白。<br>单位: mg/L",5.2
+inflammatoryMarkers.interleukin6,炎症标志物.白介素6,Number,"白介素6。<br>单位: pg/mL",8.5
+inflammatoryMarkers.tnfAlpha,炎症标志物.肿瘤坏死因子α,Number,"TNF-α。<br>单位: pg/mL",12.8
+inflammatoryMarkers.adiponectin,炎症标志物.脂联素,Number,"脂联素。<br>单位: μg/mL",6.5
+inflammatoryMarkers.leptin,炎症标志物.瘦素,Number,"瘦素。<br>单位: ng/mL",28.5
+lipidProfile.totalCholesterol,血脂谱.总胆固醇,Number,"总胆固醇。<br>单位: mmol/L",6.2
+lipidProfile.ldlCholesterol,血脂谱.LDL胆固醇,Number,"LDL胆固醇。<br>单位: mmol/L",3.8
+lipidProfile.hdlCholesterol,血脂谱.HDL胆固醇,Number,"HDL胆固醇。<br>单位: mmol/L",1.2
+lipidProfile.triglycerides,血脂谱.甘油三酯,Number,"甘油三酯。<br>单位: mmol/L",3.2
+lipidProfile.freeElatteyAcids,血脂谱.游离脂肪酸,Number,"游离脂肪酸。<br>单位: mmol/L",0.65
+renalFunction.serumCreatinine,肾功能.血肌酐,Number,"血肌酐。<br>单位: μmol/L",68
+renalFunction.bloodUreaNitrogen,肾功能.尿素氮,Number,"尿素氮。<br>单位: mmol/L",4.2
+renalFunction.estimatedGfr,肾功能.估算肾小球滤过率,Number,"eGFR。<br>单位: mL/min/1.73m²",125
+renalFunction.urineProtein,肾功能.尿蛋白,String,"尿蛋白定性。<br>**建议值**: `阴性`, `微量`, `1+`, `2+`, `3+`",微量
+renalFunction.microalbumin,肾功能.微量白蛋白,Number,"尿微量白蛋白。<br>单位: mg/L",25.8
+renalFunction.albuminCreatinineRatio,肾功能.白蛋白肌酐比,Number,"尿白蛋白肌酐比。<br>单位: mg/g",18.5
+liverFunction.alt,肝功能.丙氨酸转氨酶,Number,"ALT。<br>单位: U/L",32
+liverFunction.ast,肝功能.天冬氨酸转氨酶,Number,"AST。<br>单位: U/L",28
+liverFunction.alkalinePhosphatase,肝功能.碱性磷酸酶,Number,"ALP。<br>单位: U/L",125
+liverFunction.totalBilirubin,肝功能.总胆红素,Number,"总胆红素。<br>单位: μmol/L",12.5
+liverFunction.albumin,肝功能.白蛋白,Number,"血清白蛋白。<br>单位: g/L",38
+thyroidFunction.tsh,甲状腺功能.TSH,Number,"促甲状腺激素。<br>单位: mU/L<br>**妊娠参考**: 0.1-2.5(T1), 0.2-3.0(T2), 0.3-3.0(T3)",1.8
+thyroidFunction.freeT4,甲状腺功能.游离T4,Number,"游离甲状腺素。<br>单位: pmol/L",15.8
+thyroidFunction.freeT3,甲状腺功能.游离T3,Number,"游离三碘甲状腺原氨酸。<br>单位: pmol/L",4.5
+thyroidFunction.thyroidAutoantibodies,甲状腺功能.甲状腺自身抗体,String,"甲状腺自身抗体检测",TPOAb阴性，TGAb阴性
+bloodPressure.systolic,血压.收缩压,Number,"收缩压。<br>单位: mmHg<br>**目标**: <140",132
+bloodPressure.diastolic,血压.舒张压,Number,"舒张压。<br>单位: mmHg<br>**目标**: <90",85
+bloodPressure.gestationalHypertension,血压.妊娠期高血压,String,"妊娠期高血压。<br>**建议值**: `无`, `妊娠期高血压`, `子痫前期`, `子痫`",妊娠期高血压
+bloodPressure.preeclampsia,血压.子痫前期,String,"子痫前期征象。<br>**建议值**: `无`, `有`",无
+hematology.hemoglobin,血液学.血红蛋白,Number,"血红蛋白。<br>单位: g/L<br>**正常**: >110",118
+hematology.hematocrit,血液学.红细胞压积,Number,"红细胞压积。<br>单位: %",35.8
+hematology.plateletCount,血液学.血小板计数,Number,"血小板计数。<br>单位: ×10⁹/L<br>**正常**: >100",285
+hematology.whiteBloodCellCount,血液学.白细胞计数,Number,"白细胞计数。<br>单位: ×10⁹/L",8.5
+hematology.ironStudies.serumIron,血液学.铁代谢.血清铁,Number,"血清铁。<br>单位: μmol/L",15.8
+hematology.ironStudies.transferrin,血液学.铁代谢.转铁蛋白,Number,"转铁蛋白。<br>单位: g/L",3.2
+hematology.ironStudies.ferritin,血液学.铁代谢.铁蛋白,Number,"血清铁蛋白。<br>单位: μg/L",85
+fetomaternal Assessment.fundal Height,胎儿孕妇评估.宫底高度,Number,"宫底高度。<br>单位: cm",30
+fetomaternalAssessment.estimatedFetalWeight,胎儿孕妇评估.估计胎儿体重,Number,"估计胎儿体重。<br>单位: g",1850
+fetomaternalAssessment.fetalGrowthPercentile,胎儿孕妇评估.胎儿生长百分位,Number,"胎儿体重百分位",75
+fetomaternalAssessment.macrosomiaRisk,胎儿孕妇评估.巨大儿风险,String,"巨大儿(>4000g)风险。<br>**建议值**: `低`, `中`, `高`",中
+fetomaternalAssessment.largeForGestationalAge,胎儿孕妇评估.大于胎龄儿,String,"大于胎龄儿(>90th百分位)。<br>**建议值**: `否`, `是`",是
+fetomaternalAssessment.amniontocFluid.volume,胎儿孕妇评估.羊水.容量,String,"羊水量。<br>**建议值**: `正常`, `过少`, `过多`",过多
+fetomaternalAssessment.amnioticFluid.index,胎儿孕妇评估.羊水.指数,Number,"羊水指数。<br>单位: cm<br>**正常**: 8-25",28
+ultrasoundFindings.fetalBiometry.bpd,超声检查.胎儿生物测量.双顶径,Number,"双顶径。<br>单位: mm",75
+ultrasoundFindings.fetalBiometry.hc,超声检查.胎儿生物测量.头围,Number,"头围。<br>单位: mm",268
+ultrasoundFindings.fetalBiometry.ac,超声检查.胎儿生物测量.腹围,Number,"腹围。<br>单位: mm",245
+ultrasoundFindings.fetalBiometry.fl,超声检查.胎儿生物测量.股骨长,Number,"股骨长。<br>单位: mm",58
+ultrasoundFindings.fetalBiometry.efw,超声检查.胎儿生物测量.估计胎儿体重,Number,"超声估计胎儿体重。<br>单位: g",1850
+ultrasoundFindings.placentalExamination,超声检查.胎盘检查,String,"胎盘检查结果",胎盘位置正常，成熟度II级
+ultrasoundFindings.umbilicalArtery.pi,超声检查.脐动脉.搏动指数,Number,"脐动脉搏动指数。<br>**正常**: <95th百分位",0.85
+ultrasoundFindings.umbilicalArtery.ri,超声检查.脐动脉.阻力指数,Number,"脐动脉阻力指数。<br>**正常**: <95th百分位",0.62
+ultrasoundFindings.middleCerebralArtery.pi,超声检查.大脑中动脉.搏动指数,Number,"大脑中动脉搏动指数",1.85
+ultrasoundFindings.uterineArtery.mean Pi,超声检查.子宫动脉.平均搏动指数,Number,"子宫动脉平均搏动指数",0.85
+fetalWellbeing.fetalHeartRate.baseline,胎儿健康.胎心率.基线,Number,"胎心率基线。<br>单位: bpm<br>**正常**: 110-160",142
+fetalWellbeing.fetalHeartRate.variability,胎儿健康.胎心率.变异性,String,"胎心率变异性。<br>**建议值**: `正常`, `减少`, `消失`",正常
+fetalWellbeing.fetalMovements,胎儿健康.胎动,String,"胎动情况。<br>**建议值**: `正常`, `减少`, `消失`",正常
+fetalWellbeing.amnioocentesis.performed,胎儿健康.羊膜腔穿刺.是否进行,String,"是否进行羊膜腔穿刺。<br>**建议值**: `是`, `否`",否
+fetalWellbeing.amniocentesis.indication,胎儿健康.羊膜腔穿刺.指征,String,"羊膜腔穿刺指征（如进行）",未进行
+fetalWellbeing.chronVillusSampling.performed,胎儿健康.绒毛取样.是否进行,String,"是否进行绒毛取样。<br>**建议值**: `是`, `否`",否
+fetalWellbeing.geneticScreen ing.performed,胎儿健康.遗传筛查.是否进行,String,"是否进行遗传筛查。<br>**建议值**: `是`, `否`",是
+fetalWellbeing.geneticScreening.results,胎儿健康.遗传筛查.结果,String,"遗传筛查结果",低风险
+fetalWellbeing.structuralAnomalies,胎儿健康.结构异常,String,"胎儿结构异常筛查。<br>**建议值**: `无异常`, `有异常`",无异常
+maternalComplications.urinaryTractInfection,母体并发症.尿路感染,String,"尿路感染。<br>**建议值**: `无`, `有`",无
+maternalComplications.vaginalCandidiasis,母体并发症.阴道念珠菌感染,String,"阴道念珠菌感染。<br>**建议值**: `无`, `有`",有
+maternalComplications.preterm Labor,母体并发症.早产,String,"早产风险。<br>**建议值**: `低`, `中`, `高`",低
+maternalComplications.gestational Hypertension,母体并发症.妊娠期高血压,String,"妊娠期高血压。<br>**建议值**: `无`, `有`",有
+maternalComplications.preeclampsia,母体并发症.子痫前期,String,"子痫前期。<br>**建议值**: `无`, `有`",无
+maternalComplications.cesareanDeliveryRisk,母体并发症.剖宫产风险,String,"剖宫产风险。<br>**建议值**: `低`, `中`, `高`",中
+treatment Plan.dietaryManagement.caloriRestriction,治疗计划.饮食管理.热量限制,Number,"每日热量限制。<br>单位: kcal",1800
+treatmentPlan.dietaryManagement.carbohydrateRestriction,治疗计划.饮食管理.碳水化合物限制,Number,"碳水化合物占总热量百分比。<br>**建议**: 40-45%",40
+treatmentPlan.dietaryManagement.proteinIntake,治疗计划.饮食管理.蛋白质摄入,Number,"蛋白质占总热量百分比。<br>**建议**: 20-25%",22
+treatmentPlan.dietaryManagement.fatIntake,治疗计划.饮食管理.脂肪摄入,Number,"脂肪占总热量百分比。<br>**建议**: 30-35%",33
+treatmentPlan.dietaryManagement.mealFrequency,治疗计划.饮食管理.进餐频次,String,"进餐频次建议",3次正餐+3次加餐
+treatmentPlan.dietaryManagement.nutritionist Consultation,治疗计划.饮食管理.营养师咨询,String,"营养师咨询。<br>**建议值**: `已完成`, `计划中`, `未安排`",已完成
+treatmentPlan.physicalActivity.type,治疗计划.体力活动.类型,String,"推荐运动类型",适度有氧运动
+treatmentPlan.physicalActivity.frequency,治疗计划.体力活动.频率,String,"运动频率",每周5次
+treatmentPlan.physicalActivity.duration,治疗计划.体力活动.持续时间,String,"运动持续时间",每次30分钟
+treatmentPlan.physicalActivity.intensity,治疗计划.体力活动.强度,String,"运动强度。<br>**建议值**: `轻度`, `中度`, `高强度`",中度
+treatmentPlan.physicalActivity.contraindications,治疗计划.体力活动.禁忌症,String,"运动禁忌症",无禁忌症
+treatmentPlan.insulinTherapy.indication,治疗计划.胰岛素治疗.适应症,String,"胰岛素治疗适应症。<br>**建议值**: `饮食运动无效`, `空腹血糖≥5.3`, `餐后血糖≥6.7`, `胎儿异常`",饮食运动无效
+treatmentPlan.insulinTherapy.type,治疗计划.胰岛素治疗.类型,String,"胰岛素类型。<br>**建议值**: `速效`, `短效`, `中效`, `长效`, `预混`",速效+中效
+treatmentPlan.insulinTherapy.regimen,治疗计划.胰岛素治疗.方案,String,"胰岛素方案",餐前速效+晚间中效
+treatmentPlan.insulinTherapy.dosage,治疗计划.胰岛素治疗.剂量,String,"胰岛素剂量",速效胰岛素6-8-6U，中效胰岛素12U
+treatmentPlan.insulinTherapy.titration,治疗计划.胰岛素治疗.剂量调整,String,"剂量调整方案",根据血糖监测结果调整
+treatmentPlan.oralMedications,治疗计划.口服药物,String,"口服降糖药使用。<br>**建议值**: `禁用`, `二甲双胍(部分地区)`, `胰岛素增敏剂`",禁用
+treatmentPlan.supplementation.folate,治疗计划.营养补充.叶酸,String,"叶酸补充",叶酸400μg daily
+treatmentPlan.supplementation.iron,治疗计划.营养补充.铁剂,String,"铁剂补充",硫酸亚铁100mg daily
+treatmentPlan.supplementation.calcium,治疗计划.营养补充.钙剂,String,"钙剂补充",碳酸钙600mg daily
+treatmentPlan.supplementation.vitaminD,治疗计划.营养补充.维生素D,String,"维生素D补充",维生素D3 800IU daily
+treatmentPlan.supplementation.dha,治疗计划.营养补充.DHA,String,"DHA补充",DHA 200mg daily
+monitoring.glucoseTargets.fastingGlucose,监测.血糖目标.空腹血糖,String,"空腹血糖目标",<5.3 mmol/L
+monitoring.glucoseTargets.preprandialGlucose,监测.血糖目标.餐前血糖,String,"餐前血糖目标",<5.3 mmol/L
+monitoring.glucoseTargets.postprandial1hour,监测.血糖目标.餐后1小时,String,"餐后1小时血糖目标",<7.8 mmol/L
+monitoring.glucoseTargets.postprandial2hour,监测.血糖目标.餐后2小时,String,"餐后2小时血糖目标",<6.7 mmol/L
+monitoring.glucoseTargets.bedtimeGlucose,监测.血糖目标.睡前血糖,String,"睡前血糖目标",<7.8 mmol/L
+monitoring.hypoglycemiaManagement,监测.低血糖管理,String,"低血糖处理方案",口服葡萄糖15g，15分钟后复测
+monitoring.ketoaetidosis Prevention,监测.酮症酸中毒预防,String,"酮症酸中毒预防措施",定期尿酮检测
+monitoring.visitSchedule.frequency,监测.随访计划.频率,String,"随访频率",每2周产科门诊
+monitoring.visitSchedule.specialists,监测.随访计划.专科,String,"专科随访",内分泌科每月随访
+monitoring.visitSchedule.emergencyContacts,监测.随访计划.紧急联系,String,"紧急联系方式",24小时急诊科
+laborDelivery.gestationalAgeAtDelivery,分娩.分娩孕周,Number,"分娩孕周。<br>单位: 周",38
+laborDelivery.deliveryMode,分娩.分娩方式,String,"分娩方式。<br>**建议值**: `自然分娩`, `剖宫产`, `阴道助产`",剖宫产
+laborDelivery.deliveryIndication,分娩.分娩指征,String,"分娩指征",巨大儿，血糖控制不良
+laborDelivery.laborComplications,分娩.产程并发症,String,"产程并发症",肩难产
+laborDelivery.bloodGlucoseManagement,分娩.血糖管理,String,"分娩期血糖管理",胰岛素静脉滴注
+laborDelivery.postpartumComplications,分娩.产后并发症,String,"产后并发症",产后出血
+neonatalOutcomes.birthWeight,新生儿结局.出生体重,Number,"新生儿出生体重。<br>单位: g",4200
+neonatalOutcomes.birthWeightCategory,新生儿结局.出生体重分类,String,"出生体重分类。<br>**建议值**: `适于胎龄`, `小于胎龄`, `大于胎龄`",大于胎龄
+neonatalOutcomes.macrosomia,新生儿结局.巨大儿,String,"巨大儿(>4000g)。<br>**建议值**: `否`, `是`",是
+neonatalOutcomes.neonatalHypoglycemia,新生儿结局.新生儿低血糖,String,"新生儿低血糖。<br>**建议值**: `无`, `有`",有
+neonatalOutcomes.respiratoryDistress,新生儿结局.呼吸窘迫,String,"新生儿呼吸窘迫。<br>**建议值**: `无`, `有`",无
+neonatalOutcomes.jaundice,新生儿结局.黄疸,String,"新生儿黄疸。<br>**建议值**: `生理性`, `病理性`",生理性
+neonatalOutcomes.birthTrauma,新生儿结局.产伤,String,"新生儿产伤。<br>**建议值**: `无`, `有`",无
+neonatalOutcomes.congenitalAnomalies,新生儿结局.先天畸形,String,"先天畸形。<br>**建议值**: `无`, `有`",无
+neonatalOutcomes.nicuAdmission,新生儿结局.NICU入住,String,"NICU入住。<br>**建议值**: `否`, `是`",否
+neonatalOutcomes.apgarScore.1minute,新生儿结局.Apgar评分.1分钟,Number,"1分钟Apgar评分。<br>**范围**: 0-10",8
+neonatalOutcomes.apgarScore.5minute,新生儿结局.Apgar评分.5分钟,Number,"5分钟Apgar评分。<br>**范围**: 0-10",9
+postpartumFollowUp.glucoseScreening.timing,产后随访.血糖筛查.时间,String,"产后血糖筛查时间",产后6-12周
+postpartumFollowUp.glucoseScreening.method,产后随访.血糖筛查.方法,String,"产后筛查方法。<br>**建议值**: `75g OGTT`, `空腹血糖`, `HbA1c`",75g OGTT
+postpartumFollowUp.glucoseScreening.results,产后随访.血糖筛查.结果,String,"产后筛查结果。<br>**建议值**: `正常`, `糖尿病前期`, `糖尿病`",糖尿病前期
+postpartumFollowUp.breastfeeding.status,产后随访.哺乳.状况,String,"哺乳状况。<br>**建议值**: `纯母乳喂养`, `混合喂养`, `人工喂养`",纯母乳喂养
+postpartumFollowUp.breastfeeding.bloodGlucoseMonitoring,产后随访.哺乳.血糖监测,String,"哺乳期血糖监测",继续血糖监测
+postpartumFollowUp.contraception.counseling,产后随访.避孕.咨询,String,"避孕咨询。<br>**建议值**: `已完成`, `计划中`, `未提供`",已完成
+postpartumFollowUp.contraception.method,产后随访.避孕.方法,String,"避孕方法选择",宫内节育器
+postpartumFollowUp.future PregnancyPlanning,产后随访.再次妊娠计划,String,"再次妊娠计划和咨询",暂无再次妊娠计划
+postpartumFollowUp.lifestyleCounseling,产后随访.生活方式咨询,String,"生活方式咨询",体重控制和饮食指导
+postpartumFollowUp.diabetesPrevention,产后随访.糖尿病预防,String,"糖尿病预防措施",定期血糖监测，生活方式干预
+riskFactors.familyHistory.diabetes,危险因素.家族史.糖尿病,String,"糖尿病家族史。<br>**建议值**: `无`, `一级亲属`, `二级亲属`",一级亲属
+riskFactors.familyHistory.gestationalDiabetes,危险因素.家族史.妊娠期糖尿病,String,"妊娠期糖尿病家族史。<br>**建议值**: `无`, `有`",有
+riskFactors.ethnicity.highriskPopulation,危险因素.种族.高危人群,String,"高危种族。<br>**建议值**: `否`, `是`",否
+riskFactors.socioeconomic.education,危险因素.社会经济.教育程度,String,"教育程度。<br>**建议值**: `小学`, `中学`, `大学`, `研究生`",大学
+riskFactors.socioeconomic.income,危险因素.社会经济.收入水平,String,"收入水平。<br>**建议值**: `低`, `中`, `高`",中
+riskFactors.lifestyle.diet,危险因素.生活方式.饮食,String,"孕前饮食习惯",高糖高脂饮食
+riskFactors.lifestyle.physicalActivity,危险因素.生活方式.体力活动,String,"孕前体力活动",久坐少动
+riskFactors.psychosocial.stress,危险因素.心理社会.应激,String,"妊娠期应激。<br>**建议值**: `低`, `中`, `高`",中
+riskFactors.psychosocial.support,危险因素.心理社会.社会支持,String,"社会支持系统。<br>**建议值**: `良好`, `一般`, `缺乏`",良好
+prognosisAssessment.maternal.shortTerm,预后评估.母体.短期预后,String,"母体短期预后。<br>**建议值**: `良好`, `一般`, `较差`",一般
+prognosisAssessment.maternal.longTermDiabetesRisk,预后评估.母体.远期糖尿病风险,String,"远期糖尿病风险。<br>**建议值**: `低`, `中`, `高`",高
+prognosisAssessment.maternal.cardiovascularRisk,预后评估.母体.心血管风险,String,"心血管疾病风险。<br>**建议值**: `低`, `中`, `高`",中
+prognosisAssessment.fetal.shortTerm,预后评估.胎儿.短期预后,String,"胎儿短期预后。<br>**建议值**: `良好`, `一般`, `较差`",一般
+prognosisAssessment.fetal.longTermMetabolicRisk,预后评估.胎儿.远期代谢风险,String,"子代远期代谢风险。<br>**建议值**: `低`, `中`, `高`",中
+prognosisAssessment.recurrence.nextPregnancy,预后评估.复发.下次妊娠,String,"下次妊娠复发风险。<br>**建议值**: `低`, `中`, `高`",高
+qualityOfLife.maternalWellbeing,生活质量.母体健康,String,"母体健康状况。<br>**建议值**: `良好`, `一般`, `较差`",一般
+qualityOfLife.anxietyDepression,生活质量.焦虑抑郁,String,"焦虑抑郁评估。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+qualityOfLife.treatmentBurden,生活质量.治疗负担,String,"治疗负担感受。<br>**建议值**: `轻`, `中`, `重`",中
+qualityOfLife.familyRelationships,生活质量.家庭关系,String,"家庭关系影响。<br>**建议值**: `无影响`, `轻度影响`, `明显影响`",轻度影响
+economicBurden.directCosts.medical,经济负担.直接费用.医疗,String,"医疗费用增加",产前检查频次增加
+economicBurden.directCosts.dietary,经济负担.直接费用.饮食,String,"特殊饮食费用",营养师咨询和特殊食品
+economicBurden.indirectCosts.timeOff,经济负担.间接费用.请假,String,"请假时间成本",频繁产检影响工作
+economicBurden.indirectCosts.familyCaregiver,经济负担.间接费用.家庭照护,String,"家庭照护成本",家人陪同产检
+patientEducation.diseaseKnowledge,患者教育.疾病认知,String,"GDM疾病认知。<br>**建议值**: `差`, `一般`, `良好`",良好
+patientEducation.selfManagementSkills,患者教育.自我管理技能,String,"自我管理技能。<br>**建议值**: `差`, `一般`, `良好`",良好
+patientEducation.glucoseMonitoringTechnique,患者教育.血糖监测技术,String,"血糖监测技术掌握。<br>**建议值**: `差`, `一般`, `良好`",良好
+patientEducation.insulinAdministration,患者教育.胰岛素注射,String,"胰岛素注射技术。<br>**建议值**: `差`, `一般`, `良好`, `不适用`",良好
+patientEducation.hypoglycemiaRecognition,患者教育.低血糖识别,String,"低血糖识别和处理。<br>**建议值**: `差`, `一般`, `良好`",良好
+patientEducation.dietaryCompliance,患者教育.饮食依从性,String,"饮食依从性。<br>**建议值**: `差`, `一般`, `良好`",一般
+patientEducation.exerciseCompliance,患者教育.运动依从性,String,"运动依从性。<br>**建议值**: `差`, `一般`, `良好`",一般
+multidisciplinaryCare.obstetrician,多学科协作.产科医生,String,"产科医生管理。<br>**建议值**: `主管`, `会诊`, `转诊`",主管
+multidisciplinaryCare.endocrinologist,多学科协作.内分泌科医生,String,"内分泌科医生参与。<br>**建议值**: `主管`, `会诊`, `转诊`",会诊
+multidisciplinaryCare.dietitian,多学科协作.营养师,String,"营养师参与。<br>**建议值**: `必需`, `建议`, `可选`",必需
+multidisciplinaryCare.diabetesEducator,多学科协作.糖尿病教育者,String,"糖尿病教育者参与。<br>**建议值**: `必需`, `建议`, `可选`",建议
+multidisciplinaryCare.perinatologist,多学科协作.围产医学专家,String,"围产医学专家参与。<br>**建议值**: `必需`, `建议`, `可选`",可选
+multidisciplinaryCare.neonatologist,多学科协作.新生儿科医生,String,"新生儿科医生参与。<br>**建议值**: `必需`, `建议`, `可选`",建议
+specialConsiderations.multipleGestation,特殊考虑.多胎妊娠,String,"多胎妊娠特殊考虑。<br>**建议值**: `不适用`, `需要考虑`",不适用
+specialConsiderations.pregestationalDiabetes,特殊考虑.孕前糖尿病,String,"孕前糖尿病特殊考虑。<br>**建议值**: `不适用`, `需要考虑`",不适用
+specialConsiderations.recurrentGdm,特殊考虑.复发性GDM,String,"复发性GDM特殊考虑。<br>**建议值**: `不适用`, `需要考虑`",需要考虑
+specialConsiderations.earlyOnsetGdm,特殊考虑.早发GDM,String,"早发GDM特殊考虑。<br>**建议值**: `不适用`, `需要考虑`",不适用
+specialConsiderations.severeInsulinResistance,特殊考虑.严重胰岛素抵抗,String,"严重胰岛素抵抗特殊考虑。<br>**建议值**: `不适用`, `需要考虑`",不适用
+research Participation.clinicalTrials,研究参与.临床试验,String,"临床试验参与意愿。<br>**建议值**: `愿意`, `不愿意`, `考虑中`",考虑中
+researchParticipation.biobank,研究参与.生物样本库,String,"生物样本库参与",愿意提供血液样本
+researchParticipation.longitudinalStudy,研究参与.纵向研究,String,"纵向研究参与",愿意参加长期随访
+technology Integration.cgmUsage,技术整合.连续血糖监测应用,String,"CGM技术应用",已使用CGM进行血糖管理
+technologyIntegration.telemedicine,技术整合.远程医疗,String,"远程医疗应用",使用远程血糖数据传输
+technologyIntegration.mobileApps,技术整合.移动应用,String,"移动应用使用",使用糖尿病管理APP
+technologyIntegration.aiAssistance,技术整合.人工智能辅助,String,"AI辅助应用",AI血糖趋势预测
+diagnosisImpression,诊断/印象,String,医生对妊娠期糖尿病检查结果的综合诊断或印象。,妊娠期糖尿病A1型，血糖控制一般，胎儿偏大
+recommendation,建议,String,医生根据检查结果提出的建议。,加强饮食控制，规律运动，密切监测血糖，必要时启动胰岛素治疗

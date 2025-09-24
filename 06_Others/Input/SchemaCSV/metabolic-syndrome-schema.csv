@@ -1,0 +1,142 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行代谢综合征评估的日期,2025-08-15
+diagnosticCriteria,诊断标准,String,"使用的诊断标准。<br>**建议值**: `IDF`, `NCEP ATP III`, `WHO`, `CDS`, `JIS`",IDF
+centralObesity.present,中心性肥胖.是否存在,String,"是否存在中心性肥胖。<br>**建议值**: `否`, `是`",是
+centralObesity.waistCircumference,中心性肥胖.腰围,Number,"腰围测量值。<br>单位: cm<br>**IDF标准**: 男性≥90，女性≥80",95
+centralObesity.waistHipRatio,中心性肥胖.腰臀比,Number,"腰臀比。<br>**WHO标准**: 男性≥0.90，女性≥0.85",0.92
+centralObesity.bodyMassIndex,中心性肥胖.体质指数,Number,"体质指数。<br>单位: kg/m²<br>**WHO标准**: ≥30",28.5
+centralObesity.bodyFatPercentage,中心性肥胖.体脂百分比,Number,"体脂百分比。<br>单位: %",32.5
+centralObesity.visceralFatArea,中心性肥胖.内脏脂肪面积,Number,"内脏脂肪面积（如果测量）。<br>单位: cm²",150
+glucoseMetabolism.fastingGlucose,糖代谢异常.空腹血糖,Number,"空腹血糖。<br>单位: mmol/L<br>**异常标准**: ≥5.6或已诊断糖尿病",6.2
+glucoseMetabolism.postprandialGlucose,糖代谢异常.餐后血糖,Number,"餐后2小时血糖。<br>单位: mmol/L",8.5
+glucoseMetabolism.oralGlucoseToleranceTest,糖代谢异常.糖耐量试验,String,"OGTT结果。<br>**建议值**: `正常`, `空腹血糖受损`, `糖耐量异常`, `糖尿病`",糖耐量异常
+glucoseMetabolism.hba1c,糖代谢异常.糖化血红蛋白,Number,"糖化血红蛋白。<br>单位: %<br>**异常标准**: ≥5.7%",6.1
+glucoseMetabolism.diabetesType,糖代谢异常.糖尿病类型,String,"糖尿病类型（如果诊断）。<br>**建议值**: `无`, `1型`, `2型`, `其他特殊类型`",2型
+glucoseMetabolism.diabetesDuration,糖代谢异常.糖尿病病程,Number,"糖尿病诊断年数（如果适用）。<br>单位: 年",3
+bloodPressure.systolic,血压异常.收缩压,Number,"收缩压。<br>单位: mmHg<br>**异常标准**: ≥130或正在降压治疗",140
+bloodPressure.diastolic,血压异常.舒张压,Number,"舒张压。<br>单位: mmHg<br>**异常标准**: ≥85或正在降压治疗",90
+bloodPressure.hypertensionDiagnosis,血压异常.高血压诊断,String,"高血压诊断状态。<br>**建议值**: `无`, `新诊断`, `既往诊断`",既往诊断
+bloodPressure.antihypertensiveMedication,血压异常.降压药物,String,"降压药物使用情况。<br>**建议值**: `未使用`, `单药`, `联合用药`",单药
+bloodPressure.meanArterialPressure,血压异常.平均动脉压,Number,"平均动脉压。<br>单位: mmHg<br>**计算公式**: (收缩压+2×舒张压)/3",107
+dyslipidemia.triglycerides,血脂异常.甘油三酯,Number,"甘油三酯。<br>单位: mmol/L<br>**异常标准**: ≥1.7",2.8
+dyslipidemia.hdlCholesterol,血脂异常.高密度脂蛋白,Number,"HDL胆固醇。<br>单位: mmol/L<br>**异常标准**: 男性<1.03，女性<1.29",0.95
+dyslipidemia.ldlCholesterol,血脂异常.低密度脂蛋白,Number,"LDL胆固醇。<br>单位: mmol/L",3.8
+dyslipidemia.totalCholesterol,血脂异常.总胆固醇,Number,"总胆固醇。<br>单位: mmol/L",5.8
+dyslipidemia.nonHdlCholesterol,血脂异常.非HDL胆固醇,Number,"非HDL胆固醇。<br>单位: mmol/L<br>**计算公式**: 总胆固醇-HDL胆固醇",4.85
+dyslipidemia.apolipoproteinB,血脂异常.载脂蛋白B,Number,"载脂蛋白B。<br>单位: g/L",1.2
+dyslipidemia.lipoproteinA,血脂异常.脂蛋白a,Number,"脂蛋白(a)。<br>单位: mg/L",180
+dyslipidemia.lipidLoweringMedication,血脂异常.调脂药物,String,"调脂药物使用情况。<br>**建议值**: `未使用`, `他汀类`, `贝特类`, `联合用药`",他汀类
+insulinResistance.fastingInsulin,胰岛素抵抗.空腹胰岛素,Number,"空腹胰岛素。<br>单位: mU/L<br>**参考范围**: 2.6-24.9",25.6
+insulinResistance.homaIR,胰岛素抵抗.HOMA-IR,Number,"胰岛素抵抗指数。<br>**计算公式**: (空腹胰岛素×空腹血糖)/22.5<br>**异常值**: >2.5",7.1
+insulinResistance.quicki,胰岛素抵抗.QUICKI,Number,"胰岛素敏感性定量检查指数。<br>**异常值**: <0.357",0.315
+insulinResistance.matsudaIndex,胰岛素抵抗.Matsuda指数,Number,"Matsuda胰岛素敏感性指数。<br>**异常值**: <2.5",1.5
+insulinResistance.cPeptide,胰岛素抵抗.C肽,Number,"空腹C肽。<br>单位: ng/mL<br>**参考范围**: 1.1-4.4",3.8
+adipokines.adiponectin,脂肪因子.脂联素,Number,"血清脂联素。<br>单位: μg/mL<br>**参考范围**: 5-30",6.8
+adipokines.leptin,脂肪因子.瘦素,Number,"血清瘦素。<br>单位: ng/mL",18.5
+adipokines.resistin,脂肪因子.抵抗素,Number,"血清抵抗素。<br>单位: ng/mL",22.8
+adipokines.visfatin,脂肪因子.内脂素,Number,"血清内脂素。<br>单位: ng/mL",15.2
+inflammatoryMarkers.cReactiveProtein,炎症标志物.C反应蛋白,Number,"高敏C反应蛋白。<br>单位: mg/L<br>**高风险值**: >3.0",4.5
+inflammatoryMarkers.interleukin6,炎症标志物.白介素6,Number,"血清IL-6。<br>单位: pg/mL",3.8
+inflammatoryMarkers.tumorNecrosisFactorAlpha,炎症标志物.肿瘤坏死因子α,Number,"血清TNF-α。<br>单位: pg/mL",5.2
+inflammatoryMarkers.whiteCellCount,炎症标志物.白细胞计数,Number,"白细胞计数。<br>单位: ×10⁹/L",7.8
+inflammatoryMarkers.neutrophilPercentage,炎症标志物.中性粒细胞百分比,Number,"中性粒细胞百分比。<br>单位: %",68
+thrombosis.fibrinogen,血栓形成.纤维蛋白原,Number,"血浆纤维蛋白原。<br>单位: g/L<br>**参考范围**: 2.0-4.0",4.5
+thrombosis.plasminogenActivatorInhibitor1,血栓形成.纤溶酶原激活物抑制剂1,Number,"PAI-1活性。<br>单位: IU/mL",25.8
+thrombosis.vonWillebrandFactor,血栓形成.血管性血友病因子,Number,"vWF活性。<br>单位: %",135
+thrombosis.dDimer,血栓形成.D二聚体,Number,"D-二聚体。<br>单位: mg/L<br>**参考范围**: <0.5",0.8
+endothelialFunction.nitricOxide,内皮功能.一氧化氮,Number,"血清一氧化氮。<br>单位: μmol/L",28.5
+endothelialFunction.endothelin1,内皮功能.内皮素1,Number,"血浆内皮素-1。<br>单位: pg/mL",3.2
+endothelialFunction.vcam1,内皮功能.血管细胞黏附分子1,Number,"血清VCAM-1。<br>单位: ng/mL",850
+endothelialFunction.icam1,内皮功能.细胞间黏附分子1,Number,"血清ICAM-1。<br>单位: ng/mL",285
+endothelialFunction.flowMediatedDilatation,内皮功能.血流介导的血管舒张,Number,"FMD测定值。<br>单位: %<br>**正常值**: >10%",6.5
+oxidativeStress.malondialdehyde,氧化应激.丙二醛,Number,"血清MDA。<br>单位: nmol/mL",8.5
+oxidativeStress.superoxideDismutase,氧化应激.超氧化物歧化酶,Number,"血清SOD活性。<br>单位: U/mL",45.2
+oxidativeStress.glutathionePeroxidase,氧化应激.谷胱甘肽过氧化物酶,Number,"血清GSH-Px活性。<br>单位: U/mL",182
+oxidativeStress.totalAntioxidantCapacity,氧化应激.总抗氧化能力,Number,"血清TAC。<br>单位: mmol/L",1.8
+liverFunction.alanineAminotransferase,肝功能.丙氨酸氨基转移酶,Number,"ALT。<br>单位: U/L<br>**参考范围**: 7-40",55
+liverFunction.aspartateAminotransferase,肝功能.天冬氨酸氨基转移酶,Number,"AST。<br>单位: U/L<br>**参考范围**: 13-35",45
+liverFunction.gammaGlutamylTransferase,肝功能.γ谷氨酰转肽酶,Number,"GGT。<br>单位: U/L<br>**参考范围**: 男性10-60，女性7-45",68
+liverFunction.fattyLiver,肝功能.脂肪肝,String,"脂肪肝程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+liverFunction.hepaticSteatosisIndex,肝功能.肝脏脂肪变性指数,Number,"肝脏脂肪变性指数（如果测量）",45.8
+renalFunction.serumCreatinine,肾功能.血肌酐,Number,"血清肌酐。<br>单位: μmol/L<br>**参考范围**: 男性57-111，女性41-73",88
+renalFunction.estimatedGFR,肾功能.估算肾小球滤过率,Number,"eGFR。<br>单位: mL/min/1.73m²<br>**正常值**: >90",85
+renalFunction.microalbumin,肾功能.尿微量白蛋白,Number,"尿微量白蛋白。<br>单位: mg/L<br>**异常值**: >30",35
+renalFunction.albuminCreatinineRatio,肾功能.白蛋白肌酐比,Number,"尿白蛋白肌酐比。<br>单位: mg/mmol<br>**异常值**: 男性>2.5，女性>3.5",4.2
+renalFunction.uricAcid,肾功能.尿酸,Number,"血尿酸。<br>单位: μmol/L<br>**参考范围**: 男性208-428，女性155-357",450
+cardiovascularAssessment.intimalMediaThickness,心血管评估.颈动脉内中膜厚度,Number,"颈动脉IMT。<br>单位: mm<br>**异常值**: >0.9",1.1
+cardiovascularAssessment.plaque,心血管评估.动脉粥样硬化斑块,String,"颈动脉斑块情况。<br>**建议值**: `无`, `稳定性斑块`, `不稳定性斑块`",稳定性斑块
+cardiovascularAssessment.ankleArmIndex,心血管评估.踝臂指数,Number,"踝臂血压指数。<br>**异常值**: <0.9或>1.3",0.95
+cardiovascularAssessment.pulseWaveVelocity,心血管评估.脉搏波传导速度,Number,"脉搏波传导速度。<br>单位: m/s<br>**异常值**: >10",12.5
+cardiovascularAssessment.augmentationIndex,心血管评估.增强指数,Number,"增强指数。<br>单位: %",15.8
+metabolicSyndromeComponents.numberOfComponents,代谢综合征组分.组分数量,Number,"符合诊断标准的组分数量。<br>**诊断**: ≥3个组分",4
+metabolicSyndromeComponents.componentsPresent,代谢综合征组分.存在的组分,String,具体存在的代谢综合征组分,中心性肥胖+高血压+血脂异常+糖代谢异常
+metabolicSyndromeComponents.severity,代谢综合征组分.严重程度,String,"代谢综合征严重程度评估。<br>**建议值**: `轻度`, `中度`, `重度`",中度
+riskAssessment.cardiovascularRisk.framinghamRisk,风险评估.心血管风险.Framingham风险,Number,"Framingham 10年心血管风险。<br>单位: %",18.5
+riskAssessment.cardiovascularRisk.ascvdRisk,风险评估.心血管风险.ASCVD风险,Number,"ASCVD 10年风险。<br>单位: %",15.2
+riskAssessment.cardiovascularRisk.scoreRisk,风险评估.心血管风险.SCORE风险,Number,"SCORE 10年致命性心血管风险。<br>单位: %",5.8
+riskAssessment.cardiovascularRisk.riskCategory,风险评估.心血管风险.风险分层,String,"心血管风险分层。<br>**建议值**: `低危`, `中危`, `高危`, `极高危`",高危
+riskAssessment.diabetesRisk.findriscScore,风险评估.糖尿病风险.FINDRISC评分,Number,"芬兰糖尿病风险评分。<br>**范围**: 0-26",16
+riskAssessment.diabetesRisk.riskLevel,风险评估.糖尿病风险.风险等级,String,"糖尿病发病风险。<br>**建议值**: `低危`, `中危`, `高危`, `极高危`",高危
+lifestyleFactors.diet.pattern,生活方式因素.饮食.饮食模式,String,"饮食模式类型。<br>**建议值**: `地中海饮食`, `DASH饮食`, `低脂饮食`, `高蛋白饮食`, `西方饮食`",西方饮食
+lifestyleFactors.diet.calorieIntake,生活方式因素.饮食.热量摄入,Number,"每日热量摄入。<br>单位: kcal",2500
+lifestyleFactors.diet.fatIntake,生活方式因素.饮食.脂肪摄入,Number,"脂肪摄入占总能量百分比。<br>单位: %",38
+lifestyleFactors.diet.carbohydrateIntake,生活方式因素.饮食.碳水化合物摄入,Number,"碳水化合物摄入占总能量百分比。<br>单位: %",50
+lifestyleFactors.diet.proteinIntake,生活方式因素.饮食.蛋白质摄入,Number,"蛋白质摄入占总能量百分比。<br>单位: %",12
+lifestyleFactors.diet.fiberIntake,生活方式因素.饮食.膳食纤维摄入,Number,"每日膳食纤维摄入。<br>单位: g",18
+lifestyleFactors.physicalActivity.level,生活方式因素.体力活动.活动水平,String,"体力活动水平。<br>**建议值**: `久坐`, `轻度活动`, `中度活动`, `重度活动`",轻度活动
+lifestyleFactors.physicalActivity.frequency,生活方式因素.体力活动.运动频率,Number,"每周运动次数。<br>单位: 次/周",2
+lifestyleFactors.physicalActivity.duration,生活方式因素.体力活动.运动时长,Number,"每次运动时长。<br>单位: 分钟",30
+lifestyleFactors.physicalActivity.intensity,生活方式因素.体力活动.运动强度,String,"运动强度。<br>**建议值**: `轻度`, `中度`, `高强度`",中度
+lifestyleFactors.smoking.status,生活方式因素.吸烟.状态,String,"吸烟状况。<br>**建议值**: `从不吸烟`, `既往吸烟`, `目前吸烟`",既往吸烟
+lifestyleFactors.smoking.packYears,生活方式因素.吸烟.包年数,Number,"吸烟包年数",15
+lifestyleFactors.alcohol.consumption,生活方式因素.饮酒.饮酒量,String,"饮酒情况。<br>**建议值**: `不饮酒`, `轻度`, `中度`, `重度`",中度
+lifestyleFactors.alcohol.frequency,生活方式因素.饮酒.饮酒频率,Number,"每周饮酒天数",3
+lifestyleFactors.sleep.duration,生活方式因素.睡眠.睡眠时长,Number,"每日睡眠时长。<br>单位: 小时",6.5
+lifestyleFactors.sleep.quality,生活方式因素.睡眠.睡眠质量,String,"睡眠质量评估。<br>**建议值**: `良好`, `一般`, `较差`",较差
+lifestyleFactors.stress.level,生活方式因素.压力.压力水平,String,"压力水平评估。<br>**建议值**: `轻微`, `中等`, `较大`",中等
+familyHistory.diabetes,家族史.糖尿病,String,"糖尿病家族史。<br>**建议值**: `无`, `一级亲属`, `二级亲属`",一级亲属
+familyHistory.hypertension,家族史.高血压,String,"高血压家族史。<br>**建议值**: `无`, `一级亲属`, `二级亲属`",一级亲属
+familyHistory.dyslipidemia,家族史.血脂异常,String,"血脂异常家族史。<br>**建议值**: `无`, `一级亲属`, `二级亲属`",一级亲属
+familyHistory.obesity,家族史.肥胖,String,"肥胖家族史。<br>**建议值**: `无`, `一级亲属`, `二级亲属`",一级亲属
+familyHistory.cardiovascularDisease,家族史.心血管疾病,String,"心血管疾病家族史。<br>**建议值**: `无`, `早发冠心病`, `脑卒中`, `其他`",早发冠心病
+comorbidities.polycysticOvarySyndrome,合并症.多囊卵巢综合征,String,"PCOS合并情况（女性）。<br>**建议值**: `否`, `是`",否
+comorbidities.sleepApnea,合并症.睡眠呼吸暂停,String,"睡眠呼吸暂停合并情况。<br>**建议值**: `否`, `轻度`, `中度`, `重度`",轻度
+comorbidities.gout,合并症.痛风,String,"痛风合并情况。<br>**建议值**: `否`, `是`",否
+comorbidities.depression,合并症.抑郁,String,"抑郁症合并情况。<br>**建议值**: `否`, `轻度`, `中度`, `重度`",轻度
+medications.current,药物治疗.目前用药,String,目前使用的相关药物,二甲双胍+阿托伐他汀+氢氯噻嗪
+medications.adherence,药物治疗.依从性,String,"用药依从性。<br>**建议值**: `良好`, `一般`, `较差`",一般
+medications.sideEffects,药物治疗.副作用,String,"药物副作用情况。<br>**建议值**: `无`, `轻微`, `明显`",轻微
+treatmentGoals.weightLoss,治疗目标.减重目标,Number,"体重减轻目标。<br>单位: %",10
+treatmentGoals.waistCircumference,治疗目标.腰围目标,Number,"腰围控制目标。<br>单位: cm",85
+treatmentGoals.bloodPressure,治疗目标.血压目标,String,血压控制目标,<130/80 mmHg
+treatmentGoals.glucose,治疗目标.血糖目标,String,血糖控制目标,HbA1c <7.0%
+treatmentGoals.lipids,治疗目标.血脂目标,String,血脂控制目标,LDL-C <2.6 mmol/L
+treatmentResponse.weightChange,治疗反应.体重变化,Number,"治疗后体重变化。<br>单位: kg",-3.5
+treatmentResponse.waistCircumferenceChange,治疗反应.腰围变化,Number,"治疗后腰围变化。<br>单位: cm",-5
+treatmentResponse.metabolicImprovement,治疗反应.代谢改善,String,"代谢指标改善情况。<br>**建议值**: `明显改善`, `部分改善`, `无改善`, `恶化`",部分改善
+monitoring.frequency,监测.随访频率,String,"随访监测频率",每3个月随访
+monitoring.parameters,监测.监测参数,String,需要监测的主要参数,体重、腰围、血压、血糖、血脂
+patientEducation.lifestyle,患者教育.生活方式教育,String,"生活方式教育情况。<br>**建议值**: `未接受`, `已接受`",已接受
+patientEducation.diseaseKnowledge,患者教育.疾病认知,String,"疾病知识教育。<br>**建议值**: `差`, `一般`, `良好`",一般
+patientEducation.selfManagement,患者教育.自我管理,String,"自我管理能力。<br>**建议值**: `差`, `一般`, `良好`",一般
+prognosis.shortTerm,预后.短期预后,String,"短期预后评估。<br>**建议值**: `良好`, `一般`, `较差`",一般
+prognosis.longTerm,预后.长期预后,String,"长期预后评估。<br>**建议值**: `良好`, `一般`, `较差`",一般
+prognosis.complicationRisk,预后.并发症风险,String,"并发症发生风险。<br>**建议值**: `低`, `中`, `高`",中
+qualityOfLife.physical,生活质量.身体健康,String,"身体健康状况。<br>**建议值**: `良好`, `一般`, `较差`",一般
+qualityOfLife.mental,生活质量.心理健康,String,"心理健康状况。<br>**建议值**: `良好`, `一般`, `较差`",一般
+qualityOfLife.social,生活质量.社会功能,String,"社会功能状况。<br>**建议值**: `正常`, `轻度受限`, `中度受限`, `重度受限`",轻度受限
+specialConsiderations.pregnancy,特殊考虑.妊娠,String,"妊娠期特殊考虑。<br>**建议值**: `不适用`, `需要考虑`",不适用
+specialConsiderations.elderly,特殊考虑.老年,String,"老年患者特殊考虑。<br>**建议值**: `不适用`, `需要考虑`",不适用
+specialConsiderations.adolescent,特殊考虑.青少年,String,"青少年特殊考虑。<br>**建议值**: `不适用`, `需要考虑`",不适用
+multidisciplinaryApproach.endocrinology,多学科协作.内分泌科,String,"内分泌科参与。<br>**建议值**: `主管`, `会诊`, `未参与`",主管
+multidisciplinaryApproach.cardiology,多学科协作.心血管科,String,"心血管科参与。<br>**建议值**: `主管`, `会诊`, `未参与`",会诊
+multidisciplinaryApproach.nutrition,多学科协作.营养科,String,"营养科参与。<br>**建议值**: `主管`, `会诊`, `未参与`",会诊
+multidisciplinaryApproach.psychology,多学科协作.心理科,String,"心理科参与。<br>**建议值**: `主管`, `会诊`, `未参与`",未参与
+preventiveStrategies.primaryPrevention,预防策略.一级预防,String,"一级预防措施",生活方式干预
+preventiveStrategies.secondaryPrevention,预防策略.二级预防,String,"二级预防措施",药物治疗+生活方式干预
+emergencyManagement.acuteEvents,急症处理.急性事件,String,"急性事件处理。<br>**建议值**: `无`, `高血压危象`, `糖尿病酮症`, `心血管事件`",无
+clinicalResearch.participation,临床研究.参与情况,String,"临床研究参与。<br>**建议值**: `未参与`, `已参与`",未参与
+socialDeterminants.socioeconomicStatus,社会决定因素.社会经济地位,String,"社会经济地位。<br>**建议值**: `高`, `中`, `低`",中
+socialDeterminants.healthcareAccess,社会决定因素.医疗可及性,String,"医疗服务可及性。<br>**建议值**: `良好`, `一般`, `较差`",一般
+diagnosisImpression,诊断/印象,String,医生对代谢综合征评估结果的综合诊断或印象。,代谢综合征，4个组分阳性
+recommendation,建议,String,医生根据检查结果提出的建议。,综合生活方式干预，优化药物治疗，定期监测

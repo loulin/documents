@@ -1,0 +1,206 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行糖尿病神经病变检查的日期,2025-08-15
+clinicalIndication,检查适应症,String,"进行糖尿病神经病变检查的临床指征。<br>**建议值**: `糖尿病神经病变筛查`, `感觉异常`, `疼痛评估`, `运动功能评估`, `自主神经功能评估`",糖尿病神经病变筛查
+neuropathyClassification.type,神经病变分类.类型,String,"神经病变类型。<br>**建议值**: `周围神经病变`, `自主神经病变`, `颅神经病变`, `单神经病变`, `神经根病变`",周围神经病变
+neuropathyClassification.distribution,神经病变分类.分布,String,"神经病变分布。<br>**建议值**: `对称性`, `非对称性`, `局灶性`, `多灶性`",对称性
+neuropathyClassification.severity,神经病变分类.严重程度,String,"神经病变严重程度。<br>**建议值**: `轻度`, `中度`, `重度`",中度
+neuropathyClassification.progression,神经病变分类.进展,String,"神经病变进展。<br>**建议值**: `急性`, `亚急性`, `慢性`",慢性
+peripheralNeuropathy.sensorySymptoms.numbness,周围神经病变.感觉症状.麻木,String,"麻木程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+peripheralNeuropathy.sensorySymptoms.tingling,周围神经病变.感觉症状.刺痛,String,"刺痛程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+peripheralNeuropathy.sensorySymptoms.burning,周围神经病变.感觉症状.烧灼感,String,"烧灼感程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+peripheralNeuropathy.sensorySymptoms.pain,周围神经病变.感觉症状.疼痛,String,"疼痛程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+peripheralNeuropathy.sensorySymptoms.distribution,周围神经病变.感觉症状.分布,String,"症状分布",双足袜套样分布
+peripheralNeuropathy.motorSymptoms.weakness,周围神经病变.运动症状.肌力减退,String,"肌力减退程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+peripheralNeuropathy.motorSymptoms.atrophy,周围神经病变.运动症状.肌肉萎缩,String,"肌肉萎缩。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+peripheralNeuropathy.motorSymptoms.fasciculations,周围神经病变.运动症状.肌束颤动,String,"肌束颤动。<br>**建议值**: `无`, `有`",无
+peripheralNeuropathy.motorSymptoms.cramps,周围神经病变.运动症状.肌肉痉挛,String,"肌肉痉挛。<br>**建议值**: `无`, `偶尔`, `频繁`",偶尔
+nerveConduction.motor.peronealNerve.amplitude,神经传导.运动.腓总神经.波幅,Number,"腓总神经复合肌肉动作电位波幅。<br>单位: mV<br>**正常**: >2.0",1.2
+nerveConduction.motor.peronealNerve.velocity,神经传导.运动.腓总神经.传导速度,Number,"腓总神经运动传导速度。<br>单位: m/s<br>**正常**: >40",32
+nerveConduction.motor.peronealNerve.distalLatency,神经传导.运动.腓总神经.远端潜伏期,Number,"腓总神经远端潜伏期。<br>单位: ms<br>**正常**: <6.5",8.2
+nerveConduction.motor.tibialNerve.amplitude,神经传导.运动.胫神经.波幅,Number,"胫神经复合肌肉动作电位波幅。<br>单位: mV<br>**正常**: >4.0",2.8
+nerveConduction.motor.tibialNerve.velocity,神经传导.运动.胫神经.传导速度,Number,"胫神经运动传导速度。<br>单位: m/s<br>**正常**: >40",35
+nerveConduction.motor.tibialNerve.distalLatency,神经传导.运动.胫神经.远端潜伏期,Number,"胫神经远端潜伏期。<br>单位: ms<br>**正常**: <5.8",7.5
+nerveConduction.sensory.suralNerve.amplitude,神经传导.感觉.腓肠神经.波幅,Number,"腓肠神经感觉动作电位波幅。<br>单位: μV<br>**正常**: >5.0",2.8
+nerveConduction.sensory.suralNerve.velocity,神经传导.感觉.腓肠神经.传导速度,Number,"腓肠神经感觉传导速度。<br>单位: m/s<br>**正常**: >40",28
+nerveConduction.sensory.suralNerve.distalLatency,神经传导.感觉.腓肠神经.远端潜伏期,Number,"腓肠神经远端潜伏期。<br>单位: ms<br>**正常**: <4.4",5.8
+nerveConduction.sensory.medianNerve.amplitude,神经传导.感觉.正中神经.波幅,Number,"正中神经感觉动作电位波幅。<br>单位: μV<br>**正常**: >15",12
+nerveConduction.sensory.medianNerve.velocity,神经传导.感觉.正中神经.传导速度,Number,"正中神经感觉传导速度。<br>单位: m/s<br>**正常**: >50",45
+nerveConduction.sensory.medianNerve.distalLatency,神经传导.感觉.正中神经.远端潜伏期,Number,"正中神经远端潜伏期。<br>单位: ms<br>**正常**: <3.5",4.2
+nerveConduction.sensory.ulnarNerve.amplitude,神经传导.感觉.尺神经.波幅,Number,"尺神经感觉动作电位波幅。<br>单位: μV<br>**正常**: >10",8.5
+nerveConduction.sensory.ulnarNerve.velocity,神经传导.感觉.尺神经.传导速度,Number,"尺神经感觉传导速度。<br>单位: m/s<br>**正常**: >50",42
+nerveConduction.sensory.ulnarNerve.distalLatency,神经传导.感觉.尺神经.远端潜伏期,Number,"尺神经远端潜伏期。<br>单位: ms<br>**正常**: <3.5",4.0
+nerveConduction.fWave.tibialNerve,神经传导.F波.胫神经,Number,"胫神经F波潜伏期。<br>单位: ms",58.5
+nerveConduction.fWave.peronealNerve,神经传导.F波.腓总神经,Number,"腓总神经F波潜伏期。<br>单位: ms",62.8
+nerveConduction.hReflex.tibialNerve,神经传导.H反射.胫神经,Number,"胫神经H反射潜伏期。<br>单位: ms<br>**正常**: <35",42.5
+electromyography.spontaneousActivity,肌电图.自发活动,String,"肌肉自发活动",纤颤电位和正锐波
+electromyography.motorUnitPotentials.amplitude,肌电图.运动单位电位.波幅,Number,"运动单位电位平均波幅。<br>单位: mV",0.85
+electromyography.motorUnitPotentials.duration,肌电图.运动单位电位.时程,Number,"运动单位电位平均时程。<br>单位: ms",12.5
+electromyography.motorUnitPotentials.polyphasia,肌电图.运动单位电位.多相波,Number,"多相波百分比。<br>单位: %<br>**正常**: <15%",25
+electromyography.recruitmentPattern,肌电图.募集模式,String,"募集模式。<br>**建议值**: `正常`, `减少`, `单纯`, `干扰相`",减少
+electromyography.musclesTested,肌电图.检查肌肉,String,"检查的肌肉",胫前肌、腓肠肌、股四头肌
+quantitativeSensoryTesting.vibrationThreshold,定量感觉检查.振动觉阈值,Number,"振动觉阈值。<br>单位: μm<br>**正常**: <25",45.8
+quantitativeSensoryTesting.thermalThreshold.cold,定量感觉检查.温度觉阈值.冷觉,Number,"冷觉阈值。<br>单位: °C",3.5
+quantitativeSensoryTesting.thermalThreshold.warm,定量感觉检查.温度觉阈值.温觉,Number,"温觉阈值。<br>单位: °C",2.8
+quantitativeSensoryTesting.pressureThreshold,定量感觉检查.压觉阈值,Number,"压觉阈值。<br>单位: g",15.8
+quantitativeSensoryTesting.touchThreshold,定量感觉检查.触觉阈值,Number,"触觉阈值",轻度升高
+clinicalAssessment.semmes WeinsteinthTest,临床评估.Semmes-Weinstein单丝试验,String,"10g单丝试验结果。<br>**建议值**: `正常`, `异常`",异常
+clinicalAssessment.vibrrationSensation.tuningFork,临床评估.振动觉.音叉试验,String,"128Hz音叉试验结果。<br>**建议值**: `正常`, `减退`, `消失`",减退
+clinicalAssessment.temperatureSensation,临床评估.温度觉,String,"温度觉检查结果。<br>**建议值**: `正常`, `减退`, `消失`",减退
+clinicalAssessment.pinprickSensation,临床评估.针刺觉,String,"针刺觉检查结果。<br>**建议值**: `正常`, `减退`, `消失`",减退
+clinicalAssessment.proprioception,临床评估.位置觉,String,"位置觉检查结果。<br>**建议值**: `正常`, `减退`, `消失`",轻度减退
+clinicalAssessment.deepTendonReflexes.achilles,临床评估.深腱反射.跟腱反射,String,"跟腱反射。<br>**建议值**: `正常`, `减弱`, `消失`, `亢进`",减弱
+clinicalAssessment.deepTendonReflexes.knee,临床评估.深腱反射.膝反射,String,"膝反射。<br>**建议值**: `正常`, `减弱`, `消失`, `亢进`",正常
+clinicalAssessment.deepTendonReflexes.biceps,临床评估.深腱反射.肱二头肌反射,String,"肱二头肌反射。<br>**建议值**: `正常`, `减弱`, `消失`, `亢进`",正常
+clinicalAssessment.deepTendonReflexes.triceps,临床评估.深腱反射.肱三头肌反射,String,"肱三头肌反射。<br>**建议值**: `正常`, `减弱`, `消失`, `亢进`",正常
+motorExamination.muscleStrength.plantar Flexion,运动检查.肌力.跖屈,Number,"踝关节跖屈肌力。<br>**分级**: 0-5级",4
+motorExamination.muscleStrength.dorsiflexion,运动检查.肌力.背屈,Number,"踝关节背屈肌力。<br>**分级**: 0-5级",3
+motorExamination.muscleStrength.inversion,运动检查.肌力.内翻,Number,"踝关节内翻肌力。<br>**分级**: 0-5级",4
+motorExamination.muscleStrength.eversion,运动检查.肌力.外翻,Number,"踝关节外翻肌力。<br>**分级**: 0-5级",4
+motorExamination.muscleStrength.toeExtension,运动检查.肌力.伸趾,Number,"拇趾背伸肌力。<br>**分级**: 0-5级",3
+motorExamination.muscleStrength.hip Flexion,运动检查.肌力.髋屈,Number,"髋关节屈曲肌力。<br>**分级**: 0-5级",5
+motorExamination.muscleStrength.kneeExtension,运动检查.肌力.膝伸,Number,"膝关节伸展肌力。<br>**分级**: 0-5级",5
+motorExamination.muscleStrength.handGrip,运动检查.肌力.握力,Number,"握力。<br>单位: kg",25.8
+motorExamination.muscleTone,运动检查.肌张力,String,"肌张力评估。<br>**建议值**: `正常`, `降低`, `增高`",正常
+motorExamination.muscleAtrophy.intrinsicMuscles,运动检查.肌萎缩.骨间肌萎缩,String,"手部骨间肌萎缩。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+motorExamination.muscleAtrophy.anteriorTibialis,运动检查.肌萎缩.胫前肌萎缩,String,"胫前肌萎缩。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+balanceAndGait.rombergTest,平衡与步态.Romberg试验,String,"Romberg试验结果。<br>**建议值**: `阴性`, `阳性`",阳性
+balanceAndGait.tandemWalk,平衡与步态.直线行走,String,"直线行走测试。<br>**建议值**: `正常`, `异常`",异常
+balanceAndGait.staticBalance,平衡与步态.静态平衡,String,"静态平衡评估。<br>**建议值**: `正常`, `轻度异常`, `中度异常`, `重度异常`",轻度异常
+balanceAndGait.dynamicBalance,平衡与步态.动态平衡,String,"动态平衡评估。<br>**建议值**: `正常`, `轻度异常`, `中度异常`, `重度异常`",中度异常
+balanceAndGait.gaitPattern,平衡与步态.步态模式,String,"步态模式描述",宽基步态，步行不稳
+balanceAndGait.fallRisk,平衡与步态.跌倒风险,String,"跌倒风险评估。<br>**建议值**: `低`, `中`, `高`",中
+autonomicNeuropathy.cardiovascular.restingHeartRate,自主神经病变.心血管.静息心率,Number,"静息心率。<br>单位: bpm<br>**正常**: 60-100",88
+autonomicNeuropathy.cardiovascular.heartRateVariability.deepBreathing,自主神经病变.心血管.心率变异性.深呼吸试验,Number,"深呼吸时心率变异。<br>单位: bpm<br>**正常**: >15",8.5
+autonomicNeuropathy.cardiovascular.heartRateVariability.valsalva,自主神经病变.心血管.心率变异性.Valsalva试验,Number,"Valsalva比值。<br>**正常**: >1.21",1.15
+autonomicNeuropathy.cardiovascular.orthostatic.systolic,自主神经病变.心血管.体位性.收缩压下降,Number,"立位时收缩压下降。<br>单位: mmHg<br>**异常**: >20",25
+autonomicNeuropathy.cardiovascular.orthostatic.diastolic,自主神经病变.心血管.体位性.舒张压下降,Number,"立位时舒张压下降。<br>单位: mmHg<br>**异常**: >10",12
+autonomicNeuropathy.cardiovascular.orthostatic.heartRate,自主神经病变.心血管.体位性.心率增加,Number,"立位时心率增加。<br>单位: bpm",18
+autonomicNeuropathy.cardiovascular.orthostatic.symptoms,自主神经病变.心血管.体位性.症状,String,"体位性低血压症状",轻度头晕
+autonomicNeuropathy.gastrointestinal.gastroparesis,自主神经病变.胃肠.胃轻瘫,String,"胃轻瘫症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+autonomicNeuropathy.gastrointestinal.diarrhea,自主神经病变.胃肠.腹泻,String,"腹泻症状。<br>**建议值**: `无`, `偶尔`, `频繁`",偶尔
+autonomicNeuropathy.gastrointestinal.constipation,自主神经病变.胃肠.便秘,String,"便秘症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+autonomicNeuropathy.gastrointestinal.fecalIncontinence,自主神经病变.胃肠.大便失禁,String,"大便失禁。<br>**建议值**: `无`, `偶尔`, `频繁`",无
+autonomicNeuropathy.genitourinary.erectileDysfunction,自主神经病变.泌尿生殖.勃起功能障碍,String,"勃起功能障碍（男性）。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+autonomicNeuropathy.genitourinary.bladderDysfunction,自主神经病变.泌尿生殖.膀胱功能障碍,String,"膀胱功能障碍。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+autonomicNeuropathy.genitourinary.urinaryRetention,自主神经病变.泌尿生殖.尿潴留,String,"尿潴留。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+autonomicNeuropathy.genitourinary.urinaryIncontinence,自主神经病变.泌尿生殖.尿失禁,String,"尿失禁。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+autonomicNeuropathy.sudomotor.hypohidrosis,自主神经病变.汗腺.少汗症,String,"少汗症。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+autonomicNeuropathy.sudomotor.anhidrosis,自主神经病变.汗腺.无汗症,String,"无汗症分布",双足远端
+autonomicNeuropathy.sudomotor.gustaory Sweating,自主神经病变.汗腺.味觉性出汗,String,"味觉性出汗。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+autonomicTesting.parasympathetic.heartRateToDeepBreathing,自主神经测试.副交感.深呼吸心率反应,Number,"深呼吸心率反应。<br>单位: bpm",8.5
+autonomicTesting.parasympathetic.heartRateToValsalva,自主神经测试.副交感.Valsalva心率反应,Number,"Valsalva心率反应比值",1.15
+autonomicTesting.parasympathetic.heartRateToStanding,自主神经测试.副交感.立位心率反应,Number,"立位心率反应比值",1.25
+autonomicTesting.sympathetic.bloodPressureToStanding,自主神经测试.交感.立位血压反应,Number,"立位血压反应。<br>单位: mmHg",25
+autonomicTesting.sympathetic.bloodPressureToValsalva,自主神经测试.交感.Valsalva血压反应,Number,"Valsalva血压反应",正常
+autonomicTesting.sympathetic.coldPressorTest,自主神经测试.交感.冷加压试验,Number,"冷加压试验血压升高。<br>单位: mmHg",12
+autonomicTesting.sweatTesting.quantitativeSweatTest,自主神经测试.汗液测试.定量汗液试验,Number,"定量汗液试验结果。<br>单位: μL",2.5
+autonomicTesting.sweatTesting.thermoregulatory SweatTest,自主神经测试.汗液测试.体温调节汗液试验,String,"体温调节汗液试验结果",双足汗液分泌减少
+painAssessment.painScore.visualAnalogScale,疼痛评估.疼痛评分.视觉模拟评分,Number,"VAS疼痛评分。<br>**范围**: 0-10",6
+painAssessment.painScore.numericalRatingScale,疼痛评估.疼痛评分.数字评分,Number,"NRS疼痛评分。<br>**范围**: 0-10",6
+painAssessment.painCharacteristics.quality,疼痛评估.疼痛特征.性质,String,"疼痛性质",烧灼样疼痛伴刺痛
+painAssessment.painCharacteristics.timing,疼痛评估.疼痛特征.时间,String,"疼痛时间特点",夜间加重
+painAssessment.painCharacteristics.location,疼痛评估.疼痛特征.部位,String,"疼痛部位",双足远端
+painAssessment.painCharacteristics.triggers,疼痛评估.疼痛特征.诱发因素,String,"疼痛诱发因素",轻触诱发
+painAssessment.painCharacteristics.relieving Factors,疼痛评估.疼痛特征.缓解因素,String,"疼痛缓解因素",休息时缓解
+painAssessment.neuropathicPainScale,疼痛评估.神经病理性疼痛量表,Number,"神经病理性疼痛量表评分",12
+painAssessment.allodynia,疼痛评估.异常性疼痛,String,"异常性疼痛。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+painAssessment.hyperalgesia,疼痛评估.痛觉过敏,String,"痛觉过敏。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+painAssessment.hyperpathia,疼痛评估.痛觉过度,String,"痛觉过度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+functionalAssessment.neuropathy DisabilityScore,功能评估.神经病变残疾评分,Number,"神经病变残疾评分。<br>**范围**: 0-10",4
+functionalAssessment.neuropathy SymptomScore,功能评估.神经病变症状评分,Number,"神经病变症状评分。<br>**范围**: 0-17",8
+functionalAssessment.michigan Neuropathy ScreeningInstrument,功能评估.密歇根神经病变筛查工具,Number,"MNSI评分。<br>**异常**: >2",5
+functionalAssessment.diabeticNeuropathy Examination,功能评估.糖尿病神经病变检查,Number,"DNE评分",12
+functionalAssessment.vibrattionPerceptionThreshold,功能评估.振动觉感知阈值,Number,"VPT值。<br>单位: V<br>**异常**: >25V",35
+functionalAssessment.thermalThreshold,功能评估.温度觉阈值,String,"温度觉阈值测定结果",冷热觉阈值均升高
+functionalAssessment.activities ofDailyLiving,功能评估.日常生活能力,String,"日常生活能力评估。<br>**建议值**: `独立`, `部分依赖`, `完全依赖`",部分依赖
+functionalAssessment.walkingAbility,功能评估.行走能力,String,"行走能力评估。<br>**建议值**: `正常`, `轻度受限`, `中度受限`, `重度受限`",轻度受限
+functionalAssessment.fallHistory,功能评估.跌倒史,String,"跌倒史。<br>**建议值**: `无`, `1次`, `多次`",1次
+functionalAssessment.fearOfFalling,功能评估.跌倒恐惧,String,"跌倒恐惧程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+riskFactors.diabetesDuration,危险因素.糖尿病病程,Number,"糖尿病病程。<br>单位: 年",12
+riskFactors.glycemicControl.currentHba1c,危险因素.血糖控制.当前HbA1c,Number,"当前HbA1c。<br>单位: %",8.2
+riskFactors.glycemicControl.averageHba1c,危险因素.血糖控制.平均HbA1c,Number,"近2年平均HbA1c。<br>单位: %",8.0
+riskFactors.hypertension,危险因素.高血压,String,"高血压病史。<br>**建议值**: `无`, `有`",有
+riskFactors.dyslipidemia,危险因素.血脂异常,String,"血脂异常病史。<br>**建议值**: `无`, `有`",有
+riskFactors.smoking,危险因素.吸烟,String,"吸烟史。<br>**建议值**: `从不`, `既往`, `目前`",既往
+riskFactors.alcohol,危险因素.饮酒,String,"饮酒史。<br>**建议值**: `从不`, `适量`, `过量`",适量
+riskFactors.obesity,危险因素.肥胖,String,"肥胖史。<br>**建议值**: `无`, `有`",有
+riskFactors.familyHistory,危险因素.家族史,String,"糖尿病或神经病变家族史",糖尿病家族史
+riskFactors.vitaminDeficiency,危险因素.维生素缺乏,String,"维生素缺乏史",维生素B12轻度缺乏
+comorbidities.diabetic Retinopathy,合并症.糖尿病视网膜病变,String,"糖尿病视网膜病变。<br>**建议值**: `无`, `非增殖性`, `增殖性`",非增殖性
+comorbidities.diabetic Nephropathy,合并症.糖尿病肾病,String,"糖尿病肾病。<br>**建议值**: `无`, `微量白蛋白尿`, `临床蛋白尿`, `肾功能不全`",微量白蛋白尿
+comorbidities.coronaryArteryDisease,合并症.冠心病,String,"冠心病。<br>**建议值**: `无`, `有`",无
+comorbidities.cerebrovascularDisease,合并症.脑血管疾病,String,"脑血管疾病。<br>**建议值**: `无`, `有`",无
+comorbidities.peripheralArterialDisease,合并症.外周动脉疾病,String,"外周动脉疾病。<br>**建议值**: `无`, `有`",有
+footExamination.skinCondition,足部检查.皮肤状况,String,"足部皮肤状况",干燥，轻度鳞屑
+footExamination.nailCondition,足部检查.趾甲状况,String,"趾甲状况",轻度增厚
+footExamination.deformities,足部检查.足部畸形,String,"足部畸形。<br>**建议值**: `无`, `爪形趾`, `锤状趾`, `其他`",轻度爪形趾
+footExamination.calluses,足部检查.胼胝,String,"胼胝形成。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+footExamination.ulcers.present,足部检查.溃疡.是否存在,String,"足部溃疡。<br>**建议值**: `无`, `有`",无
+footExamination.ulcers.grade,足部检查.溃疡.分级,String,"溃疡分级（如存在）。<br>**建议值**: `1级`, `2级`, `3级`, `4级`, `5级`",无
+footExamination.pulses.dorsalisPedis,足部检查.脉搏.足背动脉,String,"足背动脉搏动。<br>**建议值**: `正常`, `减弱`, `消失`",减弱
+footExamination.pulses.posteriorTibial,足部检查.脉搏.胫后动脉,String,"胫后动脉搏动。<br>**建议值**: `正常`, `减弱`, `消失`",减弱
+footExamination.anklebrachial Index,足部检查.踝肱指数,Number,"踝肱指数。<br>**正常**: 0.9-1.3<br>**异常**: <0.9或>1.3",0.85
+footExamination.temperature,足部检查.温度,String,"足部温度",双足偏凉
+footExamination.color,足部检查.颜色,String,"足部颜色",轻度苍白
+footExamination.edema,足部检查.水肿,String,"足部水肿。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+labororyTests.hba1c,实验室检查.糖化血红蛋白,Number,"糖化血红蛋白。<br>单位: %",8.2
+laboratoryTests.fasting Glucose,实验室检查.空腹血糖,Number,"空腹血糖。<br>单位: mmol/L",8.5
+laboratoryTests.postprandialGlucose,实验室检查.餐后血糖,Number,"餐后2小时血糖。<br>单位: mmol/L",12.8
+laboratoryTests.vitaminB12,实验室检查.维生素B12,Number,"维生素B12。<br>单位: pmol/L<br>**正常**: >150",125
+laboratoryTests.folate,实验室检查.叶酸,Number,"叶酸。<br>单位: nmol/L<br>**正常**: >10",15.8
+laboratoryTests.thyroidFunction.tsh,实验室检查.甲状腺功能.TSH,Number,"促甲状腺激素。<br>单位: mU/L<br>**参考范围**: 0.27-4.2",2.5
+laboratoryTests.thyroidFunction.freeT4,实验室检查.甲状腺功能.游离T4,Number,"游离甲状腺素。<br>单位: pmol/L<br>**参考范围**: 12-22",16.8
+laboratoryTests.renalFunction.creatinine,实验室检查.肾功能.肌酐,Number,"血肌酐。<br>单位: μmol/L<br>**参考范围**: 男性59-104，女性45-84",88
+laboratoryTests.renalFunction.estimatedGfr,实验室检查.肾功能.估算肾小球滤过率,Number,"eGFR。<br>单位: mL/min/1.73m²<br>**正常**: >60",75
+laboratoryTests.lipidProfile.totalCholesterol,实验室检查.血脂.总胆固醇,Number,"总胆固醇。<br>单位: mmol/L",5.2
+laboratoryTests.lipidProfile.ldlCholesterol,实验室检查.血脂.LDL胆固醇,Number,"LDL胆固醇。<br>单位: mmol/L",3.2
+laboratoryTests.lipidProfile.hdlCholesterol,实验室检查.血脂.HDL胆固醇,Number,"HDL胆固醇。<br>单位: mmol/L",1.1
+laboratoryTests.lipidProfile.triglycerides,实验室检查.血脂.甘油三酯,Number,"甘油三酯。<br>单位: mmol/L",2.1
+laboratoryTests.inflammatoryMarkers.crp,实验室检查.炎症标志物.C反应蛋白,Number,"C反应蛋白。<br>单位: mg/L<br>**正常**: <3.0",2.8
+treatmentResponse.medications.pregabalin,治疗反应.药物.普瑞巴林,String,"普瑞巴林使用情况",普瑞巴林75mg bid
+treatmentResponse.medications.gabapentin,治疗反应.药物.加巴喷丁,String,"加巴喷丁使用情况",未使用
+treatmentResponse.medications.duloxetine,治疗反应.药物.度洛西汀,String,"度洛西汀使用情况",度洛西汀60mg daily
+treatmentResponse.medications.amitriptyline,治疗反应.药物.阿米替林,String,"阿米替林使用情况",未使用
+treatmentResponse.medications.topicalAgents,治疗反应.药物.外用药物,String,"外用药物使用情况",辣椒素乳膏
+treatmentResponse.effectiveness.painReduction,治疗反应.有效性.疼痛缓解,String,"疼痛缓解程度。<br>**建议值**: `无效`, `轻度`, `中度`, `显著`",中度
+treatmentResponse.effectiveness.functionalImprovement,治疗反应.有效性.功能改善,String,"功能改善程度。<br>**建议值**: `无效`, `轻度`, `中度`, `显著`",轻度
+treatmentResponse.sideEffects,治疗反应.副作用,String,"药物副作用",轻度嗜睡
+treatmentResponse.adherence,治疗反应.依从性,String,"用药依从性。<br>**建议值**: `良好`, `一般`, `较差`",一般
+nonPharmacologicalTreatment.physicalTherapy,非药物治疗.物理治疗,String,"物理治疗情况",平衡训练和肌力训练
+nonPharmacologicalTreatment.occupationalTherapy,非药物治疗.作业治疗,String,"作业治疗情况",步态训练
+nonPharmacologicalTreatment.tens,非药物治疗.经皮电神经刺激,String,"TENS治疗情况",未使用
+nonPharmacologicalTreatment.acupuncture,非药物治疗.针灸,String,"针灸治疗情况",定期针灸治疗
+nonPharmacologicalTreatment.footCare,非药物治疗.足部护理,String,"足部护理教育",已接受足部护理指导
+preventiveMessage.footWear,预防措施.鞋具,String,"合适鞋具使用",使用糖尿病专用鞋
+preventiveMeasures.footInspection,预防措施.足部检查,String,"足部自检频率",每日自检
+preventiveMeasures.bloodGlucoseControl,预防措施.血糖控制,String,"血糖控制计划",强化血糖管理
+preventiveMeasures.riskFactorModification,预防措施.危险因素改变,String,"危险因素修正",戒烟、控制血压血脂
+complicationPrevention.ulcerPrevention,并发症预防.溃疡预防,String,"溃疡预防措施",足部保护和护理
+complicationPrevention.fallPrevention,并发症预防.跌倒预防,String,"跌倒预防措施",环境改良和平衡训练
+complicationPrevention.infectionPrevention,并发症预防.感染预防,String,"感染预防措施",足部卫生和监测
+complicationPrevention.amputationPrevention,并发症预防.截肢预防,String,"截肢预防措施",早期发现和治疗
+prognosisAssessment.short Term,预后评估.短期预后,String,"短期预后（1年内）。<br>**建议值**: `良好`, `一般`, `较差`",一般
+prognosisAssessment.longTerm,预后评估.长期预后,String,"长期预后（5年以上）。<br>**建议值**: `良好`, `一般`, `较差`",一般
+prognosisAssessment.progressionRisk,预后评估.进展风险,String,"神经病变进展风险。<br>**建议值**: `低`, `中`, `高`",中
+prognosisAssessment.disability Risk,预后评估.致残风险,String,"致残风险评估。<br>**建议值**: `低`, `中`, `高`",中
+qualityOfLife.sleepQuality,生活质量.睡眠质量,String,"睡眠质量。<br>**建议值**: `良好`, `一般`, `较差`",较差
+qualityOfLife.mood,生活质量.情绪状态,String,"情绪状态。<br>**建议值**: `良好`, `轻度抑郁`, `中度抑郁`, `重度抑郁`",轻度抑郁
+qualityOfLife.social Activity,生活质量.社交活动,String,"社交活动参与。<br>**建议值**: `正常`, `减少`, `明显减少`",减少
+qualityOfLife.workProductivity,生活质量.工作效率,String,"工作效率影响。<br>**建议值**: `无影响`, `轻度影响`, `中度影响`, `重度影响`",中度影响
+patientEducation.diseaseKnowledge,患者教育.疾病认知,String,"患者对神经病变的认知程度。<br>**建议值**: `差`, `一般`, `良好`",一般
+patientEducation.self CareSkills,患者教育.自我护理技能,String,"自我护理技能掌握。<br>**建议值**: `差`, `一般`, `良好`",一般
+patientEducation.emergencyRecognition,患者教育.急症识别,String,"急症识别能力。<br>**建议值**: `差`, `一般`, `良好`",一般
+followUp.nextVisit,随访.下次随访,String,"下次随访时间",3个月后
+followUp.monitoringParameters,随访.监测参数,String,"需要监测的参数",症状变化、神经功能、血糖控制
+followUp.referrals.neurology,随访.转诊.神经科,String,"神经科转诊需要。<br>**建议值**: `不需要`, `建议`, `急需`",不需要
+followUp.referrals.endocrinology,随访.转诊.内分泌科,String,"内分泌科随访。<br>**建议值**: `不需要`, `建议`, `急需`",建议
+followUp.referrals.podiatry,随访.转诊.足病科,String,"足病科转诊需要。<br>**建议值**: `不需要`, `建议`, `急需`",建议
+followUp.referrals.pain Management,随访.转诊.疼痛科,String,"疼痛科转诊需要。<br>**建议值**: `不需要`, `建议`, `急需`",不需要
+followUp.referrals.rehabilitation,随访.转诊.康复科,String,"康复科转诊需要。<br>**建议值**: `不需要`, `建议`, `急需`",建议
+economicImpact.medicalCosts,经济影响.医疗费用,String,"年度医疗费用估算",约1.5万元
+economicImpact.productivity Loss,经济影响.生产力损失,String,"生产力损失评估",工作效率下降30%
+economicImpact.caregiverBurden,经济影响.照护负担,String,"照护者负担",家人协助日常活动
+researchParticipation.clinicalTrials,研究参与.临床试验,String,"临床试验参与意愿。<br>**建议值**: `愿意`, `不愿意`, `考虑中`",考虑中
+researchParticipation.biomarker Studies,研究参与.生物标志物研究,String,"生物标志物研究参与",愿意参加
+diagnosisImpression,诊断/印象,String,医生对糖尿病神经病变检查结果的综合诊断或印象。,糖尿病周围神经病变中度，伴疼痛性神经病变，轻度自主神经功能异常
+recommendation,建议,String,医生根据检查结果提出的建议。,强化血糖控制，疼痛管理，足部护理，定期神经功能监测，跌倒预防

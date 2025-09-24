@@ -1,0 +1,99 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行高血压检查的日期,2025-08-15
+hypertensionType,高血压类型,String,"高血压分类。<br>**建议值**: `原发性高血压`, `继发性高血压`, `单纯收缩期高血压`, `白大衣高血压`, `隐匿性高血压`",原发性高血压
+hypertensionDuration,高血压病程,Number,"高血压诊断至今的年数。<br>单位: 年",8
+hypertensionStage,高血压分级,String,"高血压分级。<br>**建议值**: `正常`, `正常高值`, `1级高血压`, `2级高血压`, `3级高血压`",2级高血压
+officeBloodPressure.systolic,诊室血压.收缩压,Number,"诊室收缩压。<br>单位: mmHg<br>**分级标准**: <120(正常), 120-139(正常高值), 140-159(1级), 160-179(2级), ≥180(3级)",165
+officeBloodPressure.diastolic,诊室血压.舒张压,Number,"诊室舒张压。<br>单位: mmHg<br>**分级标准**: <80(正常), 80-89(正常高值), 90-99(1级), 100-109(2级), ≥110(3级)",95
+officeBloodPressure.pulse,诊室血压.脉压,Number,"脉压差。<br>单位: mmHg<br>**计算公式**: 收缩压-舒张压",70
+officeBloodPressure.meanArterialPressure,诊室血压.平均动脉压,Number,"平均动脉压。<br>单位: mmHg<br>**计算公式**: (收缩压+2×舒张压)/3",118
+homeBloodPressure.systolic,家庭血压.收缩压,Number,"家庭自测收缩压平均值。<br>单位: mmHg<br>**诊断标准**: ≥135为高血压",140
+homeBloodPressure.diastolic,家庭血压.舒张压,Number,"家庭自测舒张压平均值。<br>单位: mmHg<br>**诊断标准**: ≥85为高血压",88
+ambulatoryBloodPressure.24hSystolic,动态血压.24小时收缩压,Number,"24小时平均收缩压。<br>单位: mmHg<br>**诊断标准**: ≥130为高血压",145
+ambulatoryBloodPressure.24hDiastolic,动态血压.24小时舒张压,Number,"24小时平均舒张压。<br>单位: mmHg<br>**诊断标准**: ≥80为高血压",90
+ambulatoryBloodPressure.daytimeSystolic,动态血压.白天收缩压,Number,"白天平均收缩压。<br>单位: mmHg<br>**诊断标准**: ≥135为高血压",150
+ambulatoryBloodPressure.daytimeDiastolic,动态血压.白天舒张压,Number,"白天平均舒张压。<br>单位: mmHg<br>**诊断标准**: ≥85为高血压",92
+ambulatoryBloodPressure.nighttimeSystolic,动态血压.夜间收缩压,Number,"夜间平均收缩压。<br>单位: mmHg<br>**诊断标准**: ≥120为高血压",135
+ambulatoryBloodPressure.nighttimeDiastolic,动态血压.夜间舒张压,Number,"夜间平均舒张压。<br>单位: mmHg<br>**诊断标准**: ≥70为高血压",85
+bloodPressureVariability.systolic,血压变异性.收缩压标准差,Number,"收缩压标准差，反映血压变异性。<br>单位: mmHg",15.2
+bloodPressureVariability.diastolic,血压变异性.舒张压标准差,Number,"舒张压标准差，反映血压变异性。<br>单位: mmHg",8.5
+circadianRhythm.dippingPattern,昼夜节律.杓型模式,String,"血压昼夜节律模式。<br>**建议值**: `杓型(正常)`, `非杓型`, `反杓型`, `超杓型`",非杓型
+circadianRhythm.dippingRatio,昼夜节律.下降百分比,Number,"夜间血压下降百分比。<br>**计算公式**: (白天血压-夜间血压)/白天血压×100%<br>**正常值**: 10-20%",5.2
+morningBloodPressureSurge,血压晨峰,Number,"血压晨峰值。<br>单位: mmHg<br>**异常值**: >55mmHg",45
+targetOrganDamage.leftVentricularHypertrophy,靶器官损害.左心室肥厚,String,"左心室肥厚评估。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+targetOrganDamage.leftVentricularMassIndex,靶器官损害.左心室质量指数,Number,"左心室质量指数。<br>单位: g/m²<br>**异常值**: 男性>115，女性>95",125
+targetOrganDamage.ejectionFraction,靶器官损害.射血分数,Number,"左心室射血分数。<br>单位: %<br>**正常值**: >50%",60
+targetOrganDamage.diastolicDysfunction,靶器官损害.舒张功能不全,String,"左心室舒张功能。<br>**建议值**: `正常`, `1级`, `2级`, `3级`",1级
+targetOrganDamage.aorticStiffness,靶器官损害.主动脉僵硬度,Number,"主动脉脉搏波传导速度。<br>单位: m/s<br>**异常值**: >10m/s",12.5
+targetOrganDamage.ankleArmIndex,靶器官损害.踝臂指数,Number,"踝臂血压指数。<br>**异常值**: <0.9",0.95
+targetOrganDamage.carotidIntimalThickness,靶器官损害.颈动脉内膜厚度,Number,"颈动脉内中膜厚度。<br>单位: mm<br>**异常值**: >0.9mm",1.1
+targetOrganDamage.carotidPlaque,靶器官损害.颈动脉斑块,String,"颈动脉斑块情况。<br>**建议值**: `无`, `稳定性斑块`, `不稳定性斑块`",稳定性斑块
+targetOrganDamage.retinalChanges,靶器官损害.视网膜病变,String,"高血压视网膜病变分级。<br>**建议值**: `无`, `I级`, `II级`, `III级`, `IV级`",I级
+targetOrganDamage.microalbuminuria,靶器官损害.微量白蛋白尿,Number,"尿微量白蛋白。<br>单位: mg/L<br>**异常值**: 30-300mg/L",45
+targetOrganDamage.albuminCreatinineRatio,靶器官损害.白蛋白肌酐比,Number,"尿白蛋白肌酐比。<br>单位: mg/mmol<br>**异常值**: 男性>2.5，女性>3.5",4.2
+targetOrganDamage.estimatedGFR,靶器官损害.估算肾小球滤过率,Number,"估算肾小球滤过率。<br>单位: mL/min/1.73m²<br>**异常值**: <60",75
+secondaryHypertensionScreening.aldosterone,继发性高血压筛查.醛固酮,Number,"血浆醛固酮浓度。<br>单位: ng/dL<br>**参考范围**: 5-30",35
+secondaryHypertensionScreening.renin,继发性高血压筛查.肾素,Number,"血浆肾素活性。<br>单位: ng/mL/h<br>**参考范围**: 0.2-2.3",0.8
+secondaryHypertensionScreening.aldosteroneReninRatio,继发性高血压筛查.醛固酮肾素比值,Number,"醛固酮肾素比值。<br>**异常值**: >20",43.8
+secondaryHypertensionScreening.catecholamines,继发性高血压筛查.儿茶酚胺,Number,"24小时尿儿茶酚胺。<br>单位: μmol/24h<br>**参考范围**: <590",520
+secondaryHypertensionScreening.metanephrines,继发性高血压筛查.甲氧基肾上腺素,Number,"24小时尿甲氧基肾上腺素。<br>单位: μmol/24h<br>**参考范围**: <7",5.8
+secondaryHypertensionScreening.vanillylmandelicAcid,继发性高血压筛查.VMA,Number,"24小时尿香草基杏仁酸。<br>单位: μmol/24h<br>**参考范围**: <35",28
+secondaryHypertensionScreening.cortisol,继发性高血压筛查.皮质醇,Number,"24小时尿游离皮质醇。<br>单位: nmol/24h<br>**参考范围**: 55-248",180
+secondaryHypertensionScreening.dexamethasoneSuppressionTest,继发性高血压筛查.地塞米松抑制试验,Number,"1mg地塞米松抑制试验后皮质醇。<br>单位: nmol/L<br>**正常值**: <50",35
+renovascularScreening.renalArteryDoppler,肾血管筛查.肾动脉多普勒,String,"肾动脉多普勒超声结果。<br>**建议值**: `正常`, `狭窄可能`, `明确狭窄`",正常
+renovascularScreening.renalArteryStenosis,肾血管筛查.肾动脉狭窄程度,Number,"肾动脉狭窄程度。<br>单位: %",0
+cardiovascularRiskFactors.smoking,心血管危险因素.吸烟,String,"吸烟状况。<br>**建议值**: `从不吸烟`, `已戒烟`, `目前吸烟`",已戒烟
+cardiovascularRiskFactors.diabetes,心血管危险因素.糖尿病,String,"是否合并糖尿病。<br>**建议值**: `否`, `糖尿病前期`, `2型糖尿病`, `1型糖尿病`",2型糖尿病
+cardiovascularRiskFactors.dyslipidemia,心血管危险因素.血脂异常,String,"是否合并血脂异常。<br>**建议值**: `否`, `是`",是
+cardiovascularRiskFactors.obesity,心血管危险因素.肥胖,String,"肥胖评估。<br>**建议值**: `否`, `超重`, `肥胖`, `重度肥胖`",超重
+cardiovascularRiskFactors.familyHistory,心血管危险因素.家族史,String,"心血管疾病家族史。<br>**建议值**: `无`, `有`",有
+cardiovascularRiskFactors.metabolicSyndrome,心血管危险因素.代谢综合征,String,"是否合并代谢综合征。<br>**建议值**: `否`, `是`",是
+laboratoryResults.totalCholesterol,实验室检查.总胆固醇,Number,"总胆固醇。<br>单位: mmol/L<br>**目标值**: <5.2",5.8
+laboratoryResults.ldlCholesterol,实验室检查.低密度脂蛋白,Number,"LDL胆固醇。<br>单位: mmol/L<br>**目标值**: <3.4",3.8
+laboratoryResults.hdlCholesterol,实验室检查.高密度脂蛋白,Number,"HDL胆固醇。<br>单位: mmol/L<br>**目标值**: 男性>1.04，女性>1.29",1.15
+laboratoryResults.triglycerides,实验室检查.甘油三酯,Number,"甘油三酯。<br>单位: mmol/L<br>**目标值**: <1.7",2.2
+laboratoryResults.fastingGlucose,实验室检查.空腹血糖,Number,"空腹血糖。<br>单位: mmol/L<br>**目标值**: <6.1",6.8
+laboratoryResults.hba1c,实验室检查.糖化血红蛋白,Number,"糖化血红蛋白。<br>单位: %<br>**目标值**: <7.0",7.5
+laboratoryResults.serumCreatinine,实验室检查.血肌酐,Number,"血清肌酐。<br>单位: μmol/L<br>**参考范围**: 男性57-111，女性41-73",85
+laboratoryResults.uricAcid,实验室检查.尿酸,Number,"血尿酸。<br>单位: μmol/L<br>**参考范围**: 男性208-428，女性155-357",380
+laboratoryResults.potassium,实验室检查.血钾,Number,"血清钾。<br>单位: mmol/L<br>**参考范围**: 3.5-5.3",4.2
+laboratoryResults.sodium,实验室检查.血钠,Number,"血清钠。<br>单位: mmol/L<br>**参考范围**: 137-147",142
+laboratoryResults.tsh,实验室检查.促甲状腺激素,Number,"TSH。<br>单位: mU/L<br>**参考范围**: 0.27-4.2",2.8
+bodyMeasurements.bodyMassIndex,体格测量.体质指数,Number,"体质指数。<br>单位: kg/m²<br>**正常值**: 18.5-24.9",27.5
+bodyMeasurements.waistCircumference,体格测量.腰围,Number,"腰围。<br>单位: cm<br>**异常值**: 男性≥90，女性≥85",92
+bodyMeasurements.waistHipRatio,体格测量.腰臀比,Number,"腰臀比。<br>**异常值**: 男性≥0.90，女性≥0.85",0.88
+currentMedications.acei,目前用药.ACEI,String,"ACEI类药物使用情况。<br>**建议值**: `未使用`, `使用-请注明药物和剂量`",培哚普利 4mg qd
+currentMedications.arb,目前用药.ARB,String,"ARB类药物使用情况。<br>**建议值**: `未使用`, `使用-请注明药物和剂量`",未使用
+currentMedications.ccb,目前用药.CCB,String,"钙通道阻滞剂使用情况。<br>**建议值**: `未使用`, `使用-请注明药物和剂量`",氨氯地平 5mg qd
+currentMedications.diuretic,目前用药.利尿剂,String,"利尿剂使用情况。<br>**建议值**: `未使用`, `使用-请注明药物和剂量`",氢氯噻嗪 25mg qd
+currentMedications.betaBlocker,目前用药.β受体阻滞剂,String,"β受体阻滞剂使用情况。<br>**建议值**: `未使用`, `使用-请注明药物和剂量`",未使用
+currentMedications.other,目前用药.其他,String,其他降压药物使用情况,无
+bloodPressureControl.target,血压控制.目标血压,String,个体化血压控制目标,<140/90 mmHg
+bloodPressureControl.achieved,血压控制.是否达标,String,"血压是否达到目标值。<br>**建议值**: `是`, `否`",否
+bloodPressureControl.compliance,血压控制.用药依从性,String,"用药依从性评估。<br>**建议值**: `良好`, `一般`, `较差`",一般
+lifestyleFactors.saltIntake,生活方式.盐摄入量,Number,"每日盐摄入量估算。<br>单位: g<br>**推荐值**: <6g",8.5
+lifestyleFactors.alcohol,生活方式.饮酒,String,"饮酒情况。<br>**建议值**: `不饮酒`, `少量`, `中等量`, `过量`",少量
+lifestyleFactors.exercise,生活方式.运动,String,"运动习惯。<br>**建议值**: `规律`, `偶尔`, `很少`, `从不`",偶尔
+lifestyleFactors.stress,生活方式.精神压力,String,"精神压力评估。<br>**建议值**: `轻微`, `中等`, `较大`",中等
+lifestyleFactors.sleep,生活方式.睡眠,String,"睡眠质量。<br>**建议值**: `良好`, `一般`, `较差`, `失眠`",一般
+cardiovascularRiskAssessment.riskLevel,心血管风险评估.风险分层,String,"心血管风险分层。<br>**建议值**: `低危`, `中危`, `高危`, `极高危`",高危
+cardiovascularRiskAssessment.tenYearRisk,心血管风险评估.10年风险,Number,"10年心血管事件风险。<br>单位: %",18.5
+cardiovascularRiskAssessment.riskCalculator,心血管风险评估.风险计算器,String,"使用的风险评估工具。<br>**建议值**: `Framingham`, `ASCVD`, `SCORE`, `中国PAR`",中国PAR
+comorbidities.coronaryHeartDisease,合并症.冠心病,String,"是否合并冠心病。<br>**建议值**: `否`, `稳定性心绞痛`, `不稳定性心绞痛`, `心肌梗死史`",否
+comorbidities.stroke,合并症.脑卒中,String,"是否合并脑卒中。<br>**建议值**: `否`, `缺血性脑卒中`, `出血性脑卒中`, `TIA`",否
+comorbidities.peripheralArteryDisease,合并症.外周动脉疾病,String,"是否合并外周动脉疾病。<br>**建议值**: `否`, `是`",否
+comorbidities.atrialFibrillation,合并症.心房颤动,String,"是否合并心房颤动。<br>**建议值**: `否`, `阵发性`, `持续性`, `永久性`",否
+comorbidities.heartFailure,合并症.心力衰竭,String,"是否合并心力衰竭。<br>**建议值**: `否`, `射血分数保留`, `射血分数减低`",否
+comorbidities.chronicKidneyDisease,合并症.慢性肾脏病,String,"慢性肾脏病分期。<br>**建议值**: `无`, `G1`, `G2`, `G3a`, `G3b`, `G4`, `G5`",G2
+treatmentStrategy.nonPharmacological,治疗策略.非药物治疗,String,非药物治疗措施,生活方式干预
+treatmentStrategy.pharmacological,治疗策略.药物治疗,String,药物治疗方案,ACEI+CCB+利尿剂
+treatmentStrategy.combination,治疗策略.联合用药,String,"联合用药策略。<br>**建议值**: `单药`, `两药联合`, `三药联合`, `四药联合`",三药联合
+monitoringPlan.frequency,监测计划.复查频率,String,"血压监测频率建议",每月复查
+monitoringPlan.parameters,监测计划.监测参数,String,需要监测的主要参数,血压、肾功能、血脂
+emergencyManagement.hypertensiveCrisis,急症处理.高血压危象,String,"是否发生过高血压危象。<br>**建议值**: `否`, `高血压急症`, `高血压亚急症`",否
+emergencyManagement.targetOrganDamage,急症处理.急性靶器官损害,String,"急性靶器官损害类型。<br>**建议值**: `无`, `急性心梗`, `急性脑卒中`, `急性肾损伤`, `主动脉夹层`",无
+prognosticFactors,预后因素,String,影响预后的主要因素,糖尿病、肥胖
+qualityOfLife,生活质量,String,"生活质量评估。<br>**建议值**: `良好`, `一般`, `较差`",一般
+patientEducation,患者教育,String,"患者教育完成情况。<br>**建议值**: `未接受`, `基础教育`, `强化教育`",基础教育
+diagnosisImpression,诊断/印象,String,医生对高血压检查结果的综合诊断或印象。,原发性高血压2级，合并糖尿病，高危
+recommendation,建议,String,医生根据检查结果提出的建议。,调整降压药物方案，加强生活方式干预

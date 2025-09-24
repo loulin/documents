@@ -1,0 +1,202 @@
+fieldName,fieldNameCN,dataType,description,examples
+examDate,检查日期,String,检查日期，格式YYYY-MM-DD,2024-12-01
+patientID,患者唯一标识符,String,患者的唯一标识符,P202401001
+patientName,患者姓名,String,患者的姓名,张三
+clinicalIndication,临床适应症,String,进行胰岛素注射技术评估的临床适应症,胰岛素注射技术评估
+diagnosisImpression,诊断印象,String,基于评估结果的诊断印象,注射技术基本掌握/需要改进
+recommendation,建议,String,基于评估结果的建议,加强注射技术培训和规范化指导
+
+# 基本信息
+ageAtAssessment,评估时年龄,Number,患者评估时的年龄（岁）,45
+gender,性别,String,患者性别,男/女
+diabetesType,糖尿病类型,String,患者的糖尿病类型,1型糖尿病/2型糖尿病/妊娠糖尿病/其他特殊类型
+diabetesDuration,糖尿病病程,Number,患者糖尿病诊断时间（年）,8.5
+insulinUseDuration,胰岛素使用时间,Number,胰岛素使用时间（年）,3.2
+currentInsulinRegimen,当前胰岛素方案,String,当前胰岛素治疗方案,基础胰岛素/餐时胰岛素/预混胰岛素/胰岛素泵
+hbA1cLevel,糖化血红蛋白,Number,最近一次糖化血红蛋白水平（%）,7.8
+
+# 胰岛素知识评估
+insulinKnowledgeScore,胰岛素知识评分,Number,胰岛素相关知识评分（0-100分）,72
+insulinTypeKnowledge,胰岛素类型知识,Number,胰岛素类型和作用时间知识评分（1-5分）,3.5
+storageKnowledge,储存知识,Number,胰岛素储存方法知识评分（1-5分）,3.8
+dosageCalculationKnowledge,剂量计算知识,Number,胰岛素剂量计算知识评分（1-5分）,3.2
+timingKnowledge,时机知识,Number,胰岛素注射时机知识评分（1-5分）,3.6
+siteRotationKnowledge,部位轮换知识,Number,注射部位轮换知识评分（1-5分）,3.4
+hypoHyperglycemiaKnowledge,低高血糖知识,Number,低血糖和高血糖处理知识评分（1-5分）,3.0
+
+# 注射器具评估
+injectionDeviceType,注射器具类型,String,使用的注射器具类型,胰岛素笔/注射器+注射瓶/胰岛素泵/预填充笔
+deviceFamiliarity,器具熟悉度,Number,对注射器具熟悉程度评分（1-5分）,3.8
+deviceMaintenanceKnowledge,器具维护知识,Number,注射器具维护保养知识评分（1-5分）,3.2
+needleChangeFrequency,针头更换频率,String,针头更换频率,每次更换/每天更换/每周更换/不定期更换
+needleSize,针头规格,String,使用的针头规格,4mm/5mm/6mm/8mm/12.7mm
+needleGaugePreference,针头粗细偏好,String,针头粗细规格,30G/31G/32G/33G
+deviceCarryingMethod,器具携带方式,String,注射器具携带方式,专用包/口袋/包包/不携带
+
+# 注射技术评估步骤
+handHygienePerformance,手卫生执行,Number,注射前手卫生执行情况评分（1-5分）,4.2
+injectionSiteInspection,注射部位检查,Number,注射前部位检查执行情况评分（1-5分）,3.6
+insulinPreparation,胰岛素准备,Number,胰岛素准备操作正确性评分（1-5分）,3.8
+doseVerification,剂量核实,Number,剂量核实准确性评分（1-5分）,4.0
+injectionSiteSelection,注射部位选择,Number,注射部位选择合理性评分（1-5分）,3.4
+skinPreparation,皮肤准备,Number,注射部位皮肤准备正确性评分（1-5分）,3.2
+
+# 注射操作技术
+needleInsertionAngle,针头插入角度,String,针头插入角度,90度/45度/其他角度
+needleInsertionDepth,针头插入深度,String,针头插入深度掌握,完全插入/大部分插入/部分插入/浅表插入
+injectionSpeed,注射速度,Number,注射速度控制评分（1-5分）,3.5
+needleWithdrawalTiming,针头退出时机,Number,注射后针头停留和退出时机评分（1-5分）,3.2
+injectionSitePressure,注射部位按压,Number,注射后部位按压处理评分（1-5分）,3.4
+needleRecapping,针头套帽,String,针头使用后处理,立即套帽/分离处理/直接丢弃/重复使用
+
+# 注射部位管理
+primaryInjectionSites,主要注射部位,String,主要使用的注射部位,腹部/大腿/上臂/臀部
+siteRotationPattern,部位轮换模式,String,注射部位轮换模式,系统轮换/随机轮换/固定部位/不规律轮换
+siteRotationFrequency,轮换频率,String,注射部位轮换频率,每次轮换/每天轮换/每周轮换/不定期轮换
+injectionSiteMapping,注射部位记录,String,是否记录注射部位,详细记录/简单记录/偶尔记录/不记录
+siteInspectionFrequency,部位检查频率,String,注射部位自我检查频率,每日检查/定期检查/偶尔检查/不检查
+lipodystrophyPresence,脂肪萎缩存在,String,是否存在脂肪萎缩,无/轻度/中度/重度
+
+# 剂量调整技能
+dosageCalculationAccuracy,剂量计算准确性,Number,胰岛素剂量计算准确性评分（1-5分）,3.4
+bloodGlucoseBasedAdjustment,血糖基础调整,Number,根据血糖调整剂量能力评分（1-5分）,3.0
+carbCountingIntegration,碳水计算整合,Number,结合碳水计算调整剂量能力评分（1-5分）,2.8
+exerciseAdjustment,运动调整,Number,运动前后剂量调整能力评分（1-5分）,2.5
+illnessAdjustment,疾病期调整,Number,疾病期间剂量调整能力评分（1-5分）,2.3
+travelTimeAdjustment,时差调整,Number,旅行时差剂量调整能力评分（1-5分）,2.0
+
+# 安全操作评估
+sharpsDisposal,锐器处理,String,使用后针头处理方式,专用容器/硬质容器/塑料瓶/垃圾桶/其他
+crossContaminationPrevention,交叉感染预防,Number,预防交叉感染措施执行评分（1-5分）,3.8
+injectionSiteSafety,注射部位安全,Number,注射部位安全操作评分（1-5分）,3.6
+emergencyPreparedness,应急准备,Number,注射相关应急准备评分（1-5分）,2.8
+childSafety,儿童安全,String,家中儿童安全防护措施,完善防护/基本防护/部分防护/无防护/不适用
+travelSafety,旅行安全,Number,旅行期间注射安全管理评分（1-5分）,2.6
+
+# 胰岛素储存和管理
+storageTemperature,储存温度,String,胰岛素储存温度管理,严格按要求/基本按要求/偶尔违规/经常违规
+refrigeratorStorage,冰箱储存,Number,冰箱储存胰岛素管理评分（1-5分）,3.8
+roomTemperatureStorage,室温储存,Number,室温胰岛素使用期限管理评分（1-5分）,3.4
+transportationStorage,运输储存,Number,胰岛素运输过程储存评分（1-5分）,3.0
+expirationDateTracking,有效期追踪,Number,胰岛素有效期管理评分（1-5分）,3.6
+inventoryManagement,库存管理,Number,胰岛素库存管理能力评分（1-5分）,3.2
+
+# 注射时机管理
+mealTimingCoordination,用餐时机协调,Number,胰岛素注射与用餐时机协调评分（1-5分）,3.4
+fastingInsulinTiming,空腹胰岛素时机,Number,基础胰岛素注射时机掌握评分（1-5分）,3.6
+correctionInsulinUse,纠正胰岛素使用,Number,纠正性胰岛素使用时机评分（1-5分）,2.8
+bedtimeInsulinManagement,睡前胰岛素管理,Number,睡前胰岛素注射管理评分（1-5分）,3.2
+specialSituationTiming,特殊情况时机,Number,特殊情况胰岛素时机调整评分（1-5分）,2.4
+reminderSystemUse,提醒系统使用,String,胰岛素注射提醒系统使用,手机闹钟/应用提醒/家人提醒/固定习惯/无提醒
+
+# 并发症识别和处理
+injectionSiteReactions,注射部位反应,String,注射部位反应识别能力,能准确识别/基本识别/偶尔识别/不能识别
+hypoglycemiaRecognition,低血糖识别,Number,低血糖症状识别能力评分（1-5分）,3.5
+hypoglycemiaTreatment,低血糖处理,Number,低血糖处理能力评分（1-5分）,3.2
+lipodystrophyManagement,脂肪萎缩管理,Number,脂肪萎缩预防和管理评分（1-5分）,2.8
+infectionPrevention,感染预防,Number,注射部位感染预防措施评分（1-5分）,3.4
+allergyManagement,过敏管理,Number,胰岛素过敏识别和处理评分（1-5分）,2.5
+
+# 技术演示评估
+demonstrationAccuracy,技术演示准确性,Number,实际注射技术演示准确性评分（1-5分）,3.6
+stepSequenceCorrectness,操作步骤正确性,Number,注射操作步骤顺序正确性评分（1-5分）,3.4
+techniqueFluency,技术熟练度,Number,注射技术熟练程度评分（1-5分）,3.2
+errorIdentification,错误识别,Number,识别技术错误能力评分（1-5分）,2.8
+selfCorrectionAbility,自我纠正能力,Number,自我纠正技术错误能力评分（1-5分）,2.6
+teachingAbility,教学能力,Number,向他人教授注射技术能力评分（1-5分）,2.4
+
+# 心理和态度评估
+injectionAnxiety,注射焦虑,Number,胰岛素注射焦虑程度评分（1-5分），1分为无焦虑,2.8
+selfEfficacy,注射自我效能,Number,胰岛素注射自信程度评分（1-5分）,3.4
+painConcern,疼痛担忧,Number,对注射疼痛担忧程度评分（1-5分）,2.5
+bodyImageConcern,体像担忧,Number,对注射影响体像担忧程度评分（1-5分）,2.2
+socialStigma,社会病耻感,Number,公共场所注射社会病耻感评分（1-5分）,2.6
+motivationLevel,动机水平,Number,学习和改进注射技术动机评分（1-5分）,3.6
+
+# 教育和培训评估
+initialTrainingReceived,初始培训接受,String,是否接受过正规注射培训,是/否
+trainingProvider,培训提供者,String,注射培训提供者,内分泌医生/糖尿病护士/药师/自学/其他
+trainingMethod,培训方法,String,接受的培训方法,一对一指导/小组培训/视频学习/书面材料
+refresherTrainingNeed,复习培训需求,String,是否需要复习培训,急需/需要/不太需要/不需要
+learningStylePreference,学习方式偏好,String,偏好的学习方式,视觉演示/亲手操作/书面说明/口头指导
+ongoingEducationParticipation,持续教育参与,String,持续糖尿病教育参与情况,积极参与/偶尔参与/很少参与/从不参与
+
+# 社会支持和环境
+familySupport,家庭支持,Number,家庭对胰岛素注射支持程度评分（1-5分）,3.8
+caregiverAssistance,照护者协助,String,照护者注射协助情况,完全协助/部分协助/紧急协助/无协助
+peerSupport,同伴支持,Number,其他糖尿病患者支持程度评分（1-5分）,2.6
+workplaceSupport,工作场所支持,Number,工作场所注射支持程度评分（1-5分）,2.4
+schoolSupport,学校支持,Number,学校注射支持程度评分（1-5分）,不适用/3.0
+communitySupport,社区支持,Number,社区糖尿病支持程度评分（1-5分）,2.2
+
+# 经济因素评估
+insulinAffordability,胰岛素承受能力,String,胰岛素费用承受能力,完全承受/基本承受/部分困难/严重困难
+suppliesAffordability,耗材承受能力,String,注射耗材费用承受能力,完全承受/基本承受/部分困难/严重困难
+insuranceCoverage,保险覆盖,Number,医疗保险胰岛素覆盖比例（%）,75
+costSavingBehavior,费用节省行为,String,是否有节省费用行为,重复使用针头/减少剂量/延长使用期/无节省行为
+economicImpactOnCompliance,经济对依从性影响,Number,经济因素对注射依从性影响评分（1-5分）,2.8
+financialAssistanceAwareness,经济援助认知,String,对胰岛素援助项目认知,了解并使用/了解未使用/不了解
+
+# 特殊情况管理
+travelInsulinManagement,旅行胰岛素管理,Number,旅行期间胰岛素管理能力评分（1-5分）,2.6
+timeZoneAdjustment,时区调整,Number,跨时区旅行胰岛素调整能力评分（1-5分）,2.2
+emergencySupplyManagement,应急供应管理,Number,胰岛素应急供应管理评分（1-5分）,2.8
+powerOutagePreparation,停电准备,Number,停电等紧急情况胰岛素储存准备评分（1-5分）,2.4
+disasterPreparedness,灾害准备,Number,自然灾害胰岛素供应准备评分（1-5分）,2.0
+hospitalAdmissionManagement,住院管理,Number,住院期间胰岛素管理能力评分（1-5分）,2.6
+
+# 技术设备相关
+glucometerIntegration,血糖仪整合,Number,血糖监测与胰岛素调整整合能力评分（1-5分）,3.0
+insulinPumpKnowledge,胰岛素泵知识,Number,胰岛素泵相关知识评分（1-5分）,2.4
+continuousGlucoseMonitorUse,连续血糖监测使用,String,是否使用连续血糖监测,是/否
+smartPenUse,智能胰岛素笔使用,String,是否使用智能胰岛素笔,是/否
+mobileAppIntegration,手机应用整合,Number,胰岛素管理手机应用使用能力评分（1-5分）,2.8
+dataTracking,数据追踪,Number,胰岛素使用数据追踪能力评分（1-5分）,2.6
+
+# 质量改进评估
+errorTracking,错误追踪,String,是否追踪注射错误,详细记录/简单记录/偶尔记录/不记录
+improvementGoalSetting,改进目标设定,Number,注射技术改进目标设定能力评分（1-5分）,3.0
+selfAssessmentAccuracy,自我评估准确性,Number,注射技术自我评估准确性评分（1-5分）,2.8
+feedbackReceptivity,反馈接受度,Number,接受注射技术反馈意愿评分（1-5分）,3.4
+continuousImprovementCommitment,持续改进承诺,Number,持续改进注射技术承诺程度评分（1-5分）,3.2
+bestPracticeAdoption,最佳实践采纳,Number,采纳注射最佳实践意愿评分（1-5分）,3.0
+
+# 文化和个人因素
+culturalBarriers,文化障碍,String,文化因素对注射的影响,无影响/轻微影响/中等影响/显著影响
+religiousConsiderations,宗教考虑,String,宗教因素对注射影响,无影响/轻微影响/中等影响/显著影响
+personalPreferences,个人偏好,String,个人注射偏好,注射部位偏好/时间偏好/器具偏好/无特殊偏好
+lifestyleFactors,生活方式因素,Number,生活方式对注射管理影响评分（1-5分）,2.8
+occupationalFactors,职业因素,Number,职业对注射管理影响评分（1-5分）,2.6
+ageRelatedFactors,年龄相关因素,Number,年龄对注射技术影响评分（1-5分）,2.4
+
+# 并发症监测
+injectionSiteMonitoringFrequency,注射部位监测频率,String,注射部位监测频率,每日/每周/每月/不定期/从不
+complicationRecognitionAccuracy,并发症识别准确性,Number,注射相关并发症识别准确性评分（1-5分）,3.2
+medicalAttentionSeeking,医疗关注寻求,Number,注射问题寻求医疗帮助能力评分（1-5分）,3.4
+preventiveCarePractices,预防性护理实践,Number,注射部位预防性护理实践评分（1-5分）,3.0
+complicationDocumentation,并发症记录,String,注射并发症记录情况,详细记录/简单记录/偶尔记录/不记录
+followUpCompliance,随访依从性,Number,注射技术随访依从性评分（1-5分）,3.2
+
+# 综合评估结果
+overallInjectionCompetencyScore,总体注射胜任力评分,Number,总体胰岛素注射胜任力评分（0-100分）,68
+technicalSkillLevel,技术技能水平,String,注射技术技能水平,熟练/基本掌握/需要改进/需要重新培训
+safetyComplianceLevel,安全合规水平,String,注射安全合规水平,完全合规/基本合规/部分违规/严重违规
+independenceLevel,独立性水平,String,注射独立性水平,完全独立/基本独立/需要协助/需要监督
+improvementPriority,改进优先级,String,技术改进优先级,高优先级/中优先级/低优先级/无需改进
+riskLevel,风险等级,String,注射相关风险等级,低风险/中风险/高风险/极高风险
+
+# 干预建议
+educationNeed,教育需求,String,注射教育需求程度,高需求/中等需求/低需求/无需求
+skillTrainingNeed,技能培训需求,String,技能培训需求程度,高需求/中等需求/低需求/无需求
+psychologicalSupportNeed,心理支持需求,String,心理支持需求程度,高需求/中等需求/低需求/无需求
+environmentalModificationNeed,环境改善需求,String,注射环境改善需求,高需求/中等需求/低需求/无需求
+deviceUpgradeNeed,设备升级需求,String,注射设备升级需求,高需求/中等需求/低需求/无需求
+followUpIntensity,随访强度需求,String,随访强度需求,密集随访/定期随访/按需随访/无需随访
+
+# 评估工具和方法
+assessmentMethod,评估方法,String,评估方法,实际操作演示/理论考核/观察评估/综合评估
+evaluatorQualification,评估者资质,String,评估者专业资质,糖尿病专科护士/内分泌医生/糖尿病教育者/其他
+assessmentSetting,评估环境,String,评估进行环境,门诊/病房/社区/家庭/培训中心
+assessmentDuration,评估用时,Number,完成注射技术评估所用时间（分钟）,30
+standardizedProtocol,标准化方案,String,是否使用标准化评估方案,是/否
+reliabilityMeasure,可靠性测量,String,评估结果可靠性,高可靠性/中等可靠性/需要验证

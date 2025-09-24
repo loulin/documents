@@ -1,0 +1,142 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行胰腺癌相关检查的日期,2025-08-15
+clinicalIndication,检查适应症,String,"进行胰腺癌检查的临床指征。<br>**建议值**: `高危筛查`, `症状怀疑`, `影像学发现`, `肿瘤标志物异常`, `随访监测`",症状怀疑
+clinicalPresentation.abdominalPain,临床表现.腹痛,String,"腹痛程度和特征。<br>**建议值**: `无`, `轻度`, `中度`, `重度`, `难以忍受`",中度
+clinicalPresentation.painLocation,临床表现.疼痛部位,String,"疼痛主要部位。<br>**建议值**: `上腹部`, `左上腹`, `右上腹`, `腰背部`, `弥漫性`",上腹部
+clinicalPresentation.painRadiation,临床表现.疼痛放射,String,"疼痛放射部位。<br>**建议值**: `无放射`, `背部`, `肩胛部`, `胸部`",背部
+clinicalPresentation.jaundice,临床表现.黄疸,String,"黄疸程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+clinicalPresentation.weightLoss,临床表现.体重减轻,String,"体重减轻程度。<br>**建议值**: `无`, `<5%`, `5-10%`, `>10%`",5-10%
+clinicalPresentation.appetiteLoss,临床表现.食欲减退,String,"食欲减退程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+clinicalPresentation.nausea,临床表现.恶心,String,"恶心程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+clinicalPresentation.vomiting,临床表现.呕吐,String,"呕吐情况。<br>**建议值**: `无`, `偶尔`, `频繁`, `持续`",偶尔
+clinicalPresentation.diarrhea,临床表现.腹泻,String,"腹泻情况。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+clinicalPresentation.steatorrhea,临床表现.脂肪泻,String,"脂肪泻情况。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+clinicalPresentation.newOnsetDiabetes,临床表现.新发糖尿病,String,"新发糖尿病情况。<br>**建议值**: `否`, `是`",是
+tumorMarkers.ca19_9,肿瘤标志物.CA19-9,Number,"糖类抗原19-9。<br>单位: U/mL<br>**参考范围**: <37",450
+tumorMarkers.cea,肿瘤标志物.CEA,Number,"癌胚抗原。<br>单位: μg/L<br>**参考范围**: <5",12.5
+tumorMarkers.ca125,肿瘤标志物.CA125,Number,"糖类抗原125。<br>单位: U/mL<br>**参考范围**: <35",65
+tumorMarkers.ca242,肿瘤标志物.CA242,Number,"糖类抗原242。<br>单位: U/mL<br>**参考范围**: <20",85
+tumorMarkers.span1,肿瘤标志物.SPAN-1,Number,"唾液酸化抗原。<br>单位: U/mL<br>**参考范围**: <60",120
+tumorMarkers.dupan2,肿瘤标志物.DUPAN-2,Number,"胰管相关蛋白抗原。<br>单位: U/mL<br>**参考范围**: <150",280
+imagingFindings.ctScan.pancreaticMass,影像学检查.CT.胰腺肿块,String,"CT发现的胰腺肿块。<br>**建议值**: `无`, `胰头`, `胰体`, `胰尾`, `弥漫性`",胰头
+imagingFindings.ctScan.massSize,影像学检查.CT.肿块大小,Number,"肿块最大径。<br>单位: cm",3.2
+imagingFindings.ctScan.enhancement,影像学检查.CT.强化模式,String,"肿块强化特征。<br>**建议值**: `均匀强化`, `不均匀强化`, `低强化`, `无强化`",低强化
+imagingFindings.ctScan.vascularInvolvement,影像学检查.CT.血管侵犯,String,"血管侵犯情况。<br>**建议值**: `无`, `门静脉`, `肠系膜上静脉`, `肠系膜上动脉`, `腹腔动脉`, `肝动脉`",门静脉
+imagingFindings.ctScan.bileDuctDilatation,影像学检查.CT.胆管扩张,String,"胆管扩张情况。<br>**建议值**: `无`, `肝内胆管`, `肝外胆管`, `胰管`, `双管征`",肝外胆管
+imagingFindings.ctScan.pancreaticDuctDilatation,影像学检查.CT.胰管扩张,String,"胰管扩张程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+imagingFindings.ctScan.lymphNodes,影像学检查.CT.淋巴结,String,"淋巴结肿大情况。<br>**建议值**: `正常`, `胰周淋巴结`, `腹膜后淋巴结`, `远处淋巴结`",胰周淋巴结
+imagingFindings.ctScan.metastases,影像学检查.CT.转移,String,"转移灶情况。<br>**建议值**: `无`, `肝转移`, `肺转移`, `腹膜转移`, `骨转移`",肝转移
+imagingFindings.mri.findings,影像学检查.MRI.发现,String,"MRI主要发现",T1低信号T2高信号肿块
+imagingFindings.mri.mrcp,影像学检查.MRI.MRCP,String,"MRCP发现",胰管中断
+imagingFindings.petCt.suvMax,影像学检查.PET-CT.SUV最大值,Number,"FDG摄取SUV最大值",8.5
+imagingFindings.petCt.metastases,影像学检查.PET-CT.转移灶,String,"PET-CT发现的转移灶",肝脏多发高代谢灶
+imagingFindings.eus.findings,影像学检查.超声内镜.发现,String,"EUS主要发现",胰头低回声肿块
+imagingFindings.eus.vascularInvolvement,影像学检查.超声内镜.血管侵犯,String,"EUS评估血管侵犯",门静脉受侵
+imagingFindings.eus.fineneedleAspiration,影像学检查.超声内镜.细针穿刺,String,"EUS-FNA结果。<br>**建议值**: `未做`, `良性`, `恶性`, `不确定`",恶性
+pathology.histology,病理学.组织学类型,String,"组织学类型。<br>**建议值**: `胰腺导管腺癌`, `胰腺内分泌肿瘤`, `胰腺混合性肿瘤`, `其他`",胰腺导管腺癌
+pathology.grade,病理学.分化程度,String,"肿瘤分化程度。<br>**建议值**: `高分化`, `中分化`, `低分化`, `未分化`",中分化
+pathology.tumorSize,病理学.肿瘤大小,Number,"病理测量肿瘤大小。<br>单位: cm",3.5
+pathology.lymphNodeInvolvement,病理学.淋巴结受累,String,"淋巴结受累情况",3/15个淋巴结阳性
+pathology.margins,病理学.切缘,String,"手术切缘状态。<br>**建议值**: `阴性`, `阳性`, `接近`",阴性
+pathology.vascularInvasion,病理学.血管侵犯,String,"血管侵犯情况。<br>**建议值**: `无`, `微血管侵犯`, `大血管侵犯`",微血管侵犯
+pathology.perineralInvasion,病理学.神经侵犯,String,"神经周围侵犯。<br>**建议值**: `无`, `有`",有
+pathology.tnmStage.t,病理学.TNM分期.T,String,"原发肿瘤T分期。<br>**建议值**: `T1`, `T2`, `T3`, `T4`",T3
+pathology.tnmStage.n,病理学.TNM分期.N,String,"淋巴结N分期。<br>**建议值**: `N0`, `N1`, `N2`",N1
+pathology.tnmStage.m,病理学.TNM分期.M,String,"远处转移M分期。<br>**建议值**: `M0`, `M1`",M1
+pathology.overallStage,病理学.总体分期,String,"AJCC分期。<br>**建议值**: `I期`, `II期`, `III期`, `IV期`",IV期
+molecularMarkers.kras,分子标志物.KRAS,String,"KRAS基因突变状态。<br>**建议值**: `野生型`, `突变型-请注明位点`",突变型-G12D
+molecularMarkers.tp53,分子标志物.TP53,String,"TP53基因突变状态。<br>**建议值**: `野生型`, `突变型`",突变型
+molecularMarkers.cdkn2a,分子标志物.CDKN2A,String,"CDKN2A基因缺失状态。<br>**建议值**: `正常`, `缺失`",缺失
+molecularMarkers.smad4,分子标志物.SMAD4,String,"SMAD4基因缺失状态。<br>**建议值**: `正常`, `缺失`",正常
+molecularMarkers.brca1,分子标志物.BRCA1,String,"BRCA1基因突变状态。<br>**建议值**: `野生型`, `突变型`",野生型
+molecularMarkers.brca2,分子标志物.BRCA2,String,"BRCA2基因突变状态。<br>**建议值**: `野生型`, `突变型`",野生型
+molecularMarkers.palb2,分子标志物.PALB2,String,"PALB2基因突变状态。<br>**建议值**: `野生型`, `突变型`",野生型
+molecularMarkers.atr,分子标志物.ATR,String,"ATR基因突变状态。<br>**建议值**: `野生型`, `突变型`",野生型
+molecularMarkers.mismatchRepair,分子标志物.错配修复,String,"错配修复蛋白状态。<br>**建议值**: `完整`, `缺失-MSI-H`, `缺失-MSI-L`",完整
+molecularMarkers.microsatelliteInstability,分子标志物.微卫星不稳定,String,"微卫星不稳定性。<br>**建议值**: `MSS`, `MSI-L`, `MSI-H`",MSS
+molecularMarkers.tumorMutationalBurden,分子标志物.肿瘤突变负荷,Number,"肿瘤突变负荷。<br>单位: 突变/Mb",8.5
+immunohistochemistry.ki67,免疫组化.Ki-67,Number,"Ki-67增殖指数。<br>单位: %",45
+immunohistochemistry.p53,免疫组化.p53,String,"p53蛋白表达。<br>**建议值**: `阴性`, `弱阳性`, `强阳性`",强阳性
+immunohistochemistry.cea,免疫组化.CEA,String,"CEA蛋白表达。<br>**建议值**: `阴性`, `阳性`",阳性
+immunohistochemistry.ca19_9,免疫组化.CA19-9,String,"CA19-9蛋白表达。<br>**建议值**: `阴性`, `阳性`",阳性
+bloodTests.completeBloodCount.hemoglobin,血液检查.血常规.血红蛋白,Number,"血红蛋白水平。<br>单位: g/L<br>**参考范围**: 男性130-175，女性115-150",105
+bloodTests.completeBloodCount.whiteBloodCells,血液检查.血常规.白细胞,Number,"白细胞计数。<br>单位: ×10⁹/L<br>**参考范围**: 3.5-9.5",8.2
+bloodTests.completeBloodCount.platelets,血液检查.血常规.血小板,Number,"血小板计数。<br>单位: ×10⁹/L<br>**参考范围**: 125-350",450
+bloodTests.liverFunction.totalBilirubin,血液检查.肝功能.总胆红素,Number,"总胆红素。<br>单位: μmol/L<br>**参考范围**: 3.4-20.5",85
+bloodTests.liverFunction.directBilirubin,血液检查.肝功能.直接胆红素,Number,"直接胆红素。<br>单位: μmol/L<br>**参考范围**: 0-6.8",65
+bloodTests.liverFunction.alt,血液检查.肝功能.ALT,Number,"丙氨酸氨基转移酶。<br>单位: U/L<br>**参考范围**: 7-40",120
+bloodTests.liverFunction.ast,血液检查.肝功能.AST,Number,"天冬氨酸氨基转移酶。<br>单位: U/L<br>**参考范围**: 13-35",95
+bloodTests.liverFunction.alp,血液检查.肝功能.ALP,Number,"碱性磷酸酶。<br>单位: U/L<br>**参考范围**: 45-125",280
+bloodTests.liverFunction.ggt,血液检查.肝功能.GGT,Number,"γ-谷氨酰转肽酶。<br>单位: U/L<br>**参考范围**: 男性10-60，女性7-45",185
+bloodTests.liverFunction.albumin,血液检查.肝功能.白蛋白,Number,"血清白蛋白。<br>单位: g/L<br>**参考范围**: 40-55",32
+bloodTests.renalFunction.creatinine,血液检查.肾功能.肌酐,Number,"血清肌酐。<br>单位: μmol/L<br>**参考范围**: 男性57-111，女性41-73",88
+bloodTests.renalFunction.urea,血液检查.肾功能.尿素,Number,"血尿素。<br>单位: mmol/L<br>**参考范围**: 3.6-9.5",7.2
+bloodTests.coagulation.pt,血液检查.凝血功能.PT,Number,"凝血酶原时间。<br>单位: 秒<br>**参考范围**: 11-15",16.5
+bloodTests.coagulation.aptt,血液检查.凝血功能.APTT,Number,"活化部分凝血活酶时间。<br>单位: 秒<br>**参考范围**: 28-40",35
+bloodTests.coagulation.inr,血液检查.凝血功能.INR,Number,"国际标准化比值。<br>**参考范围**: 0.8-1.2",1.4
+bloodTests.inflammation.crp,血液检查.炎症指标.CRP,Number,"C反应蛋白。<br>单位: mg/L<br>**参考范围**: <3.0",28.5
+bloodTests.inflammation.esr,血液检查.炎症指标.ESR,Number,"红细胞沉降率。<br>单位: mm/h<br>**参考范围**: 男性<15，女性<20",45
+bloodTests.nutrition.prealbumin,血液检查.营养指标.前白蛋白,Number,"前白蛋白。<br>单位: mg/L<br>**参考范围**: 200-400",150
+bloodTests.nutrition.transferrin,血液检查.营养指标.转铁蛋白,Number,"转铁蛋白。<br>单位: g/L<br>**参考范围**: 2.0-3.6",1.8
+diabetesAssessment.fastingGlucose,糖尿病评估.空腹血糖,Number,"空腹血糖。<br>单位: mmol/L<br>**参考范围**: 3.9-6.1",8.5
+diabetesAssessment.hba1c,糖尿病评估.糖化血红蛋白,Number,"糖化血红蛋白。<br>单位: %<br>**参考范围**: 4.0-6.0",8.2
+diabetesAssessment.cPeptide,糖尿病评估.C肽,Number,"C肽水平。<br>单位: ng/mL<br>**参考范围**: 1.1-4.4",0.8
+diabetesAssessment.insulinLevel,糖尿病评估.胰岛素,Number,"胰岛素水平。<br>单位: mU/L<br>**参考范围**: 2.6-24.9",5.2
+pancreaticFunction.fecalElastase,胰腺功能.粪弹性蛋白酶,Number,"粪弹性蛋白酶-1。<br>单位: μg/g<br>**参考范围**: >200",85
+pancreaticFunction.fecalChymotrypsin,胰腺功能.粪糜蛋白酶,Number,"粪糜蛋白酶。<br>单位: U/g<br>**参考范围**: >3",1.2
+pancreaticFunction.secretinTest,胰腺功能.促胰液素试验,String,"促胰液素试验结果。<br>**建议值**: `正常`, `轻度异常`, `中度异常`, `重度异常`",重度异常
+nutritionalStatus.bodyMassIndex,营养状态.体质指数,Number,"体质指数。<br>单位: kg/m²",19.5
+nutritionalStatus.weightLossPercentage,营养状态.体重减轻百分比,Number,"6个月内体重减轻百分比。<br>单位: %",12
+nutritionalStatus.prognosticNutritionalIndex,营养状态.预后营养指数,Number,"预后营养指数。<br>**计算公式**: 10×白蛋白+0.005×淋巴细胞",42
+functionalStatus.ecogPerformanceStatus,功能状态.ECOG体能状态,Number,"ECOG体能状态评分。<br>**分级**: 0-4<br>**0**: 正常，**1**: 轻度受限，**2**: 中度受限，**3**: 重度受限，**4**: 完全卧床",2
+functionalStatus.karnofskyScore,功能状态.Karnofsky评分,Number,"Karnofsky功能状态评分。<br>**范围**: 0-100",70
+riskFactors.familyHistory,危险因素.家族史,String,"胰腺癌家族史。<br>**建议值**: `无`, `一级亲属`, `二级亲属`",一级亲属
+riskFactors.smokingHistory,危险因素.吸烟史,String,"吸烟史。<br>**建议值**: `从不吸烟`, `既往吸烟`, `目前吸烟`",既往吸烟
+riskFactors.alcoholHistory,危险因素.饮酒史,String,"饮酒史。<br>**建议值**: `不饮酒`, `轻度饮酒`, `中度饮酒`, `重度饮酒`",中度饮酒
+riskFactors.chronicPancreatitis,危险因素.慢性胰腺炎,String,"慢性胰腺炎病史。<br>**建议值**: `无`, `有`",无
+riskFactors.diabetes,危险因素.糖尿病,String,"糖尿病病史。<br>**建议值**: `无`, `新发(<2年)`, `既往(>2年)`",新发(<2年)
+riskFactors.obesity,危险因素.肥胖,String,"肥胖史。<br>**建议值**: `否`, `是`",否
+riskFactors.occupationalExposure,危险因素.职业暴露,String,"职业暴露史。<br>**建议值**: `无`, `化学物质`, `石棉`, `重金属`",无
+geneticTesting.hereditarySyndromes,遗传检测.遗传综合征,String,"遗传性胰腺癌综合征。<br>**建议值**: `未检测`, `阴性`, `HBOC`, `Lynch综合征`, `家族性非典型痣-恶性黑色素瘤`, `Peutz-Jeghers综合征`",未检测
+geneticTesting.germlineMutations,遗传检测.胚系突变,String,"胚系基因突变检测",未检测
+treatmentHistory.surgery.procedure,治疗史.手术.术式,String,"手术方式。<br>**建议值**: `未手术`, `Whipple`, `远端胰腺切除`, `全胰切除`, `姑息性手术`",未手术
+treatmentHistory.surgery.resectability,治疗史.手术.可切除性,String,"肿瘤可切除性评估。<br>**建议值**: `可切除`, `临界可切除`, `局部晚期`, `转移性`",转移性
+treatmentHistory.chemotherapy.regimen,治疗史.化疗.方案,String,"化疗方案。<br>**建议值**: `未化疗`, `FOLFIRINOX`, `吉西他滨+白蛋白紫杉醇`, `吉西他滨单药`, `其他`",吉西他滨+白蛋白紫杉醇
+treatmentHistory.chemotherapy.cycles,治疗史.化疗.周期数,Number,"已完成化疗周期数",6
+treatmentHistory.chemotherapy.response,治疗史.化疗.疗效,String,"化疗疗效评估。<br>**建议值**: `完全缓解`, `部分缓解`, `疾病稳定`, `疾病进展`",疾病稳定
+treatmentHistory.radiotherapy.dose,治疗史.放疗.剂量,Number,"放疗总剂量。<br>单位: Gy",0
+treatmentHistory.radiotherapy.fractions,治疗史.放疗.分次,Number,"放疗分次数",0
+treatmentHistory.targetedTherapy.agent,治疗史.靶向治疗.药物,String,"靶向治疗药物。<br>**建议值**: `未使用`, `厄洛替尼`, `奥拉帕尼`, `其他`",未使用
+treatmentHistory.immunotherapy.agent,治疗史.免疫治疗.药物,String,"免疫治疗药物。<br>**建议值**: `未使用`, `PD-1抑制剂`, `PD-L1抑制剂`, `其他`",未使用
+complications.biliary.obstruction,并发症.胆道.梗阻,String,"胆道梗阻情况。<br>**建议值**: `无`, `部分性`, `完全性`",部分性
+complications.biliary.cholangitis,并发症.胆道.胆管炎,String,"胆管炎情况。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+complications.biliary.intervention,并发症.胆道.介入治疗,String,"胆道介入治疗。<br>**建议值**: `无`, `PTCD`, `ERCP支架`, `外科引流`",ERCP支架
+complications.gastric.obstruction,并发症.胃.梗阻,String,"胃流出道梗阻。<br>**建议值**: `无`, `部分性`, `完全性`",无
+complications.vascular.thrombosis,并发症.血管.血栓,String,"血栓并发症。<br>**建议值**: `无`, `深静脉血栓`, `肺栓塞`, `动脉血栓`",无
+complications.metabolic.diabetes,并发症.代谢.糖尿病,String,"糖尿病并发症。<br>**建议值**: `血糖控制良好`, `血糖控制不佳`, `糖尿病酮症`",血糖控制不佳
+complications.nutritional.malnutrition,并发症.营养.营养不良,String,"营养不良程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+qualityOfLife.painScore,生活质量.疼痛评分,Number,"疼痛数字评分。<br>**范围**: 0-10",6
+qualityOfLife.functionalWellbeing,生活质量.功能状态,String,"功能状态评估。<br>**建议值**: `正常`, `轻度受限`, `中度受限`, `重度受限`",中度受限
+qualityOfLife.emotionalWellbeing,生活质量.情感状态,String,"情感状态评估。<br>**建议值**: `正常`, `轻度焦虑`, `中度焦虑`, `抑郁`",轻度焦虑
+prognosis.expectedSurvival,预后.预期生存期,String,"预期生存期估算。<br>**建议值**: `>2年`, `1-2年`, `6-12月`, `3-6月`, `<3月`",6-12月
+prognosis.prognosticFactors,预后.预后因素,String,主要预后影响因素,肝转移、CA19-9明显升高、营养不良
+monitoring.frequency,监测.随访频率,String,"随访监测频率",每2月复查
+monitoring.parameters,监测.监测参数,String,需要监测的主要参数,肿瘤标志物、影像学、肝肾功能
+supportiveCare.painManagement,支持治疗.疼痛管理,String,"疼痛管理方案",阿片类镇痛药物
+supportiveCare.nutritionalSupport,支持治疗.营养支持,String,"营养支持方案",肠内营养补充
+supportiveCare.pancreaticEnzymeReplacement,支持治疗.胰酶替代,String,"胰酶替代治疗。<br>**建议值**: `未使用`, `使用中`",使用中
+multidisciplinaryTeam.oncology,多学科团队.肿瘤科,String,"肿瘤科参与情况。<br>**建议值**: `主管`, `会诊`, `未参与`",主管
+multidisciplinaryTeam.surgery,多学科团队.外科,String,"外科参与情况。<br>**建议值**: `主管`, `会诊`, `未参与`",会诊
+multidisciplinaryTeam.gastroenterology,多学科团队.消化科,String,"消化科参与情况。<br>**建议值**: `主管`, `会诊`, `未参与`",会诊
+multidisciplinaryTeam.radiology,多学科团队.放射科,String,"放射科参与情况。<br>**建议值**: `主管`, `会诊`, `未参与`",会诊
+multidisciplinaryTeam.pathology,多学科团队.病理科,String,"病理科参与情况。<br>**建议值**: `主管`, `会诊`, `未参与`",会诊
+palliativeCare.goals,姑息治疗.治疗目标,String,"姑息治疗目标",症状控制、生活质量改善
+palliativeCare.advanceDirectives,姑息治疗.预先指示,String,"预先医疗指示。<br>**建议值**: `未讨论`, `已讨论`, `已签署`",已讨论
+researchParticipation.clinicalTrials,研究参与.临床试验,String,"临床试验参与。<br>**建议值**: `未参与`, `筛选中`, `已入组`",未参与
+researchParticipation.biospecimenCollection,研究参与.生物样本采集,String,"生物样本采集。<br>**建议值**: `未同意`, `已同意`",已同意
+socialSupport.familySupport,社会支持.家庭支持,String,"家庭支持情况。<br>**建议值**: `良好`, `一般`, `缺乏`",良好
+socialSupport.financialStatus,社会支持.经济状况,String,"经济状况评估。<br>**建议值**: `良好`, `一般`, `困难`",一般
+emergencyContacts.primaryContact,紧急联系人.主要联系人,String,主要紧急联系人信息,配偶
+emergencyContacts.alternateContact,紧急联系人.备用联系人,String,备用紧急联系人信息,子女
+diagnosisImpression,诊断/印象,String,医生对胰腺癌检查结果的综合诊断或印象。,胰腺导管腺癌IV期，伴肝转移
+recommendation,建议,String,医生根据检查结果提出的建议。,继续化疗，对症支持治疗，定期监测

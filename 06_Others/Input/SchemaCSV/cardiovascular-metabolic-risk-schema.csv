@@ -1,0 +1,254 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行心血管代谢风险评估的日期,2025-08-15
+clinicalIndication,检查适应症,String,"进行心血管代谢风险评估的临床指征。<br>**建议值**: `代谢综合征`, `糖尿病`, `高血压`, `血脂异常`, `冠心病筛查`, `卒中风险评估`",代谢综合征
+riskAssessment.framinghamScore,风险评估.Framingham评分,Number,"Framingham 10年心血管风险评分。<br>单位: %<br>**风险分级**: <6%(低), 6-20%(中), >20%(高)",15.8
+riskAssessment.pooledCohortEquation,风险评估.ASCVD风险评估,Number,"ASCVD 10年风险评分。<br>单位: %<br>**风险分级**: <5%(低), 5-7.5%(中), ≥7.5%(高)",12.5
+riskAssessment.scoreRisk,风险评估.SCORE风险,Number,"欧洲SCORE 10年致死性心血管风险。<br>单位: %<br>**风险分级**: <1%(低), 1-5%(中), ≥5%(高)",3.2
+riskAssessment.chinaParRisk,风险评估.China-PAR风险,Number,"China-PAR 10年心血管风险。<br>单位: %",18.5
+riskAssessment.reynoldsRiskScore,风险评估.Reynolds风险评分,Number,"Reynolds风险评分。<br>单位: %",14.2
+metabolicSyndrome.criteria.waistCircumference,代谢综合征.诊断标准.腰围,Number,"腰围。<br>单位: cm<br>**异常**: 男性≥90，女性≥85",95
+metabolicSyndrome.criteria.bloodPressure.systolic,代谢综合征.诊断标准.血压.收缩压,Number,"收缩压。<br>单位: mmHg<br>**异常**: ≥130",138
+metabolicSyndrome.criteria.bloodPressure.diastolic,代谢综合征.诊断标准.血压.舒张压,Number,"舒张压。<br>单位: mmHg<br>**异常**: ≥85",88
+metabolicSyndrome.criteria.fastingGlucose,代谢综合征.诊断标准.空腹血糖,Number,"空腹血糖。<br>单位: mmol/L<br>**异常**: ≥5.6",6.8
+metabolicSyndrome.criteria.triglycerides,代谢综合征.诊断标准.甘油三酯,Number,"甘油三酯。<br>单位: mmol/L<br>**异常**: ≥1.7",2.3
+metabolicSyndrome.criteria.hdlCholesterol,代谢综合征.诊断标准.HDL胆固醇,Number,"HDL胆固醇。<br>单位: mmol/L<br>**异常**: 男性<1.0，女性<1.3",0.9
+metabolicSyndrome.diagnosis,代谢综合征.诊断,String,"代谢综合征诊断。<br>**建议值**: `否`, `是`",是
+metabolicSyndrome.componentsCount,代谢综合征.异常组分数,Number,"异常组分数量（共5项）",4
+bloodPressure.office.systolic,血压.诊室.收缩压,Number,"诊室收缩压。<br>单位: mmHg",138
+bloodPressure.office.diastolic,诊室.舒张压,Number,"诊室舒张压。<br>单位: mmHg",88
+bloodPressure.office.meanArterialPressure,血压.诊室.平均动脉压,Number,"平均动脉压。<br>单位: mmHg",105
+bloodPressure.office.pulsePressure,血压.诊室.脉压,Number,"脉压差。<br>单位: mmHg",50
+bloodPressure.ambulatory.24hourMean.systolic,血压.动态.24小时平均.收缩压,Number,"24小时平均收缩压。<br>单位: mmHg<br>**正常**: <130",132
+bloodPressure.ambulatory.24hourMean.diastolic,血压.动态.24小时平均.舒张压,Number,"24小时平均舒张压。<br>单位: mmHg<br>**正常**: <80",82
+bloodPressure.ambulatory.daytimeMean.systolic,血压.动态.日间平均.收缩压,Number,"日间平均收缩压。<br>单位: mmHg<br>**正常**: <135",138
+bloodPressure.ambulatory.daytimeMean.diastolic,血压.动态.日间平均.舒张压,Number,"日间平均舒张压。<br>单位: mmHg<br>**正常**: <85",85
+bloodPressure.ambulatory.nighttimeMean.systolic,血压.动态.夜间平均.收缩压,Number,"夜间平均收缩压。<br>单位: mmHg<br>**正常**: <120",125
+bloodPressure.ambulatory.nighttimeMean.diastolic,血压.动态.夜间平均.舒张压,Number,"夜间平均舒张压。<br>单位: mmHg<br>**正常**: <70",75
+bloodPressure.ambulatory.dippingPattern,血压.动态.杓型模式,String,"血压杓型模式。<br>**建议值**: `杓型`, `非杓型`, `反杓型`, `超杓型`",非杓型
+bloodPressure.ambulatory.bloodPressureVariability,血压.动态.血压变异性,Number,"血压变异性系数",12.5
+bloodPressure.home.systolic,血压.家庭.收缩压,Number,"家庭血压收缩压。<br>单位: mmHg<br>**正常**: <135",135
+bloodPressure.home.diastolic,血压.家庭.舒张压,Number,"家庭血压舒张压。<br>单位: mmHg<br>**正常**: <85",83
+bloodPressure.centralPressure.systolic,血压.中心动脉压.收缩压,Number,"中心动脉收缩压。<br>单位: mmHg",128
+bloodPressure.centralPressure.diastolic,血压.中心动脉压.舒张压,Number,"中心动脉舒张压。<br>单位: mmHg",88
+bloodPressure.centralPressure.augmentationIndex,血压.中心动脉压.增强指数,Number,"增强指数。<br>单位: %",28
+lipidProfile.totalCholesterol,血脂谱.总胆固醇,Number,"总胆固醇。<br>单位: mmol/L<br>**理想**: <5.2",5.8
+lipidProfile.ldlCholesterol,血脂谱.低密度脂蛋白胆固醇,Number,"LDL胆固醇。<br>单位: mmol/L<br>**目标**: 因风险而异",3.8
+lipidProfile.hdlCholesterol,血脂谱.高密度脂蛋白胆固醇,Number,"HDL胆固醇。<br>单位: mmol/L<br>**理想**: 男性>1.0，女性>1.3",0.9
+lipidProfile.triglycerides,血脂谱.甘油三酯,Number,"甘油三酯。<br>单位: mmol/L<br>**理想**: <1.7",2.3
+lipidProfile.nonHdlCholesterol,血脂谱.非HDL胆固醇,Number,"非HDL胆固醇。<br>单位: mmol/L",4.9
+lipidProfile.vldlCholesterol,血脂谱.极低密度脂蛋白胆固醇,Number,"VLDL胆固醇。<br>单位: mmol/L",1.1
+lipidProfile.totalCholesterolHdlRatio,血脂谱.总胆固醇HDL比值,Number,"TC/HDL-C比值。<br>**理想**: <5.0",6.4
+lipidProfile.ldlHdlRatio,血脂谱.LDL HDL比值,Number,"LDL-C/HDL-C比值。<br>**理想**: <3.5",4.2
+lipidProfile.triglyceride HdlRatio,血脂谱.甘油三酯HDL比值,Number,"TG/HDL-C比值。<br>**理想**: <3.5",2.6
+lipidProfile.apolipoproteinB,血脂谱.载脂蛋白B,Number,"载脂蛋白B。<br>单位: g/L<br>**目标**: <0.9",1.15
+lipidProfile.apolipoproteinA1,血脂谱.载脂蛋白A1,Number,"载脂蛋白A1。<br>单位: g/L<br>**参考范围**: 1.2-1.6",1.05
+lipidProfile.apoBApoa1Ratio,血脂谱.ApoB ApoA1比值,Number,"ApoB/ApoA1比值。<br>**理想**: <0.9",1.1
+lipidProfile.lipoproteinA,血脂谱.脂蛋白a,Number,"脂蛋白(a)。<br>单位: g/L<br>**风险**: >0.3",0.45
+lipidProfile.smallDenseLdl,血脂谱.小而密LDL,Number,"小而密LDL。<br>单位: mmol/L",1.8
+lipidProfile.remnantCholesterol,血脂谱.残粒胆固醇,Number,"残粒胆固醇。<br>单位: mmol/L",1.1
+glucoseMetabolism.fastingGlucose,糖代谢.空腹血糖,Number,"空腹血糖。<br>单位: mmol/L<br>**正常**: 3.9-6.1",6.8
+glucoseMetabolism.postprandialGlucose,糖代谢.餐后血糖,Number,"餐后2小时血糖。<br>单位: mmol/L<br>**正常**: <7.8",9.5
+glucoseMetabolism.hba1c,糖代谢.糖化血红蛋白,Number,"糖化血红蛋白。<br>单位: %<br>**正常**: <5.7",6.2
+glucoseMetabolism.ogtt.baseline,糖代谢.OGTT.0分钟,Number,"OGTT 0分钟血糖。<br>单位: mmol/L",6.8
+glucoseMetabolism.ogtt.30min,糖代谢.OGTT.30分钟,Number,"OGTT 30分钟血糖。<br>单位: mmol/L",10.5
+glucoseMetabolism.ogtt.60min,糖代谢.OGTT.60分钟,Number,"OGTT 60分钟血糖。<br>单位: mmol/L",12.8
+glucoseMetabolism.ogtt.120min,糖代谢.OGTT.120分钟,Number,"OGTT 120分钟血糖。<br>单位: mmol/L",9.5
+glucoseMetabolism.fastingInsulin,糖代谢.空腹胰岛素,Number,"空腹胰岛素。<br>单位: pmol/L<br>**参考范围**: 18-173",125
+glucoseMetabolism.homaIr,糖代谢.HOMA-IR,Number,"胰岛素抵抗指数。<br>**正常**: <2.5",3.8
+glucoseMetabolism.homaB,糖代谢.HOMA-β,Number,"胰岛β细胞功能指数。<br>**正常**: >100%",85
+glucoseMetabolism.matsudaIndex,糖代谢.Matsuda指数,Number,"Matsuda胰岛素敏感性指数。<br>**正常**: >2.5",1.8
+glucoseMetabolism.cPeptide,糖代谢.C肽,Number,"空腹C肽。<br>单位: nmol/L<br>**参考范围**: 0.37-1.47",0.85
+inflammatoryMarkers.hscrp,炎症标志物.超敏C反应蛋白,Number,"超敏C反应蛋白。<br>单位: mg/L<br>**风险分级**: <1(低), 1-3(中), >3(高)",2.8
+inflammatoryMarkers.interleukin6,炎症标志物.白介素6,Number,"白介素6。<br>单位: pg/mL",3.5
+inflammatoryMarkers.tnfAlpha,炎症标志物.肿瘤坏死因子α,Number,"TNF-α。<br>单位: pg/mL",8.2
+inflammatoryMarkers.fibrinogen,炎症标志物.纤维蛋白原,Number,"纤维蛋白原。<br>单位: g/L<br>**参考范围**: 2.0-4.0",3.8
+inflammatoryMarkers.whitBloodCellCount,炎症标志物.白细胞计数,Number,"白细胞计数。<br>单位: ×10⁹/L<br>**参考范围**: 3.5-9.5",7.2
+inflammatoryMarkers.neutrophilLymphocyteRatio,炎症标志物.中性粒细胞淋巴细胞比值,Number,"中性粒细胞/淋巴细胞比值。<br>**正常**: <3.0",2.5
+endothelialFunction.flowMediatedDilation,内皮功能.血流介导的血管舒张,Number,"肱动脉FMD。<br>单位: %<br>**正常**: >10%",6.5
+endothelialFunction.nitroglycerin MediadedDilation,内皮功能.硝酸甘油介导的血管舒张,Number,"硝酸甘油介导的血管舒张。<br>单位: %",15.8
+endothelialFunction.peripheralArterialTonometry,内皮功能.外周动脉张力测定,Number,"RHI指数。<br>**正常**: >1.67",1.45
+endothelialFunction.nitricOxideMetabolites,内皮功能.一氧化氮代谢产物,Number,"NO代谢产物。<br>单位: μmol/L",25.8
+endothelialFunction.endothelin1,内皮功能.内皮素1,Number,"内皮素1。<br>单位: pg/mL",2.8
+endothelialFunction.vonWillebrandFactor,内皮功能.血管性血友病因子,Number,"vWF。<br>单位: %<br>**参考范围**: 50-150",185
+endothelialFunction.selectinE,内皮功能.E选择素,Number,"E-selectin。<br>单位: ng/mL",45.2
+endothelialFunction.vcam1,内皮功能.VCAM-1,Number,"血管细胞黏附分子1。<br>单位: ng/mL",658
+endothelialFunction.icam1,内皮功能.ICAM-1,Number,"细胞间黏附分子1。<br>单位: ng/mL",285
+arterialStiffness.carotidFemoralPwv,动脉僵硬度.颈动脉股动脉脉搏波传导速度,Number,"cf-PWV。<br>单位: m/s<br>**正常**: <10.0",12.5
+arterialStiffness.brachialAnklePwv,动脉僵硬度.肱踝脉搏波传导速度,Number,"ba-PWV。<br>单位: m/s<br>**正常**: <14.0",16.8
+arterialStiffness.augmentationIndex,动脉僵硬度.增强指数,Number,"增强指数。<br>单位: %",28
+arterialStiffness.centralPulsePressure,动脉僵硬度.中心脉压,Number,"中心脉压。<br>单位: mmHg",45
+arterialStiffness.cardiacOutputIndex,动脉僵硬度.心脏指数,Number,"心脏指数。<br>单位: L/min/m²",2.8
+arterialStiffness.peripheralResistance,动脉僵硬度.外周阻力,Number,"外周阻力。<br>单位: dyn·s·cm⁻⁵",1580
+carotidUltrasound.intimaMediaThickness.left,颈动脉超声.内膜中膜厚度.左侧,Number,"左侧颈动脉IMT。<br>单位: mm<br>**正常**: <0.9",1.05
+carotidUltrasound.intimaMediaThickness.right,颈动脉超声.内膜中膜厚度.右侧,Number,"右侧颈动脉IMT。<br>单位: mm<br>**正常**: <0.9",1.12
+carotidUltrasound.intimaMediaThickness.mean,颈动脉超声.内膜中膜厚度.平均,Number,"平均颈动脉IMT。<br>单位: mm",1.08
+carotidUltrasound.plaque.presence,颈动脉超声.斑块.是否存在,String,"颈动脉斑块。<br>**建议值**: `无`, `有`",有
+carotidUltrasound.plaque.number,颈动脉超声.斑块.数量,Number,"颈动脉斑块数量",2
+carotidUltrasound.plaque.totalArea,颈动脉超声.斑块.总面积,Number,"颈动脉斑块总面积。<br>单位: mm²",15.8
+carotidUltrasound.plaque.maxThickness,颈动脉超声.斑块.最大厚度,Number,"最大斑块厚度。<br>单位: mm",2.8
+carotidUltrasound.stenosis.leftCca,颈动脉超声.狭窄.左颈总动脉,Number,"左颈总动脉狭窄程度。<br>单位: %",25
+carotidUltrasound.stenosis.rightCca,颈动脉超声.狭窄.右颈总动脉,Number,"右颈总动脉狭窄程度。<br>单位: %",15
+carotidUltrasound.stenosis.leftIca,颈动脉超声.狭窄.左颈内动脉,Number,"左颈内动脉狭窄程度。<br>单位: %",30
+carotidUltrasound.stenosis.rightIca,颈动脉超声.狭窄.右颈内动脉,Number,"右颈内动脉狭窄程度。<br>单位: %",20
+coronaryArtery.calciumScore.total,冠状动脉.钙化积分.总积分,Number,"冠脉钙化总积分。<br>**风险分级**: 0(无), 1-10(极少), 11-100(少), 101-400(中), >400(高)",158
+coronaryArtery.calciumScore.lad,冠状动脉.钙化积分.前降支,Number,"前降支钙化积分",85
+coronaryArtery.calciumScore.lcx,冠状动脉.钙化积分.回旋支,Number,"回旋支钙化积分",45
+coronaryArtery.calciumScore.rca,冠状动脉.钙化积分.右冠状动脉,Number,"右冠状动脉钙化积分",28
+coronaryArtery.calciumScore.percentile,冠状动脉.钙化积分.年龄性别百分位,Number,"年龄性别钙化积分百分位",75
+coronaryArtery.ctAngiography.performed,冠状动脉.CT血管造影.是否进行,String,"是否进行冠脉CTA。<br>**建议值**: `是`, `否`",否
+coronaryArtery.ctAngiography.findings,冠状动脉.CT血管造影.检查结果,String,"冠脉CTA结果（如果进行）",未进行
+coronaryArtery.invasiveAngiography.performed,冠状动脉.有创造影.是否进行,String,"是否进行冠脉造影。<br>**建议值**: `是`, `否`",否
+coronaryArtery.invasiveAngiography.findings,冠状动脉.有创造影.检查结果,String,"冠脉造影结果（如果进行）",未进行
+echocardiography.leftVentricle.ejectionFraction,超声心动图.左心室.射血分数,Number,"左心室射血分数。<br>单位: %<br>**正常**: ≥50%",58
+echocardiography.leftVentricle.endDiastolicDimension,超声心动图.左心室.舒张末期内径,Number,"左心室舒张末期内径。<br>单位: mm<br>**正常**: 男性≤59，女性≤53",52
+echocardiography.leftVentricle.endSystolicDimension,超声心动图.左心室.收缩末期内径,Number,"左心室收缩末期内径。<br>单位: mm<br>**正常**: 男性≤40，女性≤35",33
+echocardiography.leftVentricle.mass,超声心动图.左心室.心肌质量,Number,"左心室心肌质量。<br>单位: g",185
+echocardiography.leftVentricle.massIndex,超声心动图.左心室.心肌质量指数,Number,"左心室心肌质量指数。<br>单位: g/m²<br>**正常**: 男性≤115，女性≤95",105
+echocardiography.leftVentricle.relativeWallThickness,超声心动图.左心室.相对壁厚度,Number,"左心室相对壁厚度。<br>**正常**: ≤0.42",0.38
+echocardiography.leftVentricle.hypertrophy,超声心动图.左心室.心肌肥厚,String,"左心室肥厚。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+echocardiography.leftAtrium.dimension,超声心动图.左心房.内径,Number,"左心房内径。<br>单位: mm<br>**正常**: ≤40",38
+echocardiography.leftAtrium.volume,超声心动图.左心房.容积,Number,"左心房容积。<br>单位: mL",45
+echocardiography.leftAtrium.volumeIndex,超声心动图.左心房.容积指数,Number,"左心房容积指数。<br>单位: mL/m²<br>**正常**: ≤34",28
+echocardiography.diastolicFunction.eWave,超声心动图.舒张功能.E波,Number,"二尖瓣E波速度。<br>单位: m/s",0.85
+echocardiography.diastolicFunction.aWave,超声心动图.舒张功能.A波,Number,"二尖瓣A波速度。<br>单位: m/s",0.68
+echocardiography.diastolicFunction.eaRatio,超声心动图.舒张功能.E A比值,Number,"E/A比值。<br>**正常**: 1.0-2.0",1.25
+echocardiography.diastolicFunction.ePrime,超声心动图.舒张功能.E'波,Number,"组织多普勒E'波。<br>单位: cm/s<br>**正常**: >8",7.5
+echocardiography.diastolicFunction.eePrimeRatio,超声心动图.舒张功能.E E'比值,Number,"E/E'比值。<br>**正常**: <15",11.3
+echocardiography.diastolicFunction.decelerationTime,超声心动图.舒张功能.减速时间,Number,"E波减速时间。<br>单位: ms<br>**正常**: 160-240",185
+echocardiography.valvular.mitralRegurgitation,超声心动图.瓣膜.二尖瓣反流,String,"二尖瓣反流程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+echocardiography.valvular.aorticRegurgitation,超声心动图.瓣膜.主动脉瓣反流,String,"主动脉瓣反流程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+echocardiography.valvular.tricuspidRegurgitation,超声心动图.瓣膜.三尖瓣反流,String,"三尖瓣反流程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+echocardiography.rightVentricle.systolicPressure,超声心动图.右心室.收缩压,Number,"右心室收缩压。<br>单位: mmHg<br>**正常**: <35",28
+electrocardiogram.rhythm,心电图.心律,String,"心律。<br>**建议值**: `窦性心律`, `房颤`, `房扑`, `心动过速`, `心动过缓`",窦性心律
+electrocardiogram.heartRate,心电图.心率,Number,"心率。<br>单位: bpm<br>**正常**: 60-100",75
+electrocardiogram.prInterval,心电图.PR间期,Number,"PR间期。<br>单位: ms<br>**正常**: 120-200",165
+electrocardiogram.qrsInterval,心电图.QRS间期,Number,"QRS间期。<br>单位: ms<br>**正常**: <120",95
+electrocardiogram.qtInterval,心电图.QT间期,Number,"QT间期。<br>单位: ms",415
+electrocardiogram.qtcInterval,心电图.QTc间期,Number,"校正QT间期。<br>单位: ms<br>**正常**: 男性<450，女性<460",425
+electrocardiogram.axis,心电图.电轴,Number,"心电轴。<br>单位: 度<br>**正常**: -30°至+90°",35
+electrocardiogram.lvh,心电图.左心室肥厚,String,"左心室肥厚。<br>**建议值**: `无`, `可能`, `肯定`",无
+electrocardiogram.stChanges,心电图.ST改变,String,"ST段改变",无明显ST段改变
+electrocardiogram.tWaveAbnormalities,心电图.T波异常,String,"T波异常",无明显T波异常
+electrocardiogram.qWaves,心电图.Q波,String,"病理性Q波",无
+exerciseStressTesting.performed,运动负荷试验.是否进行,String,"是否进行运动负荷试验。<br>**建议值**: `是`, `否`",否
+exerciseStressTesting.protocol,运动负荷试验.试验方案,String,"运动负荷试验方案（如果进行）",未进行
+exerciseStressTesting.maxHeartRate,运动负荷试验.最大心率,Number,"达到的最大心率。<br>单位: bpm",未进行
+exerciseStressTesting.targetHeartRate,运动负荷试验.目标心率,Number,"目标心率。<br>单位: bpm",未进行
+exerciseStressTesting.exerciseCapacity,运动负荷试验.运动能力,Number,"运动能力。<br>单位: METs",未进行
+exerciseStressTesting.stDepression,运动负荷试验.ST压低,String,"运动时ST段压低（如果进行）",未进行
+exerciseStressTesting.symptoms,运动负荷试验.症状,String,"运动时症状（如果进行）",未进行
+exerciseStressTesting.bloodPressureResponse,运动负荷试验.血压反应,String,"运动时血压反应（如果进行）",未进行
+biomarkers.cardiac.troponinI,生物标志物.心脏.肌钙蛋白I,Number,"肌钙蛋白I。<br>单位: ng/mL<br>**正常**: <0.04",0.015
+biomarkers.cardiac.troponinT,生物标志物.心脏.肌钙蛋白T,Number,"肌钙蛋白T。<br>单位: ng/mL<br>**正常**: <0.014",0.008
+biomarkers.cardiac.ckMb,生物标志物.心脏.肌酸激酶同工酶,Number,"CK-MB。<br>单位: ng/mL<br>**正常**: <6.3",2.5
+biomarkers.cardiac.myoglobin,生物标志物.心脏.肌红蛋白,Number,"肌红蛋白。<br>单位: ng/mL<br>**正常**: <90",45
+biomarkers.heartFailure.ntProBnp,生物标志物.心衰.NT-proBNP,Number,"NT-proBNP。<br>单位: pg/mL<br>**正常**: <125（<75岁）",85
+biomarkers.heartFailure.bnp,生物标志物.心衰.BNP,Number,"BNP。<br>单位: pg/mL<br>**正常**: <100",35
+biomarkers.heartFailure.antProanp,生物标志物.心衰.ANP前体,Number,"ANP前体。<br>单位: pmol/L",125
+biomarkers.heartFailure.galectin3,生物标志物.心衰.半乳糖凝集素3,Number,"半乳糖凝集素3。<br>单位: ng/mL",8.5
+biomarkers.heartFailure.st2,生物标志物.心衰.ST2,Number,"可溶性ST2。<br>单位: ng/mL",25.8
+biomarkers.renal.cystatin C,生物标志物.肾脏.胱抑素C,Number,"胱抑素C。<br>单位: mg/L<br>**参考范围**: 0.51-0.98",0.85
+biomarkers.renal.urea,生物标志物.肾脏.尿素,Number,"血尿素。<br>单位: mmol/L<br>**参考范围**: 2.9-8.2",6.5
+biomarkers.renal.creatinine,生物标志物.肾脏.肌酐,Number,"血肌酐。<br>单位: μmol/L<br>**参考范围**: 男性59-104，女性45-84",88
+biomarkers.renal.estimatedGfr,生物标志物.肾脏.估算肾小球滤过率,Number,"eGFR。<br>单位: mL/min/1.73m²<br>**正常**: >60",85
+biomarkers.liver.alt,生物标志物.肝脏.丙氨酸转氨酶,Number,"ALT。<br>单位: U/L<br>**参考范围**: 男性9-50，女性7-40",35
+biomarkers.liver.ast,生物标志物.肝脏.天冬氨酸转氨酶,Number,"AST。<br>单位: U/L<br>**参考范围**: 男性15-40，女性13-35",28
+biomarkers.liver.ggt,生物标志物.肝脏.γ谷氨酰转肽酶,Number,"GGT。<br>单位: U/L<br>**参考范围**: 男性10-60，女性7-45",45
+biomarkers.liver.alkalinePhosphatase,生物标志物.肝脏.碱性磷酸酶,Number,"ALP。<br>单位: U/L<br>**参考范围**: 45-125",85
+biomarkers.liver.totalBilirubin,生物标志物.肝脏.总胆红素,Number,"总胆红素。<br>单位: μmol/L<br>**参考范围**: 5.1-22.2",15.8
+biomarkers.metabolism.adiponectin,生物标志物.代谢.脂联素,Number,"脂联素。<br>单位: μg/mL<br>**参考范围**: 3-30",8.5
+biomarkers.metabolism.leptin,生物标志物.代谢.瘦素,Number,"瘦素。<br>单位: ng/mL",15.8
+biomarkers.metabolism.resistin,生物标志物.代谢.抵抗素,Number,"抵抗素。<br>单位: ng/mL",12.5
+biomarkers.metabolism.visfatin,生物标志物.代谢.内脂素,Number,"内脂素。<br>单位: ng/mL",25.8
+thrombosisRisk.dDimer,血栓风险.D二聚体,Number,"D-二聚体。<br>单位: mg/L<br>**参考范围**: <0.5",0.35
+thrombosisRisk.fibrinogen,血栓风险.纤维蛋白原,Number,"纤维蛋白原。<br>单位: g/L<br>**参考范围**: 2.0-4.0",3.2
+thrombosisRisk.antithrombinIii,血栓风险.抗凝血酶III,Number,"抗凝血酶III。<br>单位: %<br>**参考范围**: 80-120",95
+thrombosisRisk.proteinC,血栓风险.蛋白C,Number,"蛋白C。<br>单位: %<br>**参考范围**: 70-140",85
+thrombosisRisk.proteinS,血栓风险.蛋白S,Number,"蛋白S。<br>单位: %<br>**参考范围**: 65-140",75
+thrombosisRisk.factorVLeiden,血栓风险.因子V Leiden,String,"因子V Leiden突变。<br>**建议值**: `阴性`, `杂合`, `纯合`",阴性
+thrombosisRisk.prothrombinMutation,血栓风险.凝血酶原基因突变,String,"凝血酶原基因G20210A突变。<br>**建议值**: `阴性`, `杂合`, `纯合`",阴性
+thrombosisRisk.homocysteine,血栓风险.同型半胱氨酸,Number,"同型半胱氨酸。<br>单位: μmol/L<br>**正常**: <15",18.5
+oxidativeStress.malondialdehyde,氧化应激.丙二醛,Number,"丙二醛。<br>单位: μmol/L<br>**参考范围**: <3.0",2.8
+oxidativeStress.superoxideDismutase,氧化应激.超氧化物歧化酶,Number,"SOD活性。<br>单位: U/mL",158
+oxidativeStress.glutathionePeroxidase,氧化应激.谷胱甘肽过氧化物酶,Number,"GPx活性。<br>单位: U/L",6850
+oxidativeStress.totalAntioxidantCapacity,氧化应激.总抗氧化能力,Number,"TAC。<br>单位: mmol/L",1.25
+oxidativeStress.oxidizedLdl,氧化应激.氧化低密度脂蛋白,Number,"ox-LDL。<br>单位: U/L",65
+hormonalFactors.thyroid.tsh,激素因子.甲状腺.TSH,Number,"促甲状腺激素。<br>单位: mU/L<br>**参考范围**: 0.27-4.2",2.8
+hormonalFactors.thyroid.freeT4,激素因子.甲状腺.游离T4,Number,"游离甲状腺素。<br>单位: pmol/L<br>**参考范围**: 12-22",16.5
+hormonalFactors.thyroid.freeT3,激素因子.甲状腺.游离T3,Number,"游离三碘甲状腺原氨酸。<br>单位: pmol/L<br>**参考范围**: 3.1-6.8",4.8
+hormonalFactors.cortisol,激素因子.皮质醇,Number,"晨起皮质醇。<br>单位: nmol/L<br>**参考范围**: 171-536",285
+hormonalFactors.testosterone,激素因子.睾酮,Number,"总睾酮（男性）。<br>单位: nmol/L<br>**参考范围**: 8.64-29.0",15.8
+hormonalFactors.estradiol,激素因子.雌二醇,Number,"雌二醇（女性）。<br>单位: pmol/L",125
+kidney Function.albuminUriaRatio,肾功能.白蛋白尿比,Number,"尿白蛋白肌酐比。<br>单位: mg/g<br>**正常**: <30",25
+kidneyFunction.estimatedGfrCkdEpi,肾功能.eGFR CKD-EPI,Number,"eGFR(CKD-EPI)。<br>单位: mL/min/1.73m²",85
+liverFunction.fattyLiverIndex,肝功能.脂肪肝指数,Number,"脂肪肝指数。<br>**异常**: >60",45
+liverFunction.nafldFibrosis Score,肝功能.NAFLD纤维化评分,Number,"NAFLD纤维化评分",0.25
+nutritionalStatus.vitaminD,营养状态.维生素D,Number,"25(OH)维生素D。<br>单位: nmol/L<br>**充足**: >75",55
+nutritionalStatus.vitaminB12,营养状态.维生素B12,Number,"维生素B12。<br>单位: pmol/L<br>**正常**: >150",285
+nutritionalStatus.folate,营养状态.叶酸,Number,"叶酸。<br>单位: nmol/L<br>**正常**: >10",15.8
+familyHistory.prematureCad,家族史.早发冠心病,String,"早发冠心病家族史。<br>**建议值**: `无`, `有`",有
+familyHistory.diabetes,家族史.糖尿病,String,"糖尿病家族史。<br>**建议值**: `无`, `有`",有
+familyHistory.hypertension,家族史.高血压,String,"高血压家族史。<br>**建议值**: `无`, `有`",有
+familyHistory.stroke,家族史.卒中,String,"卒中家族史。<br>**建议值**: `无`, `有`",无
+familyHistory.dyslipidemia,家族史.血脂异常,String,"血脂异常家族史。<br>**建议值**: `无`, `有`",有
+lifestyleFactors.smoking.status,生活方式.吸烟.状况,String,"吸烟状况。<br>**建议值**: `从不`, `既往`, `目前`",既往
+lifestyleFactors.smoking.packYears,生活方式.吸烟.包年,Number,"吸烟包年数",15
+lifestyleFactors.alcohol.consumption,生活方式.饮酒.饮酒量,Number,"每周饮酒量。<br>单位: 标准杯",5
+lifestyleFactors.alcohol.pattern,生活方式.饮酒.饮酒模式,String,"饮酒模式。<br>**建议值**: `适量`, `过量`, `暴饮`",适量
+lifestyleFactors.physicalActivity.frequency,生活方式.体力活动.频率,Number,"每周运动次数",3
+lifestyleFactors.physicalActivity.duration,生活方式.体力活动.持续时间,Number,"每次运动时间。<br>单位: 分钟",45
+lifestyleFactors.physicalActivity.intensity,生活方式.体力活动.强度,String,"运动强度。<br>**建议值**: `轻度`, `中度`, `高强度`",中度
+lifestyleFactors.diet.pattern,生活方式.饮食.饮食模式,String,"饮食模式。<br>**建议值**: `地中海饮食`, `低盐饮食`, `低脂饮食`, `西式饮食`",地中海饮食
+lifestyleFactors.diet.sodiumIntake,生活方式.饮食.钠摄入,Number,"每日钠摄入量。<br>单位: mg<br>**建议**: <2300",3200
+lifestyleFactors.diet.saturatedFatIntake,生活方式.饮食.饱和脂肪摄入,Number,"饱和脂肪摄入占总能量百分比。<br>**建议**: <10%",12
+lifestyleFactors.sleep.duration,生活方式.睡眠.睡眠时长,Number,"每日睡眠时间。<br>单位: 小时",6.5
+lifestyleFactors.sleep.quality,生活方式.睡眠.睡眠质量,String,"睡眠质量。<br>**建议值**: `良好`, `一般`, `差`",一般
+lifestyleFactors.sleep.sleepApnea,生活方式.睡眠.睡眠呼吸暂停,String,"睡眠呼吸暂停。<br>**建议值**: `无`, `疑似`, `确诊`",疑似
+lifestyleFactors.stress.level,生活方式.应激.应激水平,String,"应激水平。<br>**建议值**: `低`, `中`, `高`",中
+lifestyleFactors.stress.management,生活方式.应激.应激管理,String,"应激管理能力。<br>**建议值**: `好`, `一般`, `差`",一般
+medications.antihypertensive.aceiArb,药物治疗.降压药.ACEI ARB,String,"ACEI/ARB使用情况",贝那普利10mg daily
+medications.antihypertensive.betaBlocker,药物治疗.降压药.β受体阻滞剂,String,"β受体阻滞剂使用情况",未使用
+medications.antihypertensive.calciumChannelBlocker,药物治疗.降压药.钙通道阻滞剂,String,"钙通道阻滞剂使用情况",氨氯地平5mg daily
+medications.antihypertensive.diuretic,药物治疗.降压药.利尿剂,String,"利尿剂使用情况",氢氯噻嗪25mg daily
+medications.antidiabetic.metformin,药物治疗.降糖药.二甲双胍,String,"二甲双胍使用情况",二甲双胍500mg bid
+medications.antidiabetic.sulfonylurea,药物治疗.降糖药.磺脲类,String,"磺脲类药物使用情况",格列齐特80mg daily
+medications.antidiabetic.insulin,药物治疗.降糖药.胰岛素,String,"胰岛素使用情况",未使用
+medications.lipidLowering.statin,药物治疗.调脂药.他汀类,String,"他汀类药物使用情况",阿托伐他汀20mg daily
+medications.lipidLowering.ezetimibe,药物治疗.调脂药.依折麦布,String,"依折麦布使用情况",未使用
+medications.lipidLowering.fibrate,药物治疗.调脂药.贝特类,String,"贝特类药物使用情况",未使用
+medications.antiplatelet.aspirin,药物治疗.抗血小板.阿司匹林,String,"阿司匹林使用情况",肠溶阿司匹林100mg daily
+medications.antiplatelet.clopidogrel,药物治疗.抗血小板.氯吡格雷,String,"氯吡格雷使用情况",未使用
+medications.anticoagulant.warfarin,药物治疗.抗凝.华法林,String,"华法林使用情况",未使用
+medications.anticoagulant.doac,药物治疗.抗凝.新型口服抗凝药,String,"DOAC使用情况",未使用
+medications.adherence,药物治疗.依从性,String,"用药依从性。<br>**建议值**: `良好`, `一般`, `较差`",一般
+complications.cerebrovascular,并发症.脑血管,String,"脑血管并发症",无
+complications.peripheralArterial,并发症.外周动脉,String,"外周动脉疾病",无
+complications.heartFailure,并发症.心力衰竭,String,"心力衰竭",无
+complications.arrhythmia,并发症.心律失常,String,"心律失常",偶发房性早搏
+complications.renalImpairment,并发症.肾功能不全,String,"肾功能不全",无
+treatmentTargets.bloodPressure,治疗目标.血压,String,"血压控制目标",<130/80 mmHg
+treatmentTargets.ldlCholesterol,治疗目标.LDL胆固醇,String,"LDL-C控制目标",<2.6 mmol/L
+treatmentTargets.hba1c,治疗目标.糖化血红蛋白,String,"HbA1c控制目标",<7.0%
+treatmentTargets.bodyWeight,治疗目标.体重,String,"体重控制目标",减重5-10%
+treatmentTargets.smokingCessation,治疗目标.戒烟,String,"戒烟目标",已戒烟
+follow Up.nextVisit,随访.下次随访,String,"下次随访时间",3个月后
+followUp.monitoringPlan,随访.监测计划,String,"随访监测计划",血压、血糖、血脂每3个月复查
+followUp.lifestyle Counseling,随访.生活方式指导,String,"生活方式指导计划",饮食运动指导，戒烟支持
+followUp.riskReassessment,随访.风险重评,String,"风险重新评估计划",6个月后重新评估心血管风险
+prognosisAssessment.shortTerm,预后评估.短期预后,String,"短期预后（1年）。<br>**建议值**: `良好`, `一般`, `较差`",一般
+prognosisAssessment.longTerm,预后评估.长期预后,String,"长期预后（10年）。<br>**建议值**: `良好`, `一般`, `较差`",一般
+prognosisAssessment.event Risk,预后评估.事件风险,String,"心血管事件风险。<br>**建议值**: `低`, `中`, `高`",中
+prognosisAssessment.mortality Risk,预后评估.死亡风险,String,"心血管死亡风险。<br>**建议值**: `低`, `中`, `高`",中
+qualityOfLife.physicalFunction,生活质量.身体功能,String,"身体功能评估。<br>**建议值**: `良好`, `轻度受限`, `中度受限`, `重度受限`",轻度受限
+qualityOfLife.socialFunction,生活质量.社会功能,String,"社会功能评估。<br>**建议值**: `良好`, `轻度受限`, `中度受限`, `重度受限`",良好
+qualityOfLife.emotionalWellbeing,生活质量.情绪状态,String,"情绪状态评估。<br>**建议值**: `良好`, `轻度焦虑`, `中度焦虑`, `抑郁`",轻度焦虑
+qualityOfLife.workProductivity,生活质量.工作效率,String,"工作效率影响。<br>**建议值**: `无影响`, `轻度影响`, `中度影响`, `重度影响`",轻度影响
+economicBurden.directCosts,经济负担.直接费用,String,"年度直接医疗费用",约2万元
+economicBurden.indirectCosts,经济负担.间接费用,String,"间接经济损失",工作效率下降
+economicBurden.familyImpact,经济负担.家庭影响,String,"对家庭经济影响",轻度经济压力
+preventiveMeasures.primaryPrevention,预防措施.一级预防,String,"一级预防措施",生活方式干预，药物预防
+preventiveMeasures.secondaryPrevention,预防措施.二级预防,String,"二级预防措施（如适用）",未适用
+preventiveMeasures.vaccinations,预防措施.疫苗接种,String,"推荐疫苗接种",流感疫苗
+preventiveMeasures.screenings,预防措施.筛查,String,"其他疾病筛查",结肠镜、乳腺癌筛查
+diagnosisImpression,诊断/印象,String,医生对心血管代谢风险评估的综合诊断或印象。,代谢综合征，中等心血管风险，需要综合干预
+recommendation,建议,String,医生根据检查结果提出的建议。,强化生活方式干预，优化药物治疗，定期监测，目标导向治疗

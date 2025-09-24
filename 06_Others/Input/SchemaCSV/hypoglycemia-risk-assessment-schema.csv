@@ -1,0 +1,212 @@
+fieldName,fieldNameCN,dataType,description,examples
+examDate,检查日期,String,检查日期，格式YYYY-MM-DD,2024-12-01
+patientID,患者唯一标识符,String,患者的唯一标识符,P202401001
+patientName,患者姓名,String,患者的姓名,张三
+clinicalIndication,临床适应症,String,进行低血糖风险评估的临床适应症,低血糖风险评估
+diagnosisImpression,诊断印象,String,基于评估结果的诊断印象,低血糖高风险/中度风险/低风险
+recommendation,建议,String,基于评估结果的建议,加强低血糖预防措施和应急处理培训
+
+# 基本信息
+ageAtAssessment,评估时年龄,Number,患者评估时的年龄（岁）,68
+gender,性别,String,患者性别,男/女
+diabetesType,糖尿病类型,String,患者的糖尿病类型,1型糖尿病/2型糖尿病/妊娠糖尿病/其他特殊类型
+diabetesDuration,糖尿病病程,Number,患者糖尿病诊断时间（年）,15.8
+currentTreatment,当前治疗方案,String,患者当前的治疗方案,口服药物/胰岛素/联合治疗/生活方式干预
+hbA1cLevel,糖化血红蛋白,Number,最近一次糖化血红蛋白水平（%）,6.8
+recentFastingGlucose,近期空腹血糖,Number,近期空腹血糖水平（mmol/L）,5.8
+
+# 低血糖病史
+hypoglycemiaHistoryPresence,低血糖史存在,String,是否有低血糖病史,是/否
+severehypoglycemiaHistory,严重低血糖史,String,是否有严重低血糖史,是/否
+lastHypoglycemiaEpisode,最近低血糖发作,String,最近一次低血糖发作时间,1周内/1月内/3月内/6月内/1年内/1年以上/无
+hypoglycemiaFrequency,低血糖频率,Number,近3个月低血糖发作次数,3
+severeHypoglycemiaFrequency,严重低血糖频率,Number,近1年严重低血糖发作次数,0
+unconsciousnessHistory,意识丧失史,String,是否有低血糖导致意识丧失史,是/否
+seizureHistory,抽搐史,String,是否有低血糖导致抽搐史,是/否
+hospitalizationHistory,住院史,String,是否有因低血糖住院史,是/否
+
+# 低血糖症状认知
+classicalSymptomsRecognition,典型症状识别,Number,典型低血糖症状识别能力评分（1-5分）,3.5
+autonomicSymptomsRecognition,自主神经症状识别,Number,自主神经症状识别能力评分（1-5分）,3.2
+neuroglycopenicSymptomsRecognition,神经性低血糖症状识别,Number,神经性低血糖症状识别能力评分（1-5分）,2.8
+earlyWarningSignsAwareness,早期预警信号意识,Number,早期低血糖预警信号认知评分（1-5分）,3.0
+symptomVariabilityAwareness,症状变异性认知,Number,个人低血糖症状变异性认知评分（1-5分）,2.6
+asymptomaticHypoglycemiaAwareness,无症状低血糖认知,Number,无症状低血糖风险认知评分（1-5分）,2.4
+
+# 低血糖无感知症
+hypoglycemiaUnawarenessPresence,低血糖无感知存在,String,是否存在低血糖无感知症,是/否
+awarenessScore,感知评分,Number,低血糖感知能力评分（1-7分），7分为完全感知,4
+symptomsBluntingDegree,症状迟钝程度,Number,低血糖症状迟钝程度评分（1-5分）,3
+thresholdShift,阈值偏移,String,低血糖症状出现阈值是否偏移,是/否
+counterregulatoryResponse,反调节反应,String,低血糖反调节反应是否受损,正常/轻度受损/中度受损/重度受损
+recurrentHypoglycemiaImpact,反复低血糖影响,Number,反复低血糖对感知能力影响评分（1-5分）,3.2
+awarenessTrainingHistory,感知训练史,String,是否接受过低血糖感知训练,是/否
+
+# 药物相关风险因素
+insulinType,胰岛素类型,String,使用的胰岛素类型,速效/短效/中效/长效/预混/无胰岛素
+insulinRegimen,胰岛素方案,String,胰岛素治疗方案,基础/餐时/基础+餐时/预混/强化治疗
+sulfonylureaUse,磺脲类药物使用,String,是否使用磺脲类药物,是/否
+meglitinideUse,格列奈类药物使用,String,是否使用格列奈类药物,是/否
+otherHypoglycemicdrugs,其他降糖药,String,其他可能导致低血糖的药物,是/否
+drugInteractions,药物相互作用,String,是否存在增加低血糖风险的药物相互作用,是/否
+dosageAppropriatenss,剂量适当性,String,当前药物剂量适当性,适当/偏高/明显过量
+
+# 血糖控制模式
+glycemicVariability,血糖变异性,String,血糖变异性程度,低/中等/高/极高
+frequentGlucoseFluctuations,频繁血糖波动,String,是否存在频繁血糖波动,是/否
+dawn现象,黎明现象,String,是否存在黎明现象,是/否
+brittleDiabetes,脆性糖尿病,String,是否为脆性糖尿病,是/否
+postexerciseHypoglycemia,运动后低血糖,String,是否有运动后延迟低血糖,是/否
+nocturanlHypoglycemia,夜间低血糖,String,是否有夜间低血糖,是/否
+fastingHypoglycemia,空腹低血糖,String,是否有空腹低血糖倾向,是/否
+
+# 个体生理因素
+age,年龄因素,String,年龄对低血糖风险影响,低风险（<65岁）/中风险（65-75岁）/高风险（>75岁）
+retalImpairment,肾功能损害,String,肾功能状况,正常/轻度损害/中度损害/重度损害
+hepaticImpairment,肝功能损害,String,肝功能状况,正常/轻度损害/中度损害/重度损害
+adrenalInsufficiency,肾上腺功能不全,String,是否有肾上腺功能不全,是/否
+thyroidDisorders,甲状腺疾病,String,是否有甲状腺疾病影响血糖,是/否
+gastroparesis,胃轻瘫,String,是否有糖尿病胃轻瘫,是/否
+autonomicNeuropathy,自主神经病变,String,是否有糖尿病自主神经病变,是/否
+
+# 血糖监测相关
+glucoseMonitoringFrequency,血糖监测频率,Number,每日血糖监测次数,4
+glucoseMonitoringCompliance,血糖监测依从性,String,血糖监测依从性,良好/一般/差
+cgmUse,连续血糖监测使用,String,是否使用连续血糖监测,是/否
+flashGlucoseMonitoringUse,瞬感血糖监测使用,String,是否使用瞬感血糖监测,是/否
+hypoglycemiaAlarmUse,低血糖报警使用,String,是否使用低血糖报警功能,是/否
+glucoseDataReview,血糖数据回顾,String,是否定期回顾血糖数据模式,定期/偶尔/从不
+glucoseTrendsRecognition,血糖趋势识别,Number,识别血糖下降趋势能力评分（1-5分）,3.2
+
+# 饮食相关风险因素
+mealSkipping,跳餐行为,String,是否有跳餐行为,经常/偶尔/很少/从不
+mealTimingIrregularity,进餐时间不规律,String,进餐时间规律性,规律/基本规律/不太规律/很不规律
+carbInstake不足,碳水摄入不足,String,是否存在碳水化合物摄入不足,经常/偶尔/很少/从不
+alcoholConsumption,酒精消费,String,饮酒情况,不饮酒/偶尔饮酒/定期饮酒/过量饮酒
+dietaryRestriction,饮食限制,String,是否存在过度饮食限制,是/否
+unexpectedPhysicalActivity,意外体力活动,String,是否有意外增加的体力活动,经常/偶尔/很少/从不
+fasting,禁食情况,String,是否有禁食情况,经常/偶尔/很少/从不
+
+# 运动相关风险因素
+exercisePatterns,运动模式,String,运动模式规律性,规律/不规律/偶尔运动/不运动
+exerciseIntensityVariability,运动强度变异,String,运动强度变异程度,稳定/轻微变异/中度变异/高度变异
+exerciseTimingRelationshipWithMedication,运动用药时机关系,String,运动与用药时机关系掌握,良好/一般/差
+preExerciseGlucoseCheck,运动前血糖检查,String,运动前是否检查血糖,总是/经常/偶尔/从不
+postExerciseGlucoseCheck,运动后血糖检查,String,运动后是否检查血糖,总是/经常/偶尔/从不
+exercisecarbSupplementation,运动碳水补充,String,运动时是否适当补充碳水化合物,总是/经常/偶尔/从不
+exerciseInsulinAdjustment,运动胰岛素调整,String,运动时是否调整胰岛素,总是/经常/偶尔/从不/不适用
+
+# 疾病相关风险因素
+acuteIllness,急性疾病,String,近期是否有急性疾病,是/否
+infections,感染,String,是否有感染增加低血糖风险,是/否
+nausea呕吐,恶心呕吐,String,是否有恶心呕吐影响进食,是/否
+gastrointestinalDisorders,胃肠道疾病,String,是否有影响营养吸收的胃肠道疾病,是/否
+feedingDifficulties,进食困难,String,是否有进食困难,是/否
+stressFactors,应激因素,String,是否存在生理或心理应激,是/否
+surgicalProcedures,外科手术,String,近期是否有外科手术,是/否
+
+# 心理和认知因素
+cognitivelmpairment,认知功能损害,String,是否存在认知功能损害,是/否
+dementia,痴呆,String,是否诊断痴呆,是/否
+hypoglycemiaFear,低血糖恐惧,Number,对低血糖恐惧程度评分（1-5分），5分为极度恐惧,3.5
+anxietyLevel,焦虑水平,Number,总体焦虑水平评分（1-5分）,2.8
+depressionLevel,抑郁水平,Number,抑郁程度评分（1-5分）,2.4
+copingSkills,应对技能,Number,低血糖应对技能评分（1-5分）,3.2
+riskPerception,风险感知,Number,个人低血糖风险感知准确性评分（1-5分）,2.8
+
+# 社会和环境因素
+livingAlone,独居情况,String,是否独居,是/否
+socialSupport,社会支持,Number,社会支持充分程度评分（1-5分）,3.4
+caregiverAvailability,照护者可获得性,String,紧急情况下照护者可获得性,随时可获得/工作时间可获得/有限可获得/不可获得
+workEnvironment,工作环境,String,工作环境对低血糖管理影响,支持性/一般/有挑战性/高风险
+drivingExposure,驾驶暴露,String,是否经常驾驶,是/否
+occupationalHazards,职业危险,String,职业是否存在低血糖相关危险,是/否
+accessToEmergencyTreatment,紧急治疗可及性,String,紧急低血糖治疗可及性,很好/一般/有限/很差
+
+# 低血糖处理知识和技能
+treatmentKnowledgeScore,治疗知识评分,Number,低血糖治疗知识评分（0-100分）,72
+rule15Knowledge,15法则知识,Number,低血糖15法则掌握程度评分（1-5分）,3.4
+glucoseTabletAccess,葡萄糖片获取,String,是否随身携带葡萄糖片或类似物品,总是/经常/偶尔/从不
+glucagonAccess,胰高糖素获取,String,是否有胰高糖素应急药物,有且会使用/有但不会使用/没有但知道/不知道
+emergencyContactPreparation,紧急联系准备,String,紧急联系人和信息准备情况,充分准备/基本准备/不充分/无准备
+medicalAlertldentification,医疗警示标识,String,是否佩戴糖尿病医疗警示标识,是/否
+selfTreatmentEffectiveness,自我治疗效果,Number,自我处理低血糖效果评分（1-5分）,3.6
+
+# 家庭和照护者准备
+familyKnowledge,家庭知识,Number,家庭成员低血糖知识评分（1-5分）,3.0
+familyTraining,家庭培训,String,家庭成员是否接受过低血糖处理培训,是/否
+caregiverGlucagonTraining,照护者胰高糖素培训,String,照护者是否会使用胰高糖素,是/否/不适用
+emergencyActionPlan,紧急行动计划,String,是否有书面低血糖紧急行动计划,有/无
+communicationPlan,沟通计划,String,与家人的低血糖沟通计划,完善/基本/不完善/无计划
+workplaceAwareness,工作场所认知,String,工作场所同事是否了解患者糖尿病情况,完全了解/部分了解/不了解
+
+# 技术辅助工具
+glucometerAccuracy,血糖仪准确性,String,血糖仪准确性状况,良好/一般/需要更换
+glucometerAccessibility,血糖仪可及性,String,血糖仪使用便利性,非常便利/比较便利/一般/不便利
+alertSystems,警报系统,String,是否使用低血糖警报系统,是/否
+smartphoneApps,智能手机应用,String,是否使用糖尿病管理智能手机应用,是/否
+emergencyApps,紧急应用,String,是否安装紧急情况求助应用,是/否
+wearableDevices,可穿戴设备,String,是否使用健康监测可穿戴设备,是/否
+
+# 历史事件分析
+previousHypoglycemiaTriggers,既往低血糖触发因素,String,既往低血糖主要触发因素,药物/饮食/运动/疾病/多因素/不明
+patternRecognition,模式识别,Number,识别个人低血糖发生模式能力评分（1-5分）,2.8
+triggerAvoidance,触发因素回避,Number,回避已知低血糖触发因素能力评分（1-5分）,3.2
+seasonalPatterns,季节性模式,String,是否存在季节性低血糖模式,是/否
+timeOfDayPatterns,时间模式,String,低血糖发生是否有时间规律,是/否
+situationalPatterns,情境模式,String,特定情境下低血糖发生模式,有规律/无规律
+
+# 医疗系统因素
+healthcareAccessibility,医疗保健可及性,String,医疗保健服务可及性,很好/一般/有限/很差
+emergencyMedicalServices,急诊医疗服务,String,急诊医疗服务可及性,很好/一般/有限/很差
+endocrinologistAccess,内分泌专家可及性,String,内分泌专家就诊可及性,很好/一般/有限/很差
+diabetesEducatorAccess,糖尿病教育者可及性,String,糖尿病教育者服务可及性,很好/一般/有限/很差
+regularFollowUp,定期随访,String,定期糖尿病随访情况,规律/基本规律/不规律
+communicationWithHealthcareTeam,与医疗团队沟通,Number,与医疗团队沟通低血糖问题能力评分（1-5分）,3.4
+
+# 经济因素
+glucoseSuppliesAffordability,血糖用品承受能力,String,血糖监测用品费用承受能力,完全承受/基本承受/部分困难/严重困难
+emergencySuppliesAffordability,应急用品承受能力,String,低血糖应急用品费用承受能力,完全承受/基本承受/部分困难/严重困难
+insuranceCoverage,保险覆盖,String,医疗保险对低血糖相关费用覆盖,完全覆盖/大部分覆盖/部分覆盖/很少覆盖
+financialImpactOnManagement,经济对管理影响,Number,经济因素对低血糖管理影响评分（1-5分）,2.6
+transportationToEmergencyCare,紧急护理交通,String,获得紧急护理的交通便利性,很便利/比较便利/一般/不便利
+
+# 特殊人群考虑
+pediatricFactors,儿科因素,String,儿童特殊低血糖风险因素,不适用/生长发育/活动量变化/进食问题
+pregnancyFactors,妊娠因素,String,妊娠期特殊低血糖风险因素,不适用/孕吐/胰岛素需求变化/胎儿影响
+geriatricFactors,老年因素,String,老年人特殊低血糖风险因素,不适用/多病共存/认知下降/社会支持不足
+occupationalConsiderations,职业考虑,String,职业特殊低血糖风险,无特殊风险/安全敏感工作/体力劳动/不规律工作
+travelConsiderations,旅行考虑,String,旅行时低血糖风险管理,充分准备/基本准备/不充分准备/不考虑
+
+# 预防措施评估
+preventiveStrategiesImplementation,预防策略实施,Number,低血糖预防策略实施程度评分（1-5分）,3.2
+glucoseTargetApproppriateness,血糖目标适当性,String,当前血糖控制目标适当性,适当/偏低/需要个体化调整
+medicationAdjustmentWillingness,药物调整意愿,String,为预防低血糖调整药物意愿,非常愿意/比较愿意/犹豫/不愿意
+lifestyleModificationAdherence,生活方式改变依从性,Number,预防低血糖生活方式改变依从性评分（1-5分）,3.0
+educationParticipationWillingness,教育参与意愿,String,参与低血糖教育意愿,非常积极/比较积极/一般/不积极
+riskCommunicationEffectiveness,风险沟通效果,Number,低血糖风险沟通效果评分（1-5分）,3.2
+
+# 综合风险评估
+overallHypoglycemiaRiskScore,总体低血糖风险评分,Number,总体低血糖风险评分（0-100分，分数越高风险越大）,45
+clinicalRiskLevel,临床风险等级,String,临床低血糖风险等级,低风险/中度风险/高风险/极高风险
+severehypoglycemiaRiskLevel,严重低血糖风险等级,String,严重低血糖风险等级,低风险/中度风险/高风险/极高风险
+modifiableRiskFactors,可修改风险因素,String,主要可修改的风险因素,药物/饮食/运动/监测/教育/多因素
+nonModifiableRiskFactors,不可修改风险因素,String,主要不可修改的风险因素,年龄/病程/并发症/遗传/多因素
+riskFactorPriority,风险因素优先级,String,需要优先处理的风险因素,药物调整/教育加强/监测改善/环境改善
+immediatelnterventionNeeded,即刻干预需求,String,是否需要立即干预,是/否
+
+# 个性化评估
+individualRiskProfile,个人风险档案,String,个人化风险特征档案,高复发型/无感知型/脆性型/环境风险型/教育缺乏型
+riskPatternType,风险模式类型,String,低血糖风险模式类型,药物相关/行为相关/疾病相关/环境相关/混合型
+vulnerabilityFactors,易感因素,String,主要易感因素,生理/心理/社会/行为/医疗系统
+protectiveFactors,保护因素,String,主要保护因素,支持系统/知识技能/监测设备/医疗可及性
+riskTrajectory,风险轨迹,String,低血糖风险变化趋势,增加/稳定/下降/波动
+personaizedInterventionPriority,个性化干预优先级,String,个性化干预优先级,教育/药物调整/监测/环境/心理支持
+
+# 评估工具和方法
+riskAssessmentTool,风险评估工具,String,使用的风险评估工具,自制量表/标准化工具/综合评估/临床判断
+assessmentComprehensiveness,评估全面性,String,评估全面性程度,全面/较全面/基本/需要补充
+assessorExpertise,评估者专业水平,String,评估者专业水平,专家/熟练/一般/需要培训
+assessmentFrequency,评估频率建议,String,建议的评估频率,每月/每3个月/每6个月/年度/按需
+followUpPlan,随访计划,String,低血糖风险随访计划,密集随访/定期随访/按需随访
+reassessmentTriggers,重新评估触发条件,String,重新评估触发条件,治疗变更/低血糖发生/定期复评/患者要求

@@ -1,0 +1,105 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行甲状腺功能检查的日期,2025-08-15
+clinicalIndication,检查适应症,String,"进行甲状腺功能检查的临床指征。<br>**建议值**: `甲亢症状`, `甲减症状`, `甲状腺肿`, `甲状腺结节`, `常规筛查`, `妊娠`, `药物监测`",甲减症状
+thyroidStimulatingHormone,促甲状腺激素 (TSH),Number,"血清TSH水平。<br>单位: mU/L<br>**参考范围**: 0.27-4.2",8.5
+freeThyroxine,游离甲状腺素 (FT4),Number,"血清游离T4水平。<br>单位: pmol/L<br>**参考范围**: 12-22",8.2
+freeTriiodothyronine,游离三碘甲状腺原氨酸 (FT3),Number,"血清游离T3水平。<br>单位: pmol/L<br>**参考范围**: 3.1-6.8",3.8
+totalThyroxine,总甲状腺素 (TT4),Number,"血清总T4水平。<br>单位: nmol/L<br>**参考范围**: 66-181",55
+totalTriiodothyronine,总三碘甲状腺原氨酸 (TT3),Number,"血清总T3水平。<br>单位: nmol/L<br>**参考范围**: 1.3-3.1",1.1
+reverseT3,反T3 (rT3),Number,"反向T3水平。<br>单位: pmol/L<br>**参考范围**: 10-24",28
+thyroxineBindingGlobulin,甲状腺素结合球蛋白 (TBG),Number,"TBG水平。<br>单位: mg/L<br>**参考范围**: 15-34",22
+thyroglobulin,甲状腺球蛋白 (Tg),Number,"血清甲状腺球蛋白。<br>单位: μg/L<br>**参考范围**: 1.4-78",45
+antithyroglobulinAntibody,抗甲状腺球蛋白抗体 (TgAb),Number,"抗Tg抗体。<br>单位: IU/mL<br>**参考范围**: <115",250
+antithyroidPeroxidaseAntibody,抗甲状腺过氧化物酶抗体 (TPOAb),Number,"抗TPO抗体。<br>单位: IU/mL<br>**参考范围**: <34",180
+tshReceptorAntibody,TSH受体抗体 (TRAb),Number,"TSH受体抗体。<br>单位: IU/L<br>**参考范围**: <1.75",0.5
+thyroidStimulatingImmunoglobulin,甲状腺刺激免疫球蛋白 (TSI),Number,"TSI活性。<br>单位: %<br>**参考范围**: <140%",95
+calcitonin,降钙素 (CT),Number,"血清降钙素。<br>单位: pg/mL<br>**参考范围**: 男性<11.5，女性<4.6",3.2
+thyroidFunction.diagnosis,甲状腺功能.诊断,String,"甲状腺功能状态。<br>**建议值**: `正常`, `亚临床甲减`, `临床甲减`, `亚临床甲亢`, `临床甲亢`, `低T3综合征`",临床甲减
+thyroidFunction.severity,甲状腺功能.严重程度,String,"功能异常严重程度。<br>**建议值**: `正常`, `轻度`, `中度`, `重度`",中度
+thyroidMorphology.glandSize,甲状腺形态.腺体大小,String,"甲状腺大小评估。<br>**建议值**: `正常`, `轻度增大`, `中度增大`, `明显增大`",轻度增大
+thyroidMorphology.echogenicity,甲状腺形态.回声,String,"甲状腺回声特征。<br>**建议值**: `正常`, `低回声`, `高回声`, `混合回声`",低回声
+thyroidMorphology.echoTexture,甲状腺形态.回声质地,String,"甲状腺回声质地。<br>**建议值**: `均匀`, `不均匀`, `粗糙`",不均匀
+thyroidMorphology.nodules,甲状腺形态.结节,String,"甲状腺结节情况。<br>**建议值**: `无`, `单发结节`, `多发结节`",多发结节
+thyroidNodules.number,甲状腺结节.数量,Number,"结节数量",3
+thyroidNodules.maxSize,甲状腺结节.最大径,Number,"最大结节直径。<br>单位: mm",15
+thyroidNodules.location,甲状腺结节.位置,String,"结节位置。<br>**建议值**: `左叶`, `右叶`, `峡部`, `双叶`",双叶
+thyroidNodules.composition,甲状腺结节.性质,String,"结节性质。<br>**建议值**: `实性`, `囊性`, `混合性`",实性
+thyroidNodules.calcification,甲状腺结节.钙化,String,"结节钙化情况。<br>**建议值**: `无`, `粗大钙化`, `微钙化`",微钙化
+thyroidNodules.bloodFlow,甲状腺结节.血流,String,"结节血流情况。<br>**建议值**: `无血流`, `少血流`, `丰富血流`",少血流
+thyroidNodules.tirads,甲状腺结节.TI-RADS分级,String,"TI-RADS分级。<br>**建议值**: `TI-RADS 1`, `TI-RADS 2`, `TI-RADS 3`, `TI-RADS 4a`, `TI-RADS 4b`, `TI-RADS 4c`, `TI-RADS 5`",TI-RADS 3
+thyroidNodules.fineneedleAspiration,甲状腺结节.细针穿刺,String,"细针穿刺细胞学结果。<br>**建议值**: `未做`, `良性`, `恶性`, `不确定意义`, `可疑恶性`",未做
+lymphNodes.cervical,淋巴结.颈部淋巴结,String,"颈部淋巴结情况。<br>**建议值**: `正常`, `肿大`, `可疑转移`",正常
+autoimmuneDiseases.hashimoto,自身免疫疾病.桥本甲状腺炎,String,"桥本甲状腺炎诊断。<br>**建议值**: `否`, `疑似`, `确诊`",确诊
+autoimmuneDiseases.graves,自身免疫疾病.Graves病,String,"Graves病诊断。<br>**建议值**: `否`, `疑似`, `确诊`",否
+autoimmuneDiseases.postpartumThyroiditis,自身免疫疾病.产后甲状腺炎,String,"产后甲状腺炎诊断。<br>**建议值**: `否`, `疑似`, `确诊`",否
+symptoms.hyperthyroid.nervousness,甲亢症状.紧张焦虑,String,"紧张焦虑症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+symptoms.hyperthyroid.palpitations,甲亢症状.心悸,String,"心悸症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+symptoms.hyperthyroid.tremor,甲亢症状.震颤,String,"震颤症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+symptoms.hyperthyroid.sweating,甲亢症状.多汗,String,"多汗症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+symptoms.hyperthyroid.weightLoss,甲亢症状.体重减轻,String,"体重减轻症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+symptoms.hyperthyroid.insomnia,甲亢症状.失眠,String,"失眠症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+symptoms.hypothyroid.fatigue,甲减症状.乏力,String,"乏力症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+symptoms.hypothyroid.coldIntolerance,甲减症状.怕冷,String,"怕冷症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+symptoms.hypothyroid.constipation,甲减症状.便秘,String,"便秘症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+symptoms.hypothyroid.weightGain,甲减症状.体重增加,String,"体重增加症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+symptoms.hypothyroid.depression,甲减症状.抑郁,String,"抑郁症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+symptoms.hypothyroid.memoryImpairment,甲减症状.记忆力减退,String,"记忆力减退症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+symptoms.hypothyroid.dryHair,甲减症状.毛发干燥,String,"毛发干燥症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+symptoms.hypothyroid.drySkin,甲减症状.皮肤干燥,String,"皮肤干燥症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+symptoms.hypothyroid.menstrualIrregularities,甲减症状.月经紊乱,String,"月经紊乱症状（女性）。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+physicalExamination.heartRate,体格检查.心率,Number,"静息心率。<br>单位: 次/分<br>**甲亢**: >100，**甲减**: <60",55
+physicalExamination.bloodPressure.systolic,体格检查.血压.收缩压,Number,"收缩压。<br>单位: mmHg",110
+physicalExamination.bloodPressure.diastolic,体格检查.血压.舒张压,Number,"舒张压。<br>单位: mmHg",70
+physicalExamination.bodyWeight,体格检查.体重,Number,"体重。<br>单位: kg",75
+physicalExamination.bodyMassIndex,体格检查.体质指数,Number,"体质指数。<br>单位: kg/m²",26.5
+physicalExamination.temperature,体格检查.体温,Number,"体温。<br>单位: ℃",36.5
+physicalExamination.goiter,体格检查.甲状腺肿,String,"甲状腺肿大分度。<br>**建议值**: `无`, `I度`, `II度`, `III度`",I度
+physicalExamination.eyeSigns,体格检查.眼征,String,"甲亢眼征。<br>**建议值**: `无`, `眼睑水肿`, `眼球突出`, `复视`",无
+physicalExamination.reflexes,体格检查.反射,String,"腱反射评估。<br>**建议值**: `正常`, `活跃`, `迟钝`, `消失`",迟钝
+physicalExamination.pretibialMyxedema,体格检查.胫前粘液性水肿,String,"胫前粘液性水肿。<br>**建议值**: `无`, `有`",无
+comorbidities.cardiovascular,合并症.心血管疾病,String,"心血管系统合并症。<br>**建议值**: `无`, `心律失常`, `心衰`, `冠心病`",无
+comorbidities.diabetes,合并症.糖尿病,String,"糖尿病合并情况。<br>**建议值**: `无`, `1型糖尿病`, `2型糖尿病`",无
+comorbidities.osteoporosis,合并症.骨质疏松,String,"骨质疏松合并情况。<br>**建议值**: `无`, `骨量减少`, `骨质疏松`",无
+comorbidities.infertility,合并症.不孕不育,String,"生育问题。<br>**建议值**: `无`, `男性不育`, `女性不孕`",无
+comorbidities.mentalHealth,合并症.精神心理,String,"精神心理问题。<br>**建议值**: `无`, `焦虑`, `抑郁`, `认知障碍`",抑郁
+pregnancyRelated.pregnancyStatus,妊娠相关.妊娠状态,String,"是否妊娠。<br>**建议值**: `否`, `妊娠`, `哺乳期`",否
+pregnancyRelated.trimester,妊娠相关.妊娠期,String,"妊娠期别（如适用）。<br>**建议值**: `早期`, `中期`, `晚期`",不适用
+pregnancyRelated.previousThyroidDisease,妊娠相关.既往甲状腺疾病,String,"既往甲状腺疾病史。<br>**建议值**: `无`, `甲亢`, `甲减`, `甲状腺炎`",甲减
+familyHistory.thyroidDisease,家族史.甲状腺疾病,String,"甲状腺疾病家族史。<br>**建议值**: `无`, `甲亢`, `甲减`, `甲状腺癌`, `甲状腺炎`",甲减
+familyHistory.autoimmuneDiseases,家族史.自身免疫疾病,String,"自身免疫疾病家族史。<br>**建议值**: `无`, `有`",有
+medications.currentThyroidMedication,用药情况.目前甲状腺药物,String,"目前使用的甲状腺药物。<br>**建议值**: `无`, `左甲状腺素`, `甲巯咪唑`, `丙硫氧嘧啶`, `碘131`",左甲状腺素
+medications.dosage,用药情况.药物剂量,String,甲状腺药物剂量,左甲状腺素 50μg qd
+medications.duration,用药情况.用药时间,Number,"用药持续时间。<br>单位: 月",6
+medications.compliance,用药情况.依从性,String,"用药依从性。<br>**建议值**: `良好`, `一般`, `较差`",良好
+medications.sideEffects,用药情况.副作用,String,"药物副作用。<br>**建议值**: `无`, `皮疹`, `肝损伤`, `白细胞减少`, `心悸`",无
+medications.otherMedications,用药情况.其他药物,String,可能影响甲状腺功能的其他药物,无
+laboratoryTrends.previousTsh,实验室趋势.既往TSH,Number,"前次TSH值。<br>单位: mU/L",12.5
+laboratoryTrends.previousFt4,实验室趋势.既往FT4,Number,"前次FT4值。<br>单位: pmol/L",6.8
+laboratoryTrends.trendDirection,实验室趋势.变化趋势,String,"甲状腺功能变化趋势。<br>**建议值**: `改善`, `稳定`, `恶化`",改善
+treatmentResponse.responseToTreatment,治疗反应.治疗反应,String,"对治疗的反应。<br>**建议值**: `良好`, `一般`, `较差`, `无反应`",良好
+treatmentResponse.timeToNormalization,治疗反应.正常化时间,Number,"达到正常功能所需时间。<br>单位: 月",3
+treatmentGoals.targetTsh,治疗目标.目标TSH,Number,"个体化TSH目标值。<br>单位: mU/L",1.0-2.5
+treatmentGoals.targetFt4,治疗目标.目标FT4,Number,"个体化FT4目标值。<br>单位: pmol/L",12-18
+monitoringPlan.frequency,监测计划.复查频率,String,"甲状腺功能监测频率",治疗初期6-8周复查
+monitoringPlan.parameters,监测计划.监测参数,String,需要监测的参数,TSH、FT4、TPOAb
+specialConsiderations.elderly,特殊考虑.老年患者,String,"老年患者特殊考虑。<br>**建议值**: `否`, `是`",是
+specialConsiderations.pregnancy,特殊考虑.妊娠患者,String,"妊娠患者特殊考虑。<br>**建议值**: `否`, `是`",否
+specialConsiderations.pediatric,特殊考虑.儿科患者,String,"儿科患者特殊考虑。<br>**建议值**: `否`, `是`",否
+riskFactors.iodineExposure,危险因素.碘暴露,String,"碘暴露史。<br>**建议值**: `无`, `过量碘摄入`, `碘造影剂`, `碘缺乏`",无
+riskFactors.radiation,危险因素.辐射暴露,String,"辐射暴露史。<br>**建议值**: `无`, `医疗辐射`, `环境辐射`",无
+riskFactors.stress,危险因素.应激,String,"近期应激事件。<br>**建议值**: `无`, `生理应激`, `心理应激`",心理应激
+progressMonitoring.symptomImprovement,进展监测.症状改善,String,"症状改善程度。<br>**建议值**: `无改善`, `轻度改善`, `中度改善`, `明显改善`",中度改善
+progressMonitoring.qualityOfLife,进展监测.生活质量,String,"生活质量变化。<br>**建议值**: `无变化`, `略有改善`, `明显改善`",明显改善
+futureRisk.cardiovascularRisk,未来风险.心血管风险,String,"心血管疾病风险评估。<br>**建议值**: `低`, `中`, `高`",低
+futureRisk.osteoporosisRisk,未来风险.骨质疏松风险,String,"骨质疏松风险评估。<br>**建议值**: `低`, `中`, `高`",中
+futureRisk.progressionRisk,未来风险.疾病进展风险,String,"疾病进展风险评估。<br>**建议值**: `低`, `中`, `高`",低
+patientEducation.diseaseUnderstanding,患者教育.疾病认知,String,"患者对疾病的认知程度。<br>**建议值**: `差`, `一般`, `良好`",一般
+patientEducation.medicationCompliance,患者教育.用药教育,String,"用药教育完成情况。<br>**建议值**: `未接受`, `已接受`",已接受
+patientEducation.lifestyleGuidance,患者教育.生活指导,String,"生活方式指导。<br>**建议值**: `未接受`, `已接受`",已接受
+prognosis.shortTerm,预后.短期预后,String,"短期预后评估。<br>**建议值**: `良好`, `一般`, `较差`",良好
+prognosis.longTerm,预后.长期预后,String,"长期预后评估。<br>**建议值**: `良好`, `一般`, `较差`",良好
+consultationNeeded.endocrinology,会诊需要.内分泌科,String,"是否需要内分泌科会诊。<br>**建议值**: `否`, `是`",否
+consultationNeeded.surgery,会诊需要.外科,String,"是否需要外科会诊。<br>**建议值**: `否`, `是`",否
+consultationNeeded.obstetrics,会诊需要.产科,String,"是否需要产科会诊。<br>**建议值**: `否`, `是`",否
+diagnosisImpression,诊断/印象,String,医生对甲状腺功能检查结果的综合诊断或印象。,原发性甲状腺功能减退症，桥本甲状腺炎
+recommendation,建议,String,医生根据检查结果提出的建议。,继续左甲状腺素替代治疗，6-8周后复查甲功

@@ -1,0 +1,240 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行生殖内分泌代谢检查的日期,2025-08-15
+clinicalIndication,检查适应症,String,"进行生殖内分泌代谢检查的临床指征。<br>**建议值**: `月经失调`, `不孕症`, `多囊卵巢综合征`, `男性性腺功能减退`, `代谢综合征合并生殖问题`",多囊卵巢综合征
+patientSex,患者性别,String,"患者性别。<br>**建议值**: `男`, `女`",女
+patientAge,患者年龄,Number,"患者年龄。<br>单位: 岁",28
+reproductiveHistory.menarche,生殖史.初潮,Number,"初潮年龄。<br>单位: 岁<br>**正常范围**: 10-16岁",13
+reproductiveHistory.menstrualCycleLength,生殖史.月经周期长度,Number,"月经周期长度。<br>单位: 天<br>**正常**: 21-35天",45
+reproductiveHistory.menstrualDuration,生殖史.月经持续时间,Number,"月经持续天数。<br>单位: 天<br>**正常**: 3-7天",6
+reproductiveHistory.menstrualVolume,生殖史.月经量,String,"月经量。<br>**建议值**: `过少`, `正常`, `过多`",过少
+reproductiveHistory.menstrualPattern,生殖史.月经规律性,String,"月经规律性。<br>**建议值**: `规律`, `不规律`, `闭经`",不规律
+reproductiveHistory.lastMenstrualPeriod,生殖史.末次月经,String,"末次月经日期",2025-07-20
+reproductiveHistory.amenorrheaType,生殖史.闭经类型,String,"闭经类型（如适用）。<br>**建议值**: `原发性`, `继发性`",继发性
+reproductiveHistory.amenorrheaDuration,生殖史.闭经时长,Number,"闭经持续时间。<br>单位: 月",3
+reproductiveHistory.gravida,生殖史.妊娠次数,Number,"妊娠次数",1
+reproductiveHistory.para,生殖史.分娩次数,Number,"分娩次数",0
+reproductiveHistory.abortions,生殖史.流产次数,Number,"流产次数",1
+reproductiveHistory.infertilityDuration,生殖史.不孕时长,Number,"不孕症病程。<br>单位: 年",2
+reproductiveHistory.contraceptiveHistory,生殖史.避孕史,String,"避孕方法使用史",既往口服避孕药2年
+maleReproductiveHistory.erectileDysfunction,男性生殖史.勃起功能障碍,String,"勃起功能障碍（男性）。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",不适用
+maleReproductiveHistory.libido,男性生殖史.性欲,String,"性欲变化（男性）。<br>**建议值**: `正常`, `减退`, `消失`",不适用
+maleReproductiveHistory.ejaculatoryDysfunction,男性生殖史.射精功能障碍,String,"射精功能障碍（男性）。<br>**建议值**: `无`, `早泄`, `延迟射精`, `不射精`",不适用
+maleReproductiveHistory.gynecomastia,男性生殖史.男性乳房发育,String,"男性乳房发育（男性）。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",不适用
+physicalExamination.bmi,体格检查.体质指数,Number,"体质指数。<br>单位: kg/m²",28.5
+physicalExamination.waistCircumference,体格检查.腰围,Number,"腰围。<br>单位: cm<br>**女性风险**: ≥80cm",95
+physicalExamination.waistHipRatio,体格检查.腰臀比,Number,"腰臀比。<br>**女性风险**: ≥0.85",0.88
+physicalExamination.bloodPressure.systolic,体格检查.血压.收缩压,Number,"收缩压。<br>单位: mmHg",138
+physicalExamination.bloodPressure.diastolic,体格检查.血压.舒张压,Number,"舒张压。<br>单位: mmHg",88
+physicalExamination.hirsutism.ferrmanGallwayScore,体格检查.多毛症.Ferriman-Gallway评分,Number,"F-G评分。<br>**异常**: ≥8分",12
+physicalExamination.hirsutism.distribution,体格检查.多毛症.分布,String,"多毛分布部位",面部、胸部、腹部
+physicalExamination.acne.severity,体格检查.痤疮.严重程度,String,"痤疮严重程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+physicalExamination.acne.distribution,体格检查.痤疮.分布,String,"痤疮分布",面部、背部
+physicalExamination.alopecia.pattern,体格检查.脱发.模式,String,"脱发模式。<br>**建议值**: `无`, `雄激素性`, `其他`",雄激素性
+physicalExamination.alopecia.severity,体格检查.脱发.严重程度,String,"脱发严重程度。<br>**建议值**: `轻度`, `中度`, `重度`",轻度
+physicalExamination.acanthosisNigricans,体格检查.黑棘皮病,String,"黑棘皮病。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+physicalExamination.breastDevelopment,体格检查.乳房发育,String,"乳房发育情况（女性）",Tanner IV期
+physicalExamination.galactorrhea,体格检查.溢乳,String,"溢乳（女性）。<br>**建议值**: `无`, `有`",无
+physicalExamination.thyroidEnlargement,体格检查.甲状腺肿大,String,"甲状腺肿大。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+physicalExamination.maleGenitalia.penisSize,体格检查.男性生殖器.阴茎大小,String,"阴茎大小（男性）。<br>**建议值**: `正常`, `偏小`, `微阴茎`",不适用
+physicalExamination.maleGenitalia.testesSize.left,体格检查.男性生殖器.睾丸大小.左侧,Number,"左侧睾丸体积（男性）。<br>单位: mL<br>**正常**: >15mL",不适用
+physicalExamination.maleGenitalia.testesSize.right,体格检查.男性生殖器.睾丸大小.右侧,Number,"右侧睾丸体积（男性）。<br>单位: mL<br>**正常**: >15mL",不适用
+physicalExamination.maleGenitalia.cryptorchidism,体格检查.男性生殖器.隐睾,String,"隐睾史（男性）。<br>**建议值**: `无`, `单侧`, `双侧`",不适用
+physicalExamination.femaleGenitalia.clitoromegaly,体格检查.女性生殖器.阴蒂肥大,String,"阴蒂肥大（女性）。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+physicalExamination.femaleGenitalia.virilization,体格检查.女性生殖器.男性化,String,"外生殖器男性化（女性）。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+hormonalAssessment.reproductive.fsh,激素评估.生殖激素.卵泡刺激素,Number,"FSH。<br>单位: IU/L<br>**卵泡期**: 3.5-12.5，**排卵期**: 4.7-21.5，**黄体期**: 1.7-7.7，**绝经后**: 25.8-134.8",8.5
+hormonalAssessment.reproductive.lh,激素评估.生殖激素.黄体生成素,Number,"LH。<br>单位: IU/L<br>**卵泡期**: 2.4-12.6，**排卵期**: 14.0-95.6，**黄体期**: 1.0-11.4",15.8
+hormonalAssessment.reproductive.lhFshRatio,激素评估.生殖激素.LH FSH比值,Number,"LH/FSH比值。<br>**PCOS提示**: >2",1.86
+hormonalAssessment.reproductive.estradiol,激素评估.生殖激素.雌二醇,Number,"雌二醇。<br>单位: pmol/L<br>**卵泡期**: 97-294，**排卵期**: 288-1835，**黄体期**: 158-840",185
+hormonalAssessment.reproductive.progesterone,激素评估.生殖激素.孕酮,Number,"孕酮。<br>单位: nmol/L<br>**卵泡期**: <3.2，**黄体期**: >15.9",2.8
+hormonalAssessment.reproductive.inhibinB,激素评估.生殖激素.抑制素B,Number,"抑制素B。<br>单位: pg/mL",85
+hormonalAssessment.reproductive.amh,激素评估.生殖激素.抗缪勒管激素,Number,"AMH。<br>单位: ng/mL<br>**正常**: 1.0-4.0，**PCOS**: >4.0",8.5
+hormonalAssessment.androgens.totalTestosterone,激素评估.雄激素.总睾酮,Number,"总睾酮。<br>单位: nmol/L<br>**女性**: 0.5-2.6，**男性**: 8.64-29.0",3.2
+hormonalAssessment.androgens.freeTestosterone,激素评估.雄激素.游离睾酮,Number,"游离睾酮。<br>单位: pmol/L<br>**女性**: <35",45.8
+hormonalAssessment.androgens.bioavailableTestosterone,激素评估.雄激素.生物可利用睾酮,Number,"生物可利用睾酮。<br>单位: nmol/L",2.85
+hormonalAssessment.androgens.androstenedione,激素评估.雄激素.雄烯二酮,Number,"雄烯二酮。<br>单位: nmol/L<br>**女性**: 1.0-7.0",8.5
+hormonalAssessment.androgens.dheas,激素评估.雄激素.硫酸脱氢表雄酮,Number,"DHEA-S。<br>单位: μmol/L<br>**女性**: 0.8-11.0",12.5
+hormonalAssessment.androgens.dht,激素评估.雄激素.双氢睾酮,Number,"DHT。<br>单位: nmol/L",1.85
+hormonalAssessment.androgens.shbg,激素评估.雄激素.性激素结合球蛋白,Number,"SHBG。<br>单位: nmol/L<br>**女性**: 18-114",25.8
+hormonalAssessment.androgens.freeAndrogen Index,激素评估.雄激素.游离雄激素指数,Number,"FAI。<br>**女性异常**: >5",12.4
+hormonalAssessment.prolactin.baseLevel,激素评估.泌乳素.基础水平,Number,"基础泌乳素。<br>单位: mU/L<br>**女性**: 102-496",385
+hormonalAssessment.prolactin.macroprolactin,激素评估.泌乳素.大分子泌乳素,Number,"大分子泌乳素比例。<br>单位: %",15
+hormonalAssessment.prolactin.stressed Level,激素评估.泌乳素.应激水平,Number,"应激后泌乳素。<br>单位: mU/L",485
+hormonalAssessment.thyroid.tsh,激素评估.甲状腺.TSH,Number,"促甲状腺激素。<br>单位: mU/L<br>**参考范围**: 0.27-4.2",2.8
+hormonalAssessment.thyroid.freeT4,激素评估.甲状腺.游离T4,Number,"游离甲状腺素。<br>单位: pmol/L<br>**参考范围**: 12-22",16.5
+hormonalAssessment.thyroid.freeT3,激素评估.甲状腺.游离T3,Number,"游离三碘甲状腺原氨酸。<br>单位: pmol/L<br>**参考范围**: 3.1-6.8",4.8
+hormonalAssessment.thyroid.antiTpo,激素评估.甲状腺.抗TPO抗体,Number,"抗TPO抗体。<br>单位: kU/L<br>**正常**: <34",25
+hormonalAssessment.thyroid.antiTg,激素评估.甲状腺.抗TG抗体,Number,"抗TG抗体。<br>单位: kU/L<br>**正常**: <115",85
+hormonalAssessment.adrenal.cortisol.morning,激素评估.肾上腺.皮质醇.晨起,Number,"晨起皮质醇。<br>单位: nmol/L<br>**参考范围**: 171-536",285
+hormonalAssessment.adrenal.cortisol.midnight,激素评估.肾上腺.皮质醇.午夜,Number,"午夜皮质醇。<br>单位: nmol/L<br>**正常**: <190",125
+hormonalAssessment.adrenal.acth,激素评估.肾上腺.ACTH,Number,"促肾上腺皮质激素。<br>单位: pmol/L<br>**参考范围**: 2-11",6.5
+hormonalAssessment.adrenal.dexamethasone SuppressionTest,激素评估.肾上腺.地塞米松抑制试验,Number,"地塞米松抑制试验后皮质醇。<br>单位: nmol/L<br>**正常**: <50",35
+hormonalAssessment.adrenal.17ohProgesterone,激素评估.肾上腺.17羟孕酮,Number,"17-羟孕酮。<br>单位: nmol/L<br>**正常**: <10",6.5
+metabolicAssessment.glucose.fasting,代谢评估.糖代谢.空腹血糖,Number,"空腹血糖。<br>单位: mmol/L<br>**正常**: 3.9-6.1",5.8
+metabolicAssessment.glucose.ogtt.baseline,代谢评估.糖代谢.OGTT.基线,Number,"OGTT 0分钟血糖。<br>单位: mmol/L",5.8
+metabolicAssessment.glucose.ogtt.2hour,代谢评估.糖代谢.OGTT.2小时,Number,"OGTT 2小时血糖。<br>单位: mmol/L<br>**正常**: <7.8",9.2
+metabolicAssessment.glucose.hba1c,代谢评估.糖代谢.糖化血红蛋白,Number,"糖化血红蛋白。<br>单位: %<br>**正常**: <5.7",6.1
+metabolicAssessment.insulin.fasting,代谢评估.胰岛素.空腹胰岛素,Number,"空腹胰岛素。<br>单位: pmol/L<br>**参考范围**: 18-173",185
+metabolicAssessment.insulin.homaIr,代谢评估.胰岛素.HOMA-IR,Number,"胰岛素抵抗指数。<br>**正常**: <2.5",4.2
+metabolicAssessment.insulin.homaB,代谢评估.胰岛素.HOMA-β,Number,"胰岛β细胞功能指数。<br>**正常**: >100%",85
+metabolicAssessment.insulin.cPeptide,代谢评估.胰岛素.C肽,Number,"空腹C肽。<br>单位: nmol/L<br>**参考范围**: 0.37-1.47",1.25
+metabolicAssessment.lipids.totalCholesterol,代谢评估.血脂.总胆固醇,Number,"总胆固醇。<br>单位: mmol/L<br>**理想**: <5.2",5.8
+metabolicAssessment.lipids.ldlCholesterol,代谢评估.血脂.LDL胆固醇,Number,"LDL胆固醇。<br>单位: mmol/L<br>**理想**: <3.4",3.8
+metabolicAssessment.lipids.hdlCholesterol,代谢评估.血脂.HDL胆固醇,Number,"HDL胆固醇。<br>单位: mmol/L<br>**理想**: 女性>1.3",0.9
+metabolicAssessment.lipids.triglycerides,代谢评估.血脂.甘油三酯,Number,"甘油三酯。<br>单位: mmol/L<br>**正常**: <1.7",2.8
+metabolicAssessment.lipids.apoB,代谢评估.血脂.载脂蛋白B,Number,"载脂蛋白B。<br>单位: g/L<br>**目标**: <0.9",1.15
+metabolicAssessment.lipids.apoA1,代谢评估.血脂.载脂蛋白A1,Number,"载脂蛋白A1。<br>单位: g/L<br>**参考范围**: 1.2-1.6",1.05
+metabolicAssessment.inflammation.crp,代谢评估.炎症.C反应蛋白,Number,"C反应蛋白。<br>单位: mg/L<br>**正常**: <3.0",5.2
+metabolicAssessment.inflammation.il6,代谢评估.炎症.白介素6,Number,"白介素6。<br>单位: pg/mL",8.5
+metabolicAssessment.inflammation.tnfAlpha,代谢评估.炎症.肿瘤坏死因子α,Number,"TNF-α。<br>单位: pg/mL",12.8
+metabolicAssessment.adipokines.adiponectin,代谢评估.脂肪因子.脂联素,Number,"脂联素。<br>单位: μg/mL<br>**参考范围**: 3-30",6.5
+metabolicAssessment.adipokines.leptin,代谢评估.脂肪因子.瘦素,Number,"瘦素。<br>单位: ng/mL",25.8
+metabolicAssessment.adipokines.resistin,代谢评估.脂肪因子.抵抗素,Number,"抵抗素。<br>单位: ng/mL",12.5
+metabolicAssessment.adipokines.visfatin,代谢评估.脂肪因子.内脂素,Number,"内脂素。<br>单位: ng/mL",18.5
+ovarianFunction.antraldollieleCount,卵巢功能.窦卵泡计数,Number,"窦卵泡计数。<br>**正常**: 5-10个/侧",12
+ovarianFunction.ovarianVolume.left,卵巢功能.卵巢体积.左侧,Number,"左侧卵巢体积。<br>单位: mL<br>**正常**: 3-8",15
+ovarianFunction.ovarianVolume.right,卵巢功能.卵巢体积.右侧,Number,"右侧卵巢体积。<br>单位: mL<br>**正常**: 3-8",18
+ovarianFunction.ovarianMorphology,卵巢功能.卵巢形态,String,"卵巢形态描述",双侧卵巢多囊样改变
+ovarianFunction.dominantFollicle,卵巢功能.优势卵泡,String,"优势卵泡发育。<br>**建议值**: `正常`, `异常`, `缺如`",异常
+ovarianFunction.ovulation.ultrasonographic Evidence,卵巢功能.排卵.超声证据,String,"超声排卵证据。<br>**建议值**: `有`, `无`",无
+ovarianFunction.ovulation.progesteroneEvidence,卵巢功能.排卵.孕酮证据,String,"孕酮排卵证据。<br>**建议值**: `有`, `无`",无
+ovarianFunction.ovulation.temperaturePattern,卵巢功能.排卵.基础体温,String,"基础体温双相。<br>**建议值**: `有`, `无`",无
+ovarianFunction.corpusLuteum,卵巢功能.黄体,String,"黄体功能。<br>**建议值**: `正常`, `不足`, `缺如`",缺如
+endometrialAssessment.thickness,子宫内膜评估.厚度,Number,"子宫内膜厚度。<br>单位: mm",6.5
+endometrialAssessment.pattern,子宫内膜评估.形态,String,"子宫内膜形态。<br>**建议值**: `增殖期`, `分泌期`, `萎缩`",增殖期
+endometrialAssessment.vascularization,子宫内膜评估.血管化,String,"子宫内膜血管化。<br>**建议值**: `正常`, `减少`, `增加`",正常
+endometrialAssessment.abnormalities,子宫内膜评估.异常,String,"子宫内膜异常",轻度增生
+uterineAnatomy.size,子宫解剖.大小,String,"子宫大小",正常大小
+uterineAnatomy.position,子宫解剖.位置,String,"子宫位置。<br>**建议值**: `前位`, `后位`, `中位`",前位
+uterineAnatomy.fibroids,子宫解剖.子宫肌瘤,String,"子宫肌瘤。<br>**建议值**: `无`, `有`",无
+uterineAnatomy.adenomyosis,子宫解剖.子宫腺肌症,String,"子宫腺肌症。<br>**建议值**: `无`, `有`",无
+uterineAnatomy.congenitalAnomalies,子宫解剖.先天异常,String,"子宫先天异常。<br>**建议值**: `无`, `有`",无
+fallopianTubes.patency,输卵管.通畅性,String,"输卵管通畅性。<br>**建议值**: `双侧通畅`, `单侧不通`, `双侧不通`, `未检查`",未检查
+fallopianTubes.hydrosalpinx,输卵管.积水,String,"输卵管积水。<br>**建议值**: `无`, `单侧`, `双侧`",无
+fallopianTubes.adhesions,输卵管.粘连,String,"输卵管粘连。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+maleFactorAssessment.semenAnalysis.performed,男性因素评估.精液分析.是否进行,String,"是否进行精液分析（男性）。<br>**建议值**: `是`, `否`",不适用
+maleFactorAssessment.semenAnalysis.volume,男性因素评估.精液分析.精液量,Number,"精液量（男性）。<br>单位: mL<br>**正常**: ≥1.5",不适用
+maleFactorAssessment.semenAnalysis.concentration,男性因素评估.精液分析.精子浓度,Number,"精子浓度（男性）。<br>单位: ×10⁶/mL<br>**正常**: ≥15",不适用
+maleFactorAssessment.semenAnalysis.totalCount,男性因素评估.精液分析.精子总数,Number,"精子总数（男性）。<br>单位: ×10⁶<br>**正常**: ≥39",不适用
+maleFactorAssessment.semenAnalysis.motility,男性因素评估.精液分析.精子活力,Number,"精子活力（男性）。<br>单位: %<br>**正常**: ≥40%",不适用
+maleFactorAssessment.semenAnalysis.morphology,男性因素评估.精液分析.精子形态,Number,"正常形态精子（男性）。<br>单位: %<br>**正常**: ≥4%",不适用
+maleFactorAssessment.hormonalProfile.testosterone,男性因素评估.激素谱.睾酮,Number,"睾酮（男性）。<br>单位: nmol/L<br>**正常**: 8.64-29.0",不适用
+maleFactorAssessment.hormonalProfile.fsh,男性因素评估.激素谱.FSH,Number,"FSH（男性）。<br>单位: IU/L<br>**正常**: 1.5-12.4",不适用
+maleFactorAssessment.hormonalProfile.lh,男性因素评估.激素谱.LH,Number,"LH（男性）。<br>单位: IU/L<br>**正常**: 1.7-8.6",不适用
+hormonalStimulationTests.gnrhStimulation.performed,激素刺激试验.GnRH刺激试验.是否进行,String,"是否进行GnRH刺激试验。<br>**建议值**: `是`, `否`",否
+hormonalStimulationTests.gnrhStimulation.lhPeak,激素刺激试验.GnRH刺激试验.LH峰值,Number,"GnRH刺激后LH峰值。<br>单位: IU/L（如进行）",未进行
+hormonalStimulationTests.gnrhStimulation.fshPeak,激素刺激试验.GnRH刺激试验.FSH峰值,Number,"GnRH刺激后FSH峰值。<br>单位: IU/L（如进行）",未进行
+hormonalStimulationTests.hcgStimulation.performed,激素刺激试验.hCG刺激试验.是否进行,String,"是否进行hCG刺激试验（男性）。<br>**建议值**: `是`, `否`",不适用
+hormonalStimulationTests.hcgStimulation.testosteroneResponse,激素刺激试验.hCG刺激试验.睾酮反应,Number,"hCG刺激后睾酮。<br>单位: nmol/L（男性，如进行）",不适用
+hormonalStimulationTests.clomipheneTest.performed,激素刺激试验.氯米芬试验.是否进行,String,"是否进行氯米芬刺激试验。<br>**建议值**: `是`, `否`",否
+hormonalStimulationTests.clomipheneTest.lhResponse,激素刺激试验.氯米芬试验.LH反应,Number,"氯米芬刺激后LH。<br>单位: IU/L（如进行）",未进行
+hormonalStimulationTests.clomipheneTest.fshResponse,激素刺激试验.氯米芬试验.FSH反应,Number,"氯米芬刺激后FSH。<br>单位: IU/L（如进行）",未进行
+geneticTesting.karyotype.performed,遗传学检测.核型分析.是否进行,String,"是否进行核型分析。<br>**建议值**: `是`, `否`",否
+geneticTesting.karyotype.result,遗传学检测.核型分析.结果,String,"核型分析结果（如进行）",未进行
+geneticTesting.yChromosomeMicrodeletions.performed,遗传学检测.Y染色体微缺失.是否进行,String,"是否检测Y染色体微缺失（男性）。<br>**建议值**: `是`, `否`",不适用
+geneticTesting.yChromosomeMicrodeletions.result,遗传学检测.Y染色体微缺失.结果,String,"Y染色体微缺失结果（男性，如进行）",不适用
+geneticTesting.fragilex Syndrome.performed,遗传学检测.脆性X综合征.是否进行,String,"是否检测脆性X综合征。<br>**建议值**: `是`, `否`",否
+geneticTesting.fragileXSyndrome.result,遗传学检测.脆性X综合征.结果,String,"脆性X综合征结果（如进行）",未进行
+radiologicalImaging.pelvisUltrasound.performed,影像学检查.盆腔超声.是否进行,String,"是否进行盆腔超声。<br>**建议值**: `是`, `否`",是
+radiologicalImaging.pelvisUltrasound.approach,影像学检查.盆腔超声.检查途径,String,"超声检查途径。<br>**建议值**: `经腹`, `经阴道`, `经直肠`",经阴道
+radiologicalImaging.pelvisUltrasound.findings,影像学检查.盆腔超声.检查结果,String,"盆腔超声检查结果",双侧卵巢多囊样改变
+radiologicalImaging.hysterosalpingography.performed,影像学检查.输卵管造影.是否进行,String,"是否进行输卵管造影。<br>**建议值**: `是`, `否`",否
+radiologicalImaging.hysterosalpingography.findings,影像学检查.输卵管造影.检查结果,String,"输卵管造影结果（如进行）",未进行
+radiologicalImaging.mriPelvis.performed,影像学检查.盆腔MRI.是否进行,String,"是否进行盆腔MRI。<br>**建议值**: `是`, `否`",否
+radiologicalImaging.mriPelvis.findings,影像学检查.盆腔MRI.检查结果,String,"盆腔MRI结果（如进行）",未进行
+specializedTesting.insulinSuppression Test.performed,专项检测.胰岛素抑制试验.是否进行,String,"是否进行胰岛素抑制试验。<br>**建议值**: `是`, `否`",否
+specializedTesting.insulinSuppressionTest.result,专项检测.胰岛素抑制试验.结果,String,"胰岛素抑制试验结果（如进行）",未进行
+specializedTesting.dexamethasone AndrogenSuppressionTest.performed,专项检测.地塞米松雄激素抑制试验.是否进行,String,"是否进行DAST。<br>**建议值**: `是`, `否`",否
+specializedTesting.dexamethasoneAndrogenSuppressionTest.result,专项检测.地塞米松雄激素抑制试验.结果,String,"DAST结果（如进行）",未进行
+specializedTesting.adrenalVenous Sampling.performed,专项检测.肾上腺静脉采样.是否进行,String,"是否进行肾上腺静脉采样。<br>**建议值**: `是`, `否`",否
+specializedTesting.adrenalVenousSampling.result,专项检测.肾上腺静脉采样.结果,String,"肾上腺静脉采样结果（如进行）",未进行
+diagnosisCriteria.pcos.rotterdam,诊断标准.PCOS.鹿特丹标准,String,"Rotterdam标准诊断PCOS。<br>**建议值**: `符合`, `不符合`",符合
+diagnosisCriteria.pcos.andreExcess Society,诊断标准.PCOS.雄激素过多学会标准,String,"AES标准诊断PCOS。<br>**建议值**: `符合`, `不符合`",符合
+diagnosisCriteria.pcos.nih,诊断标准.PCOS.NIH标准,String,"NIH标准诊断PCOS。<br>**建议值**: `符合`, `不符合`",符合
+diagnosisCriteria.metabolicSyndrome.idf,诊断标准.代谢综合征.IDF标准,String,"IDF标准诊断代谢综合征。<br>**建议值**: `符合`, `不符合`",符合
+diagnosisCriteria.metabolicSyndrome.ncepAtp3,诊断标准.代谢综合征.NCEP ATP3标准,String,"NCEP ATP3标准诊断代谢综合征。<br>**建议值**: `符合`, `不符合`",符合
+diagnosisCriteria.hypogonadism.male,诊断标准.性腺功能减退.男性,String,"男性性腺功能减退诊断（男性）。<br>**建议值**: `符合`, `不符合`",不适用
+diagnosisCriteria.infertility.primary,诊断标准.不孕症.原发性,String,"原发性不孕症诊断。<br>**建议值**: `符合`, `不符合`",符合
+diagnosisCriteria.infertility.secondary,诊断标准.不孕症.继发性,String,"继发性不孕症诊断。<br>**建议值**: `符合`, `不符合`",不符合
+treatmentResponse.lifestyle.diet,治疗反应.生活方式.饮食,String,"饮食治疗反应。<br>**建议值**: `良好`, `一般`, `较差`",一般
+treatmentResponse.lifestyle.exercise,治疗反应.生活方式.运动,String,"运动治疗反应。<br>**建议值**: `良好`, `一般`, `较差`",一般
+treatmentResponse.lifestyle.weightLoss,治疗反应.生活方式.体重减轻,Number,"体重减轻幅度。<br>单位: kg",5.5
+treatmentResponse.medication.metformin,治疗反应.药物.二甲双胍,String,"二甲双胍治疗反应。<br>**建议值**: `有效`, `无效`, `未使用`",有效
+treatmentResponse.medication.clomiphene,治疗反应.药物.氯米芬,String,"氯米芬治疗反应。<br>**建议值**: `排卵`, `无排卵`, `未使用`",排卵
+treatmentResponse.medication.letrozole,治疗反应.药物.来曲唑,String,"来曲唑治疗反应。<br>**建议值**: `排卵`, `无排卵`, `未使用`",未使用
+treatmentResponse.medication.gonadotropins,治疗反应.药物.促性腺激素,String,"促性腺激素治疗反应。<br>**建议值**: `有效`, `无效`, `未使用`",未使用
+treatmentResponse.medication.oralContraceptives,治疗反应.药物.口服避孕药,String,"OCP治疗反应。<br>**建议值**: `有效`, `无效`, `未使用`",有效
+treatmentResponse.medication.antiandrogens,治疗反应.药物.抗雄激素,String,"抗雄激素治疗反应。<br>**建议值**: `有效`, `无效`, `未使用`",有效
+treatmentResponse.surgicalInterventions.laparoscopy,治疗反应.外科干预.腹腔镜,String,"腹腔镜手术。<br>**建议值**: `已进行`, `计划中`, `未考虑`",未考虑
+treatmentResponse.surgicalInterventions.ovarianDrilling,治疗反应.外科干预.卵巢打孔,String,"卵巢打孔术。<br>**建议值**: `已进行`, `计划中`, `未考虑`",未考虑
+treatmentResponse.assistedReproduction.ivf,治疗反应.辅助生殖.体外受精,String,"IVF治疗。<br>**建议值**: `已进行`, `计划中`, `未考虑`",计划中
+treatmentResponse.assistedReproduction.icsi,治疗反应.辅助生殖.单精子注射,String,"ICSI治疗。<br>**建议值**: `已进行`, `计划中`, `未考虑`",计划中
+treatmentResponse.assistedReproduction.iui,治疗反应.辅助生殖.人工授精,String,"IUI治疗。<br>**建议值**: `已进行`, `计划中`, `未考虑`",已进行
+complications.pregnancyComplications.gestationalDiabetes,并发症.妊娠并发症.妊娠期糖尿病,String,"妊娠期糖尿病风险。<br>**建议值**: `低`, `中`, `高`",高
+complications.pregnancyComplications.gestationalHypertension,并发症.妊娠并发症.妊娠期高血压,String,"妊娠期高血压风险。<br>**建议值**: `低`, `中`, `高`",中
+complications.pregnancyComplications.preeclampsia,并发症.妊娠并发症.子痫前期,String,"子痫前期风险。<br>**建议值**: `低`, `中`, `高`",中
+complications.pregnancyComplications.preterm Birth,并发症.妊娠并发症.早产,String,"早产风险。<br>**建议值**: `低`, `中`, `高`",中
+complications.pregnancyComplications.macrosomia,并发症.妊娠并发症.巨大儿,String,"巨大儿风险。<br>**建议值**: `低`, `中`, `高`",中
+complications.long TermComplications.type2Diabetes,并发症.远期并发症.2型糖尿病,String,"2型糖尿病风险。<br>**建议值**: `低`, `中`, `高`",高
+complications.longTermComplications.cardiovascularDisease,并发症.远期并发症.心血管疾病,String,"心血管疾病风险。<br>**建议值**: `低`, `中`, `高`",中
+complications.longTermComplications.endometrialCancer,并发症.远期并发症.子宫内膜癌,String,"子宫内膜癌风险。<br>**建议值**: `低`, `中`, `高`",中
+complications.longTermComplications.breastCancer,并发症.远期并发症.乳腺癌,String,"乳腺癌风险。<br>**建议值**: `低`, `中`, `高`",低
+psychosocialFactors.bodyImage,心理社会因素.体像,String,"体像困扰。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+psychosocialFactors.selfEsteem,心理社会因素.自尊,String,"自尊水平。<br>**建议值**: `正常`, `轻度下降`, `明显下降`",轻度下降
+psychosocialFactors.depression,心理社会因素.抑郁,String,"抑郁症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+psychosocialFactors.anxiety,心理社会因素.焦虑,String,"焦虑症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+psychosocialFactors.fertilityStress,心理社会因素.生育压力,String,"生育相关压力。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",重度
+psychosocialFactors.relationshipQuality,心理社会因素.关系质量,String,"伴侣关系质量。<br>**建议值**: `良好`, `一般`, `较差`",一般
+psychosocialFactors.socialSupport,心理社会因素.社会支持,String,"社会支持系统。<br>**建议值**: `充分`, `一般`, `缺乏`",一般
+qualityOfLife.physicalFunction,生活质量.身体功能,String,"身体功能评估。<br>**建议值**: `良好`, `一般`, `较差`",一般
+qualityOfLife.emotional Wellbeing,生活质量.情绪健康,String,"情绪健康状态。<br>**建议值**: `良好`, `一般`, `较差`",一般
+qualityOfLife.sexualFunction,生活质量.性功能,String,"性功能状态。<br>**建议值**: `正常`, `轻度异常`, `明显异常`",轻度异常
+qualityOfLife.workProductivity,生活质量.工作效率,String,"工作效率影响。<br>**建议值**: `无影响`, `轻度影响`, `明显影响`",轻度影响
+qualityOfLife.socialActivity,生活质量.社交活动,String,"社交活动参与。<br>**建议值**: `正常`, `减少`, `明显减少`",减少
+economicBurden.directMedicalCosts,经济负担.直接医疗费用,String,"年度医疗费用",约2万元
+economicBurden.indirectCosts.lostProductivity,经济负担.间接费用.生产力损失,String,"生产力损失评估",轻度影响
+economicBurden.fertilityTreatmentCosts,经济负担.生育治疗费用,String,"生育治疗费用",促排卵治疗约8000元
+economicBurden.long TermHealthcareCosts,经济负担.远期医疗费用,String,"远期医疗费用预估",糖尿病并发症风险增加费用
+patientEducation.diseaseKnowledge,患者教育.疾病认知,String,"疾病认知水平。<br>**建议值**: `差`, `一般`, `良好`",良好
+patientEducation.selfManagementSkills,患者教育.自我管理技能,String,"自我管理技能。<br>**建议值**: `差`, `一般`, `良好`",一般
+patientEducation.lifestyleModification Knowledge,患者教育.生活方式改变认知,String,"生活方式改变认知。<br>**建议值**: `差`, `一般`, `良好`",良好
+patientEducation.fertilityAwareness,患者教育.生育认知,String,"生育相关知识。<br>**建议值**: `差`, `一般`, `良好`",一般
+patientEducation.treatment Compliance,患者教育.治疗依从性,String,"治疗依从性。<br>**建议值**: `差`, `一般`, `良好`",一般
+multidisciplinaryCare.reproductive Endocrinologist,多学科协作.生殖内分泌科,String,"生殖内分泌科参与。<br>**建议值**: `主管`, `会诊`, `转诊`",主管
+multidisciplinaryCare.endocrinologist,多学科协作.内分泌科,String,"内分泌科参与。<br>**建议值**: `主管`, `会诊`, `转诊`",会诊
+multidisciplinaryCare.gynecologist,多学科协作.妇科,String,"妇科参与。<br>**建议值**: `主管`, `会诊`, `转诊`",会诊
+multidisciplinaryCare.andrologist,多学科协作.男科,String,"男科参与（男性）。<br>**建议值**: `主管`, `会诊`, `转诊`",不适用
+multidisciplinaryCare.nutritionist,多学科协作.营养师,String,"营养师参与。<br>**建议值**: `必需`, `建议`, `可选`",建议
+multidisciplinaryCare.mentalHealthProfessional,多学科协作.心理健康专家,String,"心理健康专家参与。<br>**建议值**: `必需`, `建议`, `可选`",建议
+multidisciplinaryCare.dermatologist,多学科协作.皮肤科,String,"皮肤科参与。<br>**建议值**: `主管`, `会诊`, `转诊`",可选
+followUpPlan.monitoring Frequency,随访计划.监测频率,String,"随访监测频率",每3个月复查
+followUpPlan.hormonalReassessment,随访计划.激素重评,String,"激素重新评估计划",治疗3个月后复查性激素
+followUpPlan.metabolicReassessment,随访计划.代谢重评,String,"代谢重新评估计划",每6个月评估糖脂代谢
+followUpPlan.fertilityFollowUp,随访计划.生育随访,String,"生育相关随访",排卵监测，必要时辅助生殖
+followUpPlan.complicationScreening,随访计划.并发症筛查,String,"并发症筛查计划",年度子宫内膜评估
+followUpPlan.lifestyleSupport,随访计划.生活方式支持,String,"生活方式持续支持",营养师和运动指导
+prognosisAssessment.fertility.shortTerm,预后评估.生育.短期预后,String,"短期生育预后。<br>**建议值**: `良好`, `一般`, `较差`",一般
+prognosisAssessment.fertility.longTerm,预后评估.生育.长期预后,String,"长期生育预后。<br>**建议值**: `良好`, `一般`, `较差`",一般
+prognosisAssessment.metabolic.progressionRisk,预后评估.代谢.进展风险,String,"代谢异常进展风险。<br>**建议值**: `低`, `中`, `高`",高
+prognosisAssessment.metabolic.diabetesRisk,预后评估.代谢.糖尿病风险,String,"糖尿病发生风险。<br>**建议值**: `低`, `中`, `高`",高
+prognosisAssessment.treatmentResponse.likelihood,预后评估.治疗反应.可能性,String,"治疗反应可能性。<br>**建议值**: `高`, `中`, `低`",中
+prognosisAssessment.complication.cancerRisk,预后评估.并发症.癌症风险,String,"远期癌症风险。<br>**建议值**: `低`, `中`, `高`",中
+preventiveStrategies.lifestyle Interventions,预防策略.生活方式干预,String,"生活方式干预措施",低糖饮食和规律运动
+preventiveStrategies.weightManagement,预防策略.体重管理,String,"体重管理策略",目标减重5-10%
+preventiveStrategies.metabolicMonitoring,预防策略.代谢监测,String,"代谢监测策略",定期血糖血脂监测
+preventiveStrategies.cancerScreening,预防策略.癌症筛查,String,"癌症筛查策略",定期妇科检查和子宫内膜评估
+researchParticipation.clinicalTrials,研究参与.临床试验,String,"临床试验参与意愿。<br>**建议值**: `愿意`, `不愿意`, `考虑中`",考虑中
+researchParticipation.biobanking,研究参与.生物样本库,String,"生物样本库参与",愿意提供血液和组织样本
+researchParticipation.longitudinal Studies,研究参与.纵向研究,String,"纵向研究参与",愿意参加长期随访研究
+specialConsiderations.adolescent,特殊考虑.青少年,String,"青少年特殊考虑。<br>**建议值**: `不适用`, `需要考虑`",不适用
+specialConsiderations.elderly,特殊考虑.老年,String,"老年患者特殊考虑。<br>**建议值**: `不适用`, `需要考虑`",不适用
+specialConsiderations.ethnicity,特殊考虑.种族,String,"种族特殊考虑",亚洲人群PCOS特点
+specialConsiderations.concomitant Medications,特殊考虑.合并用药,String,"合并用药特殊考虑",无特殊用药
+specialConsiderations.comorbidities,特殊考虑.合并症,String,"合并症特殊考虑",甲状腺功能亢进症
+emergencyManagement.ovarianHyperstimulation,急症处理.卵巢过度刺激,String,"卵巢过度刺激综合征风险。<br>**建议值**: `低`, `中`, `高`",中
+emergencyManagement.severeMetabolic Decompensation,急症处理.严重代谢失代偿,String,"严重代谢失代偿风险。<br>**建议值**: `低`, `中`, `高`",低
+emergencyManagement.psycho logical Crisis,急症处理.心理危机,String,"心理危机风险。<br>**建议值**: `低`, `中`, `高`",中
+technologyIntegration.hormone MonitoringApps,技术整合.激素监测应用,String,"激素监测APP使用",使用月经周期追踪APP
+technologyIntegration.telemedicine,技术整合.远程医疗,String,"远程医疗应用",定期远程咨询
+technologyIntegration.wearableDevices,技术整合.可穿戴设备,String,"可穿戴设备使用",使用智能手表监测活动
+diagnosisImpression,诊断/印象,String,医生对生殖内分泌代谢检查结果的综合诊断或印象。,多囊卵巢综合征伴胰岛素抵抗，继发性闭经，原发性不孕症
+recommendation,建议,String,医生根据检查结果提出的建议。,生活方式干预，二甲双胍改善胰岛素抵抗，氯米芬促排卵，必要时辅助生殖技术

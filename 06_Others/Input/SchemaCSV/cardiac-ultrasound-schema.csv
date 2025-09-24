@@ -1,0 +1,28 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行超声检查的日期,2025-08-15
+leftVentricularEndDiastolicDiameter,左心室舒张末期内径 (LVEDD),Number,"左心室舒张末期的内部直径。<br>单位: mm",48
+leftVentricularEndSystolicDiameter,左心室收缩末期内径 (LVESD),Number,"左心室收缩末期的内部直径。<br>单位: mm",30
+interventricularSeptalThickness,室间隔厚度 (IVS),Number,"室间隔在舒张末期的厚度。<br>单位: mm",9
+leftVentricularPosteriorWallThickness,左室后壁厚度 (LVPW),Number,"左室后壁在舒张末期的厚度。<br>单位: mm",9
+leftAtrialDiameter,左心房内径 (LAD),Number,"左心房的前后径。<br>单位: mm",35
+aorticRootDiameter,主动脉根部内径 (AOD),Number,"主动脉根部的直径。<br>单位: mm",32
+ejectionFraction,射血分数 (EF),String,左心室射血分数，是评估心脏收缩功能的关键指标，通常为百分比,65%
+fractionalShortening,缩短分数 (FS),String,左心室短轴缩短率，反映心脏收缩功能，通常为百分比,35%
+globalLeftVentricularStrain,左室整体纵向应变 (GLS),Number,"评估左室整体收缩功能的敏感指标。<br>单位: %",-18
+pulmonaryArterySystolicPressure,肺动脉收缩压 (PASP),Number,"评估肺动脉高压的指标。<br>单位: mmHg",30
+wallMotionSegments.segmentName,室壁运动节段列表.节段名称,String,"室壁运动节段列表，每个对象描述一个节段的运动情况。室壁节段的名称。<br>**建议值**: `基底段前壁`, `基底段前间隔`, `基底段下间隔`, `基底段下壁`, `基底段后壁`, `基底段侧壁`, `中间段前壁`, `中间段前间隔`, `中间段下间隔`, `中间段下壁`, `中间段后壁`, `中间段侧壁`, `心尖段前壁`, `心尖段间隔`, `心尖段下壁`, `心尖段侧壁`, `心尖帽`",基底段前壁
+wallMotionSegments.motion,室壁运动节段列表.运动情况,String,"室壁运动节段列表，每个对象描述一个节段的运动情况。该节段的运动情况。<br>**建议值**: `正常`, `运动减弱`, `运动消失`, `反向运动`, `运动不协调`",运动减弱
+valves.valveName,心脏瓣膜列表.瓣膜名称,String,"心脏瓣膜列表，每个对象描述一个瓣膜的结构和功能。瓣膜的名称。<br>**建议值**: `主动脉瓣`, `二尖瓣`, `三尖瓣`, `肺动脉瓣`",主动脉瓣
+valves.stenosis,心脏瓣膜列表.狭窄,String,"心脏瓣膜列表，每个对象描述一个瓣膜的结构和功能。瓣膜狭窄程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+valves.insufficiency,心脏瓣膜列表.关闭不全/返流,String,"心脏瓣膜列表，每个对象描述一个瓣膜的结构和功能。瓣膜关闭不全或返流程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+valves.vegetation,心脏瓣膜列表.赘生物,String,"心脏瓣膜列表，每个对象描述一个瓣膜的结构和功能。是否存在赘生物。<br>**建议值**: `无`, `有`",无
+valves.calcification,心脏瓣膜列表.钙化,String,"心脏瓣膜列表，每个对象描述一个瓣膜的结构和功能。瓣膜钙化情况。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",有
+valves.otherFindings,心脏瓣膜列表.其他发现,String,心脏瓣膜列表，每个对象描述一个瓣膜的结构和功能。瓣膜的其他描述性发现（如：瓣叶增厚、脱垂等）,瓣叶增厚
+diastolicFunction.eA_ratio,舒张功能.E/A比值,Number,左心室舒张功能的评估指标。舒张早期和晚期二尖瓣血流速度峰值比值,1.2
+diastolicFunction.ePrime_e_ratio,舒张功能.E/e'比值,Number,左心室舒张功能的评估指标。舒张早期二尖瓣血流速度峰值与二尖瓣环舒张早期运动速度峰值比值,8
+diastolicFunction.leftAtrialVolumeIndex,舒张功能.左心房容积指数,Number,左心室舒张功能的评估指标。左心房容积指数，单位ml/m²,25
+rightVentricularFunction.tapse,右心功能.TAPSE,Number,右心室功能的评估指标。三尖瓣环收缩期位移，评估右心室收缩功能，单位mm,20
+rightVentricularFunction.rvfac,右心功能.RVFAC,Number,右心室功能的评估指标。右室面积变化分数，评估右室整体收缩功能，单位%,45
+pericardialEffusion,心包积液,String,"是否存在心包积液及其量的描述。<br>**建议值**: `无`, `微量`, `少量`, `中量`, `大量`",无
+diagnosisImpression,诊断/印象,String,医生对超声检查的诊断或初步印象。,左室收缩功能正常
+recommendation,建议,String,医生根据检查结果提出的建议。,定期复查

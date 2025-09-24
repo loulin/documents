@@ -1,0 +1,230 @@
+fieldName,fieldNameCN,dataType,description,examples
+examDate,检查日期,String,检查日期，格式YYYY-MM-DD,2024-12-01
+patientID,患者唯一标识符,String,患者的唯一标识符,P202401001
+patientName,患者姓名,String,患者的姓名,张三
+clinicalIndication,临床适应症,String,进行护理评估的临床适应症,糖尿病标准化护理评估
+diagnosisImpression,诊断印象,String,基于评估结果的护理诊断,知识缺乏/自我护理能力缺陷
+recommendation,建议,String,基于评估结果的护理建议,个体化护理计划/健康教育加强
+
+# 基本信息
+nursingDate,护理评估日期,String,护理评估日期，格式YYYY-MM-DD,2024-12-01
+nurseID,护士编号,String,评估护士的编号,N202401001
+nurseName,护士姓名,String,评估护士的姓名,李护士
+nursingShift,护理班次,String,护理班次,白班/夜班/小夜班
+wardLocation,病房位置,String,患者所在病房位置,内分泌科A区12床
+admissionDate,入院日期,String,患者入院日期，格式YYYY-MM-DD,2024-11-28
+
+# 患者基本信息
+ageAtAssessment,评估时年龄,Number,患者评估时的年龄（岁）,58
+gender,性别,String,患者性别,男/女
+primaryDiagnosis,主要诊断,String,患者主要诊断,2型糖尿病
+secondaryDiagnosis,次要诊断,String,患者次要诊断,高血压/血脂异常
+diabetesType,糖尿病类型,String,患者的糖尿病类型,1型糖尿病/2型糖尿病/妊娠糖尿病/其他特殊类型
+diabetesDuration,糖尿病病程,Number,患者糖尿病诊断时间（年）,12.5
+currentTreatment,当前治疗方案,String,患者当前的治疗方案,口服药物/胰岛素/联合治疗/生活方式干预
+
+# 生命体征评估
+bodyTemperature,体温,Number,体温（摄氏度）,36.8
+systolicBP,收缩压,Number,收缩压（mmHg）,145
+diastolicBP,舒张压,Number,舒张压（mmHg）,88
+heartRate,心率,Number,心率（次/分钟）,78
+respiratoryRate,呼吸频率,Number,呼吸频率（次/分钟）,18
+oxygenSaturation,血氧饱和度,Number,血氧饱和度（%）,98
+painScore,疼痛评分,Number,疼痛评分（0-10分），0分为无痛,2
+
+# 血糖管理评估
+currentBloodGlucose,当前血糖,Number,当前血糖水平（mmol/L）,8.5
+fastingGlucose,空腹血糖,Number,空腹血糖（mmol/L）,7.8
+postprandialGlucose,餐后血糖,Number,餐后2小时血糖（mmol/L）,12.3
+hbA1cLevel,糖化血红蛋白,Number,最近一次糖化血红蛋白水平（%）,8.2
+glucoseMonitoringFrequency,血糖监测频率,Number,每天血糖监测次数,4
+glucoseRecordCompliance,血糖记录依从性,String,血糖记录依从性,良好/一般/差
+hypoglycemiaHistory,低血糖史,String,近期低血糖发生情况,无/轻度/中度/重度
+hyperglycemiaSymptoms,高血糖症状,String,高血糖相关症状,多饮/多尿/多食/消瘦
+
+# 营养状况评估
+height,身高,Number,身高（厘米）,168
+weight,体重,Number,体重（公斤）,75
+BMI,体重指数,Number,体重指数（kg/m²）,26.6
+waistCircumference,腰围,Number,腰围（厘米）,95
+nutritionStatus,营养状况,String,营养状况评估,正常/营养不良/营养过剩/肥胖
+appetiteStatus,食欲状况,String,食欲状况,良好/一般/差/食欲亢进
+dietCompliance,饮食依从性,String,糖尿病饮食依从性,良好/一般/差
+dailyCalorieIntake,日热量摄入,Number,估计日热量摄入（千卡）,1800
+proteinIntake,蛋白质摄入,String,蛋白质摄入情况,充足/不足/过量
+carbIntakePattern,碳水化合物摄入模式,String,碳水化合物摄入模式,定时定量/不规律/过量
+
+# 活动能力评估
+mobilityLevel,活动能力等级,String,活动能力等级,完全自理/需要协助/卧床休息
+walkingAid,助行器具,String,是否使用助行器具,无/拐杖/助行器/轮椅
+exerciseCapacity,运动能力,String,运动能力评估,正常/轻度受限/中度受限/重度受限
+fallRisk,跌倒风险,String,跌倒风险评估,低风险/中风险/高风险
+balanceStatus,平衡能力,String,平衡能力状况,正常/轻度异常/明显异常
+enduranceLevel,耐力水平,String,活动耐力水平,正常/轻度下降/明显下降
+
+# 皮肤完整性评估
+skinIntegrity,皮肤完整性,String,皮肤完整性状况,完整/轻度受损/明显受损
+pressureUlcerRisk,压疮风险,String,压疮风险评估,低风险/中风险/高风险
+skinColor,皮肤颜色,String,皮肤颜色,正常/苍白/潮红/发绀/黄染
+skinTemperature,皮肤温度,String,皮肤温度,正常/偏凉/偏热
+skinMoisture,皮肤湿润度,String,皮肤湿润度,正常/干燥/过湿
+skinElasticity,皮肤弹性,String,皮肤弹性,正常/下降/明显下降
+woundPresence,伤口存在,String,是否存在伤口,无/有
+woundDescription,伤口描述,String,伤口具体描述,位置/大小/深度/渗出情况
+
+# 足部护理评估
+footSkinCondition,足部皮肤状况,String,足部皮肤状况,正常/干燥/龟裂/感染
+footTemperature,足部温度,String,足部温度,正常/偏凉/偏热
+footSensation,足部感觉,String,足部感觉,正常/减退/麻木/疼痛
+footPulse,足部脉搏,String,足背动脉搏动,正常/减弱/消失
+footDeformity,足部畸形,String,足部畸形情况,无/轻度/中度/重度
+footUlcer,足部溃疡,String,足部溃疡情况,无/有
+nailCondition,指甲状况,String,趾甲状况,正常/增厚/嵌甲/感染
+footwearAppropriate,鞋袜合适性,String,鞋袜合适性,合适/不合适
+
+# 认知功能评估
+consciousnessLevel,意识水平,String,意识水平,清醒/嗜睡/昏迷
+orientationStatus,定向力,String,定向力状况,正常/时间定向障碍/地点定向障碍/人物定向障碍
+memoryFunction,记忆功能,String,记忆功能,正常/轻度受损/中度受损/重度受损
+learningAbility,学习能力,String,学习能力评估,正常/轻度下降/明显下降
+decisionMakingCapacity,决策能力,String,决策能力,正常/需要协助/无决策能力
+communicationAbility,沟通能力,String,沟通能力,正常/轻度障碍/明显障碍
+
+# 心理状态评估
+moodStatus,情绪状态,String,情绪状态,稳定/焦虑/抑郁/烦躁
+anxietyLevel,焦虑程度,Number,焦虑程度评分（1-5分），1分为无焦虑,3
+depressionSymptoms,抑郁症状,String,抑郁症状,无/轻度/中度/重度
+copingMechanism,应对机制,String,应对机制,积极/消极/回避
+stressorIdentification,压力源识别,String,主要压力源,疾病诊断/治疗负担/经济压力/家庭问题
+selfEsteem,自尊感,String,自尊感水平,正常/下降/明显下降
+bodyImageConcern,体像关注,String,体像关注程度,无关注/轻度关注/明显关注
+
+# 社会支持评估
+familySupport,家庭支持,String,家庭支持情况,良好/一般/缺乏
+caregiverAvailability,照护者可获得性,String,照护者可获得性,有/部分有/无
+socialNetworkStrength,社会网络强度,String,社会网络强度,强/中等/弱
+financialStatus,经济状况,String,经济状况,良好/一般/困难
+insuranceCoverage,保险覆盖,String,医疗保险覆盖情况,完全覆盖/部分覆盖/无覆盖
+communityResourceAccess,社区资源获取,String,社区资源获取能力,良好/一般/差
+
+# 自我护理能力评估
+selfCareCapacity,自我护理能力,String,总体自我护理能力,完全独立/部分独立/需要帮助/完全依赖
+medicationSelfManagement,用药自我管理,String,用药自我管理能力,独立/需要提醒/需要协助/无能力
+dietSelfManagement,饮食自我管理,String,饮食自我管理能力,独立/需要指导/需要监督/无能力
+glucoseMonitoringSelfCare,血糖监测自护,String,血糖监测自我护理能力,独立/需要指导/需要协助/无能力
+footCareSelfManagement,足部护理自管理,String,足部护理自我管理能力,独立/需要指导/需要协助/无能力
+exerciseSelfManagement,运动自我管理,String,运动自我管理能力,独立/需要指导/需要监督/无能力
+
+# 知识水平评估
+diabetesKnowledgeLevel,糖尿病知识水平,String,糖尿病知识水平,充分/一般/缺乏
+medicationKnowledge,药物知识,String,药物相关知识,充分/一般/缺乏
+dietKnowledge,饮食知识,String,糖尿病饮食知识,充分/一般/缺乏
+exerciseKnowledge,运动知识,String,糖尿病运动知识,充分/一般/缺乏
+complicationKnowledge,并发症知识,String,并发症相关知识,充分/一般/缺乏
+emergencyKnowledge,急症处理知识,String,急症处理知识,充分/一般/缺乏
+
+# 健康行为评估
+medicationCompliance,用药依从性,String,用药依从性,良好/一般/差
+dietCompliance,饮食依从性,String,饮食依从性,良好/一般/差
+exerciseCompliance,运动依从性,String,运动依从性,良好/一般/差
+smokingStatus,吸烟状况,String,吸烟状况,从不吸烟/已戒烟/偶尔吸烟/每日吸烟
+alcoholConsumption,饮酒情况,String,饮酒情况,不饮酒/偶尔饮酒/定期饮酒/过量饮酒
+sleepPattern,睡眠模式,String,睡眠模式,正常/轻度异常/明显异常
+
+# 环境安全评估
+homeEnvironmentSafety,家庭环境安全,String,家庭环境安全性,安全/一般/存在风险
+medicationStorageSafety,药物储存安全,String,药物储存安全性,安全/需要改善/存在风险
+glucometerMaintenanceKnowledge,血糖仪维护知识,String,血糖仪维护知识,充分/一般/缺乏
+emergencyContactAvailability,紧急联系可用性,String,紧急联系可用性,可用/部分可用/不可用
+medicalSupplyAccessibility,医疗用品可及性,String,医疗用品可及性,良好/一般/困难
+
+# 护理诊断
+primaryNursingDiagnosis,主要护理诊断,String,主要护理诊断,知识缺乏/自我护理能力缺陷/感染风险
+secondaryNursingDiagnosis,次要护理诊断,String,次要护理诊断,焦虑/低效性健康维护/皮肤完整性受损风险
+nursingPriority,护理优先级,String,护理优先级,高/中/低
+interventionUrgency,干预紧急性,String,干预紧急性,紧急/较紧急/一般
+patientRiskLevel,患者风险等级,String,患者风险等级,低风险/中风险/高风险
+
+# 护理目标设定
+shortTermGoals,短期目标,String,短期护理目标（1-7天）,血糖稳定/知识掌握/技能提高
+mediumTermGoals,中期目标,String,中期护理目标（1-4周）,自我管理能力提高/并发症预防
+longTermGoals,长期目标,String,长期护理目标（1-6个月）,血糖达标/生活质量改善
+goalAchievability,目标可达性,String,目标可达性评估,可达成/需要调整/不切实际
+patientGoalConsent,患者目标同意,String,患者对目标的同意程度,完全同意/部分同意/不同意
+
+# 护理干预计划
+educationPlan,教育计划,String,健康教育计划,个体化教育/小组教育/家庭教育
+skillTrainingPlan,技能培训计划,String,技能培训计划,血糖监测/注射技术/足部护理
+supportPlan,支持计划,String,支持计划,心理支持/家庭支持/同伴支持
+monitoringPlan,监测计划,String,监测计划,血糖监测/并发症监测/行为监测
+coordinationPlan,协调计划,String,协调护理计划,多学科协调/转介计划/资源协调
+
+# 护理实施评估
+interventionImplemented,已实施干预,String,已实施的护理干预,健康教育/技能指导/心理支持/环境改善
+patientResponse,患者反应,String,患者对护理干预的反应,积极配合/部分配合/不配合
+familyInvolvement,家属参与,String,家属参与护理情况,积极参与/部分参与/未参与
+barrierEncountered,遇到障碍,String,护理实施遇到的障碍,知识缺乏/动机不足/资源限制/文化因素
+interventionAdjustment,干预调整,String,干预计划调整情况,无需调整/轻微调整/重大调整
+
+# 护理结果评估
+goalAchievement,目标达成,String,护理目标达成情况,完全达成/部分达成/未达成
+knowledgeImprovement,知识改善,String,患者知识改善情况,显著改善/有所改善/无改善
+skillImprovement,技能改善,String,患者技能改善情况,显著改善/有所改善/无改善
+behaviorChange,行为改变,String,患者行为改变情况,积极改变/轻微改变/无改变
+clinicalOutcome,临床结局,String,临床结局改善情况,显著改善/有所改善/无改善/恶化
+
+# 出院准备评估
+dischargeReadiness,出院准备度,String,出院准备度评估,完全准备好/基本准备好/未准备好
+homeCareCapacity,居家护理能力,String,居家护理能力,充分/一般/不足
+followUpArrangement,随访安排,String,出院后随访安排,已安排/需要安排/无需安排
+emergencyPlanUnderstanding,急症计划理解,String,对急症处理计划理解程度,充分理解/基本理解/不理解
+medicationManagementReadiness,用药管理准备度,String,出院后用药管理准备度,完全准备好/需要支持/不充分
+
+# 护理质量指标
+nursingTimeSpent,护理时间投入,Number,护理时间投入（分钟/天）,120
+patientSatisfaction,患者满意度,Number,患者对护理满意度评分（1-5分）,4.2
+familySatisfaction,家属满意度,Number,家属对护理满意度评分（1-5分）,4.0
+nursingDocumentationQuality,护理文书质量,String,护理文书质量,优秀/良好/一般/需改进
+continuityOfCare,护理连续性,String,护理连续性,良好/一般/差
+
+# 护理安全评估
+medicationErrorRisk,用药错误风险,String,用药错误风险,低风险/中风险/高风险
+fallRiskAssessment,跌倒风险评估,String,跌倒风险评估,低风险/中风险/高风险
+infectionRiskAssessment,感染风险评估,String,感染风险评估,低风险/中风险/高风险
+pressureInjuryRisk,压力性损伤风险,String,压力性损伤风险,低风险/中风险/高风险
+safetyMeasuresImplemented,安全措施实施,String,实施的安全措施,床栏/防滑/标识/监护
+
+# 护理资源利用
+nursingResourceRequirement,护理资源需求,String,护理资源需求,标准护理/加强护理/特殊护理
+specialEquipmentNeeded,特殊设备需求,String,特殊设备需求,血糖仪/胰岛素笔/压力袜/支具
+nutritionConsultationNeeded,营养咨询需求,String,营养师咨询需求,需要/不需要
+psychologyConsultationNeeded,心理咨询需求,String,心理师咨询需求,需要/不需要
+socialWorkReferral,社工转介需求,String,社工转介需求,需要/不需要
+
+# 护理教育评估
+educationMethodPreference,教育方式偏好,String,患者教育方式偏好,口头讲解/书面材料/视频演示/实际操作
+learningBarriers,学习障碍,String,学习障碍,语言障碍/视力障碍/听力障碍/认知障碍/文化障碍
+educationMaterialProvided,提供教育材料,String,提供的教育材料,手册/视频/模型/应用程序
+educationEffectiveness,教育效果,String,健康教育效果,良好/一般/差
+retestingRequired,重新测试需求,String,是否需要重新测试知识技能,需要/不需要
+
+# 多学科协作评估
+teamCommunication,团队沟通,String,多学科团队沟通情况,良好/一般/需改善
+physiciamCollaboration,医师协作,String,与医师协作情况,良好/一般/需改善
+nutritionistCollaboration,营养师协作,String,与营养师协作情况,良好/一般/需改善/未涉及
+pharmacistCollaboration,药师协作,String,与药师协作情况,良好/一般/需改善/未涉及
+socialWorkerCollaboration,社工协作,String,与社工协作情况,良好/一般/需改善/未涉及
+
+# 护理记录和文档
+nursingAssessmentDate,护理评估日期,String,护理评估完成日期，格式YYYY-MM-DD,2024-12-01
+assessmentUpdateFrequency,评估更新频率,String,护理评估更新频率,每日/每3天/每周/根据需要
+nursingPlanReviewDate,护理计划复查日期,String,护理计划复查日期，格式YYYY-MM-DD,2024-12-03
+reassessmentScheduled,重新评估安排,String,重新评估安排,已安排/需要安排/无需安排
+handoffCommunication,交班沟通,String,护理交班沟通质量,详细准确/基本完整/需要改善
+
+# 护理质量改进
+improvementOpportunities,改进机会,String,识别的护理改进机会,教育方法/护理流程/资源配置/团队协作
+bestPracticeImplementation,最佳实践实施,String,最佳护理实践实施情况,已实施/部分实施/未实施
+patientOutcomeTracking,患者结局跟踪,String,患者结局跟踪计划,已建立/需要建立/无需建立
+qualityIndicatorMonitoring,质量指标监测,String,护理质量指标监测,定期监测/偶尔监测/未监测
+continuousImprovementPlan,持续改进计划,String,护理质量持续改进计划,已制定/需要制定/无需制定

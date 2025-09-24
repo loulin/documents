@@ -1,0 +1,231 @@
+fieldName,fieldNameCN,dataType,description,examples
+examDate,检查日期,String,检查日期，格式YYYY-MM-DD,2024-12-01
+patientID,患者唯一标识符,String,患者的唯一标识符,P202401001
+patientName,患者姓名,String,患者的姓名,张三
+clinicalIndication,临床适应症,String,进行康复评估的临床适应症,内分泌疾病康复评估
+diagnosisImpression,诊断印象,String,基于评估结果的诊断印象,康复需求中等/功能障碍轻度
+recommendation,建议,String,基于评估结果的建议,制定个性化康复计划和目标
+
+# 基本信息
+ageAtAssessment,评估时年龄,Number,患者评估时的年龄（岁）,55
+gender,性别,String,患者性别,男/女
+primaryEndocrineDisease,主要内分泌疾病,String,主要内分泌疾病诊断,糖尿病/甲状腺疾病/肾上腺疾病/垂体疾病/性腺疾病
+secondaryDiagnoses,次要诊断,String,相关次要诊断,高血压/血脂异常/骨质疏松/心血管疾病
+diseaseOnset,疾病起病时间,String,疾病起病时间,急性起病/亚急性起病/慢性起病
+diseaseDuration,疾病持续时间,Number,疾病持续时间（年）,8.5
+currentTreatmentStatus,当前治疗状态,String,当前疾病治疗状态,稳定期/急性期/调整期/康复期
+
+# 功能状态评估
+overallFunctionalStatus,总体功能状态,String,总体功能状态,独立/轻度依赖/中度依赖/重度依赖
+mobilityLevel,活动能力水平,String,活动能力水平,正常/轻度受限/中度受限/重度受限/卧床
+selfCareAbility,自理能力,String,日常生活自理能力,完全独立/部分独立/需要协助/完全依赖
+cognitiveFunctionStatus,认知功能状态,String,认知功能状态,正常/轻度损害/中度损害/重度损害
+communicationAbility,沟通能力,String,沟通交流能力,正常/轻度障碍/中度障碍/重度障碍
+workCapacity,工作能力,String,工作能力状况,正常/轻度下降/中度下降/重度下降/无工作能力
+
+# 身体功能评估
+physicalEndurance,体力耐力,Number,体力耐力评分（1-5分），5分为耐力极好,3.2
+muscleStrength,肌肉力量,Number,整体肌肉力量评分（1-5分）,3.4
+jointMobility,关节活动度,Number,关节活动度评分（1-5分）,3.6
+balance,平衡能力,Number,平衡能力评分（1-5分）,3.0
+coordination,协调能力,Number,动作协调能力评分（1-5分）,3.2
+cardiovascularFitness,心血管适能,Number,心血管适能评分（1-5分）,2.8
+respiratoryFunction,呼吸功能,Number,呼吸功能评分（1-5分）,3.4
+
+# 内分泌特异性评估
+hormonalControlStatus,激素控制状态,String,激素水平控制状态,良好控制/部分控制/控制不佳/失控
+metabolicStability,代谢稳定性,String,代谢状况稳定性,稳定/轻度不稳定/中度不稳定/重度不稳定
+symptomSeverity,症状严重程度,Number,内分泌疾病症状严重程度评分（1-5分）,2.8
+complicationPresence,并发症存在,String,是否存在内分泌相关并发症,无/轻度/中度/重度
+organSystemInvolvement,器官系统受累,String,受累器官系统,单系统/双系统/多系统
+diseaseProgressionRate,疾病进展速度,String,疾病进展速度,稳定/缓慢进展/中等进展/快速进展
+
+# 糖尿病特异性康复评估
+glycemicControl,血糖控制,String,血糖控制状况,良好/一般/差
+diabeticComplications,糖尿病并发症,String,糖尿病并发症严重程度,无/轻度/中度/重度
+footHealthStatus,足部健康状况,String,糖尿病足健康状况,正常/高危/溃疡/感染
+diabeticNeuropathy,糖尿病神经病变,String,神经病变程度,无/轻度/中度/重度
+diabeticRetinopathy,糖尿病视网膜病变,String,视网膜病变程度,无/背景型/增殖前期/增殖期
+diabeticNephropathy,糖尿病肾病,String,糖尿病肾病程度,无/早期/临床期/终末期
+diabeticCardiovascularRisk,糖尿病心血管风险,String,心血管风险程度,低风险/中风险/高风险/极高风险
+
+# 甲状腺疾病特异性评估
+thyroidFunctionStatus,甲状腺功能状态,String,甲状腺功能状态,正常/亢进/减退/不稳定
+thyroidSymptoms,甲状腺症状,String,甲状腺相关症状严重程度,无症状/轻度/中度/重度
+metabolicRateImpact,代谢率影响,String,基础代谢率影响程度,正常/轻度影响/中度影响/重度影响
+cardiovascularImpact,心血管影响,String,甲状腺疾病对心血管影响,无影响/轻度/中度/重度
+cognitiveImpact,认知影响,String,甲状腺疾病对认知功能影响,无影响/轻度/中度/重度
+muscleweakness,肌肉无力,String,甲状腺疾病相关肌无力,无/轻度/中度/重度
+
+# 肾上腺疾病特异性评估
+adrenalFunctionStatus,肾上腺功能状态,String,肾上腺功能状态,正常/功能亢进/功能不全
+cortisolLevelImpact,皮质醇水平影响,String,皮质醇水平对功能影响,正常/轻度影响/中度影响/重度影响
+electrolyleBalance,电解质平衡,String,电解质平衡状况,正常/轻度紊乱/中度紊乱/重度紊乱
+bloodPressureControl,血压控制,String,血压控制状况,正常/轻度升高/中度升高/重度升高/难以控制
+stressResponseCapacity,应激反应能力,String,应激反应能力,正常/轻度受损/中度受损/重度受损
+mineralocorticoideffect,盐皮质激素效应,String,盐皮质激素相关效应,正常/轻度异常/中度异常/重度异常
+
+# 骨代谢疾病评估
+boneDensityStatus,骨密度状况,String,骨密度状况,正常/骨量减少/骨质疏松/严重骨质疏松
+fractureRisk,骨折风险,String,骨折风险评估,低风险/中风险/高风险/极高风险
+fractureiHstory,骨折史,String,既往骨折史,无/单次/多次/病理性骨折
+boneMarkers,骨代谢标志物,String,骨代谢标志物状态,正常/轻度异常/中度异常/重度异常
+calciumPhosphateBalance,钙磷平衡,String,钙磷代谢平衡,正常/轻度紊乱/中度紊乱/重度紊乱
+vitaminDStatus,维生素D状态,String,维生素D水平,充足/不足/缺乏/严重缺乏
+
+# 心理健康评估
+moodStatus,情绪状态,String,情绪状态,稳定/轻度波动/中度波动/重度波动
+anxietyLevel,焦虑水平,Number,焦虑程度评分（1-5分），1分为无焦虑,2.8
+depressionLevel,抑郁水平,Number,抑郁程度评分（1-5分），1分为无抑郁,2.6
+stressLevel,压力水平,Number,压力程度评分（1-5分），1分为无压力,3.2
+copingMechanisms,应对机制,String,心理应对机制,健康应对/部分健康/不健康应对/无应对能力
+psychosocialAdjustment,心理社会适应,String,心理社会适应程度,良好/一般/困难/严重困难
+qualityOfLife,生活质量,Number,整体生活质量评分（1-5分），5分为生活质量极好,3.0
+
+# 社会功能评估
+socialRoleFunction,社会角色功能,String,社会角色功能,正常/轻度受损/中度受损/重度受损
+workProductivity,工作效率,String,工作效率,正常/轻度下降/中度下降/重度下降/无法工作
+familyRolePerformance,家庭角色履行,String,家庭角色履行能力,正常/轻度困难/中度困难/重度困难
+socialParticipation,社会参与,String,社会活动参与程度,积极参与/适度参与/有限参与/不参与
+interpersonalRelationships,人际关系,String,人际关系质量,良好/一般/困难/严重困难
+communityIntegration,社区融入,String,社区融入程度,良好融入/基本融入/有限融入/孤立
+
+# 自我管理能力评估
+diseaseKnowledge,疾病知识,Number,内分泌疾病知识掌握程度评分（0-100分）,68
+selfMonitoringSkills,自我监测技能,Number,自我监测技能评分（1-5分）,3.4
+medicationManagement,药物管理,Number,药物管理能力评分（1-5分）,3.6
+lifestyleModification,生活方式改变,Number,生活方式改变能力评分（1-5分）,3.0
+emergencyManagement,急症管理,Number,急症自我管理能力评分（1-5分）,2.8
+healthBehaviorAdherence,健康行为依从性,Number,健康行为依从性评分（1-5分）,3.2
+problemSolvingSkills,问题解决技能,Number,健康问题解决技能评分（1-5分）,2.6
+
+# 康复潜力评估
+motivationLevel,动机水平,Number,康复动机强度评分（1-5分）,3.8
+learningCapacity,学习能力,Number,学习新技能能力评分（1-5分）,3.4
+adaptabilityScore,适应能力评分,Number,环境适应能力评分（1-5分）,3.2
+socialSupport,社会支持,Number,社会支持充分程度评分（1-5分）,3.6
+resourceAvailability,资源可获得性,Number,康复资源可获得性评分（1-5分）,3.0
+complianceHistory,依从性历史,String,既往治疗依从性历史,良好/一般/差
+prognosisFactors,预后因素,String,影响康复预后的主要因素,积极因素多/中性/消极因素多
+
+# 功能障碍识别
+primaryImpairments,主要功能障碍,String,主要功能障碍类型,运动/感觉/认知/心理/代谢/混合型
+activityLimitations,活动限制,String,活动限制程度,无限制/轻度/中度/重度/完全限制
+participationRestrictions,参与限制,String,社会参与限制程度,无限制/轻度/中度/重度/完全限制
+environmentalBarriers,环境障碍,String,环境障碍程度,无障碍/轻度/中度/重度/完全障碍
+personalBarriers,个人障碍,String,个人因素障碍,无障碍/轻度/中度/重度/显著障碍
+functionalDeclineRate,功能下降速度,String,功能下降速度,稳定/缓慢下降/中等速度/快速下降
+
+# 康复需求评估
+immediateRehabNeeds,即时康复需求,String,即时康复需求程度,无需求/低需求/中等需求/高需求/紧急需求
+physicalTherapyNeed,物理治疗需求,String,物理治疗需求程度,无需要/低需要/中等需要/高需要
+occupationalTherapyNeed,作业治疗需求,String,作业治疗需求程度,无需要/低需要/中等需要/高需要
+speechTherapyNeed,言语治疗需求,String,言语治疗需求程度,无需要/低需要/中等需要/高需要/不适用
+psychologicalSupportNeed,心理支持需求,String,心理支持需求程度,无需要/低需要/中等需要/高需要
+nutritionalCounselingNeed,营养咨询需求,String,营养咨询需求程度,无需要/低需要/中等需要/高需要
+socialWorkNeed,社会工作需求,String,社会工作服务需求程度,无需要/低需要/中等需要/高需要
+
+# 康复目标设定
+shortTermGoals,短期目标,String,短期康复目标（1-3个月）,改善活动耐力/提高自理能力/症状缓解
+mediumTermGoals,中期目标,String,中期康复目标（3-6个月）,恢复社会功能/提高生活质量/并发症预防
+longTermGoals,长期目标,String,长期康复目标（6-12个月）,维持独立生活/重返工作/疾病管理
+functionalGoals,功能目标,String,具体功能改善目标,步行距离/力量增加/认知改善/心理健康
+participationGoals,参与目标,String,社会参与改善目标,工作复归/社交活动/家庭角色/社区参与
+qualityOfLifeGoals,生活质量目标,String,生活质量改善目标,症状控制/情绪改善/满意度提升
+goalFeasibility,目标可行性,String,设定目标可行性评估,完全可行/基本可行/需要调整/不现实
+
+# 康复计划制定
+rehabilitationIntensity,康复强度,String,建议康复强度,低强度/中强度/高强度/渐进式
+treatmentFrequency,治疗频率,String,建议治疗频率,每日/每周2-3次/每周1次/双周1次/月度
+treatmentDuration,治疗持续时间,String,预计治疗持续时间,1-3个月/3-6个月/6-12个月/长期
+multidisciplinaryApproach,多学科方法,String,是否需要多学科团队方法,是/否
+priorityInterventions,优先干预措施,String,优先康复干预措施,运动康复/心理支持/教育培训/环境改善
+specializedServices,专科服务,String,需要的专科康复服务,内分泌康复/心脏康复/神经康复/综合康复
+
+# 康复设施和设备需求
+equipmentNeeds,设备需求,String,康复设备需求,基础设备/专业设备/辅助技术/无特殊需求
+homeModificationNeeds,家庭改造需求,String,家庭环境改造需求,无需改造/轻微改造/中等改造/大幅改造
+assistiveDeviceNeeds,辅助用具需求,String,辅助用具需求,无需要/移动辅具/日常生活辅具/多种辅具
+technologyAssistance,技术辅助,String,康复技术辅助需求,无需要/基础技术/高级技术/智能化技术
+transportationNeeds,交通需求,String,康复交通需求,自主交通/协助交通/专门交通/无法交通
+facilityAccessibility,设施可及性,String,康复设施可及性,很好/一般/有限/很差
+
+# 教育和培训需求
+patientEducationNeeds,患者教育需求,String,患者教育需求程度,低需求/中等需求/高需求/紧急需求
+familyEducationNeeds,家属教育需求,String,家属教育需求程度,低需求/中等需求/高需求/紧急需求
+skillTrainingNeeds,技能培训需求,String,技能培训需求程度,低需求/中等需求/高需求/紧急需求
+selfManagementEducation,自我管理教育,String,自我管理教育需求,低需求/中等需求/高需求/紧急需求
+diseaseSpecificEducation,疾病专项教育,String,疾病专项教育需求,低需求/中等需求/高需求/紧急需求
+lifestyleEducation,生活方式教育,String,生活方式教育需求,低需求/中等需求/高需求/紧急需求
+
+# 社会支持评估
+familySupport,家庭支持,Number,家庭支持充分程度评分（1-5分）,3.8
+caregiverCapacity,照护者能力,String,主要照护者能力,充分/基本充分/有限/不足
+economicResources,经济资源,String,康复经济资源,充足/基本充足/有限/不足
+insuranceCoverage,保险覆盖,String,康复服务保险覆盖,完全覆盖/大部分覆盖/部分覆盖/很少覆盖
+communitySupport,社区支持,Number,社区支持程度评分（1-5分）,2.8
+employerSupport,雇主支持,String,雇主对康复支持,充分支持/基本支持/有限支持/不支持/不适用
+
+# 并发症和风险因素
+complicationRisk,并发症风险,String,康复过程并发症风险,低风险/中风险/高风险/极高风险
+medicalStability,医疗稳定性,String,医疗状况稳定性,稳定/基本稳定/不稳定/不稳定且高风险
+contraindications,禁忌症,String,康复治疗禁忌症,无禁忌症/相对禁忌症/绝对禁忌症
+safePrecautions,安全防护,String,需要的安全防护措施,无特殊要求/基本防护/严密监护/医疗监护
+riskMitigation,风险缓解,String,风险缓解策略,无需特殊措施/标准防护/增强防护/个性化防护
+
+# 康复预后评估
+functionalOutcomePrediction,功能结局预测,String,功能康复结局预测,优秀/良好/一般/差
+participationOutcomePrediction,参与结局预测,String,社会参与结局预测,完全恢复/大部分恢复/部分恢复/有限恢复
+qualityOfLifeOutcomePrediction,生活质量结局预测,String,生活质量改善预测,显著改善/中等改善/轻微改善/无改善
+timeToGoalAchievement,目标达成时间,String,预期目标达成时间,1-3个月/3-6个月/6-12个月/12个月以上
+sustainabilityPrediction,持续性预测,String,康复效果持续性预测,长期维持/中期维持/短期维持/难以维持
+prognosticFactors,预后因素,String,主要影响预后因素,疾病因素/个人因素/环境因素/治疗因素
+
+# 监测和评估计划
+assessmentSchedule,评估日程,String,康复评估日程安排,每周/双周/月度/季度/半年度
+outcomeMeasures,结局指标,String,主要康复结局指标,功能指标/生活质量/参与度/满意度
+progressMonitoring,进展监测,String,康复进展监测方法,标准化评估/自我报告/观察评估/综合评估
+adjustmentCriteria,调整标准,String,康复计划调整标准,进展不佳/目标达成/并发症/患者要求
+reassessmentTriggers,重新评估触发条件,String,重新评估触发条件,计划性/进展变化/问题出现/要求评估
+
+# 出院和过渡计划
+dischargeReadiness,出院准备度,String,康复出院准备度,完全准备/基本准备/需要准备/未准备
+transitionPlanning,过渡规划,String,康复过渡规划,充分规划/基本规划/需要规划/无规划
+continuityOfCare,护理连续性,String,康复护理连续性安排,良好安排/基本安排/需要改善/缺乏安排
+followUpArrangements,随访安排,String,康复随访安排,完善安排/基本安排/需要安排/无安排
+communityResourceLinkage,社区资源连接,String,社区康复资源连接,良好连接/基本连接/需要连接/缺乏连接
+longTermSupportPlan,长期支持计划,String,长期康复支持计划,完善计划/基本计划/需要制定/无计划
+
+# 特殊考虑因素
+culturalConsiderations,文化考虑,String,文化因素对康复影响,无影响/轻微影响/中等影响/显著影响
+languageBarriers,语言障碍,String,语言障碍对康复影响,无障碍/轻微障碍/中等障碍/显著障碍
+religiousConsiderations,宗教考虑,String,宗教因素对康复影响,无影响/轻微影响/中等影响/显著影响
+genderSpecificNeeds,性别特异需求,String,性别特异康复需求,无特殊需求/有特殊考虑/有特殊需求
+ageSpecificNeeds,年龄特异需求,String,年龄特异康复需求,无特殊需求/有特殊考虑/有特殊需求
+occupationalConsiderations,职业考虑,String,职业因素康复考虑,无特殊考虑/有考虑/重要考虑
+
+# 康复团队组成
+teamLeader,团队负责人,String,康复团队负责人,内分泌医生/康复医生/全科医生/护士长
+physicalTherapist,物理治疗师,String,是否需要物理治疗师,需要/可能需要/不需要
+occupationalTherapist,作业治疗师,String,是否需要作业治疗师,需要/可能需要/不需要
+socialWorker,社会工作者,String,是否需要社会工作者,需要/可能需要/不需要
+psychologist,心理学家,String,是否需要心理学家,需要/可能需要/不需要
+nutritionist,营养师,String,是否需要营养师,需要/可能需要/不需要
+pharmacist,药师,String,是否需要药师,需要/可能需要/不需要
+peerSupport,同伴支持,String,是否需要同伴支持,需要/可能需要/不需要
+
+# 综合评估结果
+overallRehabilitationNeed,总体康复需求,String,总体康复需求程度,无需求/低需求/中等需求/高需求/紧急需求
+rehabilitationComplexity,康复复杂程度,String,康复复杂程度,简单/中等/复杂/高度复杂
+rehabilitationUrgency,康复紧急程度,String,康复紧急程度,非紧急/较紧急/紧急/极其紧急
+expectedRehabilitationDuration,预期康复时长,String,预期康复总时长,短期（<3个月）/中期（3-12个月）/长期（>12个月）/终身
+rehabilitationSetting,康复环境,String,建议康复环境,门诊/日间/住院/社区/家庭
+resourceRequirement,资源需求,String,康复资源需求程度,低需求/中等需求/高需求/极高需求
+
+# 评估工具和方法
+assessmentInstruments,评估工具,String,使用的康复评估工具,标准化工具/自制工具/综合评估/临床判断
+assessmentComprehensiveness,评估全面性,String,评估全面性程度,全面/较全面/基本全面/不够全面
+evaluatorQualifications,评估者资质,String,评估者专业资质,康复专家/内分泌专家/全科医生/护士
+assessmentReliability,评估可靠性,String,评估结果可靠性,高可靠性/中等可靠性/低可靠性
+multidisciplinaryInput,多学科输入,String,多学科团队评估输入,充分输入/基本输入/有限输入/单一输入
+patientParticipation,患者参与,String,患者评估参与程度,积极参与/部分参与/有限参与/被动参与

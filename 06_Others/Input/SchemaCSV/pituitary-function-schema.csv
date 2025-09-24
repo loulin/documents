@@ -1,0 +1,130 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行垂体功能检查的日期,2025-08-15
+clinicalIndication,检查适应症,String,"进行垂体功能检查的临床指征。<br>**建议值**: `垂体腺瘤`, `垂体功能减退`, `巨人症`, `肢端肥大症`, `库欣病`, `泌乳素瘤`, `生长激素缺乏`, `不孕不育`",垂体腺瘤
+growthHormone.baseline,生长激素.基础GH,Number,"基础生长激素水平。<br>单位: μg/L<br>**参考范围**: <3.0",1.8
+growthHormone.postGlucose,生长激素.糖负荷后GH,Number,"糖负荷试验后生长激素。<br>单位: μg/L<br>**正常抑制**: <1.0",0.5
+growthHormone.postExercise,生长激素.运动后GH,Number,"运动刺激后生长激素。<br>单位: μg/L<br>**正常反应**: >7.0",12.5
+growthHormone.sleepPeak,生长激素.睡眠高峰GH,Number,"睡眠期生长激素峰值。<br>单位: μg/L",15.2
+insulinLikeGrowthFactor1,胰岛素样生长因子-1 (IGF-1),Number,"血清IGF-1水平。<br>单位: μg/L<br>**参考范围**: 年龄相关",180
+insulinLikeGrowthFactorBindingProtein3,IGF结合蛋白-3 (IGFBP-3),Number,"血清IGFBP-3水平。<br>单位: mg/L<br>**参考范围**: 2.2-6.8",4.5
+ghStimulationTest.arginine.baseline,GH刺激试验.精氨酸.基础GH,Number,"精氨酸刺激试验基础GH。<br>单位: μg/L",1.2
+ghStimulationTest.arginine.peak,GH刺激试验.精氨酸.峰值GH,Number,"精氨酸刺激试验峰值GH。<br>单位: μg/L<br>**正常反应**: >3.0",8.5
+ghStimulationTest.insulin.baseline,GH刺激试验.胰岛素.基础GH,Number,"胰岛素低血糖试验基础GH。<br>单位: μg/L",1.5
+ghStimulationTest.insulin.peak,GH刺激试验.胰岛素.峰值GH,Number,"胰岛素低血糖试验峰值GH。<br>单位: μg/L<br>**正常反应**: >3.0",12.8
+ghStimulationTest.ghrh.baseline,GH刺激试验.GHRH.基础GH,Number,"GHRH刺激试验基础GH。<br>单位: μg/L",1.8
+ghStimulationTest.ghrh.peak,GH刺激试验.GHRH.峰值GH,Number,"GHRH刺激试验峰值GH。<br>单位: μg/L<br>**正常反应**: >10.0",25.6
+prolactin.baseline,泌乳素.基础PRL,Number,"基础泌乳素水平。<br>单位: μg/L<br>**参考范围**: 4.79-23.3",45.6
+prolactin.postTrh,泌乳素.TRH刺激后PRL,Number,"TRH刺激后泌乳素。<br>单位: μg/L<br>**正常反应**: 2-5倍升高",120.8
+prolactin.postDomperidone,泌乳素.多潘立酮后PRL,Number,"多潘立酮刺激后泌乳素。<br>单位: μg/L",98.5
+prolactin.macroProlactin,泌乳素.大分子泌乳素,Number,"大分子泌乳素比例。<br>单位: %<br>**异常值**: >60%",25
+acth.baseline,ACTH.基础ACTH,Number,"基础ACTH水平。<br>单位: pmol/L<br>**参考范围**: 2.2-17.6",8.5
+acth.postCrh,ACTH.CRH刺激后ACTH,Number,"CRH刺激后ACTH。<br>单位: pmol/L<br>**正常反应**: 2-4倍升高",28.6
+acth.circadianRhythm.morning,ACTH.昼夜节律.晨起ACTH,Number,"晨起8点ACTH。<br>单位: pmol/L",12.5
+acth.circadianRhythm.midnight,ACTH.昼夜节律.午夜ACTH,Number,"午夜ACTH。<br>单位: pmol/L<br>**正常值**: <50%晨起值",4.8
+cortisol.baseline,皮质醇.基础皮质醇,Number,"基础皮质醇水平。<br>单位: nmol/L<br>**参考范围**: 171-536",380
+cortisol.postCrh,皮质醇.CRH刺激后皮质醇,Number,"CRH刺激后皮质醇。<br>单位: nmol/L",580
+cortisol.circadianRhythm.morning,皮质醇.昼夜节律.晨起皮质醇,Number,"晨起8点皮质醇。<br>单位: nmol/L",420
+cortisol.circadianRhythm.midnight,皮质醇.昼夜节律.午夜皮质醇,Number,"午夜皮质醇。<br>单位: nmol/L<br>**正常值**: <50",25
+tsh.baseline,TSH.基础TSH,Number,"基础TSH水平。<br>单位: mU/L<br>**参考范围**: 0.27-4.2",2.8
+tsh.postTrh,TSH.TRH刺激后TSH,Number,"TRH刺激后TSH。<br>单位: mU/L<br>**正常反应**: 2-20倍升高",15.6
+thyroxine.free,甲状腺素.游离T4,Number,"游离甲状腺素。<br>单位: pmol/L<br>**参考范围**: 12-22",16.8
+triiodothyronine.free,三碘甲状腺原氨酸.游离T3,Number,"游离三碘甲状腺原氨酸。<br>单位: pmol/L<br>**参考范围**: 3.1-6.8",4.5
+luteinizingHormone.baseline,黄体生成素.基础LH,Number,"基础LH水平。<br>单位: IU/L<br>**参考范围**: 性别周期相关",6.8
+luteinizingHormone.postGnrh,黄体生成素.GnRH刺激后LH,Number,"GnRH刺激后LH。<br>单位: IU/L<br>**正常反应**: 2-5倍升高",28.5
+follicleStimulatingHormone.baseline,促卵泡刺激素.基础FSH,Number,"基础FSH水平。<br>单位: IU/L<br>**参考范围**: 性别周期相关",5.2
+follicleStimulatingHormone.postGnrh,促卵泡刺激素.GnRH刺激后FSH,Number,"GnRH刺激后FSH。<br>单位: IU/L<br>**正常反应**: 1.5-3倍升高",12.8
+gonadotropins.lhFshRatio,促性腺激素.LH/FSH比值,Number,"LH与FSH比值。<br>**异常值**: >2（PCOS）",1.3
+testosterone.total,睾酮.总睾酮,Number,"总睾酮水平。<br>单位: nmol/L<br>**参考范围**: 男性8.64-29.0，女性0.52-2.43",15.2
+testosterone.free,睾酮.游离睾酮,Number,"游离睾酮水平。<br>单位: pmol/L<br>**参考范围**: 性别相关",485
+estradiol,雌二醇 (E2),Number,"血清雌二醇。<br>单位: pmol/L<br>**参考范围**: 性别周期相关",250
+progesterone,孕酮 (P),Number,"血清孕酮。<br>单位: nmol/L<br>**参考范围**: 周期相关",8.5
+shbg,性激素结合球蛋白 (SHBG),Number,"SHBG水平。<br>单位: nmol/L<br>**参考范围**: 男性16-55，女性26-110",35.8
+inhibinB,抑制素B,Number,"血清抑制素B。<br>单位: pg/mL<br>**参考范围**: 性别相关",120
+antiMullerianHormone,抗苗勒管激素 (AMH),Number,"血清AMH。<br>单位: μg/L<br>**参考范围**: 性别年龄相关",2.8
+vasopressin,抗利尿激素 (ADH),Number,"血浆ADH。<br>单位: pmol/L<br>**参考范围**: 0.9-4.6",2.5
+waterDeprivationTest.baseline.adh,禁水试验.基础.ADH,Number,"禁水试验基础ADH。<br>单位: pmol/L",2.2
+waterDeprivationTest.baseline.osmolality,禁水试验.基础.血浆渗透压,Number,"禁水试验基础血浆渗透压。<br>单位: mOsm/kg",285
+waterDeprivationTest.baseline.urineOsmolality,禁水试验.基础.尿渗透压,Number,"禁水试验基础尿渗透压。<br>单位: mOsm/kg",450
+waterDeprivationTest.8hour.adh,禁水试验.8小时.ADH,Number,"禁水8小时ADH。<br>单位: pmol/L",5.8
+waterDeprivationTest.8hour.osmolality,禁水试验.8小时.血浆渗透压,Number,"禁水8小时血浆渗透压。<br>单位: mOsm/kg",295
+waterDeprivationTest.8hour.urineOsmolality,禁水试验.8小时.尿渗透压,Number,"禁水8小时尿渗透压。<br>单位: mOsm/kg<br>**正常浓缩**: >750",680
+ddavpTest.baseline.urineOsmolality,DDAVP试验.基础尿渗透压,Number,"DDAVP试验基础尿渗透压。<br>单位: mOsm/kg",320
+ddavpTest.postDdavp.urineOsmolality,DDAVP试验.DDAVP后尿渗透压,Number,"DDAVP后尿渗透压。<br>单位: mOsm/kg<br>**正常反应**: >50%升高",650
+ddavpTest.response,DDAVP试验.反应,String,"DDAVP试验反应评估。<br>**建议值**: `正常`, `部分反应`, `无反应`",正常
+hypophysitisMarkers.antibodies,垂体炎标记.抗体,String,"垂体自身抗体检测。<br>**建议值**: `未检测`, `阴性`, `阳性`",未检测
+hypophysitisMarkers.inflammation,垂体炎标记.炎症指标,String,"炎症标志物评估。<br>**建议值**: `正常`, `轻度炎症`, `明显炎症`",正常
+imagingFindings.pituitarySize,影像学检查.垂体大小,String,"垂体大小评估。<br>**建议值**: `正常`, `轻度增大`, `明显增大`, `萎缩`",正常
+imagingFindings.pituitaryMass.present,影像学检查.垂体肿块.是否存在,String,"是否存在垂体肿块。<br>**建议值**: `否`, `是`",否
+imagingFindings.pituitaryMass.size,影像学检查.垂体肿块.大小,Number,"垂体肿块大小（如果存在）。<br>单位: mm",0
+imagingFindings.pituitaryMass.location,影像学检查.垂体肿块.位置,String,"垂体肿块位置（如果存在）。<br>**建议值**: `左侧`, `右侧`, `中央`, `弥漫性`",无
+imagingFindings.pituitaryMass.enhancement,影像学检查.垂体肿块.强化模式,String,"垂体肿块强化模式（如果存在）。<br>**建议值**: `均匀强化`, `不均匀强化`, `无强化`",无
+imagingFindings.sellaSize,影像学检查.蝶鞍大小,String,"蝶鞍大小评估。<br>**建议值**: `正常`, `增大`, `空蝶鞍`",正常
+imagingFindings.opticChiasmCompression,影像学检查.视交叉受压,String,"视交叉受压情况。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+visualFields.defect,视野检查.视野缺损,String,"视野缺损情况。<br>**建议值**: `正常`, `双颞侧偏盲`, `象限缺损`, `其他缺损`",正常
+visualFields.severity,视野检查.缺损程度,String,"视野缺损严重程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+clinicalSyndrome.acromegaly,临床综合征.肢端肥大症,String,"肢端肥大症临床表现。<br>**建议值**: `无`, `疑似`, `典型表现`",无
+clinicalSyndrome.cushingDisease,临床综合征.库欣病,String,"库欣病临床表现。<br>**建议值**: `无`, `疑似`, `典型表现`",无
+clinicalSyndrome.prolactinoma,临床综合征.泌乳素瘤,String,"泌乳素瘤临床表现。<br>**建议值**: `无`, `微腺瘤`, `大腺瘤`",无
+clinicalSyndrome.hypopituitarism,临床综合征.垂体功能减退,String,"垂体功能减退程度。<br>**建议值**: `无`, `部分性`, `完全性`",无
+clinicalSyndrome.diabetesInsipidus,临床综合征.尿崩症,String,"尿崩症类型。<br>**建议值**: `无`, `中枢性`, `肾性`",无
+clinicalSyndrome.siadh,临床综合征.SIADH,String,"抗利尿激素分泌异常综合征。<br>**建议值**: `无`, `疑似`, `确诊`",无
+symptoms.acromegaly.facialChanges,肢端肥大症状.面容改变,String,"面容改变程度。<br>**建议值**: `无`, `轻度`, `中度`, `明显`",无
+symptoms.acromegaly.handFootEnlargement,肢端肥大症状.手足肥大,String,"手足肥大程度。<br>**建议值**: `无`, `轻度`, `中度`, `明显`",无
+symptoms.acromegaly.jointPain,肢端肥大症状.关节疼痛,String,"关节疼痛程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+symptoms.acromegaly.sleepApnea,肢端肥大症状.睡眠呼吸暂停,String,"睡眠呼吸暂停情况。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+symptoms.cushingDisease.weightGain,库欣病症状.体重增加,String,"体重增加程度。<br>**建议值**: `无`, `轻度`, `中度`, `明显`",无
+symptoms.cushingDisease.moonFace,库欣病症状.满月脸,String,"满月脸表现。<br>**建议值**: `无`, `轻度`, `中度`, `明显`",无
+symptoms.cushingDisease.purpleStriae,库欣病症状.紫纹,String,"紫纹分布。<br>**建议值**: `无`, `少量`, `广泛`",无
+symptoms.cushingDisease.muscleWeakness,库欣病症状.肌无力,String,"肌无力程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+symptoms.prolactinoma.galactorrhea,泌乳素瘤症状.溢乳,String,"溢乳情况。<br>**建议值**: `无`, `少量`, `大量`",无
+symptoms.prolactinoma.amenorrhea,泌乳素瘤症状.闭经,String,"闭经情况（女性）。<br>**建议值**: `无`, `继发性闭经`, `原发性闭经`",无
+symptoms.prolactinoma.erectileDysfunction,泌乳素瘤症状.勃起功能障碍,String,"勃起功能障碍（男性）。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+symptoms.prolactinoma.libidoDecrease,泌乳素瘤症状.性欲减退,String,"性欲减退程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+symptoms.hypopituitarism.fatigue,垂体功能减退症状.乏力,String,"乏力程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+symptoms.hypopituitarism.coldIntolerance,垂体功能减退症状.怕冷,String,"怕冷程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+symptoms.hypopituitarism.weightLoss,垂体功能减退症状.体重减轻,String,"体重减轻程度。<br>**建议值**: `无`, `轻度`, `中度`, `明显`",无
+symptoms.hypopituitarism.hypotension,垂体功能减退症状.低血压,String,"低血压程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+symptoms.diabetesInsipidus.polyuria,尿崩症症状.多尿,String,"多尿程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+symptoms.diabetesInsipidus.polydipsia,尿崩症症状.多饮,String,"多饮程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+symptoms.diabetesInsipidus.nocturia,尿崩症症状.夜尿,String,"夜尿情况。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+reproductiveFunction.menstrualHistory,生殖功能.月经史,String,"月经史（女性）。<br>**建议值**: `正常`, `月经稀发`, `闭经`, `月经不规律`",正常
+reproductiveFunction.fertilityStatus,生殖功能.生育状况,String,"生育功能状况。<br>**建议值**: `正常`, `不孕`, `不育`",正常
+reproductiveFunction.sexualFunction,生殖功能.性功能,String,"性功能评估。<br>**建议值**: `正常`, `减退`, `消失`",正常
+comorbidities.diabetes,合并症.糖尿病,String,"糖尿病合并情况。<br>**建议值**: `无`, `糖尿病前期`, `2型糖尿病`",无
+comorbidities.hypertension,合并症.高血压,String,"高血压合并情况。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+comorbidities.osteoporosis,合并症.骨质疏松,String,"骨质疏松合并情况。<br>**建议值**: `无`, `骨量减少`, `骨质疏松`",无
+comorbidities.cardiovascularDisease,合并症.心血管疾病,String,"心血管疾病合并情况。<br>**建议值**: `无`, `冠心病`, `心衰`, `心律失常`",无
+familyHistory.pituitaryDisorders,家族史.垂体疾病,String,"垂体疾病家族史。<br>**建议值**: `无`, `垂体瘤`, `垂体功能减退`",无
+familyHistory.endocrineNeoplasia,家族史.内分泌肿瘤,String,"内分泌肿瘤综合征家族史。<br>**建议值**: `无`, `MEN1`, `Carney复合征`",无
+currentMedications.hormonalTherapy,目前用药.激素治疗,String,"激素替代治疗情况。<br>**建议值**: `无`, `甲状腺素`, `皮质醇`, `性激素`, `生长激素`",无
+currentMedications.dopamineAgonists,目前用药.多巴胺激动剂,String,"多巴胺激动剂使用情况。<br>**建议值**: `无`, `溴隐亭`, `卡麦角林`",无
+currentMedications.somatostatinAnalogs,目前用药.生长抑素类似物,String,"生长抑素类似物使用情况。<br>**建议值**: `无`, `奥曲肽`, `兰瑞肽`",无
+treatmentResponse.medicationResponse,治疗反应.药物治疗反应,String,"对药物治疗的反应。<br>**建议值**: `良好`, `部分反应`, `无反应`, `不耐受`",良好
+treatmentResponse.surgicalConsideration,治疗反应.手术考虑,String,"手术治疗考虑。<br>**建议值**: `不需要`, `考虑中`, `计划手术`, `已手术`",不需要
+treatmentResponse.radiationConsideration,治疗反应.放疗考虑,String,"放疗考虑。<br>**建议值**: `不需要`, `考虑中`, `计划放疗`, `已放疗`",不需要
+qualityOfLife.physicalFunction,生活质量.身体功能,String,"身体功能评估。<br>**建议值**: `正常`, `轻度受限`, `中度受限`, `重度受限`",正常
+qualityOfLife.mentalHealth,生活质量.心理健康,String,"心理健康状况。<br>**建议值**: `正常`, `轻度焦虑`, `抑郁`, `严重心理问题`",正常
+qualityOfLife.socialFunction,生活质量.社会功能,String,"社会功能评估。<br>**建议值**: `正常`, `轻度受限`, `中度受限`, `重度受限`",正常
+monitoringPlan.hormoneMonitoring,监测计划.激素监测,String,"激素水平监测计划",每3-6个月复查相关激素
+monitoringPlan.imagingFollowup,监测计划.影像随访,String,"影像学随访计划",每年MRI复查
+monitoringPlan.clinicalAssessment,监测计划.临床评估,String,"临床评估计划",每3个月门诊随访
+riskAssessment.tumorProgression,风险评估.肿瘤进展,String,"肿瘤进展风险。<br>**建议值**: `低`, `中`, `高`",低
+riskAssessment.hormonalComplications,风险评估.激素并发症,String,"激素相关并发症风险。<br>**建议值**: `低`, `中`, `高`",低
+riskAssessment.visualComplications,风险评估.视觉并发症,String,"视觉并发症风险。<br>**建议值**: `低`, `中`, `高`",低
+prognosis.functionalRecovery,预后.功能恢复,String,"垂体功能恢复预后。<br>**建议值**: `良好`, `部分`, `不良`",良好
+prognosis.overallPrognosis,预后.总体预后,String,"总体预后评估。<br>**建议值**: `良好`, `一般`, `较差`",良好
+specialConsiderations.pregnancy,特殊考虑.妊娠,String,"妊娠期特殊考虑。<br>**建议值**: `不适用`, `需要考虑`",不适用
+specialConsiderations.pediatric,特殊考虑.儿科,String,"儿科患者特殊考虑。<br>**建议值**: `不适用`, `需要考虑`",不适用
+specialConsiderations.elderly,特殊考虑.老年,String,"老年患者特殊考虑。<br>**建议值**: `不适用`, `需要考虑`",不适用
+patientEducation.diseaseUnderstanding,患者教育.疾病认知,String,"患者疾病认知程度。<br>**建议值**: `差`, `一般`, `良好`",一般
+patientEducation.selfManagement,患者教育.自我管理,String,"自我管理教育。<br>**建议值**: `未接受`, `已接受`",已接受
+followUpPlan.frequency,随访计划.随访频率,String,"随访频率安排",3-6个月随访
+followUpPlan.parameters,随访计划.随访参数,String,随访检查参数,垂体激素、影像学检查
+multidisciplinaryCare.endocrinology,多学科协作.内分泌科,String,"内分泌科参与情况。<br>**建议值**: `主管`, `会诊`, `未参与`",主管
+multidisciplinaryCare.neurosurgery,多学科协作.神经外科,String,"神经外科参与情况。<br>**建议值**: `主管`, `会诊`, `未参与`",未参与
+multidisciplinaryCare.ophthalmology,多学科协作.眼科,String,"眼科参与情况。<br>**建议值**: `主管`, `会诊`, `未参与`",未参与
+multidisciplinaryCare.radiology,多学科协作.放射科,String,"放射科参与情况。<br>**建议值**: `主管`, `会诊`, `未参与`",会诊
+emergencyManagement.hormonalCrisis,急症处理.激素危象,String,"激素危象处理。<br>**建议值**: `无`, `肾上腺危象`, `甲状腺危象`, `低血糖昏迷`",无
+emergencyManagement.massEffect,急症处理.占位效应,String,"占位效应处理。<br>**建议值**: `无`, `视野缺损`, `颅内压增高`",无
+diagnosisImpression,诊断/印象,String,医生对垂体功能检查结果的综合诊断或印象。,垂体功能正常
+recommendation,建议,String,医生根据检查结果提出的建议。,继续观察，年度体检时复查

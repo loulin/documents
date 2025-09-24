@@ -1,0 +1,38 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行心电图检查的日期,2025-08-15
+heartRate,心率 (HR),Number,"心脏每分钟跳动次数。<br>单位: 次/分<br>**参考范围**: 60-100",72
+rhythm,心律,String,"心脏跳动的节律。<br>**建议值**: `窦性心律`, `心房颤动`, `心房扑动`, `室性心律`, `其他`",窦性心律
+pWaveDuration,P波时间,Number,"P波持续时间。<br>单位: ms<br>**参考范围**: 80-110",95
+prInterval,PR间期,Number,"PR间期时间。<br>单位: ms<br>**参考范围**: 120-200",160
+qrsDuration,QRS时间,Number,"QRS波群持续时间。<br>单位: ms<br>**参考范围**: 60-100",85
+qtInterval,QT间期,Number,"QT间期时间。<br>单位: ms<br>**参考范围**: 350-450",420
+qtcInterval,校正QT间期 (QTc),Number,"校正的QT间期。<br>单位: ms<br>**参考范围**: 男性<450，女性<460",435
+pWaveAxis,P波电轴,Number,"P波电轴方向。<br>单位: 度<br>**参考范围**: 0-75",45
+qrsAxis,QRS电轴,Number,"QRS波群电轴方向。<br>单位: 度<br>**参考范围**: -30至+90",60
+tWaveAxis,T波电轴,Number,"T波电轴方向。<br>单位: 度",55
+pWaveMorphology,P波形态,String,"P波的形态描述。<br>**建议值**: `正常`, `双峰`, `高尖`, `宽大`, `倒置`",正常
+qWavePresence,Q波,String,"是否存在病理性Q波。<br>**建议值**: `无`, `有-请注明导联`",无
+stSegmentElevation,ST段抬高,String,"ST段抬高情况。<br>**建议值**: `无`, `有-请注明导联和程度`",无
+stSegmentDepression,ST段压低,String,"ST段压低情况。<br>**建议值**: `无`, `有-请注明导联和程度`",无
+tWaveInversion,T波倒置,String,"T波倒置情况。<br>**建议值**: `无`, `有-请注明导联`",无
+uWavePresence,U波,String,"是否存在U波。<br>**建议值**: `无`, `有`",无
+atrialFibrillation,心房颤动,String,"是否为心房颤动。<br>**建议值**: `否`, `是`",否
+atrialFlutter,心房扑动,String,"是否为心房扑动。<br>**建议值**: `否`, `是`",否
+prematureAtrialContractions,房性早搏,String,"是否存在房性早搏。<br>**建议值**: `无`, `偶发`, `频发`",无
+prematureVentricularContractions,室性早搏,String,"是否存在室性早搏。<br>**建议值**: `无`, `偶发`, `频发`",无
+atrioventricularBlock.degree,房室传导阻滞.度数,String,"房室传导阻滞程度。<br>**建议值**: `无`, `一度`, `二度I型`, `二度II型`, `三度`",无
+atrioventricularBlock.type,房室传导阻滞.类型,String,"房室传导阻滞类型描述。<br>**建议值**: `无`, `Mobitz I型`, `Mobitz II型`, `完全性`",无
+bundleBranchBlock.type,束支传导阻滞.类型,String,"束支传导阻滞类型。<br>**建议值**: `无`, `右束支阻滞`, `左束支阻滞`, `左前分支阻滞`, `左后分支阻滞`",无
+bundleBranchBlock.complete,束支传导阻滞.是否完全,String,"束支传导阻滞是否完全。<br>**建议值**: `无`, `完全性`, `不完全性`",无
+leftVentricularHypertrophy,左心室肥厚,String,"是否存在左心室肥厚征象。<br>**建议值**: `无`, `有`",无
+rightVentricularHypertrophy,右心室肥厚,String,"是否存在右心室肥厚征象。<br>**建议值**: `无`, `有`",无
+leftAtrialEnlargement,左心房增大,String,"是否存在左心房增大征象。<br>**建议值**: `无`, `有`",无
+rightAtrialEnlargement,右心房增大,String,"是否存在右心房增大征象。<br>**建议值**: `无`, `有`",无
+myocardialIschemia,心肌缺血,String,"是否存在心肌缺血征象。<br>**建议值**: `无`, `疑似`, `明确`",无
+myocardialInfarction.present,心肌梗死.是否存在,String,"是否存在心肌梗死征象。<br>**建议值**: `无`, `急性`, `陈旧性`",无
+myocardialInfarction.location,心肌梗死.部位,String,"心肌梗死部位。<br>**建议值**: `前壁`, `下壁`, `侧壁`, `后壁`, `前间壁`, `广泛前壁`",无
+pacemakerRhythm,起搏器心律,String,"是否为起搏器心律。<br>**建议值**: `否`, `是-心房起搏`, `是-心室起搏`, `是-双腔起搏`",否
+artifactPresence,伪差,String,"是否存在明显伪差。<br>**建议值**: `无`, `有-肌电伪差`, `有-基线漂移`, `有-交流电干扰`",无
+technicalQuality,技术质量,String,"心电图技术质量评估。<br>**建议值**: `良好`, `一般`, `较差`",良好
+diagnosisImpression,诊断/印象,String,医生对心电图检查结果的综合诊断或印象。,窦性心律，心电图正常
+recommendation,建议,String,医生根据检查结果提出的建议。,继续观察

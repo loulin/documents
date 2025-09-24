@@ -1,0 +1,183 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行糖尿病肾病检查的日期,2025-08-15
+clinicalIndication,检查适应症,String,"进行糖尿病肾病检查的临床指征。<br>**建议值**: `糖尿病肾病筛查`, `蛋白尿评估`, `肾功能下降`, `高血压合并糖尿病`, `肾脏替代治疗评估`",糖尿病肾病筛查
+diabeticNephropathyStage,糖尿病肾病分期,String,"根据eGFR和蛋白尿分期。<br>**建议值**: `G1A1`, `G1A2`, `G2A2`, `G3aA2`, `G3bA3`, `G4A3`, `G5A3`",G3aA2
+renalFunction.serumCreatinine,肾功能.血肌酐,Number,"血清肌酐。<br>单位: μmol/L<br>**参考范围**: 男性59-104，女性45-84",125
+renalFunction.bloodUreaNitrogen,肾功能.尿素氮,Number,"血尿素氮。<br>单位: mmol/L<br>**参考范围**: 2.9-8.2",9.5
+renalFunction.estimatedGfr,肾功能.估算肾小球滤过率,Number,"eGFR(CKD-EPI)。<br>单位: mL/min/1.73m²<br>**分级**: >90(G1), 60-89(G2), 45-59(G3a), 30-44(G3b), 15-29(G4), <15(G5)",52
+renalFunction.creatinineClearance,肾功能.肌酐清除率,Number,"24小时肌酐清除率。<br>单位: mL/min<br>**正常**: 80-120",58
+renalFunction.cystatin C,肾功能.胱抑素C,Number,"血清胱抑素C。<br>单位: mg/L<br>**参考范围**: 0.51-0.98",1.25
+renalFunction.beta2Microglobulin,肾功能.β2微球蛋白,Number,"血清β2微球蛋白。<br>单位: mg/L<br>**参考范围**: 0.7-1.8",2.8
+renalFunction.kimey1,肾功能.KIM-1,Number,"肾损伤分子1。<br>单位: pg/mL",158
+renalFunction.ngal,肾功能.NGAL,Number,"中性粒细胞明胶酶相关脂质运载蛋白。<br>单位: ng/mL<br>**参考范围**: <150",285
+proteinuria.urineProtein.dipstick,蛋白尿.尿蛋白.试纸,String,"尿蛋白试纸检测。<br>**建议值**: `阴性`, `微量`, `1+`, `2+`, `3+`, `4+`",2+
+proteinuria.urineProtein.quantitative,蛋白尿.尿蛋白.定量,Number,"24小时尿蛋白定量。<br>单位: g/24h<br>**正常**: <0.15",0.85
+proteinuria.urineAlbumin.dipstick,蛋白尿.尿白蛋白.试纸,String,"尿白蛋白试纸检测。<br>**建议值**: `阴性`, `微量`, `1+`, `2+`, `3+`",1+
+proteinuria.urineAlbumin.microalbumin,蛋白尿.尿白蛋白.微量白蛋白,Number,"尿微量白蛋白。<br>单位: mg/L<br>**分级**: <20(正常), 20-200(微量), >200(大量)",125
+proteinuria.albuminCreatinineRatio,蛋白尿.白蛋白肌酐比,Number,"尿白蛋白肌酐比(ACR)。<br>单位: mg/g<br>**分级**: <30(A1), 30-300(A2), >300(A3)",158
+proteinuria.proteinCreatinineRatio,蛋白尿.蛋白肌酐比,Number,"尿蛋白肌酐比(PCR)。<br>单位: mg/g<br>**正常**: <200",685
+proteinuria.selectivityIndex,蛋白尿.选择性指数,Number,"蛋白尿选择性指数",0.25
+proteinuria.lowMolecularWeight.beta2Microglobulin,蛋白尿.低分子量.β2微球蛋白,Number,"尿β2微球蛋白。<br>单位: mg/L",15.8
+proteinuria.lowMolecularWeight.alphalMicroglobulin,蛋白尿.低分子量.α1微球蛋白,Number,"尿α1微球蛋白。<br>单位: mg/L",8.5
+urinalysis.specificGravity,尿液分析.比重,Number,"尿比重。<br>**参考范围**: 1.003-1.030",1.025
+urinalysis.urineGlucose,尿液分析.尿糖,String,"尿糖检测。<br>**建议值**: `阴性`, `1+`, `2+`, `3+`, `4+`",1+
+urinalysis.urineKetones,尿液分析.尿酮体,String,"尿酮体检测。<br>**建议值**: `阴性`, `微量`, `1+`, `2+`, `3+`",阴性
+urinalysis.urineSediment.redBloodCells,尿液分析.尿沉渣.红细胞,Number,"尿红细胞计数。<br>单位: /hpf<br>**正常**: <3",5
+urinalysis.urineSediment.whiteBloodCells,尿液分析.尿沉渣.白细胞,Number,"尿白细胞计数。<br>单位: /hpf<br>**正常**: <5",8
+urinalysis.urineSediment.casts,尿液分析.尿沉渣.管型,String,"尿管型检查",透明管型2-3个/hpf
+urinalysis.urineSediment.crystals,尿液分析.尿沉渣.结晶,String,"尿结晶检查",少量尿酸结晶
+urinalysis.urineElectrolytes.sodium,尿液分析.尿电解质.钠,Number,"24小时尿钠。<br>单位: mmol/24h",158
+urinalysis.urineElectrolytes.potassium,尿液分析.尿电解质.钾,Number,"24小时尿钾。<br>单位: mmol/24h",68
+urinalysis.urineElectrolytes.chloride,尿液分析.尿电解质.氯,Number,"24小时尿氯。<br>单位: mmol/24h",145
+glycemicControl.fastingGlucose,血糖控制.空腹血糖,Number,"空腹血糖。<br>单位: mmol/L<br>**目标**: 4.4-7.0",8.5
+glycemicControl.postprandialGlucose,血糖控制.餐后血糖,Number,"餐后2小时血糖。<br>单位: mmol/L<br>**目标**: <10.0",12.5
+glycemicControl.hba1c,血糖控制.糖化血红蛋白,Number,"糖化血红蛋白。<br>单位: %<br>**目标**: <7.0%（肾病患者可适当放宽）",8.2
+glycemicControl.fructosamine,血糖控制.果糖胺,Number,"血清果糖胺。<br>单位: μmol/L<br>**参考范围**: 200-285",325
+glycemicControl.1_5AnhydroglucitolAg,血糖控制.1_5脱水葡萄糖醇,Number,"1,5-AG。<br>单位: μg/mL<br>**参考范围**: >14",8.5
+bloodPressure.systolic,血压.收缩压,Number,"收缩压。<br>单位: mmHg<br>**目标**: <130（糖尿病肾病）",145
+bloodPressure.diastolic,血压.舒张压,Number,"舒张压。<br>单位: mmHg<br>**目标**: <80",88
+bloodPressure.meanArterialPressure,血压.平均动脉压,Number,"平均动脉压。<br>单位: mmHg",107
+bloodPressure.pulsePresssure,血压.脉压,Number,"脉压差。<br>单位: mmHg",57
+bloodPressure.ambulatoryMonitoring,血压.动态监测,String,"24小时动态血压监测结果",夜间血压下降不足
+lipidMetabolism.totalCholesterol,脂代谢.总胆固醇,Number,"总胆固醇。<br>单位: mmol/L<br>**目标**: <4.5",5.2
+lipidMetabolism.ldlCholesterol,脂代谢.低密度脂蛋白胆固醇,Number,"LDL-C。<br>单位: mmol/L<br>**目标**: <2.6（糖尿病肾病）",3.1
+lipidMetabolism.hdlCholesterol,脂代谢.高密度脂蛋白胆固醇,Number,"HDL-C。<br>单位: mmol/L<br>**目标**: 男性>1.0，女性>1.3",0.9
+lipidMetabolism.triglycerides,脂代谢.甘油三酯,Number,"甘油三酯。<br>单位: mmol/L<br>**目标**: <1.7",2.3
+lipidMetabolism.nonHdlCholesterol,脂代谢.非高密度脂蛋白胆固醇,Number,"非HDL-C。<br>单位: mmol/L<br>**目标**: <3.4",4.3
+lipidMetabolism.apoB,脂代谢.载脂蛋白B,Number,"载脂蛋白B。<br>单位: g/L<br>**目标**: <0.9",1.15
+lipidMetabolism.lipoproteinA,脂代谢.脂蛋白a,Number,"脂蛋白(a)。<br>单位: g/L<br>**风险**: >0.3",0.45
+electrolytes.serum.sodium,电解质.血清.钠,Number,"血清钠。<br>单位: mmol/L<br>**参考范围**: 136-145",138
+electrolytes.serum.potassium,电解质.血清.钾,Number,"血清钾。<br>单位: mmol/L<br>**参考范围**: 3.5-5.1",4.8
+electrolytes.serum.chloride,电解质.血清.氯,Number,"血清氯。<br>单位: mmol/L<br>**参考范围**: 99-110",102
+electrolytes.serum.bicarbonate,电解质.血清.碳酸氢根,Number,"血清碳酸氢根。<br>单位: mmol/L<br>**参考范围**: 22-29",20
+electrolytes.serum.calcium,电解质.血清.钙,Number,"血清钙。<br>单位: mmol/L<br>**参考范围**: 2.15-2.50",2.25
+electrolytes.serum.phosphorus,电解质.血清.磷,Number,"血清磷。<br>单位: mmol/L<br>**参考范围**: 0.81-1.45",1.25
+electrolytes.serum.magnesium,电解质.血清.镁,Number,"血清镁。<br>单位: mmol/L<br>**参考范围**: 0.75-1.05",0.85
+acidBaseStatus.arterialPh,酸碱状态.动脉血pH,Number,"动脉血pH。<br>**参考范围**: 7.35-7.45",7.32
+acidBaseStatus.bicarbonate,酸碱状态.碳酸氢根,Number,"血碳酸氢根。<br>单位: mmol/L<br>**参考范围**: 22-26",18
+acidBaseStatus.baseExcess,酸碱状态.碱剩余,Number,"碱剩余。<br>单位: mmol/L<br>**参考范围**: -2至+2",-5
+acidBaseStatus.anionGap,酸碱状态.阴离子间隙,Number,"阴离子间隙。<br>单位: mmol/L<br>**参考范围**: 8-16",18
+boneMetabolism.pth,骨代谢.甲状旁腺激素,Number,"完整PTH。<br>单位: pmol/L<br>**参考范围**: 1.6-6.9（CKD患者目标值不同）",12.5
+boneMetabolism.vitaminD,骨代谢.25羟维生素D,Number,"25(OH)维生素D。<br>单位: nmol/L<br>**目标**: >75",45
+boneMetabolism.alkalinePhosphatase,骨代谢.碱性磷酸酶,Number,"血清碱性磷酸酶。<br>单位: U/L<br>**参考范围**: 45-125",158
+boneMetabolism.boneTurnoverMarkers,骨代谢.骨转换标志物,String,"骨转换标志物检测结果",P1NP升高，CTX升高
+anemia.hemoglobin,贫血.血红蛋白,Number,"血红蛋白。<br>单位: g/L<br>**目标**: 男性≥120，女性≥110",95
+anemia.hematocrit,贫血.红细胞压积,Number,"红细胞压积。<br>单位: %<br>**参考范围**: 男性40-50，女性36-46",28.5
+anemia.redBloodCellCount,贫血.红细胞计数,Number,"红细胞计数。<br>单位: ×10¹²/L<br>**参考范围**: 男性4.3-5.8，女性3.8-5.1",3.2
+anemia.meanCorpuscularVolume,贫血.平均红细胞体积,Number,"MCV。<br>单位: fL<br>**参考范围**: 82-100",88
+anemia.meanCorpuscularHemoglobin,贫血.平均红细胞血红蛋白,Number,"MCH。<br>单位: pg<br>**参考范围**: 27-34",29
+anemia.reticulocyteCount,贫血.网织红细胞计数,Number,"网织红细胞计数。<br>单位: %<br>**参考范围**: 0.5-1.5",0.8
+anemia.serumIron,贫血.血清铁,Number,"血清铁。<br>单位: μmol/L<br>**参考范围**: 男性14-32，女性11-29",8.5
+anemia.transferrin,贫血.转铁蛋白,Number,"转铁蛋白。<br>单位: g/L<br>**参考范围**: 2.0-3.6",3.8
+anemia.transferrinSaturation,贫血.转铁蛋白饱和度,Number,"转铁蛋白饱和度。<br>单位: %<br>**参考范围**: 20-50",15
+anemia.ferritin,贫血.铁蛋白,Number,"血清铁蛋白。<br>单位: μg/L<br>**参考范围**: 男性30-400，女性15-150",285
+anemia.folate,贫血.叶酸,Number,"血清叶酸。<br>单位: nmol/L<br>**参考范围**: >10",8.5
+anemia.vitaminB12,贫血.维生素B12,Number,"血清维生素B12。<br>单位: pmol/L<br>**参考范围**: >150",125
+anemia.erythropoietin,贫血.促红细胞生成素,Number,"血清EPO。<br>单位: U/L<br>**参考范围**: 2.6-18.5",45
+inflammatoryMarkers.crp,炎症标志物.C反应蛋白,Number,"C反应蛋白。<br>单位: mg/L<br>**正常**: <3.0",8.5
+inflammatoryMarkers.esr,炎症标志物.红细胞沉降率,Number,"血沉。<br>单位: mm/h<br>**参考范围**: 男性0-15，女性0-20",35
+inflammatoryMarkers.procalcitonin,炎症标志物.降钙素原,Number,"降钙素原。<br>单位: ng/mL<br>**正常**: <0.25",0.15
+inflammatoryMarkers.interleukin6,炎症标志物.白介素6,Number,"IL-6。<br>单位: pg/mL",12.5
+inflammatoryMarkers.tnfAlpha,炎症标志物.肿瘤坏死因子α,Number,"TNF-α。<br>单位: pg/mL",15.8
+cardiacMarkers.ntProBnp,心脏标志物.NT-proBNP,Number,"NT-proBNP。<br>单位: pg/mL<br>**参考范围**: <125（<75岁）",285
+cardiacMarkers.troponinI,心脏标志物.肌钙蛋白I,Number,"肌钙蛋白I。<br>单位: ng/mL<br>**正常**: <0.04",0.025
+cardiacMarkers.ckMb,心脏标志物.肌酸激酶同工酶,Number,"CK-MB。<br>单位: ng/mL<br>**参考范围**: <6.3",3.2
+thrombosisMarkers.dDimer,血栓标志物.D二聚体,Number,"D-二聚体。<br>单位: mg/L<br>**参考范围**: <0.5",0.85
+thrombosisMarkers.fibrinogen,血栓标志物.纤维蛋白原,Number,"纤维蛋白原。<br>单位: g/L<br>**参考范围**: 2.0-4.0",4.5
+thrombosisMarkers.antithrombinIii,血栓标志物.抗凝血酶III,Number,"抗凝血酶III。<br>单位: %<br>**参考范围**: 80-120",85
+thrombosisMarkers.proteinC,血栓标志物.蛋白C,Number,"蛋白C。<br>单位: %<br>**参考范围**: 70-140",68
+thrombosisMarkers.proteinS,血栓标志物.蛋白S,Number,"蛋白S。<br>单位: %<br>**参考范围**: 65-140",58
+coagulationTests.pt,凝血检查.凝血酶原时间,Number,"凝血酶原时间。<br>单位: 秒<br>**参考范围**: 11-13",14.5
+coagulationTests.inr,凝血检查.国际标准化比值,Number,"INR。<br>**参考范围**: 0.8-1.2",1.35
+coagulationTests.aptt,凝血检查.活化部分凝血活酶时间,Number,"APTT。<br>单位: 秒<br>**参考范围**: 25-35",42
+coagulationTests.tt,凝血检查.凝血酶时间,Number,"凝血酶时间。<br>单位: 秒<br>**参考范围**: 14-21",18
+coagulationTests.platelets,凝血检查.血小板计数,Number,"血小板计数。<br>单位: ×10⁹/L<br>**参考范围**: 125-350",185
+immunologyTests.complement C3,免疫学检查.补体C3,Number,"补体C3。<br>单位: g/L<br>**参考范围**: 0.90-1.80",0.65
+immunologyTests.complementC4,免疫学检查.补体C4,Number,"补体C4。<br>单位: g/L<br>**参考范围**: 0.10-0.40",0.08
+immunologyTests.immunoglobulins.igG,免疫学检查.免疫球蛋白.IgG,Number,"免疫球蛋白G。<br>单位: g/L<br>**参考范围**: 7.0-16.0",12.5
+immunologyTests.immunoglobulins.igA,免疫学检查.免疫球蛋白.IgA,Number,"免疫球蛋白A。<br>单位: g/L<br>**参考范围**: 0.7-4.0",2.8
+immunologyTests.immunoglobulins.igM,免疫学检查.免疫球蛋白.IgM,Number,"免疫球蛋白M。<br>单位: g/L<br>**参考范围**: 0.4-2.3",1.5
+autoantibodies.ana,自身抗体.抗核抗体,String,"抗核抗体。<br>**建议值**: `阴性`, `低滴度阳性`, `高滴度阳性`",阴性
+autoantibodies.antiDsDna,自身抗体.抗dsDNA抗体,Number,"抗双链DNA抗体。<br>单位: IU/mL<br>**参考范围**: <200",58
+autoantibodies.antiGbm,自身抗体.抗肾小球基底膜抗体,Number,"抗GBM抗体。<br>单位: U/mL<br>**参考范围**: <20",5
+autoantibodies.anca,自身抗体.抗中性粒细胞胞浆抗体,String,"ANCA检测。<br>**建议值**: `阴性`, `c-ANCA阳性`, `p-ANCA阳性`",阴性
+autoantibodies.antiPla2r,自身抗体.抗PLA2R抗体,Number,"抗磷脂酶A2受体抗体。<br>单位: RU/mL<br>**参考范围**: <14",8
+imagingStudies.renalUltrasound.renalSize.left,影像学检查.肾脏超声.肾脏大小.左肾,Number,"左肾长径。<br>单位: cm<br>**正常**: 9-12",8.5
+imagingStudies.renalUltrasound.renalSize.right,影像学检查.肾脏超声.肾脏大小.右肾,Number,"右肾长径。<br>单位: cm<br>**正常**: 9-12",8.8
+imagingStudies.renalUltrasound.corticalThickness.left,影像学检查.肾脏超声.皮质厚度.左肾,Number,"左肾皮质厚度。<br>单位: mm<br>**正常**: >10",8
+imagingStudies.renalUltrasound.corticalThickness.right,影像学检查.肾脏超声.皮质厚度.右肾,Number,"右肾皮质厚度。<br>单位: mm<br>**正常**: >10",9
+imagingStudies.renalUltrasound.echogenicity,影像学检查.肾脏超声.回声,String,"肾脏回声强度。<br>**建议值**: `正常`, `增强`, `不均匀`",增强
+imagingStudies.renalUltrasound.hydronephrosis,影像学检查.肾脏超声.肾积水,String,"肾积水程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+imagingStudies.renalDoppler.resistanceIndex,影像学检查.肾脏多普勒.阻力指数,Number,"肾动脉阻力指数。<br>**正常**: <0.70",0.75
+imagingStudies.renalDoppler.pulsatilityIndex,影像学检查.肾脏多普勒.搏动指数,Number,"肾动脉搏动指数。<br>**正常**: <1.0",1.15
+imagingStudies.ctScan,影像学检查.CT检查,String,"肾脏CT检查结果（如果进行）",双肾体积缩小，皮质变薄
+imagingStudies.mriScan,影像学检查.MRI检查,String,"肾脏MRI检查结果（如果进行）",T2加权像示双肾信号不均
+imagingStudies.renalScintigraphy,影像学检查.肾脏核素显像,String,"肾脏核素显像结果（如果进行）",双肾摄取功能下降
+renalBiopsy.indication,肾活检.适应症,String,"肾活检适应症",蛋白尿进行性增加
+renalBiopsy.performed,肾活检.是否进行,String,"是否进行肾活检。<br>**建议值**: `是`, `否`, `计划中`",否
+renalBiopsy.lightMicroscopy,肾活检.光镜,String,"光镜检查结果（如果进行）",未进行
+renalBiopsy.immunofluorescence,肾活检.免疫荧光,String,"免疫荧光检查结果（如果进行）",未进行
+renalBiopsy.electronMicroscopy,肾活检.电镜,String,"电镜检查结果（如果进行）",未进行
+renalBiopsy.pathologicalDiagnosis,肾活检.病理诊断,String,"病理诊断结果（如果进行）",未进行
+dialysisAssessment.indication,透析评估.透析指征,String,"透析治疗指征评估。<br>**建议值**: `无指征`, `相对指征`, `绝对指征`",相对指征
+dialysisAssessment.vascularAccess,透析评估.血管通路,String,"血管通路评估",未建立血管通路
+dialysisAssessment.adequacy,透析评估.透析充分性,String,"透析充分性评估（如果已透析）",未进行透析
+dialysisAssessment.complications,透析评估.并发症,String,"透析相关并发症（如果已透析）",未进行透析
+transplantation.candidacy,移植.移植候选,String,"肾移植候选评估。<br>**建议值**: `不适合`, `需进一步评估`, `适合`",需进一步评估
+transplantation.contraindications,移植.禁忌症,String,"肾移植禁忌症评估",年龄偏大，心血管合并症
+transplantation.waitingList,移植.等待名单,String,"是否列入移植等待名单。<br>**建议值**: `是`, `否`, `评估中`",评估中
+complications.cardiovascular,并发症.心血管,String,"心血管并发症",高血压，左心室肥厚
+complications.retinopathy,并发症.视网膜病变,String,"糖尿病视网膜病变分期",非增殖性糖尿病视网膜病变
+complications.neuropathy,并发症.神经病变,String,"糖尿病神经病变",周围神经病变
+complications.peripheralVascular,并发症.周围血管,String,"周围血管病变",下肢动脉狭窄
+complications.infections,并发症.感染,String,"泌尿系统感染",反复尿路感染
+medications.aceiArb.name,药物治疗.ACEI或ARB.药物名称,String,"ACEI/ARB药物名称",贝那普利
+medications.aceiArb.dose,药物治疗.ACEI或ARB.剂量,String,"ACEI/ARB剂量",10mg daily
+medications.aceiArb.duration,药物治疗.ACEI或ARB.用药时间,String,"ACEI/ARB用药时间",2年
+medications.diuretics.name,药物治疗.利尿剂.药物名称,String,"利尿剂名称",呋塞米
+medications.diuretics.dose,药物治疗.利尿剂.剂量,String,"利尿剂剂量",20mg bid
+medications.antidiabetic.name,药物治疗.降糖药.药物名称,String,"降糖药物名称",二甲双胍+格列齐特
+medications.antidiabetic.dose,药物治疗.降糖药.剂量,String,"降糖药物剂量",二甲双胍500mg bid，格列齐特80mg daily
+medications.lipidLowering.name,药物治疗.调脂药.药物名称,String,"调脂药物名称",阿托伐他汀
+medications.lipidLowering.dose,药物治疗.调脂药.剂量,String,"调脂药物剂量",20mg daily
+medications.erythropoietin.name,药物治疗.促红细胞生成素.药物名称,String,"EPO药物名称",重组人促红细胞生成素
+medications.erythropoietin.dose,药物治疗.促红细胞生成素.剂量,String,"EPO剂量",4000U 每周3次
+medications.phosphateBinders.name,药物治疗.磷结合剂.药物名称,String,"磷结合剂名称",碳酸钙
+medications.phosphateBinders.dose,药物治疗.磷结合剂.剂量,String,"磷结合剂剂量",500mg tid
+medications.vitaminD.name,药物治疗.维生素D.药物名称,String,"维生素D制剂名称",骨化三醇
+medications.vitaminD.dose,药物治疗.维生素D.剂量,String,"维生素D制剂剂量",0.25μg bid
+medications.adherence,药物治疗.依从性,String,"用药依从性。<br>**建议值**: `良好`, `一般`, `较差`",一般
+lifestyleFactors.diet,生活方式.饮食,String,"饮食控制情况",低蛋白低盐饮食
+lifestyleFactors.fluidIntake,生活方式.液体摄入,Number,"每日液体摄入量。<br>单位: mL",1500
+lifestyleFactors.exercise,生活方式.运动,String,"运动锻炼情况",轻度有氧运动
+lifestyleFactors.smoking,生活方式.吸烟,String,"吸烟状况。<br>**建议值**: `从不`, `已戒烟`, `目前吸烟`",已戒烟
+lifestyleFactors.alcohol,生活方式.饮酒,String,"饮酒情况。<br>**建议值**: `从不`, `偶尔`, `经常`",从不
+riskFactors.diabeteDuration,危险因素.糖尿病病程,Number,"糖尿病病程。<br>单位: 年",15
+riskFactors.familyHistory,危险因素.家族史,String,"糖尿病或肾病家族史",父亲糖尿病史
+riskFactors.hypertensionDuration,危险因素.高血压病程,Number,"高血压病程。<br>单位: 年",8
+riskFactors.obesityHistory,危险因素.肥胖史,String,"肥胖史",既往肥胖，现已减重
+riskFactors.previousAkiEpisodes,危险因素.急性肾损伤史,String,"既往急性肾损伤发作",1次急性肾损伤史
+progressionRisk.riskCategory,进展风险.风险分级,String,"肾病进展风险分级。<br>**建议值**: `低`, `中`, `高`, `极高`",高
+progressionRisk.predictedEgfrDecline,进展风险.预测eGFR下降,Number,"预测每年eGFR下降。<br>单位: mL/min/1.73m²/年",3.5
+progressionRisk.timeToRrt,进展风险.肾脏替代治疗时间,String,"预计需要肾脏替代治疗的时间",5-8年内
+progressionRisk.riskScore,进展风险.风险评分,Number,"肾病进展风险评分",75
+qualityOfLife.functionalStatus,生活质量.功能状态,String,"功能状态评估。<br>**建议值**: `良好`, `轻度受限`, `中度受限`, `重度受限`",轻度受限
+qualityOfLife.symptomBurden,生活质量.症状负担,String,"症状负担评估",轻度疲劳和食欲不振
+qualityOfLife.psychosocialImpact,生活质量.心理社会影响,String,"心理社会影响评估",轻度焦虑
+qualityOfLife.workCapacity,生活质量.工作能力,String,"工作能力评估。<br>**建议值**: `正常`, `部分受限`, `严重受限`, `无法工作`",部分受限
+followUp.nextVisit,随访.下次随访,String,"下次随访时间",3个月后
+followUp.monitoringFrequency,随访.监测频率,String,"各项指标监测频率",eGFR和ACR每3个月，其他指标每6个月
+followUp.educationNeeds,随访.教育需求,String,"患者教育需求",肾脏保护和饮食指导
+followUp.specialist Referral,随访.专科转诊,String,"专科转诊建议",肾内科定期随访
+economicBurden.directCosts,经济负担.直接费用,String,"疾病直接医疗费用",年医疗费用约3万元
+economicBurden.indirectCosts,经济负担.间接费用,String,"疾病间接费用",工作时间损失
+economicBurden.familyImpact,经济负担.家庭影响,String,"对家庭经济的影响",中度经济负担
+preventive Measures.vaccinations,预防措施.疫苗接种,String,"推荐疫苗接种",流感疫苗、肺炎疫苗已接种
+preventive Measures.screenings,预防措施.筛查,String,"其他疾病筛查",定期心血管和眼底筛查
+preventive Measures.lifestyleInterventions,预防措施.生活方式干预,String,"生活方式干预措施",饮食指导、运动指导、戒烟指导
+prognosisAssessment.short Term,预后评估.短期预后,String,"短期预后评估（1年内）。<br>**建议值**: `良好`, `一般`, `较差`",一般
+prognosisAssessment.longTerm,预后评估.长期预后,String,"长期预后评估（5年以上）。<br>**建议值**: `良好`, `一般`, `较差`",较差
+prognosisAssessment.mortalityRisk,预后评估.死亡风险,String,"死亡风险评估。<br>**建议值**: `低`, `中`, `高`",中
+prognosisAssessment.complicationRisk,预后评估.并发症风险,String,"并发症发生风险。<br>**建议值**: `低`, `中`, `高`",高
+diagnosisImpression,诊断/印象,String,医生对糖尿病肾病检查结果的综合诊断或印象。,糖尿病肾病G3aA2期，肾功能轻中度下降，蛋白尿，继发性贫血
+recommendation,建议,String,医生根据检查结果提出的建议。,强化血糖血压控制，肾脏保护治疗，定期监测肾功能，准备肾脏替代治疗

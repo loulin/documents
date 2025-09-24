@@ -1,0 +1,225 @@
+fieldName,fieldNameCN,dataType,description,examples
+examDate,检查日期,String,检查日期，格式YYYY-MM-DD,2024-12-01
+patientID,患者唯一标识符,String,患者的唯一标识符,P202401001
+patientName,患者姓名,String,患者的姓名,张三
+clinicalIndication,临床适应症,String,进行营养评估的临床适应症,糖尿病营养知识与行为评估
+diagnosisImpression,诊断印象,String,基于评估结果的诊断印象,营养知识中等水平/饮食行为需改善
+recommendation,建议,String,基于评估结果的建议,加强营养教育和饮食行为指导
+
+# 基本信息
+ageAtAssessment,评估时年龄,Number,患者评估时的年龄（岁）,58
+gender,性别,String,患者性别,男/女
+educationLevel,教育程度,String,患者的教育程度,小学/初中/高中/专科/本科/研究生
+diabetesType,糖尿病类型,String,患者的糖尿病类型,1型糖尿病/2型糖尿病/妊娠糖尿病/其他特殊类型
+diabetesDuration,糖尿病病程,Number,患者糖尿病诊断时间（年）,8.5
+currentTreatment,当前治疗方案,String,患者当前的治疗方案,口服药物/胰岛素/联合治疗/生活方式干预
+hbA1cLevel,糖化血红蛋白,Number,最近一次糖化血红蛋白水平（%）,7.8
+
+# 营养知识评估
+overallNutritionKnowledgeScore,总体营养知识评分,Number,总体营养知识评分（0-100分）,65
+basicNutritionKnowledge,基础营养知识,Number,基础营养学知识评分（0-100分）,72
+diabetesNutritionKnowledge,糖尿病营养知识,Number,糖尿病专门营养知识评分（0-100分）,68
+macronutrientKnowledge,宏量营养素知识,Number,碳水化合物、蛋白质、脂肪知识评分（0-100分）,75
+micronutrientKnowledge,微量营养素知识,Number,维生素、矿物质知识评分（0-100分）,58
+foodGroupKnowledge,食物组别知识,Number,食物分类和组别知识评分（0-100分）,70
+portionSizeKnowledge,份量大小知识,Number,食物份量大小知识评分（0-100分）,62
+
+# 碳水化合物相关知识
+carbohydrateIdentification,碳水化合物识别,Number,识别含碳水化合物食物能力评分（1-5分）,3.5
+glycemicIndexKnowledge,血糖指数知识,Number,血糖指数概念理解评分（1-5分）,2.8
+carbohydrateCountingKnowledge,碳水计算知识,Number,碳水化合物计算知识评分（1-5分）,3.2
+fiberKnowledge,纤维知识,Number,膳食纤维作用和来源知识评分（1-5分）,3.0
+complexCarbKnowledge,复合碳水知识,Number,复合碳水化合物知识评分（1-5分）,3.3
+sugarSubstituteKnowledge,糖替代品知识,Number,糖替代品种类和使用知识评分（1-5分）,2.5
+
+# 蛋白质和脂肪知识
+proteinRequirementKnowledge,蛋白质需求知识,Number,蛋白质需求量知识评分（1-5分）,3.1
+proteinSourceKnowledge,蛋白质来源知识,Number,优质蛋白质来源知识评分（1-5分）,3.4
+fatTypeKnowledge,脂肪类型知识,Number,饱和脂肪、不饱和脂肪知识评分（1-5分）,2.9
+cholesterolKnowledge,胆固醇知识,Number,胆固醇相关知识评分（1-5分）,3.2
+omegaFattyAcidKnowledge,欧米伽脂肪酸知识,Number,欧米伽脂肪酸知识评分（1-5分）,2.3
+transfattKnowledge,反式脂肪知识,Number,反式脂肪危害知识评分（1-5分）,2.7
+
+# 食物标签和营养成分知识
+nutritionLabelReadingSkill,营养标签阅读技能,Number,营养标签阅读理解能力评分（1-5分）,2.8
+calorieContentUnderstanding,热量含量理解,Number,食物热量含量理解能力评分（1-5分）,3.2
+ingredientListUnderstanding,配料表理解,Number,食物配料表理解能力评分（1-5分）,2.6
+servingSizeUnderstanding,份量大小理解,Number,营养标签份量大小理解评分（1-5分）,2.4
+percentDailyValueUnderstanding,每日营养素参考值理解,Number,%DV理解能力评分（1-5分）,2.1
+additiveKnowledge,添加剂知识,Number,食品添加剂知识评分（1-5分）,2.5
+
+# 饮食规划知识
+mealPlanningKnowledge,膳食规划知识,Number,膳食规划原则知识评分（1-5分）,3.3
+plateMethodKnowledge,餐盘法知识,Number,糖尿病餐盘法知识评分（1-5分）,3.6
+exchangeSystemKnowledge,交换份知识,Number,食物交换份系统知识评分（1-5分）,2.8
+mealTimingKnowledge,进餐时间知识,Number,进餐时间安排知识评分（1-5分）,3.4
+snackPlanningKnowledge,零食规划知识,Number,健康零食选择和规划知识评分（1-5分）,2.9
+specialOccasionKnowledge,特殊场合知识,Number,节假日等特殊场合饮食知识评分（1-5分）,2.4
+
+# 饮食行为评估
+overallDietaryBehaviorScore,总体饮食行为评分,Number,总体饮食行为评分（0-100分）,68
+mealRegularityScore,进餐规律性评分,Number,进餐时间规律性评分（1-5分），5分为非常规律,3.4
+portionControlBehavior,份量控制行为,Number,份量控制实践情况评分（1-5分）,3.1
+healthyFoodChoice,健康食物选择,Number,选择健康食物频率评分（1-5分）,3.3
+carbohydrateManagement,碳水化合物管理,Number,碳水化合物摄入管理行为评分（1-5分）,3.0
+vegetableFruitIntake,蔬菜水果摄入,Number,蔬菜水果摄入充足性评分（1-5分）,2.8
+
+# 具体饮食习惯
+breakfastConsistency,早餐一致性,Number,早餐摄入一致性评分（1-5分），5分为每天都吃,3.8
+mealSkippingFrequency,跳餐频率,Number,跳餐频率（每周次数）,2
+snackingBehavior,零食行为,String,零食摄入模式,健康零食/偶尔不健康零食/经常不健康零食/不吃零食
+sweetDrinkConsumption,甜饮料消费,Number,含糖饮料摄入频率（每周次数）,1
+alcoholConsumption,酒精消费,String,酒精摄入情况,不饮酒/偶尔饮酒/适量饮酒/过量饮酒
+fastFoodConsumption,快餐消费,Number,快餐摄入频率（每周次数）,1
+
+# 食物准备和烹饪行为
+cookingFrequency,烹饪频率,Number,在家烹饪频率（每周次数）,5
+cookingSkillLevel,烹饪技能水平,Number,烹饪技能水平评分（1-5分）,3.2
+healthyCookingMethods,健康烹饪方法,Number,使用健康烹饪方法频率评分（1-5分）,3.4
+mealPreparationPlanning,膳食准备规划,Number,膳食准备规划能力评分（1-5分）,2.8
+kitchenEquipmentUse,厨房设备使用,Number,健康烹饪设备使用能力评分（1-5分）,3.0
+recipeModification,食谱改良,Number,改良食谱使其更健康的能力评分（1-5分）,2.6
+
+# 食物购买行为
+groceryShoppingPlanning,食品购物规划,Number,食品购物规划能力评分（1-5分）,3.1
+healthyFoodPurchasing,健康食品购买,Number,购买健康食品的一致性评分（1-5分）,3.3
+nutritionLabelChecking,营养标签查看,Number,购物时查看营养标签频率评分（1-5分）,2.5
+budgetConsciousShopping,预算意识购物,Number,在预算内购买健康食品能力评分（1-5分）,3.0
+impulsePurchaseControl,冲动购买控制,Number,控制不健康食品冲动购买能力评分（1-5分）,2.8
+seasonalFoodChoices,季节性食物选择,Number,选择时令新鲜食物意识评分（1-5分）,3.2
+
+# 社交饮食行为
+restaurantEatingBehavior,餐厅用餐行为,Number,餐厅健康饮食选择能力评分（1-5分）,2.7
+socialEatingAdaptation,社交用餐适应,Number,社交场合健康饮食坚持能力评分（1-5分）,2.4
+familyMealparticipation,家庭聚餐参与,Number,健康家庭聚餐参与度评分（1-5分）,3.5
+peerInfluenceResistance,同伴影响抵抗,Number,抵抗同伴不良饮食影响能力评分（1-5分）,2.9
+workplaceDietaryBehavior,工作场所饮食行为,Number,工作场所健康饮食维持能力评分（1-5分）,2.6
+specialEventDietManagement,特殊活动饮食管理,Number,特殊活动时饮食管理能力评分（1-5分）,2.3
+
+# 饮食记录和监测
+foodDiaryKeeping,饮食日记记录,String,是否记录饮食日记,定期记录/偶尔记录/很少记录/从不记录
+nutritionAppUse,营养应用使用,String,是否使用营养追踪应用,是/否
+calorieTracking,热量追踪,String,是否追踪热量摄入,定期追踪/偶尔追踪/从不追踪
+carbohydrateTracking,碳水化合物追踪,String,是否追踪碳水化合物,定期追踪/偶尔追踪/从不追踪
+bloodGlucoseResponseMonitoring,血糖反应监测,String,是否监测食物对血糖影响,定期监测/偶尔监测/从不监测
+weightMonitoring,体重监测,String,是否定期监测体重,每天/每周/每月/不定期/从不
+
+# 营养信息来源和利用
+primaryNutritionInformationSource,主要营养信息来源,String,主要营养信息来源,医生/营养师/网络/书籍/朋友家人
+informationReliabilityAssessment,信息可靠性评估,Number,评估营养信息可靠性能力评分（1-5分）,2.8
+nutritionEducationParticipation,营养教育参与,String,营养教育课程参与情况,积极参与/偶尔参与/很少参与/从不参与
+professionalConsultationFrequency,专业咨询频率,String,咨询营养专家频率,定期/偶尔/很少/从不
+onlineResourceUtilization,在线资源利用,Number,利用在线营养资源能力评分（1-5分）,3.1
+peerLearningEngagement,同伴学习参与,Number,参与同伴营养学习活动评分（1-5分）,2.5
+
+# 饮食动机和态度
+dietaryChangeMotivation,饮食改变动机,Number,改变饮食习惯动机强度评分（1-5分）,3.6
+healthyEatingAttitude,健康饮食态度,Number,对健康饮食态度积极性评分（1-5分）,3.8
+selfEfficacyDiet,饮食自我效能,Number,维持健康饮食自信心评分（1-5分）,3.2
+dietaryGoalSetting,饮食目标设定,Number,设定现实饮食目标能力评分（1-5分）,3.0
+tastePreferenceAdaptation,口味偏好适应,Number,适应健康食物口味能力评分（1-5分）,2.7
+dietaryFlexibility,饮食灵活性,Number,饮食计划灵活调整能力评分（1-5分）,2.9
+
+# 饮食障碍和挑战
+identifiedDietaryBarriers,已识别饮食障碍,String,主要饮食障碍,时间不足/费用昂贵/家庭不支持/口味不喜欢/知识缺乏
+timeConstraints,时间限制,Number,时间限制对健康饮食影响程度评分（1-5分）,3.4
+financialConstraints,经济限制,Number,经济因素对健康饮食影响程度评分（1-5分）,2.8
+familySupport,家庭支持,Number,家庭对健康饮食支持程度评分（1-5分）,3.2
+workplaceSupport,工作场所支持,Number,工作场所对健康饮食支持程度评分（1-5分）,2.4
+accessToHealthyFoods,健康食品可及性,Number,获得健康食品便利性评分（1-5分）,3.0
+
+# 文化和社会因素
+culturalFoodPreferences,文化饮食偏好,Number,文化饮食偏好对健康饮食影响评分（1-5分）,2.6
+traditionalFoodIntegration,传统食物整合,Number,将传统食物融入健康饮食能力评分（1-5分）,2.8
+religiousDietaryRestrictions,宗教饮食限制,String,宗教饮食限制情况,无限制/轻微限制/中等限制/严格限制
+socialDiningPressure,社交用餐压力,Number,社交用餐压力对健康饮食影响评分（1-5分）,2.9
+communityFoodEnvironment,社区食物环境,Number,社区食物环境对健康饮食支持度评分（1-5分）,2.7
+mediaInfluenceResistance,媒体影响抵抗,Number,抵抗不健康饮食媒体影响能力评分（1-5分）,2.5
+
+# 特殊情况饮食管理
+illnessDietAdjustment,疾病期饮食调整,Number,疾病期间饮食调整能力评分（1-5分）,2.4
+travelDietMaintenance,旅行饮食维持,Number,旅行期间维持健康饮食能力评分（1-5分）,2.2
+stressDietManagement,压力期饮食管理,Number,压力期间饮食管理能力评分（1-5分）,2.6
+holidayDietControl,节假日饮食控制,Number,节假日期间饮食控制能力评分（1-5分）,2.1
+workScheduleAdaptation,工作日程适应,Number,适应工作日程的饮食安排能力评分（1-5分）,2.8
+emergencyMealPlanning,紧急膳食规划,Number,紧急情况下健康膳食规划能力评分（1-5分）,2.3
+
+# 营养补充剂知识和使用
+supplementKnowledge,补充剂知识,Number,营养补充剂相关知识评分（1-5分）,2.4
+vitaminMineralUse,维生素矿物质使用,String,维生素矿物质补充剂使用情况,定期使用/偶尔使用/从不使用
+supplementSafety,补充剂安全性,Number,补充剂安全使用知识评分（1-5分）,2.2
+professionalSupplementGuidance,专业补充剂指导,String,是否接受专业补充剂指导,是/否
+naturalVersussyntheticUnderstanding,天然vs合成理解,Number,天然vs合成营养素理解评分（1-5分）,2.0
+supplementFoodInteraction,补充剂食物相互作用,Number,补充剂与食物相互作用知识评分（1-5分）,1.8
+
+# 饮食与血糖管理
+mealBloodGlucoseConnection,膳食血糖关联,Number,理解膳食与血糖关系程度评分（1-5分）,3.5
+preMealPlanning,餐前规划,Number,餐前血糖相关膳食规划能力评分（1-5分）,3.2
+postMealMonitoring,餐后监测,Number,餐后血糖监测和分析能力评分（1-5分）,3.4
+carbLoadingUnderstanding,碳水负荷理解,Number,碳水化合物负荷概念理解评分（1-5分）,2.6
+glycemicLoadKnowledge,血糖负荷知识,Number,血糖负荷概念掌握程度评分（1-5分）,2.4
+insulinMealTiming,胰岛素用餐时机,Number,胰岛素与用餐时机协调能力评分（1-5分）,3.0
+
+# 饮食教育效果评估
+knowledgeRetention,知识保持,Number,营养知识保持能力评分（1-5分）,3.1
+skillApplication,技能应用,Number,营养知识实际应用能力评分（1-5分）,2.8
+behaviorChangeTransfer,行为改变转移,Number,营养教育向行为改变转移程度评分（1-5分）,2.6
+teachingMethodPreference,教学方法偏好,String,偏好的营养教育方式,个人咨询/小组教育/在线学习/实践演示
+learningPacePreference,学习节奏偏好,String,偏好的学习节奏,快速集中/循序渐进/按需学习
+reinforcementNeed,强化需求,Number,营养知识和行为强化需求程度评分（1-5分）,3.2
+
+# 家庭和照护者参与
+familyNutritionKnowledge,家庭营养知识,Number,家庭成员营养知识水平评分（1-5分）,2.8
+caregiverDietarySupport,照护者饮食支持,Number,主要照护者饮食支持能力评分（1-5分）,3.4
+familyCookingParticipation,家庭烹饪参与,String,家庭成员烹饪参与情况,积极参与/部分参与/很少参与/不参与
+householdFoodEnvironment,家庭食物环境,Number,家庭食物环境健康程度评分（1-5分）,3.1
+familyMealPlanning,家庭膳食规划,Number,家庭膳食规划协调能力评分（1-5分）,2.9
+nutritionEducationFamilyInvolvement,营养教育家庭参与,String,家庭成员营养教育参与程度,积极参与/部分参与/很少参与/不参与
+
+# 技术和工具使用
+nutritionAppProficiency,营养应用熟练度,Number,营养追踪应用使用熟练度评分（1-5分）,2.6
+digitalScaleUse,电子秤使用,String,是否使用电子秤称量食物,经常使用/偶尔使用/很少使用/从不使用
+measurementToolsUse,测量工具使用,Number,使用量杯量勺等测量工具熟练度评分（1-5分）,3.0
+onlineNutritionResourceNavigation,在线营养资源导航,Number,浏览在线营养资源能力评分（1-5分）,2.8
+glucometerIntegration,血糖仪整合,Number,将血糖监测与饮食记录整合能力评分（1-5分）,2.4
+wearableDeviceUse,可穿戴设备使用,String,是否使用健康追踪可穿戴设备,是/否
+
+# 营养风险评估
+malnutritionRisk,营养不良风险,String,营养不良风险评估,低风险/中风险/高风险
+overnutritionRisk,营养过剩风险,String,营养过剩风险评估,低风险/中风险/高风险
+micronutrientDeficiencyRisk,微量营养素缺乏风险,String,微量营养素缺乏风险,低风险/中风险/高风险
+eatingDisorderRisk,饮食失调风险,String,饮食失调风险评估,低风险/中风险/高风险
+foodInsecurityRisk,食物不安全风险,String,食物不安全风险评估,无风险/轻微风险/中等风险/高风险
+nutritionRelatedComplicationRisk,营养相关并发症风险,String,营养相关并发症风险,低风险/中风险/高风险
+
+# 目标设定和规划
+shortTermNutritionGoals,短期营养目标,String,短期营养目标（1-3个月）,改善血糖控制/增加蔬菜摄入/学习碳水计算
+mediumTermNutritionGoals,中期营养目标,String,中期营养目标（3-6个月）,建立健康饮食习惯/减重5kg/改善血脂
+longTermNutritionGoals,长期营养目标,String,长期营养目标（6-12个月）,维持健康体重/预防并发症/改善生活质量
+goalRealism,目标现实性,String,营养目标现实性评估,非常现实/基本现实/过于理想/不现实
+goalMeasurability,目标可测性,String,营养目标可测量性,可精确测量/可大致测量/难以测量
+actionPlanCompleteness,行动计划完整性,String,营养行动计划完整性,非常完整/基本完整/不够完整/缺乏计划
+
+# 进展监测和评估
+progressTrackingMethod,进展追踪方法,String,营养进展追踪方法,饮食日记/应用程序/定期称重/血糖监测
+selfAssessmentAccuracy,自我评估准确性,Number,营养行为自我评估准确性评分（1-5分）,3.0
+feedbackUtilization,反馈利用,Number,利用营养师反馈改进能力评分（1-5分）,3.4
+adjustmentFlexibility,调整灵活性,Number,根据进展调整营养计划灵活性评分（1-5分）,2.8
+sustainabilityAssessment,可持续性评估,Number,营养行为改变可持续性评分（1-5分）,2.6
+outcomeExpectation,结果期望,String,营养干预结果期望,非常乐观/比较乐观/一般/不太乐观
+
+# 综合评估结果
+overallNutritionCompetencyScore,总体营养胜任力评分,Number,总体营养胜任力评分（0-100分）,64
+knowledgeApplicationGap,知识应用差距,String,营养知识与实际应用差距,差距很小/有一定差距/差距较大/差距很大
+priorityInterventionAreas,优先干预领域,String,优先营养干预领域,知识提升/行为改变/技能培训/环境改善
+nutritionRiskLevel,营养风险等级,String,总体营养风险等级,低风险/中风险/高风险/极高风险
+interventionUrgency,干预紧急性,String,营养干预紧急性,非常紧急/比较紧急/一般/不紧急
+expectedOutcomeProbability,预期结果概率,String,营养干预预期成功概率,很高/较高/一般/较低
+
+# 评估工具和方法
+assessmentInstrument,评估工具,String,使用的营养评估工具,NKQ/GNKQ/DKT/自制问卷
+assessmentDuration,评估用时,Number,完成营养评估所用时间（分钟）,45
+assessorQualification,评估者资质,String,评估者专业资质,注册营养师/营养医师/受训护士/其他
+assessmentSetting,评估环境,String,评估进行环境,门诊/病房/社区/家庭/在线
+followUpPlan,随访计划,String,营养评估随访计划,2周后/1个月后/3个月后/6个月后
+reassessmentCriteria,重新评估标准,String,重新评估触发条件,定期随访/目标未达成/行为倒退/患者要求

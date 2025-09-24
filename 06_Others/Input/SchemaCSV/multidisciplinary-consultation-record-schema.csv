@@ -1,0 +1,243 @@
+fieldName,fieldNameCN,dataType,description,examples
+examDate,检查日期,String,检查日期，格式YYYY-MM-DD,2024-12-01
+patientID,患者唯一标识符,String,患者的唯一标识符,P202401001
+patientName,患者姓名,String,患者的姓名,张三
+clinicalIndication,临床适应症,String,进行多学科会诊的临床适应症,复杂糖尿病并发症多学科会诊
+diagnosisImpression,诊断印象,String,基于会诊结果的诊断印象,多系统并发症需综合管理
+recommendation,建议,String,基于会诊结果的综合建议,制定个性化多学科协作治疗方案
+
+# 会诊基本信息
+consultationDate,会诊日期,String,多学科会诊日期，格式YYYY-MM-DD,2024-12-01
+consultationTime,会诊时间,String,会诊开始时间，格式HH:MM,14:30
+consultationDuration,会诊持续时间,Number,会诊持续时间（分钟）,90
+consultationType,会诊类型,String,会诊类型,预约会诊/紧急会诊/随访会诊/第二意见会诊
+consultationMode,会诊模式,String,会诊进行模式,面对面/线上视频/混合模式/书面会诊
+consultationUrgency,会诊紧急程度,String,会诊紧急程度,常规/紧急/极紧急
+referralSource,转介来源,String,会诊转介来源,门诊医生/住院医生/患者自行/外院转介
+
+# 患者基本信息
+ageAtConsultation,会诊时年龄,Number,患者会诊时的年龄（岁）,65
+gender,性别,String,患者性别,男/女
+primaryDiagnosis,主要诊断,String,患者主要诊断,2型糖尿病
+secondaryDiagnoses,次要诊断,String,相关次要诊断,高血压/血脂异常/冠心病/糖尿病肾病
+diabetesType,糖尿病类型,String,患者的糖尿病类型,1型糖尿病/2型糖尿病/妊娠糖尿病/其他特殊类型
+diabetesDuration,糖尿病病程,Number,患者糖尿病诊断时间（年）,15.5
+complicationsPresent,并发症存在,String,现有糖尿病并发症,微血管并发症/大血管并发症/神经病变/足部病变
+
+# 会诊团队组成
+consultationCoordinator,会诊协调人,String,会诊协调人,内分泌主治医生
+teamLeader,团队负责人,String,多学科团队负责人,内分泌科主任
+endocrinologist,内分泌科医生,String,内分泌科医生参与,主任医师/副主任医师/主治医师/住院医师
+cardiologist,心血管科医生,String,心血管科医生参与,参与/未参与
+nephrologist,肾脏科医生,String,肾脏科医生参与,参与/未参与
+neurologist,神经科医生,String,神经科医生参与,参与/未参与
+ophthalmologist,眼科医生,String,眼科医生参与,参与/未参与
+orthopedicSurgeon,骨科医生,String,骨科医生参与,参与/未参与
+vascularSurgeon,血管外科医生,String,血管外科医生参与,参与/未参与
+
+# 其他专业人员参与
+diabetesEducator,糖尿病教育者,String,糖尿病教育者参与,参与/未参与
+nutritionist,营养师,String,营养师参与,参与/未参与
+pharmacist,临床药师,String,临床药师参与,参与/未参与
+psychologist,心理学家,String,心理学家参与,参与/未参与
+socialWorker,社会工作者,String,社会工作者参与,参与/未参与
+physicalTherapist,物理治疗师,String,物理治疗师参与,参与/未参与
+occupationalTherapist,作业治疗师,String,作业治疗师参与,参与/未参与
+woundCareSpecialist,伤口护理专家,String,伤口护理专家参与,参与/未参与
+podiatrist,足病医生,String,足病医生参与,参与/未参与
+
+# 会诊原因和目标
+primaryConsultationReason,主要会诊原因,String,主要会诊原因,病情复杂/治疗效果不佳/并发症管理/治疗方案调整
+consultationObjectives,会诊目标,String,会诊具体目标,诊断明确/治疗方案制定/并发症防治/预后评估
+clinicalQuestions,临床问题,String,需要解答的主要临床问题,血糖控制策略/并发症处理/药物调整/风险评估
+decisionMakingGoals,决策目标,String,会诊决策制定目标,治疗方案/管理策略/随访计划/转介决定
+expectedOutcomes,预期结局,String,会诊预期结局,方案优化/症状改善/并发症控制/生活质量提升
+stakeholderExpectations,利益相关者期望,String,患者和家属期望,症状缓解/生活质量改善/病情稳定/避免并发症
+
+# 病史回顾和分析
+medicalHistoryReview,病史回顾,String,病史回顾完整性,完整回顾/部分回顾/简要回顾
+currentSymptoms,当前症状,String,当前主要症状,多饮多尿/乏力/体重下降/感觉异常/视力模糊
+symptomSeverity,症状严重程度,Number,症状严重程度评分（1-5分）,3.2
+symptomDuration,症状持续时间,String,当前症状持续时间,1周内/1月内/3月内/6月内/长期存在
+functionalStatus,功能状态,String,患者功能状态,独立/轻度依赖/中度依赖/重度依赖
+qualityOfLifeImpact,生活质量影响,Number,疾病对生活质量影响评分（1-5分）,3.5
+recentHospitalizations,近期住院,String,近期住院情况,无/1次/多次/频繁住院
+
+# 检查结果回顾
+laboratoryResults,实验室检查结果,String,重要实验室检查结果回顾,血糖/HbA1c/肾功能/血脂/尿蛋白
+imagingStudies,影像学检查,String,相关影像学检查结果,胸片/心电图/眼底/血管超声
+specializedTests,专科检查,String,专科检查结果,神经传导/心功能/肾活检
+glucoseMonitoringData,血糖监测数据,String,血糖监测数据分析,血糖控制/变异性/低血糖发生
+medicationLevels,药物浓度,String,相关药物浓度监测,胰岛素抗体/C肽/药物浓度
+biomarkers,生物标志物,String,相关生物标志物检测,炎症标志物/心肌标志物/肾损害标志物
+
+# 当前治疗方案回顾
+currentMedications,当前用药,String,当前药物治疗方案,口服降糖药/胰岛素/心血管药物/其他
+medicationAdherence,用药依从性,String,用药依从性评估,良好/一般/差
+treatmentResponse,治疗反应,String,当前治疗反应,良好/部分有效/无效/不良反应
+lifestyleInterventions,生活方式干预,String,生活方式干预情况,饮食控制/规律运动/戒烟限酒/体重管理
+monitoringCompliance,监测依从性,String,自我监测依从性,良好/一般/差
+previousTreatmentHistory,既往治疗史,String,既往治疗方案历史,药物/手术/住院/专科治疗
+
+# 专科评估结果
+endocrineAssessment,内分泌评估,String,内分泌科专业评估,血糖控制不佳/胰岛功能评估/激素水平异常
+cardiologicAssessment,心血管评估,String,心血管科评估,心功能/冠脉病变/心律异常/血压控制
+nephrologicAssessment,肾脏科评估,String,肾脏科评估,肾功能/蛋白尿/血压/透析需求
+neurologicAssessment,神经科评估,String,神经科评估,周围神经病变/自主神经病变/认知功能
+ophthalmicAssessment,眼科评估,String,眼科评估,视网膜病变/白内障/青光眼/视力状况
+podiatricAssessment,足部评估,String,足部专科评估,感觉/血供/溃疡/感染风险
+psychiatricAssessment,精神心理评估,String,精神心理评估,抑郁/焦虑/应对能力/认知功能
+
+# 多学科讨论内容
+casePresentationQuality,病例汇报质量,String,病例汇报质量,详细完整/基本完整/简要汇报
+discussionDepth,讨论深度,String,多学科讨论深度,深入讨论/充分讨论/简要讨论
+consensusLevel,共识程度,String,专家意见共识程度,完全共识/基本共识/部分共识/存在分歧
+controversialIssues,争议问题,String,存在争议的问题,诊断/治疗方案/预后/管理策略
+evidenceReview,循证医学回顾,String,循证医学证据回顾程度,充分回顾/基本回顾/简要回顾
+guidelineAdherence,指南依从性,String,治疗建议与指南一致性,完全一致/基本一致/部分偏离/明显偏离
+
+# 诊断结论
+primaryDiagnosisConfirmation,主要诊断确认,String,主要诊断确认情况,确认无误/需要修正/重新诊断
+differentialDiagnosis,鉴别诊断,String,鉴别诊断讨论,已排除/需要进一步排除/存在其他可能
+complicationAssessment,并发症评估,String,并发症严重程度评估,无并发症/轻度/中度/重度
+progressionRisk,疾病进展风险,String,疾病进展风险评估,低风险/中风险/高风险/极高风险
+prognosticFactors,预后因素,String,影响预后的主要因素,年龄/病程/并发症/依从性/社会支持
+diagnosticUncertainty,诊断不确定性,String,诊断不确定性程度,确定诊断/基本确定/有一定不确定性/不确定
+
+# 治疗建议
+pharmacologicRecommendations,药物治疗建议,String,药物治疗调整建议,维持原方案/调整剂量/更换药物/联合用药
+nonPharmacologicRecommendations,非药物治疗建议,String,非药物治疗建议,生活方式/心理支持/物理治疗/手术
+targetSettings,目标设定,String,治疗目标设定,血糖目标/血压目标/血脂目标/体重目标
+monitoringRecommendations,监测建议,String,监测方案建议,血糖监测/实验室检查/专科检查/影像学检查
+emergencyManagement,急症管理,String,急症管理预案,低血糖处理/急性并发症/紧急联系
+treatmentPriorities,治疗优先级,String,治疗优先级排序,血糖控制/并发症治疗/症状缓解/生活质量
+
+# 专科管理建议
+endocrineManagement,内分泌管理,String,内分泌专科管理建议,血糖调控/激素替代/监测方案
+cardiologicManagement,心血管管理,String,心血管专科管理建议,药物调整/介入治疗/手术/风险因素控制
+nephrologicManagement,肾脏管理,String,肾脏专科管理建议,肾功能保护/蛋白尿控制/透析准备
+neurologicManagement,神经科管理,String,神经科管理建议,神经保护/症状缓解/康复治疗
+ophthalmicManagement,眼科管理,String,眼科管理建议,激光治疗/药物治疗/手术/随访
+orthopedicManagement,骨科管理,String,骨科管理建议,骨密度改善/骨折预防/关节保护
+psychiatricManagement,精神心理管理,String,精神心理管理建议,药物治疗/心理治疗/行为干预
+
+# 协调护理计划
+careCoordinationPlan,护理协调计划,String,多学科护理协调计划,明确分工/定期沟通/统一记录
+communicationPlan,沟通计划,String,团队沟通计划,定期会议/书面沟通/电话联系/电子记录
+patientEducationPlan,患者教育计划,String,患者教育协调计划,统一教育/分专科教育/技能培训
+familyInvolvementPlan,家属参与计划,String,家属参与护理计划,教育培训/日常协助/紧急应对
+transitionOfCarePlan,护理过渡计划,String,护理过渡计划,住院/门诊/社区/家庭护理
+caseManagementPlan,病例管理计划,String,病例管理计划,专人负责/团队管理/分阶段管理
+
+# 随访和监测计划
+followUpSchedule,随访时间表,String,随访时间安排,1周后/2周后/1月后/3月后/6月后
+specialistFollowUp,专科随访,String,各专科随访安排,内分泌科/心内科/肾内科/眼科/神经科
+monitoringSchedule,监测日程,String,监测项目时间表,血糖/血压/实验室检查/影像学检查
+reassessmentTriggers,重新评估触发条件,String,重新会诊触发条件,病情变化/治疗无效/新症状/患者要求
+longTermFollowUpPlan,长期随访计划,String,长期随访规划,定期评估/年度体检/并发症筛查
+emergencyContactPlan,紧急联系计划,String,紧急情况联系计划,24小时联系/专科医生/急诊科
+
+# 患者和家属参与
+patientParticipation,患者参与,String,患者会诊参与程度,积极参与/部分参与/被动参与/未参与
+patientUnderstanding,患者理解程度,Number,患者对会诊结果理解程度评分（1-5分）,3.5
+patientSatisfaction,患者满意度,Number,患者对会诊满意度评分（1-5分）,4.0
+familyParticipation,家属参与,String,家属会诊参与程度,积极参与/部分参与/被动参与/未参与
+sharedDecisionMaking,共同决策,String,共同决策参与程度,充分参与/部分参与/有限参与/被动接受
+consentObtained,知情同意,String,治疗方案知情同意获得,已获得/部分获得/需要进一步沟通
+patientPreferences,患者偏好,String,患者治疗偏好考虑,充分考虑/部分考虑/有限考虑/未考虑
+
+# 资源需求和配置
+humanResourceNeeds,人力资源需求,String,人力资源配置需求,充足/基本满足/有限/不足
+equipmentNeeds,设备资源需求,String,设备资源配置需求,充足/基本满足/有限/不足
+medicationAccess,药物获取,String,推荐药物获取便利性,容易获取/基本可获取/困难/很难获取
+specializedServiceAccess,专科服务获取,String,专科服务获取便利性,容易获取/基本可获取/困难/很难获取
+financialConsiderations,经济考虑,String,治疗方案经济可行性,完全可承受/基本可承受/有经济压力/难以承受
+insuranceCoverage,保险覆盖,String,治疗方案保险覆盖,完全覆盖/大部分覆盖/部分覆盖/很少覆盖
+
+# 质量和安全考虑
+patientSafetyIssues,患者安全问题,String,识别的患者安全问题,无安全问题/低风险/中风险/高风险
+drugInteractions,药物相互作用,String,药物相互作用风险,无风险/低风险/中风险/高风险
+contraindicationsIdentified,禁忌症识别,String,治疗禁忌症识别,无禁忌症/相对禁忌症/绝对禁忌症
+allergyConsiderations,过敏考虑,String,过敏史和用药考虑,无过敏史/有过敏史已考虑/需要注意
+riskBenefitAnalysis,风险效益分析,String,治疗风险效益分析,效益大于风险/效益与风险相当/风险较大
+qualityIndicatorsPlan,质量指标计划,String,质量指标监测计划,已制定/需要制定/不需要
+
+# 教育和培训需求
+patientEducationNeeds,患者教育需求,String,患者教育需求评估,高需求/中等需求/低需求/无需求
+familyEducationNeeds,家属教育需求,String,家属教育需求评估,高需求/中等需求/低需求/无需求
+skillTrainingNeeds,技能培训需求,String,技能培训需求评估,高需求/中等需求/低需求/无需求
+professionalEducationNeeds,专业教育需求,String,医护人员教育需求,高需求/中等需求/低需求/无需求
+educationMaterialsNeeded,教育材料需求,String,教育材料配备需求,充足/基本足够/不足/缺乏
+educationDeliveryMethod,教育实施方法,String,教育实施方法建议,个别教育/小组教育/在线教育/综合教育
+
+# 研究和质量改进
+researchOpportunities,研究机会,String,相关研究参与机会,有机会且建议参与/有机会可考虑/无合适机会
+qualityImprovementOpportunities,质量改进机会,String,质量改进机会识别,流程改进/指南更新/教育培训/系统优化
+benchmarkingNeeds,标杆管理需求,String,标杆管理和比较需求,需要对比/可以对比/无需对比
+outcomeMeasurement,结局测量,String,结局指标测量计划,已制定/需要制定/简单测量/无需测量
+dataCollectionPlan,数据收集计划,String,相关数据收集计划,详细计划/基本计划/简单收集/无计划
+continuousImprovementPlan,持续改进计划,String,持续改进计划,已制定/需要制定/按需改进/无需改进
+
+# 伦理和法律考虑
+ethicalIssues,伦理问题,String,涉及的伦理问题,无伦理问题/一般伦理考虑/重要伦理问题/复杂伦理问题
+informedConsentIssues,知情同意问题,String,知情同意相关问题,无问题/一般考虑/需要特别注意/复杂情况
+privacyConfidentiality,隐私保密,String,隐私和保密考虑,标准保护/需要加强保护/特殊保护需求
+legalCompliance,法律合规,String,法律合规考虑,完全合规/基本合规/需要注意/合规风险
+culturalSensitivity,文化敏感性,String,文化敏感性考虑,无特殊考虑/一般考虑/重要考虑/特殊文化需求
+religiousConsiderations,宗教考虑,String,宗教因素考虑,无影响/轻微考虑/重要考虑/显著影响
+
+# 会诊结果评估
+consultationObjectivesAchievement,会诊目标达成,String,会诊目标达成程度,完全达成/大部分达成/部分达成/未达成
+clinicalQuestionsAnswered,临床问题解答,String,临床问题解答程度,完全解答/大部分解答/部分解答/未解答
+consensusReached,共识达成,String,专家共识达成程度,完全共识/基本共识/部分共识/无共识
+actionPlanClarity,行动计划清晰度,String,后续行动计划清晰度,非常清晰/比较清晰/基本清晰/不够清晰
+feasibilityOfRecommendations,建议可行性,String,治疗建议可行性,完全可行/基本可行/部分可行/难以执行
+patientAcceptanceOfPlan,患者计划接受度,String,患者对治疗计划接受程度,完全接受/基本接受/部分接受/不接受
+
+# 会诊效果和影响
+clinicalOutcomeImprovement,临床结局改善,String,预期临床结局改善,显著改善/中等改善/轻微改善/无改善
+qualityOfCareImprovement,护理质量改善,String,护理质量改善程度,显著改善/中等改善/轻微改善/无改善
+patientSatisfactionImprovement,患者满意度改善,String,患者满意度改善,显著提高/有所提高/轻微提高/无变化
+costEffectiveness,成本效益,String,会诊成本效益评估,高效益/中等效益/低效益/效益不明确
+systemImpact,系统影响,String,对医疗系统影响,积极影响/中性影响/有限影响/负面影响
+learningOutcomes,学习收益,String,参与人员学习收益,显著收益/中等收益/有限收益/无收益
+
+# 后续跟踪和评估
+followUpComplianceMonitoring,随访依从性监测,String,随访依从性监测计划,严密监测/定期监测/按需监测/无监测
+treatmentAdherenceMonitoring,治疗依从性监测,String,治疗依从性监测计划,严密监测/定期监测/按需监测/无监测
+outcomeTracking,结局追踪,String,治疗结局追踪计划,详细追踪/定期追踪/简单追踪/无追踪
+satisfactionSurvey,满意度调查,String,满意度后续调查计划,已计划/将安排/可考虑/无计划
+qualityAudit,质量审核,String,护理质量审核计划,定期审核/不定期审核/年度审核/无审核
+consultationReviewSchedule,会诊回顾时间表,String,会诊效果回顾时间表,1个月后/3个月后/6个月后/年度回顾
+
+# 文档和沟通
+consultationReportCompleteness,会诊报告完整性,String,会诊报告完整性,完整详细/基本完整/简要记录/不够完整
+reportDistribution,报告分发,String,会诊报告分发情况,已分发给所有相关方/部分分发/准备分发/未分发
+communicationWithReferringPhysician,与转介医生沟通,String,与转介医生沟通情况,已充分沟通/基本沟通/简要沟通/未沟通
+patientCopyProvided,患者副本提供,String,是否向患者提供会诊报告副本,已提供/将提供/患者未要求/不适合提供
+electronicRecordUpdating,电子病历更新,String,电子病历更新情况,已更新/正在更新/计划更新/未更新
+billingAndCoding,计费编码,String,会诊计费和编码,已完成/正在处理/待处理
+
+# 综合评估和总结
+overallConsultationValue,会诊总体价值,String,多学科会诊总体价值,高价值/中等价值/有限价值/价值不明确
+consultationNecessity,会诊必要性,String,会诊必要性评估,非常必要/比较必要/一般必要/可能不必要
+teamworkEffectiveness,团队协作效果,String,多学科团队协作效果,非常有效/比较有效/一般有效/效果有限
+processEfficiency,流程效率,String,会诊流程效率,高效/较高效/一般/需要改进
+resourceUtilization,资源利用,String,资源利用效率,高效利用/合理利用/一般利用/利用不足
+improvementRecommendations,改进建议,String,会诊流程改进建议,无需改进/小幅改进/中等改进/大幅改进
+
+# 质量指标
+consultationTimeliness,会诊及时性,String,会诊安排和执行及时性,非常及时/比较及时/基本及时/有延误
+participationRate,参与率,Number,相关专科参与率（%）,85
+consensusRate,共识率,Number,专家意见一致性比例（%）,78
+implementationRate,实施率,Number,建议实施执行率（%）,82
+patientSatisfactionScore,患者满意度评分,Number,患者对会诊满意度评分（1-5分）,4.2
+qualityMetricsAchievement,质量指标达成,String,质量指标达成情况,全部达成/大部分达成/部分达成/很少达成
+
+# 未来规划
+futureConsultationNeeds,未来会诊需求,String,未来会诊需求预测,可能需要/定期需要/按需要/不需要
+longTermManagementPlan,长期管理计划,String,长期多学科管理计划,已制定/需要制定/按需制定/不需要
+teamEvolutionPlan,团队发展计划,String,多学科团队发展计划,已规划/需要规划/可考虑/不需要
+continuityPlanning,连续性规划,String,护理连续性长期规划,已规划/需要规划/基本规划/不需要
+capacityBuildingNeeds,能力建设需求,String,团队能力建设需求,高需求/中等需求/低需求/无需求
+sustainabilityPlan,可持续性计划,String,多学科协作可持续性计划,已制定/需要制定/可考虑/不适用

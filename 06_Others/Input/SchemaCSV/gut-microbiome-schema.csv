@@ -1,0 +1,121 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行肠道微生物群检查的日期,2025-08-15
+clinicalIndication,检查适应症,String,"进行肠道微生物群检查的临床指征。<br>**建议值**: `代谢综合征`, `糖尿病`, `肠道菌群失调`, `肠易激综合征`, `炎症性肠病`, `肥胖症`",代谢综合征
+sampleType,样本类型,String,"检测样本类型。<br>**建议值**: `粪便`, `十二指肠液`, `结肠液`",粪便
+sampleCollection.method,样本采集.采集方法,String,"样本采集方法。<br>**建议值**: `家庭采集`, `医院采集`, `内镜采集`",家庭采集
+sampleCollection.preservationMethod,样本采集.保存方法,String,"样本保存方法。<br>**建议值**: `冷冻(-80°C)`, `冷藏(4°C)`, `常温保存试剂`",冷冻(-80°C)
+sampleCollection.transportTime,样本采集.运输时间,Number,"从采集到检测的时间。<br>单位: 小时",24
+sampleQuality.dnaYield,样本质量.DNA产量,Number,"提取的DNA总量。<br>单位: ng/μL",125.6
+sampleQuality.dnaIntegrity,样本质量.DNA完整性,String,"DNA完整性评估。<br>**建议值**: `优`, `良`, `可`, `差`",良
+sequencingMethod,测序方法,String,"使用的测序方法。<br>**建议值**: `16S rRNA`, `宏基因组`, `宏转录组`",16S rRNA
+sequencingPlatform,测序平台,String,"测序平台。<br>**建议值**: `Illumina`, `Ion Torrent`, `PacBio`, `Oxford Nanopore`",Illumina
+sequencingDepth,测序深度,Number,"测序深度。<br>单位: reads",45000
+alphaDiv versity.shannon,Alpha多样性.Shannon指数,Number,"Shannon多样性指数。<br>**参考范围**: 2.0-6.0",3.85
+alphaDiversity.chao1,Alpha多样性.Chao1指数,Number,"Chao1丰富度指数。<br>**参考范围**: 100-1000",456
+alphaDiversity.simpson,Alpha多样性.Simpson指数,Number,"Simpson多样性指数。<br>**参考范围**: 0.5-0.95",0.82
+alphaDiversity.observedOtus,Alpha多样性.观察到的OTUs,Number,"观察到的OTU数量",358
+alphaDiversity.faithPd,Alpha多样性.Faith系统发育多样性,Number,"Faith PD系统发育多样性",28.5
+betaDiversity.unifrac.weighted,Beta多样性.UniFrac.加权,Number,"加权UniFrac距离",0.65
+betaDiversity.unifrac.unweighted,Beta多样性.UniFrac.未加权,Number,"未加权UniFrac距离",0.48
+betaDiversity.brayCurtis,Beta多样性.Bray-Curtis,Number,"Bray-Curtis相异性",0.72
+taxonomicComposition.phylum.firmicutes,分类组成.门.厚壁菌门,Number,"厚壁菌门相对丰度。<br>单位: %<br>**参考范围**: 40-70%",58.5
+taxonomicComposition.phylum.bacteroidetes,分类组成.门.拟杆菌门,Number,"拟杆菌门相对丰度。<br>单位: %<br>**参考范围**: 20-45%",32.8
+taxonomicComposition.phylum.actinobacteria,分类组成.门.放线菌门,Number,"放线菌门相对丰度。<br>单位: %<br>**参考范围**: 1-10%",5.2
+taxonomicComposition.phylum.proteobacteria,分类组成.门.变形菌门,Number,"变形菌门相对丰度。<br>单位: %<br>**参考范围**: 1-15%",2.8
+taxonomicComposition.phylum.verrucomicrobia,分类组成.门.疣微菌门,Number,"疣微菌门相对丰度。<br>单位: %",0.6
+taxonomicComposition.ratios.firmicutesBacteroidetes,分类组成.比值.厚壁菌门拟杆菌门比,Number,"F/B比值。<br>**参考范围**: 0.5-3.0",1.78
+taxonomicComposition.family.lactobacillaceae,分类组成.科.乳杆菌科,Number,"乳杆菌科相对丰度。<br>单位: %",8.5
+taxonomicComposition.family.bifidobacteriaceae,分类组成.科.双歧杆菌科,Number,"双歧杆菌科相对丰度。<br>单位: %",4.2
+taxonomicComposition.family.enterobacteriaceae,分类组成.科.肠杆菌科,Number,"肠杆菌科相对丰度。<br>单位: %",1.8
+taxonomicComposition.family.akkermansiaceae,分类组成.科.阿克曼菌科,Number,"阿克曼菌科相对丰度。<br>单位: %",0.5
+taxonomicComposition.genus.lactobacillus,分类组成.属.乳杆菌属,Number,"乳杆菌属相对丰度。<br>单位: %",7.8
+taxonomicComposition.genus.bifidobacterium,分类组成.属.双歧杆菌属,Number,"双歧杆菌属相对丰度。<br>单位: %",4.1
+taxonomicComposition.genus.bacteroides,分类组成.属.拟杆菌属,Number,"拟杆菌属相对丰度。<br>单位: %",18.5
+taxonomicComposition.genus.akkermansia,分类组成.属.阿克曼菌属,Number,"阿克曼菌属相对丰度。<br>单位: %",0.4
+taxonomicComposition.genus.faecalibacterium,分类组成.属.粪杆菌属,Number,"粪杆菌属相对丰度。<br>单位: %",6.8
+taxonomicComposition.genus.roseburia,分类组成.属.玫瑰杆菌属,Number,"玫瑰杆菌属相对丰度。<br>单位: %",3.2
+taxonomicComposition.genus.clostridium,分类组成.属.梭菌属,Number,"梭菌属相对丰度。<br>单位: %",2.8
+taxonomicComposition.genus.enterococcus,分类组成.属.肠球菌属,Number,"肠球菌属相对丰度。<br>单位: %",1.2
+taxonomicComposition.genus.escherichia,分类组成.属.大肠杆菌属,Number,"大肠杆菌属相对丰度。<br>单位: %",1.5
+taxonomicComposition.genus.streptococcus,分类组成.属.链球菌属,Number,"链球菌属相对丰度。<br>单位: %",0.8
+taxonomicComposition.species.lactobacillusRhamnosus,分类组成.种.鼠李糖乳杆菌,Number,"鼠李糖乳杆菌相对丰度。<br>单位: %",2.5
+taxonomicComposition.species.bifidobacteriumLongum,分类组成.种.长双歧杆菌,Number,"长双歧杆菌相对丰度。<br>单位: %",1.8
+taxonomicComposition.species.akkermansiaMuciniphila,分类组成.种.嗜黏蛋白阿克曼菌,Number,"嗜黏蛋白阿克曼菌相对丰度。<br>单位: %",0.3
+taxonomicComposition.species.faecalibacteriumPrausnitzii,分类组成.种.普拉梭菌,Number,"普拉梭菌相对丰度。<br>单位: %",5.2
+functionalPrediction.kegg.carbohydrateMetabolism,功能预测.KEGG.碳水化合物代谢,Number,"碳水化合物代谢相关基因相对丰度。<br>单位: %",18.5
+functionalPrediction.kegg.aminoAcidMetabolism,功能预测.KEGG.氨基酸代谢,Number,"氨基酸代谢相关基因相对丰度。<br>单位: %",12.8
+functionalPrediction.kegg.lipidMetabolism,功能预测.KEGG.脂质代谢,Number,"脂质代谢相关基因相对丰度。<br>单位: %",8.5
+functionalPrediction.kegg.vitaminMetabolism,功能预测.KEGG.维生素代谢,Number,"维生素代谢相关基因相对丰度。<br>单位: %",5.2
+functionalPrediction.kegg.scfProduction,功能预测.KEGG.短链脂肪酸产生,Number,"短链脂肪酸产生相关基因相对丰度。<br>单位: %",6.8
+functionalPrediction.cog.metabolism,功能预测.COG.代谢功能,Number,"代谢功能相关基因相对丰度。<br>单位: %",45.6
+functionalPrediction.cog.informationStorage,功能预测.COG.信息存储处理,Number,"信息存储处理相关基因相对丰度。<br>单位: %",15.2
+functionalPrediction.cog.cellularProcesses,功能预测.COG.细胞过程,Number,"细胞过程相关基因相对丰度。<br>单位: %",12.8
+metaboliteProduction.scfa.acetate,代谢产物.短链脂肪酸.乙酸,Number,"乙酸浓度。<br>单位: mmol/kg<br>**参考范围**: 20-80",55.8
+metaboliteProduction.scfa.propionate,代谢产物.短链脂肪酸.丙酸,Number,"丙酸浓度。<br>单位: mmol/kg<br>**参考范围**: 5-25",15.2
+metaboliteProduction.scfa.butyrate,代谢产物.短链脂肪酸.丁酸,Number,"丁酸浓度。<br>单位: mmol/kg<br>**参考范围**: 3-15",8.5
+metaboliteProduction.scfa.total,代谢产物.短链脂肪酸.总量,Number,"总短链脂肪酸浓度。<br>单位: mmol/kg",79.5
+metaboliteProduction.scfa.butyrateRatio,代谢产物.短链脂肪酸.丁酸比例,Number,"丁酸占总SCFA比例。<br>单位: %<br>**参考范围**: 10-25%",10.7
+metaboliteProduction.bile acids.primary,代谢产物.胆汁酸.初级胆汁酸,Number,"初级胆汁酸相对丰度",28.5
+metaboliteProduction.bileAcids.secondary,代谢产物.胆汁酸.次级胆汁酸,Number,"次级胆汁酸相对丰度",15.8
+metaboliteProduction.bileAcids.deoxycholicAcid,代谢产物.胆汁酸.脱氧胆酸,Number,"脱氧胆酸浓度",6.5
+metaboliteProduction.bileAcids.lithocholicAcid,代谢产物.胆汁酸.石胆酸,Number,"石胆酸浓度",2.8
+metaboliteProduction.tryptophanMetabolites.indole,代谢产物.色氨酸代谢物.吲哚,Number,"吲哚浓度",3.2
+metaboliteProduction.tryptophanMetabolites.skatole,代谢产物.色氨酸代谢物.粪臭素,Number,"粪臭素浓度",1.8
+metaboliteProduction.tryptophanMetabolites.indoleAceticAcid,代谢产物.色氨酸代谢物.吲哚乙酸,Number,"吲哚乙酸浓度",2.5
+inflammatoryMarkers.lps,炎症标志物.脂多糖,Number,"脂多糖结合蛋白。<br>单位: EU/mL",15.8
+inflammatoryMarkers.calprotectin,炎症标志物.钙卫蛋白,Number,"粪便钙卫蛋白。<br>单位: mg/kg<br>**参考范围**: <50",28.5
+inflammatoryMarkers.lactoferrin,炎症标志物.乳铁蛋白,Number,"粪便乳铁蛋白。<br>单位: mg/kg<br>**参考范围**: <7.25",5.2
+inflammatoryMarkers.secretoryIga,炎症标志物.分泌性IgA,Number,"粪便分泌性IgA。<br>单位: mg/g",285
+barr ierFunction.zonulin,屏障功能.zonulin,Number,"血清zonulin。<br>单位: ng/mL<br>**参考范围**: <3.0",2.5
+barrierFunction.claudin3,屏障功能.claudin-3,Number,"血清claudin-3。<br>单位: ng/mL",1.8
+barrierFunction.intestinalPermeability,屏障功能.肠道通透性,String,"肠道通透性评估。<br>**建议值**: `正常`, `轻度增加`, `中度增加`, `重度增加`",轻度增加
+barrierFunction.mucusThickness,屏障功能.黏液层厚度,String,"黏液层厚度评估。<br>**建议值**: `正常`, `减少`, `严重减少`",正常
+pathogenDetection.pathogenicBacteria,病原体检测.致病菌,String,"检出的致病菌",无
+pathogenDetection.antibiotic Resistance,病原体检测.抗生素耐药性,String,"抗生素耐药基因检测",未检出耐药基因
+pathogenDetection.virulenceFactors,病原体检测.毒力因子,String,"毒力因子检测",未检出
+pathogenDetection.helicobacterPylori,病原体检测.幽门螺杆菌,String,"幽门螺杆菌检测。<br>**建议值**: `阴性`, `阳性`",阴性
+pathogenDetection.clostridioides Difficile,病原体检测.艰难梭菌,String,"艰难梭菌检测。<br>**建议值**: `阴性`, `阳性`",阴性
+metabolicCapacity.carbohydrateDigestion,代谢能力.碳水化合物消化,String,"碳水化合物消化能力。<br>**建议值**: `强`, `中`, `弱`",中
+metabolicCapacity.proteinDigestion,代谢能力.蛋白质消化,String,"蛋白质消化能力。<br>**建议值**: `强`, `中`, `弱`",强
+metabolicCapacity.fatDigestion,代谢能力.脂肪消化,String,"脂肪消化能力。<br>**建议值**: `强`, `中`, `弱`",中
+metabolicCapacity.vitaminSynthesis.vitaminK,代谢能力.维生素合成.维生素K,String,"维生素K合成能力。<br>**建议值**: `强`, `中`, `弱`",强
+metabolicCapacity.vitaminSynthesis.vitaminB12,代谢能力.维生素合成.维生素B12,String,"维生素B12合成能力。<br>**建议值**: `强`, `中`, `弱`",中
+metabolicCapacity.vitaminSynthesis.biotin,代谢能力.维生素合成.生物素,String,"生物素合成能力。<br>**建议值**: `强`, `中`, `弱`",强
+metabolicCapacity.vitaminSynthesis.folate,代谢能力.维生素合成.叶酸,String,"叶酸合成能力。<br>**建议值**: `强`, `中`, `弱`",中
+dietaryImpact.fiberDegradation,饮食影响.纤维降解,String,"膳食纤维降解能力。<br>**建议值**: `强`, `中`, `弱`",强
+dietaryImpact.polyphenolMetabolism,饮食影响.多酚代谢,String,"多酚代谢能力。<br>**建议值**: `强`, `中`, `弱`",中
+dietaryImpact.lactoseDigestion,饮食影响.乳糖消化,String,"乳糖消化能力。<br>**建议值**: `强`, `中`, `弱`",弱
+dietaryImpact.glutenSensitivity,饮食影响.麸质敏感性,String,"麸质敏感性相关菌群。<br>**建议值**: `无`, `轻度`, `中度`",无
+clinicalCorrelation.glucoseMetabolism,临床关联.糖代谢,String,"与糖代谢相关性。<br>**建议值**: `正相关`, `负相关`, `无关联`",负相关
+clinicalCorrelation.lipidMetabolism,临床关联.脂代谢,String,"与脂代谢相关性。<br>**建议值**: `正相关`, `负相关`, `无关联`",负相关
+clinicalCorrelation.inflammatoryStatus,临床关联.炎症状态,String,"与炎症状态相关性。<br>**建议值**: `正相关`, `负相关`, `无关联`",正相关
+clinicalCorrelation.insulinResistance,临床关联.胰岛素抵抗,String,"与胰岛素抵抗相关性。<br>**建议值**: `正相关`, `负相关`, `无关联`",正相关
+clinicalCorrelation.obesityRisk,临床关联.肥胖风险,String,"与肥胖风险相关性。<br>**建议值**: `正相关`, `负相关`, `无关联`",正相关
+probioticRecommendation.lactobacillus,益生菌推荐.乳杆菌,String,"乳杆菌补充建议。<br>**建议值**: `不需要`, `建议补充`, `强烈建议`",建议补充
+probioticRecommendation.bifidobacterium,益生菌推荐.双歧杆菌,String,"双歧杆菌补充建议。<br>**建议值**: `不需要`, `建议补充`, `强烈建议`",建议补充
+probioticRecommendation.akkermansia,益生菌推荐.阿克曼菌,String,"阿克曼菌补充建议。<br>**建议值**: `不需要`, `建议补充`, `强烈建议`",强烈建议
+prebioticRecommendation.inulin,益生元推荐.菊粉,String,"菊粉补充建议。<br>**建议值**: `不需要`, `建议补充`, `强烈建议`",建议补充
+prebioticRecommendation.fos,益生元推荐.低聚果糖,String,"低聚果糖补充建议。<br>**建议值**: `不需要`, `建议补充`, `强烈建议`",建议补充
+prebioticRecommendation.gos,益生元推荐.低聚半乳糖,String,"低聚半乳糖补充建议。<br>**建议值**: `不需要`, `建议补充`, `强烈建议`",不需要
+dietaryRecommendation.fiberIntake,饮食建议.纤维摄入,String,"膳食纤维摄入建议",增加可溶性纤维摄入
+dietaryRecommendation.fermentedFoods,饮食建议.发酵食品,String,"发酵食品摄入建议",适量摄入酸奶、泡菜
+dietaryRecommendation.diversityEnhancement,饮食建议.多样性增强,String,"菌群多样性增强建议",增加植物性食物种类
+dysbiosis Index,菌群失调指数,Number,"菌群失调程度评分。<br>**范围**: 0-10<br>**分级**: 0-3(正常), 4-6(轻度), 7-8(中度), 9-10(重度)",4.5
+resilience Score,恢复力评分,Number,"菌群恢复力评分。<br>**范围**: 0-10",6.5
+stabilityScore,稳定性评分,Number,"菌群稳定性评分。<br>**范围**: 0-10",7.2
+therapeuticTargets.targetBacteria,治疗靶点.目标菌群,String,"治疗目标菌群",增加双歧杆菌和阿克曼菌
+therapeuticTargets.targetMetabolites,治疗靶点.目标代谢物,String,"治疗目标代谢物",增加丁酸产生
+therapeuticTargets.targetPathways,治疗靶点.目标代谢通路,String,"治疗目标代谢通路",短链脂肪酸合成通路
+followUpRecommendation.recheckInterval,随访建议.复查间隔,String,"复查间隔建议",3个月后复查
+followUpRecommendation.interventionMonitoring,随访建议.干预监测,String,"干预效果监测建议",记录饮食和症状变化
+qualityControl.negativeControl,质量控制.阴性对照,String,"阴性对照结果。<br>**建议值**: `合格`, `不合格`",合格
+qualityControl.positiveControl,质量控制.阳性对照,String,"阳性对照结果。<br>**建议值**: `合格`, `不合格`",合格
+qualityControl.contaminationCheck,质量控制.污染检查,String,"污染检查结果。<br>**建议值**: `无污染`, `轻微污染`, `严重污染`",无污染
+bioinformaticsAnalysis.pipeline,生物信息学分析.分析流程,String,"使用的分析流程",QIIME2 v2023.5
+bioinformaticsAnalysis.referenceDatabase,生物信息学分析.参考数据库,String,"参考数据库版本",SILVA v138
+bioinformaticsAnalysis.rarefactionDepth,生物信息学分析.稀释深度,Number,"稀释深度",20000
+limitations.sampleSize,局限性.样本量,String,"样本量局限性说明",单次采样
+limitations.temporalVariation,局限性.时间变异,String,"时间变异性考虑",未考虑日间变异
+limitations.metaboliteValidation,局限性.代谢物验证,String,"代谢物测定验证",功能预测未经实验验证
+diagnosisImpression,诊断/印象,String,医生对肠道微生物群检查结果的综合诊断或印象。,肠道菌群轻度失调，多样性下降，丁酸产生菌减少
+recommendation,建议,String,医生根据检查结果提出的建议。,增加膳食纤维摄入，补充双歧杆菌和阿克曼菌，3个月后复查

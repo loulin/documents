@@ -1,0 +1,201 @@
+fieldName,fieldNameCN,dataType,description,examples
+examDate,检查日期,String,检查日期，格式YYYY-MM-DD,2024-12-01
+patientID,患者唯一标识符,String,患者的唯一标识符,P202401001
+patientName,患者姓名,String,患者的姓名,张三
+clinicalIndication,临床适应症,String,进行药物依从性评估的临床适应症,糖尿病药物依从性评估
+diagnosisImpression,诊断印象,String,基于评估结果的诊断印象,药物依从性中等水平
+recommendation,建议,String,基于评估结果的建议,加强用药教育和依从性管理
+
+# 基本信息
+ageAtAssessment,评估时年龄,Number,患者评估时的年龄（岁）,64
+gender,性别,String,患者性别,男/女
+educationLevel,教育程度,String,患者的教育程度,小学/初中/高中/专科/本科/研究生
+primaryDiagnosis,主要诊断,String,患者主要诊断,2型糖尿病
+diabetesType,糖尿病类型,String,患者的糖尿病类型,1型糖尿病/2型糖尿病/妊娠糖尿病/其他特殊类型
+diabetesDuration,糖尿病病程,Number,患者糖尿病诊断时间（年）,15.2
+comorbidities,合并症,String,患者主要合并症,高血压/血脂异常/冠心病/肾病
+
+# 当前用药方案
+totalMedicationNumber,总药物数量,Number,患者当前使用的药物总数,6
+diabetesMedicationNumber,糖尿病药物数量,Number,糖尿病相关药物数量,3
+oralMedicationNumber,口服药物数量,Number,口服降糖药物数量,2
+insulinRegimen,胰岛素方案,String,胰岛素使用方案,基础胰岛素/预混胰岛素/胰岛素强化/无胰岛素
+injectionFrequency,注射频率,Number,每日胰岛素注射次数,2
+medicationComplexity,用药复杂性,String,用药方案复杂性,简单/中等/复杂
+dosageFrequencyVariation,给药频率变化,String,给药频率变化情况,固定/变化较小/变化较大
+
+# 药物依从性测量
+overallAdherenceScore,总体依从性评分,Number,总体药物依从性评分（0-100分），100分为完全依从,75
+oralMedicationAdherence,口服药依从性,Number,口服降糖药依从性评分（0-100分）,80
+insulinAdherence,胰岛素依从性,Number,胰岛素使用依从性评分（0-100分）,70
+timingAdherence,用药时间依从性,Number,按时用药依从性评分（0-100分）,78
+dosageAdherence,剂量依从性,Number,剂量准确性依从性评分（0-100分）,85
+frequencyAdherence,频率依从性,Number,用药频率依从性评分（0-100分）,72
+
+# 遗漏用药情况
+missedDosesLastWeek,上周遗漏次数,Number,上周遗漏用药次数,3
+missedDosesLastMonth,上月遗漏次数,Number,上月遗漏用药次数,8
+mostMissedMedication,最常遗漏药物,String,最常遗漏的药物类型,口服降糖药/胰岛素/降压药/降脂药
+missedDosePattern,遗漏模式,String,遗漏用药的模式,随机遗漏/周末遗漏/工作日遗漏/特定时间遗漏
+consecutiveMissedDoses,连续遗漏情况,Number,最长连续遗漏天数,2
+makeUpMissedDoses,补服遗漏药物,String,是否补服遗漏的药物,总是/有时/从不
+
+# 依从性影响因素
+forgetfulness,健忘因素,Number,健忘对依从性影响程度评分（1-5分），5分影响最大,3.5
+sideEffects,副作用因素,Number,药物副作用对依从性影响程度评分（1-5分）,2.8
+costConcerns,费用担忧,Number,药物费用对依从性影响程度评分（1-5分）,3.2
+complexRegimen,方案复杂性,Number,用药方案复杂性对依从性影响程度评分（1-5分）,2.5
+efficacyDoubt,疗效怀疑,Number,对药物疗效怀疑对依从性影响评分（1-5分）,2.2
+socialStigma,社会病耻感,Number,社会病耻感对依从性影响评分（1-5分）,1.8
+
+# 用药知识评估
+medicationKnowledgeScore,用药知识评分,Number,药物相关知识掌握程度评分（0-100分）,68
+dosageUnderstanding,剂量理解,Number,对药物剂量理解程度评分（1-5分）,3.8
+timingUnderstanding,时间理解,Number,对用药时间理解程度评分（1-5分）,3.6
+sideEffectAwareness,副作用认知,Number,对药物副作用认知程度评分（1-5分）,3.2
+drugInteractionAwareness,药物相互作用认知,Number,对药物相互作用认知程度评分（1-5分）,2.4
+contraindicationAwareness,禁忌症认知,Number,对药物禁忌症认知程度评分（1-5分）,2.8
+
+# 用药技能评估
+pillCountingSkill,药片计数技能,Number,药片计数准确性评分（1-5分）,4.2
+liquidMeasurementSkill,液体测量技能,Number,液体药物测量准确性评分（1-5分）,3.8
+injectionTechniqueSkill,注射技术技能,Number,胰岛素注射技术掌握程度评分（1-5分）,3.5
+medicationStorageSkill,药物保存技能,Number,药物保存方法掌握程度评分（1-5分）,3.6
+deviceUseSkill,器械使用技能,Number,血糖仪等器械使用技能评分（1-5分）,3.4
+emergencyMedicationSkill,急救用药技能,Number,急救用药（如胰高糖素）使用技能评分（1-5分）,2.2
+
+# 用药提醒和管理
+reminderSystemUse,提醒系统使用,String,是否使用用药提醒系统,是/否
+reminderSystemType,提醒系统类型,String,使用的提醒系统类型,闹钟/手机应用/药盒/家人提醒
+medicationOrganizationSystem,用药组织系统,String,用药组织系统,药盒分装/标签管理/列表管理/无系统
+medicationListMaintenance,药物清单维护,String,是否维护药物清单,是/否
+pharmacyRelationship,药房关系,String,固定药房关系,固定药房/多个药房/不固定
+automaticRefillUse,自动续方使用,String,是否使用自动续方服务,是/否
+
+# 医患沟通
+medicationDiscussionFrequency,用药讨论频率,String,与医生讨论用药频率,每次就诊/偶尔/从不
+questionAskingComfort,提问舒适度,Number,向医生询问用药问题舒适度评分（1-5分）,3.4
+concernSharingWillingness,担忧分享意愿,Number,分享用药担忧意愿评分（1-5分）,3.2
+understandingConfirmation,理解确认,String,是否确认用药指示理解,总是/有时/从不
+medicationChangeDiscussion,用药变更讨论,String,用药变更时是否充分讨论,是/否
+sharedDecisionMaking,共同决策,String,用药决策是否共同参与,是/否
+
+# 社会支持
+familySupportForMedication,家庭用药支持,Number,家庭在用药方面的支持程度评分（1-5分）,3.8
+caregiverMedicationInvolvement,照护者用药参与,String,照护者参与用药管理程度,高度参与/适度参与/轻度参与/不参与
+peerSupportMedication,同伴用药支持,Number,同伴在用药方面的支持程度评分（1-5分）,2.6
+healthcareTeamSupport,医疗团队支持,Number,医疗团队用药支持程度评分（1-5分）,3.6
+pharmacistCounseling,药师咨询,String,是否接受药师用药咨询,定期/偶尔/从不
+medicationEducationAccess,用药教育获取,String,用药教育获取途径,医生/护士/药师/网络/书籍
+
+# 心理因素
+medicationAnxiety,用药焦虑,Number,对用药的焦虑程度评分（1-5分），1分为无焦虑,2.5
+dependencyFear,依赖恐惧,Number,对药物依赖的恐惧程度评分（1-5分）,2.8
+injectionAnxiety,注射焦虑,Number,胰岛素注射焦虑程度评分（1-5分）,3.2
+selfEfficacyMedication,用药自我效能,Number,用药自我效能感评分（1-5分）,3.4
+controlBeliefs,控制信念,String,对药物治疗控制疾病的信念,强烈相信/基本相信/怀疑/不相信
+treatmentMotivation,治疗动机,Number,药物治疗动机强度评分（1-5分）,3.8
+
+# 生活方式因素
+routineStability,日常稳定性,Number,日常生活规律稳定性评分（1-5分）,3.2
+workScheduleImpact,工作日程影响,Number,工作日程对用药影响程度评分（1-5分）,3.0
+travelFrequency,旅行频率,String,旅行频率,很少/偶尔/经常/频繁
+travelMedicationPlanning,旅行用药计划,String,旅行时用药计划制定情况,充分计划/基本计划/临时安排/无计划
+socialEventAdaptation,社交活动适应,Number,社交活动时用药适应能力评分（1-5分）,2.8
+mealTimingRegularity,进餐时间规律性,Number,进餐时间规律性评分（1-5分）,3.4
+
+# 经济因素
+medicationAffordability,药物承受能力,String,药物费用承受能力,完全承受/基本承受/部分困难/严重困难
+insuranceCoverage,保险覆盖,Number,医疗保险药物覆盖比例（%）,70
+copaymentBurden,自付费用负担,Number,药物自付费用占收入比例（%）,8
+genericSubstitutionAcceptance,仿制药接受度,String,对仿制药替代接受程度,完全接受/基本接受/有保留/不接受
+costSavingBehavior,费用节省行为,String,是否有节省药费行为,减少剂量/延长间隔/更换便宜药物/无节省行为
+financialAssistanceAwareness,经济援助认知,String,对药物经济援助项目认知,了解并使用/了解未使用/不了解
+
+# 医疗系统因素
+appointmentFrequency,就诊频率,String,定期就诊频率,每月/每3个月/每6个月/不定期
+appointmentBarriers,就诊障碍,String,就诊主要障碍,时间冲突/交通不便/费用问题/预约困难/无障碍
+pharmacyAccessibility,药房可及性,String,药房可及性,非常便利/比较便利/一般/不便利
+medicationAvailability,药物可获得性,String,药物可获得性,总是有货/偶尔缺货/经常缺货/很难获得
+prescriptionRefillTimeliness,处方续开及时性,String,处方续开及时性,总是及时/基本及时/偶尔延迟/经常延迟
+healthcareProviderContinuity,医疗服务连续性,String,医疗服务提供者连续性,固定医生/偶尔更换/经常更换
+
+# 技术辅助
+smartphoneUse,智能手机使用,String,是否使用智能手机,是/否
+medicationAppUse,用药应用使用,String,是否使用用药管理应用,是/否
+electronicReminderEffectiveness,电子提醒有效性,Number,电子提醒系统有效性评分（1-5分）,3.6
+pillDispenserUse,药物分配器使用,String,是否使用自动药物分配器,是/否
+onlinePharmacyUse,网上药房使用,String,是否使用网上药房服务,是/否
+telemedicineImpactOnAdherence,远程医疗对依从性影响,Number,远程医疗对用药依从性影响评分（1-5分）,3.2
+
+# 副作用经历
+experiencedSideEffects,经历副作用,String,是否经历过药物副作用,是/否
+sideEffectSeverity,副作用严重程度,String,经历副作用的严重程度,轻微/中等/严重/无副作用
+sideEffectManagement,副作用管理,String,副作用管理方式,咨询医生/自行减药/停药/无处理
+sideEffectImpactOnAdherence,副作用对依从性影响,Number,副作用对用药依从性影响程度评分（1-5分）,2.8
+sideEffectReportingBehavior,副作用报告行为,String,向医生报告副作用行为,总是报告/有时报告/很少报告/从不报告
+alternativeTreatmentSeeking,替代治疗寻求,String,是否寻求替代治疗方案,是/否
+
+# 疾病相关因素
+symptomSeverity,症状严重程度,Number,糖尿病症状严重程度评分（1-5分）,2.5
+diseaseProgressionConcern,疾病进展担忧,Number,对疾病进展担忧程度评分（1-5分）,3.8
+treatmentBenefitPerception,治疗获益感知,Number,对治疗获益感知程度评分（1-5分）,3.6
+complicationExperience,并发症经历,String,是否经历过糖尿病并发症,是/否
+hospitalAdmissionHistory,住院史,String,因糖尿病相关问题住院历史,无/1-2次/3-5次/多次
+emergencyVisitHistory,急诊史,String,因糖尿病急症就诊历史,无/偶尔/经常
+
+# 健康信念
+illnessPerceptionSeriousness,疾病严重性认知,Number,对糖尿病严重性认知评分（1-5分）,3.8
+treatmentNecessityBelief,治疗必要性信念,Number,对药物治疗必要性信念评分（1-5分）,4.2
+medicationConcernScore,药物担忧评分,Number,对药物使用担忧程度评分（1-5分）,2.6
+naturalTreatmentPreference,自然治疗偏好,Number,对自然治疗方式偏好程度评分（1-5分）,2.8
+treatmentControlBelief,治疗控制信念,Number,对药物控制疾病信念评分（1-5分）,3.6
+doctorTrustLevel,医生信任水平,Number,对医生信任程度评分（1-5分）,4.0
+
+# 用药行为监测
+pillCountAccuracy,药片计数准确性,Number,药片计数监测准确性（%）,85
+electronicMonitoringData,电子监测数据,Number,电子监测设备记录的依从性（%）,78
+pharmacyRefillData,药房续方数据,Number,药房续方记录依从性（%）,82
+selfReportAccuracy,自我报告准确性,Number,自我报告依从性准确性评估（%）,75
+biologicalMarkerEvidence,生物标志物证据,String,生物标志物检测药物依从性证据,支持依从/不支持依从/无法确定
+clinicalOutcomeCorrelation,临床结局相关性,String,临床结局与用药依从性相关性,强相关/中等相关/弱相关/无相关
+
+# 干预需求评估
+educationNeed,教育需求,String,用药教育需求程度,高需求/中等需求/低需求/无需求
+behaviorInterventionNeed,行为干预需求,String,行为干预需求程度,高需求/中等需求/低需求/无需求
+psychologicalSupportNeed,心理支持需求,String,心理支持需求程度,高需求/中等需求/低需求/无需求
+socialSupportEnhancementNeed,社会支持增强需求,String,社会支持增强需求程度,高需求/中等需求/低需求/无需求
+technologyAssistanceNeed,技术辅助需求,String,技术辅助需求程度,高需求/中等需求/低需求/无需求
+medicationSimplificationNeed,用药简化需求,String,用药方案简化需求程度,高需求/中等需求/低需求/无需求
+
+# 干预效果评估
+previousInterventionHistory,既往干预史,String,既往依从性干预历史,有/无
+interventionEffectiveness,干预有效性,String,既往干预有效性,显著有效/有效/轻微有效/无效/未知
+preferredInterventionType,偏好干预类型,String,偏好的干预类型,教育/提醒/简化/支持/技术辅助
+interventionBarriers,干预障碍,String,接受干预的主要障碍,时间限制/经济负担/隐私担忧/效果怀疑/无障碍
+motivationForImprovement,改善动机,Number,改善用药依从性动机强度评分（1-5分）,3.8
+changeReadiness,改变准备度,String,改变用药行为准备度,已准备好/考虑中/未准备好
+
+# 文化和语言因素
+languageBarrier,语言障碍,String,是否存在语言交流障碍,是/否
+culturalBeliefs,文化信念,String,文化信念对用药影响,显著影响/轻微影响/无影响
+traditionalMedicineUse,传统药物使用,String,是否同时使用传统药物,是/否
+religiousBeliefs,宗教信念,String,宗教信念对用药影响,显著影响/轻微影响/无影响
+familyDecisionInfluence,家庭决策影响,String,家庭决策对用药影响程度,显著影响/中等影响/轻微影响/无影响
+healthLiteracy,健康素养,Number,健康素养水平评分（1-5分）,3.2
+
+# 综合评估结果
+adherenceRiskLevel,依从性风险等级,String,用药依从性风险等级,低风险/中风险/高风险/极高风险
+primaryAdherenceBarriers,主要依从性障碍,String,主要依从性障碍,健忘/费用/副作用/复杂性/怀疑/社会因素
+interventionPriority,干预优先级,String,干预优先级,紧急/高/中/低
+adherenceGoalSetting,依从性目标设定,String,依从性改善目标,短期目标/中期目标/长期目标
+monitoringPlan,监测计划,String,依从性监测计划,密切监测/定期监测/按需监测
+followUpSchedule,随访安排,String,依从性随访安排,1周后/2周后/1个月后/3个月后
+
+# 评估工具和方法
+assessmentInstrument,评估工具,String,使用的依从性评估工具,MMAS/ARMS/MAQ/Morisky
+assessmentMethod,评估方法,String,评估方法组合,问卷+药片计数/自我报告+电子监测/多种方法结合
+reliabilityMeasure,可靠性测量,Number,评估结果可靠性评分（1-5分）,3.8
+validityCheck,有效性检查,String,评估有效性检查,已验证/部分验证/未验证
+assessmentFrequency,评估频率,String,依从性评估频率,每次就诊/定期评估/按需评估
+dataCollectionQuality,数据收集质量,String,数据收集质量,高质量/中等质量/需改进

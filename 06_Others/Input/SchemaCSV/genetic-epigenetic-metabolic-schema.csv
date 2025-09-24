@@ -1,0 +1,170 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行遗传与表观遗传学检查的日期,2025-08-15
+clinicalIndication,检查适应症,String,"进行遗传与表观遗传学检查的临床指征。<br>**建议值**: `遗传性糖尿病`, `家族性高胆固醇血症`, `肥胖症`, `代谢综合征`, `药物基因组学`",遗传性糖尿病
+sampleType,样本类型,String,"检测样本类型。<br>**建议值**: `外周血`, `唾液`, `口腔拭子`, `组织活检`",外周血
+sampleQuality.dnaConcentration,样本质量.DNA浓度,Number,"DNA浓度。<br>单位: ng/μL",85.2
+sampleQuality.dnaIntegrity,样本质量.DNA完整性,String,"DNA完整性评估。<br>**建议值**: `优`, `良`, `可`, `差`",良
+sampleQuality.rnaConcentration,样本质量.RNA浓度,Number,"RNA浓度（如果进行）。<br>单位: ng/μL",125.6
+sampleQuality.rnaIntegrityNumber,样本质量.RNA完整性数值,Number,"RIN值（如果进行）。<br>**理想**: >7.0",8.2
+geneticTesting.methodology,基因检测.检测方法,String,"基因检测方法。<br>**建议值**: `Sanger测序`, `全外显子组测序`, `全基因组测序`, `靶向基因面板`",靶向基因面板
+geneticTesting.coverage,基因检测.覆盖度,Number,"测序覆盖度。<br>单位: X",150
+geneticTesting.readDepth,基因检测.测序深度,Number,"平均测序深度",30
+geneticTesting.qualityScore,基因检测.质量评分,Number,"Phred质量评分。<br>**合格**: >20",28
+diabetesGenes.mody.hnf1a,糖尿病基因.MODY.HNF1A,String,"HNF1A基因突变检测。<br>**建议值**: `野生型`, `杂合突变`, `纯合突变`",野生型
+diabetesGenes.mody.hnf4a,糖尿病基因.MODY.HNF4A,String,"HNF4A基因突变检测。<br>**建议值**: `野生型`, `杂合突变`, `纯合突变`",野生型
+diabetesGenes.mody.gck,糖尿病基因.MODY.GCK,String,"GCK基因突变检测。<br>**建议值**: `野生型`, `杂合突变`, `纯合突变`",野生型
+diabetesGenes.mody.hnf1b,糖尿病基因.MODY.HNF1B,String,"HNF1B基因突变检测。<br>**建议值**: `野生型`, `杂合突变`, `纯合突变`",野生型
+diabetesGenes.mody.pdx1,糖尿病基因.MODY.PDX1,String,"PDX1基因突变检测。<br>**建议值**: `野生型`, `杂合突变`, `纯合突变`",野生型
+diabetesGenes.mody.neurod1,糖尿病基因.MODY.NEUROD1,String,"NEUROD1基因突变检测。<br>**建议值**: `野生型`, `杂合突变`, `纯合突变`",野生型
+diabetesGenes.type1.hla,糖尿病基因.1型.HLA,String,"HLA基因型。<br>**高风险**: DR3-DQ2/DR4-DQ8",DR3-DQ2/DR4-DQ8
+diabetesGenes.type1.ins,糖尿病基因.1型.INS,String,"胰岛素基因VNTR多态性",ClassI/ClassI
+diabetesGenes.type1.ptpn22,糖尿病基因.1型.PTPN22,String,"PTPN22基因多态性",C1858T杂合突变
+diabetesGenes.type2.tcf7l2,糖尿病基因.2型.TCF7L2,String,"TCF7L2基因多态性",rs7903146 CT基因型
+diabetesGenes.type2.pparg,糖尿病基因.2型.PPARG,String,"PPARG基因多态性",Pro12Ala杂合突变
+diabetesGenes.type2.kcnj11,糖尿病基因.2型.KCNJ11,String,"KCNJ11基因多态性",Glu23Lys野生型
+diabetesGenes.type2.abcc8,糖尿病基因.2型.ABCC8,String,"ABCC8基因多态性",野生型
+diabetesGenes.neonatal.kcnj11Neonatal,糖尿病基因.新生儿.KCNJ11新生儿,String,"新生儿糖尿病KCNJ11突变",野生型
+diabetesGenes.neonatal.abcc8Neonatal,糖尿病基因.新生儿.ABCC8新生儿,String,"新生儿糖尿病ABCC8突变",野生型
+diabetesGenes.neonatal.ins,糖尿病基因.新生儿.INS,String,"新生儿糖尿病胰岛素基因突变",野生型
+lipidGenes.familialHypercholesterolemia.ldlr,血脂基因.家族性高胆固醇血症.LDLR,String,"LDLR基因突变检测。<br>**建议值**: `野生型`, `致病突变`, `可能致病突变`",野生型
+lipidGenes.familialHypercholesterolemia.apob,血脂基因.家族性高胆固醇血症.APOB,String,"APOB基因突变检测。<br>**建议值**: `野生型`, `致病突变`, `可能致病突变`",野生型
+lipidGenes.familialHypercholesterolemia.pcsk9,血脂基因.家族性高胆固醇血症.PCSK9,String,"PCSK9基因突变检测。<br>**建议值**: `野生型`, `致病突变`, `可能致病突变`",野生型
+lipidGenes.familialHypercholesterolemia.ldlrap1,血脂基因.家族性高胆固醇血症.LDLRAP1,String,"LDLRAP1基因突变检测。<br>**建议值**: `野生型`, `致病突变`, `可能致病突变`",野生型
+lipidGenes.triglycerides.lpl,血脂基因.甘油三酯.LPL,String,"LPL基因多态性",野生型
+lipidGenes.triglycerides.apoa5,血脂基因.甘油三酯.APOA5,String,"APOA5基因多态性",-1131T>C杂合突变
+lipidGenes.triglycerides.apoc3,血脂基因.甘油三酯.APOC3,String,"APOC3基因多态性",野生型
+lipidGenes.hdl.abca1,血脂基因.HDL.ABCA1,String,"ABCA1基因多态性",野生型
+lipidGenes.hdl.apoa1,血脂基因.HDL.APOA1,String,"APOA1基因多态性",野生型
+lipidGenes.hdl.lcat,血脂基因.HDL.LCAT,String,"LCAT基因多态性",野生型
+obesityGenes.monogenic.mc4r,肥胖基因.单基因.MC4R,String,"MC4R基因突变检测。<br>**建议值**: `野生型`, `致病突变`, `可能致病突变`",野生型
+obesityGenes.monogenic.lepr,肥胖基因.单基因.LEPR,String,"LEPR基因突变检测。<br>**建议值**: `野生型`, `致病突变`, `可能致病突变`",野生型
+obesityGenes.monogenic.lep,肥胖基因.单基因.LEP,String,"LEP基因突变检测。<br>**建议值**: `野生型`, `致病突变`, `可能致病突变`",野生型
+obesityGenes.monogenic.pomc,肥胖基因.单基因.POMC,String,"POMC基因突变检测。<br>**建议值**: `野生型`, `致病突变`, `可能致病突变`",野生型
+obesityGenes.polygenic.fto,肥胖基因.多基因.FTO,String,"FTO基因多态性",rs9939609 TA基因型
+obesityGenes.polygenic.bdnf,肥胖基因.多基因.BDNF,String,"BDNF基因多态性",Val66Met杂合突变
+obesityGenes.polygenic.sh2b1,肥胖基因.多基因.SH2B1,String,"SH2B1基因多态性",野生型
+obesityGenes.polygenic.kctd15,肥胖基因.多基因.KCTD15,String,"KCTD15基因多态性",野生型
+metabolismGenes.thyroid.tshr,代谢基因.甲状腺.TSHR,String,"TSHR基因多态性",野生型
+metabolismGenes.thyroid.tg,代谢基因.甲状腺.TG,String,"甲状腺球蛋白基因多态性",野生型
+metabolismGenes.thyroid.tpo,代谢基因.甲状腺.TPO,String,"甲状腺过氧化物酶基因多态性",野生型
+metabolismGenes.adrenal.cyp21a2,代谢基因.肾上腺.CYP21A2,String,"CYP21A2基因突变检测",野生型
+metabolismGenes.adrenal.cyp11b1,代谢基因.肾上腺.CYP11B1,String,"CYP11B1基因突变检测",野生型
+metabolismGenes.adrenal.cyp11b2,代谢基因.肾上腺.CYP11B2,String,"CYP11B2基因突变检测",野生型
+metabolismGenes.growth.gh1,代谢基因.生长.GH1,String,"生长激素基因突变检测",野生型
+metabolismGenes.growth.ghr,代谢基因.生长.GHR,String,"生长激素受体基因突变检测",野生型
+metabolismGenes.growth.igf1,代谢基因.生长.IGF1,String,"IGF1基因多态性",野生型
+pharmacogenomics.diabetes.cyp2c9,药物基因组学.糖尿病.CYP2C9,String,"CYP2C9基因型（磺脲类代谢）",*1/*1正常代谢型
+pharmacogenomics.diabetes.slc22a1,药物基因组学.糖尿病.SLC22A1,String,"SLC22A1基因型（二甲双胍转运）",野生型
+pharmacogenomics.diabetes.slc47a1,药物基因组学.糖尿病.SLC47A1,String,"SLC47A1基因型（二甲双胍转运）",野生型
+pharmacogenomics.lipid.cyp3a4,药物基因组学.血脂.CYP3A4,String,"CYP3A4基因型（他汀类代谢）",正常代谢型
+pharmacogenomics.lipid.slco1b1,药物基因组学.血脂.SLCO1B1,String,"SLCO1B1基因型（他汀类转运）",521T>C杂合突变
+pharmacogenomics.lipid.cyp2d6,药物基因组学.血脂.CYP2D6,String,"CYP2D6基因型",正常代谢型
+pharmacogenomics.coagulation.cyp2c9Warfarin,药物基因组学.凝血.CYP2C9华法林,String,"CYP2C9基因型（华法林代谢）",*1/*1正常代谢型
+pharmacogenomics.coagulation.vkorc1,药物基因组学.凝血.VKORC1,String,"VKORC1基因型（华法林敏感性）",GG基因型
+nutritionGenes.vitaminD.gc,营养基因.维生素D.GC,String,"维生素D结合蛋白基因多态性",Gc1s/Gc2基因型
+nutritionGenes.vitaminD.cyp2r1,营养基因.维生素D.CYP2R1,String,"25羟化酶基因多态性",野生型
+nutritionGenes.vitaminD.cyp27b1,营养基因.维生素D.CYP27B1,String,"1α羟化酶基因多态性",野生型
+nutritionGenes.vitaminD.cyp24a1,营养基因.维生素D.CYP24A1,String,"24羟化酶基因多态性",野生型
+nutritionGenes.vitaminD.vdr,营养基因.维生素D.VDR,String,"维生素D受体基因多态性",FokI多态性TT基因型
+nutritionGenes.folate.mthfr,营养基因.叶酸.MTHFR,String,"MTHFR基因多态性",C677T杂合突变
+nutritionGenes.folate.mtr,营养基因.叶酸.MTR,String,"MTR基因多态性",野生型
+nutritionGenes.folate.mtrr,营养基因.叶酸.MTRR,String,"MTRR基因多态性",A66G杂合突变
+nutritionGenes.iron.hfe,营养基因.铁.HFE,String,"HFE基因突变检测（血色病）",C282Y杂合突变
+nutritionGenes.iron.tfr2,营养基因.铁.TFR2,String,"TFR2基因突变检测",野生型
+nutritionGenes.iron.slc40a1,营养基因.铁.SLC40A1,String,"铁调节素基因突变检测",野生型
+metabolicPathways.glycolysis.aldob,代谢途径.糖酵解.ALDOB,String,"ALDOB基因突变检测（遗传性果糖不耐受）",野生型
+metabolicPathways.glycolysis.gbe1,代谢途径.糖酵解.GBE1,String,"GBE1基因突变检测（糖原储积病IV型）",野生型
+metabolicPathways.fattyAcidOxidation.acadm,代谢途径.脂肪酸氧化.ACADM,String,"ACADM基因突变检测（中链酰基辅酶A脱氢酶缺陷）",野生型
+metabolicPathways.fattyAcidOxidation.acadvl,代谢途径.脂肪酸氧化.ACADVL,String,"ACADVL基因突变检测（超长链酰基辅酶A脱氢酶缺陷）",野生型
+metabolicPathways.aminoAcidMetabolism.pah,代谢途径.氨基酸代谢.PAH,String,"PAH基因突变检测（苯丙酮尿症）",野生型
+metabolicPathways.aminoAcidMetabolism.cbs,代谢途径.氨基酸代谢.CBS,String,"CBS基因突变检测（同型半胱氨酸尿症）",野生型
+epigeneticMarkers.dnaMethy lation.global,表观遗传标志物.DNA甲基化.全基因组,Number,"全基因组DNA甲基化水平。<br>单位: %",68.5
+epigeneticMarkers.dnaMethylation.insulinPromoter,表观遗传标志物.DNA甲基化.胰岛素启动子,Number,"胰岛素基因启动子甲基化。<br>单位: %",25.8
+epigeneticMarkers.dnaMethylation.leptinPromoter,表观遗传标志物.DNA甲基化.瘦素启动子,Number,"瘦素基因启动子甲基化。<br>单位: %",35.2
+epigeneticMarkers.dnaMethylation.ppargcPromoter,表观遗传标志物.DNA甲基化.PPARGC启动子,Number,"PGC-1α基因启动子甲基化。<br>单位: %",45.6
+epigeneticMarkers.dnaMethylation.ageingClock,表观遗传标志物.DNA甲基化.衰老时钟,Number,"表观遗传年龄。<br>单位: 年",45.2
+epigeneticMarkers.histoneModifications.h3k4me3,表观遗传标志物.组蛋白修饰.H3K4me3,String,"H3K4me3修饰水平。<br>**建议值**: `低`, `中`, `高`",中
+epigeneticMarkers.histoneModifications.h3k27me3,表观遗传标志物.组蛋白修饰.H3K27me3,String,"H3K27me3修饰水平。<br>**建议值**: `低`, `中`, `高`",中
+epigeneticMarkers.histoneModifications.h3k9ac,表观遗传标志物.组蛋白修饰.H3K9ac,String,"H3K9ac修饰水平。<br>**建议值**: `低`, `中`, `高`",高
+epigeneticMarkers.histoneModifications.h4k20me3,表观遗传标志物.组蛋白修饰.H4K20me3,String,"H4K20me3修饰水平。<br>**建议值**: `低`, `中`, `高`",中
+epigeneticMarkers.microRNA.mir122,表观遗传标志物.微小RNA.miR-122,Number,"miR-122表达水平",2.5
+epigeneticMarkers.microRNA.mir33,表观遗传标志物.微小RNA.miR-33,Number,"miR-33表达水平",1.8
+epigeneticMarkers.microRNA.mir375,表观遗传标志物.微小RNA.miR-375,Number,"miR-375表达水平",3.2
+epigeneticMarkers.microRNA.mir143,表观遗传标志物.微小RNA.miR-143,Number,"miR-143表达水平",2.1
+epigeneticMarkers.longNonCodingRNA.malat1,表观遗传标志物.长链非编码RNA.MALAT1,Number,"MALAT1表达水平",1.5
+epigeneticMarkers.longNonCodingRNA.hotair,表观遗传标志物.长链非编码RNA.HOTAIR,Number,"HOTAIR表达水平",0.8
+epigeneticMarkers.longNonCodingRNA.h19,表观遗传标志物.长链非编码RNA.H19,Number,"H19表达水平",2.3
+chromatinAccessibility.atac_seq,染色质可及性.ATAC-seq,String,"ATAC-seq结果（如果进行）",增强子区域开放性增加
+chromatinAccessibility.faire_seq,染色质可及性.FAIRE-seq,String,"FAIRE-seq结果（如果进行）",未进行
+geneExpression.rna_seq,基因表达.RNA-seq,String,"RNA-seq结果（如果进行）",代谢相关基因表达轻度下调
+geneExpression.targetGenes.insulin,基因表达.目标基因.胰岛素,Number,"胰岛素基因表达水平",1.2
+geneExpression.targetGenes.leptin,基因表达.目标基因.瘦素,Number,"瘦素基因表达水平",0.8
+geneExpression.targetGenes.adiponectin,基因表达.目标基因.脂联素,Number,"脂联素基因表达水平",1.5
+geneExpression.targetGenes.ppargc1a,基因表达.目标基因.PGC1A,Number,"PGC-1α基因表达水平",0.9
+metabolomicsIntegration.methylatedMetabolites,代谢组学整合.甲基化代谢物,String,"甲基化相关代谢物检测",甲硫氨酸循环代谢物正常
+metabolomicsIntegration.epimetabolites,代谢组学整合.表观代谢物,String,"表观遗传相关代谢物",组蛋白去乙酰化酶抑制剂水平
+environmentalEpigenetics.smokingHistory,环境表观遗传学.吸烟史,String,"吸烟对表观遗传的影响",既往吸烟
+environmentalEpigenetics.dietaryPatterns,环境表观遗传学.饮食模式,String,"饮食对表观遗传的影响",高脂饮食
+environmentalEpigenetics.physicalActivity,环境表观遗传学.体力活动,String,"运动对表观遗传的影响",规律运动
+environmentalEpigenetics.stressExposure,环境表观遗传学.应激暴露,String,"应激对表观遗传的影响",慢性应激
+environmentalEpigenetics.toxinExposure,环境表观遗传学.毒素暴露,String,"环境毒素对表观遗传的影响",低水平暴露
+familyHistory.diabetes,家族史.糖尿病,String,"糖尿病家族史。<br>**建议值**: `无`, `一级亲属`, `二级亲属`",一级亲属
+familyHistory.obesity,家族史.肥胖,String,"肥胖症家族史。<br>**建议值**: `无`, `一级亲属`, `二级亲属`",无
+familyHistory.cardiovascularDisease,家族史.心血管疾病,String,"心血管疾病家族史。<br>**建议值**: `无`, `一级亲属`, `二级亲属`",一级亲属
+familyHistory.metabolicSyndrome,家族史.代谢综合征,String,"代谢综合征家族史。<br>**建议值**: `无`, `一级亲属`, `二级亲属`",一级亲属
+familyHistory.earlyOnsetDiseases,家族史.早发疾病,String,"早发代谢性疾病家族史",父亲45岁确诊糖尿病
+geneticRiskScores.type2Diabetes,遗传风险评分.2型糖尿病,Number,"2型糖尿病多基因风险评分。<br>**高风险**: >75th百分位",68.5
+geneticRiskScores.coronaryHeartDisease,遗传风险评分.冠心病,Number,"冠心病多基因风险评分。<br>**高风险**: >75th百分位",72.3
+geneticRiskScores.obesity,遗传风险评分.肥胖,Number,"肥胖多基因风险评分。<br>**高风险**: >75th百分位",55.8
+geneticRiskScores.metabolicSyndrome,遗传风险评分.代谢综合征,Number,"代谢综合征多基因风险评分。<br>**高风险**: >75th百分位",65.2
+penetrance.ageDependentRisk,外显率.年龄依赖风险,String,"年龄依赖性疾病风险",50岁前发病风险中等
+penetrance.sexSpecificRisk,外显率.性别特异风险,String,"性别特异性风险",女性风险略高
+penetrance.environmentalModulation,外显率.环境调节,String,"环境因素对遗传风险的调节",生活方式可显著影响风险
+clinicalActionability.recommendedScreening,临床可操作性.推荐筛查,String,"基于遗传结果的筛查建议",定期血糖监测
+clinicalActionability.lifestyleModifications,临床可操作性.生活方式调整,String,"基于遗传结果的生活方式建议",低糖饮食和规律运动
+clinicalActionability.pharmacogenomicGuidance,临床可操作性.药物基因组学指导,String,"基于遗传结果的用药指导",他汀类药物需要较低起始剂量
+clinicalActionability.familyScreening,临床可操作性.家族筛查,String,"家族成员筛查建议",建议一级亲属进行糖尿病筛查
+incidentalFindings.pathogenic,偶然发现.致病,String,"偶然发现的致病变异",无
+incidentalFindings.likelyPathogenic,偶然发现.可能致病,String,"偶然发现的可能致病变异",无
+incidentalFindings.variantOfUncertainSignificance,偶然发现.意义不明变异,String,"意义不明的变异",BRCA2基因VUS
+reportedVariants.pathogenic,报告变异.致病,String,"报告的致病变异",无
+reportedVariants.likelyPathogenic,报告变异.可能致病,String,"报告的可能致病变异",无
+reportedVariants.variantOfUncertainSignificance,报告变异.意义不明,String,"报告的意义不明变异",2个VUS
+reportedVariants.likelyBenign,报告变异.可能良性,String,"报告的可能良性变异",15个
+reportedVariants.benign,报告变异.良性,String,"报告的良性变异",283个
+qualityMetrics.readQuality,质量指标.读段质量,String,"测序读段质量。<br>**建议值**: `优`, `良`, `可`",良
+qualityMetrics.mappingRate,质量指标.比对率,Number,"序列比对率。<br>单位: %<br>**合格**: >95%",98.5
+qualityMetrics.duplicateRate,质量指标.重复率,Number,"PCR重复率。<br>单位: %<br>**合格**: <20%",8.5
+qualityMetrics.contaminationRate,质量指标.污染率,Number,"样本污染率。<br>单位: %<br>**合格**: <5%",1.2
+interpretation.overall Risk,解读.总体风险,String,"总体遗传风险评估。<br>**建议值**: `低`, `中`, `高`",中
+interpretation.clinicalSignificance,解读.临床意义,String,"检测结果的临床意义",需要定期监测和生活方式干预
+interpretation.limitations,解读.局限性,String,"检测局限性说明",仅检测常见变异，无法排除所有遗传风险
+interpretation.recommendations,解读.建议,String,"基于遗传检测的建议",定期健康检查，保持健康生活方式
+followUp.geneticCounseling,随访.遗传咨询,String,"遗传咨询建议。<br>**建议值**: `不需要`, `建议`, `强烈建议`",建议
+followUp.retesting,随访.重新检测,String,"重新检测建议",技术升级后可考虑重新检测
+followUp.familyTesting,随访.家族检测,String,"家族检测建议",建议一级亲属检测
+followUp.clinicalManagement,随访.临床管理,String,"临床管理建议",内分泌科定期随访
+ethicalConsiderations.informedConsent,伦理考虑.知情同意,String,"知情同意获得情况。<br>**建议值**: `已获得`, `部分获得`, `未获得`",已获得
+ethicalConsiderations.privacyConcerns,伦理考虑.隐私关注,String,"隐私保护措施",严格保密，限制访问
+ethicalConsiderations.discrimination Risk,伦理考虑.歧视风险,String,"遗传歧视风险评估",低风险
+ethicalConsiderations.psychologicalImpact,伦理考虑.心理影响,String,"心理影响评估",轻度焦虑，需要支持
+dataSharing.researchParticipation,数据共享.研究参与,String,"研究数据共享同意。<br>**建议值**: `同意`, `不同意`, `有条件同意`",有条件同意
+dataSharing.anonymization,数据共享.匿名化,String,"数据匿名化程度",完全匿名化
+dataSharing.retention Period,数据共享.保存期限,String,"数据保存期限",10年
+costEffectiveness.costPerQaly,成本效益.每QALY成本,Number,"每质量调整生命年成本（如果计算）",25000
+costEffectiveness.clinicalUtility,成本效益.临床效用,String,"临床效用评估。<br>**建议值**: `高`, `中`, `低`",中
+costEffectiveness.economicImpact,成本效益.经济影响,String,"经济影响评估",预防性干预可能降低未来医疗成本
+technicalValidation.concordance,技术验证.一致性,Number,"与金标准的一致性。<br>单位: %",99.2
+technicalValidation.sensitivity,技术验证.敏感性,Number,"检测敏感性。<br>单位: %",95.8
+technicalValidation.specificity,技术验证.特异性,Number,"检测特异性。<br>单位: %",99.5
+technicalValidation.positivePredi ctiveValue,技术验证.阳性预测值,Number,"阳性预测值。<br>单位: %",88.5
+technicalValidation.negativePredict iveValue,技术验证.阴性预测值,Number,"阴性预测值。<br>单位: %",99.8
+bioinformaticsAnalysis.pipeline,生物信息学分析.分析流程,String,"使用的分析流程",GATK Best Practices
+bioinformaticsAnalysis.referenceGenome,生物信息学分析.参考基因组,String,"参考基因组版本",GRCh38/hg38
+bioinformaticsAnalysis.annotationDatabases,生物信息学分析.注释数据库,String,"变异注释数据库",ClinVar, dbSNP, gnomAD
+bioinformaticsAnalysis.variantCalling,生物信息学分析.变异识别,String,"变异识别算法",GATK HaplotypeCaller
+futureDirections.emergingTechnologies,未来方向.新兴技术,String,"新兴技术应用前景",长读长测序，单细胞分析
+futureDirections.therapeuticTargets,未来方向.治疗靶点,String,"潜在治疗靶点",表观遗传药物，基因治疗
+futureDirections.personalized Medicine,未来方向.个体化医学,String,"个体化医学应用",精准营养，个体化用药
+diagnosisImpression,诊断/印象,String,医生对遗传与表观遗传学检查结果的综合诊断或印象。,中等遗传风险，需要生活方式干预和定期监测
+recommendation,建议,String,医生根据检查结果提出的建议。,定期健康检查，生活方式调整，遗传咨询，家族筛查

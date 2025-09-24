@@ -1,0 +1,105 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行肾上腺功能检查的日期,2025-08-15
+clinicalIndication,检查适应症,String,"进行肾上腺功能检查的临床指征。<br>**建议值**: `高血压筛查`, `库欣综合征`, `原醛症`, `嗜铬细胞瘤`, `肾上腺功能不全`, `肾上腺偶发瘤`",原醛症
+baselineCortisol.morning,基础皮质醇.晨起皮质醇,Number,"晨起8点血清皮质醇。<br>单位: nmol/L<br>**参考范围**: 171-536",380
+baselineCortisol.midnight,基础皮质醇.午夜皮质醇,Number,"午夜血清皮质醇。<br>单位: nmol/L<br>**参考范围**: <50",25
+baselineCortisol.salivary,基础皮质醇.唾液皮质醇,Number,"唾液皮质醇（晚11点）。<br>单位: nmol/L<br>**参考范围**: <9.3",3.8
+urineFreeCortisol,24小时尿游离皮质醇 (UFC),Number,"24小时尿游离皮质醇。<br>单位: nmol/24h<br>**参考范围**: 55-248",180
+dexamethasoneSuppression.lowDose.cortisol1mg,地塞米松抑制试验.小剂量.1mg后皮质醇,Number,"1mg地塞米松过夜抑制试验后晨起皮质醇。<br>单位: nmol/L<br>**正常抑制**: <50",35
+dexamethasoneSuppression.lowDose.cortisol0_5mg,地塞米松抑制试验.小剂量.0.5mg后皮质醇,Number,"0.5mg地塞米松过夜抑制试验后晨起皮质醇。<br>单位: nmol/L<br>**正常抑制**: <50",28
+dexamethasoneSuppression.highDose.cortisol8mg,地塞米松抑制试验.大剂量.8mg后皮质醇,Number,"8mg地塞米松过夜抑制试验后晨起皮质醇。<br>单位: nmol/L",65
+dexamethasoneSuppression.highDose.suppressionRate,地塞米松抑制试验.大剂量.抑制率,Number,"大剂量地塞米松抑制率。<br>单位: %<br>**垂体性**: >50%抑制",68
+acthStimulationTest.baseline,ACTH刺激试验.基础皮质醇,Number,"ACTH刺激试验基础皮质醇。<br>单位: nmol/L",280
+acthStimulationTest.peak30min,ACTH刺激试验.30分钟皮质醇,Number,"ACTH注射后30分钟皮质醇。<br>单位: nmol/L<br>**正常反应**: >500或较基础值升高>200",680
+acthStimulationTest.peak60min,ACTH刺激试验.60分钟皮质醇,Number,"ACTH注射后60分钟皮质醇。<br>单位: nmol/L<br>**正常反应**: >500",720
+acthStimulationTest.response,ACTH刺激试验.反应,String,"ACTH刺激试验反应评估。<br>**建议值**: `正常`, `减低`, `无反应`",正常
+acth,促肾上腺皮质激素 (ACTH),Number,"血浆ACTH。<br>单位: pmol/L<br>**参考范围**: 2.2-17.6",8.5
+aldosterone.supine,醛固酮.卧位,Number,"卧位血浆醛固酮浓度。<br>单位: ng/dL<br>**参考范围**: 5-30",35
+aldosterone.upright,醛固酮.立位,Number,"立位血浆醛固酮浓度。<br>单位: ng/dL",45
+renin.supine,肾素.卧位,Number,"卧位血浆肾素活性。<br>单位: ng/mL/h<br>**参考范围**: 0.2-2.3",0.5
+renin.upright,肾素.立位,Number,"立位血浆肾素活性。<br>单位: ng/mL/h",0.8
+aldosteroneReninRatio.supine,醛固酮肾素比值.卧位,Number,"卧位醛固酮肾素比值。<br>**异常值**: >20",70
+aldosteroneReninRatio.upright,醛固酮肾素比值.立位,Number,"立位醛固酮肾素比值。<br>**异常值**: >20",56.3
+salineSuppressionTest.baselineAldosterone,盐水抑制试验.基础醛固酮,Number,"盐水抑制试验前醛固酮。<br>单位: ng/dL",38
+salineSuppressionTest.postSalineAldosterone,盐水抑制试验.盐水后醛固酮,Number,"4小时盐水负荷后醛固酮。<br>单位: ng/dL<br>**正常抑制**: <10",25
+salineSuppressionTest.suppression,盐水抑制试验.抑制情况,String,"盐水抑制试验结果。<br>**建议值**: `正常抑制`, `抑制不充分`, `无抑制`",正常抑制
+captoprilTest.baselineAldosterone,卡托普利试验.基础醛固酮,Number,"卡托普利试验前醛固酮。<br>单位: ng/dL",42
+captoprilTest.postCaptoprilAldosterone,卡托普利试验.卡托普利后醛固酮,Number,"卡托普利1小时后醛固酮。<br>单位: ng/dL<br>**正常抑制**: >30%下降",28
+captoprilTest.suppression,卡托普利试验.抑制情况,String,"卡托普利试验结果。<br>**建议值**: `正常抑制`, `抑制不充分`, `无抑制`",正常抑制
+furosemideUprightTest.baselineAldosterone,呋塞米立位试验.基础醛固酮,Number,"呋塞米立位试验前醛固酮。<br>单位: ng/dL",35
+furosemideUprightTest.stimulatedAldosterone,呋塞米立位试验.刺激后醛固酮,Number,"呋塞米立位试验后醛固酮。<br>单位: ng/dL<br>**正常刺激**: 2-4倍升高",65
+catecholamines.epinephrine24h,儿茶酚胺.24小时肾上腺素,Number,"24小时尿肾上腺素。<br>单位: nmol/24h<br>**参考范围**: <109",85
+catecholamines.norepinephrine24h,儿茶酚胺.24小时去甲肾上腺素,Number,"24小时尿去甲肾上腺素。<br>单位: nmol/24h<br>**参考范围**: <590",420
+catecholamines.dopamine24h,儿茶酚胺.24小时多巴胺,Number,"24小时尿多巴胺。<br>单位: nmol/24h<br>**参考范围**: <2600",1800
+catecholamines.totalCatecholamines,儿茶酚胺.总儿茶酚胺,Number,"24小时尿总儿茶酚胺。<br>单位: nmol/24h<br>**参考范围**: <590",480
+metanephrines.metanephrine,甲氧基肾上腺素.甲氧基肾上腺素,Number,"24小时尿甲氧基肾上腺素。<br>单位: μmol/24h<br>**参考范围**: <1.8",1.2
+metanephrines.normetanephrine,甲氧基肾上腺素.甲氧基去甲肾上腺素,Number,"24小时尿甲氧基去甲肾上腺素。<br>单位: μmol/24h<br>**参考范围**: <3.3",2.5
+metanephrines.totalMetanephrines,甲氧基肾上腺素.总甲氧基肾上腺素,Number,"24小时尿总甲氧基肾上腺素。<br>单位: μmol/24h<br>**参考范围**: <7",5.8
+vanillylmandelicAcid,香草基杏仁酸 (VMA),Number,"24小时尿VMA。<br>单位: μmol/24h<br>**参考范围**: <35",28
+plasmaMetanephrines.metanephrine,血浆甲氧基肾上腺素.甲氧基肾上腺素,Number,"血浆甲氧基肾上腺素。<br>单位: pmol/L<br>**参考范围**: <496",380
+plasmaMetanephrines.normetanephrine,血浆甲氧基肾上腺素.甲氧基去甲肾上腺素,Number,"血浆甲氧基去甲肾上腺素。<br>单位: pmol/L<br>**参考范围**: <982",650
+clonidineSuppressionTest.baselineNorepinephrine,可乐定抑制试验.基础去甲肾上腺素,Number,"可乐定抑制试验前血浆去甲肾上腺素。<br>单位: nmol/L",2.8
+clonidineSuppressionTest.suppressedNorepinephrine,可乐定抑制试验.抑制后去甲肾上腺素,Number,"可乐定3小时后血浆去甲肾上腺素。<br>单位: nmol/L<br>**正常抑制**: <1.18或较基础值下降>50%",0.8
+dheas,硫酸脱氢表雄酮 (DHEA-S),Number,"血清DHEA-S。<br>单位: μmol/L<br>**参考范围**: 年龄相关",4.5
+androstenedione,雄烯二酮,Number,"血清雄烯二酮。<br>单位: nmol/L<br>**参考范围**: 性别年龄相关",8.2
+17ohProgesterone,17-羟孕酮 (17-OHP),Number,"血清17-OHP。<br>单位: nmol/L<br>**参考范围**: <6.1",3.8
+11deoxycortisol,11-脱氧皮质醇,Number,"血清11-脱氧皮质醇。<br>单位: nmol/L<br>**参考范围**: 0.2-2.2",1.2
+18hydroxycortisol,18-羟皮质醇,Number,"血清18-羟皮质醇。<br>单位: nmol/L",2.5
+imagingFindings.adrenalMorphology,影像学检查.肾上腺形态,String,"肾上腺形态描述。<br>**建议值**: `正常`, `单侧增大`, `双侧增大`, `结节性增生`",正常
+imagingFindings.adrenalNodules.present,影像学检查.肾上腺结节.是否存在,String,"是否存在肾上腺结节。<br>**建议值**: `否`, `是`",否
+imagingFindings.adrenalNodules.size,影像学检查.肾上腺结节.大小,Number,"肾上腺结节最大径（如果存在）。<br>单位: cm",0
+imagingFindings.adrenalNodules.location,影像学检查.肾上腺结节.位置,String,"肾上腺结节位置（如果存在）。<br>**建议值**: `左侧`, `右侧`, `双侧`",无
+imagingFindings.adrenalNodules.density,影像学检查.肾上腺结节.密度,Number,"肾上腺结节CT值（如果存在）。<br>单位: HU",0
+imagingFindings.adrenalNodules.washout,影像学检查.肾上腺结节.廓清率,Number,"肾上腺结节延迟廓清率（如果存在）。<br>单位: %",0
+functionalImaging.mibgScan,功能影像.MIBG显像,String,"MIBG显像结果。<br>**建议值**: `未做`, `正常`, `异常摄取`",未做
+functionalImaging.octreotideScan,功能影像.奥曲肽显像,String,"奥曲肽显像结果。<br>**建议值**: `未做`, `正常`, `异常摄取`",未做
+functionalImaging.petScan,功能影像.PET显像,String,"PET显像结果。<br>**建议值**: `未做`, `正常`, `异常摄取`",未做
+adrenalVenousSampling.performed,肾上腺静脉采血.是否进行,String,"是否进行肾上腺静脉采血。<br>**建议值**: `否`, `是`",否
+adrenalVenousSampling.lateralization,肾上腺静脉采血.偏侧性,String,"肾上腺静脉采血偏侧性结果。<br>**建议值**: `双侧`, `左侧`, `右侧`",不适用
+adrenalVenousSampling.aldosteroneRatio,肾上腺静脉采血.醛固酮比值,Number,"双侧肾上腺静脉醛固酮比值",0
+clinicalPresentation.hypertension,临床表现.高血压,String,"高血压情况。<br>**建议值**: `无`, `轻度`, `中度`, `重度`, `难治性`",中度
+clinicalPresentation.hypokalemia,临床表现.低钾血症,String,"低钾血症情况。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+clinicalPresentation.muscleWeakness,临床表现.肌无力,String,"肌无力症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+clinicalPresentation.cushingoidFeatures,临床表现.库欣样表现,String,"库欣样表现。<br>**建议值**: `无`, `满月脸`, `向心性肥胖`, `紫纹`, `多毛`",无
+clinicalPresentation.pheochromocytomaSymptoms,临床表现.嗜铬细胞瘤症状,String,"嗜铬细胞瘤典型症状。<br>**建议值**: `无`, `发作性高血压`, `头痛`, `心悸`, `多汗`",无
+clinicalPresentation.virilization,临床表现.男性化,String,"男性化表现（女性）。<br>**建议值**: `无`, `多毛`, `声音低沉`, `痤疮`, `阴蒂肥大`",无
+clinicalPresentation.feminization,临床表现.女性化,String,"女性化表现（男性）。<br>**建议值**: `无`, `乳房发育`, `睾丸萎缩`",无
+congenitalAdrenalHyperplasia.21ohDeficiency,先天性肾上腺皮质增生.21-羟化酶缺陷,String,"21-羟化酶缺陷评估。<br>**建议值**: `否`, `疑似`, `确诊`",否
+congenitalAdrenalHyperplasia.11ohDeficiency,先天性肾上腺皮质增生.11β-羟化酶缺陷,String,"11β-羟化酶缺陷评估。<br>**建议值**: `否`, `疑似`, `确诊`",否
+congenitalAdrenalHyperplasia.17ohDeficiency,先天性肾上腺皮质增生.17α-羟化酶缺陷,String,"17α-羟化酶缺陷评估。<br>**建议值**: `否`, `疑似`, `确诊`",否
+medicationHistory.glucocorticoids,用药史.糖皮质激素,String,"糖皮质激素使用史。<br>**建议值**: `无`, `既往使用`, `目前使用`",无
+medicationHistory.mineralocorticoids,用药史.盐皮质激素,String,"盐皮质激素使用史。<br>**建议值**: `无`, `既往使用`, `目前使用`",无
+medicationHistory.spironolactone,用药史.螺内酯,String,"螺内酯使用情况。<br>**建议值**: `无`, `既往使用`, `目前使用`",目前使用
+medicationHistory.aceiArb,用药史.ACEI/ARB,String,"ACEI/ARB使用情况。<br>**建议值**: `无`, `既往使用`, `目前使用`",目前使用
+medicationHistory.diuretics,用药史.利尿剂,String,"利尿剂使用情况。<br>**建议值**: `无`, `既往使用`, `目前使用`",目前使用
+stressResponse.acuteStress,应激反应.急性应激,String,"急性应激反应评估。<br>**建议值**: `正常`, `减低`, `无反应`",正常
+stressResponse.chronicStress,应激反应.慢性应激,String,"慢性应激适应评估。<br>**建议值**: `正常`, `适应不良`",正常
+comorbidities.diabetes,合并症.糖尿病,String,"糖尿病合并情况。<br>**建议值**: `无`, `糖尿病前期`, `2型糖尿病`",无
+comorbidities.osteoporosis,合并症.骨质疏松,String,"骨质疏松合并情况。<br>**建议值**: `无`, `骨量减少`, `骨质疏松`",无
+comorbidities.cardiovascularDisease,合并症.心血管疾病,String,"心血管疾病合并情况。<br>**建议值**: `无`, `冠心病`, `心衰`, `脑卒中`",无
+comorbidities.renalDisease,合并症.肾脏疾病,String,"肾脏疾病合并情况。<br>**建议值**: `无`, `慢性肾病`, `肾功能不全`",无
+familyHistory.adrenalDisorders,家族史.肾上腺疾病,String,"肾上腺疾病家族史。<br>**建议值**: `无`, `原醛症`, `嗜铬细胞瘤`, `库欣综合征`",无
+familyHistory.endocrineNeoplasia,家族史.内分泌肿瘤,String,"内分泌肿瘤综合征家族史。<br>**建议值**: `无`, `MEN1`, `MEN2`, `VHL`",无
+qualityOfLife.physicalFunction,生活质量.身体功能,String,"身体功能评估。<br>**建议值**: `正常`, `轻度受限`, `中度受限`, `重度受限`",轻度受限
+qualityOfLife.mentalHealth,生活质量.心理健康,String,"心理健康状况。<br>**建议值**: `正常`, `轻度焦虑`, `抑郁`, `严重心理问题`",正常
+treatmentPlan.medicalTherapy,治疗计划.药物治疗,String,药物治疗方案,螺内酯100mg bid
+treatmentPlan.surgicalConsideration,治疗计划.手术考虑,String,"手术治疗考虑。<br>**建议值**: `不考虑`, `考虑中`, `计划手术`",不考虑
+treatmentPlan.lifestyleModification,治疗计划.生活方式干预,String,生活方式干预措施,低盐饮食，规律运动
+monitoringPlan.biochemicalMonitoring,监测计划.生化监测,String,"生化指标监测计划",每3个月复查血钾、肾功能
+monitoringPlan.imagingFollowup,监测计划.影像随访,String,"影像学随访计划",每年CT复查
+monitoringPlan.clinicalAssessment,监测计划.临床评估,String,"临床评估计划",每月血压监测
+riskStratification.cardiovascularRisk,危险分层.心血管风险,String,"心血管风险分层。<br>**建议值**: `低危`, `中危`, `高危`",中危
+riskStratification.progressionRisk,危险分层.疾病进展风险,String,"疾病进展风险。<br>**建议值**: `低`, `中`, `高`",低
+riskStratification.complicationRisk,危险分层.并发症风险,String,"并发症发生风险。<br>**建议值**: `低`, `中`, `高`",低
+prognosis.shortTerm,预后.短期预后,String,"短期预后评估。<br>**建议值**: `良好`, `一般`, `较差`",良好
+prognosis.longTerm,预后.长期预后,String,"长期预后评估。<br>**建议值**: `良好`, `一般`, `较差`",良好
+specialConsiderations.pregnancy,特殊考虑.妊娠,String,"妊娠期特殊考虑。<br>**建议值**: `不适用`, `需要考虑`",不适用
+specialConsiderations.elderly,特殊考虑.老年患者,String,"老年患者特殊考虑。<br>**建议值**: `不适用`, `需要考虑`",不适用
+patientEducation.diseaseAwareness,患者教育.疾病认知,String,"患者疾病认知程度。<br>**建议值**: `差`, `一般`, `良好`",一般
+patientEducation.selfMonitoring,患者教育.自我监测,String,"自我监测教育。<br>**建议值**: `未接受`, `已接受`",已接受
+followUpPlan.frequency,随访计划.随访频率,String,"随访频率安排",3个月后复查
+followUpPlan.parameters,随访计划.随访参数,String,随访检查参数,血压、血钾、醛固酮、肾素
+diagnosticCertainty,诊断确定性,String,"诊断确定性评估。<br>**建议值**: `高度怀疑`, `很可能`, `确诊`",很可能
+clinicalSignificance,临床意义,String,"临床意义评估。<br>**建议值**: `轻微`, `中等`, `重要`",中等
+diagnosisImpression,诊断/印象,String,医生对肾上腺功能检查结果的综合诊断或印象。,原发性醛固酮增多症可能
+recommendation,建议,String,医生根据检查结果提出的建议。,继续螺内酯治疗，3个月后复查醛固酮肾素比值

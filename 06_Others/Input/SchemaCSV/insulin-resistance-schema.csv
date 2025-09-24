@@ -1,0 +1,80 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行胰岛素抵抗检查的日期,2025-08-15
+clinicalIndication,检查适应症,String,"进行胰岛素抵抗检查的临床指征。<br>**建议值**: `代谢综合征`, `多囊卵巢综合征`, `糖尿病前期`, `肥胖`, `高胰岛素血症`",代谢综合征
+fastingGlucose,空腹血糖,Number,"空腹血糖浓度。<br>单位: mmol/L<br>**参考范围**: 3.9-6.1",5.8
+fastingInsulin,空腹胰岛素,Number,"空腹胰岛素水平。<br>单位: mU/L<br>**参考范围**: 2.6-24.9",18.5
+homaIR,HOMA-IR指数,Number,"胰岛素抵抗指数。<br>**计算公式**: (空腹胰岛素×空腹血糖)/22.5<br>**参考值**: <2.5",4.7
+homaB,HOMA-β指数,Number,"β细胞功能指数。<br>**计算公式**: (20×空腹胰岛素)/(空腹血糖-3.5)<br>**参考值**: >100",120.5
+quicki,QUICKI指数,Number,"胰岛素敏感性定量检查指数。<br>**计算公式**: 1/(log空腹胰岛素+log空腹血糖)<br>**参考值**: >0.357",0.325
+matsudaIndex,Matsuda指数,Number,"Matsuda胰岛素敏感性指数（需OGTT）。<br>**参考值**: >2.5",1.8
+oralGlucoseToleranceTest.glucose0min,OGTT.0分钟血糖,Number,"OGTT基础血糖值。<br>单位: mmol/L",5.8
+oralGlucoseToleranceTest.glucose30min,OGTT.30分钟血糖,Number,"OGTT 30分钟血糖值。<br>单位: mmol/L",9.2
+oralGlucoseToleranceTest.glucose60min,OGTT.60分钟血糖,Number,"OGTT 60分钟血糖值。<br>单位: mmol/L",10.8
+oralGlucoseToleranceTest.glucose120min,OGTT.120分钟血糖,Number,"OGTT 120分钟血糖值。<br>单位: mmol/L",8.5
+oralGlucoseToleranceTest.insulin0min,OGTT.0分钟胰岛素,Number,"OGTT基础胰岛素值。<br>单位: mU/L",18.5
+oralGlucoseToleranceTest.insulin30min,OGTT.30分钟胰岛素,Number,"OGTT 30分钟胰岛素值。<br>单位: mU/L",85.2
+oralGlucoseToleranceTest.insulin60min,OGTT.60分钟胰岛素,Number,"OGTT 60分钟胰岛素值。<br>单位: mU/L",95.8
+oralGlucoseToleranceTest.insulin120min,OGTT.120分钟胰岛素,Number,"OGTT 120分钟胰岛素值。<br>单位: mU/L",65.3
+insulinSecretionIndex,胰岛素分泌指数,Number,"早期胰岛素分泌指数。<br>**计算公式**: (30分钟胰岛素-基础胰岛素)/(30分钟血糖-基础血糖)",19.8
+dispositionIndex,处置指数 (DI),Number,"胰岛素分泌和敏感性综合指数。<br>**计算公式**: 胰岛素分泌指数×胰岛素敏感性指数",950
+glucoseEffectivenessIndex,葡萄糖效应指数,Number,"葡萄糖对自身产生抑制的效应",1.8
+hyperinsulinemicEuglycemicClamp.glucoseInfusionRate,胰岛素钳夹试验.葡萄糖输注率,Number,"胰岛素钳夹试验的葡萄糖输注率（金标准，如果进行）。<br>单位: mg/kg/min",4.5
+hyperinsulinemicEuglycemicClamp.m_value,胰岛素钳夹试验.M值,Number,"胰岛素钳夹试验M值，反映胰岛素敏感性。<br>单位: mg/kg/min",4.5
+adiponectin,脂联素,Number,"血清脂联素水平。<br>单位: μg/mL<br>**参考范围**: 5-30",8.5
+leptin,瘦素,Number,"血清瘦素水平。<br>单位: ng/mL<br>**参考范围**: 3.7-11.1",15.8
+resistin,抵抗素,Number,"血清抵抗素水平。<br>单位: ng/mL<br>**参考范围**: 7-22",18.5
+visfatin,内脂素,Number,"血清内脂素水平。<br>单位: ng/mL",12.3
+retinolBindingProtein4,视黄醇结合蛋白4,Number,"血清RBP4水平。<br>单位: mg/L<br>**参考范围**: 10-70",35.2
+cReactiveProtein,C反应蛋白,Number,"高敏C反应蛋白。<br>单位: mg/L<br>**参考范围**: <3.0",2.8
+interleukin6,白介素-6,Number,"血清IL-6水平。<br>单位: pg/mL<br>**参考范围**: <7.0",4.2
+tumorNecrosisFactorAlpha,肿瘤坏死因子-α,Number,"血清TNF-α水平。<br>单位: pg/mL<br>**参考范围**: <8.1",6.5
+freeThyroxine,游离甲状腺素 (FT4),Number,"游离T4水平。<br>单位: pmol/L<br>**参考范围**: 12-22",16.8
+thyroidStimulatingHormone,促甲状腺激素 (TSH),Number,"TSH水平。<br>单位: mU/L<br>**参考范围**: 0.27-4.2",2.8
+cortisol,皮质醇,Number,"血清皮质醇水平。<br>单位: nmol/L<br>**参考范围**: 171-536",285
+testosterone,睾酮,Number,"血清睾酮水平（男性）。<br>单位: nmol/L<br>**参考范围**: 8.64-29.0",15.2
+sexHormoneBindingGlobulin,性激素结合球蛋白 (SHBG),Number,"SHBG水平。<br>单位: nmol/L<br>**参考范围**: 男性16-55，女性26-110",35.8
+freeAndrogens,游离雄激素指数,Number,"游离雄激素指数。<br>**计算公式**: 总睾酮/SHBG×100",42.5
+dheas,硫酸脱氢表雄酮 (DHEA-S),Number,"DHEA-S水平。<br>单位: μmol/L<br>**参考范围**: 年龄相关",4.5
+androstenedione,雄烯二酮,Number,"血清雄烯二酮水平。<br>单位: nmol/L<br>**参考范围**: 性别年龄相关",8.2
+luteinizingHormone,黄体生成素 (LH),Number,"LH水平。<br>单位: IU/L<br>**参考范围**: 周期相关",6.8
+follicleStimulatingHormone,促卵泡刺激素 (FSH),Number,"FSH水平。<br>单位: IU/L<br>**参考范围**: 周期相关",5.2
+prolactin,催乳素 (PRL),Number,"催乳素水平。<br>单位: μg/L<br>**参考范围**: 4.79-23.3",12.5
+metabolicSyndrome.criteria,代谢综合征.诊断标准,String,"使用的代谢综合征诊断标准。<br>**建议值**: `IDF`, `NCEP ATP III`, `WHO`, `CDS`",IDF
+metabolicSyndrome.components,代谢综合征.组分数量,Number,"符合代谢综合征的组分数量。<br>**范围**: 0-5",3
+centralObesity,中心性肥胖,String,"是否存在中心性肥胖。<br>**建议值**: `否`, `是`",是
+waistCircumference,腰围,Number,"腰围测量。<br>单位: cm<br>**标准**: 男性≥90，女性≥85",95
+bodyMassIndex,体质指数 (BMI),Number,"体质指数。<br>单位: kg/m²",28.5
+bodyFatPercentage,体脂百分比,Number,"体脂肪百分比。<br>单位: %",32.5
+visceralFatArea,内脏脂肪面积,Number,"内脏脂肪面积（如果测量）。<br>单位: cm²",150
+systolicBloodPressure,收缩压,Number,"收缩压。<br>单位: mmHg<br>**代谢综合征标准**: ≥130",135
+diastolicBloodPressure,舒张压,Number,"舒张压。<br>单位: mmHg<br>**代谢综合征标准**: ≥85",88
+totalCholesterol,总胆固醇,Number,"总胆固醇。<br>单位: mmol/L",5.8
+triglycerides,甘油三酯,Number,"甘油三酯。<br>单位: mmol/L<br>**代谢综合征标准**: ≥1.7",2.5
+hdlCholesterol,高密度脂蛋白胆固醇,Number,"HDL胆固醇。<br>单位: mmol/L<br>**代谢综合征标准**: 男性<1.03，女性<1.29",0.95
+ldlCholesterol,低密度脂蛋白胆固醇,Number,"LDL胆固醇。<br>单位: mmol/L",3.8
+nonHdlCholesterol,非HDL胆固醇,Number,"非HDL胆固醇。<br>单位: mmol/L",4.85
+apolipoproteinB,载脂蛋白B,Number,"载脂蛋白B。<br>单位: g/L<br>**参考范围**: 0.52-1.63",1.2
+lipoproteinA,脂蛋白(a),Number,"脂蛋白(a)。<br>单位: mg/L<br>**参考范围**: <300",180
+smallDenseLdl,小而密LDL,Number,"小而密LDL颗粒浓度。<br>单位: nmol/L",1250
+familyHistory.diabetes,家族史.糖尿病,String,"糖尿病家族史。<br>**建议值**: `无`, `一级亲属`, `二级亲属`",一级亲属
+familyHistory.obesity,家族史.肥胖,String,"肥胖家族史。<br>**建议值**: `无`, `有`",有
+familyHistory.hypertension,家族史.高血压,String,"高血压家族史。<br>**建议值**: `无`, `有`",有
+familyHistory.dyslipidemia,家族史.血脂异常,String,"血脂异常家族史。<br>**建议值**: `无`, `有`",有
+lifestyleFactors.diet,生活方式.饮食,String,"饮食模式评估。<br>**建议值**: `健康`, `一般`, `不健康`",一般
+lifestyleFactors.exercise,生活方式.运动,String,"运动习惯评估。<br>**建议值**: `规律`, `偶尔`, `很少`, `从不`",偶尔
+lifestyleFactors.smoking,生活方式.吸烟,String,"吸烟状况。<br>**建议值**: `从不`, `已戒烟`, `目前吸烟`",已戒烟
+lifestyleFactors.alcohol,生活方式.饮酒,String,"饮酒习惯。<br>**建议值**: `不饮酒`, `适量`, `过量`",适量
+lifestyleFactors.sleep,生活方式.睡眠,String,"睡眠质量。<br>**建议值**: `良好`, `一般`, `较差`",一般
+lifestyleFactors.stress,生活方式.压力,String,"压力水平。<br>**建议值**: `轻微`, `中等`, `较大`",中等
+clinicalAssessment.acanthosisNigricans,临床评估.黑棘皮病,String,"是否存在黑棘皮病。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+clinicalAssessment.skinTags,临床评估.皮赘,String,"是否存在皮赘。<br>**建议值**: `无`, `有`",有
+clinicalAssessment.hirsutism,临床评估.多毛症,String,"是否存在多毛症（女性）。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+clinicalAssessment.androgenicAlopecia,临床评估.雄激素性脱发,String,"是否存在雄激素性脱发。<br>**建议值**: `无`, `有`",无
+riskScore.framingham,风险评分.Framingham,Number,"Framingham心血管风险评分。<br>单位: %",15.2
+riskScore.ukpds,风险评分.UKPDS,Number,"UKPDS风险评分（如适用）。<br>单位: %",8.5
+treatmentResponse.metformin,治疗反应.二甲双胍,String,"对二甲双胍的治疗反应。<br>**建议值**: `未使用`, `有效`, `部分有效`, `无效`",有效
+treatmentResponse.lifestyle,治疗反应.生活方式干预,String,"对生活方式干预的反应。<br>**建议值**: `良好`, `一般`, `较差`",一般
+followUpRecommendation,随访建议,String,"随访检查建议频率",每3个月复查
+prognosticFactors,预后因素,String,影响预后的主要因素,肥胖和血脂异常
+diagnosisImpression,诊断/印象,String,医生对胰岛素抵抗检查结果的综合诊断或印象。,胰岛素抵抗，代谢综合征
+recommendation,建议,String,医生根据检查结果提出的建议。,生活方式干预，考虑药物治疗

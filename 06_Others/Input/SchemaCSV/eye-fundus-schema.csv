@@ -1,0 +1,78 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行眼底检查的日期,2025-08-15
+leftEye.opticDiscColor,左眼检查.视盘颜色,String,"左眼眼底检查的详细信息。视盘的颜色描述。<br>**建议值**: `正常`, `淡红`, `红黄`, `苍白`, `颞侧苍白`",红黄
+leftEye.opticDiscMargin,左眼检查.视盘边界,String,"左眼眼底检查的详细信息。视盘的边界描述。<br>**建议值**: `清`, `模糊`",清
+leftEye.cupDiscRatio.value,左眼检查.杯盘比.值,Number,左眼眼底检查的详细信息。视盘杯盘比。测量数值,0.3
+leftEye.cupDiscRatio.unit,左眼检查.杯盘比.单位,String,左眼眼底检查的详细信息。视盘杯盘比。测量单位,比值
+leftEye.opticDiscEdema,左眼检查.视盘水肿,String,"左眼眼底检查的详细信息。视盘是否存在水肿。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+leftEye.opticDiscHemorrhage,左眼检查.视盘出血,String,"左眼眼底检查的详细信息。视盘是否存在出血。<br>**建议值**: `无`, `有`",无
+leftEye.macularEdema.present,左眼检查.黄斑水肿.是否存在,String,"左眼眼底检查的详细信息。黄斑水肿的详细信息。是否存在黄斑水肿。<br>**建议值**: `无`, `有`",有
+leftEye.macularEdema.centralInvolvement,左眼检查.黄斑水肿.累及中心凹,String,"左眼眼底检查的详细信息。黄斑水肿的详细信息。黄斑水肿是否累及中心凹。<br>**建议值**: `否`, `是`",是
+leftEye.macularEdema.hardExudates,左眼检查.黄斑水肿.硬性渗出,String,"左眼眼底检查的详细信息。黄斑水肿的详细信息。黄斑区是否存在硬性渗出。<br>**建议值**: `否`, `是`",是
+leftEye.macularHemorrhage,左眼检查.黄斑出血,String,"左眼眼底检查的详细信息。黄斑是否存在出血。<br>**建议值**: `无`, `有`",无
+leftEye.macularDrusen,左眼检查.黄斑玻璃膜疣,String,"左眼眼底检查的详细信息。黄斑是否存在玻璃膜疣。<br>**建议值**: `无`, `有`",无
+leftEye.macularExudates.present,左眼检查.黄斑渗出.是否存在,String,"左眼眼底检查的详细信息。黄斑渗出的详细信息。是否存在视网膜渗出。<br>**建议值**: `无`, `有`",有
+leftEye.macularExudates.type,左眼检查.黄斑渗出.类型,String,"左眼眼底检查的详细信息。黄斑渗出的详细信息。渗出类型。<br>**建议值**: `硬性渗出`, `软性渗出`",硬性渗出
+leftEye.macularExudates.count,左眼检查.黄斑渗出.数量,Number,左眼眼底检查的详细信息。黄斑渗出的详细信息。渗出数量（如果可计数）,3
+leftEye.macularExudates.location,左眼检查.黄斑渗出.位置,String,"左眼眼底检查的详细信息。黄斑渗出的详细信息。渗出位置。<br>**建议值**: `鼻上`, `鼻下`, `颞上`, `颞下`, `黄斑区`",颞下
+leftEye.retinalVesselAVRatio,左眼检查.视网膜血管动脉/静脉比,String,左眼眼底检查的详细信息。视网膜动脉与静脉的直径比,2:3
+leftEye.retinalVesselNarrowing,左眼检查.视网膜血管狭窄,String,"左眼眼底检查的详细信息。视网膜血管是否存在狭窄。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+leftEye.retinalVesselSclerosis,左眼检查.视网膜血管硬化,String,"左眼眼底检查的详细信息。视网膜血管是否存在硬化。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+leftEye.retinalVesselHemorrhage.present,左眼检查.视网膜血管出血.是否存在,String,"左眼眼底检查的详细信息。视网膜血管出血的详细信息。是否存在视网膜血管出血。<br>**建议值**: `无`, `有`",有
+leftEye.retinalVesselHemorrhage.type,左眼检查.视网膜血管出血.类型,String,"左眼眼底检查的详细信息。视网膜血管出血的详细信息。出血类型。<br>**建议值**: `点状`, `片状`, `火焰状`",点状
+leftEye.retinalVesselHemorrhage.count,左眼检查.视网膜血管出血.数量,Number,左眼眼底检查的详细信息。视网膜血管出血的详细信息。出血数量（如果可计数）,5
+leftEye.retinalVesselHemorrhage.location,左眼检查.视网膜血管出血.位置,String,"左眼眼底检查的详细信息。视网膜血管出血的详细信息。出血位置。<br>**建议值**: `鼻上`, `鼻下`, `颞上`, `颞下`, `黄斑区`",鼻上
+leftEye.retinalHemorrhage.present,左眼检查.视网膜出血.是否存在,String,"左眼眼底检查的详细信息。视网膜出血的详细信息。是否存在视网膜出血。<br>**建议值**: `无`, `有`",有
+leftEye.retinalHemorrhage.type,左眼检查.视网膜出血.类型,String,"左眼眼底检查的详细信息。视网膜出血的详细信息。出血类型。<br>**建议值**: `点状`, `片状`, `火焰状`",点状
+leftEye.retinalHemorrhage.count,左眼检查.视网膜出血.数量,Number,左眼眼底检查的详细信息。视网膜出血的详细信息。出血数量（如果可计数）,5
+leftEye.retinalHemorrhage.location,左眼检查.视网膜出血.位置,String,"左眼眼底检查的详细信息。视网膜出血的详细信息。出血位置。<br>**建议值**: `鼻上`, `鼻下`, `颞上`, `颞下`, `黄斑区`",鼻上
+leftEye.retinalExudates.present,左眼检查.视网膜渗出.是否存在,String,"左眼眼底检查的详细信息。视网膜渗出的详细信息。是否存在视网膜渗出。<br>**建议值**: `无`, `有`",有
+leftEye.retinalExudates.type,左眼检查.视网膜渗出.类型,String,"左眼眼底检查的详细信息。视网膜渗出的详细信息。渗出类型。<br>**建议值**: `硬性渗出`, `软性渗出`",硬性渗出
+leftEye.retinalExudates.count,左眼检查.视网膜渗出.数量,Number,左眼眼底检查的详细信息。视网膜渗出的详细信息。渗出数量（如果可计数）,3
+leftEye.retinalExudates.location,左眼检查.视网膜渗出.位置,String,"左眼眼底检查的详细信息。黄斑渗出的详细信息。渗出位置。<br>**建议值**: `鼻上`, `鼻下`, `颞上`, `颞下`, `黄斑区`",颞下
+leftEye.retinalCottonWoolSpots.present,左眼检查.视网膜棉絮斑.是否存在,String,"左眼眼底检查的详细信息。视网膜棉絮斑的详细信息。是否存在视网膜棉絮斑。<br>**建议值**: `无`, `有`",有
+leftEye.retinalCottonWoolSpots.count,左眼检查.视网膜棉絮斑.数量,Number,左眼眼底检查的详细信息。视网膜棉絮斑的详细信息。棉絮斑数量（如果可计数）,2
+leftEye.retinalCottonWoolSpots.location,左眼检查.视网膜棉絮斑.位置,String,"左眼检查.视网膜棉絮斑.位置。<br>**建议值**: `鼻上`, `鼻下`, `颞上`, `颞下`, `黄斑区`",鼻上
+leftEye.retinalPigmentaryChanges,左眼检查.视网膜色素改变,String,"左眼眼底检查的详细信息。视网膜是否存在色素改变。<br>**建议值**: `无`, `有`",无
+leftEye.retinalDetachment,左眼检查.视网膜脱离,String,"左眼眼底检查的详细信息。视网膜是否存在脱离。<br>**建议值**: `无`, `有`",无
+leftEye.drSeverity,左眼检查.糖尿病视网膜病变严重程度,String,"左眼眼底检查的详细信息。糖尿病视网膜病变（DR）的严重程度分级。<br>**建议值**: `无DR`, `轻度非增殖性DR`, `中度非增殖性DR`, `重度非增殖性DR`, `增殖性DR`",中度非增殖性DR
+leftEye.dmeSeverity,左眼检查.糖尿病黄斑水肿严重程度,String,"左眼眼底检查的详细信息。糖尿病黄斑水肿（DME）的严重程度分级。<br>**建议值**: `无DME`, `轻度DME`, `中度DME`, `重度DME`",轻度DME
+rightEye.opticDiscColor,右眼检查.视盘颜色,String,"右眼眼底检查的详细信息。视盘的颜色描述。<br>**建议值**: `正常`, `淡红`, `红黄`, `苍白`, `颞侧苍白`",红黄
+rightEye.opticDiscMargin,右眼检查.视盘边界,String,"右眼眼底检查的详细信息。视盘的边界描述。<br>**建议值**: `清`, `模糊`",清
+rightEye.cupDiscRatio.value,右眼检查.杯盘比.值,Number,右眼眼底检查的详细信息。视盘杯盘比。测量数值,0.3
+rightEye.cupDiscRatio.unit,右眼检查.杯盘比.单位,String,右眼眼底检查的详细信息。视盘杯盘比。测量单位,比值
+rightEye.opticDiscEdema,右眼检查.视盘水肿,String,"右眼眼底检查的详细信息。视盘是否存在水肿。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+rightEye.opticDiscHemorrhage,右眼检查.视盘出血,String,"右眼眼底检查的详细信息。视盘是否存在出血。<br>**建议值**: `无`, `有`",无
+rightEye.macularEdema.present,右眼检查.黄斑水肿.是否存在,String,"右眼眼底检查的详细信息。黄斑水肿的详细信息。是否存在黄斑水肿。<br>**建议值**: `无`, `有`",有
+rightEye.macularEdema.centralInvolvement,右眼检查.黄斑水肿.累及中心凹,String,"右眼眼底检查的详细信息。黄斑水肿的详细信息。黄斑水肿是否累及中心凹。<br>**建议值**: `否`, `是`",是
+rightEye.macularEdema.hardExudates,右眼检查.黄斑水肿.硬性渗出,String,"右眼眼底检查的详细信息。黄斑水肿的详细信息。黄斑区是否存在硬性渗出。<br>**建议值**: `否`, `是`",是
+rightEye.macularHemorrhage,右眼检查.黄斑出血,String,"右眼眼底检查的详细信息。黄斑是否存在出血。<br>**建议值**: `无`, `有`",无
+rightEye.macularDrusen,右眼检查.黄斑玻璃膜疣,String,"右眼眼底检查的详细信息。黄斑是否存在玻璃膜疣。<br>**建议值**: `无`, `有`",无
+rightEye.macularExudates.present,右眼检查.黄斑渗出.是否存在,String,"右眼眼底检查的详细信息。黄斑渗出的详细信息。是否存在视网膜渗出。<br>**建议值**: `无`, `有`",有
+rightEye.macularExudates.type,右眼检查.黄斑渗出.类型,String,"右眼眼底检查的详细信息。黄斑渗出的详细信息。渗出类型。<br>**建议值**: `硬性渗出`, `软性渗出`",硬性渗出
+rightEye.macularExudates.count,右眼检查.黄斑渗出.数量,Number,右眼眼底检查的详细信息。黄斑渗出的详细信息。渗出数量（如果可计数）,3
+rightEye.macularExudates.location,右眼检查.黄斑渗出.位置,String,"右眼眼底检查的详细信息。黄斑渗出的详细信息。渗出位置。<br>**建议值**: `鼻上`, `鼻下`, `颞上`, `颞下`, `黄斑区`",颞下
+rightEye.retinalVesselAVRatio,右眼检查.视网膜血管动脉/静脉比,String,右眼眼底检查的详细信息。视网膜动脉与静脉的直径比,2:3
+rightEye.retinalVesselNarrowing,右眼检查.视网膜血管狭窄,String,"右眼眼底检查的详细信息。视网膜血管是否存在狭窄。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+rightEye.retinalVesselSclerosis,右眼检查.视网膜血管硬化,String,"右眼眼底检查的详细信息。视网膜血管是否存在硬化。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+rightEye.retinalVesselHemorrhage.present,右眼检查.视网膜血管出血.是否存在,String,"右眼眼底检查的详细信息。视网膜血管出血的详细信息。是否存在视网膜血管出血。<br>**建议值**: `无`, `有`",有
+rightEye.retinalVesselHemorrhage.type,右眼检查.视网膜血管出血.类型,String,"右眼眼底检查的详细信息。视网膜血管出血的详细信息。出血类型。<br>**建议值**: `点状`, `片状`, `火焰状`",点状
+rightEye.retinalVesselHemorrhage.count,右眼检查.视网膜血管出血.数量,Number,右眼眼底检查的详细信息。视网膜血管出血的详细信息。出血数量（如果可计数）,5
+rightEye.retinalVesselHemorrhage.location,右眼检查.视网膜血管出血.位置,String,"右眼眼底检查的详细信息。视网膜血管出血的详细信息。出血位置。<br>**建议值**: `鼻上`, `鼻下`, `颞上`, `颞下`, `黄斑区`",鼻上
+rightEye.retinalHemorrhage.present,右眼检查.视网膜出血.是否存在,String,"右眼眼底检查的详细信息。视网膜出血的详细信息。是否存在视网膜出血。<br>**建议值**: `无`, `有`",有
+rightEye.retinalHemorrhage.type,右眼检查.视网膜出血.类型,String,"右眼眼底检查的详细信息。视网膜出血的详细信息。出血类型。<br>**建议值**: `点状`, `片状`, `火焰状`",点状
+rightEye.retinalHemorrhage.count,右眼检查.视网膜出血.数量,Number,右眼眼底检查的详细信息。视网膜出血的详细信息。出血数量（如果可计数）,5
+rightEye.retinalHemorrhage.location,右眼检查.视网膜出血.位置,String,"右眼眼底检查的详细信息。视网膜出血的详细信息。出血位置。<br>**建议值**: `鼻上`, `鼻下`, `颞上`, `颞下`, `黄斑区`",鼻上
+rightEye.retinalExudates.present,右眼检查.视网膜渗出.是否存在,String,"右眼眼底检查的详细信息。视网膜渗出的详细信息。是否存在视网膜渗出。<br>**建议值**: `无`, `有`",有
+rightEye.retinalExudates.type,右眼检查.视网膜渗出.类型,String,"右眼眼底检查的详细信息。视网膜渗出的详细信息。渗出类型。<br>**建议值**: `硬性渗出`, `软性渗出`",硬性渗出
+rightEye.retinalExudates.count,右眼检查.视网膜渗出.数量,Number,右眼眼底检查的详细信息。视网膜渗出的详细信息。渗出数量（如果可计数）,3
+rightEye.macularExudates.location,右眼检查.黄斑渗出.位置,String,"右眼眼底检查的详细信息。黄斑渗出的详细信息。渗出位置。<br>**建议值**: `鼻上`, `鼻下`, `颞上`, `颞下`, `黄斑区`",颞下
+rightEye.retinalCottonWoolSpots.present,右眼检查.视网膜棉絮斑.是否存在,String,"右眼眼底检查的详细信息。视网膜棉絮斑的详细信息。是否存在视网膜棉絮斑。<br>**建议值**: `无`, `有`",有
+rightEye.retinalCottonWoolSpots.count,右眼检查.视网膜棉絮斑.数量,Number,右眼眼底检查的详细信息。视网膜棉絮斑的详细信息。棉絮斑数量（如果可计数）,2
+rightEye.retinalCottonWoolSpots.location,右眼检查.视网膜棉絮斑.位置,String,"右眼检查.视网膜棉絮斑.位置。<br>**建议值**: `鼻上`, `鼻下`, `颞上`, `颞下`, `黄斑区`",鼻上
+rightEye.retinalPigmentaryChanges,右眼检查.视网膜色素改变,String,"右眼眼底检查的详细信息。视网膜是否存在色素改变。<br>**建议值**: `无`, `有`",无
+rightEye.retinalDetachment,右眼检查.视网膜脱离,String,"右眼眼底检查的详细信息。视网膜是否存在脱离。<br>**建议值**: `无`, `有`",无
+rightEye.drSeverity,右眼检查.糖尿病视网膜病变严重程度,String,"右眼眼底检查的详细信息。糖尿病视网膜病变（DR）的严重程度分级。<br>**建议值**: `无DR`, `轻度非增殖性DR`, `中度非增殖性DR`, `重度非增殖性DR`, `增殖性DR`",中度非增殖性DR
+rightEye.dmeSeverity,右眼检查.糖尿病黄斑水肿严重程度,String,"右眼眼底检查的详细信息。糖尿病黄斑水肿（DME）的严重程度分级。<br>**建议值**: `无DME`, `轻度DME`, `中度DME`, `重度DME`",轻度DME
+diagnosisImpression,诊断/印象,String,医生对眼底检查的诊断或初步印象。,糖尿病视网膜病变
+recommendation,建议,String,医生根据检查结果提出的建议。,定期复查

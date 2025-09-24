@@ -1,0 +1,35 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行血生化检查的日期,2025-08-15
+fastingGlucose,空腹血糖 (FPG),Number,"空腹状态下的血糖浓度。<br>单位: mmol/L<br>**参考范围**: 3.9-6.1",5.2
+postprandialGlucose,餐后2小时血糖 (2hPG),Number,"餐后2小时血糖浓度。<br>单位: mmol/L<br>**参考范围**: <7.8",6.5
+hemoglobinA1c,糖化血红蛋白 (HbA1c),Number,"糖化血红蛋白，反映近2-3个月平均血糖水平。<br>单位: %<br>**参考范围**: 4.0-6.0",5.8
+totalCholesterol,总胆固醇 (TC),Number,"血清总胆固醇。<br>单位: mmol/L<br>**参考范围**: <5.2",4.8
+triglycerides,甘油三酯 (TG),Number,"血清甘油三酯。<br>单位: mmol/L<br>**参考范围**: <1.7",1.2
+lowDensityLipoprotein,低密度脂蛋白胆固醇 (LDL-C),Number,"低密度脂蛋白胆固醇。<br>单位: mmol/L<br>**参考范围**: <3.4",2.8
+highDensityLipoprotein,高密度脂蛋白胆固醇 (HDL-C),Number,"高密度脂蛋白胆固醇。<br>单位: mmol/L<br>**参考范围**: 男性>1.04，女性>1.29",1.45
+alanineAminotransferase,丙氨酸氨基转移酶 (ALT),Number,"肝功能指标。<br>单位: U/L<br>**参考范围**: 7-40",25
+aspartateAminotransferase,天冬氨酸氨基转移酶 (AST),Number,"肝功能指标。<br>单位: U/L<br>**参考范围**: 13-35",28
+alkalinePhosphatase,碱性磷酸酶 (ALP),Number,"肝功能指标。<br>单位: U/L<br>**参考范围**: 45-125",85
+gammaGlutamylTransferase,γ-谷氨酰转肽酶 (GGT),Number,"肝功能指标。<br>单位: U/L<br>**参考范围**: 男性10-60，女性7-45",32
+totalBilirubin,总胆红素 (TBIL),Number,"胆红素代谢指标。<br>单位: μmol/L<br>**参考范围**: 3.4-20.5",12.8
+directBilirubin,直接胆红素 (DBIL),Number,"直接胆红素。<br>单位: μmol/L<br>**参考范围**: 0-6.8",3.2
+indirectBilirubin,间接胆红素 (IBIL),Number,"间接胆红素。<br>单位: μmol/L<br>**参考范围**: 1.7-13.7",9.6
+totalProtein,总蛋白 (TP),Number,"血清总蛋白。<br>单位: g/L<br>**参考范围**: 65-85",72
+albumin,白蛋白 (ALB),Number,"血清白蛋白。<br>单位: g/L<br>**参考范围**: 40-55",45
+globulin,球蛋白 (GLB),Number,"血清球蛋白。<br>单位: g/L<br>**参考范围**: 20-40",27
+albuminGlobulinRatio,白球比 (A/G),Number,"白蛋白与球蛋白比值。<br>**参考范围**: 1.2-2.4",1.67
+serumCreatinine,血肌酐 (SCr),Number,"肾功能指标。<br>单位: μmol/L<br>**参考范围**: 男性57-111，女性41-73",78
+bloodUreaNitrogen,血尿素氮 (BUN),Number,"肾功能指标。<br>单位: mmol/L<br>**参考范围**: 3.6-9.5",6.2
+uricAcid,尿酸 (UA),Number,"尿酸浓度。<br>单位: μmol/L<br>**参考范围**: 男性208-428，女性155-357",320
+estimatedGFR,估算肾小球滤过率 (eGFR),Number,"估算的肾小球滤过率。<br>单位: mL/min/1.73m²<br>**参考范围**: >90",95
+creatineKinase,肌酸激酶 (CK),Number,"肌酸激酶，心肌损伤标志物。<br>单位: U/L<br>**参考范围**: 男性38-174，女性26-140",86
+creatineKinaseMB,肌酸激酶同工酶 (CK-MB),Number,"心肌特异性肌酸激酶。<br>单位: U/L<br>**参考范围**: 0-25",8
+lactateDehydrogenase,乳酸脱氢酶 (LDH),Number,"乳酸脱氢酶。<br>单位: U/L<br>**参考范围**: 120-250",180
+sodium,血钠 (Na+),Number,"血清钠离子浓度。<br>单位: mmol/L<br>**参考范围**: 137-147",142
+potassium,血钾 (K+),Number,"血清钾离子浓度。<br>单位: mmol/L<br>**参考范围**: 3.5-5.3",4.2
+chloride,血氯 (Cl-),Number,"血清氯离子浓度。<br>单位: mmol/L<br>**参考范围**: 99-110",105
+calcium,血钙 (Ca2+),Number,"血清钙离子浓度。<br>单位: mmol/L<br>**参考范围**: 2.11-2.52",2.35
+phosphorus,血磷 (P),Number,"血清磷浓度。<br>单位: mmol/L<br>**参考范围**: 0.85-1.51",1.15
+magnesium,血镁 (Mg2+),Number,"血清镁离子浓度。<br>单位: mmol/L<br>**参考范围**: 0.75-1.02",0.88
+diagnosisImpression,诊断/印象,String,医生对血生化检查结果的综合诊断或印象。,肝肾功能正常
+recommendation,建议,String,医生根据检查结果提出的建议。,继续保持健康生活方式

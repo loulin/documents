@@ -1,0 +1,291 @@
+fieldName,fieldNameCN,dataType,description,examples
+examDate,检查日期,String,检查日期，格式YYYY-MM-DD,2024-12-01
+patientID,患者唯一标识符,String,患者的唯一标识符,P202401001
+patientName,患者姓名,String,患者的姓名,张三
+clinicalIndication,临床适应症,String,进行家庭支持评估的临床适应症,糖尿病家庭支持评估
+diagnosisImpression,诊断印象,String,基于评估结果的诊断印象,家庭支持充分/中等/不足
+recommendation,建议,String,基于评估结果的建议,加强家庭教育和支持体系建设
+
+# 基本信息
+ageAtAssessment,评估时年龄,Number,患者评估时的年龄（岁）,58
+gender,性别,String,患者性别,男/女
+diabetesType,糖尿病类型,String,患者的糖尿病类型,1型糖尿病/2型糖尿病/妊娠糖尿病/其他特殊类型
+diabetesDuration,糖尿病病程,Number,患者糖尿病诊断时间（年）,12.5
+diseaseComplexity,疾病复杂程度,String,疾病复杂程度,简单/中等/复杂/高度复杂
+functionalStatus,功能状态,String,患者功能独立性,完全独立/部分独立/需要协助/完全依赖
+livingArrangement,居住安排,String,患者居住安排,与配偶居住/与子女居住/与父母居住/独居/集体居住
+
+# 家庭基本结构
+familySize,家庭规模,Number,核心家庭成员数量,4
+householdSize,家庭户规模,Number,同住家庭成员总数,5
+maritalStatus,婚姻状况,String,患者婚姻状况,已婚/未婚/离异/丧偶/分居
+spousePresent,配偶存在,String,是否有配偶,有/无
+childrenNumber,子女数量,Number,子女总数,2
+childrenAtHome,在家子女,Number,与患者同住的子女数,1
+grandchildrenInvolved,孙辈参与,String,孙辈是否参与患者照护,积极参与/偶尔参与/不参与/无孙辈
+extendedFamilyInvolvement,大家庭参与,String,大家庭成员参与程度,积极参与/适度参与/有限参与/不参与
+
+# 主要照护者识别
+primaryCaregiverPresence,主要照护者存在,String,是否有主要照护者,有/无
+primaryCaregiverRelationship,主要照护者关系,String,主要照护者与患者关系,配偶/子女/父母/兄弟姐妹/其他亲属/非亲属
+primaryCaregiverAge,主要照护者年龄,Number,主要照护者年龄（岁）,55
+primaryCaregiverGender,主要照护者性别,String,主要照护者性别,男/女
+primaryCaregiverHealth,主要照护者健康状况,String,主要照护者健康状况,健康/基本健康/有健康问题/健康状况差
+primaryCaregiverAvailability,主要照护者可获得性,String,主要照护者时间可获得性,全天候/工作时间外/周末/有限时间/不确定
+caregivingDuration,照护时长,Number,作为主要照护者的时间（年）,8.5
+
+# 家庭糖尿病知识水平
+familyDiabetesKnowledgeOverall,家庭糖尿病知识总体水平,Number,家庭成员糖尿病知识总体评分（0-100分）,65
+spouseKnowledgeLevel,配偶知识水平,Number,配偶糖尿病知识水平评分（0-100分）,72
+childrenKnowledgeLevel,子女知识水平,Number,子女糖尿病知识水平评分（0-100分）,58
+familyEducationHistory,家庭教育史,String,家庭成员接受糖尿病教育历史,全部接受/部分接受/很少接受/未接受
+knowledgeSourcesUtilized,知识来源利用,String,家庭获取糖尿病知识主要来源,医生/护士/书籍/网络/病友/综合来源
+misinformationPresence,错误信息存在,String,家庭中是否存在糖尿病错误认知,无/轻微/中等/严重
+familyLearningWillingness,家庭学习意愿,Number,家庭成员学习糖尿病知识意愿评分（1-5分）,3.6
+
+# 情感支持评估
+emotionalSupportProvision,情感支持提供,Number,家庭提供情感支持程度评分（1-5分）,3.8
+empathyAndUnderstanding,共情和理解,Number,家庭成员对患者共情理解评分（1-5分）,3.5
+encouragementAndMotivation,鼓励和激励,Number,家庭对患者鼓励激励程度评分（1-5分）,3.6
+emotionalAvailability,情感可获得性,Number,家庭情感支持可获得性评分（1-5分）,3.4
+stressReductionSupport,压力缓解支持,Number,家庭帮助缓解患者压力程度评分（1-5分）,3.2
+copingAssistance,应对协助,Number,家庭协助患者应对疾病程度评分（1-5分）,3.0
+listeningAndCommunication,倾听和沟通,Number,家庭倾听患者需求沟通质量评分（1-5分）,3.3
+
+# 实际照护支持
+dailyCareAssistance,日常照护协助,Number,家庭日常照护协助程度评分（1-5分）,3.7
+medicationManagementSupport,用药管理支持,Number,家庭用药管理支持程度评分（1-5分）,3.5
+glucoseMonitoringSupport,血糖监测支持,Number,家庭血糖监测支持程度评分（1-5分）,3.2
+exerciseSupport,运动支持,Number,家庭运动锻炼支持程度评分（1-5分）,2.8
+dietSupport,饮食支持,Number,家庭饮食管理支持程度评分（1-5分）,3.4
+appointmentSupport,就医支持,Number,家庭就医陪同支持程度评分（1-5分）,3.6
+emergencyResponse,紧急应对,Number,紧急情况家庭应对能力评分（1-5分）,3.0
+
+# 信息支持
+healthInformationSharing,健康信息分享,Number,家庭分享健康信息程度评分（1-5分）,3.1
+educationalResourceAccess,教育资源获取,Number,家庭获取教育资源能力评分（1-5分）,2.9
+technologySupport,技术支持,Number,家庭提供技术使用支持评分（1-5分）,2.6
+decisionMakingParticipation,决策参与,Number,家庭参与医疗决策程度评分（1-5分）,3.3
+informationProcessing,信息处理,Number,家庭协助处理医疗信息能力评分（1-5分）,2.8
+communicationFacilitation,沟通促进,Number,家庭促进医患沟通能力评分（1-5分）,3.0
+advocacySupport,倡导支持,Number,家庭为患者权益倡导程度评分（1-5分）,2.5
+
+# 社会支持
+socialActivitySupport,社交活动支持,Number,家庭支持患者社交活动程度评分（1-5分）,2.9
+communityIntegrationSupport,社区融入支持,Number,家庭支持患者社区参与程度评分（1-5分）,2.7
+peerInteractionFacilitation,同伴互动促进,Number,家庭促进患者与病友交流程度评分（1-5分）,2.4
+transportationSupport,交通支持,Number,家庭提供交通便利程度评分（1-5分）,3.5
+socialNetworkMaintenance,社交网络维护,Number,家庭协助维护社交关系程度评分（1-5分）,2.8
+isolationPrevention,孤立预防,Number,家庭预防患者社会孤立程度评分（1-5分）,3.1
+stigmaProtection,病耻感保护,Number,家庭保护患者免受病耻感程度评分（1-5分）,3.3
+
+# 经济支持
+financialSupport,经济支持,Number,家庭提供经济支持程度评分（1-5分）,3.2
+medicalExpenseSharing,医疗费用分担,Number,家庭分担医疗费用程度评分（1-5分）,3.4
+insuranceAssistance,保险协助,Number,家庭协助处理保险事务程度评分（1-5分）,2.9
+resourceAllocation,资源配置,Number,家庭内部资源向患者倾斜程度评分（1-5分）,3.1
+economicPlanningSupport,经济规划支持,Number,家庭协助长期经济规划程度评分（1-5分）,2.6
+workAccommodationSupport,工作适应支持,Number,家庭支持患者工作适应程度评分（1-5分）,2.8
+emergencyFundAvailability,应急资金可获得性,String,家庭应急资金可获得性,充分/基本充分/有限/不足
+
+# 家庭功能评估
+familyCohesion,家庭凝聚力,Number,家庭凝聚力程度评分（1-5分）,3.4
+familyAdaptability,家庭适应性,Number,家庭适应变化能力评分（1-5分）,3.1
+familyCommunication,家庭沟通,Number,家庭内部沟通质量评分（1-5分）,3.2
+problemSolvingAbility,问题解决能力,Number,家庭解决问题能力评分（1-5分）,2.9
+conflictResolution,冲突解决,Number,家庭处理冲突能力评分（1-5分）,2.7
+roleFlexibility,角色灵活性,Number,家庭角色调整灵活性评分（1-5分）,3.0
+boundariesApproppriateness,边界适当性,Number,家庭边界设置适当性评分（1-5分）,3.2
+
+# 照护负担评估
+primaryCaregiverBurden,主要照护者负担,Number,主要照护者负担程度评分（1-5分）,3.1
+physicalBurdenLevel,身体负担水平,Number,照护身体负担程度评分（1-5分）,2.8
+emotionalBurdenLevel,情感负担水平,Number,照护情感负担程度评分（1-5分）,3.2
+timeBurdenLevel,时间负担水平,Number,照护时间负担程度评分（1-5分）,3.4
+financialBurdenLevel,经济负担水平,Number,照护经济负担程度评分（1-5分）,2.9
+socialBurdenLevel,社会负担水平,Number,照护社会负担程度评分（1-5分）,2.6
+caregiverStresslevel,照护者压力水平,Number,照护者压力程度评分（1-5分）,3.0
+
+# 照护者健康和福祉
+caregiverPhysicalHealth,照护者身体健康,Number,照护者身体健康状况评分（1-5分）,3.3
+caregiverMentalHealth,照护者心理健康,Number,照护者心理健康状况评分（1-5分）,3.1
+caregiverQualityOfLife,照护者生活质量,Number,照护者生活质量评分（1-5分）,2.9
+caregiverSocialLife,照护者社交生活,Number,照护者社交生活质量评分（1-5分）,2.7
+caregiverWorkImpact,照护者工作影响,Number,照护对照护者工作影响程度评分（1-5分）,2.8
+caregiverSelfCare,照护者自我照顾,Number,照护者自我照顾程度评分（1-5分）,2.6
+caregiverSupportNeeds,照护者支持需求,Number,照护者获得支持需求程度评分（1-5分）,3.2
+
+# 家庭应对策略
+problemFocusedCoping,问题导向应对,Number,家庭问题导向应对策略使用评分（1-5分）,3.1
+emotionFocusedCoping,情感导向应对,Number,家庭情感导向应对策略使用评分（1-5分）,3.0
+avoidanceCoping,回避应对,Number,家庭回避应对策略使用评分（1-5分）,2.4
+meaningMakingCoping,意义建构应对,Number,家庭意义建构应对策略使用评分（1-5分）,2.8
+religiousCoping,宗教应对,Number,家庭宗教应对策略使用评分（1-5分）,2.2
+socialSupportSeeking,社会支持寻求,Number,家庭寻求外部支持策略使用评分（1-5分）,2.6
+collaborativeCoping,协作应对,Number,家庭协作应对策略使用评分（1-5分）,3.2
+
+# 家庭动态和关系
+patientFamilyRelationshipQuality,患者家庭关系质量,Number,患者与家庭成员关系质量评分（1-5分）,3.3
+dependencyLevel,依赖程度,Number,患者对家庭依赖程度评分（1-5分）,3.0
+independenceMaintenance,独立性维护,Number,家庭维护患者独立性程度评分（1-5分）,2.8
+powerDynamics,权力动态,String,家庭决策权力动态,患者主导/共同决策/家庭主导/不明确
+generationalIssues,代际问题,Number,家庭代际冲突程度评分（1-5分）,2.3
+genderRoles,性别角色,Number,性别角色对照护分工影响评分（1-5分）,2.6
+siblingSupport,兄弟姐妹支持,Number,兄弟姐妹相互支持程度评分（1-5分）,2.8
+
+# 文化和价值观因素
+culturalBeliefsImpact,文化信念影响,Number,文化信念对糖尿病管理影响评分（1-5分）,2.5
+traditionalPracticesIntegration,传统做法整合,Number,传统做法与现代治疗整合程度评分（1-5分）,2.7
+languageBarriers,语言障碍,String,家庭内部语言交流障碍,无障碍/轻微障碍/中等障碍/严重障碍
+religiousInfluences,宗教影响,Number,宗教因素对疾病管理影响评分（1-5分）,2.1
+healthBeliefsAlignment,健康信念一致性,Number,家庭健康信念与医疗建议一致性评分（1-5分）,3.1
+stigmaAndShame,病耻感和羞耻感,Number,家庭内部疾病病耻感程度评分（1-5分）,2.2
+fatalismVersusControl,宿命论vs控制感,Number,家庭对疾病控制vs宿命态度评分（1-5分）,3.0
+
+# 沟通模式
+communicationPatterns,沟通模式,String,家庭内部沟通模式,开放沟通/选择性沟通/有限沟通/封闭沟通
+diabetesDiscussionFrequency,糖尿病讨论频率,String,家庭讨论糖尿病频率,每日/每周/偶尔/很少/从不
+informationSharingWillingness,信息分享意愿,Number,家庭成员信息分享意愿评分（1-5分）,3.2
+concernExpression,担忧表达,Number,家庭成员表达担忧程度评分（1-5分）,3.0
+conflictCommunication,冲突沟通,Number,家庭处理糖尿病相关冲突沟通质量评分（1-5分）,2.8
+emotionalExpression,情感表达,Number,家庭情感表达开放程度评分（1-5分）,2.9
+feedbackGiving,反馈给予,Number,家庭成员相互给予建设性反馈程度评分（1-5分）,2.7
+
+# 生活方式支持
+dietarySupport,饮食支持,Number,家庭饮食管理支持程度评分（1-5分）,3.4
+mealPreparationSupport,膳食准备支持,Number,家庭膳食准备支持程度评分（1-5分）,3.6
+exerciseParticipation,运动参与,Number,家庭成员参与患者运动程度评分（1-5分）,2.8
+smokingCessationSupport,戒烟支持,Number,家庭戒烟支持程度评分（1-5分）,不适用/3.2
+alcoholModeration,饮酒节制,Number,家庭协助控制饮酒程度评分（1-5分）,不适用/2.9
+sleepHygieneSupport,睡眠卫生支持,Number,家庭睡眠卫生支持程度评分（1-5分）,3.1
+stressManagementSupport,压力管理支持,Number,家庭压力管理支持程度评分（1-5分）,2.8
+
+# 医疗参与支持
+appointmentAttendanceSupport,就诊陪同支持,Number,家庭就诊陪同支持程度评分（1-5分）,3.5
+medicationComplianceSupport,用药依从性支持,Number,家庭用药依从性支持程度评分（1-5分）,3.3
+glucoseMonitoringParticipation,血糖监测参与,Number,家庭血糖监测参与程度评分（1-5分）,3.1
+symptomRecognitionSupport,症状识别支持,Number,家庭协助症状识别程度评分（1-5分）,2.9
+emergencyPreparedness,紧急情况准备,Number,家庭紧急情况准备程度评分（1-5分）,3.0
+healthcareDecisionParticipation,医疗决策参与,Number,家庭医疗决策参与程度评分（1-5分）,3.2
+treatmentAdherenceMonitoring,治疗依从性监督,Number,家庭治疗依从性监督程度评分（1-5分）,3.0
+
+# 情感调节支持
+anxietyManagementSupport,焦虑管理支持,Number,家庭焦虑管理支持程度评分（1-5分）,3.1
+depressionSupport,抑郁支持,Number,家庭抑郁情绪支持程度评分（1-5分）,2.9
+hopeAndOptimismPromotion,希望乐观促进,Number,家庭促进希望乐观态度程度评分（1-5分）,3.2
+selfEsteemSupport,自尊支持,Number,家庭维护患者自尊程度评分（1-5分）,3.3
+motivationEnhancement,动机增强,Number,家庭增强患者治疗动机程度评分（1-5分）,3.1
+emotionalValidation,情感确认,Number,家庭情感确认支持程度评分（1-5分）,3.0
+resilenceBuildingSupport,韧性建设支持,Number,家庭韧性建设支持程度评分（1-5分）,2.8
+
+# 社会网络支持
+extendedNetworkMobilization,扩展网络动员,Number,家庭动员扩展社会网络程度评分（1-5分）,2.6
+communityResourceUtilization,社区资源利用,Number,家庭利用社区资源程度评分（1-5分）,2.4
+peerSupportFacilitation,同伴支持促进,Number,家庭促进同伴支持程度评分（1-5分）,2.2
+professionalSupportSeeking,专业支持寻求,Number,家庭寻求专业支持程度评分（1-5分）,2.8
+socialActivityEncouragement,社交活动鼓励,Number,家庭鼓励社交活动程度评分（1-5分）,2.7
+isolationPrevention,孤立预防,Number,家庭预防社会孤立程度评分（1-5分）,3.0
+networkMaintenanceSupport,网络维护支持,Number,家庭协助维护社会网络程度评分（1-5分）,2.5
+
+# 发展性支持
+adaptationSupport,适应支持,Number,家庭疾病适应支持程度评分（1-5分）,3.0
+growthPromotion,成长促进,Number,家庭促进患者个人成长程度评分（1-5分）,2.8
+learningSupport,学习支持,Number,家庭学习新知识技能支持程度评分（1-5分）,3.1
+goalAchievementSupport,目标达成支持,Number,家庭目标达成支持程度评分（1-5分）,3.2
+autonomyPromotion,自主性促进,Number,家庭促进患者自主性程度评分（1-5分）,2.9
+competenceBuilding,能力建设,Number,家庭能力建设支持程度评分（1-5分）,3.0
+futurePlanningSupport,未来规划支持,Number,家庭未来规划支持程度评分（1-5分）,2.7
+
+# 危机支持
+crisisPreparedness,危机准备,Number,家庭危机应对准备程度评分（1-5分）,2.8
+emergencyResponseCapacity,紧急响应能力,Number,家庭紧急响应能力评分（1-5分）,3.0
+hospitalSupportDuringAdmission,住院期间支持,Number,患者住院期间家庭支持程度评分（1-5分）,3.4
+recoverySupportAfterCrisis,危机后恢复支持,Number,危机后恢复期家庭支持程度评分（1-5分）,3.2
+mentalHealthCrisisSupport,心理健康危机支持,Number,心理健康危机时家庭支持程度评分（1-5分）,2.9
+financialCrisisSupport,经济危机支持,Number,经济危机时家庭支持程度评分（1-5分）,3.1
+healthcareCrisisNavigation,医疗危机导航,Number,医疗危机时家庭导航能力评分（1-5分）,2.7
+
+# 支持障碍和挑战
+geographicBarriers,地理障碍,Number,地理距离对支持影响程度评分（1-5分）,2.1
+timeBarriers,时间障碍,Number,时间限制对支持影响程度评分（1-5分）,3.2
+resourceBarriers,资源障碍,Number,资源不足对支持影响程度评分（1-5分）,2.8
+knowledgeBarriers,知识障碍,Number,知识缺乏对支持影响程度评分（1-5分）,2.6
+communicationBarriers,沟通障碍,Number,沟通问题对支持影响程度评分（1-5分）,2.3
+conflictBarriers,冲突障碍,Number,家庭冲突对支持影响程度评分（1-5分）,2.4
+healthBarriers,健康障碍,Number,家庭成员健康问题对支持影响程度评分（1-5分）,2.5
+
+# 支持系统强化需求
+educationNeed,教育需求,String,家庭糖尿病教育需求程度,高需求/中等需求/低需求/无需求
+skillTrainingNeed,技能培训需求,String,家庭照护技能培训需求,高需求/中等需求/低需求/无需求
+counselingNeed,咨询需求,String,家庭咨询支持需求,高需求/中等需求/低需求/无需求
+respiteCareNeed,喘息照护需求,String,照护者喘息服务需求,高需求/中等需求/低需求/无需求
+financialAssistanceNeed,经济援助需求,String,经济援助需求程度,高需求/中等需求/低需求/无需求
+professionalSupportNeed,专业支持需求,String,专业支持服务需求,高需求/中等需求/低需求/无需求
+peerSupportNeed,同伴支持需求,String,同伴支持服务需求,高需求/中等需求/低需求/无需求
+
+# 支持系统优势
+existingStrengths,现有优势,String,家庭支持系统主要优势,情感支持/实际协助/知识学习/经济支持/社会网络
+adaptabilityStrengths,适应能力优势,String,家庭适应能力优势,快速适应/灵活调整/积极学习/资源整合
+relationshipStrengths,关系优势,String,家庭关系优势,沟通良好/相互支持/角色互补/冲突处理
+resourceStrengths,资源优势,String,家庭资源优势,经济充足/知识丰富/社会网络/专业联系
+copingStrengths,应对优势,String,家庭应对优势,问题解决/情感调节/意义建构/支持寻求
+resilienceFactors,韧性因素,String,家庭韧性因素,凝聚力强/乐观态度/学习能力/支持网络
+
+# 文化适应性评估
+culturalSensitivity,文化敏感性,Number,支持提供文化敏感性评分（1-5分）,3.1
+languageAccommodation,语言适应,Number,多语言家庭语言适应程度评分（1-5分）,3.0
+traditionalPracticeRespect,传统做法尊重,Number,对传统健康做法尊重程度评分（1-5分）,3.2
+religiousAccommodation,宗教适应,Number,宗教需求适应程度评分（1-5分）,2.8
+generationalBridge,代际桥梁,Number,代际文化差异桥接程度评分（1-5分）,2.6
+culturalIdentityPreservation,文化身份保持,Number,文化身份保持支持程度评分（1-5分）,3.0
+biculturalCompetence,双文化能力,Number,双文化适应能力评分（1-5分）,2.9
+
+# 支持质量评估
+supportConsistency,支持一致性,Number,支持提供一致性评分（1-5分）,3.2
+supportReliability,支持可靠性,Number,支持可靠性评分（1-5分）,3.4
+supportApproppriateness,支持适当性,Number,支持适当性评分（1-5分）,3.1
+supportTimeliness,支持及时性,Number,支持及时性评分（1-5分）,3.0
+supportEffectiveness,支持有效性,Number,支持有效性评分（1-5分）,3.2
+supportSustainability,支持可持续性,Number,支持可持续性评分（1-5分）,2.9
+supportFlexibility,支持灵活性,Number,支持灵活性评分（1-5分）,3.0
+
+# 患者对家庭支持感知
+perceivedEmotionalSupport,感知情感支持,Number,患者感知情感支持程度评分（1-5分）,3.5
+perceivedInstrumentalSupport,感知工具性支持,Number,患者感知实际协助程度评分（1-5分）,3.3
+perceivedInformationalSupport,感知信息支持,Number,患者感知信息支持程度评分（1-5分）,3.0
+perceivedAppraisalSupport,感知评价支持,Number,患者感知评价支持程度评分（1-5分）,2.9
+supportSatisfaction,支持满意度,Number,患者对家庭支持满意度评分（1-5分）,3.4
+supportExpectationMatch,支持期望匹配,Number,实际支持与期望匹配程度评分（1-5分）,3.1
+supportBurdenConcern,支持负担担忧,Number,患者对成为家庭负担担忧程度评分（1-5分）,2.8
+
+# 家庭支持发展阶段
+supportEvolutionStage,支持发展阶段,String,家庭支持发展阶段,初期适应/稳定发展/成熟整合/长期维持
+adaptationPhase,适应阶段,String,疾病适应阶段,危机期/适应期/稳定期/长期期
+supportSystemMaturity,支持系统成熟度,Number,支持系统成熟度评分（1-5分）,3.2
+learningProgressionStage,学习发展阶段,String,学习发展阶段,初始学习/技能发展/知识整合/专家水平
+roleAdjustmentStage,角色调整阶段,String,角色调整阶段,角色混乱/角色明确/角色稳定/角色优化
+relationshipAdjustmentStage,关系调整阶段,String,关系调整阶段,关系紧张/关系协商/关系稳定/关系深化
+
+# 综合评估结果
+overallFamilySupportScore,总体家庭支持评分,Number,总体家庭支持评分（0-100分）,72
+supportStrengthLevel,支持强度水平,String,家庭支持强度水平,强支持/中等支持/弱支持/缺乏支持
+supportQualityLevel,支持质量水平,String,家庭支持质量水平,高质量/中等质量/一般质量/低质量
+supportSystemStability,支持系统稳定性,String,支持系统稳定性,很稳定/比较稳定/不太稳定/不稳定
+supportSystemResilience,支持系统韧性,String,支持系统韧性,高韧性/中等韧性/低韧性/脆弱
+supportGaps,支持缺口,String,主要支持缺口,情感支持/实际协助/信息支持/经济支持/社会支持/无明显缺口
+riskFactors,风险因素,String,支持系统风险因素,照护者健康/家庭冲突/资源不足/知识缺乏/无明显风险
+
+# 干预建议
+familyEducationRecommendations,家庭教育建议,String,家庭教育干预建议,糖尿病知识/照护技能/沟通技能/压力管理
+skillTrainingRecommendations,技能培训建议,String,技能培训干预建议,血糖监测/急救技能/营养管理/心理支持
+counselingRecommendations,咨询建议,String,咨询服务建议,家庭治疗/个体咨询/支持小组/危机干预
+resourceConnectionRecommendations,资源连接建议,String,资源连接建议,社区服务/专业支持/同伴支持/经济援助
+systemStrengtheningRecommendations,系统强化建议,String,支持系统强化建议,沟通改善/角色调整/冲突处理/网络扩展
+sustainabilityPlan,可持续性计划,String,支持系统可持续性计划,长期维护/定期评估/适应调整/预防措施
+
+# 监测和随访
+monitoringPlan,监测计划,String,家庭支持监测计划,定期评估/关键指标监测/问题识别/及时调整
+followUpSchedule,随访安排,String,家庭支持随访安排,1个月后/3个月后/6个月后/年度评估
+reassessmentTriggers,重新评估触发条件,String,重新评估触发条件,病情变化/家庭变化/支持问题/定期评估
+supportPlanAdjustment,支持计划调整,String,支持计划调整机制,及时调整/定期调整/需要时调整/无需调整
+outcomeEvaluationPlan,结局评价计划,String,支持干预结局评价,患者结局/家庭结局/系统结局/综合评价

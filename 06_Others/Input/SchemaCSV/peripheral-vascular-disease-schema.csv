@@ -1,0 +1,230 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行周围血管病变检查的日期,2025-08-15
+clinicalIndication,检查适应症,String,"进行周围血管病变检查的临床指征。<br>**建议值**: `间歇性跛行`, `下肢疼痛`, `糖尿病足筛查`, `动脉粥样硬化评估`, `血管重建术前评估`",间歇性跛行
+padSeverity.rutherfordClassification,PAD严重程度.Rutherford分级,Number,"Rutherford分级。<br>**分级**: 0(无症状), 1(轻度跛行), 2(中度跛行), 3(重度跛行), 4(静息痛), 5(小面积组织缺失), 6(大面积组织缺失)",2
+padSeverity.fontaineClassification,PAD严重程度.Fontaine分级,String,"Fontaine分级。<br>**建议值**: `I期`, `IIa期`, `IIb期`, `III期`, `IV期`",IIa期
+padSeverity.wifiClassification.wound,PAD严重程度.WIfI分级.创面,Number,"创面分级(W)。<br>**分级**: 0(无), 1(浅表), 2(深层), 3(骨关节)",0
+padSeverity.wifiClassification.ischemia,PAD严重程度.WIfI分级.缺血,Number,"缺血分级(I)。<br>**分级**: 0(无), 1(轻度), 2(中度), 3(重度)",2
+padSeverity.wifiClassification.footInfection,PAD严重程度.WIfI分级.足部感染,Number,"足部感染分级(fI)。<br>**分级**: 0(无), 1(轻度), 2(中度), 3(重度)",0
+symptoms.claudication.present,症状.间歇性跛行.是否存在,String,"间歇性跛行。<br>**建议值**: `无`, `有`",有
+symptoms.claudication.walkingDistance,症状.间歇性跛行.行走距离,Number,"引起跛行的行走距离。<br>单位: 米",200
+symptoms.claudication.recoveryTime,症状.间歇性跛行.恢复时间,Number,"休息后症状恢复时间。<br>单位: 分钟",3
+symptoms.claudication.location,症状.间歇性跛行.部位,String,"跛行部位",左小腿
+symptoms.claudication.progression,症状.间歇性跛行.进展,String,"症状进展。<br>**建议值**: `稳定`, `进展`, `改善`",进展
+symptoms.restPain.present,症状.静息痛.是否存在,String,"静息痛。<br>**建议值**: `无`, `有`",无
+symptoms.restPain.severity,症状.静息痛.严重程度,Number,"静息痛严重程度（VAS评分）。<br>**范围**: 0-10",0
+symptoms.restPain.timing,症状.静息痛.发生时间,String,"静息痛发生时间（如存在）",无
+symptoms.restPain.location,症状.静息痛.部位,String,"静息痛部位（如存在）",无
+symptoms.restPain.relievingFactors,症状.静息痛.缓解因素,String,"静息痛缓解因素（如存在）",无
+symptoms.coldness.present,症状.肢体发凉.是否存在,String,"肢体发凉。<br>**建议值**: `无`, `有`",有
+symptoms.coldness.location,症状.肢体发凉.部位,String,"发凉部位",双足
+symptoms.coldness.severity,症状.肢体发凉.严重程度,String,"发凉严重程度。<br>**建议值**: `轻度`, `中度`, `重度`",中度
+symptoms.numbness.present,症状.肢体麻木.是否存在,String,"肢体麻木。<br>**建议值**: `无`, `有`",有
+symptoms.numbness.location,症状.肢体麻木.部位,String,"麻木部位",双足趾端
+symptoms.numbness.progression,症状.肢体麻木.进展,String,"麻木进展。<br>**建议值**: `稳定`, `进展`, `改善`",稳定
+physicalExamination.pulse.dorsalisPedis.left,体格检查.脉搏.足背动脉.左侧,String,"左足背动脉搏动。<br>**建议值**: `正常`, `减弱`, `消失`",减弱
+physicalExamination.pulse.dorsalisPedis.right,体格检查.脉搏.足背动脉.右侧,String,"右足背动脉搏动。<br>**建议值**: `正常`, `减弱`, `消失`",正常
+physicalExamination.pulse.posteriorTibial.left,体格检查.脉搏.胫后动脉.左侧,String,"左胫后动脉搏动。<br>**建议值**: `正常`, `减弱`, `消失`",减弱
+physicalExamination.pulse.posteriorTibial.right,体格检查.脉搏.胫后动脉.右侧,String,"右胫后动脉搏动。<br>**建议值**: `正常`, `减弱`, `消失`",正常
+physicalExamination.pulse.popliteal.left,体格检查.脉搏.腘动脉.左侧,String,"左腘动脉搏动。<br>**建议值**: `正常`, `减弱`, `消失`",减弱
+physicalExamination.pulse.popliteal.right,体格检查.脉搏.腘动脉.右侧,String,"右腘动脉搏动。<br>**建议值**: `正常`, `减弱`, `消失`",正常
+physicalExamination.pulse.femoral.left,体格检查.脉搏.股动脉.左侧,String,"左股动脉搏动。<br>**建议值**: `正常`, `减弱`, `消失`",正常
+physicalExamination.pulse.femoral.right,体格检查.脉搏.股动脉.右侧,String,"右股动脉搏动。<br>**建议值**: `正常`, `减弱`, `消失`",正常
+physicalExamination.skin.color.left,体格检查.皮肤.颜色.左下肢,String,"左下肢皮肤颜色",轻度苍白
+physicalExamination.skin.color.right,体格检查.皮肤.颜色.右下肢,String,"右下肢皮肤颜色",正常
+physicalExamination.skin.temperature.left,体格检查.皮肤.温度.左下肢,String,"左下肢皮肤温度。<br>**建议值**: `正常`, `偏凉`, `发凉`",偏凉
+physicalExamination.skin.temperature.right,体格检查.皮肤.温度.右下肢,String,"右下肢皮肤温度。<br>**建议值**: `正常`, `偏凉`, `发凉`",正常
+physicalExamination.skin.hairGrowth.left,体格检查.皮肤.毛发生长.左下肢,String,"左下肢毛发生长。<br>**建议值**: `正常`, `减少`, `缺失`",减少
+physicalExamination.skin.hairGrowth.right,体格检查.皮肤.毛发生长.右下肢,String,"右下肢毛发生长。<br>**建议值**: `正常`, `减少`, `缺失`",正常
+physicalExamination.skin.nails.left,体格检查.皮肤.趾甲.左足,String,"左足趾甲变化",增厚，生长缓慢
+physicalExamination.skin.nails.right,体格检查.皮肤.趾甲.右足,String,"右足趾甲变化",正常
+physicalExamination.ulcers.present,体格检查.溃疡.是否存在,String,"下肢溃疡。<br>**建议值**: `无`, `有`",无
+physicalExamination.ulcers.location,体格检查.溃疡.部位,String,"溃疡部位（如存在）",无
+physicalExamination.ulcers.size,体格检查.溃疡.大小,String,"溃疡大小（如存在）",无
+physicalExamination.ulcers.depth,体格检查.溃疡.深度,String,"溃疡深度（如存在）。<br>**建议值**: `浅表`, `深层`, `累及骨质`",无
+physicalExamination.ulcers.infectionSigns,体格检查.溃疡.感染征象,String,"感染征象（如存在）",无
+physicalExamination.gangrene.present,体格检查.坏疽.是否存在,String,"坏疽。<br>**建议值**: `无`, `有`",无
+physicalExamination.gangrene.location,体格检查.坏疽.部位,String,"坏疽部位（如存在）",无
+physicalExamination.gangrene.extent,体格检查.坏疽.范围,String,"坏疽范围（如存在）",无
+physicalExamination.edema.present,体格检查.水肿.是否存在,String,"下肢水肿。<br>**建议值**: `无`, `有`",无
+physicalExamination.edema.location,体格检查.水肿.部位,String,"水肿部位（如存在）",无
+physicalExamination.edema.severity,体格检查.水肿.严重程度,String,"水肿严重程度（如存在）。<br>**建议值**: `轻度`, `中度`, `重度`",无
+physicalExamination.sensation.light Touch,体格检查.感觉.轻触觉,String,"轻触觉检查",双足远端减退
+physicalExamination.sensation.vibration,体格检查.感觉.振动觉,String,"振动觉检查",双足减退
+physicalExamination.sensation.painSensation,体格检查.感觉.痛觉,String,"痛觉检查",双足远端减退
+physicalExamination.sensation.positionSense,体格检查.感觉.位置觉,String,"位置觉检查",轻度减退
+anklebrachialIndex.left.dorsalisPedis,踝肱指数.左侧.足背动脉,Number,"左足背动脉ABI。<br>**正常**: 0.9-1.3<br>**轻度PAD**: 0.7-0.9<br>**中度PAD**: 0.4-0.7<br>**重度PAD**: <0.4",0.65
+anklebrachialIndex.left.posteriorTibial,踝肱指数.左侧.胫后动脉,Number,"左胫后动脉ABI。<br>**正常**: 0.9-1.3",0.68
+anklebrachialIndex.right.dorsalisPedis,踝肱指数.右侧.足背动脉,Number,"右足背动脉ABI。<br>**正常**: 0.9-1.3",1.05
+anklebrachialIndex.right.posteriorTibial,踝肱指数.右侧.胫后动脉,Number,"右胫后动脉ABI。<br>**正常**: 0.9-1.3",1.08
+anklebrachialIndex.left.lowest,踝肱指数.左侧.最低值,Number,"左侧最低ABI值",0.65
+anklebrachialIndex.right.lowest,踝肱指数.右侧.最低值,Number,"右侧最低ABI值",1.05
+toebrachialIndex.left.greatToe,趾肱指数.左侧.拇趾,Number,"左拇趾TBI。<br>**正常**: >0.7<br>**异常**: ≤0.7",0.55
+toebrachialIndex.right.greatToe,趾肱指数.右侧.拇趾,Number,"右拇趾TBI。<br>**正常**: >0.7",0.85
+digitalPressure.left.greatToe,趾端压力.左侧.拇趾,Number,"左拇趾趾端压力。<br>单位: mmHg<br>**正常**: >30",35
+digitalPressure.right.greatToe,趾端压力.右侧.拇趾,Number,"右拇趾趾端压力。<br>单位: mmHg<br>**正常**: >30",65
+exerciseTesting.treadmillTest.performed,运动试验.跑步机试验.是否进行,String,"是否进行跑步机试验。<br>**建议值**: `是`, `否`",是
+exerciseTesting.treadmillTest.protocol,运动试验.跑步机试验.试验方案,String,"跑步机试验方案（如进行）",Gardner方案
+exerciseTesting.treadmillTest.maxWalkingDistance,运动试验.跑步机试验.最大行走距离,Number,"最大行走距离。<br>单位: 米",180
+exerciseTesting.treadmillTest.absoluteClaudicationDistance,运动试验.跑步机试验.绝对跛行距离,Number,"绝对跛行距离。<br>单位: 米",180
+exerciseTesting.treadmillTest.initialClaudicationDistance,运动试验.跑步机试验.初始跛行距离,Number,"初始跛行距离。<br>单位: 米",120
+exerciseTesting.treadmillTest.post ExerciseAbi.1min,运动试验.跑步机试验.运动后ABI.1分钟,Number,"运动后1分钟ABI",0.45
+exerciseTesting.treadmillTest.postExerciseAbi.3min,运动试验.跑步机试验.运动后ABI.3分钟,Number,"运动后3分钟ABI",0.55
+exerciseTesting.treadmillTest.postExerciseAbi.5min,运动试验.跑步机试验.运动后ABI.5分钟,Number,"运动后5分钟ABI",0.62
+exerciseTesting.treadmillTest.recoveryTime,运动试验.跑步机试验.恢复时间,Number,"ABI恢复至基线时间。<br>单位: 分钟",8
+exerciseTesting.six MinuteWalkTest.distance,运动试验.6分钟步行试验.距离,Number,"6分钟步行距离。<br>单位: 米",285
+exerciseTesting.sixMinuteWalkTest.oxygenSaturation.baseline,运动试验.6分钟步行试验.血氧饱和度.基线,Number,"基线血氧饱和度。<br>单位: %",98
+exerciseTesting.sixMinuteWalkTest.oxygenSaturation.postExercise,运动试验.6分钟步行试验.血氧饱和度.运动后,Number,"运动后血氧饱和度。<br>单位: %",96
+exerciseTesting.sixMinuteWalkTest.symptoms,运动试验.6分钟步行试验.症状,String,"运动中出现的症状",左小腿疼痛
+duplexUltra sound.performed,双功能超声.是否进行,String,"是否进行双功能超声。<br>**建议值**: `是`, `否`",是
+duplexUltrasound.commonFemoralArtery.left.peakSystolicVelocity,双功能超声.股总动脉.左侧.收缩期峰值流速,Number,"左股总动脉PSV。<br>单位: cm/s<br>**正常**: <125",95
+duplexUltrasound.commonFemoralArtery.left.stenosisGrade,双功能超声.股总动脉.左侧.狭窄程度,String,"左股总动脉狭窄程度。<br>**建议值**: `无狭窄`, `<50%`, `50-99%`, `闭塞`",<50%
+duplexUltrasound.commonFemoralArtery.right.peakSystolicVelocity,双功能超声.股总动脉.右侧.收缩期峰值流速,Number,"右股总动脉PSV。<br>单位: cm/s",85
+duplexUltrasound.commonFemoralArtery.right.stenosisGrade,双功能超声.股总动脉.右侧.狭窄程度,String,"右股总动脉狭窄程度。<br>**建议值**: `无狭窄`, `<50%`, `50-99%`, `闭塞`",无狭窄
+duplexUltrasound.superficialFemoralArtery.left.peakSystolicVelocity,双功能超声.股浅动脉.左侧.收缩期峰值流速,Number,"左股浅动脉PSV。<br>单位: cm/s",285
+duplexUltrasound.superficialFemoralArtery.left.stenosisGrade,双功能超声.股浅动脉.左侧.狭窄程度,String,"左股浅动脉狭窄程度。<br>**建议值**: `无狭窄`, `<50%`, `50-99%`, `闭塞`",50-99%
+duplexUltrasound.superficialFemoralArtery.right.peakSystolicVelocity,双功能超声.股浅动脉.右侧.收缩期峰值流速,Number,"右股浅动脉PSV。<br>单位: cm/s",105
+duplexUltrasound.superficialFemoralArtery.right.stenosisGrade,双功能超声.股浅动脉.右侧.狭窄程度,String,"右股浅动脉狭窄程度。<br>**建议值**: `无狭窄`, `<50%`, `50-99%`, `闭塞`",<50%
+duplexUltrasound.poplitealArtery.left.peakSystolicVelocity,双功能超声.腘动脉.左侧.收缩期峰值流速,Number,"左腘动脉PSV。<br>单位: cm/s",158
+duplexUltrasound.poplitealArtery.left.stenosisGrade,双功能超声.腘动脉.左侧.狭窄程度,String,"左腘动脉狭窄程度。<br>**建议值**: `无狭窄`, `<50%`, `50-99%`, `闭塞`",<50%
+duplexUltrasound.poplitealArtery.right.peakSystolicVelocity,双功能超声.腘动脉.右侧.收缩期峰值流速,Number,"右腘动脉PSV。<br>单位: cm/s",95
+duplexUltrasound.poplitealArtery.right.stenosisGrade,双功能超声.腘动脉.右侧.狭窄程度,String,"右腘动脉狭窄程度。<br>**建议值**: `无狭窄`, `<50%`, `50-99%`, `闭塞`",无狭窄
+duplexUltrasound.anteriorTibialArtery.left.flow,双功能超声.胫前动脉.左侧.血流,String,"左胫前动脉血流。<br>**建议值**: `三相波`, `双相波`, `单相波`, `无血流`",单相波
+duplexUltrasound.anteriorTibialArtery.right.flow,双功能超声.胫前动脉.右侧.血流,String,"右胫前动脉血流。<br>**建议值**: `三相波`, `双相波`, `单相波`, `无血流`",双相波
+duplexUltrasound.posteriorTibialArtery.left.flow,双功能超声.胫后动脉.左侧.血流,String,"左胫后动脉血流。<br>**建议值**: `三相波`, `双相波`, `单相波`, `无血流`",单相波
+duplexUltrasound.posteriorTibialArtery.right.flow,双功能超声.胫后动脉.右侧.血流,String,"右胫后动脉血流。<br>**建议值**: `三相波`, `双相波`, `单相波`, `无血流`",双相波
+duplexUltrasound.perronealArtery.left.flow,双功能超声.腓动脉.左侧.血流,String,"左腓动脉血流。<br>**建议值**: `三相波`, `双相波`, `单相波`, `无血流`",单相波
+duplexUltrasound.perronealArtery.right.flow,双功能超声.腓动脉.右侧.血流,String,"右腓动脉血流。<br>**建议值**: `三相波`, `双相波`, `单相波`, `无血流`",双相波
+duplexUltrasound.collateralCirculation,双功能超声.侧支循环,String,"侧支循环建立情况",左下肢侧支循环形成
+ctAngiography.performed,CT血管造影.是否进行,String,"是否进行CTA。<br>**建议值**: `是`, `否`",否
+ctAngiography.contrastVolume,CT血管造影.对比剂用量,Number,"对比剂用量。<br>单位: mL（如进行）",未进行
+ctAngiography.findings.aortoiliac,CT血管造影.检查结果.主髂动脉,String,"主髂动脉病变（如进行）",未进行
+ctAngiography.findings.femoropopliteal,CT血管造影.检查结果.股腘动脉,String,"股腘动脉病变（如进行）",未进行
+ctAngiography.findings.infrapopliteal,CT血管造影.检查结果.膝下动脉,String,"膝下动脉病变（如进行）",未进行
+ctAngiography.findings.collaterals,CT血管造影.检查结果.侧支循环,String,"侧支循环评估（如进行）",未进行
+mrAngiography.performed,MR血管造影.是否进行,String,"是否进行MRA。<br>**建议值**: `是`, `否`",否
+mrAngiography.contrastUsed,MR血管造影.对比剂使用,String,"是否使用对比剂（如进行）。<br>**建议值**: `是`, `否`",未进行
+mrAngiography.findings.aortoiliac,MR血管造影.检查结果.主髂动脉,String,"主髂动脉病变（如进行）",未进行
+mrAngiography.findings.femoropopliteal,MR血管造影.检查结果.股腘动脉,String,"股腘动脉病变（如进行）",未进行
+mrAngiography.findings.infrapopliteal,MR血管造影.检查结果.膝下动脉,String,"膝下动脉病变（如进行）",未进行
+invasiveAngiography.performed,有创血管造影.是否进行,String,"是否进行DSA。<br>**建议值**: `是`, `否`",否
+invasiveAngiography.approach,有创血管造影.入路,String,"造影入路（如进行）。<br>**建议值**: `股动脉`, `桡动脉`, `肱动脉`",未进行
+invasiveAngiography.contrastVolume,有创血管造影.对比剂用量,Number,"对比剂总用量。<br>单位: mL（如进行）",未进行
+invasiveAngiography.findings.aortoiliac,有创血管造影.检查结果.主髂动脉,String,"主髂动脉病变（如进行）",未进行
+invasiveAngiography.findings.femoropopliteal,有创血管造影.检查结果.股腘动脉,String,"股腘动脉病变（如进行）",未进行
+invasiveAngiography.findings.infrapopliteal,有创血管造影.检查结果.膝下动脉,String,"膝下动脉病变（如进行）",未进行
+invasiveAngiography.findings.pedalArch,有创血管造影.检查结果.足弓,String,"足弓完整性（如进行）",未进行
+invasiveAngiography.intervention.performed,有创血管造影.介入治疗.是否进行,String,"是否进行血管介入治疗。<br>**建议值**: `是`, `否`",否
+invasiveAngiography.intervention.type,有创血管造影.介入治疗.治疗类型,String,"介入治疗类型（如进行）。<br>**建议值**: `球囊扩张`, `支架植入`, `药涂球囊`, `药涂支架`, `血栓抽吸`",未进行
+invasiveAngiography.intervention.vessel,有创血管造影.介入治疗.治疗血管,String,"治疗血管（如进行）",未进行
+invasiveAngiography.intervention.success,有创血管造影.介入治疗.技术成功,String,"技术成功（如进行）。<br>**建议值**: `是`, `否`",未进行
+invasiveAngiography.complications,有创血管造影.并发症,String,"造影相关并发症（如进行）",未进行
+transcutaneousOxygenMeasurement.performed,经皮氧分压测定.是否进行,String,"是否进行TcPO2测定。<br>**建议值**: `是`, `否`",否
+transcutaneousOxygenMeasurement.baseline.left,经皮氧分压测定.基线.左侧,Number,"左侧基线TcPO2。<br>单位: mmHg<br>**正常**: >40（如进行）",未进行
+transcutaneousOxygenMeasurement.baseline.right,经皮氧分压测定.基线.右侧,Number,"右侧基线TcPO2。<br>单位: mmHg<br>**正常**: >40（如进行）",未进行
+transcutaneousOxygenMeasurement.oxygenChallenge.left,经皮氧分压测定.吸氧试验.左侧,Number,"左侧吸氧后TcPO2。<br>单位: mmHg（如进行）",未进行
+transcutaneousOxygenMeasurement.oxygenChallenge.right,经皮氧分压测定.吸氧试验.右侧,Number,"右侧吸氧后TcPO2。<br>单位: mmHg（如进行）",未进行
+skinPerfusionPressure.performed,皮肤灌注压.是否进行,String,"是否进行SPP测定。<br>**建议值**: `是`, `否`",否
+skinPerfusionPressure.left.ankle,皮肤灌注压.左侧.踝部,Number,"左踝部SPP。<br>单位: mmHg<br>**正常**: >40（如进行）",未进行
+skinPerfusionPressure.left.foot,皮肤灌注压.左侧.足部,Number,"左足部SPP。<br>单位: mmHg<br>**正常**: >30（如进行）",未进行
+skinPerfusionPressure.right.ankle,皮肤灌注压.右侧.踝部,Number,"右踝部SPP。<br>单位: mmHg<br>**正常**: >40（如进行）",未进行
+skinPerfusionPressure.right.foot,皮肤灌注压.右侧.足部,Number,"右足部SPP。<br>单位: mmHg<br>**正常**: >30（如进行）",未进行
+riskFactors.diabetes.present,危险因素.糖尿病.是否存在,String,"糖尿病病史。<br>**建议值**: `无`, `有`",有
+riskFactors.diabetes.duration,危险因素.糖尿病.病程,Number,"糖尿病病程。<br>单位: 年",12
+riskFactors.diabetes.control,危险因素.糖尿病.控制情况,String,"血糖控制情况。<br>**建议值**: `良好`, `一般`, `较差`",一般
+riskFactors.hypertension.present,危险因素.高血压.是否存在,String,"高血压病史。<br>**建议值**: `无`, `有`",有
+riskFactors.hypertension.duration,危险因素.高血压.病程,Number,"高血压病程。<br>单位: 年",8
+riskFactors.hypertension.control,危险因素.高血压.控制情况,String,"血压控制情况。<br>**建议值**: `良好`, `一般`, `较差`",一般
+riskFactors.dyslipidemia.present,危险因素.血脂异常.是否存在,String,"血脂异常病史。<br>**建议值**: `无`, `有`",有
+riskFactors.dyslipidemia.control,危险因素.血脂异常.控制情况,String,"血脂控制情况。<br>**建议值**: `良好`, `一般`, `较差`",一般
+riskFactors.smoking.status,危险因素.吸烟.状况,String,"吸烟状况。<br>**建议值**: `从不`, `既往`, `目前`",既往
+riskFactors.smoking.packYears,危险因素.吸烟.包年,Number,"吸烟包年数",20
+riskFactors.smoking.quitDate,危险因素.吸烟.戒烟时间,String,"戒烟时间",2年前
+riskFactors.age,危险因素.年龄,Number,"患者年龄。<br>单位: 岁",68
+riskFactors.sex,危险因素.性别,String,"患者性别。<br>**建议值**: `男`, `女`",男
+riskFactors.familyHistory,危险因素.家族史,String,"周围血管病或心血管病家族史",父亲冠心病史
+riskFactors.chronicKidneyDisease,危险因素.慢性肾脏病,String,"慢性肾脏病。<br>**建议值**: `无`, `有`",无
+riskFactors.chronicKidneyDisease.stage,危险因素.慢性肾脏病.分期,String,"CKD分期（如存在）。<br>**建议值**: `G1`, `G2`, `G3a`, `G3b`, `G4`, `G5`",无
+riskFactors.coronaryArteryDisease,危险因素.冠心病,String,"冠心病病史。<br>**建议值**: `无`, `有`",有
+riskFactors.cerebrovascularDisease,危险因素.脑血管疾病,String,"脑血管疾病史。<br>**建议值**: `无`, `有`",无
+laboratoryTests.lipidProfile.totalCholesterol,实验室检查.血脂.总胆固醇,Number,"总胆固醇。<br>单位: mmol/L",5.2
+laboratoryTests.lipidProfile.ldlCholesterol,实验室检查.血脂.LDL胆固醇,Number,"LDL胆固醇。<br>单位: mmol/L",3.2
+laboratoryTests.lipidProfile.hdlCholesterol,实验室检查.血脂.HDL胆固醇,Number,"HDL胆固醇。<br>单位: mmol/L",1.1
+laboratoryTests.lipidProfile.triglycerides,实验室检查.血脂.甘油三酯,Number,"甘油三酯。<br>单位: mmol/L",2.1
+laboratoryTests.glucose.fasting,实验室检查.血糖.空腹血糖,Number,"空腹血糖。<br>单位: mmol/L",8.5
+laboratoryTests.glucose.hba1c,实验室检查.血糖.糖化血红蛋白,Number,"糖化血红蛋白。<br>单位: %",8.2
+laboratoryTests.renalFunction.creatinine,实验室检查.肾功能.肌酐,Number,"血肌酐。<br>单位: μmol/L",88
+laboratoryTests.renalFunction.estimatedGfr,实验室检查.肾功能.估算肾小球滤过率,Number,"eGFR。<br>单位: mL/min/1.73m²",85
+laboratoryTests.inflammatoryMarkers.crp,实验室检查.炎症标志物.C反应蛋白,Number,"C反应蛋白。<br>单位: mg/L",3.2
+laboratoryTests.inflammatoryMarkers.fibrinogen,实验室检查.炎症标志物.纤维蛋白原,Number,"纤维蛋白原。<br>单位: g/L",3.8
+laboratoryTests.coagulation.dDimer,实验室检查.凝血.D二聚体,Number,"D-二聚体。<br>单位: mg/L",0.65
+laboratoryTests.coagulation.platelets,实验室检查.凝血.血小板,Number,"血小板计数。<br>单位: ×10⁹/L",285
+laboratoryTests.homocysteine,实验室检查.同型半胱氨酸,Number,"同型半胱氨酸。<br>单位: μmol/L",18.5
+treatmentPlan.riskFactorModification.bloodPressureControl,治疗计划.危险因素修正.血压控制,String,"血压控制目标",<130/80 mmHg
+treatmentPlan.riskFactorModification.lipidControl,治疗计划.危险因素修正.血脂控制,String,"血脂控制目标",LDL-C <1.8 mmol/L
+treatmentPlan.riskFactorModification.glycemicControl,治疗计划.危险因素修正.血糖控制,String,"血糖控制目标",HbA1c <7.0%
+treatmentPlan.riskFactorModification.smokingCessation,治疗计划.危险因素修正.戒烟,String,"戒烟指导",已戒烟，继续维持
+treatmentPlan.antiplateletTherapy.medication,治疗计划.抗血小板治疗.药物,String,"抗血小板药物",阿司匹林100mg daily
+treatmentPlan.antiplateletTherapy.contraindications,治疗计划.抗血小板治疗.禁忌症,String,"抗血小板治疗禁忌症",无禁忌症
+treatmentPlan.antiplateletTherapy.duration,治疗计划.抗血小板治疗.疗程,String,"治疗疗程",长期使用
+treatmentPlan.lipidLoweringTherapy.medication,治疗计划.调脂治疗.药物,String,"调脂药物",阿托伐他汀40mg daily
+treatmentPlan.lipidLoweringTherapy.target,治疗计划.调脂治疗.目标,String,"调脂目标",LDL-C <1.8 mmol/L
+treatmentPlan.exerciseTherapy.type,治疗计划.运动治疗.类型,String,"运动类型",督导下行走训练
+treatmentPlan.exerciseTherapy.frequency,治疗计划.运动治疗.频率,String,"运动频率",每周3次
+treatmentPlan.exerciseTherapy.duration,治疗计划.运动治疗.持续时间,String,"运动持续时间",每次30-45分钟
+treatmentPlan.exerciseTherapy.progression,治疗计划.运动治疗.进展,String,"运动进展计划",逐步增加步行距离
+treatmentPlan.pharmacologicalTherapy.claudication.medication,治疗计划.药物治疗.跛行.药物,String,"跛行治疗药物",西洛他唑100mg bid
+treatmentPlan.pharmacologicalTherapy.claudication.duration,治疗计划.药物治疗.跛行.疗程,String,"跛行药物疗程",3-6个月评估
+treatmentPlan.pharmacologicalTherapy.pain.medication,治疗计划.药物治疗.疼痛.药物,String,"疼痛治疗药物（如需要）",未需要
+treatmentPlan.footCare.daily Inspection,治疗计划.足部护理.每日检查,String,"每日足部检查指导",已教育每日自检
+treatmentPlan.footCare.properFootwear,治疗计划.足部护理.合适鞋具,String,"合适鞋具指导",已推荐糖尿病专用鞋
+treatmentPlan.footCare.podiatryReferral,治疗计划.足部护理.足病科转诊,String,"足病科转诊。<br>**建议值**: `不需要`, `建议`, `急需`",建议
+revascularization.indication,血管重建.适应症,String,"血管重建适应症评估。<br>**建议值**: `无指征`, `相对指征`, `绝对指征`",相对指征
+revascularization.candidacy.endovascular,血管重建.候选.腔内治疗,String,"腔内治疗候选。<br>**建议值**: `适合`, `不适合`, `需进一步评估`",适合
+revascularization.candidacy.surgical,血管重建.候选.外科手术,String,"外科手术候选。<br>**建议值**: `适合`, `不适合`, `需进一步评估`",需进一步评估
+revascularization.urgency,血管重建.紧急性,String,"血管重建紧急性。<br>**建议值**: `择期`, `急诊`, `紧急`",择期
+revascularization.riskBenefit Assessment,血管重建.风险效益评估,String,"风险效益评估",效益大于风险
+surveillance.abiMonitoring,监测随访.ABI监测,String,"ABI监测计划",每6个月复查
+surveillance.symptomAssessment,监测随访.症状评估,String,"症状评估计划",每3个月评估症状变化
+surveillance.imagingFollow Up,监测随访.影像随访,String,"影像学随访计划",每年超声复查
+surveillance.laboratoryMonitoring,监测随访.实验室监测,String,"实验室监测计划",每3个月血脂血糖复查
+surveillance.exerciseCapacity,监测随访.运动能力,String,"运动能力评估计划",每6个月评估步行距离
+prognosis.short Term,预后.短期预后,String,"短期预后（1年内）。<br>**建议值**: `良好`, `一般`, `较差`",一般
+prognosis.longTerm,预后.长期预后,String,"长期预后（5年以上）。<br>**建议值**: `良好`, `一般`, `较差`",一般
+prognosis.amputationRisk,预后.截肢风险,String,"截肢风险评估。<br>**建议值**: `低`, `中`, `高`",低
+prognosis.cardiovascularEventRisk,预后.心血管事件风险,String,"心血管事件风险。<br>**建议值**: `低`, `中`, `高`",中
+prognosis.mortalityRisk,预后.死亡风险,String,"死亡风险评估。<br>**建议值**: `低`, `中`, `高`",中
+qualityOfLife.mobility,生活质量.活动能力,String,"活动能力评估。<br>**建议值**: `正常`, `轻度受限`, `中度受限`, `重度受限`",轻度受限
+qualityOfLife.pain Impact,生活质量.疼痛影响,String,"疼痛对生活影响。<br>**建议值**: `无影响`, `轻度影响`, `中度影响`, `重度影响`",轻度影响
+qualityOfLife.socialFunction,生活质量.社会功能,String,"社会功能评估。<br>**建议值**: `正常`, `轻度受限`, `中度受限`, `重度受限`",正常
+qualityOfLife.emotionalWellbeing,生活质量.情绪状态,String,"情绪状态评估。<br>**建议值**: `良好`, `轻度焦虑`, `中度焦虑`, `抑郁`",良好
+qualityOfLife.sleepQuality,生活质量.睡眠质量,String,"睡眠质量影响。<br>**建议值**: `良好`, `一般`, `较差`",一般
+economicBurden.directCosts,经济负担.直接费用,String,"年度直接医疗费用",约1.5万元
+economicBurden.indirectCosts,经济负担.间接费用,String,"间接经济损失",工作效率轻度下降
+economicBurden.familyImpact,经济负担.家庭影响,String,"对家庭经济影响",轻度经济压力
+patientEducation.diseaseKnowledge,患者教育.疾病认知,String,"患者对PAD的认知程度。<br>**建议值**: `差`, `一般`, `良好`",一般
+patientEducation.selfCareSkills,患者教育.自我护理技能,String,"自我护理技能掌握。<br>**建议值**: `差`, `一般`, `良好`",一般
+patientEducation.warningSignRecognition,患者教育.警告征象识别,String,"警告征象识别能力。<br>**建议值**: `差`, `一般`, `良好`",一般
+patientEducation.medicationAdherence,患者教育.用药依从性,String,"用药依从性教育。<br>**建议值**: `差`, `一般`, `良好`",一般
+multidisciplinaryCare.vascularSurgeon,多学科协作.血管外科,String,"血管外科参与。<br>**建议值**: `不需要`, `会诊`, `转诊`",会诊
+multidisciplinaryCare.interventionalCardiology,多学科协作.介入心脏科,String,"介入心脏科参与。<br>**建议值**: `不需要`, `会诊`, `转诊`",不需要
+multidisciplinaryCare.endocrinology,多学科协作.内分泌科,String,"内分泌科参与。<br>**建议值**: `不需要`, `会诊`, `转诊`",会诊
+multidisciplinaryCare.podiatry,多学科协作.足病科,String,"足病科参与。<br>**建议值**: `不需要`, `会诊`, `转诊`",会诊
+multidisciplinaryCare.rehabilitation,多学科协作.康复科,String,"康复科参与。<br>**建议值**: `不需要`, `会诊`, `转诊`",会诊
+followUp.nextVisit,随访.下次随访,String,"下次随访时间",3个月后
+followUp.urgentReviewCriteria,随访.紧急复诊标准,String,"紧急复诊标准",静息痛、新发溃疡、感染征象
+followUp.long TermManagement,随访.长期管理,String,"长期管理计划",生活方式干预，药物治疗，定期监测
+complications.acute LimbIschemia,并发症.急性肢体缺血,String,"急性肢体缺血风险。<br>**建议值**: `低`, `中`, `高`",低
+complications.criticalLimbIschemia,并发症.危重肢体缺血,String,"危重肢体缺血风险。<br>**建议值**: `低`, `中`, `高`",低
+complications.ulceration,并发症.溃疡形成,String,"溃疡形成风险。<br>**建议值**: `低`, `中`, `高`",中
+complications.infection,并发症.感染,String,"感染风险。<br>**建议值**: `低`, `中`, `高`",中
+complications.gangrene,并发症.坏疽,String,"坏疽风险。<br>**建议值**: `低`, `中`, `高`",低
+specialConsiderations.diabeticFoot,特殊考虑.糖尿病足,String,"糖尿病足特殊考虑",需要加强足部护理和监测
+specialConsiderations.renalImpairment,特殊考虑.肾功能不全,String,"肾功能不全特殊考虑",造影剂使用需要谨慎
+specialConsiderations.heartFailure,特殊考虑.心力衰竭,String,"心力衰竭特殊考虑",无
+specialConsiderations.frailty,特殊考虑.衰弱,String,"衰弱特殊考虑",无明显衰弱
+specialConsiderations.cognitiveImpairment,特殊考虑.认知功能障碍,String,"认知功能障碍特殊考虑",无
+researchParticipation.clinicalTrials,研究参与.临床试验,String,"临床试验参与意愿。<br>**建议值**: `愿意`, `不愿意`, `考虑中`",考虑中
+researchParticipation.registryStudies,研究参与.登记研究,String,"登记研究参与",愿意参加PAD登记研究
+diagnosisImpression,诊断/印象,String,医生对周围血管病变检查结果的综合诊断或印象。,左下肢动脉粥样硬化性疾病，股浅动脉中度狭窄，Fontaine IIa期
+recommendation,建议,String,医生根据检查结果提出的建议。,危险因素控制，抗血小板和调脂治疗，督导下运动训练，血管外科会诊评估介入治疗

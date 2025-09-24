@@ -1,0 +1,38 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行超声检查的日期,2025-08-15
+leftCarotid.commonCarotidArteryIMT.value,左侧颈动脉.颈总动脉内中膜厚度 (CCA-IMT).值,Number,左侧颈动脉的详细检查信息。颈总动脉远壁的内膜-中层厚度，是早期动脉粥样硬化的指标。测量数值,1.1
+leftCarotid.commonCarotidArteryIMT.unit,左侧颈动脉.颈总动脉内中膜厚度 (CCA-IMT).单位,String,左侧颈动脉的详细检查信息。颈总动脉远壁的内膜-中层厚度，是早期动脉粥样硬化的指标。测量单位,mm
+leftCarotid.plaques.location,左侧颈动脉.斑块列表.位置,String,"左侧颈动脉的详细检查信息。颈动脉斑块列表，每个对象描述一个斑块的详细信息。斑块在颈动脉系统的具体位置。<br>**建议值**: `颈总动脉(CCA)`, `颈动脉球部(Carotid Bulb)`, `颈内动脉(ICA)`, `颈外动脉(ECA)`",颈总动脉(CCA)
+leftCarotid.plaques.size,左侧颈动脉.斑块列表.大小,String,左侧颈动脉的详细检查信息。颈动脉斑块列表，每个对象描述一个斑块的详细信息。斑块的尺寸或厚度,3.1mm*1.2mm
+leftCarotid.plaques.echogenicity,左侧颈动脉.斑块列表.回声,String,"左侧颈动脉的详细检查信息。颈动脉斑块列表，每个对象描述一个斑块的详细信息。斑块的回声特征。<br>**建议值**: `低回声`, `等回声`, `强回声`, `混合回声`, `钙化斑块`",低回声
+leftCarotid.plaques.surface,左侧颈动脉.斑块列表.评论,String,"左侧颈动脉的详细检查信息。颈动脉斑块列表，每个对象描述一个斑块的详细信息。斑块表面的形态。<br>**建议值**: `光滑`, `不规则`, `溃疡型`",不规则
+leftCarotid.plaques.ulceration,左侧颈动脉.斑块列表.溃疡,String,"左侧颈动脉的详细检查信息。颈动脉斑块列表，每个对象描述一个斑块的详细信息。斑块是否存在溃疡。<br>**建议值**: `无`, `有`",无
+leftCarotid.plaques.homogeneity,左侧颈动脉.斑块列表.均质性,String,"左侧颈动脉的详细检查信息。颈动脉斑块列表，每个对象描述一个斑块的详细信息。斑块的均质性。<br>**建议值**: `均匀`, `不均匀`",均匀
+leftCarotid.plaques.plaqueScore,左侧颈动脉.斑块列表.斑块评分,Number,左侧颈动脉的详细检查信息。颈动脉斑块列表，每个对象描述一个斑块的详细信息。斑块的综合评分，根据特定指南（如SRU）对斑块特征进行评分。,5
+leftCarotid.stenosis.degree,左侧颈动脉.狭窄.程度,String,"左侧颈动脉的详细检查信息。颈动脉狭窄的详细信息。由斑块引起的血管管腔狭窄程度。<br>**建议值**: `<50%`, `50-69%`, `70-99%`, `次全闭塞`, `完全闭塞`",50%-69%
+leftCarotid.stenosis.nascetStenosis,左侧颈动脉.狭窄.NASCET狭窄百分比,Number,左侧颈动脉的详细检查信息。颈动脉狭窄的详细信息。根据NASCET标准计算的狭窄百分比。,70
+leftCarotid.stenosis.psv.value,左侧颈动脉.狭窄.PSV.值,Number,左侧颈动脉的详细检查信息。颈动脉狭窄的详细信息。狭窄处血流的收缩期峰值速度。测量数值,130
+leftCarotid.stenosis.psv.unit,左侧颈动脉.狭窄.PSV.单位,String,左侧颈动脉的详细检查信息。颈动脉狭窄的详细信息。狭窄处血流的收缩期峰值速度。测量单位,cm/s
+leftCarotid.stenosis.edv.value,左侧颈动脉.狭窄.EDV.值,Number,左侧颈动脉的详细检查信息。颈动脉狭窄的详细信息。狭窄处血流的舒张末期速度。测量数值,45
+leftCarotid.stenosis.edv.unit,左侧颈动脉.狭窄.EDV.单位,String,左侧颈动脉的详细检查信息。颈动脉狭窄的详细信息。狭窄处血流的舒张末期速度。测量单位,cm/s
+leftCarotid.stenosis.icaCcaRatio,左侧颈动脉.狭窄.ICA/CCA比值,Number,左侧颈动脉的详细检查信息。颈动脉狭窄的详细信息。颈内动脉与颈总动脉收缩期峰值流速比值，用于评估狭窄程度。,2.5
+leftCarotid.vertebralArteryFlow,左侧颈动脉.椎动脉血流,String,"左侧颈动脉的详细检查信息。对椎动脉血流方向和速度的描述。<br>**建议值**: `正常`, `增快`, `减慢`, `反向`, `盗血`",血流方向正常
+rightCarotid.commonCarotidArteryIMT.value,右侧颈动脉.颈总动脉内中膜厚度 (CCA-IMT).值,Number,右侧颈动脉的详细检查信息。颈总动脉远壁的内膜-中膜厚度，是早期动脉粥样硬化的指标。测量数值,1.1
+rightCarotid.commonCarotidArteryIMT.unit,右侧颈动脉.颈总动脉内中膜厚度 (CCA-IMT).单位,String,右侧颈动脉的详细检查信息。颈总动脉远壁的内膜-中膜厚度，是早期动脉粥样硬化的指标。测量单位,mm
+rightCarotid.plaques.location,右侧颈动脉.斑块列表.位置,String,"右侧颈动脉的详细检查信息。颈动脉斑块列表，每个对象描述一个斑块的详细信息。斑块在颈动脉系统的具体位置。<br>**建议值**: `颈总动脉(CCA)`, `颈动脉球部(Carotid Bulb)`, `颈内动脉(ICA)`, `颈外动脉(ECA)`",颈总动脉(CCA)
+rightCarotid.plaques.size,右侧颈动脉.斑块列表.大小,String,右侧颈动脉的详细检查信息。颈动脉斑块列表，每个对象描述一个斑块的详细信息。斑块的尺寸或厚度,3.1mm*1.2mm
+rightCarotid.plaques.echogenicity,右侧颈动脉.斑块列表.回声,String,"右侧颈动脉的详细检查信息。颈动脉斑块列表，每个对象描述一个斑块的详细信息。斑块的回声特征。<br>**建议值**: `低回声`, `等回声`, `强回声`, `混合回声`, `钙化斑块`",低回声
+rightCarotid.plaques.surface,右侧颈动脉.斑块列表.评论,String,"右侧颈动脉的详细检查信息。颈动脉斑块列表，每个对象描述一个斑块的详细信息。斑块表面的形态。<br>**建议值**: `光滑`, `不规则`, `溃疡型`",不规则
+rightCarotid.plaques.ulceration,右侧颈动脉.斑块列表.溃疡,String,"右侧颈动脉的详细检查信息。颈动脉斑块列表，每个对象描述一个斑块的详细信息。斑块是否存在溃疡。<br>**建议值**: `无`, `有`",无
+rightCarotid.plaques.homogeneity,右侧颈动脉.斑块列表.均质性,String,"右侧颈动脉的详细检查信息。颈动脉斑块列表，每个对象描述一个斑块的详细信息。斑块的均质性。<br>**建议值**: `均匀`, `不均匀`",均匀
+rightCarotid.plaques.plaqueScore,右侧颈动脉.斑块列表.斑块评分,Number,右侧颈动脉的详细检查信息。颈动脉斑块列表，每个对象描述一个斑块的详细信息。斑块的综合评分，根据特定指南（如SRU）对斑块特征进行评分。,5
+rightCarotid.stenosis.degree,右侧颈动脉.狭窄.程度,String,"右侧颈动脉的详细检查信息。颈动脉狭窄的详细信息。由斑块引起的血管管腔狭窄程度。<br>**建议值**: `<50%`, `50-69%`, `70-99%`, `次全闭塞`, `完全闭塞`",50%-69%
+rightCarotid.stenosis.nascetStenosis,右侧颈动脉.狭窄.NASCET狭窄百分比,Number,右侧颈动脉的详细检查信息。颈动脉狭窄的详细信息。根据NASCET标准计算的狭窄百分比。,70
+rightCarotid.stenosis.psv.value,右侧颈动脉.狭窄.PSV.值,Number,右侧颈动脉的详细检查信息。颈动脉狭窄的详细信息。狭窄处血流的收缩期峰值速度。测量数值,130
+rightCarotid.stenosis.psv.unit,右侧颈动脉.狭窄.PSV.单位,String,右侧颈动脉的详细检查信息。颈动脉狭窄的详细信息。狭窄处血流的收缩期峰值速度。测量单位,cm/s
+rightCarotid.stenosis.edv.value,右侧颈动脉.狭窄.EDV.值,Number,右侧颈动脉的详细检查信息。颈动脉狭窄的详细信息。狭窄处血流的舒张末期速度。测量数值,45
+rightCarotid.stenosis.edv.unit,右侧颈动脉.狭窄.EDV.单位,String,右侧颈动脉的详细检查信息。颈动脉狭窄的详细信息。狭窄处血流的舒张末期速度。测量单位,cm/s
+rightCarotid.stenosis.icaCcaRatio,右侧颈动脉.狭窄.ICA/CCA比值,Number,右侧颈动脉的详细检查信息。颈内动脉与颈总动脉收缩期峰值流速比值，用于评估狭窄程度。,2.5
+rightCarotid.vertebralArteryFlow,右侧颈动脉.椎动脉血流,String,"右侧颈动脉的详细检查信息。对椎动脉血流方向和速度的描述。<br>**建议值**: `正常`, `增快`, `减慢`, `反向`, `盗血`",血流方向正常
+diagnosisImpression,诊断/印象,String,医生对超声检查的诊断或初步印象。,双侧颈动脉粥样硬化伴斑块形成
+recommendation,建议,String,医生根据检查结果提出的建议。,建议药物治疗，定期复查

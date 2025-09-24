@@ -1,0 +1,185 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行营养与能量代谢检查的日期,2025-08-15
+clinicalIndication,检查适应症,String,"进行营养与能量代谢检查的临床指征。<br>**建议值**: `营养不良`, `肥胖症`, `代谢综合征`, `糖尿病`, `能量代谢异常`, `微量营养素缺乏`",营养不良
+energyMetabolism.basalMetabolicRate,能量代谢.基础代谢率,Number,"基础代谢率。<br>单位: kcal/day<br>**参考范围**: 因年龄性别而异",1458
+energyMetabolism.restingEnergyExpenditure,能量代谢.静息能量消耗,Number,"静息能量消耗。<br>单位: kcal/day",1520
+energyMetabolism.totalEnergyExpenditure,能量代谢.总能量消耗,Number,"24小时总能量消耗。<br>单位: kcal/day",2185
+energyMetabolism.respiratoryQuotient,能量代谢.呼吸商,Number,"呼吸商（RQ）。<br>**参考范围**: 0.7-1.0",0.85
+energyMetabolism.oxygenConsumption,能量代谢.氧耗量,Number,"氧耗量。<br>单位: mL/min",245
+energyMetabolism.carbonDioxideProduction,能量代谢.二氧化碳产生量,Number,"二氧化碳产生量。<br>单位: mL/min",208
+energyMetabolism.substrateUtilization.fatOxidation,能量代谢.底物利用.脂肪氧化,Number,"脂肪氧化率。<br>单位: %",45.5
+energyMetabolism.substrateUtilization.carbohydrateOxidation,能量代谢.底物利用.碳水化合物氧化,Number,"碳水化合物氧化率。<br>单位: %",54.5
+energyMetabolism.metabolicFlexibility,能量代谢.代谢灵活性,Number,"代谢灵活性指数",0.72
+energyMetabolism.activityLevel,能量代谢.活动水平,String,"体力活动水平。<br>**建议值**: `久坐`, `轻度活动`, `中度活动`, `重度活动`",轻度活动
+macronutrients.protein.totalIntake,大分子营养素.蛋白质.总摄入量,Number,"蛋白质总摄入量。<br>单位: g/day<br>**建议值**: 0.8-1.2g/kg体重",68.5
+macronutrients.protein.qualityScore,大分子营养素.蛋白质.质量评分,Number,"蛋白质质量评分。<br>**范围**: 0-100",85
+macronutrients.protein.essentialAminoAcids,大分子营养素.蛋白质.必需氨基酸,String,"必需氨基酸充足性。<br>**建议值**: `充足`, `不足`, `缺乏`",充足
+macronutrients.protein.bcaaIntake,大分子营养素.蛋白质.支链氨基酸摄入,Number,"支链氨基酸摄入量。<br>单位: g/day",15.2
+macronutrients.carbohydrate.totalIntake,大分子营养素.碳水化合物.总摄入量,Number,"碳水化合物总摄入量。<br>单位: g/day",258
+macronutrients.carbohydrate.fiberIntake,大分子营养素.碳水化合物.膳食纤维,Number,"膳食纤维摄入量。<br>单位: g/day<br>**建议值**: 25-35g/day",18.5
+macronutrients.carbohydrate.sugarIntake,大分子营养素.碳水化合物.糖类摄入,Number,"添加糖摄入量。<br>单位: g/day<br>**建议限制**: <50g/day",65.8
+macronutrients.carbohydrate.glycemicIndex,大分子营养素.碳水化合物.血糖指数,Number,"平均血糖指数",68
+macronutrients.carbohydrate.glycemicLoad,大分子营养素.碳水化合物.血糖负荷,Number,"每日血糖负荷",156
+macronutrients.fat.totalIntake,大分子营养素.脂肪.总摄入量,Number,"脂肪总摄入量。<br>单位: g/day",75.8
+macronutrients.fat.saturatedFat,大分子营养素.脂肪.饱和脂肪,Number,"饱和脂肪摄入量。<br>单位: g/day<br>**建议限制**: <总能量10%",28.5
+macronutrients.fat.monounsaturatedFat,大分子营养素.脂肪.单不饱和脂肪,Number,"单不饱和脂肪摄入量。<br>单位: g/day",32.8
+macronutrients.fat.polyunsaturatedFat,大分子营养素.脂肪.多不饱和脂肪,Number,"多不饱和脂肪摄入量。<br>单位: g/day",14.5
+macronutrients.fat.omega3,大分子营养素.脂肪.Omega-3,Number,"Omega-3脂肪酸摄入量。<br>单位: g/day<br>**建议值**: 1-2g/day",0.8
+macronutrients.fat.omega6,大分子营养素.脂肪.Omega-6,Number,"Omega-6脂肪酸摄入量。<br>单位: g/day",8.5
+macronutrients.fat.omega6Omega3Ratio,大分子营养素.脂肪.Omega-6Omega-3比值,Number,"Omega-6/Omega-3比值。<br>**建议值**: 2-4:1",10.6
+macronutrients.fat.transFat,大分子营养素.脂肪.反式脂肪,Number,"反式脂肪摄入量。<br>单位: g/day<br>**建议限制**: <总能量1%",2.1
+vitamins.fatSoluble.vitaminA,维生素.脂溶性.维生素A,Number,"维生素A摄入量。<br>单位: μg RAE/day<br>**建议值**: 男性900，女性700",585
+vitamins.fatSoluble.vitaminAStatus,维生素.脂溶性.维生素A状态,Number,"血清维生素A。<br>单位: μmol/L<br>**参考范围**: 1.05-2.27",1.65
+vitamins.fatSoluble.vitaminD,维生素.脂溶性.维生素D,Number,"维生素D摄入量。<br>单位: μg/day<br>**建议值**: 15-20μg/day",8.5
+vitamins.fatSoluble.vitaminDStatus,维生素.脂溶性.维生素D状态,Number,"血清25(OH)维生素D。<br>单位: nmol/L<br>**充足**: >75",45.8
+vitamins.fatSoluble.vitaminE,维生素.脂溶性.维生素E,Number,"维生素E摄入量。<br>单位: mg/day<br>**建议值**: 15mg/day",9.2
+vitamins.fatSoluble.vitaminEStatus,维生素.脂溶性.维生素E状态,Number,"血清维生素E。<br>单位: μmol/L<br>**参考范围**: 12-42",18.5
+vitamins.fatSoluble.vitaminK,维生素.脂溶性.维生素K,Number,"维生素K摄入量。<br>单位: μg/day<br>**建议值**: 男性120，女性90",85
+vitamins.fatSoluble.vitaminKStatus,维生素.脂溶性.维生素K状态,Number,"血清维生素K。<br>单位: nmol/L",2.5
+vitamins.waterSoluble.vitaminC,维生素.水溶性.维生素C,Number,"维生素C摄入量。<br>单位: mg/day<br>**建议值**: 男性90，女性75",65
+vitamins.waterSoluble.vitaminCStatus,维生素.水溶性.维生素C状态,Number,"血清维生素C。<br>单位: μmol/L<br>**参考范围**: 23-85",42.5
+vitamins.waterSoluble.thiamine,维生素.水溶性.硫胺素,Number,"硫胺素摄入量。<br>单位: mg/day<br>**建议值**: 男性1.2，女性1.1",1.0
+vitamins.waterSoluble.thiamineStatus,维生素.水溶性.硫胺素状态,Number,"红细胞转酮醇酶活性系数。<br>**正常**: <1.25",1.18
+vitamins.waterSoluble.riboflavin,维生素.水溶性.核黄素,Number,"核黄素摄入量。<br>单位: mg/day<br>**建议值**: 男性1.3，女性1.1",1.2
+vitamins.waterSoluble.riboflavinStatus,维生素.水溶性.核黄素状态,Number,"红细胞谷胱甘肽还原酶活性系数。<br>**正常**: <1.4",1.32
+vitamins.waterSoluble.niacin,维生素.水溶性.烟酸,Number,"烟酸摄入量。<br>单位: mg NE/day<br>**建议值**: 男性16，女性14",18.5
+vitamins.waterSoluble.vitaminB6,维生素.水溶性.维生素B6,Number,"维生素B6摄入量。<br>单位: mg/day<br>**建议值**: 1.3-1.7mg/day",1.5
+vitamins.waterSoluble.vitaminB6Status,维生素.水溶性.维生素B6状态,Number,"血浆吡哆醛磷酸。<br>单位: nmol/L<br>**充足**: >20",28.5
+vitamins.waterSoluble.folate,维生素.水溶性.叶酸,Number,"叶酸摄入量。<br>单位: μg DFE/day<br>**建议值**: 400μg/day",285
+vitamins.waterSoluble.folateStatus,维生素.水溶性.叶酸状态,Number,"血清叶酸。<br>单位: nmol/L<br>**正常**: >10",15.8
+vitamins.waterSoluble.vitaminB12,维生素.水溶性.维生素B12,Number,"维生素B12摄入量。<br>单位: μg/day<br>**建议值**: 2.4μg/day",3.2
+vitamins.waterSoluble.vitaminB12Status,维生素.水溶性.维生素B12状态,Number,"血清维生素B12。<br>单位: pmol/L<br>**正常**: >150",285
+vitamins.waterSoluble.biotin,维生素.水溶性.生物素,Number,"生物素摄入量。<br>单位: μg/day<br>**建议值**: 30μg/day",28
+vitamins.waterSoluble.pantothenicAcid,维生素.水溶性.泛酸,Number,"泛酸摄入量。<br>单位: mg/day<br>**建议值**: 5mg/day",4.2
+minerals.major.calcium,矿物质.常量元素.钙,Number,"钙摄入量。<br>单位: mg/day<br>**建议值**: 1000-1200mg/day",685
+minerals.major.calciumStatus,矿物质.常量元素.钙状态,Number,"血清钙。<br>单位: mmol/L<br>**参考范围**: 2.15-2.50",2.32
+minerals.major.phosphorus,矿物质.常量元素.磷,Number,"磷摄入量。<br>单位: mg/day<br>**建议值**: 700mg/day",856
+minerals.major.phosphorusStatus,矿物质.常量元素.磷状态,Number,"血清磷。<br>单位: mmol/L<br>**参考范围**: 0.81-1.45",1.15
+minerals.major.magnesium,矿物质.常量元素.镁,Number,"镁摄入量。<br>单位: mg/day<br>**建议值**: 男性400-420，女性310-320",285
+minerals.major.magnesiumStatus,矿物质.常量元素.镁状态,Number,"血清镁。<br>单位: mmol/L<br>**参考范围**: 0.75-1.05",0.88
+minerals.major.sodium,矿物质.常量元素.钠,Number,"钠摄入量。<br>单位: mg/day<br>**建议限制**: <2300mg/day",3200
+minerals.major.potassium,矿物质.常量元素.钾,Number,"钾摄入量。<br>单位: mg/day<br>**建议值**: 3500-4700mg/day",2850
+minerals.major.chloride,矿物质.常量元素.氯,Number,"氯摄入量。<br>单位: mg/day",2850
+minerals.trace.iron,矿物质.微量元素.铁,Number,"铁摄入量。<br>单位: mg/day<br>**建议值**: 男性8，女性18",12.5
+minerals.trace.ironStatus.serumIron,矿物质.微量元素.铁状态.血清铁,Number,"血清铁。<br>单位: μmol/L<br>**参考范围**: 男性14-32，女性11-29",18.5
+minerals.trace.ironStatus.transferrin,矿物质.微量元素.铁状态.转铁蛋白,Number,"转铁蛋白。<br>单位: g/L<br>**参考范围**: 2.0-3.6",2.8
+minerals.trace.ironStatus.transferrinSaturation,矿物质.微量元素.铁状态.转铁蛋白饱和度,Number,"转铁蛋白饱和度。<br>单位: %<br>**参考范围**: 20-50%",25.8
+minerals.trace.ironStatus.ferritin,矿物质.微量元素.铁状态.血清铁蛋白,Number,"血清铁蛋白。<br>单位: μg/L<br>**参考范围**: 男性30-400，女性15-150",85.2
+minerals.trace.zinc,矿物质.微量元素.锌,Number,"锌摄入量。<br>单位: mg/day<br>**建议值**: 男性11，女性8",8.5
+minerals.trace.zincStatus,矿物质.微量元素.锌状态,Number,"血清锌。<br>单位: μmol/L<br>**参考范围**: 10.7-18.4",13.2
+minerals.trace.copper,矿物质.微量元素.铜,Number,"铜摄入量。<br>单位: mg/day<br>**建议值**: 0.9mg/day",1.2
+minerals.trace.copperStatus,矿物质.微量元素.铜状态,Number,"血清铜。<br>单位: μmol/L<br>**参考范围**: 12-25",18.5
+minerals.trace.selenium,矿物质.微量元素.硒,Number,"硒摄入量。<br>单位: μg/day<br>**建议值**: 55μg/day",68
+minerals.trace.seleniumStatus,矿物质.微量元素.硒状态,Number,"血清硒。<br>单位: μmol/L<br>**参考范围**: 0.8-2.0",1.25
+minerals.trace.iodine,矿物质.微量元素.碘,Number,"碘摄入量。<br>单位: μg/day<br>**建议值**: 150μg/day",125
+minerals.trace.iodineStatus,矿物质.微量元素.碘状态,Number,"尿碘。<br>单位: μg/L<br>**充足**: 100-299",185
+minerals.trace.chromium,矿物质.微量元素.铬,Number,"铬摄入量。<br>单位: μg/day",25
+minerals.trace.manganese,矿物质.微量元素.锰,Number,"锰摄入量。<br>单位: mg/day",2.5
+minerals.trace.molybdenum,矿物质.微量元素.钼,Number,"钼摄入量。<br>单位: μg/day",38
+antioxidants.totalAntioxidantCapacity,抗氧化剂.总抗氧化能力,Number,"总抗氧化能力。<br>单位: mmol Trolox equiv/L",1.25
+antioxidants.glutathione,抗氧化剂.谷胱甘肽,Number,"还原型谷胱甘肽。<br>单位: μmol/L",885
+antioxidants.superoxideDismutase,抗氧化剂.超氧化物歧化酶,Number,"SOD活性。<br>单位: U/mL",158
+antioxidants.catalase,抗氧化剂.过氧化氢酶,Number,"过氧化氢酶活性。<br>单位: U/mL",45.2
+antioxidants.glutathionePeroxidase,抗氧化剂.谷胱甘肽过氧化物酶,Number,"GPx活性。<br>单位: U/L",6850
+antioxidants.malondialdehyde,抗氧化剂.丙二醛,Number,"血浆MDA。<br>单位: μmol/L<br>**参考范围**: <3.0",2.1
+antioxidants.8hydroxy2deoxyguanosine,抗氧化剂.8羟基脱氧鸟苷,Number,"尿8-OHdG。<br>单位: ng/mg肌酐",8.5
+phytonutrients.carotenoids.betaCarotene,植物营养素.类胡萝卜素.β胡萝卜素,Number,"β胡萝卜素摄入量。<br>单位: μg/day",2850
+phytonutrients.carotenoids.lycopene,植物营养素.类胡萝卜素.番茄红素,Number,"番茄红素摄入量。<br>单位: μg/day",5200
+phytonutrients.carotenoids.lutein,植物营养素.类胡萝卜素.叶黄素,Number,"叶黄素摄入量。<br>单位: μg/day",1850
+phytonutrients.flavonoids.quercetin,植物营养素.黄酮类.槲皮素,Number,"槲皮素摄入量。<br>单位: mg/day",15.8
+phytonutrients.flavonoids.anthocyanins,植物营养素.黄酮类.花青素,Number,"花青素摄入量。<br>单位: mg/day",25.6
+phytonutrients.polyphenols.total,植物营养素.多酚.总量,Number,"总多酚摄入量。<br>单位: mg/day",680
+phytonutrients.phytosterols,植物营养素.植物甾醇,Number,"植物甾醇摄入量。<br>单位: mg/day",285
+waterBalance.totalFluidIntake,水平衡.总液体摄入,Number,"总液体摄入量。<br>单位: mL/day<br>**建议值**: 2000-3000mL/day",1850
+waterBalance.waterFromFood,水平衡.食物中的水,Number,"食物中水分。<br>单位: mL/day",650
+waterBalance.plainWaterIntake,水平衡.饮用水摄入,Number,"饮用水摄入量。<br>单位: mL/day",1200
+waterBalance.hydrationStatus,水平衡.水合状态,String,"水合状态评估。<br>**建议值**: `良好`, `轻度脱水`, `中度脱水`",良好
+waterBalance.urineSpecificGravity,水平衡.尿比重,Number,"尿比重。<br>**正常**: 1.003-1.030",1.018
+nutritionalRisk.malnutritionRisk,营养风险.营养不良风险,String,"营养不良风险评估。<br>**建议值**: `低`, `中`, `高`",中
+nutritionalRisk.sarcopeniaRisk,营养风险.肌少症风险,String,"肌少症风险评估。<br>**建议值**: `低`, `中`, `高`",低
+nutritionalRisk.metabolicRisk,营养风险.代谢风险,String,"代谢风险评估。<br>**建议值**: `低`, `中`, `高`",中
+nutritionalRisk.cardiovascularRisk,营养风险.心血管风险,String,"心血管风险评估。<br>**建议值**: `低`, `中`, `高`",中
+dietaryAssessment.method,膳食评估.评估方法,String,"膳食评估方法。<br>**建议值**: `24小时膳食回顾`, `膳食记录`, `食物频率问卷`",24小时膳食回顾
+dietaryAssessment.duration,膳食评估.评估天数,Number,"膳食评估天数",3
+dietaryAssessment.seasonality,膳食评估.季节性,String,"评估的季节。<br>**建议值**: `春`, `夏`, `秋`, `冬`",秋
+dietaryAssessment.weekendInclusion,膳食评估.包含周末,String,"是否包含周末。<br>**建议值**: `是`, `否`",是
+dietaryPattern.mediterraneanScore,膳食模式.地中海饮食评分,Number,"地中海饮食评分。<br>**范围**: 0-14",8
+dietaryPattern.dashScore,膳食模式.DASH饮食评分,Number,"DASH饮食评分。<br>**范围**: 8-40",25
+dietaryPattern.healthyEatingIndex,膳食模式.健康饮食指数,Number,"健康饮食指数。<br>**范围**: 0-100",68
+dietaryPattern.plantBasedIndex,膳食模式.植物性饮食指数,Number,"植物性饮食指数。<br>**范围**: 0-100",55
+bodyComposition.bodyMassIndex,体成分.体质指数,Number,"体质指数。<br>单位: kg/m²<br>**分级**: <18.5(偏瘦), 18.5-24.9(正常), 25-29.9(超重), ≥30(肥胖)",26.8
+bodyComposition.waistCircumference,体成分.腰围,Number,"腰围。<br>单位: cm<br>**风险**: 男性≥102，女性≥88",95
+bodyComposition.waistHipRatio,体成分.腰臀比,Number,"腰臀比。<br>**风险**: 男性≥0.9，女性≥0.85",0.88
+bodyComposition.bodyFatPercentage,体成分.体脂百分比,Number,"体脂百分比。<br>单位: %",28.5
+bodyComposition.visceralFat,体成分.内脏脂肪,Number,"内脏脂肪面积。<br>单位: cm²<br>**风险**: ≥100cm²",85
+bodyComposition.muscleMass,体成分.肌肉量,Number,"肌肉量。<br>单位: kg",45.2
+bodyComposition.boneMass,体成分.骨量,Number,"骨量。<br>单位: kg",2.8
+bodyComposition.totalBodyWater,体成分.总体水,Number,"总体水。<br>单位: %",58.5
+functionalAssessment.handGripStrength,功能评估.握力,Number,"握力。<br>单位: kg",28.5
+functionalAssessment.gaitSpeed,功能评估.步行速度,Number,"步行速度。<br>单位: m/s",1.2
+functionalAssessment.physicalActivity,功能评估.体力活动,Number,"每周体力活动时间。<br>单位: 分钟<br>**建议值**: ≥150分钟",120
+functionalAssessment.sedentaryTime,功能评估.久坐时间,Number,"每日久坐时间。<br>单位: 小时",8.5
+metabolicMarkers.glucoseMetabolism.fastingGlucose,代谢标志物.糖代谢.空腹血糖,Number,"空腹血糖。<br>单位: mmol/L<br>**正常**: 3.9-6.1",5.8
+metabolicMarkers.glucoseMetabolism.hba1c,代谢标志物.糖代谢.糖化血红蛋白,Number,"糖化血红蛋白。<br>单位: %<br>**正常**: <5.7%",6.2
+metabolicMarkers.glucoseMetabolism.insulin,代谢标志物.糖代谢.胰岛素,Number,"空腹胰岛素。<br>单位: pmol/L<br>**参考范围**: 18-173",125
+metabolicMarkers.glucoseMetabolism.homaIr,代谢标志物.糖代谢.HOMA-IR,Number,"胰岛素抵抗指数。<br>**正常**: <2.5",3.2
+metabolicMarkers.lipidMetabolism.totalCholesterol,代谢标志物.脂代谢.总胆固醇,Number,"总胆固醇。<br>单位: mmol/L<br>**理想**: <5.2",5.8
+metabolicMarkers.lipidMetabolism.ldlCholesterol,代谢标志物.脂代谢.LDL胆固醇,Number,"LDL胆固醇。<br>单位: mmol/L<br>**理想**: <3.4",3.8
+metabolicMarkers.lipidMetabolism.hdlCholesterol,代谢标志物.脂代谢.HDL胆固醇,Number,"HDL胆固醇。<br>单位: mmol/L<br>**理想**: 男性>1.0，女性>1.3",1.1
+metabolicMarkers.lipidMetabolism.triglycerides,代谢标志物.脂代谢.甘油三酯,Number,"甘油三酯。<br>单位: mmol/L<br>**正常**: <1.7",2.1
+metabolicMarkers.inflammatoryMarkers.crp,代谢标志物.炎症标志物.C反应蛋白,Number,"C反应蛋白。<br>单位: mg/L<br>**正常**: <3.0",2.5
+metabolicMarkers.inflammatoryMarkers.il6,代谢标志物.炎症标志物.白介素6,Number,"白介素6。<br>单位: pg/mL",3.8
+metabolicMarkers.inflammatoryMarkers.tnfAlpha,代谢标志物.炎症标志物.肿瘤坏死因子α,Number,"TNF-α。<br>单位: pg/mL",8.5
+metabolicMarkers.hormones.leptin,代谢标志物.激素.瘦素,Number,"瘦素。<br>单位: ng/mL",15.8
+metabolicMarkers.hormones.adiponectin,代谢标志物.激素.脂联素,Number,"脂联素。<br>单位: μg/mL",8.5
+metabolicMarkers.hormones.ghrelin,代谢标志物.激素.胃饥饿素,Number,"胃饥饿素。<br>单位: pg/mL",650
+foodAllergies.commonAllergens,食物过敏.常见过敏原,String,"常见食物过敏原检测结果",花生、鸡蛋阴性
+foodAllergies.specificIgE,食物过敏.特异性IgE,String,"特异性IgE检测结果",小麦特异性IgE轻度升高
+foodIntolerances.lactose,食物不耐受.乳糖,String,"乳糖不耐受。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+foodIntolerances.fructose,食物不耐受.果糖,String,"果糖不耐受。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+foodIntolerances.gluten,食物不耐受.麸质,String,"麸质不耐受。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+foodIntolerances.histamine,食物不耐受.组胺,String,"组胺不耐受。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+supplementation.multivitamin,营养补充.复合维生素,String,"复合维生素使用。<br>**建议值**: `未使用`, `正在使用`",正在使用
+supplementation.vitaminD,营养补充.维生素D,String,"维生素D补充剂使用",维生素D3 1000IU daily
+supplementation.omega3,营养补充.Omega-3,String,"Omega-3补充剂使用",鱼油 1g daily
+supplementation.probiotics,营养补充.益生菌,String,"益生菌补充剂使用",复合益生菌
+supplementation.proteinPowder,营养补充.蛋白粉,String,"蛋白粉使用情况",未使用
+supplementation.adherence,营养补充.依从性,String,"补充剂使用依从性。<br>**建议值**: `良好`, `一般`, `较差`",一般
+clinicalSymptoms.fatigue,临床症状.疲劳,String,"疲劳程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+clinicalSymptoms.appetiteChanges,临床症状.食欲变化,String,"食欲变化。<br>**建议值**: `正常`, `增加`, `减少`",减少
+clinicalSymptoms.weightChanges,临床症状.体重变化,String,"近期体重变化。<br>**建议值**: `稳定`, `增加`, `减少`",增加
+clinicalSymptoms.digestiveIssues,临床症状.消化问题,String,"消化问题",偶有腹胀
+clinicalSymptoms.hairSkinNails,临床症状.毛发皮肤指甲,String,"毛发皮肤指甲变化",头发略干燥
+clinicalSymptoms.cognitiveFunction,临床症状.认知功能,String,"认知功能变化。<br>**建议值**: `正常`, `轻度下降`, `明显下降`",正常
+socialEconomicFactors.foodSecurity,社会经济因素.食物安全,String,"食物安全状况。<br>**建议值**: `安全`, `不安全`",安全
+socialEconomicFactors.foodAccessibility,社会经济因素.食物可及性,String,"健康食物可及性。<br>**建议值**: `容易`, `一般`, `困难`",容易
+socialEconomicFactors.cookingSkills,社会经济因素.烹饪技能,String,"烹饪技能水平。<br>**建议值**: `高`, `中`, `低`",中
+socialEconomicFactors.eatingEnvironment,社会经济因素.进餐环境,String,"进餐环境质量",家庭进餐为主
+culturalFactors.culturalBackground,文化因素.文化背景,String,"文化背景对饮食的影响",中式饮食文化
+culturalFactors.religiousRestrictions,文化因素.宗教限制,String,"宗教饮食限制",无
+culturalFactors.traditionalFoods,文化因素.传统食物,String,"传统食物偏好",偏好传统中式食物
+individualizedRecommendations.caloricNeeds,个性化建议.热量需求,Number,"个性化热量需求。<br>单位: kcal/day",1850
+individualizedRecommendations.proteinNeeds,个性化建议.蛋白质需求,Number,"个性化蛋白质需求。<br>单位: g/day",70
+individualizedRecommendations.supplementNeeds,个性化建议.补充剂需求,String,"推荐的营养补充剂",维生素D、铁剂
+individualizedRecommendations.dietaryModifications,个性化建议.膳食调整,String,"推荐的膳食调整建议",增加优质蛋白摄入，减少精制糖
+individualizedRecommendations.monitoringPlan,个性化建议.监测计划,String,"营养状况监测计划",3个月后复查营养评估
+riskFactors.eatingDisorders,风险因素.进食障碍,String,"进食障碍风险。<br>**建议值**: `无`, `低`, `中`, `高`",无
+riskFactors.substanceUse,风险因素.物质使用,String,"酒精或药物使用影响",偶有饮酒
+riskFactors.chronicDiseases,风险因素.慢性疾病,String,"影响营养状况的慢性疾病",高血压
+riskFactors.medications,风险因素.药物影响,String,"影响营养的药物",利尿剂
+environmentalFactors.foodContaminants,环境因素.食物污染物,String,"食物污染物暴露评估",低风险
+environmentalFactors.agriculturalPractices,环境因素.农业实践,String,"农产品来源",主要来源于本地农场
+environmentalFactors.foodProcessing,环境因素.食品加工,String,"加工食品摄入频率。<br>**建议值**: `低`, `中`, `高`",中
+qualityOfLife.eatingEnjoyment,生活质量.进食愉悦度,String,"进食愉悦程度。<br>**建议值**: `高`, `中`, `低`",中
+qualityOfLife.socialEating,生活质量.社交进餐,String,"社交进餐频率。<br>**建议值**: `频繁`, `偶尔`, `很少`",偶尔
+qualityOfLife.mealPlanning,生活质量.膳食计划,String,"膳食计划能力。<br>**建议值**: `强`, `中`, `弱`",中
+qualityOfLife.nutritionKnowledge,生活质量.营养知识,String,"营养知识水平。<br>**建议值**: `高`, `中`, `低`",中
+treatmentGoals.shortTerm,治疗目标.短期目标,String,"短期治疗目标（1-3个月）",改善维生素D状态，增加蛋白质摄入
+treatmentGoals.longTerm,治疗目标.长期目标,String,"长期治疗目标（6-12个月）",达到理想体重，改善整体营养状况
+treatmentGoals.behavioralChanges,治疗目标.行为改变,String,"目标行为改变",建立规律进餐习惯
+treatmentGoals.clinicalOutcomes,治疗目标.临床结局,String,"期望的临床结局",改善血糖控制，降低炎症指标
+followUp.nextVisit,随访.下次随访,String,"下次随访时间",3个月后
+followUp.monitoringParameters,随访.监测参数,String,"需要监测的参数",体重、血糖、维生素D水平
+followUp.adjustmentNeeds,随访.调整需求,String,"可能需要的调整",根据体重变化调整热量摄入
+diagnosisImpression,诊断/印象,String,医生对营养与能量代谢检查结果的综合诊断或印象。,轻度营养不良，维生素D缺乏，蛋白质摄入不足
+recommendation,建议,String,医生根据检查结果提出的建议。,增加优质蛋白摄入，补充维生素D，定期营养监测

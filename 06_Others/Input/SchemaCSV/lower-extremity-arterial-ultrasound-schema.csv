@@ -1,0 +1,14 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行下肢动脉超声检查的日期,2025-08-15
+vesselName,血管名称,String,"受检血管的名称。<br>**建议值**: `股总动脉`, `股浅动脉`, `腘动脉`, `胫前动脉`, `胫后动脉`, `腓动脉`",股浅动脉
+side,侧别,String,"受检血管的侧别。<br>**建议值**: `左`, `右`",右
+stenosisDegree,狭窄程度,String,"血管狭窄的程度。<br>**建议值**: `无`, `轻度 (<50%)`, `中度 (50-69%)`, `重度 (70-99%)`, `闭塞`",中度 (50-69%)
+plaqueDescription.present,斑块描述.是否存在,String,"斑块的详细描述。是否存在斑块。<br>**建议值**: `无`, `有`",有
+plaqueDescription.location,斑块描述.位置,String,斑块的详细描述。斑块的具体位置。,股浅动脉中段
+plaqueDescription.size,斑块描述.大小,String,斑块的详细描述。斑块的尺寸。,5mm*3mm
+plaqueDescription.echogenicity,斑块描述.回声,String,"斑块的详细描述。斑块的回声特征。<br>**建议值**: `低回声`, `等回声`, `强回声`, `混合回声`",混合回声
+plaqueDescription.surface,斑块描述.表面,String,"斑块的详细描述。斑块表面的形态。<br>**建议值**: `光滑`, `不规则`, `溃疡`",不规则
+bloodFlowVelocity.psv,血流速度.PSV(cm/s),Number,血流速度的测量值。收缩期峰值流速。,150
+bloodFlowVelocity.edv,血流速度.EDV(cm/s),Number,血流速度的测量值。舒张末期流速。,40
+diagnosisImpression,诊断/印象,String,医生对下肢动脉超声检查结果的综合诊断或印象。,右下肢股浅动脉狭窄
+recommendation,建议,String,医生根据检查结果提出的建议。,建议介入治疗

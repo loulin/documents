@@ -1,0 +1,208 @@
+fieldName,fieldNameCN,dataType,description,examples
+examDate,检查日期,String,检查日期，格式YYYY-MM-DD,2024-12-01
+patientID,患者唯一标识符,String,患者的唯一标识符,P202401001
+patientName,患者姓名,String,患者的姓名,张三
+clinicalIndication,临床适应症,String,进行自我管理评估的临床适应症,糖尿病自我管理能力评估
+diagnosisImpression,诊断印象,String,基于评估结果的诊断印象,自我管理能力中等水平
+recommendation,建议,String,基于评估结果的建议,加强糖尿病健康教育和技能培训
+
+# 基本信息
+ageAtAssessment,评估时年龄,Number,患者评估时的年龄（岁）,52
+gender,性别,String,患者性别,男/女
+educationLevel,教育程度,String,患者的教育程度,小学/初中/高中/专科/本科/研究生
+diabetesType,糖尿病类型,String,患者的糖尿病类型,1型糖尿病/2型糖尿病/妊娠糖尿病/其他特殊类型
+diabetesDuration,糖尿病病程,Number,患者糖尿病诊断时间（年）,8.5
+currentTreatment,当前治疗方案,String,患者当前的治疗方案,口服药物/胰岛素/联合治疗/生活方式干预
+hbA1cLevel,糖化血红蛋白,Number,最近一次糖化血红蛋白水平（%）,7.2
+
+# 疾病知识和理解
+diabetesKnowledgeScore,糖尿病知识评分,Number,糖尿病基础知识掌握程度评分（0-100分）,75
+diseaseUnderstanding,疾病理解程度,Number,对自身糖尿病病情理解程度评分（1-5分）,3.8
+symptomRecognition,症状识别能力,Number,识别糖尿病相关症状能力评分（1-5分）,3.5
+complicationAwareness,并发症认知,Number,对糖尿病并发症的认知程度评分（1-5分）,3.2
+treatmentGoalUnderstanding,治疗目标理解,Number,对治疗目标理解程度评分（1-5分）,3.6
+riskFactorAwareness,危险因素认知,Number,对糖尿病危险因素认知程度评分（1-5分）,3.4
+
+# 血糖监测技能
+bgmFrequency,血糖监测频率,Number,每周血糖监测次数,14
+bgmTiming,监测时机掌握,Number,血糖监测时机掌握程度评分（1-5分）,3.8
+bgmTechnique,监测技术掌握,Number,血糖监测技术掌握程度评分（1-5分）,4.2
+bgmRecordKeeping,监测记录维护,Number,血糖监测记录维护质量评分（1-5分）,3.5
+bgmResultInterpretation,结果解读能力,Number,血糖监测结果解读能力评分（1-5分）,3.2
+bgmActionTaking,应对措施执行,Number,根据血糖结果采取应对措施能力评分（1-5分）,3.0
+
+# 饮食管理技能
+dietPlanAdherence,饮食计划依从性,Number,饮食计划依从性评分（1-5分）,3.4
+carbohydrateCounting,碳水化合物计算,Number,碳水化合物计算能力评分（1-5分）,2.8
+portionControl,份量控制,Number,食物份量控制能力评分（1-5分）,3.2
+mealTiming,进餐时间管理,Number,进餐时间管理能力评分（1-5分）,3.6
+foodChoiceSkill,食物选择技能,Number,健康食物选择技能评分（1-5分）,3.4
+specialSituationManagement,特殊情况饮食管理,Number,特殊情况下饮食管理能力评分（1-5分）,2.6
+
+# 运动管理技能
+exercisePlanAdherence,运动计划依从性,Number,运动计划依从性评分（1-5分）,3.0
+exerciseIntensityControl,运动强度控制,Number,运动强度控制能力评分（1-5分）,3.2
+exerciseTimingManagement,运动时机管理,Number,运动时机选择和管理能力评分（1-5分）,3.4
+exerciseSafetyAwareness,运动安全意识,Number,运动安全意识评分（1-5分）,3.6
+exerciseAdaptation,运动调整能力,Number,根据身体状况调整运动计划能力评分（1-5分）,2.8
+exerciseBloodGlucoseManagement,运动血糖管理,Number,运动前后血糖管理能力评分（1-5分）,2.6
+
+# 药物管理技能
+medicationAdherence,用药依从性,Number,用药依从性评分（1-5分）,4.0
+medicationTiming,用药时间管理,Number,用药时间管理准确性评分（1-5分）,3.8
+dosageAccuracy,剂量准确性,Number,药物剂量掌握准确性评分（1-5分）,4.2
+sideEffectRecognition,副作用识别,Number,药物副作用识别能力评分（1-5分）,3.2
+medicationAdjustment,用药调整能力,Number,根据医嘱调整用药能力评分（1-5分）,3.0
+medicationStorage,药物保存,Number,药物保存方法掌握程度评分（1-5分）,3.6
+
+# 胰岛素管理技能（如适用）
+insulinInjectionTechnique,胰岛素注射技术,Number,胰岛素注射技术掌握程度评分（1-5分）,3.8
+injectionSiteRotation,注射部位轮换,Number,注射部位轮换执行情况评分（1-5分）,3.4
+insulinStorage,胰岛素保存,Number,胰岛素保存方法掌握程度评分（1-5分）,3.6
+doseAdjustmentSkill,剂量调整技能,Number,根据血糖调整胰岛素剂量技能评分（1-5分）,2.5
+hyperglycemiaManagement,高血糖处理,Number,高血糖紧急处理能力评分（1-5分）,2.8
+hypoglycemiaManagement,低血糖处理,Number,低血糖紧急处理能力评分（1-5分）,3.2
+
+# 足部护理技能
+footInspectionFrequency,足部检查频率,Number,每周足部自我检查次数,7
+footInspectionTechnique,足部检查技术,Number,足部自我检查技术掌握程度评分（1-5分）,3.0
+footHygieneSkill,足部卫生技能,Number,足部卫生护理技能评分（1-5分）,3.4
+shoeFitAwareness,鞋子选择意识,Number,糖尿病患者鞋子选择意识评分（1-5分）,3.2
+woundCareSkill,伤口护理技能,Number,足部小伤口自我护理技能评分（1-5分）,2.8
+footProblemRecognition,足部问题识别,Number,足部问题早期识别能力评分（1-5分）,2.6
+
+# 心理调适技能
+stressCopingSkill,压力应对技能,Number,糖尿病相关压力应对技能评分（1-5分）,3.2
+emotionRegulation,情绪调节能力,Number,情绪调节能力评分（1-5分）,3.0
+anxietyManagement,焦虑管理,Number,糖尿病相关焦虑管理能力评分（1-5分）,2.8
+depressionCoping,抑郁应对,Number,糖尿病相关抑郁情绪应对能力评分（1-5分）,2.6
+supportSeeking,寻求支持能力,Number,主动寻求专业支持能力评分（1-5分）,2.4
+adaptationSkill,适应技能,Number,对糖尿病生活方式适应技能评分（1-5分）,3.4
+
+# 急症处理技能
+hypoglycemiaRecognition,低血糖识别,Number,低血糖症状识别能力评分（1-5分）,3.6
+hypoglycemiaTreatment,低血糖处理,Number,低血糖自我处理能力评分（1-5分）,3.4
+hyperglycemiaRecognition,高血糖识别,Number,高血糖症状识别能力评分（1-5分）,3.2
+ketoacidosisAwareness,酮症酸中毒认知,Number,糖尿病酮症酸中毒认知和预防能力评分（1-5分）,2.8
+emergencyActionPlan,急症行动计划,Number,急症情况行动计划制定和执行能力评分（1-5分）,2.5
+emergencyContactUse,急救联系利用,Number,急症情况下联系医疗机构能力评分（1-5分）,3.8
+
+# 自我监测技能
+symptomMonitoring,症状监测,Number,日常症状自我监测能力评分（1-5分）,3.4
+weightMonitoring,体重监测,Number,体重自我监测和管理能力评分（1-5分）,3.2
+bloodPressureMonitoring,血压监测,Number,血压自我监测能力评分（1-5分）,3.0
+ketoneMonitoring,酮体监测,Number,尿酮或血酮监测能力评分（1-5分）,2.4
+healthRecordKeeping,健康记录维护,Number,健康数据记录维护能力评分（1-5分）,3.0
+trendAnalysis,趋势分析,Number,健康数据趋势分析能力评分（1-5分）,2.6
+
+# 社会支持利用技能
+familySupportUtilization,家庭支持利用,Number,家庭支持有效利用能力评分（1-5分）,3.6
+peerSupportEngagement,同伴支持参与,Number,糖尿病同伴支持小组参与能力评分（1-5分）,2.8
+professionalSupportSeeking,专业支持寻求,Number,主动寻求专业医疗支持能力评分（1-5分）,3.4
+communitySupportUtilization,社区支持利用,Number,社区糖尿病管理资源利用能力评分（1-5分）,2.6
+onlineResourceUse,在线资源利用,Number,糖尿病管理在线资源利用能力评分（1-5分）,3.0
+supportNetworkBuilding,支持网络建设,Number,个人支持网络建设能力评分（1-5分）,2.8
+
+# 医疗护理参与技能
+appointmentManagement,预约管理,Number,医疗预约管理能力评分（1-5分）,3.8
+medicationQuestionAsking,用药咨询,Number,主动咨询用药问题能力评分（1-5分）,3.2
+treatmentDecisionParticipation,治疗决策参与,Number,参与治疗决策能力评分（1-5分）,2.8
+healthGoalSetting,健康目标设定,Number,与医护人员共同设定健康目标能力评分（1-5分）,3.0
+progressReporting,进展汇报,Number,向医护人员汇报自我管理进展能力评分（1-5分）,3.4
+communicationSkill,沟通技能,Number,与医护人员有效沟通技能评分（1-5分）,3.2
+
+# 行为改变技能
+goalSettingSkill,目标设定技能,Number,自我管理目标设定技能评分（1-5分）,3.0
+actionPlanningSkill,行动计划技能,Number,具体行动计划制定技能评分（1-5分）,2.8
+selfMonitoringSkill,自我监控技能,Number,行为改变自我监控技能评分（1-5分）,3.2
+barrierIdentification,障碍识别,Number,自我管理障碍识别能力评分（1-5分）,3.4
+problemSolvingSkill,问题解决技能,Number,自我管理问题解决技能评分（1-5分）,2.6
+habitFormation,习惯养成,Number,健康行为习惯养成能力评分（1-5分）,2.8
+
+# 信息管理技能
+healthInformationSeeking,健康信息寻求,Number,主动寻求糖尿病健康信息能力评分（1-5分）,3.2
+informationEvaluation,信息评估,Number,糖尿病健康信息质量评估能力评分（1-5分）,2.6
+informationApplication,信息应用,Number,健康信息实际应用能力评分（1-5分）,2.8
+technologyUse,技术应用,Number,糖尿病管理技术工具使用能力评分（1-5分）,3.0
+dataInterpretation,数据解读,Number,个人健康数据解读能力评分（1-5分）,2.4
+informationSharing,信息分享,Number,与医护人员分享信息能力评分（1-5分）,3.4
+
+# 生活方式整合技能
+workLifeIntegration,工作生活整合,Number,糖尿病管理与工作生活整合能力评分（1-5分）,3.0
+socialActivityAdaptation,社交活动适应,Number,社交活动中糖尿病管理适应能力评分（1-5分）,2.8
+travelPreparation,旅行准备,Number,旅行时糖尿病管理准备能力评分（1-5分）,2.6
+specialEventManagement,特殊事件管理,Number,节假日等特殊事件糖尿病管理能力评分（1-5分）,2.4
+lifestyleFlexibility,生活方式灵活性,Number,保持生活方式灵活性同时管理糖尿病能力评分（1-5分）,2.8
+long_termPlanning,长期规划,Number,糖尿病长期管理规划能力评分（1-5分）,2.6
+
+# 自我效能感评估
+managementConfidence,管理信心,Number,糖尿病自我管理总体信心评分（1-5分）,3.2
+dietConfidence,饮食管理信心,Number,饮食管理信心评分（1-5分）,3.4
+exerciseConfidence,运动管理信心,Number,运动管理信心评分（1-5分）,3.0
+medicationConfidence,用药管理信心,Number,用药管理信心评分（1-5分）,3.8
+glucoseMonitoringConfidence,血糖监测信心,Number,血糖监测管理信心评分（1-5分）,3.6
+emergencyConfidence,急症处理信心,Number,急症处理信心评分（1-5分）,2.8
+
+# 动机和态度评估
+changeMotivation,改变动机,Number,改变不良生活习惯动机强度评分（1-5分）,3.4
+treatmentMotivation,治疗动机,Number,坚持糖尿病治疗动机强度评分（1-5分）,3.8
+selfCareAttitude,自我护理态度,Number,对糖尿病自我护理态度评分（1-5分）,3.6
+learningMotivation,学习动机,Number,学习糖尿病知识动机强度评分（1-5分）,3.2
+improvementDesire,改善愿望,Number,改善糖尿病控制状况愿望强度评分（1-5分）,4.0
+responsibilityAcceptance,责任接受度,Number,接受自我管理责任程度评分（1-5分）,3.4
+
+# 实际技能演示评估
+bgmDemonstration,血糖监测演示,Number,血糖监测技术实际演示评分（1-5分）,3.8
+injectionDemonstration,注射技术演示,Number,胰岛素注射技术实际演示评分（1-5分）,3.6
+footExamDemonstration,足部检查演示,Number,足部自我检查实际演示评分（1-5分）,2.8
+carbCountingDemonstration,碳水计算演示,Number,碳水化合物计算实际演示评分（1-5分）,2.6
+hypoglycemiaTreatmentDemo,低血糖处理演示,Number,低血糖处理实际演示评分（1-5分）,3.2
+recordKeepingDemo,记录维护演示,Number,健康记录维护实际演示评分（1-5分）,3.0
+
+# 学习能力评估
+learningStyle,学习风格,String,主要学习风格,视觉型/听觉型/动觉型/阅读型
+informationRetention,信息保持,Number,健康教育信息保持能力评分（1-5分）,3.2
+skillAcquisition,技能习得,Number,新技能学习能力评分（1-5分）,3.0
+practiceApplication,实践应用,Number,学习内容实践应用能力评分（1-5分）,2.8
+feedbackUtilization,反馈利用,Number,利用反馈改进能力评分（1-5分）,3.4
+continuousLearning,持续学习,Number,持续学习意愿和能力评分（1-5分）,3.2
+
+# 障碍识别和解决
+identifiedBarriers,已识别障碍,String,自我管理主要障碍,时间不足/知识缺乏/动机不足/经济困难/家庭不支持
+barrierSeverity,障碍严重程度,Number,主要障碍影响程度评分（1-5分）,3.2
+copingStrategies,应对策略,String,现有应对策略,寻求帮助/调整计划/降低要求/回避问题
+strategyEffectiveness,策略有效性,Number,现有应对策略有效性评分（1-5分）,2.8
+resourceAvailability,资源可获得性,Number,自我管理资源可获得性评分（1-5分）,3.0
+supportNeed,支持需求,String,最需要的支持类型,信息支持/情感支持/实际支持/经济支持
+
+# 文化和社会因素
+culturalInfluence,文化影响,Number,文化因素对自我管理影响程度评分（1-5分）,2.8
+familyAttitude,家庭态度,Number,家庭对糖尿病管理态度支持程度评分（1-5分）,3.6
+socialStigma,社会病耻感,Number,感受到的社会病耻感程度评分（1-5分）,2.4
+peerInfluence,同伴影响,Number,同伴对自我管理行为影响评分（1-5分）,2.6
+workplaceSupport,工作场所支持,Number,工作场所对糖尿病管理支持程度评分（1-5分）,2.8
+communityResource,社区资源,Number,社区糖尿病管理资源充足程度评分（1-5分）,2.4
+
+# 健康行为改变阶段
+changeStageAssessment,改变阶段评估,String,行为改变当前阶段,前思考期/思考期/准备期/行动期/维持期
+changeDuration,改变持续时间,Number,当前改变阶段持续时间（月）,3
+relapsePrevention,复发预防,Number,预防行为复发能力评分（1-5分）,2.6
+changeConfidence,改变信心,Number,维持行为改变信心评分（1-5分）,3.0
+changeSupport,改变支持,Number,行为改变过程中获得支持程度评分（1-5分）,3.2
+changeBarriers,改变障碍,String,行为改变主要障碍,缺乏动机/时间不足/知识缺乏/环境限制
+
+# 综合自我管理评估
+overallSelfManagementScore,总体自我管理评分,Number,总体自我管理能力评分（0-100分）,68
+strengthAreas,优势领域,String,自我管理优势领域,用药管理/血糖监测/医疗参与
+improvementAreas,改进领域,String,需要改进的自我管理领域,饮食管理/运动管理/急症处理
+priorityInterventions,优先干预,String,优先的干预措施,个体化教育/技能培训/心理支持
+selfManagementGoals,自我管理目标,String,近期自我管理目标,改善血糖控制/增加运动/学习技能
+progressIndicators,进展指标,String,自我管理进展评估指标,血糖达标率/依从性改善/技能掌握
+
+# 评估工具和方法
+assessmentInstrument,评估工具,String,使用的自我管理评估工具,DSME/DSMS/SDSCA
+assessmentMethod,评估方法,String,评估采用的方法,问卷调查/实际演示/观察评估/访谈
+assessorTraining,评估者培训,String,评估者培训情况,已培训/未培训
+interRaterReliability,评估者间信度,Number,评估者间信度（如适用）,0.85
+assessmentDuration,评估耗时,Number,完成评估所需时间（分钟）,60
+followUpSchedule,随访计划,String,自我管理能力随访计划,1个月/3个月/6个月

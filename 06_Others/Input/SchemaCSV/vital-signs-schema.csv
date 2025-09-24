@@ -1,0 +1,51 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+measurementDate,测量日期,String,进行生命体征测量的日期,2025-08-15
+measurementTime,测量时间,String,具体测量时间,14:30
+measurementLocation,测量地点,String,"测量地点。<br>**建议值**: `门诊`, `病房`, `急诊`, `ICU`, `家庭`",门诊
+systolicBloodPressure,收缩压 (SBP),Number,"收缩压数值。<br>单位: mmHg<br>**参考范围**: 90-140",120
+diastolicBloodPressure,舒张压 (DBP),Number,"舒张压数值。<br>单位: mmHg<br>**参考范围**: 60-90",80
+meanArterialPressure,平均动脉压 (MAP),Number,"平均动脉压。<br>单位: mmHg<br>**计算公式**: (SBP + 2×DBP)/3",93
+bloodPressureMeasurementMethod,血压测量方法,String,"血压测量方法。<br>**建议值**: `水银血压计`, `电子血压计`, `动脉导管`, `示波法`",电子血压计
+bloodPressureCuffSize,血压袖带大小,String,"使用的袖带大小。<br>**建议值**: `成人标准`, `成人大号`, `儿童`, `婴儿`",成人标准
+bloodPressurePosition,血压测量体位,String,"测量血压时的体位。<br>**建议值**: `坐位`, `卧位`, `立位`",坐位
+heartRate,心率 (HR),Number,"心率数值。<br>单位: 次/分<br>**参考范围**: 60-100",72
+heartRhythm,心律,String,"心律规律性。<br>**建议值**: `规律`, `不规律`, `间歇`",规律
+pulseQuality,脉搏强度,String,"脉搏搏动强度。<br>**建议值**: `强`, `正常`, `弱`, `丝状`",正常
+respiratoryRate,呼吸频率 (RR),Number,"呼吸频率。<br>单位: 次/分<br>**参考范围**: 12-20",16
+respiratoryPattern,呼吸节律,String,"呼吸节律模式。<br>**建议值**: `规律`, `不规律`, `间歇性`, `潮式呼吸`",规律
+respiratoryDepth,呼吸深度,String,"呼吸深度。<br>**建议值**: `正常`, `浅快`, `深大`, `叹息样`",正常
+respiratoryEffort,呼吸困难,String,"是否存在呼吸困难。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+bodyTemperature,体温 (T),Number,"体温数值。<br>单位: ℃<br>**参考范围**: 36.0-37.5",36.8
+temperatureMeasurementSite,体温测量部位,String,"体温测量部位。<br>**建议值**: `口温`, `腋温`, `肛温`, `耳温`, `额温`",腋温
+temperatureMeasurementMethod,体温测量方法,String,"体温测量方法。<br>**建议值**: `水银体温计`, `电子体温计`, `红外线体温计`",电子体温计
+oxygenSaturation,血氧饱和度 (SpO2),Number,"血氧饱和度。<br>单位: %<br>**参考范围**: 95-100",98
+oxygenSaturationMethod,血氧测量方法,String,"血氧饱和度测量方法。<br>**建议值**: `脉搏血氧仪`, `动脉血气分析`",脉搏血氧仪
+supplementalOxygen,吸氧情况,String,"是否吸氧。<br>**建议值**: `否`, `是`",否
+oxygenFlow,氧流量,Number,"氧气流量（如果吸氧）。<br>单位: L/min",0
+oxygenConcentration,氧浓度,Number,"吸入氧浓度（如果吸氧）。<br>单位: %",21
+consciousnessLevel,意识水平,String,"意识状态评估。<br>**建议值**: `清醒`, `嗜睡`, `昏睡`, `昏迷`, `谵妄`",清醒
+glasgowComaScale,格拉斯哥昏迷评分 (GCS),Number,"GCS评分（如果适用）。<br>**参考范围**: 3-15",15
+painScore,疼痛评分,Number,"疼痛数字评分。<br>**参考范围**: 0-10（0=无痛，10=剧痛）",0
+pupilResponse.left,瞳孔反应.左瞳孔,String,"左瞳孔对光反应。<br>**建议值**: `正常`, `迟钝`, `消失`",正常
+pupilResponse.right,瞳孔反应.右瞳孔,String,"右瞳孔对光反应。<br>**建议值**: `正常`, `迟钝`, `消失`",正常
+pupilSize.left,瞳孔大小.左瞳孔,Number,"左瞳孔直径。<br>单位: mm<br>**参考范围**: 2-6",3.5
+pupilSize.right,瞳孔大小.右瞳孔,Number,"右瞳孔直径。<br>单位: mm<br>**参考范围**: 2-6",3.5
+bodyWeight,体重,Number,"体重测量值。<br>单位: kg",70.5
+bodyHeight,身高,Number,"身高测量值。<br>单位: cm",175
+bodyMassIndex,体质指数 (BMI),Number,"体质指数。<br>**计算公式**: 体重(kg)/身高(m)²<br>**参考范围**: 18.5-24.9",23.0
+headCircumference,头围,Number,"头围测量（婴幼儿）。<br>单位: cm",0
+urinOutput,尿量,Number,"尿量（如果监测）。<br>单位: mL",0
+fluidIntake,入液量,Number,"入液量（如果监测）。<br>单位: mL",0
+centralVenousPressure,中心静脉压 (CVP),Number,"中心静脉压（如果监测）。<br>单位: cmH2O",0
+intracranialPressure,颅内压 (ICP),Number,"颅内压（如果监测）。<br>单位: mmHg",0
+bloodGlucose,血糖,Number,"血糖测量值（如果监测）。<br>单位: mmol/L",5.8
+posturalChanges,体位变化,String,"体位性变化评估。<br>**建议值**: `未评估`, `正常`, `体位性低血压`",未评估
+capillaryRefillTime,毛细血管再充盈时间,Number,"毛细血管再充盈时间。<br>单位: 秒<br>**参考范围**: <2",1.5
+peripheralPulses,外周脉搏,String,"外周脉搏触诊。<br>**建议值**: `全部可及`, `部分减弱`, `部分消失`",全部可及
+skinCondition,皮肤状态,String,"皮肤状态观察。<br>**建议值**: `正常`, `苍白`, `发绀`, `黄疸`, `潮红`",正常
+mucousMembranes,粘膜状态,String,"粘膜状态观察。<br>**建议值**: `正常`, `苍白`, `发绀`, `干燥`",正常
+abnormalSigns,异常体征,String,其他异常体征描述,无
+measurementStaff,测量人员,String,进行测量的医护人员姓名,张护士
+deviceUsed,使用设备,String,使用的监护设备型号或品牌,飞利浦监护仪
+diagnosisImpression,诊断/印象,String,医护人员对生命体征的综合评估。,生命体征平稳
+recommendation,建议,String,根据生命体征提出的医疗建议。,继续观察

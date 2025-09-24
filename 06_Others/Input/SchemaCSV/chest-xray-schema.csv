@@ -1,0 +1,43 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行胸部X线检查的日期,2025-08-15
+examType,检查类型,String,"X线检查的类型。<br>**建议值**: `胸部正位`, `胸部侧位`, `胸部正侧位`",胸部正位
+filmQuality,胶片质量,String,"胶片的技术质量。<br>**建议值**: `良好`, `一般`, `较差-需重拍`",良好
+patientPosition,体位,String,"患者检查时的体位。<br>**建议值**: `立位`, `卧位`, `半卧位`",立位
+inspirationAdequacy,吸气充分度,String,"患者吸气是否充分。<br>**建议值**: `充分`, `不充分`",充分
+heartSize,心脏大小,String,"心脏大小评估。<br>**建议值**: `正常`, `轻度增大`, `中度增大`, `明显增大`",正常
+heartShape,心脏形态,String,"心脏形态描述。<br>**建议值**: `正常`, `靴形心`, `梨形心`, `球形心`",正常
+cardiothoracicRatio,心胸比,Number,"心脏横径与胸廓横径的比值。<br>**参考范围**: <0.5",0.45
+aorticKnob,主动脉结,String,"主动脉结的状态。<br>**建议值**: `正常`, `突出`, `钙化`",正常
+pulmonaryVessels,肺血管,String,"肺血管纹理状态。<br>**建议值**: `正常`, `增粗`, `减少`, `模糊`",正常
+lungFields.left.upper,肺野.左肺.上肺野,String,"左上肺野病变。<br>**建议值**: `清晰`, `结节`, `浸润`, `实变`, `空洞`",清晰
+lungFields.left.middle,肺野.左肺.中肺野,String,"左中肺野病变。<br>**建议值**: `清晰`, `结节`, `浸润`, `实变`, `空洞`",清晰
+lungFields.left.lower,肺野.左肺.下肺野,String,"左下肺野病变。<br>**建议值**: `清晰`, `结节`, `浸润`, `实变`, `空洞`",清晰
+lungFields.right.upper,肺野.右肺.上肺野,String,"右上肺野病变。<br>**建议值**: `清晰`, `结节`, `浸润`, `实变`, `空洞`",清晰
+lungFields.right.middle,肺野.右肺.中肺野,String,"右中肺野病变。<br>**建议值**: `清晰`, `结节`, `浸润`, `实变`, `空洞`",清晰
+lungFields.right.lower,肺野.右肺.下肺野,String,"右下肺野病变。<br>**建议值**: `清晰`, `结节`, `浸润`, `实变`, `空洞`",清晰
+pleura.left,胸膜.左侧,String,"左侧胸膜状态。<br>**建议值**: `光滑`, `增厚`, `粘连`, `积液`",光滑
+pleura.right,胸膜.右侧,String,"右侧胸膜状态。<br>**建议值**: `光滑`, `增厚`, `粘连`, `积液`",光滑
+costophrenicAngles.left,肋膈角.左侧,String,"左侧肋膈角状态。<br>**建议值**: `锐利`, `变钝`, `消失`",锐利
+costophrenicAngles.right,肋膈角.右侧,String,"右侧肋膈角状态。<br>**建议值**: `锐利`, `变钝`, `消失`",锐利
+diaphragm.left,膈肌.左侧,String,"左侧膈肌状态。<br>**建议值**: `光滑`, `抬高`, `低平`, `不规则`",光滑
+diaphragm.right,膈肌.右侧,String,"右侧膈肌状态。<br>**建议值**: `光滑`, `抬高`, `低平`, `不规则`",光滑
+mediastinum,纵隔,String,"纵隔状态。<br>**建议值**: `居中`, `左移`, `右移`, `增宽`",居中
+hilarLymphNodes.left,肺门淋巴结.左侧,String,"左侧肺门淋巴结状态。<br>**建议值**: `正常`, `增大`, `钙化`",正常
+hilarLymphNodes.right,肺门淋巴结.右侧,String,"右侧肺门淋巴结状态。<br>**建议值**: `正常`, `增大`, `钙化`",正常
+bonyStructures,骨性结构,String,"胸廓骨性结构状态。<br>**建议值**: `正常`, `骨折`, `退行性变`, `骨质疏松`",正常
+ribCage,肋骨,String,"肋骨状态。<br>**建议值**: `正常`, `骨折`, `缺如`, `畸形`",正常
+spine,脊柱,String,"胸椎状态。<br>**建议值**: `正常`, `侧弯`, `后凸`, `压缩性骨折`",正常
+softTissues,软组织,String,"胸壁软组织状态。<br>**建议值**: `正常`, `肿胀`, `皮下气肿`, `钙化`",正常
+foreignBodies,异物,String,"是否存在异物。<br>**建议值**: `无`, `有-请注明位置和性质`",无
+pulmonaryNodules.present,肺结节.是否存在,String,"是否存在肺结节。<br>**建议值**: `无`, `有`",无
+pulmonaryNodules.count,肺结节.数量,Number,"肺结节数量（如果存在）",0
+pulmonaryNodules.size,肺结节.大小,String,"最大结节大小（如果存在）。<br>单位: mm",无
+pulmonaryNodules.location,肺结节.位置,String,"结节位置描述（如果存在）",无
+pneumothorax.present,气胸.是否存在,String,"是否存在气胸。<br>**建议值**: `无`, `有`",无
+pneumothorax.side,气胸.侧别,String,"气胸侧别（如果存在）。<br>**建议值**: `左侧`, `右侧`, `双侧`",无
+pneumothorax.degree,气胸.程度,String,"气胸程度（如果存在）。<br>**建议值**: `少量`, `中量`, `大量`, `张力性`",无
+pleuralEffusion.present,胸腔积液.是否存在,String,"是否存在胸腔积液。<br>**建议值**: `无`, `有`",无
+pleuralEffusion.side,胸腔积液.侧别,String,"积液侧别（如果存在）。<br>**建议值**: `左侧`, `右侧`, `双侧`",无
+pleuralEffusion.amount,胸腔积液.量,String,"积液量（如果存在）。<br>**建议值**: `少量`, `中量`, `大量`",无
+diagnosisImpression,诊断/印象,String,医生对胸部X线检查结果的综合诊断或印象。,双肺未见明显异常
+recommendation,建议,String,医生根据检查结果提出的建议。,定期体检
