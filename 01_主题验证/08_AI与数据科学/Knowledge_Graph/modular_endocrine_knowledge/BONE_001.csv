@@ -1,0 +1,191 @@
+section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,alternate_names,原发性骨质疏松症; 继发性骨质疏松症; Osteoporosis; Primary osteoporosis; Secondary osteoporosis
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,icd10,M80.9
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,definition,以骨量低、骨微结构破坏、骨脆性增加、易发生骨折为特征的全身性代谢性骨病
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.bone_remodeling_imbalance.normal_remodeling.bone_formation,成骨细胞合成骨基质
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.bone_remodeling_imbalance.normal_remodeling.bone_resorption,破骨细胞破坏老化骨组织
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.bone_remodeling_imbalance.normal_remodeling.balance,健康状态下形成与吸收平衡
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.bone_remodeling_imbalance.osteoporosis_mechanism.increased_resorption,破骨细胞活性增加
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.bone_remodeling_imbalance.osteoporosis_mechanism.decreased_formation,成骨细胞功能下降
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.bone_remodeling_imbalance.osteoporosis_mechanism.net_bone_loss,骨形成<骨吸收，净骨丢失
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.hormonal_regulation.estrogen.mechanism,抑制破骨细胞活性，促进成骨细胞功能
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.hormonal_regulation.estrogen.deficiency_effects,绝经后雌激素缺乏导致骨吸收增加
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.hormonal_regulation.estrogen.rankl_opg_system,调节RANKL/OPG比值影响骨代谢
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.hormonal_regulation.parathyroid_hormone.physiologic_role,维持血钙稳态
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.hormonal_regulation.parathyroid_hormone.bone_effects,间歇性PTH促进骨形成，持续升高促进骨吸收
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.hormonal_regulation.parathyroid_hormone.secondary_hyperparathyroidism,维生素D缺乏或肾功能不全引起
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.hormonal_regulation.vitamin_d.calcium_absorption,促进肠道钙吸收
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.hormonal_regulation.vitamin_d.bone_mineralization,必需的骨矿化因子
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.hormonal_regulation.vitamin_d.deficiency_consequences,继发性甲状旁腺功能亢进
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.hormonal_regulation.thyroid_hormones.bone_turnover,甲亢加速骨转换
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.hormonal_regulation.thyroid_hormones.fracture_risk,长期甲亢增加骨折风险
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.hormonal_regulation.glucocorticoids.bone_formation,抑制成骨细胞分化和功能
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.hormonal_regulation.glucocorticoids.bone_resorption,促进破骨细胞活性
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.hormonal_regulation.glucocorticoids.iatrogenic_osteoporosis,糖皮质激素性骨质疏松
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.hormonal_regulation.growth_hormone_igf1.bone_anabolism,刺激成骨细胞增殖和胶原合成
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.hormonal_regulation.growth_hormone_igf1.deficiency,GH/IGF-1缺乏导致骨密度下降
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.cytokine_regulation.rank_rankl_opg.rankl,破骨细胞分化因子
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.cytokine_regulation.rank_rankl_opg.opg,骨保护素，RANKL拮抗剂
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.cytokine_regulation.rank_rankl_opg.ratio,RANKL/OPG比值决定骨吸收程度
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.cytokine_regulation.inflammatory_cytokines.il1_il6_tnf,促进骨吸收的细胞因子
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,pathophysiology.cytokine_regulation.inflammatory_cytokines.chronic_inflammation,慢性炎症加速骨丢失
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,classification.etiology_based.primary_osteoporosis.type_1.description,绝经后骨质疏松
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,classification.etiology_based.primary_osteoporosis.type_1.age_group,51-75岁女性
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,classification.etiology_based.primary_osteoporosis.type_1.mechanism,雌激素缺乏
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,classification.etiology_based.primary_osteoporosis.type_1.predominant_site,松质骨（椎体、桡骨远端）
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,classification.etiology_based.primary_osteoporosis.type_2.description,老年性骨质疏松
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,classification.etiology_based.primary_osteoporosis.type_2.age_group,>70岁男女
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,classification.etiology_based.primary_osteoporosis.type_2.mechanism,年龄相关的骨形成减少
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,classification.etiology_based.primary_osteoporosis.type_2.predominant_site,皮质骨和松质骨
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,classification.etiology_based.secondary_osteoporosis.endocrine_causes,甲状腺功能亢进; 甲状旁腺功能亢进; Cushing综合征; 性腺功能减退; 糖尿病; 甲状旁腺功能减退
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,classification.etiology_based.secondary_osteoporosis.drug_induced,糖皮质激素; 抗癫痫药; 肝素; 芳香化酶抑制剂; GnRH激动剂
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,classification.etiology_based.secondary_osteoporosis.systemic_diseases,类风湿关节炎; 慢性肾病; 炎症性肠病; 慢性阻塞性肺病; 肝病
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,classification.severity_based.osteopenia.t_score,-1.0到-2.5之间
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,classification.severity_based.osteopenia.description,骨量减少
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,classification.severity_based.osteoporosis.t_score,≤-2.5
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,classification.severity_based.osteoporosis.description,骨质疏松症
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,classification.severity_based.severe_osteoporosis.criteria,骨质疏松症+脆性骨折
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,classification.severity_based.severe_osteoporosis.description,严重骨质疏松症
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,epidemiology.prevalence.global,全球>2亿人患病
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,epidemiology.prevalence.china.overall,中国50岁以上人群患病率约13%
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,epidemiology.prevalence.china.women,绝经后女性患病率30-50%
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,epidemiology.prevalence.china.men,男性患病率相对较低，约为女性1/4
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,epidemiology.fracture_epidemiology.lifetime_risk,50岁后终生骨折风险：女性40%，男性20%
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,epidemiology.fracture_epidemiology.common_sites,髋部（死亡率最高）; 脊椎（最常见）; 桡骨远端; 肱骨近端
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,epidemiology.fracture_epidemiology.mortality,髋部骨折1年死亡率15-25%
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,epidemiology.economic_burden.medical_costs,年医疗费用数千亿
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,epidemiology.economic_burden.indirect_costs,护理、失能等间接成本巨大
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,risk_factors.non_modifiable.age,最重要的危险因素
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,risk_factors.non_modifiable.gender,女性>男性
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,risk_factors.non_modifiable.race,白种人和亚洲人风险较高
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,risk_factors.non_modifiable.genetics,COL1A1基因多态性; 维生素D受体基因变异; 雌激素受体基因多态性
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,risk_factors.non_modifiable.family_history,骨折家族史增加风险2倍
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,risk_factors.non_modifiable.previous_fracture,既往脆性骨折是最强预测因子
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,risk_factors.potentially_modifiable.hormonal_factors,早绝经（<45岁）; 晚初潮（>15岁）; 性腺功能减退; 不孕或少孕
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,risk_factors.potentially_modifiable.lifestyle_factors,低钙摄入（<800mg/天）; 维生素D缺乏; 吸烟; 过量饮酒（>2单位/天）; 缺乏运动; 低体重（BMI<19）
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,risk_factors.potentially_modifiable.medical_conditions,类风湿关节炎; 炎症性肠病; 慢性肾病; 慢性阻塞性肺病; 恶性肿瘤
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,risk_factors.potentially_modifiable.medications,糖皮质激素（>3个月）; 抗癫痫药; 质子泵抑制剂; 噻嗪类利尿剂; 抗凝剂
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.asymptomatic_phase.description,早期通常无明显症状
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.asymptomatic_phase.silent_progression,骨密度逐渐降低但无临床表现
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.asymptomatic_phase.importance,需要主动筛查才能发现
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.symptomatic_phase.bone_pain.characteristics,慢性、钝痛，活动后加重
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.symptomatic_phase.bone_pain.location,腰背部最常见
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.symptomatic_phase.bone_pain.mechanism,微骨折或骨小梁断裂
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.symptomatic_phase.height_loss.mechanism,胸腰椎压缩性骨折
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.symptomatic_phase.height_loss.progression,身高逐渐降低，>4cm提示椎体骨折
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.symptomatic_phase.kyphosis.description,胸椎后凸畸形（驼背）
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.symptomatic_phase.kyphosis.consequence,多个椎体压缩性骨折累积效应
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.symptomatic_phase.functional_impairment.mobility,活动能力下降
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.symptomatic_phase.functional_impairment.balance,平衡功能受损
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.symptomatic_phase.functional_impairment.falls_risk,跌倒风险增加
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.fragility_fractures.definition,轻微外伤或无外伤情况下发生的骨折
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.fragility_fractures.vertebral_fractures.prevalence,最常见的骨质疏松性骨折
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.fragility_fractures.vertebral_fractures.clinical_presentation,急性腰背痛; 身高降低; 后凸畸形; 呼吸功能受限
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.fragility_fractures.vertebral_fractures.complications,疼痛、畸形、肺功能下降
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.fragility_fractures.hip_fractures.types,股骨颈骨折、转子间骨折
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.fragility_fractures.hip_fractures.consequences,致残率和死亡率最高
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.fragility_fractures.hip_fractures.recovery,需要手术，恢复时间长
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.fragility_fractures.distal_radius_fractures.mechanism,跌倒时手掌撑地
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.fragility_fractures.distal_radius_fractures.typical_patients,绝经后早期女性
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,diagnosis.clinical_assessment.history_taking,骨折史和家族史; 药物使用史; 生活方式评估; 内分泌疾病史; 消化系统疾病史
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,diagnosis.clinical_assessment.physical_examination,身高和体重测量; 脊柱检查（后凸、压痛）; 肌力和平衡评估; 跌倒风险评估
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,diagnosis.bone_density_measurement.dexa_scan.gold_standard,双能X线骨密度测定
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,diagnosis.bone_density_measurement.dexa_scan.measurement_sites,腰椎、髋部、前臂
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,diagnosis.bone_density_measurement.dexa_scan.t_score,与同性别峰值骨密度比较
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,diagnosis.bone_density_measurement.dexa_scan.z_score,与同年龄同性别比较
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,diagnosis.bone_density_measurement.quantitative_ct.advantages,真正的体积骨密度
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,diagnosis.bone_density_measurement.quantitative_ct.applications,椎体骨密度测量
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,diagnosis.bone_density_measurement.quantitative_ct.limitations,辐射剂量高，费用昂贵
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,diagnosis.bone_density_measurement.ultrasound.sites,跟骨、胫骨
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,diagnosis.bone_density_measurement.ultrasound.parameters,声速（SOS）、宽带超声衰减（BUA）
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,diagnosis.bone_density_measurement.ultrasound.applications,筛查工具，不能诊断
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,diagnosis.biochemical_markers.bone_formation_markers,骨特异性碱性磷酸酶（BALP）; 骨钙蛋白（OC）; I型前胶原氨基端肽（PINP）
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,diagnosis.biochemical_markers.bone_resorption_markers,I型胶原羧基端肽（CTX）; 尿N-端中分子片段（NTX）; 尿吡啶啉、脱氧吡啶啉
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,diagnosis.biochemical_markers.clinical_applications,治疗监测; 骨转换评估; 预后判断
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,diagnosis.secondary_causes_evaluation.laboratory_tests,血钙、磷、镁; 25-羟维生素D; 甲状旁腺激素（PTH）; 甲状腺功能; 性激素水平; 24小时尿钙; 肾功能; 肝功能; 炎症指标
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,diagnosis.secondary_causes_evaluation.additional_tests,血清蛋白电泳（排除多发性骨髓瘤）; 尿本-琼蛋白; 皮质醇（疑似Cushing综合征）
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,diagnosis.imaging_evaluation.spine_xray.purpose,检测椎体骨折
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,diagnosis.imaging_evaluation.spine_xray.findings,椎体高度丢失、楔形变、双凹征
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,diagnosis.imaging_evaluation.vertebral_fracture_assessment.vfa,椎体骨折评估
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,diagnosis.imaging_evaluation.vertebral_fracture_assessment.method,DXA侧位脊柱成像
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,diagnosis.imaging_evaluation.vertebral_fracture_assessment.advantages,低辐射、快速
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.non_pharmacological.lifestyle_modifications.nutrition.calcium,1000-1200mg/天
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.non_pharmacological.lifestyle_modifications.nutrition.vitamin_d,800-1000IU/天
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.non_pharmacological.lifestyle_modifications.nutrition.protein,1.0-1.2g/kg体重/天
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.non_pharmacological.lifestyle_modifications.nutrition.dietary_sources,乳制品、绿叶蔬菜、鱼类
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.non_pharmacological.lifestyle_modifications.exercise.weight_bearing,步行、慢跑、爬楼梯
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.non_pharmacological.lifestyle_modifications.exercise.resistance_training,肌肉力量训练
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.non_pharmacological.lifestyle_modifications.exercise.balance_training,太极、瑜伽防跌倒
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.non_pharmacological.lifestyle_modifications.exercise.frequency,每周3-4次，每次30-45分钟
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.non_pharmacological.lifestyle_modifications.fall_prevention.home_safety,移除障碍物、增加照明
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.non_pharmacological.lifestyle_modifications.fall_prevention.vision_correction,定期眼科检查
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.non_pharmacological.lifestyle_modifications.fall_prevention.medication_review,避免增加跌倒风险的药物
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.non_pharmacological.lifestyle_modifications.fall_prevention.assistive_devices,手杖、助行器的使用
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.non_pharmacological.lifestyle_modifications.lifestyle_changes.smoking_cessation,戒烟
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.non_pharmacological.lifestyle_modifications.lifestyle_changes.alcohol_moderation,限制酒精摄入
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.non_pharmacological.lifestyle_modifications.lifestyle_changes.maintain_healthy_weight,避免低体重
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.antiresorptive_agents.bisphosphonates.mechanism,抑制破骨细胞活性
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.antiresorptive_agents.bisphosphonates.agents,阿仑膦酸钠（每周70mg）; 利塞膦酸钠（每周35mg）; 伊班膦酸钠（每月150mg）; 唑来膦酸（每年5mg静脉）
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.antiresorptive_agents.bisphosphonates.efficacy,降低椎体骨折50-70%，髋部骨折40-50%
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.antiresorptive_agents.bisphosphonates.side_effects,上消化道刺激; 急性期反应（发热、肌痛）; 颌骨坏死（罕见）; 非典型股骨骨折（长期使用）
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.antiresorptive_agents.bisphosphonates.contraindications,食道狭窄; 严重肾功能不全（GFR<30ml/min）; 低钙血症
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.antiresorptive_agents.denosumab.mechanism,RANKL单克隆抗体
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.antiresorptive_agents.denosumab.dosage,60mg皮下注射，每6个月1次
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.antiresorptive_agents.denosumab.efficacy,椎体骨折68%，髋部骨折40%
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.antiresorptive_agents.denosumab.advantages,不依赖肾功能清除
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.antiresorptive_agents.denosumab.side_effects,感染风险增加; 低钙血症; 皮肤反应; 颌骨坏死
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.antiresorptive_agents.denosumab.rebound_effect,停药后骨丢失快速反弹
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.antiresorptive_agents.selective_estrogen_receptor_modulators.raloxifene.mechanism,选择性雌激素受体调节剂
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.antiresorptive_agents.selective_estrogen_receptor_modulators.raloxifene.dosage,60mg/天
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.antiresorptive_agents.selective_estrogen_receptor_modulators.raloxifene.efficacy,椎体骨折30-50%，无髋部骨折获益
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.antiresorptive_agents.selective_estrogen_receptor_modulators.raloxifene.additional_benefits,降低浸润性乳腺癌风险
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.antiresorptive_agents.selective_estrogen_receptor_modulators.raloxifene.side_effects,静脉血栓栓塞风险增加; 潮热; 腿部痉挛
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.anabolic_agents.parathyroid_hormone_analogs.teriparatide.mechanism,重组人甲状旁腺激素1-34
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.anabolic_agents.parathyroid_hormone_analogs.teriparatide.dosage,20μg/天皮下注射
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.anabolic_agents.parathyroid_hormone_analogs.teriparatide.duration,最长24个月
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.anabolic_agents.parathyroid_hormone_analogs.teriparatide.efficacy,椎体骨折65%，非椎体骨折53%
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.anabolic_agents.parathyroid_hormone_analogs.teriparatide.indications,严重骨质疏松，多发骨折
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.anabolic_agents.parathyroid_hormone_analogs.teriparatide.contraindications,恶性肿瘤病史; 骨肉瘤风险; 严重肾功能不全
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.anabolic_agents.parathyroid_hormone_analogs.abaloparatide.mechanism,PTHrP类似物
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.anabolic_agents.parathyroid_hormone_analogs.abaloparatide.advantages,较特立帕肽副作用更少
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.anabolic_agents.sclerostin_inhibitor.romosozumab.mechanism,sclerostin单克隆抗体
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.anabolic_agents.sclerostin_inhibitor.romosozumab.dosage,210mg皮下注射，每月1次
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.anabolic_agents.sclerostin_inhibitor.romosozumab.duration,12个月
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.anabolic_agents.sclerostin_inhibitor.romosozumab.efficacy,椎体骨折73%，髋部骨折38%
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.anabolic_agents.sclerostin_inhibitor.romosozumab.cardiovascular_risk,心血管事件风险可能增加
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.hormone_replacement.estrogen_therapy.indications,绝经后早期症状明显的女性
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.hormone_replacement.estrogen_therapy.benefits,骨密度增加，骨折风险降低
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.hormone_replacement.estrogen_therapy.risks,乳腺癌风险增加; 静脉血栓栓塞; 卒中风险; 冠心病风险
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.hormone_replacement.estrogen_therapy.considerations,风险效益权衡，个体化治疗
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.hormone_replacement.testosterone_replacement.indications,男性性腺功能减退伴骨质疏松
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.pharmacological.hormone_replacement.testosterone_replacement.monitoring,前列腺安全性
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.combination_therapy.sequential_therapy.anabolic_first,先使用促骨形成药物
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.combination_therapy.sequential_therapy.followed_by_antiresorptive,后续抗骨吸收治疗维持
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.combination_therapy.monitoring.bone_density,每1-2年复查DXA
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.combination_therapy.monitoring.biochemical_markers,治疗3-6个月后评估
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,treatment.combination_therapy.monitoring.safety_monitoring,定期评估药物不良反应
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,complications.fracture_complications.vertebral_fractures,慢性疼痛; 脊柱后凸畸形; 身高丢失; 肺功能受限; 胃肠功能异常
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,complications.fracture_complications.hip_fractures,长期卧床并发症; 深静脉血栓; 肺栓塞; 泌尿系感染; 压疮; 肌肉萎缩
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,complications.fracture_complications.cascade_fractures,一次骨折后后续骨折风险显著增加
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,complications.quality_of_life.physical_function,活动能力下降，自理能力受损
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,complications.quality_of_life.psychological_impact,抑郁、焦虑、社会退缩
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,complications.quality_of_life.social_consequences,家庭和社会负担增加
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,complications.mortality.hip_fracture_mortality,髋部骨折后1年死亡率15-25%
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,complications.mortality.vertebral_fracture_mortality,椎体骨折死亡率增加23%
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,complications.mortality.excess_mortality,骨质疏松相关超额死亡
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,prevention.primary_prevention.target_population,尚未发生骨质疏松的人群
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,prevention.primary_prevention.strategies,优化峰值骨量（青少年期）; 维持骨量（成年期）; 减缓骨丢失（绝经期）
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,prevention.primary_prevention.interventions,充足钙和维生素D摄入; 规律体力活动; 健康生活方式; 避免危险因素
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,prevention.secondary_prevention.target_population,已有骨质疏松但未发生骨折
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,prevention.secondary_prevention.goal,预防首次骨折
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,prevention.secondary_prevention.interventions,药物治疗+非药物治疗
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,prevention.tertiary_prevention.target_population,已发生脆性骨折
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,prevention.tertiary_prevention.goal,防止后续骨折
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,prevention.tertiary_prevention.fracture_liaison_service,骨折联络服务模式
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,prognosis.factors_affecting_prognosis,年龄; 基线骨密度; 骨折史; 伴发疾病; 治疗依从性
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,prognosis.treatment_response.bone_density_improvement,治疗1-2年骨密度增加3-8%
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,prognosis.treatment_response.fracture_risk_reduction,抗骨吸收药物降低骨折风险30-70%
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,prognosis.treatment_response.time_to_benefit,椎体骨折6-12个月，髋部骨折2-3年
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,prognosis.long_term_outcomes.continued_treatment,长期治疗可持续获益
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,prognosis.long_term_outcomes.drug_holidays,某些患者可考虑停药假期
+BONE_001,BONE_001,骨质疏松症,,骨代谢疾病,骨代谢疾病,prognosis.long_term_outcomes.lifelong_monitoring,需要终身监测和管理

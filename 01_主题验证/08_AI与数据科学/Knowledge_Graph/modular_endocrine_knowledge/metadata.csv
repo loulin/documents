@@ -1,0 +1,15 @@
+section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value
+metadata,version,,,,,value,2.0.0
+metadata,created_at,,,,,value,2025-01-15
+metadata,updated_at,,,,,value,2025-01-15
+metadata,description,,,,,value,基于美国权威医学指南的综合内分泌代谢疾病知识图谱系统，支持大语言模型集成和临床决策支持
+metadata,total_entities,,,,,value,2165
+metadata,total_relationships,,,,,value,4689
+metadata,inference_rules,,,,,value,195
+metadata,clinical_cases,,,,,value,138
+metadata,api_endpoints,,,,,value,12
+metadata,comorbidity_patterns,,,,,value,5
+metadata,languages,,,,,value,zh-CN; en-US
+metadata,medical_guidelines,,,,,value,ADA Standards of Medical Care in Diabetes 2025; American Thyroid Association Guidelines 2025; Endocrine Society Adrenal Guidelines 2024; Endocrine Society Pituitary Guidelines 2024; AHA/ACC Hypertension Guidelines 2025; ACC/AHA Dyslipidemia Guidelines 2025; Endocrine Society Growth Hormone Guidelines 2024; ATA Thyroid Nodules Management Guidelines 2024; Primary Aldosteronism Guidelines 2024; Pheochromocytoma and Paraganglioma Guidelines 2024; Androgen Excess and PCOS Society Guidelines 2023; International Society of Endocrinology Clinical Practice Guidelines; American Urological Association Male Hypogonadism Guidelines 2024; North American Menopause Society Position Statement 2024
+metadata,key_features,,,,,value,多疾病系统性整合; 疾病间关联性建模; 共病模式识别; 个体化治疗推荐; 循证医学证据支持; 实时临床决策支持; 大语言模型RAG优化; 结构化数据抽取; 智能问答交互; 医务人员研究支持
+metadata,coverage_areas,,,,,value,糖尿病及代谢性疾病; 甲状腺疾病; 肾上腺疾病; 垂体疾病; 高血压; 血脂异常; 肥胖症; 骨代谢疾病; 性腺疾病; 多发性内分泌肿瘤综合征

@@ -1,0 +1,141 @@
+section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,alternate_names,Schmidt综合征; 自身免疫性多内分泌病II型; 多腺体功能缺陷综合征II型
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,pathophysiology.genetic_susceptibility.hla_associations.class_ii.dr3,DRB1*0301-DQB1*0201单倍型
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,pathophysiology.genetic_susceptibility.hla_associations.class_ii.dr4,DRB1*0404-DQB1*0302单倍型
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,pathophysiology.genetic_susceptibility.hla_associations.class_ii.relative_risk,DR3/DR4杂合子风险最高（RR=20-40）
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,pathophysiology.genetic_susceptibility.hla_associations.class_i,"HLA-A1, B8单倍型"
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,pathophysiology.genetic_susceptibility.non_hla_genes.ctla4,细胞毒性T淋巴细胞相关抗原4
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,pathophysiology.genetic_susceptibility.non_hla_genes.ptpn22,蛋白酪氨酸磷酸酶22
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,pathophysiology.genetic_susceptibility.non_hla_genes.cd25,IL-2受体α链
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,pathophysiology.genetic_susceptibility.non_hla_genes.fcrl3,Fc受体样蛋白3
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,pathophysiology.genetic_susceptibility.non_hla_genes.il2ra,白介素-2受体α
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,pathophysiology.genetic_susceptibility.polygenic_inheritance,多基因遗传模式，穿透率不完全
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,pathophysiology.autoimmune_mechanisms.molecular_mimicry,病原体与自身抗原分子模拟
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,pathophysiology.autoimmune_mechanisms.epitope_spreading,抗原表位扩散
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,pathophysiology.autoimmune_mechanisms.regulatory_t_cell_dysfunction,调节性T细胞功能缺陷
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,pathophysiology.autoimmune_mechanisms.cytokine_imbalance,Th1/Th17炎症反应优势
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,pathophysiology.autoimmune_mechanisms.b_cell_activation,B细胞过度活化和抗体产生
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,pathophysiology.organ_specific_pathology.adrenal,淋巴细胞浸润，皮质细胞破坏，纤维化
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,pathophysiology.organ_specific_pathology.thyroid,淋巴细胞浸润，滤泡破坏，间质纤维化
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,pathophysiology.organ_specific_pathology.pancreas,胰岛β细胞选择性破坏
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,pathophysiology.organ_specific_pathology.gonads,生殖细胞和支持细胞自身免疫损伤
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.core_components.addison_disease.prevalence,100%患者（定义性特征）
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.core_components.addison_disease.presentation.primary_insufficiency,原发性肾上腺皮质功能减退
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.core_components.addison_disease.presentation.symptoms,进行性乏力; 体重下降; 色素沉着（关节、瘢痕、黏膜）; 低血压; 消化道症状
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.core_components.addison_disease.presentation.biochemical,低钠，高钾，低皮质醇，高ACTH
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.core_components.addison_disease.presentation.crisis_triggers,感染; 手术; 情绪应激; 药物（巴比妥类）
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.core_components.autoimmune_thyroid_disease.prevalence,70%患者
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.core_components.autoimmune_thyroid_disease.types.hashimoto_thyroiditis.most_common,最常见类型
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.core_components.autoimmune_thyroid_disease.types.hashimoto_thyroiditis.progression,亚临床→显性甲减
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.core_components.autoimmune_thyroid_disease.types.hashimoto_thyroiditis.antibodies,抗TPO，抗TG
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.core_components.autoimmune_thyroid_disease.types.graves_disease.less_common,较少见
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.core_components.autoimmune_thyroid_disease.types.graves_disease.can_coexist,可与甲减交替出现
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.core_components.autoimmune_thyroid_disease.types.graves_disease.antibodies,TSI，TRAb
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.core_components.type_1_diabetes.prevalence,52%患者
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.core_components.type_1_diabetes.onset_pattern.adult_onset,成人起病多见
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.core_components.type_1_diabetes.onset_pattern.lada_phenotype,LADA表型常见
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.core_components.type_1_diabetes.onset_pattern.ketosis_prone,易发生酮症酸中毒
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.core_components.type_1_diabetes.autoantibodies,抗GAD65; 抗IA-2; 抗ZnT8; 抗胰岛素（儿童）
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.associated_conditions.primary_hypogonadism.prevalence,4-9%患者
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.associated_conditions.primary_hypogonadism.manifestations,闭经，不孕; 性欲减退; 骨质疏松; 潮热
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.associated_conditions.primary_hypogonadism.antibodies,抗卵巢抗体，抗精子抗体
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.associated_conditions.autoimmune_gastritis.pernicious_anemia,恶性贫血
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.associated_conditions.autoimmune_gastritis.antibodies,抗内因子，抗壁细胞抗体
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.associated_conditions.autoimmune_gastritis.complications,维生素B12缺乏，胃癌风险
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.associated_conditions.vitiligo.prevalence,4.8%患者
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.associated_conditions.vitiligo.distribution,对称性色素脱失
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.associated_conditions.vitiligo.progression,缓慢进展
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.associated_conditions.alopecia_areata.prevalence,1-2%患者
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.associated_conditions.alopecia_areata.pattern,斑片状脱发
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.associated_conditions.myasthenia_gravis.rare_association,罕见伴发
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.associated_conditions.myasthenia_gravis.antibodies,抗AChR抗体
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.atypical_presentations.incomplete_syndrome,不完全型（仅1-2种腺体受累）
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.atypical_presentations.sequential_development,成分疾病顺序出现
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,clinical_manifestations.atypical_presentations.subclinical_phase,亚临床期长达数年
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.diagnostic_criteria.classic_aps2,Addison病 + 自身免疫性甲状腺病 和/或 1型糖尿病
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.diagnostic_criteria.incomplete_aps2,Addison病 + 器官特异性自身抗体阳性
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.diagnostic_criteria.potential_aps2,≥2种器官特异性自身抗体阳性但无临床症状
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.laboratory_evaluation.adrenal_function.basal_cortisol,8AM皮质醇<138nmol/L提示不足
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.laboratory_evaluation.adrenal_function.acth_stimulation,短促试验，峰值<550nmol/L异常
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.laboratory_evaluation.adrenal_function.acth_levels,ACTH显著升高（>22pmol/L）
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.laboratory_evaluation.adrenal_function.aldosterone_renin,醛固酮降低，肾素升高
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.laboratory_evaluation.thyroid_function.tsh_t4,TSH升高，T4降低（甲减）
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.laboratory_evaluation.thyroid_function.antibodies,抗TPO，抗TG升高
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.laboratory_evaluation.thyroid_function.ultrasound,甲状腺弥漫性低回声，不均匀
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.laboratory_evaluation.pancreatic_function.glucose_tolerance,OGTT或随机血糖
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.laboratory_evaluation.pancreatic_function.hba1c,糖化血红蛋白
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.laboratory_evaluation.pancreatic_function.c_peptide,C肽水平评估β细胞功能
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.laboratory_evaluation.pancreatic_function.autoantibodies,抗GAD，抗IA-2，抗ZnT8
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.laboratory_evaluation.organ_specific_autoantibodies.adrenal.21_hydroxylase,抗21-羟化酶（95%阳性）
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.laboratory_evaluation.organ_specific_autoantibodies.adrenal.17_hydroxylase,抗17α-羟化酶
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.laboratory_evaluation.organ_specific_autoantibodies.adrenal.side_chain_cleavage,抗胆固醇侧链裂解酶
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.laboratory_evaluation.organ_specific_autoantibodies.thyroid.tpo,抗甲状腺过氧化物酶
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.laboratory_evaluation.organ_specific_autoantibodies.thyroid.thyroglobulin,抗甲状腺球蛋白
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.laboratory_evaluation.organ_specific_autoantibodies.thyroid.tsi,甲状腺刺激性免疫球蛋白
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.laboratory_evaluation.organ_specific_autoantibodies.pancreas.gad65,抗谷氨酸脱羧酶
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.laboratory_evaluation.organ_specific_autoantibodies.pancreas.ia2,抗胰岛细胞抗原2
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.laboratory_evaluation.organ_specific_autoantibodies.pancreas.znt8,抗锌转运蛋白8
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.laboratory_evaluation.organ_specific_autoantibodies.gastric.intrinsic_factor,抗内因子抗体
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.laboratory_evaluation.organ_specific_autoantibodies.gastric.parietal_cell,抗壁细胞抗体
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.laboratory_evaluation.organ_specific_autoantibodies.gonadal.steroid_cell,抗类固醇细胞抗体
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.laboratory_evaluation.organ_specific_autoantibodies.gonadal.ovarian,抗卵巢抗体
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.genetic_testing.hla_typing,HLA-DR/DQ单倍型分析
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.genetic_testing.risk_stratification,基于HLA型别的风险评估
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.genetic_testing.family_screening,一级亲属筛查（20%患病风险）
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.imaging_studies.adrenal_imaging.ct_scan,肾上腺萎缩（自身免疫性）vs 增大（转移瘤）
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.imaging_studies.adrenal_imaging.mri,T2加权像评估肾上腺形态
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.imaging_studies.thyroid_imaging,超声评估甲状腺结构和血流
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,diagnosis.imaging_studies.bone_density,DEXA骨密度检测（激素缺乏继发）
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.hormone_replacement_therapy.adrenal_replacement.glucocorticoids.hydrocortisone,15-25mg/day分2-3次
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.hormone_replacement_therapy.adrenal_replacement.glucocorticoids.prednisolone,3-5mg/day（替代选择）
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.hormone_replacement_therapy.adrenal_replacement.glucocorticoids.dexamethasone,0.25-0.5mg晚上（特殊情况）
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.hormone_replacement_therapy.adrenal_replacement.mineralocorticoids.fludrocortisone,0.05-0.2mg/day
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.hormone_replacement_therapy.adrenal_replacement.mineralocorticoids.monitoring,血压，电解质，肾素
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.hormone_replacement_therapy.adrenal_replacement.stress_dosing.minor_stress,双倍剂量2-3天
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.hormone_replacement_therapy.adrenal_replacement.stress_dosing.major_stress,氢化可的松100mg q8h
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.hormone_replacement_therapy.adrenal_replacement.stress_dosing.surgery,围手术期方案
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.hormone_replacement_therapy.adrenal_replacement.emergency_management.adrenal_crisis,氢化可的松100mg IV + 生理盐水
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.hormone_replacement_therapy.adrenal_replacement.emergency_management.patient_education,应激状态识别和处理
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.hormone_replacement_therapy.thyroid_replacement.levothyroxine.initial_dose,1.6μg/kg/day
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.hormone_replacement_therapy.thyroid_replacement.levothyroxine.titration,每6-8周调整剂量
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.hormone_replacement_therapy.thyroid_replacement.levothyroxine.target_tsh,0.5-2.5mU/L
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.hormone_replacement_therapy.thyroid_replacement.levothyroxine.special_considerations,肾上腺功能不全时先治疗后甲状腺
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.hormone_replacement_therapy.diabetes_management.insulin_therapy.intensive_regimen,多次注射或胰岛素泵
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.hormone_replacement_therapy.diabetes_management.insulin_therapy.glycemic_targets,个体化HbA1c目标
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.hormone_replacement_therapy.diabetes_management.insulin_therapy.hypoglycemia_prevention,肾上腺功能不全增加风险
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.hormone_replacement_therapy.gonadal_replacement.female.estrogen,雌激素补充治疗
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.hormone_replacement_therapy.gonadal_replacement.female.progestin,孕激素周期治疗
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.hormone_replacement_therapy.gonadal_replacement.female.contraindications,血栓风险评估
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.hormone_replacement_therapy.gonadal_replacement.male.testosterone,睾酮替代治疗
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.hormone_replacement_therapy.gonadal_replacement.male.monitoring,血常规，前列腺检查
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.supportive_therapy.vitamin_supplementation.vitamin_b12,恶性贫血时肌注补充
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.supportive_therapy.vitamin_supplementation.vitamin_d,骨健康维护
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.supportive_therapy.vitamin_supplementation.calcium,骨质疏松预防
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.supportive_therapy.dietary_management.sodium_intake,适当增加钠盐摄入
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.supportive_therapy.dietary_management.carbohydrate_counting,糖尿病饮食管理
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.monitoring_protocol.routine_follow_up.frequency,3-6个月定期复查
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.monitoring_protocol.routine_follow_up.laboratory,激素水平，电解质，血糖
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.monitoring_protocol.routine_follow_up.clinical,症状评估，体重监测
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.monitoring_protocol.screening_new_diseases.autoantibody_monitoring,年度自身抗体筛查
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.monitoring_protocol.screening_new_diseases.organ_function,潜在受累器官功能检测
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.monitoring_protocol.complication_surveillance.cardiovascular,心血管风险因素管理
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.monitoring_protocol.complication_surveillance.bone_health,骨密度定期检测
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,treatment.monitoring_protocol.complication_surveillance.malignancy,相关恶性肿瘤筛查
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,prognosis.overall_outlook.life_expectancy,适当治疗下接近正常人群
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,prognosis.overall_outlook.quality_of_life,需要终生激素替代和监测
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,prognosis.overall_outlook.complications,肾上腺危象; 糖尿病并发症; 骨质疏松; 心血管疾病; 感染易感性
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,prognosis.disease_progression.additive_risk,新发自身免疫疾病风险持续存在
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,prognosis.disease_progression.family_risk,家族成员患病风险增加
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,prognosis.disease_progression.genetic_counseling,生育咨询和基因筛查
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,prognosis.predictive_factors.hla_type,HLA型别影响疾病范围
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,prognosis.predictive_factors.autoantibody_profile,抗体阳性预测器官累及
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,prognosis.predictive_factors.age_at_onset,早发病预后相对较差
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,research_directions.immunomodulation.early_intervention,疾病早期免疫调节治疗
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,research_directions.immunomodulation.targeted_therapy,特异性免疫抑制剂
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,research_directions.immunomodulation.tolerance_induction,免疫耐受重建策略
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,research_directions.biomarkers.disease_activity,疾病活动度标志物
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,research_directions.biomarkers.progression_predictors,疾病进展预测因子
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,research_directions.biomarkers.treatment_response,治疗反应监测指标
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,research_directions.regenerative_medicine.cell_replacement,细胞替代治疗
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,research_directions.regenerative_medicine.tissue_engineering,组织工程学应用
+RHEUM_008,RHEUM_008,多腺体自身免疫综合征II型 (APS-2),,自身免疫性多腺体疾病,自身免疫性多腺体疾病,research_directions.regenerative_medicine.gene_therapy,基因治疗策略

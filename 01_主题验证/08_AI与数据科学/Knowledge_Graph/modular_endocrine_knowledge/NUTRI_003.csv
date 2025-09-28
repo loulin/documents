@@ -1,0 +1,38 @@
+section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,icd10,E55.9
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,definition,由于维生素D摄入不足、合成减少或代谢异常导致的维生素D缺乏状态
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,pathophysiology.vitamin_d_metabolism.synthesis,皮肤7-脱氢胆固醇在紫外线作用下合成维生素D3
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,pathophysiology.vitamin_d_metabolism.activation.liver,25羟化酶生成25(OH)D3
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,pathophysiology.vitamin_d_metabolism.activation.kidney,"1α羟化酶生成1,25(OH)2D3（骨化三醇）"
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,pathophysiology.physiological_functions.calcium_homeostasis,促进肠钙吸收，维持血钙平衡
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,pathophysiology.physiological_functions.bone_metabolism,促进骨基质矿化
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,pathophysiology.physiological_functions.parathyroid_regulation,抑制PTH分泌
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,pathophysiology.physiological_functions.immune_function,调节免疫系统功能
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,pathophysiology.deficiency_consequences.calcium_malabsorption,肠钙吸收减少
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,pathophysiology.deficiency_consequences.secondary_hyperparathyroidism,继发性甲状旁腺功能亢进
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,pathophysiology.deficiency_consequences.bone_demineralization,骨质疏松和骨软化
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,clinical_features.skeletal_manifestations.adults,骨痛、骨软化症、骨质疏松
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,clinical_features.skeletal_manifestations.children,佝偻病、骨骼畸形、生长迟缓
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,clinical_features.skeletal_manifestations.fracture_risk,脆性骨折风险增加
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,clinical_features.non_skeletal_symptoms.muscular,肌无力、肌痛、跌倒风险增加
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,clinical_features.non_skeletal_symptoms.neurological,抽搐、手足搐搦、癫痫
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,clinical_features.non_skeletal_symptoms.cardiovascular,心肌收缩力下降
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,clinical_features.non_skeletal_symptoms.immune,感染易感性增加
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,laboratory_diagnosis.primary_marker.25_oh_d,25羟维生素D
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,laboratory_diagnosis.primary_marker.normal_range,75-150 nmol/L (30-60 ng/ml)
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,laboratory_diagnosis.primary_marker.deficiency,<50 nmol/L (<20 ng/ml)
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,laboratory_diagnosis.primary_marker.insufficiency,50-75 nmol/L (20-30 ng/ml)
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,laboratory_diagnosis.secondary_changes.pth,甲状旁腺激素升高
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,laboratory_diagnosis.secondary_changes.calcium,血钙可能正常或偏低
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,laboratory_diagnosis.secondary_changes.phosphorus,血磷可能降低
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,laboratory_diagnosis.secondary_changes.alkaline_phosphatase,碱性磷酸酶升高
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,risk_factors.environmental,日照不足; 空气污染; 高纬度地区
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,risk_factors.dietary,维生素D摄入不足; 素食; 吸收不良
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,risk_factors.physiological,老年; 妊娠哺乳期; 深色皮肤
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,risk_factors.pathological,肾病; 肝病; 吸收不良综合征
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,treatment_protocol.supplementation.prophylactic,维生素D3 800-1000 IU/日
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,treatment_protocol.supplementation.treatment,维生素D3 50000 IU/周，持续6-8周
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,treatment_protocol.supplementation.maintenance,维生素D3 1000-2000 IU/日
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,treatment_protocol.monitoring.target_level,25(OH)D >75 nmol/L (>30 ng/ml)
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,treatment_protocol.monitoring.follow_up,3-6月复查25(OH)D水平
+NUTRI_003,NUTRI_003,维生素D缺乏症,,营养代谢疾病,营养代谢疾病,treatment_protocol.monitoring.safety,避免过量，监测血钙

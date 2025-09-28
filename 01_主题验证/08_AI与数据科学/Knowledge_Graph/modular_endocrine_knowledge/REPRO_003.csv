@@ -1,0 +1,58 @@
+section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,alternate_names,POI; Premature Ovarian Insufficiency; 早发性卵巢功能不全
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,icd10,E28.31
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,definition,40岁之前卵巢功能衰竭，导致继发性闭经、雌激素缺乏和生育能力丧失
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,pathophysiology.follicle_depletion.accelerated_atresia,卵泡过度凋亡和闭锁
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,pathophysiology.follicle_depletion.reduced_pool,原始卵泡库枯竭
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,pathophysiology.follicle_depletion.dysfunction,残存卵泡功能异常
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,pathophysiology.etiology.genetic_factors.x_chromosome,X染色体异常（Turner综合征变异）
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,pathophysiology.etiology.genetic_factors.fmr1_premutation,FMR1基因前突变
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,pathophysiology.etiology.genetic_factors.other_genes,BMP15、GDF9、FOXL2等基因突变
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,pathophysiology.etiology.autoimmune.ovarian_antibodies,卵巢抗体阳性
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,pathophysiology.etiology.autoimmune.polyglandular_syndrome,多腺体自身免疫综合征
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,pathophysiology.etiology.autoimmune.associated_diseases,甲状腺炎、Addison病、1型糖尿病
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,pathophysiology.etiology.iatrogenic.chemotherapy,化疗药物卵巢毒性
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,pathophysiology.etiology.iatrogenic.radiation,放疗对卵巢的损伤
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,pathophysiology.etiology.iatrogenic.surgery,卵巢手术导致血供受损
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,clinical_presentation.menstrual_disorders.secondary_amenorrhea,继发性闭经>4个月
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,clinical_presentation.menstrual_disorders.oligomenorrhea,月经稀发前驱期
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,clinical_presentation.menstrual_disorders.irregular_cycles,月经周期不规律
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,clinical_presentation.hypoestrogenic_symptoms.vasomotor,潮热、盗汗
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,clinical_presentation.hypoestrogenic_symptoms.genitourinary,阴道干燥、性交痛、尿路症状
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,clinical_presentation.hypoestrogenic_symptoms.psychological,抑郁、焦虑、情绪不稳定
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,clinical_presentation.hypoestrogenic_symptoms.sleep_disturbances,失眠、睡眠质量差
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,clinical_presentation.long_term_consequences.osteoporosis,骨质疏松和骨折风险增加
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,clinical_presentation.long_term_consequences.cardiovascular,心血管疾病风险增加
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,clinical_presentation.long_term_consequences.cognitive,认知功能下降风险
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,clinical_presentation.long_term_consequences.mortality,总体死亡率增加
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,diagnostic_criteria.clinical_definition.age,<40岁
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,diagnostic_criteria.clinical_definition.amenorrhea,闭经>4个月
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,diagnostic_criteria.clinical_definition.fsh_elevation,FSH>25 IU/L（间隔>4周重复2次）
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,diagnostic_criteria.clinical_definition.exclusion,排除妊娠和其他闭经原因
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,diagnostic_criteria.staging.early_stage,月经不规律，FSH偶尔升高
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,diagnostic_criteria.staging.late_stage,持续闭经，FSH持续升高
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,diagnostic_criteria.staging.end_stage,完全性卵巢功能衰竭
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,laboratory_evaluation.hormonal_assessment.fsh,促卵泡刺激素>25 IU/L
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,laboratory_evaluation.hormonal_assessment.lh,促黄体生成素升高
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,laboratory_evaluation.hormonal_assessment.estradiol,雌二醇<50 pmol/L
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,laboratory_evaluation.hormonal_assessment.amh,抗苗勒氏管激素<1.0 ng/ml
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,laboratory_evaluation.autoimmune_screening.ovarian_antibodies,卵巢抗体（抗17α-羟化酶）
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,laboratory_evaluation.autoimmune_screening.adrenal_antibodies,21-羟化酶抗体
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,laboratory_evaluation.autoimmune_screening.thyroid_antibodies,甲状腺过氧化物酶抗体
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,laboratory_evaluation.genetic_testing.karyotype,染色体核型分析
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,laboratory_evaluation.genetic_testing.fmr1,FMR1基因CGG重复数检测
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,laboratory_evaluation.genetic_testing.other_genes,基于家族史的其他基因检测
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,management_approach.hormone_replacement.estrogen_progestin.estradiol,2-4mg/日或透皮贴剂
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,management_approach.hormone_replacement.estrogen_progestin.progesterone,微粒化黄体酮100-200mg/日
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,management_approach.hormone_replacement.estrogen_progestin.duration,直至自然绝经年龄（~51岁）
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,management_approach.hormone_replacement.contraceptive_pills,年轻患者的替代选择
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,management_approach.hormone_replacement.monitoring,定期评估症状、骨密度、心血管风险
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,management_approach.fertility_preservation.donor_eggs,供卵是主要的生育选择
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,management_approach.fertility_preservation.ovarian_tissue,卵巢组织冷冻保存（实验性）
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,management_approach.fertility_preservation.spontaneous_pregnancy,10%患者可能自然受孕
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,management_approach.bone_health.calcium_vitamin_d,钙剂1200mg/日+维生素D 800IU/日
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,management_approach.bone_health.bone_density,定期DEXA扫描监测
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,management_approach.bone_health.bisphosphonates,重度骨质疏松时考虑
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,management_approach.cardiovascular_protection.lifestyle,健康饮食、规律运动、戒烟
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,management_approach.cardiovascular_protection.risk_assessment,定期心血管风险评估
+REPRO_003,REPRO_003,卵巢早衰,,生殖内分泌疾病,生殖内分泌疾病,management_approach.cardiovascular_protection.hrt_benefits,HRT对心血管的保护作用

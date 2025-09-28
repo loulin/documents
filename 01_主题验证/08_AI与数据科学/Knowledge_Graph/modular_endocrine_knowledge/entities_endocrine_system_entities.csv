@@ -1,0 +1,62 @@
+section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value
+entities.endocrine_system_entities,ENDO_001,内分泌系统,,physiological_system,人体系统,name_en,Endocrine System
+entities.endocrine_system_entities,ENDO_001,内分泌系统,,physiological_system,人体系统,description,由内分泌腺体及其分泌的激素组成的调节系统，负责维持机体内环境稳态
+entities.endocrine_system_entities,ENDO_001,内分泌系统,,physiological_system,人体系统,components,下丘脑-垂体轴; 甲状腺; 甲状旁腺; 肾上腺; 胰岛; 性腺; 松果体
+entities.endocrine_system_entities,ENDO_001,内分泌系统,,physiological_system,人体系统,primary_functions,新陈代谢调节; 生长发育控制; 生殖功能调节; 应激反应调节; 水电解质平衡; 血糖稳态维持
+entities.endocrine_system_entities,ENDO_001,内分泌系统,,physiological_system,人体系统,regulation_mechanisms,负反馈调节; 正反馈调节; 神经内分泌调节; 自分泌调节; 旁分泌调节
+entities.endocrine_system_entities,HORM_001,睾酮,,hormone,性激素,name_en,Testosterone
+entities.endocrine_system_entities,HORM_001,睾酮,,hormone,性激素,description,主要的男性性激素，由睾丸间质细胞分泌，调节男性性征发育和维持
+entities.endocrine_system_entities,HORM_001,睾酮,,hormone,性激素,properties.molecular_weight,288.4 Da
+entities.endocrine_system_entities,HORM_001,睾酮,,hormone,性激素,properties.half_life,10-100分钟
+entities.endocrine_system_entities,HORM_001,睾酮,,hormone,性激素,properties.normal_ranges.adult_male.total,12-30 nmol/L (350-870 ng/dL)
+entities.endocrine_system_entities,HORM_001,睾酮,,hormone,性激素,properties.normal_ranges.adult_male.free,260-740 pmol/L (7.5-21.3 ng/dL)
+entities.endocrine_system_entities,HORM_001,睾酮,,hormone,性激素,properties.normal_ranges.adult_male.sampling,晨间8-10点
+entities.endocrine_system_entities,HORM_001,睾酮,,hormone,性激素,properties.normal_ranges.adult_female.total,0.7-2.8 nmol/L (20-81 ng/dL)
+entities.endocrine_system_entities,HORM_001,睾酮,,hormone,性激素,properties.normal_ranges.adult_female.free,10-85 pmol/L (0.3-2.4 ng/dL)
+entities.endocrine_system_entities,HORM_001,睾酮,,hormone,性激素,properties.production_sites,睾丸间质细胞; 卵巢间质细胞; 肾上腺皮质
+entities.endocrine_system_entities,HORM_001,睾酮,,hormone,性激素,properties.target_organs,前列腺; 骨骼肌; 骨骼; 毛囊; 中枢神经系统
+entities.endocrine_system_entities,HORM_001,睾酮,,hormone,性激素,properties.physiological_functions,男性第二性征发育; 精子生成; 肌肉和骨质量维持; 性欲调节; 认知功能影响
+entities.endocrine_system_entities,HORM_001,睾酮,,hormone,性激素,properties.metabolism,5α-还原酶转化为双氢睾酮; 芳香化酶转化为雌二醇; 肝脏结合代谢
+entities.endocrine_system_entities,HORM_002,雌二醇,,hormone,性激素,name_en,Estradiol
+entities.endocrine_system_entities,HORM_002,雌二醇,,hormone,性激素,description,最重要的雌激素，主要由卵泡分泌，调节女性性征和生殖功能
+entities.endocrine_system_entities,HORM_002,雌二醇,,hormone,性激素,properties.molecular_weight,272.4 Da
+entities.endocrine_system_entities,HORM_002,雌二醇,,hormone,性激素,properties.half_life,1-3小时
+entities.endocrine_system_entities,HORM_002,雌二醇,,hormone,性激素,properties.normal_ranges.premenopausal_female.follicular_phase,46-607 pmol/L (12.5-166 pg/mL)
+entities.endocrine_system_entities,HORM_002,雌二醇,,hormone,性激素,properties.normal_ranges.premenopausal_female.ovulation,315-1828 pmol/L (86-498 pg/mL)
+entities.endocrine_system_entities,HORM_002,雌二醇,,hormone,性激素,properties.normal_ranges.premenopausal_female.luteal_phase,161-774 pmol/L (44-211 pg/mL)
+entities.endocrine_system_entities,HORM_002,雌二醇,,hormone,性激素,properties.normal_ranges.postmenopausal_female,0-133 pmol/L (0-36.2 pg/mL)
+entities.endocrine_system_entities,HORM_002,雌二醇,,hormone,性激素,properties.normal_ranges.adult_male,37-184 pmol/L (10-50 pg/mL)
+entities.endocrine_system_entities,HORM_002,雌二醇,,hormone,性激素,properties.production_sites,卵巢颗粒细胞; 胎盘; 脂肪组织; 骨骼; 脑组织
+entities.endocrine_system_entities,HORM_002,雌二醇,,hormone,性激素,properties.physiological_functions,女性第二性征发育; 子宫内膜增殖; 骨量维持; 心血管保护; 神经保护作用
+entities.endocrine_system_entities,HORM_003,促黄体生成素,,hormone,垂体激素,name_en,Luteinizing Hormone
+entities.endocrine_system_entities,HORM_003,促黄体生成素,,hormone,垂体激素,description,垂体前叶分泌的糖蛋白激素，调节性腺功能
+entities.endocrine_system_entities,HORM_003,促黄体生成素,,hormone,垂体激素,properties.molecular_weight,28.5 kDa
+entities.endocrine_system_entities,HORM_003,促黄体生成素,,hormone,垂体激素,properties.half_life,20分钟
+entities.endocrine_system_entities,HORM_003,促黄体生成素,,hormone,垂体激素,properties.normal_ranges.adult_male,1.7-8.6 IU/L
+entities.endocrine_system_entities,HORM_003,促黄体生成素,,hormone,垂体激素,properties.normal_ranges.premenopausal_female.follicular_phase,2.4-12.6 IU/L
+entities.endocrine_system_entities,HORM_003,促黄体生成素,,hormone,垂体激素,properties.normal_ranges.premenopausal_female.ovulation,14-95.6 IU/L
+entities.endocrine_system_entities,HORM_003,促黄体生成素,,hormone,垂体激素,properties.normal_ranges.premenopausal_female.luteal_phase,1.0-11.4 IU/L
+entities.endocrine_system_entities,HORM_003,促黄体生成素,,hormone,垂体激素,properties.normal_ranges.postmenopausal_female,7.7-58.5 IU/L
+entities.endocrine_system_entities,HORM_003,促黄体生成素,,hormone,垂体激素,properties.physiological_functions,刺激睾丸间质细胞产生睾酮; 触发排卵; 维持黄体功能; 调节类固醇激素合成
+entities.endocrine_system_entities,HORM_004,卵泡刺激素,,hormone,垂体激素,name_en,Follicle Stimulating Hormone
+entities.endocrine_system_entities,HORM_004,卵泡刺激素,,hormone,垂体激素,description,垂体前叶分泌的糖蛋白激素，调节配子发生和性激素分泌
+entities.endocrine_system_entities,HORM_004,卵泡刺激素,,hormone,垂体激素,properties.molecular_weight,35.5 kDa
+entities.endocrine_system_entities,HORM_004,卵泡刺激素,,hormone,垂体激素,properties.half_life,3-4小时
+entities.endocrine_system_entities,HORM_004,卵泡刺激素,,hormone,垂体激素,properties.normal_ranges.adult_male,1.5-12.4 IU/L
+entities.endocrine_system_entities,HORM_004,卵泡刺激素,,hormone,垂体激素,properties.normal_ranges.premenopausal_female.follicular_phase,3.5-12.5 IU/L
+entities.endocrine_system_entities,HORM_004,卵泡刺激素,,hormone,垂体激素,properties.normal_ranges.premenopausal_female.ovulation,4.7-21.5 IU/L
+entities.endocrine_system_entities,HORM_004,卵泡刺激素,,hormone,垂体激素,properties.normal_ranges.premenopausal_female.luteal_phase,1.7-7.7 IU/L
+entities.endocrine_system_entities,HORM_004,卵泡刺激素,,hormone,垂体激素,properties.normal_ranges.postmenopausal_female,25.8-134.8 IU/L
+entities.endocrine_system_entities,HORM_004,卵泡刺激素,,hormone,垂体激素,properties.physiological_functions,刺激精子发生; 促进卵泡发育; 调节芳香化酶活性; 维持生精小管功能
+entities.endocrine_system_entities,HORM_005,抗缪勒氏管激素,,hormone,性腺激素,name_en,Anti-Mullerian Hormone
+entities.endocrine_system_entities,HORM_005,抗缪勒氏管激素,,hormone,性腺激素,description,由卵巢颗粒细胞和睾丸支持细胞分泌，反映卵巢储备和睾丸功能
+entities.endocrine_system_entities,HORM_005,抗缪勒氏管激素,,hormone,性腺激素,properties.molecular_weight,140 kDa
+entities.endocrine_system_entities,HORM_005,抗缪勒氏管激素,,hormone,性腺激素,properties.half_life,24小时
+entities.endocrine_system_entities,HORM_005,抗缪勒氏管激素,,hormone,性腺激素,properties.normal_ranges.adult_male,2.2-15.8 μg/L
+entities.endocrine_system_entities,HORM_005,抗缪勒氏管激素,,hormone,性腺激素,properties.normal_ranges.premenopausal_female.20-25岁,2.1-6.8 μg/L
+entities.endocrine_system_entities,HORM_005,抗缪勒氏管激素,,hormone,性腺激素,properties.normal_ranges.premenopausal_female.26-30岁,1.7-5.3 μg/L
+entities.endocrine_system_entities,HORM_005,抗缪勒氏管激素,,hormone,性腺激素,properties.normal_ranges.premenopausal_female.31-35岁,1.2-4.2 μg/L
+entities.endocrine_system_entities,HORM_005,抗缪勒氏管激素,,hormone,性腺激素,properties.normal_ranges.premenopausal_female.36-40岁,0.7-2.8 μg/L
+entities.endocrine_system_entities,HORM_005,抗缪勒氏管激素,,hormone,性腺激素,properties.normal_ranges.premenopausal_female.41-45岁,0.3-1.5 μg/L
+entities.endocrine_system_entities,HORM_005,抗缪勒氏管激素,,hormone,性腺激素,properties.normal_ranges.postmenopausal_female,<0.16 μg/L
+entities.endocrine_system_entities,HORM_005,抗缪勒氏管激素,,hormone,性腺激素,properties.clinical_applications,卵巢储备评估; PCOS诊断辅助; 预测绝经年龄; 辅助生殖技术指导

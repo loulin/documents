@@ -1,0 +1,157 @@
+section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,name_en,Hyperthyroidism
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,description,甲状腺激素分泌过多引起的临床综合征，以代谢亢进和交感神经兴奋为主要表现
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,icd10_code,E05
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,prevalence,0.5-2% 成年人群
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,gender_predilection,女性:男性 = 5-10:1
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,age_distribution,20-50岁高发
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,etiology.graves_disease.percentage,85%
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,etiology.graves_disease.mechanism,TSH受体刺激性抗体(TRAb)介导
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,etiology.graves_disease.characteristics,弥漫性甲状腺肿; 眼征; 胫前黏液性水肿
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,etiology.toxic_multinodular_goiter.percentage,10-15%
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,etiology.toxic_multinodular_goiter.mechanism,结节自主功能亢进
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,etiology.toxic_multinodular_goiter.characteristics,多发结节; 老年人多见; 无眼征
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,etiology.toxic_adenoma.percentage,3-5%
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,etiology.toxic_adenoma.mechanism,单个结节自主分泌
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,etiology.toxic_adenoma.characteristics,单发热结节; 周围组织受抑制
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,clinical_manifestations.metabolic_symptoms,体重下降; 食欲亢进; 怕热多汗; 疲乏无力
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,clinical_manifestations.cardiovascular_symptoms,心悸; 胸闷; 心律失常; 高血压
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,clinical_manifestations.neuropsychiatric_symptoms,焦虑不安; 易激惹; 失眠; 注意力不集中; 震颤
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,clinical_manifestations.digestive_symptoms,腹泻; 排便次数增多
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,clinical_manifestations.reproductive_symptoms,月经紊乱; 性功能减退; 不孕不育
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,diagnostic_criteria.laboratory_findings.TSH,< 0.1 mIU/L (抑制)
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,diagnostic_criteria.laboratory_findings.FT4,> 23 pmol/L (升高)
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,diagnostic_criteria.laboratory_findings.FT3,> 6.0 pmol/L (升高)
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,diagnostic_criteria.laboratory_findings.TRAb,> 1.75 IU/L (Graves病阳性)
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,diagnostic_criteria.laboratory_findings.TPOAb,可阳性
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,diagnostic_criteria.laboratory_findings.TgAb,可阳性
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,diagnostic_criteria.imaging_findings.thyroid_ultrasound,甲状腺弥漫性肿大; 血流信号增强; 结节性病变
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,diagnostic_criteria.imaging_findings.thyroid_scintigraphy,摄碘率增高; 分布均匀(Graves病); 热结节(毒性结节)
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,treatment_options.antithyroid_drugs.methimazole.first_line,True
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,treatment_options.antithyroid_drugs.methimazole.dose,5-15mg 每日2-3次
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,treatment_options.antithyroid_drugs.methimazole.duration,18-24个月
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,treatment_options.antithyroid_drugs.methimazole.monitoring,肝功能; 血常规; 甲功
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,treatment_options.antithyroid_drugs.propylthiouracil.indications,妊娠期首选; 甲状腺危象; 甲巯咪唑过敏
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,treatment_options.antithyroid_drugs.propylthiouracil.dose,100-300mg 每日3次
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,treatment_options.antithyroid_drugs.propylthiouracil.monitoring,肝功能; 血常规; 甲功
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,treatment_options.radioactive_iodine.indications,药物治疗失败; 复发; 不适合手术
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,treatment_options.radioactive_iodine.contraindications,妊娠; 哺乳; 严重眼病
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,treatment_options.radioactive_iodine.dose,10-15 mCi
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,treatment_options.radioactive_iodine.follow_up,终身甲功监测
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,treatment_options.surgical_therapy.indications,大甲状腺肿; 疑恶变; 妊娠期药物禁忌
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,treatment_options.surgical_therapy.procedures,甲状腺次全切除; 甲状腺全切除
+entities.thyroid_entities,THY_001,甲状腺功能亢进症,,disease,甲状腺疾病,treatment_options.surgical_therapy.complications,甲状旁腺功能减退; 声带麻痹; 术后甲减
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,name_en,Hypothyroidism
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,description,甲状腺激素分泌不足或作用缺陷导致的临床综合征，以代谢减低为主要特征
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,icd10_code,E03
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,prevalence,1-2% 成年人群
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,gender_predilection,女性:男性 = 5-8:1
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,etiology.primary_hypothyroidism.hashimoto_thyroiditis.percentage,85%
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,etiology.primary_hypothyroidism.hashimoto_thyroiditis.mechanism,自身免疫性甲状腺破坏
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,etiology.primary_hypothyroidism.hashimoto_thyroiditis.markers,TPOAb阳性; TgAb阳性
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,etiology.primary_hypothyroidism.iatrogenic.causes,放射性碘治疗后; 甲状腺手术后; 药物性
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,etiology.primary_hypothyroidism.iatrogenic.percentage,10%
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,etiology.primary_hypothyroidism.iodine_deficiency.global_relevance,发展中国家主要原因
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,etiology.primary_hypothyroidism.iodine_deficiency.prevention,碘盐普及
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,etiology.secondary_hypothyroidism.pituitary_causes,垂体腺瘤; 垂体手术; 放疗
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,etiology.secondary_hypothyroidism.percentage,<5%
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,etiology.tertiary_hypothyroidism.hypothalamic_causes,下丘脑病变
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,etiology.tertiary_hypothyroidism.percentage,<1%
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,clinical_manifestations.metabolic_symptoms,体重增加; 怕冷; 乏力; 嗜睡; 记忆力减退
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,clinical_manifestations.skin_hair_changes,皮肤干燥粗糙; 毛发稀疏脱落; 指甲脆弱; 黏液性水肿
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,clinical_manifestations.cardiovascular_symptoms,心动过缓; 心音减弱; 心包积液; 血压升高
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,clinical_manifestations.digestive_symptoms,便秘; 食欲减退; 腹胀
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,clinical_manifestations.reproductive_symptoms,月经过多; 不孕; 性欲减退
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,clinical_manifestations.neuropsychiatric_symptoms,抑郁; 认知功能下降; 反应迟钝; 肌肉痉挛
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,diagnostic_criteria.laboratory_findings.primary_hypothyroidism.TSH,> 4.5 mIU/L (升高)
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,diagnostic_criteria.laboratory_findings.primary_hypothyroidism.FT4,< 12 pmol/L (降低)
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,diagnostic_criteria.laboratory_findings.primary_hypothyroidism.FT3,正常或降低
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,diagnostic_criteria.laboratory_findings.subclinical_hypothyroidism.TSH,4.5-10.0 mIU/L
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,diagnostic_criteria.laboratory_findings.subclinical_hypothyroidism.FT4,正常
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,diagnostic_criteria.laboratory_findings.subclinical_hypothyroidism.FT3,正常
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,diagnostic_criteria.laboratory_findings.secondary_hypothyroidism.TSH,正常或降低
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,diagnostic_criteria.laboratory_findings.secondary_hypothyroidism.FT4,< 12 pmol/L (降低)
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,diagnostic_criteria.laboratory_findings.autoimmune_markers.TPOAb,> 34 IU/mL
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,diagnostic_criteria.laboratory_findings.autoimmune_markers.TgAb,> 115 IU/mL
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,treatment_protocols.levothyroxine_therapy.starting_dose.young_healthy,1.6 μg/kg/day
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,treatment_protocols.levothyroxine_therapy.starting_dose.elderly,25-50 μg/day
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,treatment_protocols.levothyroxine_therapy.starting_dose.cardiac_disease,12.5-25 μg/day
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,treatment_protocols.levothyroxine_therapy.dose_adjustment.interval,6-8周
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,treatment_protocols.levothyroxine_therapy.dose_adjustment.increment,12.5-25 μg
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,treatment_protocols.levothyroxine_therapy.dose_adjustment.target_TSH,0.5-2.5 mIU/L
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,treatment_protocols.levothyroxine_therapy.monitoring.initial,"6-8周后复查TSH, FT4"
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,treatment_protocols.levothyroxine_therapy.monitoring.stable,每6-12个月监测
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,treatment_protocols.levothyroxine_therapy.monitoring.pregnancy,每4-6周监测
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,treatment_protocols.levothyroxine_therapy.special_considerations.pregnancy.dose_increase,30-50%
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,treatment_protocols.levothyroxine_therapy.special_considerations.pregnancy.target_TSH,<2.5 mIU/L
+entities.thyroid_entities,THY_002,甲状腺功能减退症,,disease,甲状腺疾病,treatment_protocols.levothyroxine_therapy.special_considerations.drug_interactions,钙剂; 铁剂; 质子泵抑制剂; 咖啡
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,name_en,Thyroid Nodule
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,description,甲状腺内可触及的与周围组织有差别的局限性肿块
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,prevalence,触诊4-7%，超声20-76%
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,malignancy_risk,5-15%
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,classification.by_function.hot_nodule,功能自主性结节，恶性率<1%
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,classification.by_function.warm_nodule,功能正常结节
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,classification.by_function.cold_nodule,功能减退结节，需排除恶性
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,classification.by_ultrasound.solid_nodule,实性结节
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,classification.by_ultrasound.cystic_nodule,囊性结节
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,classification.by_ultrasound.mixed_nodule,混合性结节
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,risk_stratification.high_risk_features,男性; <20岁或>70岁; 既往头颈部放射史; 家族史(甲状腺癌/MEN综合征); 声音嘶哑; 淋巴结肿大
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,risk_stratification.ultrasound_suspicious_features,实性低回声; 微钙化; 边界不清; 纵横比>1; 血流丰富
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,diagnostic_workup.initial_evaluation,详细病史询问; 体格检查; TSH检测; 颈部超声
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,diagnostic_workup.fine_needle_aspiration.indications.solid_nodule,> 1cm有可疑特征
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,diagnostic_workup.fine_needle_aspiration.indications.mixed_nodule,> 1.5cm
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,diagnostic_workup.fine_needle_aspiration.indications.cystic_nodule,> 2cm
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,diagnostic_workup.fine_needle_aspiration.bethesda_system.I,非诊断性/不满意
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,diagnostic_workup.fine_needle_aspiration.bethesda_system.II,良性
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,diagnostic_workup.fine_needle_aspiration.bethesda_system.III,意义不明的非典型
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,diagnostic_workup.fine_needle_aspiration.bethesda_system.IV,滤泡性肿瘤/可疑滤泡性肿瘤
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,diagnostic_workup.fine_needle_aspiration.bethesda_system.V,可疑恶性
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,diagnostic_workup.fine_needle_aspiration.bethesda_system.VI,恶性
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,management_algorithm.benign_nodules.follow_up,6-18个月超声随访
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,management_algorithm.benign_nodules.growth_criteria,体积增加>50%或直径增加>2mm
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,management_algorithm.benign_nodules.intervention,症状性或美容考虑时手术
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,management_algorithm.malignant_nodules.surgical_options,甲状腺全切除; 甲状腺腺叶切除; 颈部淋巴结清扫
+entities.thyroid_entities,THY_003,甲状腺结节,,disease,甲状腺疾病,management_algorithm.malignant_nodules.postoperative,病理确认; TSH抑制治疗; 放射性碘治疗; 定期随访
+entities.thyroid_entities,THY_004,亚临床甲状腺功能异常,,disease,甲状腺疾病,name_en,Subclinical Thyroid Dysfunction
+entities.thyroid_entities,THY_004,亚临床甲状腺功能异常,,disease,甲状腺疾病,description,甲状腺激素水平正常但TSH异常的状态，包括亚临床甲亢和亚临床甲减
+entities.thyroid_entities,THY_004,亚临床甲状腺功能异常,,disease,甲状腺疾病,subtypes.subclinical_hyperthyroidism.definition,TSH < 0.1 mIU/L，FT4、FT3正常
+entities.thyroid_entities,THY_004,亚临床甲状腺功能异常,,disease,甲状腺疾病,subtypes.subclinical_hyperthyroidism.prevalence,0.7-1.2%
+entities.thyroid_entities,THY_004,亚临床甲状腺功能异常,,disease,甲状腺疾病,subtypes.subclinical_hyperthyroidism.risks,心房颤动; 骨质疏松; 全因死亡率增加
+entities.thyroid_entities,THY_004,亚临床甲状腺功能异常,,disease,甲状腺疾病,subtypes.subclinical_hyperthyroidism.treatment_threshold,年龄>65岁或有心血管疾病
+entities.thyroid_entities,THY_004,亚临床甲状腺功能异常,,disease,甲状腺疾病,subtypes.subclinical_hypothyroidism.definition,TSH 4.5-10.0 mIU/L，FT4正常
+entities.thyroid_entities,THY_004,亚临床甲状腺功能异常,,disease,甲状腺疾病,subtypes.subclinical_hypothyroidism.prevalence,4-10%
+entities.thyroid_entities,THY_004,亚临床甲状腺功能异常,,disease,甲状腺疾病,subtypes.subclinical_hypothyroidism.risks,冠心病; 心力衰竭; 认知功能下降
+entities.thyroid_entities,THY_004,亚临床甲状腺功能异常,,disease,甲状腺疾病,subtypes.subclinical_hypothyroidism.treatment_threshold,TSH>10 mIU/L或有症状
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,name_en,Thyroid Cancer
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,description,起源于甲状腺滤泡细胞或滤泡旁细胞的恶性肿瘤
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,histological_types.papillary.percentage,80-85%
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,histological_types.papillary.prognosis,良好
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,histological_types.papillary.characteristics,生长缓慢，淋巴结转移常见
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,histological_types.follicular.percentage,10-15%
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,histological_types.follicular.prognosis,较好
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,histological_types.follicular.characteristics,血行转移，不摄碘区域多见
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,histological_types.medullary.percentage,3-5%
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,histological_types.medullary.prognosis,中等
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,histological_types.medullary.characteristics,降钙素分泌，遗传性多见
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,histological_types.anaplastic.percentage,<2%
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,histological_types.anaplastic.prognosis,极差
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,histological_types.anaplastic.characteristics,快速生长，预后极差
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,risk_factors,电离辐射史; 碘缺乏或过量; 遗传因素; 性别(女性); 既往甲状腺疾病
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,staging_tnm.T1,≤2cm，限于甲状腺
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,staging_tnm.T2,2-4cm，限于甲状腺
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,staging_tnm.T3,>4cm或轻微甲状腺外侵犯
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,staging_tnm.T4,广泛甲状腺外侵犯
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,staging_tnm.N1,淋巴结转移
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,staging_tnm.M1,远处转移
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,treatment_approach.surgery.total_thyroidectomy,肿瘤>4cm或多灶性
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,treatment_approach.surgery.lobectomy,单发<4cm，无高危因素
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,treatment_approach.surgery.lymph_node_dissection,临床阳性淋巴结
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,treatment_approach.radioactive_iodine.indications,中高危患者; 甲状腺全切后
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,treatment_approach.radioactive_iodine.dose,30-150 mCi
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,treatment_approach.radioactive_iodine.preparation,TSH>30 mIU/L
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,treatment_approach.tsh_suppression.target,TSH 0.1-0.5 mIU/L(高危)或0.1-2.0(低危)
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,treatment_approach.tsh_suppression.duration,终生
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,treatment_approach.tsh_suppression.monitoring,甲功、心脏、骨密度
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,treatment_approach.follow_up.thyroglobulin,术后肿瘤标志物
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,treatment_approach.follow_up.neck_ultrasound,每6-12个月
+entities.thyroid_entities,THY_005,甲状腺癌,,neoplasm,甲状腺疾病,treatment_approach.follow_up.whole_body_scan,必要时

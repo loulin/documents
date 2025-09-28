@@ -1,0 +1,51 @@
+section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value
+comorbidity_patterns,PATTERN_001,代谢综合征,,,,description,糖尿病、高血压、血脂异常、肥胖的聚集
+comorbidity_patterns,PATTERN_001,代谢综合征,,,,components,DIS_001; HTN_001; DLP_001; OBESITY
+comorbidity_patterns,PATTERN_001,代谢综合征,,,,prevalence,成人中20-25%
+comorbidity_patterns,PATTERN_001,代谢综合征,,,,shared_mechanisms,胰岛素抵抗; 炎症反应; 内皮功能障碍; 交感神经激活
+comorbidity_patterns,PATTERN_001,代谢综合征,,,,cardiovascular_risk,增加2-3倍
+comorbidity_patterns,PATTERN_001,代谢综合征,,,,management_strategy.lifestyle,减重、运动、饮食调节
+comorbidity_patterns,PATTERN_001,代谢综合征,,,,management_strategy.pharmacological,多重危险因素综合管理
+comorbidity_patterns,PATTERN_001,代谢综合征,,,,management_strategy.targets.hba1c,<7%
+comorbidity_patterns,PATTERN_001,代谢综合征,,,,management_strategy.targets.bp,<130/80 mmHg
+comorbidity_patterns,PATTERN_001,代谢综合征,,,,management_strategy.targets.ldl_c,<100 mg/dL
+comorbidity_patterns,PATTERN_002,内分泌性高血压,,,,description,继发于内分泌疾病的高血压
+comorbidity_patterns,PATTERN_002,内分泌性高血压,,,,causes,ADR_001; ADR_002; ADR_003; THY_001; PIT_003
+comorbidity_patterns,PATTERN_002,内分泌性高血压,,,,prevalence,高血压患者中5-10%
+comorbidity_patterns,PATTERN_002,内分泌性高血压,,,,screening_indications,年龄<40岁高血压; 难治性高血压; 高血压+低钾血症; 高血压+内分泌症状
+comorbidity_patterns,PATTERN_002,内分泌性高血压,,,,diagnostic_approach.hormonal_screening,针对性激素检查
+comorbidity_patterns,PATTERN_002,内分泌性高血压,,,,diagnostic_approach.imaging,肾上腺、垂体影像学
+comorbidity_patterns,PATTERN_002,内分泌性高血压,,,,diagnostic_approach.functional_testing,动态激素功能试验
+comorbidity_patterns,PATTERN_003,甲状腺-代谢疾病关联,,,,description,甲状腺疾病与代谢异常的双向关联
+comorbidity_patterns,PATTERN_003,甲状腺-代谢疾病关联,,,,associations[0].source,THY_001
+comorbidity_patterns,PATTERN_003,甲状腺-代谢疾病关联,,,,associations[0].target,DIS_001
+comorbidity_patterns,PATTERN_003,甲状腺-代谢疾病关联,,,,associations[0].bidirectional,False
+comorbidity_patterns,PATTERN_003,甲状腺-代谢疾病关联,,,,associations[1].source,THY_002
+comorbidity_patterns,PATTERN_003,甲状腺-代谢疾病关联,,,,associations[1].target,DLP_001
+comorbidity_patterns,PATTERN_003,甲状腺-代谢疾病关联,,,,associations[1].bidirectional,False
+comorbidity_patterns,PATTERN_003,甲状腺-代谢疾病关联,,,,associations[2].source,DIS_001
+comorbidity_patterns,PATTERN_003,甲状腺-代谢疾病关联,,,,associations[2].target,THY_002
+comorbidity_patterns,PATTERN_003,甲状腺-代谢疾病关联,,,,associations[2].bidirectional,False
+comorbidity_patterns,PATTERN_003,甲状腺-代谢疾病关联,,,,clinical_implications,糖尿病患者需定期甲功筛查; 甲减患者血脂异常可通过甲状腺激素治疗改善; 甲亢患者血糖管理需考虑甲状腺功能状态
+comorbidity_patterns,PATTERN_004,PCOS-代谢综合征复合体,,,,description,PCOS与代谢综合征组分的聚集
+comorbidity_patterns,PATTERN_004,PCOS-代谢综合征复合体,,,,components,GON_001; DIS_001; HTN_001; DLP_001; OBESITY
+comorbidity_patterns,PATTERN_004,PCOS-代谢综合征复合体,,,,prevalence,PCOS患者中47-67%
+comorbidity_patterns,PATTERN_004,PCOS-代谢综合征复合体,,,,shared_mechanisms,胰岛素抵抗; 慢性低级别炎症; 雄激素过多; 内脏脂肪堆积
+comorbidity_patterns,PATTERN_004,PCOS-代谢综合征复合体,,,,long_term_risks,心血管疾病风险增加3倍; 2型糖尿病风险增加4倍; 子宫内膜癌风险增加2.7倍; 非酒精性脂肪肝
+comorbidity_patterns,PATTERN_004,PCOS-代谢综合征复合体,,,,management_strategy.lifestyle,减重是核心治疗，目标减重5-10%
+comorbidity_patterns,PATTERN_004,PCOS-代谢综合征复合体,,,,management_strategy.pharmacological,二甲双胍改善胰岛素敏感性; 他汀类药物管理血脂; ACEI/ARB类降压药; GLP-1激动剂减重和改善代谢
+comorbidity_patterns,PATTERN_004,PCOS-代谢综合征复合体,,,,management_strategy.reproductive_management,来曲唑促排卵(生育需求); 复合口服避孕药(无生育需求); 螺内酯抗雄激素治疗
+comorbidity_patterns,PATTERN_004,PCOS-代谢综合征复合体,,,,management_strategy.monitoring.metabolic,每年OGTT、血脂、血压监测
+comorbidity_patterns,PATTERN_004,PCOS-代谢综合征复合体,,,,management_strategy.monitoring.reproductive,定期妇科检查，子宫内膜评估
+comorbidity_patterns,PATTERN_004,PCOS-代谢综合征复合体,,,,management_strategy.monitoring.psychological,抑郁焦虑筛查
+comorbidity_patterns,PATTERN_005,男性代谢-性腺功能障碍综合征,,,,description,男性性腺功能减退与代谢异常的相互关联
+comorbidity_patterns,PATTERN_005,男性代谢-性腺功能障碍综合征,,,,components,GON_002; DIS_001; HTN_001; DLP_001; OBESITY
+comorbidity_patterns,PATTERN_005,男性代谢-性腺功能障碍综合征,,,,prevalence,肥胖男性中30-40%
+comorbidity_patterns,PATTERN_005,男性代谢-性腺功能障碍综合征,,,,bidirectional_relationship,True
+comorbidity_patterns,PATTERN_005,男性代谢-性腺功能障碍综合征,,,,pathophysiology,肥胖导致芳香化酶活性增加; 雌激素升高抑制LH分泌; 睾酮降低促进内脏脂肪堆积; 胰岛素抵抗进一步抑制性腺轴
+comorbidity_patterns,PATTERN_005,男性代谢-性腺功能障碍综合征,,,,clinical_assessment,晨间睾酮水平测定; 性功能评估量表; 代谢指标全面评估; 身体成分分析
+comorbidity_patterns,PATTERN_005,男性代谢-性腺功能障碍综合征,,,,treatment_approach.weight_management,减重是首要措施，可显著提高睾酮水平
+comorbidity_patterns,PATTERN_005,男性代谢-性腺功能障碍综合征,,,,treatment_approach.testosterone_replacement.indications,减重后仍有症状性低睾酮
+comorbidity_patterns,PATTERN_005,男性代谢-性腺功能障碍综合征,,,,treatment_approach.testosterone_replacement.benefits,改善性功能; 增加肌量; 改善胰岛素敏感性
+comorbidity_patterns,PATTERN_005,男性代谢-性腺功能障碍综合征,,,,treatment_approach.testosterone_replacement.monitoring,前列腺安全性; 红细胞压积; 心血管风险
+comorbidity_patterns,PATTERN_005,男性代谢-性腺功能障碍综合征,,,,treatment_approach.metabolic_management,标准糖尿病、高血压、血脂异常治疗

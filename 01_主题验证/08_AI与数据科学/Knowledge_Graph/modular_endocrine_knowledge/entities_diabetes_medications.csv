@@ -1,0 +1,177 @@
+section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value
+entities.diabetes_medications,DM_MED_001,二甲双胍,,medication,双胍类降糖药,name_en,Metformin
+entities.diabetes_medications,DM_MED_001,二甲双胍,,medication,双胍类降糖药,atc_code,A10BA02
+entities.diabetes_medications,DM_MED_001,二甲双胍,,medication,双胍类降糖药,description,通过减少肝糖生成和改善胰岛素敏感性降低血糖的一线口服降糖药
+entities.diabetes_medications,DM_MED_001,二甲双胍,,medication,双胍类降糖药,mechanism_of_action.primary_mechanisms,抑制肝脏葡萄糖生成; 增加胰岛素敏感性; 减少肠道葡萄糖吸收
+entities.diabetes_medications,DM_MED_001,二甲双胍,,medication,双胍类降糖药,mechanism_of_action.molecular_targets,AMP激活的蛋白激酶（AMPK）; 线粒体复合物I; 肝脏PEPCK酶
+entities.diabetes_medications,DM_MED_001,二甲双胍,,medication,双胍类降糖药,pharmacokinetics.bioavailability,50-60%
+entities.diabetes_medications,DM_MED_001,二甲双胍,,medication,双胍类降糖药,pharmacokinetics.half_life,4-9小时
+entities.diabetes_medications,DM_MED_001,二甲双胍,,medication,双胍类降糖药,pharmacokinetics.metabolism,不经肝脏代谢
+entities.diabetes_medications,DM_MED_001,二甲双胍,,medication,双胍类降糖药,pharmacokinetics.excretion,90%经肾脏原型排出
+entities.diabetes_medications,DM_MED_001,二甲双胍,,medication,双胍类降糖药,pharmacokinetics.food_effect,与食物同服减少胃肠道副作用
+entities.diabetes_medications,DM_MED_001,二甲双胍,,medication,双胍类降糖药,clinical_efficacy.hba1c_reduction,1.0-1.5%
+entities.diabetes_medications,DM_MED_001,二甲双胍,,medication,双胍类降糖药,clinical_efficacy.fasting_glucose_reduction,2.5-3.5 mmol/L
+entities.diabetes_medications,DM_MED_001,二甲双胍,,medication,双胍类降糖药,clinical_efficacy.weight_effect,体重减轻或保持不变
+entities.diabetes_medications,DM_MED_001,二甲双胍,,medication,双胍类降糖药,clinical_efficacy.cardiovascular_benefits,降低心血管事件风险
+entities.diabetes_medications,DM_MED_001,二甲双胍,,medication,双胍类降糖药,indications.primary,2型糖尿病一线治疗
+entities.diabetes_medications,DM_MED_001,二甲双胍,,medication,双胍类降糖药,indications.additional,糖尿病前期（部分指南推荐）; PCOS相关胰岛素抵抗; 妊娠糖尿病（部分地区）
+entities.diabetes_medications,DM_MED_001,二甲双胍,,medication,双胍类降糖药,contraindications.absolute,eGFR <30 mL/min/1.73m²; 急性或慢性代谢性酸中毒; 严重心力衰竭; 严重肝功能不全; 严重感染或脱水
+entities.diabetes_medications,DM_MED_001,二甲双胍,,medication,双胍类降糖药,contraindications.relative,eGFR 30-45 mL/min/1.73m²（需谨慎使用）; 造影剂使用前后; 酗酒
+entities.diabetes_medications,DM_MED_001,二甲双胍,,medication,双胍类降糖药,adverse_effects.common,胃肠道反应（恶心、腹泻、腹痛）; 金属味觉; 食欲减退
+entities.diabetes_medications,DM_MED_001,二甲双胍,,medication,双胍类降糖药,adverse_effects.serious,乳酸酸中毒（罕见但严重）; 维生素B12缺乏（长期使用）
+entities.diabetes_medications,DM_MED_001,二甲双胍,,medication,双胍类降糖药,dosing.starting_dose,500mg 每日1-2次或850mg 每日1次
+entities.diabetes_medications,DM_MED_001,二甲双胍,,medication,双胍类降糖药,dosing.titration,每周增加500mg，根据耐受性
+entities.diabetes_medications,DM_MED_001,二甲双胍,,medication,双胍类降糖药,dosing.maximum_dose,2550mg/天，分2-3次服用
+entities.diabetes_medications,DM_MED_001,二甲双胍,,medication,双胍类降糖药,dosing.extended_release,500-2000mg 每晚一次
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,name_en,Sulfonylureas
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,description,通过刺激胰岛β细胞分泌胰岛素降低血糖的口服降糖药
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,mechanism_of_action.primary_mechanism,关闭β细胞膜上ATP敏感性钾离子通道，促进胰岛素分泌
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,mechanism_of_action.target,胰岛β细胞SUR1受体
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,drug_examples.second_generation.glibenclamide.name,格列本脲
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,drug_examples.second_generation.glibenclamide.half_life,10小时
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,drug_examples.second_generation.glibenclamide.duration,24小时
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,drug_examples.second_generation.glibenclamide.starting_dose,2.5mg 每日1次
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,drug_examples.second_generation.gliclazide.name,格列齐特
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,drug_examples.second_generation.gliclazide.half_life,12小时
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,drug_examples.second_generation.gliclazide.duration,24小时
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,drug_examples.second_generation.gliclazide.starting_dose,40mg 每日1-2次
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,drug_examples.second_generation.glimepiride.name,格列美脲
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,drug_examples.second_generation.glimepiride.half_life,9小时
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,drug_examples.second_generation.glimepiride.duration,24小时
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,drug_examples.second_generation.glimepiride.starting_dose,1mg 每日1次
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,drug_examples.second_generation.glipizide.name,格列吡嗪
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,drug_examples.second_generation.glipizide.half_life,4小时
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,drug_examples.second_generation.glipizide.duration,12-24小时
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,drug_examples.second_generation.glipizide.starting_dose,5mg 每日1-2次
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,clinical_efficacy.hba1c_reduction,1.0-1.5%
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,clinical_efficacy.onset,数周内达到最大效果
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,clinical_efficacy.durability,β细胞功能衰减时效果下降
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,advantages,降糖效果确切; 价格便宜; 使用经验丰富; 可用于肾功能不全患者
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,disadvantages,低血糖风险; 体重增加; 继发性失效; 心血管安全性争议
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,contraindications,1型糖尿病; 糖尿病酮症酸中毒; 严重肝肾功能不全; 磺胺类药物过敏
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,adverse_effects.common,低血糖（最重要）; 体重增加; 皮疹
+entities.diabetes_medications,DM_MED_002,磺脲类药物,,medication,促胰岛素分泌药,adverse_effects.rare,血液系统异常; 肝功能异常; SIADH综合征
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,name_en,DPP-4 Inhibitors
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,description,通过抑制DPP-4酶，增加内源性GLP-1和GIP水平，以葡萄糖依赖性方式降血糖
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,mechanism_of_action.primary_mechanism,抑制二肽基肽酶-4（DPP-4），延长GLP-1和GIP的半衰期
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,mechanism_of_action.glucose_dependent,仅在高血糖状态下发挥作用，低血糖风险小
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,drug_examples.sitagliptin.name,西格列汀
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,drug_examples.sitagliptin.half_life,12小时
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,drug_examples.sitagliptin.dosing,100mg 每日1次
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,drug_examples.sitagliptin.renal_adjustment,肾功能不全需减量
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,drug_examples.vildagliptin.name,维格列汀
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,drug_examples.vildagliptin.half_life,3小时
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,drug_examples.vildagliptin.dosing,50mg 每日2次
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,drug_examples.vildagliptin.hepatic_monitoring,需监测肝功能
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,drug_examples.saxagliptin.name,沙格列汀
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,drug_examples.saxagliptin.half_life,7小时
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,drug_examples.saxagliptin.dosing,5mg 每日1次
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,drug_examples.saxagliptin.cyp3a4,CYP3A4底物，注意药物相互作用
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,drug_examples.linagliptin.name,利格列汀
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,drug_examples.linagliptin.half_life,12小时
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,drug_examples.linagliptin.dosing,5mg 每日1次
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,drug_examples.linagliptin.excretion,主要经胆汁排泄
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,clinical_efficacy.hba1c_reduction,0.5-0.8%
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,clinical_efficacy.weight_effect,体重中性
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,clinical_efficacy.hypoglycemia_risk,低（单独使用时）
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,advantages,低血糖风险小; 体重中性; 耐受性好; 可与多种药物联用
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,disadvantages,降糖效果中等; 价格相对昂贵; 长期安全性数据有限
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,adverse_effects.common,上呼吸道感染; 头痛; 胃肠道不适
+entities.diabetes_medications,DM_MED_003,DPP-4抑制剂,,medication,肠促胰素相关药物,adverse_effects.serious_rare,急性胰腺炎（罕见）; 严重关节痛; 大疱性类天疱疮（极罕见）
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,name_en,SGLT-2 Inhibitors
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,description,通过抑制肾脏SGLT-2，增加尿糖排泄，同时具有心肾保护作用
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,mechanism_of_action.primary_mechanism,抑制肾脏近曲小管SGLT-2，阻止葡萄糖重吸收
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,mechanism_of_action.glucose_excretion,每天增加60-120g葡萄糖从尿液排出
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,mechanism_of_action.additional_effects,利尿作用; 血压下降; 体重减轻
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,drug_examples.empagliflozin.name,恩格列净
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,drug_examples.empagliflozin.dosing,10-25mg 每日1次
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,drug_examples.empagliflozin.cv_outcome,EMPA-REG OUTCOME研究证实心血管获益
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,drug_examples.empagliflozin.renal_benefits,显著肾脏保护作用
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,drug_examples.canagliflozin.name,卡格列净
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,drug_examples.canagliflozin.dosing,100-300mg 每日1次
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,drug_examples.canagliflozin.amputation_risk,下肢截肢风险轻度增加
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,drug_examples.canagliflozin.bone_effects,骨折风险可能增加
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,drug_examples.dapagliflozin.name,达格列净
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,drug_examples.dapagliflozin.dosing,5-10mg 每日1次
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,drug_examples.dapagliflozin.heart_failure,心力衰竭适应症
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,drug_examples.dapagliflozin.ckd_indication,慢性肾病适应症
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,clinical_efficacy.hba1c_reduction,0.7-1.0%
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,clinical_efficacy.weight_reduction,2-3kg
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,clinical_efficacy.bp_reduction,收缩压下降3-6mmHg
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,clinical_efficacy.cv_benefits,降低主要不良心血管事件
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,cardiovascular_renal_benefits.proven_benefits,降低心血管死亡; 降低心力衰竭住院; 延缓肾功能下降; 降低肾病进展
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,cardiovascular_renal_benefits.mechanisms,可能与利尿、改善心脏代谢、直接器官保护有关
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,contraindications,1型糖尿病（除特殊适应症）; 严重肾功能不全（eGFR <30）; 透析; 严重肝功能不全
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,adverse_effects.common,泌尿生殖系统感染; 多尿; 脱水
+entities.diabetes_medications,DM_MED_004,SGLT-2抑制剂,,medication,钠-葡萄糖共转运蛋白抑制剂,adverse_effects.serious,糖尿病酮症酸中毒（罕见）; Fournier坏疽（极罕见）; 下肢截肢风险（卡格列净）
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,name_en,GLP-1 Receptor Agonists
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,description,模拟内源性GLP-1作用，以葡萄糖依赖性方式降糖，同时具有减重和心血管保护作用
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,mechanism_of_action.primary_mechanisms,刺激胰岛β细胞葡萄糖依赖性胰岛素分泌; 抑制胰岛α细胞胰高血糖素分泌; 延缓胃排空; 增加饱腹感
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,mechanism_of_action.central_effects,作用于下丘脑食欲调节中枢
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,drug_examples.short_acting.exenatide.name,艾塞那肽
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,drug_examples.short_acting.exenatide.dosing,5-10μg 每日2次，餐前60分钟内
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,drug_examples.short_acting.exenatide.half_life,2.4小时
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,drug_examples.short_acting.lixisenatide.name,利西拉来
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,drug_examples.short_acting.lixisenatide.dosing,10-20μg 每日1次，早餐前1小时
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,drug_examples.short_acting.lixisenatide.half_life,3小时
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,drug_examples.long_acting.liraglutide.name,利拉鲁肽
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,drug_examples.long_acting.liraglutide.dosing,0.6-1.8mg 每日1次
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,drug_examples.long_acting.liraglutide.cv_outcome,LEADER研究证实心血管获益
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,drug_examples.long_acting.liraglutide.weight_indication,3.0mg用于减重
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,drug_examples.long_acting.semaglutide.name,司美格鲁肽
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,drug_examples.long_acting.semaglutide.dosing,0.25-1.0mg 每周1次
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,drug_examples.long_acting.semaglutide.efficacy,降糖和减重效果最强
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,drug_examples.long_acting.semaglutide.oral_form,口服制剂可用
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,drug_examples.long_acting.dulaglutide.name,度拉糖肽
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,drug_examples.long_acting.dulaglutide.dosing,0.75-1.5mg 每周1次
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,drug_examples.long_acting.dulaglutide.convenience,预充注射笔
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,clinical_efficacy.hba1c_reduction,0.8-1.5%
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,clinical_efficacy.weight_reduction,2-7kg
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,clinical_efficacy.cv_benefits,降低主要不良心血管事件（部分药物）
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,advantages,强效降糖; 显著减重; 低血糖风险小; 心血管保护作用; 可能保护β细胞功能
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,disadvantages,注射给药; 胃肠道副作用; 价格昂贵
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,contraindications,1型糖尿病; 糖尿病酮症酸中毒; 严重胃肠道疾病; 个人或家族甲状腺髓样癌病史; 多发性内分泌腺瘤病2型
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,adverse_effects.common,恶心、呕吐; 腹泻; 食欲减退; 注射部位反应
+entities.diabetes_medications,DM_MED_005,GLP-1受体激动剂,,medication,肠促胰素类药物,adverse_effects.serious_rare,急性胰腺炎; 胆囊疾病; 甲状腺髓样癌（理论风险）
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,name_en,Insulin
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,description,替代或补充内源性胰岛素，是唯一能治疗所有类型糖尿病的降糖药物
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,classification.by_duration.rapid_acting.examples,门冬胰岛素（诺和锐）; 赖脯胰岛素（优泌乐）; 谷赖胰岛素（速秀霖）
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,classification.by_duration.rapid_acting.onset,10-15分钟
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,classification.by_duration.rapid_acting.peak,1-2小时
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,classification.by_duration.rapid_acting.duration,3-5小时
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,classification.by_duration.rapid_acting.use,餐前即刻注射
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,classification.by_duration.short_acting.examples,常规胰岛素
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,classification.by_duration.short_acting.onset,30分钟
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,classification.by_duration.short_acting.peak,2-4小时
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,classification.by_duration.short_acting.duration,6-8小时
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,classification.by_duration.short_acting.use,餐前30分钟注射
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,classification.by_duration.intermediate_acting.examples,NPH胰岛素
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,classification.by_duration.intermediate_acting.onset,1-2小时
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,classification.by_duration.intermediate_acting.peak,6-12小时
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,classification.by_duration.intermediate_acting.duration,18-24小时
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,classification.by_duration.intermediate_acting.use,基础胰岛素
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,classification.by_duration.long_acting.examples,甘精胰岛素（来得时）; 地特胰岛素（诺和平）; 德谷胰岛素（诺和达）
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,classification.by_duration.long_acting.onset,1-6小时
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,classification.by_duration.long_acting.peak,无明显峰值
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,classification.by_duration.long_acting.duration,20-42小时
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,classification.by_duration.long_acting.use,基础胰岛素
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,classification.premixed_insulin.examples,门冬胰岛素30/70; 赖脯胰岛素25/75; 常规胰岛素30/70
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,classification.premixed_insulin.composition,速效/中效胰岛素混合物
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,classification.premixed_insulin.convenience,减少注射次数
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,indications.absolute,1型糖尿病; 糖尿病酮症酸中毒; 高渗性高血糖状态; 围手术期血糖管理
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,indications.relative,2型糖尿病多种口服药物失效; 妊娠糖尿病; 急性应激状态; 严重感染
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,insulin_regimens.basal_bolus.description,基础-餐时胰岛素方案
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,insulin_regimens.basal_bolus.components,长效基础胰岛素 + 餐前速效胰岛素
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,insulin_regimens.basal_bolus.advantages,最接近生理性胰岛素分泌
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,insulin_regimens.premixed.description,预混胰岛素方案
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,insulin_regimens.premixed.frequency,每日2次
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,insulin_regimens.premixed.advantages,简便，依从性好
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,insulin_regimens.insulin_pump.description,胰岛素泵持续皮下输注
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,insulin_regimens.insulin_pump.indications,1型糖尿病，血糖波动大的患者
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,dosing_principles.starting_dose,0.2-0.5 U/kg/天
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,dosing_principles.basal_proportion,基础胰岛素占总量40-50%
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,dosing_principles.bolus_proportion,餐时胰岛素占总量50-60%
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,dosing_principles.titration,根据血糖监测结果调整
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,adverse_effects.common,低血糖（最重要）; 体重增加; 注射部位反应; 脂肪萎缩或增生
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,adverse_effects.rare,严重过敏反应; 胰岛素抗体形成
+entities.diabetes_medications,DM_MED_006,胰岛素,,medication,胰岛素及类似物,storage_handling,未开封制剂需冷藏（2-8°C）; 使用中制剂可室温保存28天; 避免冷冻和高温; 注射前恢复至室温

@@ -1,0 +1,196 @@
+section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,icd10,I21.9
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,synonyms,AMI; 心肌梗死; 心梗
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,definition,冠状动脉急性、持续性缺血缺氧导致的心肌坏死
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,classification.stemi,ST段抬高型心肌梗死
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,classification.nstemi,非ST段抬高型心肌梗死
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,pathophysiology.mechanism,冠脉粥样斑块破裂→血栓形成→血管完全或不完全闭塞
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,pathophysiology.timeline,心肌缺血>20分钟开始坏死
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,pathophysiology.biomarkers,肌钙蛋白I/T升高
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,clinical_presentation.typical_symptoms.chest_pain,剧烈压榨性胸痛>20分钟
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,clinical_presentation.typical_symptoms.radiation,左臂、下颌、颈部、背部
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,clinical_presentation.typical_symptoms.associated,大汗; 恶心呕吐; 呼吸困难; 濒死感
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,clinical_presentation.atypical_presentation.silent_mi,糖尿病、老年患者多见
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,clinical_presentation.atypical_presentation.gastrointestinal,上腹痛、恶心呕吐
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,clinical_presentation.atypical_presentation.dyspnea_equivalent,以呼吸困难为主要症状
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,diagnostics.ecg_changes.stemi,ST段抬高≥2导联≥0.1mV
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,diagnostics.ecg_changes.nstemi,ST段压低、T波倒置
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,diagnostics.ecg_changes.q_waves,病理性Q波（>30ms且深度>1/4 R波）
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,diagnostics.biomarkers.troponin.elevation,正常上限99%的3-5倍
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,diagnostics.biomarkers.troponin.kinetics,3-12小时升高，7-10天恢复
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,diagnostics.biomarkers.troponin.sensitivity,>95%
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,diagnostics.biomarkers.ck_mb,6-12小时升高，2-3天恢复
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,diagnostics.biomarkers.myoglobin,2-4小时升高（早期诊断）
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,diagnostics.imaging.echo,室壁运动异常
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,diagnostics.imaging.coronary_angiography,急诊PCI术前必需
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,treatment.emergency_management.golden_time,发病12小时内血运重建
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,treatment.emergency_management.dual_antiplatelet,负荷剂量阿司匹林+氯吡格雷
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,treatment.emergency_management.anticoagulation,肝素或比伐芦定
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,treatment.emergency_management.oxygen,SpO2<90%时给氧
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,treatment.reperfusion_therapy.primary_pci.time_window,发病12小时内首选
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,treatment.reperfusion_therapy.primary_pci.door_to_balloon,目标<90分钟
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,treatment.reperfusion_therapy.primary_pci.contraindications,出血高危、预期寿命<1年
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,treatment.reperfusion_therapy.thrombolysis.indications,无法及时PCI且发病<12小时
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,treatment.reperfusion_therapy.thrombolysis.agents,阿替普酶、瑞替普酶
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,treatment.reperfusion_therapy.thrombolysis.contraindications,活动性出血; 颅内肿瘤; 近期外伤手术
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,treatment.secondary_prevention.lifestyle,戒烟、饮食控制、适度运动
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,treatment.secondary_prevention.medications,阿司匹林终身; 他汀类药物; β受体阻滞剂; ACEI/ARB
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,treatment.secondary_prevention.cardiac_rehabilitation,运动训练+心理支持
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,complications.mechanical,心肌破裂; 室间隔穿孔; 乳头肌断裂; 心包填塞
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,complications.electrical,室性心律失常; 房室传导阻滞; 心房颤动
+cardiovascular_diseases,CVD_002,急性心肌梗死,,Disease,心血管疾病,complications.pump_failure,心源性休克; 急性心力衰竭; 右心衰竭
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,icd10,I50.9
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,synonyms,心衰; 充血性心力衰竭; HF
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,definition,心脏结构和(或)功能异常导致心室充盈或射血能力受损的复杂临床综合征
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,classification.by_ef.hfref,射血分数降低的心衰（EF<40%）
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,classification.by_ef.hfmref,射血分数中间范围的心衰（EF 40-49%）
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,classification.by_ef.hfpef,射血分数保留的心衰（EF≥50%）
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,classification.by_stage.stage_a,心衰高危无症状
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,classification.by_stage.stage_b,结构性心脏病无症状
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,classification.by_stage.stage_c,结构性心脏病伴症状
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,classification.by_stage.stage_d,难治性心衰
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,classification.nyha_class.class_i,日常活动无限制
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,classification.nyha_class.class_ii,一般活动轻度受限
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,classification.nyha_class.class_iii,日常活动明显受限
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,classification.nyha_class.class_iv,休息时有症状
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,etiology.ischemic,冠心病（最常见病因50-60%）
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,etiology.hypertensive,高血压性心脏病
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,etiology.cardiomyopathy,扩张性心肌病; 肥厚性心肌病; 限制性心肌病
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,etiology.valvular,瓣膜性心脏病
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,etiology.other,心肌炎; 先天性心脏病; 心律失常; 药物毒性
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,pathophysiology.hemodynamic,心输出量下降，充盈压升高
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,pathophysiology.neurohormonal.raas_activation,RAAS系统激活
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,pathophysiology.neurohormonal.sns_activation,交感神经系统兴奋
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,pathophysiology.neurohormonal.adh_release,抗利尿激素释放增加
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,pathophysiology.cardiac_remodeling,心室重构，进行性恶化
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,clinical_presentation.left_sided.dyspnea,劳力性呼吸困难→端坐呼吸→夜间阵发性呼吸困难
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,clinical_presentation.left_sided.fatigue,乏力、运动耐量下降
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,clinical_presentation.left_sided.cough,干咳，夜间加重
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,clinical_presentation.right_sided.edema,下肢水肿→全身水肿
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,clinical_presentation.right_sided.jugular_distension,颈静脉怒张
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,clinical_presentation.right_sided.hepatomegaly,肝脏肿大、压痛
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,clinical_presentation.right_sided.ascites,腹腔积液
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,clinical_presentation.physical_signs.cardiac,心界扩大; 奔马律; 心脏杂音
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,clinical_presentation.physical_signs.pulmonary,湿啰音; 胸腔积液
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,clinical_presentation.physical_signs.peripheral,水肿; 发绀; 脉压差缩小
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,diagnostics.biomarkers.bnp.threshold,BNP>100 pg/ml或NT-proBNP>125 pg/ml
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,diagnostics.biomarkers.bnp.age_adjusted,年龄调整参考值
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,diagnostics.biomarkers.bnp.monitoring,治疗效果监测指标
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,diagnostics.imaging.echocardiography.lvef,左室射血分数评估
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,diagnostics.imaging.echocardiography.wall_motion,室壁运动分析
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,diagnostics.imaging.echocardiography.diastolic_function,舒张功能评估
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,diagnostics.imaging.echocardiography.valvular,瓣膜功能评估
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,diagnostics.imaging.chest_xray,心影增大、肺淤血、胸腔积液
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,diagnostics.imaging.cardiac_mri,心功能精确评估金标准
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,diagnostics.imaging.cardiac_catheterization,血流动力学评估
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,diagnostics.laboratory,肾功能（肌酐、尿素氮）; 电解质（钠、钾、氯）; 肝功能; 血常规; 甲状腺功能; 铁代谢指标
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.lifestyle_management.sodium_restriction,钠盐<2g/day
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.lifestyle_management.fluid_restriction,重症患者<1.5-2L/day
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.lifestyle_management.weight_monitoring,每日称重
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.lifestyle_management.exercise,稳定期有氧运动训练
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.pharmacotherapy.hfref_guideline.acei_arb.first_line,所有HFrEF患者
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.pharmacotherapy.hfref_guideline.acei_arb.agents,依那普利、缬沙坦
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.pharmacotherapy.hfref_guideline.acei_arb.target_dose,最大耐受剂量
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.pharmacotherapy.hfref_guideline.beta_blockers.evidence_based,美托洛尔琥珀酸盐; 比索洛尔; 卡维地洛
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.pharmacotherapy.hfref_guideline.beta_blockers.start_low,小剂量开始逐渐加量
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.pharmacotherapy.hfref_guideline.beta_blockers.target_hr,静息心率60-70 bpm
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.pharmacotherapy.hfref_guideline.mra.indications,NYHA II-IV级
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.pharmacotherapy.hfref_guideline.mra.agents,螺内酯、依普利酮
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.pharmacotherapy.hfref_guideline.mra.monitoring,血钾、肌酐
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.pharmacotherapy.hfref_guideline.diuretics.loop_diuretics,呋塞米、托拉塞米
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.pharmacotherapy.hfref_guideline.diuretics.titration,根据症状和体重调整
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.pharmacotherapy.hfref_guideline.diuretics.monitoring,电解质、肾功能
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.pharmacotherapy.hfref_guideline.newer_agents.arni,沙库巴曲缬沙坦（替代ACEI/ARB）
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.pharmacotherapy.hfref_guideline.newer_agents.sglt2i,达格列净（合并糖尿病）
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.pharmacotherapy.hfref_guideline.newer_agents.if_inhibitor,伊伐布雷定（窦性心律且心率>70）
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.pharmacotherapy.hfpef_management.diuretics,症状性治疗
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.pharmacotherapy.hfpef_management.comorbidities,积极治疗高血压、糖尿病、房颤
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.pharmacotherapy.hfpef_management.evidence_limited,特异性治疗证据有限
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.device_therapy.icd.indications,EF≤35%且预期寿命>1年
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.device_therapy.icd.primary_prevention,最佳药物治疗3个月后
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.device_therapy.crt.indications,EF≤35%，QRS≥120ms，窦性心律
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.device_therapy.crt.response_rate,约70%患者有效
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.advanced_therapies.heart_transplantation,终末期心衰的最终治疗
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.advanced_therapies.mechanical_support,IABP; ECMO; 植入式左室辅助装置
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,treatment.advanced_therapies.palliative_care,症状控制和生活质量改善
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,monitoring.clinical_parameters,症状变化; 体重变化; 血压心率; 水肿程度
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,monitoring.laboratory_monitoring,肾功能（每3-6个月）; 电解质; BNP/NT-proBNP
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,monitoring.imaging_follow_up,左室功能定期评估
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,prognosis.mortality,1年死亡率15-20%
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,prognosis.readmission,6个月再住院率30%
+cardiovascular_diseases,CVD_003,心力衰竭,,Disease,心血管疾病,prognosis.prognostic_factors,NYHA分级; 射血分数; BNP水平; 肾功能; 合并症
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,icd10,I48.9
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,synonyms,房颤; AF; 心房纤颤
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,definition,最常见的持续性心律失常，特征为心房电活动快速无序，心房有效收缩消失
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,classification.duration_based.paroxysmal,阵发性（7天内自行终止）
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,classification.duration_based.persistent,持续性（>7天，需干预终止）
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,classification.duration_based.longstanding_persistent,长程持续性（>12个月）
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,classification.duration_based.permanent,永久性（接受现状，不再转复）
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,classification.mechanism_based.focal,局灶性房颤（肺静脉起源）
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,classification.mechanism_based.reentrant,折返性房颤（心房内折返）
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,epidemiology.prevalence,中国成人患病率0.65%
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,epidemiology.age_related,>65岁患病率6%，>80岁患病率10%
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,epidemiology.gender,男性略高于女性
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,epidemiology.burden,卒中风险增加5倍，心衰风险增加3倍
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,etiology.cardiac_causes,高血压（最常见）; 冠心病; 心脏瓣膜病; 心肌病; 心力衰竭; 先天性心脏病
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,etiology.non_cardiac,甲状腺功能亢进; 肺部疾病; 电解质紊乱; 酒精中毒; 感染; 药物（洋地黄中毒）
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,etiology.lone_af,孤立性房颤（无明确病因）
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,pathophysiology.triggers,肺静脉电活动异常
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,pathophysiology.substrate,心房结构重构
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,pathophysiology.perpetuating_factors,心房扩大; 纤维化; 炎症反应; 自主神经失调
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,clinical_presentation.symptoms.palpitations,心悸（最常见症状）
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,clinical_presentation.symptoms.dyspnea,呼吸困难
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,clinical_presentation.symptoms.chest_discomfort,胸部不适
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,clinical_presentation.symptoms.fatigue,乏力、运动耐量下降
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,clinical_presentation.symptoms.dizziness,头晕、黑矇
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,clinical_presentation.asymptomatic,30-45%患者无症状
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,clinical_presentation.physical_signs.pulse,脉搏绝对不齐
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,clinical_presentation.physical_signs.heart_sounds,心律绝对不齐，强弱不等
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,clinical_presentation.physical_signs.signs_of_heart_failure,伴心衰时相应体征
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,diagnostics.ecg.characteristic_findings,P波消失; f波（350-600次/分）; RR间期绝对不齐; QRS波群通常正常
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,diagnostics.holter_monitoring,阵发性房颤诊断
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,diagnostics.echocardiography.structural_assessment,心房大小、瓣膜功能
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,diagnostics.echocardiography.tee,左心耳血栓评估
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,diagnostics.laboratory,甲状腺功能; 电解质; 肾功能; D-二聚体
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,risk_stratification.stroke_risk.cha2ds2_vasc.components,充血性心衰（1分）; 高血压（1分）; 年龄≥75岁（2分）; 糖尿病（1分）; 卒中史（2分）; 血管疾病（1分）; 年龄65-74岁（1分）; 女性（1分）
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,risk_stratification.stroke_risk.cha2ds2_vasc.interpretation.0分(男性)或1分(女性),低危，无需抗凝
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,risk_stratification.stroke_risk.cha2ds2_vasc.interpretation.1分(男性),中危，可考虑抗凝
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,risk_stratification.stroke_risk.cha2ds2_vasc.interpretation.≥2分,高危，推荐抗凝
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,risk_stratification.bleeding_risk.has_bled.components,高血压（1分）; 肝肾功能异常（各1分）; 卒中（1分）; 出血史（1分）; INR不稳定（1分）; 年龄>65岁（1分）; 药物/酒精（各1分）
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,risk_stratification.bleeding_risk.has_bled.interpretation.≥3分,高出血风险，需谨慎权衡
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.acute_management.hemodynamically_unstable.immediate_cardioversion,电复律
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.acute_management.hemodynamically_unstable.preparation,镇静、同步化
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.acute_management.hemodynamically_unstable.energy,双向波200J起始
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.acute_management.hemodynamically_stable.rate_control,首选策略
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.acute_management.hemodynamically_stable.rhythm_control,选择性应用
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.long_term_management.anticoagulation.warfarin.target_inr,2.0-3.0
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.long_term_management.anticoagulation.warfarin.monitoring,定期INR监测
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.long_term_management.anticoagulation.warfarin.interactions,药物和食物相互作用多
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.long_term_management.anticoagulation.novel_oral_anticoagulants.dabigatran,150mg bid（肾功能正常）
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.long_term_management.anticoagulation.novel_oral_anticoagulants.rivaroxaban,20mg qd
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.long_term_management.anticoagulation.novel_oral_anticoagulants.apixaban,5mg bid
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.long_term_management.anticoagulation.novel_oral_anticoagulants.edoxaban,60mg qd
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.long_term_management.anticoagulation.novel_oral_anticoagulants.advantages,无需监测、相互作用少、出血风险低
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.long_term_management.anticoagulation.contraindications,活动性出血; 严重肝功能不全; 妊娠
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.long_term_management.rate_control.targets,静息心率<110 bpm（宽松控制）
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.long_term_management.rate_control.agents.beta_blockers,美托洛尔、比索洛尔
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.long_term_management.rate_control.agents.calcium_blockers,维拉帕米、地尔硫卓
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.long_term_management.rate_control.agents.digoxin,老年人或心衰患者
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.long_term_management.rhythm_control.indications,症状明显; 年轻患者; 首次发作; 心衰合并房颤
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.long_term_management.rhythm_control.antiarrhythmic_drugs.class_ia,奎尼丁（少用）
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.long_term_management.rhythm_control.antiarrhythmic_drugs.class_ic,普罗帕酮、氟卡尼
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.long_term_management.rhythm_control.antiarrhythmic_drugs.class_iii,胺碘酮、索他洛尔
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.long_term_management.rhythm_control.antiarrhythmic_drugs.monitoring,定期心电图、肝功能检查
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.long_term_management.rhythm_control.catheter_ablation.indications,药物治疗失败的症状性房颤
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.long_term_management.rhythm_control.catheter_ablation.technique,肺静脉电隔离
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.long_term_management.rhythm_control.catheter_ablation.success_rate,阵发性房颤70-80%
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.long_term_management.rhythm_control.catheter_ablation.complications,血栓栓塞、心包填塞（<1%）
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,treatment.lifestyle_modifications,戒酒; 减肥; 规律作息; 避免诱发因素; 适度运动
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,complications.thromboembolism.stroke,最严重并发症
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,complications.thromboembolism.systemic_embolism,外周动脉栓塞
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,complications.thromboembolism.prevention,抗凝治疗
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,complications.heart_failure,心动过速性心肌病
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,complications.cognitive_impairment,与脑血流减少相关
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,prognosis.mortality,全因死亡率增加1.5-2倍
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,prognosis.quality_of_life,症状性房颤显著影响生活质量
+cardiovascular_diseases,CVD_004,心房颤动,,Disease,心血管疾病,prognosis.progression,阵发性→持续性→永久性

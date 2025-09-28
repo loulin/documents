@@ -1,0 +1,48 @@
+section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value
+llm_integration_architecture,rag_system,rag system,,,,vector_database.embedding_model,text-embedding-3-large
+llm_integration_architecture,rag_system,rag system,,,,vector_database.index_type,HNSW
+llm_integration_architecture,rag_system,rag system,,,,vector_database.dimensions,3072
+llm_integration_architecture,rag_system,rag system,,,,vector_database.similarity_metric,cosine
+llm_integration_architecture,rag_system,rag system,,,,retrieval_strategy.hybrid_search,语义搜索+关键词匹配
+llm_integration_architecture,rag_system,rag system,,,,retrieval_strategy.reranking,临床相关性重排序
+llm_integration_architecture,rag_system,rag system,,,,retrieval_strategy.context_window,32K tokens
+llm_integration_architecture,rag_system,rag system,,,,retrieval_strategy.chunk_size,1024 tokens
+llm_integration_architecture,rag_system,rag system,,,,retrieval_strategy.chunk_overlap,200 tokens
+llm_integration_architecture,rag_system,rag system,,,,query_processing.intent_classification,疾病咨询/治疗建议/诊断支持/用药指导
+llm_integration_architecture,rag_system,rag system,,,,query_processing.entity_extraction,医学实体识别和标准化
+llm_integration_architecture,rag_system,rag system,,,,query_processing.context_enrichment,相关疾病和共病信息增强
+llm_integration_architecture,structured_extraction,structured extraction,,,,clinical_ner.entities,疾病名称; 症状; 药物; 检查项目; 实验室指标; 治疗方案; 剂量; 时间
+llm_integration_architecture,structured_extraction,structured extraction,,,,clinical_ner.model,BioBERT + CRF
+llm_integration_architecture,structured_extraction,structured extraction,,,,clinical_ner.accuracy,>95%
+llm_integration_architecture,structured_extraction,structured extraction,,,,relation_extraction.relationships,疾病-症状; 疾病-治疗; 药物-副作用; 检查-疾病; 共病关系; 因果关系
+llm_integration_architecture,structured_extraction,structured extraction,,,,relation_extraction.model,BERT-based relation classifier
+llm_integration_architecture,structured_extraction,structured extraction,,,,data_standardization.terminology,"ICD-10, SNOMED-CT, ATC"
+llm_integration_architecture,structured_extraction,structured extraction,,,,data_standardization.unit_conversion,自动单位标准化
+llm_integration_architecture,structured_extraction,structured extraction,,,,data_standardization.value_normalization,数值范围标准化
+llm_integration_architecture,api_endpoints,,,,,value[0].endpoint,/api/v1/diagnose
+llm_integration_architecture,api_endpoints,,,,,value[0].method,POST
+llm_integration_architecture,api_endpoints,,,,,value[0].description,基于症状和检查结果的智能诊断
+llm_integration_architecture,api_endpoints,,,,,value[0].input_schema.patient_info,患者基本信息
+llm_integration_architecture,api_endpoints,,,,,value[0].input_schema.symptoms,症状列表
+llm_integration_architecture,api_endpoints,,,,,value[0].input_schema.lab_results,实验室检查结果
+llm_integration_architecture,api_endpoints,,,,,value[0].input_schema.imaging,影像学检查
+llm_integration_architecture,api_endpoints,,,,,value[0].output_schema.differential_diagnosis,鉴别诊断列表
+llm_integration_architecture,api_endpoints,,,,,value[0].output_schema.confidence_scores,诊断置信度
+llm_integration_architecture,api_endpoints,,,,,value[0].output_schema.recommendations,进一步检查建议
+llm_integration_architecture,api_endpoints,,,,,value[1].endpoint,/api/v1/treatment
+llm_integration_architecture,api_endpoints,,,,,value[1].method,POST
+llm_integration_architecture,api_endpoints,,,,,value[1].description,个性化治疗方案推荐
+llm_integration_architecture,api_endpoints,,,,,value[1].input_schema.diagnosis,确诊疾病
+llm_integration_architecture,api_endpoints,,,,,value[1].input_schema.patient_profile,患者特征
+llm_integration_architecture,api_endpoints,,,,,value[1].input_schema.comorbidities,合并症
+llm_integration_architecture,api_endpoints,,,,,value[1].input_schema.contraindications,禁忌症
+llm_integration_architecture,api_endpoints,,,,,value[1].output_schema.treatment_plans,治疗方案列表
+llm_integration_architecture,api_endpoints,,,,,value[1].output_schema.medication_details,药物详细信息
+llm_integration_architecture,api_endpoints,,,,,value[1].output_schema.monitoring_schedule,监测计划
+llm_integration_architecture,api_endpoints,,,,,value[2].endpoint,/api/v1/drug_interaction
+llm_integration_architecture,api_endpoints,,,,,value[2].method,POST
+llm_integration_architecture,api_endpoints,,,,,value[2].description,药物相互作用检查
+llm_integration_architecture,api_endpoints,,,,,value[2].input_schema.medications,药物列表
+llm_integration_architecture,api_endpoints,,,,,value[2].output_schema.interactions,相互作用详情
+llm_integration_architecture,api_endpoints,,,,,value[2].output_schema.severity,严重程度
+llm_integration_architecture,api_endpoints,,,,,value[2].output_schema.alternatives,替代方案

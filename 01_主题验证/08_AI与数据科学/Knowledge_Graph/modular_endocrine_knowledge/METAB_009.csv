@@ -1,0 +1,146 @@
+section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,alternate_names,高尿酸血症; 无症状性高尿酸血症; Hyperuricemia; Asymptomatic hyperuricemia
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,pathophysiology.uric_acid_metabolism.production.endogenous_sources,嘌呤核苷酸分解（80%）; 细胞凋亡和更新; 组织缺氧和ATP降解
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,pathophysiology.uric_acid_metabolism.production.exogenous_sources,膳食嘌呤摄入（20%）; 高嘌呤食物（动物内脏、海鲜）; 酒精（特别是啤酒）
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,pathophysiology.uric_acid_metabolism.production.key_enzymes,黄嘌呤氧化酶（XO）- 限速酶; 腺嘌呤磷酸核糖转移酶（APRT）; 次黄嘌呤-鸟嘌呤磷酸核糖转移酶（HPRT）
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,pathophysiology.uric_acid_metabolism.excretion.renal_excretion.percentage,70%
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,pathophysiology.uric_acid_metabolism.excretion.renal_excretion.mechanisms,"肾小球滤过; 近曲小管重吸收（URAT1, GLUT9）; 远曲小管分泌（OAT1, OAT3, ABCG2）"
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,pathophysiology.uric_acid_metabolism.excretion.renal_excretion.transporters.urat1,主要重吸收转运体
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,pathophysiology.uric_acid_metabolism.excretion.renal_excretion.transporters.glut9,基底侧重吸收
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,pathophysiology.uric_acid_metabolism.excretion.renal_excretion.transporters.oat1_oat3,分泌转运体
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,pathophysiology.uric_acid_metabolism.excretion.renal_excretion.transporters.abcg2,管腔侧分泌
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,pathophysiology.uric_acid_metabolism.excretion.intestinal_excretion.percentage,30%
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,pathophysiology.uric_acid_metabolism.excretion.intestinal_excretion.mechanism,肠道尿酸酶分解
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,pathophysiology.uric_acid_metabolism.pathogenic_mechanisms.overproduction,嘌呤代谢酶缺陷; 细胞增殖性疾病; 组织损伤和坏死; 酒精代谢异常
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,pathophysiology.uric_acid_metabolism.pathogenic_mechanisms.underexcretion,肾功能不全; 尿酸转运体异常; 药物干扰排泄; 内分泌代谢异常
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,pathophysiology.endocrine_interactions.insulin_resistance.bidirectional_relationship,胰岛素抵抗与高尿酸血症相互促进
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,pathophysiology.endocrine_interactions.insulin_resistance.mechanisms,胰岛素促进肾小管尿酸重吸收; 尿酸激活RAAS系统; 氧化应激和炎症介导; NO生物利用度下降
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,pathophysiology.endocrine_interactions.thyroid_function.hypothyroidism_effect,甲减导致肾清除率下降
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,pathophysiology.endocrine_interactions.thyroid_function.metabolic_rate,基础代谢率影响嘌呤代谢
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,pathophysiology.endocrine_interactions.growth_hormone.gh_deficiency,生长激素缺乏影响肾功能
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,pathophysiology.endocrine_interactions.growth_hormone.igf1_effects,IGF-1对尿酸代谢的调节作用
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,epidemiology.prevalence.global,8.4-13.3%
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,epidemiology.prevalence.china,13.3%（2019年数据）
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,epidemiology.prevalence.gender_difference.male,19.4%
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,epidemiology.prevalence.gender_difference.female,7.9%
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,epidemiology.prevalence.age_trend,患病率随年龄增长而上升
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,epidemiology.trends.increasing,全球发病率持续上升
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,epidemiology.trends.urbanization,城市化进程相关
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,epidemiology.trends.lifestyle_factors,生活方式改变的影响
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,risk_factors.non_modifiable.genetics,URAT1基因多态性; GLUT9基因变异; ABCG2基因突变; APRT酶缺陷
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,risk_factors.non_modifiable.gender,男性>女性（绝经前）
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,risk_factors.non_modifiable.age,年龄增长
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,risk_factors.non_modifiable.ethnicity,种族差异
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,risk_factors.modifiable.dietary,高嘌呤食物摄入; 果糖过量摄入; 酒精消费（特别是啤酒）; 蛋白质摄入过多
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,risk_factors.modifiable.lifestyle,肥胖; 缺乏运动; 睡眠不足; 吸烟
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,risk_factors.modifiable.medical,利尿剂使用; 免疫抑制剂; 化疗药物; 低剂量阿司匹林
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,risk_factors.comorbidities.metabolic,代谢综合征; 2型糖尿病; 肥胖症; 胰岛素抵抗
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,risk_factors.comorbidities.cardiovascular,高血压; 血脂异常; 冠心病; 心力衰竭
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,risk_factors.comorbidities.renal,慢性肾脏病; 肾结石; 急性肾损伤
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,clinical_manifestations.asymptomatic_phase.description,无症状性高尿酸血症
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,clinical_manifestations.asymptomatic_phase.duration,可持续数年至数十年
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,clinical_manifestations.asymptomatic_phase.progression_risk,年进展率2-5%至有症状痛风
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,clinical_manifestations.target_organ_damage.joints.gout_arthritis,痛风性关节炎
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,clinical_manifestations.target_organ_damage.joints.tophi_formation,痛风石形成
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,clinical_manifestations.target_organ_damage.joints.joint_destruction,关节破坏
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,clinical_manifestations.target_organ_damage.kidneys.chronic_kidney_disease,慢性肾脏病
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,clinical_manifestations.target_organ_damage.kidneys.uric_acid_nephropathy,尿酸性肾病
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,clinical_manifestations.target_organ_damage.kidneys.kidney_stones,肾结石（10-25%患者）
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,clinical_manifestations.target_organ_damage.cardiovascular.hypertension,高血压发生风险增加
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,clinical_manifestations.target_organ_damage.cardiovascular.atherosclerosis,动脉粥样硬化
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,clinical_manifestations.target_organ_damage.cardiovascular.endothelial_dysfunction,内皮功能障碍
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,clinical_manifestations.associated_symptoms.metabolic,胰岛素抵抗症状; 体重增加; 腹型肥胖; 疲劳乏力
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,clinical_manifestations.associated_symptoms.cardiovascular,高血压; 心悸; 胸闷
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,diagnosis.laboratory_criteria.serum_uric_acid.hyperuricemia_definition.male,>420 μmol/L (7.0 mg/dL)
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,diagnosis.laboratory_criteria.serum_uric_acid.hyperuricemia_definition.female,>360 μmol/L (6.0 mg/dL)
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,diagnosis.laboratory_criteria.serum_uric_acid.hyperuricemia_definition.postmenopausal_female,>420 μmol/L
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,diagnosis.laboratory_criteria.serum_uric_acid.target_levels.general_population,<360 μmol/L (6.0 mg/dL)
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,diagnosis.laboratory_criteria.serum_uric_acid.target_levels.gout_patients,<300 μmol/L (5.0 mg/dL)
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,diagnosis.laboratory_criteria.serum_uric_acid.target_levels.severe_gout,<240 μmol/L (4.0 mg/dL)
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,diagnosis.laboratory_criteria.serum_uric_acid.measurement_considerations,空腹8-12小时采血; 避免高嘌呤饮食; 停止影响尿酸的药物; 重复测量确认
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,diagnosis.laboratory_criteria.24h_urine_uric_acid.normal_range,1.48-4.43 mmol/24h
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,diagnosis.laboratory_criteria.24h_urine_uric_acid.overproduction,>4.43 mmol/24h
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,diagnosis.laboratory_criteria.24h_urine_uric_acid.underexcretion,<1.48 mmol/24h
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,diagnosis.laboratory_criteria.24h_urine_uric_acid.clinical_utility,鉴别高尿酸血症类型
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,diagnosis.laboratory_criteria.uric_acid_clearance.normal_range,6.6-12.6 mL/min
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,diagnosis.laboratory_criteria.uric_acid_clearance.reduced_clearance,<6.6 mL/min
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,diagnosis.imaging_studies.ultrasound.joint_ultrasound,检测关节内尿酸盐结晶
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,diagnosis.imaging_studies.ultrasound.renal_ultrasound,评估肾结石和肾脏形态
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,diagnosis.imaging_studies.dual_energy_ct.urate_crystal_detection,双能CT检测尿酸盐沉积
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,diagnosis.imaging_studies.dual_energy_ct.sensitivity_specificity,敏感性90%，特异性85%
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,diagnosis.differential_diagnosis.secondary_causes,肾功能不全; 甲状腺功能减退; 药物相关; 血液系统疾病
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,diagnosis.differential_diagnosis.genetic_causes,HPRT缺陷（Lesch-Nyhan综合征）; PRPP合成酶过度活跃; 葡萄糖-6-磷酸酶缺陷
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.lifestyle_interventions.dietary_modifications.purine_restriction.high_purine_foods,限制动物内脏、海鲜、浓汤
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.lifestyle_interventions.dietary_modifications.purine_restriction.moderate_purine_foods,适量摄入瘦肉、鱼类
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.lifestyle_interventions.dietary_modifications.purine_restriction.low_purine_foods,推荐蔬菜、水果、谷物
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.lifestyle_interventions.dietary_modifications.fructose_limitation,限制果糖摄入（<50g/天）
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.lifestyle_interventions.dietary_modifications.alcohol_restriction.beer,严格限制啤酒
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.lifestyle_interventions.dietary_modifications.alcohol_restriction.spirits,限制烈性酒
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.lifestyle_interventions.dietary_modifications.alcohol_restriction.wine,红酒可适量
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.lifestyle_interventions.dietary_modifications.hydration,充分饮水（>2000mL/天）
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.lifestyle_interventions.weight_management.target,BMI <25 kg/m²
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.lifestyle_interventions.weight_management.gradual_loss,缓慢减重（0.5-1kg/周）
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.lifestyle_interventions.weight_management.avoid_crash_diets,避免快速减重
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.lifestyle_interventions.exercise.aerobic_exercise,中等强度有氧运动
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.lifestyle_interventions.exercise.frequency,每周150分钟
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.lifestyle_interventions.exercise.benefits,改善胰岛素敏感性，促进尿酸排泄
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.indications.absolute,痛风发作史; 痛风石存在; 尿酸性肾病; 肾结石史
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.indications.relative,血尿酸>480 μmol/L; 合并代谢综合征; 慢性肾脏病; 心血管疾病高危
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.urate_lowering_therapy.first_line.allopurinol.mechanism,黄嘌呤氧化酶抑制剂
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.urate_lowering_therapy.first_line.allopurinol.starting_dose,100mg/day
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.urate_lowering_therapy.first_line.allopurinol.maintenance_dose,200-400mg/day
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.urate_lowering_therapy.first_line.allopurinol.maximum_dose,800mg/day
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.urate_lowering_therapy.first_line.allopurinol.monitoring,肝肾功能，血常规
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.urate_lowering_therapy.first_line.allopurinol.contraindications,HLA-B*5801阳性（亚洲人群筛查）
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.urate_lowering_therapy.first_line.febuxostat.mechanism,选择性黄嘌呤氧化酶抑制剂
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.urate_lowering_therapy.first_line.febuxostat.starting_dose,40mg/day
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.urate_lowering_therapy.first_line.febuxostat.maintenance_dose,40-80mg/day
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.urate_lowering_therapy.first_line.febuxostat.advantages,可用于轻中度肾功能不全
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.urate_lowering_therapy.first_line.febuxostat.cardiovascular_risk,注意心血管事件风险
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.urate_lowering_therapy.second_line.benzbromarone.mechanism,促尿酸排泄剂
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.urate_lowering_therapy.second_line.benzbromarone.dose,50-100mg/day
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.urate_lowering_therapy.second_line.benzbromarone.contraindications,严重肾功能不全
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.urate_lowering_therapy.second_line.benzbromarone.monitoring,肝功能
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.urate_lowering_therapy.second_line.probenecid.mechanism,抑制肾小管尿酸重吸收
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.urate_lowering_therapy.second_line.probenecid.dose,250mg bid，逐渐增至500mg bid
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.urate_lowering_therapy.second_line.probenecid.limitations,需要充分饮水
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.urate_lowering_therapy.newer_agents.pegloticase.mechanism,重组尿酸酶
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.urate_lowering_therapy.newer_agents.pegloticase.indication,难治性痛风
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.urate_lowering_therapy.newer_agents.pegloticase.administration,静脉输注，每2周一次
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.prophylaxis_during_initiation.colchicine.dose,0.5mg daily
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.prophylaxis_during_initiation.colchicine.duration,6个月
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.prophylaxis_during_initiation.colchicine.mechanism,预防痛风发作
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.prophylaxis_during_initiation.nsaids.low_dose_nsaid,替代colchicine
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.pharmacotherapy.prophylaxis_during_initiation.nsaids.contraindications,肾功能不全，胃肠道疾病
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.comorbidity_management.diabetes_mellitus.glucose_control,优化血糖控制改善尿酸代谢
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.comorbidity_management.diabetes_mellitus.medication_choice,避免使用利尿剂
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.comorbidity_management.diabetes_mellitus.metformin_benefit,二甲双胍可能降低尿酸水平
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.comorbidity_management.hypertension.preferred_agents,ACE抑制剂（有降尿酸作用）; ARB（部分有降尿酸作用）; 钙通道阻滞剂
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.comorbidity_management.hypertension.avoid,利尿剂（特别是噻嗪类）
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.comorbidity_management.dyslipidemia.statin_therapy,他汀类药物治疗
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.comorbidity_management.dyslipidemia.fenofibrate,非诺贝特可降低尿酸
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.comorbidity_management.chronic_kidney_disease.dose_adjustment,根据肾功能调整药物剂量
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,treatment.comorbidity_management.chronic_kidney_disease.monitoring,密切监测肾功能变化
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,monitoring.treatment_targets.serum_uric_acid,<300 μmol/L (5.0 mg/dL)
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,monitoring.treatment_targets.time_to_target,通常3-6个月
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,monitoring.treatment_targets.monitoring_frequency,治疗开始后每2-4周检测
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,monitoring.safety_monitoring.allopurinol,"肝功能（ALT, AST）; 肾功能（SCr, eGFR）; 血常规; 皮肤反应观察"
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,monitoring.safety_monitoring.febuxostat,肝功能; 心血管事件; 血常规
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,monitoring.efficacy_assessment.clinical,痛风发作频率和严重程度
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,monitoring.efficacy_assessment.laboratory,血尿酸水平
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,monitoring.efficacy_assessment.imaging,痛风石消退情况
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,prognosis.untreated_course.gout_development,20年内20-30%发展为痛风
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,prognosis.untreated_course.kidney_disease,慢性肾病风险增加
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,prognosis.untreated_course.cardiovascular_events,心血管事件风险升高
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,prognosis.treated_outcomes.urate_lowering,95%患者可达到目标尿酸水平
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,prognosis.treated_outcomes.gout_prevention,显著减少痛风发作
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,prognosis.treated_outcomes.tophi_resolution,痛风石可逐渐消退
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,prognosis.treated_outcomes.kidney_protection,延缓肾功能恶化
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,prognosis.prognostic_factors.good_prognosis,早期诊断和治疗; 良好的治疗依从性; 生活方式改善; 无严重合并症
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,prognosis.prognostic_factors.poor_prognosis,延迟治疗; 多种合并症; 药物不耐受; 生活方式不良
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,prevention.primary_prevention.population_screening,高危人群尿酸筛查
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,prevention.primary_prevention.lifestyle_education,健康生活方式宣教
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,prevention.primary_prevention.dietary_guidance,低嘌呤饮食指导
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,prevention.secondary_prevention.early_treatment,早期降尿酸治疗
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,prevention.secondary_prevention.comorbidity_control,积极控制相关疾病
+METAB_009,METAB_009,高尿酸血症,,代谢性疾病,代谢性疾病,prevention.secondary_prevention.regular_monitoring,定期监测随访

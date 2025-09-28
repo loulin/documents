@@ -1,0 +1,248 @@
+section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,name_en,Primary Aldosteronism
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,description,肾上腺皮质醛固酮分泌过多导致的继发性高血压，伴低血钾和代谢性碱中毒
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,prevalence,高血压人群中5-10%
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,etiology.unilateral_disease.aldosterone_producing_adenoma,单侧醛固酮瘤(35%)
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,etiology.unilateral_disease.unilateral_hyperplasia,单侧增生(5%)
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,etiology.bilateral_disease.bilateral_hyperplasia,双侧增生(60%)
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,etiology.bilateral_disease.glucocorticoid_remediable,糖皮质激素可抑制性(<1%)
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,clinical_manifestations.hypertension.characteristics,难治性高血压，对常规降压药反应差
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,clinical_manifestations.hypertension.prevalence,>95%患者
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,clinical_manifestations.hypokalemia.symptoms,肌无力; 肌痉挛; 多尿; 烦渴
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,clinical_manifestations.hypokalemia.prevalence,50-60%患者
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,clinical_manifestations.metabolic_alkalosis,血pH升高，HCO3-升高
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,diagnostic_approach.screening.indication,难治性高血压(≥3种药物); 高血压合并自发性低血钾; 高血压合并肾上腺偶发瘤; 早发高血压(<40岁); 高血压家族史+早发脑血管病
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,diagnostic_approach.screening.method,醛固酮/肾素比值(ARR)
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,diagnostic_approach.screening.threshold,ARR > 20-30 (单位相关)
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,diagnostic_approach.screening.preparation,"纠正低血钾; 停用影响RAAS药物4周; 可继续使用CCB, α受体阻滞剂"
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,diagnostic_approach.confirmatory_tests,盐水负荷试验; 氟氢可的松抑制试验; 卡托普利试验; 口服钠盐负荷试验
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,diagnostic_approach.subtype_classification.adrenal_ct,首选影像学检查
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,diagnostic_approach.subtype_classification.adrenal_venous_sampling.indication,手术候选人
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,diagnostic_approach.subtype_classification.adrenal_venous_sampling.lateralization_index,>4.0
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,diagnostic_approach.subtype_classification.adrenal_venous_sampling.contralateral_suppression,>75%
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,treatment_strategies.unilateral_disease.adrenalectomy.approach,腹腔镜单侧肾上腺切除
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,treatment_strategies.unilateral_disease.adrenalectomy.outcomes.hypertension_cure,30-60%
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,treatment_strategies.unilateral_disease.adrenalectomy.outcomes.improvement,90%
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,treatment_strategies.unilateral_disease.adrenalectomy.outcomes.factors,年龄; 病程; 肾脏损害程度
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,treatment_strategies.bilateral_disease.mineralocorticoid_antagonists.spironolactone.dose,25-400mg/day
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,treatment_strategies.bilateral_disease.mineralocorticoid_antagonists.spironolactone.side_effects,男性乳房发育; 月经紊乱
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,treatment_strategies.bilateral_disease.mineralocorticoid_antagonists.spironolactone.monitoring,血钾; 肾功能
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,treatment_strategies.bilateral_disease.mineralocorticoid_antagonists.eplerenone.dose,25-100mg/day
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,treatment_strategies.bilateral_disease.mineralocorticoid_antagonists.eplerenone.advantages,选择性MR拮抗剂，副作用少
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,treatment_strategies.bilateral_disease.mineralocorticoid_antagonists.eplerenone.cost,较spironolactone昂贵
+entities.adrenal_entities,ADR_001,原发性醛固酮增多症,,disease,肾上腺疾病,treatment_strategies.bilateral_disease.additional_antihypertensives,钙通道阻滞剂; ACEI/ARB(注意高血钾); 噻嗪类利尿剂
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,name_en,Cushing Syndrome
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,description,糖皮质激素分泌过多或长期使用外源性糖皮质激素导致的临床综合征
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.acth_dependent.cushings_disease.cause,垂体ACTH腺瘤
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.acth_dependent.cushings_disease.percentage,80%
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.acth_dependent.ectopic_acth.causes,肺癌; 胸腺瘤; 胰岛细胞瘤
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.acth_dependent.ectopic_acth.percentage,15%
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.acth_independent.adrenal_adenoma,3%
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.acth_independent.adrenal_carcinoma,2%
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.iatrogenic,外源性糖皮质激素使用
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,clinical_manifestations.classic_features,向心性肥胖; 满月脸; 水牛背; 紫纹; 皮肤瘀斑; 肌无力
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,clinical_manifestations.metabolic_features,糖耐量异常/糖尿病; 高血压; 血脂异常; 骨质疏松
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,clinical_manifestations.psychiatric_features,抑郁; 躁狂; 认知功能下降; 精神病性症状
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,diagnostic_workup.screening_tests.24h_urine_cortisol,>3倍正常上限
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,diagnostic_workup.screening_tests.dexamethasone_suppression.overnight_1mg,晨8点皮质醇>50nmol/L异常
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,diagnostic_workup.screening_tests.dexamethasone_suppression.48h_2mg,更特异但复杂
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,diagnostic_workup.screening_tests.midnight_salivary_cortisol,方便，准确性好
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,diagnostic_workup.differential_diagnosis.high_dose_dexamethasone.8mg_overnight,垂体性抑制>50%
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,diagnostic_workup.differential_diagnosis.high_dose_dexamethasone.interpretation,区分垂体与异位ACTH
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,diagnostic_workup.differential_diagnosis.crh_stimulation,垂体性ACTH明显升高
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,diagnostic_workup.differential_diagnosis.inferior_petrosal_sampling,金标准，区分垂体与异位
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,diagnostic_workup.imaging.pituitary_mri,垂体微腺瘤检测
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,diagnostic_workup.imaging.adrenal_ct,肾上腺病变评估
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,diagnostic_workup.imaging.chest_ct,异位ACTH源筛查
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,treatment_approaches.surgical.transsphenoidal_surgery,垂体腺瘤首选
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,treatment_approaches.surgical.adrenalectomy,肾上腺病变治疗
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,treatment_approaches.surgical.ectopic_source_resection,异位ACTH源切除
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,treatment_approaches.medical.steroidogenesis_inhibitors,ketoconazole; metyrapone; mitotane
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,treatment_approaches.medical.pituitary_directed,cabergoline; pasireotide
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,treatment_approaches.medical.glucocorticoid_antagonists,mifepristone
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,treatment_approaches.radiation.conventional_rt,垂体腺瘤术后辅助
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,treatment_approaches.radiation.stereotactic_radiosurgery,精准放疗
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,name_en,Pheochromocytoma
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,description,起源于肾上腺髓质的儿茶酚胺分泌性肿瘤，可引起严重高血压和心血管并发症
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,prevalence,高血压患者中0.05-0.2%
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,genetics.hereditary,30-40%
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,genetics.genes,VHL; RET; NF1; SDHB; SDHC; SDHD; MAX; TMEM127
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,clinical_manifestations.classic_triad.headache,90%
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,clinical_manifestations.classic_triad.sweating,70%
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,clinical_manifestations.classic_triad.palpitations,60%
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,clinical_manifestations.hypertension.sustained,50%
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,clinical_manifestations.hypertension.paroxysmal,45%
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,clinical_manifestations.hypertension.crisis,可危及生命
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,clinical_manifestations.other_symptoms,胸腹痛; 恶心呕吐; 体重下降; 焦虑恐惧; 高血糖
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,diagnostic_approach.biochemical_testing.first_line.plasma_metanephrines,最敏感(97-99%)
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,diagnostic_approach.biochemical_testing.first_line.24h_urine_metanephrines,特异性高
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,diagnostic_approach.biochemical_testing.cutoff_values.normetanephrine,>0.61 nmol/L
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,diagnostic_approach.biochemical_testing.cutoff_values.metanephrine,>0.31 nmol/L
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,diagnostic_approach.biochemical_testing.factors_affecting,药物干扰; 应激状态; 食物影响; 体位变化
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,diagnostic_approach.imaging.adrenal_ct.characteristics,富血供，不均匀强化
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,diagnostic_approach.imaging.adrenal_ct.size,通常>3cm
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,diagnostic_approach.imaging.mri,T2高信号，'灯泡征'
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,diagnostic_approach.imaging.functional_imaging.123i_mibg,特异性显像
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,diagnostic_approach.imaging.functional_imaging.68ga_dotatate_pet,新兴显像方法
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,preoperative_management.alpha_blockade.phenoxybenzamine.dose,10-20mg bid，逐渐增量
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,preoperative_management.alpha_blockade.phenoxybenzamine.duration,术前2-3周
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,preoperative_management.alpha_blockade.phenoxybenzamine.target,血压<130/80mmHg
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,preoperative_management.alpha_blockade.alternatives,doxazosin; terazosin
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,preoperative_management.beta_blockade.timing,α阻滞剂后使用
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,preoperative_management.beta_blockade.indication,心率>100bpm或心律失常
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,preoperative_management.beta_blockade.agents,propranolol; atenolol
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,preoperative_management.volume_expansion,术前充分补液
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,surgical_management.approach.laparoscopic,首选，创伤小
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,surgical_management.approach.open,巨大肿瘤或恶性可疑
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,surgical_management.intraoperative.anesthesia,避免刺激性药物
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,surgical_management.intraoperative.monitoring,有创血压，中心静脉压
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,surgical_management.intraoperative.blood_pressure,预期血压剧烈波动
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,surgical_management.postoperative.hypotension,常见，需血管活性药物
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,surgical_management.postoperative.hypoglycemia,胰岛素敏感性恢复
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,surgical_management.postoperative.follow_up,术后2周复查儿茶酚胺
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,name_en,Primary Adrenal Insufficiency
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,description,肾上腺皮质激素分泌不足导致的疾病，又称Addison病
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,etiology.autoimmune.percentage,80%
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,etiology.autoimmune.mechanism,21-羟化酶抗体阳性
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,etiology.autoimmune.associated_conditions,1型糖尿病; 甲状腺疾病; 性腺功能减退
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,etiology.infectious.causes,结核; 真菌感染; HIV
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,etiology.infectious.percentage,10%
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,etiology.infiltrative,肿瘤转移; 淀粉样变性; 血色病
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,etiology.genetic,先天性肾上腺增生; X-连锁肾上腺脑白质营养不良
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,clinical_manifestations.glucocorticoid_deficiency,乏力虚弱; 食欲不振; 体重下降; 低血压; 低血糖; 恶心呕吐
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,clinical_manifestations.mineralocorticoid_deficiency,脱水; 低钠血症; 高钾血症; 代谢性酸中毒; 体位性低血压
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,clinical_manifestations.androgen_deficiency,女性体毛稀少; 性欲减退
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,clinical_manifestations.hyperpigmentation,ACTH升高导致皮肤黏膜色素沉着
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,diagnostic_criteria.morning_cortisol,<100 nmol/L (<3.6 μg/dL)
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,diagnostic_criteria.acth_stimulation.standard_dose,250μg cosyntropin
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,diagnostic_criteria.acth_stimulation.normal_response,皮质醇>500 nmol/L
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,diagnostic_criteria.acth_stimulation.peak_time,30或60分钟
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,diagnostic_criteria.acth_level,>2倍正常上限
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,diagnostic_criteria.autoantibodies,21-羟化酶抗体; 17α-羟化酶抗体; 胆固醇侧链裂解酶抗体
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,treatment_protocols.glucocorticoid_replacement.hydrocortisone.dose,15-25mg/day，分2-3次
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,treatment_protocols.glucocorticoid_replacement.hydrocortisone.timing,早晨较大剂量
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,treatment_protocols.glucocorticoid_replacement.hydrocortisone.stress_dosing,发热或应激时加倍
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,treatment_protocols.glucocorticoid_replacement.prednisolone,3-5mg/day
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,treatment_protocols.glucocorticoid_replacement.dexamethasone,0.25-0.5mg/day
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,treatment_protocols.mineralocorticoid_replacement.fludrocortisone.dose,0.05-0.2mg/day
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,treatment_protocols.mineralocorticoid_replacement.fludrocortisone.monitoring,血压; 血钾; 肾素活性
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,treatment_protocols.mineralocorticoid_replacement.fludrocortisone.adjustment,根据血钾和血压调整
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,treatment_protocols.acute_crisis_management.hydrocortisone,100mg iv q6-8h
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,treatment_protocols.acute_crisis_management.fluid_resuscitation,生理盐水快速补液
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,treatment_protocols.acute_crisis_management.electrolyte_correction,纠正低钠高钾
+entities.adrenal_entities,ADR_004,原发性肾上腺皮质功能减退症,,disease,肾上腺疾病,treatment_protocols.acute_crisis_management.trigger_identification,寻找和治疗诱因
+entities.adrenal_entities,ADR_005,肾上腺偶发瘤,,disease,肾上腺疾病,name_en,Adrenal Incidentaloma
+entities.adrenal_entities,ADR_005,肾上腺偶发瘤,,disease,肾上腺疾病,description,影像学检查中偶然发现的肾上腺肿块，需排除功能性和恶性病变
+entities.adrenal_entities,ADR_005,肾上腺偶发瘤,,disease,肾上腺疾病,prevalence,人群中1-5%，随年龄增加
+entities.adrenal_entities,ADR_005,肾上腺偶发瘤,,disease,肾上腺疾病,differential_diagnosis.benign,皮质腺瘤(80%); 髓质脂肪瘤; 囊肿; 血肿
+entities.adrenal_entities,ADR_005,肾上腺偶发瘤,,disease,肾上腺疾病,differential_diagnosis.malignant,肾上腺皮质癌(5%); 转移瘤(15%); 恶性嗜铬细胞瘤
+entities.adrenal_entities,ADR_005,肾上腺偶发瘤,,disease,肾上腺疾病,imaging_characteristics.benign_features,CT平扫<10 HU; 均匀密度; 边界清楚; 增强后快速消退
+entities.adrenal_entities,ADR_005,肾上腺偶发瘤,,disease,肾上腺疾病,imaging_characteristics.malignant_features,CT平扫>10 HU; 不均匀强化; 边界不清; 消退延迟
+entities.adrenal_entities,ADR_005,肾上腺偶发瘤,,disease,肾上腺疾病,hormonal_evaluation.always_test,血浆游离甲氧肾上腺素; 1mg地塞米松抑制试验
+entities.adrenal_entities,ADR_005,肾上腺偶发瘤,,disease,肾上腺疾病,hormonal_evaluation.conditional_test,醛固酮/肾素比值(高血压或低钾); DHEA-S(女性男性化); 17-羟孕酮(年轻患者)
+entities.adrenal_entities,ADR_005,肾上腺偶发瘤,,disease,肾上腺疾病,management_strategy.surgery_indications,功能性肿瘤; 恶性可疑; 直径>4cm; 影像学恶性特征; 年龄<40岁
+entities.adrenal_entities,ADR_005,肾上腺偶发瘤,,disease,肾上腺疾病,management_strategy.follow_up_protocol.hormonal,1年后重复激素检查
+entities.adrenal_entities,ADR_005,肾上腺偶发瘤,,disease,肾上腺疾病,management_strategy.follow_up_protocol.imaging,12个月后复查CT
+entities.adrenal_entities,ADR_005,肾上腺偶发瘤,,disease,肾上腺疾病,management_strategy.follow_up_protocol.growth_threshold,直径增加>1cm
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,name_en,Cushing's Syndrome
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,icd10,E24
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,description,由于糖皮质激素过多引起的临床综合征
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.acth_dependent.prevalence,80%的内源性库欣综合征
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.acth_dependent.subtypes.cushings_disease.cause,垂体ACTH分泌瘤
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.acth_dependent.subtypes.cushings_disease.prevalence,85%的ACTH依赖性
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.acth_dependent.subtypes.cushings_disease.demographics,女性多见，20-40岁高发
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.acth_dependent.subtypes.ectopic_acth_syndrome.cause,异位ACTH分泌
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.acth_dependent.subtypes.ectopic_acth_syndrome.common_tumors,肺支气管类癌; 胰腺胰岛细胞瘤; 胸腺瘤; 嗜铬细胞瘤
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.acth_dependent.subtypes.ectopic_acth_syndrome.prevalence,15%的ACTH依赖性
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.acth_independent.prevalence,20%的内源性库欣综合征
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.acth_independent.subtypes.unilateral_adenoma.cause,单侧肾上腺腺瘤
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.acth_independent.subtypes.unilateral_adenoma.prevalence,10%
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.acth_independent.subtypes.unilateral_adenoma.characteristics,良性，单侧切除可治愈
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.acth_independent.subtypes.bilateral_hyperplasia.cause,双侧肾上腺增生
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.acth_independent.subtypes.bilateral_hyperplasia.subtypes,原发性色素性结节性肾上腺病; ACTH无关性大结节性增生
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.acth_independent.subtypes.adrenal_carcinoma.cause,肾上腺皮质癌
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.acth_independent.subtypes.adrenal_carcinoma.prevalence,<5%
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.acth_independent.subtypes.adrenal_carcinoma.prognosis,预后差，5年生存率25-50%
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.exogenous.cause,外源性糖皮质激素
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.exogenous.prevalence,最常见原因
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,etiology.exogenous.medications,泼尼松; 氢化可的松; 地塞米松; 甲泼尼龙
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,clinical_manifestations.central_obesity.prevalence,>90%
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,clinical_manifestations.central_obesity.features,向心性肥胖; 满月脸; 水牛背; 锁骨上脂肪垫
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,clinical_manifestations.skin_changes.purple_striae.prevalence,50-70%
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,clinical_manifestations.skin_changes.purple_striae.characteristics,紫纹，宽>1cm
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,clinical_manifestations.skin_changes.purple_striae.locations,腹部; 大腿; 腋窝
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,clinical_manifestations.skin_changes.bruising,轻微外伤后瘀斑
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,clinical_manifestations.skin_changes.poor_wound_healing,伤口愈合不良
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,clinical_manifestations.skin_changes.skin_atrophy,皮肤萎缩变薄
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,clinical_manifestations.muscle_weakness.prevalence,60-70%
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,clinical_manifestations.muscle_weakness.pattern,近端肌无力
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,clinical_manifestations.muscle_weakness.manifestation,起立困难，爬楼梯困难
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,clinical_manifestations.metabolic_effects.diabetes,50-60%患者
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,clinical_manifestations.metabolic_effects.hypertension,80%患者
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,clinical_manifestations.metabolic_effects.dyslipidemia,高甘油三酯血症
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,clinical_manifestations.metabolic_effects.osteoporosis,50%患者有骨质疏松
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,clinical_manifestations.psychiatric_symptoms.prevalence,50-80%
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,clinical_manifestations.psychiatric_symptoms.types,抑郁症; 焦虑; 情绪不稳; 认知功能障碍
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,diagnosis.screening_tests.dexamethasone_suppression.overnight_1mg,首选筛查试验
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,diagnosis.screening_tests.dexamethasone_suppression.normal,次日8AM皮质醇<1.8μg/dL
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,diagnosis.screening_tests.dexamethasone_suppression.sensitivity,95%
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,diagnosis.screening_tests.dexamethasone_suppression.specificity,80%
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,diagnosis.screening_tests.24h_urine_cortisol.threshold,>3倍正常上限
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,diagnosis.screening_tests.24h_urine_cortisol.advantages,反映24小时皮质醇产生
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,diagnosis.screening_tests.late_night_salivary_cortisol.threshold,>正常上限
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,diagnosis.screening_tests.late_night_salivary_cortisol.advantages,方便，不受CBG影响
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,diagnosis.differential_diagnosis.high_dose_dexamethasone.protocol,2mg每6小时×48小时
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,diagnosis.differential_diagnosis.high_dose_dexamethasone.cushings_disease,皮质醇抑制>50%
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,diagnosis.differential_diagnosis.high_dose_dexamethasone.ectopic_acth,皮质醇无抑制
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,diagnosis.differential_diagnosis.acth_levels.acth_dependent,ACTH >20 pg/mL
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,diagnosis.differential_diagnosis.acth_levels.acth_independent,ACTH <10 pg/mL
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,treatment.surgical_treatment.transsphenoidal_surgery.indication,垂体腺瘤
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,treatment.surgical_treatment.transsphenoidal_surgery.success_rate,70-90%
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,treatment.surgical_treatment.adrenalectomy.unilateral,单侧腺瘤
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,treatment.surgical_treatment.adrenalectomy.bilateral,双侧增生
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,treatment.medical_treatment.ketoconazole.mechanism,抑制皮质醇合成
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,treatment.medical_treatment.ketoconazole.dose,200-400mg 每日2-3次
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,treatment.medical_treatment.mitotane.indication,肾上腺皮质癌
+entities.adrenal_entities,ADR_002,库欣综合征,,disease,肾上腺疾病,treatment.medical_treatment.mitotane.mechanism,肾上腺毒性
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,name_en,Pheochromocytoma
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,icd10,E27.5
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,description,起源于嗜铬组织的肿瘤，分泌过多儿茶酚胺
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,epidemiology.incidence,每年2-8/百万人
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,epidemiology.prevalence,高血压患者中0.1-0.6%
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,epidemiology.hereditary,25-30%为遗传性
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,clinical_manifestations.classic_triad.headache,68%患者
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,clinical_manifestations.classic_triad.sweating,69%患者
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,clinical_manifestations.classic_triad.palpitations,51%患者
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,clinical_manifestations.hypertension.prevalence,90%患者
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,clinical_manifestations.hypertension.patterns,持续性高血压（50%）; 阵发性高血压（45%）
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,diagnosis.biochemical_testing.plasma_metanephrines.sensitivity,96-100%
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,diagnosis.biochemical_testing.plasma_metanephrines.specificity,85-89%
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,diagnosis.biochemical_testing.24h_urine_catecholamines.sensitivity,87-90%
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,diagnosis.imaging.ct_mri,首选解剖学成像
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,diagnosis.imaging.mibg_scintigraphy,功能性成像
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,treatment.preoperative_management.alpha_blockade.phenoxybenzamine,10-20mg 每日2次
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,treatment.preoperative_management.alpha_blockade.duration,手术前7-14天
+entities.adrenal_entities,ADR_003,嗜铬细胞瘤,,disease,肾上腺疾病,treatment.surgical_treatment.laparoscopic_adrenalectomy,首选术式
+entities.adrenal_entities,ADR_004,肾上腺皮质功能不全,,disease,肾上腺疾病,name_en,Adrenal Insufficiency
+entities.adrenal_entities,ADR_004,肾上腺皮质功能不全,,disease,肾上腺疾病,icd10,E27.1
+entities.adrenal_entities,ADR_004,肾上腺皮质功能不全,,disease,肾上腺疾病,description,肾上腺皮质激素分泌不足引起的临床综合征
+entities.adrenal_entities,ADR_004,肾上腺皮质功能不全,,disease,肾上腺疾病,classification.primary.definition,原发性（阿狄森病）
+entities.adrenal_entities,ADR_004,肾上腺皮质功能不全,,disease,肾上腺疾病,classification.primary.mechanism,肾上腺皮质本身病变
+entities.adrenal_entities,ADR_004,肾上腺皮质功能不全,,disease,肾上腺疾病,classification.secondary.definition,继发性
+entities.adrenal_entities,ADR_004,肾上腺皮质功能不全,,disease,肾上腺疾病,classification.secondary.mechanism,垂体ACTH分泌不足
+entities.adrenal_entities,ADR_004,肾上腺皮质功能不全,,disease,肾上腺疾病,etiology.autoimmune,80-90%原发性病因
+entities.adrenal_entities,ADR_004,肾上腺皮质功能不全,,disease,肾上腺疾病,etiology.infections,结核，真菌感染
+entities.adrenal_entities,ADR_004,肾上腺皮质功能不全,,disease,肾上腺疾病,etiology.hemorrhage,抗凝并发症，脓毒症
+entities.adrenal_entities,ADR_004,肾上腺皮质功能不全,,disease,肾上腺疾病,clinical_manifestations.constitutional,乏力; 体重减轻; 肌无力
+entities.adrenal_entities,ADR_004,肾上腺皮质功能不全,,disease,肾上腺疾病,clinical_manifestations.gastrointestinal,恶心呕吐; 腹痛; 渴盐
+entities.adrenal_entities,ADR_004,肾上腺皮质功能不全,,disease,肾上腺疾病,clinical_manifestations.skin_changes.hyperpigmentation,94%原发性患者
+entities.adrenal_entities,ADR_004,肾上腺皮质功能不全,,disease,肾上腺疾病,clinical_manifestations.skin_changes.mechanism,ACTH过多
+entities.adrenal_entities,ADR_004,肾上腺皮质功能不全,,disease,肾上腺疾病,clinical_manifestations.cardiovascular.hypotension,88-94%患者
+entities.adrenal_entities,ADR_004,肾上腺皮质功能不全,,disease,肾上腺疾病,diagnosis.screening.morning_cortisol,8-9AM采血
+entities.adrenal_entities,ADR_004,肾上腺皮质功能不全,,disease,肾上腺疾病,diagnosis.screening.interpretation.>13 μg/dL,基本除外
+entities.adrenal_entities,ADR_004,肾上腺皮质功能不全,,disease,肾上腺疾病,diagnosis.screening.interpretation.<3 μg/dL,强烈提示
+entities.adrenal_entities,ADR_004,肾上腺皮质功能不全,,disease,肾上腺疾病,diagnosis.confirmatory.acth_stimulation,250μg合成ACTH
+entities.adrenal_entities,ADR_004,肾上腺皮质功能不全,,disease,肾上腺疾病,diagnosis.confirmatory.normal_response,皮质醇>18-20 μg/dL
+entities.adrenal_entities,ADR_004,肾上腺皮质功能不全,,disease,肾上腺疾病,treatment.glucocorticoid.hydrocortisone,15-25mg/天，分2-3次
+entities.adrenal_entities,ADR_004,肾上腺皮质功能不全,,disease,肾上腺疾病,treatment.mineralocorticoid.fludrocortisone,0.05-0.2mg/天（仅原发性）
+entities.adrenal_entities,ADR_004,肾上腺皮质功能不全,,disease,肾上腺疾病,treatment.emergency.adrenal_crisis,氢化可的松100mg静脉

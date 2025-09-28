@@ -1,0 +1,936 @@
+section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,icd10,I63.9
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,synonyms,急性脑梗死; 缺血性卒中; 脑梗塞
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,definition,脑血管急性闭塞导致相应脑组织缺血性坏死及功能障碍的急性脑血管病
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,classification.etiology_toast.large_artery,大动脉粥样硬化型（约25%）
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,classification.etiology_toast.cardioembolic,心源性栓塞型（约20%）
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,classification.etiology_toast.small_vessel,小血管闭塞型/腔隙性（约25%）
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,classification.etiology_toast.other_determined,其他明确病因型（约5%）
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,classification.etiology_toast.undetermined,不明原因型（约25%）
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,classification.bamford_classification.taci,全前循环梗死
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,classification.bamford_classification.paci,部分前循环梗死
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,classification.bamford_classification.laci,腔隙性梗死
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,classification.bamford_classification.poci,后循环梗死
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,risk_factors.modifiable,高血压; 糖尿病; 血脂异常; 房颤; 吸烟; 肥胖; 缺乏运动; 过量饮酒
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,risk_factors.non_modifiable,年龄; 性别（男性）; 遗传因素; 既往卒中史
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,risk_factors.emerging,同型半胱氨酸血症; 睡眠呼吸暂停; 慢性炎症; 凝血功能异常
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,pathophysiology.vascular_occlusion,血管闭塞→脑血流减少→缺血性级联反应
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,pathophysiology.ischemic_cascade,ATP耗竭; 离子泵失效; 细胞膜去极化; 兴奋性氨基酸释放; 钙离子内流; 自由基产生; 细胞死亡
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,pathophysiology.penumbra_concept,缺血半暗带-可挽救脑组织
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,clinical_presentation.sudden_onset,急性起病，数秒至数分钟达高峰
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,clinical_presentation.focal_signs.motor,偏瘫、肌力减退
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,clinical_presentation.focal_signs.sensory,偏身感觉障碍
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,clinical_presentation.focal_signs.speech,失语、构音障碍
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,clinical_presentation.focal_signs.visual,视野缺损、复视
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,clinical_presentation.focal_signs.cognitive,失认、失用、注意障碍
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,clinical_presentation.nihss_assessment.score_range,0-42分
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,clinical_presentation.nihss_assessment.mild,0-4分（轻度）
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,clinical_presentation.nihss_assessment.moderate,5-15分（中度）
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,clinical_presentation.nihss_assessment.severe,16-20分（重度）
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,clinical_presentation.nihss_assessment.very_severe,>20分（极重度）
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,diagnostics.emergency_assessment.time_critical,发病4.5小时内到达医院
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,diagnostics.emergency_assessment.fast_assessment,FAST量表快速识别
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,diagnostics.emergency_assessment.vital_signs,血压、心率、体温、血糖
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,diagnostics.imaging.ct_scan.non_contrast,排除脑出血（首选）
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,diagnostics.imaging.ct_scan.early_signs,早期缺血改变（<6小时）
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,diagnostics.imaging.ct_scan.limitations,早期缺血病灶敏感性低
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,diagnostics.imaging.mri.dwi,超急性期缺血病灶检出金标准
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,diagnostics.imaging.mri.flair,陈旧性病变评估
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,diagnostics.imaging.mri.mra,颅内外血管评估
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,diagnostics.imaging.mri.perfusion,血流灌注评估
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,diagnostics.imaging.ct_angiography,血管狭窄闭塞评估
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,diagnostics.imaging.dsa,血管影像学金标准
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,diagnostics.laboratory,血常规; 凝血功能（PT、APTT、INR）; 生化全套（血糖、肾肝功能）; 心肌酶谱; D-二聚体; 同型半胱氨酸
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,diagnostics.cardiac_evaluation.ecg,心律失常、心肌梗死
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,diagnostics.cardiac_evaluation.echocardiography,心源性栓塞源评估
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,diagnostics.cardiac_evaluation.holter,阵发性房颤检测
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.acute_phase.time_window,时间窗内治疗至关重要
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.acute_phase.thrombolysis.rtpa.time_window,4.5小时内静脉溶栓
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.acute_phase.thrombolysis.rtpa.dose,0.9mg/kg，最大90mg
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.acute_phase.thrombolysis.rtpa.contraindications,颅内出血史; 近期外伤手术; 凝血功能异常; 血压>185/110mmHg未控制
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.acute_phase.mechanical_thrombectomy.time_window,发病6-24小时（选择性患者）
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.acute_phase.mechanical_thrombectomy.indications,大血管闭塞; NIHSS≥6分; 可挽救脑组织
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.acute_phase.mechanical_thrombectomy.technique,支架取栓术
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.supportive_care.airway_management,维持气道通畅
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.supportive_care.blood_pressure.thrombolysis_target,<185/110 mmHg
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.supportive_care.blood_pressure.general_management,个体化血压管理
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.supportive_care.blood_pressure.avoid_rapid_reduction,避免血压急剧下降
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.supportive_care.glucose_control,血糖7.8-10mmol/L
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.supportive_care.temperature,控制发热<37.5°C
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.supportive_care.nutrition,48小时内建立营养支持
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.secondary_prevention.antiplatelet.aspirin,75-100mg/day（非心源性）
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.secondary_prevention.antiplatelet.clopidogrel,75mg/day
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.secondary_prevention.antiplatelet.dual_therapy,高危患者短期双联
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.secondary_prevention.anticoagulation.warfarin,心源性栓塞（INR 2.0-3.0）
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.secondary_prevention.anticoagulation.noac,新型口服抗凝药（房颤患者）
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.secondary_prevention.statins.high_intensity,阿托伐他汀40-80mg
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.secondary_prevention.statins.target,LDL-C<1.8mmol/L
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.rehabilitation.early_mobilization,48小时内开始
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.rehabilitation.multidisciplinary,康复医学团队
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.rehabilitation.speech_therapy,失语症康复
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.rehabilitation.occupational_therapy,日常生活能力训练
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,treatment.rehabilitation.physical_therapy,运动功能康复
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,complications.neurological,脑水肿; 出血性转化; 癫痫发作; 感染（肺炎、尿路感染）
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,complications.systemic,深静脉血栓; 肺栓塞; 压疮; 营养不良
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,prognosis.mortality,急性期死亡率10-15%
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,prognosis.functional_outcome.mRS_0-2,功能独立（约40%）
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,prognosis.functional_outcome.mRS_3-5,功能依赖（约40%）
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,prognosis.functional_outcome.mRS_6,死亡（约20%）
+cerebrovascular_diseases,CBVD_001,急性缺血性脑卒中,,Disease,脑血管疾病,prognosis.factors,年龄; 基线NIHSS评分; 治疗时间窗; 合并症
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,icd10,I61.9
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,synonyms,脑出血; 颅内出血; ICH
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,definition,脑实质内血管破裂引起的脑内出血，是脑卒中的重要类型
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,classification.location.deep,深部出血（基底节、丘脑、脑干）
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,classification.location.lobar,脑叶出血（皮质下白质）
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,classification.location.cerebellar,小脑出血
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,classification.location.intraventricular,脑室内出血
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,classification.etiology.hypertensive,高血压性脑出血（最常见）
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,classification.etiology.amyloid_angiopathy,脑淀粉样血管病
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,classification.etiology.vascular_malformation,血管畸形
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,classification.etiology.anticoagulant_related,抗凝药物相关
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,classification.etiology.tumor_bleeding,肿瘤性出血
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,risk_factors.primary,高血压（最重要）; 年龄增长; 男性; 既往脑出血史
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,risk_factors.secondary,抗凝药物使用; 血小板减少; 肝功能不全; 酗酒; 可卡因使用; 血管畸形
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,pathophysiology.vessel_rupture,小动脉破裂→血肿形成→周围组织压迫
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,pathophysiology.hematoma_expansion,血肿扩大（发病6小时内）
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,pathophysiology.secondary_injury,机械性压迫; 血脑屏障破坏; 炎症反应; 脑水肿形成
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,clinical_presentation.onset,活动中突然发病（与缺血性卒中不同）
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,clinical_presentation.headache,剧烈头痛（50%患者）
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,clinical_presentation.nausea_vomiting,恶心呕吐
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,clinical_presentation.focal_deficits.basal_ganglia,对侧偏瘫、失语
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,clinical_presentation.focal_deficits.thalamic,感觉障碍、意识障碍
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,clinical_presentation.focal_deficits.cerebellar,共济失调、眩晕
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,clinical_presentation.focal_deficits.brainstem,复视、吞咽困难、呼吸异常
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,clinical_presentation.consciousness,意识水平下降程度与出血量相关
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,diagnostics.emergency_imaging.ct_scan.sensitivity,急性期100%敏感性
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,diagnostics.emergency_imaging.ct_scan.hematoma_characteristics,高密度影
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,diagnostics.emergency_imaging.ct_scan.volume_calculation,ABC/2公式
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,diagnostics.emergency_imaging.ct_scan.spot_sign,造影剂外溢预示血肿扩大
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,diagnostics.emergency_imaging.mri.gradient_echo,检出微出血
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,diagnostics.emergency_imaging.mri.swi,静脉畸形检出
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,diagnostics.emergency_imaging.mri.timing,急性期CT更实用
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,diagnostics.laboratory,凝血功能（PT、APTT、INR、血小板）; 血常规; 生化全套; 毒理学筛查（年轻患者）
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,diagnostics.vascular_evaluation.cta,血管畸形筛查
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,diagnostics.vascular_evaluation.mra,动脉瘤评估
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,diagnostics.vascular_evaluation.dsa,复杂血管病变金标准
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,treatment.emergency_management.airway_breathing,维持气道通畅，必要时插管
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,treatment.emergency_management.blood_pressure.target,SBP 140-180 mmHg
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,treatment.emergency_management.blood_pressure.agents,拉贝洛尔、尼卡地平
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,treatment.emergency_management.blood_pressure.avoid,避免舌下含服短效降压药
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,treatment.emergency_management.coagulopathy_reversal.warfarin,维生素K + PCC/FFP
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,treatment.emergency_management.coagulopathy_reversal.noac,特异性逆转剂
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,treatment.emergency_management.coagulopathy_reversal.heparin,鱼精蛋白
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,treatment.emergency_management.seizure_control,抗癫痫药物
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,treatment.surgical_intervention.indications,小脑出血>3cm伴脑干压迫; 脑叶出血>30ml伴中线移位; 脑室内出血伴梗阻性脑积水
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,treatment.surgical_intervention.techniques,开颅血肿清除; 内镜下血肿清除; 脑室外引流
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,treatment.surgical_intervention.contraindications,深昏迷（GCS<5）; 预期生存期短; 出血倾向未纠正
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,treatment.supportive_care.intracranial_pressure,甘露醇、高渗盐水
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,treatment.supportive_care.temperature_control,维持正常体温
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,treatment.supportive_care.glucose_management,血糖控制
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,treatment.supportive_care.dvt_prophylaxis,间歇性气压装置
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,complications.early,血肿扩大; 脑疝形成; 急性脑积水; 癫痫发作
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,complications.late,慢性脑积水; 继发性癫痫; 认知功能障碍; 运动功能障碍
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,prognosis.mortality,30天死亡率40-50%
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,prognosis.ich_score.components,GCS评分; 出血量; 脑室内出血; 幕上/幕下出血位置; 年龄
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,prognosis.ich_score.prediction,30天死亡率预测
+cerebrovascular_diseases,CBVD_002,急性出血性脑卒中,,Disease,脑血管疾病,prognosis.functional_recovery,存活者中50%达到功能独立
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,icd10,G45.9
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,synonyms,TIA; 小卒中; 一过性脑缺血发作
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,definition,由局灶性脑或视网膜缺血引起的短暂性神经功能缺失，不伴急性梗死证据
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,characteristics.duration,症状持续时间通常<1小时
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,characteristics.reversibility,症状完全可逆
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,characteristics.tissue_based_definition,无急性脑梗死影像学证据
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,etiology.large_artery,大动脉狭窄或闭塞
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,etiology.small_vessel,小血管病变
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,etiology.cardioembolism,心源性栓塞
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,etiology.other_causes,血流动力学异常; 血液系统疾病; 血管炎
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,clinical_syndromes.carotid_territory.symptoms,单侧肢体无力; 单侧面部麻木; 失语或构音障碍; 单眼视力丧失（黑蒙）
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,clinical_syndromes.carotid_territory.duration,数分钟至数小时
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,clinical_syndromes.vertebrobasilar_territory.symptoms,双侧或交替性无力; 复视; 眩晕伴神经系统症状; 吞咽困难; 共济失调
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,risk_stratification.abcd2_score.components,年龄≥60岁（1分）; 血压≥140/90mmHg（1分）; 临床特征：单侧无力（2分）、失语无无力（1分）; 症状持续≥60分钟（2分）、10-59分钟（1分）; 糖尿病（1分）
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,risk_stratification.abcd2_score.risk_interpretation.0-3分,低危（2天卒中风险<1%）
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,risk_stratification.abcd2_score.risk_interpretation.4-5分,中危（2天卒中风险4-8%）
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,risk_stratification.abcd2_score.risk_interpretation.6-7分,高危（2天卒中风险>8%）
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,diagnostics.clinical_assessment.symptom_characterization,详细症状描述和时间过程
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,diagnostics.clinical_assessment.vascular_territory,确定受累血管区域
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,diagnostics.clinical_assessment.risk_factors,评估卒中危险因素
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,diagnostics.imaging.brain_mri.dwi,排除急性脑梗死
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,diagnostics.imaging.brain_mri.flair,评估陈旧病变
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,diagnostics.imaging.brain_mri.indication,症状持续或反复发作
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,diagnostics.imaging.vascular_imaging.carotid_ultrasound,颈动脉狭窄评估
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,diagnostics.imaging.vascular_imaging.cta_mra,颅内外血管评估
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,diagnostics.imaging.vascular_imaging.dsa,复杂血管病变
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,diagnostics.cardiac_evaluation.ecg,心律失常检测
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,diagnostics.cardiac_evaluation.echocardiography,心脏结构功能评估
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,diagnostics.cardiac_evaluation.holter_monitoring,阵发性房颤检测
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,diagnostics.laboratory,血常规、生化全套; 凝血功能; 血脂; HbA1c; 同型半胱氨酸
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,treatment.acute_management.hospitalization,高危患者（ABCD2≥4分）建议住院
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,treatment.acute_management.monitoring,48-72小时神经功能监测
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,treatment.acute_management.early_intervention,24小时内启动二级预防
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,treatment.secondary_prevention.antiplatelet_therapy.aspirin,75-100mg/day
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,treatment.secondary_prevention.antiplatelet_therapy.clopidogrel,75mg/day（阿司匹林不耐受）
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,treatment.secondary_prevention.antiplatelet_therapy.dual_therapy,高危患者21天双联抗血小板
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,treatment.secondary_prevention.anticoagulation.indications,心源性栓塞（房颤、瓣膜病）
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,treatment.secondary_prevention.anticoagulation.warfarin,INR 2.0-3.0
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,treatment.secondary_prevention.anticoagulation.noac,新型口服抗凝药
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,treatment.secondary_prevention.statin_therapy.high_intensity,阿托伐他汀40-80mg
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,treatment.secondary_prevention.statin_therapy.target,LDL-C<1.8mmol/L
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,treatment.secondary_prevention.blood_pressure.target,<140/90 mmHg（一般患者）
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,treatment.secondary_prevention.blood_pressure.diabetes_ckd,<130/80 mmHg
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,treatment.secondary_prevention.diabetes_management,HbA1c<7%
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,treatment.revascularization.carotid_endarterectomy.indications,颈内动脉狭窄≥70%
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,treatment.revascularization.carotid_endarterectomy.timing,症状后2周内
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,treatment.revascularization.carotid_stenting,外科高危患者替代治疗
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,treatment.lifestyle_modification,戒烟; 限酒; 规律运动; 体重控制; 低盐饮食
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,prognosis.stroke_risk.early,48小时内卒中风险5-10%
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,prognosis.stroke_risk.long_term,1年卒中风险10-15%
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,prognosis.recurrence,无治疗情况下年复发率30%
+cerebrovascular_diseases,CBVD_003,短暂性脑缺血发作,,Disease,脑血管疾病,prognosis.prevention_effect,规范二级预防可降低风险80%
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,icd10,G63.2
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,synonyms,糖尿病神经病变; DPN; 远端对称性多发性神经病变
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,definition,糖尿病患者在排除其他原因情况下出现的周围神经功能障碍相关的症状和体征
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,classification.clinical_types.distal_symmetric,远端对称性多发性神经病变（最常见90%）
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,classification.clinical_types.focal_multifocal,局灶性/多灶性神经病变
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,classification.clinical_types.proximal_neuropathy,近端神经病变/糖尿病性肌萎缩
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,classification.clinical_types.autonomic_neuropathy,自主神经病变
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,classification.severity_grading.grade_0,无症状，神经传导正常
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,classification.severity_grading.grade_1,无症状，神经传导异常
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,classification.severity_grading.grade_2,有症状
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,classification.severity_grading.grade_3,有体征
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,epidemiology.prevalence,糖尿病患者中患病率20-50%
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,epidemiology.type1_dm,患病20年后50%患者出现
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,epidemiology.type2_dm,诊断时即有10-15%患者存在
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,epidemiology.risk_factors,病程长; 血糖控制不良; 年龄增长; 身高（高个子风险大）; 吸烟; 高血压
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,pathophysiology.metabolic_pathway.polyol_pathway,山梨醇堆积→神经细胞渗透压改变
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,pathophysiology.metabolic_pathway.age_formation,糖基化终末产物形成→神经毒性
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,pathophysiology.metabolic_pathway.oxidative_stress,氧化应激→神经细胞损伤
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,pathophysiology.metabolic_pathway.inflammatory,炎症因子激活→神经损伤
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,pathophysiology.nerve_fiber_types.large_fiber,有髓鞘神经纤维受损→振动觉、位置觉下降
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,pathophysiology.nerve_fiber_types.small_fiber,小有髓和无髓纤维受损→痛觉、温觉异常
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,clinical_presentation.symptoms.positive_symptoms,疼痛（烧灼样、刺痛、电击样）; 异常感觉（麻木、针刺感）; 感觉过敏; 夜间症状加重
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,clinical_presentation.symptoms.negative_symptoms,感觉减退; 麻木; 无力; 平衡障碍
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,clinical_presentation.distribution.stocking_glove,袜套样和手套样分布
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,clinical_presentation.distribution.distal_to_proximal,远端向近端进展
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,clinical_presentation.distribution.symmetric,对称性受累
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,clinical_presentation.neuropathic_pain.characteristics,夜间加重，影响睡眠和生活质量
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,clinical_presentation.neuropathic_pain.pain_descriptors,烧灼样; 刀割样; 电击样; 针刺样
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,clinical_presentation.neuropathic_pain.severity,VAS评分或数字评定量表
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,diagnostics.clinical_assessment.neurological_examination.vibration_sense,128Hz音叉检查（踝关节、足趾）
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,diagnostics.clinical_assessment.neurological_examination.position_sense,关节位置觉检查
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,diagnostics.clinical_assessment.neurological_examination.light_touch,10g单丝检查
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,diagnostics.clinical_assessment.neurological_examination.ankle_reflexes,跟腱反射减弱或消失
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,diagnostics.clinical_assessment.neuropathy_scores.nds,神经功能缺陷评分
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,diagnostics.clinical_assessment.neuropathy_scores.nss,神经症状评分
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,diagnostics.clinical_assessment.neuropathy_scores.michigan_neuropathy,密歇根神经病变筛查工具
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,diagnostics.objective_testing.nerve_conduction.indications,确诊和排除其他病因
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,diagnostics.objective_testing.nerve_conduction.findings,感觉神经传导速度减慢，波幅下降
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,diagnostics.objective_testing.nerve_conduction.limitations,主要反映大纤维功能
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,diagnostics.objective_testing.quantitative_sensory,温度觉、振动觉定量检测
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,diagnostics.objective_testing.autonomic_testing,心率变异性、立位试验
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,diagnostics.differential_diagnosis,维生素B12缺乏; 甲状腺功能减退; 慢性肾病; 酒精性神经病变; 药物性神经病变; 遗传性神经病变
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,treatment.glycemic_control.primary_prevention,严格血糖控制可预防神经病变
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,treatment.glycemic_control.secondary_prevention,血糖控制可延缓进展
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,treatment.glycemic_control.targets,HbA1c<7%（个体化调整）
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,treatment.neuropathic_pain_management.first_line.pregabalin.dosage,75-300mg bid
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,treatment.neuropathic_pain_management.first_line.pregabalin.titration,从低剂量开始逐渐加量
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,treatment.neuropathic_pain_management.first_line.pregabalin.side_effects,嗜睡、头晕、体重增加
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,treatment.neuropathic_pain_management.first_line.gabapentin.dosage,300-1200mg tid
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,treatment.neuropathic_pain_management.first_line.gabapentin.titration,缓慢加量至有效剂量
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,treatment.neuropathic_pain_management.first_line.gabapentin.considerations,肾功能调整剂量
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,treatment.neuropathic_pain_management.second_line.tricyclic_antidepressants.amitriptyline,25-75mg 睡前
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,treatment.neuropathic_pain_management.second_line.tricyclic_antidepressants.contraindications,心律失常、前列腺增生
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,treatment.neuropathic_pain_management.second_line.tricyclic_antidepressants.monitoring,心电图监测
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,treatment.neuropathic_pain_management.second_line.ssnris.duloxetine,60-120mg qd
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,treatment.neuropathic_pain_management.second_line.ssnris.advantages,同时治疗抑郁症状
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,treatment.neuropathic_pain_management.topical_agents.capsaicin_cream,0.075% 一日3-4次
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,treatment.neuropathic_pain_management.topical_agents.lidocaine_patch,5% 贴片，一日最多12小时
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,treatment.foot_care.daily_inspection,每日足部检查
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,treatment.foot_care.proper_footwear,合适鞋具，避免外伤
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,treatment.foot_care.nail_care,正确修剪指甲
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,treatment.foot_care.callus_management,专业处理胼胝
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,treatment.foot_care.wound_care,及时处理创伤
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,treatment.multidisciplinary_approach,内分泌科管理血糖; 神经科评估神经病变; 足病科预防足部并发症; 康复科平衡训练; 疼痛科难治性疼痛管理
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,complications.diabetic_foot.risk_factors,感觉缺失+外伤+感染
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,complications.diabetic_foot.classification,Wagner分级或IWGDF分类
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,complications.diabetic_foot.management,多学科团队协作
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,complications.falls_fractures,本体感觉缺失导致平衡障碍
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,complications.charcot_arthropathy,神经性关节病
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,complications.quality_of_life,疼痛和功能障碍严重影响生活质量
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,prognosis.progression,通常缓慢进展，不可逆
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,prognosis.pain_management,60-70%患者疼痛可有效控制
+cerebrovascular_diseases,NEURO_001,糖尿病周围神经病变,,Disease,神经病变,prognosis.prevention,严格血糖控制可预防或延缓发生
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,icd10,G99.0
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,synonyms,糖尿病植物神经病变; DAN
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,definition,糖尿病患者出现的自主神经系统功能障碍，累及心血管、胃肠道、泌尿生殖系统等
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,classification.cardiovascular,心血管自主神经病变（最常见且预后最差）
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,classification.gastrointestinal,胃肠道自主神经病变
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,classification.genitourinary,泌尿生殖系统自主神经病变
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,classification.sudomotor,汗腺功能异常
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,classification.pupillary,瞳孔功能异常
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,clinical_manifestations.cardiovascular.resting_tachycardia,静息心率>100bpm
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,clinical_manifestations.cardiovascular.exercise_intolerance,运动耐量下降
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,clinical_manifestations.cardiovascular.orthostatic_hypotension,体位性低血压（立位SBP下降≥20mmHg）
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,clinical_manifestations.cardiovascular.silent_mi,无症状心肌梗死风险增加
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,clinical_manifestations.cardiovascular.sudden_death,猝死风险增加
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,clinical_manifestations.gastrointestinal.gastroparesis.symptoms,早饱、腹胀、恶心、呕吐
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,clinical_manifestations.gastrointestinal.gastroparesis.complications,血糖控制困难、营养不良
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,clinical_manifestations.gastrointestinal.gastroparesis.diagnosis,胃排空延迟检查
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,clinical_manifestations.gastrointestinal.constipation,便秘（最常见胃肠症状）
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,clinical_manifestations.gastrointestinal.diarrhea,夜间腹泻，大便失禁
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,clinical_manifestations.genitourinary.neurogenic_bladder.symptoms,尿频、尿急、残余尿增多
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,clinical_manifestations.genitourinary.neurogenic_bladder.complications,尿路感染、肾功能损害
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,clinical_manifestations.genitourinary.erectile_dysfunction.prevalence,糖尿病男性患者50-75%
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,clinical_manifestations.genitourinary.erectile_dysfunction.mechanism,神经损伤+血管因素
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,clinical_manifestations.genitourinary.erectile_dysfunction.impact,严重影响生活质量
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,clinical_manifestations.genitourinary.female_sexual_dysfunction,性欲减退、阴道干燥
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,clinical_manifestations.sudomotor.anhidrosis,下肢无汗
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,clinical_manifestations.sudomotor.hyperhidrosis,上肢代偿性多汗
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,clinical_manifestations.sudomotor.heat_intolerance,散热功能障碍
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,diagnostics.cardiovascular_autonomic_tests.heart_rate_variability.deep_breathing,深呼吸时心率变异性
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,diagnostics.cardiovascular_autonomic_tests.heart_rate_variability.valsalva_ratio,瓦尔萨尔瓦动作心率比值
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,diagnostics.cardiovascular_autonomic_tests.heart_rate_variability.30_15_ratio,立位心率30:15比值
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,diagnostics.cardiovascular_autonomic_tests.blood_pressure_response.orthostatic_test,立位血压测试
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,diagnostics.cardiovascular_autonomic_tests.blood_pressure_response.sustained_handgrip,持续握力血压反应
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,diagnostics.gastrointestinal_assessment.gastric_emptying,胃排空显像检查
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,diagnostics.gastrointestinal_assessment.breath_testing,呼气试验评估胃肠功能
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,diagnostics.genitourinary_evaluation.post_void_residual,排尿后残余尿测定
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,diagnostics.genitourinary_evaluation.urodynamics,尿动力学检查
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,diagnostics.genitourinary_evaluation.erectile_function,勃起功能评估问卷
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,treatment.general_management.glycemic_control,优化血糖控制
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,treatment.general_management.blood_pressure,控制血压，避免过度降压
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,treatment.general_management.lifestyle,规律作息、适度运动
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,treatment.cardiovascular_specific.orthostatic_hypotension.non_pharmacological,缓慢起立; 弹性袜; 增加盐分和水分摄入; 抬高床头
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,treatment.cardiovascular_specific.orthostatic_hypotension.pharmacological.fludrocortisone,0.1-0.3mg/day
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,treatment.cardiovascular_specific.orthostatic_hypotension.pharmacological.midodrine,2.5-10mg tid
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,treatment.cardiovascular_specific.exercise_training,心脏康复训练
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,treatment.gastrointestinal_management.gastroparesis.dietary,少量多餐、低纤维饮食
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,treatment.gastrointestinal_management.gastroparesis.prokinetic_agents.metoclopramide,10mg tid 餐前（短期使用）
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,treatment.gastrointestinal_management.gastroparesis.prokinetic_agents.domperidone,10-20mg tid 餐前
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,treatment.gastrointestinal_management.gastroparesis.antiemetics,昂丹司琼、格拉司琼
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,treatment.gastrointestinal_management.constipation,纤维素、缓泻剂
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,treatment.gastrointestinal_management.diarrhea,洛哌丁胺、可乐定
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,treatment.genitourinary_treatment.neurogenic_bladder.behavioral,定时排尿、盆底肌训练
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,treatment.genitourinary_treatment.neurogenic_bladder.pharmacological,坦索罗辛、托特罗定
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,treatment.genitourinary_treatment.neurogenic_bladder.invasive,间歇性导尿、膀胱起搏器
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,treatment.genitourinary_treatment.erectile_dysfunction.first_line,PDE5抑制剂（西地那非等）
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,treatment.genitourinary_treatment.erectile_dysfunction.second_line,前列腺素E1注射
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,treatment.genitourinary_treatment.erectile_dysfunction.third_line,阴茎假体植入
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,prognosis.cardiovascular,心血管自主神经病变预后最差
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,prognosis.mortality,增加2-3倍死亡风险
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,prognosis.quality_of_life,严重影响患者生活质量
+cerebrovascular_diseases,NEURO_002,糖尿病自主神经病变,,Disease,神经病变,prognosis.prevention,早期诊断和干预可改善预后
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,icd10,G61.0
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,synonyms,格林-巴利综合征; GBS; 急性多发性神经炎
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,definition,一种急性起病的获得性脱髓鞘性多发性神经病变，主要累及周围神经系统
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,classification.electrophysiological.aidp,急性炎症性脱髓鞘性多发性神经病变（经典型）
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,classification.electrophysiological.aman,急性运动性轴索性神经病变
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,classification.electrophysiological.amsan,急性运动感觉性轴索性神经病变
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,classification.clinical_variants.miller_fisher,Miller Fisher综合征（眼肌麻痹+共济失调+反射消失）
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,classification.clinical_variants.pharyngeal_cervical,咽-颈-臂型
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,classification.clinical_variants.paraparetic,副麻痹型
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,etiology.infectious_triggers,空肠弯曲菌（最常见30%）; 巨细胞病毒; EB病毒; 流感病毒; 支原体; 新冠病毒
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,etiology.other_triggers,疫苗接种; 手术; 外伤; 妊娠; 恶性肿瘤
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,etiology.pathophysiology,分子模拟机制→自身免疫反应→神经脱髓鞘或轴索损伤
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,clinical_presentation.typical_course.prodromal,前驱期（感染症状后1-3周）
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,clinical_presentation.typical_course.progressive,进展期（2-4周内达高峰）
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,clinical_presentation.typical_course.plateau,平台期（数天至数周）
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,clinical_presentation.typical_course.recovery,恢复期（数周至数年）
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,clinical_presentation.motor_symptoms.weakness,对称性四肢无力，下肢重于上肢
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,clinical_presentation.motor_symptoms.pattern,远端和近端同时受累
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,clinical_presentation.motor_symptoms.facial_weakness,面肌无力（50%患者）
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,clinical_presentation.motor_symptoms.bulbar_symptoms,构音障碍、吞咽困难
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,clinical_presentation.sensory_symptoms.numbness,远端麻木、刺痛感
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,clinical_presentation.sensory_symptoms.pain,肌肉疼痛、神经根痛
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,clinical_presentation.sensory_symptoms.proprioception,位置觉和振动觉受损
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,clinical_presentation.autonomic_dysfunction.cardiovascular,心律失常、血压不稳
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,clinical_presentation.autonomic_dysfunction.gastrointestinal,胃肠功能紊乱
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,clinical_presentation.autonomic_dysfunction.urinary,尿潴留
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,clinical_presentation.reflexes,腱反射减弱或消失（必备体征）
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,diagnostics.clinical_criteria.required,进行性四肢无力; 腱反射减弱或消失
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,diagnostics.clinical_criteria.supportive,相对对称性; 轻度感觉症状; 颅神经受累; 自主神经功能异常
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,diagnostics.csf_analysis.characteristic,蛋白-细胞分离现象
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,diagnostics.csf_analysis.protein,>0.45g/L（通常>1g/L）
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,diagnostics.csf_analysis.cells,<10×10⁶/L（主要为淋巴细胞）
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,diagnostics.nerve_conduction.demyelinating_features,传导速度减慢; 远端潜伏期延长; 传导阻滞; F波异常
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,diagnostics.nerve_conduction.axonal_features,复合肌肉动作电位波幅下降
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,diagnostics.serology.anti_ganglioside,抗神经节苷脂抗体（GQ1b、GM1等）
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,diagnostics.serology.infectious_screening,空肠弯曲菌、CMV、EBV等
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,treatment.immunotherapy.ivig.dosage,0.4g/kg/day × 5天
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,treatment.immunotherapy.ivig.timing,发病2周内最有效
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,treatment.immunotherapy.ivig.mechanism,免疫调节、抗体中和
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,treatment.immunotherapy.ivig.contraindications,IgA缺陷、严重心肾功能不全
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,treatment.immunotherapy.plasmapheresis.regimen,5次血浆置换（隔日进行）
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,treatment.immunotherapy.plasmapheresis.equivalent_efficacy,与IVIG疗效相当
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,treatment.immunotherapy.plasmapheresis.contraindications,血流动力学不稳定
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,treatment.immunotherapy.corticosteroids,单独使用无效，不推荐
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,treatment.supportive_care.respiratory_support.monitoring,肺活量监测（<15-20ml/kg需机械通气）
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,treatment.supportive_care.respiratory_support.intubation,30%患者需要机械通气
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,treatment.supportive_care.respiratory_support.weaning,神经功能恢复后逐渐撤离
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,treatment.supportive_care.cardiovascular_monitoring,心电监护、血压管理
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,treatment.supportive_care.pain_management,神经病理性疼痛处理
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,treatment.supportive_care.dvt_prophylaxis,抗凝预防血栓
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,treatment.supportive_care.nutritional_support,肠内或肠外营养
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,treatment.rehabilitation.early_mobilization,病情稳定后早期活动
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,treatment.rehabilitation.physical_therapy,关节活动度训练、肌力训练
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,treatment.rehabilitation.occupational_therapy,日常生活能力训练
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,treatment.rehabilitation.speech_therapy,构音和吞咽功能训练
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,complications.acute_phase,呼吸衰竭; 心律失常; 血压不稳; 肺部感染; 深静脉血栓
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,complications.chronic_sequelae,肌无力残留; 感觉异常; 疲劳; 疼痛; 功能障碍
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,prognosis.mortality,5-10%（主要因呼吸衰竭、心律失常）
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,prognosis.functional_recovery.complete,70-80%患者完全恢复
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,prognosis.functional_recovery.mild_deficit,15-20%轻度残障
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,prognosis.functional_recovery.severe_disability,5%严重残障
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,prognosis.predictive_factors,年龄（年轻预后好）; 轴索损伤程度; 治疗时间; 病情严重程度
+cerebrovascular_diseases,NEURO_003,急性炎症性脱髓鞘性多发性神经病变,,Disease,神经病变,prognosis.recurrence,复发率2-5%
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,icd10,E10.9
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,synonyms,胰岛素依赖性糖尿病; 青少年糖尿病; IDDM; T1DM
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,definition,由自身免疫介导的胰岛β细胞破坏导致胰岛素绝对缺乏的糖尿病类型
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,epidemiology.prevalence,全球约9000万人，占糖尿病患者5-10%
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,epidemiology.incidence_china,1.01/10万人年
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,epidemiology.peak_age,5-7岁和10-14岁双峰分布
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,epidemiology.genetic_factors,HLA-DR3/DR4相关性强
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,pathophysiology.autoimmune_process.target,胰岛β细胞特异性抗原
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,pathophysiology.autoimmune_process.mechanism,T细胞介导的细胞毒性反应
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,pathophysiology.autoimmune_process.progression,潜伏期→临床前期→显性糖尿病→完全性β细胞功能衰竭
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,pathophysiology.genetic_susceptibility.hla_associations,"HLA-DQB1*0302/DQA1*0501 (DR3), HLA-DQB1*0201/DQA1*0301 (DR4)"
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,pathophysiology.genetic_susceptibility.protective_hla,HLA-DQB1*0602强保护作用
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,pathophysiology.genetic_susceptibility.non_hla_genes,"PTPN22, CTLA-4, IL2RA等50+基因位点"
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,pathophysiology.environmental_triggers,病毒感染（柯萨奇病毒、轮状病毒）; 早期饮食因素（早期接触牛奶蛋白）; 维生素D缺乏; 肠道菌群失调
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,clinical_presentation.classic_triad.polyuria,多尿（血糖>10mmol/L时出现）
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,clinical_presentation.classic_triad.polydipsia,多饮（继发于多尿）
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,clinical_presentation.classic_triad.polyphagia,多食（胰岛素缺乏导致）
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,clinical_presentation.additional_symptoms,体重下降（显著且快速）; 乏力、疲倦; 视力模糊; 伤口愈合缓慢; 反复感染
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,clinical_presentation.acute_presentations.dka.definition,糖尿病酮症酸中毒
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,clinical_presentation.acute_presentations.dka.incidence,20-25%患者以DKA为首发表现
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,clinical_presentation.acute_presentations.dka.criteria,血糖>13.9mmol/L + 酮体阳性 + pH<7.30
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,clinical_presentation.acute_presentations.dka.mortality,1-5%
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,clinical_presentation.acute_presentations.honeymoon_period.definition,部分缓解期
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,clinical_presentation.acute_presentations.honeymoon_period.duration,诊断后3-12个月
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,clinical_presentation.acute_presentations.honeymoon_period.characteristics,胰岛素需要量显著减少，血糖控制良好
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,diagnostics.biochemical_criteria.fasting_glucose,≥7.0 mmol/L
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,diagnostics.biochemical_criteria.random_glucose,≥11.1 mmol/L + 典型症状
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,diagnostics.biochemical_criteria.ogtt_2h,≥11.1 mmol/L
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,diagnostics.biochemical_criteria.hba1c,≥6.5% (48 mmol/mol)
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,diagnostics.autoimmune_markers.gad_antibodies.prevalence,70-80%患者阳性
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,diagnostics.autoimmune_markers.gad_antibodies.persistence,可持续数年
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,diagnostics.autoimmune_markers.gad_antibodies.clinical_significance,预测β细胞功能衰退
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,diagnostics.autoimmune_markers.ia2_antibodies.prevalence,50-70%患者阳性
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,diagnostics.autoimmune_markers.ia2_antibodies.characteristics,多在诊断时阳性，后期消失
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,diagnostics.autoimmune_markers.zinc_transporter_antibodies.prevalence,60-80%患者阳性
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,diagnostics.autoimmune_markers.zinc_transporter_antibodies.age_correlation,年龄越小阳性率越高
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,diagnostics.autoimmune_markers.insulin_autoantibodies.prevalence,40-70%患者阳性
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,diagnostics.autoimmune_markers.insulin_autoantibodies.note,胰岛素治疗前检测才有意义
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,diagnostics.c_peptide.fasting,<0.6 ng/ml提示严重β细胞功能缺陷
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,diagnostics.c_peptide.stimulated,餐后或胰高血糖素刺激试验
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,diagnostics.c_peptide.clinical_use,评估残余β细胞功能，指导治疗
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,diagnostics.genetic_testing.hla_typing,用于高危人群筛查和家族咨询
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,diagnostics.genetic_testing.risk_scores,遗传风险评分预测模型
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.insulin_therapy.principles.absolute_requirement,胰岛素是唯一有效治疗
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.insulin_therapy.principles.physiological_replacement,模拟生理性胰岛素分泌
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.insulin_therapy.principles.individualization,个体化剂量调整
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.insulin_therapy.regimens.basal_bolus.description,基础-餐时胰岛素方案
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.insulin_therapy.regimens.basal_bolus.basal,长效胰岛素1-2次/日，占总量40-50%
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.insulin_therapy.regimens.basal_bolus.bolus,速效胰岛素餐前，占总量50-60%
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.insulin_therapy.regimens.basal_bolus.advantages,灵活性好，模拟生理分泌
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.insulin_therapy.regimens.csii.description,持续皮下胰岛素输注（胰岛素泵）
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.insulin_therapy.regimens.csii.indications,血糖控制不佳; 严重低血糖; 黎明现象
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.insulin_therapy.regimens.csii.advantages,精确控制，减少低血糖
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.insulin_therapy.regimens.csii.disadvantages,费用高，技术要求高
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.insulin_therapy.regimens.mixed_insulin.description,预混胰岛素方案
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.insulin_therapy.regimens.mixed_insulin.usage,一日2-3次注射
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.insulin_therapy.regimens.mixed_insulin.适用人群,生活规律，饮食固定的患者
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.insulin_therapy.insulin_types.rapid_acting.agents,门冬胰岛素; 赖脯胰岛素; 谷赖胰岛素
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.insulin_therapy.insulin_types.rapid_acting.onset,10-20分钟
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.insulin_therapy.insulin_types.rapid_acting.duration,3-5小时
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.insulin_therapy.insulin_types.long_acting.agents,甘精胰岛素; 地特胰岛素; 德谷胰岛素
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.insulin_therapy.insulin_types.long_acting.onset,1-4小时
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.insulin_therapy.insulin_types.long_acting.duration,20-24小时
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.blood_glucose_monitoring.smbg.frequency,≥4次/日（餐前+睡前）
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.blood_glucose_monitoring.smbg.targets.preprandial,4.4-7.2 mmol/L
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.blood_glucose_monitoring.smbg.targets.postprandial,<10.0 mmol/L
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.blood_glucose_monitoring.smbg.targets.bedtime,5.0-8.3 mmol/L
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.blood_glucose_monitoring.cgm.indications,血糖波动大，低血糖感知受损
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.blood_glucose_monitoring.cgm.advantages,实时监测，趋势报警
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.blood_glucose_monitoring.cgm.types,实时CGM vs 间歇式CGM
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.lifestyle_management.medical_nutrition_therapy.carbohydrate_counting,精确计算碳水化合物摄入量
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.lifestyle_management.medical_nutrition_therapy.insulin_carb_ratio,胰岛素与碳水化合物比例
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.lifestyle_management.medical_nutrition_therapy.correction_factor,血糖校正系数
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.lifestyle_management.exercise.benefits,改善胰岛素敏感性，心血管获益
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.lifestyle_management.exercise.precautions,防止运动诱发低血糖
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.lifestyle_management.exercise.monitoring,运动前后血糖监测
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.emerging_therapies.immunotherapy.anti_cd3,特殊林抗CD3单抗保护β细胞功能
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.emerging_therapies.immunotherapy.antigen_specific,GAD疫苗，胰岛素口服免疫
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.emerging_therapies.islet_transplantation,胰岛移植，适用于严重低血糖患者
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,treatment.emerging_therapies.artificial_pancreas,闭环胰岛素输注系统
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,complications.acute.dka.triggers,感染; 胰岛素中断; 应激
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,complications.acute.dka.management,液体复苏+胰岛素+电解质纠正
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,complications.acute.severe_hypoglycemia.definition,需要他人协助的低血糖
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,complications.acute.severe_hypoglycemia.risk_factors,胰岛素过量，饮食不规律，运动
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,complications.chronic.microvascular,糖尿病视网膜病变; 糖尿病肾病; 糖尿病神经病变
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,complications.chronic.macrovascular,冠心病（风险增加2-4倍）; 脑血管病; 外周血管病
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,prognosis.life_expectancy,比一般人群减少11-13年
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,prognosis.glycemic_control_impact,HbA1c每降低1%，微血管并发症风险降低37%
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,prognosis.cardiovascular_risk,是同龄人群2-4倍
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,prognosis.pregnancy_outcomes,孕前血糖控制良好可获得正常妊娠结局
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,prevention.primary.high_risk_screening,一级亲属自身抗体筛查
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,prevention.primary.environmental_factors,母乳喂养，维生素D补充
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,prevention.secondary.immunotherapy_trials,抗体阳性但未发病人群的免疫干预试验
+cerebrovascular_diseases,RHEUM_001,1型糖尿病,,Disease,自身免疫性内分泌疾病,prevention.secondary.metabolic_monitoring,OGTT定期监测
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,icd10,E06.3
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,synonyms,慢性淋巴细胞性甲状腺炎; 自身免疫性甲状腺炎; Hashimoto's thyroiditis
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,definition,最常见的自身免疫性甲状腺疾病，以甲状腺滤泡破坏和淋巴细胞浸润为特征
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,epidemiology.prevalence,女性1-2%，男性0.1-0.2%
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,epidemiology.gender_ratio,女:男 = 7-10:1
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,epidemiology.peak_age,30-50岁
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,epidemiology.familial_clustering,家族聚集性明显
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,pathophysiology.autoimmune_mechanism.molecular_mimicry,病毒蛋白与甲状腺抗原分子模拟
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,pathophysiology.autoimmune_mechanism.th1_response,Th1细胞介导的细胞免疫反应
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,pathophysiology.autoimmune_mechanism.antibody_production,B细胞产生甲状腺特异性自身抗体
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,pathophysiology.target_antigens.tpo,甲状腺过氧化物酶（最重要靶抗原）
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,pathophysiology.target_antigens.tg,甲状腺球蛋白
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,pathophysiology.target_antigens.tshr,促甲状腺激素受体
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,pathophysiology.genetic_susceptibility.hla_associations,"HLA-DR3, DR4, DR5"
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,pathophysiology.genetic_susceptibility.ctla4,CTLA-4基因多态性
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,pathophysiology.genetic_susceptibility.ptpn22,蛋白酪氨酸磷酸酶基因变异
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,clinical_presentation.thyroid_function_spectrum.euthyroid,初期甲状腺功能正常（50%）
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,clinical_presentation.thyroid_function_spectrum.subclinical_hypothyroid,亚临床甲减（TSH升高，FT4正常）
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,clinical_presentation.thyroid_function_spectrum.overt_hypothyroid,显性甲减（TSH升高，FT4降低）
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,clinical_presentation.thyroid_function_spectrum.transient_hyperthyroid,一过性甲亢（甲状腺炎性破坏释放激素）
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,clinical_presentation.physical_examination.goiter.prevalence,70-80%患者
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,clinical_presentation.physical_examination.goiter.characteristics,弥漫性肿大，质韧，表面不平
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,clinical_presentation.physical_examination.goiter.tenderness,通常无压痛
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,clinical_presentation.physical_examination.hypothyroid_signs,皮肤干燥、粗糙; 声音嘶哑; 心率缓慢; 反射延迟; 黏液性水肿
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,clinical_presentation.symptoms.hypothyroid_symptoms,乏力、疲倦; 怕冷; 体重增加; 便秘; 记忆力减退; 抑郁情绪
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,clinical_presentation.symptoms.local_symptoms,颈部胀满感; 吞咽困难（压迫症状）; 声音改变
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,diagnostics.laboratory_tests.thyroid_function.tsh,升高（亚临床甲减：4.5-10 mIU/L；显性甲减：>10 mIU/L）
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,diagnostics.laboratory_tests.thyroid_function.ft4,正常或降低
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,diagnostics.laboratory_tests.thyroid_function.ft3,正常或轻度降低
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,diagnostics.laboratory_tests.autoantibodies.anti_tpo.sensitivity,90-95%
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,diagnostics.laboratory_tests.autoantibodies.anti_tpo.specificity,90-95%
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,diagnostics.laboratory_tests.autoantibodies.anti_tpo.clinical_significance,诊断的重要标志，预测甲减进展
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,diagnostics.laboratory_tests.autoantibodies.anti_tg.prevalence,60-70%患者阳性
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,diagnostics.laboratory_tests.autoantibodies.anti_tg.note,常与Anti-TPO伴随出现
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,diagnostics.laboratory_tests.autoantibodies.trab.prevalence,<5%患者阳性
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,diagnostics.laboratory_tests.autoantibodies.trab.significance,阳性时需排除Graves病
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,diagnostics.imaging.ultrasound.typical_findings,甲状腺体积增大或缩小; 回声不均匀; 低回声区; 假性结节
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,diagnostics.imaging.ultrasound.differential,与结节性甲状腺肿鉴别
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,diagnostics.imaging.nuclear_medicine.uptake,99mTc摄取率降低
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,diagnostics.imaging.nuclear_medicine.scintigraphy,显像不均匀
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,diagnostics.cytology.indications,结节性病变，怀疑恶变
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,diagnostics.cytology.findings,淋巴细胞浸润，滤泡细胞Hürthle细胞变性
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,treatment.hormone_replacement.indications,显性甲减（TSH>10 mIU/L）; 亚临床甲减伴症状; 妊娠期亚临床甲减; 甲状腺肿大明显
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,treatment.hormone_replacement.levothyroxine.starting_dose,1.6-1.8 μg/kg/day（年轻健康者）
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,treatment.hormone_replacement.levothyroxine.elderly_dose,25-50 μg/day起始，逐渐加量
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,treatment.hormone_replacement.levothyroxine.pregnancy_dose,孕期需要量增加25-50%
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,treatment.hormone_replacement.levothyroxine.monitoring,6-8周后复查TSH，调整剂量
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,treatment.hormone_replacement.treatment_targets.general_population,TSH 0.5-2.5 mIU/L
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,treatment.hormone_replacement.treatment_targets.elderly,TSH 2-6 mIU/L可接受
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,treatment.hormone_replacement.treatment_targets.pregnancy,孕早期TSH<2.5 mIU/L
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,treatment.monitoring.frequency.stable_patients,每年1-2次TSH检测
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,treatment.monitoring.frequency.dose_adjustment,调药后6-8周复查
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,treatment.monitoring.frequency.pregnancy,每4-6周监测
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,treatment.monitoring.additional_monitoring,甲状腺超声（年度）; 抗体滴度变化; 心血管风险评估
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,treatment.special_considerations.pregnancy.preconception,TSH优化至<2.5 mIU/L
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,treatment.special_considerations.pregnancy.monitoring,每4-6周检测TSH
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,treatment.special_considerations.pregnancy.dose_adjustment,及时调整L-T4剂量
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,treatment.special_considerations.cardiovascular_disease.caution,老年患者缓慢加量
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,treatment.special_considerations.cardiovascular_disease.monitoring,心律、心绞痛症状
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,complications.cardiovascular,冠心病风险增加; 心包积液; 心力衰竭（严重甲减）
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,complications.metabolic,血脂异常; 肥胖; 胰岛素抵抗
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,complications.reproductive,月经异常; 不孕症; 妊娠不良结局
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,complications.neoplastic.thyroid_lymphoma.risk,较一般人群增加40-80倍
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,complications.neoplastic.thyroid_lymphoma.type,多为MALT淋巴瘤
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,complications.neoplastic.thyroid_lymphoma.presentation,甲状腺快速增大
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,complications.neoplastic.papillary_carcinoma,风险轻度增加
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,prognosis.disease_progression.hypothyroidism_development,每年2-5%患者进展为甲减
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,prognosis.disease_progression.remission,罕见自发缓解
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,prognosis.disease_progression.monitoring_duration,需终身监测
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,prognosis.treatment_response,L-T4治疗效果良好，预后佳
+cerebrovascular_diseases,RHEUM_002,桥本甲状腺炎,,Disease,自身免疫性内分泌疾病,prognosis.life_expectancy,正常治疗下不影响寿命
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,icd10,E27.1
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,synonyms,原发性肾上腺皮质功能不全; 慢性肾上腺皮质功能不全; Addison's disease
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,definition,肾上腺皮质功能不全导致糖皮质激素和盐皮质激素缺乏的慢性疾病
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,epidemiology.prevalence,35-60/100万人
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,epidemiology.incidence,0.8-1.2/10万人年
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,epidemiology.gender,女性略多于男性
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,epidemiology.peak_age,30-50岁
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,etiology.autoimmune.prevalence,占90%（发达国家）
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,etiology.autoimmune.target,21-羟化酶（CYP21A2）
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,etiology.autoimmune.associated_conditions,自身免疫性甲状腺疾病; 1型糖尿病; 原发性性腺功能减退; 恶性贫血
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,etiology.infectious,结核（发展中国家主要病因）; 真菌感染（组织胞浆菌病）; CMV感染（AIDS患者）
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,etiology.other_causes,肾上腺转移瘤; 肾上腺出血; 药物（酮康唑、米托坦）; 先天性肾上腺增生症
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,pathophysiology.hormone_deficiencies.glucocorticoid.cortisol_deficiency,糖代谢异常，应激能力下降
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,pathophysiology.hormone_deficiencies.glucocorticoid.acth_elevation,负反馈丧失，ACTH代偿性升高
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,pathophysiology.hormone_deficiencies.mineralocorticoid.aldosterone_deficiency,钠丢失，钾潴留，血容量不足
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,pathophysiology.hormone_deficiencies.mineralocorticoid.renin_elevation,肾素-血管紧张素系统激活
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,pathophysiology.compensatory_mechanisms,ACTH分泌增加; 肾素-血管紧张素激活; 抗利尿激素分泌增加
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,clinical_presentation.chronic_symptoms.constitutional,乏力、虚弱（100%）; 体重下降（97%）; 食欲减退（90%）
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,clinical_presentation.chronic_symptoms.gastrointestinal,恶心、呕吐（86%）; 腹痛（68%）; 腹泻或便秘
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,clinical_presentation.chronic_symptoms.cardiovascular,体位性低血压（88%）; 血压降低
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,clinical_presentation.chronic_symptoms.neuropsychiatric,抑郁、烦躁; 注意力不集中; 嗜盐欲望
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,clinical_presentation.chronic_symptoms.dermatologic,皮肤色素沉着（94%）; 黏膜色素沉着
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,clinical_presentation.physical_signs.hyperpigmentation.distribution,阳光暴露部位，皮肤皱褶，瘢痕
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,clinical_presentation.physical_signs.hyperpigmentation.mucosal,口腔、牙龈色素沉着
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,clinical_presentation.physical_signs.hyperpigmentation.mechanism,ACTH及β-内啡肽升高
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,clinical_presentation.physical_signs.hypotension.systolic,通常<110 mmHg
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,clinical_presentation.physical_signs.hypotension.orthostatic,立位收缩压下降>20 mmHg
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,clinical_presentation.acute_adrenal_crisis.triggers,感染; 手术应激; 外伤; 突然停药
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,clinical_presentation.acute_adrenal_crisis.manifestations,严重低血压/休克; 意识模糊/昏迷; 严重脱水; 低血糖; 高钾低钠
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,clinical_presentation.acute_adrenal_crisis.mortality,未及时治疗可达100%
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,diagnostics.screening_tests.morning_cortisol.cutoff,<140 nmol/L (5 μg/dL)强烈提示肾上腺功能不全
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,diagnostics.screening_tests.morning_cortisol.limitations,受应激、药物、CBG水平影响
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,diagnostics.screening_tests.acth.elevation,>100 pg/mL提示原发性肾上腺功能不全
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,diagnostics.screening_tests.acth.normal_range,7-63 pg/mL
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,diagnostics.confirmatory_tests.acth_stimulation_test.protocol,合成ACTH 250μg iv/im
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,diagnostics.confirmatory_tests.acth_stimulation_test.timing,注射前、30分钟、60分钟测血皮质醇
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,diagnostics.confirmatory_tests.acth_stimulation_test.normal_response,峰值>500-550 nmol/L (18-20 μg/dL)
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,diagnostics.confirmatory_tests.acth_stimulation_test.interpretation,反应不足确诊肾上腺功能不全
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,diagnostics.confirmatory_tests.low_dose_acth_test.dose,1μg ACTH
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,diagnostics.confirmatory_tests.low_dose_acth_test.sensitivity,更敏感检测轻度功能不全
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,diagnostics.etiology_investigation.autoimmune_markers.21_hydroxylase_antibodies,90%自身免疫性患者阳性
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,diagnostics.etiology_investigation.autoimmune_markers.other_antibodies,17α-羟化酶抗体，胆固醇侧链裂解酶抗体
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,diagnostics.etiology_investigation.imaging.adrenal_ct,评估肾上腺大小、钙化、肿块
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,diagnostics.etiology_investigation.imaging.chest_xray,排除结核
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,diagnostics.etiology_investigation.infectious_screening,结核菌素试验，真菌血清学
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,diagnostics.electrolyte_abnormalities.hyponatremia,<135 mmol/L（88%患者）
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,diagnostics.electrolyte_abnormalities.hyperkalemia,>5.0 mmol/L（64%患者）
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,diagnostics.electrolyte_abnormalities.elevated_bun,肾前性氮质血症
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,treatment.hormone_replacement.glucocorticoid.hydrocortisone.dose,15-25 mg/day，分2-3次服用
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,treatment.hormone_replacement.glucocorticoid.hydrocortisone.timing,2/3剂量晨起，1/3剂量午后
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,treatment.hormone_replacement.glucocorticoid.hydrocortisone.rationale,模拟生理性皮质醇分泌节律
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,treatment.hormone_replacement.glucocorticoid.prednisolone.dose,3-5 mg/day，分1-2次
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,treatment.hormone_replacement.glucocorticoid.prednisolone.advantage,半衰期长，服药方便
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,treatment.hormone_replacement.glucocorticoid.dexamethasone.use,不推荐长期使用
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,treatment.hormone_replacement.glucocorticoid.dexamethasone.reason,过度抑制HPA轴，无盐皮质激素活性
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,treatment.hormone_replacement.mineralocorticoid.fludrocortisone.dose,0.05-0.2 mg/day，晨起单次服用
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,treatment.hormone_replacement.mineralocorticoid.fludrocortisone.monitoring,血压、电解质、血浆肾素活性
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,treatment.hormone_replacement.mineralocorticoid.fludrocortisone.adjustment,根据血压和电解质调整
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,treatment.monitoring.clinical_parameters,体重、血压; 症状改善; 生活质量
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,treatment.monitoring.laboratory_monitoring.routine,电解质、肾功能（3-6个月）
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,treatment.monitoring.laboratory_monitoring.specialized,血浆肾素活性，24小时尿钠
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,treatment.stress_dosing.minor_stress,平时剂量增加2倍
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,treatment.stress_dosing.moderate_stress.examples,发热>38°C，局部麻醉手术
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,treatment.stress_dosing.moderate_stress.dosing,氢化可的松50-75 mg/day，分次服用
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,treatment.stress_dosing.major_stress.examples,全麻手术，严重感染，分娩
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,treatment.stress_dosing.major_stress.dosing,氢化可的松100-150 mg/day，iv给药
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,treatment.acute_crisis_management.immediate_treatment.hydrocortisone,100 mg iv推注，继以200-300 mg/24h持续滴注
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,treatment.acute_crisis_management.immediate_treatment.fluid_resuscitation,生理盐水快速补液
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,treatment.acute_crisis_management.immediate_treatment.electrolyte_correction,纠正低血糖、低钠、高钾
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,treatment.acute_crisis_management.supportive_care,血压支持; 治疗诱发因素; 密切监测
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,complications.untreated_disease,肾上腺危象; 严重低血压; 电解质紊乱; 死亡
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,complications.overtreatment.glucocorticoid_excess,库欣样表现; 骨质疏松; 糖尿病; 高血压
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,complications.associated_autoimmune.aps_type1,伴随甲状旁腺功能减退、慢性黏膜皮肤念珠菌病
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,complications.associated_autoimmune.aps_type2,伴随甲状腺疾病、1型糖尿病
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,prognosis.with_treatment,正常寿命和生活质量
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,prognosis.without_treatment,进行性恶化，最终死亡
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,prognosis.quality_of_life,适当替代治疗可维持正常生活
+cerebrovascular_diseases,RHEUM_003,艾迪生病,,Disease,自身免疫性内分泌疾病,prognosis.pregnancy,需要专科管理，预后良好
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,icd10,M32.9
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,synonyms,SLE; 红斑狼疮; 系统性狼疮
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,definition,以产生多种自身抗体和多系统损害为特征的慢性全身性自身免疫性结缔组织病
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,epidemiology.prevalence,40-200/10万人
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,epidemiology.incidence,5-50/10万人年
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,epidemiology.gender_ratio,女:男 = 9:1
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,epidemiology.peak_age,15-45岁（生育年龄）
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,epidemiology.ethnic_variations,非洲裔、亚洲人发病率较高
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,pathophysiology.immune_dysregulation.interferon_signature,I型干扰素信号通路异常激活
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,pathophysiology.immune_dysregulation.b_cell_hyperactivity,B细胞过度激活产生自身抗体
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,pathophysiology.immune_dysregulation.complement_deficiency,早期补体成分缺陷（C1q、C2、C4）
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,pathophysiology.immune_dysregulation.apoptosis_defect,细胞凋亡清除异常导致核抗原暴露
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,pathophysiology.autoantibody_production.ana,抗核抗体（>95%患者阳性）
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,pathophysiology.autoantibody_production.anti_dsdna,抗双链DNA抗体（疾病特异性高）
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,pathophysiology.autoantibody_production.anti_sm,抗Sm抗体（诊断特异性高）
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,pathophysiology.autoantibody_production.antiphospholipid,抗磷脂抗体（血栓风险）
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,pathophysiology.tissue_damage_mechanisms,免疫复合物沉积; 补体激活; 血管炎; 分子模拟
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.constitutional_symptoms,发热（80-90%）; 乏力、疲倦（90%）; 体重下降; 淋巴结肿大
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.musculoskeletal.arthritis.prevalence,90%患者
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.musculoskeletal.arthritis.characteristics,对称性、非糜烂性关节炎
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.musculoskeletal.arthritis.distribution,手、腕、膝关节最常受累
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.musculoskeletal.arthritis.jaccoud_arthropathy,可逆性关节畸形
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.musculoskeletal.myositis,肌炎（10-15%患者）
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.dermatologic.malar_rash.prevalence,30-60%
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.dermatologic.malar_rash.description,蝶形红斑，跨越双颊，不累及鼻唇沟
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.dermatologic.discoid_lesions.characteristics,盘状红斑，有鳞屑，愈合后瘢痕
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.dermatologic.discoid_lesions.distribution,头面部、耳廓
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.dermatologic.photosensitivity,光过敏（30-60%患者）
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.dermatologic.oral_ulcers,无痛性口腔溃疡
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.renal_involvement.lupus_nephritis.prevalence,40-60%患者
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.renal_involvement.lupus_nephritis.classification,ISN/RPS分级（I-VI级）
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.renal_involvement.lupus_nephritis.class_iv,弥漫性LN，预后最差
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.renal_involvement.lupus_nephritis.presentation,蛋白尿; 血尿; 高血压; 肾功能损害
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.neuropsychiatric.cns_manifestations,癫痫发作（15%）; 精神病（5-15%）; 认知功能障碍; 脑血管病
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.neuropsychiatric.pns_manifestations,周围神经病变; 单神经炎
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.cardiovascular.pericarditis,最常见心脏受累（25%）
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.cardiovascular.libman_sacks_endocarditis,无菌性心内膜炎
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.cardiovascular.accelerated_atherosclerosis,动脉粥样硬化加速
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.cardiovascular.myocarditis,心肌炎（罕见但严重）
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.pulmonary,胸膜炎（最常见）; 间质性肺疾病; 肺动脉高压; 急性狼疮性肺炎
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.hematologic,贫血（60-80%）; 白细胞减少（50%）; 血小板减少（25%）; 溶血性贫血
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.thyroid_dysfunction.prevalence,15-20%患者
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.thyroid_dysfunction.autoimmune_thyroiditis,桥本甲状腺炎风险增加
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.thyroid_dysfunction.hyperthyroidism,Graves病关联
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.adrenal_insufficiency.secondary,长期糖皮质激素治疗继发
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.adrenal_insufficiency.primary,自身免疫性肾上腺炎（罕见）
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.diabetes_mellitus.steroid_induced,糖皮质激素诱发
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.diabetes_mellitus.type1_association,1型糖尿病风险轻度增加
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.reproductive_dysfunction,月经异常; 性腺功能减退; 不孕症
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,diagnostics.classification_criteria.acr_1997,美国风湿病学会标准（11项中≥4项）
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,diagnostics.classification_criteria.slicc_2012,系统性狼疮国际协作组标准
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,diagnostics.classification_criteria.eular_acr_2019,最新分类标准（加权评分）
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,diagnostics.laboratory_tests.autoantibodies.ana.pattern,均质型、斑点型、核仁型、着丝粒型
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,diagnostics.laboratory_tests.autoantibodies.ana.titer,≥1:160有意义
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,diagnostics.laboratory_tests.autoantibodies.ana.sensitivity,95-98%
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,diagnostics.laboratory_tests.autoantibodies.anti_dsdna.specificity,高特异性（95%）
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,diagnostics.laboratory_tests.autoantibodies.anti_dsdna.correlation,与疾病活动度相关
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,diagnostics.laboratory_tests.autoantibodies.anti_dsdna.nephritis_marker,狼疮肾炎活动指标
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,diagnostics.laboratory_tests.autoantibodies.ena_profile.anti_sm,高特异性，预后指标
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,diagnostics.laboratory_tests.autoantibodies.ena_profile.anti_rnp,混合性结缔组织病重叠
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,diagnostics.laboratory_tests.autoantibodies.ena_profile.anti_ro_la,新生儿狼疮、光敏感相关
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,diagnostics.laboratory_tests.autoantibodies.antiphospholipid,抗心磷脂抗体; 抗β2糖蛋白I抗体; 狼疮抗凝物
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,diagnostics.laboratory_tests.complement.c3_c4,低补体血症提示活动期
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,diagnostics.laboratory_tests.complement.ch50,总补体活性评估
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,diagnostics.laboratory_tests.inflammatory_markers.esr,血沉升高（90%患者）
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,diagnostics.laboratory_tests.inflammatory_markers.crp,CRP正常或轻度升高
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,diagnostics.organ_specific_evaluation.renal,尿常规、尿蛋白定量; 肾功能; 肾活检（确诊狼疮肾炎）
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,diagnostics.organ_specific_evaluation.cardiac,心电图; 超声心动图; 心肌酶
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,diagnostics.organ_specific_evaluation.neurologic,脑脊液检查; 头颅MRI; 神经心理学测试
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.general_principles.multidisciplinary_approach,多学科协作治疗
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.general_principles.individualized_therapy,个体化治疗方案
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.general_principles.organ_specific_treatment,基于受累器官选择治疗
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.pharmacotherapy.antimalarials.hydroxychloroquine.dose,200-400mg/day
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.pharmacotherapy.antimalarials.hydroxychloroquine.indications,皮肤、关节症状，维持治疗
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.pharmacotherapy.antimalarials.hydroxychloroquine.monitoring,眼科检查（视网膜毒性）
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.pharmacotherapy.antimalarials.hydroxychloroquine.benefits,减少复发，抗血栓，降血脂
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.pharmacotherapy.corticosteroids.prednisolone.acute_flare,0.5-1mg/kg/day
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.pharmacotherapy.corticosteroids.prednisolone.maintenance,≤7.5mg/day
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.pharmacotherapy.corticosteroids.prednisolone.pulse_therapy,甲强龙500-1000mg×3天（重症）
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.pharmacotherapy.corticosteroids.side_effects,感染风险; 骨质疏松; 糖尿病; 心血管疾病
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.pharmacotherapy.immunosuppressants.methotrexate.indications,关节炎，皮肤病变
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.pharmacotherapy.immunosuppressants.methotrexate.dose,7.5-25mg/周
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.pharmacotherapy.immunosuppressants.methotrexate.folic_acid,叶酸补充5mg/周
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.pharmacotherapy.immunosuppressants.mycophenolate.indications,狼疮肾炎，维持治疗
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.pharmacotherapy.immunosuppressants.mycophenolate.dose,1-3g/day分次服用
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.pharmacotherapy.immunosuppressants.mycophenolate.monitoring,血常规，肝肾功能
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.pharmacotherapy.immunosuppressants.cyclophosphamide.indications,严重器官受累
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.pharmacotherapy.immunosuppressants.cyclophosphamide.regimens,NIH方案 vs Euro-Lupus方案
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.pharmacotherapy.immunosuppressants.cyclophosphamide.toxicity,性腺毒性，出血性膀胱炎，感染
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.pharmacotherapy.immunosuppressants.azathioprine.maintenance_therapy,1-2mg/kg/day
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.pharmacotherapy.immunosuppressants.azathioprine.tpmt_testing,治疗前基因型检测
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.pharmacotherapy.biologics.belimumab.mechanism,B淋巴细胞刺激因子抑制剂
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.pharmacotherapy.biologics.belimumab.indications,标准治疗反应不佳的SLE
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.pharmacotherapy.biologics.belimumab.contraindications,重症狼疮肾炎，神经精神狼疮
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.pharmacotherapy.biologics.rituximab.off_label_use,难治性SLE
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.pharmacotherapy.biologics.rituximab.evidence,血液系统受累疗效较好
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.organ_specific_treatment.lupus_nephritis.induction_therapy.class_iii_iv,MMF + 泼尼松或CTX + 泼尼松
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.organ_specific_treatment.lupus_nephritis.induction_therapy.duration,6个月
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.organ_specific_treatment.lupus_nephritis.maintenance_therapy.agents,MMF或AZA + 低剂量激素
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.organ_specific_treatment.lupus_nephritis.maintenance_therapy.duration,≥3年
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.organ_specific_treatment.lupus_nephritis.refractory_cases,CNI、RTX、贝利木单抗
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.organ_specific_treatment.neuropsychiatric_lupus.symptomatic_treatment,抗癫痫药、抗精神病药
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.organ_specific_treatment.neuropsychiatric_lupus.immunosuppression,高剂量激素 + CTX
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.supportive_care.infection_prevention,疫苗接种，感染预防
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.supportive_care.cardiovascular_protection,血压控制; 血脂管理; 抗血小板治疗（适应症）
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.supportive_care.bone_health,钙剂和维生素D补充; 双磷酸盐预防骨质疏松
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,treatment.supportive_care.reproductive_health,避孕咨询，妊娠管理
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,complications.disease_related,器官功能衰竭（肾、心、肺、脑）; 血栓栓塞症; 继发感染; 恶性肿瘤风险增加
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,complications.treatment_related,感染（机会性感染）; 骨质疏松和骨折; 药物性糖尿病; 心血管疾病加速; 性腺功能损害
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,prognosis.survival_rates.10_year,80-90%
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,prognosis.survival_rates.20_year,70-80%
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,prognosis.poor_prognostic_factors,狼疮肾炎; 神经精神狼疮; 血液系统受累; 男性患者; 发病年龄小
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,prognosis.organ_specific_outcomes.lupus_nephritis,15-25%进展至终末期肾病
+cerebrovascular_diseases,RHEUM_004,系统性红斑狼疮,,Disease,系统性风湿病,prognosis.organ_specific_outcomes.neuropsychiatric,认知功能损害不可逆
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,icd10,M06.9
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,synonyms,RA; 类风湿性关节炎; rheumatoid arthritis
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,definition,以侵蚀性多关节炎为主要表现的慢性全身性自身免疫性疾病
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,epidemiology.prevalence,0.5-1%全球人群
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,epidemiology.incidence,25-50/10万人年
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,epidemiology.gender_ratio,女:男 = 3:1
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,epidemiology.peak_age,40-60岁
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,epidemiology.genetic_predisposition,HLA-DR4相关
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,pathophysiology.autoimmune_process.synovial_inflammation,滑膜炎症是核心病理过程
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,pathophysiology.autoimmune_process.pannus_formation,血管翳形成并侵蚀软骨骨质
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,pathophysiology.autoimmune_process.cytokine_network,TNF-α、IL-1、IL-6等促炎因子
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,pathophysiology.autoantibodies.rheumatoid_factor,类风湿因子（RF）
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,pathophysiology.autoantibodies.anti_ccp,抗环瓜氨酸肽抗体（更特异）
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,pathophysiology.autoantibodies.anti_padi4,抗PADI4抗体
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,clinical_manifestations.joint_involvement.pattern,对称性多关节炎
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,clinical_manifestations.joint_involvement.distribution,近端指间关节（PIP）; 掌指关节（MCP）; 腕关节; 跖趾关节（MTP）
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,clinical_manifestations.joint_involvement.characteristics,晨僵>1小时; 关节疼痛、肿胀; 活动受限
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,clinical_manifestations.joint_involvement.deformities,天鹅颈畸形; 纽扣花样畸形; 尺偏畸形; 锤状趾
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,clinical_manifestations.extra_articular_manifestations.rheumatoid_nodules.prevalence,20-30%患者
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,clinical_manifestations.extra_articular_manifestations.rheumatoid_nodules.location,关节伸侧，压力点
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,clinical_manifestations.extra_articular_manifestations.rheumatoid_nodules.association,RF阳性患者多见
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,clinical_manifestations.extra_articular_manifestations.pulmonary,胸膜炎; 间质性肺疾病; 类风湿结节; 肺动脉高压
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,clinical_manifestations.extra_articular_manifestations.cardiac,心包炎; 传导系统疾病; 瓣膜疾病; 加速动脉粥样硬化
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,clinical_manifestations.extra_articular_manifestations.ocular,干燥性角结膜炎; 巩膜炎; 巩膜软化症
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,clinical_manifestations.extra_articular_manifestations.neurologic,颈椎不稳; 周围神经病变; 腕管综合征
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,clinical_manifestations.extra_articular_manifestations.hematologic,贫血（慢性病性贫血）; 血小板增多; Felty综合征
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.bone_metabolism.osteoporosis.prevalence,明显高于正常人群
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.bone_metabolism.osteoporosis.mechanisms,炎症因子直接作用; 糖皮质激素使用; 活动减少
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.bone_metabolism.osteoporosis.fracture_risk,髋部骨折风险增加2倍
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.bone_metabolism.bone_erosions,局部骨质破坏和全身骨丢失并存
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.adrenal_axis.hpa_dysfunction,下丘脑-垂体-肾上腺轴功能异常
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.adrenal_axis.relative_deficiency,相对性糖皮质激素不足
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.adrenal_axis.steroid_dependency,长期激素治疗后继发性肾上腺功能不全
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.thyroid_dysfunction.autoimmune_thyroiditis,桥本甲状腺炎患病率增加
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.thyroid_dysfunction.prevalence,10-15%RA患者伴甲状腺疾病
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.insulin_resistance.mechanisms,慢性炎症状态; 糖皮质激素治疗; 活动减少
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.insulin_resistance.cardiovascular_risk,代谢综合征风险增加
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.clinical_criteria.acr_eular_2010.joint_involvement,大关节（0-1分）、小关节（2-3分）、其他（5分）
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.clinical_criteria.acr_eular_2010.serology,RF和抗CCP阴性（0分）、低阳性（2分）、高阳性（3分）
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.clinical_criteria.acr_eular_2010.duration,症状持续≥6周（1分）
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.clinical_criteria.acr_eular_2010.acute_phase,ESR或CRP异常（1分）
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.clinical_criteria.acr_eular_2010.threshold,≥6分确诊RA
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.laboratory_tests.autoantibodies.rheumatoid_factor.sensitivity,70-80%
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.laboratory_tests.autoantibodies.rheumatoid_factor.specificity,70-80%
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.laboratory_tests.autoantibodies.rheumatoid_factor.prognostic_value,阳性者关节破坏风险高
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.laboratory_tests.autoantibodies.anti_ccp.sensitivity,60-70%
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.laboratory_tests.autoantibodies.anti_ccp.specificity,95-98%
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.laboratory_tests.autoantibodies.anti_ccp.early_disease,可在临床症状前数年出现
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.laboratory_tests.inflammatory_markers.esr,血沉升高反映疾病活动
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.laboratory_tests.inflammatory_markers.crp,C反应蛋白更敏感
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.laboratory_tests.inflammatory_markers.ferritin,铁蛋白升高
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.laboratory_tests.bone_metabolism.alkaline_phosphatase,骨型ALP升高
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.laboratory_tests.bone_metabolism.ctx_ntx,骨吸收标志物
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.laboratory_tests.bone_metabolism.p1np,骨形成标志物
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.imaging.conventional_radiography.early_changes,关节周围软组织肿胀
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.imaging.conventional_radiography.progressive_changes,关节间隙狭窄、骨质疏松
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.imaging.conventional_radiography.advanced_changes,骨侵蚀、畸形、强直
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.imaging.ultrasound.synovial_thickening,滑膜增厚
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.imaging.ultrasound.power_doppler,血流信号评估炎症活动
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.imaging.ultrasound.bone_erosions,早期骨侵蚀检出
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.imaging.mri.bone_marrow_edema,骨髓水肿（炎症早期征象）
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.imaging.mri.synovitis,滑膜炎评估
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,diagnostics.imaging.mri.structural_damage,软骨和骨质破坏
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.treatment_principles.early_intervention,早期诊断，早期治疗
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.treatment_principles.treat_to_target,达标治疗（缓解或低疾病活动度）
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.treatment_principles.dmard_first,DMARD为基础的治疗策略
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.disease_activity_assessment.das28,28关节疾病活动评分
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.disease_activity_assessment.cdai,临床疾病活动指数
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.disease_activity_assessment.sdai,简化疾病活动指数
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.conventional_dmards.methotrexate.first_line,一线DMARD
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.conventional_dmards.methotrexate.dose,7.5-25mg/周
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.conventional_dmards.methotrexate.folic_acid,叶酸补充减少不良反应
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.conventional_dmards.methotrexate.monitoring,血常规、肝肾功能
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.conventional_dmards.sulfasalazine.dose,1-3g/day
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.conventional_dmards.sulfasalazine.indications,MTX不耐受或禁忌
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.conventional_dmards.sulfasalazine.monitoring,血常规
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.conventional_dmards.hydroxychloroquine.mild_disease,轻症或联合治疗
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.conventional_dmards.hydroxychloroquine.dose,200-400mg/day
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.conventional_dmards.hydroxychloroquine.monitoring,眼科检查
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.conventional_dmards.leflunomide.alternative,MTX替代选择
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.conventional_dmards.leflunomide.dose,10-20mg/day
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.conventional_dmards.leflunomide.wash_out,停药需考虑洗脱治疗
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.biologic_dmards.tnf_inhibitors.agents,英夫利昔单抗; 阿达木单抗; 依那西普; 戈利木单抗; 塞妥珠单抗
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.biologic_dmards.tnf_inhibitors.indications,MTX治疗6个月反应不佳
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.biologic_dmards.tnf_inhibitors.screening,结核、乙肝筛查
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.biologic_dmards.tnf_inhibitors.monitoring,感染风险
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.biologic_dmards.non_tnf_biologics.rituximab,抗CD20单抗
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.biologic_dmards.non_tnf_biologics.abatacept,T细胞共刺激调节剂
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.biologic_dmards.non_tnf_biologics.tocilizumab,抗IL-6受体单抗
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.biologic_dmards.non_tnf_biologics.anakinra,IL-1受体拮抗剂
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.jak_inhibitors.tofacitinib,口服JAK抑制剂
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.jak_inhibitors.baricitinib,JAK1/2选择性抑制剂
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.jak_inhibitors.monitoring,血常规、感染风险
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.corticosteroids.bridging_therapy,过渡治疗
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.corticosteroids.low_dose,≤7.5mg/day泼尼松
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.pharmacotherapy.corticosteroids.intra_articular,关节腔内注射
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.non_pharmacologic.patient_education,疾病教育和自我管理
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.non_pharmacologic.physical_therapy,维持关节活动度和肌力
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.non_pharmacologic.occupational_therapy,关节保护和辅助器具
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.non_pharmacologic.surgery,关节置换、滑膜切除
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.comorbidity_management.cardiovascular_risk,血压控制; 血脂管理; 糖尿病管理; 戒烟
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.comorbidity_management.bone_health.osteoporosis_prevention,钙剂和维生素D; 双磷酸盐; 负重运动
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.comorbidity_management.bone_health.dexa_monitoring,骨密度定期评估
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,treatment.comorbidity_management.infection_prevention,疫苗接种，预防性抗生素
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,prognosis.disease_course,慢性进行性疾病
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,prognosis.functional_disability,20%患者10年内重度残疾
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,prognosis.mortality,生存期缩短3-10年
+cerebrovascular_diseases,RHEUM_005,类风湿关节炎,,Disease,系统性风湿病,prognosis.prognostic_factors,抗CCP抗体阳性; 高疾病活动度; 关节外表现; 早期骨侵蚀
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,icd10,M35.0
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,synonyms,SS; 舍格伦综合征; Sjögren's syndrome
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,definition,以外分泌腺淋巴细胞浸润为特征的慢性自身免疫性疾病，主要累及唾液腺和泪腺
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,epidemiology.prevalence,0.1-0.6%
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,epidemiology.gender_ratio,女:男 = 9:1
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,epidemiology.peak_age,40-60岁
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,epidemiology.classification.primary,原发性干燥综合征
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,epidemiology.classification.secondary,继发于其他结缔组织病
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,pathophysiology.autoimmune_exocrinopathy.lymphocytic_infiltration,外分泌腺淋巴细胞浸润
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,pathophysiology.autoimmune_exocrinopathy.glandular_dysfunction,腺体分泌功能减退
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,pathophysiology.autoimmune_exocrinopathy.molecular_mimicry,病毒感染与自身抗原分子模拟
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,pathophysiology.systemic_autoimmunity.b_cell_hyperactivity,B细胞过度激活
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,pathophysiology.systemic_autoimmunity.germinal_center_formation,异位淋巴滤泡形成
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,pathophysiology.systemic_autoimmunity.lymphoma_transformation,淋巴瘤转化风险
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,clinical_manifestations.glandular_features.keratoconjunctivitis_sicca.symptoms,眼干; 异物感; 烧灼感; 视疲劳
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,clinical_manifestations.glandular_features.keratoconjunctivitis_sicca.signs,结膜充血; 角膜染色阳性; 泪液分泌减少
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,clinical_manifestations.glandular_features.keratoconjunctivitis_sicca.complications,角膜溃疡、穿孔
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,clinical_manifestations.glandular_features.xerostomia.symptoms,口干; 吞咽困难; 味觉异常
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,clinical_manifestations.glandular_features.xerostomia.signs,唾液分泌减少; 舌质红光; 牙龈炎
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,clinical_manifestations.glandular_features.xerostomia.complications,龋齿; 口腔感染; 吞咽障碍
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,clinical_manifestations.glandular_features.parotid_enlargement,腮腺肿大（50%患者）
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,clinical_manifestations.extraglandular_manifestations.musculoskeletal,关节炎（非糜烂性）; 肌痛; 纤维肌痛
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,clinical_manifestations.extraglandular_manifestations.pulmonary,间质性肺疾病; 支气管扩张; 肺囊肿
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,clinical_manifestations.extraglandular_manifestations.renal,肾小管间质性肾炎; 远端肾小管酸中毒; 肾性尿崩症
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,clinical_manifestations.extraglandular_manifestations.neurologic,周围神经病变; 中枢神经系统受累; 认知功能障碍
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,clinical_manifestations.extraglandular_manifestations.vascular,雷诺现象; 血管炎; 肺动脉高压
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,clinical_manifestations.extraglandular_manifestations.hematologic,淋巴细胞减少; 贫血; 血小板减少; 淋巴瘤（5%患者）
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.thyroid_dysfunction.autoimmune_thyroiditis.prevalence,30-40%患者
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.thyroid_dysfunction.autoimmune_thyroiditis.association,桥本甲状腺炎最常见
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.thyroid_dysfunction.autoimmune_thyroiditis.antibodies,抗TPO、抗TG抗体阳性
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.thyroid_dysfunction.autoimmune_thyroiditis.clinical_significance,甲减风险增加
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.thyroid_dysfunction.thyroid_lymphoma,原发性甲状腺淋巴瘤风险增加
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.pancreatic_involvement.exocrine_insufficiency,胰腺外分泌功能不全
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.pancreatic_involvement.diabetes_risk,1型糖尿病风险轻度增加
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,clinical_manifestations.endocrine_associations.adrenal_involvement,肾上腺皮质功能异常（罕见）
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,diagnostics.classification_criteria.acr_eular_2016.objective_ocular_dryness,Schirmer试验≤5mm/5min或OSS≥5
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,diagnostics.classification_criteria.acr_eular_2016.objective_oral_dryness,唾液流率≤0.1ml/min
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,diagnostics.classification_criteria.acr_eular_2016.anti_ro_la,抗Ro52、Ro60或La抗体阳性
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,diagnostics.classification_criteria.acr_eular_2016.focal_lymphocytic_sialadenitis,唇腺活检focus score≥1
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,diagnostics.classification_criteria.acr_eular_2016.parotid_sialography,腮腺造影异常
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,diagnostics.laboratory_tests.autoantibodies.anti_ro_ssa.ro52,抗Ro52抗体（系统性表现相关）
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,diagnostics.laboratory_tests.autoantibodies.anti_ro_ssa.ro60,抗Ro60抗体
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,diagnostics.laboratory_tests.autoantibodies.anti_ro_ssa.clinical_significance,先天性心脏传导阻滞、新生儿狼疮
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,diagnostics.laboratory_tests.autoantibodies.anti_la_ssb.prevalence,40-50%患者
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,diagnostics.laboratory_tests.autoantibodies.anti_la_ssb.association,腺体功能损害严重
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,diagnostics.laboratory_tests.autoantibodies.rheumatoid_factor,80-90%患者阳性
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,diagnostics.laboratory_tests.autoantibodies.centromere_antibodies,与肺动脉高压相关
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,diagnostics.laboratory_tests.immunological_abnormalities.hypergammaglobulinemia,多克隆γ球蛋白增高
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,diagnostics.laboratory_tests.immunological_abnormalities.complement,低补体血症（C3、C4降低）
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,diagnostics.laboratory_tests.immunological_abnormalities.cryoglobulinemia,冷球蛋白血症
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,diagnostics.laboratory_tests.glandular_function_tests.schirmer_test,泪液分泌功能测定
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,diagnostics.laboratory_tests.glandular_function_tests.salivary_scintigraphy,唾液腺显像
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,diagnostics.laboratory_tests.glandular_function_tests.unstimulated_saliva,静息状态唾液流率
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,diagnostics.tissue_diagnosis.minor_salivary_gland_biopsy.procedure,下唇小唾液腺活检
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,diagnostics.tissue_diagnosis.minor_salivary_gland_biopsy.findings,淋巴细胞浸润focus score≥1
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,diagnostics.tissue_diagnosis.minor_salivary_gland_biopsy.complications,局部麻木、感染风险
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,treatment.symptomatic_treatment.ocular_dryness.artificial_tears,人工泪液（首选治疗）
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,treatment.symptomatic_treatment.ocular_dryness.punctal_plugs,泪点塞
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,treatment.symptomatic_treatment.ocular_dryness.cyclosporine_drops,环孢素眼药水
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,treatment.symptomatic_treatment.ocular_dryness.protective_measures,避免干燥环境，佩戴护目镜
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,treatment.symptomatic_treatment.oral_dryness.saliva_substitutes,人工唾液
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,treatment.symptomatic_treatment.oral_dryness.sialogogues.pilocarpine,毛果芸香碱5mg tid
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,treatment.symptomatic_treatment.oral_dryness.sialogogues.cevimeline,西维美林30mg tid
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,treatment.symptomatic_treatment.oral_dryness.oral_hygiene,定期牙科检查，氟化物治疗
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,treatment.systemic_treatment.immunosuppressants.hydroxychloroquine.indications,关节炎、皮疹、疲劳
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,treatment.systemic_treatment.immunosuppressants.hydroxychloroquine.dose,200-400mg/day
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,treatment.systemic_treatment.immunosuppressants.hydroxychloroquine.monitoring,眼科检查
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,treatment.systemic_treatment.immunosuppressants.methotrexate.indications,关节炎、肺部病变
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,treatment.systemic_treatment.immunosuppressants.methotrexate.dose,7.5-15mg/周
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,treatment.systemic_treatment.immunosuppressants.methotrexate.folic_acid,叶酸补充
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,treatment.systemic_treatment.immunosuppressants.corticosteroids.indications,严重系统性表现
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,treatment.systemic_treatment.immunosuppressants.corticosteroids.dose,泼尼松0.5-1mg/kg/day
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,treatment.systemic_treatment.immunosuppressants.corticosteroids.duration,短期使用
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,treatment.systemic_treatment.immunosuppressants.rituximab.refractory_cases,难治性系统性病变
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,treatment.systemic_treatment.immunosuppressants.rituximab.evidence,腺体功能改善有限
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,treatment.organ_specific_treatment.pulmonary,间质性肺病的免疫抑制治疗
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,treatment.organ_specific_treatment.renal,肾小管间质性肾炎治疗
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,treatment.organ_specific_treatment.neurologic,周围神经病变的对症治疗
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,complications.glandular,严重干眼症; 口腔感染; 牙齿破坏
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,complications.systemic,肺间质病变; 肾功能损害; 周围神经病变
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,complications.malignant.lymphoma.risk,较正常人群高44倍
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,complications.malignant.lymphoma.type,多为MALT淋巴瘤
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,complications.malignant.lymphoma.sites,唾液腺、甲状腺、肺、胃
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,prognosis.overall,总体预后良好，但生活质量受影响
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,prognosis.glandular_function,腺体功能进行性减退
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,prognosis.systemic_complications,系统性并发症影响预后
+cerebrovascular_diseases,RHEUM_006,干燥综合征,,Disease,系统性风湿病,prognosis.lymphoma_risk,需终身监测淋巴瘤发生

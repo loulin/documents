@@ -1,0 +1,310 @@
+section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,name_en,Polycystic Ovary Syndrome
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,description,育龄期女性常见的内分泌代谢疾病，以雄激素过多、排卵障碍和多囊卵巢为特征
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,icd10_code,E28.2
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,prevalence,育龄期女性中5-10%
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,pathophysiology.primary_defects,胰岛素抵抗; 雄激素过多; LH/FSH比例失调
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,pathophysiology.metabolic_features,胰岛素抵抗; 糖耐量异常; 血脂异常; 肥胖
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,clinical_manifestations.reproductive_features,月经稀发或闭经; 不孕; 流产率增加
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,clinical_manifestations.hyperandrogenic_features,多毛症; 痤疮; 雄激素性脱发
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,clinical_manifestations.metabolic_features,肥胖(50-80%); 胰岛素抵抗; 糖耐量异常(31-35%); 2型糖尿病(7.5-10%); 血脂异常(70%); 代谢综合征(33-47%)
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,clinical_manifestations.psychological_features,抑郁; 焦虑; 生活质量下降
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,diagnostic_criteria_2023.rotterdam_criteria.requirement,满足以下3项中的2项
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,diagnostic_criteria_2023.rotterdam_criteria.criteria,排卵障碍或无排卵; 临床或生化雄激素过多征象; 多囊卵巢(超声)
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,diagnostic_criteria_2023.rotterdam_criteria.exclusions,先天性肾上腺增生; 库欣综合征; 分泌雄激素的肿瘤
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,diagnostic_criteria_2023.laboratory_findings.hormonal.total_testosterone,>0.481 nmol/L
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,diagnostic_criteria_2023.laboratory_findings.hormonal.free_testosterone,升高
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,diagnostic_criteria_2023.laboratory_findings.hormonal.lh_fsh_ratio,>2:1
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,diagnostic_criteria_2023.laboratory_findings.hormonal.amh,>35 pmol/L
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,diagnostic_criteria_2023.laboratory_findings.hormonal.dhea_s,可升高
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,diagnostic_criteria_2023.laboratory_findings.metabolic.fasting_glucose,可升高
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,diagnostic_criteria_2023.laboratory_findings.metabolic.ogtt,糖耐量异常常见
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,diagnostic_criteria_2023.laboratory_findings.metabolic.homa_ir,>2.5
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,diagnostic_criteria_2023.laboratory_findings.metabolic.lipid_profile,TG升高，HDL-C降低
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,diagnostic_criteria_2023.ultrasound_criteria.follicle_number,≥20个小卵泡/卵巢
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,diagnostic_criteria_2023.ultrasound_criteria.ovarian_volume,>10ml
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,diagnostic_criteria_2023.ultrasound_criteria.stromal_echogenicity,增强
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,treatment_strategies.lifestyle_intervention.first_line,True
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,treatment_strategies.lifestyle_intervention.components,减重5-10%(肥胖患者); 低GI饮食; 规律有氧运动; 行为干预
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,treatment_strategies.lifestyle_intervention.benefits,改善胰岛素敏感性; 恢复排卵; 减少雄激素水平; 改善代谢指标
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,treatment_strategies.pharmacological_therapy.metabolic_management.metformin.dose,500-1000mg bid
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,treatment_strategies.pharmacological_therapy.metabolic_management.metformin.indications,胰岛素抵抗; 糖耐量异常; 减重
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,treatment_strategies.pharmacological_therapy.metabolic_management.metformin.benefits,改善胰岛素敏感性; 轻度减重; 可能改善排卵
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,treatment_strategies.pharmacological_therapy.metabolic_management.glp1_agonists.indications,肥胖; 2型糖尿病
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,treatment_strategies.pharmacological_therapy.metabolic_management.glp1_agonists.benefits,显著减重; 改善糖代谢
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,treatment_strategies.pharmacological_therapy.reproductive_management.ovulation_induction.clomiphene.dose,50-150mg/day × 5天
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,treatment_strategies.pharmacological_therapy.reproductive_management.ovulation_induction.clomiphene.success_rate,排卵率70-80%，妊娠率35-40%
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,treatment_strategies.pharmacological_therapy.reproductive_management.ovulation_induction.letrozole.dose,2.5-7.5mg/day × 5天
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,treatment_strategies.pharmacological_therapy.reproductive_management.ovulation_induction.letrozole.advantages,妊娠率更高，多胎率低
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,treatment_strategies.pharmacological_therapy.reproductive_management.ovulation_induction.gonadotropins,二线治疗，需严密监测
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,treatment_strategies.pharmacological_therapy.reproductive_management.contraception.combined_oc.benefits,调节月经; 减少雄激素; 保护子宫内膜
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,treatment_strategies.pharmacological_therapy.reproductive_management.contraception.combined_oc.contraindications,代谢综合征; 血栓风险
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,treatment_strategies.pharmacological_therapy.hyperandrogenism_management.antiandrogens,螺内酯 25-200mg/day; 醋酸环丙孕酮; 氟他胺
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,treatment_strategies.pharmacological_therapy.hyperandrogenism_management.topical_treatments,激光脱毛，外用药物
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,complications.reproductive,不孕症(70-80%); 妊娠糖尿病风险增加; 妊娠高血压风险增加; 流产率增加; 子宫内膜癌风险增加
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,complications.metabolic,2型糖尿病(相对风险4倍); 心血管疾病风险增加; 非酒精性脂肪肝; 阻塞性睡眠呼吸暂停
+entities.gonadal_entities,GON_001,多囊卵巢综合征,,disease,性腺疾病,complications.psychological,抑郁症(相对风险3倍); 焦虑症; 饮食障碍; 性生活质量下降
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,name_en,Male Hypogonadism
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,description,男性睾丸功能不足导致睾酮水平低下和/或精子生成障碍
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,icd10_code,E29.1
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,prevalence,40岁以上男性中2-12%
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,classification.primary_hypogonadism.mechanism,睾丸功能缺陷
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,classification.primary_hypogonadism.causes,Klinefelter综合征; 隐睾症; 睾丸扭转或外伤; 感染(腮腺炎性睾丸炎); 化疗或放疗; 老化
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,classification.primary_hypogonadism.laboratory,睾酮低，LH/FSH高
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,classification.secondary_hypogonadism.mechanism,下丘脑-垂体功能异常
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,classification.secondary_hypogonadism.causes,垂体腺瘤; Kallmann综合征; 肥胖; 药物(类固醇、阿片类); 系统性疾病; 应激
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,classification.secondary_hypogonadism.laboratory,睾酮低，LH/FSH低或正常
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.sexual_symptoms,性欲减退; 勃起功能障碍; 性高潮减少; 不育
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.physical_symptoms,肌肉量和力量减少; 骨密度降低; 体脂增加; 乳房发育; 体毛减少; 面部潮红
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.psychological_symptoms,抑郁; 易怒; 疲劳; 认知功能下降; 注意力不集中
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.metabolic_symptoms,胰岛素抵抗; 糖代谢异常; 血脂异常; 代谢综合征
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,diagnostic_approach.clinical_assessment,详细病史和体格检查; 性功能评估量表; 睾丸大小测量
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,diagnostic_approach.laboratory_tests.primary_tests.total_testosterone.sampling,晨间8-10点
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,diagnostic_approach.laboratory_tests.primary_tests.total_testosterone.normal_range,>12 nmol/L (>350 ng/dL)
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,diagnostic_approach.laboratory_tests.primary_tests.total_testosterone.low,<8 nmol/L (<230 ng/dL)
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,diagnostic_approach.laboratory_tests.primary_tests.total_testosterone.repeat,异常结果需重复确认
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,diagnostic_approach.laboratory_tests.primary_tests.lh_fsh,区分原发性和继发性
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,diagnostic_approach.laboratory_tests.primary_tests.prolactin,排除高泌乳素血症
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,diagnostic_approach.laboratory_tests.additional_tests.free_testosterone,SHBG异常时测定
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,diagnostic_approach.laboratory_tests.additional_tests.shbg,影响总睾酮解释
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,diagnostic_approach.laboratory_tests.additional_tests.hcg_stimulation,评估睾丸储备功能
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,diagnostic_approach.laboratory_tests.additional_tests.gnrh_stimulation,评估垂体功能
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,treatment_protocols.testosterone_replacement.indications,症状明显的确诊患者; 睾酮<8 nmol/L或8-12 nmol/L伴症状
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,treatment_protocols.testosterone_replacement.contraindications,前列腺癌; 乳腺癌; 未治疗的阻塞性睡眠呼吸暂停; 未控制的心力衰竭; 血细胞比容>50%
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,treatment_protocols.testosterone_replacement.formulations.injectable.testosterone_undecanoate,1000mg q12周 im
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,treatment_protocols.testosterone_replacement.formulations.injectable.testosterone_enanthate,250mg q2-3周 im
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,treatment_protocols.testosterone_replacement.formulations.topical.gel,50-100mg/day 外用
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,treatment_protocols.testosterone_replacement.formulations.topical.patch,5mg/day 贴剂
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,treatment_protocols.testosterone_replacement.formulations.oral.testosterone_undecanoate,120-160mg bid po
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,treatment_protocols.testosterone_replacement.monitoring.baseline,前列腺特异性抗原(PSA); 血常规; 肝功能; 血脂
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,treatment_protocols.testosterone_replacement.monitoring.follow_up,3个月: 睾酮水平、血常规、PSA; 6个月: 完整评估; 年度: 全面检查包括前列腺检查
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,treatment_protocols.fertility_preservation.hcg_therapy.dose,1500-2000 IU 3次/周
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,treatment_protocols.fertility_preservation.hcg_therapy.duration,3-6个月
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,treatment_protocols.fertility_preservation.hcg_therapy.indication,希望保留生育力
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,treatment_protocols.fertility_preservation.combined_therapy.hcg_hmg,刺激精子生成
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,treatment_protocols.fertility_preservation.combined_therapy.monitoring,精液分析、激素水平
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,complications.untreated_consequences,骨质疏松; 心血管疾病风险增加; 代谢综合征; 抑郁和生活质量下降; 不育
+entities.gonadal_entities,GON_002,男性性腺功能减退症,,disease,性腺疾病,complications.treatment_risks,红细胞增多症; 睡眠呼吸暂停恶化; 前列腺问题(争议); 心血管风险(争议)
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,name_en,Female Hypogonadism
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,description,女性卵巢功能不足导致雌激素缺乏的临床综合征
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,classification.primary_ovarian_insufficiency.definition,40岁前卵巢功能衰竭
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,classification.primary_ovarian_insufficiency.prevalence,1% 40岁前女性
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,classification.primary_ovarian_insufficiency.causes,Turner综合征; 脆性X综合征前突变; 自身免疫性卵巢炎; 化疗/放疗; 卵巢手术; 感染
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,classification.functional_hypothalamic_amenorrhea.mechanism,下丘脑GnRH分泌抑制
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,classification.functional_hypothalamic_amenorrhea.causes,过度运动; 体重过低; 心理应激; 饮食障碍
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,classification.natural_menopause.definition,连续12个月闭经
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,classification.natural_menopause.average_age,51岁
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,classification.natural_menopause.mechanism,卵泡耗竭
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.reproductive_symptoms,闭经或月经稀发; 不孕; 性欲减退; 阴道干燥
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.vasomotor_symptoms,潮热; 盗汗; 睡眠障碍
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.genitourinary_symptoms,阴道萎缩; 性交痛; 尿频; 泌尿系感染
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.long_term_consequences,骨质疏松; 心血管疾病风险增加; 认知功能下降; 情绪障碍
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,diagnostic_evaluation.hormonal_assessment.fsh,>25 IU/L (绝经后水平)
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,diagnostic_evaluation.hormonal_assessment.lh,升高
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,diagnostic_evaluation.hormonal_assessment.estradiol,<50 pmol/L
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,diagnostic_evaluation.hormonal_assessment.amh,<7 pmol/L
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,diagnostic_evaluation.hormonal_assessment.inhibin_b,降低
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,diagnostic_evaluation.additional_tests,妊娠试验; 泌乳素; TSH; 雄激素谱; 核型分析(早发者)
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,treatment_options.hormone_replacement_therapy.indications,症状明显; 年龄<60岁或绝经<10年; 骨质疏松预防
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,treatment_options.hormone_replacement_therapy.regimens.estrogen_progestogen,有子宫女性
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,treatment_options.hormone_replacement_therapy.regimens.estrogen_only,子宫切除术后
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,treatment_options.hormone_replacement_therapy.regimens.formulations,口服; 经皮贴剂/凝胶; 阴道局部用药
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,treatment_options.hormone_replacement_therapy.contraindications,乳腺癌; 子宫内膜癌; 血栓栓塞症; 未诊断的阴道出血
+entities.gonadal_entities,GON_003,女性性腺功能减退症,,disease,性腺疾病,treatment_options.non_hormonal_therapy,选择性5-羟色胺再摄取抑制剂; 加巴喷丁; 植物雌激素; 认知行为疗法
+entities.gonadal_entities,GON_004,性早熟,,disease,性腺疾病,name_en,Precocious Puberty
+entities.gonadal_entities,GON_004,性早熟,,disease,性腺疾病,description,青春期发育提前启动，影响身体和心理发育
+entities.gonadal_entities,GON_004,性早熟,,disease,性腺疾病,definition.girls,8岁前出现第二性征
+entities.gonadal_entities,GON_004,性早熟,,disease,性腺疾病,definition.boys,9岁前出现第二性征
+entities.gonadal_entities,GON_004,性早熟,,disease,性腺疾病,classification.central_precocious_puberty.mechanism,下丘脑-垂体-性腺轴过早激活
+entities.gonadal_entities,GON_004,性早熟,,disease,性腺疾病,classification.central_precocious_puberty.prevalence,女孩90%，男孩40%
+entities.gonadal_entities,GON_004,性早熟,,disease,性腺疾病,classification.central_precocious_puberty.causes,特发性(女孩多见); 颅内肿瘤; 颅内感染; 头部外伤; 放疗后
+entities.gonadal_entities,GON_004,性早熟,,disease,性腺疾病,classification.peripheral_precocious_puberty.mechanism,性腺或肾上腺激素过多分泌
+entities.gonadal_entities,GON_004,性早熟,,disease,性腺疾病,classification.peripheral_precocious_puberty.causes,卵巢囊肿/肿瘤; 睾丸肿瘤; 肾上腺肿瘤; 先天性肾上腺增生; 外源性激素暴露
+entities.gonadal_entities,GON_004,性早熟,,disease,性腺疾病,clinical_assessment.physical_examination,Tanner分期评估; 生长速度测量; 骨龄评估
+entities.gonadal_entities,GON_004,性早熟,,disease,性腺疾病,clinical_assessment.laboratory_tests.baseline,LH; FSH; 雌激素/睾酮
+entities.gonadal_entities,GON_004,性早熟,,disease,性腺疾病,clinical_assessment.laboratory_tests.stimulation,GnRH刺激试验
+entities.gonadal_entities,GON_004,性早熟,,disease,性腺疾病,clinical_assessment.laboratory_tests.imaging,骨龄X线; 盆腔/阴囊超声; 头颅MRI(中枢性)
+entities.gonadal_entities,GON_004,性早熟,,disease,性腺疾病,treatment_strategies.gnrh_agonist_therapy.indications,中枢性性早熟; 预测成年身高受损; 心理社会问题
+entities.gonadal_entities,GON_004,性早熟,,disease,性腺疾病,treatment_strategies.gnrh_agonist_therapy.medications,亮丙瑞林; 曲普瑞林; 戈舍瑞林
+entities.gonadal_entities,GON_004,性早熟,,disease,性腺疾病,treatment_strategies.gnrh_agonist_therapy.monitoring,生长速度; 骨龄进展; 激素抑制效果
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,name_en,Male Hypogonadism
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,icd10,E29.1
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,description,男性睾丸功能不足导致睾酮缺乏的临床综合征
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,classification.primary_hypogonadism.definition,原发性性腺功能减退
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,classification.primary_hypogonadism.mechanism,睾丸本身病变
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,classification.primary_hypogonadism.hormonal_pattern,睾酮↓，LH/FSH↑
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,classification.secondary_hypogonadism.definition,继发性性腺功能减退
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,classification.secondary_hypogonadism.mechanism,下丘脑-垂体轴功能异常
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,classification.secondary_hypogonadism.hormonal_pattern,睾酮↓，LH/FSH↓或正常
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,etiology.primary_causes.congenital,Klinefelter综合征; 隐睾症; 睾丸发育不全
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,etiology.primary_causes.acquired,睾丸外伤; 睾丸扭转; 腮腺炎性睾丸炎; 化疗/放疗; 自身免疫性睾丸炎
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,etiology.secondary_causes.hypothalamic_pituitary,垂体瘤; Kallmann综合征; 颅脑外伤; 感染
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,etiology.secondary_causes.systemic_disease,慢性肾病; 肝硬化; 糖尿病; 肥胖
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,etiology.secondary_causes.medications,GnRH激动剂; 糖皮质激素; 阿片类药物; 酮康唑
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.sexual_dysfunction.libido_decrease,性欲减退
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.sexual_dysfunction.erectile_dysfunction,勃起功能障碍
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.sexual_dysfunction.infertility,不育
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.sexual_dysfunction.orgasmic_dysfunction,性高潮障碍
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.physical_changes.muscle_mass_loss,肌肉量减少
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.physical_changes.increased_body_fat,体脂增加
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.physical_changes.decreased_bone_density,骨密度下降
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.physical_changes.gynecomastia,男性乳房发育
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.physical_changes.decreased_body_hair,体毛减少
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.metabolic_effects.insulin_resistance,胰岛素抵抗
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.metabolic_effects.diabetes_risk,糖尿病风险增加
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.metabolic_effects.dyslipidemia,血脂异常
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.metabolic_effects.visceral_obesity,内脏肥胖
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.psychological_symptoms.depression,抑郁
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.psychological_symptoms.irritability,易怒
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.psychological_symptoms.fatigue,疲劳
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.psychological_symptoms.cognitive_decline,认知功能下降
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,clinical_manifestations.psychological_symptoms.sleep_disturbance,睡眠障碍
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,diagnosis.biochemical_testing.total_testosterone.timing,上午8-10点采血
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,diagnosis.biochemical_testing.total_testosterone.low_threshold,<8.7 nmol/L (250 ng/dL)
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,diagnosis.biochemical_testing.total_testosterone.repeat_testing,需要重复检测确认
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,diagnosis.biochemical_testing.free_testosterone.calculation,计算游离睾酮
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,diagnosis.biochemical_testing.free_testosterone.bioavailable_testosterone,生物可利用睾酮
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,diagnosis.biochemical_testing.gonadotropins.lh_fsh,区分原发性和继发性
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,diagnosis.biochemical_testing.gonadotropins.primary,LH/FSH升高
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,diagnosis.biochemical_testing.gonadotropins.secondary,LH/FSH正常或降低
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,diagnosis.additional_tests.prolactin,排除高泌乳素血症
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,diagnosis.additional_tests.thyroid_function,甲状腺功能
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,diagnosis.additional_tests.iron_studies,血色病筛查
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,diagnosis.additional_tests.karyotype,怀疑Klinefelter综合征时
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,diagnosis.imaging.testicular_ultrasound,评估睾丸大小和结构
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,diagnosis.imaging.pituitary_mri,继发性病因时
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,treatment.testosterone_replacement.indications,症状性睾酮缺乏; 睾酮水平确认低下; 无绝对禁忌症
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,treatment.testosterone_replacement.formulations.intramuscular.testosterone_cypionate,200-250mg 每2-3周
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,treatment.testosterone_replacement.formulations.intramuscular.testosterone_undecanoate,1000mg 每10-14周
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,treatment.testosterone_replacement.formulations.transdermal.gel,每日5-10g
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,treatment.testosterone_replacement.formulations.transdermal.patch,每日4-6mg
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,treatment.testosterone_replacement.formulations.buccal,30mg 每日2次
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,treatment.testosterone_replacement.formulations.pellets,皮下植入，3-6个月
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,treatment.gonadotropin_therapy.indications,希望保留生育力
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,treatment.gonadotropin_therapy.hcg,1500-3000 IU 每周2-3次
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,treatment.gonadotropin_therapy.hmg_fsh,联合使用促进精子生成
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,treatment.selective_estrogen_receptor_modulators.clomiphene,25-50mg 每日
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,treatment.selective_estrogen_receptor_modulators.indication,轻度继发性性腺功能减退
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,monitoring.efficacy_parameters,症状改善; 睾酮水平; 血红蛋白; 骨密度
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,monitoring.safety_monitoring,前列腺特异抗原(PSA); 血细胞计数; 肝功能; 心血管风险评估
+entities.gonadal_entities,GON_004,男性性腺功能减退症,,disease,性腺疾病,monitoring.contraindications,前列腺癌; 乳腺癌; 未控制的心力衰竭; 严重下尿路症状
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,name_en,Turner Syndrome
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,icd10,Q96
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,description,女性性染色体异常导致的遗传性疾病，以性腺发育不全为主要特征
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,genetics.karyotypes.classic_monosomy.karyotype,"45,X"
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,genetics.karyotypes.classic_monosomy.prevalence,50-60%的Turner综合征
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,genetics.karyotypes.mosaicism.karyotype,"45,X/46,XX"
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,genetics.karyotypes.mosaicism.prevalence,15-25%
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,genetics.karyotypes.mosaicism.phenotype,症状相对较轻
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,genetics.karyotypes.structural_abnormalities.isochromosome,"46,X,i(Xq)"
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,genetics.karyotypes.structural_abnormalities.ring_chromosome,"46,X,r(X)"
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,genetics.karyotypes.structural_abnormalities.deletions,部分X染色体缺失
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,genetics.incidence,活产女婴中1/2500
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,clinical_features.growth_abnormalities.short_stature.prevalence,>95%
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,clinical_features.growth_abnormalities.short_stature.adult_height,平均143cm
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,clinical_features.growth_abnormalities.short_stature.growth_hormone_deficiency,相对缺乏
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,clinical_features.gonadal_dysgenesis.streak_gonads,条索状性腺
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,clinical_features.gonadal_dysgenesis.primary_amenorrhea,原发性闭经
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,clinical_features.gonadal_dysgenesis.infertility,不孕
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,clinical_features.gonadal_dysgenesis.delayed_puberty,青春期发育延迟
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,clinical_features.cardiovascular_anomalies.prevalence,50%患者
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,clinical_features.cardiovascular_anomalies.types,主动脉缩窄; 二叶主动脉瓣; 主动脉根部扩张; 二尖瓣脱垂
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,clinical_features.renal_abnormalities.prevalence,30-40%
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,clinical_features.renal_abnormalities.types,马蹄肾; 肾脏异位; 重复肾盂输尿管系统
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,clinical_features.distinctive_features.webbed_neck,蹼颈
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,clinical_features.distinctive_features.low_hairline,发际线低
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,clinical_features.distinctive_features.shield_chest,盾状胸
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,clinical_features.distinctive_features.cubitus_valgus,肘外翻
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,clinical_features.distinctive_features.lymphedema,淋巴水肿（新生儿期）
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,clinical_features.other_manifestations.hearing_loss,传导性或感音神经性听力损失
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,clinical_features.other_manifestations.learning_difficulties,空间认知能力差
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,clinical_features.other_manifestations.autoimmune_disorders,甲状腺疾病、炎症性肠病
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,diagnosis.clinical_suspicion,女性短身材; 原发性闭经; 特征性外貌; 先天性心脏病
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,diagnosis.karyotype_analysis.standard,外周血淋巴细胞
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,diagnosis.karyotype_analysis.mosaic_detection,多组织检查
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,diagnosis.karyotype_analysis.fish_analysis,荧光原位杂交
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,diagnosis.hormonal_evaluation.gonadotropins,FSH、LH显著升高
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,diagnosis.hormonal_evaluation.estradiol,极低水平
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,diagnosis.hormonal_evaluation.amh,无法检测
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,management.growth_hormone_therapy.indication,身高<5百分位
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,management.growth_hormone_therapy.dosing,0.35-0.5 mg/kg/周
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,management.growth_hormone_therapy.duration,直至成年终身高
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,management.growth_hormone_therapy.height_gain,平均增加5-7cm
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,management.pubertal_induction.timing,12-13岁开始
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,management.pubertal_induction.estrogen_therapy.initial,低剂量雌激素
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,management.pubertal_induction.estrogen_therapy.escalation,逐渐增加剂量
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,management.pubertal_induction.estrogen_therapy.duration,2-3年
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,management.pubertal_induction.progestogen_addition,子宫发育后添加
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,management.fertility_considerations.spontaneous_pregnancy,5-10%可能性（镶嵌型）
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,management.fertility_considerations.assisted_reproduction,供卵IVF
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,management.fertility_considerations.pregnancy_risks,心血管并发症风险高
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,management.multidisciplinary_care.cardiology,心血管监测和治疗
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,management.multidisciplinary_care.nephrology,肾脏功能评估
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,management.multidisciplinary_care.audiology,听力监测
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,management.multidisciplinary_care.endocrinology,激素替代治疗
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,management.multidisciplinary_care.psychology,学习支持和心理健康
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,surveillance.cardiovascular.echocardiography,诊断时和每3-5年
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,surveillance.cardiovascular.blood_pressure,定期监测
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,surveillance.cardiovascular.aortic_imaging,MRI或CT（成年后）
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,surveillance.renal,定期肾功能和影像学检查
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,surveillance.hearing,年度听力学检查
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,surveillance.thyroid,年度甲状腺功能检查
+entities.gonadal_entities,GON_005,Turner综合征,,disease,性腺疾病,surveillance.bone_health,骨密度监测
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,name_en,Kallmann Syndrome
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,icd10,E23.0
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,description,先天性促性腺激素释放激素缺陷伴嗅觉缺失的遗传性疾病
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,genetics.inheritance_patterns.x_linked.gene,KAL1 (ANOS1)
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,genetics.inheritance_patterns.x_linked.prevalence,10-15%
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,genetics.inheritance_patterns.x_linked.features,常伴肾脏异常、听力损失
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,genetics.inheritance_patterns.autosomal_dominant.genes,FGFR1; PROKR2; PROK2
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,genetics.inheritance_patterns.autosomal_dominant.prevalence,10%
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,genetics.inheritance_patterns.autosomal_recessive.genes,GNRHR; GNRH1; KISS1R
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,genetics.inheritance_patterns.autosomal_recessive.prevalence,5%
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,genetics.inheritance_patterns.oligogenic,多基因突变（30%）
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,genetics.incidence.males,"1/30,000"
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,genetics.incidence.females,"1/125,000"
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,pathophysiology.gnrh_neuron_migration,GnRH神经元迁移缺陷
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,pathophysiology.olfactory_system,嗅球和嗅束发育异常
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,pathophysiology.hypothalamic_dysfunction,下丘脑GnRH分泌缺乏
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,clinical_manifestations.reproductive_dysfunction.males.micropenis,阴茎发育不良
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,clinical_manifestations.reproductive_dysfunction.males.cryptorchidism,隐睾
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,clinical_manifestations.reproductive_dysfunction.males.absent_puberty,青春期缺失
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,clinical_manifestations.reproductive_dysfunction.males.infertility,不育
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,clinical_manifestations.reproductive_dysfunction.males.eunuchoid_proportions,类无睾症体型
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,clinical_manifestations.reproductive_dysfunction.females.primary_amenorrhea,原发性闭经
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,clinical_manifestations.reproductive_dysfunction.females.absent_breast_development,乳房发育缺失
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,clinical_manifestations.reproductive_dysfunction.females.infertility,不孕
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,clinical_manifestations.reproductive_dysfunction.females.osteoporosis,骨质疏松
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,clinical_manifestations.olfactory_dysfunction.anosmia,完全嗅觉缺失（60%）
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,clinical_manifestations.olfactory_dysfunction.hyposmia,嗅觉减退（40%）
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,clinical_manifestations.olfactory_dysfunction.smell_test,嗅觉功能检测异常
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,clinical_manifestations.associated_features.neurological,颅神经异常; 听力损失; 共济失调
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,clinical_manifestations.associated_features.skeletal,唇腭裂; 短指症; 肾脏发育异常
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,clinical_manifestations.associated_features.dental,牙齿发育异常
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,diagnosis.clinical_criteria,青春期缺失或不完全; 嗅觉缺失或减退; 低促性腺激素性性腺功能减退
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,diagnosis.hormonal_testing.baseline.lh_fsh,低或正常低值
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,diagnosis.hormonal_testing.baseline.testosterone_estradiol,低水平
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,diagnosis.hormonal_testing.baseline.prolactin,正常
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,diagnosis.hormonal_testing.stimulation_tests.gnrh_test,LH/FSH反应减弱或缺失
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,diagnosis.hormonal_testing.stimulation_tests.hcg_stimulation,睾酮反应评估
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,diagnosis.imaging.brain_mri.findings,嗅球嗅束缺失或发育不良; 垂体形态正常; 下丘脑结构异常
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,diagnosis.imaging.olfactory_evaluation,嗅觉功能定量测试
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,diagnosis.genetic_testing.gene_panel,已知致病基因筛查
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,diagnosis.genetic_testing.family_screening,家族成员筛查
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,treatment.pubertal_induction.males.testosterone,低剂量开始逐渐增加
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,treatment.pubertal_induction.males.schedule,6个月-2年完成性发育
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,treatment.pubertal_induction.females.estrogen,超低剂量雌激素开始
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,treatment.pubertal_induction.females.progestogen,子宫发育后添加孕激素
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,treatment.fertility_treatment.males.gonadotropin_therapy,hCG + FSH
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,treatment.fertility_treatment.males.gnrh_pulsatile,脉冲式GnRH治疗
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,treatment.fertility_treatment.males.duration,6-18个月诱导精子生成
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,treatment.fertility_treatment.females.gonadotropin_stimulation,FSH + LH治疗
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,treatment.fertility_treatment.females.gnrh_pump,脉冲式GnRH泵
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,treatment.fertility_treatment.females.ovulation_induction,诱导排卵
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,treatment.maintenance_therapy.males,睾酮替代治疗
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,treatment.maintenance_therapy.females,雌孕激素替代治疗
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,treatment.maintenance_therapy.bone_health,钙剂和维生素D补充
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,prognosis.sexual_development,激素治疗后可正常发育
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,prognosis.fertility,适当治疗后多数可获得生育能力
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,prognosis.reversal,5-10%患者可能自发恢复
+entities.gonadal_entities,GON_006,Kallmann综合征,,disease,性腺疾病,prognosis.quality_of_life,早期诊断和治疗预后良好

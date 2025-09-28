@@ -1,0 +1,292 @@
+section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value
+entities.pituitary_entities,PIT_001,垂体腺瘤,,disease,垂体疾病,name_en,Pituitary Adenoma
+entities.pituitary_entities,PIT_001,垂体腺瘤,,disease,垂体疾病,description,起源于垂体前叶的良性肿瘤，根据激素分泌功能和大小分类
+entities.pituitary_entities,PIT_001,垂体腺瘤,,disease,垂体疾病,classification.by_size.microadenoma,<1cm
+entities.pituitary_entities,PIT_001,垂体腺瘤,,disease,垂体疾病,classification.by_size.macroadenoma,≥1cm
+entities.pituitary_entities,PIT_001,垂体腺瘤,,disease,垂体疾病,classification.by_size.giant_adenoma,>4cm
+entities.pituitary_entities,PIT_001,垂体腺瘤,,disease,垂体疾病,classification.by_function.functioning,分泌过多激素
+entities.pituitary_entities,PIT_001,垂体腺瘤,,disease,垂体疾病,classification.by_function.non_functioning,不分泌激素或分泌无活性激素
+entities.pituitary_entities,PIT_001,垂体腺瘤,,disease,垂体疾病,classification.by_hormone.prolactinoma,泌乳素瘤(40%)
+entities.pituitary_entities,PIT_001,垂体腺瘤,,disease,垂体疾病,classification.by_hormone.growth_hormone,生长激素瘤(20%)
+entities.pituitary_entities,PIT_001,垂体腺瘤,,disease,垂体疾病,classification.by_hormone.acth,ACTH腺瘤(10%)
+entities.pituitary_entities,PIT_001,垂体腺瘤,,disease,垂体疾病,classification.by_hormone.tsh,TSH腺瘤(<2%)
+entities.pituitary_entities,PIT_001,垂体腺瘤,,disease,垂体疾病,classification.by_hormone.gonadotroph,促性腺激素瘤(15%)
+entities.pituitary_entities,PIT_001,垂体腺瘤,,disease,垂体疾病,classification.by_hormone.null_cell,无功能腺瘤(15%)
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,name_en,Prolactinoma
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,description,分泌过量泌乳素的垂体腺瘤，最常见的功能性垂体肿瘤
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,prevalence,10万人中10-50例
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,gender_difference.women,育龄期多见，多为微腺瘤
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,gender_difference.men,中年多见，多为巨腺瘤
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,clinical_manifestations.hyperprolactinemia_effects.women,月经紊乱/闭经; 不孕; 溢乳; 性欲减退; 骨质疏松
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,clinical_manifestations.hyperprolactinemia_effects.men,性功能减退; 阳痿; 不育; 溢乳(少见); 骨质疏松
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,clinical_manifestations.mass_effects,头痛; 视野缺损; 视力下降; 垂体功能减退
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,diagnostic_workup.prolactin_levels.normal.men,<20 ng/mL
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,diagnostic_workup.prolactin_levels.normal.women,<25 ng/mL
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,diagnostic_workup.prolactin_levels.mild_elevation,25-100 ng/mL
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,diagnostic_workup.prolactin_levels.moderate_elevation,100-250 ng/mL
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,diagnostic_workup.prolactin_levels.severe_elevation,>250 ng/mL (提示泌乳素瘤)
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,diagnostic_workup.differential_diagnosis.physiological,妊娠; 哺乳; 应激; 睡眠
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,diagnostic_workup.differential_diagnosis.pathological,下丘脑疾病; 垂体柄受压; 原发甲减
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,diagnostic_workup.differential_diagnosis.medications,多巴胺拮抗剂; 抗抑郁药; 抗高血压药
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,diagnostic_workup.imaging.mri_pituitary.microadenoma,增强后低信号
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,diagnostic_workup.imaging.mri_pituitary.macroadenoma,不均匀强化
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,diagnostic_workup.imaging.mri_pituitary.mass_effect,视交叉受压，海绵窦侵犯
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,treatment_strategies.medical_therapy.dopamine_agonists.cabergoline.dose,0.25-2mg 每周2次
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,treatment_strategies.medical_therapy.dopamine_agonists.cabergoline.efficacy,泌乳素正常化90%，肿瘤缩小80%
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,treatment_strategies.medical_therapy.dopamine_agonists.cabergoline.side_effects,恶心; 头晕; 心脏瓣膜病(高剂量)
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,treatment_strategies.medical_therapy.dopamine_agonists.bromocriptine.dose,2.5-15mg/day
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,treatment_strategies.medical_therapy.dopamine_agonists.bromocriptine.efficacy,稍差于cabergoline
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,treatment_strategies.medical_therapy.dopamine_agonists.bromocriptine.pregnancy,妊娠期首选
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,treatment_strategies.surgical_indications,药物治疗抵抗; 不能耐受药物副作用; 巨腺瘤视野缺损; 脑脊液鼻漏; 垂体卒中
+entities.pituitary_entities,PIT_002,泌乳素瘤,,disease,垂体疾病,treatment_strategies.radiation_therapy,手术和药物治疗失败; 恶性泌乳素瘤; 侵袭性腺瘤
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,name_en,Acromegaly
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,description,生长激素分泌过多导致的慢性进行性疾病，特征为骨骼、软组织过度生长
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,prevalence,10万人中3-4例
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,mortality,未治疗患者死亡率增加2-3倍
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,clinical_manifestations.skeletal_changes,手脚增大; 面容粗陋; 下颌前突; 眉弓突出; 鼻唇增厚
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,clinical_manifestations.soft_tissue_changes,舌体增大; 声音低沉; 皮肤粗糙; 多汗; 皮肤标签
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,clinical_manifestations.systemic_complications.cardiovascular,高血压(30%); 左心室肥厚; 心肌病; 心律失常
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,clinical_manifestations.systemic_complications.metabolic,糖尿病(30%); 胰岛素抵抗; 血脂异常
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,clinical_manifestations.systemic_complications.respiratory,睡眠呼吸暂停(70%); 上气道阻塞
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,clinical_manifestations.systemic_complications.rheumatologic,关节炎; 腕管综合征; 脊柱后凸
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,clinical_manifestations.systemic_complications.neoplastic,结肠息肉增加; 甲状腺结节; 前列腺增生
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,diagnostic_criteria.biochemical_diagnosis.igf1,年龄性别匹配上限
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,diagnostic_criteria.biochemical_diagnosis.ogtt_suppression.normal,GH < 0.4 ng/mL
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,diagnostic_criteria.biochemical_diagnosis.ogtt_suppression.acromegaly,GH不被抑制或反常升高
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,diagnostic_criteria.biochemical_diagnosis.random_gh,参考价值有限
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,diagnostic_criteria.imaging.pituitary_mri.microadenoma,30%
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,diagnostic_criteria.imaging.pituitary_mri.macroadenoma,70%
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,diagnostic_criteria.imaging.pituitary_mri.characteristics,T1低信号，增强后不均匀强化
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,treatment_goals.biochemical.igf1,年龄性别正常范围
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,treatment_goals.biochemical.random_gh,<1.0 ng/mL
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,treatment_goals.biochemical.post_ogtt_gh,<0.4 ng/mL
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,treatment_goals.clinical,症状改善; 并发症控制; 生活质量提高; 死亡率降低
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,treatment_modalities.surgical.transsphenoidal_surgery.first_line,微腺瘤和无侵犯巨腺瘤
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,treatment_modalities.surgical.transsphenoidal_surgery.success_rate.microadenoma,85-90%
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,treatment_modalities.surgical.transsphenoidal_surgery.success_rate.macroadenoma,50-60%
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,treatment_modalities.surgical.transsphenoidal_surgery.complications,脑脊液鼻漏; 垂体功能减退; 尿崩症
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,treatment_modalities.medical.somatostatin_analogs.octreotide_lar,20-40mg/月
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,treatment_modalities.medical.somatostatin_analogs.lanreotide,60-120mg/月
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,treatment_modalities.medical.somatostatin_analogs.efficacy,IGF-1正常化60-70%
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,treatment_modalities.medical.growth_hormone_antagonists.pegvisomant,10-30mg/day
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,treatment_modalities.medical.growth_hormone_antagonists.efficacy,IGF-1正常化>90%
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,treatment_modalities.medical.growth_hormone_antagonists.monitoring,肝功能
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,treatment_modalities.medical.dopamine_agonists.cabergoline,0.5-3mg/week
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,treatment_modalities.medical.dopamine_agonists.efficacy,轻度降GH，改善糖代谢
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,treatment_modalities.radiation.conventional,分次放疗
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,treatment_modalities.radiation.stereotactic,伽马刀
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,treatment_modalities.radiation.efficacy,缓慢，需5-15年
+entities.pituitary_entities,PIT_003,肢端肥大症,,disease,垂体疾病,treatment_modalities.radiation.complications,垂体功能减退风险
+entities.pituitary_entities,PIT_004,生长激素缺乏症,,disease,垂体疾病,name_en,Growth Hormone Deficiency
+entities.pituitary_entities,PIT_004,生长激素缺乏症,,disease,垂体疾病,description,生长激素分泌不足导致的临床综合征，分为儿童期和成人期GHD
+entities.pituitary_entities,PIT_004,生长激素缺乏症,,disease,垂体疾病,classification.childhood_ghd.manifestations,生长发育迟缓; 身材矮小; 骨龄落后; 低血糖倾向
+entities.pituitary_entities,PIT_004,生长激素缺乏症,,disease,垂体疾病,classification.adult_ghd.manifestations,体脂增加; 肌肉量减少; 骨密度降低; 运动耐量下降; 生活质量下降
+entities.pituitary_entities,PIT_004,生长激素缺乏症,,disease,垂体疾病,treatment_protocols.growth_hormone_replacement.children,0.025-0.035 mg/kg/day sc
+entities.pituitary_entities,PIT_004,生长激素缺乏症,,disease,垂体疾病,treatment_protocols.growth_hormone_replacement.adults,0.2-0.3 mg/day起始，根据IGF-1调整
+entities.pituitary_entities,PIT_005,中枢性尿崩症,,disease,垂体疾病,name_en,Central Diabetes Insipidus
+entities.pituitary_entities,PIT_005,中枢性尿崩症,,disease,垂体疾病,description,抗利尿激素(ADH)分泌不足导致的水盐代谢紊乱
+entities.pituitary_entities,PIT_005,中枢性尿崩症,,disease,垂体疾病,clinical_manifestations,多尿(>3L/24h); 烦渴; 夜尿增多; 脱水风险
+entities.pituitary_entities,PIT_005,中枢性尿崩症,,disease,垂体疾病,treatment.desmopressin.nasal,10-20 μg bid
+entities.pituitary_entities,PIT_005,中枢性尿崩症,,disease,垂体疾病,treatment.desmopressin.oral,0.1-0.2mg bid-tid
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,name_en,Acromegaly
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,icd10,E22.0
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,description,生长激素分泌过多引起的慢性全身性疾病
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,etiology.pituitary_adenoma.prevalence,>95%病例
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,etiology.pituitary_adenoma.characteristics,垂体生长激素腺瘤
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,etiology.pituitary_adenoma.size_distribution.macroadenoma,75%
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,etiology.pituitary_adenoma.size_distribution.microadenoma,25%
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,etiology.ectopic_sources.prevalence,<5%
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,etiology.ectopic_sources.tumors,胰腺胰岛细胞瘤; 肺类癌瘤; 下丘脑GHRH瘤
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,pathophysiology.growth_hormone_excess,生长激素持续过量分泌
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,pathophysiology.igf1_mediation,主要通过IGF-1介导生长效应
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,pathophysiology.metabolic_effects,糖、脂、蛋白质代谢异常
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,pathophysiology.tissue_growth,软组织、骨骼、内脏器官增生
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.skeletal_changes.acral_enlargement.hands,手指增粗、指间距增宽
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.skeletal_changes.acral_enlargement.feet,足部增大、鞋号增加
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.skeletal_changes.acral_enlargement.jaw,下颌前突、咬合不良
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.skeletal_changes.acral_enlargement.skull,颅骨增厚、枕外隆突明显
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.skeletal_changes.arthropathy.prevalence,70-80%
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.skeletal_changes.arthropathy.pattern,大关节受累为主
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.skeletal_changes.arthropathy.symptoms,关节疼痛、僵硬、活动受限
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.soft_tissue_changes.facial_features.coarse_features,面容粗糙
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.soft_tissue_changes.facial_features.prominent_brow,眉弓突出
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.soft_tissue_changes.facial_features.enlarged_nose,鼻部增大
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.soft_tissue_changes.facial_features.thick_lips,唇厚舌大
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.soft_tissue_changes.skin_changes.thickness,皮肤增厚
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.soft_tissue_changes.skin_changes.sweating,多汗
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.soft_tissue_changes.skin_changes.oily_skin,皮肤油腻
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.soft_tissue_changes.skin_changes.skin_tags,皮赘增多
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.systemic_complications.cardiovascular.cardiomyopathy,肥厚性心肌病
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.systemic_complications.cardiovascular.hypertension,60-70%患者
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.systemic_complications.cardiovascular.arrhythmia,心律失常
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.systemic_complications.cardiovascular.valve_disease,瓣膜疾病
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.systemic_complications.respiratory.sleep_apnea,80%患者
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.systemic_complications.respiratory.mechanism,上气道软组织增生
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.systemic_complications.respiratory.symptoms,打鼾、夜间憋醒
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.systemic_complications.metabolic.diabetes,25-50%患者
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.systemic_complications.metabolic.insulin_resistance,胰岛素抵抗
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.systemic_complications.metabolic.dyslipidemia,血脂异常
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.systemic_complications.neurological.headache,60%患者
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.systemic_complications.neurological.visual_field_defects,大腺瘤压迫视交叉
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,clinical_manifestations.systemic_complications.neurological.cranial_neuropathy,颅神经受压
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,diagnosis.biochemical_testing.igf1_levels.screening,血清IGF-1水平
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,diagnosis.biochemical_testing.igf1_levels.interpretation,年龄性别校正正常值上限
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,diagnosis.biochemical_testing.igf1_levels.sensitivity,95%用于筛查
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,diagnosis.biochemical_testing.oral_glucose_tolerance.protocol,75g葡萄糖负荷试验
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,diagnosis.biochemical_testing.oral_glucose_tolerance.normal_suppression,GH<1 ng/mL
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,diagnosis.biochemical_testing.oral_glucose_tolerance.acromegaly,GH不被抑制或反常升高
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,diagnosis.biochemical_testing.oral_glucose_tolerance.paradoxical_response,25%患者GH反常升高
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,diagnosis.biochemical_testing.random_gh.limitation,GH分泌呈脉冲性
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,diagnosis.biochemical_testing.random_gh.interpretation,单次测定价值有限
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,diagnosis.imaging.pituitary_mri.protocol,垂体薄层增强MRI
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,diagnosis.imaging.pituitary_mri.findings.adenoma_detection,95%可发现腺瘤
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,diagnosis.imaging.pituitary_mri.findings.size_assessment,评估肿瘤大小
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,diagnosis.imaging.pituitary_mri.findings.invasiveness,海绵窦侵犯评估
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,diagnosis.imaging.visual_field_testing,大腺瘤时进行
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,treatment.surgical_treatment.transsphenoidal_surgery.first_line,首选治疗方法
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,treatment.surgical_treatment.transsphenoidal_surgery.success_rates.microadenoma,85-90%
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,treatment.surgical_treatment.transsphenoidal_surgery.success_rates.macroadenoma,60-70%
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,treatment.surgical_treatment.transsphenoidal_surgery.complications,垂体功能不全; 尿崩症; 脑脊液漏
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,treatment.medical_treatment.somatostatin_analogs.octreotide.formulation,长效缓释制剂
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,treatment.medical_treatment.somatostatin_analogs.octreotide.dose,20-30mg 每4周
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,treatment.medical_treatment.somatostatin_analogs.octreotide.efficacy,60-70%患者IGF-1正常化
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,treatment.medical_treatment.somatostatin_analogs.lanreotide.formulation,自动注射器
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,treatment.medical_treatment.somatostatin_analogs.lanreotide.dose,90-120mg 每4周
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,treatment.medical_treatment.somatostatin_analogs.pasireotide.indication,其他药物无效时
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,treatment.medical_treatment.somatostatin_analogs.pasireotide.side_effect,高血糖风险
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,treatment.medical_treatment.dopamine_agonists.cabergoline.dose,0.5-3.5mg 每周
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,treatment.medical_treatment.dopamine_agonists.cabergoline.indication,轻度病例或联合治疗
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,treatment.medical_treatment.dopamine_agonists.cabergoline.efficacy,30%患者有效
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,treatment.medical_treatment.growth_hormone_antagonist.pegvisomant.mechanism,GH受体拮抗剂
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,treatment.medical_treatment.growth_hormone_antagonist.pegvisomant.dose,10-30mg 每日
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,treatment.medical_treatment.growth_hormone_antagonist.pegvisomant.efficacy,90%患者IGF-1正常化
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,treatment.medical_treatment.growth_hormone_antagonist.pegvisomant.monitoring,肝功能监测
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,treatment.radiation_therapy.conventional_radiotherapy.indication,手术和药物治疗无效
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,treatment.radiation_therapy.conventional_radiotherapy.dose,45-50 Gy分次照射
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,treatment.radiation_therapy.conventional_radiotherapy.delayed_response,5-15年达到最大效果
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,treatment.radiation_therapy.stereotactic_radiosurgery.gamma_knife,适用于残留小病灶
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,treatment.radiation_therapy.stereotactic_radiosurgery.advantages,精确性高，单次治疗
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,monitoring.biochemical_response.target_levels.igf1,年龄性别校正正常范围
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,monitoring.biochemical_response.target_levels.gh,随机GH <2.5 ng/mL
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,monitoring.biochemical_response.frequency,治疗后3-6个月检测
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,monitoring.imaging_surveillance,年度垂体MRI
+entities.pituitary_entities,PIT_004,肢端肥大症,,disease,垂体疾病,monitoring.complication_screening,心脏超声; 睡眠呼吸监测; 结肠镜检查; 骨密度检测
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,name_en,Hypopituitarism
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,icd10,E23.0
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,description,垂体前叶一种或多种激素分泌不足的临床综合征
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,classification.by_severity.partial,部分垂体功能减退
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,classification.by_severity.complete,全垂体功能减退（Sheehan综合征）
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,classification.by_onset.congenital,先天性垂体功能减退
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,classification.by_onset.acquired,获得性垂体功能减退
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,etiology.tumor_related.pituitary_adenoma,垂体腺瘤
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,etiology.tumor_related.craniopharyngioma,颅咽管瘤
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,etiology.tumor_related.metastases,转移瘤
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,etiology.tumor_related.meningioma,脑膜瘤
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,etiology.vascular_causes.sheehan_syndrome.definition,产后垂体梗死
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,etiology.vascular_causes.sheehan_syndrome.mechanism,分娩时大出血导致垂体缺血
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,etiology.vascular_causes.sheehan_syndrome.clinical_features,产后无泌乳、闭经
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,etiology.vascular_causes.pituitary_apoplexy.definition,垂体卒中
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,etiology.vascular_causes.pituitary_apoplexy.presentation,急性头痛、视力障碍、意识障碍
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,etiology.vascular_causes.pituitary_apoplexy.emergency,内分泌急症
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,etiology.inflammatory_conditions.lymphocytic_hypophysitis,淋巴细胞性垂体炎
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,etiology.inflammatory_conditions.sarcoidosis,肉芽肿病
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,etiology.inflammatory_conditions.langerhans_cell_histiocytosis,朗格汉斯细胞组织细胞增生症
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,etiology.traumatic.head_trauma,颅脑外伤
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,etiology.traumatic.surgery,垂体手术
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,etiology.traumatic.radiation,头颈部放疗
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,etiology.genetic_causes.prop1_mutation,PROP1基因突变
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,etiology.genetic_causes.pit1_mutation,PIT1基因突变
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,etiology.genetic_causes.multiple_pituitary_hormone_deficiency,多种垂体激素缺乏症
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,hormonal_deficiencies.growth_hormone_deficiency.adults.symptoms,乏力; 肌肉量减少; 骨密度下降; 腹部脂肪增加; 生活质量下降
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,hormonal_deficiencies.growth_hormone_deficiency.adults.diagnosis,胰岛素低血糖试验或精氨酸刺激试验
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,hormonal_deficiencies.growth_hormone_deficiency.children.symptoms,生长发育迟缓
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,hormonal_deficiencies.growth_hormone_deficiency.children.diagnosis,身高<3百分位
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,hormonal_deficiencies.gonadotropin_deficiency.males.symptoms,性欲减退; 勃起功能障碍; 肌肉量减少; 骨质疏松
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,hormonal_deficiencies.gonadotropin_deficiency.males.biochemical,低睾酮，LH/FSH低或正常
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,hormonal_deficiencies.gonadotropin_deficiency.females.symptoms,闭经; 不孕; 潮热; 骨质疏松
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,hormonal_deficiencies.gonadotropin_deficiency.females.biochemical,低雌激素，LH/FSH低或正常
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,hormonal_deficiencies.tsh_deficiency.symptoms,怕冷; 乏力; 体重增加; 便秘; 记忆力减退
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,hormonal_deficiencies.tsh_deficiency.biochemical,低FT4，TSH正常或低
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,hormonal_deficiencies.tsh_deficiency.differential,与原发性甲减区别
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,hormonal_deficiencies.acth_deficiency.symptoms,乏力; 食欲减退; 体重减轻; 低血糖; 低血压
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,hormonal_deficiencies.acth_deficiency.biochemical,低皮质醇，ACTH低
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,hormonal_deficiencies.acth_deficiency.emergency,可发生肾上腺危象
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,hormonal_deficiencies.prolactin_deficiency.manifestation,产后泌乳障碍
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,hormonal_deficiencies.prolactin_deficiency.rarity,临床上较少见
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,diagnosis.clinical_assessment.history,症状出现顺序和严重程度
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,diagnosis.clinical_assessment.physical_examination,生长发育评估; 性征发育; 甲状腺检查; 皮肤色素
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,diagnosis.hormonal_testing.basal_hormones,IGF-1; 睾酮/雌激素; FT4、TSH; 晨8点皮质醇; 泌乳素
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,diagnosis.hormonal_testing.dynamic_testing.insulin_tolerance_test.indication,评估GH和ACTH储备
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,diagnosis.hormonal_testing.dynamic_testing.insulin_tolerance_test.contraindication,心脏病、癫痫
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,diagnosis.hormonal_testing.dynamic_testing.insulin_tolerance_test.protocol,0.1-0.15 U/kg胰岛素静脉注射
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,diagnosis.hormonal_testing.dynamic_testing.combined_pituitary_test,多种刺激试验联合进行
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,diagnosis.hormonal_testing.dynamic_testing.individual_stimulation,单一激素轴评估
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,diagnosis.imaging.pituitary_mri,评估垂体形态和病因
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,diagnosis.imaging.visual_fields,大病变时检查
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,treatment.hormone_replacement.thyroid_hormone.levothyroxine,0.8-1.6 μg/kg/天
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,treatment.hormone_replacement.thyroid_hormone.monitoring,FT4水平，不依赖TSH
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,treatment.hormone_replacement.glucocorticoid.hydrocortisone,15-25mg/天，分2-3次
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,treatment.hormone_replacement.glucocorticoid.stress_dosing,应激时增量
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,treatment.hormone_replacement.glucocorticoid.emergency_card,随身携带急救卡
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,treatment.hormone_replacement.sex_hormones.males,睾酮替代治疗
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,treatment.hormone_replacement.sex_hormones.females,雌孕激素替代治疗
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,treatment.hormone_replacement.sex_hormones.fertility,希望生育时使用促性腺激素
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,treatment.hormone_replacement.growth_hormone.adults,0.2-0.5mg/天，睡前皮下注射
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,treatment.hormone_replacement.growth_hormone.children,0.025-0.035mg/kg/天
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,treatment.hormone_replacement.growth_hormone.monitoring,IGF-1水平
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,treatment.replacement_sequence.priority,1. 糖皮质激素（急需）; 2. 甲状腺激素; 3. 性激素; 4. 生长激素
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,treatment.replacement_sequence.rationale,避免肾上腺危象
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,monitoring.efficacy_assessment,症状改善; 激素水平; 生活质量评估
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,monitoring.safety_monitoring,糖皮质激素过量症状; 甲状腺激素过量; 生长激素副作用
+entities.pituitary_entities,PIT_005,垂体功能减退症,,disease,垂体疾病,monitoring.long_term_follow_up,终生激素替代和监测
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,name_en,Pituitary Apoplexy
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,icd10,E23.6
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,description,垂体腺瘤内急性出血或梗死导致的急性临床综合征
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,pathophysiology.vascular_compromise,垂体血管受压或栓塞
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,pathophysiology.hemorrhage,腺瘤内出血
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,pathophysiology.necrosis,缺血性坏死
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,pathophysiology.swelling,急性肿胀压迫周围结构
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,predisposing_factors.underlying_adenoma,多数发生在已有腺瘤基础上
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,predisposing_factors.triggering_events,高血压; 抗凝治疗; 妊娠分娩; 大手术; 糖尿病; 头部外伤
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,predisposing_factors.medications,溴隐亭治疗; 雌激素治疗; GnRH激动剂
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,clinical_presentation.acute_onset,症状急性起病（数小时内）
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,clinical_presentation.classic_triad.severe_headache.characteristics,突发剧烈头痛
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,clinical_presentation.classic_triad.severe_headache.prevalence,95%患者
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,clinical_presentation.classic_triad.severe_headache.description,一生中最严重头痛
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,clinical_presentation.classic_triad.visual_disturbance.types,视野缺损; 视力下降; 复视
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,clinical_presentation.classic_triad.visual_disturbance.mechanism,视交叉和动眼神经受压
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,clinical_presentation.classic_triad.visual_disturbance.prevalence,70%患者
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,clinical_presentation.classic_triad.altered_consciousness.range,从嗜睡到昏迷
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,clinical_presentation.classic_triad.altered_consciousness.prevalence,15%患者
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,clinical_presentation.endocrine_dysfunction.acute_adrenal_insufficiency.prevalence,70%患者
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,clinical_presentation.endocrine_dysfunction.acute_adrenal_insufficiency.symptoms,恶心呕吐; 低血压; 电解质紊乱; 循环衰竭
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,clinical_presentation.endocrine_dysfunction.acute_adrenal_insufficiency.life_threatening,可危及生命
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,clinical_presentation.endocrine_dysfunction.other_deficiencies,其他垂体激素急性缺乏
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,clinical_presentation.neurological_signs.cranial_neuropathy,颅神经麻痹
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,clinical_presentation.neurological_signs.meningeal_signs,脑膜刺激征
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,clinical_presentation.neurological_signs.hemiparesis,偏瘫（罕见）
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,diagnosis.clinical_suspicion,急性剧烈头痛; 视力障碍; 垂体功能减退症状; 已知垂体瘤病史
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,diagnosis.imaging.emergency_ct.findings,垂体区高密度影; 出血征象; 占位效应
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,diagnosis.imaging.emergency_ct.limitations,早期可能正常
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,diagnosis.imaging.mri.gold_standard,最佳影像学检查
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,diagnosis.imaging.mri.findings,T1高信号（出血）; T2混杂信号; 占位效应
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,diagnosis.imaging.mri.timing,急诊MRI首选
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,diagnosis.laboratory_testing.emergency_hormones,随机皮质醇; 电解质; 血糖
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,diagnosis.laboratory_testing.comprehensive_assessment,病情稳定后完整垂体功能评估
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,diagnosis.differential_diagnosis,蛛网膜下腔出血; 脑膜炎; 急性青光眼; 偏头痛; 颅内动脉瘤
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,treatment.emergency_management.glucocorticoid_replacement.immediate,氢化可的松100mg静脉推注
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,treatment.emergency_management.glucocorticoid_replacement.maintenance,100mg每8小时
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,treatment.emergency_management.glucocorticoid_replacement.rationale,治疗急性肾上腺功能不全
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,treatment.emergency_management.supportive_care,维持血压; 纠正电解质紊乱; 镇痛; 监护治疗
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,treatment.surgical_considerations.absolute_indications,意识障碍进行性加重; 视力急剧下降; 保守治疗无效
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,treatment.surgical_considerations.relative_indications,持续性视野缺损; 颅神经麻痹; 垂体功能严重受损
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,treatment.surgical_considerations.timing,症状出现1周内手术效果最佳
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,treatment.surgical_considerations.approach,经蝶窦手术减压
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,treatment.conservative_treatment.indications,意识清楚; 视力稳定; 内分泌功能可替代
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,treatment.conservative_treatment.monitoring,神经功能; 视力视野; 内分泌功能
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,prognosis.visual_recovery.timing,早期手术预后较好
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,prognosis.visual_recovery.factors,视力损失程度和持续时间
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,prognosis.endocrine_recovery.likelihood,30-60%可部分恢复
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,prognosis.endocrine_recovery.hormones,生长激素恢复最差
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,prognosis.mortality,保守治疗死亡率1-2%
+entities.pituitary_entities,PIT_006,垂体卒中,,disease,垂体疾病,prognosis.recurrence,复发率5-10%

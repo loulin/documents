@@ -1,0 +1,43 @@
+section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,name_en,Dyslipidemia
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,description,血浆脂蛋白代谢异常，表现为血总胆固醇、LDL-C、甘油三酯升高或HDL-C降低
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,classification.primary.familial_hypercholesterolemia,遗传性高胆固醇血症
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,classification.primary.familial_combined_hyperlipidemia,家族性混合型高脂血症
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,classification.primary.familial_hypertriglyceridemia,家族性高甘油三酯血症
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,classification.secondary.diabetes,糖尿病性血脂异常
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,classification.secondary.hypothyroidism,甲减性高脂血症
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,classification.secondary.nephrotic_syndrome,肾病综合征
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,classification.secondary.medications,药物性血脂异常
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,lipid_targets_2025.ldl_cholesterol.very_high_risk,<55 mg/dL (1.4 mmol/L)
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,lipid_targets_2025.ldl_cholesterol.high_risk,<70 mg/dL (1.8 mmol/L)
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,lipid_targets_2025.ldl_cholesterol.moderate_risk,<100 mg/dL (2.6 mmol/L)
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,lipid_targets_2025.ldl_cholesterol.low_risk,<130 mg/dL (3.4 mmol/L)
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,lipid_targets_2025.non_hdl_cholesterol.very_high_risk,<85 mg/dL
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,lipid_targets_2025.non_hdl_cholesterol.high_risk,<100 mg/dL
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,lipid_targets_2025.non_hdl_cholesterol.moderate_risk,<130 mg/dL
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,lipid_targets_2025.triglycerides,<150 mg/dL (1.7 mmol/L)
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,lipid_targets_2025.hdl_cholesterol.men,>40 mg/dL (1.0 mmol/L)
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,lipid_targets_2025.hdl_cholesterol.women,>50 mg/dL (1.3 mmol/L)
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,risk_stratification.very_high_risk,临床ASCVD; DM+靶器官损害; FH+ASCVD危险因素; CKD 3-5期
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,risk_stratification.high_risk,LDL-C≥190 mg/dL; 糖尿病(40-75岁); 10年ASCVD风险≥20%
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,risk_stratification.moderate_risk,10年ASCVD风险7.5-19.9%
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,risk_stratification.low_risk,10年ASCVD风险<7.5%
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,treatment_approach_2025.lifestyle_therapy.dietary_modification,限制饱和脂肪(<7%总热量); 限制反式脂肪; 增加膳食纤维(25-30g/day); 植物固醇(2g/day)
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,treatment_approach_2025.lifestyle_therapy.physical_activity,中等强度150分钟/周
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,treatment_approach_2025.lifestyle_therapy.weight_management,BMI 18.5-24.9
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,treatment_approach_2025.pharmacological_therapy.statins.high_intensity,阿托伐他汀80mg; 瑞舒伐他汀20-40mg
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,treatment_approach_2025.pharmacological_therapy.statins.moderate_intensity,阿托伐他汀20-40mg; 瑞舒伐他汀10-20mg; 辛伐他汀40mg
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,treatment_approach_2025.pharmacological_therapy.statins.low_intensity,辛伐他汀20mg; 普伐他汀40mg
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,treatment_approach_2025.pharmacological_therapy.non_statin_therapy.ezetimibe.dose,10mg/day
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,treatment_approach_2025.pharmacological_therapy.non_statin_therapy.ezetimibe.ldl_reduction,15-20%
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,treatment_approach_2025.pharmacological_therapy.non_statin_therapy.ezetimibe.indication,他汀不耐受或目标未达标
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,treatment_approach_2025.pharmacological_therapy.non_statin_therapy.pcsk9_inhibitors.evolocumab,140mg q2w或420mg qm
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,treatment_approach_2025.pharmacological_therapy.non_statin_therapy.pcsk9_inhibitors.alirocumab,75-150mg q2w
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,treatment_approach_2025.pharmacological_therapy.non_statin_therapy.pcsk9_inhibitors.ldl_reduction,50-60%
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,treatment_approach_2025.pharmacological_therapy.non_statin_therapy.pcsk9_inhibitors.indication,极高危+他汀+依折麦布未达标
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,treatment_approach_2025.pharmacological_therapy.non_statin_therapy.bempedoic_acid.dose,180mg/day
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,treatment_approach_2025.pharmacological_therapy.non_statin_therapy.bempedoic_acid.ldl_reduction,15-20%
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,treatment_approach_2025.pharmacological_therapy.non_statin_therapy.bempedoic_acid.indication,他汀不耐受
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,treatment_approach_2025.pharmacological_therapy.combination_therapy.statin_ezetimibe,一线联合治疗
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,treatment_approach_2025.pharmacological_therapy.combination_therapy.triple_therapy,他汀+依折麦布+PCSK9i
+entities.dyslipidemia_entities,DLP_001,血脂异常,,disease,代谢疾病,treatment_approach_2025.pharmacological_therapy.combination_therapy.monitoring,肝酶、肌酶、肾功能

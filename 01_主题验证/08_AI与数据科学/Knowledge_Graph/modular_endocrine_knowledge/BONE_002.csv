@@ -1,0 +1,192 @@
+section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,alternate_names,软骨病; 维生素D缺乏性骨病; Osteomalacia; Rickets (in children); Adult rickets
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,icd10,M83.9
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,definition,由于骨基质矿化缺陷导致的骨病，特征是骨基质正常但矿物质沉积不足
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.mineralization_defect.normal_bone_formation,成骨细胞正常合成骨基质（类骨质）
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.mineralization_defect.impaired_mineralization,钙磷酸盐晶体沉积障碍
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.mineralization_defect.accumulation_of_osteoid,未矿化的类骨质异常增多
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.vitamin_d_metabolism.synthesis_pathway.step1,皮肤7-脱氢胆固醇→维生素D3（阳光照射）
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.vitamin_d_metabolism.synthesis_pathway.step2,肝脏25-羟化酶→25(OH)D3（储存形式）
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.vitamin_d_metabolism.synthesis_pathway.step3,"肾脏1α-羟化酶→1,25(OH)2D3（活性形式）"
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.vitamin_d_metabolism.physiological_functions.intestinal_calcium_absorption,促进小肠钙吸收（主要功能）
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.vitamin_d_metabolism.physiological_functions.phosphate_absorption,促进磷酸盐吸收
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.vitamin_d_metabolism.physiological_functions.bone_mineralization,直接促进骨矿化
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.vitamin_d_metabolism.physiological_functions.pth_regulation,抑制甲状旁腺激素分泌
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.vitamin_d_metabolism.physiological_functions.fgf23_interaction,与FGF23相互调节磷代谢
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.vitamin_d_metabolism.deficiency_consequences.decreased_calcium_absorption,肠道钙吸收减少
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.vitamin_d_metabolism.deficiency_consequences.secondary_hyperparathyroidism,继发性甲状旁腺功能亢进
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.vitamin_d_metabolism.deficiency_consequences.phosphate_wasting,肾脏磷酸盐丢失增加
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.vitamin_d_metabolism.deficiency_consequences.mineralization_failure,骨和牙齿矿化障碍
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.calcium_phosphate_homeostasis.normal_mineral_balance.serum_calcium,2.20-2.60mmol/L
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.calcium_phosphate_homeostasis.normal_mineral_balance.serum_phosphate,0.85-1.45mmol/L
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.calcium_phosphate_homeostasis.normal_mineral_balance.calcium_phosphate_product,正常时>40
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.calcium_phosphate_homeostasis.disturbed_homeostasis.low_serum_calcium,维生素D缺乏导致低钙血症
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.calcium_phosphate_homeostasis.disturbed_homeostasis.low_serum_phosphate,继发性甲状旁腺功能亢进导致磷酸盐流失
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.calcium_phosphate_homeostasis.disturbed_homeostasis.inadequate_mineral_product,钙磷乘积不足以支持矿化
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.bone_matrix_abnormalities.osteoid_accumulation.mechanism,类骨质合成正常但矿化延迟
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.bone_matrix_abnormalities.osteoid_accumulation.histological_features,类骨质厚度增加，矿化滞后时间延长
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.bone_matrix_abnormalities.osteoid_accumulation.osteoid_volume,正常<5%，骨软化症>12%
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.bone_matrix_abnormalities.pseudofractures.looser_zones,Looser假性骨折线
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.bone_matrix_abnormalities.pseudofractures.locations,肋骨、骨盆、股骨内侧皮质
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,pathophysiology.bone_matrix_abnormalities.pseudofractures.mechanism,重复微损伤和修复不良
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.vitamin_d_deficiency.inadequate_sunlight_exposure,室内工作人群; 高纬度地区居民; 宗教文化因素（全身覆盖）; 空气污染严重地区
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.vitamin_d_deficiency.dietary_insufficiency,素食主义者; 乳糖不耐受; 饮食结构单一; 食物维生素D含量低
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.vitamin_d_deficiency.malabsorption,脂肪泻; 炎症性肠病; 胃切除术后; 胰腺功能不全; 胆汁酸合成障碍
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.vitamin_d_metabolism_disorders.1alpha_hydroxylase_deficiency.genetic_defect,CYP27B1基因突变
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.vitamin_d_metabolism_disorders.1alpha_hydroxylase_deficiency.clinical_name,维生素D依赖性佝偻病I型
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.vitamin_d_metabolism_disorders.1alpha_hydroxylase_deficiency.biochemical_profile,"25(OH)D正常，1,25(OH)2D低"
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.vitamin_d_metabolism_disorders.vitamin_d_receptor_defects.genetic_defect,VDR基因突变
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.vitamin_d_metabolism_disorders.vitamin_d_receptor_defects.clinical_name,维生素D依赖性佝偻病II型
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.vitamin_d_metabolism_disorders.vitamin_d_receptor_defects.biochemical_profile,"1,25(OH)2D高，组织抵抗"
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.vitamin_d_metabolism_disorders.24_hydroxylase_mutations.genetic_defect,CYP24A1基因突变
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.vitamin_d_metabolism_disorders.24_hydroxylase_mutations.consequence,维生素D分解减少，中毒易感性
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.phosphate_depletion.hereditary_hypophosphatemic_rickets.x_linked,PHEX基因突变（最常见）
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.phosphate_depletion.hereditary_hypophosphatemic_rickets.autosomal_dominant,FGF23基因突变
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.phosphate_depletion.hereditary_hypophosphatemic_rickets.autosomal_recessive,DMP1或ENPP1基因突变
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.phosphate_depletion.hereditary_hypophosphatemic_rickets.mechanism,FGF23过度表达导致肾脏磷酸盐丢失
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.phosphate_depletion.tumor_induced_osteomalacia.mechanism,肿瘤分泌FGF23类似物质
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.phosphate_depletion.tumor_induced_osteomalacia.tumor_types,间叶性肿瘤、前列腺癌、肺癌
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.phosphate_depletion.tumor_induced_osteomalacia.clinical_course,肿瘤切除后快速恢复
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.phosphate_depletion.drug_induced,磷酸结合剂过量; 抗癫痫药物; 铁剂螯合剂; 双膦酸盐（大剂量）
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.renal_tubular_disorders.fanconi_syndrome,近端肾小管功能全面异常
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.renal_tubular_disorders.distal_renal_tubular_acidosis,远端肾小管酸化功能缺陷
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.renal_tubular_disorders.chronic_kidney_disease,肾脏1α-羟化酶活性下降
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.matrix_disorders.hypophosphatasia.enzyme_defect,组织非特异性碱性磷酸酶缺陷
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.matrix_disorders.hypophosphatasia.clinical_spectrum,从致命性到轻微骨病
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.matrix_disorders.hypophosphatasia.biochemical_marker,血清碱性磷酸酶低，尿磷酸乙醇胺高
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,etiology.matrix_disorders.fibrogenesis_imperfecta_ossium,罕见的骨基质异常疾病
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.adult_presentation.bone_pain.characteristics,弥漫性、深部钝痛
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.adult_presentation.bone_pain.distribution,腰背部、髋部、胸部最常见
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.adult_presentation.bone_pain.aggravating_factors,活动、负重
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.adult_presentation.bone_pain.pattern,对称性分布
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.adult_presentation.muscle_weakness.pattern,近端肌群受累为主
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.adult_presentation.muscle_weakness.manifestations,上楼困难; 从坐位站起困难; 举臂无力; 步态摇摆
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.adult_presentation.muscle_weakness.mechanism,维生素D缺乏直接影响肌肉功能
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.adult_presentation.skeletal_deformities.spinal_deformity,脊柱侧弯、后凸
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.adult_presentation.skeletal_deformities.chest_deformity,漏斗胸、鸡胸
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.adult_presentation.skeletal_deformities.limb_deformity,下肢弯曲变形
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.adult_presentation.skeletal_deformities.pelvic_deformity,骨盆狭窄（影响分娩）
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.adult_presentation.fractures.types,病理性骨折
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.adult_presentation.fractures.common_sites,脊椎、髋部、前臂
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.adult_presentation.fractures.healing,骨折愈合延迟
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.pediatric_presentation.growth_retardation,身高和体重增长迟缓
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.pediatric_presentation.dental_problems,牙齿萌出延迟; 牙釉质缺陷; 龋齿多发; 牙齿松动
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.pediatric_presentation.cranial_changes.craniotabes,颅骨软化
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.pediatric_presentation.cranial_changes.delayed_fontanelle_closure,囟门闭合延迟
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.pediatric_presentation.cranial_changes.frontal_bossing,前额突出
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.pediatric_presentation.thoracic_deformity.rachitic_rosary,佝偻病串珠（肋软骨交界处膨大）
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.pediatric_presentation.thoracic_deformity.harrison_groove,横行胸沟
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.pediatric_presentation.thoracic_deformity.pectus_deformity,鸡胸或漏斗胸
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.pediatric_presentation.limb_deformities.genu_valgum,膝外翻（X型腿）
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.pediatric_presentation.limb_deformities.genu_varum,膝内翻（O型腿）
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.pediatric_presentation.limb_deformities.coxa_vara,髋内翻
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.pediatric_presentation.limb_deformities.delayed_walking,行走延迟
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.systemic_manifestations.hypocalcemic_symptoms,手足搐搦症; 肌肉痉挛; 感觉异常; 癫痫发作
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.systemic_manifestations.secondary_hyperparathyroidism,骨痛加重; 尿路结石; 肾功能损害; 高血压
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,clinical_manifestations.systemic_manifestations.immune_dysfunction,感染易感性增加; 自身免疫疾病风险; 疫苗应答减弱
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.clinical_assessment.history,膳食习惯评估; 阳光照射史; 药物使用史; 消化系统疾病史; 肾脏疾病史; 家族史
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.clinical_assessment.physical_examination,骨骼系统检查; 肌力评估; 神经系统检查; Chvostek征和Trousseau征
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.biochemical_markers.vitamin_d_status.25_oh_d.test,血清25-羟维生素D
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.biochemical_markers.vitamin_d_status.25_oh_d.deficiency,<20ng/mL (50nmol/L)
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.biochemical_markers.vitamin_d_status.25_oh_d.insufficiency,20-30ng/mL (50-75nmol/L)
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.biochemical_markers.vitamin_d_status.25_oh_d.sufficiency,>30ng/mL (75nmol/L)
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.biochemical_markers.vitamin_d_status.1_25_oh2_d.test,"血清1,25-二羟维生素D"
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.biochemical_markers.vitamin_d_status.1_25_oh2_d.normal_range,20-60pg/mL
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.biochemical_markers.vitamin_d_status.1_25_oh2_d.clinical_utility,评估肾脏1α-羟化酶功能
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.biochemical_markers.mineral_metabolism.serum_calcium.typical_finding,正常或轻度降低
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.biochemical_markers.mineral_metabolism.serum_calcium.severe_deficiency,明显低钙血症
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.biochemical_markers.mineral_metabolism.serum_phosphate.pattern,通常降低
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.biochemical_markers.mineral_metabolism.serum_phosphate.mechanism,继发性甲状旁腺功能亢进
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.biochemical_markers.mineral_metabolism.parathyroid_hormone.finding,显著升高
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.biochemical_markers.mineral_metabolism.parathyroid_hormone.range,正常值的2-10倍
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.biochemical_markers.mineral_metabolism.alkaline_phosphatase.pattern,升高（骨型ALP）
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.biochemical_markers.mineral_metabolism.alkaline_phosphatase.significance,反映骨转换增加
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.biochemical_markers.bone_turnover_markers.formation_markers,骨特异性碱性磷酸酶升高; 骨钙蛋白升高; PINP升高
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.biochemical_markers.bone_turnover_markers.resorption_markers,CTX升高; NTX升高
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.biochemical_markers.urinary_markers.24h_urine_calcium,通常降低
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.biochemical_markers.urinary_markers.24h_urine_phosphate,继发性甲状旁腺功能亢进时增加
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.biochemical_markers.urinary_markers.tubular_reabsorption_phosphate,降低
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.imaging_studies.conventional_radiography.characteristic_findings,骨密度普遍降低; 皮质骨变薄; 小梁骨稀疏; Looser假性骨折线
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.imaging_studies.conventional_radiography.looser_zones.definition,对称性透明带，垂直于骨皮质
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.imaging_studies.conventional_radiography.looser_zones.common_sites,股骨内侧颈部; 耻骨支; 肋骨; 肩胛骨内缘
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.imaging_studies.conventional_radiography.looser_zones.pathognomonic,骨软化症的特征性表现
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.imaging_studies.conventional_radiography.pediatric_findings,骨骺钙化延迟; 干骺端杯状变形; 骨干弯曲变形; 颅骨软化
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.imaging_studies.bone_densitometry.dexa_findings,骨密度显著降低
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.imaging_studies.bone_densitometry.pattern,全身性骨密度减少
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.imaging_studies.bone_densitometry.monitoring,治疗效果评估
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.imaging_studies.advanced_imaging.bone_scintigraphy.pattern,多发性骨痛区域摄取增加
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.imaging_studies.advanced_imaging.bone_scintigraphy.pseudofracture_sites,Looser带区域异常摄取
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.imaging_studies.advanced_imaging.mri_findings,骨髓水肿; 应力性改变; 肌肉信号异常
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.bone_biopsy.indications,诊断不明确时; 疑似其他骨病; 治疗反应差; 研究目的
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.bone_biopsy.histological_features.increased_osteoid,类骨质体积>12%
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.bone_biopsy.histological_features.delayed_mineralization,矿化滞后时间>100天
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.bone_biopsy.histological_features.osteoid_thickness,类骨质厚度增加
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.bone_biopsy.histological_features.mineralization_front,矿化前沿稀少
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.bone_biopsy.technique,经皮髂骨活检（双标记技术）
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.differential_diagnosis.osteoporosis.distinguishing_features,骨软化症有假性骨折线和肌肉症状
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.differential_diagnosis.osteoporosis.biochemical_differences,骨软化症PTH明显升高，25(OH)D缺乏
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.differential_diagnosis.hyperparathyroidism.primary_hpt,骨软化症PTH升高是继发性的
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.differential_diagnosis.hyperparathyroidism.calcium_levels,原发性甲状旁腺功能亢进血钙升高
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.differential_diagnosis.malignancy.metastatic_bone_disease,影像学和病史可鉴别
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,diagnosis.differential_diagnosis.malignancy.multiple_myeloma,血清蛋白电泳、骨髓检查
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.vitamin_d_replacement.vitamin_d3_cholecalciferol.standard_dose,1000-4000IU/天（维持）
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.vitamin_d_replacement.vitamin_d3_cholecalciferol.loading_dose,50000IU/周，持续8-12周（严重缺乏）
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.vitamin_d_replacement.vitamin_d3_cholecalciferol.high_dose,10000-50000IU/天（严重骨软化症）
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.vitamin_d_replacement.vitamin_d3_cholecalciferol.duration,通常需要终身补充
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.vitamin_d_replacement.vitamin_d2_ergocalciferol.equivalency,与维生素D3基本等效
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.vitamin_d_replacement.vitamin_d2_ergocalciferol.dosing,类似维生素D3方案
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.vitamin_d_replacement.vitamin_d2_ergocalciferol.preference,维生素D3更优（生物利用度更好）
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.vitamin_d_replacement.active_metabolites.calcitriol.indications,严重肾功能不全; 1α-羟化酶缺陷; 急需快速纠正低钙血症
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.vitamin_d_replacement.active_metabolites.calcitriol.dosing,0.25-2.0μg/天
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.vitamin_d_replacement.active_metabolites.calcitriol.monitoring,密切监测血钙避免中毒
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.vitamin_d_replacement.active_metabolites.alfacalcidol.mechanism,1α-羟维生素D3，需肝脏25-羟化
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.vitamin_d_replacement.active_metabolites.alfacalcidol.dosing,0.5-3.0μg/天
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.vitamin_d_replacement.active_metabolites.alfacalcidol.advantages,较calcitriol作用温和持久
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.mineral_supplementation.calcium_supplementation.elemental_calcium,1000-1500mg/天
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.mineral_supplementation.calcium_supplementation.forms,碳酸钙（含钙40%）; 柠檬酸钙（含钙21%，吸收更好）; 醋酸钙（含钙25%）
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.mineral_supplementation.calcium_supplementation.timing,分次服用，餐时或餐后
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.mineral_supplementation.calcium_supplementation.monitoring,避免过量导致结石
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.mineral_supplementation.phosphate_supplementation.indications,遗传性低磷血症性佝偻病
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.mineral_supplementation.phosphate_supplementation.forms,磷酸钠; 磷酸钾; 中性磷酸盐
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.mineral_supplementation.phosphate_supplementation.dosing,30-60mg/kg/天（分3-4次）
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.mineral_supplementation.phosphate_supplementation.side_effects,腹泻; 腹痛; 恶心; 继发性甲状旁腺功能亢进
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.specific_therapies.hereditary_rickets.xlh_treatment.conventional,磷酸盐+活性维生素D
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.specific_therapies.hereditary_rickets.xlh_treatment.burosumab.mechanism,FGF23单克隆抗体
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.specific_therapies.hereditary_rickets.xlh_treatment.burosumab.dosing,0.8-1.2mg/kg皮下注射，每2周一次
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.specific_therapies.hereditary_rickets.xlh_treatment.burosumab.efficacy,显著改善磷酸盐水平和骨病变
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.specific_therapies.hereditary_rickets.xlh_treatment.burosumab.monitoring,肾功能、甲状旁腺功能
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.specific_therapies.hereditary_rickets.vddr1_treatment.calcitriol,0.5-2.0μg/天
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.specific_therapies.hereditary_rickets.vddr1_treatment.calcium,1000-1500mg/天
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.specific_therapies.hereditary_rickets.vddr1_treatment.response,通常反应良好
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.specific_therapies.hereditary_rickets.vddr2_treatment.high_dose_calcitriol,5-30μg/天
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.specific_therapies.hereditary_rickets.vddr2_treatment.intravenous_calcium,重症患者需要静脉补钙
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.specific_therapies.hereditary_rickets.vddr2_treatment.prognosis,部分患者对治疗抵抗
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.specific_therapies.tumor_induced_osteomalacia.tumor_localization,全身PET-CT扫描; 奥曲肽扫描; 静脉取样检测FGF23
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.specific_therapies.tumor_induced_osteomalacia.surgical_treatment,完整肿瘤切除
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.specific_therapies.tumor_induced_osteomalacia.medical_management,手术前或不能手术时磷酸盐补充
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.supportive_care.physical_therapy.objectives,改善肌力; 增加关节活动度; 防止跌倒; 矫正姿势
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.supportive_care.physical_therapy.exercise_program,水中运动（减少关节负荷）; 等长肌力训练; 平衡训练; 柔韧性练习
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.supportive_care.orthopedic_intervention.indications,严重骨骼畸形; 病理性骨折; 关节功能障碍
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.supportive_care.orthopedic_intervention.procedures,截骨矫正术; 内固定治疗; 关节置换术
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.supportive_care.orthopedic_intervention.timing,通常在生化指标纠正后进行
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.supportive_care.dietary_counseling.vitamin_d_rich_foods,富脂鱼类（鲑鱼、鲭鱼）; 强化乳制品; 蛋黄; 强化谷物
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,treatment.supportive_care.dietary_counseling.calcium_rich_foods,乳制品; 绿叶蔬菜; 坚果和种子; 豆制品
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,monitoring.biochemical_monitoring.frequency,治疗前3个月每月检查，稳定后每3-6个月
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,monitoring.biochemical_monitoring.parameters,血清钙; 血清磷; 甲状旁腺激素; 25-羟维生素D; 碱性磷酸酶; 24小时尿钙
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,monitoring.biochemical_monitoring.target_levels.25_oh_d,>30ng/mL (75nmol/L)
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,monitoring.biochemical_monitoring.target_levels.pth,恢复正常范围
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,monitoring.biochemical_monitoring.target_levels.serum_calcium,正常范围
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,monitoring.biochemical_monitoring.target_levels.urine_calcium,<4mg/kg/天
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,monitoring.clinical_monitoring.symptoms,骨痛、肌力、行走能力改善
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,monitoring.clinical_monitoring.imaging,每6-12个月骨密度检查，必要时X线复查
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,monitoring.clinical_monitoring.complications,监测维生素D中毒、肾结石、肾功能
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,monitoring.treatment_response.early_response,2-4周内症状开始改善
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,monitoring.treatment_response.biochemical_normalization,3-6个月内PTH和ALP开始下降
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,monitoring.treatment_response.radiological_healing,6-12个月假性骨折线愈合
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,monitoring.treatment_response.complete_recovery,1-2年骨密度显著改善
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,prognosis.factors_affecting_outcome,诊断和治疗及时性; 维生素D缺乏严重程度; 患者年龄和依从性; 潜在病因是否可纠正
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,prognosis.treatment_response.nutritional_osteomalacia,治疗反应通常很好
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,prognosis.treatment_response.genetic_forms,需要终身治疗，预后变异较大
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,prognosis.treatment_response.tumor_induced,肿瘤切除后可完全恢复
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,prognosis.complications.untreated_consequences,进行性骨骼畸形; 病理性骨折; 肌无力和功能障碍; 生长发育迟缓（儿童）
+BONE_002,BONE_002,骨软化症,,骨代谢疾病,骨代谢疾病,prognosis.complications.treatment_complications,维生素D中毒; 高钙血症; 肾结石; 肾功能损害
