@@ -4,7 +4,7 @@
 
 本目录包含了以内分泌代谢疾病为核心的完整医疗数据标准化Schema体系。这些Schema以CSV格式定义，涵盖19个医学专科领域，为内分泌代谢疾病的全生命周期、全系统、全方位管理提供统一的数据标准。
 
-**当前共有64个Schema文件，8,417个标准化字段**，构建了从基础检验到前沿精准医学的完整医疗体系，特别针对糖尿病及其并发症、代谢综合征、内分泌功能异常、精准医学、功能评估、环境健康、问卷评估、护理记录等进行了全面扩展。
+**当前共有74个Schema文件，8,704个标准化字段**，构建了从基础检验到前沿精准医学的完整医疗体系，特别针对糖尿病及其并发症、代谢综合征、内分泌功能异常、精准医学、功能评估、环境健康、问卷评估、护理记录等进行了全面扩展。
 
 ## Schema分类
 
@@ -36,7 +36,7 @@
 | `visceral-fat-ct-schema.csv` | 内脏脂肪CT | 98 | ⭐⭐⭐ |
 | `visceral-fat-mri-schema.csv` | 内脏脂肪MRI | 102 | ⭐⭐⭐ |
 
-### 🏥 核心内分泌代谢检查类 (9个)
+### 🏥 核心内分泌代谢检查类 (10个)
 | Schema文件 | 中文名称 | 字段数 | 重要程度 |
 |------------|----------|--------|----------|
 | `diabetes-comprehensive-schema.csv` | 糖尿病综合检查 | 245 | ⭐⭐⭐⭐⭐ |
@@ -48,21 +48,31 @@
 | `nutrition-energy-metabolism-schema.csv` | 营养与能量代谢检查 | 234 | ⭐⭐⭐⭐⭐ |
 | `adrenal-function-schema.csv` | 肾上腺功能检查 | 142 | ⭐⭐⭐⭐ |
 | `pituitary-function-schema.csv` | 垂体功能检查 | 156 | ⭐⭐⭐⭐ |
+| `sex-specific-hormone-therapy-schema.csv` | 性别特异性激素治疗随访 | 27 | ⭐⭐⭐⭐ |
 
-### 🔬 器官系统并发症检查类 (6个)
+### 🧪 罕见内分泌疾病评估类 (2个)
+| Schema文件 | 中文名称 | 字段数 | 重要程度 |
+|------------|----------|--------|----------|
+| `cushings-syndrome-evaluation-schema.csv` | 库欣综合征评估 | 29 | ⭐⭐⭐⭐⭐ |
+| `pheochromocytoma-paraganglioma-schema.csv` | 嗜铬细胞瘤/副神经节瘤评估 | 26 | ⭐⭐⭐⭐ |
+
+### 🔬 器官系统并发症检查类 (8个)
 | Schema文件 | 中文名称 | 字段数 | 重要程度 |
 |------------|----------|--------|----------|
 | `diabetic-nephropathy-schema.csv` | 糖尿病肾病检查 | 154 | ⭐⭐⭐⭐⭐ |
+| `non-diabetic-renal-disease-schema.csv` | 非糖尿病性肾病综合评估 | 33 | ⭐⭐⭐⭐⭐ |
+| `hyperuricemia-comorbidity-schema.csv` | 高尿酸血症合并症管理 | 27 | ⭐⭐⭐⭐ |
 | `cardiovascular-metabolic-risk-schema.csv` | 心血管代谢风险评估 | 198 | ⭐⭐⭐⭐⭐ |
 | `diabetic-neuropathy-schema.csv` | 糖尿病神经病变检查 | 187 | ⭐⭐⭐⭐⭐ |
 | `peripheral-vascular-disease-schema.csv` | 周围血管疾病检查 | 176 | ⭐⭐⭐⭐⭐ |
 | `diabetic-retinopathy-schema.csv` | 糖尿病视网膜病变检查 | 165 | ⭐⭐⭐⭐⭐ |
 | `pulmonary-function-metabolism-schema.csv` | 肺功能代谢检查 | 258 | ⭐⭐⭐⭐ |
 
-### 👶 特殊生理阶段检查类 (2个)
+### 👶 特殊生理阶段检查类 (3个)
 | Schema文件 | 中文名称 | 字段数 | 重要程度 |
 |------------|----------|--------|----------|
 | `gestational-diabetes-schema.csv` | 妊娠期糖尿病检查 | 198 | ⭐⭐⭐⭐⭐ |
+| `pregnancy-complications-schema.csv` | 孕期并发症精细化评估 | 39 | ⭐⭐⭐⭐⭐ |
 | `pediatric-developmental-metabolism-schema.csv` | 儿童发育代谢检查 | 138 | ⭐⭐⭐⭐⭐ |
 
 ### 🧬 精准医学检查类 (8个)
@@ -76,6 +86,21 @@
 | `exercise-metabolism-function-schema.csv` | 运动代谢功能检查 | 148 | ⭐⭐⭐⭐ |
 | `digestive-metabolism-function-schema.csv` | 消化代谢功能检查 | 238 | ⭐⭐⭐⭐ |
 | `hypertension-comprehensive-schema.csv` | 高血压综合检查 | 189 | ⭐⭐⭐⭐⭐ |
+
+### 💉 治疗过程监测与药物优化类 (1个)
+| Schema文件 | 中文名称 | 字段数 | 重要程度 |
+|------------|----------|--------|----------|
+| `insulin-therapy-optimization-schema.csv` | 胰岛素治疗优化评估 | 27 | ⭐⭐⭐⭐⭐ |
+
+### 🧘 生活方式与可穿戴数据类 (1个)
+| Schema文件 | 中文名称 | 字段数 | 重要程度 |
+|------------|----------|--------|----------|
+| `lifestyle-wearable-monitoring-schema.csv` | 生活方式与可穿戴监测 | 27 | ⭐⭐⭐⭐ |
+
+### 🏡 护理与居家管理类 (1个)
+| Schema文件 | 中文名称 | 字段数 | 重要程度 |
+|------------|----------|--------|----------|
+| `metabolic-home-care-schema.csv` | 代谢性疾病居家护理管理 | 24 | ⭐⭐⭐⭐ |
 
 ### 🩺 功能评估检查类 (4个)
 | Schema文件 | 中文名称 | 字段数 | 重要程度 |
@@ -91,7 +116,7 @@
 | `environmental-metabolic-toxicology-schema.csv` | 环境代谢毒理学检查 | 365 | ⭐⭐⭐ |
 | `reproductive-endocrine-metabolism-schema.csv` | 生殖内分泌代谢检查 | 145 | ⭐⭐⭐⭐ |
 
-### 📋 问卷和评估类 (12个)
+### 📋 问卷和评估类 (13个)
 | Schema文件 | 中文名称 | 字段数 | 重要程度 |
 |------------|----------|--------|----------|
 | `systematic-physical-examination-schema.csv` | 系统性体格检查 | 208 | ⭐⭐⭐⭐⭐ |
@@ -105,6 +130,7 @@
 | `hypoglycemia-risk-assessment-schema.csv` | 低血糖风险评估 | 165 | ⭐⭐⭐⭐⭐ |
 | `endocrine-disease-rehabilitation-assessment-schema.csv` | 内分泌疾病康复评估 | 198 | ⭐⭐⭐⭐ |
 | `multidisciplinary-consultation-record-schema.csv` | 多学科会诊记录 | 213 | ⭐⭐⭐⭐⭐ |
+| `cardio-renal-metabolic-board-schema.csv` | 心肾代谢联合会诊记录 | 23 | ⭐⭐⭐⭐ |
 | `family-support-assessment-schema.csv` | 家庭支持评估 | 189 | ⭐⭐⭐⭐ |
 
 ## Schema结构说明
@@ -170,6 +196,15 @@
 3. **变更记录**：详细记录每次更新的内容和影响
 4. **测试验证**：在真实临床环境中验证更新效果
 5. **文档同步**：及时更新相关技术文档
+
+### Schema索引与单位管理
+- **事实来源**：CSV 文件仍为唯一可信的 Schema 定义，所有调整必须先更新 CSV。
+- **索引脚本**：目录内提供 `build_schema_index.py`，可批量解析字段描述，生成结构化索引文件。
+- **生成命令**：在项目根目录执行 `python3 06_Others/Input/SchemaCSV/build_schema_index.py --input-dir 06_Others/Input/SchemaCSV --output 06_Others/Input/SchemaCSV/combined_schema_index.json`，即可刷新索引。
+- **输出内容**：索引 JSON 包含字段的中英文名、数据类型、原始/清洗描述、示例值与推断单位，便于接口、LLM 提示词和后处理校验使用。
+- **单位推断**：脚本优先读取描述中的“单位:”提示，回退到字段名括号信息；若仍无法判定，单位字段保持为空，建议补充描述后重新生成。
+- **版本治理**：提交 `*.csv` 改动时应同步提交 `combined_schema_index.json` 等衍生文件，确保各环境使用一致的 Schema 快照，可结合 pre-commit/CI 检查同步性。
+- **自动化拓展**：如需避免人工同步，可在服务启动时动态加载 CSV 或编写额外校验脚本，统筹考虑性能与维护成本。
 
 ### 临床应用验证
 1. **医学准确性**：所有字段和参考值经过医学专家验证

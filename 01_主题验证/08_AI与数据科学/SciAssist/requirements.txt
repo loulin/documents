@@ -1,0 +1,92 @@
+# 医学文献检索API集成依赖包
+# Medical Literature Search API Integration Dependencies
+
+# 核心依赖 - Core Dependencies
+aiohttp>=3.8.0          # 异步HTTP客户端
+asyncio                 # 异步编程支持 (Python 3.7+ 内置)
+requests>=2.28.0        # 同步HTTP客户端 (备用)
+
+# 数据处理 - Data Processing
+xml>=0.4.3              # XML解析 (PubMed响应)
+beautifulsoup4>=4.11.0  # HTML/XML解析增强
+lxml>=4.9.0             # 高性能XML解析器
+pandas>=1.5.0           # 数据分析和处理
+numpy>=1.24.0           # 数值计算支持
+
+# JSON和数据序列化 - JSON and Data Serialization
+ujson>=5.6.0            # 高性能JSON解析
+pydantic>=1.10.0        # 数据验证和序列化
+
+# 缓存和存储 - Caching and Storage
+redis>=4.5.0            # Redis缓存客户端
+hiredis>=2.0.0          # Redis高性能解析器
+
+# 日志和监控 - Logging and Monitoring
+loguru>=0.6.0           # 现代Python日志库
+structlog>=22.3.0       # 结构化日志
+
+# 配置管理 - Configuration Management
+python-dotenv>=1.0.0    # 环境变量管理
+PyYAML>=6.0             # YAML配置文件支持
+configparser>=5.3.0     # INI配置文件支持
+
+# HTTP和网络 - HTTP and Networking
+urllib3>=1.26.0         # HTTP库
+certifi>=2022.12.7      # SSL证书验证
+httpx>=0.24.0           # 现代HTTP客户端
+
+# 错误处理和重试 - Error Handling and Retry
+tenacity>=8.2.0         # 重试机制
+backoff>=2.2.0          # 指数退避重试
+
+# 时间处理 - Time Handling
+python-dateutil>=2.8.0  # 日期时间解析
+pytz>=2022.7            # 时区支持
+
+# 安全和加密 - Security and Encryption
+cryptography>=38.0.0    # 加密支持
+hashlib                 # 哈希函数 (Python内置)
+
+# 性能监控 - Performance Monitoring
+psutil>=5.9.0           # 系统性能监控
+memory-profiler>=0.61.0 # 内存使用分析
+
+# 开发和测试 - Development and Testing
+pytest>=7.2.0          # 测试框架
+pytest-asyncio>=0.21.0 # 异步测试支持
+pytest-cov>=4.0.0      # 测试覆盖率
+black>=22.12.0          # 代码格式化
+flake8>=6.0.0           # 代码检查
+mypy>=1.0.0             # 类型检查
+
+# 文档生成 - Documentation
+sphinx>=5.3.0          # 文档生成
+sphinx-rtd-theme>=1.2.0 # 文档主题
+
+# API文档 - API Documentation
+fastapi>=0.95.0         # 快速API框架 (如需要web服务)
+uvicorn>=0.20.0         # ASGI服务器
+
+# 数据可视化 - Data Visualization (可选)
+matplotlib>=3.6.0       # 基础绘图
+plotly>=5.13.0          # 交互式图表
+seaborn>=0.12.0         # 统计绘图
+
+# 机器学习支持 - Machine Learning Support (可选)
+scikit-learn>=1.2.0     # 机器学习库
+transformers>=4.26.0    # NLP预训练模型
+sentence-transformers>=2.2.0  # 语义相似度
+
+# 数据库支持 - Database Support (可选)
+sqlalchemy>=2.0.0       # SQL ORM
+alembic>=1.9.0          # 数据库迁移
+pymongo>=4.3.0          # MongoDB客户端
+
+# 消息队列 - Message Queue (可选)
+celery>=5.2.0           # 分布式任务队列
+kombu>=5.2.0            # 消息传递库
+
+# 部署支持 - Deployment Support
+gunicorn>=20.1.0        # WSGI服务器
+docker>=6.0.0           # Docker Python SDK
+kubernetes>=25.3.0      # Kubernetes Python客户端
