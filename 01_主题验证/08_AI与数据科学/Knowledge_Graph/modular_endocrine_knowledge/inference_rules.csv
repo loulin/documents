@@ -1,17 +1,17 @@
-section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value
-inference_rules,RULE_001,糖尿病高血压共病管理,,,,description,糖尿病合并高血压患者的综合管理策略
-inference_rules,RULE_001,糖尿病高血压共病管理,,,,condition.diseases,糖尿病; 高血压
-inference_rules,RULE_001,糖尿病高血压共病管理,,,,condition.hba1c,>7%
-inference_rules,RULE_001,糖尿病高血压共病管理,,,,condition.blood_pressure,>130/80
-inference_rules,RULE_001,糖尿病高血压共病管理,,,,action.treatment_priority,同时控制血糖和血压
-inference_rules,RULE_001,糖尿病高血压共病管理,,,,action.drug_preference,ACE抑制剂或ARB优先
-inference_rules,RULE_001,糖尿病高血压共病管理,,,,action.targets.hba1c,<7%
-inference_rules,RULE_001,糖尿病高血压共病管理,,,,action.targets.bp,<130/80 mmHg
-inference_rules,RULE_001,糖尿病高血压共病管理,,,,action.monitoring,每3个月评估
-inference_rules,RULE_001,糖尿病高血压共病管理,,,,evidence_grade,A
-inference_rules,RULE_002,甲状腺功能异常诊断,,,,description,基于TSH和甲状腺激素水平的诊断规则
-inference_rules,RULE_002,甲状腺功能异常诊断,,,,condition.tsh_low,<0.1 mIU/L
-inference_rules,RULE_002,甲状腺功能异常诊断,,,,condition.ft4_high,>23 pmol/L
-inference_rules,RULE_002,甲状腺功能异常诊断,,,,conclusion.diagnosis,甲状腺功能亢进
-inference_rules,RULE_002,甲状腺功能异常诊断,,,,conclusion.confidence,0.95
-inference_rules,RULE_002,甲状腺功能异常诊断,,,,conclusion.next_steps,TRAb检测; 甲状腺超声; 心电图
+section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value,evidence_source
+inference_rules,RULE_001,糖尿病高血压共病管理,,,,description,糖尿病合并高血压患者的综合管理策略,Curated from referenced clinical guidelines
+inference_rules,RULE_001,糖尿病高血压共病管理,,,,condition.diseases,糖尿病; 高血压,Curated from referenced clinical guidelines
+inference_rules,RULE_001,糖尿病高血压共病管理,,,,condition.hba1c,>7%,Curated from referenced clinical guidelines
+inference_rules,RULE_001,糖尿病高血压共病管理,,,,condition.blood_pressure,>130/80,Curated from referenced clinical guidelines
+inference_rules,RULE_001,糖尿病高血压共病管理,,,,action.treatment_priority,同时控制血糖和血压,Curated from referenced clinical guidelines
+inference_rules,RULE_001,糖尿病高血压共病管理,,,,action.drug_preference,ACE抑制剂或ARB优先,Curated from referenced clinical guidelines
+inference_rules,RULE_001,糖尿病高血压共病管理,,,,action.targets.hba1c,<7%,Curated from referenced clinical guidelines
+inference_rules,RULE_001,糖尿病高血压共病管理,,,,action.targets.bp,<130/80 mmHg,Curated from referenced clinical guidelines
+inference_rules,RULE_001,糖尿病高血压共病管理,,,,action.monitoring,每3个月评估,Curated from referenced clinical guidelines
+inference_rules,RULE_001,糖尿病高血压共病管理,,,,evidence_grade,A,Curated from referenced clinical guidelines
+inference_rules,RULE_002,甲状腺功能异常诊断,,,,description,基于TSH和甲状腺激素水平的诊断规则,Curated from referenced clinical guidelines
+inference_rules,RULE_002,甲状腺功能异常诊断,,,,condition.tsh_low,<0.1 mIU/L,Curated from referenced clinical guidelines
+inference_rules,RULE_002,甲状腺功能异常诊断,,,,condition.ft4_high,>23 pmol/L,Curated from referenced clinical guidelines
+inference_rules,RULE_002,甲状腺功能异常诊断,,,,conclusion.diagnosis,甲状腺功能亢进,Curated from referenced clinical guidelines
+inference_rules,RULE_002,甲状腺功能异常诊断,,,,conclusion.confidence,0.95,Curated from referenced clinical guidelines
+inference_rules,RULE_002,甲状腺功能异常诊断,,,,conclusion.next_steps,TRAb检测; 甲状腺超声; 心电图,Curated from referenced clinical guidelines

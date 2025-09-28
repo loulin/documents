@@ -1,302 +1,302 @@
-section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,name_en,Type 2 Diabetes Mellitus
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,icd10,E11
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,description,以胰岛素抵抗和胰岛β细胞功能进行性衰减为特征的慢性代谢性疾病
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,epidemiology.global_prevalence,9.3%（成人）
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,epidemiology.china_prevalence,11.2%（成人）
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,epidemiology.incidence_trend,持续上升，与肥胖和老龄化相关
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,epidemiology.gender_distribution,男性略高于女性
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,epidemiology.age_pattern,40岁后显著增加，但年轻化趋势明显
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,pathophysiology.insulin_resistance.primary_sites,肝脏; 骨骼肌; 脂肪组织
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,pathophysiology.insulin_resistance.mechanisms,胰岛素受体后信号传导缺陷; 葡萄糖转运蛋白功能异常; 炎症因子介导的信号干扰; 脂肪细胞因子失调
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,pathophysiology.insulin_resistance.compensatory_response,早期β细胞代偿性胰岛素分泌增加
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,pathophysiology.beta_cell_dysfunction.progressive_decline,β细胞功能年下降率4-5%
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,pathophysiology.beta_cell_dysfunction.mechanisms,葡萄糖毒性; 脂毒性; 氧化应激; 内质网应激; 淀粉样蛋白沉积
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,pathophysiology.beta_cell_dysfunction.insulin_secretion_defects,第一时相胰岛素分泌缺失; 胰岛素脉冲性分泌异常; 葡萄糖敏感性下降
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,pathophysiology.incretin_system_defects.glp1_reduction,GLP-1分泌减少和作用减弱
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,pathophysiology.incretin_system_defects.dpp4_activity,DPP-4活性可能增加
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,pathophysiology.incretin_system_defects.incretins_effect,肠促胰素效应受损
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,pathophysiology.genetic_factors.heritability,遗传度约26%
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,pathophysiology.genetic_factors.major_genes,TCF7L2（转录因子7样2）; PPARG（过氧化物酶体增殖物激活受体γ）; KCNJ11（钾离子通道基因）; CDKAL1（CDK5调节亚单位相关蛋白1样1）; IGF2BP2（胰岛素样生长因子2 mRNA结合蛋白2）
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,pathophysiology.genetic_factors.polygenic_risk,多基因累积效应
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.obesity.central_obesity,腹型肥胖风险最高
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.obesity.bmi_threshold,亚洲人群≥23 kg/m²开始增加风险
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.obesity.mechanism,脂肪组织炎症和胰岛素抵抗
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.physical_inactivity.sedentary_lifestyle,久坐生活方式
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.physical_inactivity.exercise_deficiency,缺乏规律体力活动
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.physical_inactivity.muscle_mass_decline,肌肉量减少影响葡萄糖利用
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.dietary_factors.high_glycemic_diet,高血糖指数饮食
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.dietary_factors.processed_foods,过度加工食品
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.dietary_factors.sugar_sweetened_beverages,含糖饮料
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.dietary_factors.saturated_fat,饱和脂肪酸过多
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.dietary_factors.fiber_deficiency,膳食纤维不足
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.smoking.active_smoking,主动吸烟增加风险30-40%
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.smoking.dose_response,吸烟量与糖尿病风险呈正相关
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.sleep_disorders.sleep_deprivation,睡眠不足<6小时
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.sleep_disorders.sleep_apnea,阻塞性睡眠呼吸暂停
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.sleep_disorders.circadian_disruption,昼夜节律紊乱
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.non_modifiable.age,每增加10岁风险增加1.5-2倍
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.non_modifiable.family_history.first_degree_relative,一级亲属患病风险增加2-3倍
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.non_modifiable.family_history.parental_diabetes,父母患病风险增加40%
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.non_modifiable.ethnicity.high_risk_populations,亚洲人群; 西班牙裔; 非洲裔; 美洲原住民
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.non_modifiable.ethnicity.asian_specificity,相同BMI下亚洲人风险更高
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.non_modifiable.gestational_diabetes_history,GDM史增加7倍风险
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.non_modifiable.polycystic_ovary_syndrome,PCOS女性风险增加5-10倍
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.classic_symptoms.polyuria.description,多尿，每日>3L
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.classic_symptoms.polyuria.mechanism,高血糖导致渗透性利尿
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.classic_symptoms.polyuria.severity,血糖越高症状越明显
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.classic_symptoms.polydipsia.description,烦渴多饮
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.classic_symptoms.polydipsia.mechanism,失水激活下丘脑渴觉中枢
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.classic_symptoms.polydipsia.characteristic,饮水量增加但仍感口渴
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.classic_symptoms.polyphagia.description,多食易饥
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.classic_symptoms.polyphagia.mechanism,细胞内葡萄糖利用障碍
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.classic_symptoms.polyphagia.paradox,食量增加但体重可能下降
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.classic_symptoms.unexplained_weight_loss.description,不明原因体重下降
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.classic_symptoms.unexplained_weight_loss.mechanism,蛋白质和脂肪分解增加
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.classic_symptoms.unexplained_weight_loss.threshold,3个月内体重下降>5%
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.atypical_presentations.asymptomatic,多数2型糖尿病患者早期无症状
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.atypical_presentations.fatigue,乏力和精力不足
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.atypical_presentations.blurred_vision,视物模糊
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.atypical_presentations.recurrent_infections.types,皮肤感染; 尿路感染; 阴道炎
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.atypical_presentations.recurrent_infections.mechanism,高血糖环境利于细菌繁殖
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.atypical_presentations.slow_wound_healing,伤口愈合延迟
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.atypical_presentations.peripheral_neuropathy,手足麻木或疼痛
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.atypical_presentations.erectile_dysfunction,男性勃起功能障碍
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.physical_examination.anthropometric.weight_status,超重或肥胖（85%患者）
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.physical_examination.anthropometric.waist_circumference,中心性肥胖
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.physical_examination.anthropometric.body_fat_distribution,内脏脂肪增加
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.physical_examination.skin_changes.acanthosis_nigricans,黑棘皮症，胰岛素抵抗标志
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.physical_examination.skin_changes.skin_tags,皮赘增多
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.physical_examination.skin_changes.diabetic_dermopathy,糖尿病性皮肤病变
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.physical_examination.cardiovascular.blood_pressure,高血压（60-70%患者合并）
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.physical_examination.cardiovascular.heart_rate,静息心率可能增快
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.diagnostic_criteria.fasting_plasma_glucose.threshold,≥7.0 mmol/L (126 mg/dL)
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.diagnostic_criteria.fasting_plasma_glucose.definition,空腹8小时以上
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.diagnostic_criteria.fasting_plasma_glucose.confirmation,需要重复测定确认
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.diagnostic_criteria.oral_glucose_tolerance_test.2h_glucose,≥11.1 mmol/L (200 mg/dL)
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.diagnostic_criteria.oral_glucose_tolerance_test.protocol,75g葡萄糖负荷后2小时血糖
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.diagnostic_criteria.oral_glucose_tolerance_test.preparation,前3天正常饮食，空腹8-14小时
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.diagnostic_criteria.hba1c.threshold,≥6.5% (48 mmol/mol)
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.diagnostic_criteria.hba1c.advantages,无需空腹; 变异性小; 反映长期血糖
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.diagnostic_criteria.hba1c.limitations,某些血红蛋白病; 肾病晚期; 妊娠期不适用
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.diagnostic_criteria.random_plasma_glucose.threshold,≥11.1 mmol/L (200 mg/dL) + 症状
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.diagnostic_criteria.random_plasma_glucose.indication,有典型高血糖症状时
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.diagnostic_criteria.random_plasma_glucose.confirmation,需要其他方法确认
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.screening_recommendations.general_population.age_threshold,≥35岁开始筛查
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.screening_recommendations.general_population.interval,正常者每3年1次
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.screening_recommendations.general_population.high_risk,每年筛查
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.screening_recommendations.high_risk_criteria,BMI≥24 kg/m²（亚洲人群）; 一级亲属糖尿病史; 高血压（≥140/90 mmHg）; HDL-C<0.9 mmol/L或TG>2.22 mmol/L; PCOS; IGT或IFG史; 心血管疾病史; 久坐生活方式
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.differential_diagnosis.type1_diabetes.distinguishing_features,年龄：T1DM多见于儿童青少年; 起病：T1DM急性起病，T2DM缓慢起病; 体型：T1DM多正常或消瘦，T2DM多超重肥胖; 酮症：T1DM易发生，T2DM少见; 胰岛素依赖：T1DM绝对依赖，T2DM相对缺乏
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.differential_diagnosis.type1_diabetes.辅助检查,C肽水平：T1DM低，T2DM正常或高; 自身抗体：T1DM阳性，T2DM阴性
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.differential_diagnosis.mody,年轻起病，家族史明显，非肥胖
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.differential_diagnosis.secondary_diabetes.pancreatic_diabetes,胰腺疾病史，外分泌功能不全
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.differential_diagnosis.secondary_diabetes.drug_induced,糖皮质激素等药物使用史
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.differential_diagnosis.secondary_diabetes.endocrine_diabetes,其他内分泌疾病导致
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,classification_subtypes.insulin_deficient.description,以胰岛素缺乏为主
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,classification_subtypes.insulin_deficient.characteristics,C肽水平低，BMI正常，易发酮症
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,classification_subtypes.insulin_deficient.treatment,早期需要胰岛素治疗
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,classification_subtypes.insulin_resistant.description,以胰岛素抵抗为主
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,classification_subtypes.insulin_resistant.characteristics,C肽水平高，肥胖，代谢综合征
-entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,classification_subtypes.insulin_resistant.treatment,胰岛素增敏剂优先
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,name_en,Gestational Diabetes Mellitus
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,icd10,O24.4
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,description,妊娠期间首次发现或发病的糖耐量异常
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,epidemiology.global_prevalence,1-14%（因诊断标准而异）
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,epidemiology.china_prevalence,17.5%（2019年全国调查）
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,epidemiology.trend,发病率持续上升
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,epidemiology.risk_factors_prevalence,高龄妊娠、肥胖增加
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,pathophysiology.hormonal_changes.insulin_resistance,妊娠期胰岛素敏感性下降50-60%
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,pathophysiology.hormonal_changes.placental_hormones,人胎盘泌乳素（hPL）; 雌激素; 孕激素; 皮质醇; 胎盘胰岛素酶
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,pathophysiology.hormonal_changes.progressive_nature,孕周增加胰岛素抵抗加重
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,pathophysiology.beta_cell_adaptation.normal_pregnancy,β细胞代偿性增生和功能增强
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,pathophysiology.beta_cell_adaptation.gdm_pathogenesis,β细胞代偿不足导致高血糖
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,risk_factors.major_risk_factors,年龄≥35岁; 孕前BMI≥24 kg/m²; 糖尿病家族史（一级亲属）; 既往GDM史; 既往不良孕产史（巨大儿、死胎、多胎畸形）; 多囊卵巢综合征; 孕期体重增加过多
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,risk_factors.minor_risk_factors,高血压; 高龄初产; 反复流产史; 羊水过多
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.screening_timing.first_screening,孕24-28周（最佳时间）
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.screening_timing.early_screening.indications,高危因素存在
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.screening_timing.early_screening.timing,孕早期（<20周）
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.screening_timing.early_screening.method,空腹血糖或HbA1c
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.75g_ogtt.standard_protocol.preparation,正常饮食3天，空腹8-14小时
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.75g_ogtt.standard_protocol.glucose_load,75g无水葡萄糖溶于300ml水中
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.75g_ogtt.standard_protocol.sampling_times,0分钟; 60分钟; 120分钟
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.75g_ogtt.iadpsg_criteria.fasting,≥5.1 mmol/L (92 mg/dL)
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.75g_ogtt.iadpsg_criteria.1_hour,≥10.0 mmol/L (180 mg/dL)
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.75g_ogtt.iadpsg_criteria.2_hour,≥8.5 mmol/L (153 mg/dL)
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.75g_ogtt.iadpsg_criteria.diagnostic_threshold,任何一项异常即可诊断
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.alternative_screening.50g_gct,50g葡萄糖激发试验（筛查用）
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.alternative_screening.threshold,1小时血糖≥7.8 mmol/L需进一步OGTT
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.glucose_targets.fasting,<5.3 mmol/L (95 mg/dL)
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.glucose_targets.1h_postprandial,<7.8 mmol/L (140 mg/dL)
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.glucose_targets.2h_postprandial,<6.7 mmol/L (120 mg/dL)
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.glucose_targets.bedtime,5.0-6.7 mmol/L
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.lifestyle_intervention.medical_nutrition_therapy.caloric_intake,25-35 kcal/kg孕前体重/日
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.lifestyle_intervention.medical_nutrition_therapy.carbohydrate,复合碳水化合物，40-50%总热量
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.lifestyle_intervention.medical_nutrition_therapy.protein,20%总热量
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.lifestyle_intervention.medical_nutrition_therapy.fat,25-30%总热量
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.lifestyle_intervention.medical_nutrition_therapy.meal_distribution,三大餐+2-3次加餐
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.lifestyle_intervention.physical_activity.recommendation,中等强度有氧运动
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.lifestyle_intervention.physical_activity.duration,30分钟/日，每周至少5天
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.lifestyle_intervention.physical_activity.types,快走; 游泳; 孕妇瑜伽
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.lifestyle_intervention.physical_activity.contraindications,妊娠并发症时禁止
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.pharmacological_treatment.insulin_therapy.indications,生活方式干预1-2周血糖不达标; 空腹血糖>5.8 mmol/L; 餐后2小时血糖>6.7 mmol/L
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.pharmacological_treatment.insulin_therapy.preferred_insulin,中效或长效胰岛素+速效胰岛素
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.pharmacological_treatment.insulin_therapy.regimens,每日2次预混胰岛素; 基础-餐时胰岛素方案
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.pharmacological_treatment.insulin_therapy.dosage,0.7-1.0 U/kg孕前体重/日起始
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.pharmacological_treatment.oral_medications.metformin,部分指南允许使用，需权衡利弊
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.pharmacological_treatment.oral_medications.sulfonylureas,格列本脲，二线选择
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.pharmacological_treatment.oral_medications.contraindicated,其他降糖药物孕期禁用
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,maternal_complications.pregnancy_complications,妊娠期高血压疾病; 羊水过多; 早产; 胎膜早破; 泌尿系感染
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,maternal_complications.delivery_complications,巨大儿导致难产; 肩难产; 产伤; 剖宫产率增加
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,maternal_complications.long_term_risks,产后2型糖尿病风险增加7倍; 心血管疾病风险增加; 代谢综合征; 再次妊娠GDM复发率30-70%
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,fetal_neonatal_complications.macrosomia.definition,出生体重≥4000g
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,fetal_neonatal_complications.macrosomia.mechanism,胎儿高胰岛素血症促进生长
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,fetal_neonatal_complications.macrosomia.complications,肩难产; 产伤; 剖宫产
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,fetal_neonatal_complications.neonatal_complications,新生儿低血糖; 新生儿呼吸窘迫综合征; 新生儿高胆红素血症; 新生儿低钙血症; 新生儿红细胞增多症
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,fetal_neonatal_complications.long_term_offspring_risks,儿童期肥胖风险增加; 青春期代谢综合征; 成年期2型糖尿病风险增加
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,delivery_management.timing.spontaneous_labor,血糖控制良好可等待自然分娩
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,delivery_management.timing.induction,孕39-40周考虑引产
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,delivery_management.timing.cesarean_section,血糖控制不良或胎儿过大
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,delivery_management.peripartum_glucose_management.labor_monitoring,每1-2小时监测血糖
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,delivery_management.peripartum_glucose_management.target_range,4.0-7.0 mmol/L
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,delivery_management.peripartum_glucose_management.insulin_adjustment,根据血糖调整胰岛素剂量
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,postpartum_follow_up.immediate_postpartum.insulin_discontinuation,产后立即停用胰岛素
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,postpartum_follow_up.immediate_postpartum.glucose_monitoring,监测血糖变化
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,postpartum_follow_up.immediate_postpartum.breastfeeding,鼓励母乳喂养
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,postpartum_follow_up.long_term_follow_up.diabetes_screening.timing,产后6-12周
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,postpartum_follow_up.long_term_follow_up.diabetes_screening.method,75g OGTT或FPG
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,postpartum_follow_up.long_term_follow_up.diabetes_screening.frequency,每1-3年筛查一次
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,postpartum_follow_up.long_term_follow_up.lifestyle_counseling,体重管理; 健康饮食; 规律运动; 戒烟限酒
-entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,postpartum_follow_up.long_term_follow_up.family_planning,再次妊娠前咨询评估
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,name_en,Maturity-Onset Diabetes of the Young (MODY)
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,icd10,E11
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,description,由单基因缺陷引起的常染色体显性遗传性糖尿病
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,epidemiology.prevalence,糖尿病患者中1-5%
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,epidemiology.age_onset,通常25岁前起病
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,epidemiology.family_pattern,连续三代患病的强烈家族史
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,epidemiology.geographic_distribution,全球性分布，各种族均可发生
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY1.gene,HNF4A（肝细胞核因子4α）
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY1.chromosome,20q13
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY1.prevalence,MODY中<5%
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY1.characteristics,β细胞功能进行性衰减; 对磺脲类药物敏感; 可能有大血管病变
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY2.gene,GCK（葡萄糖激酶）
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY2.chromosome,7p13
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY2.prevalence,MODY中30-70%
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY2.characteristics,轻度持续性高血糖; 通常不需要药物治疗; 并发症风险低; 妊娠期需要监测
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY3.gene,HNF1A（肝细胞核因子1α）
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY3.chromosome,12q24
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY3.prevalence,MODY中30-65%
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY3.characteristics,对磺脲类药物极其敏感; 进行性β细胞功能衰减; 糖尿病并发症风险中等
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY4.gene,IPF1/PDX1
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY4.chromosome,13q12
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY4.prevalence,MODY中<1%
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY4.characteristics,胰腺发育异常; 严重β细胞功能缺陷; 需要胰岛素治疗
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY5.gene,HNF1B（肝细胞核因子1β）
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY5.chromosome,17cen-q21.3
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY5.prevalence,MODY中5%
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY5.characteristics,肾脏发育异常; 泌尿生殖系统异常; 胰腺萎缩
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,clinical_features.age_onset,通常<25岁，但可延迟至成年
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,clinical_features.family_history,强烈的家族史，常染色体显性遗传
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,clinical_features.obesity,通常体重正常或轻度超重
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,clinical_features.autoantibodies,自身抗体阴性
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,clinical_features.c_peptide,保存或轻度减少（MODY2除外）
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,diagnosis.clinical_criteria,糖尿病发病年龄≤25岁; 强烈的家族史（至少连续两代）; 非胰岛素依赖至少2年; 自身抗体阴性
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,diagnosis.genetic_testing.indications,符合临床诊断标准; 需要确定亚型; 家族遗传咨询需求
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,diagnosis.genetic_testing.testing_priority,HNF1A（MODY3）- 最常见; GCK（MODY2）- 轻症; HNF4A（MODY1）- 药物敏感性
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,diagnosis.differential_diagnosis,1型糖尿病; 2型糖尿病; 继发性糖尿病; 新生儿糖尿病
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,treatment.MODY1_treatment.first_line,磺脲类药物
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,treatment.MODY1_treatment.second_line,胰岛素
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,treatment.MODY1_treatment.monitoring,心血管风险
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,treatment.MODY2_treatment.general,通常无需药物治疗
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,treatment.MODY2_treatment.lifestyle,饮食和运动管理
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,treatment.MODY2_treatment.pregnancy,妊娠期可能需要胰岛素
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,treatment.MODY3_treatment.first_line,低剂量磺脲类药物
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,treatment.MODY3_treatment.characteristics,对磺脲类极其敏感
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,treatment.MODY3_treatment.progression,随病程进展可能需要胰岛素
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,treatment.general_principles.individualized,根据基因型个体化治疗
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,treatment.general_principles.family_screening,家族成员筛查
-entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,treatment.general_principles.genetic_counseling,遗传咨询
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,name_en,Latent Autoimmune Diabetes in Adults (LADA)
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,icd10,E10
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,description,成年发病的缓慢进展性自身免疫性糖尿病，介于1型和2型糖尿病之间
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,epidemiology.prevalence,成人糖尿病患者中2-12%
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,epidemiology.age_onset,通常>30岁
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,epidemiology.geographic_variation,北欧人群患病率较高
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,epidemiology.misdiagnosis_rate,常被误诊为2型糖尿病
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,pathophysiology.autoimmune_process.mechanism,自身免疫介导的β细胞破坏
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,pathophysiology.autoimmune_process.progression,比1型糖尿病缓慢
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,pathophysiology.autoimmune_process.autoantibodies,GAD抗体（最常见）; IA-2抗体; ZnT8抗体; ICA抗体
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,pathophysiology.beta_cell_function.initial,部分保存
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,pathophysiology.beta_cell_function.progression,缓慢进行性衰减
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,pathophysiology.beta_cell_function.c_peptide,早期可检测，逐渐下降
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,pathophysiology.genetic_susceptibility.hla_association,HLA-DR3、HLA-DR4相关
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,pathophysiology.genetic_susceptibility.risk_genes,与1型糖尿病相似的遗传背景
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,clinical_features.presentation.symptoms,通常症状较轻，类似2型糖尿病
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,clinical_features.presentation.ketosis,很少发生糖尿病酮症酸中毒
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,clinical_features.presentation.weight,通常体重正常或轻度超重
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,clinical_features.distinctive_features,发病年龄>30岁; 自身抗体阳性; 早期无需胰岛素治疗; 进展相对缓慢
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,diagnosis.diagnostic_criteria,成年发病（>30岁）; 至少一种自身抗体阳性; 诊断时无需胰岛素治疗; C肽水平部分保存
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,diagnosis.laboratory_tests.autoantibodies.GAD_antibodies,>95%阳性率
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,diagnosis.laboratory_tests.autoantibodies.IA2_antibodies,50-70%阳性率
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,diagnosis.laboratory_tests.autoantibodies.ZnT8_antibodies,60-80%阳性率
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,diagnosis.laboratory_tests.c_peptide.fasting,通常>0.3 nmol/L
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,diagnosis.laboratory_tests.c_peptide.stimulated,餐后或刺激后检测
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,diagnosis.laboratory_tests.hla_typing,辅助诊断，非必需
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,treatment.initial_management.lifestyle,饮食和运动治疗
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,treatment.initial_management.oral_antidiabetics,可短期使用
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,treatment.initial_management.monitoring,密切监测β细胞功能
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,treatment.insulin_therapy.timing,通常在诊断后2-5年内需要
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,treatment.insulin_therapy.indications,口服药物控制不佳; C肽水平显著下降; 反复高血糖或感染
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,treatment.insulin_therapy.regimen,类似1型糖尿病的胰岛素治疗方案
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,treatment.novel_approaches.immunotherapy,正在研究中
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,treatment.novel_approaches.beta_cell_preservation,早期胰岛素治疗可能有益
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,prognosis.progression,5-10年内通常需要胰岛素治疗
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,prognosis.complications,与1型糖尿病相似的并发症风险
-entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,prognosis.factors_affecting_progression,自身抗体滴度; HLA基因型; 诊断时C肽水平
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,name_en,Secondary Diabetes Mellitus
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,icd10,E13
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,description,由于胰腺疾病、内分泌疾病、药物或其他疾病引起的糖尿病
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.pancreatic_disease.chronic_pancreatitis.mechanism,胰腺外分泌和内分泌功能同时受损
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.pancreatic_disease.chronic_pancreatitis.prevalence,慢性胰腺炎患者中80%
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.pancreatic_disease.chronic_pancreatitis.features,胰酶分泌不足; 脂肪泻; 胰岛素缺乏; 胰高血糖素缺乏
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.pancreatic_disease.pancreatectomy.total_pancreatectomy,100%发生糖尿病
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.pancreatic_disease.pancreatectomy.partial_pancreatectomy,发生率取决于切除范围
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.pancreatic_disease.pancreatectomy.characteristics,脆性糖尿病，易发生低血糖
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.pancreatic_disease.pancreatic_cancer.prevalence,胰腺癌患者中50-80%
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.pancreatic_disease.pancreatic_cancer.mechanism,胰岛β细胞破坏
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.pancreatic_disease.pancreatic_cancer.prognosis,通常预后不良
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.pancreatic_disease.cystic_fibrosis.prevalence,CF患者中20-50%
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.pancreatic_disease.cystic_fibrosis.mechanism,胰腺纤维化和胰岛功能受损
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.pancreatic_disease.cystic_fibrosis.features,胰岛素不足为主
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.endocrine_disorders.cushings_syndrome.mechanism,皮质醇过多导致胰岛素抵抗
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.endocrine_disorders.cushings_syndrome.prevalence,库欣综合征患者中75-80%
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.endocrine_disorders.cushings_syndrome.reversibility,治疗原发病后可能改善
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.endocrine_disorders.acromegaly.mechanism,生长激素过多导致胰岛素抵抗
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.endocrine_disorders.acromegaly.prevalence,肢端肥大症患者中25-50%
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.endocrine_disorders.acromegaly.features,空腹血糖和餐后血糖均升高
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.endocrine_disorders.pheochromocytoma.mechanism,儿茶酚胺抑制胰岛素分泌
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.endocrine_disorders.pheochromocytoma.prevalence,嗜铬细胞瘤患者中40-50%
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.endocrine_disorders.pheochromocytoma.features,多为可逆性
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.endocrine_disorders.hyperthyroidism.mechanism,甲状腺激素增加糖异生
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.endocrine_disorders.hyperthyroidism.prevalence,甲亢患者中2-3%
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.endocrine_disorders.hyperthyroidism.features,血糖波动大
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.drug_induced.corticosteroids.mechanism,增加胰岛素抵抗和糖异生
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.drug_induced.corticosteroids.risk_factors,剂量和使用时间相关
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.drug_induced.corticosteroids.reversibility,停药后通常可逆
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.drug_induced.thiazide_diuretics.mechanism,影响胰岛素分泌和敏感性
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.drug_induced.thiazide_diuretics.risk,长期使用中度风险
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.drug_induced.thiazide_diuretics.monitoring,需要定期监测血糖
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.drug_induced.atypical_antipsychotics.mechanism,体重增加和胰岛素抵抗
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.drug_induced.atypical_antipsychotics.high_risk_drugs,奥氮平; 氯氮平; 喹硫平
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.drug_induced.immunosuppressants.tacrolimus,抑制胰岛素分泌
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.drug_induced.immunosuppressants.cyclosporine,增加胰岛素抵抗
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.drug_induced.immunosuppressants.monitoring,器官移植患者需密切监测
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,diagnosis.clinical_approach,详细病史和用药史; 体格检查寻找原发病证据; 实验室检查排除其他类型糖尿病; 影像学检查评估胰腺结构
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,diagnosis.differential_diagnosis,1型糖尿病; 2型糖尿病; MODY; 妊娠糖尿病
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,treatment.general_principles,治疗或去除潜在病因; 个体化血糖管理; 处理相关并发症; 长期随访监测
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,treatment.specific_management.pancreatic_diabetes.insulin_therapy,通常需要胰岛素治疗
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,treatment.specific_management.pancreatic_diabetes.enzyme_replacement,胰酶替代治疗
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,treatment.specific_management.pancreatic_diabetes.nutritional_support,营养支持
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,treatment.specific_management.endocrine_diabetes.treat_primary_condition,治疗原发内分泌疾病
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,treatment.specific_management.endocrine_diabetes.temporary_management,血糖管理可能是暂时性的
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,treatment.specific_management.drug_induced_diabetes.medication_review,评估是否可以停药或换药
-entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,treatment.specific_management.drug_induced_diabetes.dose_adjustment,如必须继续使用，考虑剂量调整
+section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value,evidence_source
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,name_en,Type 2 Diabetes Mellitus,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,icd10,E11,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,description,以胰岛素抵抗和胰岛β细胞功能进行性衰减为特征的慢性代谢性疾病,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,epidemiology.global_prevalence,9.3%（成人）,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,epidemiology.china_prevalence,11.2%（成人）,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,epidemiology.incidence_trend,持续上升，与肥胖和老龄化相关,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,epidemiology.gender_distribution,男性略高于女性,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,epidemiology.age_pattern,40岁后显著增加，但年轻化趋势明显,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,pathophysiology.insulin_resistance.primary_sites,肝脏; 骨骼肌; 脂肪组织,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,pathophysiology.insulin_resistance.mechanisms,胰岛素受体后信号传导缺陷; 葡萄糖转运蛋白功能异常; 炎症因子介导的信号干扰; 脂肪细胞因子失调,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,pathophysiology.insulin_resistance.compensatory_response,早期β细胞代偿性胰岛素分泌增加,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,pathophysiology.beta_cell_dysfunction.progressive_decline,β细胞功能年下降率4-5%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,pathophysiology.beta_cell_dysfunction.mechanisms,葡萄糖毒性; 脂毒性; 氧化应激; 内质网应激; 淀粉样蛋白沉积,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,pathophysiology.beta_cell_dysfunction.insulin_secretion_defects,第一时相胰岛素分泌缺失; 胰岛素脉冲性分泌异常; 葡萄糖敏感性下降,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,pathophysiology.incretin_system_defects.glp1_reduction,GLP-1分泌减少和作用减弱,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,pathophysiology.incretin_system_defects.dpp4_activity,DPP-4活性可能增加,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,pathophysiology.incretin_system_defects.incretins_effect,肠促胰素效应受损,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,pathophysiology.genetic_factors.heritability,遗传度约26%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,pathophysiology.genetic_factors.major_genes,TCF7L2（转录因子7样2）; PPARG（过氧化物酶体增殖物激活受体γ）; KCNJ11（钾离子通道基因）; CDKAL1（CDK5调节亚单位相关蛋白1样1）; IGF2BP2（胰岛素样生长因子2 mRNA结合蛋白2）,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,pathophysiology.genetic_factors.polygenic_risk,多基因累积效应,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.obesity.central_obesity,腹型肥胖风险最高,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.obesity.bmi_threshold,亚洲人群≥23 kg/m²开始增加风险,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.obesity.mechanism,脂肪组织炎症和胰岛素抵抗,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.physical_inactivity.sedentary_lifestyle,久坐生活方式,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.physical_inactivity.exercise_deficiency,缺乏规律体力活动,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.physical_inactivity.muscle_mass_decline,肌肉量减少影响葡萄糖利用,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.dietary_factors.high_glycemic_diet,高血糖指数饮食,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.dietary_factors.processed_foods,过度加工食品,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.dietary_factors.sugar_sweetened_beverages,含糖饮料,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.dietary_factors.saturated_fat,饱和脂肪酸过多,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.dietary_factors.fiber_deficiency,膳食纤维不足,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.smoking.active_smoking,主动吸烟增加风险30-40%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.smoking.dose_response,吸烟量与糖尿病风险呈正相关,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.sleep_disorders.sleep_deprivation,睡眠不足<6小时,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.sleep_disorders.sleep_apnea,阻塞性睡眠呼吸暂停,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.modifiable.sleep_disorders.circadian_disruption,昼夜节律紊乱,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.non_modifiable.age,每增加10岁风险增加1.5-2倍,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.non_modifiable.family_history.first_degree_relative,一级亲属患病风险增加2-3倍,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.non_modifiable.family_history.parental_diabetes,父母患病风险增加40%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.non_modifiable.ethnicity.high_risk_populations,亚洲人群; 西班牙裔; 非洲裔; 美洲原住民,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.non_modifiable.ethnicity.asian_specificity,相同BMI下亚洲人风险更高,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.non_modifiable.gestational_diabetes_history,GDM史增加7倍风险,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,risk_factors.non_modifiable.polycystic_ovary_syndrome,PCOS女性风险增加5-10倍,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.classic_symptoms.polyuria.description,多尿，每日>3L,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.classic_symptoms.polyuria.mechanism,高血糖导致渗透性利尿,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.classic_symptoms.polyuria.severity,血糖越高症状越明显,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.classic_symptoms.polydipsia.description,烦渴多饮,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.classic_symptoms.polydipsia.mechanism,失水激活下丘脑渴觉中枢,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.classic_symptoms.polydipsia.characteristic,饮水量增加但仍感口渴,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.classic_symptoms.polyphagia.description,多食易饥,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.classic_symptoms.polyphagia.mechanism,细胞内葡萄糖利用障碍,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.classic_symptoms.polyphagia.paradox,食量增加但体重可能下降,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.classic_symptoms.unexplained_weight_loss.description,不明原因体重下降,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.classic_symptoms.unexplained_weight_loss.mechanism,蛋白质和脂肪分解增加,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.classic_symptoms.unexplained_weight_loss.threshold,3个月内体重下降>5%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.atypical_presentations.asymptomatic,多数2型糖尿病患者早期无症状,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.atypical_presentations.fatigue,乏力和精力不足,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.atypical_presentations.blurred_vision,视物模糊,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.atypical_presentations.recurrent_infections.types,皮肤感染; 尿路感染; 阴道炎,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.atypical_presentations.recurrent_infections.mechanism,高血糖环境利于细菌繁殖,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.atypical_presentations.slow_wound_healing,伤口愈合延迟,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.atypical_presentations.peripheral_neuropathy,手足麻木或疼痛,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.atypical_presentations.erectile_dysfunction,男性勃起功能障碍,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.physical_examination.anthropometric.weight_status,超重或肥胖（85%患者）,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.physical_examination.anthropometric.waist_circumference,中心性肥胖,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.physical_examination.anthropometric.body_fat_distribution,内脏脂肪增加,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.physical_examination.skin_changes.acanthosis_nigricans,黑棘皮症，胰岛素抵抗标志,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.physical_examination.skin_changes.skin_tags,皮赘增多,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.physical_examination.skin_changes.diabetic_dermopathy,糖尿病性皮肤病变,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.physical_examination.cardiovascular.blood_pressure,高血压（60-70%患者合并）,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,clinical_presentation.physical_examination.cardiovascular.heart_rate,静息心率可能增快,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.diagnostic_criteria.fasting_plasma_glucose.threshold,≥7.0 mmol/L (126 mg/dL),ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.diagnostic_criteria.fasting_plasma_glucose.definition,空腹8小时以上,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.diagnostic_criteria.fasting_plasma_glucose.confirmation,需要重复测定确认,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.diagnostic_criteria.oral_glucose_tolerance_test.2h_glucose,≥11.1 mmol/L (200 mg/dL),ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.diagnostic_criteria.oral_glucose_tolerance_test.protocol,75g葡萄糖负荷后2小时血糖,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.diagnostic_criteria.oral_glucose_tolerance_test.preparation,前3天正常饮食，空腹8-14小时,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.diagnostic_criteria.hba1c.threshold,≥6.5% (48 mmol/mol),ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.diagnostic_criteria.hba1c.advantages,无需空腹; 变异性小; 反映长期血糖,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.diagnostic_criteria.hba1c.limitations,某些血红蛋白病; 肾病晚期; 妊娠期不适用,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.diagnostic_criteria.random_plasma_glucose.threshold,≥11.1 mmol/L (200 mg/dL) + 症状,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.diagnostic_criteria.random_plasma_glucose.indication,有典型高血糖症状时,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.diagnostic_criteria.random_plasma_glucose.confirmation,需要其他方法确认,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.screening_recommendations.general_population.age_threshold,≥35岁开始筛查,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.screening_recommendations.general_population.interval,正常者每3年1次,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.screening_recommendations.general_population.high_risk,每年筛查,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.screening_recommendations.high_risk_criteria,BMI≥24 kg/m²（亚洲人群）; 一级亲属糖尿病史; 高血压（≥140/90 mmHg）; HDL-C<0.9 mmol/L或TG>2.22 mmol/L; PCOS; IGT或IFG史; 心血管疾病史; 久坐生活方式,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.differential_diagnosis.type1_diabetes.distinguishing_features,年龄：T1DM多见于儿童青少年; 起病：T1DM急性起病，T2DM缓慢起病; 体型：T1DM多正常或消瘦，T2DM多超重肥胖; 酮症：T1DM易发生，T2DM少见; 胰岛素依赖：T1DM绝对依赖，T2DM相对缺乏,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.differential_diagnosis.type1_diabetes.辅助检查,C肽水平：T1DM低，T2DM正常或高; 自身抗体：T1DM阳性，T2DM阴性,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.differential_diagnosis.mody,年轻起病，家族史明显，非肥胖,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.differential_diagnosis.secondary_diabetes.pancreatic_diabetes,胰腺疾病史，外分泌功能不全,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.differential_diagnosis.secondary_diabetes.drug_induced,糖皮质激素等药物使用史,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,diagnosis.differential_diagnosis.secondary_diabetes.endocrine_diabetes,其他内分泌疾病导致,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,classification_subtypes.insulin_deficient.description,以胰岛素缺乏为主,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,classification_subtypes.insulin_deficient.characteristics,C肽水平低，BMI正常，易发酮症,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,classification_subtypes.insulin_deficient.treatment,早期需要胰岛素治疗,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,classification_subtypes.insulin_resistant.description,以胰岛素抵抗为主,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,classification_subtypes.insulin_resistant.characteristics,C肽水平高，肥胖，代谢综合征,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_001,2型糖尿病,,disease,代谢性疾病,classification_subtypes.insulin_resistant.treatment,胰岛素增敏剂优先,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,name_en,Gestational Diabetes Mellitus,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,icd10,O24.4,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,description,妊娠期间首次发现或发病的糖耐量异常,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,epidemiology.global_prevalence,1-14%（因诊断标准而异）,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,epidemiology.china_prevalence,17.5%（2019年全国调查）,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,epidemiology.trend,发病率持续上升,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,epidemiology.risk_factors_prevalence,高龄妊娠、肥胖增加,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,pathophysiology.hormonal_changes.insulin_resistance,妊娠期胰岛素敏感性下降50-60%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,pathophysiology.hormonal_changes.placental_hormones,人胎盘泌乳素（hPL）; 雌激素; 孕激素; 皮质醇; 胎盘胰岛素酶,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,pathophysiology.hormonal_changes.progressive_nature,孕周增加胰岛素抵抗加重,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,pathophysiology.beta_cell_adaptation.normal_pregnancy,β细胞代偿性增生和功能增强,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,pathophysiology.beta_cell_adaptation.gdm_pathogenesis,β细胞代偿不足导致高血糖,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,risk_factors.major_risk_factors,年龄≥35岁; 孕前BMI≥24 kg/m²; 糖尿病家族史（一级亲属）; 既往GDM史; 既往不良孕产史（巨大儿、死胎、多胎畸形）; 多囊卵巢综合征; 孕期体重增加过多,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,risk_factors.minor_risk_factors,高血压; 高龄初产; 反复流产史; 羊水过多,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.screening_timing.first_screening,孕24-28周（最佳时间）,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.screening_timing.early_screening.indications,高危因素存在,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.screening_timing.early_screening.timing,孕早期（<20周）,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.screening_timing.early_screening.method,空腹血糖或HbA1c,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.75g_ogtt.standard_protocol.preparation,正常饮食3天，空腹8-14小时,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.75g_ogtt.standard_protocol.glucose_load,75g无水葡萄糖溶于300ml水中,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.75g_ogtt.standard_protocol.sampling_times,0分钟; 60分钟; 120分钟,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.75g_ogtt.iadpsg_criteria.fasting,≥5.1 mmol/L (92 mg/dL),ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.75g_ogtt.iadpsg_criteria.1_hour,≥10.0 mmol/L (180 mg/dL),ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.75g_ogtt.iadpsg_criteria.2_hour,≥8.5 mmol/L (153 mg/dL),ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.75g_ogtt.iadpsg_criteria.diagnostic_threshold,任何一项异常即可诊断,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.alternative_screening.50g_gct,50g葡萄糖激发试验（筛查用）,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.alternative_screening.threshold,1小时血糖≥7.8 mmol/L需进一步OGTT,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.glucose_targets.fasting,<5.3 mmol/L (95 mg/dL),ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.glucose_targets.1h_postprandial,<7.8 mmol/L (140 mg/dL),ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.glucose_targets.2h_postprandial,<6.7 mmol/L (120 mg/dL),ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.glucose_targets.bedtime,5.0-6.7 mmol/L,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.lifestyle_intervention.medical_nutrition_therapy.caloric_intake,25-35 kcal/kg孕前体重/日,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.lifestyle_intervention.medical_nutrition_therapy.carbohydrate,复合碳水化合物，40-50%总热量,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.lifestyle_intervention.medical_nutrition_therapy.protein,20%总热量,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.lifestyle_intervention.medical_nutrition_therapy.fat,25-30%总热量,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.lifestyle_intervention.medical_nutrition_therapy.meal_distribution,三大餐+2-3次加餐,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.lifestyle_intervention.physical_activity.recommendation,中等强度有氧运动,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.lifestyle_intervention.physical_activity.duration,30分钟/日，每周至少5天,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.lifestyle_intervention.physical_activity.types,快走; 游泳; 孕妇瑜伽,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.lifestyle_intervention.physical_activity.contraindications,妊娠并发症时禁止,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.pharmacological_treatment.insulin_therapy.indications,生活方式干预1-2周血糖不达标; 空腹血糖>5.8 mmol/L; 餐后2小时血糖>6.7 mmol/L,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.pharmacological_treatment.insulin_therapy.preferred_insulin,中效或长效胰岛素+速效胰岛素,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.pharmacological_treatment.insulin_therapy.regimens,每日2次预混胰岛素; 基础-餐时胰岛素方案,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.pharmacological_treatment.insulin_therapy.dosage,0.7-1.0 U/kg孕前体重/日起始,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.pharmacological_treatment.oral_medications.metformin,部分指南允许使用，需权衡利弊,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.pharmacological_treatment.oral_medications.sulfonylureas,格列本脲，二线选择,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,management.pharmacological_treatment.oral_medications.contraindicated,其他降糖药物孕期禁用,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,maternal_complications.pregnancy_complications,妊娠期高血压疾病; 羊水过多; 早产; 胎膜早破; 泌尿系感染,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,maternal_complications.delivery_complications,巨大儿导致难产; 肩难产; 产伤; 剖宫产率增加,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,maternal_complications.long_term_risks,产后2型糖尿病风险增加7倍; 心血管疾病风险增加; 代谢综合征; 再次妊娠GDM复发率30-70%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,fetal_neonatal_complications.macrosomia.definition,出生体重≥4000g,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,fetal_neonatal_complications.macrosomia.mechanism,胎儿高胰岛素血症促进生长,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,fetal_neonatal_complications.macrosomia.complications,肩难产; 产伤; 剖宫产,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,fetal_neonatal_complications.neonatal_complications,新生儿低血糖; 新生儿呼吸窘迫综合征; 新生儿高胆红素血症; 新生儿低钙血症; 新生儿红细胞增多症,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,fetal_neonatal_complications.long_term_offspring_risks,儿童期肥胖风险增加; 青春期代谢综合征; 成年期2型糖尿病风险增加,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,delivery_management.timing.spontaneous_labor,血糖控制良好可等待自然分娩,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,delivery_management.timing.induction,孕39-40周考虑引产,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,delivery_management.timing.cesarean_section,血糖控制不良或胎儿过大,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,delivery_management.peripartum_glucose_management.labor_monitoring,每1-2小时监测血糖,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,delivery_management.peripartum_glucose_management.target_range,4.0-7.0 mmol/L,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,delivery_management.peripartum_glucose_management.insulin_adjustment,根据血糖调整胰岛素剂量,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,postpartum_follow_up.immediate_postpartum.insulin_discontinuation,产后立即停用胰岛素,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,postpartum_follow_up.immediate_postpartum.glucose_monitoring,监测血糖变化,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,postpartum_follow_up.immediate_postpartum.breastfeeding,鼓励母乳喂养,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,postpartum_follow_up.long_term_follow_up.diabetes_screening.timing,产后6-12周,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,postpartum_follow_up.long_term_follow_up.diabetes_screening.method,75g OGTT或FPG,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,postpartum_follow_up.long_term_follow_up.diabetes_screening.frequency,每1-3年筛查一次,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,postpartum_follow_up.long_term_follow_up.lifestyle_counseling,体重管理; 健康饮食; 规律运动; 戒烟限酒,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_002,妊娠期糖尿病,,disease,代谢性疾病,postpartum_follow_up.long_term_follow_up.family_planning,再次妊娠前咨询评估,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,name_en,Maturity-Onset Diabetes of the Young (MODY),ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,icd10,E11,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,description,由单基因缺陷引起的常染色体显性遗传性糖尿病,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,epidemiology.prevalence,糖尿病患者中1-5%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,epidemiology.age_onset,通常25岁前起病,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,epidemiology.family_pattern,连续三代患病的强烈家族史,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,epidemiology.geographic_distribution,全球性分布，各种族均可发生,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY1.gene,HNF4A（肝细胞核因子4α）,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY1.chromosome,20q13,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY1.prevalence,MODY中<5%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY1.characteristics,β细胞功能进行性衰减; 对磺脲类药物敏感; 可能有大血管病变,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY2.gene,GCK（葡萄糖激酶）,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY2.chromosome,7p13,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY2.prevalence,MODY中30-70%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY2.characteristics,轻度持续性高血糖; 通常不需要药物治疗; 并发症风险低; 妊娠期需要监测,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY3.gene,HNF1A（肝细胞核因子1α）,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY3.chromosome,12q24,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY3.prevalence,MODY中30-65%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY3.characteristics,对磺脲类药物极其敏感; 进行性β细胞功能衰减; 糖尿病并发症风险中等,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY4.gene,IPF1/PDX1,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY4.chromosome,13q12,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY4.prevalence,MODY中<1%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY4.characteristics,胰腺发育异常; 严重β细胞功能缺陷; 需要胰岛素治疗,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY5.gene,HNF1B（肝细胞核因子1β）,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY5.chromosome,17cen-q21.3,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY5.prevalence,MODY中5%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,genetic_classification.MODY5.characteristics,肾脏发育异常; 泌尿生殖系统异常; 胰腺萎缩,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,clinical_features.age_onset,通常<25岁，但可延迟至成年,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,clinical_features.family_history,强烈的家族史，常染色体显性遗传,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,clinical_features.obesity,通常体重正常或轻度超重,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,clinical_features.autoantibodies,自身抗体阴性,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,clinical_features.c_peptide,保存或轻度减少（MODY2除外）,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,diagnosis.clinical_criteria,糖尿病发病年龄≤25岁; 强烈的家族史（至少连续两代）; 非胰岛素依赖至少2年; 自身抗体阴性,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,diagnosis.genetic_testing.indications,符合临床诊断标准; 需要确定亚型; 家族遗传咨询需求,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,diagnosis.genetic_testing.testing_priority,HNF1A（MODY3）- 最常见; GCK（MODY2）- 轻症; HNF4A（MODY1）- 药物敏感性,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,diagnosis.differential_diagnosis,1型糖尿病; 2型糖尿病; 继发性糖尿病; 新生儿糖尿病,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,treatment.MODY1_treatment.first_line,磺脲类药物,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,treatment.MODY1_treatment.second_line,胰岛素,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,treatment.MODY1_treatment.monitoring,心血管风险,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,treatment.MODY2_treatment.general,通常无需药物治疗,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,treatment.MODY2_treatment.lifestyle,饮食和运动管理,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,treatment.MODY2_treatment.pregnancy,妊娠期可能需要胰岛素,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,treatment.MODY3_treatment.first_line,低剂量磺脲类药物,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,treatment.MODY3_treatment.characteristics,对磺脲类极其敏感,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,treatment.MODY3_treatment.progression,随病程进展可能需要胰岛素,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,treatment.general_principles.individualized,根据基因型个体化治疗,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,treatment.general_principles.family_screening,家族成员筛查,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_003,成人起病的青年型糖尿病,,disease,遗传性糖尿病,treatment.general_principles.genetic_counseling,遗传咨询,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,name_en,Latent Autoimmune Diabetes in Adults (LADA),ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,icd10,E10,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,description,成年发病的缓慢进展性自身免疫性糖尿病，介于1型和2型糖尿病之间,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,epidemiology.prevalence,成人糖尿病患者中2-12%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,epidemiology.age_onset,通常>30岁,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,epidemiology.geographic_variation,北欧人群患病率较高,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,epidemiology.misdiagnosis_rate,常被误诊为2型糖尿病,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,pathophysiology.autoimmune_process.mechanism,自身免疫介导的β细胞破坏,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,pathophysiology.autoimmune_process.progression,比1型糖尿病缓慢,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,pathophysiology.autoimmune_process.autoantibodies,GAD抗体（最常见）; IA-2抗体; ZnT8抗体; ICA抗体,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,pathophysiology.beta_cell_function.initial,部分保存,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,pathophysiology.beta_cell_function.progression,缓慢进行性衰减,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,pathophysiology.beta_cell_function.c_peptide,早期可检测，逐渐下降,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,pathophysiology.genetic_susceptibility.hla_association,HLA-DR3、HLA-DR4相关,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,pathophysiology.genetic_susceptibility.risk_genes,与1型糖尿病相似的遗传背景,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,clinical_features.presentation.symptoms,通常症状较轻，类似2型糖尿病,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,clinical_features.presentation.ketosis,很少发生糖尿病酮症酸中毒,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,clinical_features.presentation.weight,通常体重正常或轻度超重,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,clinical_features.distinctive_features,发病年龄>30岁; 自身抗体阳性; 早期无需胰岛素治疗; 进展相对缓慢,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,diagnosis.diagnostic_criteria,成年发病（>30岁）; 至少一种自身抗体阳性; 诊断时无需胰岛素治疗; C肽水平部分保存,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,diagnosis.laboratory_tests.autoantibodies.GAD_antibodies,>95%阳性率,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,diagnosis.laboratory_tests.autoantibodies.IA2_antibodies,50-70%阳性率,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,diagnosis.laboratory_tests.autoantibodies.ZnT8_antibodies,60-80%阳性率,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,diagnosis.laboratory_tests.c_peptide.fasting,通常>0.3 nmol/L,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,diagnosis.laboratory_tests.c_peptide.stimulated,餐后或刺激后检测,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,diagnosis.laboratory_tests.hla_typing,辅助诊断，非必需,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,treatment.initial_management.lifestyle,饮食和运动治疗,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,treatment.initial_management.oral_antidiabetics,可短期使用,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,treatment.initial_management.monitoring,密切监测β细胞功能,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,treatment.insulin_therapy.timing,通常在诊断后2-5年内需要,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,treatment.insulin_therapy.indications,口服药物控制不佳; C肽水平显著下降; 反复高血糖或感染,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,treatment.insulin_therapy.regimen,类似1型糖尿病的胰岛素治疗方案,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,treatment.novel_approaches.immunotherapy,正在研究中,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,treatment.novel_approaches.beta_cell_preservation,早期胰岛素治疗可能有益,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,prognosis.progression,5-10年内通常需要胰岛素治疗,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,prognosis.complications,与1型糖尿病相似的并发症风险,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,,disease,自身免疫性糖尿病,prognosis.factors_affecting_progression,自身抗体滴度; HLA基因型; 诊断时C肽水平,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,name_en,Secondary Diabetes Mellitus,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,icd10,E13,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,description,由于胰腺疾病、内分泌疾病、药物或其他疾病引起的糖尿病,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.pancreatic_disease.chronic_pancreatitis.mechanism,胰腺外分泌和内分泌功能同时受损,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.pancreatic_disease.chronic_pancreatitis.prevalence,慢性胰腺炎患者中80%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.pancreatic_disease.chronic_pancreatitis.features,胰酶分泌不足; 脂肪泻; 胰岛素缺乏; 胰高血糖素缺乏,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.pancreatic_disease.pancreatectomy.total_pancreatectomy,100%发生糖尿病,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.pancreatic_disease.pancreatectomy.partial_pancreatectomy,发生率取决于切除范围,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.pancreatic_disease.pancreatectomy.characteristics,脆性糖尿病，易发生低血糖,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.pancreatic_disease.pancreatic_cancer.prevalence,胰腺癌患者中50-80%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.pancreatic_disease.pancreatic_cancer.mechanism,胰岛β细胞破坏,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.pancreatic_disease.pancreatic_cancer.prognosis,通常预后不良,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.pancreatic_disease.cystic_fibrosis.prevalence,CF患者中20-50%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.pancreatic_disease.cystic_fibrosis.mechanism,胰腺纤维化和胰岛功能受损,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.pancreatic_disease.cystic_fibrosis.features,胰岛素不足为主,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.endocrine_disorders.cushings_syndrome.mechanism,皮质醇过多导致胰岛素抵抗,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.endocrine_disorders.cushings_syndrome.prevalence,库欣综合征患者中75-80%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.endocrine_disorders.cushings_syndrome.reversibility,治疗原发病后可能改善,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.endocrine_disorders.acromegaly.mechanism,生长激素过多导致胰岛素抵抗,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.endocrine_disorders.acromegaly.prevalence,肢端肥大症患者中25-50%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.endocrine_disorders.acromegaly.features,空腹血糖和餐后血糖均升高,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.endocrine_disorders.pheochromocytoma.mechanism,儿茶酚胺抑制胰岛素分泌,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.endocrine_disorders.pheochromocytoma.prevalence,嗜铬细胞瘤患者中40-50%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.endocrine_disorders.pheochromocytoma.features,多为可逆性,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.endocrine_disorders.hyperthyroidism.mechanism,甲状腺激素增加糖异生,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.endocrine_disorders.hyperthyroidism.prevalence,甲亢患者中2-3%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.endocrine_disorders.hyperthyroidism.features,血糖波动大,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.drug_induced.corticosteroids.mechanism,增加胰岛素抵抗和糖异生,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.drug_induced.corticosteroids.risk_factors,剂量和使用时间相关,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.drug_induced.corticosteroids.reversibility,停药后通常可逆,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.drug_induced.thiazide_diuretics.mechanism,影响胰岛素分泌和敏感性,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.drug_induced.thiazide_diuretics.risk,长期使用中度风险,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.drug_induced.thiazide_diuretics.monitoring,需要定期监测血糖,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.drug_induced.atypical_antipsychotics.mechanism,体重增加和胰岛素抵抗,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.drug_induced.atypical_antipsychotics.high_risk_drugs,奥氮平; 氯氮平; 喹硫平,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.drug_induced.immunosuppressants.tacrolimus,抑制胰岛素分泌,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.drug_induced.immunosuppressants.cyclosporine,增加胰岛素抵抗,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,classification.drug_induced.immunosuppressants.monitoring,器官移植患者需密切监测,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,diagnosis.clinical_approach,详细病史和用药史; 体格检查寻找原发病证据; 实验室检查排除其他类型糖尿病; 影像学检查评估胰腺结构,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,diagnosis.differential_diagnosis,1型糖尿病; 2型糖尿病; MODY; 妊娠糖尿病,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,treatment.general_principles,治疗或去除潜在病因; 个体化血糖管理; 处理相关并发症; 长期随访监测,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,treatment.specific_management.pancreatic_diabetes.insulin_therapy,通常需要胰岛素治疗,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,treatment.specific_management.pancreatic_diabetes.enzyme_replacement,胰酶替代治疗,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,treatment.specific_management.pancreatic_diabetes.nutritional_support,营养支持,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,treatment.specific_management.endocrine_diabetes.treat_primary_condition,治疗原发内分泌疾病,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,treatment.specific_management.endocrine_diabetes.temporary_management,血糖管理可能是暂时性的,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,treatment.specific_management.drug_induced_diabetes.medication_review,评估是否可以停药或换药,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_entities,DM_005,继发性糖尿病,,disease,继发性内分泌疾病,treatment.specific_management.drug_induced_diabetes.dose_adjustment,如必须继续使用，考虑剂量调整,ADA Standards of Medical Care in Diabetes 2025

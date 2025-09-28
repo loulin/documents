@@ -1,192 +1,192 @@
-section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value
-relationships,REL_001,,,comorbidity,,source,DIS_001
-relationships,REL_001,,,comorbidity,,target,HTN_001
-relationships,REL_001,,,comorbidity,,description,糖尿病与高血压常共存，相互影响
-relationships,REL_001,,,comorbidity,,prevalence,0.75
-relationships,REL_001,,,comorbidity,,bidirectional,True
-relationships,REL_001,,,comorbidity,,management_impact,需要更严格的血压控制目标
-relationships,REL_002,,,comorbidity,,source,DIS_001
-relationships,REL_002,,,comorbidity,,target,DLP_001
-relationships,REL_002,,,comorbidity,,description,糖尿病与血脂异常共病，增加心血管风险
-relationships,REL_002,,,comorbidity,,prevalence,0.6
-relationships,REL_002,,,comorbidity,,risk_multiplier,3.5
-relationships,REL_002,,,comorbidity,,treatment_modification,LDL-C目标更严格
-relationships,REL_003,,,increases_risk,,source,HTN_001
-relationships,REL_003,,,increases_risk,,target,DLP_001
-relationships,REL_003,,,increases_risk,,description,高血压增加血脂异常风险
-relationships,REL_003,,,increases_risk,,risk_ratio,2.3
-relationships,REL_003,,,increases_risk,,confidence_interval,1.8-2.9
-relationships,REL_004,,,metabolic_association,,source,THY_001
-relationships,REL_004,,,metabolic_association,,target,DIS_001
-relationships,REL_004,,,metabolic_association,,description,甲亢可导致血糖升高和胰岛素抵抗
-relationships,REL_004,,,metabolic_association,,mechanism,甲状腺激素增加糖原分解和糖异生
-relationships,REL_004,,,metabolic_association,,prevalence,0.15
-relationships,REL_004,,,metabolic_association,,treatment_consideration,甲亢控制后血糖通常改善
-relationships,REL_005,,,metabolic_association,,source,THY_002
-relationships,REL_005,,,metabolic_association,,target,DLP_001
-relationships,REL_005,,,metabolic_association,,description,甲减常伴血脂升高
-relationships,REL_005,,,metabolic_association,,mechanism,甲状腺激素缺乏影响脂质代谢
-relationships,REL_005,,,metabolic_association,,prevalence,0.85
-relationships,REL_005,,,metabolic_association,,reversibility,甲状腺激素替代治疗可改善血脂
-relationships,REL_006,,,hormonal_interaction,,source,ADR_002
-relationships,REL_006,,,hormonal_interaction,,target,DIS_001
-relationships,REL_006,,,hormonal_interaction,,description,库欣综合征导致糖尿病
-relationships,REL_006,,,hormonal_interaction,,mechanism,皮质醇过多引起胰岛素抵抗
-relationships,REL_006,,,hormonal_interaction,,prevalence,0.8
-relationships,REL_006,,,hormonal_interaction,,severity,通常为严重糖尿病
-relationships,REL_007,,,hormonal_interaction,,source,ADR_002
-relationships,REL_007,,,hormonal_interaction,,target,HTN_001
-relationships,REL_007,,,hormonal_interaction,,description,库欣综合征导致高血压
-relationships,REL_007,,,hormonal_interaction,,mechanism,皮质醇的盐皮质激素作用
-relationships,REL_007,,,hormonal_interaction,,prevalence,0.85
-relationships,REL_007,,,hormonal_interaction,,characteristics,难治性高血压
-relationships,REL_008,,,direct_cause,,source,ADR_001
-relationships,REL_008,,,direct_cause,,target,HTN_001
-relationships,REL_008,,,direct_cause,,description,原发性醛固酮增多症是继发性高血压的重要原因
-relationships,REL_008,,,direct_cause,,prevalence_in_htn,0.1
-relationships,REL_008,,,direct_cause,,diagnostic_clue,难治性高血压+低钾血症
-relationships,REL_008,,,direct_cause,,treatment_outcome,手术可治愈高血压
-relationships,REL_009,,,drug_interaction,,source,THY_001
-relationships,REL_009,,,drug_interaction,,target,DLP_001
-relationships,REL_009,,,drug_interaction,,description,甲亢治疗药物与他汀类药物相互作用
-relationships,REL_009,,,drug_interaction,,interaction_type,药物代谢竞争
-relationships,REL_009,,,drug_interaction,,clinical_significance,需监测肝功能
-relationships,REL_009,,,drug_interaction,,management,调整剂量或选择替代药物
-relationships,REL_010,,,shared_pathophysiology,,source,DIS_001
-relationships,REL_010,,,shared_pathophysiology,,target,PIT_003
-relationships,REL_010,,,shared_pathophysiology,,description,糖尿病患者IGF-1水平影响生长激素治疗
-relationships,REL_010,,,shared_pathophysiology,,mechanism,IGF-1介导的负反馈调节
-relationships,REL_010,,,shared_pathophysiology,,clinical_impact,需调整GH替代治疗剂量
-relationships,REL_011,,,metabolic_comorbidity,,source,GON_001
-relationships,REL_011,,,metabolic_comorbidity,,target,DIS_001
-relationships,REL_011,,,metabolic_comorbidity,,description,PCOS患者糖尿病发病风险显著增加
-relationships,REL_011,,,metabolic_comorbidity,,prevalence,0.35
-relationships,REL_011,,,metabolic_comorbidity,,relative_risk,4.0
-relationships,REL_011,,,metabolic_comorbidity,,mechanism,胰岛素抵抗是共同病理基础
-relationships,REL_011,,,metabolic_comorbidity,,screening_recommendation,PCOS患者应定期进行糖尿病筛查
-relationships,REL_012,,,metabolic_comorbidity,,source,GON_001
-relationships,REL_012,,,metabolic_comorbidity,,target,DLP_001
-relationships,REL_012,,,metabolic_comorbidity,,description,PCOS患者血脂异常高发
-relationships,REL_012,,,metabolic_comorbidity,,prevalence,0.7
-relationships,REL_012,,,metabolic_comorbidity,,characteristics,甘油三酯升高，HDL-C降低
-relationships,REL_012,,,metabolic_comorbidity,,management_impact,需积极的血脂管理
-relationships,REL_013,,,metabolic_comorbidity,,source,GON_001
-relationships,REL_013,,,metabolic_comorbidity,,target,HTN_001
-relationships,REL_013,,,metabolic_comorbidity,,description,PCOS患者高血压风险增加
-relationships,REL_013,,,metabolic_comorbidity,,prevalence,0.4
-relationships,REL_013,,,metabolic_comorbidity,,mechanism,胰岛素抵抗和肥胖相关
-relationships,REL_013,,,metabolic_comorbidity,,treatment_consideration,首选ACEI/ARB类降压药
-relationships,REL_014,,,hormonal_association,,source,GON_002
-relationships,REL_014,,,hormonal_association,,target,DIS_001
-relationships,REL_014,,,hormonal_association,,description,男性性腺功能减退与2型糖尿病相互关联
-relationships,REL_014,,,hormonal_association,,bidirectional,True
-relationships,REL_014,,,hormonal_association,,mechanism,睾酮影响胰岛素敏感性，糖尿病影响性腺轴
-relationships,REL_014,,,hormonal_association,,treatment_synergy,睾酮替代可改善糖代谢
-relationships,REL_015,,,hormonal_association,,source,GON_002
-relationships,REL_015,,,hormonal_association,,target,DLP_001
-relationships,REL_015,,,hormonal_association,,description,男性性腺功能减退常伴血脂异常
-relationships,REL_015,,,hormonal_association,,mechanism,睾酮缺乏影响脂质代谢
-relationships,REL_015,,,hormonal_association,,characteristics,LDL-C升高，HDL-C降低
-relationships,REL_015,,,hormonal_association,,treatment_response,睾酮替代可改善血脂谱
-relationships,REL_016,,,secondary_cause,,source,PIT_002
-relationships,REL_016,,,secondary_cause,,target,GON_002
-relationships,REL_016,,,secondary_cause,,description,高泌乳素血症可导致男性性腺功能减退
-relationships,REL_016,,,secondary_cause,,mechanism,泌乳素抑制GnRH和LH分泌
-relationships,REL_016,,,secondary_cause,,reversibility,泌乳素正常化后可恢复
-relationships,REL_016,,,secondary_cause,,treatment_priority,首先治疗高泌乳素血症
-relationships,REL_017,,,secondary_cause,,source,PIT_002
-relationships,REL_017,,,secondary_cause,,target,GON_003
-relationships,REL_017,,,secondary_cause,,description,高泌乳素血症导致女性性腺功能减退
-relationships,REL_017,,,secondary_cause,,clinical_manifestation,闭经-溢乳综合征
-relationships,REL_017,,,secondary_cause,,mechanism,抑制下丘脑-垂体-卵巢轴
-relationships,REL_017,,,secondary_cause,,treatment_outcome,多巴胺激动剂治疗可恢复月经
-relationships,REL_018,,,differential_diagnosis,,source,GON_001
-relationships,REL_018,,,differential_diagnosis,,target,ADR_002
-relationships,REL_018,,,differential_diagnosis,,description,PCOS需与库欣综合征鉴别
-relationships,REL_018,,,differential_diagnosis,,shared_features,肥胖; 高雄激素血症; 胰岛素抵抗
-relationships,REL_018,,,differential_diagnosis,,distinguishing_features.pcos,多囊卵巢超声表现
-relationships,REL_018,,,differential_diagnosis,,distinguishing_features.cushings,皮质醇昼夜节律消失
-relationships,REL_018,,,differential_diagnosis,,diagnostic_tests,地塞米松抑制试验; 24小时尿皮质醇
-relationships,REL_019,,,treatment_interaction,,source,GON_001
-relationships,REL_019,,,treatment_interaction,,target,THY_002
-relationships,REL_019,,,treatment_interaction,,description,PCOS合并甲减的治疗相互作用
-relationships,REL_019,,,treatment_interaction,,clinical_consideration,甲状腺功能影响PCOS症状; 二甲双胍可能影响甲状腺激素吸收; 甲状腺激素替代可改善胰岛素敏感性
-relationships,REL_019,,,treatment_interaction,,management_strategy,同时优化甲状腺功能和代谢状态
-relationships,REL_020,,,increases_risk,,source,DIS_001
-relationships,REL_020,,,increases_risk,,target,CVD_001
-relationships,REL_020,,,increases_risk,,description,糖尿病显著增加冠心病风险
-relationships,REL_020,,,increases_risk,,risk_ratio,2.5
-relationships,REL_020,,,increases_risk,,confidence_interval,2.1-3.0
-relationships,REL_020,,,increases_risk,,mechanisms,高血糖促进动脉粥样硬化; 炎症反应激活; 内皮功能障碍; 血小板聚集增强
-relationships,REL_020,,,increases_risk,,prevention_strategy,严格血糖控制，LDL-C目标<1.8mmol/L
-relationships,REL_021,,,increases_risk,,source,DIS_001
-relationships,REL_021,,,increases_risk,,target,CVD_002
-relationships,REL_021,,,increases_risk,,description,糖尿病患者心肌梗死风险增加且预后更差
-relationships,REL_021,,,increases_risk,,risk_ratio,3.0
-relationships,REL_021,,,increases_risk,,silent_mi_risk,糖尿病患者无症状心梗风险增加2倍
-relationships,REL_021,,,increases_risk,,prognosis,糖尿病患者心梗后死亡率增加50%
-relationships,REL_021,,,increases_risk,,management_considerations,早期识别非典型症状; 积极的血运重建策略; 强化二级预防
-relationships,REL_022,,,increases_risk,,source,DIS_001
-relationships,REL_022,,,increases_risk,,target,CBVD_001
-relationships,REL_022,,,increases_risk,,description,糖尿病增加缺血性脑卒中风险
-relationships,REL_022,,,increases_risk,,risk_ratio,2.3
-relationships,REL_022,,,increases_risk,,confidence_interval,1.9-2.8
-relationships,REL_022,,,increases_risk,,age_specific_risk.young_adults,年轻糖尿病患者卒中风险增加更显著
-relationships,REL_022,,,increases_risk,,age_specific_risk.elderly,老年患者绝对风险更高
-relationships,REL_022,,,increases_risk,,stroke_characteristics,多为小血管病变引起; 更易发生多发性梗死; 预后相对较差
-relationships,REL_022,,,increases_risk,,prevention.primary,血糖、血压、血脂综合控制
-relationships,REL_022,,,increases_risk,,prevention.antiplatelet,阿司匹林一级预防（高危患者）
-relationships,REL_023,,,comorbidity,,source,HTN_001
-relationships,REL_023,,,comorbidity,,target,CVD_001
-relationships,REL_023,,,comorbidity,,description,高血压是冠心病的主要危险因素
-relationships,REL_023,,,comorbidity,,prevalence,0.85
-relationships,REL_023,,,comorbidity,,synergistic_effect,与其他危险因素协同作用
-relationships,REL_023,,,comorbidity,,blood_pressure_targets.general,<140/90 mmHg
-relationships,REL_023,,,comorbidity,,blood_pressure_targets.diabetes,<130/80 mmHg
-relationships,REL_023,,,comorbidity,,blood_pressure_targets.coronary_disease,<130/80 mmHg
-relationships,REL_023,,,comorbidity,,preferred_agents,ACEI/ARB（一线药物）; β受体阻滞剂（心梗后）; 钙拮抗剂（稳定性心绞痛）
-relationships,REL_024,,,comorbidity,,source,HTN_001
-relationships,REL_024,,,comorbidity,,target,CBVD_001
-relationships,REL_024,,,comorbidity,,description,高血压是脑卒中最重要的可控危险因素
-relationships,REL_024,,,comorbidity,,population_attributable_risk,50-60%
-relationships,REL_024,,,comorbidity,,dose_response,收缩压每升高10mmHg，卒中风险增加28%
-relationships,REL_024,,,comorbidity,,prevention_efficacy,降压治疗可降低卒中风险35-40%
-relationships,REL_024,,,comorbidity,,special_considerations.acute_stroke,急性期避免过度降压
-relationships,REL_024,,,comorbidity,,special_considerations.chronic_prevention,长期规律降压治疗
-relationships,REL_025,,,increases_risk,,source,CVD_004
-relationships,REL_025,,,increases_risk,,target,CBVD_001
-relationships,REL_025,,,increases_risk,,description,心房颤动显著增加缺血性脑卒中风险
-relationships,REL_025,,,increases_risk,,risk_ratio,5.0
-relationships,REL_025,,,increases_risk,,stroke_characteristics,心源性栓塞型卒中; 梗死面积较大; 预后相对较差; 复发风险高
-relationships,REL_025,,,increases_risk,,prevention.risk_stratification,CHA2DS2-VASc评分
-relationships,REL_025,,,increases_risk,,prevention.anticoagulation,评分≥2分推荐抗凝
-relationships,REL_025,,,increases_risk,,prevention.agents,华法林或新型口服抗凝药
-relationships,REL_026,,,increases_risk,,source,DIS_001
-relationships,REL_026,,,increases_risk,,target,NEURO_001
-relationships,REL_026,,,increases_risk,,description,糖尿病是周围神经病变的主要病因
-relationships,REL_026,,,increases_risk,,prevalence,糖尿病患者中20-50%出现
-relationships,REL_026,,,increases_risk,,risk_factors,病程长; 血糖控制不良; HbA1c持续>8%
-relationships,REL_026,,,increases_risk,,prevention,严格血糖控制可预防或延缓神经病变
-relationships,REL_027,,,increases_risk,,source,DIS_001
-relationships,REL_027,,,increases_risk,,target,NEURO_002
-relationships,REL_027,,,increases_risk,,description,糖尿病自主神经病变严重影响心血管预后
-relationships,REL_027,,,increases_risk,,cardiovascular_impact,无症状心肌梗死风险增加; 猝死风险增加2-3倍; 运动耐量下降
-relationships,REL_027,,,increases_risk,,screening,糖尿病患者应定期筛查自主神经功能
-relationships,REL_028,,,increases_risk,,source,THY_001
-relationships,REL_028,,,increases_risk,,target,CVD_004
-relationships,REL_028,,,increases_risk,,description,甲状腺功能亢进增加心房颤动风险
-relationships,REL_028,,,increases_risk,,risk_ratio,3.8
-relationships,REL_028,,,increases_risk,,age_dependency,老年患者风险更高
-relationships,REL_028,,,increases_risk,,reversibility,甲亢治疗后房颤可能转复
-relationships,REL_028,,,increases_risk,,management,控制甲状腺功能; β受体阻滞剂控制心率; 评估抗凝治疗需要
-relationships,REL_029,,,increases_risk,,source,ADR_001
-relationships,REL_029,,,increases_risk,,target,CVD_001
-relationships,REL_029,,,increases_risk,,description,原发性醛固酮增多症增加心血管事件风险
-relationships,REL_029,,,increases_risk,,cardiovascular_risk,较原发性高血压增加2-3倍风险
-relationships,REL_029,,,increases_risk,,mechanisms,醛固酮直接心血管毒性; 血管重构; 内皮功能障碍
-relationships,REL_029,,,increases_risk,,treatment_benefit,手术或药物治疗可显著降低心血管风险
-relationships,REL_030,,,complication_of,,source,CBVD_001
-relationships,REL_030,,,complication_of,,target,NEURO_001
-relationships,REL_030,,,complication_of,,description,脑卒中后可出现继发性神经功能缺损
-relationships,REL_030,,,complication_of,,neurological_sequelae,偏瘫; 感觉障碍; 语言功能障碍; 认知功能损害
-relationships,REL_030,,,complication_of,,rehabilitation,多学科康复团队综合治疗
+section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value,evidence_source
+relationships,REL_001,,,comorbidity,,source,DIS_001,Multiple guidelines per related entities
+relationships,REL_001,,,comorbidity,,target,HTN_001,Multiple guidelines per related entities
+relationships,REL_001,,,comorbidity,,description,糖尿病与高血压常共存，相互影响,Multiple guidelines per related entities
+relationships,REL_001,,,comorbidity,,prevalence,0.75,Multiple guidelines per related entities
+relationships,REL_001,,,comorbidity,,bidirectional,True,Multiple guidelines per related entities
+relationships,REL_001,,,comorbidity,,management_impact,需要更严格的血压控制目标,Multiple guidelines per related entities
+relationships,REL_002,,,comorbidity,,source,DIS_001,Multiple guidelines per related entities
+relationships,REL_002,,,comorbidity,,target,DLP_001,Multiple guidelines per related entities
+relationships,REL_002,,,comorbidity,,description,糖尿病与血脂异常共病，增加心血管风险,Multiple guidelines per related entities
+relationships,REL_002,,,comorbidity,,prevalence,0.6,Multiple guidelines per related entities
+relationships,REL_002,,,comorbidity,,risk_multiplier,3.5,Multiple guidelines per related entities
+relationships,REL_002,,,comorbidity,,treatment_modification,LDL-C目标更严格,Multiple guidelines per related entities
+relationships,REL_003,,,increases_risk,,source,HTN_001,Multiple guidelines per related entities
+relationships,REL_003,,,increases_risk,,target,DLP_001,Multiple guidelines per related entities
+relationships,REL_003,,,increases_risk,,description,高血压增加血脂异常风险,Multiple guidelines per related entities
+relationships,REL_003,,,increases_risk,,risk_ratio,2.3,Multiple guidelines per related entities
+relationships,REL_003,,,increases_risk,,confidence_interval,1.8-2.9,Multiple guidelines per related entities
+relationships,REL_004,,,metabolic_association,,source,THY_001,Multiple guidelines per related entities
+relationships,REL_004,,,metabolic_association,,target,DIS_001,Multiple guidelines per related entities
+relationships,REL_004,,,metabolic_association,,description,甲亢可导致血糖升高和胰岛素抵抗,Multiple guidelines per related entities
+relationships,REL_004,,,metabolic_association,,mechanism,甲状腺激素增加糖原分解和糖异生,Multiple guidelines per related entities
+relationships,REL_004,,,metabolic_association,,prevalence,0.15,Multiple guidelines per related entities
+relationships,REL_004,,,metabolic_association,,treatment_consideration,甲亢控制后血糖通常改善,Multiple guidelines per related entities
+relationships,REL_005,,,metabolic_association,,source,THY_002,Multiple guidelines per related entities
+relationships,REL_005,,,metabolic_association,,target,DLP_001,Multiple guidelines per related entities
+relationships,REL_005,,,metabolic_association,,description,甲减常伴血脂升高,Multiple guidelines per related entities
+relationships,REL_005,,,metabolic_association,,mechanism,甲状腺激素缺乏影响脂质代谢,Multiple guidelines per related entities
+relationships,REL_005,,,metabolic_association,,prevalence,0.85,Multiple guidelines per related entities
+relationships,REL_005,,,metabolic_association,,reversibility,甲状腺激素替代治疗可改善血脂,Multiple guidelines per related entities
+relationships,REL_006,,,hormonal_interaction,,source,ADR_002,Multiple guidelines per related entities
+relationships,REL_006,,,hormonal_interaction,,target,DIS_001,Multiple guidelines per related entities
+relationships,REL_006,,,hormonal_interaction,,description,库欣综合征导致糖尿病,Multiple guidelines per related entities
+relationships,REL_006,,,hormonal_interaction,,mechanism,皮质醇过多引起胰岛素抵抗,Multiple guidelines per related entities
+relationships,REL_006,,,hormonal_interaction,,prevalence,0.8,Multiple guidelines per related entities
+relationships,REL_006,,,hormonal_interaction,,severity,通常为严重糖尿病,Multiple guidelines per related entities
+relationships,REL_007,,,hormonal_interaction,,source,ADR_002,Multiple guidelines per related entities
+relationships,REL_007,,,hormonal_interaction,,target,HTN_001,Multiple guidelines per related entities
+relationships,REL_007,,,hormonal_interaction,,description,库欣综合征导致高血压,Multiple guidelines per related entities
+relationships,REL_007,,,hormonal_interaction,,mechanism,皮质醇的盐皮质激素作用,Multiple guidelines per related entities
+relationships,REL_007,,,hormonal_interaction,,prevalence,0.85,Multiple guidelines per related entities
+relationships,REL_007,,,hormonal_interaction,,characteristics,难治性高血压,Multiple guidelines per related entities
+relationships,REL_008,,,direct_cause,,source,ADR_001,Multiple guidelines per related entities
+relationships,REL_008,,,direct_cause,,target,HTN_001,Multiple guidelines per related entities
+relationships,REL_008,,,direct_cause,,description,原发性醛固酮增多症是继发性高血压的重要原因,Multiple guidelines per related entities
+relationships,REL_008,,,direct_cause,,prevalence_in_htn,0.1,Multiple guidelines per related entities
+relationships,REL_008,,,direct_cause,,diagnostic_clue,难治性高血压+低钾血症,Multiple guidelines per related entities
+relationships,REL_008,,,direct_cause,,treatment_outcome,手术可治愈高血压,Multiple guidelines per related entities
+relationships,REL_009,,,drug_interaction,,source,THY_001,Multiple guidelines per related entities
+relationships,REL_009,,,drug_interaction,,target,DLP_001,Multiple guidelines per related entities
+relationships,REL_009,,,drug_interaction,,description,甲亢治疗药物与他汀类药物相互作用,Multiple guidelines per related entities
+relationships,REL_009,,,drug_interaction,,interaction_type,药物代谢竞争,Multiple guidelines per related entities
+relationships,REL_009,,,drug_interaction,,clinical_significance,需监测肝功能,Multiple guidelines per related entities
+relationships,REL_009,,,drug_interaction,,management,调整剂量或选择替代药物,Multiple guidelines per related entities
+relationships,REL_010,,,shared_pathophysiology,,source,DIS_001,Multiple guidelines per related entities
+relationships,REL_010,,,shared_pathophysiology,,target,PIT_003,Multiple guidelines per related entities
+relationships,REL_010,,,shared_pathophysiology,,description,糖尿病患者IGF-1水平影响生长激素治疗,Multiple guidelines per related entities
+relationships,REL_010,,,shared_pathophysiology,,mechanism,IGF-1介导的负反馈调节,Multiple guidelines per related entities
+relationships,REL_010,,,shared_pathophysiology,,clinical_impact,需调整GH替代治疗剂量,Multiple guidelines per related entities
+relationships,REL_011,,,metabolic_comorbidity,,source,GON_001,Multiple guidelines per related entities
+relationships,REL_011,,,metabolic_comorbidity,,target,DIS_001,Multiple guidelines per related entities
+relationships,REL_011,,,metabolic_comorbidity,,description,PCOS患者糖尿病发病风险显著增加,Multiple guidelines per related entities
+relationships,REL_011,,,metabolic_comorbidity,,prevalence,0.35,Multiple guidelines per related entities
+relationships,REL_011,,,metabolic_comorbidity,,relative_risk,4.0,Multiple guidelines per related entities
+relationships,REL_011,,,metabolic_comorbidity,,mechanism,胰岛素抵抗是共同病理基础,Multiple guidelines per related entities
+relationships,REL_011,,,metabolic_comorbidity,,screening_recommendation,PCOS患者应定期进行糖尿病筛查,Multiple guidelines per related entities
+relationships,REL_012,,,metabolic_comorbidity,,source,GON_001,Multiple guidelines per related entities
+relationships,REL_012,,,metabolic_comorbidity,,target,DLP_001,Multiple guidelines per related entities
+relationships,REL_012,,,metabolic_comorbidity,,description,PCOS患者血脂异常高发,Multiple guidelines per related entities
+relationships,REL_012,,,metabolic_comorbidity,,prevalence,0.7,Multiple guidelines per related entities
+relationships,REL_012,,,metabolic_comorbidity,,characteristics,甘油三酯升高，HDL-C降低,Multiple guidelines per related entities
+relationships,REL_012,,,metabolic_comorbidity,,management_impact,需积极的血脂管理,Multiple guidelines per related entities
+relationships,REL_013,,,metabolic_comorbidity,,source,GON_001,Multiple guidelines per related entities
+relationships,REL_013,,,metabolic_comorbidity,,target,HTN_001,Multiple guidelines per related entities
+relationships,REL_013,,,metabolic_comorbidity,,description,PCOS患者高血压风险增加,Multiple guidelines per related entities
+relationships,REL_013,,,metabolic_comorbidity,,prevalence,0.4,Multiple guidelines per related entities
+relationships,REL_013,,,metabolic_comorbidity,,mechanism,胰岛素抵抗和肥胖相关,Multiple guidelines per related entities
+relationships,REL_013,,,metabolic_comorbidity,,treatment_consideration,首选ACEI/ARB类降压药,Multiple guidelines per related entities
+relationships,REL_014,,,hormonal_association,,source,GON_002,Multiple guidelines per related entities
+relationships,REL_014,,,hormonal_association,,target,DIS_001,Multiple guidelines per related entities
+relationships,REL_014,,,hormonal_association,,description,男性性腺功能减退与2型糖尿病相互关联,Multiple guidelines per related entities
+relationships,REL_014,,,hormonal_association,,bidirectional,True,Multiple guidelines per related entities
+relationships,REL_014,,,hormonal_association,,mechanism,睾酮影响胰岛素敏感性，糖尿病影响性腺轴,Multiple guidelines per related entities
+relationships,REL_014,,,hormonal_association,,treatment_synergy,睾酮替代可改善糖代谢,Multiple guidelines per related entities
+relationships,REL_015,,,hormonal_association,,source,GON_002,Multiple guidelines per related entities
+relationships,REL_015,,,hormonal_association,,target,DLP_001,Multiple guidelines per related entities
+relationships,REL_015,,,hormonal_association,,description,男性性腺功能减退常伴血脂异常,Multiple guidelines per related entities
+relationships,REL_015,,,hormonal_association,,mechanism,睾酮缺乏影响脂质代谢,Multiple guidelines per related entities
+relationships,REL_015,,,hormonal_association,,characteristics,LDL-C升高，HDL-C降低,Multiple guidelines per related entities
+relationships,REL_015,,,hormonal_association,,treatment_response,睾酮替代可改善血脂谱,Multiple guidelines per related entities
+relationships,REL_016,,,secondary_cause,,source,PIT_002,Multiple guidelines per related entities
+relationships,REL_016,,,secondary_cause,,target,GON_002,Multiple guidelines per related entities
+relationships,REL_016,,,secondary_cause,,description,高泌乳素血症可导致男性性腺功能减退,Multiple guidelines per related entities
+relationships,REL_016,,,secondary_cause,,mechanism,泌乳素抑制GnRH和LH分泌,Multiple guidelines per related entities
+relationships,REL_016,,,secondary_cause,,reversibility,泌乳素正常化后可恢复,Multiple guidelines per related entities
+relationships,REL_016,,,secondary_cause,,treatment_priority,首先治疗高泌乳素血症,Multiple guidelines per related entities
+relationships,REL_017,,,secondary_cause,,source,PIT_002,Multiple guidelines per related entities
+relationships,REL_017,,,secondary_cause,,target,GON_003,Multiple guidelines per related entities
+relationships,REL_017,,,secondary_cause,,description,高泌乳素血症导致女性性腺功能减退,Multiple guidelines per related entities
+relationships,REL_017,,,secondary_cause,,clinical_manifestation,闭经-溢乳综合征,Multiple guidelines per related entities
+relationships,REL_017,,,secondary_cause,,mechanism,抑制下丘脑-垂体-卵巢轴,Multiple guidelines per related entities
+relationships,REL_017,,,secondary_cause,,treatment_outcome,多巴胺激动剂治疗可恢复月经,Multiple guidelines per related entities
+relationships,REL_018,,,differential_diagnosis,,source,GON_001,Multiple guidelines per related entities
+relationships,REL_018,,,differential_diagnosis,,target,ADR_002,Multiple guidelines per related entities
+relationships,REL_018,,,differential_diagnosis,,description,PCOS需与库欣综合征鉴别,Multiple guidelines per related entities
+relationships,REL_018,,,differential_diagnosis,,shared_features,肥胖; 高雄激素血症; 胰岛素抵抗,Multiple guidelines per related entities
+relationships,REL_018,,,differential_diagnosis,,distinguishing_features.pcos,多囊卵巢超声表现,Multiple guidelines per related entities
+relationships,REL_018,,,differential_diagnosis,,distinguishing_features.cushings,皮质醇昼夜节律消失,Multiple guidelines per related entities
+relationships,REL_018,,,differential_diagnosis,,diagnostic_tests,地塞米松抑制试验; 24小时尿皮质醇,Multiple guidelines per related entities
+relationships,REL_019,,,treatment_interaction,,source,GON_001,Multiple guidelines per related entities
+relationships,REL_019,,,treatment_interaction,,target,THY_002,Multiple guidelines per related entities
+relationships,REL_019,,,treatment_interaction,,description,PCOS合并甲减的治疗相互作用,Multiple guidelines per related entities
+relationships,REL_019,,,treatment_interaction,,clinical_consideration,甲状腺功能影响PCOS症状; 二甲双胍可能影响甲状腺激素吸收; 甲状腺激素替代可改善胰岛素敏感性,Multiple guidelines per related entities
+relationships,REL_019,,,treatment_interaction,,management_strategy,同时优化甲状腺功能和代谢状态,Multiple guidelines per related entities
+relationships,REL_020,,,increases_risk,,source,DIS_001,Multiple guidelines per related entities
+relationships,REL_020,,,increases_risk,,target,CVD_001,Multiple guidelines per related entities
+relationships,REL_020,,,increases_risk,,description,糖尿病显著增加冠心病风险,Multiple guidelines per related entities
+relationships,REL_020,,,increases_risk,,risk_ratio,2.5,Multiple guidelines per related entities
+relationships,REL_020,,,increases_risk,,confidence_interval,2.1-3.0,Multiple guidelines per related entities
+relationships,REL_020,,,increases_risk,,mechanisms,高血糖促进动脉粥样硬化; 炎症反应激活; 内皮功能障碍; 血小板聚集增强,Multiple guidelines per related entities
+relationships,REL_020,,,increases_risk,,prevention_strategy,严格血糖控制，LDL-C目标<1.8mmol/L,Multiple guidelines per related entities
+relationships,REL_021,,,increases_risk,,source,DIS_001,Multiple guidelines per related entities
+relationships,REL_021,,,increases_risk,,target,CVD_002,Multiple guidelines per related entities
+relationships,REL_021,,,increases_risk,,description,糖尿病患者心肌梗死风险增加且预后更差,Multiple guidelines per related entities
+relationships,REL_021,,,increases_risk,,risk_ratio,3.0,Multiple guidelines per related entities
+relationships,REL_021,,,increases_risk,,silent_mi_risk,糖尿病患者无症状心梗风险增加2倍,Multiple guidelines per related entities
+relationships,REL_021,,,increases_risk,,prognosis,糖尿病患者心梗后死亡率增加50%,Multiple guidelines per related entities
+relationships,REL_021,,,increases_risk,,management_considerations,早期识别非典型症状; 积极的血运重建策略; 强化二级预防,Multiple guidelines per related entities
+relationships,REL_022,,,increases_risk,,source,DIS_001,Multiple guidelines per related entities
+relationships,REL_022,,,increases_risk,,target,CBVD_001,Multiple guidelines per related entities
+relationships,REL_022,,,increases_risk,,description,糖尿病增加缺血性脑卒中风险,Multiple guidelines per related entities
+relationships,REL_022,,,increases_risk,,risk_ratio,2.3,Multiple guidelines per related entities
+relationships,REL_022,,,increases_risk,,confidence_interval,1.9-2.8,Multiple guidelines per related entities
+relationships,REL_022,,,increases_risk,,age_specific_risk.young_adults,年轻糖尿病患者卒中风险增加更显著,Multiple guidelines per related entities
+relationships,REL_022,,,increases_risk,,age_specific_risk.elderly,老年患者绝对风险更高,Multiple guidelines per related entities
+relationships,REL_022,,,increases_risk,,stroke_characteristics,多为小血管病变引起; 更易发生多发性梗死; 预后相对较差,Multiple guidelines per related entities
+relationships,REL_022,,,increases_risk,,prevention.primary,血糖、血压、血脂综合控制,Multiple guidelines per related entities
+relationships,REL_022,,,increases_risk,,prevention.antiplatelet,阿司匹林一级预防（高危患者）,Multiple guidelines per related entities
+relationships,REL_023,,,comorbidity,,source,HTN_001,Multiple guidelines per related entities
+relationships,REL_023,,,comorbidity,,target,CVD_001,Multiple guidelines per related entities
+relationships,REL_023,,,comorbidity,,description,高血压是冠心病的主要危险因素,Multiple guidelines per related entities
+relationships,REL_023,,,comorbidity,,prevalence,0.85,Multiple guidelines per related entities
+relationships,REL_023,,,comorbidity,,synergistic_effect,与其他危险因素协同作用,Multiple guidelines per related entities
+relationships,REL_023,,,comorbidity,,blood_pressure_targets.general,<140/90 mmHg,Multiple guidelines per related entities
+relationships,REL_023,,,comorbidity,,blood_pressure_targets.diabetes,<130/80 mmHg,Multiple guidelines per related entities
+relationships,REL_023,,,comorbidity,,blood_pressure_targets.coronary_disease,<130/80 mmHg,Multiple guidelines per related entities
+relationships,REL_023,,,comorbidity,,preferred_agents,ACEI/ARB（一线药物）; β受体阻滞剂（心梗后）; 钙拮抗剂（稳定性心绞痛）,Multiple guidelines per related entities
+relationships,REL_024,,,comorbidity,,source,HTN_001,Multiple guidelines per related entities
+relationships,REL_024,,,comorbidity,,target,CBVD_001,Multiple guidelines per related entities
+relationships,REL_024,,,comorbidity,,description,高血压是脑卒中最重要的可控危险因素,Multiple guidelines per related entities
+relationships,REL_024,,,comorbidity,,population_attributable_risk,50-60%,Multiple guidelines per related entities
+relationships,REL_024,,,comorbidity,,dose_response,收缩压每升高10mmHg，卒中风险增加28%,Multiple guidelines per related entities
+relationships,REL_024,,,comorbidity,,prevention_efficacy,降压治疗可降低卒中风险35-40%,Multiple guidelines per related entities
+relationships,REL_024,,,comorbidity,,special_considerations.acute_stroke,急性期避免过度降压,Multiple guidelines per related entities
+relationships,REL_024,,,comorbidity,,special_considerations.chronic_prevention,长期规律降压治疗,Multiple guidelines per related entities
+relationships,REL_025,,,increases_risk,,source,CVD_004,Multiple guidelines per related entities
+relationships,REL_025,,,increases_risk,,target,CBVD_001,Multiple guidelines per related entities
+relationships,REL_025,,,increases_risk,,description,心房颤动显著增加缺血性脑卒中风险,Multiple guidelines per related entities
+relationships,REL_025,,,increases_risk,,risk_ratio,5.0,Multiple guidelines per related entities
+relationships,REL_025,,,increases_risk,,stroke_characteristics,心源性栓塞型卒中; 梗死面积较大; 预后相对较差; 复发风险高,Multiple guidelines per related entities
+relationships,REL_025,,,increases_risk,,prevention.risk_stratification,CHA2DS2-VASc评分,Multiple guidelines per related entities
+relationships,REL_025,,,increases_risk,,prevention.anticoagulation,评分≥2分推荐抗凝,Multiple guidelines per related entities
+relationships,REL_025,,,increases_risk,,prevention.agents,华法林或新型口服抗凝药,Multiple guidelines per related entities
+relationships,REL_026,,,increases_risk,,source,DIS_001,Multiple guidelines per related entities
+relationships,REL_026,,,increases_risk,,target,NEURO_001,Multiple guidelines per related entities
+relationships,REL_026,,,increases_risk,,description,糖尿病是周围神经病变的主要病因,Multiple guidelines per related entities
+relationships,REL_026,,,increases_risk,,prevalence,糖尿病患者中20-50%出现,Multiple guidelines per related entities
+relationships,REL_026,,,increases_risk,,risk_factors,病程长; 血糖控制不良; HbA1c持续>8%,Multiple guidelines per related entities
+relationships,REL_026,,,increases_risk,,prevention,严格血糖控制可预防或延缓神经病变,Multiple guidelines per related entities
+relationships,REL_027,,,increases_risk,,source,DIS_001,Multiple guidelines per related entities
+relationships,REL_027,,,increases_risk,,target,NEURO_002,Multiple guidelines per related entities
+relationships,REL_027,,,increases_risk,,description,糖尿病自主神经病变严重影响心血管预后,Multiple guidelines per related entities
+relationships,REL_027,,,increases_risk,,cardiovascular_impact,无症状心肌梗死风险增加; 猝死风险增加2-3倍; 运动耐量下降,Multiple guidelines per related entities
+relationships,REL_027,,,increases_risk,,screening,糖尿病患者应定期筛查自主神经功能,Multiple guidelines per related entities
+relationships,REL_028,,,increases_risk,,source,THY_001,Multiple guidelines per related entities
+relationships,REL_028,,,increases_risk,,target,CVD_004,Multiple guidelines per related entities
+relationships,REL_028,,,increases_risk,,description,甲状腺功能亢进增加心房颤动风险,Multiple guidelines per related entities
+relationships,REL_028,,,increases_risk,,risk_ratio,3.8,Multiple guidelines per related entities
+relationships,REL_028,,,increases_risk,,age_dependency,老年患者风险更高,Multiple guidelines per related entities
+relationships,REL_028,,,increases_risk,,reversibility,甲亢治疗后房颤可能转复,Multiple guidelines per related entities
+relationships,REL_028,,,increases_risk,,management,控制甲状腺功能; β受体阻滞剂控制心率; 评估抗凝治疗需要,Multiple guidelines per related entities
+relationships,REL_029,,,increases_risk,,source,ADR_001,Multiple guidelines per related entities
+relationships,REL_029,,,increases_risk,,target,CVD_001,Multiple guidelines per related entities
+relationships,REL_029,,,increases_risk,,description,原发性醛固酮增多症增加心血管事件风险,Multiple guidelines per related entities
+relationships,REL_029,,,increases_risk,,cardiovascular_risk,较原发性高血压增加2-3倍风险,Multiple guidelines per related entities
+relationships,REL_029,,,increases_risk,,mechanisms,醛固酮直接心血管毒性; 血管重构; 内皮功能障碍,Multiple guidelines per related entities
+relationships,REL_029,,,increases_risk,,treatment_benefit,手术或药物治疗可显著降低心血管风险,Multiple guidelines per related entities
+relationships,REL_030,,,complication_of,,source,CBVD_001,Multiple guidelines per related entities
+relationships,REL_030,,,complication_of,,target,NEURO_001,Multiple guidelines per related entities
+relationships,REL_030,,,complication_of,,description,脑卒中后可出现继发性神经功能缺损,Multiple guidelines per related entities
+relationships,REL_030,,,complication_of,,neurological_sequelae,偏瘫; 感觉障碍; 语言功能障碍; 认知功能损害,Multiple guidelines per related entities
+relationships,REL_030,,,complication_of,,rehabilitation,多学科康复团队综合治疗,Multiple guidelines per related entities

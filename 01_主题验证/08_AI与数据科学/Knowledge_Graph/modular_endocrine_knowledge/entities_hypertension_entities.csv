@@ -1,34 +1,34 @@
-section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,name_en,Primary Hypertension
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,description,病因不明的高血压，占所有高血压的90-95%
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,classification_2025.normal,<120/80 mmHg
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,classification_2025.elevated,120-129/<80 mmHg
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,classification_2025.stage_1,130-139/80-89 mmHg
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,classification_2025.stage_2,≥140/90 mmHg
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,classification_2025.crisis,≥180/120 mmHg
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,risk_factors.non_modifiable,年龄; 性别; 种族; 遗传因素
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,risk_factors.modifiable,肥胖; 钠盐摄入过多; 酒精过量; 缺乏体力活动; 吸烟; 压力
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,pathophysiology.mechanisms,交感神经系统激活; RAAS系统激活; 血管内皮功能异常; 钠水潴留; 血管重塑
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,target_organ_damage.cardiac,左心室肥厚; 心房颤动; 冠心病; 心力衰竭
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,target_organ_damage.vascular,动脉硬化; 主动脉夹层; 外周动脉疾病
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,target_organ_damage.renal,慢性肾脏病; 蛋白尿; 肾功能衰竭
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,target_organ_damage.cerebrovascular,脑卒中; 短暂性脑缺血; 血管性痴呆
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,target_organ_damage.retinal,视网膜病变; 视乳头水肿
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,diagnostic_approach.bp_measurement.office_bp,标准诊室血压测量
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,diagnostic_approach.bp_measurement.home_bp,家庭血压监测
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,diagnostic_approach.bp_measurement.ambulatory_bp,24小时动态血压监测
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,diagnostic_approach.initial_evaluation,详细病史; 体格检查; 基础实验室检查; 心电图; 眼底检查
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,diagnostic_approach.laboratory_tests,血常规; 基础代谢组合; 尿常规; 血脂; 血糖/HbA1c; 甲功(如有指征); 尿酸
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.lifestyle_modifications.weight_management,BMI 18.5-24.9
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.lifestyle_modifications.dash_diet,富含水果蔬菜，低钠饮食
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.lifestyle_modifications.sodium_restriction,<2.3g/day
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.lifestyle_modifications.physical_activity,中等强度150分钟/周
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.lifestyle_modifications.alcohol_limitation,男性≤2杯/天，女性≤1杯/天
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.lifestyle_modifications.stress_management,放松训练，冥想
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.pharmacological_therapy.first_line_agents,ACE抑制剂; ARB; 钙通道阻滞剂; 噻嗪样利尿剂
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.pharmacological_therapy.combination_therapy.stage_2_htn,推荐起始联合用药
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.pharmacological_therapy.combination_therapy.single_pill_combinations,提高依从性首选
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.pharmacological_therapy.bp_targets.general,<130/80 mmHg
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.pharmacological_therapy.bp_targets.diabetes,<130/80 mmHg
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.pharmacological_therapy.bp_targets.ckd,<130/80 mmHg
-entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.pharmacological_therapy.bp_targets.elderly,<130/80 mmHg (如耐受)
+section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value,evidence_source
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,name_en,Primary Hypertension,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,description,病因不明的高血压，占所有高血压的90-95%,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,classification_2025.normal,<120/80 mmHg,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,classification_2025.elevated,120-129/<80 mmHg,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,classification_2025.stage_1,130-139/80-89 mmHg,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,classification_2025.stage_2,≥140/90 mmHg,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,classification_2025.crisis,≥180/120 mmHg,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,risk_factors.non_modifiable,年龄; 性别; 种族; 遗传因素,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,risk_factors.modifiable,肥胖; 钠盐摄入过多; 酒精过量; 缺乏体力活动; 吸烟; 压力,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,pathophysiology.mechanisms,交感神经系统激活; RAAS系统激活; 血管内皮功能异常; 钠水潴留; 血管重塑,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,target_organ_damage.cardiac,左心室肥厚; 心房颤动; 冠心病; 心力衰竭,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,target_organ_damage.vascular,动脉硬化; 主动脉夹层; 外周动脉疾病,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,target_organ_damage.renal,慢性肾脏病; 蛋白尿; 肾功能衰竭,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,target_organ_damage.cerebrovascular,脑卒中; 短暂性脑缺血; 血管性痴呆,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,target_organ_damage.retinal,视网膜病变; 视乳头水肿,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,diagnostic_approach.bp_measurement.office_bp,标准诊室血压测量,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,diagnostic_approach.bp_measurement.home_bp,家庭血压监测,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,diagnostic_approach.bp_measurement.ambulatory_bp,24小时动态血压监测,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,diagnostic_approach.initial_evaluation,详细病史; 体格检查; 基础实验室检查; 心电图; 眼底检查,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,diagnostic_approach.laboratory_tests,血常规; 基础代谢组合; 尿常规; 血脂; 血糖/HbA1c; 甲功(如有指征); 尿酸,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.lifestyle_modifications.weight_management,BMI 18.5-24.9,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.lifestyle_modifications.dash_diet,富含水果蔬菜，低钠饮食,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.lifestyle_modifications.sodium_restriction,<2.3g/day,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.lifestyle_modifications.physical_activity,中等强度150分钟/周,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.lifestyle_modifications.alcohol_limitation,男性≤2杯/天，女性≤1杯/天,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.lifestyle_modifications.stress_management,放松训练，冥想,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.pharmacological_therapy.first_line_agents,ACE抑制剂; ARB; 钙通道阻滞剂; 噻嗪样利尿剂,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.pharmacological_therapy.combination_therapy.stage_2_htn,推荐起始联合用药,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.pharmacological_therapy.combination_therapy.single_pill_combinations,提高依从性首选,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.pharmacological_therapy.bp_targets.general,<130/80 mmHg,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.pharmacological_therapy.bp_targets.diabetes,<130/80 mmHg,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.pharmacological_therapy.bp_targets.ckd,<130/80 mmHg,AHA/ACC Hypertension Guidelines 2025
+entities.hypertension_entities,HTN_001,原发性高血压,,disease,心血管疾病,treatment_strategy_2025.pharmacological_therapy.bp_targets.elderly,<130/80 mmHg (如耐受),AHA/ACC Hypertension Guidelines 2025

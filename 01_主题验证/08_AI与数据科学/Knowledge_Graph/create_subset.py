@@ -23,6 +23,7 @@ FIELDS = [
     "category",
     "attribute_path",
     "value",
+    "evidence_source",
     "source_file",
 ]
 
@@ -51,6 +52,7 @@ def filter_rows(keywords: List[str]) -> Iterable[List[str]]:
                         row.get("category", ""),
                         row.get("attribute_path", ""),
                         row.get("value", ""),
+                        row.get("evidence_source", ""),
                         csv_path.name,
                     ]
 

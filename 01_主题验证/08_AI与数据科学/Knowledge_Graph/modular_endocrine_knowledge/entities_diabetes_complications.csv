@@ -1,166 +1,166 @@
-section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,name_en,Diabetic Retinopathy
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,icd10,E10.3
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,description,糖尿病引起的视网膜微血管病变，是糖尿病患者失明的主要原因
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,epidemiology.prevalence,1型糖尿病患者中90%，2型糖尿病患者中60%
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,epidemiology.incidence,每年新发病率2-6%
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,epidemiology.blindness_risk,糖尿病患者失明风险比正常人高25倍
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,pathophysiology.hyperglycemia_damage.mechanism,高血糖导致视网膜毛细血管内皮损伤
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,pathophysiology.hyperglycemia_damage.biochemical_pathways,多元醇途径激活; 蛋白质糖化; 蛋白激酶C激活; 己糖胺途径; 氧化应激
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,pathophysiology.vascular_changes.early_changes,毛细血管基底膜增厚; 周细胞缺失; 血管通透性增加
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,pathophysiology.vascular_changes.progressive_changes,毛细血管闭塞; 视网膜缺血; 新生血管形成
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,classification.non_proliferative_diabetic_retinopathy.mild.features,微动脉瘤≥1个
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,classification.non_proliferative_diabetic_retinopathy.mild.vision_impact,通常无症状
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,classification.non_proliferative_diabetic_retinopathy.moderate.features,微动脉瘤; 点片状出血; 硬性渗出; 棉絮斑<20个
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,classification.non_proliferative_diabetic_retinopathy.moderate.vision_impact,可能轻度视力影响
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,classification.non_proliferative_diabetic_retinopathy.severe.features,广泛视网膜出血（4个象限）; 静脉串珠样改变（2个象限）; 明显视网膜内微血管异常（1个象限）
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,classification.non_proliferative_diabetic_retinopathy.severe.progression_risk,1年内15%进展为PDR
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,classification.proliferative_diabetic_retinopathy.features,视盘新生血管; 视网膜其他部位新生血管; 纤维血管增殖
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,classification.proliferative_diabetic_retinopathy.complications,玻璃体出血; 牵拉性视网膜脱离; 新生血管性青光眼
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,classification.diabetic_macular_edema.definition,黄斑中心1mm内视网膜增厚
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,classification.diabetic_macular_edema.prevalence,糖尿病患者中6.8%
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,classification.diabetic_macular_edema.vision_threat,导致中心视力下降的主要原因
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,risk_factors.modifiable,血糖控制不佳; 高血压; 血脂异常; 吸烟; 妊娠
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,risk_factors.non_modifiable,糖尿病病程; 遗传因素; 种族（非洲裔、西班牙裔风险高）
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,screening_guidelines.type1_diabetes,诊断5年后开始每年筛查
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,screening_guidelines.type2_diabetes,诊断时即开始每年筛查
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,screening_guidelines.pregnancy,妊娠前和每个三个月筛查
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,screening_guidelines.screening_methods,散瞳眼底检查; 眼底照相; 光学相干断层扫描（OCT）; 荧光素眼底血管造影（必要时）
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,treatment.preventive_measures.glycemic_control,HbA1c <7%
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,treatment.preventive_measures.blood_pressure_control,<140/90 mmHg
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,treatment.preventive_measures.lipid_management,LDL-C <2.6 mmol/L
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,treatment.non_proliferative_treatment.mild_moderate,严密随访，优化全身治疗
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,treatment.non_proliferative_treatment.severe,考虑激光光凝治疗
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,treatment.proliferative_treatment.pan_retinal_photocoagulation,全视网膜激光光凝
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,treatment.proliferative_treatment.anti_vegf_therapy,雷珠单抗; 阿柏西普; 贝伐珠单抗
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,treatment.proliferative_treatment.vitrectomy,严重玻璃体出血或牵拉性视网膜脱离
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,treatment.macular_edema_treatment.anti_vegf_injections,一线治疗
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,treatment.macular_edema_treatment.focal_laser,局灶性激光光凝
-entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,treatment.macular_edema_treatment.corticosteroids,难治性病例
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,name_en,Diabetic Nephropathy
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,icd10,E10.2
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,description,糖尿病引起的肾脏微血管病变，是终末期肾病的主要原因
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,epidemiology.prevalence,糖尿病患者中20-40%
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,epidemiology.progression_to_esrd,糖尿病是透析的首要原因（44%）
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,epidemiology.mortality_risk,糖尿病肾病患者心血管死亡风险增加10倍
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,pathophysiology.glomerular_changes.mesangial_expansion,系膜基质增生
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,pathophysiology.glomerular_changes.basement_membrane_thickening,肾小球基底膜增厚
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,pathophysiology.glomerular_changes.nodular_sclerosis,结节性肾小球硬化（Kimmelstiel-Wilson病变）
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,pathophysiology.tubular_interstitial_changes.tubular_atrophy,肾小管萎缩
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,pathophysiology.tubular_interstitial_changes.interstitial_fibrosis,间质纤维化
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,pathophysiology.tubular_interstitial_changes.inflammation,慢性炎症反应
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,pathophysiology.hemodynamic_changes.hyperfiltration,早期肾小球高滤过
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,pathophysiology.hemodynamic_changes.increased_permeability,肾小球通透性增加
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,pathophysiology.hemodynamic_changes.proteinuria,蛋白尿形成
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage1.gfr,≥90 mL/min/1.73m²
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage1.albuminuria,30-300 mg/g肌酐
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage1.description,肾功能正常伴微量白蛋白尿
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage2.gfr,60-89 mL/min/1.73m²
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage2.albuminuria,30-300 mg/g肌酐
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage2.description,轻度肾功能下降伴微量白蛋白尿
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage3a.gfr,45-59 mL/min/1.73m²
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage3a.description,轻中度肾功能下降
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage3b.gfr,30-44 mL/min/1.73m²
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage3b.description,中重度肾功能下降
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage4.gfr,15-29 mL/min/1.73m²
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage4.description,重度肾功能下降
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage5.gfr,<15 mL/min/1.73m²
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage5.description,肾衰竭
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,clinical_manifestations.early_stage,微量白蛋白尿; 肾小球高滤过; 通常无症状
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,clinical_manifestations.progressive_stage,大量蛋白尿; 水肿; 高血压; 肾功能进行性下降
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,clinical_manifestations.advanced_stage,尿毒症症状; 贫血; 骨代谢异常; 心血管并发症
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,screening_monitoring.frequency,至少每年一次
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,screening_monitoring.parameters,血清肌酐和估算GFR; 尿白蛋白/肌酐比值; 尿常规; 血压
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,screening_monitoring.early_detection,微量白蛋白尿是早期标志
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.prevention_strategies.glycemic_control,HbA1c <7%
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.prevention_strategies.blood_pressure_control,<130/80 mmHg
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.prevention_strategies.lifestyle_modifications,蛋白质摄入限制（0.8-1.0 g/kg/天）; 钠盐限制（<2.3g/天）; 戒烟; 体重管理
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.pharmacological_treatment.ace_inhibitors_arbs.first_line,ACEI或ARB
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.pharmacological_treatment.ace_inhibitors_arbs.renoprotective_effect,延缓肾功能下降
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.pharmacological_treatment.ace_inhibitors_arbs.target_bp,<130/80 mmHg
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.pharmacological_treatment.sglt2_inhibitors.cardio_renal_benefits,心肾获益明确
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.pharmacological_treatment.sglt2_inhibitors.indications,eGFR ≥30 mL/min/1.73m²
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.pharmacological_treatment.mineralocorticoid_antagonists.indications,ACE/ARB基础上仍有蛋白尿
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.pharmacological_treatment.mineralocorticoid_antagonists.monitoring,注意高钾血症
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.advanced_stage_management.mineral_bone_disorders,磷结合剂、维生素D类似物
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.advanced_stage_management.anemia,促红细胞生成素、铁剂
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.advanced_stage_management.renal_replacement_therapy.timing,GFR <15 mL/min/1.73m²或症状性尿毒症
-entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.advanced_stage_management.renal_replacement_therapy.options,血液透析; 腹膜透析; 肾移植
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,name_en,Diabetic Neuropathy
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,icd10,E10.4
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,description,糖尿病引起的周围神经系统病变，包括感觉、运动和自主神经功能异常
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,epidemiology.prevalence,糖尿病患者中50%
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,epidemiology.type2_diabetes,诊断时即有10-18%
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,epidemiology.progression,与糖尿病病程和血糖控制相关
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,pathophysiology.metabolic_mechanisms,葡萄糖毒性; 多元醇途径激活; 高级糖化终末产物（AGEs）; 氧化应激; 蛋白激酶C激活
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,pathophysiology.vascular_mechanisms,神经内膜血管病变; 血神经屏障破坏; 神经缺血
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,pathophysiology.inflammatory_mechanisms,炎症介质激活; 免疫介导损伤; 神经胶质细胞激活
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.distal_symmetric_polyneuropathy.prevalence,最常见类型（90%）
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.distal_symmetric_polyneuropathy.distribution,袜套样分布
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.distal_symmetric_polyneuropathy.symptoms,麻木; 疼痛; 烧灼感; 刺痛
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.distal_symmetric_polyneuropathy.progression,由远端向近端进展
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.cardiovascular.resting_tachycardia,静息心动过速
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.cardiovascular.orthostatic_hypotension,体位性低血压
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.cardiovascular.sudden_death,心源性猝死风险增加
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.gastrointestinal.gastroparesis,胃轻瘫
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.gastrointestinal.constipation,便秘
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.gastrointestinal.diarrhea,腹泻
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.genitourinary.neurogenic_bladder,神经源性膀胱
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.genitourinary.erectile_dysfunction,勃起功能障碍
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.genitourinary.retrograde_ejaculation,逆行射精
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.sudomotor.anhidrosis,无汗症
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.sudomotor.gustatory_sweating,味觉性出汗
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.focal_neuropathies.carpal_tunnel_syndrome,腕管综合征
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.focal_neuropathies.ulnar_neuropathy,尺神经病变
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.focal_neuropathies.peroneal_neuropathy,腓神经病变
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.focal_neuropathies.cranial_neuropathies,颅神经病变
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.proximal_neuropathy.characteristics,大腿前侧疼痛和无力
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.proximal_neuropathy.recovery,通常可自行恢复
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.proximal_neuropathy.also_known_as,糖尿病性肌萎缩
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,clinical_assessment.symptoms,疼痛（烧灼痛、刺痛、电击痛）; 麻木和感觉异常; 运动无力; 平衡障碍
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,clinical_assessment.physical_examination,振动觉检查; 位置觉检查; 针刺觉检查; 温度觉检查; 深反射检查
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,clinical_assessment.objective_tests,10g单纤维检查; 音叉振动觉检查; 神经传导检查; 定量感觉检查
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,complications.diabetic_foot.neuropathic_foot,感觉缺失导致溃疡
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,complications.diabetic_foot.charcot_foot,神经性关节病
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,complications.diabetic_foot.infection_risk,感染风险增加
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,complications.fall_risk,平衡障碍增加跌倒风险
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,complications.quality_of_life,疼痛影响生活质量
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,treatment.prevention.glycemic_control,严格血糖控制
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,treatment.prevention.lifestyle_modifications,戒烟、限酒、规律运动
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,treatment.symptomatic_treatment.neuropathic_pain.first_line,加巴喷丁; 普瑞巴林; 度洛西汀
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,treatment.symptomatic_treatment.neuropathic_pain.second_line,三环类抗抑郁药; 局部利多卡因; 曲马多
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,treatment.symptomatic_treatment.neuropathic_pain.third_line,阿片类药物; 肉毒毒素注射
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,treatment.disease_modifying_treatments.alpha_lipoic_acid,抗氧化治疗
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,treatment.disease_modifying_treatments.aldose_reductase_inhibitors,研究中
-entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,treatment.disease_modifying_treatments.nerve_growth_factors,实验性治疗
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,name_en,Diabetic Macrovascular Disease
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,icd10,E10.5
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,description,糖尿病引起的大血管动脉粥样硬化病变，包括冠心病、脑血管病和外周血管病
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,epidemiology.mortality,糖尿病患者68%死于心血管疾病
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,epidemiology.coronary_artery_disease,发病率比非糖尿病患者高2-4倍
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,epidemiology.stroke_risk,卒中风险增加1.5-3倍
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,epidemiology.peripheral_artery_disease,外周血管病风险增加2倍
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,pathophysiology.accelerated_atherosclerosis.mechanisms,内皮功能紊乱; 炎症反应增强; 凝血功能异常; 脂质代谢紊乱
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,pathophysiology.hyperglycemia_effects,血管内皮损伤; 糖化终末产物形成; 氧化应激增加; 血小板功能亢进
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,clinical_manifestations.coronary_artery_disease.presentation,可能无症状或不典型症状
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,clinical_manifestations.coronary_artery_disease.complications,心肌梗死; 心力衰竭; 心律失常; 猝死
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,clinical_manifestations.cerebrovascular_disease.types,缺血性卒中; 出血性卒中; 短暂性脑缺血发作
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,clinical_manifestations.cerebrovascular_disease.consequences,认知功能障碍; 血管性痴呆; 肢体功能障碍
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,clinical_manifestations.peripheral_artery_disease.symptoms,间歇性跛行; 静息痛; 肢体缺血; 溃疡不愈合
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,clinical_manifestations.peripheral_artery_disease.severity,糖尿病患者更易发生严重缺血
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,risk_assessment.cardiovascular_risk_factors,年龄（男性>45岁，女性>55岁）; 糖尿病病程>10年; 高血压; 血脂异常; 吸烟; 家族史; 肥胖; 蛋白尿
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,risk_assessment.risk_stratification.very_high_risk,已有心血管疾病或靶器官损伤
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,risk_assessment.risk_stratification.high_risk,多个危险因素
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,risk_assessment.risk_stratification.moderate_risk,少数危险因素
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,prevention_treatment.primary_prevention.glycemic_control,HbA1c <7%
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,prevention_treatment.primary_prevention.blood_pressure_management,<130/80 mmHg
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,prevention_treatment.primary_prevention.lipid_management.ldl_target,<2.6 mmol/L（高危）或<1.8 mmol/L（极高危）
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,prevention_treatment.primary_prevention.lipid_management.statin_therapy,中等强度他汀类药物
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,prevention_treatment.primary_prevention.antiplatelet_therapy,低剂量阿司匹林（血出血风险低）
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,prevention_treatment.primary_prevention.lifestyle_modifications,戒烟; 健康饮食; 规律运动; 体重控制
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,prevention_treatment.secondary_prevention.dual_antiplatelet,急性冠脉综合征后双联抗血小板
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,prevention_treatment.secondary_prevention.ace_inhibitors_arbs,ACEI/ARB治疗
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,prevention_treatment.secondary_prevention.beta_blockers,β受体阻滞剂
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,prevention_treatment.secondary_prevention.high_intensity_statins,高强度他汀类药物
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,prevention_treatment.secondary_prevention.diabetes_medications.sglt2_inhibitors,心血管获益明确
-entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,prevention_treatment.secondary_prevention.diabetes_medications.glp1_agonists,心血管保护作用
+section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value,evidence_source
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,name_en,Diabetic Retinopathy,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,icd10,E10.3,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,description,糖尿病引起的视网膜微血管病变，是糖尿病患者失明的主要原因,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,epidemiology.prevalence,1型糖尿病患者中90%，2型糖尿病患者中60%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,epidemiology.incidence,每年新发病率2-6%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,epidemiology.blindness_risk,糖尿病患者失明风险比正常人高25倍,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,pathophysiology.hyperglycemia_damage.mechanism,高血糖导致视网膜毛细血管内皮损伤,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,pathophysiology.hyperglycemia_damage.biochemical_pathways,多元醇途径激活; 蛋白质糖化; 蛋白激酶C激活; 己糖胺途径; 氧化应激,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,pathophysiology.vascular_changes.early_changes,毛细血管基底膜增厚; 周细胞缺失; 血管通透性增加,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,pathophysiology.vascular_changes.progressive_changes,毛细血管闭塞; 视网膜缺血; 新生血管形成,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,classification.non_proliferative_diabetic_retinopathy.mild.features,微动脉瘤≥1个,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,classification.non_proliferative_diabetic_retinopathy.mild.vision_impact,通常无症状,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,classification.non_proliferative_diabetic_retinopathy.moderate.features,微动脉瘤; 点片状出血; 硬性渗出; 棉絮斑<20个,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,classification.non_proliferative_diabetic_retinopathy.moderate.vision_impact,可能轻度视力影响,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,classification.non_proliferative_diabetic_retinopathy.severe.features,广泛视网膜出血（4个象限）; 静脉串珠样改变（2个象限）; 明显视网膜内微血管异常（1个象限）,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,classification.non_proliferative_diabetic_retinopathy.severe.progression_risk,1年内15%进展为PDR,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,classification.proliferative_diabetic_retinopathy.features,视盘新生血管; 视网膜其他部位新生血管; 纤维血管增殖,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,classification.proliferative_diabetic_retinopathy.complications,玻璃体出血; 牵拉性视网膜脱离; 新生血管性青光眼,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,classification.diabetic_macular_edema.definition,黄斑中心1mm内视网膜增厚,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,classification.diabetic_macular_edema.prevalence,糖尿病患者中6.8%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,classification.diabetic_macular_edema.vision_threat,导致中心视力下降的主要原因,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,risk_factors.modifiable,血糖控制不佳; 高血压; 血脂异常; 吸烟; 妊娠,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,risk_factors.non_modifiable,糖尿病病程; 遗传因素; 种族（非洲裔、西班牙裔风险高）,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,screening_guidelines.type1_diabetes,诊断5年后开始每年筛查,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,screening_guidelines.type2_diabetes,诊断时即开始每年筛查,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,screening_guidelines.pregnancy,妊娠前和每个三个月筛查,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,screening_guidelines.screening_methods,散瞳眼底检查; 眼底照相; 光学相干断层扫描（OCT）; 荧光素眼底血管造影（必要时）,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,treatment.preventive_measures.glycemic_control,HbA1c <7%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,treatment.preventive_measures.blood_pressure_control,<140/90 mmHg,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,treatment.preventive_measures.lipid_management,LDL-C <2.6 mmol/L,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,treatment.non_proliferative_treatment.mild_moderate,严密随访，优化全身治疗,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,treatment.non_proliferative_treatment.severe,考虑激光光凝治疗,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,treatment.proliferative_treatment.pan_retinal_photocoagulation,全视网膜激光光凝,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,treatment.proliferative_treatment.anti_vegf_therapy,雷珠单抗; 阿柏西普; 贝伐珠单抗,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,treatment.proliferative_treatment.vitrectomy,严重玻璃体出血或牵拉性视网膜脱离,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,treatment.macular_edema_treatment.anti_vegf_injections,一线治疗,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,treatment.macular_edema_treatment.focal_laser,局灶性激光光凝,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,,complication,糖尿病微血管并发症,treatment.macular_edema_treatment.corticosteroids,难治性病例,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,name_en,Diabetic Nephropathy,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,icd10,E10.2,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,description,糖尿病引起的肾脏微血管病变，是终末期肾病的主要原因,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,epidemiology.prevalence,糖尿病患者中20-40%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,epidemiology.progression_to_esrd,糖尿病是透析的首要原因（44%）,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,epidemiology.mortality_risk,糖尿病肾病患者心血管死亡风险增加10倍,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,pathophysiology.glomerular_changes.mesangial_expansion,系膜基质增生,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,pathophysiology.glomerular_changes.basement_membrane_thickening,肾小球基底膜增厚,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,pathophysiology.glomerular_changes.nodular_sclerosis,结节性肾小球硬化（Kimmelstiel-Wilson病变）,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,pathophysiology.tubular_interstitial_changes.tubular_atrophy,肾小管萎缩,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,pathophysiology.tubular_interstitial_changes.interstitial_fibrosis,间质纤维化,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,pathophysiology.tubular_interstitial_changes.inflammation,慢性炎症反应,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,pathophysiology.hemodynamic_changes.hyperfiltration,早期肾小球高滤过,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,pathophysiology.hemodynamic_changes.increased_permeability,肾小球通透性增加,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,pathophysiology.hemodynamic_changes.proteinuria,蛋白尿形成,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage1.gfr,≥90 mL/min/1.73m²,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage1.albuminuria,30-300 mg/g肌酐,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage1.description,肾功能正常伴微量白蛋白尿,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage2.gfr,60-89 mL/min/1.73m²,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage2.albuminuria,30-300 mg/g肌酐,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage2.description,轻度肾功能下降伴微量白蛋白尿,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage3a.gfr,45-59 mL/min/1.73m²,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage3a.description,轻中度肾功能下降,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage3b.gfr,30-44 mL/min/1.73m²,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage3b.description,中重度肾功能下降,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage4.gfr,15-29 mL/min/1.73m²,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage4.description,重度肾功能下降,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage5.gfr,<15 mL/min/1.73m²,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,staging.stage5.description,肾衰竭,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,clinical_manifestations.early_stage,微量白蛋白尿; 肾小球高滤过; 通常无症状,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,clinical_manifestations.progressive_stage,大量蛋白尿; 水肿; 高血压; 肾功能进行性下降,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,clinical_manifestations.advanced_stage,尿毒症症状; 贫血; 骨代谢异常; 心血管并发症,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,screening_monitoring.frequency,至少每年一次,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,screening_monitoring.parameters,血清肌酐和估算GFR; 尿白蛋白/肌酐比值; 尿常规; 血压,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,screening_monitoring.early_detection,微量白蛋白尿是早期标志,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.prevention_strategies.glycemic_control,HbA1c <7%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.prevention_strategies.blood_pressure_control,<130/80 mmHg,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.prevention_strategies.lifestyle_modifications,蛋白质摄入限制（0.8-1.0 g/kg/天）; 钠盐限制（<2.3g/天）; 戒烟; 体重管理,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.pharmacological_treatment.ace_inhibitors_arbs.first_line,ACEI或ARB,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.pharmacological_treatment.ace_inhibitors_arbs.renoprotective_effect,延缓肾功能下降,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.pharmacological_treatment.ace_inhibitors_arbs.target_bp,<130/80 mmHg,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.pharmacological_treatment.sglt2_inhibitors.cardio_renal_benefits,心肾获益明确,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.pharmacological_treatment.sglt2_inhibitors.indications,eGFR ≥30 mL/min/1.73m²,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.pharmacological_treatment.mineralocorticoid_antagonists.indications,ACE/ARB基础上仍有蛋白尿,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.pharmacological_treatment.mineralocorticoid_antagonists.monitoring,注意高钾血症,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.advanced_stage_management.mineral_bone_disorders,磷结合剂、维生素D类似物,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.advanced_stage_management.anemia,促红细胞生成素、铁剂,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.advanced_stage_management.renal_replacement_therapy.timing,GFR <15 mL/min/1.73m²或症状性尿毒症,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_002,糖尿病肾病,,complication,糖尿病微血管并发症,treatment.advanced_stage_management.renal_replacement_therapy.options,血液透析; 腹膜透析; 肾移植,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,name_en,Diabetic Neuropathy,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,icd10,E10.4,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,description,糖尿病引起的周围神经系统病变，包括感觉、运动和自主神经功能异常,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,epidemiology.prevalence,糖尿病患者中50%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,epidemiology.type2_diabetes,诊断时即有10-18%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,epidemiology.progression,与糖尿病病程和血糖控制相关,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,pathophysiology.metabolic_mechanisms,葡萄糖毒性; 多元醇途径激活; 高级糖化终末产物（AGEs）; 氧化应激; 蛋白激酶C激活,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,pathophysiology.vascular_mechanisms,神经内膜血管病变; 血神经屏障破坏; 神经缺血,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,pathophysiology.inflammatory_mechanisms,炎症介质激活; 免疫介导损伤; 神经胶质细胞激活,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.distal_symmetric_polyneuropathy.prevalence,最常见类型（90%）,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.distal_symmetric_polyneuropathy.distribution,袜套样分布,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.distal_symmetric_polyneuropathy.symptoms,麻木; 疼痛; 烧灼感; 刺痛,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.distal_symmetric_polyneuropathy.progression,由远端向近端进展,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.cardiovascular.resting_tachycardia,静息心动过速,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.cardiovascular.orthostatic_hypotension,体位性低血压,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.cardiovascular.sudden_death,心源性猝死风险增加,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.gastrointestinal.gastroparesis,胃轻瘫,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.gastrointestinal.constipation,便秘,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.gastrointestinal.diarrhea,腹泻,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.genitourinary.neurogenic_bladder,神经源性膀胱,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.genitourinary.erectile_dysfunction,勃起功能障碍,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.genitourinary.retrograde_ejaculation,逆行射精,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.sudomotor.anhidrosis,无汗症,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.sudomotor.gustatory_sweating,味觉性出汗,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.focal_neuropathies.carpal_tunnel_syndrome,腕管综合征,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.focal_neuropathies.ulnar_neuropathy,尺神经病变,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.focal_neuropathies.peroneal_neuropathy,腓神经病变,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.focal_neuropathies.cranial_neuropathies,颅神经病变,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.proximal_neuropathy.characteristics,大腿前侧疼痛和无力,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.proximal_neuropathy.recovery,通常可自行恢复,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,classification.proximal_neuropathy.also_known_as,糖尿病性肌萎缩,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,clinical_assessment.symptoms,疼痛（烧灼痛、刺痛、电击痛）; 麻木和感觉异常; 运动无力; 平衡障碍,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,clinical_assessment.physical_examination,振动觉检查; 位置觉检查; 针刺觉检查; 温度觉检查; 深反射检查,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,clinical_assessment.objective_tests,10g单纤维检查; 音叉振动觉检查; 神经传导检查; 定量感觉检查,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,complications.diabetic_foot.neuropathic_foot,感觉缺失导致溃疡,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,complications.diabetic_foot.charcot_foot,神经性关节病,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,complications.diabetic_foot.infection_risk,感染风险增加,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,complications.fall_risk,平衡障碍增加跌倒风险,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,complications.quality_of_life,疼痛影响生活质量,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,treatment.prevention.glycemic_control,严格血糖控制,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,treatment.prevention.lifestyle_modifications,戒烟、限酒、规律运动,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,treatment.symptomatic_treatment.neuropathic_pain.first_line,加巴喷丁; 普瑞巴林; 度洛西汀,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,treatment.symptomatic_treatment.neuropathic_pain.second_line,三环类抗抑郁药; 局部利多卡因; 曲马多,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,treatment.symptomatic_treatment.neuropathic_pain.third_line,阿片类药物; 肉毒毒素注射,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,treatment.disease_modifying_treatments.alpha_lipoic_acid,抗氧化治疗,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,treatment.disease_modifying_treatments.aldose_reductase_inhibitors,研究中,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_003,糖尿病神经病变,,complication,糖尿病微血管并发症,treatment.disease_modifying_treatments.nerve_growth_factors,实验性治疗,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,name_en,Diabetic Macrovascular Disease,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,icd10,E10.5,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,description,糖尿病引起的大血管动脉粥样硬化病变，包括冠心病、脑血管病和外周血管病,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,epidemiology.mortality,糖尿病患者68%死于心血管疾病,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,epidemiology.coronary_artery_disease,发病率比非糖尿病患者高2-4倍,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,epidemiology.stroke_risk,卒中风险增加1.5-3倍,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,epidemiology.peripheral_artery_disease,外周血管病风险增加2倍,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,pathophysiology.accelerated_atherosclerosis.mechanisms,内皮功能紊乱; 炎症反应增强; 凝血功能异常; 脂质代谢紊乱,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,pathophysiology.hyperglycemia_effects,血管内皮损伤; 糖化终末产物形成; 氧化应激增加; 血小板功能亢进,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,clinical_manifestations.coronary_artery_disease.presentation,可能无症状或不典型症状,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,clinical_manifestations.coronary_artery_disease.complications,心肌梗死; 心力衰竭; 心律失常; 猝死,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,clinical_manifestations.cerebrovascular_disease.types,缺血性卒中; 出血性卒中; 短暂性脑缺血发作,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,clinical_manifestations.cerebrovascular_disease.consequences,认知功能障碍; 血管性痴呆; 肢体功能障碍,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,clinical_manifestations.peripheral_artery_disease.symptoms,间歇性跛行; 静息痛; 肢体缺血; 溃疡不愈合,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,clinical_manifestations.peripheral_artery_disease.severity,糖尿病患者更易发生严重缺血,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,risk_assessment.cardiovascular_risk_factors,年龄（男性>45岁，女性>55岁）; 糖尿病病程>10年; 高血压; 血脂异常; 吸烟; 家族史; 肥胖; 蛋白尿,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,risk_assessment.risk_stratification.very_high_risk,已有心血管疾病或靶器官损伤,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,risk_assessment.risk_stratification.high_risk,多个危险因素,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,risk_assessment.risk_stratification.moderate_risk,少数危险因素,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,prevention_treatment.primary_prevention.glycemic_control,HbA1c <7%,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,prevention_treatment.primary_prevention.blood_pressure_management,<130/80 mmHg,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,prevention_treatment.primary_prevention.lipid_management.ldl_target,<2.6 mmol/L（高危）或<1.8 mmol/L（极高危）,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,prevention_treatment.primary_prevention.lipid_management.statin_therapy,中等强度他汀类药物,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,prevention_treatment.primary_prevention.antiplatelet_therapy,低剂量阿司匹林（血出血风险低）,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,prevention_treatment.primary_prevention.lifestyle_modifications,戒烟; 健康饮食; 规律运动; 体重控制,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,prevention_treatment.secondary_prevention.dual_antiplatelet,急性冠脉综合征后双联抗血小板,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,prevention_treatment.secondary_prevention.ace_inhibitors_arbs,ACEI/ARB治疗,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,prevention_treatment.secondary_prevention.beta_blockers,β受体阻滞剂,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,prevention_treatment.secondary_prevention.high_intensity_statins,高强度他汀类药物,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,prevention_treatment.secondary_prevention.diabetes_medications.sglt2_inhibitors,心血管获益明确,ADA Standards of Medical Care in Diabetes 2025
+entities.diabetes_complications,DM_COMP_004,糖尿病大血管病变,,complication,糖尿病大血管并发症,prevention_treatment.secondary_prevention.diabetes_medications.glp1_agonists,心血管保护作用,ADA Standards of Medical Care in Diabetes 2025

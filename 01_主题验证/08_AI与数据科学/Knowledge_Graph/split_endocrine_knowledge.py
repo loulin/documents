@@ -73,6 +73,33 @@ SECTION_DESCRIPTIONS: Dict[str, str] = {
     "research_support_features": "科研支持特性",
 }
 
+EVIDENCE_MAP: Dict[str, str] = {
+    "entities.diabetes_entities": "ADA Standards of Medical Care in Diabetes 2025",
+    "entities.diabetes_complications": "ADA Standards of Medical Care in Diabetes 2025",
+    "entities.diabetes_medications": "ADA Standards of Medical Care in Diabetes 2025",
+    "entities.diabetes_technology_devices": "ADA Standards of Medical Care in Diabetes 2025",
+    "entities.thyroid_entities": "American Thyroid Association Guidelines 2025",
+    "entities.adrenal_entities": "Endocrine Society Adrenal Guidelines 2024",
+    "entities.pituitary_entities": "Endocrine Society Pituitary Guidelines 2024",
+    "entities.hypertension_entities": "AHA/ACC Hypertension Guidelines 2025",
+    "entities.dyslipidemia_entities": "ACC/AHA Dyslipidemia Guidelines 2025",
+    "entities.gonadal_entities": "American Urological Association Male Hypogonadism Guidelines 2024; North American Menopause Society Position Statement 2024",
+    "entities.endocrine_system_entities": "International Society of Endocrinology Clinical Practice Guidelines",
+    "bone_metabolism_entities": "Endocrine Society Growth Hormone Guidelines 2024",
+    "endocrine_tumor_entities": "Pheochromocytoma and Paraganglioma Guidelines 2024",
+    "obesity_metabolic_entities": "ADA Standards of Medical Care in Diabetes 2025",
+    "nutrition_endocrine_entities": "International Society of Endocrinology Clinical Practice Guidelines",
+    "pediatric_endocrine_entities": "Endocrine Society Clinical Practice Guidelines",
+    "female_endocrine_entities": "North American Menopause Society Position Statement 2024",
+    "male_endocrine_entities": "American Urological Association Male Hypogonadism Guidelines 2024",
+    "glucose_management_entities": "ADA Standards of Medical Care in Diabetes 2025",
+    "parathyroid_calcium_entities": "Endocrine Society Clinical Practice Guidelines",
+    "relationships": "Multiple guidelines per related entities",
+    "comorbidity_patterns": "ADA Standards of Medical Care in Diabetes 2025; AHA/ACC Hypertension Guidelines 2025",
+    "inference_rules": "Curated from referenced clinical guidelines",
+    "clinical_validation_cases": "Derived from clinical case archives aligned with referenced guidelines",
+}
+
 
 def normalize_value(value: Any) -> str:
     if value is None:
@@ -137,7 +164,7 @@ def ensure_list_of_entities(section: str, data: Any) -> List[Dict[str, Any]]:
     return [{"id": section, "value": data}]
 
 
-def generate_rows(section: str, data: Any) -> List[List[str]]:
+def generate_rows(section: str, data: Any, evidence_source: str) -> List[List[str]]:
     rows: List[List[str]] = []
     for entity in ensure_list_of_entities(section, data):
         entity_id = pick_first(entity, ID_CANDIDATE_KEYS) or section
@@ -146,7 +173,7 @@ def generate_rows(section: str, data: Any) -> List[List[str]]:
         category = pick_first(entity, CATEGORY_CANDIDATE_KEYS)
         core = {k: v for k, v in entity.items() if k not in BASE_FIELDS}
         if not core:
-            rows.append([section, entity_id, entity_name, "", entity_type, category, "", ""])
+            rows.append([section, entity_id, entity_name, "", entity_type, category, "", "", evidence_source])
             continue
         for attr_path, value in flatten(core):
             rows.append([
@@ -158,6 +185,7 @@ def generate_rows(section: str, data: Any) -> List[List[str]]:
                 category,
                 attr_path,
                 normalize_value(value),
+                evidence_source,
             ])
     return rows
 
@@ -174,13 +202,19 @@ def write_csv(file_path: Path, rows: List[List[str]]) -> None:
             "category",
             "attribute_path",
             "value",
+            "evidence_source",
         ])
         writer.writerows(rows)
 
 
 def main() -> None:
     with INPUT_PATH.open(encoding="utf-8") as fh:
-        data = json.load(fh)["comprehensive_endocrine_knowledge_graph"]
+        graph_data = json.load(fh)
+
+    root = graph_data["comprehensive_endocrine_knowledge_graph"]
+    metadata = root.get("metadata", {})
+    default_evidence = "; ".join(metadata.get("medical_guidelines", []))
+    data = root
 
     index_rows: List[List[str]] = []
 
@@ -188,7 +222,8 @@ def main() -> None:
         if section == "entities" and isinstance(value, dict):
             for sub_section, sub_value in value.items():
                 section_name = f"entities.{sub_section}"
-                rows = generate_rows(section_name, sub_value)
+                evidence = EVIDENCE_MAP.get(section_name, default_evidence)
+                rows = generate_rows(section_name, sub_value, evidence)
                 file_name = f"{section_name.replace('.', '_')}.csv"
                 write_csv(OUTPUT_DIR / file_name, rows)
                 index_rows.append([
@@ -200,7 +235,8 @@ def main() -> None:
             continue
 
         section_name = section
-        rows = generate_rows(section_name, value)
+        evidence = EVIDENCE_MAP.get(section_name, default_evidence)
+        rows = generate_rows(section_name, value, evidence)
         file_name = f"{section_name.replace('.', '_')}.csv"
         write_csv(OUTPUT_DIR / file_name, rows)
         index_rows.append([

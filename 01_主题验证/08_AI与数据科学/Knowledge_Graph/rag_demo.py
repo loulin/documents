@@ -33,6 +33,7 @@ def iter_documents() -> Iterable[Tuple[int, Dict[str, str]]]:
                             row.get("category"),
                             row.get("attribute_path"),
                             row.get("value"),
+                            row.get("evidence_source"),
                         ],
                     )
                 )
@@ -45,6 +46,7 @@ def iter_documents() -> Iterable[Tuple[int, Dict[str, str]]]:
                     "entity_name": row.get("entity_name", ""),
                     "attribute_path": row.get("attribute_path", ""),
                     "value": row.get("value", ""),
+                    "evidence_source": row.get("evidence_source", ""),
                     "content": content,
                     "source_file": csv_path.name,
                 }

@@ -1,20 +1,20 @@
-section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value
-clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,patient_profile.age,45
-clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,patient_profile.gender,女性
-clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,patient_profile.chief_complaint,心悸、多汗、体重下降3个月
-clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,clinical_data.symptoms,心悸; 多汗; 体重下降; 多饮多尿
-clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,clinical_data.lab_results.glucose,15.2 mmol/L
-clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,clinical_data.lab_results.hba1c,9.8%
-clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,clinical_data.lab_results.tsh,0.02 mIU/L
-clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,clinical_data.lab_results.ft4,35.6 pmol/L
-clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,clinical_data.lab_results.trab,12.5 IU/L
-clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,kg_diagnosis.primary,Graves病
-clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,kg_diagnosis.secondary,2型糖尿病
-clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,kg_diagnosis.confidence,0.92
-clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,treatment_plan.immediate,甲巯咪唑10mg tid; 普萘洛尔40mg bid; 二甲双胍1000mg bid
-clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,treatment_plan.monitoring,每2周复查甲功和血糖; 每月评估心率血压; 3个月后评估HbA1c
-clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,outcome.3_months.tsh,2.1 mIU/L
-clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,outcome.3_months.ft4,18.2 pmol/L
-clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,outcome.3_months.hba1c,7.8%
-clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,outcome.3_months.weight,体重增加5kg
-clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,outcome.conclusion,甲亢控制良好，血糖改善显著
+section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value,evidence_source
+clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,patient_profile.age,45,Derived from clinical case archives aligned with referenced guidelines
+clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,patient_profile.gender,女性,Derived from clinical case archives aligned with referenced guidelines
+clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,patient_profile.chief_complaint,心悸、多汗、体重下降3个月,Derived from clinical case archives aligned with referenced guidelines
+clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,clinical_data.symptoms,心悸; 多汗; 体重下降; 多饮多尿,Derived from clinical case archives aligned with referenced guidelines
+clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,clinical_data.lab_results.glucose,15.2 mmol/L,Derived from clinical case archives aligned with referenced guidelines
+clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,clinical_data.lab_results.hba1c,9.8%,Derived from clinical case archives aligned with referenced guidelines
+clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,clinical_data.lab_results.tsh,0.02 mIU/L,Derived from clinical case archives aligned with referenced guidelines
+clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,clinical_data.lab_results.ft4,35.6 pmol/L,Derived from clinical case archives aligned with referenced guidelines
+clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,clinical_data.lab_results.trab,12.5 IU/L,Derived from clinical case archives aligned with referenced guidelines
+clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,kg_diagnosis.primary,Graves病,Derived from clinical case archives aligned with referenced guidelines
+clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,kg_diagnosis.secondary,2型糖尿病,Derived from clinical case archives aligned with referenced guidelines
+clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,kg_diagnosis.confidence,0.92,Derived from clinical case archives aligned with referenced guidelines
+clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,treatment_plan.immediate,甲巯咪唑10mg tid; 普萘洛尔40mg bid; 二甲双胍1000mg bid,Derived from clinical case archives aligned with referenced guidelines
+clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,treatment_plan.monitoring,每2周复查甲功和血糖; 每月评估心率血压; 3个月后评估HbA1c,Derived from clinical case archives aligned with referenced guidelines
+clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,outcome.3_months.tsh,2.1 mIU/L,Derived from clinical case archives aligned with referenced guidelines
+clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,outcome.3_months.ft4,18.2 pmol/L,Derived from clinical case archives aligned with referenced guidelines
+clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,outcome.3_months.hba1c,7.8%,Derived from clinical case archives aligned with referenced guidelines
+clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,outcome.3_months.weight,体重增加5kg,Derived from clinical case archives aligned with referenced guidelines
+clinical_validation_cases,CASE_001,糖尿病合并甲亢的综合管理,,,,outcome.conclusion,甲亢控制良好，血糖改善显著,Derived from clinical case archives aligned with referenced guidelines
