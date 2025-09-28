@@ -1,0 +1,962 @@
+source_section,entity_id,entity_name,entity_name_en,entity_type,category,attribute_path,value
+comorbidity_patterns,PATTERN_001,代谢综合征,,comorbidity_pattern,pattern,cardiovascular_risk,增加2-3倍
+comorbidity_patterns,PATTERN_001,代谢综合征,,comorbidity_pattern,pattern,components,DIS_001; HTN_001; DLP_001; OBESITY
+comorbidity_patterns,PATTERN_001,代谢综合征,,comorbidity_pattern,pattern,description,糖尿病、高血压、血脂异常、肥胖的聚集
+comorbidity_patterns,PATTERN_001,代谢综合征,,comorbidity_pattern,pattern,management_strategy.lifestyle,减重、运动、饮食调节
+comorbidity_patterns,PATTERN_001,代谢综合征,,comorbidity_pattern,pattern,management_strategy.pharmacological,多重危险因素综合管理
+comorbidity_patterns,PATTERN_001,代谢综合征,,comorbidity_pattern,pattern,management_strategy.targets.bp,<130/80 mmHg
+comorbidity_patterns,PATTERN_001,代谢综合征,,comorbidity_pattern,pattern,management_strategy.targets.hba1c,<7%
+comorbidity_patterns,PATTERN_001,代谢综合征,,comorbidity_pattern,pattern,management_strategy.targets.ldl_c,<100 mg/dL
+comorbidity_patterns,PATTERN_001,代谢综合征,,comorbidity_pattern,pattern,prevalence,成人中20-25%
+comorbidity_patterns,PATTERN_001,代谢综合征,,comorbidity_pattern,pattern,shared_mechanisms,胰岛素抵抗; 炎症反应; 内皮功能障碍; 交感神经激活
+comorbidity_patterns,PATTERN_004,PCOS-代谢综合征复合体,,comorbidity_pattern,pattern,components,GON_001; DIS_001; HTN_001; DLP_001; OBESITY
+comorbidity_patterns,PATTERN_004,PCOS-代谢综合征复合体,,comorbidity_pattern,pattern,description,PCOS与代谢综合征组分的聚集
+comorbidity_patterns,PATTERN_004,PCOS-代谢综合征复合体,,comorbidity_pattern,pattern,long_term_risks,心血管疾病风险增加3倍; 2型糖尿病风险增加4倍; 子宫内膜癌风险增加2.7倍; 非酒精性脂肪肝
+comorbidity_patterns,PATTERN_004,PCOS-代谢综合征复合体,,comorbidity_pattern,pattern,management_strategy.lifestyle,减重是核心治疗，目标减重5-10%
+comorbidity_patterns,PATTERN_004,PCOS-代谢综合征复合体,,comorbidity_pattern,pattern,management_strategy.monitoring.metabolic,每年OGTT、血脂、血压监测
+comorbidity_patterns,PATTERN_004,PCOS-代谢综合征复合体,,comorbidity_pattern,pattern,management_strategy.monitoring.psychological,抑郁焦虑筛查
+comorbidity_patterns,PATTERN_004,PCOS-代谢综合征复合体,,comorbidity_pattern,pattern,management_strategy.monitoring.reproductive,定期妇科检查，子宫内膜评估
+comorbidity_patterns,PATTERN_004,PCOS-代谢综合征复合体,,comorbidity_pattern,pattern,management_strategy.pharmacological,二甲双胍改善胰岛素敏感性; 他汀类药物管理血脂; ACEI/ARB类降压药; GLP-1激动剂减重和改善代谢
+comorbidity_patterns,PATTERN_004,PCOS-代谢综合征复合体,,comorbidity_pattern,pattern,management_strategy.reproductive_management,来曲唑促排卵(生育需求); 复合口服避孕药(无生育需求); 螺内酯抗雄激素治疗
+comorbidity_patterns,PATTERN_004,PCOS-代谢综合征复合体,,comorbidity_pattern,pattern,prevalence,PCOS患者中47-67%
+comorbidity_patterns,PATTERN_004,PCOS-代谢综合征复合体,,comorbidity_pattern,pattern,shared_mechanisms,胰岛素抵抗; 慢性低级别炎症; 雄激素过多; 内脏脂肪堆积
+comorbidity_patterns,PATTERN_005,男性代谢-性腺功能障碍综合征,,comorbidity_pattern,pattern,bidirectional_relationship,True
+comorbidity_patterns,PATTERN_005,男性代谢-性腺功能障碍综合征,,comorbidity_pattern,pattern,clinical_assessment,晨间睾酮水平测定; 性功能评估量表; 代谢指标全面评估; 身体成分分析
+comorbidity_patterns,PATTERN_005,男性代谢-性腺功能障碍综合征,,comorbidity_pattern,pattern,components,GON_002; DIS_001; HTN_001; DLP_001; OBESITY
+comorbidity_patterns,PATTERN_005,男性代谢-性腺功能障碍综合征,,comorbidity_pattern,pattern,description,男性性腺功能减退与代谢异常的相互关联
+comorbidity_patterns,PATTERN_005,男性代谢-性腺功能障碍综合征,,comorbidity_pattern,pattern,pathophysiology,肥胖导致芳香化酶活性增加; 雌激素升高抑制LH分泌; 睾酮降低促进内脏脂肪堆积; 胰岛素抵抗进一步抑制性腺轴
+comorbidity_patterns,PATTERN_005,男性代谢-性腺功能障碍综合征,,comorbidity_pattern,pattern,prevalence,肥胖男性中30-40%
+comorbidity_patterns,PATTERN_005,男性代谢-性腺功能障碍综合征,,comorbidity_pattern,pattern,treatment_approach.metabolic_management,标准糖尿病、高血压、血脂异常治疗
+comorbidity_patterns,PATTERN_005,男性代谢-性腺功能障碍综合征,,comorbidity_pattern,pattern,treatment_approach.testosterone_replacement.benefits,改善性功能; 增加肌量; 改善胰岛素敏感性
+comorbidity_patterns,PATTERN_005,男性代谢-性腺功能障碍综合征,,comorbidity_pattern,pattern,treatment_approach.testosterone_replacement.indications,减重后仍有症状性低睾酮
+comorbidity_patterns,PATTERN_005,男性代谢-性腺功能障碍综合征,,comorbidity_pattern,pattern,treatment_approach.testosterone_replacement.monitoring,前列腺安全性; 红细胞压积; 心血管风险
+comorbidity_patterns,PATTERN_005,男性代谢-性腺功能障碍综合征,,comorbidity_pattern,pattern,treatment_approach.weight_management,减重是首要措施，可显著提高睾酮水平
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,classification.diabetic_macular_edema.definition,黄斑中心1mm内视网膜增厚
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,classification.diabetic_macular_edema.prevalence,糖尿病患者中6.8%
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,classification.diabetic_macular_edema.vision_threat,导致中心视力下降的主要原因
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,classification.non_proliferative_diabetic_retinopathy.mild.features,微动脉瘤≥1个
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,classification.non_proliferative_diabetic_retinopathy.mild.vision_impact,通常无症状
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,classification.non_proliferative_diabetic_retinopathy.moderate.features,微动脉瘤; 点片状出血; 硬性渗出; 棉絮斑<20个
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,classification.non_proliferative_diabetic_retinopathy.moderate.vision_impact,可能轻度视力影响
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,classification.non_proliferative_diabetic_retinopathy.severe.features,广泛视网膜出血（4个象限）; 静脉串珠样改变（2个象限）; 明显视网膜内微血管异常（1个象限）
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,classification.non_proliferative_diabetic_retinopathy.severe.progression_risk,1年内15%进展为PDR
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,classification.proliferative_diabetic_retinopathy.complications,玻璃体出血; 牵拉性视网膜脱离; 新生血管性青光眼
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,classification.proliferative_diabetic_retinopathy.features,视盘新生血管; 视网膜其他部位新生血管; 纤维血管增殖
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,description,糖尿病引起的视网膜微血管病变，是糖尿病患者失明的主要原因
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,epidemiology.blindness_risk,糖尿病患者失明风险比正常人高25倍
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,epidemiology.incidence,每年新发病率2-6%
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,epidemiology.prevalence,1型糖尿病患者中90%，2型糖尿病患者中60%
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,icd10,E10.3
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,pathophysiology.hyperglycemia_damage.biochemical_pathways,多元醇途径激活; 蛋白质糖化; 蛋白激酶C激活; 己糖胺途径; 氧化应激
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,pathophysiology.hyperglycemia_damage.mechanism,高血糖导致视网膜毛细血管内皮损伤
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,pathophysiology.vascular_changes.early_changes,毛细血管基底膜增厚; 周细胞缺失; 血管通透性增加
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,pathophysiology.vascular_changes.progressive_changes,毛细血管闭塞; 视网膜缺血; 新生血管形成
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,risk_factors.modifiable,血糖控制不佳; 高血压; 血脂异常; 吸烟; 妊娠
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,risk_factors.non_modifiable,糖尿病病程; 遗传因素; 种族（非洲裔、西班牙裔风险高）
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,screening_guidelines.pregnancy,妊娠前和每个三个月筛查
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,screening_guidelines.screening_methods,散瞳眼底检查; 眼底照相; 光学相干断层扫描（OCT）; 荧光素眼底血管造影（必要时）
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,screening_guidelines.type1_diabetes,诊断5年后开始每年筛查
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,screening_guidelines.type2_diabetes,诊断时即开始每年筛查
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,treatment.macular_edema_treatment.anti_vegf_injections,一线治疗
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,treatment.macular_edema_treatment.corticosteroids,难治性病例
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,treatment.macular_edema_treatment.focal_laser,局灶性激光光凝
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,treatment.non_proliferative_treatment.mild_moderate,严密随访，优化全身治疗
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,treatment.non_proliferative_treatment.severe,考虑激光光凝治疗
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,treatment.preventive_measures.blood_pressure_control,<140/90 mmHg
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,treatment.preventive_measures.glycemic_control,HbA1c <7%
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,treatment.preventive_measures.lipid_management,LDL-C <2.6 mmol/L
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,treatment.proliferative_treatment.anti_vegf_therapy,雷珠单抗; 阿柏西普; 贝伐珠单抗
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,treatment.proliferative_treatment.pan_retinal_photocoagulation,全视网膜激光光凝
+diabetes_complications,DM_COMP_001,糖尿病性视网膜病变,Diabetic Retinopathy,complication,糖尿病微血管并发症,treatment.proliferative_treatment.vitrectomy,严重玻璃体出血或牵拉性视网膜脱离
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,clinical_manifestations.advanced_stage,尿毒症症状; 贫血; 骨代谢异常; 心血管并发症
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,clinical_manifestations.early_stage,微量白蛋白尿; 肾小球高滤过; 通常无症状
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,clinical_manifestations.progressive_stage,大量蛋白尿; 水肿; 高血压; 肾功能进行性下降
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,description,糖尿病引起的肾脏微血管病变，是终末期肾病的主要原因
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,epidemiology.mortality_risk,糖尿病肾病患者心血管死亡风险增加10倍
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,epidemiology.prevalence,糖尿病患者中20-40%
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,epidemiology.progression_to_esrd,糖尿病是透析的首要原因（44%）
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,icd10,E10.2
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,pathophysiology.glomerular_changes.basement_membrane_thickening,肾小球基底膜增厚
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,pathophysiology.glomerular_changes.mesangial_expansion,系膜基质增生
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,pathophysiology.glomerular_changes.nodular_sclerosis,结节性肾小球硬化（Kimmelstiel-Wilson病变）
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,pathophysiology.hemodynamic_changes.hyperfiltration,早期肾小球高滤过
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,pathophysiology.hemodynamic_changes.increased_permeability,肾小球通透性增加
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,pathophysiology.hemodynamic_changes.proteinuria,蛋白尿形成
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,pathophysiology.tubular_interstitial_changes.inflammation,慢性炎症反应
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,pathophysiology.tubular_interstitial_changes.interstitial_fibrosis,间质纤维化
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,pathophysiology.tubular_interstitial_changes.tubular_atrophy,肾小管萎缩
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,screening_monitoring.early_detection,微量白蛋白尿是早期标志
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,screening_monitoring.frequency,至少每年一次
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,screening_monitoring.parameters,血清肌酐和估算GFR; 尿白蛋白/肌酐比值; 尿常规; 血压
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,staging.stage1.albuminuria,30-300 mg/g肌酐
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,staging.stage1.description,肾功能正常伴微量白蛋白尿
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,staging.stage1.gfr,≥90 mL/min/1.73m²
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,staging.stage2.albuminuria,30-300 mg/g肌酐
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,staging.stage2.description,轻度肾功能下降伴微量白蛋白尿
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,staging.stage2.gfr,60-89 mL/min/1.73m²
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,staging.stage3a.description,轻中度肾功能下降
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,staging.stage3a.gfr,45-59 mL/min/1.73m²
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,staging.stage3b.description,中重度肾功能下降
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,staging.stage3b.gfr,30-44 mL/min/1.73m²
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,staging.stage4.description,重度肾功能下降
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,staging.stage4.gfr,15-29 mL/min/1.73m²
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,staging.stage5.description,肾衰竭
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,staging.stage5.gfr,<15 mL/min/1.73m²
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,treatment.advanced_stage_management.anemia,促红细胞生成素、铁剂
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,treatment.advanced_stage_management.mineral_bone_disorders,磷结合剂、维生素D类似物
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,treatment.advanced_stage_management.renal_replacement_therapy.options,血液透析; 腹膜透析; 肾移植
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,treatment.advanced_stage_management.renal_replacement_therapy.timing,GFR <15 mL/min/1.73m²或症状性尿毒症
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,treatment.pharmacological_treatment.ace_inhibitors_arbs.first_line,ACEI或ARB
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,treatment.pharmacological_treatment.ace_inhibitors_arbs.renoprotective_effect,延缓肾功能下降
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,treatment.pharmacological_treatment.ace_inhibitors_arbs.target_bp,<130/80 mmHg
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,treatment.pharmacological_treatment.mineralocorticoid_antagonists.indications,ACE/ARB基础上仍有蛋白尿
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,treatment.pharmacological_treatment.mineralocorticoid_antagonists.monitoring,注意高钾血症
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,treatment.pharmacological_treatment.sglt2_inhibitors.cardio_renal_benefits,心肾获益明确
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,treatment.pharmacological_treatment.sglt2_inhibitors.indications,eGFR ≥30 mL/min/1.73m²
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,treatment.prevention_strategies.blood_pressure_control,<130/80 mmHg
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,treatment.prevention_strategies.glycemic_control,HbA1c <7%
+diabetes_complications,DM_COMP_002,糖尿病肾病,Diabetic Nephropathy,complication,糖尿病微血管并发症,treatment.prevention_strategies.lifestyle_modifications,蛋白质摄入限制（0.8-1.0 g/kg/天）; 钠盐限制（<2.3g/天）; 戒烟; 体重管理
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.cardiovascular.orthostatic_hypotension,体位性低血压
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.cardiovascular.resting_tachycardia,静息心动过速
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.cardiovascular.sudden_death,心源性猝死风险增加
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.gastrointestinal.constipation,便秘
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.gastrointestinal.diarrhea,腹泻
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.gastrointestinal.gastroparesis,胃轻瘫
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.genitourinary.erectile_dysfunction,勃起功能障碍
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.genitourinary.neurogenic_bladder,神经源性膀胱
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.genitourinary.retrograde_ejaculation,逆行射精
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.sudomotor.anhidrosis,无汗症
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,classification.autonomic_neuropathy.sudomotor.gustatory_sweating,味觉性出汗
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,classification.distal_symmetric_polyneuropathy.distribution,袜套样分布
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,classification.distal_symmetric_polyneuropathy.prevalence,最常见类型（90%）
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,classification.distal_symmetric_polyneuropathy.progression,由远端向近端进展
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,classification.distal_symmetric_polyneuropathy.symptoms,麻木; 疼痛; 烧灼感; 刺痛
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,classification.focal_neuropathies.carpal_tunnel_syndrome,腕管综合征
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,classification.focal_neuropathies.cranial_neuropathies,颅神经病变
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,classification.focal_neuropathies.peroneal_neuropathy,腓神经病变
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,classification.focal_neuropathies.ulnar_neuropathy,尺神经病变
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,classification.proximal_neuropathy.also_known_as,糖尿病性肌萎缩
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,classification.proximal_neuropathy.characteristics,大腿前侧疼痛和无力
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,classification.proximal_neuropathy.recovery,通常可自行恢复
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,clinical_assessment.objective_tests,10g单纤维检查; 音叉振动觉检查; 神经传导检查; 定量感觉检查
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,clinical_assessment.physical_examination,振动觉检查; 位置觉检查; 针刺觉检查; 温度觉检查; 深反射检查
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,clinical_assessment.symptoms,疼痛（烧灼痛、刺痛、电击痛）; 麻木和感觉异常; 运动无力; 平衡障碍
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,complications.diabetic_foot.charcot_foot,神经性关节病
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,complications.diabetic_foot.infection_risk,感染风险增加
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,complications.diabetic_foot.neuropathic_foot,感觉缺失导致溃疡
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,complications.fall_risk,平衡障碍增加跌倒风险
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,complications.quality_of_life,疼痛影响生活质量
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,description,糖尿病引起的周围神经系统病变，包括感觉、运动和自主神经功能异常
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,epidemiology.prevalence,糖尿病患者中50%
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,epidemiology.progression,与糖尿病病程和血糖控制相关
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,epidemiology.type2_diabetes,诊断时即有10-18%
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,icd10,E10.4
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,pathophysiology.inflammatory_mechanisms,炎症介质激活; 免疫介导损伤; 神经胶质细胞激活
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,pathophysiology.metabolic_mechanisms,葡萄糖毒性; 多元醇途径激活; 高级糖化终末产物（AGEs）; 氧化应激; 蛋白激酶C激活
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,pathophysiology.vascular_mechanisms,神经内膜血管病变; 血神经屏障破坏; 神经缺血
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,treatment.disease_modifying_treatments.aldose_reductase_inhibitors,研究中
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,treatment.disease_modifying_treatments.alpha_lipoic_acid,抗氧化治疗
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,treatment.disease_modifying_treatments.nerve_growth_factors,实验性治疗
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,treatment.prevention.glycemic_control,严格血糖控制
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,treatment.prevention.lifestyle_modifications,戒烟、限酒、规律运动
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,treatment.symptomatic_treatment.neuropathic_pain.first_line,加巴喷丁; 普瑞巴林; 度洛西汀
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,treatment.symptomatic_treatment.neuropathic_pain.second_line,三环类抗抑郁药; 局部利多卡因; 曲马多
+diabetes_complications,DM_COMP_003,糖尿病神经病变,Diabetic Neuropathy,complication,糖尿病微血管并发症,treatment.symptomatic_treatment.neuropathic_pain.third_line,阿片类药物; 肉毒毒素注射
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,clinical_manifestations.cerebrovascular_disease.consequences,认知功能障碍; 血管性痴呆; 肢体功能障碍
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,clinical_manifestations.cerebrovascular_disease.types,缺血性卒中; 出血性卒中; 短暂性脑缺血发作
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,clinical_manifestations.coronary_artery_disease.complications,心肌梗死; 心力衰竭; 心律失常; 猝死
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,clinical_manifestations.coronary_artery_disease.presentation,可能无症状或不典型症状
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,clinical_manifestations.peripheral_artery_disease.severity,糖尿病患者更易发生严重缺血
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,clinical_manifestations.peripheral_artery_disease.symptoms,间歇性跛行; 静息痛; 肢体缺血; 溃疡不愈合
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,description,糖尿病引起的大血管动脉粥样硬化病变，包括冠心病、脑血管病和外周血管病
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,epidemiology.coronary_artery_disease,发病率比非糖尿病患者高2-4倍
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,epidemiology.mortality,糖尿病患者68%死于心血管疾病
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,epidemiology.peripheral_artery_disease,外周血管病风险增加2倍
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,epidemiology.stroke_risk,卒中风险增加1.5-3倍
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,icd10,E10.5
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,pathophysiology.accelerated_atherosclerosis.mechanisms,内皮功能紊乱; 炎症反应增强; 凝血功能异常; 脂质代谢紊乱
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,pathophysiology.hyperglycemia_effects,血管内皮损伤; 糖化终末产物形成; 氧化应激增加; 血小板功能亢进
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,prevention_treatment.primary_prevention.antiplatelet_therapy,低剂量阿司匹林（血出血风险低）
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,prevention_treatment.primary_prevention.blood_pressure_management,<130/80 mmHg
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,prevention_treatment.primary_prevention.glycemic_control,HbA1c <7%
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,prevention_treatment.primary_prevention.lifestyle_modifications,戒烟; 健康饮食; 规律运动; 体重控制
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,prevention_treatment.primary_prevention.lipid_management.ldl_target,<2.6 mmol/L（高危）或<1.8 mmol/L（极高危）
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,prevention_treatment.primary_prevention.lipid_management.statin_therapy,中等强度他汀类药物
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,prevention_treatment.secondary_prevention.ace_inhibitors_arbs,ACEI/ARB治疗
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,prevention_treatment.secondary_prevention.beta_blockers,β受体阻滞剂
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,prevention_treatment.secondary_prevention.diabetes_medications.glp1_agonists,心血管保护作用
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,prevention_treatment.secondary_prevention.diabetes_medications.sglt2_inhibitors,心血管获益明确
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,prevention_treatment.secondary_prevention.dual_antiplatelet,急性冠脉综合征后双联抗血小板
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,prevention_treatment.secondary_prevention.high_intensity_statins,高强度他汀类药物
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,risk_assessment.cardiovascular_risk_factors,年龄（男性>45岁，女性>55岁）; 糖尿病病程>10年; 高血压; 血脂异常; 吸烟; 家族史; 肥胖; 蛋白尿
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,risk_assessment.risk_stratification.high_risk,多个危险因素
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,risk_assessment.risk_stratification.moderate_risk,少数危险因素
+diabetes_complications,DM_COMP_004,糖尿病大血管病变,Diabetic Macrovascular Disease,complication,糖尿病大血管并发症,risk_assessment.risk_stratification.very_high_risk,已有心血管疾病或靶器官损伤
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,classification_subtypes.insulin_deficient.characteristics,C肽水平低，BMI正常，易发酮症
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,classification_subtypes.insulin_deficient.description,以胰岛素缺乏为主
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,classification_subtypes.insulin_deficient.treatment,早期需要胰岛素治疗
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,classification_subtypes.insulin_resistant.characteristics,C肽水平高，肥胖，代谢综合征
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,classification_subtypes.insulin_resistant.description,以胰岛素抵抗为主
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,classification_subtypes.insulin_resistant.treatment,胰岛素增敏剂优先
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.atypical_presentations.asymptomatic,多数2型糖尿病患者早期无症状
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.atypical_presentations.blurred_vision,视物模糊
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.atypical_presentations.erectile_dysfunction,男性勃起功能障碍
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.atypical_presentations.fatigue,乏力和精力不足
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.atypical_presentations.peripheral_neuropathy,手足麻木或疼痛
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.atypical_presentations.recurrent_infections.mechanism,高血糖环境利于细菌繁殖
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.atypical_presentations.recurrent_infections.types,皮肤感染; 尿路感染; 阴道炎
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.atypical_presentations.slow_wound_healing,伤口愈合延迟
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.classic_symptoms.polydipsia.characteristic,饮水量增加但仍感口渴
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.classic_symptoms.polydipsia.description,烦渴多饮
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.classic_symptoms.polydipsia.mechanism,失水激活下丘脑渴觉中枢
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.classic_symptoms.polyphagia.description,多食易饥
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.classic_symptoms.polyphagia.mechanism,细胞内葡萄糖利用障碍
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.classic_symptoms.polyphagia.paradox,食量增加但体重可能下降
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.classic_symptoms.polyuria.description,多尿，每日>3L
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.classic_symptoms.polyuria.mechanism,高血糖导致渗透性利尿
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.classic_symptoms.polyuria.severity,血糖越高症状越明显
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.classic_symptoms.unexplained_weight_loss.description,不明原因体重下降
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.classic_symptoms.unexplained_weight_loss.mechanism,蛋白质和脂肪分解增加
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.classic_symptoms.unexplained_weight_loss.threshold,3个月内体重下降>5%
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.physical_examination.anthropometric.body_fat_distribution,内脏脂肪增加
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.physical_examination.anthropometric.waist_circumference,中心性肥胖
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.physical_examination.anthropometric.weight_status,超重或肥胖（85%患者）
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.physical_examination.cardiovascular.blood_pressure,高血压（60-70%患者合并）
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.physical_examination.cardiovascular.heart_rate,静息心率可能增快
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.physical_examination.skin_changes.acanthosis_nigricans,黑棘皮症，胰岛素抵抗标志
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.physical_examination.skin_changes.diabetic_dermopathy,糖尿病性皮肤病变
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,clinical_presentation.physical_examination.skin_changes.skin_tags,皮赘增多
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,description,以胰岛素抵抗和胰岛β细胞功能进行性衰减为特征的慢性代谢性疾病
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,diagnosis.diagnostic_criteria.fasting_plasma_glucose.confirmation,需要重复测定确认
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,diagnosis.diagnostic_criteria.fasting_plasma_glucose.definition,空腹8小时以上
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,diagnosis.diagnostic_criteria.fasting_plasma_glucose.threshold,≥7.0 mmol/L (126 mg/dL)
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,diagnosis.diagnostic_criteria.hba1c.advantages,无需空腹; 变异性小; 反映长期血糖
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,diagnosis.diagnostic_criteria.hba1c.limitations,某些血红蛋白病; 肾病晚期; 妊娠期不适用
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,diagnosis.diagnostic_criteria.hba1c.threshold,≥6.5% (48 mmol/mol)
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,diagnosis.diagnostic_criteria.oral_glucose_tolerance_test.2h_glucose,≥11.1 mmol/L (200 mg/dL)
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,diagnosis.diagnostic_criteria.oral_glucose_tolerance_test.preparation,前3天正常饮食，空腹8-14小时
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,diagnosis.diagnostic_criteria.oral_glucose_tolerance_test.protocol,75g葡萄糖负荷后2小时血糖
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,diagnosis.diagnostic_criteria.random_plasma_glucose.confirmation,需要其他方法确认
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,diagnosis.diagnostic_criteria.random_plasma_glucose.indication,有典型高血糖症状时
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,diagnosis.diagnostic_criteria.random_plasma_glucose.threshold,≥11.1 mmol/L (200 mg/dL) + 症状
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,diagnosis.differential_diagnosis.mody,年轻起病，家族史明显，非肥胖
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,diagnosis.differential_diagnosis.secondary_diabetes.drug_induced,糖皮质激素等药物使用史
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,diagnosis.differential_diagnosis.secondary_diabetes.endocrine_diabetes,其他内分泌疾病导致
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,diagnosis.differential_diagnosis.secondary_diabetes.pancreatic_diabetes,胰腺疾病史，外分泌功能不全
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,diagnosis.differential_diagnosis.type1_diabetes.distinguishing_features,年龄：T1DM多见于儿童青少年; 起病：T1DM急性起病，T2DM缓慢起病; 体型：T1DM多正常或消瘦，T2DM多超重肥胖; 酮症：T1DM易发生，T2DM少见; 胰岛素依赖：T1DM绝对依赖，T2DM相对缺乏
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,diagnosis.differential_diagnosis.type1_diabetes.辅助检查,C肽水平：T1DM低，T2DM正常或高; 自身抗体：T1DM阳性，T2DM阴性
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,diagnosis.screening_recommendations.general_population.age_threshold,≥35岁开始筛查
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,diagnosis.screening_recommendations.general_population.high_risk,每年筛查
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,diagnosis.screening_recommendations.general_population.interval,正常者每3年1次
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,diagnosis.screening_recommendations.high_risk_criteria,BMI≥24 kg/m²（亚洲人群）; 一级亲属糖尿病史; 高血压（≥140/90 mmHg）; HDL-C<0.9 mmol/L或TG>2.22 mmol/L; PCOS; IGT或IFG史; 心血管疾病史; 久坐生活方式
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,epidemiology.age_pattern,40岁后显著增加，但年轻化趋势明显
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,epidemiology.china_prevalence,11.2%（成人）
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,epidemiology.gender_distribution,男性略高于女性
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,epidemiology.global_prevalence,9.3%（成人）
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,epidemiology.incidence_trend,持续上升，与肥胖和老龄化相关
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,icd10,E11
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,pathophysiology.beta_cell_dysfunction.insulin_secretion_defects,第一时相胰岛素分泌缺失; 胰岛素脉冲性分泌异常; 葡萄糖敏感性下降
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,pathophysiology.beta_cell_dysfunction.mechanisms,葡萄糖毒性; 脂毒性; 氧化应激; 内质网应激; 淀粉样蛋白沉积
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,pathophysiology.beta_cell_dysfunction.progressive_decline,β细胞功能年下降率4-5%
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,pathophysiology.genetic_factors.heritability,遗传度约26%
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,pathophysiology.genetic_factors.major_genes,TCF7L2（转录因子7样2）; PPARG（过氧化物酶体增殖物激活受体γ）; KCNJ11（钾离子通道基因）; CDKAL1（CDK5调节亚单位相关蛋白1样1）; IGF2BP2（胰岛素样生长因子2 mRNA结合蛋白2）
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,pathophysiology.genetic_factors.polygenic_risk,多基因累积效应
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,pathophysiology.incretin_system_defects.dpp4_activity,DPP-4活性可能增加
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,pathophysiology.incretin_system_defects.glp1_reduction,GLP-1分泌减少和作用减弱
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,pathophysiology.incretin_system_defects.incretins_effect,肠促胰素效应受损
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,pathophysiology.insulin_resistance.compensatory_response,早期β细胞代偿性胰岛素分泌增加
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,pathophysiology.insulin_resistance.mechanisms,胰岛素受体后信号传导缺陷; 葡萄糖转运蛋白功能异常; 炎症因子介导的信号干扰; 脂肪细胞因子失调
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,pathophysiology.insulin_resistance.primary_sites,肝脏; 骨骼肌; 脂肪组织
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,risk_factors.modifiable.dietary_factors.fiber_deficiency,膳食纤维不足
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,risk_factors.modifiable.dietary_factors.high_glycemic_diet,高血糖指数饮食
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,risk_factors.modifiable.dietary_factors.processed_foods,过度加工食品
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,risk_factors.modifiable.dietary_factors.saturated_fat,饱和脂肪酸过多
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,risk_factors.modifiable.dietary_factors.sugar_sweetened_beverages,含糖饮料
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,risk_factors.modifiable.obesity.bmi_threshold,亚洲人群≥23 kg/m²开始增加风险
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,risk_factors.modifiable.obesity.central_obesity,腹型肥胖风险最高
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,risk_factors.modifiable.obesity.mechanism,脂肪组织炎症和胰岛素抵抗
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,risk_factors.modifiable.physical_inactivity.exercise_deficiency,缺乏规律体力活动
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,risk_factors.modifiable.physical_inactivity.muscle_mass_decline,肌肉量减少影响葡萄糖利用
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,risk_factors.modifiable.physical_inactivity.sedentary_lifestyle,久坐生活方式
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,risk_factors.modifiable.sleep_disorders.circadian_disruption,昼夜节律紊乱
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,risk_factors.modifiable.sleep_disorders.sleep_apnea,阻塞性睡眠呼吸暂停
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,risk_factors.modifiable.sleep_disorders.sleep_deprivation,睡眠不足<6小时
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,risk_factors.modifiable.smoking.active_smoking,主动吸烟增加风险30-40%
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,risk_factors.modifiable.smoking.dose_response,吸烟量与糖尿病风险呈正相关
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,risk_factors.non_modifiable.age,每增加10岁风险增加1.5-2倍
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,risk_factors.non_modifiable.ethnicity.asian_specificity,相同BMI下亚洲人风险更高
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,risk_factors.non_modifiable.ethnicity.high_risk_populations,亚洲人群; 西班牙裔; 非洲裔; 美洲原住民
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,risk_factors.non_modifiable.family_history.first_degree_relative,一级亲属患病风险增加2-3倍
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,risk_factors.non_modifiable.family_history.parental_diabetes,父母患病风险增加40%
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,risk_factors.non_modifiable.gestational_diabetes_history,GDM史增加7倍风险
+diabetes_entities,DM_001,2型糖尿病,Type 2 Diabetes Mellitus,disease,代谢性疾病,risk_factors.non_modifiable.polycystic_ovary_syndrome,PCOS女性风险增加5-10倍
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,delivery_management.peripartum_glucose_management.insulin_adjustment,根据血糖调整胰岛素剂量
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,delivery_management.peripartum_glucose_management.labor_monitoring,每1-2小时监测血糖
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,delivery_management.peripartum_glucose_management.target_range,4.0-7.0 mmol/L
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,delivery_management.timing.cesarean_section,血糖控制不良或胎儿过大
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,delivery_management.timing.induction,孕39-40周考虑引产
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,delivery_management.timing.spontaneous_labor,血糖控制良好可等待自然分娩
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,description,妊娠期间首次发现或发病的糖耐量异常
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,epidemiology.china_prevalence,17.5%（2019年全国调查）
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,epidemiology.global_prevalence,1-14%（因诊断标准而异）
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,epidemiology.risk_factors_prevalence,高龄妊娠、肥胖增加
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,epidemiology.trend,发病率持续上升
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,fetal_neonatal_complications.long_term_offspring_risks,儿童期肥胖风险增加; 青春期代谢综合征; 成年期2型糖尿病风险增加
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,fetal_neonatal_complications.macrosomia.complications,肩难产; 产伤; 剖宫产
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,fetal_neonatal_complications.macrosomia.definition,出生体重≥4000g
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,fetal_neonatal_complications.macrosomia.mechanism,胎儿高胰岛素血症促进生长
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,fetal_neonatal_complications.neonatal_complications,新生儿低血糖; 新生儿呼吸窘迫综合征; 新生儿高胆红素血症; 新生儿低钙血症; 新生儿红细胞增多症
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,icd10,O24.4
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,management.glucose_targets.1h_postprandial,<7.8 mmol/L (140 mg/dL)
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,management.glucose_targets.2h_postprandial,<6.7 mmol/L (120 mg/dL)
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,management.glucose_targets.bedtime,5.0-6.7 mmol/L
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,management.glucose_targets.fasting,<5.3 mmol/L (95 mg/dL)
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,management.lifestyle_intervention.medical_nutrition_therapy.caloric_intake,25-35 kcal/kg孕前体重/日
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,management.lifestyle_intervention.medical_nutrition_therapy.carbohydrate,复合碳水化合物，40-50%总热量
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,management.lifestyle_intervention.medical_nutrition_therapy.fat,25-30%总热量
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,management.lifestyle_intervention.medical_nutrition_therapy.meal_distribution,三大餐+2-3次加餐
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,management.lifestyle_intervention.medical_nutrition_therapy.protein,20%总热量
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,management.lifestyle_intervention.physical_activity.contraindications,妊娠并发症时禁止
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,management.lifestyle_intervention.physical_activity.duration,30分钟/日，每周至少5天
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,management.lifestyle_intervention.physical_activity.recommendation,中等强度有氧运动
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,management.lifestyle_intervention.physical_activity.types,快走; 游泳; 孕妇瑜伽
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,management.pharmacological_treatment.insulin_therapy.dosage,0.7-1.0 U/kg孕前体重/日起始
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,management.pharmacological_treatment.insulin_therapy.indications,生活方式干预1-2周血糖不达标; 空腹血糖>5.8 mmol/L; 餐后2小时血糖>6.7 mmol/L
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,management.pharmacological_treatment.insulin_therapy.preferred_insulin,中效或长效胰岛素+速效胰岛素
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,management.pharmacological_treatment.insulin_therapy.regimens,每日2次预混胰岛素; 基础-餐时胰岛素方案
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,management.pharmacological_treatment.oral_medications.contraindicated,其他降糖药物孕期禁用
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,management.pharmacological_treatment.oral_medications.metformin,部分指南允许使用，需权衡利弊
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,management.pharmacological_treatment.oral_medications.sulfonylureas,格列本脲，二线选择
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,maternal_complications.delivery_complications,巨大儿导致难产; 肩难产; 产伤; 剖宫产率增加
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,maternal_complications.long_term_risks,产后2型糖尿病风险增加7倍; 心血管疾病风险增加; 代谢综合征; 再次妊娠GDM复发率30-70%
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,maternal_complications.pregnancy_complications,妊娠期高血压疾病; 羊水过多; 早产; 胎膜早破; 泌尿系感染
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,pathophysiology.beta_cell_adaptation.gdm_pathogenesis,β细胞代偿不足导致高血糖
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,pathophysiology.beta_cell_adaptation.normal_pregnancy,β细胞代偿性增生和功能增强
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,pathophysiology.hormonal_changes.insulin_resistance,妊娠期胰岛素敏感性下降50-60%
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,pathophysiology.hormonal_changes.placental_hormones,人胎盘泌乳素（hPL）; 雌激素; 孕激素; 皮质醇; 胎盘胰岛素酶
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,pathophysiology.hormonal_changes.progressive_nature,孕周增加胰岛素抵抗加重
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,postpartum_follow_up.immediate_postpartum.breastfeeding,鼓励母乳喂养
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,postpartum_follow_up.immediate_postpartum.glucose_monitoring,监测血糖变化
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,postpartum_follow_up.immediate_postpartum.insulin_discontinuation,产后立即停用胰岛素
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,postpartum_follow_up.long_term_follow_up.diabetes_screening.frequency,每1-3年筛查一次
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,postpartum_follow_up.long_term_follow_up.diabetes_screening.method,75g OGTT或FPG
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,postpartum_follow_up.long_term_follow_up.diabetes_screening.timing,产后6-12周
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,postpartum_follow_up.long_term_follow_up.family_planning,再次妊娠前咨询评估
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,postpartum_follow_up.long_term_follow_up.lifestyle_counseling,体重管理; 健康饮食; 规律运动; 戒烟限酒
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,risk_factors.major_risk_factors,年龄≥35岁; 孕前BMI≥24 kg/m²; 糖尿病家族史（一级亲属）; 既往GDM史; 既往不良孕产史（巨大儿、死胎、多胎畸形）; 多囊卵巢综合征; 孕期体重增加过多
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,risk_factors.minor_risk_factors,高血压; 高龄初产; 反复流产史; 羊水过多
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.75g_ogtt.iadpsg_criteria.1_hour,≥10.0 mmol/L (180 mg/dL)
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.75g_ogtt.iadpsg_criteria.2_hour,≥8.5 mmol/L (153 mg/dL)
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.75g_ogtt.iadpsg_criteria.diagnostic_threshold,任何一项异常即可诊断
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.75g_ogtt.iadpsg_criteria.fasting,≥5.1 mmol/L (92 mg/dL)
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.75g_ogtt.standard_protocol.glucose_load,75g无水葡萄糖溶于300ml水中
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.75g_ogtt.standard_protocol.preparation,正常饮食3天，空腹8-14小时
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.75g_ogtt.standard_protocol.sampling_times,0分钟; 60分钟; 120分钟
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.alternative_screening.50g_gct,50g葡萄糖激发试验（筛查用）
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,screening_diagnosis.diagnostic_tests.alternative_screening.threshold,1小时血糖≥7.8 mmol/L需进一步OGTT
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,screening_diagnosis.screening_timing.early_screening.indications,高危因素存在
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,screening_diagnosis.screening_timing.early_screening.method,空腹血糖或HbA1c
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,screening_diagnosis.screening_timing.early_screening.timing,孕早期（<20周）
+diabetes_entities,DM_002,妊娠期糖尿病,Gestational Diabetes Mellitus,disease,代谢性疾病,screening_diagnosis.screening_timing.first_screening,孕24-28周（最佳时间）
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,clinical_features.age_onset,通常<25岁，但可延迟至成年
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,clinical_features.autoantibodies,自身抗体阴性
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,clinical_features.c_peptide,保存或轻度减少（MODY2除外）
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,clinical_features.family_history,强烈的家族史，常染色体显性遗传
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,clinical_features.obesity,通常体重正常或轻度超重
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,description,由单基因缺陷引起的常染色体显性遗传性糖尿病
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,diagnosis.clinical_criteria,糖尿病发病年龄≤25岁; 强烈的家族史（至少连续两代）; 非胰岛素依赖至少2年; 自身抗体阴性
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,diagnosis.differential_diagnosis,1型糖尿病; 2型糖尿病; 继发性糖尿病; 新生儿糖尿病
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,diagnosis.genetic_testing.indications,符合临床诊断标准; 需要确定亚型; 家族遗传咨询需求
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,diagnosis.genetic_testing.testing_priority,HNF1A（MODY3）- 最常见; GCK（MODY2）- 轻症; HNF4A（MODY1）- 药物敏感性
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,epidemiology.age_onset,通常25岁前起病
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,epidemiology.family_pattern,连续三代患病的强烈家族史
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,epidemiology.geographic_distribution,全球性分布，各种族均可发生
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,epidemiology.prevalence,糖尿病患者中1-5%
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,genetic_classification.MODY1.characteristics,β细胞功能进行性衰减; 对磺脲类药物敏感; 可能有大血管病变
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,genetic_classification.MODY1.chromosome,20q13
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,genetic_classification.MODY1.gene,HNF4A（肝细胞核因子4α）
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,genetic_classification.MODY1.prevalence,MODY中<5%
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,genetic_classification.MODY2.characteristics,轻度持续性高血糖; 通常不需要药物治疗; 并发症风险低; 妊娠期需要监测
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,genetic_classification.MODY2.chromosome,7p13
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,genetic_classification.MODY2.gene,GCK（葡萄糖激酶）
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,genetic_classification.MODY2.prevalence,MODY中30-70%
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,genetic_classification.MODY3.characteristics,对磺脲类药物极其敏感; 进行性β细胞功能衰减; 糖尿病并发症风险中等
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,genetic_classification.MODY3.chromosome,12q24
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,genetic_classification.MODY3.gene,HNF1A（肝细胞核因子1α）
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,genetic_classification.MODY3.prevalence,MODY中30-65%
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,genetic_classification.MODY4.characteristics,胰腺发育异常; 严重β细胞功能缺陷; 需要胰岛素治疗
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,genetic_classification.MODY4.chromosome,13q12
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,genetic_classification.MODY4.gene,IPF1/PDX1
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,genetic_classification.MODY4.prevalence,MODY中<1%
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,genetic_classification.MODY5.characteristics,肾脏发育异常; 泌尿生殖系统异常; 胰腺萎缩
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,genetic_classification.MODY5.chromosome,17cen-q21.3
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,genetic_classification.MODY5.gene,HNF1B（肝细胞核因子1β）
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,genetic_classification.MODY5.prevalence,MODY中5%
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,icd10,E11
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,treatment.MODY1_treatment.first_line,磺脲类药物
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,treatment.MODY1_treatment.monitoring,心血管风险
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,treatment.MODY1_treatment.second_line,胰岛素
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,treatment.MODY2_treatment.general,通常无需药物治疗
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,treatment.MODY2_treatment.lifestyle,饮食和运动管理
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,treatment.MODY2_treatment.pregnancy,妊娠期可能需要胰岛素
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,treatment.MODY3_treatment.characteristics,对磺脲类极其敏感
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,treatment.MODY3_treatment.first_line,低剂量磺脲类药物
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,treatment.MODY3_treatment.progression,随病程进展可能需要胰岛素
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,treatment.general_principles.family_screening,家族成员筛查
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,treatment.general_principles.genetic_counseling,遗传咨询
+diabetes_entities,DM_003,成人起病的青年型糖尿病,Maturity-Onset Diabetes of the Young (MODY),disease,遗传性糖尿病,treatment.general_principles.individualized,根据基因型个体化治疗
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,clinical_features.distinctive_features,发病年龄>30岁; 自身抗体阳性; 早期无需胰岛素治疗; 进展相对缓慢
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,clinical_features.presentation.ketosis,很少发生糖尿病酮症酸中毒
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,clinical_features.presentation.symptoms,通常症状较轻，类似2型糖尿病
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,clinical_features.presentation.weight,通常体重正常或轻度超重
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,description,成年发病的缓慢进展性自身免疫性糖尿病，介于1型和2型糖尿病之间
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,diagnosis.diagnostic_criteria,成年发病（>30岁）; 至少一种自身抗体阳性; 诊断时无需胰岛素治疗; C肽水平部分保存
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,diagnosis.laboratory_tests.autoantibodies.GAD_antibodies,>95%阳性率
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,diagnosis.laboratory_tests.autoantibodies.IA2_antibodies,50-70%阳性率
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,diagnosis.laboratory_tests.autoantibodies.ZnT8_antibodies,60-80%阳性率
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,diagnosis.laboratory_tests.c_peptide.fasting,通常>0.3 nmol/L
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,diagnosis.laboratory_tests.c_peptide.stimulated,餐后或刺激后检测
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,diagnosis.laboratory_tests.hla_typing,辅助诊断，非必需
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,epidemiology.age_onset,通常>30岁
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,epidemiology.geographic_variation,北欧人群患病率较高
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,epidemiology.misdiagnosis_rate,常被误诊为2型糖尿病
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,epidemiology.prevalence,成人糖尿病患者中2-12%
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,icd10,E10
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,pathophysiology.autoimmune_process.autoantibodies,GAD抗体（最常见）; IA-2抗体; ZnT8抗体; ICA抗体
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,pathophysiology.autoimmune_process.mechanism,自身免疫介导的β细胞破坏
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,pathophysiology.autoimmune_process.progression,比1型糖尿病缓慢
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,pathophysiology.beta_cell_function.c_peptide,早期可检测，逐渐下降
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,pathophysiology.beta_cell_function.initial,部分保存
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,pathophysiology.beta_cell_function.progression,缓慢进行性衰减
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,pathophysiology.genetic_susceptibility.hla_association,HLA-DR3、HLA-DR4相关
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,pathophysiology.genetic_susceptibility.risk_genes,与1型糖尿病相似的遗传背景
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,prognosis.complications,与1型糖尿病相似的并发症风险
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,prognosis.factors_affecting_progression,自身抗体滴度; HLA基因型; 诊断时C肽水平
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,prognosis.progression,5-10年内通常需要胰岛素治疗
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,treatment.initial_management.lifestyle,饮食和运动治疗
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,treatment.initial_management.monitoring,密切监测β细胞功能
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,treatment.initial_management.oral_antidiabetics,可短期使用
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,treatment.insulin_therapy.indications,口服药物控制不佳; C肽水平显著下降; 反复高血糖或感染
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,treatment.insulin_therapy.regimen,类似1型糖尿病的胰岛素治疗方案
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,treatment.insulin_therapy.timing,通常在诊断后2-5年内需要
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,treatment.novel_approaches.beta_cell_preservation,早期胰岛素治疗可能有益
+diabetes_entities,DM_004,成人隐匿性自身免疫性糖尿病,Latent Autoimmune Diabetes in Adults (LADA),disease,自身免疫性糖尿病,treatment.novel_approaches.immunotherapy,正在研究中
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.drug_induced.atypical_antipsychotics.high_risk_drugs,奥氮平; 氯氮平; 喹硫平
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.drug_induced.atypical_antipsychotics.mechanism,体重增加和胰岛素抵抗
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.drug_induced.corticosteroids.mechanism,增加胰岛素抵抗和糖异生
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.drug_induced.corticosteroids.reversibility,停药后通常可逆
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.drug_induced.corticosteroids.risk_factors,剂量和使用时间相关
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.drug_induced.immunosuppressants.cyclosporine,增加胰岛素抵抗
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.drug_induced.immunosuppressants.monitoring,器官移植患者需密切监测
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.drug_induced.immunosuppressants.tacrolimus,抑制胰岛素分泌
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.drug_induced.thiazide_diuretics.mechanism,影响胰岛素分泌和敏感性
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.drug_induced.thiazide_diuretics.monitoring,需要定期监测血糖
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.drug_induced.thiazide_diuretics.risk,长期使用中度风险
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.endocrine_disorders.acromegaly.features,空腹血糖和餐后血糖均升高
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.endocrine_disorders.acromegaly.mechanism,生长激素过多导致胰岛素抵抗
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.endocrine_disorders.acromegaly.prevalence,肢端肥大症患者中25-50%
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.endocrine_disorders.cushings_syndrome.mechanism,皮质醇过多导致胰岛素抵抗
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.endocrine_disorders.cushings_syndrome.prevalence,库欣综合征患者中75-80%
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.endocrine_disorders.cushings_syndrome.reversibility,治疗原发病后可能改善
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.endocrine_disorders.hyperthyroidism.features,血糖波动大
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.endocrine_disorders.hyperthyroidism.mechanism,甲状腺激素增加糖异生
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.endocrine_disorders.hyperthyroidism.prevalence,甲亢患者中2-3%
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.endocrine_disorders.pheochromocytoma.features,多为可逆性
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.endocrine_disorders.pheochromocytoma.mechanism,儿茶酚胺抑制胰岛素分泌
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.endocrine_disorders.pheochromocytoma.prevalence,嗜铬细胞瘤患者中40-50%
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.pancreatic_disease.chronic_pancreatitis.features,胰酶分泌不足; 脂肪泻; 胰岛素缺乏; 胰高血糖素缺乏
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.pancreatic_disease.chronic_pancreatitis.mechanism,胰腺外分泌和内分泌功能同时受损
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.pancreatic_disease.chronic_pancreatitis.prevalence,慢性胰腺炎患者中80%
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.pancreatic_disease.cystic_fibrosis.features,胰岛素不足为主
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.pancreatic_disease.cystic_fibrosis.mechanism,胰腺纤维化和胰岛功能受损
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.pancreatic_disease.cystic_fibrosis.prevalence,CF患者中20-50%
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.pancreatic_disease.pancreatectomy.characteristics,脆性糖尿病，易发生低血糖
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.pancreatic_disease.pancreatectomy.partial_pancreatectomy,发生率取决于切除范围
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.pancreatic_disease.pancreatectomy.total_pancreatectomy,100%发生糖尿病
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.pancreatic_disease.pancreatic_cancer.mechanism,胰岛β细胞破坏
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.pancreatic_disease.pancreatic_cancer.prevalence,胰腺癌患者中50-80%
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,classification.pancreatic_disease.pancreatic_cancer.prognosis,通常预后不良
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,description,由于胰腺疾病、内分泌疾病、药物或其他疾病引起的糖尿病
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,diagnosis.clinical_approach,详细病史和用药史; 体格检查寻找原发病证据; 实验室检查排除其他类型糖尿病; 影像学检查评估胰腺结构
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,diagnosis.differential_diagnosis,1型糖尿病; 2型糖尿病; MODY; 妊娠糖尿病
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,icd10,E13
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,treatment.general_principles,治疗或去除潜在病因; 个体化血糖管理; 处理相关并发症; 长期随访监测
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,treatment.specific_management.drug_induced_diabetes.dose_adjustment,如必须继续使用，考虑剂量调整
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,treatment.specific_management.drug_induced_diabetes.medication_review,评估是否可以停药或换药
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,treatment.specific_management.endocrine_diabetes.temporary_management,血糖管理可能是暂时性的
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,treatment.specific_management.endocrine_diabetes.treat_primary_condition,治疗原发内分泌疾病
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,treatment.specific_management.pancreatic_diabetes.enzyme_replacement,胰酶替代治疗
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,treatment.specific_management.pancreatic_diabetes.insulin_therapy,通常需要胰岛素治疗
+diabetes_entities,DM_005,继发性糖尿病,Secondary Diabetes Mellitus,disease,继发性内分泌疾病,treatment.specific_management.pancreatic_diabetes.nutritional_support,营养支持
+diabetes_medications,DM_MED_001,二甲双胍,Metformin,medication,双胍类降糖药,adverse_effects.common,胃肠道反应（恶心、腹泻、腹痛）; 金属味觉; 食欲减退
+diabetes_medications,DM_MED_001,二甲双胍,Metformin,medication,双胍类降糖药,adverse_effects.serious,乳酸酸中毒（罕见但严重）; 维生素B12缺乏（长期使用）
+diabetes_medications,DM_MED_001,二甲双胍,Metformin,medication,双胍类降糖药,atc_code,A10BA02
+diabetes_medications,DM_MED_001,二甲双胍,Metformin,medication,双胍类降糖药,clinical_efficacy.cardiovascular_benefits,降低心血管事件风险
+diabetes_medications,DM_MED_001,二甲双胍,Metformin,medication,双胍类降糖药,clinical_efficacy.fasting_glucose_reduction,2.5-3.5 mmol/L
+diabetes_medications,DM_MED_001,二甲双胍,Metformin,medication,双胍类降糖药,clinical_efficacy.hba1c_reduction,1.0-1.5%
+diabetes_medications,DM_MED_001,二甲双胍,Metformin,medication,双胍类降糖药,clinical_efficacy.weight_effect,体重减轻或保持不变
+diabetes_medications,DM_MED_001,二甲双胍,Metformin,medication,双胍类降糖药,contraindications.absolute,eGFR <30 mL/min/1.73m²; 急性或慢性代谢性酸中毒; 严重心力衰竭; 严重肝功能不全; 严重感染或脱水
+diabetes_medications,DM_MED_001,二甲双胍,Metformin,medication,双胍类降糖药,contraindications.relative,eGFR 30-45 mL/min/1.73m²（需谨慎使用）; 造影剂使用前后; 酗酒
+diabetes_medications,DM_MED_001,二甲双胍,Metformin,medication,双胍类降糖药,description,通过减少肝糖生成和改善胰岛素敏感性降低血糖的一线口服降糖药
+diabetes_medications,DM_MED_001,二甲双胍,Metformin,medication,双胍类降糖药,dosing.extended_release,500-2000mg 每晚一次
+diabetes_medications,DM_MED_001,二甲双胍,Metformin,medication,双胍类降糖药,dosing.maximum_dose,2550mg/天，分2-3次服用
+diabetes_medications,DM_MED_001,二甲双胍,Metformin,medication,双胍类降糖药,dosing.starting_dose,500mg 每日1-2次或850mg 每日1次
+diabetes_medications,DM_MED_001,二甲双胍,Metformin,medication,双胍类降糖药,dosing.titration,每周增加500mg，根据耐受性
+diabetes_medications,DM_MED_001,二甲双胍,Metformin,medication,双胍类降糖药,indications.additional,糖尿病前期（部分指南推荐）; PCOS相关胰岛素抵抗; 妊娠糖尿病（部分地区）
+diabetes_medications,DM_MED_001,二甲双胍,Metformin,medication,双胍类降糖药,indications.primary,2型糖尿病一线治疗
+diabetes_medications,DM_MED_001,二甲双胍,Metformin,medication,双胍类降糖药,mechanism_of_action.molecular_targets,AMP激活的蛋白激酶（AMPK）; 线粒体复合物I; 肝脏PEPCK酶
+diabetes_medications,DM_MED_001,二甲双胍,Metformin,medication,双胍类降糖药,mechanism_of_action.primary_mechanisms,抑制肝脏葡萄糖生成; 增加胰岛素敏感性; 减少肠道葡萄糖吸收
+diabetes_medications,DM_MED_001,二甲双胍,Metformin,medication,双胍类降糖药,pharmacokinetics.bioavailability,50-60%
+diabetes_medications,DM_MED_001,二甲双胍,Metformin,medication,双胍类降糖药,pharmacokinetics.excretion,90%经肾脏原型排出
+diabetes_medications,DM_MED_001,二甲双胍,Metformin,medication,双胍类降糖药,pharmacokinetics.food_effect,与食物同服减少胃肠道副作用
+diabetes_medications,DM_MED_001,二甲双胍,Metformin,medication,双胍类降糖药,pharmacokinetics.half_life,4-9小时
+diabetes_medications,DM_MED_001,二甲双胍,Metformin,medication,双胍类降糖药,pharmacokinetics.metabolism,不经肝脏代谢
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,advantages,降糖效果确切; 价格便宜; 使用经验丰富; 可用于肾功能不全患者
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,adverse_effects.common,低血糖（最重要）; 体重增加; 皮疹
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,adverse_effects.rare,血液系统异常; 肝功能异常; SIADH综合征
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,clinical_efficacy.durability,β细胞功能衰减时效果下降
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,clinical_efficacy.hba1c_reduction,1.0-1.5%
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,clinical_efficacy.onset,数周内达到最大效果
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,contraindications,1型糖尿病; 糖尿病酮症酸中毒; 严重肝肾功能不全; 磺胺类药物过敏
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,description,通过刺激胰岛β细胞分泌胰岛素降低血糖的口服降糖药
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,disadvantages,低血糖风险; 体重增加; 继发性失效; 心血管安全性争议
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,drug_examples.second_generation.glibenclamide.duration,24小时
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,drug_examples.second_generation.glibenclamide.half_life,10小时
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,drug_examples.second_generation.glibenclamide.name,格列本脲
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,drug_examples.second_generation.glibenclamide.starting_dose,2.5mg 每日1次
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,drug_examples.second_generation.gliclazide.duration,24小时
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,drug_examples.second_generation.gliclazide.half_life,12小时
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,drug_examples.second_generation.gliclazide.name,格列齐特
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,drug_examples.second_generation.gliclazide.starting_dose,40mg 每日1-2次
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,drug_examples.second_generation.glimepiride.duration,24小时
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,drug_examples.second_generation.glimepiride.half_life,9小时
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,drug_examples.second_generation.glimepiride.name,格列美脲
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,drug_examples.second_generation.glimepiride.starting_dose,1mg 每日1次
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,drug_examples.second_generation.glipizide.duration,12-24小时
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,drug_examples.second_generation.glipizide.half_life,4小时
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,drug_examples.second_generation.glipizide.name,格列吡嗪
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,drug_examples.second_generation.glipizide.starting_dose,5mg 每日1-2次
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,mechanism_of_action.primary_mechanism,关闭β细胞膜上ATP敏感性钾离子通道，促进胰岛素分泌
+diabetes_medications,DM_MED_002,磺脲类药物,Sulfonylureas,medication,促胰岛素分泌药,mechanism_of_action.target,胰岛β细胞SUR1受体
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,advantages,低血糖风险小; 体重中性; 耐受性好; 可与多种药物联用
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,adverse_effects.common,上呼吸道感染; 头痛; 胃肠道不适
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,adverse_effects.serious_rare,急性胰腺炎（罕见）; 严重关节痛; 大疱性类天疱疮（极罕见）
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,clinical_efficacy.hba1c_reduction,0.5-0.8%
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,clinical_efficacy.hypoglycemia_risk,低（单独使用时）
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,clinical_efficacy.weight_effect,体重中性
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,description,通过抑制DPP-4酶，增加内源性GLP-1和GIP水平，以葡萄糖依赖性方式降血糖
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,disadvantages,降糖效果中等; 价格相对昂贵; 长期安全性数据有限
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,drug_examples.linagliptin.dosing,5mg 每日1次
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,drug_examples.linagliptin.excretion,主要经胆汁排泄
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,drug_examples.linagliptin.half_life,12小时
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,drug_examples.linagliptin.name,利格列汀
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,drug_examples.saxagliptin.cyp3a4,CYP3A4底物，注意药物相互作用
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,drug_examples.saxagliptin.dosing,5mg 每日1次
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,drug_examples.saxagliptin.half_life,7小时
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,drug_examples.saxagliptin.name,沙格列汀
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,drug_examples.sitagliptin.dosing,100mg 每日1次
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,drug_examples.sitagliptin.half_life,12小时
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,drug_examples.sitagliptin.name,西格列汀
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,drug_examples.sitagliptin.renal_adjustment,肾功能不全需减量
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,drug_examples.vildagliptin.dosing,50mg 每日2次
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,drug_examples.vildagliptin.half_life,3小时
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,drug_examples.vildagliptin.hepatic_monitoring,需监测肝功能
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,drug_examples.vildagliptin.name,维格列汀
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,mechanism_of_action.glucose_dependent,仅在高血糖状态下发挥作用，低血糖风险小
+diabetes_medications,DM_MED_003,DPP-4抑制剂,DPP-4 Inhibitors,medication,肠促胰素相关药物,mechanism_of_action.primary_mechanism,抑制二肽基肽酶-4（DPP-4），延长GLP-1和GIP的半衰期
+diabetes_medications,DM_MED_004,SGLT-2抑制剂,SGLT-2 Inhibitors,medication,钠-葡萄糖共转运蛋白抑制剂,adverse_effects.common,泌尿生殖系统感染; 多尿; 脱水
+diabetes_medications,DM_MED_004,SGLT-2抑制剂,SGLT-2 Inhibitors,medication,钠-葡萄糖共转运蛋白抑制剂,adverse_effects.serious,糖尿病酮症酸中毒（罕见）; Fournier坏疽（极罕见）; 下肢截肢风险（卡格列净）
+diabetes_medications,DM_MED_004,SGLT-2抑制剂,SGLT-2 Inhibitors,medication,钠-葡萄糖共转运蛋白抑制剂,cardiovascular_renal_benefits.mechanisms,可能与利尿、改善心脏代谢、直接器官保护有关
+diabetes_medications,DM_MED_004,SGLT-2抑制剂,SGLT-2 Inhibitors,medication,钠-葡萄糖共转运蛋白抑制剂,cardiovascular_renal_benefits.proven_benefits,降低心血管死亡; 降低心力衰竭住院; 延缓肾功能下降; 降低肾病进展
+diabetes_medications,DM_MED_004,SGLT-2抑制剂,SGLT-2 Inhibitors,medication,钠-葡萄糖共转运蛋白抑制剂,clinical_efficacy.bp_reduction,收缩压下降3-6mmHg
+diabetes_medications,DM_MED_004,SGLT-2抑制剂,SGLT-2 Inhibitors,medication,钠-葡萄糖共转运蛋白抑制剂,clinical_efficacy.cv_benefits,降低主要不良心血管事件
+diabetes_medications,DM_MED_004,SGLT-2抑制剂,SGLT-2 Inhibitors,medication,钠-葡萄糖共转运蛋白抑制剂,clinical_efficacy.hba1c_reduction,0.7-1.0%
+diabetes_medications,DM_MED_004,SGLT-2抑制剂,SGLT-2 Inhibitors,medication,钠-葡萄糖共转运蛋白抑制剂,clinical_efficacy.weight_reduction,2-3kg
+diabetes_medications,DM_MED_004,SGLT-2抑制剂,SGLT-2 Inhibitors,medication,钠-葡萄糖共转运蛋白抑制剂,contraindications,1型糖尿病（除特殊适应症）; 严重肾功能不全（eGFR <30）; 透析; 严重肝功能不全
+diabetes_medications,DM_MED_004,SGLT-2抑制剂,SGLT-2 Inhibitors,medication,钠-葡萄糖共转运蛋白抑制剂,description,通过抑制肾脏SGLT-2，增加尿糖排泄，同时具有心肾保护作用
+diabetes_medications,DM_MED_004,SGLT-2抑制剂,SGLT-2 Inhibitors,medication,钠-葡萄糖共转运蛋白抑制剂,drug_examples.canagliflozin.amputation_risk,下肢截肢风险轻度增加
+diabetes_medications,DM_MED_004,SGLT-2抑制剂,SGLT-2 Inhibitors,medication,钠-葡萄糖共转运蛋白抑制剂,drug_examples.canagliflozin.bone_effects,骨折风险可能增加
+diabetes_medications,DM_MED_004,SGLT-2抑制剂,SGLT-2 Inhibitors,medication,钠-葡萄糖共转运蛋白抑制剂,drug_examples.canagliflozin.dosing,100-300mg 每日1次
+diabetes_medications,DM_MED_004,SGLT-2抑制剂,SGLT-2 Inhibitors,medication,钠-葡萄糖共转运蛋白抑制剂,drug_examples.canagliflozin.name,卡格列净
+diabetes_medications,DM_MED_004,SGLT-2抑制剂,SGLT-2 Inhibitors,medication,钠-葡萄糖共转运蛋白抑制剂,drug_examples.dapagliflozin.ckd_indication,慢性肾病适应症
+diabetes_medications,DM_MED_004,SGLT-2抑制剂,SGLT-2 Inhibitors,medication,钠-葡萄糖共转运蛋白抑制剂,drug_examples.dapagliflozin.dosing,5-10mg 每日1次
+diabetes_medications,DM_MED_004,SGLT-2抑制剂,SGLT-2 Inhibitors,medication,钠-葡萄糖共转运蛋白抑制剂,drug_examples.dapagliflozin.heart_failure,心力衰竭适应症
+diabetes_medications,DM_MED_004,SGLT-2抑制剂,SGLT-2 Inhibitors,medication,钠-葡萄糖共转运蛋白抑制剂,drug_examples.dapagliflozin.name,达格列净
+diabetes_medications,DM_MED_004,SGLT-2抑制剂,SGLT-2 Inhibitors,medication,钠-葡萄糖共转运蛋白抑制剂,drug_examples.empagliflozin.cv_outcome,EMPA-REG OUTCOME研究证实心血管获益
+diabetes_medications,DM_MED_004,SGLT-2抑制剂,SGLT-2 Inhibitors,medication,钠-葡萄糖共转运蛋白抑制剂,drug_examples.empagliflozin.dosing,10-25mg 每日1次
+diabetes_medications,DM_MED_004,SGLT-2抑制剂,SGLT-2 Inhibitors,medication,钠-葡萄糖共转运蛋白抑制剂,drug_examples.empagliflozin.name,恩格列净
+diabetes_medications,DM_MED_004,SGLT-2抑制剂,SGLT-2 Inhibitors,medication,钠-葡萄糖共转运蛋白抑制剂,drug_examples.empagliflozin.renal_benefits,显著肾脏保护作用
+diabetes_medications,DM_MED_004,SGLT-2抑制剂,SGLT-2 Inhibitors,medication,钠-葡萄糖共转运蛋白抑制剂,mechanism_of_action.additional_effects,利尿作用; 血压下降; 体重减轻
+diabetes_medications,DM_MED_004,SGLT-2抑制剂,SGLT-2 Inhibitors,medication,钠-葡萄糖共转运蛋白抑制剂,mechanism_of_action.glucose_excretion,每天增加60-120g葡萄糖从尿液排出
+diabetes_medications,DM_MED_004,SGLT-2抑制剂,SGLT-2 Inhibitors,medication,钠-葡萄糖共转运蛋白抑制剂,mechanism_of_action.primary_mechanism,抑制肾脏近曲小管SGLT-2，阻止葡萄糖重吸收
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,advantages,强效降糖; 显著减重; 低血糖风险小; 心血管保护作用; 可能保护β细胞功能
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,adverse_effects.common,恶心、呕吐; 腹泻; 食欲减退; 注射部位反应
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,adverse_effects.serious_rare,急性胰腺炎; 胆囊疾病; 甲状腺髓样癌（理论风险）
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,clinical_efficacy.cv_benefits,降低主要不良心血管事件（部分药物）
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,clinical_efficacy.hba1c_reduction,0.8-1.5%
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,clinical_efficacy.weight_reduction,2-7kg
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,contraindications,1型糖尿病; 糖尿病酮症酸中毒; 严重胃肠道疾病; 个人或家族甲状腺髓样癌病史; 多发性内分泌腺瘤病2型
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,description,模拟内源性GLP-1作用，以葡萄糖依赖性方式降糖，同时具有减重和心血管保护作用
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,disadvantages,注射给药; 胃肠道副作用; 价格昂贵
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,drug_examples.long_acting.dulaglutide.convenience,预充注射笔
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,drug_examples.long_acting.dulaglutide.dosing,0.75-1.5mg 每周1次
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,drug_examples.long_acting.dulaglutide.name,度拉糖肽
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,drug_examples.long_acting.liraglutide.cv_outcome,LEADER研究证实心血管获益
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,drug_examples.long_acting.liraglutide.dosing,0.6-1.8mg 每日1次
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,drug_examples.long_acting.liraglutide.name,利拉鲁肽
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,drug_examples.long_acting.liraglutide.weight_indication,3.0mg用于减重
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,drug_examples.long_acting.semaglutide.dosing,0.25-1.0mg 每周1次
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,drug_examples.long_acting.semaglutide.efficacy,降糖和减重效果最强
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,drug_examples.long_acting.semaglutide.name,司美格鲁肽
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,drug_examples.long_acting.semaglutide.oral_form,口服制剂可用
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,drug_examples.short_acting.exenatide.dosing,5-10μg 每日2次，餐前60分钟内
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,drug_examples.short_acting.exenatide.half_life,2.4小时
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,drug_examples.short_acting.exenatide.name,艾塞那肽
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,drug_examples.short_acting.lixisenatide.dosing,10-20μg 每日1次，早餐前1小时
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,drug_examples.short_acting.lixisenatide.half_life,3小时
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,drug_examples.short_acting.lixisenatide.name,利西拉来
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,mechanism_of_action.central_effects,作用于下丘脑食欲调节中枢
+diabetes_medications,DM_MED_005,GLP-1受体激动剂,GLP-1 Receptor Agonists,medication,肠促胰素类药物,mechanism_of_action.primary_mechanisms,刺激胰岛β细胞葡萄糖依赖性胰岛素分泌; 抑制胰岛α细胞胰高血糖素分泌; 延缓胃排空; 增加饱腹感
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,adverse_effects.common,低血糖（最重要）; 体重增加; 注射部位反应; 脂肪萎缩或增生
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,adverse_effects.rare,严重过敏反应; 胰岛素抗体形成
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,classification.by_duration.intermediate_acting.duration,18-24小时
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,classification.by_duration.intermediate_acting.examples,NPH胰岛素
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,classification.by_duration.intermediate_acting.onset,1-2小时
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,classification.by_duration.intermediate_acting.peak,6-12小时
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,classification.by_duration.intermediate_acting.use,基础胰岛素
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,classification.by_duration.long_acting.duration,20-42小时
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,classification.by_duration.long_acting.examples,甘精胰岛素（来得时）; 地特胰岛素（诺和平）; 德谷胰岛素（诺和达）
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,classification.by_duration.long_acting.onset,1-6小时
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,classification.by_duration.long_acting.peak,无明显峰值
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,classification.by_duration.long_acting.use,基础胰岛素
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,classification.by_duration.rapid_acting.duration,3-5小时
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,classification.by_duration.rapid_acting.examples,门冬胰岛素（诺和锐）; 赖脯胰岛素（优泌乐）; 谷赖胰岛素（速秀霖）
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,classification.by_duration.rapid_acting.onset,10-15分钟
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,classification.by_duration.rapid_acting.peak,1-2小时
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,classification.by_duration.rapid_acting.use,餐前即刻注射
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,classification.by_duration.short_acting.duration,6-8小时
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,classification.by_duration.short_acting.examples,常规胰岛素
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,classification.by_duration.short_acting.onset,30分钟
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,classification.by_duration.short_acting.peak,2-4小时
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,classification.by_duration.short_acting.use,餐前30分钟注射
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,classification.premixed_insulin.composition,速效/中效胰岛素混合物
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,classification.premixed_insulin.convenience,减少注射次数
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,classification.premixed_insulin.examples,门冬胰岛素30/70; 赖脯胰岛素25/75; 常规胰岛素30/70
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,description,替代或补充内源性胰岛素，是唯一能治疗所有类型糖尿病的降糖药物
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,dosing_principles.basal_proportion,基础胰岛素占总量40-50%
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,dosing_principles.bolus_proportion,餐时胰岛素占总量50-60%
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,dosing_principles.starting_dose,0.2-0.5 U/kg/天
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,dosing_principles.titration,根据血糖监测结果调整
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,indications.absolute,1型糖尿病; 糖尿病酮症酸中毒; 高渗性高血糖状态; 围手术期血糖管理
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,indications.relative,2型糖尿病多种口服药物失效; 妊娠糖尿病; 急性应激状态; 严重感染
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,insulin_regimens.basal_bolus.advantages,最接近生理性胰岛素分泌
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,insulin_regimens.basal_bolus.components,长效基础胰岛素 + 餐前速效胰岛素
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,insulin_regimens.basal_bolus.description,基础-餐时胰岛素方案
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,insulin_regimens.insulin_pump.description,胰岛素泵持续皮下输注
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,insulin_regimens.insulin_pump.indications,1型糖尿病，血糖波动大的患者
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,insulin_regimens.premixed.advantages,简便，依从性好
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,insulin_regimens.premixed.description,预混胰岛素方案
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,insulin_regimens.premixed.frequency,每日2次
+diabetes_medications,DM_MED_006,胰岛素,Insulin,medication,胰岛素及类似物,storage_handling,未开封制剂需冷藏（2-8°C）; 使用中制剂可室温保存28天; 避免冷冻和高温; 注射前恢复至室温
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,classification.flash_glucose_monitoring.definition,闪测血糖监测系统（FGM）
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,classification.flash_glucose_monitoring.features,扫描获取血糖值; 14天连续佩戴; 无需校准; 防水设计
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,classification.flash_glucose_monitoring.representative,FreeStyle Libre系列
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,classification.real_time_cgm.definition,实时连续血糖监测系统（rtCGM）
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,classification.real_time_cgm.examples,Dexcom G6/G7; FreeStyle Libre 2; Medtronic Guardian; 雅培瞬感
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,classification.real_time_cgm.features,实时显示血糖值; 血糖趋势箭头; 高低血糖报警; 历史数据回顾
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,clinical_benefits.clinical_decision_support,血糖变异性评估; 餐后血糖模式识别; 运动对血糖的影响; 药物调整指导
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,clinical_benefits.glycemic_control.hba1c_reduction,0.3-0.5%的HbA1c下降
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,clinical_benefits.glycemic_control.hypoglycemia_reduction,严重低血糖事件减少
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,clinical_benefits.glycemic_control.time_in_range,目标范围内时间增加
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,clinical_benefits.lifestyle_impact,减少指血检测频次; 提高血糖管理信心; 改善生活质量; 夜间低血糖预警
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,description,实时监测间质液中葡萄糖浓度变化的医疗设备，提供连续血糖信息和趋势预警
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,indications,1型糖尿病患者; 胰岛素治疗的2型糖尿病; 妊娠糖尿病; 频发低血糖患者; 无症状低血糖患者
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,key_metrics.glucose_variability,血糖变异系数 <36%
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,key_metrics.time_above_range.level1,>10.0 mmol/L的时间 <25%
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,key_metrics.time_above_range.level2,>13.9 mmol/L的时间 <5%
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,key_metrics.time_below_range.level1,<3.9 mmol/L的时间 <4%
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,key_metrics.time_below_range.level2,<3.0 mmol/L的时间 <1%
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,key_metrics.time_in_range.definition,血糖在目标范围内的时间百分比
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,key_metrics.time_in_range.goals,成人>70%，老年人60-70%
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,key_metrics.time_in_range.target_range,3.9-10.0 mmol/L (70-180 mg/dL)
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,limitations,间质液与血糖存在15分钟滞后; 快速血糖变化时准确性下降; 仍需指血校准（部分系统）; 皮肤过敏风险; 成本相对较高
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,technical_specifications.accuracy,MARD <10%（平均绝对相对偏差）
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,technical_specifications.calibration,工厂校准或每日1-2次指血校准
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,technical_specifications.data_transmission,蓝牙、NFC近场通信
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,technical_specifications.measurement_range,2.2-22.2 mmol/L (40-400 mg/dL)
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,technical_specifications.sensor_life,10-14天
+diabetes_technology_devices,DM_TECH_001,连续血糖监测系统,Continuous Glucose Monitoring (CGM),medical_device,血糖监测技术,technical_specifications.waterproof_rating,IPX8防水等级
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,advanced_features.cgm_integration,与连续血糖监测系统整合
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,advanced_features.data_management,云端数据存储和分析
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,advanced_features.low_glucose_suspend,低血糖自动暂停功能
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,advanced_features.mobile_connectivity,智能手机应用控制
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,advanced_features.predictive_algorithms,预测性低血糖管理
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,clinical_benefits.glycemic_outcomes,HbA1c改善0.2-0.5%; 减少血糖波动; 降低严重低血糖风险; 提高目标范围内时间
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,clinical_benefits.lifestyle_benefits,灵活的进餐时间; 精确的运动前调整; 减少注射次数; 改善睡眠质量
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,complications_management,导管堵塞处理; 皮下硬结预防; 感染风险控制; 酮症预防; 设备故障应急预案
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,contraindications,认知功能严重障碍; 精神疾病未控制; 不愿意频繁监测血糖; 严重皮肤疾病; 经济条件限制
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,description,持续皮下胰岛素输注系统，模拟胰岛β细胞生理性胰岛素分泌模式
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,indications,1型糖尿病（优先推荐）; C肽显著缺乏的患者; 多次胰岛素注射控制不佳; 频发低血糖; 血糖波动大; 生活方式不规律
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,insulin_delivery_modes.basal_rate.adjustment,根据血糖模式精细调整
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,insulin_delivery_modes.basal_rate.definition,基础胰岛素输注率
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,insulin_delivery_modes.basal_rate.programmability,可设置24段不同的基础率
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,insulin_delivery_modes.basal_rate.typical_pattern,凌晨增加（黎明现象对抗）
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,insulin_delivery_modes.bolus_delivery.bolus_calculator,内置大剂量计算器
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,insulin_delivery_modes.bolus_delivery.correction_bolus,高血糖纠正剂量
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,insulin_delivery_modes.bolus_delivery.delivery_options,标准大剂量; 方波大剂量; 双波大剂量
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,insulin_delivery_modes.bolus_delivery.meal_bolus,餐前大剂量
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,system_components.infusion_set.change_frequency,每2-3天更换
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,system_components.infusion_set.components,输注管路、钢针或软管
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,system_components.infusion_set.placement,腹部、臀部、大腿等部位
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,system_components.insulin_reservoir.capacity,160-480单位
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,system_components.insulin_reservoir.insulin_type,速效胰岛素类似物
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,system_components.insulin_reservoir.stability,室温下稳定28天
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,system_components.pump_device.features,可编程基础率; 大剂量向导; 多种报警功能; 防水设计
+diabetes_technology_devices,DM_TECH_002,胰岛素泵系统,Insulin Pump System,medical_device,胰岛素输注技术,system_components.pump_device.function,胰岛素储存和精确输注
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,clinical_outcomes.glycemic_improvements,目标范围内时间增加10-15%; 夜间血糖控制显著改善; 减少低血糖事件50%以上; HbA1c下降0.3-0.5%
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,clinical_outcomes.quality_of_life,减少血糖管理负担; 改善睡眠质量; 降低糖尿病焦虑; 提高治疗满意度
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,commercial_systems.medtronic_670g.features,混合闭环系统; 自动基础率调节; 需手动餐前大剂量; 低血糖自动保护
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,commercial_systems.medtronic_670g.name,美敦力MiniMed 670G
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,commercial_systems.medtronic_670g.target_range,6.7-10.0 mmol/L
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,commercial_systems.omnipod_5.features,无管路设计; 自适应学习算法; 智能手机控制
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,commercial_systems.omnipod_5.name,Omnipod 5
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,commercial_systems.tandem_control_iq.features,预测性低血糖保护; 自动纠正大剂量; 睡眠模式; 运动模式
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,commercial_systems.tandem_control_iq.name,Tandem Control-IQ
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,control_algorithms.machine_learning_algorithms.advantages,个体化适应性强
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,control_algorithms.machine_learning_algorithms.challenges,需要大量训练数据
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,control_algorithms.machine_learning_algorithms.name,机器学习算法
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,control_algorithms.machine_learning_algorithms.types,神经网络; 强化学习; 模糊逻辑
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,control_algorithms.model_predictive_control.advantages,前瞻性调节，效果更佳
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,control_algorithms.model_predictive_control.complexity,计算复杂度高
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,control_algorithms.model_predictive_control.name,模型预测控制（MPC）
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,control_algorithms.model_predictive_control.principle,基于生理模型预测血糖趋势
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,control_algorithms.pid_controller.advantages,简单稳定
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,control_algorithms.pid_controller.limitations,应对复杂情况能力有限
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,control_algorithms.pid_controller.name,比例-积分-微分控制器
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,control_algorithms.pid_controller.principle,基于血糖偏差调整胰岛素输注
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,current_limitations,仍需手动餐前大剂量; 血糖传感器滞后性; 胰高血糖素缺乏; 系统复杂性; 成本高昂
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,description,集成CGM、胰岛素泵和智能算法的自动化血糖管理系统，又称闭环系统
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,future_developments.advanced_meal_detection,自动餐食识别算法
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,future_developments.dual_hormone_systems,胰岛素+胰高血糖素双激素系统
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,future_developments.exercise_adaptation,运动自适应调节
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,future_developments.implantable_systems,植入式闭环系统
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,future_developments.multivariable_control,多变量协调控制
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,system_architecture.continuous_glucose_monitor,实时血糖数据采集
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,system_architecture.control_algorithm,智能胰岛素调节算法
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,system_architecture.insulin_pump,自动胰岛素输注
+diabetes_technology_devices,DM_TECH_003,人工胰腺系统,Artificial Pancreas System (APS),medical_device,闭环血糖控制系统,system_architecture.user_interface,患者交互和监控界面
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,clinical_validation.accuracy_studies,大规模临床准确性验证
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,clinical_validation.clinical_outcomes,血糖控制改善证据
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,clinical_validation.cost_effectiveness,卫生经济学评价
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,clinical_validation.user_satisfaction,患者使用满意度调查
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,core_features.accurate_measurement.accuracy_standard,ISO 15197:2013标准
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,core_features.accurate_measurement.sample_volume,0.3-1.0μL微量血样
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,core_features.accurate_measurement.test_strips,电化学检测技术
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,core_features.accurate_measurement.test_time,5-10秒快速检测
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,core_features.connectivity.bluetooth,蓝牙4.0/5.0连接
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,core_features.connectivity.nfc,近场通信技术
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,core_features.connectivity.usb,USB数据传输
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,core_features.connectivity.wifi,WiFi云端同步
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,core_features.data_management.automatic_logging,自动记录血糖数据
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,core_features.data_management.cloud_storage,云端数据存储
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,core_features.data_management.pattern_recognition,血糖模式识别
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,core_features.data_management.trend_analysis,血糖趋势图表
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,description,具备数据管理、趋势分析和智能提醒功能的新一代血糖仪
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,intelligent_functions.clinical_support,血糖日志自动生成; 医生报告制作; 用药依从性监测; 并发症风险评估
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,intelligent_functions.personalized_insights,个性化血糖目标设定; 餐前餐后血糖关联分析; 药物效果评估; 生活方式影响分析
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,intelligent_functions.predictive_alerts,低血糖风险预警; 测试时间提醒; 异常值报警; 复测建议
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,mobile_applications.healthcare_provider_portals.data_analytics,大数据分析
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,mobile_applications.healthcare_provider_portals.population_health,人群健康管理
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,mobile_applications.healthcare_provider_portals.remote_monitoring,远程患者监控
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,mobile_applications.healthcare_provider_portals.treatment_optimization,治疗方案优化
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,mobile_applications.patient_apps.community,患者社区交流
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,mobile_applications.patient_apps.education,糖尿病教育内容
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,mobile_applications.patient_apps.functions,实时血糖查看; 历史数据回顾; 药物记录; 饮食日志; 运动追踪; 症状记录
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,representative_devices.accu_chek_guide.accuracy,符合ISO 15197:2013
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,representative_devices.accu_chek_guide.features,蓝牙连接; smartLIGHT提示; 双重确认
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,representative_devices.accu_chek_guide.manufacturer,罗氏
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,representative_devices.freestyle_lite.features,无编码; 快速检测; 小血样
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,representative_devices.freestyle_lite.integration,与FreeStyle LibreLink整合
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,representative_devices.freestyle_lite.manufacturer,雅培
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,representative_devices.onetouch_verio.connectivity,蓝牙和USB
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,representative_devices.onetouch_verio.features,彩色屏幕; 趋势箭头; 14天平均值
+diabetes_technology_devices,DM_TECH_004,智能血糖仪,Smart Blood Glucose Meter,medical_device,血糖监测设备,representative_devices.onetouch_verio.manufacturer,强生
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,artificial_intelligence_applications.computer_vision.food_recognition,食物识别和营养分析
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,artificial_intelligence_applications.computer_vision.medication_identification,药物识别
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,artificial_intelligence_applications.computer_vision.retinal_screening,视网膜病变筛查
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,artificial_intelligence_applications.computer_vision.wound_assessment,糖尿病足创面评估
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,artificial_intelligence_applications.machine_learning_models.complications_screening,并发症筛查算法
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,artificial_intelligence_applications.machine_learning_models.glucose_prediction,血糖水平预测模型
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,artificial_intelligence_applications.machine_learning_models.hypoglycemia_risk,低血糖风险评估
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,artificial_intelligence_applications.machine_learning_models.treatment_response,治疗反应预测
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,artificial_intelligence_applications.natural_language_processing.clinical_note_analysis,临床记录分析
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,artificial_intelligence_applications.natural_language_processing.literature_mining,医学文献挖掘
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,artificial_intelligence_applications.natural_language_processing.patient_communication,智能患者交流
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,artificial_intelligence_applications.natural_language_processing.symptom_extraction,症状信息提取
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,clinical_applications.population_health_management.cohort_analysis,患者队列分析
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,clinical_applications.population_health_management.public_health_insights,公共卫生洞察
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,clinical_applications.population_health_management.quality_metrics,护理质量指标
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,clinical_applications.population_health_management.resource_optimization,医疗资源优化
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,clinical_applications.precision_medicine.biomarker_analysis,生物标志物分析
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,clinical_applications.precision_medicine.genetic_integration,基因信息整合
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,clinical_applications.precision_medicine.therapeutic_targeting,靶向治疗选择
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,clinical_applications.precision_medicine.treatment_stratification,治疗分层策略
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,clinical_applications.remote_patient_monitoring.care_coordination,多学科协作
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,clinical_applications.remote_patient_monitoring.continuous_surveillance,持续患者监护
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,clinical_applications.remote_patient_monitoring.early_intervention,早期干预触发
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,clinical_applications.remote_patient_monitoring.emergency_response,紧急情况响应
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,description,集成多种数据源，提供综合性糖尿病管理和临床决策支持的数字化平台
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,implementation_challenges.clinical_adoption,工作流程整合; 培训需求; 医疗文化变革; 效果评估
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,implementation_challenges.economic_factors,投资回报率; 成本效益分析; 保险覆盖; 可持续发展模式
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,implementation_challenges.technical_barriers,数据标准化; 系统集成复杂性; 网络安全威胁; 设备兼容性
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,key_functionalities.clinical_decision_support.evidence_based_alerts,循证医学提醒
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,key_functionalities.clinical_decision_support.guideline_integration,临床指南整合
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,key_functionalities.clinical_decision_support.outcome_prediction,治疗结果预测
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,key_functionalities.clinical_decision_support.treatment_pathways,治疗路径指导
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,key_functionalities.comprehensive_monitoring.anomaly_detection,异常情况自动识别
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,key_functionalities.comprehensive_monitoring.longitudinal_analysis,纵向数据趋势分析
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,key_functionalities.comprehensive_monitoring.multi_parameter_correlation,多参数关联分析
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,key_functionalities.comprehensive_monitoring.real_time_tracking,实时健康指标追踪
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,key_functionalities.personalized_recommendations.exercise_guidance,运动处方制定
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,key_functionalities.personalized_recommendations.insulin_dosing,个性化胰岛素剂量建议
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,key_functionalities.personalized_recommendations.meal_planning,个体化膳食计划
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,key_functionalities.personalized_recommendations.medication_optimization,药物治疗优化
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,platform_architecture.analytics_engine.intervention_recommendations,干预建议生成
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,platform_architecture.analytics_engine.pattern_recognition,血糖模式识别算法
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,platform_architecture.analytics_engine.predictive_modeling,血糖预测模型
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,platform_architecture.analytics_engine.risk_stratification,并发症风险分层
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,platform_architecture.data_integration.activity_data,运动和活动追踪
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,platform_architecture.data_integration.clinical_data,实验室检查结果
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,platform_architecture.data_integration.glucose_data,血糖仪、CGM数据整合
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,platform_architecture.data_integration.insulin_data,胰岛素泵输注记录
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,platform_architecture.data_integration.medication_data,用药记录和依从性
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,platform_architecture.data_integration.nutrition_data,饮食和营养信息
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,platform_architecture.user_interfaces.clinician_portal,医护人员临床工作站
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,platform_architecture.user_interfaces.mobile_apps,移动端应用程序
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,platform_architecture.user_interfaces.patient_dashboard,患者个人健康仪表板
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,platform_architecture.user_interfaces.web_platform,网页端管理平台
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,regulatory_considerations.clinical_validation,临床有效性验证
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,regulatory_considerations.data_privacy,患者隐私保护（HIPAA、GDPR合规）
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,regulatory_considerations.interoperability_standards,互操作性标准（FHIR、HL7）
+diabetes_technology_devices,DM_TECH_005,糖尿病管理数字平台,Diabetes Digital Management Platform,software_platform,数字健康解决方案,regulatory_considerations.medical_device_classification,医疗器械分类认证
+relationships,REL_001,糖尿病 -> 原发性高血压,,comorbidity,relationship,bidirectional,True
+relationships,REL_001,糖尿病 -> 原发性高血压,,comorbidity,relationship,description,糖尿病与高血压常共存，相互影响
+relationships,REL_001,糖尿病 -> 原发性高血压,,comorbidity,relationship,management_impact,需要更严格的血压控制目标
+relationships,REL_001,糖尿病 -> 原发性高血压,,comorbidity,relationship,prevalence,0.75
+relationships,REL_001,糖尿病 -> 原发性高血压,,comorbidity,relationship,source,DIS_001
+relationships,REL_001,糖尿病 -> 原发性高血压,,comorbidity,relationship,source_name,糖尿病
+relationships,REL_001,糖尿病 -> 原发性高血压,,comorbidity,relationship,target,HTN_001
+relationships,REL_001,糖尿病 -> 原发性高血压,,comorbidity,relationship,target_name,原发性高血压
+relationships,REL_001,糖尿病 -> 原发性高血压,,comorbidity,relationship,type,comorbidity
+relationships,REL_002,糖尿病 -> 血脂异常,,comorbidity,relationship,description,糖尿病与血脂异常共病，增加心血管风险
+relationships,REL_002,糖尿病 -> 血脂异常,,comorbidity,relationship,prevalence,0.6
+relationships,REL_002,糖尿病 -> 血脂异常,,comorbidity,relationship,risk_multiplier,3.5
+relationships,REL_002,糖尿病 -> 血脂异常,,comorbidity,relationship,source,DIS_001
+relationships,REL_002,糖尿病 -> 血脂异常,,comorbidity,relationship,source_name,糖尿病
+relationships,REL_002,糖尿病 -> 血脂异常,,comorbidity,relationship,target,DLP_001
+relationships,REL_002,糖尿病 -> 血脂异常,,comorbidity,relationship,target_name,血脂异常
+relationships,REL_002,糖尿病 -> 血脂异常,,comorbidity,relationship,treatment_modification,LDL-C目标更严格
+relationships,REL_002,糖尿病 -> 血脂异常,,comorbidity,relationship,type,comorbidity
+relationships,REL_004,甲状腺功能亢进症 -> 糖尿病,,metabolic_association,relationship,description,甲亢可导致血糖升高和胰岛素抵抗
+relationships,REL_004,甲状腺功能亢进症 -> 糖尿病,,metabolic_association,relationship,mechanism,甲状腺激素增加糖原分解和糖异生
+relationships,REL_004,甲状腺功能亢进症 -> 糖尿病,,metabolic_association,relationship,prevalence,0.15
+relationships,REL_004,甲状腺功能亢进症 -> 糖尿病,,metabolic_association,relationship,source,THY_001
+relationships,REL_004,甲状腺功能亢进症 -> 糖尿病,,metabolic_association,relationship,source_name,甲状腺功能亢进症
+relationships,REL_004,甲状腺功能亢进症 -> 糖尿病,,metabolic_association,relationship,target,DIS_001
+relationships,REL_004,甲状腺功能亢进症 -> 糖尿病,,metabolic_association,relationship,target_name,糖尿病
+relationships,REL_004,甲状腺功能亢进症 -> 糖尿病,,metabolic_association,relationship,treatment_consideration,甲亢控制后血糖通常改善
+relationships,REL_004,甲状腺功能亢进症 -> 糖尿病,,metabolic_association,relationship,type,metabolic_association
+relationships,REL_006,库欣综合征 -> 糖尿病,,hormonal_interaction,relationship,description,库欣综合征导致糖尿病
+relationships,REL_006,库欣综合征 -> 糖尿病,,hormonal_interaction,relationship,mechanism,皮质醇过多引起胰岛素抵抗
+relationships,REL_006,库欣综合征 -> 糖尿病,,hormonal_interaction,relationship,prevalence,0.8
+relationships,REL_006,库欣综合征 -> 糖尿病,,hormonal_interaction,relationship,severity,通常为严重糖尿病
+relationships,REL_006,库欣综合征 -> 糖尿病,,hormonal_interaction,relationship,source,ADR_002
+relationships,REL_006,库欣综合征 -> 糖尿病,,hormonal_interaction,relationship,source_name,库欣综合征
+relationships,REL_006,库欣综合征 -> 糖尿病,,hormonal_interaction,relationship,target,DIS_001
+relationships,REL_006,库欣综合征 -> 糖尿病,,hormonal_interaction,relationship,target_name,糖尿病
+relationships,REL_006,库欣综合征 -> 糖尿病,,hormonal_interaction,relationship,type,hormonal_interaction
+relationships,REL_010,糖尿病 -> 肢端肥大症,,shared_pathophysiology,relationship,clinical_impact,需调整GH替代治疗剂量
+relationships,REL_010,糖尿病 -> 肢端肥大症,,shared_pathophysiology,relationship,description,糖尿病患者IGF-1水平影响生长激素治疗
+relationships,REL_010,糖尿病 -> 肢端肥大症,,shared_pathophysiology,relationship,mechanism,IGF-1介导的负反馈调节
+relationships,REL_010,糖尿病 -> 肢端肥大症,,shared_pathophysiology,relationship,source,DIS_001
+relationships,REL_010,糖尿病 -> 肢端肥大症,,shared_pathophysiology,relationship,source_name,糖尿病
+relationships,REL_010,糖尿病 -> 肢端肥大症,,shared_pathophysiology,relationship,target,PIT_003
+relationships,REL_010,糖尿病 -> 肢端肥大症,,shared_pathophysiology,relationship,target_name,肢端肥大症
+relationships,REL_010,糖尿病 -> 肢端肥大症,,shared_pathophysiology,relationship,type,shared_pathophysiology
+relationships,REL_011,多囊卵巢综合征 -> 糖尿病,,metabolic_comorbidity,relationship,description,PCOS患者糖尿病发病风险显著增加
+relationships,REL_011,多囊卵巢综合征 -> 糖尿病,,metabolic_comorbidity,relationship,mechanism,胰岛素抵抗是共同病理基础
+relationships,REL_011,多囊卵巢综合征 -> 糖尿病,,metabolic_comorbidity,relationship,prevalence,0.35
+relationships,REL_011,多囊卵巢综合征 -> 糖尿病,,metabolic_comorbidity,relationship,relative_risk,4.0
+relationships,REL_011,多囊卵巢综合征 -> 糖尿病,,metabolic_comorbidity,relationship,screening_recommendation,PCOS患者应定期进行糖尿病筛查
+relationships,REL_011,多囊卵巢综合征 -> 糖尿病,,metabolic_comorbidity,relationship,source,GON_001
+relationships,REL_011,多囊卵巢综合征 -> 糖尿病,,metabolic_comorbidity,relationship,source_name,多囊卵巢综合征
+relationships,REL_011,多囊卵巢综合征 -> 糖尿病,,metabolic_comorbidity,relationship,target,DIS_001
+relationships,REL_011,多囊卵巢综合征 -> 糖尿病,,metabolic_comorbidity,relationship,target_name,糖尿病
+relationships,REL_011,多囊卵巢综合征 -> 糖尿病,,metabolic_comorbidity,relationship,type,metabolic_comorbidity
+relationships,REL_014,男性性腺功能减退症 -> 糖尿病,,hormonal_association,relationship,bidirectional,True
+relationships,REL_014,男性性腺功能减退症 -> 糖尿病,,hormonal_association,relationship,description,男性性腺功能减退与2型糖尿病相互关联
+relationships,REL_014,男性性腺功能减退症 -> 糖尿病,,hormonal_association,relationship,mechanism,睾酮影响胰岛素敏感性，糖尿病影响性腺轴
+relationships,REL_014,男性性腺功能减退症 -> 糖尿病,,hormonal_association,relationship,source,GON_002
+relationships,REL_014,男性性腺功能减退症 -> 糖尿病,,hormonal_association,relationship,source_name,男性性腺功能减退症
+relationships,REL_014,男性性腺功能减退症 -> 糖尿病,,hormonal_association,relationship,target,DIS_001
+relationships,REL_014,男性性腺功能减退症 -> 糖尿病,,hormonal_association,relationship,target_name,糖尿病
+relationships,REL_014,男性性腺功能减退症 -> 糖尿病,,hormonal_association,relationship,treatment_synergy,睾酮替代可改善糖代谢
+relationships,REL_014,男性性腺功能减退症 -> 糖尿病,,hormonal_association,relationship,type,hormonal_association
+relationships,REL_020,糖尿病 -> CVD_001,,increases_risk,relationship,confidence_interval,2.1-3.0
+relationships,REL_020,糖尿病 -> CVD_001,,increases_risk,relationship,description,糖尿病显著增加冠心病风险
+relationships,REL_020,糖尿病 -> CVD_001,,increases_risk,relationship,mechanisms,高血糖促进动脉粥样硬化; 炎症反应激活; 内皮功能障碍; 血小板聚集增强
+relationships,REL_020,糖尿病 -> CVD_001,,increases_risk,relationship,prevention_strategy,严格血糖控制，LDL-C目标<1.8mmol/L
+relationships,REL_020,糖尿病 -> CVD_001,,increases_risk,relationship,risk_ratio,2.5
+relationships,REL_020,糖尿病 -> CVD_001,,increases_risk,relationship,source,DIS_001
+relationships,REL_020,糖尿病 -> CVD_001,,increases_risk,relationship,source_name,糖尿病
+relationships,REL_020,糖尿病 -> CVD_001,,increases_risk,relationship,target,CVD_001
+relationships,REL_020,糖尿病 -> CVD_001,,increases_risk,relationship,target_name,CVD_001
+relationships,REL_020,糖尿病 -> CVD_001,,increases_risk,relationship,type,increases_risk
+relationships,REL_021,糖尿病 -> 急性心肌梗死,,increases_risk,relationship,description,糖尿病患者心肌梗死风险增加且预后更差
+relationships,REL_021,糖尿病 -> 急性心肌梗死,,increases_risk,relationship,management_considerations,早期识别非典型症状; 积极的血运重建策略; 强化二级预防
+relationships,REL_021,糖尿病 -> 急性心肌梗死,,increases_risk,relationship,prognosis,糖尿病患者心梗后死亡率增加50%
+relationships,REL_021,糖尿病 -> 急性心肌梗死,,increases_risk,relationship,risk_ratio,3.0
+relationships,REL_021,糖尿病 -> 急性心肌梗死,,increases_risk,relationship,silent_mi_risk,糖尿病患者无症状心梗风险增加2倍
+relationships,REL_021,糖尿病 -> 急性心肌梗死,,increases_risk,relationship,source,DIS_001
+relationships,REL_021,糖尿病 -> 急性心肌梗死,,increases_risk,relationship,source_name,糖尿病
+relationships,REL_021,糖尿病 -> 急性心肌梗死,,increases_risk,relationship,target,CVD_002
+relationships,REL_021,糖尿病 -> 急性心肌梗死,,increases_risk,relationship,target_name,急性心肌梗死
+relationships,REL_021,糖尿病 -> 急性心肌梗死,,increases_risk,relationship,type,increases_risk
+relationships,REL_022,糖尿病 -> 急性缺血性脑卒中,,increases_risk,relationship,age_specific_risk.elderly,老年患者绝对风险更高
+relationships,REL_022,糖尿病 -> 急性缺血性脑卒中,,increases_risk,relationship,age_specific_risk.young_adults,年轻糖尿病患者卒中风险增加更显著
+relationships,REL_022,糖尿病 -> 急性缺血性脑卒中,,increases_risk,relationship,confidence_interval,1.9-2.8
+relationships,REL_022,糖尿病 -> 急性缺血性脑卒中,,increases_risk,relationship,description,糖尿病增加缺血性脑卒中风险
+relationships,REL_022,糖尿病 -> 急性缺血性脑卒中,,increases_risk,relationship,prevention.antiplatelet,阿司匹林一级预防（高危患者）
+relationships,REL_022,糖尿病 -> 急性缺血性脑卒中,,increases_risk,relationship,prevention.primary,血糖、血压、血脂综合控制
+relationships,REL_022,糖尿病 -> 急性缺血性脑卒中,,increases_risk,relationship,risk_ratio,2.3
+relationships,REL_022,糖尿病 -> 急性缺血性脑卒中,,increases_risk,relationship,source,DIS_001
+relationships,REL_022,糖尿病 -> 急性缺血性脑卒中,,increases_risk,relationship,source_name,糖尿病
+relationships,REL_022,糖尿病 -> 急性缺血性脑卒中,,increases_risk,relationship,stroke_characteristics,多为小血管病变引起; 更易发生多发性梗死; 预后相对较差
+relationships,REL_022,糖尿病 -> 急性缺血性脑卒中,,increases_risk,relationship,target,CBVD_001
+relationships,REL_022,糖尿病 -> 急性缺血性脑卒中,,increases_risk,relationship,target_name,急性缺血性脑卒中
+relationships,REL_022,糖尿病 -> 急性缺血性脑卒中,,increases_risk,relationship,type,increases_risk
+relationships,REL_026,糖尿病 -> 糖尿病周围神经病变,,increases_risk,relationship,description,糖尿病是周围神经病变的主要病因
+relationships,REL_026,糖尿病 -> 糖尿病周围神经病变,,increases_risk,relationship,prevalence,糖尿病患者中20-50%出现
+relationships,REL_026,糖尿病 -> 糖尿病周围神经病变,,increases_risk,relationship,prevention,严格血糖控制可预防或延缓神经病变
+relationships,REL_026,糖尿病 -> 糖尿病周围神经病变,,increases_risk,relationship,risk_factors,病程长; 血糖控制不良; HbA1c持续>8%
+relationships,REL_026,糖尿病 -> 糖尿病周围神经病变,,increases_risk,relationship,source,DIS_001
+relationships,REL_026,糖尿病 -> 糖尿病周围神经病变,,increases_risk,relationship,source_name,糖尿病
+relationships,REL_026,糖尿病 -> 糖尿病周围神经病变,,increases_risk,relationship,target,NEURO_001
+relationships,REL_026,糖尿病 -> 糖尿病周围神经病变,,increases_risk,relationship,target_name,糖尿病周围神经病变
+relationships,REL_026,糖尿病 -> 糖尿病周围神经病变,,increases_risk,relationship,type,increases_risk
+relationships,REL_027,糖尿病 -> 糖尿病自主神经病变,,increases_risk,relationship,cardiovascular_impact,无症状心肌梗死风险增加; 猝死风险增加2-3倍; 运动耐量下降
+relationships,REL_027,糖尿病 -> 糖尿病自主神经病变,,increases_risk,relationship,description,糖尿病自主神经病变严重影响心血管预后
+relationships,REL_027,糖尿病 -> 糖尿病自主神经病变,,increases_risk,relationship,screening,糖尿病患者应定期筛查自主神经功能
+relationships,REL_027,糖尿病 -> 糖尿病自主神经病变,,increases_risk,relationship,source,DIS_001
+relationships,REL_027,糖尿病 -> 糖尿病自主神经病变,,increases_risk,relationship,source_name,糖尿病
+relationships,REL_027,糖尿病 -> 糖尿病自主神经病变,,increases_risk,relationship,target,NEURO_002
+relationships,REL_027,糖尿病 -> 糖尿病自主神经病变,,increases_risk,relationship,target_name,糖尿病自主神经病变
+relationships,REL_027,糖尿病 -> 糖尿病自主神经病变,,increases_risk,relationship,type,increases_risk
+relationships,REL_030,急性缺血性脑卒中 -> 糖尿病周围神经病变,,complication_of,relationship,description,脑卒中后可出现继发性神经功能缺损
+relationships,REL_030,急性缺血性脑卒中 -> 糖尿病周围神经病变,,complication_of,relationship,neurological_sequelae,偏瘫; 感觉障碍; 语言功能障碍; 认知功能损害
+relationships,REL_030,急性缺血性脑卒中 -> 糖尿病周围神经病变,,complication_of,relationship,rehabilitation,多学科康复团队综合治疗
+relationships,REL_030,急性缺血性脑卒中 -> 糖尿病周围神经病变,,complication_of,relationship,source,CBVD_001
+relationships,REL_030,急性缺血性脑卒中 -> 糖尿病周围神经病变,,complication_of,relationship,source_name,急性缺血性脑卒中
+relationships,REL_030,急性缺血性脑卒中 -> 糖尿病周围神经病变,,complication_of,relationship,target,NEURO_001
+relationships,REL_030,急性缺血性脑卒中 -> 糖尿病周围神经病变,,complication_of,relationship,target_name,糖尿病周围神经病变
+relationships,REL_030,急性缺血性脑卒中 -> 糖尿病周围神经病变,,complication_of,relationship,type,complication_of
