@@ -1,0 +1,21 @@
+decision_id,decision_name,decision_name_en,category,subcategory,evidence_level,guideline_source,clinical_scenario,patient_population,decision_criteria,recommendation_grade,treatment_algorithm,monitoring_protocol,outcome_measures,implementation_notes
+EBD001,AACE 2025血脂管理算法,AACE 2025 Lipid Management Algorithm,循证决策支持,血脂管理,A级,AACE 2025,糖尿病患者心血管风险评估,成人糖尿病患者,LDL-C>1.8mmol/L + 糖尿病 + 心血管风险因素,强烈推荐,他汀类药物 → PCSK9抑制剂 → 依折麦布,LDL-C每3个月 + 肝功能每6个月,LDL-C<1.4mmol/L + 心血管事件减少,多学科团队协作实施
+EBD002,ADA 2025糖尿病个体化治疗,ADA 2025 Individualized Diabetes Care,循证决策支持,血糖管理,A级,ADA 2025,2型糖尿病综合管理,新诊断2型糖尿病患者,HbA1c>7% + 个体化目标设定,强烈推荐,二甲双胍 → GLP-1RA/SGLT2i → 胰岛素,HbA1c每3个月 + 并发症筛查每年,HbA1c达标 + 低血糖事件最少,以患者为中心的护理模式
+EBD003,C.a.R.E.诊所多学科协作模式,C.a.R.E. Clinic Multidisciplinary Model,循证决策支持,多学科协作,B级,Toronto General Hospital 2024,糖尿病合并心肾疾病,糖尿病 + 慢性肾病 + 心血管疾病,eGFR<60 + 蛋白尿 + 心血管疾病史,推荐,心肾内分泌一体化评估 → 统一治疗方案,每月综合评估 + 专科随访,心肾功能稳定 + 生活质量改善,需要专门的多学科团队培训
+EBD004,KDIGO 2024 CKD-MBD管理,KDIGO 2024 CKD-MBD Management,循证决策支持,矿物质代谢,A级,KDIGO 2024,慢性肾脏病矿物质代谢紊乱,CKD 3-5期患者,eGFR<60 + 血磷升高 + PTH升高,强烈推荐,磷结合剂 → 活性维生素D → 拟钙剂,PTH每3个月 + 骨密度每年,PTH目标范围 + 骨折风险降低,需要肾科内分泌科密切协作
+EBD005,Endocrine Society 2024甲状腺结节管理,Endocrine Society 2024 Thyroid Nodule Management,循证决策支持,甲状腺疾病,A级,Endocrine Society 2024,甲状腺结节评估,甲状腺结节患者,结节>1cm + 超声可疑特征,强烈推荐,超声评估 → FNA活检 → 分子检测,TSH每6个月 + 超声每年,恶性肿瘤检出率 + 不必要活检减少,需要超声医师专业培训
+EBD006,ATA 2024甲状腺功能异常筛查,ATA 2024 Thyroid Function Screening,循证决策支持,甲状腺筛查,A级,ATA 2024,甲状腺功能筛查策略,高危人群甲状腺筛查,年龄>60岁 + 家族史 + 自身免疫病,推荐,TSH筛查 → FT4检测 → 抗体检测,TSH每2年 + 症状评估,甲状腺疾病早期发现率,成本效益分析支持筛查策略
+EBD007,骨质疏松症防治整合指南,Integrated Osteoporosis Prevention Guidelines,循证决策支持,骨代谢疾病,A级,IOF/AACE 2024,骨质疏松症风险评估,绝经后女性和老年男性,FRAX评分>20% + 骨密度T值<-2.5,强烈推荐,双膦酸盐 → 地舒单抗 → 特立帕肽,骨密度每2年 + 骨折监测,骨折风险降低 + 生活质量改善,需要多学科骨健康团队
+EBD008,PCOS综合管理算法,PCOS Comprehensive Management Algorithm,循证决策支持,生殖内分泌,A级,ASRM/ES 2024,多囊卵巢综合征管理,育龄期PCOS女性,Rotterdam标准诊断 + 代谢异常,强烈推荐,生活方式干预 → 二甲双胍 → 促排卵治疗,月经周期 + 代谢指标每3个月,排卵恢复 + 代谢改善,需要妇科内分泌科协作
+EBD009,肾上腺偶发瘤处理流程,Adrenal Incidentaloma Management Protocol,循证决策支持,肾上腺疾病,A级,Endocrine Society 2024,肾上腺偶发瘤评估,无症状肾上腺肿块患者,影像学发现肾上腺肿块 + 无明显症状,推荐,激素功能评估 → 影像学特征分析 → 随访或手术,激素功能每年 + 影像学随访,恶性肿瘤排除 + 功能性肿瘤识别,需要多学科MDT讨论
+EBD010,垂体腺瘤多学科诊疗,Pituitary Adenoma Multidisciplinary Care,循证决策支持,垂体疾病,A级,Endocrine Society 2024,垂体腺瘤综合管理,垂体腺瘤患者,垂体MRI异常 + 激素功能异常,强烈推荐,内科治疗 → 手术治疗 → 放疗,激素功能每3个月 + MRI每年,激素正常化 + 肿瘤控制,需要神经外科内分泌科协作
+EBD011,妊娠期糖尿病筛查管理,GDM Screening and Management,循证决策支持,妊娠期内分泌,A级,ACOG/ADA 2024,妊娠期糖尿病管理,妊娠24-28周孕妇,OGTT异常 + 妊娠期首次发现,强烈推荐,饮食控制 → 胰岛素治疗 → 产后随访,血糖每周 + 胎儿监测,母儿结局改善 + 远期糖尿病预防,需要产科内分泌科协作
+EBD012,老年糖尿病个体化目标,Geriatric Diabetes Individualized Targets,循证决策支持,老年内分泌,A级,ADA/AGS 2024,老年糖尿病管理,≥65岁糖尿病患者,年龄≥65岁 + 多重共病 + 功能状态评估,推荐,个体化HbA1c目标 → 简化治疗方案,HbA1c每6个月 + 认知功能评估,低血糖风险降低 + 生活质量,需要老年科内分泌科协作
+EBD013,儿童1型糖尿病管理,Pediatric Type 1 Diabetes Management,循证决策支持,儿童内分泌,A级,ADA/ISPAD 2024,儿童1型糖尿病管理,儿童青少年1型糖尿病,1型糖尿病诊断 + 生长发育期,强烈推荐,多次胰岛素注射 → 胰岛素泵 → CGM,HbA1c每3个月 + 生长发育评估,血糖达标 + 正常生长发育,需要儿科内分泌专科团队
+EBD014,甲状腺癌术后管理,Post-thyroidectomy Management,循证决策支持,甲状腺癌,A级,ATA 2024,甲状腺癌术后随访,甲状腺癌术后患者,甲状腺全切术后 + 病理确诊,强烈推荐,TSH抑制治疗 → 定期随访 → 复发监测,TSH每3个月 + 影像学每年,无复发生存 + 生活质量,需要外科内分泌科协作
+EBD015,肥胖症多学科治疗,Obesity Multidisciplinary Treatment,循证决策支持,肥胖症,A级,AACE/TOS 2024,肥胖症综合治疗,BMI≥30或BMI≥27合并并发症,BMI≥30 + 并发症评估,强烈推荐,生活方式干预 → 药物治疗 → 减重手术,体重每月 + 并发症评估每3个月,体重减轻≥5% + 并发症改善,需要多学科肥胖团队
+EBD016,低血糖症鉴别诊断,Hypoglycemia Differential Diagnosis,循证决策支持,低血糖症,A级,Endocrine Society 2024,低血糖症诊断,反复低血糖发作患者,Whipple三联征 + 血糖<2.8mmol/L,推荐,72小时禁食试验 → 影像学检查 → 手术治疗,血糖监测 + 症状评估,病因明确 + 症状缓解,需要内分泌科影像科协作
+EBD017,性腺功能减退症诊疗,Hypogonadism Diagnosis and Treatment,循证决策支持,性腺疾病,A级,Endocrine Society 2024,男性性腺功能减退,中老年男性性功能减退,晨睾酮<8nmol/L + 临床症状,推荐,睾酮替代治疗 → 定期监测,睾酮水平每3个月 + 前列腺检查每年,症状改善 + 无不良反应,需要泌尿科内分泌科协作
+EBD018,继发性高血压筛查,Secondary Hypertension Screening,循证决策支持,内分泌高血压,A级,AHA/ACC 2024,继发性高血压诊断,难治性高血压患者,血压>140/90mmHg + 3种药物治疗,推荐,内分泌筛查 → 影像学检查 → 病因治疗,血压监测 + 内分泌功能评估,血压控制达标 + 病因治疗,需要心内科内分泌科协作
+EBD019,骨代谢疾病筛查,Bone Metabolic Disease Screening,循证决策支持,骨代谢筛查,A级,AACE/IOF 2024,骨代谢疾病早期发现,高危人群骨健康筛查,年龄>50岁 + 骨折风险因素,推荐,骨密度检测 → 生化标志物 → 预防治疗,骨密度每2年 + 骨折监测,骨折风险评估 + 早期干预,需要骨科内分泌科协作
+EBD020,内分泌急症处理流程,Endocrine Emergency Protocol,循证决策支持,内分泌急症,A级,Multiple Societies 2024,内分泌危象处理,内分泌急症患者,生命体征不稳定 + 内分泌功能异常,强烈推荐,急诊稳定 → 激素替代 → 病因治疗,生命体征监测 + 激素水平,病情稳定 + 并发症预防,需要急诊科内分泌科ICU协作
