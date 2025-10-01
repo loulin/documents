@@ -127,3 +127,6 @@ yarn-error.log*
 *.hea
 ECG/ECG_demodata/
 ECG/abdominal-and-direct-fetal-ecg-database-1.0.0/
+
+# Text data files
+*.txt
