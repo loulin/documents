@@ -40,7 +40,36 @@ pathology.lymphNodeInvolvement,病理学.淋巴结受累,String,"淋巴结受累
 pathology.margins,病理学.切缘,String,"手术切缘状态。<br>**建议值**: `阴性`, `阳性`, `接近`",阴性
 pathology.vascularInvasion,病理学.血管侵犯,String,"血管侵犯情况。<br>**建议值**: `无`, `微血管侵犯`, `大血管侵犯`",微血管侵犯
 pathology.perineralInvasion,病理学.神经侵犯,String,"神经周围侵犯。<br>**建议值**: `无`, `有`",有
-pathology.tnmStage.t,病理学.TNM分期.T,String,"原发肿瘤T分期。<br>**建议值**: `T1`, `T2`, `T3`, `T4`",T3
+pathology.morphology.glandularPattern,病理学.形态学.腺管结构,String,"腺管/导管结构模式。<br>**建议值**: `高分化-腺管结构明显`, `中分化-腺管结构部分形成`, `低分化-实体巢状结构为主`, `印戒细胞型`, `腺鳞癌成分`<br>**临床意义**: 腺管结构分化程度与预后相关",中分化-腺管结构部分形成
+pathology.morphology.necrosisExtent,病理学.形态学.坏死程度,String,"肿瘤坏死程度。<br>**建议值**: `无坏死`, `局灶性坏死(<10%)`, `中度坏死(10-50%)`, `广泛坏死(>50%)`<br>**临床意义**: 广泛坏死提示肿瘤生长快速、血供不足",局灶性坏死(<10%)
+pathology.morphology.stromalReaction,病理学.形态学.间质反应,String,"肿瘤间质纤维化反应。<br>**建议值**: `轻度纤维化`, `中度纤维化`, `重度促纤维增生性反应(desmoplastic reaction)`, `粘液样间质`<br>**临床意义**: 胰腺导管腺癌特征性表现为致密促纤维增生反应,影响血供和药物渗透",重度促纤维增生性反应
+pathology.morphology.nucleiPolymorphism,病理学.形态学.细胞核异型性,String,"细胞核异型性程度。<br>**建议值**: `轻度异型性`, `中度异型性`, `重度异型性`, `核分裂象多见`<br>**临床意义**: 核异型性程度反映肿瘤恶性程度",中度异型性
+pathology.morphology.mitoticActivity,病理学.形态学.核分裂活性,String,"核分裂象活跃程度。<br>**建议值**: `低(<5个/10HPF)`, `中(5-10个/10HPF)`, `高(>10个/10HPF)`<br>**临床意义**: 核分裂活性与Ki-67增殖指数相关,提示肿瘤增殖速度",中(5-10个/10HPF)
+pathology.morphology.mucin,病理学.形态学.粘液分泌,String,"粘液分泌情况。<br>**建议值**: `无明显粘液`, `细胞内粘液(PAS阳性)`, `细胞外粘液池`, `胶样癌(粘液性腺癌)`<br>**临床意义**: 胶样癌预后相对较好",细胞内粘液(PAS阳性)
+pathology.morphology.lymphocyticInfiltrate,病理学.形态学.淋巴细胞浸润,String,"肿瘤内淋巴细胞浸润。<br>**建议值**: `无或稀少`, `轻度浸润`, `中度浸润`, `重度浸润(淋巴细胞为主型)`<br>**临床意义**: 重度淋巴细胞浸润提示更好免疫应答,可能与MSI-H相关,预后较好",轻度浸润
+pathology.morphology.tumorBudding,病理学.形态学.肿瘤出芽,String,"肿瘤浸润前缘出芽现象。<br>**建议值**: `无出芽`, `低度出芽(0-4个/视野)`, `中度出芽(5-9个/视野)`, `高度出芽(≥10个/视野)`<br>**临床意义**: 肿瘤出芽是上皮间质转化标志,高度出芽与转移和不良预后相关",中度出芽(5-9个/视野)
+pathology.morphology.invasionPattern,病理学.形态学.浸润模式,String,"肿瘤浸润周围组织的模式。<br>**建议值**: `推压性生长`, `浸润性生长`, `弥散浸润`, `神经束周围浸润`<br>**临床意义**: 浸润模式影响手术切除难度和复发风险",浸润性生长
+pathology.invasion.peripancreaticTissue,病理学.侵犯.胰周组织,String,"胰腺周围组织侵犯。<br>**建议值**: `未侵犯`, `胰周脂肪组织侵犯`, `腹膜后软组织侵犯`<br>**临床意义**: 胰周侵犯影响T分期(≥T3)",胰周脂肪组织侵犯
+pathology.invasion.duodenum,病理学.侵犯.十二指肠,Boolean,"十二指肠壁侵犯。<br>**临床意义**: 胰头癌常侵犯十二指肠,影响手术方式(需Whipple术)",true
+pathology.invasion.commonBileDuct,病理学.侵犯.胆总管,Boolean,"胆总管侵犯。<br>**临床意义**: 胰头癌侵犯胆总管导致梗阻性黄疸",true
+pathology.invasion.portalVein,病理学.侵犯.门静脉,Boolean,"门静脉侵犯。<br>**临床意义**: 门静脉侵犯影响可切除性和预后",true
+pathology.invasion.sma,病理学.侵犯.肠系膜上动脉,Boolean,"肠系膜上动脉侵犯。<br>**临床意义**: SMA侵犯通常提示不可切除",false
+pathology.invasion.celiacAxis,病理学.侵犯.腹腔干,Boolean,"腹腔干侵犯。<br>**临床意义**: 腹腔干侵犯提示局部晚期,通常不可切除",false
+pathology.lymphNode.totalNumber,病理学.淋巴结.送检总数,Number,"送检淋巴结总数。<br>**质量标准**: NCCN建议至少检查12-15枚淋巴结<br>**临床意义**: 送检淋巴结数量影响分期准确性",15
+pathology.lymphNode.positiveNumber,病理学.淋巴结.阳性数量,Number,"转移阳性淋巴结数量。<br>**AJCC第8版N分期**:<br>- N0: 0个<br>- N1: 1-3个<br>- N2: ≥4个<br>**临床意义**: 阳性淋巴结数量是重要预后因素",3
+pathology.lymphNode.largestMetastasis,病理学.淋巴结.最大转移灶,Number,"最大淋巴结转移灶直径,单位mm。<br>**临床意义**: 转移灶大小反映肿瘤负荷",8
+pathology.lymphNode.extracapsularExtension,病理学.淋巴结.包膜外侵犯,Boolean,"淋巴结包膜外侵犯(Extracapsular extension)。<br>**临床意义**: 包膜外侵犯提示更侵袭性生物学行为,预后较差",false
+pathology.resectionMargin.pancreaticNeck,病理学.切缘.胰腺颈部切缘,String,"胰腺颈部切缘状态。<br>**建议值**: `阴性(距肿瘤>1mm)`, `接近(距肿瘤≤1mm)`, `阳性(有肿瘤)`<br>**临床意义**: R0切除(所有切缘阴性)预后最佳",阴性(距肿瘤>1mm)
+pathology.resectionMargin.uncinate,病理学.切缘.钩突切缘,String,"钩突切缘状态(SMA切缘)。<br>**建议值**: `阴性`, `接近`, `阳性`<br>**临床意义**: 钩突切缘阳性率高(30-40%),是复发主要来源",接近
+pathology.resectionMargin.posterior,病理学.切缘.后方切缘,String,"后方(腹膜后)切缘状态。<br>**建议值**: `阴性`, `接近`, `阳性`<br>**临床意义**: 后方切缘阳性影响局部复发",阴性
+pathology.resectionMargin.bileDuct,病理学.切缘.胆管切缘,String,"胆管切缘状态。<br>**建议值**: `阴性`, `阳性`, `原位癌`<br>**临床意义**: 胆管切缘阳性需扩大切除",阴性
+pathology.resectionMargin.overallStatus,病理学.切缘.总体状态,String,"手术切缘总体评估。<br>**建议值**: `R0(所有切缘阴性)`, `R1(镜下切缘阳性)`, `R2(肉眼切缘阳性)`<br>**临床意义**: R0切除中位生存期20-23月 vs R1的12-15月",R0(所有切缘阴性)
+pathology.precursorLesions.panin,病理学.癌前病变.PanIN,String,"胰腺上皮内瘤变(PanIN)。<br>**建议值**: `无`, `PanIN-1(低级别)`, `PanIN-2(中级别)`, `PanIN-3(高级别,原位癌)`<br>**临床意义**: PanIN是胰腺导管腺癌最常见癌前病变,PanIN-3即原位癌",PanIN-2(中级别)
+pathology.precursorLesions.ipmn,病理学.癌前病变.IPMN,String,"导管内乳头状黏液性肿瘤(IPMN)伴发情况。<br>**建议值**: `无`, `主胰管型IPMN`, `分支型IPMN`, `混合型IPMN`, `IPMN伴高级别异型增生`, `IPMN伴浸润癌`<br>**临床意义**: IPMN是重要癌前病变,主胰管型恶变率高",无
+pathology.precursorLesions.mcn,病理学.癌前病变.MCN,String,"黏液性囊性肿瘤(MCN)伴发情况。<br>**建议值**: `无`, `MCN伴低度异型增生`, `MCN伴高度异型增生`, `MCN伴浸润癌`<br>**临床意义**: MCN好发于胰体尾部中年女性,恶变率10-30%",无
+pathology.specialStain.pas,病理学.特殊染色.PAS,String,"PAS染色(粘液染色)结果。<br>**建议值**: `未做`, `阴性`, `阳性(粘液+)`<br>**临床意义**: 识别粘液性腺癌成分",阳性(粘液+)
+pathology.specialStain.alcianBlue,病理学.特殊染色.阿利新蓝,String,"阿利新蓝染色(酸性粘液)。<br>**建议值**: `未做`, `阴性`, `阳性`<br>**临床意义**: 识别酸性粘液多糖",未做
+pathology.tnmStage.t,病理学.TNM分期.T,String,"原发肿瘤T分期(AJCC第8版)。<br>**建议值**: `T1(≤2cm)`, `T1a(≤0.5cm)`, `T1b(0.5-1cm)`, `T1c(1-2cm)`, `T2(2-4cm)`, `T3(>4cm)`, `T4(腹腔干/SMA/肝总动脉侵犯)`<br>**临床意义**: T分期基于肿瘤大小和血管侵犯",T3
 pathology.tnmStage.n,病理学.TNM分期.N,String,"淋巴结N分期。<br>**建议值**: `N0`, `N1`, `N2`",N1
 pathology.tnmStage.m,病理学.TNM分期.M,String,"远处转移M分期。<br>**建议值**: `M0`, `M1`",M1
 pathology.overallStage,病理学.总体分期,String,"AJCC分期。<br>**建议值**: `I期`, `II期`, `III期`, `IV期`",IV期

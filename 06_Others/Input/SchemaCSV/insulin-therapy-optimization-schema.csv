@@ -1,0 +1,28 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,评估日期,String,进行胰岛素治疗优化评估的日期,2025-06-05
+patientId,患者编号,String,患者唯一编号,INS-OPT-2025-041
+primaryDiabetesType,糖尿病类型,String,"主要糖尿病类型。<br>**建议值**: `T1DM`, `T2DM`, `LADA`, `MODY`, `其他`",T1DM
+currentInsulinRegimen,当前胰岛素方案,String,"方案描述。示例: `基础-追加(德谷-赖脯)`, `CSII`, `Premix 70/30`",CSII
+basalDoseTotal,基础胰岛素总剂量,Number,"每日基础剂量。<br>单位: U/日",28
+bolusDoseTotal,追加胰岛素总剂量,Number,"每日餐时总剂量。<br>单位: U/日",24
+carbRatio,碳水化合物换算比例,Number,"胰岛素:碳水比例。<br>单位: g/U",12
+targetGlucoseRange,目标血糖范围,String,"设置的目标范围。示例: `3.9-7.8 mmol/L`",3.9-7.8 mmol/L
+cgmTimeInRange,CGM达标时间,Number,"过去14天 Time-in-Range。<br>单位: %",68
+cgmTimeBelowRange,CGM低于目标时间,Number,"Time-below-range。<br>单位: %",3
+cgmTimeAboveRange,CGM高于目标时间,Number,"Time-above-range。<br>单位: %",29
+meanGlucose,平均血糖,Number,"CGM或SMBG平均值。<br>单位: mmol/L",8.6
+gmi,估算糖化血红蛋白,Number,"CGM推算 HbA1c。<br>单位: %",7.2
+hypoglycemiaEventsLevel1,低血糖事件(Level 1),Number,"过去14天3.0-3.9 mmol/L事件次数。<br>单位: 次",2
+hypoglycemiaEventsLevel2,低血糖事件(Level 2),Number,"过去14天<3.0 mmol/L事件次数。<br>单位: 次",1
+severeHypoglycemiaHistory,严重低血糖史,Boolean,"过去一年是否发生需要他人协助的低血糖",False
+totalDailyDosePerKg,每日总剂量/体重,Number,"总剂量(TDD)/体重。<br>单位: U/kg",0.8
+insulinSensitivityFactor,胰岛素敏感系数,Number,"ISF(修正因子)。<br>单位: mmol/L/U",2.5
+dawnPhenomenonPresence,拂晓现象,String,"是否存在拂晓现象。<br>**建议值**: `无`, `轻度`, `明显`",轻度
+nocturnalHypoglycemiaRisk,夜间低血糖风险,String,"综合评估等级。<br>**建议值**: `低`, `中`, `高`",中
+infusionSetIssues,输注装置问题,String,"如CSII出现的堵管/渗漏等",过去14天更换延迟2次
+adjunctiveTherapy,联合用药,String,"与胰岛素联合的药物。示例: `SGLT2抑制剂`, `GLP-1RA`",利拉鲁肽1.8mg/d
+behavioralFactors,行为因素评估,String,"影响血糖的行为摘要。示例: `夜间加餐`, `运动不足`",夜宵不规律
+doseAdjustmentPlan,剂量调整计划,String,"拟调整的基础/追加剂量及原则",基础剂量减少10%，强化餐后校正
+educationFocus,教育重点,String,"需强化的教育内容。示例: `碳水估算`, `低血糖识别`",碳水估算
+followUpIntervalWeeks,随访间隔(周),Number,"建议随访周期。<br>单位: 周",4
+recommendation,综合建议,String,"综合管理建议",建议调整CSII基础率并4周后复评

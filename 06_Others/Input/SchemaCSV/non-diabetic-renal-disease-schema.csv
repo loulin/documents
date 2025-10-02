@@ -1,0 +1,34 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行非糖尿病性肾脏疾病综合评估的日期,2025-08-15
+clinicalIndication,检查适应症,String,"进行评估的临床指征。<br>**建议值**: `持续蛋白尿`, `血尿`, `非糖尿病性肾功能不全`, `系统性疾病累及肾脏`, `肾炎复发评估`",持续蛋白尿
+primaryRenalDiagnosis,主要肾脏诊断,String,"临床或病理诊断。<br>**建议值**: `IgA肾病`, `膜性肾病`, `微小病变肾病`, `狼疮性肾炎`, `ANCA相关性血管炎`, `急进性肾小球肾炎`, `间质性肾炎`, `多囊肾`",IgA肾病
+kidneyDiseaseCategory,肾脏疾病分类,String,"依据KDIGO对非糖尿病性肾病的分类。<br>**建议值**: `原发性肾小球疾病`, `继发性肾小球疾病`, `肾小管间质疾病`, `遗传性肾病`, `血管性肾病`",原发性肾小球疾病
+gfrStage,CKD分期,String,"依据eGFR分级。<br>**建议值**: `G1`, `G2`, `G3a`, `G3b`, `G4`, `G5`",G3a
+serumCreatinine,血清肌酐,Number,"血清肌酐浓度。<br>单位: μmol/L",135
+bloodUreaNitrogen,血尿素氮,Number,"血尿素氮浓度。<br>单位: mmol/L",10.2
+cystatinC,胱抑素C,Number,"血清胱抑素C。<br>单位: mg/L",1.45
+estimatedGfr,估算肾小球滤过率,Number,"eGFR (CKD-EPI)。<br>单位: mL/min/1.73m²",48
+creatinineClearance,肌酐清除率,Number,"24小时肌酐清除率。<br>单位: mL/min",62
+proteinuria24h,24小时尿蛋白定量,Number,"24小时尿蛋白总量。<br>单位: g/24h",2.3
+albuminCreatinineRatio,尿白蛋白肌酐比,Number,"尿白蛋白/肌酐比(ACR)。<br>单位: mg/g",285
+urineProteinDipstick,尿蛋白试纸,String,"尿蛋白半定量结果。<br>**建议值**: `阴性`, `微量`, `1+`, `2+`, `3+`, `4+`",3+
+hematuriaGrade,血尿分级,String,"依据尿沉渣红细胞或肉眼血尿程度分级。<br>**建议值**: `阴性`, `镜下血尿`, `显微镜高倍视野>25`, `肉眼血尿`",镜下血尿
+urineSedimentFindings,尿沉渣形态学,String,"尿沉渣主要发现。<br>示例: `畸形红细胞>60%`, `颗粒管型`, `脂肪管型`",畸形红细胞>80%
+serumAlbumin,血清白蛋白,Number,"血清白蛋白浓度。<br>单位: g/L",28
+serumTotalCholesterol,血清总胆固醇,Number,"血清总胆固醇。<br>单位: mmol/L",7.2
+bloodPressureSystolic,收缩压,Number,"坐位收缩压。<br>单位: mmHg",155
+bloodPressureDiastolic,舒张压,Number,"坐位舒张压。<br>单位: mmHg",95
+edemaSeverity,水肿程度,String,"临床水肿评估。<br>**建议值**: `无`, `轻度`, `中度`, `重度`, `凹陷性水肿`",中度
+complementC3,补体C3,Number,"血清补体C3。<br>单位: g/L",0.55
+complementC4,补体C4,Number,"血清补体C4。<br>单位: g/L",0.08
+antiGnAb,抗肾小球基底膜抗体,Number,"抗GBM抗体。<br>单位: U/mL",45
+ancaStatus,ANCA状态,String,"抗中性粒细胞胞浆抗体检测结果。<br>**建议值**: `阴性`, `p-ANCA阳性`, `c-ANCA阳性`, `非典型阳性`",p-ANCA阳性
+anaTiter,抗核抗体滴度,String,"ANA检测结果。格式示例: `1:320 颗粒型`",1:160 颗粒型
+serologicalEtiologyNotes,血清学病因学备注,String,"其他血清学检测及诊断提示。<br>示例: `HBsAg阳性`, `抗双链DNA 1:320`, `PLA2R抗体阴性`",PLA2R抗体阴性
+renalImagingSummary,肾脏影像学总结,String,"B超/CT/MRI主要发现",双肾回声增强伴轻度皮质变薄
+renalBiopsyPerformed,肾穿刺是否实施,Boolean,"是否完成肾穿刺活检",True
+renalBiopsyPathology,肾穿刺病理摘要,String,"简述病理分型及活动度/慢性度评分",系膜增生伴IgA沉积(M1E0S1T0C0)
+immunosuppressiveRegimen,免疫抑制治疗方案,String,"当前或计划中的免疫抑制治疗方案",泼尼松+环孢素A
+renalReplacementAssessment,肾替代治疗评估,String,"对透析或肾移植的评估结论。<br>**建议值**: `暂不需要`, `建议腹透规划`, `建议血透准备`, `评估肾移植指征`",建议血透准备
+diagnosisImpression,诊断/印象,String,医生对非糖尿病性肾病的综合评估结论。,原发性IgA肾病活动期
+recommendation,建议,String,随访与治疗建议。,建议4周后复查蛋白尿并调整免疫方案

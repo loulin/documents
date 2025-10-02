@@ -138,6 +138,14 @@ medications.diuretics.name,药物治疗.利尿剂.药物名称,String,"利尿剂
 medications.diuretics.dose,药物治疗.利尿剂.剂量,String,"利尿剂剂量",20mg bid
 medications.antidiabetic.name,药物治疗.降糖药.药物名称,String,"降糖药物名称",二甲双胍+格列齐特
 medications.antidiabetic.dose,药物治疗.降糖药.剂量,String,"降糖药物剂量",二甲双胍500mg bid，格列齐特80mg daily
+medications.sglt2i.name,药物治疗.SGLT2抑制剂.药物名称,String,"SGLT2i肾保护药物。<br>**建议值**: `未使用`, `达格列净`, `恩格列净`, `卡格列净`<br>**适应症**: eGFR≥20 mL/min，显著降低DKD进展风险(CREDENCE研究肾病进展↓30%)。<br>**禁忌**: eGFR<20",达格列净
+medications.sglt2i.dose,药物治疗.SGLT2抑制剂.剂量,String,"SGLT2i剂量。<br>**标准剂量**: 达格列净10mg qd，恩格列净10-25mg qd",达格列净10mg qd
+medications.sglt2i.renalProtection,药物治疗.SGLT2抑制剂.肾保护证据,String,"SGLT2i肾保护循证证据。<br>**关键研究**: CREDENCE(卡格列净，肾病进展↓30%)，DAPA-CKD(达格列净，复合肾脏终点↓39%)，EMPA-KIDNEY(恩格列净)。<br>**机制**: 降低肾小球高滤过、改善血流动力学、抗炎抗纤维化",CREDENCE/DAPA-CKD证据支持
+medications.glp1ra.name,药物治疗.GLP-1受体激动剂.药物名称,String,"GLP-1RA肾保护药物。<br>**建议值**: `未使用`, `司美格鲁肽`, `度拉糖肽`, `利拉鲁肽`<br>**肾保护证据**: 司美格鲁肽(SUSTAIN-6，MACE↓26%，新发/恶化肾病↓36%)，度拉糖肽(REWIND)。<br>**适用**: 无严格eGFR限制",司美格鲁肽
+medications.glp1ra.dose,药物治疗.GLP-1受体激动剂.剂量,String,"GLP-1RA剂量。<br>**标准剂量**: 司美格鲁肽0.5-1.0mg 每周1次，度拉糖肽1.5mg 每周1次",司美格鲁肽1.0mg 每周1次
+medications.glp1ra.renalProtection,药物治疗.GLP-1受体激动剂.肾保护证据,String,"GLP-1RA肾保护循证证据。<br>**关键研究**: SUSTAIN-6(司美格鲁肽，新发/恶化肾病↓36%)，REWIND(度拉糖肽，复合肾脏结局↓15%)。<br>**机制**: 改善血糖、减重、降低炎症、内皮保护",SUSTAIN-6/REWIND证据支持
+medications.finerenone.name,药物治疗.非奈利酮.药物名称,String,"非奈利酮(非甾体MRA)。<br>**建议值**: `未使用`, `非奈利酮10mg`, `非奈利酮20mg`<br>**适应症**: T2DM合并CKD(eGFR 25-90)，UACR≥30 mg/g，与RAAS抑制剂联用。<br>**证据**: FIDELIO-DKD研究肾病进展↓18%",非奈利酮20mg
+medications.finerenone.dose,药物治疗.非奈利酮.剂量,String,"非奈利酮剂量。<br>**起始剂量**: eGFR≥60用20mg qd，eGFR<60用10mg qd。<br>**监测**: 血钾≥5.5 mmol/L需调整剂量",20mg qd
 medications.lipidLowering.name,药物治疗.调脂药.药物名称,String,"调脂药物名称",阿托伐他汀
 medications.lipidLowering.dose,药物治疗.调脂药.剂量,String,"调脂药物剂量",20mg daily
 medications.erythropoietin.name,药物治疗.促红细胞生成素.药物名称,String,"EPO药物名称",重组人促红细胞生成素

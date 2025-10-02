@@ -1,0 +1,111 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行乙肝五项检测的日期,2025-08-15
+testingMethod,检测方法,String,"检测方法。<br>**建议值**: `化学发光免疫分析(CLIA)`, `酶联免疫吸附(ELISA)`, `电化学发光(ECLIA)`",化学发光免疫分析(CLIA)
+clinicalIndication,检测指征,String,"检测指征。<br>**建议值**: `常规体检`, `术前检查`, `孕前检查`, `疑似肝炎`, `HBV暴露后`, `疫苗接种后评估`, `慢性HBV监测`",常规体检
+riskFactors,危险因素,String,"HBV感染危险因素。<br>**建议值**: `无`, `医务人员`, `HBV感染者家属`, `血液透析`, `多性伴侣`, `静脉药物滥用`, `其他`",HBV感染者家属
+
+# 乙肝五项核心指标
+hbsag.result,HBsAg.定性结果,String,"乙肝表面抗原定性结果。<br>**建议值**: `阴性(-)`, `阳性(+)`, `弱阳性(±)`<br>**临床意义**: HBV感染最重要标志，阳性表示HBV感染",阴性(-)
+hbsag.value,HBsAg.定量值,Number,"HBsAg定量值(如检测)。<br>单位: IU/mL 或 COI<br>**参考范围**: <1.0 IU/mL (阴性)<br>**临床意义**: 定量监测可评估抗病毒疗效",0.35
+hbsag.cutoffValue,HBsAg.临界值,Number,"HBsAg阳性判断临界值。<br>单位: IU/mL 或 COI",1.0
+hbsag.interpretation,HBsAg.解读,String,"HBsAg结果解读。<br>**建议值**: `未感染HBV`, `急性HBV感染`, `慢性HBV感染`, `需进一步确认`",未感染HBV
+
+hbsab.result,抗-HBs.定性结果,String,"乙肝表面抗体定性结果。<br>**建议值**: `阴性(-)`, `阳性(+)`, `弱阳性(±)`<br>**临床意义**: 保护性抗体，阳性表示有免疫力",阳性(+)
+hbsab.value,抗-HBs.定量值,Number,"抗-HBs定量值。<br>单位: mIU/mL<br>**保护性抗体**: ≥10 mIU/mL<br>**强保护力**: ≥100 mIU/mL",156.8
+hbsab.cutoffValue,抗-HBs.临界值,Number,"抗-HBs阳性判断临界值。<br>单位: mIU/mL",10.0
+hbsab.protectionLevel,抗-HBs.保护水平,String,"保护水平评估。<br>**建议值**: `无保护(<10)`, `低保护(10-99)`, `中等保护(100-999)`, `强保护(≥1000)`",中等保护(100-999)
+hbsab.interpretation,抗-HBs.解读,String,"抗-HBs结果解读。<br>**建议值**: `已获得免疫力`, `疫苗接种成功`, `HBV感染恢复`, `保护力不足`",已获得免疫力
+
+hbeag.result,HBeAg.定性结果,String,"乙肝e抗原定性结果。<br>**建议值**: `阴性(-)`, `阳性(+)`, `弱阳性(±)`<br>**临床意义**: 病毒复制和传染性标志，阳性表示HBV活跃复制",阴性(-)
+hbeag.value,HBeAg.定量值,Number,"HBeAg定量值(如检测)。<br>单位: S/CO (信号比) 或 PEIU/mL<br>**参考范围**: <1.0 (阴性)",0.25
+hbeag.cutoffValue,HBeAg.临界值,Number,"HBeAg阳性判断临界值",1.0
+hbeag.interpretation,HBeAg.解读,String,"HBeAg结果解读。<br>**建议值**: `病毒低复制`, `病毒高复制`, `e抗原血清学转换`",病毒低复制
+
+hbeab.result,抗-HBe.定性结果,String,"乙肝e抗体定性结果。<br>**建议值**: `阴性(-)`, `阳性(+)`, `弱阳性(±)`<br>**临床意义**: 病毒复制减弱标志，阳性通常表示病毒复制下降",阴性(-)
+hbeab.value,抗-HBe.定量值,Number,"抗-HBe定量值(如检测)。<br>单位: S/CO 或 PEIU/mL",0.68
+hbeab.cutoffValue,抗-HBe.临界值,Number,"抗-HBe阳性判断临界值",1.0
+hbeab.interpretation,抗-HBe.解读,String,"抗-HBe结果解读。<br>**建议值**: `未发生e抗原血清转换`, `e抗原血清转换`, `病毒低复制状态`",未发生e抗原血清转换
+
+hbcab.result,抗-HBc.定性结果,String,"乙肝核心抗体定性结果。<br>**建议值**: `阴性(-)`, `阳性(+)`, `弱阳性(±)`<br>**临床意义**: 既往或现症感染标志，几乎终身阳性",阴性(-)
+hbcab.value,抗-HBc.定量值,Number,"抗-HBc定量值(如检测)。<br>单位: S/CO",0.42
+hbcab.cutoffValue,抗-HBc.临界值,Number,"抗-HBc阳性判断临界值",1.0
+hbcab.interpretation,抗-HBc.解读,String,"抗-HBc结果解读。<br>**建议值**: `从未感染HBV`, `既往感染`, `现症感染`, `隐匿性HBV感染可能`",从未感染HBV
+
+# 乙肝五项组合模式解读 (基于9种常见模式)
+serologyPattern,血清学模式,String,"乙肝五项组合模式编号。<br>**9种常见模式**:<br>1. HBsAg(+) HBeAg(+) 抗-HBc(+) = 大三阳<br>2. HBsAg(+) 抗-HBe(+) 抗-HBc(+) = 小三阳<br>3. HBsAg(+) 抗-HBc(+) = 急性或慢性感染<br>4. 抗-HBs(+) 抗-HBe(+) 抗-HBc(+) = 恢复期<br>5. 抗-HBs(+) 抗-HBc(+) = 既往感染，已恢复<br>6. 抗-HBs(+) = 疫苗接种后<br>7. 抗-HBc(+) = 既往感染，低水平复制或假阳性<br>8. 全阴性 = 未感染<br>9. 单项抗-HBe(+) 或其他非典型 = 需进一步检测",模式6: 抗-HBs(+) 单阳 = 疫苗接种后
+serologyPatternCode,血清学模式代码,String,"简化的模式代码。<br>**建议值**: `1-大三阳`, `2-小三阳`, `3-急慢性感染`, `4-5-既往感染已恢复`, `6-疫苗接种`, `7-单独抗-HBc`, `8-全阴性`, `9-非典型模式`",6-疫苗接种
+patternInterpretation,模式解读,String,"血清学模式的详细解读",疫苗接种成功产生保护性抗体
+infectiousStatus,传染性评估,String,"传染性评估。<br>**建议值**: `无传染性`, `低传染性`, `中度传染性`, `高传染性`<br>**依据**: HBsAg和HBeAg状态",无传染性
+clinicalPhase,临床阶段,String,"HBV感染的临床阶段(如感染)。<br>**建议值**: `未感染`, `急性感染`, `免疫耐受期`, `免疫清除期`, `低/非复制期`, `再活动期`, `隐匿性感染`, `既往感染已恢复`, `疫苗接种后`",疫苗接种后
+
+# 大三阳/小三阳特殊标识
+bigThreePositive,大三阳,String,"是否为大三阳(HBsAg+ HBeAg+ 抗-HBc+)。<br>**建议值**: `否`, `是`<br>**临床意义**: 病毒复制活跃，传染性强",否
+smallThreePositive,小三阳,String,"是否为小三阳(HBsAg+ 抗-HBe+ 抗-HBc+)。<br>**建议值**: `否`, `是`<br>**临床意义**: 病毒复制减弱，但需鉴别非活动性携带或e抗原变异株",否
+
+# 补充检测指标 (常与五项联合检测)
+hbvDna.value,HBV-DNA.病毒载量,Number,"HBV-DNA病毒载量(如检测)。<br>单位: IU/mL 或 copies/mL<br>**参考范围**: <100 IU/mL (检测下限)<br>**临床意义**: 病毒复制的直接证据，抗病毒治疗指征",未检测
+hbvDna.logValue,HBV-DNA.对数值,Number,"HBV-DNA对数值 (log10 IU/mL)。<br>**高病毒载量**: >5 log10 (>100,000 IU/mL)<br>**低病毒载量**: <3 log10 (<1,000 IU/mL)",未检测
+hbvDna.detectionStatus,HBV-DNA.检出状态,String,"HBV-DNA检出状态。<br>**建议值**: `未检测`, `未检出`, `检出`",未检测
+hbvDna.replicationLevel,HBV-DNA.复制水平,String,"病毒复制水平分级。<br>**建议值**: `未检出`, `低复制(<2000)`, `中度复制(2000-20000)`, `高复制(20000-2×10⁶)`, `极高复制(>2×10⁶)`",未检测
+
+hbcabIgM.result,抗-HBc IgM.定性结果,String,"核心抗体IgM定性结果(如检测)。<br>**建议值**: `阴性(-)`, `阳性(+)`, `弱阳性(±)`, `未检测`<br>**临床意义**: 急性感染或慢性活动期标志",未检测
+hbcabIgM.interpretation,抗-HBc IgM.解读,String,"抗-HBc IgM结果解读。<br>**建议值**: `非急性期`, `急性HBV感染`, `慢性HBV急性发作`, `需结合临床`",未检测
+
+preS1.result,前S1抗原.定性结果,String,"前S1抗原定性结果(如检测)。<br>**建议值**: `阴性(-)`, `阳性(+)`, `未检测`<br>**临床意义**: 病毒复制和传染性标志，早于HBsAg出现",未检测
+preS2.result,前S2抗原.定性结果,String,"前S2抗原定性结果(如检测)。<br>**建议值**: `阴性(-)`, `阳性(+)`, `未检测`<br>**临床意义**: 病毒复制标志",未检测
+
+# 肝功能相关(常规联合检测)
+alt.value,谷丙转氨酶.数值,Number,"ALT数值(如检测)。<br>单位: U/L<br>**参考范围**: <40 U/L<br>**临床意义**: 肝细胞损伤标志",28
+ast.value,谷草转氨酶.数值,Number,"AST数值(如检测)。<br>单位: U/L<br>**参考范围**: <40 U/L",32
+totalBilirubin.value,总胆红素.数值,Number,"总胆红素数值(如检测)。<br>单位: μmol/L<br>**参考范围**: 3.4-20.5 μmol/L",15.6
+liverFunctionStatus,肝功能状态,String,"肝功能总体评估。<br>**建议值**: `正常`, `轻度异常`, `中度异常`, `重度异常`, `未检测`",正常
+
+# 临床建议
+clinicalRecommendation,临床建议,String,"基于五项结果的临床建议",定期体检监测抗-HBs水平，如<10 mIU/mL需加强免疫接种
+vaccineRecommendation,疫苗接种建议,String,"疫苗接种建议。<br>**建议值**: `无需接种`, `建议接种全程(0-1-6月)`, `建议加强免疫`, `需评估后决定`",抗-HBs达标，无需加强
+followUpInterval,随访间隔,String,"建议随访间隔。<br>**建议值**: `无需随访`, `3个月`, `6个月`, `12个月`, `即刻随访`",12个月
+furtherTesting,进一步检测,String,"建议的进一步检测项目",如抗-HBs下降至<10 mIU/mL，考虑加强免疫接种
+
+# 特殊情况
+specialPopulation,特殊人群,String,"特殊人群标识。<br>**建议值**: `一般人群`, `孕妇`, `新生儿`, `医务人员`, `透析患者`, `免疫抑制患者`, `器官移植患者`",一般人群
+pregnancyStatus,妊娠状态,String,"妊娠状态(女性)。<br>**建议值**: `未孕`, `妊娠期`, `产后`, `不适用`<br>**注**: 孕妇HBsAg阳性需评估母婴传播风险",不适用
+pregnancyTrimester,妊娠孕期,String,"妊娠孕期(如适用)。<br>**建议值**: `早期(<13周)`, `中期(13-27周)`, `晚期(≥28周)`, `不适用`<br>**注**: 晚期HBeAg阳性或高病毒载量需考虑抗病毒预防",不适用
+maternalToChildRisk,母婴传播风险,String,"母婴传播风险评估(孕妇)。<br>**建议值**: `无风险`, `低风险`, `中风险`, `高风险`, `不适用`<br>**高风险**: HBeAg(+) 或 HBV-DNA >2×10⁵ IU/mL",不适用
+
+previousVaccination,既往疫苗接种史,String,"既往乙肝疫苗接种史。<br>**建议值**: `无`, `部分接种`, `完成全程接种`, `接种后加强`, `不详`",完成全程接种
+vaccineResponseType,疫苗应答类型,String,"疫苗应答类型(如接种后)。<br>**建议值**: `良好应答(≥100)`, `低应答(10-99)`, `无应答(<10)`, `不适用`",良好应答(≥100)
+
+antiviralTreatment,抗病毒治疗史,String,"抗病毒治疗史(如慢性HBV)。<br>**建议值**: `未治疗`, `正在治疗`, `既往治疗已停药`, `不适用`<br>**常用药物**: 恩替卡韦、替诺福韦、干扰素",不适用
+treatmentDuration,治疗时长,Number,"抗病毒治疗时长(如在治疗)。<br>单位: 月",0
+
+familyHistory,家族史,String,"HBV感染家族史。<br>**建议值**: `无`, `父母HBV(+)`, `配偶HBV(+)`, `子女HBV(+)`, `其他亲属HBV(+)`",父母HBV(+)
+occupationalExposure,职业暴露史,String,"职业暴露史。<br>**建议值**: `无`, `医务人员`, `警察/消防员`, `其他高危职业`",无
+
+# 检测质量控制
+sampleType,样本类型,String,"样本类型。<br>**建议值**: `血清`, `血浆`, `其他`",血清
+sampleQuality,样本质量,String,"样本质量评估。<br>**建议值**: `合格`, `溶血`, `脂血`, `黄疸`, `其他异常`",合格
+testingLaboratory,检测机构,String,进行检测的实验室/机构名称,XX医院检验科
+instrumentModel,仪器型号,String,检测使用的仪器型号,罗氏Cobas e602
+reagentLot,试剂批号,String,使用的试剂批号,20250815A
+internalQC,室内质控,String,"室内质控结果。<br>**建议值**: `在控`, `失控`, `未做`",在控
+externalQC,室间质评,String,"最近一次室间质评结果。<br>**建议值**: `通过`, `未通过`, `未参加`",通过
+
+# 报告信息
+reportDate,报告日期,String,出具报告的日期,2025-08-16
+reportingPhysician,报告医师,String,出具报告的检验医师,王医师
+reviewPhysician,审核医师,String,审核报告的医师,李主任
+laboratoryNotes,实验室备注,String,检验科的特殊说明,疫苗接种成功，建议定期监测抗体水平
+urgentFlag,紧急标识,String,"是否需要紧急处理。<br>**建议值**: `否`, `是`<br>**注**: HBsAg阳性孕妇、急性肝炎等需紧急通知临床",否
+
+# 历史对比
+previousExamDate,前次检查日期,String,最近一次五项检测日期,2023-08-15
+hbsagTrend,HBsAg变化趋势,String,"HBsAg变化趋势(如有历史数据)。<br>**建议值**: `稳定`, `转阴`, `转阳`, `定量值下降`, `定量值上升`, `无历史数据`",稳定
+hbsabTrend,抗-HBs变化趋势,String,"抗-HBs变化趋势。<br>**建议值**: `稳定`, `滴度上升`, `滴度下降`, `转阴`, `转阳`, `无历史数据`",滴度下降
+antibodyDeclineRate,抗体下降速率,Number,"抗-HBs年下降速率(mIU/mL/年，如可计算)",15.5
+seroconversionEvent,血清学转换事件,String,"血清学转换事件(如发生)。<br>**建议值**: `HBsAg转阴`, `HBeAg血清转换`, `抗-HBs出现`, `无转换`, `不适用`",无转换
+
+# 综合评估
+overallStatus,总体状态,String,"HBV感染总体状态。<br>**建议值**: `从未感染`, `疫苗接种后免疫`, `既往感染已恢复`, `急性HBV感染`, `慢性HBV携带(低复制)`, `慢性HBV携带(高复制)`, `隐匿性HBV感染`, `需进一步评估`",疫苗接种后免疫
+riskLevel,风险等级,String,"肝炎进展风险等级(如为携带者)。<br>**建议值**: `无风险`, `低风险`, `中风险`, `高风险`, `不适用`",无风险
+treatmentIndication,治疗指征,String,"是否具有抗病毒治疗指征(如慢性HBV)。<br>**建议值**: `无治疗指征`, `需进一步评估`, `有治疗指征`, `不适用`<br>**依据**: HBV-DNA、ALT、肝纤维化等",不适用
+publicHealthNotification,公共卫生报告,String,"是否需要公共卫生报告。<br>**建议值**: `否`, `是-急性乙肝`, `是-慢性乙肝`<br>**注**: 各国/地区要求不同",否

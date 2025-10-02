@@ -1,0 +1,134 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行心血管代谢风险评估的日期,2025-10-01
+patientID,患者ID,String,患者唯一标识符,P123456
+clinicalPresentation,临床表现,String,"临床表现类型。<br>**建议值**: `无症状`, `稳定性心绞痛`, `不稳定型心绞痛`, `非ST段抬高型心肌梗死(NSTEMI)`, `ST段抬高型心肌梗死(STEMI)`, `慢性心力衰竭`, `急性心力衰竭`, `心律失常`",稳定性心绞痛
+anginaClass,心绞痛分级,String,"CCS心绞痛分级。<br>**建议值**: `无`, `I级(剧烈活动)`, `II级(中度活动受限)`, `III级(轻度活动受限)`, `IV级(静息痛)`",II级(中度活动受限)
+symptomsAtypical,非典型症状,Boolean,"是否存在非典型症状(乏力、气短、上腹不适等)。<br>**说明**: 糖尿病、老年人、女性多见",true
+metsComponents.waistCircumference,代谢综合征组分.腰围,Number,"腰围测量。<br>单位: cm<br>**MetS诊断标准**: 男性≥90cm，女性≥85cm",95
+metsComponents.bloodPressure.systolic,代谢综合征组分.血压.收缩压,Number,"收缩压。<br>单位: mmHg<br>**MetS诊断标准**: ≥130 mmHg或已用降压药",145
+metsComponents.bloodPressure.diastolic,代谢综合征组分.血压.舒张压,Number,"舒张压。<br>单位: mmHg<br>**MetS诊断标准**: ≥85 mmHg或已用降压药",92
+metsComponents.fastingGlucose,代谢综合征组分.空腹血糖,Number,"空腹血糖。<br>单位: mmol/L<br>**MetS诊断标准**: ≥6.1或已确诊糖尿病",6.8
+metsComponents.triglycerides,代谢综合征组分.甘油三酯,Number,"甘油三酯。<br>单位: mmol/L<br>**MetS诊断标准**: ≥1.7",2.3
+metsComponents.hdlCholesterol,代谢综合征组分.HDL-C,Number,"高密度脂蛋白胆固醇。<br>单位: mmol/L<br>**MetS诊断标准**: 男性<1.0，女性<1.3",0.9
+metsComponents.componentCount,代谢综合征组分.组分数量,Number,"符合MetS标准的组分数量。<br>**MetS诊断**: ≥3个组分",4
+metsComponents.diagnosis,代谢综合征组分.诊断,String,"是否符合代谢综合征诊断。<br>**建议值**: `是`, `否`",是
+riskAssessment.ascvd10Year,风险评估.ASCVD 10年风险,Number,"中国版ASCVD 10年心血管病风险。<br>单位: %<br>**分层**: <5%低危，5-10%中危，10-20%高危，>20%极高危",15.8
+riskAssessment.riskCategory,风险评估.风险分层,String,"心血管风险分层。<br>**建议值**: `低危(<5%)`, `中危(5-10%)`, `高危(10-20%)`, `极高危(>20%或已有ASCVD)`",高危(10-20%)
+riskAssessment.familyHistory,风险评估.家族史,Boolean,"一级亲属早发冠心病史(男性<55岁，女性<65岁)",true
+riskAssessment.smokingStatus,风险评估.吸烟状态,String,"吸烟情况。<br>**建议值**: `从不吸烟`, `已戒烟`, `当前吸烟`",当前吸烟
+ecg.stSegmentChange,心电图.ST段改变,String,"ST段改变情况。<br>**建议值**: `正常`, `压低≥0.5mm`, `抬高≥1mm`, `非特异性改变`",压低≥0.5mm
+ecg.tWaveChange,心电图.T波改变,String,"T波改变。<br>**建议值**: `正常`, `倒置`, `低平`, `高尖`",倒置
+ecg.pathologicalQWave,心电图.病理性Q波,Boolean,"是否存在病理性Q波(提示陈旧性心肌梗死)",false
+ecg.arrhythmia,心电图.心律失常,String,"心律失常类型。<br>**建议值**: `无`, `窦性心动过速`, `窦性心动过缓`, `房性早搏`, `室性早搏`, `心房颤动`, `室性心动过速`",室性早搏
+exerciseTolerance.testPerformed,运动负荷试验.已完成,Boolean,是否完成运动负荷试验,true
+exerciseTolerance.result,运动负荷试验.结果,String,"运动负荷试验结果。<br>**建议值**: `阴性`, `阳性`, `不确定`",阳性
+exerciseTolerance.stDepression,运动负荷试验.ST段压低,Number,"运动诱发ST段压低。<br>单位: mm<br>**阳性标准**: ≥1mm(水平或下斜型)",1.5
+exerciseTolerance.chestPain,运动负荷试验.胸痛,Boolean,运动中是否出现典型胸痛,true
+exerciseTolerance.bpResponse,运动负荷试验.血压反应,String,"血压反应。<br>**建议值**: `正常`, `收缩压下降>10mmHg`, `过度升高`",正常
+cacScore.value,冠脉钙化积分.CAC评分,Number,"冠脉钙化积分(Agatston评分)。<br>**分级**: 0=无，1-99=轻度，100-399=中度，≥400=重度",156
+cacScore.category,冠脉钙化积分.分级,String,"CAC分级。<br>**建议值**: `CAC=0(极低危)`, `CAC 1-99(轻度)`, `CAC 100-399(中度)`, `CAC≥400(重度，高危)`",CAC 100-399(中度)
+cacScore.predictedRisk,冠脉钙化积分.预测风险,String,"基于CAC的5-10年心血管事件风险。<br>**建议值**: `极低(<1%)`, `低(1-5%)`, `中(5-10%)`, `高(>10%)`",中(5-10%)
+cta.performed,冠脉CTA.已完成,Boolean,是否完成冠脉CT血管造影,true
+cta.leftMainStenosis,冠脉CTA.左主干狭窄程度,Number,"左主干狭窄程度。<br>单位: %<br>**血流动力学显著**: ≥50%",30
+cta.ladStenosis,冠脉CTA.前降支狭窄程度,Number,"左前降支狭窄程度。<br>单位: %<br>**血流动力学显著**: ≥70%",75
+cta.lcxStenosis,冠脉CTA.回旋支狭窄程度,Number,"左回旋支狭窄程度。<br>单位: %",45
+cta.rcaStenosis,冠脉CTA.右冠脉狭窄程度,Number,"右冠状动脉狭窄程度。<br>单位: %",60
+cta.numberOfVessels,冠脉CTA.病变支数,Number,"显著狭窄(≥70%)的冠脉支数。<br>**分类**: 0=无，1=单支，2=双支，3=三支",2
+cta.plaqueCharacteristics,冠脉CTA.斑块特征,String,"斑块性质。<br>**建议值**: `无斑块`, `钙化斑块`, `非钙化斑块(软斑块)`, `混合斑块`, `易损斑块`",混合斑块
+cag.performed,冠脉造影.已完成,Boolean,是否完成冠脉造影(金标准),true
+cag.leftMainStenosis,冠脉造影.左主干狭窄,Number,"左主干狭窄程度(QCA定量分析)。<br>单位: %<br>**显著狭窄**: ≥50%",0
+cag.ladStenosis,冠脉造影.前降支狭窄,Number,"前降支狭窄程度。<br>单位: %<br>**显著狭窄**: ≥70%",85
+cag.lcxStenosis,冠脉造影.回旋支狭窄,Number,"回旋支狭窄程度。<br>单位: %",50
+cag.rcaStenosis,冠脉造影.右冠脉狭窄,Number,"右冠状动脉狭窄程度。<br>单位: %",75
+cag.syntaxScore,冠脉造影.SYNTAX评分,Number,"SYNTAX评分(评估多支病变复杂性)。<br>**分层**: ≤22低分(PCI优先)，23-32中分，>32高分(CABG优先)",28
+cag.numberOfVessels,冠脉造影.病变支数,Number,"显著狭窄的冠脉支数",2
+cag.dominance,冠脉造影.优势型,String,"冠脉优势型。<br>**建议值**: `右优势`, `左优势`, `共优势`",右优势
+ffr.performed,血流储备分数.已完成,Boolean,是否完成FFR检查(评估临界病变),true
+ffr.ladValue,血流储备分数.前降支FFR值,Number,"前降支FFR值。<br>**血流动力学显著**: ≤0.80",0.75
+ffr.hemodynamicallySignificant,血流储备分数.血流动力学显著,Boolean,"FFR≤0.80，有血流动力学意义",true
+biomarkers.troponinI,生物标志物.肌钙蛋白I,Number,"高敏肌钙蛋白I(hs-cTnI)。<br>单位: ng/L<br>**参考范围**: <26.2<br>**心肌梗死**: >99th百分位",580
+biomarkers.troponinT,生物标志物.肌钙蛋白T,Number,"高敏肌钙蛋白T(hs-cTnT)。<br>单位: ng/L<br>**参考范围**: <14",35
+biomarkers.ckMb,生物标志物.CK-MB,Number,"肌酸激酶同工酶MB。<br>单位: U/L<br>**参考范围**: <25",42
+biomarkers.ntProBnp,生物标志物.NT-proBNP,Number,"N端脑钠肽前体。<br>单位: pg/mL<br>**参考范围**: <125<br>**心衰**: >125",450
+biomarkers.hsCrp,生物标志物.超敏C反应蛋白,Number,"超敏CRP(炎症标志物)。<br>单位: mg/L<br>**心血管风险**: <1低危，1-3中危，>3高危",5.2
+lipidProfile.totalCholesterol,血脂.总胆固醇,Number,"总胆固醇。<br>单位: mmol/L<br>**合适**: <5.2",5.8
+lipidProfile.ldlCholesterol,血脂.LDL-C,Number,"低密度脂蛋白胆固醇。<br>单位: mmol/L<br>**极高危目标**: <1.0",2.1
+lipidProfile.hdlCholesterol,血脂.HDL-C,Number,"高密度脂蛋白胆固醇。<br>单位: mmol/L<br>**合适**: 男性>1.0，女性>1.3",0.9
+lipidProfile.triglycerides,血脂.甘油三酯,Number,"甘油三酯。<br>单位: mmol/L<br>**合适**: <1.7",2.3
+lipidProfile.nonHdlC,血脂.非HDL-C,Number,"非HDL-C(TC-HDL-C)。<br>单位: mmol/L<br>**极高危目标**: <1.8",4.9
+lipidProfile.apoB,血脂.载脂蛋白B,Number,"载脂蛋白B。<br>单位: g/L<br>**合适**: <0.9",1.2
+lipidProfile.apoA1,血脂.载脂蛋白A1,Number,"载脂蛋白A1。<br>单位: g/L<br>**参考范围**: 1.2-1.6",1.1
+lipidProfile.apoBtoA1Ratio,血脂.ApoB/ApoA1比值,Number,"ApoB/ApoA1比值(动脉硬化风险)。<br>**高危**: >0.9",1.09
+lipidProfile.lipoproteinA,血脂.脂蛋白(a),Number,"脂蛋白(a)。<br>单位: mg/dL<br>**高危**: >50",65
+glycemicControl.fastingGlucose,血糖控制.空腹血糖,Number,"空腹血糖。<br>单位: mmol/L<br>**糖尿病**: ≥7.0",7.5
+glycemicControl.hba1c,血糖控制.糖化血红蛋白,Number,"HbA1c。<br>单位: %<br>**目标**: <7.0",7.2
+glycemicControl.diabetesDuration,血糖控制.糖尿病病程,Number,"糖尿病病程。<br>单位: 年<br>**高危**: >10年",12
+glycemicControl.diabetesComplications,血糖控制.糖尿病并发症,String,"糖尿病并发症。<br>**建议值**: `无`, `视网膜病变`, `肾病`, `神经病变`, `多种并发症`",多种并发症
+echocardiography.lvef,超声心动图.左室射血分数,Number,"左室射血分数。<br>单位: %<br>**正常**: ≥50%<br>**轻度降低**: 40-49%<br>**中度降低**: 30-39%<br>**重度降低**: <30%",45
+echocardiography.wallMotionAbnormality,超声心动图.室壁运动异常,Boolean,是否存在节段性室壁运动异常,true
+echocardiography.diastolicDysfunction,超声心动图.舒张功能不全,String,"舒张功能不全分级。<br>**建议值**: `正常`, `I级`, `II级`, `III级`",I级
+echocardiography.lvh,超声心动图.左室肥厚,Boolean,是否存在左室肥厚,true
+renalFunction.creatinine,肾功能.血肌酐,Number,"血肌酐。<br>单位: μmol/L<br>**参考范围**: 44-133",95
+renalFunction.egfr,肾功能.估算肾小球滤过率,Number,"eGFR(CKD-EPI公式)。<br>单位: mL/min/1.73m²<br>**正常**: ≥90<br>**CKD**: <60",72
+renalFunction.uacr,肾功能.尿白蛋白肌酐比,Number,"尿白蛋白/肌酐比值。<br>单位: mg/g<br>**正常**: <30<br>**微量白蛋白尿**: 30-300",85
+diagnosis.cadPresence,诊断.冠心病,String,"冠心病诊断。<br>**建议值**: `无`, `疑似`, `稳定性CAD`, `不稳定型心绞痛`, `NSTEMI`, `STEMI`, `陈旧性心肌梗死`",稳定性CAD
+diagnosis.cadSeverity,诊断.冠心病严重程度,String,"冠心病严重程度。<br>**建议值**: `轻度(单支，狭窄<70%)`, `中度(单支≥70%或双支)`, `重度(三支或左主干)`",中度(单支≥70%或双支)
+diagnosis.acs,诊断.急性冠脉综合征,String,"ACS诊断。<br>**建议值**: `无`, `不稳定型心绞痛`, `NSTEMI`, `STEMI`",无
+diagnosis.heartFailure,诊断.心力衰竭,String,"心力衰竭诊断。<br>**建议值**: `无`, `HFrEF(射血分数降低)`, `HFmrEF(射血分数中间值)`, `HFpEF(射血分数保留)`",无
+antiplateletTherapy.indication,抗血小板治疗.指征,String,"抗血小板治疗指征。<br>**建议值**: `一级预防`, `二级预防(已有CAD)`, `PCI术后`, `ACS`",二级预防(已有CAD)
+antiplateletTherapy.regimen,抗血小板治疗.方案,String,"抗血小板治疗方案。<br>**建议值**: `无`, `阿司匹林单药`, `氯吡格雷单药`, `双联抗血小板(阿司匹林+氯吡格雷)`, `双联抗血小板(阿司匹林+替格瑞洛)`, `双联抗血小板(阿司匹林+普拉格雷)`",双联抗血小板(阿司匹林+氯吡格雷)
+antiplateletTherapy.aspirinDose,抗血小板治疗.阿司匹林剂量,Number,"阿司匹林剂量。<br>单位: mg/天<br>**常用**: 75-100mg",100
+antiplateletTherapy.p2y12Inhibitor,抗血小板治疗.P2Y12抑制剂,String,"P2Y12抑制剂类型。<br>**建议值**: `无`, `氯吡格雷75mg qd`, `替格瑞洛90mg bid`, `普拉格雷10mg qd`",氯吡格雷75mg qd
+antiplateletTherapy.daptDuration,抗血小板治疗.DAPT疗程,String,"双联抗血小板疗程。<br>**建议值**: `3-6月(高出血风险)`, `6月(择期PCI)`, `12月(ACS标准)`, `>12月(延长疗程)`",12月(ACS标准)
+lipidLowering.target,降脂治疗.LDL-C目标,Number,"LDL-C目标值。<br>单位: mmol/L<br>**稳定CAD**: <1.4<br>**ACS/极高危**: <1.0",1.4
+lipidLowering.reductionTarget,降脂治疗.降低幅度目标,Number,"LDL-C降低幅度目标。<br>单位: %<br>**目标**: ≥50%",50
+lipidLowering.statin,降脂治疗.他汀类药物,String,"他汀类药物及剂量。<br>**建议值**: `阿托伐他汀20mg`, `阿托伐他汀40mg`, `阿托伐他汀80mg`, `瑞舒伐他汀10mg`, `瑞舒伐他汀20mg`, `瑞舒伐他汀40mg`, `匹伐他汀2mg`, `匹伐他汀4mg`",阿托伐他汀40mg
+lipidLowering.ezetimibe,降脂治疗.依折麦布,Boolean,是否联合依折麦布10mg/天,true
+lipidLowering.pcsk9i,降脂治疗.PCSK9抑制剂,String,"PCSK9抑制剂。<br>**建议值**: `无`, `依洛尤单抗140mg q2w`, `依洛尤单抗420mg qm`, `阿利西尤单抗75mg q2w`, `阿利西尤单抗150mg q2w`",无
+lipidLowering.fibrate,降脂治疗.贝特类,String,"贝特类药物(TG≥5.6)。<br>**建议值**: `无`, `非诺贝特160mg qd`",无
+lipidLowering.icosapentEthyl,降脂治疗.高纯度EPA,String,"Icosapent ethyl(TG 2.3-5.6)。<br>**建议值**: `无`, `2g bid`",无
+bloodPressureControl.target,血压控制.目标血压,String,"血压控制目标。<br>**MetS合并CAD**: <130/80 mmHg",<130/80
+bloodPressureControl.aceiOrArb,血压控制.ACEI或ARB,String,"ACEI/ARB药物。<br>**建议值**: `无`, `培哚普利`, `雷米普利`, `依那普利`, `缬沙坦`, `厄贝沙坦`, `替米沙坦`",培哚普利
+bloodPressureControl.betaBlocker,血压控制.β受体阻滞剂,String,"β受体阻滞剂(心梗后/心衰/心率快)。<br>**建议值**: `无`, `美托洛尔`, `比索洛尔`, `卡维地洛`",美托洛尔
+bloodPressureControl.ccb,血压控制.钙通道阻滞剂,String,"CCB(变异性心绞痛)。<br>**建议值**: `无`, `氨氯地平`, `地尔硫卓`, `非洛地平`",氨氯地平
+glycemicControl.sglt2i,血糖控制.SGLT2抑制剂,String,"SGLT2抑制剂(心血管获益)。<br>**建议值**: `无`, `恩格列净10mg`, `恩格列净25mg`, `达格列净10mg`, `卡格列净100mg`",恩格列净10mg
+glycemicControl.glp1ra,血糖控制.GLP-1受体激动剂,String,"GLP-1RA(心血管获益)。<br>**建议值**: `无`, `利拉鲁肽`, `司美格鲁肽`, `度拉糖肽`",利拉鲁肽
+glycemicControl.metformin,血糖控制.二甲双胍,Boolean,是否使用二甲双胍(基础用药),true
+antianginalTherapy.betaBlocker,抗心绞痛治疗.β受体阻滞剂,String,"β受体阻滞剂剂量。<br>**建议值**: `美托洛尔50mg`, `美托洛尔100mg`, `美托洛尔200mg`, `比索洛尔5mg`, `比索洛尔10mg`",美托洛尔100mg
+antianginalTherapy.nitrates,抗心绞痛治疗.硝酸酯类,String,"硝酸酯类药物。<br>**建议值**: `无`, `硝酸甘油0.5mg舌下含服prn`, `单硝酸异山梨酯40mg qd`, `单硝酸异山梨酯60mg qd`",单硝酸异山梨酯40mg qd
+antianginalTherapy.ccb,抗心绞痛治疗.钙通道阻滞剂,String,"CCB(β受体阻滞剂禁忌时)。<br>**建议值**: `无`, `氨氯地平5mg`, `氨氯地平10mg`, `地尔硫卓`",无
+revascularization.indication,血运重建.指征,String,"血运重建指征。<br>**建议值**: `无`, `药物难治性心绞痛(CCS III-IV)`, `左主干狭窄≥50%`, `三支病变`, `前降支近段狭窄≥70%`, `STEMI`, `NSTEMI/UA高危`",三支病变
+revascularization.recommendation,血运重建.推荐方案,String,"血运重建推荐方案。<br>**建议值**: `药物治疗`, `PCI`, `CABG`, `需心脏团队讨论`",CABG
+revascularization.pciOrCabg,血运重建.PCI vs CABG决策依据,String,"PCI或CABG决策考虑。<br>**建议值**: `SYNTAX评分≤22(PCI优先)`, `SYNTAX评分23-32(PCI或CABG)`, `SYNTAX评分>32(CABG优先)`, `糖尿病+多支病变(CABG优先)`, `左主干近段或复杂分叉(CABG优先)`, `高龄或高手术风险(PCI优先)`",SYNTAX评分23-32(PCI或CABG)
+revascularization.performed,血运重建.已完成,Boolean,是否已完成血运重建治疗,false
+revascularization.type,血运重建.类型,String,"血运重建类型。<br>**建议值**: `PCI`, `CABG`, `PCI+CABG混合`",未完成
+pci.stentType,PCI.支架类型,String,"支架类型。<br>**建议值**: `第三代药物洗脱支架(DES)`, `生物可吸收支架`",第三代药物洗脱支架(DES)
+pci.numberOfStents,PCI.支架数量,Number,置入支架数量,2
+pci.completeRevascularization,PCI.完全血运重建,Boolean,是否完成完全血运重建,true
+cabg.limaToLad,CABG.LIMA-LAD,Boolean,左乳内动脉桥接前降支,true
+cabg.numberOfGrafts,CABG.桥血管数量,Number,桥血管总数,3
+cabg.saphenousVein,CABG.大隐静脉,Boolean,是否使用大隐静脉,true
+cardiacRehab.phase,心脏康复.分期,String,"心脏康复分期。<br>**建议值**: `I期(住院期)`, `II期(出院后2-12周)`, `III期(长期维持)`",II期(出院后2-12周)
+cardiacRehab.exercisePrescription,心脏康复.运动处方,String,"运动处方。<br>**建议值**: `中等强度有氧运动3-5次/周30-60分钟`, `快走`, `慢跑`, `游泳`, `阻抗训练2-3次/周`",中等强度有氧运动3-5次/周30-60分钟
+cardiacRehab.psychologicalIntervention,心脏康复.心理干预,Boolean,是否进行焦虑抑郁筛查和干预,true
+lifestyle.dietPattern,生活方式.饮食模式,String,"饮食模式。<br>**建议值**: `地中海饮食`, `DASH饮食`, `普通饮食`, `不健康饮食`",地中海饮食
+lifestyle.sodiumIntake,生活方式.钠摄入,Number,"每日钠摄入量。<br>单位: g<br>**目标**: <5g/天",4.5
+lifestyle.smokingCessation,生活方式.戒烟,String,"戒烟状态。<br>**建议值**: `从不吸烟`, `已戒烟`, `戒烟中(尼古丁替代/伐尼克兰)`, `未戒烟`",戒烟中(尼古丁替代/伐尼克兰)
+lifestyle.bmi,生活方式.体重指数,Number,"BMI。<br>单位: kg/m²<br>**目标**: <24",26.5
+lifestyle.physicalActivity,生活方式.体力活动,String,"体力活动水平。<br>**建议值**: `达标(≥150分钟/周中等强度)`, `不足(<150分钟/周)`, `久坐少动`",不足(<150分钟/周)
+abcManagement.a1c,ABC管理.A1c,Number,"糖化血红蛋白。<br>单位: %<br>**目标**: <7.0%",7.2
+abcManagement.bloodPressure,ABC管理.血压,String,"血压控制。<br>**目标**: <130/80 mmHg",135/85
+abcManagement.ldlCholesterol,ABC管理.LDL-C,Number,"低密度脂蛋白胆固醇。<br>单位: mmol/L<br>**目标**: 稳定CAD<1.4，ACS/极高危<1.0",2.1
+abcManagement.abcGoalsAchieved,ABC管理.ABC目标达成,Number,"达标的ABC目标数量(共3个)。<br>**理想**: 3个全部达标",1
+followUp.frequency,随访.频率,String,"随访频率。<br>**建议值**: `每3月`, `每6月`, `每年`, `PCI/CABG术后1、3、6、12月`",每3月
+followUp.ecgSchedule,随访.心电图,String,"心电图监测计划。<br>**建议值**: `每次随访`, `每年`, `出现症状时`",每次随访
+followUp.stressTestSchedule,随访.负荷试验,String,"负荷试验计划。<br>**建议值**: `每年`, `怀疑再狭窄时`",每年
+followUp.ctaSchedule,随访.冠脉CTA,String,"冠脉CTA监测计划。<br>**建议值**: `每年`, `怀疑再狭窄时`, `不需要`",怀疑再狭窄时
+maceRisk.assessmentDate,MACE风险.评估日期,String,主要心血管不良事件风险评估日期,2025-10-01
+maceRisk.nextYearRisk,MACE风险.1年内风险,String,"1年内MACE风险。<br>**建议值**: `低(<5%)`, `中(5-10%)`, `高(10-20%)`, `极高(>20%)`",中(5-10%)
+maceRisk.fiveYearRisk,MACE风险.5年内风险,String,"5年内MACE风险。<br>**建议值**: `低(<10%)`, `中(10-20%)`, `高(20-30%)`, `极高(>30%)`",高(20-30%)
+prognosis.lvef,预后.左室射血分数,Number,"左室射血分数(重要预后指标)。<br>单位: %",45
+prognosis.nyhaClass,预后.NYHA心功能分级,String,"NYHA心功能分级。<br>**建议值**: `I级`, `II级`, `III级`, `IV级`",II级
+prognosis.readmissionRisk,预后.再住院风险,String,"30天再住院风险。<br>**建议值**: `低`, `中`, `高`",中
+diagnosisImpression,诊断印象,String,综合诊断结果和临床印象,代谢综合征合并稳定性冠心病(双支病变，SYNTAX评分28)，已控制的2型糖尿病，高血压，血脂异常
+recommendation,建议,String,治疗建议和随访计划,1. 建议CABG(多支病变+中分SYNTAX评分+糖尿病); 2. 强化降脂(阿托伐他汀40mg+依折麦布，目标LDL-C<1.0); 3. 双联抗血小板治疗12月; 4. ABC综合管理; 5. 心脏康复; 6. 每3月随访

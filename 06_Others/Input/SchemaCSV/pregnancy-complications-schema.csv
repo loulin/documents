@@ -1,0 +1,40 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行孕期并发症评估的日期,2025-07-12
+patientId,患者编号,String,孕产妇唯一标识,GA2025-0321
+gestationalAgeWeeks,孕周,Number,"当前孕周。<br>单位: 周",32
+gravida,孕次,Number,既往妊娠次数。,2
+para,产次,Number,既往分娩次数。,1
+pregnancyType,妊娠类型,String,"多胎或特殊妊娠类型。<br>**建议值**: `单胎`, `双胎`, `三胎`, `辅助生殖`, `瘢痕子宫妊娠`",双胎
+complicationCategory,并发症类别,String,"主要孕期并发症分类。<br>**建议值**: `先兆子痫/子痫`, `妊娠期高血压`, `妊娠期糖尿病`, `妊娠期肝内胆汁淤积`, `胎盘早剥风险`, `胎膜早破`, `宫内生长受限`, `胎儿畸形`, `妊娠期甲减/甲亢`, `其他`",先兆子痫
+severityAssessment,严重程度评估,String,"综合评估并发症严重程度。<br>**建议值**: `轻度`, `中度`, `重度`, `危重`",中度
+bloodPressureSystolic,收缩压,Number,"孕妇坐位收缩压。<br>单位: mmHg",165
+bloodPressureDiastolic,舒张压,Number,"孕妇坐位舒张压。<br>单位: mmHg",105
+meanArterialPressure,平均动脉压,Number,"MAP计算值。<br>单位: mmHg",125
+urineProtein24h,24小时尿蛋白,Number,"24小时尿蛋白总量。<br>单位: g/24h",1.2
+urineProteinDipstick,尿蛋白试纸,String,"尿蛋白半定量结果。<br>**建议值**: `阴性`, `微量`, `1+`, `2+`, `3+`, `4+`",2+
+plateletCount,血小板计数,Number,"血小板。<br>单位: ×10⁹/L",95
+altLevel,血清ALT,Number,"丙氨酸氨基转移酶。<br>单位: U/L",88
+astLevel,血清AST,Number,"天冬氨酸氨基转移酶。<br>单位: U/L",92
+ldhLevel,乳酸脱氢酶,Number,"乳酸脱氢酶。<br>单位: U/L",610
+uricAcidLevel,血尿酸,Number,"血尿酸。<br>单位: μmol/L",520
+bilirubinTotal,总胆红素,Number,"总胆红素。<br>单位: μmol/L",28
+bileAcidTotal,总胆汁酸,Number,"总胆汁酸。<br>单位: μmol/L",25
+glucoseFasting,空腹血糖,Number,"空腹血糖。<br>单位: mmol/L",5.6
+glucoseOgtt1h,OGTT 1小时,Number,"75g OGTT 1小时血糖。<br>单位: mmol/L",10.8
+glucoseOgtt2h,OGTT 2小时,Number,"75g OGTT 2小时血糖。<br>单位: mmol/L",9.3
+fetalMovementCount,胎动计数,Number,"2小时胎动次数",12
+nonStressTestResult,无应激试验结果,String,"NST评估。<br>**建议值**: `反应型`, `非反应型`, `可疑`, `需要重复`",可疑
+biophysicalProfileScore,胎儿生物物理评分,Number,"BPP评分。<br>单位: 分",6
+umbilicalArterySystolicDiastolicRatio,脐动脉S/D比值,Number,"彩超多普勒测量。<br>单位: 比值",3.5
+uterineArteryPulsatilityIndex,子宫动脉搏动指数,Number,"左/右子宫动脉PI平均。<br>单位: 比值",1.8
+cervicalLength,宫颈长度,Number,"经阴道超声宫颈长度。<br>单位: mm",24
+amnioticFluidIndex,羊水指数,Number,"AFI测量值。<br>单位: cm",6.5
+fetalGrowthPercentile,胎儿生长百分位,Number,"超声估测胎重百分位。<br>单位: %",8
+placentaAssessment,胎盘评估,String,"胎盘位置、成熟度及病理提示",后壁胎盘II级，血流灌注差
+maternalSymptoms,母体症状,String,"主要症状记录。示例: `头痛`, `视物模糊`, `上腹痛`, `瘙痒`",头痛伴视物模糊
+medicationPlan,用药方案,String,"当前或计划中的药物治疗方案",硫酸镁+拉贝洛尔
+monitoringPlan,监测方案,String,"母胎监测频率与项目",建议48小时内重复NST并住院监护
+modeOfDeliveryAssessment,分娩方式评估,String,"分娩计划。<br>**建议值**: `继续妊娠观察`, `引产`, `剖宫产`, `计划早产`, `待评估`",剖宫产
+followUpInterval,随访间隔建议,String,"推荐复诊/监测间隔。<br>单位: 天",2
+pregnancyPrognosis,妊娠结局评估,String,"对母胎预后的综合判断",建议35周前完成剖宫产
+recommendation,综合建议,String,综合处理建议。,建议立即入院完善评估并准备终止妊娠

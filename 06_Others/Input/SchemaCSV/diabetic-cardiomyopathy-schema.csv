@@ -1,0 +1,118 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行心力衰竭评估的日期,2025-10-01
+patientID,患者ID,String,患者唯一标识符,P123456
+diabetesDuration,糖尿病病程,Number,"糖尿病病程。<br>单位: 年<br>**高危**: >10年",15
+diabetesType,糖尿病类型,String,"糖尿病类型。<br>**建议值**: `1型糖尿病`, `2型糖尿病`, `其他特殊类型`",2型糖尿病
+comorbidities.hypertension,合并症.高血压,Boolean,是否合并高血压,true
+comorbidities.coronaryArteryDisease,合并症.冠心病,Boolean,是否合并冠心病,true
+comorbidities.ckd,合并症.慢性肾脏病,Boolean,是否合并慢性肾脏病,true
+comorbidities.atrialFibrillation,合并症.心房颤动,Boolean,是否合并心房颤动,false
+symptoms.dyspnea,症状.呼吸困难,String,"呼吸困难程度。<br>**建议值**: `无`, `劳力性`, `端坐呼吸`, `阵发性夜间呼吸困难`, `静息呼吸困难`",劳力性
+symptoms.fatigue,症状.乏力,String,"乏力程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+symptoms.edema,症状.水肿,String,"水肿部位和程度。<br>**建议值**: `无`, `下肢轻度水肿`, `下肢中度水肿`, `下肢重度水肿`, `全身水肿`",下肢中度水肿
+symptoms.orthopnea,症状.端坐呼吸,Boolean,是否需要垫高枕头才能睡眠,true
+symptoms.pnd,症状.阵发性夜间呼吸困难,Boolean,是否夜间突然憋醒,false
+nyhaClass,NYHA心功能分级,String,"纽约心脏协会心功能分级。<br>**建议值**: `I级(无症状)`, `II级(轻度活动受限)`, `III级(明显活动受限)`, `IV级(休息时症状)`",II级(轻度活动受限)
+physicalExam.jvp,体格检查.颈静脉压,String,"颈静脉压。<br>**建议值**: `正常`, `轻度升高`, `明显升高`",轻度升高
+physicalExam.lungRales,体格检查.肺部啰音,String,"肺部湿啰音。<br>**建议值**: `无`, `双肺底`, `双肺中下野`, `双肺广泛`",双肺底
+physicalExam.s3Gallop,体格检查.S3奔马律,Boolean,是否存在第三心音奔马律,true
+physicalExam.hepatomegaly,体格检查.肝大,Boolean,是否存在肝脏肿大,false
+physicalExam.ascites,体格检查.腹水,Boolean,是否存在腹水,false
+physicalExam.peripheralEdema,体格检查.下肢水肿,String,"下肢水肿程度。<br>**建议值**: `无`, `轻度(+)`, `中度(++)`, `重度(+++)`",中度(++)
+biomarkers.ntProBnp,生物标志物.NT-proBNP,Number,"N端脑钠肽前体。<br>单位: pg/mL<br>**排除HF**: <125<br>**提示HF**: 125-450轻度，>450中重度，房颤>900",850
+biomarkers.bnp,生物标志物.BNP,Number,"脑钠肽。<br>单位: pg/mL<br>**排除HF**: <35<br>**提示HF**: >35",180
+biomarkers.troponinI,生物标志物.肌钙蛋白I,Number,"高敏肌钙蛋白I。<br>单位: ng/L<br>**参考范围**: <26.2<br>**说明**: HF时可轻度升高",45
+biomarkers.hsCrp,生物标志物.超敏C反应蛋白,Number,"超敏CRP(炎症标志物)。<br>单位: mg/L<br>**参考范围**: <3",6.5
+glycemicControl.fastingGlucose,血糖控制.空腹血糖,Number,"空腹血糖。<br>单位: mmol/L",8.2
+glycemicControl.hba1c,血糖控制.糖化血红蛋白,Number,"HbA1c。<br>单位: %<br>**HF患者目标**: 7.0-8.0%(个体化，避免低血糖)<br>**预后不良**: >9.0%",8.5
+glycemicControl.hypoglycemiaHistory,血糖控制.低血糖病史,Boolean,近期是否有低血糖发作史,false
+renalFunction.creatinine,肾功能.血肌酐,Number,"血肌酐。<br>单位: μmol/L<br>**参考范围**: 44-133",125
+renalFunction.egfr,肾功能.估算肾小球滤过率,Number,"eGFR。<br>单位: mL/min/1.73m²<br>**正常**: ≥90<br>**CKD**: <60<br>**预后不良**: <30",45
+renalFunction.uacr,肾功能.尿白蛋白肌酐比,Number,"尿白蛋白/肌酐比值。<br>单位: mg/g<br>**正常**: <30<br>**微量白蛋白尿**: 30-300<br>**大量白蛋白尿**: >300<br>**预后不良**: 白蛋白尿存在",350
+electrolytes.sodium,电解质.血钠,Number,"血钠浓度。<br>单位: mmol/L<br>**参考范围**: 135-145<br>**预后不良**: <135",132
+electrolytes.potassium,电解质.血钾,Number,"血钾浓度。<br>单位: mmol/L<br>**参考范围**: 3.5-5.0<br>**监测**: 使用RAAS抑制剂+MRA时",4.8
+lipidProfile.totalCholesterol,血脂.总胆固醇,Number,"总胆固醇。<br>单位: mmol/L",5.2
+lipidProfile.ldlCholesterol,血脂.LDL-C,Number,"低密度脂蛋白胆固醇。<br>单位: mmol/L<br>**目标**: <1.8",2.5
+lipidProfile.hdlCholesterol,血脂.HDL-C,Number,"高密度脂蛋白胆固醇。<br>单位: mmol/L",0.95
+lipidProfile.triglycerides,血脂.甘油三酯,Number,"甘油三酯。<br>单位: mmol/L",2.1
+ecg.sinusRhythm,心电图.窦性心律,Boolean,是否为窦性心律,true
+ecg.atrialFibrillation,心电图.心房颤动,Boolean,是否存在心房颤动,false
+ecg.heartRate,心电图.心率,Number,"心率。<br>单位: 次/分<br>**目标**: <70(窦性心律)，<110(房颤)",85
+ecg.qrs,心电图.QRS波宽度,Number,"QRS波宽度。<br>单位: ms<br>**宽QRS**: >120ms(考虑CRT)",95
+ecg.leftBundleBranchBlock,心电图.左束支传导阻滞,Boolean,是否存在左束支传导阻滞,false
+ecg.lvh,心电图.左室肥厚,Boolean,是否存在左室肥厚表现,true
+ecg.stTChange,心电图.ST-T改变,Boolean,是否存在ST-T改变,true
+echocardiography.lvef,超声心动图.左室射血分数,Number,"左室射血分数(LVEF)。<br>单位: %<br>**正常**: ≥50%<br>**HFrEF**: ≤40%<br>**HFmrEF**: 41-49%<br>**HFpEF**: ≥50%<br>**预后不良**: <30%",38
+echocardiography.hfType,超声心动图.心衰类型,String,"根据LVEF分类的心衰类型。<br>**建议值**: `HFrEF(LVEF≤40%)`, `HFmrEF(LVEF 41-49%)`, `HFpEF(LVEF≥50%)`",HFrEF(LVEF≤40%)
+echocardiography.lvedd,超声心动图.左室舒张末期内径,Number,"左室舒张末期内径。<br>单位: mm<br>**参考范围**: 男性42-59，女性39-53<br>**扩大**: >59(男)，>53(女)",62
+echocardiography.lvesd,超声心动图.左室收缩末期内径,Number,"左室收缩末期内径。<br>单位: mm<br>**参考范围**: 男性25-40，女性22-35",45
+echocardiography.lavi,超声心动图.左心房容积指数,Number,"左心房容积指数。<br>单位: mL/m²<br>**正常**: <34<br>**扩大**: ≥34",42
+echocardiography.eEPrimeRatio,超声心动图.E/e'比值,Number,"E/e'比值(舒张功能指标)。<br>**正常**: <8<br>**舒张功能不全**: >14",16
+echocardiography.diastolicDysfunction,超声心动图.舒张功能不全,String,"舒张功能不全分级。<br>**建议值**: `正常`, `I级(松弛受损)`, `II级(假性正常)`, `III级(限制性充盈)`",II级(假性正常)
+echocardiography.wallMotionAbnormality,超声心动图.室壁运动异常,Boolean,是否存在节段性室壁运动异常(提示缺血/梗死),true
+echocardiography.lvh,超声心动图.左室肥厚,String,"左室肥厚类型。<br>**建议值**: `无`, `向心性肥厚`, `离心性肥厚`, `向心性重构`",向心性肥厚
+echocardiography.mitralRegurgitation,超声心动图.二尖瓣反流,String,"二尖瓣反流程度。<br>**建议值**: `无或微量`, `轻度`, `中度`, `重度`",中度
+echocardiography.tricuspidRegurgitation,超声心动图.三尖瓣反流,Boolean,是否存在三尖瓣反流,true
+echocardiography.rvSystolicPressure,超声心动图.右室收缩压,Number,"右室收缩压(估测肺动脉压)。<br>单位: mmHg<br>**正常**: <35<br>**肺动脉高压**: >35",45
+echocardiography.pericardialEffusion,超声心动图.心包积液,String,"心包积液程度。<br>**建议值**: `无`, `少量`, `中量`, `大量`",无
+cmr.performed,心脏磁共振.已完成,Boolean,是否完成心脏磁共振检查,false
+cmr.lateGadoliniumEnhancement,心脏磁共振.延迟钆强化,Boolean,是否存在延迟钆强化(提示心肌纤维化),false
+cmr.myocardialFibrosis,心脏磁共振.心肌纤维化,String,"心肌纤维化程度。<br>**建议值**: `无`, `轻度`, `中度`, `广泛`",无
+chestXray.cardiomegaly,胸部X线.心影增大,Boolean,是否存在心影增大(CTR>0.5),true
+chestXray.pulmonaryCongestion,胸部X线.肺淤血,String,"肺淤血程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度(肺水肿)`",轻度
+chestXray.pleuralEffusion,胸部X线.胸腔积液,String,"胸腔积液。<br>**建议值**: `无`, `少量`, `中量`, `大量`",少量
+coronaryAssessment.cad,冠脉评估.冠心病,String,"冠心病诊断。<br>**建议值**: `无`, `疑似`, `已确诊`, `陈旧性心肌梗死`, `需冠脉造影评估`",已确诊
+coronaryAssessment.revascularization,冠脉评估.血运重建史,Boolean,是否有PCI或CABG史,true
+diagnosis.heartFailure,诊断.心力衰竭,String,"心力衰竭诊断。<br>**建议值**: `无心衰`, `疑似心衰`, `确诊心衰`, `急性失代偿性心衰(ADHF)`",确诊心衰
+diagnosis.hfType,诊断.心衰分型,String,"心衰分型(基于LVEF)。<br>**建议值**: `HFrEF`, `HFmrEF`, `HFpEF`",HFrEF
+diagnosis.diabeticCardiomyopathy,诊断.糖尿病心肌病,Boolean,是否诊断为糖尿病心肌病,true
+diagnosis.severity,诊断.严重程度,String,"心衰严重程度。<br>**建议值**: `轻度(NYHA I-II)`, `中度(NYHA II-III)`, `重度(NYHA III-IV)`",中度(NYHA II-III)
+riskAssessment.maggicScore,风险评估.MAGGIC风险评分,Number,"MAGGIC 1-3年死亡风险评分。<br>**高危**: >20分",18
+riskAssessment.seattleHfModel,风险评估.Seattle心衰模型,String,"Seattle心衰模型预测生存率。<br>**建议值**: `1年生存率`, `3年生存率`, `5年生存率`",1年生存率: 85%
+riskAssessment.poorPrognosticFactors,风险评估.预后不良因素,String,"预后不良因素。<br>**建议值**: `NT-proBNP>1000`, `LVEF<30%`, `eGFR<30`, `低钠血症`, `频繁失代偿(>2次/年)`",NT-proBNP>1000
+riskAssessment.hospitalizations,风险评估.年住院次数,Number,"过去1年因心衰住院次数。<br>**频繁失代偿**: >2次/年",1
+gdmt.sglt2i,GDMT.SGLT2抑制剂,String,"SGLT2抑制剂(新基石药物，优先使用)。<br>**建议值**: `无`, `达格列净10mg qd`, `恩格列净10mg qd`, `恩格列净25mg qd`",达格列净10mg qd
+gdmt.raasInhibitor,GDMT.RAAS抑制剂,String,"RAAS抑制剂。<br>**建议值**: `无`, `ARNI(沙库巴曲缬沙坦50-200mg bid)`, `ACEI(依那普利10-20mg bid)`, `ARB(缬沙坦80-160mg bid)`",ARNI(沙库巴曲缬沙坦100mg bid)
+gdmt.betaBlocker,GDMT.β受体阻滞剂,String,"β受体阻滞剂。<br>**建议值**: `无`, `比索洛尔1.25-10mg qd`, `美托洛尔缓释12.5-200mg qd`, `卡维地洛3.125-25mg bid`",比索洛尔5mg qd
+gdmt.mra,GDMT.盐皮质激素受体拮抗剂,String,"MRA。<br>**建议值**: `无`, `螺内酯12.5-50mg qd`, `依普利酮25-50mg qd`, `非奈利酮10-20mg qd(糖尿病优选)`",非奈利酮20mg qd
+gdmt.diuretic,GDMT.利尿剂,String,"利尿剂(症状管理)。<br>**建议值**: `无`, `呋塞米20mg qd`, `呋塞米40mg qd`, `呋塞米40mg bid`, `呋塞米80mg bid`, `呋塞米+噻嗪类联合`",呋塞米40mg qd
+gdmt.digoxin,GDMT.地高辛,String,"地高辛(房颤合并HFrEF)。<br>**建议值**: `无`, `地高辛0.125mg qd`",无
+gdmt.ivabradine,GDMT.伊伐布雷定,String,"伊伐布雷定(窦性心律，心率>70bpm)。<br>**建议值**: `无`, `伊伐布雷定2.5mg bid`, `伊伐布雷定5mg bid`, `伊伐布雷定7.5mg bid`",无
+gdmt.targetDoses,GDMT.目标剂量达成,String,"GDMT药物是否达到目标剂量。<br>**建议值**: `已达目标剂量`, `正在滴定中`, `未达目标(记录原因)`",正在滴定中
+antidiabetic.sglt2i,降糖治疗.SGLT2抑制剂,String,"SGLT2抑制剂(一线，双重获益)。<br>**建议值**: `达格列净10mg qd`, `恩格列净10mg qd`, `恩格列净25mg qd`",达格列净10mg qd
+antidiabetic.glp1ra,降糖治疗.GLP-1受体激动剂,String,"GLP-1RA(心血管获益)。<br>**建议值**: `无`, `利拉鲁肽1.2-1.8mg qd`, `司美格鲁肽0.5-1mg qw`, `度拉糖肽0.75-1.5mg qw`",利拉鲁肽1.8mg qd
+antidiabetic.metformin,降糖治疗.二甲双胍,String,"二甲双胍(eGFR>30可用)。<br>**建议值**: `无`, `500mg`, `1000mg`, `1500mg`, `2000mg`",1000mg
+antidiabetic.insulin,降糖治疗.胰岛素,String,"胰岛素(严重高血糖时)。<br>**建议值**: `无`, `基础胰岛素`, `基础+餐时胰岛素`, `预混胰岛素`",无
+antidiabetic.contraindicated,降糖治疗.禁用药物,String,"禁用或慎用的降糖药。<br>**绝对禁用**: TZD类(吡格列酮)<br>**避免**: 沙格列汀",TZD类(已停用)
+bloodPressureControl.target,血压控制.目标血压,String,"血压控制目标。<br>**目标**: <130/80 mmHg",<130/80
+bloodPressureControl.currentBp,血压控制.当前血压,String,"当前血压(mmHg)",135/85
+bloodPressureControl.aceiOrArbOrArni,血压控制.ACEI/ARB/ARNI,String,"RAAS抑制剂(已包含在GDMT中)。<br>**建议值**: `见GDMT.RAAS抑制剂`",见GDMT
+lipidManagement.statin,血脂管理.他汀类,String,"他汀类药物(冠心病合并HF)。<br>**建议值**: `无`, `阿托伐他汀40-80mg`, `瑞舒伐他汀20-40mg`",阿托伐他汀40mg
+antiplatelet.indication,抗血小板治疗.指征,String,"抗血小板治疗指征。<br>**建议值**: `无`, `冠心病合并HF`, `PCI/CABG术后`",冠心病合并HF
+antiplatelet.regimen,抗血小板治疗.方案,String,"抗血小板方案。<br>**建议值**: `无`, `阿司匹林100mg qd`, `氯吡格雷75mg qd`, `双联抗血小板`",阿司匹林100mg qd
+anticoagulation.indication,抗凝治疗.指征,String,"抗凝治疗指征。<br>**建议值**: `无`, `心房颤动(CHA₂DS₂-VASc≥2)`, `左室血栓`",心房颤动(CHA₂DS₂-VASc≥2)
+anticoagulation.agent,抗凝治疗.抗凝药物,String,"抗凝药物。<br>**建议值**: `无`, `华法林`, `达比加群`, `利伐沙班`, `阿哌沙班`",利伐沙班
+deviceTherapy.icdIndication,器械治疗.ICD指征,Boolean,"ICD植入指征(LVEF≤35%，NYHA II-III)",true
+deviceTherapy.icdImplanted,器械治疗.ICD已植入,Boolean,是否已植入ICD,false
+deviceTherapy.crtIndication,器械治疗.CRT指征,Boolean,"CRT指征(LVEF≤35%，QRS>120ms，LBBB，NYHA II-IV)",false
+deviceTherapy.crtImplanted,器械治疗.CRT已植入,Boolean,是否已植入CRT,false
+complications.adhf,并发症.急性失代偿,Boolean,近期是否发生急性失代偿性心衰,false
+complications.cardiorenalSyndrome,并发症.心肾综合征,Boolean,是否存在心肾综合征(HF导致肾功能恶化),true
+complications.ventricularArrhythmia,并发症.室性心律失常,Boolean,是否存在室性心律失常,false
+complications.hypotension,并发症.低血压,Boolean,"是否存在症状性低血压(SBP<90mmHg)",false
+lifestyle.sodiumRestriction,生活方式.钠摄入限制,String,"钠摄入限制。<br>单位: g/天<br>**目标**: <5g/天(轻-中度)，<3g/天(重度)",<5g/天
+lifestyle.fluidRestriction,生活方式.液体限制,String,"液体限制(重度HF)。<br>单位: mL/天<br>**建议**: <1.5-2L/天",不需要
+lifestyle.weightMonitoring,生活方式.体重监测,String,"体重监测频率。<br>**建议值**: `每日称重`, `每周称重`, `无规律监测`",每日称重
+lifestyle.exerciseRecommendation,生活方式.运动建议,String,"运动建议。<br>**建议值**: `心脏康复计划`, `轻度活动`, `避免剧烈运动`, `卧床休息(急性期)`",心脏康复计划
+followUp.frequency,随访.频率,String,"随访频率。<br>**建议值**: `每2周(不稳定)`, `每月`, `每3月(稳定)`, `每6月`",每3月(稳定)
+followUp.ntProBnpMonitoring,随访.NT-proBNP监测,String,"NT-proBNP监测频率。<br>**建议值**: `每次随访`, `每3月`, `症状变化时`",每次随访
+followUp.echoSchedule,随访.超声心动图,String,"超声心动图复查计划。<br>**建议值**: `每3-6月`, `每年`, `症状变化或药物调整后`",每6月
+followUp.labMonitoring,随访.实验室监测,String,"实验室监测项目。<br>**包括**: 电解质、肾功能、HbA1c、NT-proBNP",电解质、肾功能、HbA1c、NT-proBNP
+patientEducation.selfMonitoring,患者教育.自我监测,Boolean,是否接受过心衰自我监测教育(体重、症状识别),true
+patientEducation.medicationAdherence,患者教育.药物依从性,String,"药物依从性。<br>**建议值**: `良好`, `一般`, `差`",良好
+patientEducation.dietCompliance,患者教育.饮食依从性,String,"饮食限盐限水依从性。<br>**建议值**: `良好`, `一般`, `差`",一般
+prognosis.oneYearSurvival,预后.1年生存率,String,"预测1年生存率(基于风险评分)。<br>**建议值**: `>90%`, `80-90%`, `70-80%`, `<70%`",80-90%
+prognosis.readmissionRisk,预后.30天再住院风险,String,"30天再住院风险。<br>**建议值**: `低(<10%)`, `中(10-20%)`, `高(>20%)`",中(10-20%)
+prognosis.functionalStatus,预后.功能状态,String,"功能状态趋势。<br>**建议值**: `改善`, `稳定`, `恶化`",稳定
+diagnosisImpression,诊断印象,String,综合诊断结果和临床印象,2型糖尿病合并HFrEF(LVEF 38%，NYHA II级)，糖尿病心肌病，合并冠心病、慢性肾脏病3期，心肾综合征
+recommendation,建议,String,治疗建议和随访计划,1. GDMT四联疗法(达格列净+ARNI+比索洛尔+非奈利酮); 2. 继续滴定至目标剂量; 3. 利尿剂控制液体潴留; 4. HbA1c目标7.0-8.0%; 5. 限盐<5g/天; 6. 每日体重监测; 7. 评估ICD植入; 8. 每3月随访NT-proBNP和肾功能; 9. 心脏康复

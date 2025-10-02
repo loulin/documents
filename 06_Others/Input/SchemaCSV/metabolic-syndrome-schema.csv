@@ -2,7 +2,7 @@
 examDate,检查日期,String,进行代谢综合征评估的日期,2025-08-15
 diagnosticCriteria,诊断标准,String,"使用的诊断标准。<br>**建议值**: `IDF`, `NCEP ATP III`, `WHO`, `CDS`, `JIS`",IDF
 centralObesity.present,中心性肥胖.是否存在,String,"是否存在中心性肥胖。<br>**建议值**: `否`, `是`",是
-centralObesity.waistCircumference,中心性肥胖.腰围,Number,"腰围测量值。<br>单位: cm<br>**IDF标准**: 男性≥90，女性≥80",95
+centralObesity.waistCircumference,中心性肥胖.腰围,Number,"腰围测量值。<br>单位: cm<br>**IDF标准**: 男性≥90，女性≥80<br>**CDS 2017(中国)**: 男性≥90，女性≥85",95
 centralObesity.waistHipRatio,中心性肥胖.腰臀比,Number,"腰臀比。<br>**WHO标准**: 男性≥0.90，女性≥0.85",0.92
 centralObesity.bodyMassIndex,中心性肥胖.体质指数,Number,"体质指数。<br>单位: kg/m²<br>**WHO标准**: ≥30",28.5
 centralObesity.bodyFatPercentage,中心性肥胖.体脂百分比,Number,"体脂百分比。<br>单位: %",32.5
@@ -138,5 +138,13 @@ emergencyManagement.acuteEvents,急症处理.急性事件,String,"急性事件�
 clinicalResearch.participation,临床研究.参与情况,String,"临床研究参与。<br>**建议值**: `未参与`, `已参与`",未参与
 socialDeterminants.socioeconomicStatus,社会决定因素.社会经济地位,String,"社会经济地位。<br>**建议值**: `高`, `中`, `低`",中
 socialDeterminants.healthcareAccess,社会决定因素.医疗可及性,String,"医疗服务可及性。<br>**建议值**: `良好`, `一般`, `较差`",一般
-diagnosisImpression,诊断/印象,String,医生对代谢综合征评估结果的综合诊断或印象。,代谢综合征，4个组分阳性
+nafldAssessment.present,NAFLD评估.非酒精性脂肪肝,String,"非酒精性脂肪肝诊断。<br>**建议值**: `无`, `疑似`, `确诊NAFLD`, `确诊NASH`<br>**注**: 代谢综合征常合并NAFLD",确诊NAFLD
+nafldAssessment.alt,NAFLD评估.ALT,Number,"丙氨酸转氨酶。<br>单位: U/L<br>**参考范围**: <40",62
+nafldAssessment.ast,NAFLD评估.AST,Number,"天冬氨酸转氨酶。<br>单位: U/L<br>**参考范围**: <40",48
+nafldAssessment.fibrosisScore,NAFLD评估.纤维化评分,String,"肝纤维化评分(如FIB-4, NFS)。<br>**建议值**: `未评估`, `低风险`, `中风险`, `高风险`",中风险
+nafldAssessment.imaging,NAFLD评估.影像学,String,"肝脏影像学表现。<br>**建议值**: `未进行`, `超声轻度脂肪肝`, `超声中度脂肪肝`, `超声重度脂肪肝`, `CT/MRI确诊`",超声中度脂肪肝
+cvRiskAssessment.chinaParScore,心血管风险评估.China-PAR评分,Number,"中国动脉粥样硬化性心血管病10年发病风险评估。<br>单位: %<br>**低危**: <5%<br>**中危**: 5-9.9%<br>**高危**: ≥10%",8.5
+cvRiskAssessment.chinaParCategory,心血管风险评估.China-PAR分层,String,"China-PAR风险分层。<br>**建议值**: `低危(<5%)`, `中危(5-9.9%)`, `高危(≥10%)`, `极高危(已发病)`",中危(5-9.9%)
+cvRiskAssessment.framinghamScore,心血管风险评估.Framingham评分,Number,"Framingham 10年CVD风险评分。<br>单位: %",12.3
+diagnosisImpression,诊断/印象,String,医生对代谢综合征评估结果的综合诊断或印象。,代谢综合征(4个组分阳性)合并NAFLD
 recommendation,建议,String,医生根据检查结果提出的建议。,综合生活方式干预，优化药物治疗，定期监测

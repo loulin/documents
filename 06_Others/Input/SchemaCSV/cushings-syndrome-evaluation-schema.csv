@@ -1,0 +1,94 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,评估日期,String,进行库欣综合征评估的日期,2025-05-18
+patientId,患者编号,String,患者唯一识别号,CUSH-2025-021
+clinicalPresentation.centralObesity,临床表现.向心性肥胖,String,"向心性肥胖程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",重度
+clinicalPresentation.moonFace,临床表现.满月脸,String,"满月脸体征。<br>**建议值**: `无`, `有`",有
+clinicalPresentation.buffaloHump,临床表现.水牛背,String,"水牛背体征。<br>**建议值**: `无`, `有`",有
+clinicalPresentation.striae,临床表现.紫纹,String,"皮肤紫纹。<br>**建议值**: `无`, `紫红色宽大紫纹(>1cm)`, `细小紫纹`",紫红色宽大紫纹(>1cm)
+clinicalPresentation.skinChanges,临床表现.皮肤改变,String,"其他皮肤改变。<br>**建议值**: `皮肤变薄`, `淤斑`, `痤疮`, `多毛`, `混合型`",皮肤变薄伴淤斑
+clinicalPresentation.muscleWeakness,临床表现.肌无力,String,"近端肌无力程度。<br>**建议值**: `无`, `轻度(上楼困难)`, `中度(起立困难)`, `重度(卧床)`",中度(起立困难)
+clinicalPresentation.menstrualDisorder,临床表现.月经紊乱,String,"女性月经异常。<br>**建议值**: `规律`, `稀发`, `闭经`, `不适用(男性)`",闭经
+clinicalPresentation.sexualDysfunction,临床表现.性功能减退,String,"性功能减退。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+clinicalPresentation.psychiatricSymptoms,临床表现.精神症状,String,"精神症状类型。<br>**建议值**: `无`, `抑郁`, `躁狂`, `焦虑`, `认知功能障碍`, `混合型`",抑郁伴焦虑
+screeningTests.ufcValue,筛查试验.24小时尿游离皮质醇值,Number,"24小时尿游离皮质醇(UFC)。<br>单位: nmol/24h<br>**正常上限**: 约300 nmol/24h<br>**阳性**: >900 nmol/24h(>3倍正常上限)",1250
+screeningTests.ufcInterpretation,筛查试验.UFC解读,String,"UFC结果解读。<br>**建议值**: `正常(<300)`, `轻度升高(300-600)`, `中度升高(600-900)`, `显著升高(>900，诊断阳性)`",显著升高(>900，诊断阳性)
+screeningTests.ufcCollectionAdequacy,筛查试验.尿液收集充分性,String,"24小时尿收集充分性评估。<br>**建议值**: `充分(尿肌酐正常)`, `欠充分`, `不充分`",充分(尿肌酐正常)
+screeningTests.midnightSalivaryCortisol,筛查试验.午夜唾液皮质醇,Number,"午夜唾液皮质醇(23:00-24:00)。<br>单位: nmol/L<br>**正常上限**: <3.6 nmol/L<br>**阳性**: ≥5.0 nmol/L",8.2
+screeningTests.lateNightSerumCortisol,筛查试验.午夜血清皮质醇,Number,"23:00血清皮质醇。<br>单位: nmol/L<br>**正常**: <50 nmol/L<br>**确诊**: >207 nmol/L",320
+screeningTests.dst1mg.cortisolPost,筛查试验.1mg DST.次日皮质醇,Number,"1mg地塞米松抑制试验(23:00服药，次日8:00采血)皮质醇值。<br>单位: nmol/L<br>**正常抑制**: <50 nmol/L<br>**阳性**: >50 nmol/L",265
+screeningTests.dst1mg.interpretation,筛查试验.1mg DST.结果解读,String,"1mg DST结果解读。<br>**建议值**: `正常抑制(<50)`, `未抑制(50-140)`, `明显未抑制(>140)`",明显未抑制(>140)
+confirmationTests.dst2day.baseline,确诊试验.2日小剂量DST.基线皮质醇,Number,"2日小剂量DST(0.5mg q6h×48h)基线皮质醇。<br>单位: nmol/L",385
+confirmationTests.dst2day.day2Cortisol,确诊试验.2日小剂量DST.48h皮质醇,Number,"2日小剂量DST第48小时皮质醇。<br>单位: nmol/L<br>**确诊**: >50 nmol/L",198
+confirmationTests.dst2day.interpretation,确诊试验.2日小剂量DST.结果解读,String,"2日小剂量DST结果。<br>**建议值**: `正常抑制(<50)`, `未抑制(>50，确诊库欣综合征)`",未抑制(>50，确诊库欣综合征)
+etiologyDetermination.baselineACTH,病因定位.基础ACTH,Number,"晨8:00血浆ACTH。<br>单位: pg/mL<br>**ACTH依赖型**: >10-20 pg/mL<br>**ACTH非依赖型**: <5 pg/mL<br>**异位ACTH**: >100 pg/mL",68
+etiologyDetermination.acthInterpretation,病因定位.ACTH解读,String,"ACTH水平分类。<br>**建议值**: `抑制(<5，肾上腺源性)`, `正常或升高(10-100，垂体源性可能)`, `显著升高(>100，异位ACTH可能)`",正常或升高(10-100，垂体源性可能)
+etiologyDetermination.hddst.baseline,病因定位.高剂量DST.基线皮质醇,Number,"高剂量DST(8mg单次或2mg q6h×48h)基线皮质醇。<br>单位: nmol/L",420
+etiologyDetermination.hddst.postCortisol,病因定位.高剂量DST.抑制后皮质醇,Number,"高剂量DST后皮质醇。<br>单位: nmol/L",185
+etiologyDetermination.hddst.suppressionRate,病因定位.高剂量DST.抑制率,Number,"皮质醇抑制率。<br>计算: [(基线-抑制后)/基线]×100%<br>**垂体性**: >50%抑制<br>**异位/肾上腺**: <50%抑制",56
+etiologyDetermination.hddst.interpretation,病因定位.高剂量DST.结果解读,String,"高剂量DST结果。<br>**建议值**: `垂体性(抑制>50%)`, `异位ACTH或肾上腺性(抑制<50%)`",垂体性(抑制>50%)
+etiologyDetermination.crhTest.baselineACTH,病因定位.CRH刺激试验.基线ACTH,Number,"CRH刺激试验基线ACTH。<br>单位: pg/mL",55
+etiologyDetermination.crhTest.peakACTH,病因定位.CRH刺激试验.峰值ACTH,Number,"CRH刺激试验后峰值ACTH(15-30分钟)。<br>单位: pg/mL<br>**垂体性**: ACTH增加>35%<br>**异位ACTH**: 无反应",95
+etiologyDetermination.crhTest.acthIncreasePercent,病因定位.CRH刺激试验.ACTH增幅%,Number,"ACTH增加百分比。<br>计算: [(峰值-基线)/基线]×100%<br>**垂体性**: >35%<br>**异位**: <35%",73
+etiologyDetermination.crhTest.interpretation,病因定位.CRH刺激试验.结果解读,String,"CRH刺激结果。<br>**建议值**: `垂体性(ACTH增加>35%)`, `异位ACTH(无反应)`",垂体性(ACTH增加>35%)
+etiologyDetermination.ipss.performed,病因定位.岩下窦采血.是否进行,String,"是否进行双侧岩下窦采血(BIPSS)。<br>**建议值**: `是`, `否`, `计划中`",是
+etiologyDetermination.ipss.centralPeripheral,病因定位.岩下窦采血.中央外周比值,Number,"岩下窦ACTH/外周ACTH比值(基线)。<br>**垂体源性**: >2:1(基线)或>3:1(CRH刺激后)",5.8
+etiologyDetermination.ipss.lateralization,病因定位.岩下窦采血.侧别比值,Number,"双侧岩下窦ACTH梯度比(高/低侧)。<br>**有侧性**: >1.4提示优势侧",2.3
+etiologyDetermination.ipss.interpretation,病因定位.岩下窦采血.结果解读,String,"IPSS结果解读。<br>**建议值**: `垂体源性(中央/外周>2)`, `异位ACTH(中央/外周<2)`, `左侧优势`, `右侧优势`, `无明确侧性`",垂体源性，左侧优势
+imaging.pituitaryMRI.microadenoma,影像学.垂体MRI.微腺瘤,String,"垂体微腺瘤(<10mm)。<br>**建议值**: `未见`, `左侧微腺瘤Xmm`, `右侧微腺瘤Xmm`, `中央微腺瘤Xmm`",左侧微腺瘤4mm
+imaging.pituitaryMRI.macroadenoma,影像学.垂体MRI.大腺瘤,String,"垂体大腺瘤(≥10mm)。<br>**建议值**: `未见`, `左侧大腺瘤Xmm`, `右侧大腺瘤Xmm`, `侵袭性大腺瘤`",未见
+imaging.pituitaryMRI.normalPituitary,影像学.垂体MRI.垂体正常,String,"MRI未见明显异常(约40%库欣病MRI阴性)。<br>**建议值**: `正常`, `可疑异常`, `明确异常`",可疑异常
+imaging.adrenalCT.rightAdrenal,影像学.肾上腺CT.右侧肾上腺,String,"右侧肾上腺CT表现。<br>**建议值**: `正常`, `增生`, `腺瘤Xcm`, `可疑癌变`, `萎缩`",增生
+imaging.adrenalCT.leftAdrenal,影像学.肾上腺CT.左侧肾上腺,String,"左侧肾上腺CT表现。<br>**建议值**: `正常`, `增生`, `腺瘤Xcm`, `可疑癌变`, `萎缩`",增生
+imaging.adrenalCT.adenomaFeatures,影像学.肾上腺CT.腺瘤特征,String,"肾上腺腺瘤影像特征(如适用)。<br>**良性特征**: 平扫<10 HU，APW>60%",未见明确腺瘤
+imaging.adrenalCT.carcinomaFeatures,影像学.肾上腺CT.癌变特征,String,"肾上腺癌影像特征(如适用)。<br>**恶性征象**: 平扫>20 HU，不均匀强化，>4cm，侵犯周围",未见恶性征象
+imaging.ectopicACTH.chestCT,影像学.异位ACTH筛查.胸部CT,String,"胸部CT结果(筛查肺部神经内分泌肿瘤)。<br>**建议值**: `未见异常`, `可疑病灶`, `确诊肿瘤`",未见异常
+imaging.ectopicACTH.abdomenCT,影像学.异位ACTH筛查.腹部CT,String,"腹部CT结果(筛查胰腺/胃肠道肿瘤)。<br>**建议值**: `未见异常`, `可疑病灶`, `确诊肿瘤`",未见异常
+imaging.ectopicACTH.octreotideScan,影像学.异位ACTH筛查.奥曲肽扫描,String,"生长抑素受体显像(筛查异位ACTH源)。<br>**建议值**: `未进行`, `阴性`, `阳性(部位)`",未进行
+metabolicComplications.diabetes,代谢并发症.糖尿病,String,"糖尿病诊断。<br>**建议值**: `无`, `空腹血糖受损`, `糖耐量受损`, `糖尿病`",糖尿病
+metabolicComplications.fastingGlucose,代谢并发症.空腹血糖,Number,"空腹血糖。<br>单位: mmol/L",8.2
+metabolicComplications.hba1c,代谢并发症.HbA1c,Number,"糖化血红蛋白。<br>单位: %",7.8
+metabolicComplications.hypertension,代谢并发症.高血压,String,"高血压分级。<br>**建议值**: `正常`, `正常高值`, `1级高血压`, `2级高血压`, `3级高血压`",2级高血压
+metabolicComplications.bpSystolic,代谢并发症.收缩压,Number,"坐位收缩压。<br>单位: mmHg",168
+metabolicComplications.bpDiastolic,代谢并发症.舒张压,Number,"坐位舒张压。<br>单位: mmHg",98
+metabolicComplications.hypokalemia,代谢并发症.低钾血症,String,"低钾血症程度。<br>**建议值**: `正常(3.5-5.5)`, `轻度(3.0-3.4)`, `中度(2.5-2.9)`, `重度(<2.5)`",中度(2.5-2.9)
+metabolicComplications.serumPotassium,代谢并发症.血钾,Number,"血清钾浓度。<br>单位: mmol/L",2.8
+metabolicComplications.osteoporosis,代谢并发症.骨质疏松,String,"骨密度评估。<br>**建议值**: `正常`, `骨量减少(T值-1.0~-2.5)`, `骨质疏松(T值<-2.5)`, `严重骨质疏松(骨折)`",骨质疏松(T值<-2.5)
+metabolicComplications.boneDensityTScore,代谢并发症.骨密度T值,Number,"DXA骨密度T值(腰椎或髋部)。<br>单位: 分<br>**正常**: >-1.0<br>**骨量减少**: -1.0~-2.5<br>**骨质疏松**: <-2.5",-2.9
+metabolicComplications.pathologicFracture,代谢并发症.病理性骨折,String,"病理性骨折史。<br>**建议值**: `无`, `椎体骨折`, `髋部骨折`, `其他部位骨折`, `多发骨折`",椎体骨折
+cardiovascularComplications.coronaryArteryDisease,心血管并发症.冠心病,String,"冠心病评估。<br>**建议值**: `无`, `可疑`, `稳定型心绞痛`, `急性冠脉综合征`",可疑
+cardiovascularComplications.leftVentricularHypertrophy,心血管并发症.左室肥厚,String,"左室肥厚(超声心动图)。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+cardiovascularComplications.dyslipidemia,心血管并发症.血脂异常,String,"血脂异常类型。<br>**建议值**: `正常`, `高LDL-C`, `高TG`, `低HDL-C`, `混合型`",高LDL-C
+cardiovascularComplications.ldlCholesterol,心血管并发症.LDL-C,Number,"低密度脂蛋白胆固醇。<br>单位: mmol/L",4.2
+cardiovascularComplications.vteRisk,心血管并发症.静脉血栓风险,String,"静脉血栓栓塞风险评估。<br>**建议值**: `低`, `中`, `高`, `极高(已发生VTE)`",高
+cardiovascularComplications.vteHistory,心血管并发症.VTE病史,String,"静脉血栓栓塞病史。<br>**建议值**: `无`, `深静脉血栓`, `肺栓塞`, `两者均有`",无
+infectiousComplications.infectionHistory,感染并发症.感染史,String,"机会性感染史。<br>**建议值**: `无`, `真菌感染`, `结核`, `其他机会性感染`, `反复感染`",反复感染
+infectiousComplications.woundHealing,感染并发症.伤口愈合,String,"伤口愈合能力。<br>**建议值**: `正常`, `延迟愈合`, `不愈合`",延迟愈合
+psychiatricComplications.depression,精神并发症.抑郁,String,"抑郁评估。<br>**建议值**: `无`, `轻度`, `中度`, `重度`, `伴自杀观念`",中度
+psychiatricComplications.cognitiveImpairment,精神并发症.认知功能障碍,String,"认知功能评估。<br>**建议值**: `正常`, `轻度`, `中度`, `重度`",轻度
+treatmentPlan.surgeryType,治疗方案.手术类型,String,"计划或已完成的手术。<br>**建议值**: `未手术`, `经蝶垂体手术`, `腹腔镜肾上腺切除`, `开放肾上腺切除`, `双侧肾上腺切除`, `垂体放疗`",计划经蝶垂体手术
+treatmentPlan.surgeryDate,治疗方案.手术日期,String,手术日期(如适用),2025-06-15
+treatmentPlan.surgicalOutcome,治疗方案.手术结局,String,"手术结局(如已手术)。<br>**建议值**: `未手术`, `完全切除`, `部分切除`, `未找到腺瘤`, `并发症`",未手术
+treatmentPlan.medicalTherapy.mitotane,治疗方案.药物治疗.米托坦,String,"米托坦治疗。<br>**建议值**: `未使用`, `使用中(剂量Xg/日)`, `已停用`<br>**适应症**: 肾上腺癌、不能手术",未使用
+treatmentPlan.medicalTherapy.ketoconazole,治疗方案.药物治疗.酮康唑,String,"酮康唑治疗。<br>**建议值**: `未使用`, `使用中(剂量Xmg/日)`, `已停用`<br>**剂量**: 400-800mg/日",使用中(600mg/日)
+treatmentPlan.medicalTherapy.pasireotide,治疗方案.药物治疗.帕瑞肽,String,"帕瑞肽(生长抑素类似物)治疗。<br>**建议值**: `未使用`, `使用中(Xμg/月)`, `已停用`<br>**适应症**: 库欣病术后复发",未使用
+treatmentPlan.medicalTherapy.mifepristone,治疗方案.药物治疗.米非司酮,String,"米非司酮(GR拮抗剂)治疗。<br>**建议值**: `未使用`, `使用中(Xmg/日)`, `已停用`<br>**适应症**: 伴糖尿病的库欣综合征",未使用
+treatmentPlan.medicalTherapy.metyrapone,治疗方案.药物治疗.美替拉酮,String,"美替拉酮(11β-羟化酶抑制剂)治疗。<br>**建议值**: `未使用`, `使用中`, `已停用`",未使用
+treatmentPlan.radiotherapy,治疗方案.放射治疗,String,"垂体放疗。<br>**建议值**: `未进行`, `常规放疗计划中`, `立体定向放射外科计划中`, `已完成放疗`",未进行
+treatmentPlan.complicationManagement.antihypertensive,治疗方案.并发症管理.降压治疗,String,"降压药物方案。<br>**建议值**: `未用药`, `ACE-I/ARB`, `CCB`, `利尿剂`, `联合治疗`",ACE-I+CCB联合
+treatmentPlan.complicationManagement.antidiabetic,治疗方案.并发症管理.降糖治疗,String,"降糖药物方案。<br>**建议值**: `未用药`, `二甲双胍`, `胰岛素`, `其他口服药`, `联合治疗`",胰岛素治疗
+treatmentPlan.complicationManagement.antiosteoporosis,治疗方案.并发症管理.抗骨质疏松,String,"抗骨质疏松治疗。<br>**建议值**: `未治疗`, `双膦酸盐`, `地舒单抗`, `钙+VitD`, `联合治疗`",双膦酸盐+钙VitD
+treatmentPlan.complicationManagement.anticoagulation,治疗方案.并发症管理.抗凝治疗,String,"抗凝/抗血小板治疗。<br>**建议值**: `未用药`, `预防性抗凝`, `治疗性抗凝`, `抗血小板`",预防性抗凝
+postoperativeManagement.cortisolDay1,术后管理.术后第1天皮质醇,Number,"术后第1天晨皮质醇。<br>单位: nmol/L<br>**提示缓解**: <50-140 nmol/L",85
+postoperativeManagement.cortisolDay7,术后管理.术后第7天皮质醇,Number,"术后第7天晨皮质醇。<br>单位: nmol/L",62
+postoperativeManagement.remissionCriteria,术后管理.缓解判断,String,"术后缓解标准。<br>**建议值**: `完全缓解(皮质醇<140)`, `部分缓解`, `未缓解`, `待评估`",完全缓解(皮质醇<140)
+postoperativeManagement.glucocorticoidReplacement,术后管理.糖皮质激素替代,String,"术后激素替代方案。<br>**建议值**: `无需替代`, `氢化可的松20mg/日`, `氢化可的松30mg/日`, `其他剂量`",氢化可的松20mg/日
+postoperativeManagement.diabetesInsipidus,术后管理.尿崩症,String,"术后尿崩症。<br>**建议值**: `无`, `一过性尿崩`, `永久性尿崩`",一过性尿崩
+postoperativeManagement.hypopituitarism,术后管理.垂体功能减退,String,"术后垂体功能评估。<br>**建议值**: `功能正常`, `单一激素缺乏`, `多激素缺乏`",单一激素缺乏(ACTH)
+followUp.ufcMonitoring,随访监测.UFC监测,String,"UFC随访监测结果",术后6个月UFC 185 nmol/24h(正常)
+followUp.recurrenceRisk,随访监测.复发风险,String,"复发风险评估。<br>**建议值**: `低`, `中`, `高`",中
+followUp.recurrenceDetection,随访监测.复发检测,String,"是否检测到复发。<br>**建议值**: `无复发`, `生化复发`, `临床复发`, `影像学复发`",无复发
+followUp.intervalMonths,随访监测.随访间隔,Number,"建议随访间隔。<br>单位: 月<br>**缓解后**: 3-6个月<br>**复发风险高**: 1-3个月",6
+severityAssessment,病情严重程度,String,"库欣综合征严重程度。<br>**建议值**: `轻度(症状轻微)`, `中度(典型表现+代谢异常)`, `重度(严重并发症)`",中度(典型表现+代谢异常)
+etiologyFinalDiagnosis,最终病因诊断,String,"病因诊断结论。<br>**建议值**: `库欣病(垂体ACTH依赖)`, `肾上腺皮质腺瘤`, `肾上腺皮质癌`, `异位ACTH综合征`, `外源性糖皮质激素`, `待定`",库欣病(垂体ACTH依赖)
+diagnosisImpression,诊断/印象,String,最终临床判断,ACTH依赖型库欣综合征，高度提示库欣病(垂体微腺瘤)
+recommendation,建议,String,综合管理建议,建议经蝶垂体手术，术前酮康唑控制高皮质醇血症，术后密切监测皮质醇水平评估缓解

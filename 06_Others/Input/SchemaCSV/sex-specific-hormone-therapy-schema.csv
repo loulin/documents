@@ -1,0 +1,33 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,评估日期,String,进行性别特异性激素治疗随访的日期,2025-06-20
+patientId,患者编号,String,患者唯一标识,HT2025-112
+therapyIndication,治疗指征,String,"激素治疗主要适应症。<br>**建议值**: `男性性腺功能减退`, `女性绝经激素治疗`, `跨性别女性`, `跨性别男性`, `青春期延迟`, `乳腺癌辅助治疗`, `子宫内膜异位症`, `其他`",男性性腺功能减退
+sexAssignedAtBirth,出生时性别,String,"出生时登记性别。<br>**建议值**: `男`, `女`, `双性`, `未指定`",男
+genderIdentity,当前性别认同,String,"患者当前自我性别认同。<br>**建议值**: `男性`, `女性`, `非二元`, `未说明`",男性
+therapyGoal,治疗目标,String,"治疗主要目标。示例: `恢复第二性征`, `缓解更年期症状`, `维持骨密度`, `抑制雄激素`",恢复第二性征
+therapyRegimenType,治疗方案类型,String,"激素方案类型。<br>**建议值**: `睾酮替代`, `雌激素+孕激素`, `雌激素+抗雄`, `促性腺激素`, `GnRH激动剂`, `GnRH拮抗剂`, `组合方案`",睾酮替代
+administrationRoute,给药途径,String,"主要给药方式。<br>**建议值**: `口服`, `经皮凝胶`, `经皮贴剂`, `肌注`, `皮下注射`, `植入`, `舌下`, `其他`",肌注
+testosteroneDoseMgPerWeek,睾酮剂量,Number,"睾酮制剂换算后的周剂量。<br>单位: mg/周",250
+estradiolDoseMgPerDay,雌二醇剂量,Number,"雌二醇日剂量(或等效)。<br>单位: mg/日",1.5
+progesteroneDoseMgPerDay,孕激素剂量,Number,"孕激素日剂量。<br>单位: mg/日",100
+antiAndrogenDoseMgPerDay,抗雄药物剂量,Number,"如螺内酯、比卡鲁胺等日剂量。<br>单位: mg/日",50
+gonadotropinDoseIuPerWeek,促性腺激素剂量,Number,"人绒毛膜促性腺激素或促卵泡激素周剂量。<br>单位: IU/周",4500
+baselineTotalTestosterone,基线总睾酮,Number,"治疗前总睾酮。<br>单位: nmol/L",6.5
+currentTotalTestosterone,随访总睾酮,Number,"当前总睾酮。<br>单位: nmol/L",18.2
+baselineEstradiol,基线雌二醇,Number,"治疗前雌二醇(E2)。<br>单位: pmol/L",45
+currentEstradiol,随访雌二醇,Number,"当前雌二醇(E2)。<br>单位: pmol/L",320
+baselineLh,基线LH,Number,"黄体生成素。<br>单位: IU/L",1.2
+baselineFsh,基线FSH,Number,"促卵泡激素。<br>单位: IU/L",2.1
+shbgLevel,性激素结合球蛋白,Number,"SHBG浓度。<br>单位: nmol/L",28
+hematocritPercentage,红细胞比容,Number,"血细胞比容。<br>单位: %",52
+lipidProfileTotalCholesterol,血脂-总胆固醇,Number,"总胆固醇。<br>单位: mmol/L",5.9
+altLevel,ALT,Number,"丙氨酸氨基转移酶。<br>单位: U/L",48
+astLevel,AST,Number,"天冬氨酸氨基转移酶。<br>单位: U/L",42
+prolactinLevel,催乳素,Number,"血清催乳素。<br>单位: ng/mL",28
+boneDensityTScore,骨密度T值,Number,"最新DXA腰椎或髋部T值。<br>单位: 分",-1.2
+fertilityPreservationStatus,生育力保存状态,String,"精子/卵子/胚胎保存情况。<br>**建议值**: `已完成`, `计划中`, `不考虑`, `未评估`",已完成
+pregnancyConsideration,妊娠相关考虑,String,"针对有妊娠可能者的说明。示例: `避孕措施完善`, `计划备孕`, `哺乳期`",避孕措施完善
+adverseEvents,不良反应记录,String,"主要不良事件或实验室异常",轻度痤疮与血细胞比容升高
+monitoringIntervalWeeks,随访间隔,Number,"下一次监测建议间隔。<br>单位: 周",12
+diagnosisImpression,诊断/印象,String,"对激素治疗疗效及安全性的综合评价",睾酮替代疗效良好伴红细胞比容升高
+recommendation,建议,String,"后续管理建议",建议减量至200mg/周并4周后复查Hct

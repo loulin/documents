@@ -1,0 +1,95 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,FHH评估日期,2025-10-01
+patientID,患者ID,String,患者唯一标识符,P123456
+patientAge,患者年龄,Number,"患者年龄。<br>单位: 岁<br>**说明**: FHH可见于各年龄段，包括儿童",35
+discoveryContext,发现背景,String,"高钙血症发现背景。<br>**建议值**: `体检偶然发现`, `家族筛查`, `症状就诊`, `其他疾病检查`",体检偶然发现
+symptoms.present,症状.存在症状,Boolean,"是否有高钙血症相关症状(FHH多数无症状)",false
+symptoms.polyuria,症状.多尿多饮,Boolean,是否有多尿多饮(<20%的FHH患者),false
+symptoms.fatigue,症状.疲劳,Boolean,是否有疲劳感(罕见),false
+symptoms.cognitiveImpairment,症状.认知受影响,Boolean,是否有认知轻度受影响(罕见),false
+symptoms.renalStones,症状.肾结石史,Boolean,"是否有肾结石史(FHH罕见，提示PHPT可能)",false
+symptoms.bonePain,症状.骨痛,Boolean,"是否有骨痛(FHH罕见，提示PHPT可能)",false
+symptoms.fracture,症状.骨折史,Boolean,"是否有骨折史(FHH罕见)",false
+symptoms.pancreatitis,症状.胰腺炎,Boolean,是否有胰腺炎史(FHH极罕见并发症),false
+familyHistory.hypercalcemia,家族史.高钙血症,Boolean,"一级亲属是否有高钙血症(常染色体显性遗传，50%概率)",true
+familyHistory.affectedRelatives,家族史.受影响亲属,String,"受影响的家族成员。<br>**建议值**: `无家族史`, `父亲`, `母亲`, `同胞`, `子女`, `多名亲属(多代发病)`",父亲+同胞(兄弟)
+familyHistory.generations,家族史.发病代数,Number,"家族中发病代数(祖辈、父母、患者、子女)。<br>**说明**: 多代发病支持FHH",2
+familyHistory.unnecessarySurgery,家族史.家族中不必要手术,Boolean,家族成员是否有因误诊为PHPT而接受甲状旁腺手术,false
+labResults.serumCalcium,实验室检查.血清总钙,Number,"血清总钙(校正白蛋白后)。<br>单位: mmol/L<br>**FHH典型**: 2.6-3.0 mmol/L(轻度升高)<br>**参考范围**: 2.10-2.60",2.75
+labResults.serumCalciumCorrected,实验室检查.校正血钙,Number,"校正血钙。<br>公式: 总钙 + 0.02 × (40 - 白蛋白g/L)<br>单位: mmol/L",2.78
+labResults.ionizedCalcium,实验室检查.游离钙,Number,"血清游离钙(直接测定)。<br>单位: mmol/L<br>**参考范围**: 1.15-1.35",1.42
+labResults.calciumStability,实验室检查.血钙稳定性,String,"血钙长期稳定性。<br>**FHH特点**: 终身存在，波动小<br>**建议值**: `首次发现`, `稳定>6月`, `稳定>1年`, `稳定>5年`, `波动大`",稳定>5年
+labResults.pth,实验室检查.甲状旁腺激素iPTH,Number,"血清完整甲状旁腺激素。<br>单位: pmol/L<br>**参考范围**: 1.6-6.9<br>**FHH**: 正常或轻度升高<br>**PHPT**: 明显升高或不适当正常",4.5
+labResults.pthInterpretation,实验室检查.PTH解读,String,"PTH水平解读。<br>**建议值**: `正常`, `轻度升高(不抑制)`, `明显升高(提示PHPT)`",轻度升高(不抑制)
+labResults.phosphate,实验室检查.血磷,Number,"血清磷。<br>单位: mmol/L<br>**参考范围**: 0.8-1.5<br>**FHH**: 正常或轻度降低",1.0
+labResults.albumin,实验室检查.白蛋白,Number,"血清白蛋白。<br>单位: g/L<br>**参考范围**: 35-55<br>**说明**: 用于校正总钙",42
+labResults.25ohVitaminD,实验室检查.25羟维生素D,Number,"25-OH维生素D。<br>单位: nmol/L<br>**参考范围**: >50<br>**说明**: 排除维生素D中毒引起的高钙",65
+labResults.creatinine,实验室检查.血肌酐,Number,"血肌酐。<br>单位: μmol/L<br>**参考范围**: 男44-133，女44-97",85
+labResults.egfr,实验室检查.估算肾小球滤过率,Number,"eGFR。<br>单位: mL/min/1.73m²<br>**FHH**: 通常正常(无肾损害)",95
+urine24h.urineCalcium,24小时尿.尿钙,Number,"24小时尿钙排泄。<br>单位: mg/24h<br>**FHH**: <100 mg/天(低钙尿)<br>**正常**: 100-300 mg/天<br>**PHPT**: 正常或>200 mg/天",75
+urine24h.urineCreatinine,24小时尿.尿肌酐,Number,"24小时尿肌酐。<br>单位: mmol/24h<br>**说明**: 用于验证尿液收集完整性和计算CCCR",12
+urine24h.collectionComplete,24小时尿.收集完整性,String,"24小时尿收集完整性评估。<br>**建议值**: `完整(尿肌酐符合预期)`, `可疑不完整`, `明确不完整(需重新收集)`",完整(尿肌酐符合预期)
+urine24h.medications,24小时尿.用药影响,String,"影响尿钙的药物(应停用至少1周)。<br>**建议值**: `无`, `利尿剂`, `钙剂`, `维生素D`, `已停用>1周`",已停用>1周
+cccr.calculated,CCCR.已计算,Boolean,是否已计算钙肌酐清除率比值(CCCR),true
+cccr.value,CCCR.比值,Number,"钙肌酐清除率比值(Calcium-Creatinine Clearance Ratio)。<br>公式: (尿钙/血钙) ÷ (尿肌酐/血肌酐)<br>或: (尿钙 × 血肌酐) / (血钙 × 尿肌酐)<br>**FHH**: <0.01(敏感性80%，特异性80%)<br>**PHPT**: >0.02<br>**灰区**: 0.01-0.02",0.008
+cccr.interpretation,CCCR.解读,String,"CCCR结果解读。<br>**建议值**: `<0.01(高度提示FHH)`, `0.01-0.02(灰区，需综合判断)`, `>0.02(支持PHPT)`",<0.01(高度提示FHH)
+differentialDiagnosis.phptLikelihood,鉴别诊断.PHPT可能性,String,"原发性甲状旁腺功能亢进可能性。<br>**建议值**: `低(<20%)`, `中(20-50%)`, `高(>50%)`",低(<20%)
+differentialDiagnosis.fhhLikelihood,鉴别诊断.FHH可能性,String,"家族性低钙尿性高钙血症可能性。<br>**建议值**: `低(<20%)`, `中(20-50%)`, `高(>50%)`",高(>50%)
+differentialDiagnosis.otherCauses,鉴别诊断.其他病因,String,"其他高钙血症病因考虑。<br>**建议值**: `无`, `维生素D中毒`, `恶性肿瘤`, `甲亢`, `肉芽肿性疾病`, `药物(噻嗪类/锂剂)`",无
+geneticTesting.indicated,基因检测.指征,Boolean,"是否有基因检测指征(CCCR<0.01 + 家族史阳性，或拟行手术前)",true
+geneticTesting.performed,基因检测.已完成,Boolean,是否已完成基因检测(CASR、GNA11、AP2S1),true
+geneticTesting.genes,基因检测.检测基因,String,"检测的基因。<br>**建议值**: `未检测`, `CASR`, `CASR + GNA11 + AP2S1(全套)`, `全外显子测序`",CASR + GNA11 + AP2S1(全套)
+geneticTesting.result,基因检测.结果,String,"基因检测结果。<br>**建议值**: `未完成`, `未发现致病突变(15-20%)`, `CASR致病突变(FHH1，65-70%)`, `GNA11致病突变(FHH2，10-15%)`, `AP2S1致病突变(FHH3，<5%)`",CASR致病突变(FHH1，65-70%)
+geneticTesting.mutation,基因检测.具体突变,String,"具体突变位点(如c.123A>G, p.Arg41Gly)",c.2345G>A (p.Arg782Gln)
+geneticTesting.inheritance,基因检测.遗传方式,String,"遗传方式。<br>**建议值**: `常染色体显性遗传(杂合突变)`, `常染色体隐性遗传(纯合/复合杂合)`, `新发突变`, `未明确`",常染色体显性遗传(杂合突变)
+fhhSubtype,FHH亚型,String,"FHH分型。<br>**建议值**: `未分型`, `FHH1(CASR突变，65-70%)`, `FHH2(GNA11突变，10-15%)`, `FHH3(AP2S1突变，<5%)`, `基因未明(15-20%)`",FHH1(CASR突变，65-70%)
+fhh3Features,FHH3特殊表现,Boolean,"是否为FHH3型且有特殊表现(相对高钙尿CCCR可>0.01，轻度骨病，部分手术有效)",false
+imaging.parathyroidUltrasound,影像学.甲状旁腺超声,Boolean,"是否完成甲状旁腺超声(鉴别PHPT时)",false
+imaging.parathyroidAdenoma,影像学.甲状旁腺腺瘤,String,"甲状旁腺腺瘤。<br>**FHH**: 通常无腺瘤<br>**建议值**: `未检查`, `未发现腺瘤`, `可疑腺瘤(需警惕FHH误诊)`, `明确腺瘤`",未发现腺瘤
+imaging.mibiScan,影像学.MIBI显像,Boolean,"是否完成甲状旁腺核素显像(鉴别PHPT时)",false
+imaging.renalUltrasound,影像学.肾脏超声,Boolean,是否完成肾脏超声(排除肾结石),true
+imaging.renalStones,影像学.肾结石,String,"肾结石情况。<br>**FHH**: 罕见<br>**PHPT**: 常见(15-20%)<br>**建议值**: `无肾结石`, `单发结石`, `多发结石`",无肾结石
+boneDensity.performed,骨密度.已完成,Boolean,是否完成骨密度检测(DXA),true
+boneDensity.lumbarSpine,骨密度.腰椎,Number,"腰椎骨密度T值。<br>**FHH**: 正常<br>**PHPT**: 可降低",0.5
+boneDensity.femur,骨密度.股骨,Number,"股骨颈骨密度T值。<br>**FHH**: 正常<br>**PHPT**: 可降低",-0.2
+boneDensity.distalRadius,骨密度.前臂远端,Number,"前臂远端1/3骨密度T值。<br>**PHPT**: 优先累及部位，可显著降低<br>**FHH**: 正常",-0.1
+boneDensity.interpretation,骨密度.解读,String,"骨密度解读。<br>**建议值**: `正常(T值>-1.0)`, `骨量减少(-2.5<T值≤-1.0)`, `骨质疏松(T值≤-2.5)`",正常(T值>-1.0)
+diagnosis.fhhConfidence,诊断.FHH诊断信心,String,"FHH诊断信心水平。<br>**建议值**: `高度怀疑(CCCR<0.01 + 家族史阳性)`, `很可能(基因确诊)`, `可能(CCCR<0.01但无家族史)`, `不支持`",很可能(基因确诊)
+diagnosis.phptExcluded,诊断.PHPT已排除,Boolean,是否已充分排除原发性甲状旁腺功能亢进,true
+diagnosis.finalDiagnosis,诊断.最终诊断,String,"最终诊断。<br>**建议值**: `家族性低钙尿性高钙血症(FHH)`, `原发性甲状旁腺功能亢进(PHPT)`, `其他高钙血症病因`, `待进一步评估`",家族性低钙尿性高钙血症(FHH)
+neonatalSevereHyperparathyroidism,新生儿严重甲旁亢,Boolean,"是否为新生儿严重甲旁亢(NSHPT，纯合子FHH，极罕见)",false
+nshptSeverity,NSHPT严重程度,String,"NSHPT严重程度(仅纯合子)。<br>**建议值**: `非NSHPT`, `严重高钙(>4.0 mmol/L)`, `甲状旁腺明显增生`",非NSHPT
+treatment.principle,治疗.治疗原则,String,"核心治疗原则。<br>**FHH**: 无需治疗，禁止手术<br>**建议值**: `无需治疗(良性监测)`, `禁止甲状旁腺手术`, `特殊情况需手术(NSHPT或FHH3伴骨病)`",无需治疗(良性监测)
+treatment.monitoring,治疗.监测策略,String,"监测策略。<br>**建议值**: `年度血钙+PTH`, `基线肾功能+骨密度`, `无需频繁复查`, `无需监测`",年度血钙+PTH
+treatment.calciumRestriction,治疗.限制钙摄入,Boolean,"是否需限制钙摄入(FHH无需限制)",false
+treatment.vitaminD,治疗.维生素D补充,String,"维生素D补充。<br>**建议值**: `无需补充`, `可正常补充(非大剂量)`, `避免大剂量(>4000 IU/天)`",可正常补充(非大剂量)
+treatment.hydration,治疗.水分摄入,String,"水分摄入建议。<br>**建议值**: `保持充足水分(预防脱水)`, `无特殊要求`",保持充足水分(预防脱水)
+treatment.lifestyle,治疗.生活方式,String,"生活方式建议。<br>**建议值**: `正常生活和运动`, `无需特殊限制`",正常生活和运动
+surgeryHistory.previousSurgery,手术史.既往手术,Boolean,是否曾接受甲状旁腺手术(FHH误诊为PHPT),false
+surgeryHistory.surgeryOutcome,手术史.手术结果,String,"手术结果。<br>**FHH特点**: 术后高钙不能纠正<br>**建议值**: `无手术史`, `术后高钙持续(证实FHH)`, `术后甲旁减(切除过多)`, `术后短暂正常后复发`",无手术史
+surgeryHistory.iatrogenicHypoparathyroidism,手术史.医源性甲旁减,Boolean,是否因FHH误诊手术导致医源性甲旁减,false
+surgeryIndication.contraindicated,手术指征.手术禁忌,Boolean,"FHH是否为甲状旁腺手术禁忌证(是)",true
+surgeryIndication.exception,手术指征.例外情况,String,"手术例外情况(极罕见)。<br>**建议值**: `无例外(FHH禁手术)`, `NSHPT(纯合子，必须手术)`, `FHH3伴症状性骨病(个别报道)`",无例外(FHH禁手术)
+preoperativeScreening.recommended,术前筛查.推荐FHH筛查,Boolean,"拟行甲状旁腺手术患者是否应筛查FHH(是，所有患者)",true
+preoperativeScreening.items,术前筛查.筛查项目,String,"术前FHH筛查项目。<br>**必查**: CCCR、家族史<br>**建议值**: `CCCR计算`, `详细家族史询问`, `基因检测(年轻患者/家族史阳性/CCCR<0.01)`, `未筛查(需补充)`",CCCR计算 + 详细家族史 + 基因检测
+familyScreening.indicated,家族筛查.指征,Boolean,"FHH确诊后是否需家族筛查(是)",true
+familyScreening.performed,家族筛查.已完成,Boolean,是否已对一级亲属进行筛查,true
+familyScreening.affectedMembers,家族筛查.受影响成员数,Number,"筛查出的受影响家族成员数(一级亲属携带突变约50%)",2
+familyScreening.screeningItems,家族筛查.筛查项目,String,"家族筛查项目。<br>**建议值**: `血钙测定`, `血钙+CCCR`, `血钙+CCCR+基因检测(确诊携带者)`",血钙+CCCR+基因检测
+complications.present,并发症.存在并发症,Boolean,"是否有并发症(FHH极罕见)",false
+complications.type,并发症.并发症类型,String,"并发症类型。<br>**FHH罕见**: 无肾结石、无骨质疏松、无高钙危象<br>**建议值**: `无`, `胰腺炎(极罕见)`, `软骨钙化症(极罕见)`",无
+prognosis.benignCourse,预后.良性病程,Boolean,"FHH是否为良性病程(是，终身高钙但无明显并发症)",true
+prognosis.lifelongHypercalcemia,预后.终身高钙血症,Boolean,"是否终身高钙血症(是)",true
+prognosis.normalLifeExpectancy,预后.正常寿命,Boolean,"是否预期正常寿命(是)",true
+prognosis.noTreatmentRequired,预后.无需治疗,Boolean,"是否终身无需治疗(是)",true
+education.patientEducated,患者教育.已教育,Boolean,是否已对患者进行FHH疾病教育,true
+education.avoidSurgery,患者教育.避免手术,Boolean,是否已告知禁止甲状旁腺手术,true
+education.benignNature,患者教育.良性本质,Boolean,是否已告知FHH为良性疾病无需治疗,true
+education.familyScreening,患者教育.家族筛查,Boolean,是否已建议对一级亲属进行筛查,true
+education.medicalAlert,患者教育.医疗警示,Boolean,是否已建议携带医疗警示卡/手环(注明FHH诊断，避免误诊手术),true
+followUp.frequency,随访.频率,String,"随访频率。<br>**建议值**: `年度监测(血钙+PTH)`, `2-3年监测`, `无需定期随访(已确诊且稳定)`, `初次确诊后1年内复查`",年度监测(血钙+PTH)
+followUp.monitoringItems,随访.监测项目,String,"随访监测项目。<br>**建议值**: `血钙+PTH(确认稳定)`, `基线肾功能+骨密度`, `症状询问`, `无需频繁检查`",血钙+PTH(确认稳定)
+followUp.reassessmentTriggers,随访.需重新评估情况,String,"需重新评估的情况。<br>**建议值**: `血钙显著升高(>3.5)`, `出现症状(肾结石/骨折)`, `PTH显著升高`, `以上均无`",以上均无
+clinicalDecision,临床决策,String,"临床管理决策。<br>**建议值**: `确诊FHH，无需治疗，年度监测`, `FHH可能，需基因确诊`, `需与PHPT进一步鉴别`, `需家族筛查`",确诊FHH，无需治疗，年度监测
+diagnosisImpression,诊断印象,String,综合诊断结果和临床印象,家族性低钙尿性高钙血症(FHH1型)，CASR基因杂合致病突变(c.2345G>A)，轻度高钙血症(2.78 mmol/L)稳定5年，PTH 4.5 pmol/L(不抑制)，CCCR 0.008(<0.01)，父亲和同胞有高钙血症，无症状，无并发症，已充分排除原发性甲状旁腺功能亢进
+recommendation,建议,String,治疗建议和随访计划,1. 确诊FHH，无需任何治疗; 2. 禁止甲状旁腺手术; 3. 正常饮食和生活，无需限制钙摄入; 4. 年度血钙+PTH监测(确认稳定); 5. 已完成家族筛查(父亲和同胞基因确诊); 6. 患者教育: FHH为良性疾病，终身高钙但无并发症; 7. 建议携带医疗警示卡(注明FHH诊断，避免误诊手术); 8. 如将来需行任何甲状旁腺相关手术，必须先告知医生FHH诊断

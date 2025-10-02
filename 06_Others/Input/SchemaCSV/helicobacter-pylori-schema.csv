@@ -1,0 +1,145 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行幽门螺杆菌检测的日期,2025-08-15
+testingMethod,检测方法,String,"检测方法类型。<br>**建议值**: `C13尿素呼气试验`, `C14尿素呼气试验`, `血清抗体检测`, `粪便抗原检测`, `快速尿素酶试验(RUT)`, `胃镜活检组织学`, `胃镜活检培养`, `分子生物学检测(PCR)`",C13尿素呼气试验
+clinicalIndication,检测指征,String,"检测指征。<br>**建议值**: `消化不良症状`, `胃溃疡/十二指肠溃疡`, `慢性胃炎`, `胃癌筛查`, `MALT淋巴瘤`, `根除治疗后复查`, `长期服用NSAIDs/阿司匹林`, `缺铁性贫血`, `特发性血小板减少`, `体检筛查`",消化不良症状
+symptomPresent,症状存在,String,"是否有消化道症状。<br>**建议值**: `无症状`, `上腹痛`, `上腹胀`, `反酸`, `烧心`, `恶心`, `呕吐`, `食欲减退`, `多种症状`",上腹痛
+
+# C13/C14尿素呼气试验 (UBT - Urea Breath Test)
+ubt.testType,呼气试验.试验类型,String,"呼气试验类型。<br>**建议值**: `C13-UBT`, `C14-UBT`, `不适用`<br>**注**: C13无放射性，优先推荐；C14有微量放射性",C13-UBT
+ubt.baselineValue,呼气试验.基线值,Number,"服药前基线呼气样本测定值。<br>单位: ‰ (千分比) 或 DPM (C14)<br>**参考范围**: 因检测系统而异",1.2
+ubt.postDoseValue,呼气试验.服药后值,Number,"服用尿素后呼气样本测定值(通常30分钟)。<br>单位: ‰ 或 DPM",8.5
+ubt.deltaValue,呼气试验.差值(DOB/ΔCO₂),Number,"服药后值 - 基线值 = DOB (Delta Over Baseline)。<br>单位: ‰<br>**临床意义**: 反映Hp尿素酶活性",7.3
+ubt.cutoffValue,呼气试验.判断临界值,Number,"Hp阳性判断的临界值。<br>单位: ‰<br>**常见标准**: C13-UBT ≥4.0‰, C14-UBT ≥100 DPM",4.0
+ubt.result,呼气试验.定性结果,String,"呼气试验定性结果。<br>**建议值**: `阴性(-)`, `阳性(+)`, `临界(±)`, `不适用`<br>**判断**: DOB ≥ 临界值为阳性",阳性(+)
+ubt.bacterialLoad,呼气试验.菌量估计,String,"根据DOB值估计细菌量。<br>**建议值**: `阴性`, `低菌量`, `中菌量`, `高菌量`<br>**分级**: DOB 4-10=低, 10-30=中, >30=高",中菌量
+ubt.testDuration,呼气试验.服药后采样时间,Number,"服用尿素后采样时间间隔。<br>单位: 分钟<br>**标准**: 多为30分钟",30
+ubt.fastingStatus,呼气试验.空腹状态,String,"检测前空腹状态。<br>**建议值**: `空腹`, `非空腹`<br>**要求**: 需空腹至少6小时",空腹
+ubt.interferingFactors,呼气试验.干扰因素,String,"可能影响结果的因素。<br>**建议值**: `无`, `近期使用抗生素`, `近期使用PPI`, `近期使用铋剂`, `胃切除术后`, `萎缩性胃炎`",无
+
+# 血清抗体检测
+serology.igg.result,血清学.IgG抗体.定性结果,String,"Hp IgG抗体定性结果。<br>**建议值**: `阴性(-)`, `阳性(+)`, `弱阳性(±)`, `不适用`<br>**临床意义**: 既往或现症感染标志",阳性(+)
+serology.igg.value,血清学.IgG抗体.定量值,Number,"IgG抗体定量值(如检测)。<br>单位: U/mL 或 RU/mL 或 AU/mL<br>**注**: 因检测系统而异",45.6
+serology.igg.cutoffValue,血清学.IgG抗体.临界值,Number,"IgG阳性判断临界值。<br>单位: U/mL",20.0
+serology.igg.antibodyLevel,血清学.IgG抗体.抗体水平,String,"IgG抗体水平分级。<br>**建议值**: `阴性`, `弱阳性`, `中度阳性`, `强阳性`",中度阳性
+
+serology.iga.result,血清学.IgA抗体.定性结果,String,"Hp IgA抗体定性结果(如检测)。<br>**建议值**: `阴性(-)`, `阳性(+)`, `弱阳性(±)`, `不适用`<br>**临床意义**: 活动性感染标志",不适用
+serology.iga.value,血清学.IgA抗体.定量值,Number,"IgA抗体定量值(如检测)。<br>单位: U/mL",未检测
+
+serology.interpretation,血清学.解读,String,"血清学结果解读。<br>**建议值**: `未感染Hp`, `现症Hp感染`, `既往感染(已根除)`, `不能区分现症或既往感染`<br>**注**: 血清学不能区分现症和既往感染，不推荐用于根除后复查",现症Hp感染或既往感染
+serology.limitation,血清学.局限性说明,String,血清学检测的局限性,抗体可在根除治疗后持续阳性数月至数年，不适合根除后疗效判断
+
+# 粪便抗原检测 (SAT - Stool Antigen Test)
+stoolAntigen.result,粪便抗原.定性结果,String,"粪便Hp抗原定性结果。<br>**建议值**: `阴性(-)`, `阳性(+)`, `弱阳性(±)`, `不适用`<br>**临床意义**: 现症感染标志",不适用
+stoolAntigen.value,粪便抗原.定量值,Number,"粪便抗原定量值(如检测)。<br>单位: ng/mL 或 U/mL",未检测
+stoolAntigen.cutoffValue,粪便抗原.临界值,Number,"粪便抗原阳性判断临界值",未检测
+stoolAntigen.testMethod,粪便抗原.检测方法,String,"粪便抗原检测方法。<br>**建议值**: `酶联免疫法(ELISA)`, `免疫层析法`, `化学发光法`, `不适用`",不适用
+stoolAntigen.sampleQuality,粪便抗原.样本质量,String,"粪便样本质量。<br>**建议值**: `合格`, `稀便`, `含血`, `含黏液`, `不适用`",不适用
+
+# 快速尿素酶试验 (RUT - Rapid Urease Test, 内镜相关)
+rut.result,快速尿素酶试验.结果,String,"RUT结果。<br>**建议值**: `阴性(-)`, `阳性(+)`, `不适用`<br>**判断**: 试剂颜色由黄变红为阳性",不适用
+rut.reactionTime,快速尿素酶试验.反应时间,Number,"颜色变化的时间。<br>单位: 分钟<br>**临床意义**: <1小时阳性提示高菌量，1-24小时阳性为中低菌量",不适用
+rut.bacterialLoad,快速尿素酶试验.菌量估计,String,"根据反应时间估计菌量。<br>**建议值**: `阴性`, `低菌量(12-24h)`, `中菌量(1-12h)`, `高菌量(<1h)`, `不适用`",不适用
+rut.biopsySite,快速尿素酶试验.活检部位,String,"活检取样部位。<br>**建议值**: `胃窦`, `胃体`, `胃窦+胃体`, `不适用`<br>**推荐**: 胃窦+胃体各取1块",不适用
+
+# 组织学检查 (内镜活检)
+histology.result,组织学.Hp检出,String,"组织学Hp检出结果。<br>**建议值**: `未见Hp`, `检出Hp`, `不适用`<br>**金标准**: 组织学是Hp诊断的金标准之一",不适用
+histology.stainingMethod,组织学.染色方法,String,"组织染色方法。<br>**建议值**: `HE染色`, `Giemsa染色`, `Warthin-Starry银染`, `免疫组化`, `不适用`<br>**推荐**: Giemsa染色或免疫组化",不适用
+histology.bacterialDensity,组织学.细菌密度,String,"组织学观察到的Hp密度。<br>**建议值**: `无`, `少量(+)`, `中量(++)`, `大量(+++)`, `不适用`",不适用
+histology.distribution,组织学.分布,String,"Hp在胃黏膜的分布。<br>**建议值**: `无`, `局灶性`, `弥漫性`, `不适用`",不适用
+histology.gastritisType,组织学.胃炎类型,String,"伴随的胃炎类型。<br>**建议值**: `无胃炎`, `急性胃炎`, `慢性浅表性胃炎`, `慢性萎缩性胃炎`, `肠化生`, `异型增生`, `不适用`",不适用
+histology.gastritisActivity,组织学.胃炎活动度,String,"胃炎活动度。<br>**建议值**: `无活动`, `轻度`, `中度`, `重度`, `不适用`<br>**依据**: 中性粒细胞浸润程度",不适用
+
+# 细菌培养 (Bacterial Culture)
+culture.result,细菌培养.结果,String,"Hp培养结果。<br>**建议值**: `阴性`, `阳性`, `污染`, `不适用`<br>**注**: 培养难度大，阳性率低，但可做药敏",不适用
+culture.coloniesCount,细菌培养.菌落计数,String,"菌落计数。<br>**建议值**: `无生长`, `稀疏生长`, `中等生长`, `密集生长`, `不适用`",不适用
+culture.cultureTime,细菌培养.培养时间,Number,"培养所需时间。<br>单位: 天<br>**注**: Hp生长缓慢，通常需3-7天",不适用
+
+# 药物敏感性试验 (如培养阳性)
+antibioticSusceptibility.clarithromycin,药敏试验.克拉霉素,String,"克拉霉素敏感性。<br>**建议值**: `敏感(S)`, `耐药(R)`, `中介(I)`, `未检测`<br>**重要性**: 克拉霉素耐药是根除失败主要原因",未检测
+antibioticSusceptibility.metronidazole,药敏试验.甲硝唑,String,"甲硝唑敏感性。<br>**建议值**: `敏感(S)`, `耐药(R)`, `中介(I)`, `未检测`",未检测
+antibioticSusceptibility.levofloxacin,药敏试验.左氧氟沙星,String,"左氧氟沙星敏感性。<br>**建议值**: `敏感(S)`, `耐药(R)`, `中介(I)`, `未检测`",未检测
+antibioticSusceptibility.amoxicillin,药敏试验.阿莫西林,String,"阿莫西林敏感性。<br>**建议值**: `敏感(S)`, `耐药(R)`, `中介(I)`, `未检测`<br>**注**: Hp对阿莫西林耐药罕见",未检测
+antibioticSusceptibility.tetracycline,药敏试验.四环素,String,"四环素敏感性。<br>**建议值**: `敏感(S)`, `耐药(R)`, `中介(I)`, `未检测`",未检测
+antibioticSusceptibility.resistancePattern,药敏试验.耐药模式,String,"耐药模式总结。<br>**建议值**: `全敏感`, `单一耐药`, `双重耐药`, `多重耐药`, `未检测`",未检测
+
+# 分子检测 (PCR等)
+molecular.hpDetection,分子检测.Hp基因检测,String,"PCR检测Hp特异基因(如ureA、ureC、glmM等)。<br>**建议值**: `阴性`, `阳性`, `不适用`",不适用
+molecular.clarithromycinResistance,分子检测.克拉霉素耐药基因,String,"23S rRNA基因突变检测(A2143G/A2142G等)。<br>**建议值**: `未检出突变(敏感)`, `检出突变(耐药)`, `不适用`<br>**优势**: 无需培养即可预测克拉霉素耐药",不适用
+molecular.cagA,分子检测.CagA毒力基因,String,"CagA毒力基因检测。<br>**建议值**: `阴性`, `阳性`, `不适用`<br>**临床意义**: CagA阳性株致病性更强，胃癌风险更高",不适用
+molecular.vacA,分子检测.VacA毒力基因,String,"VacA毒力基因亚型。<br>**建议值**: `s1/m1(高毒力)`, `s1/m2`, `s2/m2(低毒力)`, `其他`, `不适用`<br>**临床意义**: s1/m1型溃疡和胃癌风险更高",不适用
+
+# 综合诊断结果
+finalDiagnosis,最终诊断,String,"Hp感染最终诊断。<br>**建议值**: `Hp阴性`, `Hp阳性`, `Hp感染可能(需进一步检测)`, `根除治疗成功`, `根除治疗失败`",Hp阳性
+diagnosticConfidence,诊断可信度,String,"诊断可信度。<br>**建议值**: `高(2种以上方法阳性)`, `中(1种方法阳性)`, `低(仅血清学阳性或结果矛盾)`<br>**金标准**: UBT、SAT、组织学、RUT任意2种阳性",高(UBT阳性)
+infectiousStatus,感染状态,String,"Hp感染状态。<br>**建议值**: `无Hp感染`, `现症Hp感染`, `既往Hp感染已根除`, `不确定`",现症Hp感染
+
+# 相关疾病诊断 (如做了胃镜)
+associatedDiseases.gastricUlcer,相关疾病.胃溃疡,String,"是否伴有胃溃疡。<br>**建议值**: `无`, `活动期`, `愈合期`, `瘢痕期`, `不适用`",不适用
+associatedDiseases.duodenalUlcer,相关疾病.十二指肠溃疡,String,"是否伴有十二指肠溃疡。<br>**建议值**: `无`, `活动期`, `愈合期`, `瘢痕期`, `不适用`",不适用
+associatedDiseases.chronicGastritis,相关疾病.慢性胃炎,String,"慢性胃炎类型。<br>**建议值**: `无`, `慢性浅表性胃炎`, `慢性萎缩性胃炎`, `胆汁反流性胃炎`, `不适用`",不适用
+associatedDiseases.intestinalMetaplasia,相关疾病.肠化生,String,"是否有肠化生。<br>**建议值**: `无`, `轻度`, `中度`, `重度`, `不适用`<br>**意义**: 胃癌前病变",不适用
+associatedDiseases.dysplasia,相关疾病.异型增生,String,"是否有异型增生/上皮内瘤变。<br>**建议值**: `无`, `低级别`, `高级别`, `不适用`<br>**意义**: 胃癌前病变",不适用
+associatedDiseases.gastricCancer,相关疾病.胃癌,String,"是否诊断胃癌。<br>**建议值**: `无`, `早期胃癌`, `进展期胃癌`, `不适用`<br>**注**: 95%非贲门胃癌与Hp相关",不适用
+associatedDiseases.maltLymphoma,相关疾病.MALT淋巴瘤,String,"是否诊断胃MALT淋巴瘤。<br>**建议值**: `无`, `疑似`, `确诊`, `不适用`<br>**注**: 早期MALT淋巴瘤根除Hp可能缓解",不适用
+
+# 治疗史
+previousEradicationAttempts,既往根除治疗次数,Number,"既往根除治疗尝试次数。<br>**临床意义**: 多次失败需考虑耐药，调整方案或做药敏",0
+lastEradicationDate,最后一次根除治疗日期,String,最后一次根除治疗的结束日期,未治疗
+lastEradicationRegimen,最后一次根除方案,String,"最后一次使用的根除方案。<br>**建议值**: `未治疗`, `标准三联(PPI+克拉霉素+阿莫西林)`, `铋剂四联`, `序贯疗法`, `伴随疗法`, `其他`",未治疗
+lastEradicationOutcome,最后一次根除结果,String,"最后一次根除治疗结果。<br>**建议值**: `成功`, `失败`, `未复查`, `不适用`",不适用
+timeSinceEradication,根除后时长,Number,"距离最后一次根除治疗的时长。<br>单位: 月<br>**注**: 根除后复查需间隔≥4周",0
+
+# 检测时机(相对于用药)
+ppiUse.current,PPI使用.当前使用,String,"检测时是否在使用质子泵抑制剂(PPI)。<br>**建议值**: `否`, `是`<br>**重要**: PPI使用可致UBT/RUT假阴性，需停药≥2周",否
+ppiUse.stopDuration,PPI使用.停药时长,Number,"停用PPI的时长。<br>单位: 天<br>**要求**: UBT/SAT/RUT前需停药≥14天",30
+antibioticUse.current,抗生素使用.当前使用,String,"检测时是否在使用抗生素。<br>**建议值**: `否`, `是`<br>**重要**: 抗生素使用可致假阴性，需停药≥4周",否
+antibioticUse.stopDuration,抗生素使用.停药时长,Number,"停用抗生素的时长。<br>单位: 天<br>**要求**: 需停药≥28天",60
+bismuthUse.current,铋剂使用.当前使用,String,"检测时是否在使用铋剂。<br>**建议值**: `否`, `是`<br>**重要**: 铋剂使用可致假阴性，需停药≥4周",否
+bismuthUse.stopDuration,铋剂使用.停药时长,Number,"停用铋剂的时长。<br>单位: 天<br>**要求**: 需停药≥28天",45
+
+# 风险因素
+riskFactors.age,风险因素.年龄,Number,"患者年龄。<br>**意义**: Hp感染率随年龄增加，中国>40岁人群感染率约60%",58
+riskFactors.familyGastricCancer,风险因素.胃癌家族史,String,"一级亲属胃癌病史。<br>**建议值**: `无`, `有`<br>**意义**: Hp阳性+家族史者胃癌风险显著增加",有
+riskFactors.smoking,风险因素.吸烟,String,"吸烟状况。<br>**建议值**: `不吸烟`, `吸烟`, `已戒烟`<br>**意义**: 吸烟增加消化性溃疡和胃癌风险",吸烟
+riskFactors.alcohol,风险因素.饮酒,String,"饮酒状况。<br>**建议值**: `不饮酒`, `少量饮酒`, `大量饮酒`",少量饮酒
+riskFactors.nsaidUse,风险因素.NSAIDs使用,String,"长期使用NSAIDs或阿司匹林。<br>**建议值**: `否`, `是`<br>**意义**: Hp+NSAIDs协同增加消化性溃疡风险",否
+riskFactors.ironDeficiency,风险因素.缺铁性贫血,String,"是否有不明原因缺铁性贫血。<br>**建议值**: `无`, `有`<br>**意义**: Hp可致缺铁性贫血，根除可改善",无
+riskFactors.itp,风险因素.特发性血小板减少,String,"是否有特发性血小板减少症(ITP)。<br>**建议值**: `无`, `有`<br>**意义**: Hp根除可使部分ITP缓解",无
+
+# 临床建议
+clinicalRecommendation,临床建议,String,基于检测结果的临床建议,建议根除治疗，可选择铋剂四联方案(PPI+铋剂+阿莫西林+克拉霉素/呋喃唑酮) 14天
+eradicationIndication,根除治疗指征,String,"根除治疗指征。<br>**强适应证**: 消化性溃疡、MALT淋巴瘤、胃癌术后、早期胃癌内镜治疗后、长期PPI/NSAIDs、一级亲属胃癌、不明原因缺铁性贫血/ITP<br>**建议值**: `有强适应证`, `有相对适应证`, `无明确适应证`, `不适用`",有强适应证(消化不良+家族史)
+recommendedRegimen,推荐根除方案,String,"推荐的根除治疗方案。<br>**一线**: 铋剂四联(PPI+铋剂+阿莫西林+克拉霉素/呋喃唑酮) 14天<br>**备选**: 伴随疗法(PPI+阿莫西林+克拉霉素+甲硝唑) 14天",铋剂四联(PPI+铋剂+阿莫西林+克拉霉素) 14天
+followUpPlan,随访计划,String,根除治疗后随访计划,治疗结束4-8周后复查C13-UBT评估根除效果
+furtherInvestigation,进一步检查,String,建议的进一步检查,建议胃镜检查，明确是否有溃疡或胃癌前病变
+
+# 特殊人群
+specialPopulation,特殊人群,String,"特殊人群类别。<br>**建议值**: `一般人群`, `儿童(<18岁)`, `孕妇`, `哺乳期`, `老年人(≥65岁)`, `免疫抑制患者`",一般人群
+pediatricConsideration,儿童特殊考虑,String,"儿童Hp检测和治疗的特殊考虑。<br>**建议值**: `不适用`, `有症状建议检测`, `无症状暂不推荐`, `治疗需权衡利弊`<br>**注**: 儿童Hp感染率低，治疗指征严格",不适用
+pregnancyStatus,妊娠状态,String,"妊娠状态(女性)。<br>**建议值**: `未孕`, `妊娠期`, `哺乳期`, `不适用`<br>**注**: 孕妇和哺乳期不推荐根除治疗",不适用
+
+# 检测质量控制
+testingLaboratory,检测机构,String,进行检测的实验室/机构名称,XX医院检验科
+instrumentModel,仪器型号,String,检测使用的仪器型号(如UBT),海力克呼气试验系统
+reagentLot,试剂批号,String,使用的试剂批号,20250815HP
+internalQC,室内质控,String,"室内质控结果。<br>**建议值**: `在控`, `失控`, `未做`",在控
+externalQC,室间质评,String,"最近一次室间质评结果。<br>**建议值**: `通过`, `未通过`, `未参加`",通过
+
+# 报告信息
+reportDate,报告日期,String,出具报告的日期,2025-08-15
+reportingPhysician,报告医师,String,出具报告的检验医师,王医师
+reviewPhysician,审核医师,String,审核报告的医师,李主任
+laboratoryNotes,实验室备注,String,检验科的特殊说明,C13-UBT阳性，DOB值提示中等菌量，建议根除治疗
+urgentFlag,紧急标识,String,"是否需要紧急处理。<br>**建议值**: `否`, `是`",否
+
+# 历史对比
+previousTestDate,前次检查日期,String,最近一次Hp检测日期,2023-08-15
+previousTestResult,前次检查结果,String,"前次检测结果。<br>**建议值**: `无历史记录`, `阴性`, `阳性`",阳性
+testInterval,检测间隔,Number,"距上次检测的时间间隔。<br>单位: 月",24
+resultChange,结果变化,String,"结果变化趋势。<br>**建议值**: `无历史记录`, `持续阳性`, `持续阴性`, `阴性转阳性`, `阳性转阴性(根除成功)`",持续阳性
+reinfectionSuspected,疑似再感染,String,"是否疑似再感染。<br>**建议值**: `否`, `是`, `不适用`<br>**定义**: 根除成功后再次检出Hp",否
+
+# 综合评估
+overallAssessment,综合评估,String,基于所有信息的综合评估,Hp现症感染，有消化不良症状和胃癌家族史，强烈建议根除治疗并胃镜检查排除器质性病变
+riskStratification,风险分层,String,"胃癌风险分层。<br>**建议值**: `低风险`, `中风险`, `高风险`<br>**高风险因素**: Hp(+) + 胃癌家族史 + 萎缩性胃炎/肠化生",高风险(Hp阳性+家族史+吸烟)
+educationProvided,患者教育,String,提供给患者的健康教育内容,已告知Hp感染的危害、根除治疗的重要性、治疗方案和注意事项、戒烟建议

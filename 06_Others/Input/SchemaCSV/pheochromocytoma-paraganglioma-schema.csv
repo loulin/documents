@@ -1,0 +1,27 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,评估日期,String,进行嗜铬细胞瘤/副神经节瘤评估的日期,2025-05-22
+patientId,患者编号,String,患者唯一编号,PCC-2025-008
+clinicalIndication,检查适应症,String,"检测原因。<br>**建议值**: `阵发性高血压`, `应激危象`, `偶发肿瘤`, `遗传性筛查`, `其他`",阵发性高血压
+symptomProfile,症状特征,String,"典型三联症及其他表现描述。示例: `阵发性头痛、心悸、出汗`, `体重减轻`",阵发性头痛、心悸、出汗
+familyHistoryRisk,家族史风险,String,"是否存在PCC/PGL或相关遗传综合征家族史。<br>**建议值**: `阴性`, `阳性`, `不详`",阳性
+plasmaFreeMetanephrine,血浆游离甲氧基肾上腺素,Number,"血浆游离甲氧基肾上腺素。<br>单位: pg/mL",115
+plasmaFreeNormetanephrine,血浆游离去甲氧基肾上腺素,Number,"血浆游离去甲氧基肾上腺素。<br>单位: pg/mL",240
+urinaryMetanephrine24h,24小时尿甲氧基肾上腺素,Number,"24小时尿甲氧基肾上腺素。<br>单位: μg/24h",910
+urinaryNormetanephrine24h,24小时尿去甲氧基肾上腺素,Number,"24小时尿去甲氧基肾上腺素。<br>单位: μg/24h",1820
+chromograninALevel,嗜铬粒蛋白A,Number,"CgA水平。<br>单位: ng/mL",210
+adrenergicPhenotype,分泌表型,String,"肿瘤分泌表型。<br>**建议值**: `肾上腺素型`, `去甲肾上腺素型`, `多巴胺型`, `混合型`, `非功能型`",去甲肾上腺素型
+preAnalyticalNotes,检验前备注意事项,String,"如禁药、体位、采血时间等",采血前停用三环类抗抑郁药5天
+adrenalImaging,肾上腺影像,String,"CT/MRI主要发现",右侧肾上腺3.2cm动脉期强化结节
+mibgScanResult,MIBG显像结果,String,"131I/123I-MIBG显像结论",右肾上腺高摄取
+functionalPETResult,功能PET结果,String,"68Ga-DOTATATE或18F-FDOPA等PET显像结果",无远处转移
+extraAdrenalLocation,肿瘤定位,String,"肿瘤所在解剖部位。示例: `肾上腺`, `颈部副神经节`, `腹主动脉旁`",肾上腺
+hereditarySyndromeTesting,遗传综合征检测,String,"遗传筛查结果。示例: `RET突变阳性`, `VHL阴性`, `SDHB突变`",SDHB突变阳性
+preoperativeBloodPressureControl,术前血压控制方案,String,"α阻滞/β阻滞等具体方案",酚苄明联合倍他洛尔
+volumeExpansionPlan,扩容计划,String,"术前扩容策略描述",术前3天开始口服钠盐及补液
+surgicalPlan,手术计划,String,"计划的手术类型及入路",腹腔镜右肾上腺切除
+metastaticEvaluation,转移评估,String,"是否存在区域或远处转移及部位",未见转移
+crisisHistory,儿茶酚胺危象史,Boolean,"既往是否发生危象",False
+perioperativeRiskLevel,围手术期风险评估,String,"综合风险级别。<br>**建议值**: `低`, `中`, `高`",中
+postoperativeFollowUpInterval,术后随访间隔,Number,"建议随访周期。<br>单位: 月",6
+longTermSurveillancePlan,长期监测计划,String,"对复发/转移的监测方案",建议每年复查游离甲氧基肾上腺素及MRI
+recommendation,综合建议,String,"综合管理建议",持续α阻滞并安排手术

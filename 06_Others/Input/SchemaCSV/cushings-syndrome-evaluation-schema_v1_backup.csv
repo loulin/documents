@@ -1,0 +1,30 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,评估日期,String,进行库欣综合征评估的日期,2025-05-18
+patientId,患者编号,String,患者唯一识别号,CUSH-2025-021
+clinicalPresentation,临床表现,String,"主要症状体征。示例: `向心性肥胖`, `紫纹`, `低钾血症`, `骨质疏松`, `月经紊乱`",向心性肥胖伴紫纹
+etiologySuspicion,病因学初步判断,String,"临床怀疑的库欣类型。<br>**建议值**: `垂体ACTH依赖`, `异位ACTH`, `肾上腺皮质腺瘤/癌`, `外源性糖皮质激素`, `待定`",垂体ACTH依赖
+dexamethasoneLowDoseResult,1mg地塞米松抑制试验结果,String,"抑制试验描述及解释。示例: `8am血皮质醇 265 nmol/L，未抑制`",未抑制
+dexamethasoneHighDoseResult,高剂量地塞米松试验结果,String,"8mg DST或分段DST结果与评价",ACTH部分抑制
+midnightSalivaryCortisol,午夜唾液皮质醇,Number,"午夜唾液皮质醇。<br>单位: nmol/L",32
+lateNightSerumCortisol,午夜血清皮质醇,Number,"23:00血皮质醇。<br>单位: nmol/L",320
+urinaryFreeCortisol24h,24小时尿游离皮质醇,Number,"24小时尿游离皮质醇(UFC)。<br>单位: nmol/24h",820
+urinaryCortisolCollectionAdequacy,24小时尿收集充分性,String,"对24小时尿标本的充分性评价。<br>**建议值**: `充分`, `欠充分`, `不充分`",充分
+baselineACTH,基础ACTH,Number,"8:00血浆ACTH。<br>单位: pg/mL",65
+crhStimulationTest,CRH刺激试验结果,String,"血浆ACTH/皮质醇对CRH的反应描述",ACTH峰值增加75%
+gnRhStimulationExcluded,排除异位ACTH试验,Boolean,"是否完成DDAVP或其他鉴别试验并排除异位分泌",True
+inferiorPetrosalSinusSampling,岩下窦采血结果,String,"IPS采血左右侧ACTH梯度与结论",垂体侧性比值>4指向左侧
+glucoseToleranceStatus,葡萄糖耐量状态,String,"OGTT结论。<br>**建议值**: `正常`, `受损`, `糖尿病`",受损
+boneDensityTScore,骨密度T值,Number,"DXA测得腰椎或髋部T值。<br>单位: 分",-2.6
+bloodPressureSystolic,收缩压,Number,"坐位收缩压。<br>单位: mmHg",158
+bloodPressureDiastolic,舒张压,Number,"坐位舒张压。<br>单位: mmHg",96
+serumPotassium,血钾,Number,"血清钾浓度。<br>单位: mmol/L",3.1
+lipidProfileLDL,低密度胆固醇,Number,"LDL-C。<br>单位: mmol/L",4.5
+pituitaryMRIResult,垂体MRI结果,String,"垂体影像学主要发现。示例: `左侧微腺瘤4mm`",左侧微腺瘤4mm
+adrenalImagingResult,肾上腺影像结果,String,"CT/MRI主要发现",双侧肾上腺弥漫增大
+venousThromboembolismRisk,静脉血栓风险评估,String,"综合风险等级。<br>**建议值**: `低`, `中`, `高`",高
+preoperativeAssessmentStatus,术前评估完成情况,String,"针对拟手术患者的评估状态。<br>**建议值**: `未启动`, `进行中`, `已完成`",进行中
+treatmentPlan,治疗方案,String,"当前或计划的治疗策略。示例: `经蝶垂体手术`, `酮康唑`, `米托坦`, `放射治疗`",计划经蝶垂体手术
+followUpIntervalMonths,随访间隔(月),Number,"建议随访间隔。<br>单位: 月",3
+remissionEvaluation,缓解评估,String,"对治疗反应/缓解状态的判断。<br>**建议值**: `未治疗`, `部分缓解`, `完全缓解`, `复发`",未治疗
+diagnosisImpression,诊断/印象,String,"最终临床判断",ACTH依赖型库欣综合征高度怀疑
+recommendation,建议,String,"综合管理建议",建议尽快安排经蝶垂体手术并术前控制高血压

@@ -1,0 +1,28 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,评估日期,String,进行高尿酸血症/痛风合并症管理评估的日期,2025-04-30
+patientId,患者编号,String,患者唯一标识,HUA-2025-119
+clinicalStage,临床阶段,String,"疾病阶段。<br>**建议值**: `无症状高尿酸血症`, `急性痛风期`, `痛风间歇期`, `慢性痛风石期`",慢性痛风石期
+serumUricAcid,血尿酸,Number,"血尿酸浓度。<br>单位: μmol/L",520
+uricAcidTarget,血尿酸目标,Number,"个体化目标值。<br>单位: μmol/L",300
+urateLoweringTherapy,降尿酸治疗方案,String,"现用降尿酸药物及剂量。示例: `别嘌醇 200mg/d`, `非布司他 40mg/d`",非布司他40mg/d
+urateLoweringTherapyTolerance,治疗耐受情况,String,"对降尿酸药物的耐受性。<br>**建议值**: `良好`, `轻度不良反应`, `严重不良反应`, `停药`",轻度不良反应
+tophusPresence,痛风石情况,String,"痛风石分布与大小。示例: `双足第1跖趾关节>1cm`, `耳廓小结`",左肱三头肌沟1.5cm
+flareFrequencyPastYear,过去一年发作次数,Number,"过去12个月痛风发作次数。<br>单位: 次",4
+flareProphylaxisPlan,发作预防方案,String,"秋水仙碱/NSAIDs/激素预防方案",秋水仙碱0.5mg每日
+renalComorbidityStatus,肾脏并发症情况,String,"肾功能及相关疾病。示例: `CKD G3a`, `尿酸肾结石`",CKD G3a伴尿酸结石
+cardiometabolicComorbidity,心代谢共病,String,"存在的心血管或代谢性疾病。示例: `高血压`, `代谢综合征`, `肥胖 BMI32`",高血压+代谢综合征
+serumCreatinine,血肌酐,Number,"血清肌酐。<br>单位: μmol/L",115
+estimatedGfr,估算GFR,Number,"eGFR。<br>单位: mL/min/1.73m²",62
+liverFunctionAlt,ALT,Number,"丙氨酸氨基转移酶。<br>单位: U/L",55
+liverFunctionAst,AST,Number,"天冬氨酸氨基转移酶。<br>单位: U/L",48
+metabolicSyndromeComponents,代谢综合征要素,String,"腹围、血压、血糖、血脂等简要记录",腰围102cm，TG 2.5mmol/L
+uricAcidDietaryAssessment,高嘌呤饮食评估,String,"饮食频率与风险等级。<br>**建议值**: `低`, `中`, `高`",中
+alcoholIntakeLevel,酒精摄入水平,String,"酒精摄入量评估。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+exerciseCompliance,运动执行情况,String,"每周中等强度运动时长。<br>单位: 分钟/周",120
+bodyMassIndex,体质指数,Number,"BMI。<br>单位: kg/m²",30.5
+bloodPressureSystolic,收缩压,Number,"坐位收缩压。<br>单位: mmHg",148
+bloodPressureDiastolic,舒张压,Number,"坐位舒张压。<br>单位: mmHg",92
+renalUltrasoundFindings,肾脏超声主要发现,String,"如肾结石、肾皮质回声等",双侧多发小结石
+patientEducationStatus,患者教育完成情况,String,"是否完成高尿酸管理宣教。<br>**建议值**: `未进行`, `进行中`, `已完成`",进行中
+nextFollowUpIntervalMonths,下次随访间隔(月),Number,"建议随访间隔。<br>单位: 月",2
+recommendation,综合建议,String,"综合管理建议",建议加强饮食控制并两个月后复查血尿酸

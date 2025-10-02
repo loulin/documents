@@ -1,0 +1,73 @@
+fieldKey,fieldName,fieldType,fieldDescription,exampleValue
+lungRadsCategory,Lung-RADS分级,String,"Lung-RADS分级(ACR v2022)。<br>**建议值**: `0类(需补充检查)`, `1类(阴性/无结节)`, `2类(良性表现)`, `3类(可能良性)`, `4A类(可疑恶性)`, `4B类(非常可疑恶性)`, `4X类(极高度可疑恶性+其他发现)`<br>**关键阈值**: ≥4A建议临床干预",3类(可能良性)
+lungRadsCategory.malignancyRisk,Lung-RADS分级.恶性风险,String,"各Lung-RADS分级对应的恶性风险。<br>**风险范围**:<br>- 1类: 0% (无结节)<br>- 2类: <1% (良性钙化/脂肪密度等)<br>- 3类: 1-2%<br>- 4A类: 5-15%<br>- 4B类: >15%<br>- 4X类: >15% + 其他可疑发现",1-2%恶性风险
+lungRadsCategory.recommendation,Lung-RADS分级.管理建议,String,"各Lung-RADS分级的管理建议(ACR v2022)。<br>**标准建议**:<br>- 1类/2类: 年度LDCT筛查<br>- 3类: 6个月LDCT随访<br>- 4A类: 3个月LDCT随访<br>- 4B类: 3个月PET-CT或1-3个月LDCT或活检<br>- 4X类: 3个月PET-CT或活检 + 相应临床处理",6个月LDCT随访
+screeningContext,筛查背景,String,"肺结节检出背景。<br>**建议值**: `LDCT筛查(肺癌高危人群)`, `偶发发现(其他原因CT检查)`, `肺癌术后随访`, `其他肿瘤随访`<br>**临床意义**: 筛查人群vs偶发人群风险分层不同",偶发发现(其他原因CT检查)
+patientRiskLevel,患者风险等级,String,"患者肺癌风险等级。<br>**建议值**: `低危(<5%)`, `高危(≥5%)`, `极高危(≥20年包年+当前吸烟或戒烟<15年)`<br>**判断依据**: USPSTF 2021标准 - 50-80岁 + 20包年吸烟史 + 当前吸烟或15年内戒烟者为高危",低危(<5%)
+nodule.count,结节.总数量,Number,"检测到的肺结节总数量。<br>**临床意义**: 多发结节(≥4个)管理策略不同,通常追踪最大/最可疑的1-2个结节",1
+nodule.primary.location,结节主要部位,String,"主要结节所在肺叶。<br>**建议值**: `右上叶(RUL)`, `右中叶(RML)`, `右下叶(RLL)`, `左上叶(LUL)`, `左下叶(LLL)`, `舌叶`<br>**临床意义**: 上叶结节恶性风险较下叶高",右上叶(RUL)
+nodule.primary.segment,结节肺段位置,String,"结节所在肺段。<br>**示例**: 右上叶前段(S3), 左上叶尖后段(S1+2)等<br>**临床意义**: 精确定位利于随访对比和手术规划",右上叶前段(S3)
+nodule.primary.type,结节类型,String,"结节密度类型(Fleischner Society分类)。<br>**建议值**: `实性结节(Solid)`, `部分实性结节/混合磨玻璃结节(Part-solid/Mixed-GGO)`, `纯磨玻璃结节(Pure Ground-Glass/Non-solid)`, `囊性结节(Cystic)`<br>**临床意义**: 亚实性结节(GGO/Part-solid)恶性风险更高,随访时间更长(5年)",实性结节(Solid)
+nodule.primary.diameter,结节平均直径,Number,"结节平均直径(长径+短径)/2,单位mm。<br>**测量标准**: Fleischner Society 2017 - 使用肺窗测量<br>**关键阈值**: <6mm(低危不需常规随访), 6-8mm(需随访), ≥8mm(密切随访/干预)<br>**注意事项**: 亚实性结节测量总直径,记录实性成分直径",7
+nodule.primary.diameterLong,结节长径,Number,"结节最长径,单位mm。<br>**测量方法**: 轴位最大层面测量,取最长径<br>**临床意义**: 结节大小是Lung-RADS分级的主要依据",8
+nodule.primary.diameterShort,结节短径,Number,"结节短径(垂直于长径),单位mm。<br>**测量方法**: 在长径层面上垂直于长径测量<br>**临床意义**: 计算平均直径,评估结节形态",6
+nodule.primary.solidComponent,结节实性成分直径,Number,"部分实性结节的实性成分直径,单位mm。<br>**仅适用于**: Part-solid nodules<br>**关键阈值**: 实性成分≥6mm显著增加恶性风险<br>**临床意义**: Lung-RADS 4分级主要看实性成分大小",0
+nodule.primary.volume,结节体积,Number,"结节体积,单位mm³。<br>**计算方法**: 软件自动计算(椭球体公式: 4/3πabc)<br>**临床意义**: 体积倍增时间(VDT)评估生长速度,VDT<400天提示恶性",181
+nodule.primary.shape,结节形态,String,"结节形态特征。<br>**建议值**: `圆形/椭圆形`, `分叶状(Lobulated)`, `不规则形`, `多角形`, `三角形`<br>**临床意义**: 分叶状/不规则形恶性风险高",圆形/椭圆形
+nodule.primary.margin,结节边缘特征,String,"结节边缘特征。<br>**建议值**: `光滑`, `分叶(Lobulation)`, `毛刺征(Spiculation)`, `胸膜凹陷征(Pleural Retraction)`, `血管集束征(Vascular Convergence)`, `模糊边界`<br>**高危征象**: 毛刺征/分叶/血管集束征→恶性可能性大",光滑
+nodule.primary.calcification,结节钙化类型,String,"结节内钙化类型。<br>**建议值**: `无钙化`, `中心性钙化(良性)`, `层状钙化(良性)`, `爆米花样钙化(良性)`, `弥漫性钙化(良性)`, `偏心性钙化(可疑)`, `点状钙化(可疑)`<br>**良性钙化模式**: 中心性/层状/爆米花样/弥漫性 → Lung-RADS 2类",无钙化
+nodule.primary.internalDensity,结节内部密度,String,"结节内部密度特征。<br>**建议值**: `均匀软组织密度`, `脂肪密度(错构瘤)`, `空泡征(Bubble-lucency)`, `空气支气管征(Air Bronchogram)`, `液体密度(囊性成分)`<br>**良性特征**: 脂肪密度 → Lung-RADS 2类<br>**恶性提示**: 空泡征/空气支气管征",均匀软组织密度
+nodule.primary.attenuation,结节CT值,Number,"结节平均CT值,单位HU。<br>**参考范围**:<br>- 纯GGO: -800~-600 HU<br>- 实性成分: -600~+50 HU<br>- 脂肪密度: -120~-80 HU<br>**临床意义**: 脂肪密度提示错构瘤(良性)",25
+nodule.primary.location.upperLobe,结节位于上叶,Boolean,"结节是否位于上叶(RUL/LUL)。<br>**临床意义**: 上叶结节恶性风险较高(OR 1.5-2.0)<br>**用于**: 风险分层和Fleischner指南应用",true
+nodule.primary.juxtapleural,结节胸膜旁特征,String,"结节与胸膜的关系。<br>**建议值**: `非胸膜旁`, `胸膜旁结节(Juxtapleural，≤15mm距胸膜，形态可变)`, `胸膜基底结节(Pleural-based，接触胸膜)`, `裂旁结节(Perifissural，三角形/扁平)`, `胸膜下实性结节`<br>**Lung-RADS v2022**: 裂旁结节(≤10mm三角形/扁平/胸膜接触) → 2类良性",非胸膜旁
+nodule.primary.perifissural,裂旁结节判定,Boolean,"是否符合裂旁结节(Perifissural Nodule)标准。<br>**诊断标准**: ≤10mm + 三角形/扁平形 + 胸膜表面平滑接触 + 实性密度<br>**临床意义**: 符合标准者几乎总是淋巴结,Lung-RADS 2类,不需随访",false
+nodule.primary.airwayCentered,气道中心性结节,String,"气道中心性结节判定(Lung-RADS v2022新增)。<br>**建议值**: `非气道中心性`, `气道中心性结节(连接可见支气管,呈树芽征/结节-支气管束)`, `黏液栓(Mucus plug)`<br>**临床意义**: 气道中心性结节通常为感染/炎症,Lung-RADS 2类",非气道中心性
+nodule.primary.atypicalCyst,不典型囊性病变,Boolean,"是否存在不典型肺囊肿(Atypical Pulmonary Cyst)。<br>**Lung-RADS v2022标准**: 囊壁厚度≥2mm 或 囊壁结节≥4mm<br>**临床意义**: 不典型囊肿可能代表早期肺癌(尤其腺癌),需按Lung-RADS 4分级管理",false
+nodule.primary.cystWallThickness,囊肿壁厚度,Number,"囊性病变的囊壁厚度,单位mm。<br>**关键阈值**: ≥2mm定义为不典型囊肿,需按实性结节管理<br>**临床意义**: 薄壁囊肿(<2mm)通常良性,厚壁囊肿可疑恶性",0
+nodule.primary.infectionSuspected,可疑感染性病变,Boolean,"是否疑似感染性结节。<br>**影像特征**: 树芽征、气道中心性、短期内快速增大、周围磨玻璃影<br>**Lung-RADS v2022**: 可疑感染可短期(1-3个月)随访,若缩小/消失则降为2类",false
+nodule.growth.comparisonAvailable,有既往影像对比,Boolean,"是否有既往CT影像可供对比。<br>**临床意义**: 结节生长是恶性最重要指标,有对比时优先评估生长情况",false
+nodule.growth.priorDiameter,既往直径,Number,"既往CT测量的结节平均直径,单位mm。<br>**用于**: 计算生长速度和体积倍增时间(VDT)",0
+nodule.growth.priorDate,既往CT日期,String,"既往CT检查日期,格式YYYY-MM-DD。<br>**用于**: 计算间隔时间和VDT",
+nodule.growth.diameterIncrease,直径增长量,Number,"结节直径增长量,单位mm。<br>**Lung-RADS生长定义**: ≥1.5mm增长定义为显著生长<br>**临床意义**: 显著生长 → Lung-RADS 4B类",0
+nodule.growth.volumeDoublingTime,体积倍增时间VDT,Number,"结节体积倍增时间(Volume Doubling Time),单位天。<br>**计算公式**: VDT = (t2-t1) × ln2 / ln(V2/V1)<br>**判读标准**:<br>- VDT<183天: 感染可能<br>- VDT 183-400天: 高度可疑恶性<br>- VDT>400天: 低度恶性或良性<br>**临床意义**: VDT是评估生长速度的金标准",0
+nodule.growth.isGrowing,结节生长判定,Boolean,"结节是否显示明确生长。<br>**Lung-RADS v2022标准**: 直径增长≥1.5mm 或 体积增长≥25%<br>**临床意义**: 生长结节自动升级为Lung-RADS 4B类(除非VDT<183天疑似感染)",false
+nodule.growth.stableOrDecreasing,结节稳定或缩小,Boolean,"结节是否稳定(无变化)或缩小。<br>**Lung-RADS v2022**: 稳定/缩小结节采用阶梯式管理,可延长随访间隔或降级<br>**判读标准**: 直径变化<1.5mm且体积变化<25%为稳定",true
+nodule.secondLargest.present,存在第二大结节,Boolean,"是否存在第二大可疑结节。<br>**临床意义**: 多发结节管理时,通常追踪最大和第二大结节",false
+nodule.secondLargest.diameter,第二大结节直径,Number,"第二大结节的平均直径,单位mm。<br>**用于**: 多发结节的整体评估和分级",0
+nodule.secondLargest.type,第二大结节类型,String,"第二大结节的密度类型。<br>**建议值**: `实性结节`, `部分实性结节`, `纯磨玻璃结节`",
+lungRads.baselineVsFollowup,基线检查vs随访,String,"当前检查性质。<br>**建议值**: `基线检查(Baseline)`, `随访检查(Follow-up)`<br>**临床意义**: 基线和随访分级阈值略有不同",基线检查(Baseline)
+lungRads.solidNoduleThreshold,实性结节阈值判读,String,"实性结节Lung-RADS分级判读(基线)。<br>**分级标准**:<br>- <6mm: 1类或2类(取决于数量)<br>- 6-<8mm: 3类<br>- 8-<15mm: 4A类<br>- ≥15mm: 4B类<br>- 生长≥1.5mm: 4B类<br>**注意**: 高危患者可能阈值调整",6-<8mm → 3类
+lungRads.subsolubleThreshold,亚实性结节阈值判读,String,"亚实性结节(GGO/Part-solid) Lung-RADS分级(基线)。<br>**纯GGO分级**:<br>- <30mm: 2类或3类<br>- ≥30mm: 4A类<br>**部分实性分级**(看实性成分):<br>- 实性成分<6mm: 3类<br>- 实性成分6-<8mm: 4A类<br>- 实性成分≥8mm: 4B类",实性成分<6mm → 3类
+lungRads.modifiers,Lung-RADS修饰符,String,"Lung-RADS附加修饰符(Modifiers)。<br>**建议值**: `S (显著恶性特征)`, `C (临床显著或可能重要的非肺癌发现)`, 无修饰符<br>**S修饰符示例**: 毛刺征、空洞结节、胸壁侵犯等<br>**C修饰符示例**: 肺气肿、冠脉钙化、主动脉瘤等",
+additionalFindings.emphysema,肺气肿,String,"肺气肿程度评估。<br>**建议值**: `无`, `轻度(<25%肺体积)`, `中度(25-50%)`, `重度(>50%)`<br>**临床意义**: 肺气肿是肺癌独立危险因素",无
+additionalFindings.fibrosis,肺纤维化,String,"肺纤维化程度。<br>**建议值**: `无`, `轻度`, `中重度`, `特发性肺纤维化(IPF)`<br>**临床意义**: 纤维化患者肺癌风险增加(OR 2-7倍)",无
+additionalFindings.consolidation,实变影,String,"肺实变影描述。<br>**建议值**: `无`, `局灶性实变(可疑感染)`, `肿块样实变(可疑恶性)`, `多发斑片影`<br>**临床意义**: 持续性实变需考虑肺泡癌(现称贴壁生长型腺癌)",无
+additionalFindings.lymphadenopathy,淋巴结肿大,String,"纵隔/肺门淋巴结肿大。<br>**测量标准**: 短径>10mm为肿大<br>**建议值**: `无`, `肺门淋巴结肿大`, `纵隔淋巴结肿大`, `多站淋巴结肿大`<br>**临床意义**: 淋巴结肿大可能提示转移或炎症",无
+additionalFindings.pleuralEffusion,胸腔积液,String,"胸腔积液程度。<br>**建议值**: `无`, `少量`, `中等量`, `大量`<br>**临床意义**: 伴胸腔积液的结节需警惕恶性可能",无
+additionalFindings.pleuralThickening,胸膜增厚,String,"胸膜增厚情况。<br>**建议值**: `无`, `局限性胸膜增厚`, `弥漫性胸膜增厚`, `胸膜斑(石棉肺)`<br>**临床意义**: 石棉暴露史+胸膜斑需警惕间皮瘤",无
+additionalFindings.cardiovascular,心血管发现,String,"心血管系统重要发现。<br>**示例**: `冠脉钙化(CAC score)`, `主动脉扩张`, `肺动脉高压征象`<br>**临床意义**: LDCT可顺带评估心血管风险",无
+clinicalInfo.smokingPackYears,吸烟包年数,Number,"吸烟包年数(Pack-Years)。<br>**计算公式**: 每天吸烟包数 × 吸烟年数<br>**USPSTF 2021高危标准**: ≥20包年",0
+clinicalInfo.currentSmoker,当前吸烟状态,Boolean,"是否当前吸烟。<br>**USPSTF标准**: 当前吸烟或15年内戒烟为高危",false
+clinicalInfo.yearsSinceQuit,戒烟年数,Number,"戒烟年数。<br>**USPSTF标准**: 戒烟<15年仍属高危筛查人群",0
+clinicalInfo.familyHistory,肺癌家族史,Boolean,"一级亲属肺癌家族史。<br>**临床意义**: 家族史是独立危险因素(OR 1.5-2.0)",false
+clinicalInfo.occupationalExposure,职业暴露史,String,"肺癌相关职业暴露史。<br>**示例**: `无`, `石棉暴露`, `氡气暴露`, `焦炉工/煤气工`, `铬镍冶炼`, `砷暴露`<br>**临床意义**: 职业暴露增加肺癌风险",无
+clinicalInfo.priorCancer,既往肿瘤史,String,"既往恶性肿瘤病史。<br>**示例**: 头颈部鳞癌、乳腺癌、淋巴瘤等<br>**临床意义**: 某些肿瘤增加第二原发肺癌风险或转移可能",无
+clinicalInfo.copd,COPD病史,Boolean,"慢性阻塞性肺疾病病史。<br>**临床意义**: COPD是肺癌独立危险因素(OR 2-5倍)",false
+ctTechnique.sliceThickness,层厚,Number,"CT层厚,单位mm。<br>**LDCT标准**: 应≤2.5mm(最好≤1.5mm)用于肺结节检测<br>**临床意义**: 薄层重建提高小结节检出率",1.25
+ctTechnique.reconstructionAlgorithm,重建算法,String,"CT重建算法。<br>**建议值**: `标准算法`, `肺算法(锐利)`, `迭代重建(ASIR/ADMIRE)`<br>**临床意义**: 迭代重建降低辐射剂量同时保证图像质量",肺算法(锐利)
+ctTechnique.contrastEnhanced,增强扫描,Boolean,"是否增强CT扫描。<br>**临床意义**: 平扫LDCT是筛查标准,增强扫描用于诊断性评估",false
+ctTechnique.effectiveDose,有效辐射剂量,Number,"有效辐射剂量,单位mSv。<br>**LDCT标准**: 应≤3 mSv(常规CT 7-8 mSv)<br>**临床意义**: 低剂量减少累积辐射风险",1.5
+followUpRecommendation.nextScanInterval,下次扫描间隔,String,"推荐的下次CT扫描间隔时间。<br>**Lung-RADS标准**:<br>- 1类/2类: 12个月<br>- 3类: 6个月<br>- 4A类: 3个月<br>- 4B/4X类: 3个月或立即PET-CT/活检<br>**Fleischner标准**: 时间范围(如6-12个月)更灵活",12个月(年度筛查)
+followUpRecommendation.modalitySuggested,推荐检查方式,String,"推荐的随访或进一步检查方式。<br>**建议值**: `LDCT随访`, `PET-CT`, `增强CT`, `经皮肺穿刺活检`, `支气管镜活检`, `胸外科会诊`, `短期抗感染治疗后复查`<br>**选择依据**: 根据Lung-RADS分级和结节特征",LDCT随访
+followUpRecommendation.clinicalAction,临床行动建议,String,"推荐的临床行动。<br>**建议值**: `继续年度筛查`, `短期CT随访`, `多学科讨论(MDT)`, `胸外科评估`, `介入肺科评估`, `开始抗感染治疗后复查`, `戒烟咨询`<br>**4B/4X类**: 强烈建议MDT讨论制定个体化方案",继续年度筛查
+followUpRecommendation.biopsyIndicated,活检指征,Boolean,"是否存在活检指征。<br>**活检指征**: Lung-RADS 4B/4X + 影像学高度可疑恶性 + 患者可耐受手术<br>**活检方式选择**: 经皮肺穿刺(周围型)、支气管镜(中央型)、EBUS-TBNA(纵隔淋巴结)、直接手术切除(高度可疑+适合手术)",false
+clinicalDecisionSupport.fleischnerCategory,Fleischner指南分类,String,"Fleischner Society 2017指南分类(用于偶发结节)。<br>**实性结节管理**:<br>- <6mm低危: 不需随访<br>- <6mm高危: 12月可选随访<br>- 6-8mm低危: 6-12月 → 18-24月<br>- 6-8mm高危: 6-12月 → 18-24月<br>- >8mm低危: 3月 → 后续<br>- >8mm高危: 3月 → 后续 ± PET-CT<br>**亚实性结节**: 延长至5年随访",6-8mm实性结节 → 6-12月首次随访
+clinicalDecisionSupport.accp2013RiskScore,ACCP 2013风险评分,String,"美国胸科医师学会结节恶性概率评分。<br>**变量**: 年龄、吸烟、肿瘤史、直径、上叶、毛刺<br>**风险分层**: 低危(<5%)、中危(5-65%)、高危(>65%)<br>**临床意义**: 指导进一步检查决策(监测vs活检vs手术)",中危5-65%
+clinicalDecisionSupport.brock2013Model,Brock 2013模型风险,Number,"Brock模型计算的2年恶性风险,百分比。<br>**变量**: 性别、家族史、肺气肿、结节大小、位置、毛刺、计数<br>**在线计算器**: https://brocku.ca/lung-cancer-screening-and-risk-prediction/<br>**临床意义**: 最准确的结节恶性风险预测模型之一",8.5
+reportingSummary.overallAssessment,总体评估,String,"肺结节总体评估摘要。<br>**应包含**: 结节描述、Lung-RADS分级、恶性风险估计、管理建议<br>**示例**: '右上叶7mm实性结节,边缘光滑,无生长对比,Lung-RADS 3类,恶性风险1-2%,建议6个月LDCT随访'",右上叶7mm实性结节，边缘光滑，Lung-RADS 3类，恶性风险1-2%，建议6个月LDCT随访
+reportingSummary.keyFindings,关键发现总结,String,"关键影像学发现列表。<br>**格式建议**: 分条列出主要结节、其他肺部发现、心血管发现等<br>**示例**:<br>1. 右上叶7mm实性结节<br>2. 无肺气肿或纤维化<br>3. 冠脉轻度钙化",1. 右上叶7mm实性结节 2. 无其他显著异常
+reportingSummary.comparisonStatement,对比说明,String,"与既往影像的对比结论。<br>**建议内容**: 对比日期、结节大小变化、新发/消失结节、VDT计算<br>**示例**: '与2024-04-01 CT对比,结节大小稳定(7mm vs 6.8mm,增长0.2mm<1.5mm阈值),无新发结节'",无既往影像可供对比
+reportingSummary.radiologistNote,放射科医师备注,String,"放射科医师的额外备注或建议。<br>**示例内容**: 技术限制、患者配合度、建议临床相关性、需要补充检查的理由等",患者呼吸配合良好，图像质量满意
+qualityControl.imageQuality,图像质量,String,"CT图像质量评估。<br>**建议值**: `优秀`, `良好`, `尚可`, `差(呼吸运动伪影)`, `差(噪声过大)`<br>**临床意义**: 图像质量差可能影响小结节检出",良好
+qualityControl.doubleReading,双人阅片,Boolean,"是否进行双人阅片或AI辅助。<br>**临床意义**: 双阅片或AI辅助可提高结节检出率和一致性(敏感性提升5-10%)",false
+qualityControl.aiAssisted,AI辅助检测,Boolean,"是否使用AI辅助结节检测系统。<br>**临床意义**: AI CAD系统显著提高小结节(<5mm)检出率,减少遗漏",false

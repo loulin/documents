@@ -1,0 +1,28 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+recordDate,记录日期,String,可穿戴/生活方式数据对应的日期,2025-06-01
+patientId,患者编号,String,受试者唯一标识,LIFE-2025-077
+deviceType,设备类型,String,"主要可穿戴设备。<br>**建议值**: `Apple Watch`, `Fitbit`, `华为手环`, `医用CGM`, `睡眠监测垫`, `其他`",Apple Watch
+deviceSyncStatus,数据同步状态,String,"数据同步情况。<br>**建议值**: `实时同步`, `延迟同步`, `离线补录`, `缺失`",实时同步
+dailyStepCount,日步数,Number,"全天累计步数。<br>单位: 步",9840
+activeEnergyBurned,活动消耗能量,Number,"可穿戴测得的活动能量。<br>单位: kcal",520
+moderateToVigorousMinutes,中高强度运动时长,Number,"每日中高强度运动时长。<br>单位: 分钟",45
+sedentaryTimeMinutes,久坐时长,Number,"每日久坐时间。<br>单位: 分钟",580
+standingHours,站立小时数,Number,"每日站立≥1分钟的小时数。<br>单位: 小时",12
+sleepDuration,睡眠时长,Number,"夜间总睡眠时间。<br>单位: 小时",7.2
+sleepEfficiency,睡眠效率,Number,"睡眠效率。<br>单位: %",88
+sleepStagesDistribution,睡眠阶段分布,String,"浅睡、深睡、REM所占比例",浅睡50% 深睡25% REM25%
+restingHeartRate,静息心率,Number,"静息心率。<br>单位: 次/分",62
+heartRateVariabilityRmssd,心率变异性(RMSSD),Number,"RMSSD指标。<br>单位: ms",38
+stressIndex,压力指数,Number,"可穿戴测得的压力评分。<br>单位: 分",62
+dailyAverageGlucose,日均血糖,Number,"CGM/闪测的日均血糖。<br>单位: mmol/L",7.1
+cgmTimeInRange,CGM达标时间,Number,"当天CGM Time-in-Range。<br>单位: %",72
+cgmTimeBelowRange,CGM低于目标时间,Number,"Time-below-range。<br>单位: %",2
+calorieIntakeLogged,记录的日摄入热量,Number,"饮食记录的总热量。<br>单位: kcal",1850
+macronutrientDistribution,宏量营养素分布,String,"碳水/蛋白/脂肪百分比",碳水45% 蛋白25% 脂肪30%
+mealLoggingCompleteness,饮食记录完整度,String,"饮食记录覆盖程度。<br>**建议值**: `完整`, `部分`, `缺失`",部分
+hydrationIntake,饮水量,Number,"饮水摄入量。<br>单位: mL",2100
+moodScore,情绪评分,Number,"自评情绪/精力评分(0-10)。<br>单位: 分",7
+sleepQualitySubjective,主观睡眠质量,String,"自评睡眠质量。<br>**建议值**: `好`, `一般`, `差`",一般
+adherenceComment,依从性备注,String,"穿戴/记录依从性情况",晚间摘除设备2小时
+interventionPlan,生活方式干预计划,String,"拟采取的生活方式干预措施",建议每周3次力量训练并增加蛋白质摄入
+followUpIntervalWeeks,随访间隔(周),Number,"建议复评周期。<br>单位: 周",6

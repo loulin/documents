@@ -1,0 +1,108 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,青春期发育评估日期,2025-10-01
+patientID,患者ID,String,患者唯一标识符,P123456
+patientSex,患者性别,String,"患者性别。<br>**建议值**: `女`, `男`",女
+patientAge,患者年龄,Number,"患者实际年龄。<br>单位: 岁",7.5
+complaint,主诉,String,"就诊主诉。<br>**建议值**: `性征早现`, `乳房发育过早`, `月经初潮早`, `身高突增`, `性征未发育`, `原发性闭经`, `体检发现`",乳房发育过早
+disorderType,异常类型,String,"青春期发育异常类型。<br>**建议值**: `性早熟`, `青春期延迟`, `青春期进展异常`, `待评估`",性早熟
+precocity.definition,性早熟.定义符合,Boolean,"是否符合性早熟定义(女孩<8岁、男孩<9岁出现第二性征)",true
+precocity.classification,性早熟.分型,String,"性早熟分型。<br>**建议值**: `中枢性性早熟(CPP，GnRH依赖)`, `外周性性早熟(PPP，GnRH独立)`, `单纯乳房早发育`, `单纯阴毛早现`, `待分型`",中枢性性早熟(CPP，GnRH依赖)
+delay.definition,青春期延迟.定义符合,Boolean,"是否符合青春期延迟定义(女孩≥13岁、男孩≥14岁无性征发育)",false
+delay.classification,青春期延迟.分型,String,"青春期延迟分型。<br>**建议值**: `体质性青春期生长延迟(CDGP)`, `低促性腺激素性性腺功能减退(HH)`, `高促性腺激素性性腺功能减退`, `待分型`, `非延迟`",非延迟
+history.onsetAge,病史.性征出现年龄,Number,"第二性征首次出现的年龄。<br>单位: 岁<br>**性早熟**: 女孩<8岁，男孩<9岁",7
+history.firstSign,病史.首发征象,String,"首发第二性征。<br>**女孩正常**: 乳房发育(B2)<br>**男孩正常**: 睾丸增大<br>**建议值**: `乳房发育`, `睾丸增大`, `阴毛出现`, `腋毛`, `初潮`, `变声`, `其他`",乳房发育
+history.progression,病史.进展速度,String,"性征进展速度。<br>**建议值**: `快速进展(<6月)`, `中等速度`, `缓慢进展`, `停滞`",快速进展(<6月)
+history.menarche,病史.初潮(女孩),Boolean,女孩是否已有月经初潮,false
+history.menarcheAge,病史.初潮年龄,Number,"月经初潮年龄。<br>单位: 岁<br>**正常**: 10-15岁，平均12.5岁",未初潮
+history.growthVelocity,病史.生长速度,String,"身高生长速度。<br>**性早熟**: 早期↑(>6-7 cm/年)<br>**建议值**: `加速(>7 cm/年)`, `正常(4-6 cm/年)`, `减慢(<4 cm/年)`",加速(>7 cm/年)
+history.medications,病史.药物/补品,String,"药物或补品接触史(误服避孕药、含激素食品/化妆品)。<br>**建议值**: `无`, `避孕药`, `保健品`, `化妆品`, `其他激素类`",保健品
+history.familyHistoryPrecocity,病史.性早熟家族史,Boolean,家族中是否有性早熟病史,false
+history.familyHistoryDelay,病史.青春期延迟家族史,Boolean,家族中父母是否有青春期延迟史(CDGP),false
+history.cnsSymptoms,病史.中枢神经系统症状,Boolean,"是否有头痛、视力障碍等CNS症状(提示颅内病变)",false
+tannerStaging.breastFemale,Tanner分期.乳房发育,String,"女孩乳房发育Tanner分期。<br>**建议值**: `B1(青春期前)`, `B2(乳芽)`, `B3(乳房隆起)`, `B4(乳晕突出)`, `B5(成人型)`",B3(乳房隆起)
+tannerStaging.genitalMale,Tanner分期.生殖器发育,String,"男孩生殖器发育Tanner分期。<br>**建议值**: `G1(青春期前)`, `G2(睾丸/阴囊增大)`, `G3(阴茎增长)`, `G4(阴茎增粗)`, `G5(成人型)`",不适用(女孩)
+tannerStaging.pubicHair,Tanner分期.阴毛发育,String,"阴毛发育Tanner分期(男女通用)。<br>**建议值**: `PH1(无)`, `PH2(稀疏)`, `PH3(加密变黑)`, `PH4(成人型但范围小)`, `PH5(成人型)`",PH2(稀疏)
+tannerStaging.axillaryHair,Tanner分期.腋毛,Boolean,是否有腋毛出现,false
+physicalExam.testicleVolume,体格检查.睾丸容积,Number,"睾丸容积(Prader orchidometer测量)。<br>单位: mL<br>**青春期启动**: >4 mL<br>**成人**: 15-25 mL<br>**说明**: 仅男孩",不适用(女孩)
+physicalExam.testicleLength,体格检查.睾丸长径,Number,"睾丸长径。<br>单位: cm<br>**青春期启动**: >2.5 cm<br>**说明**: 仅男孩",不适用(女孩)
+physicalExam.penisLength,体格检查.阴茎长度,Number,"阴茎拉伸长度。<br>单位: cm<br>**说明**: 仅男孩",不适用(女孩)
+physicalExam.height,体格检查.身高,Number,"当前身高。<br>单位: cm",128
+physicalExam.heightPercentile,体格检查.身高百分位数,Number,"身高在同龄同性别儿童中的百分位数<br>**说明**: 根据生长曲线图",75
+physicalExam.weight,体格检查.体重,Number,"体重。<br>单位: kg",28
+physicalExam.bmi,体格检查.BMI,Number,"体重指数。<br>单位: kg/m²<br>**说明**: 肥胖可能与性早熟相关",17.1
+physicalExam.parentalHeight,体格检查.父母身高,String,"父母身高(用于计算遗传靶身高)。<br>格式: 父/母 cm",父175/母160
+physicalExam.targetHeight,体格检查.遗传靶身高,Number,"遗传靶身高(MPH)。<br>计算: 男=(父+母+13)/2，女=(父+母-13)/2<br>单位: cm",161
+physicalExam.cafeAuLait,体格检查.咖啡斑,String,"咖啡斑(McCune-Albright综合征)。<br>**建议值**: `无`, `有(边界规则)`, `有(边界不规则'Maine海岸线样'，提示MAS)`",无
+physicalExam.acanthosisNigricans,体格检查.黑棘皮病,Boolean,是否有黑棘皮病(提示胰岛素抵抗),false
+physicalExam.anosmia,体格检查.嗅觉,String,"嗅觉评估(Kallmann综合征)。<br>**建议值**: `正常`, `嗅觉减退`, `嗅觉缺失(提示KS)`",正常
+physicalExam.visualField,体格检查.视野,String,"视野检查(垂体肿瘤/颅咽管瘤)。<br>**建议值**: `正常`, `双颞侧偏盲`, `其他异常`",正常
+labResults.lh,实验室检查.黄体生成素LH,Number,"血清LH(清晨8-10点采血)。<br>单位: IU/L<br>**青春期前**: <0.2<br>**青春期**: 1-10",3.5
+labResults.fsh,实验室检查.卵泡刺激素FSH,Number,"血清FSH。<br>单位: IU/L<br>**青春期前**: <2<br>**青春期**: 2-10",4.2
+labResults.estradiol,实验室检查.雌二醇E2,Number,"血清雌二醇(女孩)。<br>单位: pmol/L<br>**青春期前**: <75<br>**青春期**: >75",180
+labResults.testosterone,实验室检查.睾酮T,Number,"血清睾酮(男孩)。<br>单位: nmol/L<br>**青春期前**: <0.35<br>**青春期**: >0.7",不适用(女孩)
+labResults.dheas,实验室检查.DHEA-S,Number,"硫酸脱氢表雄酮(肾上腺来源)。<br>单位: μmol/L<br>**青春期前**: <2.7<br>**升高**: 单纯阴毛早现、肾上腺源性性早熟",1.5
+labResults.17ohp,实验室检查.17-OHP,Number,"17-羟孕酮(CAH筛查)。<br>单位: nmol/L<br>**参考范围**: <6<br>**CAH**: >30",2.5
+labResults.betaHcg,实验室检查.β-HCG,Number,"β人绒毛膜促性腺激素(生殖细胞瘤标志物)。<br>单位: IU/L<br>**参考范围**: <5",<1
+labResults.inhibinB,实验室检查.Inhibin B,Number,"Inhibin B(男孩Sertoli细胞功能标志)。<br>单位: pg/mL<br>**说明**: HH时↓",不适用(女孩)
+gnrhTest.performed,GnRH兴奋试验.已完成,Boolean,"是否完成GnRH兴奋试验(鉴别CPP vs PPP金标准)",true
+gnrhTest.baseline,GnRH兴奋试验.基线LH,Number,"GnRH注射前LH。<br>单位: IU/L",2.1
+gnrhTest.peak,GnRH兴奋试验.峰值LH,Number,"GnRH注射后30-90分钟LH峰值。<br>单位: IU/L<br>**CPP诊断**: >5 IU/L",12.5
+gnrhTest.fshPeak,GnRH兴奋试验.峰值FSH,Number,"GnRH注射后FSH峰值。<br>单位: IU/L",8.3
+gnrhTest.lhFshRatio,GnRH兴奋试验.LH/FSH峰值比,Number,"LH/FSH峰值比值。<br>**CPP**: >0.6-1.0",1.5
+gnrhTest.interpretation,GnRH兴奋试验.解读,String,"GnRH兴奋试验结果解读。<br>**建议值**: `CPP(LH峰值>5)`, `PPP(LH峰值<5)`, `青春期前`, `青春期反应`",CPP(LH峰值>5)
+boneAge.performed,骨龄.已评估,Boolean,是否完成骨龄评估(左手腕X线),true
+boneAge.value,骨龄.骨龄,Number,"骨龄(Greulich-Pyle图谱法)。<br>单位: 岁",10
+boneAge.chronologicalAge,骨龄.实际年龄,Number,"实际年龄。<br>单位: 岁",7.5
+boneAge.difference,骨龄.骨龄差值,Number,"骨龄-实际年龄。<br>单位: 岁<br>**性早熟**: ≥+2岁<br>**青春期延迟**: ≤-2岁",+2.5
+boneAge.interpretation,骨龄.解读,String,"骨龄解读。<br>**建议值**: `正常(±1岁)`, `轻度超前(+1至+2岁)`, `显著超前(≥+2岁)`, `延迟(≤-2岁)`",显著超前(≥+2岁)
+predictedAdultHeight,预测成年身高,Number,"基于当前骨龄和身高预测的成年身高(Bayley-Pinneau表)。<br>单位: cm<br>**说明**: 性早熟时可能受损",148
+imaging.pelvicUltrasound,影像学.盆腔超声,Boolean,"是否完成盆腔超声(女孩)",true
+imaging.uterineVolume,影像学.子宫容积,Number,"子宫容积。<br>单位: mL<br>**青春期前**: <2 mL<br>**CPP**: ↑",3.5
+imaging.endometrialEcho,影像学.内膜回声,Boolean,是否有子宫内膜回声(雌激素作用),true
+imaging.ovarianVolume,影像学.卵巢容积,Number,"单侧卵巢容积。<br>单位: mL<br>**青春期前**: <1 mL<br>**CPP**: >1 mL/侧",1.8
+imaging.ovarianCyst,影像学.卵巢囊肿,String,"卵巢囊肿/肿瘤(PPP)。<br>**建议值**: `无`, `单纯囊肿`, `复杂囊肿`, `实性肿块(疑肿瘤)`",无
+imaging.testicularUltrasound,影像学.睾丸超声,Boolean,"是否完成睾丸超声(男孩，排除间质细胞瘤)",false
+imaging.testicularMass,影像学.睾丸肿块,String,"睾丸肿块。<br>**建议值**: `无`, `间质细胞瘤`, `其他肿瘤`",不适用
+imaging.adrenalCt,影像学.肾上腺CT/MRI,Boolean,"是否完成肾上腺影像(怀疑肾上腺源性时)",false
+imaging.adrenalMass,影像学.肾上腺肿块,String,"肾上腺肿块/肿瘤。<br>**建议值**: `无`, `腺瘤`, `肾上腺皮质癌`, `其他`",未检查
+imaging.brainMri,影像学.头颅MRI,Boolean,"是否完成头颅MRI(性早熟男孩必做，女孩选择性做；青春期延迟HH必做)",true
+imaging.hypothalamicHamartoma,影像学.下丘脑错构瘤,Boolean,"是否发现下丘脑错构瘤(T1/T2等信号，不强化)",false
+imaging.cnsLesion,影像学.中枢神经系统病变,String,"CNS病变。<br>**建议值**: `未见异常`, `下丘脑错构瘤`, `胶质瘤`, `生殖细胞瘤`, `颅咽管瘤`, `垂体腺瘤`, `嗅球/嗅束缺如(KS)`, `其他`",未见异常
+karyotype.performed,核型分析.已完成,Boolean,"是否完成染色体核型分析(青春期延迟必查)",false
+karyotype.result,核型分析.结果,String,"核型结果。<br>**建议值**: `46,XX(正常女性)`, `46,XY(正常男性)`, `45,X0(Turner综合征)`, `47,XXY(Klinefelter综合征)`, `嵌合体`, `其他异常`",未完成
+genetics.performed,基因检测.已完成,Boolean,"是否完成基因检测(先天性HH、特殊综合征)",false
+genetics.panel,基因检测.检测Panel,String,"基因检测Panel。<br>**HH相关**: KISS1R、GNRHR、KAL1(Kallmann)、FGFR1、FGF8等<br>**其他**: GNAS(MAS)、LHCGR(FMPP)等<br>**建议值**: `未检测`, `HH Panel`, `性早熟Panel`, `全外显子测序`, `特定基因`",未检测
+genetics.result,基因检测.结果,String,"基因检测结果。<br>**建议值**: `未检测`, `未发现致病突变`, `KISS1R突变`, `KAL1突变(Kallmann)`, `GNAS突变(MAS)`, `LHCGR突变(FMPP)`, `其他`",未检测
+diagnosis.precocity.type,诊断.性早熟类型,String,"性早熟最终诊断类型。<br>**建议值**: `中枢性性早熟(CPP-特发性)`, `CPP-器质性(下丘脑错构瘤)`, `CPP-器质性(CNS肿瘤)`, `外周性性早熟-卵巢源性`, `PPP-睾丸源性`, `PPP-肾上腺源性(CAH)`, `PPP-外源性`, `McCune-Albright综合征(MAS)`, `家族性男性性早熟(FMPP)`, `单纯乳房早发育`, `单纯阴毛早现`, `非性早熟`",中枢性性早熟(CPP-特发性)
+diagnosis.delay.type,诊断.青春期延迟类型,String,"青春期延迟最终诊断类型。<br>**建议值**: `体质性青春期生长延迟(CDGP)`, `Kallmann综合征`, `低促性腺激素性性腺功能减退(HH-其他)`, `Turner综合征(45,X0)`, `Klinefelter综合征(47,XXY)`, `高促性腺激素性性腺功能减退-其他`, `垂体肿瘤/颅咽管瘤`, `非延迟`",非延迟
+diagnosis.certainty,诊断.诊断确定性,String,"诊断确定性。<br>**建议值**: `确诊`, `临床诊断(高度可能)`, `疑似(需进一步评估)`, `待诊`",确诊
+complications.heightLoss,并发症.身高受损,Boolean,成年身高是否可能受损(性早熟骨龄超前),true
+complications.psychosocial,并发症.心理社交问题,Boolean,是否存在心理社交问题,true
+complications.lowBoneDensity,并发症.骨密度降低,Boolean,是否有骨密度降低(青春期延迟),false
+complications.infertility,并发症.生育力受损,Boolean,是否有成年生育力受损风险,false
+treatment.indication,治疗.治疗指征,Boolean,"是否有治疗指征",true
+treatment.approach,治疗.治疗方案,String,"治疗方案。<br>**性早熟**: GnRHa、手术、病因治疗<br>**青春期延迟**: 观察、短期性激素、终身替代<br>**建议值**: `GnRHa治疗`, `病因治疗(手术/糖皮质激素)`, `芳香化酶抑制剂`, `抗雄激素`, `观察随访`, `短期性激素诱导`, `终身性激素替代`, `生长激素联合治疗`, `无需治疗`",GnRHa治疗
+treatment.gnrha.drug,GnRHa治疗.药物,String,"GnRH类似物药物。<br>**建议值**: `未用`, `Leuprolide(亮丙瑞林)3.75mg q4w`, `Leuprolide 11.25mg q12w`, `Triptorelin(曲普瑞林)3.75mg q4w`, `Goserelin(戈舍瑞林)3.6mg q4w`",Leuprolide(亮丙瑞林)3.75mg q4w
+treatment.gnrha.startDate,GnRHa治疗.开始日期,String,GnRHa治疗开始日期,2025-10-15
+treatment.gnrha.plannedDuration,GnRHa治疗.计划疗程,String,"GnRHa计划疗程。<br>**目标**: 至骨龄女孩12-13岁、男孩13-14岁",至骨龄12-13岁
+treatment.gnrha.monitoring,GnRHa治疗.监测计划,String,"GnRHa治疗监测。<br>**建议**: 每3-6月Tanner分期、身高、骨龄、LH抑制试验",每3-6月监测
+treatment.surgery.performed,手术治疗.已完成,Boolean,"是否完成手术(肿瘤切除)",false
+treatment.surgery.type,手术治疗.手术类型,String,"手术类型。<br>**建议值**: `未手术`, `卵巢肿瘤切除`, `睾丸肿瘤切除`, `肾上腺肿瘤切除`, `颅内肿瘤切除`",未手术
+treatment.hormoneReplacement,激素替代治疗.方案,String,"性激素替代治疗(青春期延迟-HH)。<br>**男孩**: 睾酮<br>**女孩**: 雌激素→加孕激素<br>**建议值**: `无`, `睾酮(50-100mg q2-4w逐增)`, `雌激素(0.3mg/天起逐增)`, `雌激素+孕激素`, `短期诱导(CDGP)`",无
+treatment.gh.indicated,生长激素治疗.指征,Boolean,"是否有生长激素联合治疗指征(改善成年身高)",false
+treatment.gh.regimen,生长激素治疗.方案,String,"生长激素治疗方案。<br>**建议值**: `无`, `GH单独`, `GH+GnRHa联合`",无
+followUp.frequency,随访.频率,String,"随访频率。<br>**GnRHa治疗期**: 每3-6月<br>**观察期**: 每6-12月<br>**建议值**: `每3月`, `每6月`, `每年`, `治疗结束`",每3月
+followUp.monitoringItems,随访.监测项目,String,"随访监测项目。<br>**包括**: Tanner分期、身高/体重、骨龄、性激素、超声等",Tanner分期、身高、骨龄、LH抑制试验
+followUp.stopCriteria,随访.停药标准,Boolean,"是否达到停药标准(骨龄达标或实际年龄适当)",false
+prognosis.adultHeight,预后.预测成年身高,Number,"经治疗后预测的成年身高。<br>单位: cm<br>**说明**: GnRHa可改善3-10cm",158
+prognosis.fertility,预后.生育力,String,"成年生育力预后。<br>**建议值**: `正常`, `可能降低`, `不育风险高`",正常
+prognosis.psychologicalOutcome,预后.心理预后,String,"心理社交预后。<br>**建议值**: `良好`, `需心理支持`, `长期随访`",良好
+specialSyndromes.mas,特殊综合征.McCune-Albright综合征,Boolean,"是否为MAS(PPP+咖啡斑+多骨纤维性发育不良)",false
+specialSyndromes.fmpp,特殊综合征.家族性男性性早熟,Boolean,"是否为FMPP(LH受体突变，仅男性)",false
+specialSyndromes.kallmann,特殊综合征.Kallmann综合征,Boolean,"是否为Kallmann综合征(HH+嗅觉缺失)",false
+specialSyndromes.turner,特殊综合征.Turner综合征,Boolean,"是否为Turner综合征(45,X0，女孩矮身材+性腺发育不全)",false
+specialSyndromes.klinefelter,特殊综合征.Klinefelter综合征,Boolean,"是否为Klinefelter综合征(47,XXY，男孩高身材+小睾丸)",false
+patientEducation.completed,患者教育.已完成,Boolean,是否完成患者和家属疾病教育,true
+patientEducation.topics,患者教育.教育内容,String,"教育内容。<br>**包括**: 疾病性质、治疗方案、预期效果、用药依从性、心理支持等",疾病性质、GnRHa治疗、预期身高改善、心理支持
+diagnosisImpression,诊断印象,String,综合诊断结果和临床印象,7.5岁女孩，中枢性性早熟(特发性)，乳房发育B3期伴阴毛PH2，骨龄10岁(超前2.5岁)，GnRH兴奋试验LH峰值12.5 IU/L(>5确诊CPP)，头颅MRI未见异常，预测成年身高148 cm(受损)，有治疗指征
+recommendation,建议,String,治疗建议和随访计划,1. GnRHa治疗(Leuprolide 3.75mg q4w肌注)至骨龄12-13岁; 2. 每3-6月监测: Tanner分期、身高生长速度、骨龄进展、LH抑制试验; 3. 目标: 延缓骨龄进展，改善成年身高(预期增加5-8cm至153-156cm)，延迟初潮; 4. 心理支持和患者教育; 5. 治疗期间避免肥胖; 6. 治疗结束后6-18月自然恢复青春期; 7. 定期评估疗效和不良反应

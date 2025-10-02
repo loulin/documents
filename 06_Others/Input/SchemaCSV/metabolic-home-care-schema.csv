@@ -1,0 +1,25 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+assessmentDate,评估日期,String,进行居家护理管理评估的日期,2025-05-28
+patientId,患者编号,String,患者唯一编号,HOME-2025-054
+primaryDiagnosis,主要诊断,String,"需居家管理的主要代谢疾病。示例: `T2DM`, `糖尿病足术后`, `肥胖术后`, `慢性肾病`",T2DM+糖尿病足术后
+caregiverAvailability,照护者情况,String,"主要照护者状态。<br>**建议值**: `家属充足`, `家属有限`, `需专业护理`, `独居`",家属有限
+homeEnvironmentRisk,居家环境风险评估,String,"居家环境安全评估。<br>**建议值**: `低`, `中`, `高`",中
+footCarePlan,足部护理计划,String,"针对足部/伤口护理的具体安排",每日温水冲洗+无菌敷料更换
+woundStatusDescription,伤口/压疮情况,String,"若有伤口，描述大小、渗出等",左足足底溃疡1.5cm 渗出少量
+bloodGlucoseSelfMonitoringPlan,自我血糖监测计划,String,"SMBG/CGM频率及时间点",SMBG每日4次+夜间1次
+medicationAdministrationSchedule,用药给药计划,String,"居家用药时间及方法",早餐前注射胰岛素德谷8U，晚餐后服用二甲双胍
+medicationAdherenceAssessment,用药依从性评估,String,"用药执行情况。<br>**建议值**: `好`, `一般`, `差`",一般
+telehealthFollowUpMode,远程随访方式,String,"视频/电话/图文等形式",每周一次视频随访
+rehabilitationExercisePlan,康复锻炼计划,String,"结合体力状况的运动方案",坐位抗阻训练+下肢关节活动15分钟/日
+nutritionSupportPlan,营养支持计划,String,"营养师建议或特殊膳食安排",高蛋白饮食+口服营养补充剂每日2次
+psychologicalSupportNeeds,心理支持需求,String,"是否需要心理/社工干预及内容",需要心理疏导
+selfManagementEducationTopics,自我管理教育主题,String,"近期强化的教育主题",低血糖识别与处理
+homeVisitFrequency,上门随访频率,Number,"护理/医生上门频次。<br>单位: 次/月",2
+redFlagSigns,警示症状,String,"需紧急处理的警示信号列表",足部伤口渗血、体温>38℃
+emergencyContactPlan,应急联络方案,String,"紧急情况处理流程及联系人",拨打120并通知内分泌专科护士
+assistiveDevices,辅助装置,String,"需使用的辅助器具。示例: `助行器`, `矫形鞋垫`",矫形鞋垫与减压鞋
+qualityOfLifeScore,生活质量评分,Number,"自评生活质量(0-10)。<br>单位: 分",6
+dailyRoutineAdherence,日常管理执行情况,String,"对饮食/运动/监测执行度综合评价。<br>**建议值**: `良好`, `需改进`, `差`",需改进
+careCoordinator,责任管理人员,String,"负责居家管理的医生/护士/健康管理师",王护士
+nextReviewIntervalWeeks,下次评估间隔(周),Number,"建议复评周期。<br>单位: 周",4
+recommendation,综合建议,String,"综合管理建议",建议安排专业伤口护理并强化家属培训

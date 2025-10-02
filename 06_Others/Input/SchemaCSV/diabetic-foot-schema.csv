@@ -1,0 +1,133 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行糖尿病足评估的日期,2025-10-01
+patientID,患者ID,String,患者唯一标识符,P123456
+diabetesDuration,糖尿病病程,Number,"糖尿病病程。<br>单位: 年",18
+diabetesType,糖尿病类型,String,"糖尿病类型。<br>**建议值**: `1型糖尿病`, `2型糖尿病`",2型糖尿病
+riskFactors.previousUlcer,危险因素.既往溃疡史,Boolean,"既往足溃疡或截肢史(相对危险度>10)",true
+riskFactors.neuropathyAndPvd,危险因素.神经病变合并血管病变,Boolean,"周围神经病变+周围血管病变(相对危险度>10)",true
+riskFactors.neuropathyAndDeformity,危险因素.神经病变合并足畸形,Boolean,"周围神经病变+足部畸形(相对危险度>10)",false
+riskFactors.visualImpairment,危险因素.视力减退,Boolean,视力减退影响自我护理,true
+riskFactors.ckd,危险因素.糖尿病肾病,Boolean,是否合并糖尿病肾病,true
+riskFactors.poorGlycemicControl,危险因素.血糖控制不佳,Boolean,"血糖控制不佳(HbA1c>9%)",false
+riskFactors.liveAlone,危险因素.独居,Boolean,独居男性(缺乏足部护理),false
+clinicalPresentation,临床表现,String,"糖尿病足临床表现。<br>**建议值**: `高危足无溃疡`, `足部溃疡`, `足部感染`, `足部坏疽`, `夏科关节病`",足部溃疡
+ulcerPresent,溃疡存在,Boolean,是否存在足部溃疡,true
+ulcerLocation,溃疡部位,String,"溃疡部位。<br>**建议值**: `足底(跖骨头)`, `足跟`, `足趾`, `足背`, `足侧缘`, `多发部位`",足底(跖骨头)
+ulcerDuration,溃疡病程,Number,"溃疡存在时间。<br>单位: 周",8
+ulcerSize.length,溃疡大小.长度,Number,"溃疡长度。<br>单位: cm",3.5
+ulcerSize.width,溃疡大小.宽度,Number,"溃疡宽度。<br>单位: cm",2.8
+ulcerSize.depth,溃疡大小.深度,Number,"溃疡深度。<br>单位: cm<br>**说明**: 0=表浅，0.5-1=中度，>1=深部",0.8
+ulcerSize.area,溃疡大小.面积,Number,"溃疡面积(长×宽)。<br>单位: cm²",9.8
+wagnerGrade,Wagner分级,String,"Wagner分级系统。<br>**建议值**: `0级(高危足无溃疡)`, `1级(表浅溃疡无感染)`, `2级(深部溃疡累及肌腱骨骼无感染)`, `3级(深部溃疡伴感染脓肿或骨髓炎)`, `4级(局限性坏疽)`, `5级(全足坏疽)`",3级(深部溃疡伴感染脓肿或骨髓炎)
+texasGrade.depth,Texas分级.深度,String,"Texas分级-深度。<br>**建议值**: `A级(皮前溃疡或愈合后)`, `B级(表浅溃疡)`, `C级(累及肌腱或关节囊)`, `D级(累及骨骼或关节)`",D级(累及骨骼或关节)
+texasGrade.infection,Texas分级.感染,Boolean,是否合并感染(I),true
+texasGrade.ischemia,Texas分级.缺血,Boolean,是否合并缺血(S),true
+iwgdfInfection,IWGDF感染分级,String,"IWGDF/IDSA感染分级(2019)。<br>**建议值**: `无感染`, `轻度感染(表浅，红肿<2cm)`, `中度感染(深部或红肿>2cm)`, `重度感染(全身症状或代谢紊乱)`",中度感染(深部或红肿>2cm)
+infectionSigns.erythema,感染征象.红肿,String,"红肿范围。<br>单位: cm<br>**轻度**: <2cm<br>**中度**: >2cm",3
+infectionSigns.purulentDischarge,感染征象.脓性分泌物,Boolean,是否有脓性分泌物,true
+infectionSigns.warmth,感染征象.局部发热,Boolean,溃疡周围皮温升高,true
+infectionSigns.abscess,感染征象.脓肿,Boolean,是否形成脓肿,true
+infectionSigns.osteomyelitis,感染征象.骨髓炎,Boolean,是否累及骨髓炎,true
+infectionSigns.systemic,感染征象.全身症状,Boolean,"是否有全身感染症状(发热、寒战、代谢紊乱)",false
+ulcerCharacteristics.granulation,溃疡特征.肉芽组织,String,"肉芽组织情况。<br>**建议值**: `无`, `少量`, `中量`, `丰富(健康红色)`, `不健康(苍白或暗红)`",少量
+ulcerCharacteristics.necrotic,溃疡特征.坏死组织,String,"坏死组织。<br>**建议值**: `无`, `黄色腐肉`, `黑色痂皮`, `广泛坏死`",黄色腐肉
+ulcerCharacteristics.exudate,溃疡特征.渗出物,String,"渗出物量。<br>**建议值**: `无`, `少量`, `中量`, `大量`",中量
+ulcerCharacteristics.odor,溃疡特征.气味,Boolean,是否有恶臭(提示厌氧菌感染),true
+ulcerCharacteristics.undermining,溃疡特征.潜行,Boolean,溃疡边缘是否潜行(皮下空腔),true
+ulcerType,溃疡类型,String,"溃疡类型(病理分型)。<br>**建议值**: `神经性溃疡`, `缺血性溃疡`, `神经缺血性溃疡(混合型)`, `感染性溃疡`",神经缺血性溃疡(混合型)
+neuropathyAssessment.monofilament,神经病变评估.10g单丝检查,String,"10g单丝检查结果(5个部位)。<br>**建议值**: `正常(5/5)`, `轻度减退(3-4/5)`, `中度减退(1-2/5)`, `重度减退(0/5)`",重度减退(0/5)
+neuropathyAssessment.monofilamentSites,神经病变评估.单丝检查部位,String,"单丝检查具体部位。<br>**标准**: 足背、第1、3、5跖骨头，足跟",第1跖骨头(-)、第3跖骨头(-)、第5跖骨头(-)、足跟(-)、足背(+)
+neuropathyAssessment.vibration,神经病变评估.振动觉,String,"振动觉检查(128Hz音叉于足背或内踝)。<br>**建议值**: `正常`, `减退`, `消失`",消失
+neuropathyAssessment.pinprick,神经病变评估.针刺痛觉,String,"针刺痛觉。<br>**建议值**: `正常`, `减退`, `消失`",减退
+neuropathyAssessment.proprioception,神经病变评估.位置觉,String,"位置觉检查(大趾上下活动)。<br>**建议值**: `正常`, `减退`, `消失`",减退
+neuropathyAssessment.ankleReflex,神经病变评估.踝反射,String,"跟腱反射。<br>**建议值**: `正常`, `减弱`, `消失`",消失
+neuropathyAssessment.autonomic,神经病变评估.自主神经病变,Boolean,"自主神经病变表现(皮肤干燥、无汗、微血管功能异常)",true
+vascularAssessment.dorsalisPedis,血管评估.足背动脉搏动,String,"足背动脉搏动。<br>**建议值**: `正常`, `减弱`, `消失`",减弱
+vascularAssessment.posteriorTibial,血管评估.胫后动脉搏动,String,"胫后动脉搏动。<br>**建议值**: `正常`, `减弱`, `消失`",消失
+vascularAssessment.skinColor,血管评估.皮肤颜色,String,"皮肤颜色。<br>**建议值**: `正常`, `苍白`, `发绀`, `暗红色`",苍白
+vascularAssessment.skinTemperature,血管评估.皮肤温度,String,"皮肤温度。<br>**建议值**: `正常`, `发凉`, `发热(感染)`",发凉
+vascularAssessment.capillaryRefill,血管评估.毛细血管充盈时间,String,"毛细血管充盈时间。<br>单位: 秒<br>**正常**: <3秒<br>**延迟**: >3秒",>5秒(延迟)
+vascularAssessment.venousFilling,血管评估.静脉充盈,String,"静脉充盈。<br>**建议值**: `正常`, `延迟`",延迟
+vascularAssessment.hairLoss,血管评估.毛发脱落,Boolean,足部毛发脱落(慢性缺血表现),true
+abi.value,踝臂指数.ABI值,Number,"踝臂指数。<br>**正常**: 0.9-1.3<br>**PAD**: <0.9<br>**严重缺血**: <0.5<br>**不可靠**: >1.3(血管钙化)",0.55
+abi.interpretation,踝臂指数.解读,String,"ABI解读。<br>**建议值**: `正常(0.9-1.3)`, `轻度PAD(0.7-0.9)`, `中度PAD(0.4-0.7)`, `重度PAD(<0.4)`, `不可靠(>1.3需TBI)`",中度PAD(0.4-0.7)
+tbi.value,趾臂指数.TBI值,Number,"趾臂指数(比ABI更准确，不受钙化影响)。<br>**正常**: >0.7<br>**PAD**: <0.7<br>**严重缺血**: <0.25",0.45
+tcpo2.value,经皮氧分压.TcPO2值,Number,"经皮氧分压。<br>单位: mmHg<br>**正常**: >40<br>**愈合困难**: <30<br>**需血管重建**: <20",25
+tcpo2.healingPotential,经皮氧分压.愈合潜力,String,"基于TcPO2的愈合潜力。<br>**建议值**: `良好(>40mmHg)`, `可疑(30-40mmHg)`, `差(<30mmHg)`",差(<30mmHg)
+dopplerUltrasound.performed,多普勒超声.已完成,Boolean,是否完成下肢血管多普勒超声,true
+dopplerUltrasound.femoral,多普勒超声.股动脉,String,"股动脉情况。<br>**建议值**: `通畅`, `轻度狭窄(<50%)`, `中度狭窄(50-70%)`, `重度狭窄(>70%)`, `闭塞`",轻度狭窄(<50%)
+dopplerUltrasound.popliteal,多普勒超声.腘动脉,String,"腘动脉情况。<br>**建议值**: `通畅`, `轻度狭窄(<50%)`, `中度狭窄(50-70%)`, `重度狭窄(>70%)`, `闭塞`",中度狭窄(50-70%)
+dopplerUltrasound.tibial,多普勒超声.胫动脉,String,"胫前/胫后动脉情况。<br>**建议值**: `通畅`, `重度狭窄`, `闭塞`",闭塞
+dopplerUltrasound.dorsalisPedis,多普勒超声.足背动脉,String,"足背动脉情况。<br>**建议值**: `通畅`, `狭窄`, `闭塞`",闭塞
+angiography.performed,血管造影.已完成,Boolean,是否完成CTA/MRA/DSA血管造影,true
+angiography.stenosis,血管造影.狭窄部位,String,"主要狭窄部位。<br>**建议值**: `股动脉`, `腘动脉`, `胫前动脉`, `胫后动脉`, `腓动脉`, `足背动脉`, `多处病变`",多处病变(腘动脉+胫动脉)
+angiography.revascularizationPlan,血管造影.血运重建计划,String,"血运重建方案。<br>**建议值**: `无需重建`, `腔内治疗(PTA/支架)`, `外科搭桥`, `混合治疗`",腔内治疗(PTA/支架)
+footStructure.arch,足部结构.足弓,String,"足弓类型。<br>**建议值**: `正常`, `扁平足`, `高弓足`",正常
+footStructure.deformity,足部结构.足趾畸形,String,"足趾畸形。<br>**建议值**: `无`, `锤状趾`, `爪状趾`, `拇外翻`, `多种畸形`",锤状趾
+footStructure.callus,足部结构.胼胝,String,"胼胝位置和程度。<br>**建议值**: `无`, `跖骨头轻度`, `跖骨头中度`, `跖骨头重度`, `足跟`, `多发部位`",跖骨头重度
+footStructure.charcotJoint,足部结构.夏科关节病,Boolean,是否存在夏科关节病(神经性骨关节病),false
+footStructure.limitedJointMobility,足部结构.关节活动受限,Boolean,是否存在关节活动受限,true
+xray.performed,X线检查.已完成,Boolean,是否完成足部X线检查,true
+xray.osteomyelitis,X线检查.骨髓炎,String,"骨髓炎征象。<br>**建议值**: `无`, `可疑`, `确诊(骨质破坏/增生硬化)`",确诊(骨质破坏/增生硬化)
+xray.osteolysis,X线检查.骨溶解,Boolean,是否存在骨溶解,true
+xray.periostealReaction,X线检查.骨膜反应,Boolean,是否存在骨膜反应,true
+xray.gasInSoftTissue,X线检查.软组织气体征,Boolean,是否存在软组织气体征(提示产气菌感染),false
+xray.fracture,X线检查.骨折,Boolean,是否存在骨折或骨碎裂,false
+xray.charcotChanges,X线检查.夏科改变,Boolean,是否存在夏科关节病X线表现,false
+mri.performed,MRI检查.已完成,Boolean,是否完成MRI检查(怀疑骨髓炎时),false
+mri.osteomyelitis,MRI检查.骨髓炎,String,"MRI骨髓炎诊断。<br>**建议值**: `无`, `可疑`, `确诊(T1低信号T2高信号+增强)`",未完成
+mri.abscess,MRI检查.脓肿,Boolean,是否发现软组织脓肿,false
+mri.tenosynovitis,MRI检查.腱鞘炎,Boolean,是否存在肌腱或腱鞘感染,false
+labResults.wbc,实验室检查.白细胞,Number,"白细胞计数。<br>单位: ×10⁹/L<br>**参考范围**: 4-10<br>**感染**: >10",14.2
+labResults.neutrophil,实验室检查.中性粒细胞百分比,Number,"中性粒细胞百分比。<br>单位: %<br>**参考范围**: 50-70<br>**感染**: >75",82
+labResults.crp,实验室检查.C反应蛋白,Number,"C反应蛋白。<br>单位: mg/L<br>**参考范围**: <10<br>**感染**: >10",45
+labResults.esr,实验室检查.血沉,Number,"红细胞沉降率。<br>单位: mm/h<br>**参考范围**: <20<br>**骨髓炎**: 常>30",55
+labResults.pct,实验室检查.降钙素原,Number,"降钙素原(重度感染标志)。<br>单位: ng/mL<br>**参考范围**: <0.05<br>**细菌感染**: >0.5",0.3
+labResults.hba1c,实验室检查.糖化血红蛋白,Number,"HbA1c。<br>单位: %<br>**控制目标**: <7.0%(足溃疡期可放宽)",8.2
+labResults.fastingGlucose,实验室检查.空腹血糖,Number,"空腹血糖。<br>单位: mmol/L<br>**目标**: 6-8(足溃疡期)",7.5
+labResults.albumin,实验室检查.血清白蛋白,Number,"血清白蛋白(营养状态)。<br>单位: g/L<br>**参考范围**: 35-55<br>**营养不良**: <35",32
+labResults.prealbumin,实验室检查.前白蛋白,Number,"前白蛋白(敏感营养指标)。<br>单位: mg/L<br>**参考范围**: 200-400",180
+labResults.creatinine,实验室检查.血肌酐,Number,"血肌酐。<br>单位: μmol/L",135
+labResults.egfr,实验室检查.估算肾小球滤过率,Number,"eGFR。<br>单位: mL/min/1.73m²",52
+microbiology.culturePerformed,微生物学.培养已完成,Boolean,是否完成深部组织或骨组织培养,true
+microbiology.specimen,微生物学.标本类型,String,"标本类型。<br>**建议值**: `深部组织`, `骨组织`, `脓液`, `血培养`",深部组织
+microbiology.organism,微生物学.病原菌,String,"培养出的病原菌。<br>**常见**: 金黄色葡萄球菌、链球菌、肠杆菌科、假单胞菌、厌氧菌<br>**建议值**: `金黄色葡萄球菌(MSSA)`, `耐甲氧西林金黄色葡萄球菌(MRSA)`, `链球菌`, `大肠埃希菌`, `铜绿假单胞菌`, `厌氧菌`, `混合菌`, `培养阴性`",混合菌(MRSA+大肠埃希菌)
+microbiology.sensitivity,微生物学.药敏结果,String,药敏试验结果(敏感抗生素),敏感: 万古霉素、利奈唑胺、美罗培南
+treatment.glycemicControl,治疗.血糖控制,String,"血糖控制方案。<br>**目标**: 空腹6-8mmol/L，餐后<10mmol/L<br>**建议值**: `胰岛素治疗`, `口服药+胰岛素`, `CSII(胰岛素泵)`",胰岛素治疗
+treatment.nutritionSupport,治疗.营养支持,String,"营养支持。<br>**蛋白质**: 1.2-1.5g/kg/d<br>**建议值**: `肠内营养`, `口服营养补充`, `肠外营养`",口服营养补充
+treatment.debridement,治疗.清创,String,"清创方式。<br>**建议值**: `未清创`, `机械清创(锐性)`, `自溶性清创(水凝胶)`, `生物清创(蛆虫)`, `酶解清创`",机械清创(锐性)
+treatment.debridementFrequency,治疗.清创频率,String,"清创频率。<br>**建议值**: `每日`, `每周2-3次`, `每周1次`, `按需`",每周2-3次
+treatment.dressing,治疗.敷料类型,String,"创面敷料。<br>**建议值**: `薄膜敷料`, `泡沫敷料`, `银离子敷料`, `胶原敷料`, `负压吸引(VAC)`, `水凝胶`",银离子敷料
+treatment.offloading,治疗.减压措施,String,"减压治疗。<br>**建议值**: `不可拆卸接触性石膏(TCC)`, `可拆卸步行支具`, `减压鞋`, `轮椅`, `卧床`",可拆卸步行支具
+treatment.antibiotics,治疗.抗生素方案,String,"抗生素治疗。<br>**建议值**: `口服抗生素`, `静脉抗生素`, `万古霉素+哌拉西林/他唑巴坦`, `利奈唑胺+美罗培南`, `氟喹诺酮类`, `长期口服(骨髓炎6-12周)`",万古霉素+哌拉西林/他唑巴坦(静脉)
+treatment.antibioticDuration,治疗.抗生素疗程,String,"抗生素疗程。<br>**建议值**: `7-14天(轻度)`, `2-4周(中重度)`, `6-12周(骨髓炎)`",2-4周(中重度)
+treatment.revascularization,治疗.血运重建,String,"血运重建治疗。<br>**建议值**: `未进行`, `球囊扩张(PTA)`, `支架植入`, `药物涂层球囊`, `外科搭桥`, `混合治疗`",球囊扩张(PTA)
+treatment.revascularizationOutcome,治疗.血运重建效果,String,"血运重建效果。<br>**建议值**: `成功(足背动脉搏动恢复)`, `部分成功`, `失败`, `未评估`",成功(足背动脉搏动恢复)
+treatment.surgery,治疗.外科手术,String,"外科手术。<br>**建议值**: `无`, `骨切除术`, `关节离断术`, `皮瓣移植`, `趾截肢`, `跖趾关节离断`, `踝下截肢`, `小腿截肢`",骨切除术
+treatment.hyperbaricOxygen,治疗.高压氧,Boolean,是否使用高压氧治疗,false
+treatment.growthFactors,治疗.生长因子,Boolean,是否使用生长因子(如贝复济),false
+healing.woundHealing,愈合情况.伤口愈合,String,"伤口愈合状态。<br>**建议值**: `未愈合`, `改善中`, `基本愈合`, `完全愈合`, `恶化`",改善中
+healing.healingRate,愈合情况.愈合速度,String,"愈合速度(面积缩小)。<br>**建议值**: `快(>50%缩小/4周)`, `中等(20-50%/4周)`, `慢(<20%/4周)`, `无进展`, `扩大`",中等(20-50%/4周)
+healing.timeToHealing,愈合情况.预计愈合时间,String,"预计完全愈合时间。<br>**建议值**: `<4周`, `4-8周`, `8-12周`, `>12周`, `难以愈合`",8-12周
+complications.amputation,并发症.截肢,Boolean,是否发生截肢,false
+complications.recurrence,并发症.溃疡复发,Boolean,愈合后是否复发,false
+complications.sepsis,并发症.脓毒症,Boolean,是否发生脓毒症,false
+complications.aki,并发症.急性肾损伤,Boolean,是否发生急性肾损伤,false
+prevention.patientEducation,预防.患者教育,Boolean,是否接受足部护理教育,true
+prevention.dailyInspection,预防.每日自检,Boolean,是否每日自检足部,false
+prevention.appropriateFootwear,预防.合适鞋具,Boolean,是否使用合适的鞋袜,false
+prevention.podiatry,预防.专业足病护理,Boolean,是否定期接受足病专业护理,false
+prevention.customInsoles,预防.定制鞋垫,Boolean,是否使用定制矫形鞋垫,false
+followUp.frequency,随访.频率,String,"随访频率。<br>**建议值**: `每周(急性期)`, `每2周`, `每月`, `每3月(愈合后高危足)`",每2周
+followUp.nextVisit,随访.下次随访日期,String,下次随访日期,2025-10-15
+multidisciplinary.endocrinologist,多学科团队.内分泌科,Boolean,内分泌科参与,true
+multidisciplinary.vascularSurgeon,多学科团队.血管外科,Boolean,血管外科参与,true
+multidisciplinary.orthopedicSurgeon,多学科团队.骨科,Boolean,骨科参与,false
+multidisciplinary.infectiousDisease,多学科团队.感染科,Boolean,感染科参与,true
+multidisciplinary.woundCareNurse,多学科团队.伤口护理护士,Boolean,伤口护理护士参与,true
+multidisciplinary.podiatrist,多学科团队.足病医师,Boolean,足病医师参与,false
+prognosis.healingPotential,预后.愈合潜力,String,"愈合潜力评估。<br>**建议值**: `良好`, `中等`, `差`, `需截肢`",中等
+prognosis.amputationRisk,预后.截肢风险,String,"截肢风险。<br>**建议值**: `低`, `中`, `高`",中
+prognosis.mortalityRisk,预后.5年死亡风险,String,"5年死亡风险(糖尿病足5年死亡率约50%)。<br>**建议值**: `低(<30%)`, `中(30-50%)`, `高(>50%)`",中(30-50%)
+diagnosisImpression,诊断印象,String,综合诊断结果和临床印象,2型糖尿病足Wagner 3级(深部溃疡伴MRSA感染和骨髓炎)，神经缺血性溃疡，中度周围血管病变(ABI 0.55)，重度周围神经病变，营养不良
+recommendation,建议,String,治疗建议和随访计划,1. 静脉万古霉素+美罗培南抗感染4周; 2. 胰岛素控制血糖(目标6-8/10); 3. 每周2-3次清创+银离子敷料; 4. 可拆卸步行支具减压; 5. 腔内血运重建(PTA); 6. 营养支持(蛋白质1.5g/kg); 7. 骨切除术清除感染骨组织; 8. 多学科协作(内分泌+血管外科+感染科); 9. 每2周随访评估愈合; 10. 愈合后定期足病护理和患者教育

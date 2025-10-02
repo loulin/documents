@@ -1,0 +1,137 @@
+fieldKey,fieldName,fieldType,fieldDescription,exampleValue
+examDate,检查日期,String,病理检查日期,2025-03-15
+specimenType,标本类型,String,"标本类型。<br>**建议值**: `穿刺活检`, `手术切除标本`, `肝移植标本`, `细针穿刺(FNA)`, `超声引导下穿刺`<br>**临床意义**: 标本类型影响诊断准确性和病理评估范围",手术切除标本
+specimenSite,标本部位,String,"肝脏病变部位。<br>**建议值**: `右肝(S5-S8)`, `左肝(S2-S4)`, `尾状叶(S1)`, `多灶性`, `弥漫性`<br>**Couinaud分段**: 肝脏8个功能段<br>**临床意义**: 部位影响手术方式和预后",右肝(S6-S7)
+clinicalIndication,临床指征,String,"病理检查适应症。<br>**建议值**: `影像发现占位`, `AFP升高`, `肝硬化随访`, `肝移植术前评估`, `术后复发评估`",影像发现占位
+underlyingLiverDisease.cirrhosis,基础肝病.肝硬化,String,"肝硬化程度。<br>**建议值**: `无肝硬化`, `早期肝硬化(F3-F4)`, `显著肝硬化(Child A)`, `严重肝硬化(Child B-C)`<br>**临床意义**: 80-90% HCC发生于肝硬化背景,影响肝功能储备和治疗选择",显著肝硬化(Child A)
+underlyingLiverDisease.etiology,基础肝病.病因,String,"肝病病因。<br>**建议值**: `HBV相关`, `HCV相关`, `酒精性肝病`, `非酒精性脂肪性肝炎(NASH)`, `自身免疫性肝炎`, `隐源性`, `混合病因`<br>**中国特点**: HBV占70-80%",HBV相关
+underlyingLiverDisease.hbv,基础肝病.乙肝病毒,String,"HBV感染状态。<br>**建议值**: `HBsAg阴性`, `HBsAg阳性`, `HBV-DNA高载量(>2000 IU/mL)`, `HBV-DNA低载量`, `抗病毒治疗中`<br>**临床意义**: HBV是中国HCC最主要病因",HBsAg阳性,HBV-DNA高载量
+underlyingLiverDisease.hcv,基础肝病.丙肝病毒,String,"HCV感染状态。<br>**建议值**: `抗HCV阴性`, `抗HCV阳性`, `HCV-RNA阳性`, `已治愈(SVR)`<br>**临床意义**: HCV相关HCC即使病毒清除后仍需长期监测",抗HCV阴性
+underlyingLiverDisease.childPughScore,基础肝病.Child-Pugh评分,String,"Child-Pugh肝功能分级。<br>**分级标准**:<br>- A级(5-6分): 肝功能良好<br>- B级(7-9分): 肝功能中度损害<br>- C级(10-15分): 肝功能严重损害<br>**评分项目**: 胆红素、白蛋白、PT、腹水、肝性脑病<br>**临床意义**: 决定能否手术和预后",A级(6分)
+underlyingLiverDisease.meldScore,基础肝病.MELD评分,Number,"MELD评分(Model for End-stage Liver Disease)。<br>**计算**: 3.78×ln[胆红素(mg/dL)] + 11.2×ln[INR] + 9.57×ln[肌酐(mg/dL)] + 6.43<br>**范围**: 6-40分<br>**临床意义**: MELD≥15提示肝功能储备差,影响治疗选择",12
+clinicalPresentation.symptoms,临床表现.症状,String,"主要临床症状。<br>**建议值**: `无症状(体检发现)`, `右上腹痛/胀`, `消瘦乏力`, `黄疸`, `腹水`, `消化道出血`, `肝性脑病`<br>**临床意义**: 无症状者预后较好,有症状通常为中晚期",无症状(体检发现)
+clinicalPresentation.abdominalPain,临床表现.腹痛,String,"腹痛程度。<br>**建议值**: `无`, `轻度隐痛`, `持续性胀痛`, `剧烈疼痛(肿瘤破裂)`, `夜间痛`<br>**临床意义**: 剧烈疼痛提示肿瘤破裂出血可能",轻度隐痛
+clinicalPresentation.jaundice,临床表现.黄疸,String,"黄疸程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`<br>**临床意义**: 黄疸提示肝功能严重损害或胆管侵犯,预后差",无
+clinicalPresentation.ascites,临床表现.腹水,String,"腹水情况。<br>**建议值**: `无`, `少量`, `中等量`, `大量(张力性腹水)`<br>**临床意义**: 腹水提示肝功能失代偿或腹膜转移",无
+clinicalPresentation.performanceStatus,临床表现.体力状态,String,"ECOG体力状态评分。<br>**建议值**: `0分(正常活动)`, `1分(轻度受限)`, `2分(>50%时间卧床)`, `3分(基本卧床)`, `4分(完全卧床)`<br>**临床意义**: BCLC分期重要参数,PS 3-4分不适合积极治疗",0分(正常活动)
+tumorMarkers.afp,肿瘤标志物.AFP,Number,"甲胎蛋白(Alpha-fetoprotein)。<br>单位: ng/mL<br>**正常值**: <20 ng/mL<br>**诊断价值**: AFP>400 ng/mL持续1月或>200 ng/mL持续2月 + 影像典型 → 可诊断HCC(无需活检)<br>**灵敏度**: 约60-70%",450
+tumorMarkers.afp.interpretation,肿瘤标志物.AFP判读,String,"AFP结果判读。<br>**建议值**: `正常(<20)`, `轻度升高(20-200,警惕慢性肝炎)`, `中度升高(200-400)`, `显著升高(>400,高度提示HCC)`, `极度升高(>1000,强烈提示HCC)`<br>**假阳性**: 肝炎活动期、妊娠、生殖系肿瘤",显著升高(>400)
+tumorMarkers.afpL3,肿瘤标志物.AFP-L3,Number,"AFP异质体L3。<br>单位: %<br>**参考值**: <10%<br>**诊断价值**: AFP-L3>10%特异性更高(约95%),假阳性少<br>**临床意义**: AFP阴性的HCC可能AFP-L3阳性",25
+tumorMarkers.dcp,肿瘤标志物.DCP/PIVKA-II,Number,"异常凝血酶原(Des-gamma-carboxy prothrombin)。<br>单位: mAU/mL<br>**参考值**: <40 mAU/mL<br>**诊断价值**: DCP>100高度提示HCC,与肿瘤大小和血管侵犯相关<br>**临床意义**: AFP阴性HCC约50%有DCP升高",180
+tumorMarkers.cea,肿瘤标志物.CEA,Number,"癌胚抗原。<br>单位: ng/mL<br>**参考值**: <5<br>**临床意义**: HCC一般CEA正常或轻度升高,显著升高提示肝内胆管癌或转移癌可能",4.2
+tumorMarkers.ca199,肿瘤标志物.CA19-9,Number,"糖类抗原19-9。<br>单位: U/mL<br>**参考值**: <37<br>**临床意义**: HCC一般正常,升高提示肝内胆管癌(ICC)或混合型cHCC-CCA可能",28
+tumorMarkers.ca125,肿瘤标志物.CA125,Number,"糖类抗原125。<br>单位: U/mL<br>**参考值**: <35<br>**临床意义**: 腹水、肝硬化可升高,需结合临床鉴别",45
+imaging.ct.findingSummary,影像.CT.主要发现,String,"增强CT主要发现。<br>**典型HCC**: 动脉期快进(wash-in)、门脉期/延迟期快出(wash-out)、包膜强化<br>**LI-RADS分级**: LR-1至LR-5",右肝S6-S7占位,动脉期明显强化,门脉期快速廓清,包膜强化
+imaging.ct.liRadsCategory,影像.CT.LI-RADS分类,String,"肝脏影像报告和数据系统分类。<br>**建议值**: `LR-1(明确良性)`, `LR-2(可能良性)`, `LR-3(中度可疑)`, `LR-4(可能HCC)`, `LR-5(明确HCC)`, `LR-M(可能恶性非HCC)`<br>**临床意义**: LR-5 + AFP>200可诊断HCC无需活检",LR-5(明确HCC)
+imaging.ct.size,影像.CT.肿瘤大小,Number,"CT测量肿瘤最大径。<br>单位: cm<br>**临床意义**: 大小是分期主要依据,>5cm预后差",6.5
+imaging.ct.number,影像.CT.肿瘤数目,Number,"CT发现肿瘤结节数目。<br>**临床意义**: 单发vs多发影响分期和治疗选择,多发(≥3个)提示预后差",1
+imaging.ct.vascularInvasion,影像.CT.血管侵犯,String,"CT显示血管侵犯。<br>**建议值**: `无`, `门静脉主干瘤栓`, `门静脉分支瘤栓`, `肝静脉瘤栓`, `下腔静脉瘤栓`, `胆管癌栓`<br>**临床意义**: 大血管侵犯是BCLC C期(晚期),显著影响预后",门静脉右支瘤栓
+imaging.ct.extrahepatic,影像.CT.肝外转移,String,"CT发现肝外转移。<br>**建议值**: `无`, `肺转移`, `骨转移`, `腹膜转移`, `肾上腺转移`, `淋巴结转移`<br>**临床意义**: 肝外转移为M1期,预后极差",无
+imaging.mri.findings,影像.MRI.主要发现,String,"MRI主要发现(优于CT用于小肝癌检出)。<br>**典型HCC**: T1低信号、T2高信号、DWI高信号、动态增强快进快出",T1低信号T2高信号,DWI明显受限,动脉期强化门脉期廓清
+imaging.mri.hepatobiliaryScan,影像.MRI.肝胆特异对比剂,String,"肝胆特异对比剂(Gd-EOB-DTPA) MRI表现。<br>**HCC特征**: 肝胆期低信号(肝细胞摄取功能丧失)<br>**建议值**: `未做`, `肝胆期低信号`, `肝胆期等/高信号(提示FNH/腺瘤)`, `环形强化`",肝胆期低信号
+pathology.grossDescription.size,大体.肿瘤大小,Number,"病理大体测量肿瘤最大径。<br>单位: cm<br>**临床意义**: 病理大小是TNM T分期依据",7.2
+pathology.grossDescription.number,大体.肿瘤数目,Number,"大体计数肿瘤结节数。<br>**临床意义**: 多发结节提示肝内转移或多中心起源",1
+pathology.grossDescription.appearance,大体.肿瘤外观,String,"肿瘤大体外观描述。<br>**建议值**: `膨胀性生长,边界清楚`, `浸润性生长,边界不清`, `结节型`, `块状型`, `弥漫型`, `包膜形成`, `中央坏死`, `出血`<br>**临床意义**: 包膜形成和膨胀性生长预后较好",结节型,边界较清,可见包膜
+pathology.grossDescription.color,大体.切面颜色,String,"肿瘤切面颜色。<br>**建议值**: `灰白色`, `黄褐色(脂肪变)`, `绿色(胆汁)`, `暗红色(出血)`, `灰黄色伴坏死`<br>**临床意义**: 绿色提示胆汁分泌(HCC特征)",黄褐色,部分区域坏死
+pathology.grossDescription.texture,大体.质地,String,"肿瘤质地。<br>**建议值**: `软`, `中等`, `硬`, `脆`, `胶冻样`<br>**临床意义**: 质地反映纤维化程度和肿瘤类型",中等
+pathology.grossDescription.capsule,大体.包膜,String,"肿瘤包膜情况。<br>**建议值**: `完整包膜`, `部分包膜`, `无包膜`, `包膜侵犯`<br>**临床意义**: 完整包膜是预后良好因素,包膜侵犯易复发",部分包膜
+pathology.grossDescription.satelliteNodules,大体.卫星灶,String,"卫星结节情况。<br>**定义**: 主肿瘤周围2cm内的小结节<br>**建议值**: `无`, `1-2个`, `3-5个`, `>5个`<br>**临床意义**: 卫星灶提示肝内微转移,显著影响预后",无
+pathology.grossDescription.necrosis,大体.坏死,String,"肿瘤坏死程度。<br>**建议值**: `无坏死`, `局灶坏死(<25%)`, `中度坏死(25-50%)`, `广泛坏死(>50%)`<br>**临床意义**: 大面积坏死提示肿瘤生长快或介入治疗后",局灶坏死(<25%)
+pathology.grossDescription.hemorrhage,大体.出血,String,"肿瘤内出血。<br>**建议值**: `无`, `点状出血`, `片状出血`, `大片出血坏死`<br>**临床意义**: 出血可能与肿瘤破裂或血供丰富有关",点状出血
+pathology.grossDescription.bile,大体.胆汁,String,"胆汁染色情况。<br>**建议值**: `无`, `局部胆汁染色`, `弥漫胆汁染色`<br>**临床意义**: 胆汁分泌是HCC特征性表现(肝细胞来源)",局部胆汁染色
+pathology.histologicalType,病理.组织学类型,String,"原发性肝癌组织学类型(WHO 2019分类)。<br>**建议值**: `肝细胞癌(HCC)`, `肝内胆管癌(ICC)`, `混合型肝细胞-胆管细胞癌(cHCC-CCA)`, `纤维板层型肝细胞癌`, `肝母细胞瘤`, `未分化癌`, `转移性肝癌`<br>**中国分布**: HCC 75-85%, ICC 10-15%, cHCC-CCA 2-3%",肝细胞癌(HCC)
+pathology.hcc.subtype,HCC.亚型,String,"肝细胞癌亚型。<br>**建议值**: `经典型(普通型)`, `透明细胞型`, `脂肪变性型`, `硬化型`, `巨块型`, `小肝癌(≤3cm)`, `微小肝癌(≤2cm)`<br>**临床意义**: 透明细胞型和硬化型较少见,预后与经典型相似",经典型
+pathology.hcc.architecturalPattern,HCC.结构模式,String,"HCC组织结构模式。<br>**建议值**: `小梁型(trabecular,最常见)`, `假腺样型(pseudoglandular)`, `实体型(compact/solid)`, `硬化型(scirrhous)`, `混合型`<br>**临床意义**: 小梁型模拟正常肝索结构,是HCC典型表现",小梁型为主,局灶假腺样
+pathology.hcc.cellType,HCC.细胞类型,String,"HCC肿瘤细胞类型。<br>**建议值**: `普通肝细胞型`, `透明细胞型(糖原/脂肪)`, `多形性巨细胞型`, `梭形细胞型`, `嗜酸性细胞型(富含线粒体)`<br>**临床意义**: 透明细胞型需与透明细胞肾癌转移鉴别",普通肝细胞型
+pathology.hcc.edmondsonSteinerGrade,HCC.Edmondson-Steiner分级,String,"Edmondson-Steiner病理分级(国际通用)。<br>**分级标准**:<br>- I级(高分化): 肿瘤细胞小,核浆比接近正常,排列成细小梁,难以识别<br>- II级(中分化): 肿瘤细胞增大,核浆比增加,核仁明显,小梁增宽<br>- III级(低分化): 细胞明显异型,核浆比高,核分裂多见,实性巢状排列<br>- IV级(未分化): 高度异型,巨核/多核,排列紊乱<br>**临床意义**: 分级越高预后越差,是独立预后因素",II级(中分化)
+pathology.hcc.whoGrade,HCC.WHO分化程度,String,"WHO分化程度分级(简化三级分类)。<br>**建议值**: `高分化(G1,相当于E-S I-II级)`, `中分化(G2,相当于E-S II-III级)`, `低分化(G3,相当于E-S III-IV级)`<br>**临床意义**: 与Edmondson-Steiner对应,临床常用",中分化(G2)
+pathology.hcc.nuclearGrade,HCC.核分级,String,"核异型性程度。<br>**建议值**: `轻度异型性`, `中度异型性`, `重度异型性`, `核分裂象多见(>5个/10HPF)`<br>**临床意义**: 核异型性是分级重要依据",中度异型性
+pathology.hcc.steatosis,HCC.脂肪变性,String,"肿瘤内脂肪变性程度。<br>**建议值**: `无(<5%)`, `轻度(5-33%)`, `中度(34-66%)`, `重度(>66%)`<br>**临床意义**: 脂肪变性型HCC影像学类似肝腺瘤,需病理鉴别",轻度(5-33%)
+pathology.hcc.bileDucts,HCC.胆管结构,String,"肿瘤内胆管结构。<br>**建议值**: `无胆管成分`, `散在胆管结构(<5%)`, `混合型cHCC-CCA(胆管成分5-50%)`, `胆管成分为主(>50%,考虑ICC)`<br>**临床意义**: 胆管成分>5%诊断为cHCC-CCA,预后较HCC差",无胆管成分
+pathology.icc.type,ICC.组织学类型,String,"肝内胆管癌组织学类型(如适用)。<br>**建议值**: `小管型(腺癌,最常见)`, `大管型`, `胆管内生长型`, `导管周浸润型`, `肿块型`, `粘液腺癌`, `腺鳞癌`<br>**临床意义**: 大管型类似肝外胆管癌,小管型类似胰腺癌",
+pathology.icc.differentiation,ICC.分化程度,String,"ICC分化程度(如适用)。<br>**建议值**: `高分化`, `中分化`, `低分化`, `未分化`<br>**临床意义**: 低分化预后显著差于高分化",
+pathology.fibrolamellar.features,纤维板层型HCC.特征,String,"纤维板层型HCC特征(如适用)。<br>**特点**: 年轻患者(<40岁)、无肝硬化背景、AFP阴性、预后较好<br>**病理**: 大嗜酸性肿瘤细胞 + 板层状纤维间质<br>**建议值**: `不符合`, `符合纤维板层型HCC特征`",不符合
+pathology.microscopy.trabecularThickness,镜下.肝索/小梁厚度,String,"肿瘤性肝索/小梁厚度。<br>**建议值**: `2-3个细胞(类似正常,高分化)`, `4-10个细胞(中分化)`, `>10个细胞或实性巢状(低分化)`<br>**临床意义**: 小梁厚度是Edmondson分级依据之一",4-6个细胞厚
+pathology.microscopy.sinusoids,镜下.血窦,String,"肿瘤内血窦情况。<br>**建议值**: `丰富血窦(类似正常肝组织)`, `血窦减少`, `血窦消失(实性生长)`, `血窦内瘤栓`<br>**临床意义**: 丰富血窆是HCC典型表现,解释动脉期强化",丰富血窦
+pathology.microscopy.reticulinStain,镜下.网状纤维染色,String,"网状纤维(Reticulin)染色。<br>**建议值**: `未做`, `网状支架破坏/消失(HCC)`, `网状支架保留(再生结节/异型增生)`, `纤维间隔(ICC)`<br>**临床意义**: 网状纤维丢失是HCC与异型增生结节鉴别要点",网状支架破坏
+pathology.microscopy.bileProduction,镜下.胆汁分泌,String,"肿瘤细胞胆汁分泌。<br>**建议值**: `无`, `细胞内胆汁(胆汁小栓)`, `毛细胆管内胆汁`, `胆汁湖形成`<br>**临床意义**: 胆汁分泌是HCC特异性特征,ICC无此表现",细胞内胆汁小栓
+pathology.microscopy.glycogen,镜下.糖原,String,"PAS染色(糖原)。<br>**建议值**: `未做`, `PAS阳性(糖原丰富)`, `PAS阴性/弱阳性`, `透明细胞型(糖原丰富)`<br>**临床意义**: 高分化HCC糖原丰富,低分化HCC糖原减少",PAS阳性
+pathology.microscopy.mucin,镜下.粘液,String,"粘液分泌(PAS-D/Alcian蓝染色)。<br>**建议值**: `未做`, `粘液阴性(HCC)`, `粘液阳性(ICC或cHCC-CCA)`<br>**临床意义**: 粘液分泌提示胆管来源,HCC不分泌粘液",粘液阴性
+pathology.microscopy.malloryHyaline,镜下.Mallory小体,String,"Mallory透明小体。<br>**建议值**: `未见`, `散在可见`, `较多`<br>**临床意义**: 常见于酒精性肝病背景的HCC,也可见于其他原因",未见
+pathology.vascularInvasion.microscopic,血管侵犯.镜下微血管侵犯,String,"镜下微血管侵犯(Microvascular invasion, MVI)。<br>**建议值**: `无(MVI 0)`, `低危MVI(≤5个,距肿瘤<1cm)`, `高危MVI(>5个或距肿瘤≥1cm)`<br>**临床意义**: MVI是术后复发最强预测因素,高危MVI复发率>50%",低危MVI
+pathology.vascularInvasion.macroscopic,血管侵犯.大血管侵犯,String,"大血管侵犯(肉眼可见)。<br>**建议值**: `无`, `门静脉分支侵犯`, `门静脉主干侵犯`, `肝静脉侵犯`, `下腔静脉侵犯`<br>**临床意义**: 大血管侵犯是BCLC C期(晚期),极差预后因素",无
+pathology.vascularInvasion.tumorThrombus,血管侵犯.瘤栓性质,String,"血管内瘤栓性质(如有)。<br>**建议值**: `无瘤栓`, `肿瘤细胞瘤栓`, `血栓伴肿瘤细胞`, `完全阻塞血管`<br>**Vp分类(门脉瘤栓)**: Vp0-Vp4(0=无,4=主干+对侧支)",
+pathology.vascularInvasion.veinInvasionGrade,血管侵犯.静脉侵犯分级,String,"静脉侵犯分级(Vv分级)。<br>**Vv0**: 无静脉侵犯<br>**Vv1**: 肝静脉分支<br>**Vv2**: 肝静脉主干<br>**Vv3**: 下腔静脉<br>**临床意义**: Vv2-3预后极差",Vv0
+pathology.bileDuctInvasion,胆管侵犯,String,"胆管侵犯情况。<br>**建议值**: `无`, `微小胆管侵犯`, `肝内胆管侵犯`, `主胆管侵犯`, `胆管癌栓`<br>**临床意义**: 胆管侵犯可导致梗阻性黄疸,需与ICC鉴别",无
+pathology.perineural.invasion,神经周围侵犯,String,"神经周围侵犯(Perineural invasion)。<br>**建议值**: `无`, `有`<br>**临床意义**: HCC神经侵犯相对少见(5-10%),ICC更常见(30-50%)",无
+pathology.lymphocyticInfiltrate,淋巴细胞浸润,String,"肿瘤内/周围淋巴细胞浸润。<br>**建议值**: `无或稀少`, `轻度`, `中度`, `重度(淋巴细胞为主炎症)`, `生发中心形成`<br>**临床意义**: 重度淋巴细胞浸润可能提示更好免疫应答和预后",轻度
+pathology.fibrosis.intratumoral,纤维化.瘤内纤维化,String,"肿瘤内纤维化程度。<br>**建议值**: `无或极少`, `轻度纤维化`, `中度纤维化`, `硬化型(广泛纤维化)`<br>**临床意义**: 硬化型HCC罕见,易误诊为良性",无或极少
+pathology.fibrosis.capsule,纤维化.纤维包膜,String,"肿瘤纤维包膜。<br>**建议值**: `无包膜`, `薄层包膜`, `厚包膜`, `包膜不完整`, `包膜侵犯/穿破`<br>**临床意义**: 完整厚包膜是预后良好因素,提示肿瘤生长缓慢",薄层包膜,局部不完整
+pathology.necrosis.extent,坏死.范围,String,"肿瘤坏死范围。<br>**建议值**: `无坏死`, `局灶坏死(<10%)`, `中度坏死(10-50%)`, `广泛坏死(>50%)`, `几乎完全坏死(介入治疗后)`<br>**临床意义**: 自发性大面积坏死提示肿瘤快速生长,介入治疗后坏死是疗效标志",局灶坏死(<10%)
+pathology.necrosis.pattern,坏死.模式,String,"坏死模式。<br>**建议值**: `无`, `凝固性坏死`, `液化性坏死`, `桥接坏死`, `出血坏死`<br>**临床意义**: 不同坏死模式反映病理过程",凝固性坏死
+pathology.hemorrhage,出血,String,"肿瘤内出血情况。<br>**建议值**: `无`, `点状出血`, `片状出血`, `血窦扩张充血`, `肿瘤破裂出血`<br>**临床意义**: 肿瘤破裂是急腹症原因,需急诊处理",点状出血
+ihc.hepar1,免疫组化.Hepar-1,String,"Hepar-1(肝细胞标志物)。<br>**建议值**: `未做`, `阴性`, `弱阳性`, `阳性(+)`, `强阳性(++)`, `阳性百分比`<br>**敏感性/特异性**: HCC 90-95%阳性,ICC阴性<br>**临床意义**: HCC最特异标志物,与Arginase-1联用诊断效能最高",阳性(++)
+ihc.arginase1,免疫组化.Arginase-1,String,"Arginase-1(肝细胞标志物)。<br>**建议值**: `未做`, `阴性`, `阳性`<br>**敏感性/特异性**: HCC 95%阳性,特异性>Hepar-1<br>**临床意义**: Arginase-1+Hepar-1双阳性几乎确诊HCC",阳性
+ihc.glypican3,免疫组化.Glypican-3,String,"Glypican-3 (GPC3)。<br>**建议值**: `未做`, `阴性`, `阳性`<br>**敏感性/特异性**: HCC 70-80%阳性,高度特异(正常肝/良性病变阴性)<br>**临床意义**: GPC3对高分化HCC诊断价值高,可鉴别异型增生结节",阳性
+ihc.afp.ihc,免疫组化.AFP,String,"AFP免疫组化。<br>**建议值**: `未做`, `阴性`, `局灶阳性`, `弥漫阳性`<br>**临床意义**: 50-70% HCC阳性,与血清AFP不完全相关",局灶阳性
+ihc.ck7,免疫组化.CK7,String,"细胞角蛋白7。<br>**建议值**: `未做`, `阴性`, `阳性`<br>**鉴别诊断**: HCC通常阴性,ICC阳性(80-90%)<br>**临床意义**: CK7阳性支持胆管来源",阴性
+ihc.ck19,免疫组化.CK19,String,"细胞角蛋白19。<br>**建议值**: `未做`, `阴性`, `局灶阳性(<5%)`, `阳性(>5%)`<br>**临床意义**: HCC一般阴性,CK19阳性HCC预后较差(干细胞特征),ICC阳性",阴性
+ihc.ck20,免疫组化.CK20,String,"细胞角蛋白20。<br>**建议值**: `未做`, `阴性`, `阳性`<br>**鉴别诊断**: HCC/ICC阴性,CK20阳性提示转移性腺癌(结直肠来源)",阴性
+ihc.cea.ihc,免疫组化.CEA,String,"CEA免疫组化。<br>**建议值**: `未做`, `阴性`, `毛细胆管型阳性(HCC)`, `腺腔型阳性(ICC)`, `胞质弥漫阳性`<br>**临床意义**: HCC可呈毛细胆管型CEA阳性(特征性),ICC为腺腔型",毛细胆管型阳性
+ihc.cd10,免疫组化.CD10,String,"CD10(毛细胆管标志)。<br>**建议值**: `未做`, `阴性`, `毛细胆管型阳性`<br>**临床意义**: 与CEA类似,毛细胆管型阳性支持HCC",毛细胆管型阳性
+ihc.cd34,免疫组化.CD34,String,"CD34(血管内皮标志)。<br>**建议值**: `未做`, `血窦内皮阳性(HCC)`, `仅门脉周围阳性(正常肝)`, `阴性`<br>**临床意义**: HCC血窦内皮CD34阳性(毛细血管化),正常肝/增生结节阴性",血窦内皮阳性
+ihc.ki67,免疫组化.Ki-67,Number,"Ki-67增殖指数。<br>单位: %<br>**参考范围**: 高分化HCC <5%, 中分化5-20%, 低分化>20%<br>**临床意义**: Ki-67高提示增殖活跃,预后差",15
+ihc.p53,免疫组化.p53,String,"p53蛋白表达。<br>**建议值**: `未做`, `阴性/野生型表达`, `过表达(突变型)`, `完全阴性(无效突变)`<br>**临床意义**: p53突变见于30-50% HCC,提示去分化和预后差",阴性
+ihc.betaCatenin,免疫组化.β-catenin,String,"β-catenin表达。<br>**建议值**: `未做`, `膜阳性(正常)`, `核/胞质阳性(CTNNB1突变)`, `阴性`<br>**临床意义**: 核阳性提示Wnt通路激活(20-40% HCC),与低分化和预后差相关",膜阳性
+ihc.glutamineSynthetase,免疫组化.Glutamine Synthetase,String,"谷氨酰胺合成酶(GS)。<br>**建议值**: `未做`, `阴性`, `局灶阳性`, `弥漫阳性`<br>**临床意义**: 弥漫强阳性支持β-catenin激活型HCC",局灶阳性
+ihc.hsaStain,免疫组化.HSA染色,String,"肝特异性抗原(Hepatocyte-Specific Antigen)。<br>**建议值**: `未做`, `阴性`, `阳性`<br>**临床意义**: HCC标志物,但敏感性低于Hepar-1",阳性
+ihc.pdl1,免疫组化.PD-L1,String,"PD-L1表达(22C3/SP263克隆)。<br>**建议值**: `未做`, `阴性(TPS<1%)`, `低表达(TPS 1-49%)`, `高表达(TPS≥50%)`<br>**临床意义**: PD-L1高表达预测免疫治疗(PD-1/PD-L1抑制剂)疗效",低表达(TPS 5%)
+molecularMarkers.ctnnb1,分子标志物.CTNNB1,String,"CTNNB1(β-catenin)基因突变。<br>**建议值**: `未检测`, `野生型`, `突变型(外显子3)`<br>**频率**: 20-40% HCC<br>**临床意义**: Wnt通路激活,与低分化HCC和预后差相关",未检测
+molecularMarkers.tp53,分子标志物.TP53,String,"TP53基因突变。<br>**建议值**: `未检测`, `野生型`, `突变型`<br>**频率**: 30-50% HCC<br>**临床意义**: 最常见驱动突变之一,与预后差相关",未检测
+molecularMarkers.tert,分子标志物.TERT,String,"TERT启动子突变。<br>**建议值**: `未检测`, `野生型`, `突变型(C228T/C250T)`<br>**频率**: 50-60% HCC(最常见突变)<br>**临床意义**: 端粒酶激活,早期事件",未检测
+molecularMarkers.axin1,分子标志物.AXIN1,String,"AXIN1基因突变/缺失。<br>**建议值**: `未检测`, `野生型`, `突变/缺失`<br>**频率**: 10-15% HCC<br>**临床意义**: Wnt通路调控基因,与CTNNB1突变互斥",未检测
+molecularMarkers.arid1a,分子标志物.ARID1A,String,"ARID1A基因突变。<br>**建议值**: `未检测`, `野生型`, `突变型`<br>**频率**: 10-15% HCC<br>**临床意义**: 染色质重塑基因,与免疫治疗敏感性相关",未检测
+molecularMarkers.pikca,分子标志物.PIK3CA,String,"PIK3CA基因突变。<br>**建议值**: `未检测`, `野生型`, `突变型`<br>**频率**: 5-10% HCC<br>**临床意义**: PI3K/AKT通路,潜在靶向治疗靶点",未检测
+molecularMarkers.kras,分子标志物.KRAS,String,"KRAS基因突变。<br>**建议值**: `未检测`, `野生型`, `突变型`<br>**临床意义**: HCC罕见(<5%),KRAS突变更支持ICC或转移性腺癌",未检测
+molecularMarkers.microsatellite,分子标志物.微卫星状态,String,"微卫星不稳定性(MSI)。<br>**建议值**: `未检测`, `MSS(微卫星稳定)`, `MSI-L(低度不稳定)`, `MSI-H(高度不稳定)`<br>**临床意义**: HCC极少MSI-H(<3%),MSI-H对免疫治疗高度敏感",MSS
+molecularMarkers.tmb,分子标志物.TMB,Number,"肿瘤突变负荷(Tumor Mutational Burden)。<br>单位: 突变/Mb<br>**参考范围**: HCC通常<6 mut/Mb(低TMB)<br>**临床意义**: TMB高(>10)预测免疫治疗疗效,但HCC罕见",4.2
+molecularMarkers.hbvIntegration,分子标志物.HBV整合,String,"HBV DNA整合入宿主基因组。<br>**建议值**: `未检测`, `阴性`, `阳性(整合位点:TERT/MLL4等)`<br>**临床意义**: HBV整合导致基因组不稳定和TERT激活,是肝癌发生机制",未检测
+molecularMarkers.afpMrna,分子标志物.AFP mRNA,String,"AFP mRNA表达水平。<br>**建议值**: `未检测`, `低表达`, `高表达`<br>**临床意义**: 与血清AFP相关但不完全一致",未检测
+staging.tnm.t,分期.TNM.T,String,"AJCC第8版T分期。<br>**T1a**: 单发≤2cm,无血管侵犯<br>**T1b**: 单发>2cm,无血管侵犯<br>**T2**: 单发伴血管侵犯 或 多发≤5cm<br>**T3**: 多发>5cm<br>**T4**: 侵犯门静脉/肝静脉主支 或 直接侵犯邻近脏器/穿破脏层腹膜<br>**临床意义**: T分期基于大小、数目、血管侵犯",T2
+staging.tnm.n,分期.TNM.N,String,"AJCC第8版N分期。<br>**N0**: 无区域淋巴结转移<br>**N1**: 有区域淋巴结转移<br>**临床意义**: HCC淋巴结转移少见(5-10%),N1提示晚期",N0
+staging.tnm.m,分期.TNM.M,String,"AJCC第8版M分期。<br>**M0**: 无远处转移<br>**M1**: 有远处转移<br>**临床意义**: 肺、骨、肾上腺是常见转移部位",M0
+staging.tnm.stage,分期.TNM.总体分期,String,"AJCC第8版总体分期。<br>**I期**: T1N0M0<br>**II期**: T2N0M0<br>**IIIA期**: T3N0M0<br>**IIIB期**: T4N0M0<br>**IVA期**: 任何T,N1,M0<br>**IVB期**: 任何T,任何N,M1",II期
+staging.bclc.stage,分期.BCLC分期,String,"Barcelona Clinic Liver Cancer分期(治疗导向分期)。<br>**0期(极早期)**: 单发<2cm, PS 0, Child A<br>**A期(早期)**: 单发或≤3个结节≤3cm, PS 0, Child A-B → 根治性治疗<br>**B期(中期)**: 多发, PS 0, Child A-B → TACE<br>**C期(晚期)**: 血管侵犯/肝外转移, PS 1-2, Child A-B → 靶向/免疫治疗<br>**D期(终末期)**: PS 3-4 或 Child C → 对症支持<br>**临床意义**: 全球最广泛使用的HCC分期系统,直接指导治疗选择",B期(中期)
+staging.milan.criteria,分期.米兰标准,String,"米兰标准(Milan Criteria,肝移植标准)。<br>**标准**: 单发≤5cm 或 ≤3个结节各≤3cm,无大血管侵犯,无肝外转移<br>**建议值**: `符合米兰标准(可肝移植)`, `超出米兰标准`, `UCSF扩大标准(单发≤6.5cm或≤3个最大≤4.5cm且总径≤8cm)`, `超出UCSF标准`<br>**临床意义**: 符合米兰标准肝移植5年生存率>70%",符合米兰标准
+staging.clip.score,分期.CLIP评分,Number,"Cancer of Liver Italian Program评分(0-6分)。<br>**评分项**: Child-Pugh(0-2分) + 肿瘤形态(0-2分) + AFP(0-1分) + 门静脉瘤栓(0-1分)<br>**预后**: 0-1分预后好,5-6分极差<br>**临床意义**: 整合肿瘤和肝功能,预后分层",2
+staging.jis.score,分期.JIS评分,Number,"Japan Integrated Staging评分(0-5分)。<br>**计算**: Child-Pugh分级(A=0,B=1,C=2) + TNM分期(I=0,II=1,III=2,IV=3)<br>**预后**: 0分最好,5分最差<br>**临床意义**: 日本常用,结合肝功能和肿瘤分期",1
+resectionMargin.status,切缘.状态,String,"手术切缘状态。<br>**建议值**: `R0(切缘阴性,距肿瘤≥1cm)`, `R1(镜下切缘阳性)`, `R2(肉眼切缘阳性)`<br>**临床意义**: R0切除5年生存率40-50% vs R1/R2的20-30%,切缘距离越远复发率越低",R0
+resectionMargin.distance,切缘.最小距离,Number,"切缘距肿瘤的最小距离。<br>单位: cm<br>**临床意义**: ≥1cm是理想切缘,<1cm复发风险显著增加",1.2
+resectionMargin.hepaticParenchyma,切缘.肝实质切缘,String,"肝实质切缘。<br>**建议值**: `阴性`, `阳性(肿瘤达切缘)`, `接近(<2mm)`<br>**临床意义**: 肝实质切缘阳性需再切除或局部治疗",阴性
+resectionMargin.vascular,切缘.血管切缘,String,"血管切缘(门静脉/肝静脉)。<br>**建议值**: `未评估`, `阴性`, `阳性(瘤栓达切缘)`<br>**临床意义**: 血管切缘阳性预后极差,需补充治疗",阴性
+backgroundLiver.cirrhosisGrade,背景肝.肝硬化分级,String,"非肿瘤肝组织肝硬化程度(Metavir/Ishak评分)。<br>**Metavir分级**: F0-F4(F4=肝硬化)<br>**Ishak分级**: 0-6(5-6=肝硬化)<br>**临床意义**: 肝硬化程度影响肝功能储备和术后并发症",F4(Metavir)
+backgroundLiver.inflammation,背景肝.炎症活动度,String,"背景肝炎症活动度(Metavir A分级)。<br>**建议值**: `A0(无炎症)`, `A1(轻度)`, `A2(中度)`, `A3(重度)`<br>**临床意义**: 活动性肝炎增加HCC复发风险",A1(轻度)
+backgroundLiver.steatosis,背景肝.脂肪变,String,"背景肝脂肪变程度。<br>**建议值**: `无(<5%)`, `轻度(5-33%)`, `中度(34-66%)`, `重度(>66%)`<br>**临床意义**: NAFLD/NASH背景的HCC比例上升",轻度(5-33%)
+backgroundLiver.dysplasticNodules,背景肝.异型增生结节,String,"异型增生结节(Dysplastic Nodules)。<br>**建议值**: `无`, `低级别异型增生结节(LGDN)`, `高级别异型增生结节(HGDN)`<br>**临床意义**: HGDN是HCC前病变,需密切随访",无
+backgroundLiver.regenerativeNodules,背景肝.再生结节,String,"肝硬化再生结节。<br>**建议值**: `无`, `小再生结节(<3mm)`, `大再生结节(3mm-1cm)`, `腺瘤样增生(>1cm)`<br>**临床意义**: 再生结节需与小肝癌鉴别",小再生结节(<3mm)
+treatment.surgery.procedure,治疗.手术.术式,String,"手术方式。<br>**建议值**: `肝段切除`, `肝叶切除(右肝/左肝)`, `扩大肝叶切除`, `不规则肝切除`, `肝移植`, `腹腔镜肝切除`, `机器人辅助肝切除`<br>**临床意义**: 手术方式影响切缘、并发症和恢复",肝段切除
+treatment.surgery.resectionType,治疗.手术.切除类型,String,"切除类型。<br>**建议值**: `解剖性肝切除`, `非解剖性肝切除(楔形切除)`<br>**临床意义**: 解剖性切除沿血管分界,理论上切缘更充分",解剖性肝切除
+treatment.surgery.bloodLoss,治疗.手术.术中出血,Number,"术中出血量。<br>单位: mL<br>**临床意义**: 出血>1000mL提示手术难度大或血管损伤",500
+treatment.surgery.transfusion,治疗.手术.输血,Boolean,"是否术中输血。<br>**临床意义**: 输血与术后并发症和复发相关",false
+treatment.preoperative.tace,术前治疗.TACE,String,"术前经动脉化疗栓塞(TACE)。<br>**建议值**: `未行`, `已行1次`, `已行多次`, `TACE+消融联合`<br>**临床意义**: 术前TACE可降期,观察病理坏死程度评估疗效",未行
+treatment.preoperative.ablation,术前治疗.消融,String,"术前消融治疗。<br>**建议值**: `未行`, `射频消融(RFA)`, `微波消融(MWA)`, `冷冻消融`, `不可逆电穿孔(IRE)`<br>**临床意义**: 消融可观察肿瘤坏死效果",未行
+treatment.preoperative.radiotherapy,术前治疗.放疗,String,"术前放疗。<br>**建议值**: `未行`, `立体定向放疗(SBRT)`, `质子束放疗`, `选择性内放射治疗(SIRT)`<br>**临床意义**: 放疗可用于不可切除HCC或门脉瘤栓",未行
+treatment.preoperative.systemic,术前治疗.系统治疗,String,"术前系统治疗。<br>**建议值**: `未行`, `索拉非尼`, `仑伐替尼`, `阿替利珠单抗+贝伐珠单抗(T+A)`, `FOLFOX化疗`<br>**临床意义**: 新辅助治疗可能降期转化为可切除",未行
+treatment.postoperative.adjuvant,术后治疗.辅助治疗,String,"术后辅助治疗计划。<br>**建议值**: `无计划`, `TACE`, `靶向治疗`, `免疫治疗`, `中医药治疗`<br>**临床意义**: 高危复发患者(MVI阳性、切缘<1cm)可能受益",无计划
+complications.surgical,并发症.手术并发症,String,"手术相关并发症。<br>**建议值**: `无`, `出血`, `胆漏`, `肝衰竭`, `腹腔感染`, `切口感染`, `肝切面积液`<br>**临床意义**: 并发症影响术后恢复和生存",无
+complications.liverFailure,并发症.肝功能衰竭,String,"术后肝功能衰竭。<br>**建议值**: `无`, `50-50标准(术后5天PT<50%且胆红素>50μmol/L)`, `ISGLS定义(A/B/C级)`, `需肝移植`<br>**临床意义**: 肝衰竭是术后死亡主要原因",无
+recurrence.status,复发.状态,String,"肿瘤复发情况(如为术后随访标本)。<br>**建议值**: `未复发`, `肝内复发`, `肝外转移`, `肝内+肝外复发`<br>**临床意义**: HCC术后5年复发率50-70%",未复发
+recurrence.timeToRecurrence,复发.复发时间,Number,"术后至复发的时间。<br>单位: 月<br>**临床意义**: 早期复发(<2年)通常为肝内播散,晚期复发(>2年)可能为新发HCC",0
+recurrence.pattern,复发.复发模式,String,"复发模式。<br>**建议值**: `早期复发(肝内播散型,<2年)`, `晚期复发(新发HCC型,≥2年)`, `多中心发生`, `切缘复发`<br>**临床意义**: 不同复发模式预后和治疗策略不同",
+prognosis.riskFactors,预后.危险因素,String,"主要预后不良因素。<br>**危险因素**: 微血管侵犯(MVI)、肿瘤>5cm、多发、低分化、AFP>400、Child B-C、切缘<1cm、淋巴结转移、门脉瘤栓<br>**临床意义**: 危险因素数量与预后负相关",MVI、肿瘤6.5cm、AFP>400
+prognosis.recurrenceRisk,预后.复发风险,String,"术后复发风险评估。<br>**建议值**: `低危(单发<5cm,无MVI,高分化,R0)`, `中危(单发≥5cm或2-3个结节,低危MVI)`, `高危(多发>3个或高危MVI或低分化或R1)`<br>**临床意义**: 高危患者5年复发率>70%,需密切随访或辅助治疗",中危
+prognosis.survivalEstimate,预后.生存预估,String,"总体生存预估。<br>**BCLC 0-A期**: 5年生存率50-70%<br>**BCLC B期**: 中位生存20-30月<br>**BCLC C期**: 中位生存6-11月<br>**BCLC D期**: 中位生存<6月<br>**肝移植(米兰标准内)**: 5年生存率>70%",5年生存率约50%(BCLC A期,R0切除)
+followUp.surveillance,随访.监测方案,String,"术后监测方案。<br>**标准方案**: 术后2年内每3月AFP+增强CT/MRI,2-5年每6月,5年后每年<br>**高危患者**: 每2-3月监测<br>**检测项目**: AFP、AFP-L3、DCP、增强CT/MRI、肝功能、Child-Pugh评分",每3月AFP+增强CT
+followUp.nextImaging,随访.下次影像,String,"推荐的下次影像检查时间和方式。<br>**建议值**: `3个月后增强CT`, `6个月后增强MRI`, `1年后`, `根据复发风险个体化`<br>**临床意义**: 及早发现复发可再次根治性治疗",3个月后增强CT
+pathologyDiagnosis,病理诊断,String,"病理诊断结论(简明版)。<br>**格式示例**: (右肝)肝细胞癌,中分化(Edmondson II级),7.2cm,单发,低危微血管侵犯,R0切除,背景肝硬化(HBV相关),T2N0M0,AJCC II期,BCLC B期",肝细胞癌(中分化),7.2cm,单发,MVI(+),R0,Child A,T2N0M0,II期
+recommendations,建议,String,"病理医师临床建议。<br>**示例**: 建议完善分子检测、建议免疫组化补充CK19、建议定期AFP监测、建议多学科会诊(MDT)、建议术后辅助治疗、建议HBV抗病毒治疗",建议3个月后复查AFP和增强CT,HBV抗病毒治疗,考虑MDT讨论是否辅助治疗

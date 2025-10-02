@@ -1,0 +1,70 @@
+fieldKey,fieldName,fieldType,fieldDescription,exampleValue
+screeningMethod,筛查方法,String,"宫颈癌筛查方法。<br>**建议值**: `细胞学单独筛查(TCT/Pap)`, `HPV单独筛查`, `细胞学+HPV联合筛查(Co-testing)`, `HPV初筛+细胞学分流`<br>**指南推荐**: 25-29岁细胞学单独筛查,30-65岁优先联合筛查",细胞学+HPV联合筛查(Co-testing)
+patientAge,患者年龄,Number,"患者年龄,单位岁。<br>**筛查起始年龄**: 21-25岁(各国指南不同,中国25岁)<br>**筛查终止年龄**: 65岁(既往筛查阴性者)<br>**临床意义**: 年龄影响筛查策略和结果解读",35
+screeningHistory,既往筛查史,String,"既往宫颈癌筛查历史。<br>**建议值**: `首次筛查`, `既往筛查均阴性`, `既往ASCUS史`, `既往LSIL史`, `既往治疗后随访`<br>**临床意义**: 筛查史影响管理策略和随访间隔",既往筛查均阴性
+lastScreeningDate,上次筛查日期,String,"上次宫颈癌筛查日期,格式YYYY-MM-DD。<br>**筛查间隔推荐**:<br>- 细胞学单独: 每3年<br>- 联合筛查: 每5年<br>- HPV单独: 每5年",2020-03-15
+tct.specimenType,TCT.标本类型,String,"细胞学标本类型(TBS 2014)。<br>**建议值**: `液基细胞学(LBP - ThinPrep)`, `液基细胞学(LBP - SurePath)`, `传统涂片(Conventional Smear)`<br>**临床意义**: 液基细胞学优于传统涂片(敏感性↑,标本残留可HPV检测)",液基细胞学(LBP - ThinPrep)
+tct.specimenAdequacy,TCT.标本满意度,String,"标本满意度评估(TBS 2014)。<br>**建议值**: `满意(Satisfactory)`, `不满意但可评估(Unsatisfactory but limited by...)`, `不满意不可评估(Unsatisfactory)`<br>**满意标准**: 充足的鳞状细胞(常规涂片≥8000-12000个,LBP≥5000个) + 充分的转化区成分 + 无遮蔽因素<br>**临床意义**: 不满意标本需重复取样",满意(Satisfactory)
+tct.adequacyLimitation,TCT.标本受限因素,String,"影响标本满意度的因素。<br>**建议值**: `无受限`, `炎症遮蔽`, `血液遮蔽`, `过度干燥`, `细胞量不足`, `缺乏转化区成分`<br>**临床意义**: 明确受限因素指导重复取样",无受限
+tct.transformationZone,TCT.转化区成分,String,"转化区成分存在情况(TBS 2014)。<br>**建议值**: `转化区成分充分(≥10个化生细胞或腺细胞)`, `转化区成分不足或缺如`<br>**临床意义**: 转化区是宫颈病变好发部位,成分不足可能漏诊",转化区成分充分
+tct.generalCategory,TCT.一般类别,String,"细胞学诊断一般类别(TBS 2014)。<br>**建议值**: `未见上皮内病变或恶性病变(NILM)`, `上皮细胞异常(包括鳞状/腺上皮)`, `其他(见备注)`<br>**临床意义**: 一般类别是报告的核心结论",未见上皮内病变或恶性病变(NILM)
+tct.nilm.organisms,NILM.微生物感染,String,"NILM中检出的微生物(TBS 2014)。<br>**建议值**: `无`, `滴虫(Trichomonas vaginalis)`, `真菌(符合念珠菌属)`, `细菌性阴道病相关菌群改变`, `放线菌(Actinomyces)`, `疱疹病毒(HSV)`<br>**临床意义**: 微生物感染可能引起轻度细胞改变",无
+tct.nilm.cellularChanges,NILM.反应性细胞改变,String,"NILM中的反应性细胞改变。<br>**建议值**: `无`, `炎症改变`, `放疗相关改变`, `宫内节育器(IUD)相关改变`, `腺细胞状态改变(子宫切除术后)`, `萎缩`<br>**临床意义**: 反应性改变为良性,但可能影响细胞学判读",无
+tct.nilm.endometrialCells,NILM.子宫内膜细胞,String,"良性子宫内膜细胞存在情况(TBS 2014)。<br>**建议值**: `无`, `<45岁有子宫内膜细胞(不报告)`, `≥45岁有良性子宫内膜细胞(需报告)`<br>**TBS 2014变化**: 报告年龄阈值从≥40岁改为≥45岁<br>**临床意义**: ≥45岁出现内膜细胞需排除内膜病变",无
+tct.epithelialAbnormality,TCT.上皮异常类型,String,"上皮细胞异常类型(TBS 2014)。<br>**建议值**: `鳞状上皮细胞异常`, `腺上皮细胞异常`, `其他恶性肿瘤`<br>**临床意义**: 异常类型决定后续管理策略",无异常
+tct.squamous.ascus,TCT.鳞状细胞.ASCUS,Boolean,"未明确意义的不典型鳞状细胞(ASC-US)。<br>**定义**: 细胞改变超过反应性,但不足以诊断为SIL<br>**发生率**: 约5-10%<br>**CIN2+风险**: 5-10%<br>**管理**: HPV分流检测(阳性→阴道镜,阴性→3年后重筛)",false
+tct.squamous.asch,TCT.鳞状细胞.ASC-H,Boolean,"不能排除HSIL的不典型鳞状细胞(ASC-H)。<br>**定义**: 细胞改变提示HSIL可能,但不够确定<br>**发生率**: 约0.2-0.5%<br>**CIN2+风险**: 25-40%, CIN3风险10-20%<br>**管理**: 直接推荐阴道镜检查",false
+tct.squamous.lsil,TCT.鳞状细胞.LSIL,Boolean,"低度鳞状上皮内病变(LSIL)。<br>**定义**: 包括HPV感染、CIN1<br>**发生率**: 约2-3%<br>**CIN2+风险**: 10-15%<br>**病理对应**: CIN1(轻度不典型增生)<br>**管理**: 25岁以上推荐阴道镜,21-24岁可12个月细胞学随访",false
+tct.squamous.hsil,TCT.鳞状细胞.HSIL,Boolean,"高度鳞状上皮内病变(HSIL)。<br>**定义**: 包括CIN2、CIN3、原位癌(CIS)<br>**发生率**: 约0.5-1%<br>**CIN2+风险**: 70-75%, CIN3风险40-50%<br>**病理对应**: CIN2/CIN3(中-重度不典型增生,原位癌)<br>**管理**: 立即阴道镜+活检",false
+tct.squamous.hsil.invasionSuspected,TCT.鳞状细胞.HSIL疑浸润,Boolean,"HSIL,疑有浸润。<br>**定义**: HSIL细胞伴可疑浸润性癌的细胞学特征<br>**CIN3+/浸润癌风险**: >50%<br>**管理**: 紧急阴道镜+宫颈活检或锥切",false
+tct.squamous.squamousCellCarcinoma,TCT.鳞状细胞癌,Boolean,"鳞状细胞癌。<br>**定义**: 明确浸润性鳞状细胞癌的细胞学诊断<br>**管理**: 立即转诊妇科肿瘤科,临床分期和治疗",false
+tct.glandular.agc,TCT.腺细胞.AGC,Boolean,"不典型腺细胞(AGC)。<br>**定义**: 腺细胞异常超过反应性,但不足以诊断为腺癌<br>**发生率**: 约0.1-0.2%<br>**恶性风险**: 5-10%(宫颈腺癌或子宫内膜癌)<br>**管理**: 阴道镜+颈管搔刮+子宫内膜活检(≥35岁或异常出血)",false
+tct.glandular.agc.favor,TCT.腺细胞.AGC倾向性,String,"AGC的倾向性诊断。<br>**建议值**: `AGC-NOS(未特指)`, `AGC倾向肿瘤性(AGC favor neoplastic)`, `宫颈管腺细胞来源`, `子宫内膜细胞来源`<br>**临床意义**: '倾向肿瘤性'恶性风险更高(20-50%),需更积极处理",
+tct.glandular.ais,TCT.腺细胞.AIS,Boolean,"宫颈管原位腺癌(AIS, Adenocarcinoma in situ)。<br>**定义**: 宫颈管腺体的高度异型增生,未突破基底膜<br>**发生率**: 约0.01-0.02%<br>**浸润癌风险**: 约40-60%共存浸润癌<br>**管理**: 诊断性锥切(冷刀锥切优于LEEP),评估浸润",false
+tct.glandular.adenocarcinoma,TCT.腺细胞.腺癌,Boolean,"腺癌。<br>**来源**: 宫颈管内膜腺癌、子宫内膜腺癌、宫外腺癌<br>**管理**: 立即转诊妇科肿瘤科,临床分期和治疗",false
+tct.glandular.adenocarcinomaOrigin,TCT.腺癌可能来源,String,"腺癌的可能来源。<br>**建议值**: `宫颈管内膜来源`, `子宫内膜来源`, `宫外来源(如卵巢)`, `来源不明`<br>**临床意义**: 来源判断指导后续检查和治疗计划",
+tct.other.malignancy,TCT.其他恶性肿瘤,String,"其他恶性肿瘤类型。<br>**示例**: `未分化癌`, `神经内分泌癌`, `恶性黑色素瘤`, `淋巴瘤`, `肉瘤`<br>**管理**: 立即转诊相应专科",无
+tct.interpretationResult,TCT.综合解读结果,String,"TCT综合诊断结果(简化版供患者理解)。<br>**建议值**: `正常(NILM)`, `炎症`, `ASCUS(意义不明鳞状细胞)`, `ASC-H(不除外HSIL)`, `LSIL(低级病变)`, `HSIL(高级病变)`, `疑癌或癌`<br>**临床意义**: 简明结论便于临床沟通",正常(NILM)
+hpv.testPerformed,HPV.已检测,Boolean,"是否进行HPV检测。<br>**指南推荐**: 30-65岁推荐联合筛查(细胞学+HPV)<br>**临床意义**: HPV检测敏感性高于细胞学,阴性预测值接近100%",true
+hpv.testMethod,HPV.检测方法,String,"HPV检测方法。<br>**建议值**: `HC2杂交捕获法(Hybrid Capture 2)`, `PCR-反向点杂交法`, `实时荧光PCR法`, `基因芯片法`, `一代测序法`<br>**临床意义**: 不同方法灵敏度和特异性有差异",实时荧光PCR法
+hpv.hrHpvResult,HPV.高危型HPV总体结果,String,"高危型HPV总体检测结果。<br>**建议值**: `阴性`, `阳性(高危型)`<br>**高危型定义**: 13种高危型(中国CFDA): 16, 18, 31, 33, 35, 39, 45, 51, 52, 56, 58, 59, 68<br>**临床意义**: 高危型HPV持续感染是宫颈癌主要病因(99%)",阴性
+hpv.hrHpvTypes,HPV.高危型HPV具体分型,String,"检出的具体高危型HPV型别。<br>**格式**: 逗号分隔,如'16, 18'<br>**中国13种高危型**: 16, 18, 31, 33, 35, 39, 45, 51, 52, 56, 58, 59, 68<br>**临床意义**: 不同型别致癌风险不同,16/18风险最高",
+hpv.hpv16,HPV.HPV16,Boolean,"HPV16型检测结果。<br>**临床意义**: HPV16是最高危型别,占鳞癌62%、腺癌50%<br>**中国数据**: 约85%宫颈癌由HPV16/18引起<br>**管理**: HPV16阳性直接推荐阴道镜(即使细胞学阴性)",false
+hpv.hpv18,HPV.HPV18,Boolean,"HPV18型检测结果。<br>**临床意义**: 第二高危型,占鳞癌8%、腺癌32%,宫颈腺癌检出率达80%<br>**管理**: HPV18阳性直接推荐阴道镜(即使细胞学阴性)",false
+hpv.hpv16or18,HPV.HPV16或18阳性,Boolean,"HPV16或HPV18任一阳性。<br>**临床意义**: WHO建议HPV检测要分型,至少单独分出16/18<br>**2013 ASCCP指南**: 细胞学阴性+HPV16/18阳性 → 直接阴道镜",false
+hpv.otherHrHpv,HPV.其他高危型HPV,String,"除16/18外的其他高危型HPV。<br>**中国常见**: 52, 58(中国高发型), 31, 33, 51, 59等<br>**临床意义**: 中国HPV52/58感染率较欧美高<br>**管理**: 其他高危型阳性+细胞学阴性 → 12个月重复筛查",
+hpv.lrHpvResult,HPV.低危型HPV结果,String,"低危型HPV检测结果(如检测)。<br>**建议值**: `未检测`, `阴性`, `阳性`<br>**低危型**: 6, 11, 40, 42, 43, 44, 54, 61, 70, 72, 81, CP6108<br>**临床意义**: 低危型主要引起尖锐湿疣,与宫颈癌无关,不常规筛查",未检测
+hpv.lrHpvTypes,HPV.低危型HPV具体分型,String,"检出的具体低危型HPV型别(如检测)。<br>**常见**: 6, 11(90%尖锐湿疣)<br>**临床意义**: 提示生殖器疣风险,但不影响宫颈癌筛查管理",
+hpv.viralLoad,HPV.病毒载量,String,"HPV病毒载量(如检测)。<br>**建议值**: `低载量`, `中载量`, `高载量`, `半定量值(如RLU/CO比值)`<br>**临床意义**: 高载量可能提示持续感染和病变进展风险,但指南未将载量纳入管理决策",
+hpv.interpretationResult,HPV.综合解读结果,String,"HPV检测综合结果(简化版)。<br>**建议值**: `阴性`, `阳性-HPV16/18`, `阳性-其他高危型`, `阳性-低危型`<br>**临床意义**: 简明结论便于临床决策",阴性
+cotest.result,联合筛查.结果组合,String,"细胞学+HPV联合筛查结果组合。<br>**建议值**:<br>- `TCT阴性/HPV阴性(双阴性)`<br>- `TCT阴性/HPV阳性`<br>- `TCT异常/HPV阴性`<br>- `TCT异常/HPV阳性(双阳性)`<br>**临床意义**: 不同组合管理策略不同",TCT阴性/HPV阴性(双阴性)
+cotest.riskLevel,联合筛查.风险等级,String,"基于联合筛查的宫颈病变风险等级。<br>**建议值**:<br>- `极低风险(双阴性, CIN3+风险<0.1%)`<br>- `低风险(TCT阴性/HPV其他高危型阳性, CIN3+风险约0.5-1%)`<br>- `中度风险(ASCUS/HPV阳性或LSIL, CIN3+风险5-10%)`<br>- `高风险(ASC-H/HSIL或HPV16/18阳性, CIN3+风险20-50%)`<br>- `极高风险(HSIL双阳性或疑癌, CIN3+风险>70%)`",极低风险(双阴性)
+management.recommendation,管理建议,String,"基于筛查结果的临床管理推荐(2019 ASCCP指南)。<br>**示例**:<br>- 双阴性: 5年后重筛<br>- ASCUS/HPV阴性: 3年后重筛<br>- ASCUS/HPV阳性: 阴道镜<br>- HPV16/18阳性: 阴道镜(无论细胞学)<br>- LSIL: 阴道镜<br>- HSIL: 立即阴道镜+活检/锥切<br>- AGC: 阴道镜+颈管搔刮+内膜活检",5年后重复联合筛查
+management.colposcopyIndicated,管理建议.需要阴道镜,Boolean,"是否需要阴道镜检查。<br>**阴道镜指征**:<br>- ASC-H<br>- LSIL(≥25岁)<br>- HSIL<br>- AGC/AIS<br>- ASCUS+HPV阳性<br>- 细胞学阴性+HPV16/18阳性<br>**临床意义**: 阴道镜是宫颈病变诊断的金标准",false
+management.nextScreenInterval,管理建议.下次筛查间隔,String,"推荐的下次筛查间隔时间。<br>**标准间隔**:<br>- 双阴性: 5年<br>- 细胞学单独阴性: 3年<br>- ASCUS/HPV阴性: 3年<br>- HPV阳性随访: 12个月<br>- 治疗后随访: 依具体情况(通常6-12个月)",5年
+management.additionalTests,管理建议.附加检查,String,"推荐的附加检查项目。<br>**示例**:<br>- `HPV16/18分型检测`<br>- `颈管搔刮(ECC)`<br>- `子宫内膜活检(≥35岁AGC)`<br>- `阴道镜下活检`<br>- `诊断性锥切(LEEP/冷刀)`",无附加检查
+riskFactors.sexualActivity,危险因素.性活动,String,"性活动相关危险因素。<br>**示例**: `初次性生活年龄<18岁`, `多性伴(>3个)`, `性伴侣有多性伴`<br>**临床意义**: 性活动是HPV感染主要途径,多性伴增加感染风险",
+riskFactors.smoking,危险因素.吸烟,Boolean,"吸烟史。<br>**临床意义**: 吸烟增加宫颈癌风险2-3倍(免疫抑制+致癌物直接作用)",false
+riskFactors.immunosuppression,危险因素.免疫抑制,String,"免疫抑制状态。<br>**示例**: `HIV感染`, `器官移植后免疫抑制治疗`, `长期皮质激素使用`, `系统性红斑狼疮`<br>**临床意义**: 免疫抑制者HPV感染持续率高,病变进展快,需更频繁筛查",无
+riskFactors.previousCin,危险因素.既往CIN病史,String,"既往宫颈上皮内瘤变病史。<br>**建议值**: `无`, `CIN1病史`, `CIN2/3病史已治疗`, `CIN2/3病史未治疗`<br>**临床意义**: 既往高级别病变者复发风险高,需延长随访(治疗后25年)",无
+riskFactors.std,危险因素.性传播疾病史,String,"其他性传播疾病病史。<br>**示例**: 衣原体感染、单纯疱疹病毒-2型(HSV-2)等<br>**临床意义**: 其他STD感染可能增加HPV持续感染和病变风险",无
+riskFactors.oralContraceptives,危险因素.长期口服避孕药,Boolean,"长期使用口服避孕药(>5年)。<br>**临床意义**: 长期OC使用可能轻度增加宫颈癌风险(RR 1.3-1.9),但停药后风险下降",false
+riskFactors.multiparity,危险因素.多次分娩,Boolean,"多次足月分娩(≥3次)。<br>**临床意义**: 多产可能增加宫颈癌风险,机制不明(可能与激素、创伤有关)",false
+clinicalInfo.menstrualStatus,临床信息.月经状态,String,"月经状态。<br>**建议值**: `规律月经`, `月经不规律`, `绝经(自然绝经)`, `绝经(手术绝经)`, `孕期`, `哺乳期`<br>**临床意义**: 绝经后阴道出血+异常细胞学/HPV需高度警惕",规律月经
+clinicalInfo.abnormalBleeding,临床信息.异常出血,String,"异常阴道出血情况。<br>**建议值**: `无`, `接触性出血(性交后)`, `绝经后出血`, `经间期出血`, `不规则出血`<br>**临床意义**: 异常出血是宫颈癌重要症状,需积极评估",无
+clinicalInfo.vaginalDischarge,临床信息.阴道分泌物,String,"阴道分泌物异常。<br>**建议值**: `正常`, `白带增多`, `血性白带`, `脓性白带`, `恶臭白带`<br>**临床意义**: 血性/恶臭白带提示宫颈病变可能",正常
+clinicalInfo.cervixAppearance,临床信息.宫颈外观,String,"妇科检查宫颈外观。<br>**建议值**: `光滑`, `糜烂样改变(柱状上皮异位)`, `息肉`, `接触性出血`, `质地变硬`, `菜花样肿物`<br>**临床意义**: 明显可见病灶需立即活检,不等待细胞学结果",光滑
+previousTreatment.performed,既往治疗史.有治疗,Boolean,"是否有宫颈病变治疗史。<br>**治疗方式**: LEEP、冷刀锥切、冷冻、激光等<br>**临床意义**: 治疗后需长期随访,复发风险持续25年",false
+previousTreatment.method,既往治疗.治疗方式,String,"既往治疗方式。<br>**建议值**: `LEEP刀锥切`, `冷刀锥切(CKC)`, `激光治疗`, `冷冻治疗`, `子宫切除术`<br>**临床意义**: 治疗方式影响复发风险和随访策略",
+previousTreatment.date,既往治疗.治疗日期,String,"既往治疗日期,格式YYYY-MM-DD。<br>**临床意义**: 治疗后前2年复发风险最高,需密切随访",
+previousTreatment.histology,既往治疗.病理诊断,String,"治疗标本的病理诊断。<br>**示例**: `CIN1`, `CIN2`, `CIN3/CIS`, `AIS`, `早期浸润癌(IA1/IA2)`<br>**临床意义**: 病理级别决定随访强度和持续时间",
+previousTreatment.marginStatus,既往治疗.切缘状态,String,"锥切标本切缘状态。<br>**建议值**: `切缘阴性`, `切缘阳性或不确定`, `颈管切缘阳性`<br>**临床意义**: 切缘阳性复发风险显著增加,需更积极随访或再治疗",
+vaccination.hpvVaccinated,疫苗接种.已接种HPV疫苗,Boolean,"是否接种过HPV疫苗。<br>**疫苗类型**: 二价(16/18)、四价(6/11/16/18)、九价(6/11/16/18/31/33/45/52/58)<br>**临床意义**: 接种疫苗仍需常规筛查(疫苗不覆盖所有高危型,且不治疗已存在感染)",false
+vaccination.vaccineType,疫苗接种.疫苗类型,String,"接种的HPV疫苗类型。<br>**建议值**: `二价(Cervarix)`, `四价(Gardasil)`, `九价(Gardasil 9)`<br>**覆盖型别**:<br>- 二价: 16, 18<br>- 四价: 6, 11, 16, 18<br>- 九价: 6, 11, 16, 18, 31, 33, 45, 52, 58",
+vaccination.doses,疫苗接种.接种剂次,Number,"完成的疫苗接种剂次。<br>**标准程序**: 3剂(0-1/2-6月)或2剂(9-14岁青少年)<br>**临床意义**: 完整接种提供最佳保护",0
+reportSummary.overallInterpretation,报告总结.综合解读,String,"筛查结果综合解读摘要(供患者理解)。<br>**应包含**: 细胞学结果、HPV结果、风险评估、管理建议<br>**示例**: 'TCT阴性,HPV阴性,宫颈癌风险极低,建议5年后重复筛查'",TCT阴性，HPV阴性，宫颈癌风险极低，建议5年后重复联合筛查
+reportSummary.keyRecommendation,报告总结.关键建议,String,"最关键的临床建议(1-2句话)。<br>**示例**:<br>- '建议5年后重复筛查'<br>- '建议行阴道镜检查'<br>- '建议12个月后重复细胞学+HPV检测'<br>- '建议立即转诊妇科肿瘤科,进行诊断性锥切或活检'",建议5年后重复联合筛查
+reportSummary.urgency,报告总结.紧急程度,String,"结果处理的紧急程度。<br>**建议值**: `常规(5年后)`, `短期随访(1-3年)`, `近期处理(3-6个月)`, `尽快处理(1-3个月内阴道镜)`, `紧急处理(立即转诊)`<br>**临床意义**: 帮助患者理解结果的严重性和时间要求",常规(5年后)
+qualityControl.pathologistReviewed,质控.病理医师审核,Boolean,"是否经病理医师审核签发。<br>**临床意义**: 细胞学诊断需要专业病理医师判读,技术员初筛+病理医师审核提高准确性",true
+qualityControl.unsatisfactoryRate,质控.不满意率监控,String,"实验室不满意标本率质控。<br>**质控标准**: 不满意率应<5%(CAP建议<10%)<br>**临床意义**: 高不满意率提示取样或制片技术问题",实验室不满意率<5%(符合质控标准)
+notes.clinicianNotes,备注.临床医师备注,String,"临床医师的额外备注或问题。<br>**示例**: '患者拒绝阴道镜检查,建议加强宣教'、'患者有异常出血症状,请重点关注'等",

@@ -1,0 +1,110 @@
+字段路径,中文名称,数据类型,说明,示例值
+reportInfo.id,报告编号,String,病理报告唯一标识,PCa-2025-001234
+reportInfo.patientName,患者姓名,String,患者姓名,张某某
+reportInfo.patientId,患者ID,String,患者唯一标识,P20250102001
+reportInfo.age,年龄,Number,患者年龄(岁),65
+reportInfo.reportDate,报告日期,Date,病理报告日期,2025-01-15
+reportInfo.specimenType,标本类型,String,"标本类型。<br>**建议值**: `穿刺活检(Needle biopsy)`, `经尿道前列腺电切术(TURP)`, `根治性前列腺切除术(Radical prostatectomy)`, `盆腔淋巴结清扫术`<br>**临床意义**: 不同标本类型的诊断标准和预后评估方法不同",穿刺活检
+reportInfo.hospitalName,送检医院,String,送检医院名称,北京协和医院
+reportInfo.pathologyDepartment,病理科,String,出具报告的病理科,病理科
+reportInfo.pathologist,病理医师,String,签发病理医师姓名,李医生
+clinical.chiefComplaint,临床表现.主诉,String,"患者主诉症状。<br>**常见症状**: 无症状(PSA筛查发现)、排尿困难、尿频尿急、血尿、骨痛(骨转移)、会阴不适<br>**临床意义**: 多数早期前列腺癌无症状,通过PSA筛查发现",体检发现PSA升高
+clinical.familyHistory,临床表现.家族史,String,"前列腺癌家族史。<br>**建议值**: `无家族史`, `一级亲属1人患前列腺癌`, `一级亲属≥2人患前列腺癌`, `BRCA1/2突变家族史`<br>**临床意义**: 家族史是前列腺癌最强危险因素,一级亲属患病使风险增加2-3倍",一级亲属1人患前列腺癌
+tumorMarker.psa.total,肿瘤标志物.PSA.总PSA,Number,"总前列腺特异性抗原(ng/mL)。<br>**参考范围**: <4 ng/mL正常,4-10灰区,>10高度可疑<br>**年龄调整参考值**:<br>- 40-49岁: <2.5<br>- 50-59岁: <3.5<br>- 60-69岁: <4.5<br>- 70-79岁: <6.5<br>**临床意义**: 前列腺癌最重要的血清标志物,但缺乏特异性(BPH也升高)",8.6
+tumorMarker.psa.free,肿瘤标志物.PSA.游离PSA,Number,"游离PSA(ng/mL)。<br>**临床意义**: 与总PSA联合计算f/t PSA比值,提高诊断特异性",1.2
+tumorMarker.psa.freeRatio,肿瘤标志物.PSA.游离比值,Number,"游离PSA/总PSA比值(%)。<br>**判断标准**:<br>- >25%: 良性可能性大<br>- 18-25%: 灰区<br>- <18%: 恶性可能性大,建议活检<br>- <10%: 高度可疑恶性<br>**临床意义**: PSA 4-10 ng/mL灰区时,f/t PSA<18%提示需活检",13.9
+tumorMarker.psa.density,肿瘤标志物.PSA.PSA密度,Number,"PSA密度 = 总PSA / 前列腺体积(ng/mL/mL)。<br>**判断标准**:<br>- <0.15: 良性可能性大<br>- 0.15-0.20: 灰区<br>- >0.20: 恶性可能性大<br>**临床意义**: PSAD>0.15时前列腺癌风险显著增加,比单独PSA更准确",0.23
+tumorMarker.psa.velocity,肿瘤标志物.PSA.PSA速率,Number,"PSA速率(ng/mL/年),至少间隔6个月测2次以上。<br>**判断标准**: >0.75 ng/mL/年提示恶性可能<br>**临床意义**: PSA快速升高提示侵袭性前列腺癌",1.2
+tumorMarker.psa.doublingTime,肿瘤标志物.PSA.PSA倍增时间,Number,"PSA倍增时间(月)。<br>**临床意义**: PSADT<3个月提示高度侵袭性,PSADT>15个月预后较好,用于生化复发后评估",18
+dre.findings,直肠指检.DRE发现,String,"直肠指检(Digital Rectal Examination)发现。<br>**建议值**: `正常-前列腺光滑对称`, `BPH-前列腺均匀增大质韧`, `可疑结节-单侧硬结`, `明显异常-双侧硬结/固定`, `局部凹陷/不规则`<br>**临床意义**: DRE发现结节阳性预测值25-40%",可疑结节-左叶硬结
+imaging.mri.pirads,影像学.MRI.PI-RADS评分,String,"前列腺影像报告和数据系统(Prostate Imaging Reporting and Data System)评分。<br>**PI-RADS v2.1分级**:<br>- **PI-RADS 1**: 极低风险,无临床显著癌可能<br>- **PI-RADS 2**: 低风险,临床显著癌可能性很小<br>- **PI-RADS 3**: 中等风险,临床显著癌存在不确定(equivocal)<br>- **PI-RADS 4**: 高风险,可能存在临床显著癌<br>- **PI-RADS 5**: 极高风险,高度可能存在临床显著癌<br>**评分原则**: 外周带以DWI为主,移行带以T2WI为主,DCE作为补充<br>**临床意义**: PI-RADS≥4建议活检,PI-RADS 5阳性预测值>90%",PI-RADS 4
+imaging.mri.location,影像学.MRI.病灶位置,String,"MRI发现病灶的前列腺分区位置。<br>**前列腺分区**: 外周带(PZ,70%癌发生于此)、移行带(TZ,20%)、中央带(CZ,5%)、前纤维肌性间质(AFS)<br>**建议值**: `左叶外周带`, `右叶外周带`, `左叶移行带`, `右叶移行带`, `中央带`, `多灶性`, `弥漫浸润`",左叶外周带
+imaging.mri.size,影像学.MRI.病灶大小,String,MRI测量的病灶最大径(mm),15x12x10 mm
+imaging.mri.prostateVolume,影像学.MRI.前列腺体积,Number,"前列腺总体积(mL),用于计算PSAD。<br>**测量方法**: 椭球体公式 = 长×宽×高×0.52<br>**参考范围**: 正常20-30mL,BPH可达50-100mL",37
+imaging.mri.epe,影像学.MRI.包膜外侵犯,String,"MRI评估包膜外侵犯(Extraprostatic Extension, EPE)。<br>**建议值**: `无`, `可疑(包膜不规则/局部膨出)`, `明确(包膜破坏/周围脂肪浸润/神经血管束侵犯)`, `精囊侵犯`<br>**临床意义**: EPE提示T3a,影响手术方式选择",可疑
+imaging.ct.findings,影像学.CT.CT发现,String,"CT平扫+增强发现。<br>**主要用途**: 评估淋巴结转移、骨转移、远处转移<br>**建议值**: `未见异常`, `盆腔淋巴结肿大`, `骨转移-成骨性`, `肝转移`, `肺转移`",盆腔淋巴结肿大
+imaging.boneScan.findings,影像学.骨扫描.发现,String,"全身骨扫描(99mTc-MDP SPECT)发现。<br>**建议值**: `未见异常摄取`, `单发可疑摄取灶`, `多发骨转移(超级骨显像superscan)`, `脊柱多发摄取`, `肋骨多发摄取`<br>**临床意义**: PSA>20或Gleason≥8或临床T3-4时建议骨扫描,前列腺癌骨转移呈成骨性",未见异常摄取
+biopsy.method,穿刺活检.方法,String,"活检方法。<br>**建议值**: `系统性10-12针穿刺(TRUS引导)`, `MRI-超声融合靶向穿刺`, `MRI引导穿刺`, `经会阴模板穿刺`<br>**临床意义**: MRI-超声融合穿刺对PI-RADS≥3病灶检出率更高",MRI-超声融合靶向穿刺
+biopsy.coresTotal,穿刺活检.穿刺总针数,Number,"穿刺总针数。<br>**标准**: NCCN推荐至少10-12针系统性穿刺<br>**临床意义**: 穿刺针数影响检出率,过少可能漏诊",12
+biopsy.coresPositive,穿刺活检.阳性针数,Number,"癌组织阳性针数。<br>**临床意义**: 阳性针数比例是D'Amico风险分层的组成部分,≥50%提示高危",5
+biopsy.coresPositivePercentage,穿刺活检.阳性比例,Number,"阳性针数/总针数百分比(%)。<br>**风险评估**:<br>- <33%: 低风险<br>- 33-50%: 中等风险<br>- >50%: 高风险<br>**临床意义**: 阳性比例与肿瘤负荷相关,是独立预后因素",41.7
+biopsy.tumorInvolvement,穿刺活检.肿瘤累及程度,String,"单根穿刺标本癌组织累及长度。<br>**记录方式**: `3/10mm(30%)`, `5/12mm(42%)`<br>**临床意义**: 单针癌组织>50%或多针高比例累及提示肿瘤负荷大",最高单针5/12mm(42%)
+biopsy.laterality,穿刺活检.侧别,String,"癌组织分布侧别。<br>**建议值**: `单侧(左叶)`, `单侧(右叶)`, `双侧`<br>**临床意义**: 双侧受累提示更广泛的肿瘤分布",双侧
+pathology.who.type,病理学.WHO分型,String,"WHO 2016前列腺癌组织学分型。<br>**主要类型**:<br>- **腺泡型腺癌(Acinar adenocarcinoma,95%)**: 最常见,起源于腺泡<br>- **导管型腺癌(Ductal adenocarcinoma,<1%)**: 起源于导管,预后差<br>- **神经内分泌癌(Neuroendocrine carcinoma)**: 小细胞癌/大细胞神经内分泌癌,极差预后<br>- **尿路上皮癌(Urothelial carcinoma)**: 前列腺部尿道起源<br>- **鳞状细胞癌**: 罕见<br>- **腺鳞癌**: 罕见<br>**临床意义**: 非腺泡型腺癌预后显著差于经典腺癌",腺泡型腺癌
+pathology.variants,病理学.组织学变异,String,"组织学变异类型(占腺泡型腺癌5-10%)。<br>**主要变异**:<br>- **导管内癌(Intraductal carcinoma, IDC-P)**: 与Gleason pattern 4/5相关,预后差<br>- **筛状型(Cribriform pattern)**: 大筛状(>50%预后差)vs 小筛状<br>- **泡沫样腺癌(Foamy gland)**: 富含脂质,低级别<br>- **印戒细胞样**: 黏液性,罕见<br>- **假增生型(Pseudohyperplastic)**: 模拟BPH,易漏诊<br>- **萎缩型(Atrophic)**: 细胞小,易漏诊<br>**临床意义**: IDC-P和大筛状结构提示侵袭性高,即使Gleason 3+4也预后差",导管内癌(IDC-P)成分
+pathology.gleason.primary,Gleason评分.主要模式,String,"Gleason主要模式(占比最大的模式)。<br>**Gleason分级标准(1-5)**: 基于腺体结构分化程度<br>- **Pattern 1**: 圆形均一腺体,紧密聚集(现已不再诊断)<br>- **Pattern 2**: 圆形腺体,排列稍松散(现已不再诊断)<br>- **Pattern 3**: 形态多样腺体,浸润性生长,边界不清<br>- **Pattern 4**: 融合腺体/筛状/微乳头状/实性<br>- **Pattern 5**: 实性片状/单个细胞浸润/粉刺样坏死<br>**临床意义**: Gleason pattern 1-2已不再使用(2005 ISUP共识),当代诊断最低为pattern 3",Gleason pattern 4
+pathology.gleason.secondary,Gleason评分.次要模式,String,"Gleason次要模式(占比第二的模式)。<br>**记录原则**:<br>- 次要模式占比≥5%需记录<br>- 若仅有单一模式,主要模式和次要模式相同<br>**临床意义**: 次要模式影响总分和预后,3+4与4+3预后差异显著",Gleason pattern 3
+pathology.gleason.tertiary,Gleason评分.三级模式,String,"Gleason三级模式(第三种模式,若存在)。<br>**记录原则**: 若存在第三种模式且为高级别(pattern 4或5),即使占比<5%也需记录<br>**建议值**: `无`, `Gleason pattern 4(<5%)`, `Gleason pattern 5(<5%)`<br>**临床意义**: 穿刺标本中三级模式5提示更差预后,应纳入分级组评估",Gleason pattern 5(<5%)
+pathology.gleason.score,Gleason评分.Gleason总分,String,"Gleason总分 = 主要模式 + 次要模式。<br>**评分范围**: 6-10分(当代诊断,历史上为2-10)<br>- **Gleason 6(3+3)**: 低级别,预后好<br>- **Gleason 7(3+4 或 4+3)**: 中级别,3+4与4+3预后差异大<br>- **Gleason 8(4+4,3+5,5+3)**: 高级别<br>- **Gleason 9-10(4+5,5+4,5+5)**: 极高级别,预后差<br>**临床意义**: Gleason评分是前列腺癌最重要的预后因素",Gleason 7(4+3)
+pathology.gleason.biopsyModification,Gleason评分.穿刺特殊规则,String,"穿刺标本Gleason评分特殊规则。<br>**穿刺标本规则**(与前列腺切除标本不同):<br>1. 若存在高级别成分(pattern 4/5),即使占比很小(<5%)也应纳入评分<br>2. 多根穿刺阳性时,报告最高Gleason评分<br>3. 存在三级pattern 5时,可报告为 Gleason 7(3+4) with tertiary pattern 5<br>**临床意义**: 穿刺标本评分偏向高估以避免低估侵袭性",报告最高分Gleason 7(4+3)
+pathology.isup.gradeGroup,ISUP分级.分级组,String,"ISUP分级组(Grade Group,2014 ISUP共识,2016 WHO采纳)。<br>**分级组与Gleason对应**:<br>- **Grade Group 1**: Gleason≤6(3+3) - 低风险<br>- **Grade Group 2**: Gleason 7(3+4) - 中低风险<br>- **Grade Group 3**: Gleason 7(4+3) - 中高风险<br>- **Grade Group 4**: Gleason 8(4+4,3+5,5+3) - 高风险<br>- **Grade Group 5**: Gleason 9-10(4+5,5+4,5+5) - 极高风险<br>**临床意义**: ISUP分级组更符合预后分层,GG 2与GG 3预后差异显著(3+4 vs 4+3),5年生化复发率分别为29% vs 46%",Grade Group 3
+pathology.isup.percentPattern4,ISUP分级.Pattern 4占比,Number,"Gleason pattern 4所占百分比(%)。<br>**临床意义**: <br>- Gleason 7患者中,pattern 4占比是独立预后因素<br>- Pattern 4<10%: 预后接近GG1<br>- Pattern 4 10-20%: 中等风险<br>- Pattern 4>20%: 预后接近GG3<br>- 部分中心将GG2细分为pattern 4<10%和≥10%",35
+pathology.cribriform.presence,筛状结构.存在,Boolean,"是否存在筛状结构(Cribriform pattern)。<br>**临床意义**: 筛状结构(属于Gleason pattern 4)与不良预后相关,筛状为主的GG2预后差于非筛状GG2",true
+pathology.cribriform.type,筛状结构.类型,String,"筛状结构类型。<br>**分类**:<br>- **小筛状(Small cribriform)**: 筛孔小而规则,腺体直径<0.25mm<br>- **大筛状(Large cribriform)**: 筛孔大而不规则,腺体直径>0.25mm<br>**建议值**: `无`, `小筛状`, `大筛状`, `小筛状为主`, `大筛状为主`<br>**临床意义**: 大筛状结构提示更差预后,生化复发率和转移率更高",大筛状为主
+pathology.cribriform.percentage,筛状结构.占比,Number,"筛状结构占肿瘤百分比(%)。<br>**临床意义**: 筛状结构>10%与术后复发风险增加相关",40
+pathology.idcp.presence,导管内癌.存在,Boolean,"是否存在前列腺导管内癌(Intraductal carcinoma of the prostate, IDC-P)。<br>**诊断标准**: 扩张腺管/导管内充满肿瘤细胞,保留基底细胞层(p63+),伴实性/筛状/微乳头结构,核明显异型<br>**临床意义**: IDC-P几乎总是伴随浸润性高级别癌(Gleason pattern 4/5),提示侵袭性强、预后差,即使Gleason 3+4也建议按高危处理",true
+pathology.idcp.extent,导管内癌.范围,String,"IDC-P累及范围。<br>**建议值**: `局灶性(<5%)`, `多灶性(5-30%)`, `广泛(>30%)`<br>**临床意义**: 广泛IDC-P提示更高的包膜外侵犯和淋巴结转移风险",多灶性
+pathology.perineural.invasion,神经周围侵犯.存在,Boolean,"是否存在神经周围侵犯(Perineural Invasion, PNI)。<br>**定义**: 肿瘤细胞沿神经束或神经周围间隙浸润<br>**检出率**: 穿刺活检中15-25%,前列腺切除标本中75-85%<br>**临床意义**: PNI是前列腺癌包膜外侵犯的主要途径,穿刺标本中PNI提示包膜外侵犯风险增加(RR 1.7)",true
+pathology.perineural.extent,神经周围侵犯.程度,String,"PNI累及程度。<br>**建议值**: `局灶性(1-2个神经束)`, `多灶性(>2个神经束)`, `广泛神经周围侵犯`<br>**临床意义**: 多灶性PNI提示更高的包膜外侵犯风险",多灶性
+pathology.lymphovascular.invasion,淋巴血管侵犯.存在,Boolean,"是否存在淋巴血管侵犯(Lymphovascular Invasion, LVI)。<br>**临床意义**: 前列腺癌中LVI少见(<10%),但存在时提示淋巴结转移和远处转移风险显著增加,是强烈的不良预后因素",false
+pathology.extraprostatic.extension,包膜外侵犯.存在,Boolean,"是否存在包膜外侵犯(Extraprostatic Extension, EPE)。<br>**定义**: 肿瘤突破前列腺包膜进入周围脂肪组织/神经血管束<br>**临床意义**: EPE定义为pT3a,显著影响预后和治疗选择,EPE患者术后复发率增加3-4倍",false
+pathology.extraprostatic.location,包膜外侵犯.部位,String,"EPE发生部位。<br>**常见部位**: 后外侧神经血管束、尖部、基底部<br>**建议值**: `无`, `左侧神经血管束`, `右侧神经血管束`, `尖部`, `基底部`, `多部位`",仅穿刺标本无法评估
+pathology.extraprostatic.extent,包膜外侵犯.范围,String,"EPE累及范围(仅根治术标本可评估)。<br>**建议值**: `无`, `局灶性(≤1个高倍视野或≤2个低倍视野)`, `广泛性(超过局灶性定义)`<br>**临床意义**: 广泛EPE预后差于局灶EPE,生化复发率更高",仅穿刺标本无法评估
+pathology.seminalVesicle.invasion,精囊侵犯.存在,Boolean,"是否存在精囊侵犯(Seminal Vesicle Invasion, SVI)。<br>**定义**: 肿瘤侵犯精囊肌壁<br>**临床意义**: SVI定义为pT3b,是强烈的不良预后因素,5年生化复发率>50%,提示需辅助放疗",false
+pathology.seminalVesicle.laterality,精囊侵犯.侧别,String,"精囊侵犯侧别。<br>**建议值**: `无`, `左侧`, `右侧`, `双侧`<br>**临床意义**: 双侧精囊侵犯预后极差",仅穿刺标本无法评估
+pathology.bladderNeck.invasion,膀胱颈侵犯,Boolean,"是否侵犯膀胱颈。<br>**临床意义**: 膀胱颈侵犯属于pT4,但预后意义有争议",false
+ihc.diagnosisPanel.amacr,免疫组化.诊断标记.AMACR,String,"α-甲基酰基辅酶A消旋酶(P504S)。<br>**表达模式**: 胞质染色<br>**建议值**: `阴性`, `弱阳性`, `中度阳性`, `强阳性`<br>**临床意义**: AMACR在前列腺癌中阳性率95%,良性腺体阴性,是癌与良性鉴别的关键标记,但约5%前列腺癌AMACR阴性(特别是Gleason 6)",强阳性
+ihc.diagnosisPanel.p63,免疫组化.诊断标记.P63,String,"基底细胞标记P63(或p40)。<br>**表达模式**: 基底细胞核染色<br>**建议值**: `基底细胞完整(良性)`, `基底细胞缺失(癌)`, `局灶基底细胞(不典型增生AAH)`<br>**临床意义**: 前列腺癌缺失基底细胞层,P63阴性;良性腺体P63阳性标记基底细胞;三联抗体(AMACR+/P63-/CK34βE12-)支持癌诊断",基底细胞缺失
+ihc.diagnosisPanel.hmwck,免疫组化.诊断标记.高分子CK,String,"高分子量细胞角蛋白(34βE12/CK5/6)。<br>**表达模式**: 基底细胞胞质染色<br>**建议值**: `基底细胞阳性(良性)`, `基底细胞缺失(癌)`, `局灶阳性`<br>**临床意义**: 与P63类似,标记基底细胞;三联染色(AMACR+红/34βE12-或P63-棕)可提高诊断准确性",基底细胞缺失
+ihc.diagnosisPanel.psa,免疫组化.诊断标记.PSA,String,"前列腺特异性抗原免疫组化。<br>**建议值**: `阴性`, `弱阳性`, `中度阳性`, `强阳性`<br>**临床意义**: 证实前列腺起源,前列腺癌95%阳性,但非特异性(BPH也阳性);主要用于转移癌确定原发灶",强阳性
+ihc.diagnosisPanel.psap,免疫组化.诊断标记.PSAP,String,"前列腺特异性酸性磷酸酶。<br>**建议值**: `阴性`, `阳性`<br>**临床意义**: 前列腺来源标记,特异性高于PSA,用于低分化癌或转移灶的前列腺起源确认",阳性
+ihc.diagnosisPanel.nkx3_1,免疫组化.诊断标记.NKX3.1,String,"前列腺特异性转录因子NKX3.1。<br>**表达模式**: 核染色<br>**建议值**: `阴性`, `阳性`<br>**临床意义**: 前列腺来源高特异性标记(95%敏感性),在低分化癌中敏感性优于PSA,用于转移灶溯源",阳性
+ihc.ar,免疫组化.雄激素受体,String,"雄激素受体(Androgen Receptor, AR)。<br>**表达模式**: 核染色<br>**建议值**: `阴性`, `弱阳性`, `中度阳性`, `强阳性`, `阳性百分比(%)`<br>**临床意义**: 前列腺癌95-100%表达AR,是内分泌治疗的靶点;去势抵抗性前列腺癌(CRPC)多数仍表达AR",强阳性(95%)
+ihc.ki67,免疫组化.Ki-67,Number,"增殖指数Ki-67阳性百分比(%)。<br>**参考范围**:<br>- Gleason 6: 通常<5%<br>- Gleason 7: 5-15%<br>- Gleason 8-10: >15%<br>**临床意义**: Ki-67高表达(>10%)与不良预后相关,是独立预后因素,可辅助Gleason分级",12
+ihc.erg,免疫组化.ERG,String,"ETS相关基因(ERG)融合蛋白。<br>**表达模式**: 核染色<br>**建议值**: `阴性`, `阳性`<br>**临床意义**: ERG重排(TMPRSS2-ERG融合)见于50%前列腺癌,ERG阳性提示PTEN缺失风险增加,预后意义有争议",阳性
+ihc.pten,免疫组化.PTEN,String,"抑癌基因PTEN蛋白表达。<br>**表达模式**: 胞质/核染色<br>**建议值**: `保留(正常)`, `缺失(异常)`, `部分缺失`<br>**临床意义**: PTEN缺失见于20-40%前列腺癌,与高级别、生化复发、转移和前列腺癌特异性死亡相关,是强烈的不良预后因素;PTEN缺失+ERG阳性预后最差",缺失
+ihc.pdl1,免疫组化.PD-L1,String,"程序性死亡配体1(PD-L1)表达。<br>**检测克隆**: 22C3/28-8/SP263等<br>**建议值**: `阴性(<1%)`, `低表达(1-5%)`, `阳性(≥5%)`<br>**临床意义**: 前列腺癌PD-L1阳性率低(<10%),主要见于神经内分泌癌/去势抵抗性前列腺癌;dMMR/MSI-H患者PD-L1表达更高",阴性
+ihc.mmr.mlh1,免疫组化.MMR.MLH1,String,"错配修复蛋白MLH1。<br>**表达模式**: 核染色<br>**建议值**: `保留(阳性)`, `缺失(阴性)`<br>**临床意义**: MLH1缺失提示Lynch综合征可能,前列腺癌dMMR发生率3-5%",保留
+ihc.mmr.msh2,免疫组化.MMR.MSH2,String,"错配修复蛋白MSH2。<br>**建议值**: `保留(阳性)`, `缺失(阴性)`",保留
+ihc.mmr.msh6,免疫组化.MMR.MSH6,String,"错配修复蛋白MSH6。<br>**建议值**: `保留(阳性)`, `缺失(阴性)`",保留
+ihc.mmr.pms2,免疫组化.MMR.PMS2,String,"错配修复蛋白PMS2。<br>**建议值**: `保留(阳性)`, `缺失(阴性)`",保留
+ihc.mmr.status,免疫组化.MMR.总体状态,String,"MMR总体状态。<br>**pMMR(proficient MMR)**: 4个蛋白均保留<br>**dMMR(deficient MMR)**: 任一蛋白缺失<br>**临床意义**: dMMR前列腺癌对免疫检查点抑制剂高度敏感,FDA批准帕博利珠单抗用于dMMR/MSI-H实体瘤",pMMR
+molecular.msi.status,分子标记.MSI.状态,String,"微卫星不稳定性(Microsatellite Instability)状态。<br>**检测方法**: PCR检测5个微卫星位点(BAT-25,BAT-26,D5S346,D2S123,D17S250)<br>**MSI-H**: ≥2个位点不稳定<br>**MSI-L**: 1个位点不稳定<br>**MSS**: 0个位点不稳定<br>**建议值**: `MSS(微卫星稳定)`, `MSI-L(低度不稳定)`, `MSI-H(高度不稳定)`<br>**临床意义**: MSI-H前列腺癌3-5%,对免疫治疗敏感;MSI-H与dMMR高度相关",MSS
+molecular.tmb.value,分子标记.TMB.值,Number,"肿瘤突变负荷(Tumor Mutational Burden),突变数/Mb。<br>**判断标准**:<br>- TMB-L(低): <6 mutations/Mb<br>- TMB-I(中): 6-19 mutations/Mb  <br>- TMB-H(高): ≥20 mutations/Mb<br>**临床意义**: 前列腺癌TMB通常较低(<5),TMB-H(≥10)患者可能对免疫治疗敏感",3.2
+molecular.tmb.level,分子标记.TMB.水平,String,"TMB水平分级。<br>**建议值**: `TMB-L(低)`, `TMB-I(中)`, `TMB-H(高≥10)`",TMB-L
+molecular.brca.status,分子标记.BRCA.状态,String,"BRCA1/2基因突变状态(胚系或体系)。<br>**建议值**: `野生型`, `BRCA1突变`, `BRCA2突变`, `BRCA1/2双突变`, `未检测`<br>**临床意义**: BRCA2突变见于5-10%转移性CRPC,BRCA1/2突变患者对PARP抑制剂(奥拉帕利、鲁卡帕利)敏感,FDA已批准用于转移性CRPC",野生型
+molecular.hrd.status,分子标记.HRD.状态,String,"同源重组修复缺陷(Homologous Recombination Deficiency)状态。<br>**HRD相关基因**: BRCA1/2, ATM, CHEK2, PALB2, RAD51C/D, FANCA等<br>**建议值**: `HRD阴性`, `HRD阳性(含具体突变基因)`<br>**临床意义**: HRD阳性(12-20%转移性CRPC)对PARP抑制剂敏感",HRD阴性
+molecular.ar.variant,分子标记.AR.变异,String,"雄激素受体基因变异。<br>**主要变异**:<br>- **AR-V7(AR剪接变异体7)**: CRPC中20-30%,提示对恩杂鲁胺/阿比特龙耐药<br>- **AR基因扩增**: CRPC中30%<br>- **AR点突变**: L702H, W742C等,介导抗雄激素耐药<br>**建议值**: `野生型`, `AR-V7阳性`, `AR基因扩增`, `AR点突变`, `未检测`<br>**临床意义**: AR-V7阳性CRPC患者对AR靶向治疗耐药,应考虑化疗或其他治疗",未检测
+molecular.fusion.tmprss2erg,分子标记.基因融合.TMPRSS2-ERG,String,"TMPRSS2-ERG基因融合(最常见的前列腺癌融合,50%)。<br>**检测方法**: FISH/RT-PCR/IHC(ERG蛋白)<br>**建议值**: `阴性`, `阳性`<br>**临床意义**: TMPRSS2-ERG融合是前列腺癌最常见的分子改变,预后意义尚有争议;融合阳性患者PTEN缺失风险增加",阳性
+molecular.other.tp53,分子标记.其他.TP53,String,"TP53基因突变状态。<br>**建议值**: `野生型`, `突变`, `未检测`<br>**临床意义**: TP53突变见于10-20%原发前列腺癌,50%CRPC,与不良预后相关",野生型
+molecular.other.pik3ca,分子标记.其他.PIK3CA,String,"PIK3CA基因突变状态。<br>**建议值**: `野生型`, `突变`, `未检测`<br>**临床意义**: PIK3CA/AKT通路激活见于30-50%前列腺癌,是潜在治疗靶点",野生型
+molecular.other.rb1,分子标记.其他.RB1,String,"RB1抑癌基因缺失/突变。<br>**建议值**: `正常`, `缺失/突变`, `未检测`<br>**临床意义**: RB1缺失见于20%CRPC,与神经内分泌分化和极差预后相关",正常
+molecular.ctc.count,分子标记.CTC.计数,Number,"循环肿瘤细胞(Circulating Tumor Cells)计数(个/7.5mL血)。<br>**判断标准**(转移性前列腺癌):<br>- <5个: 预后良好<br>- ≥5个: 预后不良<br>**临床意义**: CTC≥5是转移性前列腺癌独立预后因素,与总生存期缩短相关",未检测
+staging.tnm.version,分期.TNM.版本,String,TNM分期系统版本,AJCC第8版(2017)
+staging.tnm.cT,分期.TNM.临床T分期,String,"临床T分期(基于DRE/影像学,治疗前)。<br>**T1**: 临床隐匿,非触及,非影像可见<br>  - T1a: TURP标本≤5%<br>  - T1b: TURP标本>5%<br>  - T1c: PSA升高穿刺发现<br>**T2**: 局限于前列腺<br>  - T2a: ≤半叶<br>  - T2b: >半叶但未累及双叶<br>  - T2c: 双叶<br>**T3**: 穿透包膜<br>  - T3a: 包膜外侵犯(单/双侧)<br>  - T3b: 精囊侵犯<br>**T4**: 侵犯邻近器官(膀胱颈/括约肌/直肠/盆壁等)<br>**临床意义**: 临床分期常低估病理分期,30-50% cT2最终病理为pT3",cT1c
+staging.tnm.pT,分期.TNM.病理T分期,String,"病理T分期(基于手术标本)。<br>**pT2**: 局限于前列腺<br>  - pT2a: ≤半叶<br>  - pT2b: >半叶但未累及双叶<br>  - pT2c: 双叶<br>**pT3**: 包膜外侵犯<br>  - pT3a: 包膜外侵犯或膀胱镜下膀胱颈侵犯<br>  - pT3b: 精囊侵犯<br>**pT4**: 侵犯膀胱/直肠<br>**临床意义**: 病理分期是预后的金标准,pT3患者术后生化复发率显著增加",仅穿刺标本无法评估
+staging.tnm.cN,分期.TNM.临床N分期,String,"临床N分期(基于影像学)。<br>**cN0**: 无淋巴结转移<br>**cN1**: 区域淋巴结转移(盆腔淋巴结)<br>**判断标准**: CT/MRI淋巴结短径>8mm提示转移<br>**临床意义**: 影像学低估淋巴结转移,CT/MRI敏感性仅40%,高危患者建议盆腔淋巴结清扫",cN0
+staging.tnm.pN,分期.TNM.病理N分期,String,"病理N分期(基于淋巴结清扫)。<br>**pN0**: 无淋巴结转移<br>**pN1**: 区域淋巴结转移<br>**pNx**: 未行淋巴结清扫<br>**临床意义**: pN1是强烈的不良预后因素,10年前列腺癌特异性生存率<50%",pNx
+staging.tnm.M,分期.TNM.M分期,String,"远处转移分期。<br>**M0**: 无远处转移<br>**M1a**: 非区域淋巴结转移<br>**M1b**: 骨转移<br>**M1c**: 其他部位转移(±骨转移)<br>**临床意义**: M1疾病为晚期,中位生存期3-5年,需系统治疗",M0
+staging.tnm.overall,分期.TNM.总体分期,String,"TNM总体分期。<br>**I期**: T1-2a,N0,M0,Gleason≤6,PSA<10<br>**II期**: T1-2,N0,M0,Gleason 7或PSA 10-20<br>**III期**: T3,N0,M0<br>**IV期**: T4或N1或M1<br>**临床意义**: 总体分期结合多因素评估预后",根据完整病理后确定
+riskStratification.damico,风险分层.D'Amico分层,String,"D'Amico风险分层(经典三分法,1998)。<br>**低危**: T1-2a + Gleason≤6 + PSA<10<br>**中危**: T2b 或 Gleason 7 或 PSA 10-20<br>**高危**: T2c-T3a 或 Gleason 8-10 或 PSA>20<br>**临床意义**: 指导初始治疗选择,低危可主动监测,中危根治治疗,高危多模式治疗",中危
+riskStratification.nccn,风险分层.NCCN分层,String,"NCCN风险分层(2024,五分法)。<br>**极低危**: T1c + Gleason 3+3(GG1) + PSA<10 + 阳性针数<3 + 单针癌<50%<br>**低危**: T1-2a + GG1 + PSA<10<br>**中危**: T2b-2c 或 GG2-3 或 PSA 10-20<br>  - 中低危(favorable): GG1-2 + <50%阳性针数 + 单一中危因素<br>  - 中高危(unfavorable): GG3 或 ≥50%阳性针数 或 多个中危因素<br>**高危**: T3a 或 GG4-5 或 PSA>20<br>**极高危**: T3b-4 或 原发Gleason 5>50% 或 >4个高危因素 或 ≥2个高危因素+GG5<br>**临床意义**: NCCN分层更精细,指导个体化治疗决策",中高危
+riskStratification.capra,风险分层.CAPRA评分,Number,"CAPRA评分(Cancer of the Prostate Risk Assessment,0-10分)。<br>**评分项目**:<br>- 年龄: <50岁(0分),≥50岁(1分)<br>- PSA: <6(0),6-10(1),10-20(2),20-30(3),>30(4)<br>- Gleason: 2-6(0),3+4(1),4+3(2),8-10(3)<br>- 临床分期: T1/T2(0),T3(1)<br>- 阳性针比例: <34%(0),≥34%(1)<br>**风险分组**: 0-2(低),3-5(中),6-10(高)<br>**临床意义**: CAPRA评分预测生化复发、转移、前列腺癌死亡,可用于主动监测选择",4分(中危)
+treatment.surgery.type,治疗.手术.术式,String,"手术类型(仅根治术标本适用)。<br>**建议值**: `未行手术`, `开放根治性前列腺切除术(ORP)`, `腹腔镜根治性前列腺切除术(LRP)`, `机器人辅助腹腔镜前列腺切除术(RALP)`, `经尿道前列腺电切术(TURP)`<br>**临床意义**: RALP已成为主流术式,保留神经血管束可改善术后功能",未行手术(仅穿刺)
+treatment.surgery.neurovascularBundle,治疗.手术.神经血管束保留,String,"神经血管束(NVB)保留情况。<br>**建议值**: `双侧保留`, `左侧保留`, `右侧保留`, `双侧切除`, `不适用`<br>**临床意义**: NVB保留改善术后勃起功能,但pT3a患者保留可能增加切缘阳性风险",不适用
+treatment.surgery.lymphadenectomy,治疗.手术.淋巴结清扫,String,"盆腔淋巴结清扫范围。<br>**建议值**: `未行淋巴结清扫`, `有限盆腔淋巴结清扫(闭孔)`, `扩大盆腔淋巴结清扫(闭孔+髂内外+髂总)`<br>**清扫指征**: D'Amico中高危、Gleason≥7、PSA>10、淋巴结转移风险>5%(Roach公式或Briganti列线图)<br>**临床意义**: 扩大清扫可提高分期准确性,可能改善预后",未行清扫
+resectionMargin.status,切缘.状态,String,"手术切缘状态(仅根治术标本)。<br>**R0**: 切缘阴性<br>**R1**: 切缘阳性(肿瘤达到切缘)<br>**R2**: 肉眼残留<br>**临床意义**: 切缘阳性是术后生化复发的独立危险因素,R1患者复发风险增加2-3倍",仅穿刺标本无法评估
+resectionMargin.location,切缘.阳性部位,String,"切缘阳性部位。<br>**常见部位**: 尖部(最常见,50%)、后外侧、基底部、膀胱颈<br>**建议值**: `阴性`, `尖部`, `后外侧`, `基底部`, `膀胱颈`, `多部位`",仅穿刺标本无法评估
+resectionMargin.length,切缘.阳性长度,String,"切缘阳性累及长度(mm)。<br>**预后意义**: 局灶阳性(<3mm)vs 广泛阳性(≥3mm),广泛阳性复发风险更高",仅穿刺标本无法评估
+lymphNode.totalNumber,淋巴结.清扫总数,Number,"清扫淋巴结总数。<br>**质量标准**: 有限清扫≥6枚,扩大清扫≥10-15枚<br>**临床意义**: 清扫数量影响分期准确性",0
+lymphNode.positiveNumber,淋巴结.阳性数量,Number,"转移淋巴结数量。<br>**临床意义**: 阳性淋巴结数量是独立预后因素,≥2枚阳性预后更差",0
+lymphNode.largestMetastasis,淋巴结.最大转移灶,Number,"最大淋巴结转移灶直径(mm)。<br>**临床意义**: 转移灶大小与预后相关,微转移(<2mm)vs 大转移灶",0
+lymphNode.extracapsular,淋巴结.包膜外侵犯,Boolean,"淋巴结包膜外侵犯(Extracapsular extension of lymph node)。<br>**临床意义**: 淋巴结包膜外侵犯提示更差预后,是辅助放疗指征",false
+prognosis.biochemicalRecurrence,预后.生化复发,String,"生化复发(Biochemical Recurrence, BCR)定义和风险。<br>**BCR定义**:<br>- 根治术后: PSA≥0.2 ng/mL且再次检测确认<br>- 放疗后: PSA最低值+2 ng/mL(Phoenix标准)<br>**BCR风险预测**: 根据Gleason、pT分期、切缘状态、PSA等综合评估<br>**建议值**: `低风险(<30%)`, `中风险(30-50%)`, `高风险(>50%)`",根据最终病理评估
+prognosis.metastasisRisk,预后.转移风险,String,"远处转移风险评估。<br>**高危因素**: Gleason 8-10、pT3b、pN1、切缘阳性、术后PSA不降<br>**建议值**: `低风险`, `中风险`, `高风险`",根据最终病理评估
+prognosis.mortalityRisk,预后.前列腺癌死亡风险,String,"前列腺癌特异性死亡风险。<br>**10年CSS(癌症特异性生存)**:<br>- GG1: >98%<br>- GG2: 95%<br>- GG3: 88%<br>- GG4: 70%<br>- GG5: 50%<br>**建议值**: `极低风险`, `低风险`, `中风险`, `高风险`",根据最终病理评估
+prognosis.nomogram,预后.列线图,String,"使用的预后列线图工具。<br>**常用列线图**:<br>- **Kattan术后列线图**: 预测术后5/10年无复发概率<br>- **CAPRA-S**: 预测术后复发、转移、死亡<br>- **Stephenson术后列线图**: 预测BCR后转移概率<br>**建议值**: 列线图名称+预测的复发/转移概率",未使用列线图
+followUp.psa.nadir,随访.PSA.最低值,Number,"根治术后PSA最低值(ng/mL)。<br>**理想值**: <0.1 ng/mL,最好<0.05(检测不到)<br>**临床意义**: 术后PSA未达到检测不到或缓慢下降提示残留病灶",仅穿刺标本,未术后随访
+followUp.psa.timeToNadir,随访.PSA.达最低值时间,Number,"术后达到PSA最低值的时间(周)。<br>**正常范围**: 通常术后6-12周<br>**临床意义**: 延迟达最低值(>12周)可能提示残留",仅穿刺标本,未术后随访
+followUp.adjuvantTherapy,随访.辅助治疗,String,"术后辅助治疗。<br>**辅助放疗指征**: pT3、切缘阳性、Gleason 8-10、淋巴结阳性<br>**辅助ADT指征**: pN1、高危BCR<br>**建议值**: `未行辅助治疗`, `辅助放疗(盆腔±前列腺床)`, `辅助内分泌治疗(ADT)`, `辅助放疗+ADT`, `挽救性放疗`, `观察等待`",根据最终病理决定
+remarks,备注,String,其他备注信息,左叶穿刺2/6针阳性;右叶穿刺3/6针阳性;建议完善分期检查后决定治疗方案

@@ -1,0 +1,178 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行甲亢相关检查的日期,2025-08-15
+diagnosisDate,诊断日期,String,首次诊断甲亢的日期,2025-07-20
+clinicalPresentation,临床表现,String,"主要临床表现。<br>**建议值**: `无症状(筛查发现)`, `典型甲亢症状`, `甲亢危象`, `不典型症状`",典型甲亢症状
+diseaseStatus,疾病状态,String,"疾病当前状态。<br>**建议值**: `初诊未治疗`, `治疗中`, `缓解期`, `复发`, `甲亢危象`",初诊未治疗
+
+# 症状评分
+symptoms.nervousness,症状.神经精神症状,String,"神经精神症状。<br>**建议值**: `无`, `轻度(易激动、焦虑)`, `中度(失眠、注意力不集中)`, `重度(精神异常)`",中度(失眠、注意力不集中)
+symptoms.heatIntolerance,症状.怕热多汗,String,"怕热多汗程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+symptoms.palpitations,症状.心悸,String,"心悸症状。<br>**建议值**: `无`, `轻度(活动后)`, `中度(静息时)`, `重度(伴胸闷气短)`",中度(静息时)
+symptoms.tremor,症状.手颤,String,"手颤症状。<br>**建议值**: `无`, `轻度(细微震颤)`, `中度(明显震颤)`, `重度(影响日常活动)`",中度(明显震颤)
+symptoms.weightLoss,症状.体重下降,Number,"近3个月体重下降。<br>单位: kg<br>**临床意义**: >5kg为显著体重下降",8.5
+symptoms.appetiteChange,症状.食欲变化,String,"食欲变化。<br>**建议值**: `正常`, `食欲亢进`, `食欲减退`",食欲亢进
+symptoms.bowelHabit,症状.排便习惯,String,"排便习惯改变。<br>**建议值**: `正常`, `排便次数增多`, `腹泻`, `便秘`",排便次数增多
+symptoms.menstrualChange,症状.月经改变,String,"月经改变(女性)。<br>**建议值**: `正常`, `月经稀发`, `月经量减少`, `闭经`, `不适用`",月经稀发
+symptoms.muscleWeakness,症状.肌无力,String,"肌无力症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度(周期性麻痹)`",轻度
+symptoms.eyeSymptoms,症状.眼部症状,String,"眼部症状。<br>**建议值**: `无`, `眼睑迟落征`, `眼球突出`, `复视`, `Graves眼病`",眼睑迟落征
+
+# 体格检查
+physicalExam.heartRate,体格检查.心率,Number,"静息心率。<br>单位: 次/分<br>**甲亢**: 常>90次/分，可达120-140次/分",105
+physicalExam.bloodPressure.systolic,体格检查.收缩压,Number,"收缩压。<br>单位: mmHg",145
+physicalExam.bloodPressure.diastolic,体格检查.舒张压,Number,"舒张压。<br>单位: mmHg<br>**甲亢特点**: 脉压差增大",70
+physicalExam.pulsePressure,体格检查.脉压差,Number,"脉压差(收缩压-舒张压)。<br>单位: mmHg<br>**甲亢**: >60 mmHg",75
+physicalExam.weight,体格检查.体重,Number,"当前体重。<br>单位: kg",58.5
+physicalExam.bmi,体格检查.BMI,Number,"体质指数。<br>单位: kg/m²",20.5
+physicalExam.skinMoisture,体格检查.皮肤,String,"皮肤状态。<br>**建议值**: `正常`, `温暖潮湿`, `多汗`",温暖潮湿
+
+# 甲状腺检查
+thyroidExam.goiter,甲状腺检查.甲状腺肿大,String,"甲状腺肿大程度(WHO分级)。<br>**建议值**: `0度(不肿大)`, `Ⅰ度(可触及不可见)`, `Ⅱ度(可触及可见)`, `Ⅲ度(显著肿大)`",Ⅱ度(可触及可见)
+thyroidExam.goiterSymmetry,甲状腺检查.对称性,String,"甲状腺肿大对称性。<br>**建议值**: `对称性肿大`, `不对称性肿大`, `无肿大`<br>**Graves病**: 多为弥漫性对称性肿大",对称性肿大
+thyroidExam.texture,甲状腺检查.质地,String,"甲状腺质地。<br>**建议值**: `柔软`, `中等`, `坚硬`, `结节状`",柔软
+thyroidExam.tenderness,甲状腺检查.触痛,String,"触痛情况。<br>**建议值**: `无触痛`, `轻度触痛`, `明显触痛`<br>**亚急性甲状腺炎**: 明显触痛",无触痛
+thyroidExam.bruit,甲状腺检查.血管杂音,String,"甲状腺血管杂音。<br>**建议值**: `无`, `有`<br>**Graves病特征**: 可闻及血管杂音",有
+thyroidExam.thrill,甲状腺检查.震颤,String,"甲状腺震颤。<br>**建议值**: `无`, `有`<br>**Graves病特征**: 可触及震颤",有
+thyroidExam.nodules,甲状腺检查.结节,String,"甲状腺结节。<br>**建议值**: `无`, `单发结节`, `多发结节`",无
+
+# 眼征检查 (Graves眼病)
+eyeExam.exophthalmos,眼征.眼球突出,String,"眼球突出。<br>**建议值**: `无`, `轻度(<18mm)`, `中度(18-20mm)`, `重度(>20mm)`",轻度(<18mm)
+eyeExam.exophthalmosValue,眼征.突眼度,Number,"突眼度测量值(眶缘至角膜顶点距离)。<br>单位: mm<br>**正常值**: <16mm(中国人), <18mm(白种人)",17
+eyeExam.eyelidRetraction,眼征.眼睑退缩,String,"上眼睑退缩。<br>**建议值**: `无`, `有`<br>**表现**: 眼睑缘在角膜上缘上方",有
+eyeExam.lidLag,眼征.眼睑迟落征,String,"眼睑迟落征(von Graefe征)。<br>**建议值**: `阴性`, `阳性`<br>**检查**: 向下看时上睑落后于眼球",阳性
+eyeExam.staringGaze,眼征.凝视征,String,"凝视征(Stellwag征)。<br>**建议值**: `阴性`, `阳性`<br>**表现**: 瞬目减少，凝视状",阳性
+eyeExam.diplopia,眼征.复视,String,"复视。<br>**建议值**: `无`, `有`<br>**原因**: 眼外肌受累",无
+eyeExam.visualAcuity,眼征.视力,String,"视力。<br>**建议值**: `正常`, `下降`<br>**严重眼病**: 视神经受压致视力下降",正常
+eyeExam.gravesOrbitopathy,眼征.Graves眼病分级,String,"Graves眼病(GO)严重程度(EUGOGO分级)。<br>**建议值**: `无GO`, `轻度GO`, `中-重度活动性GO`, `视力威胁性GO`",轻度GO
+eyeExam.casScore,眼征.CAS评分,Number,"临床活动性评分(Clinical Activity Score, 0-7分)。<br>**活动期**: ≥3分<br>**评估**: 疼痛、红肿、功能障碍等",2
+
+# 甲状腺功能检测
+tsh.value,TSH.数值,Number,"促甲状腺激素。<br>单位: mIU/L<br>**参考范围**: 0.27-4.2 mIU/L<br>**甲亢**: 通常<0.1 mIU/L",0.01
+tsh.referenceRange,TSH.参考范围,String,实验室参考范围,0.27-4.2 mIU/L
+tsh.suppressionLevel,TSH.抑制程度,String,"TSH抑制程度。<br>**建议值**: `正常`, `轻度抑制(0.1-0.4)`, `明显抑制(<0.1)`, `完全抑制(检测不出)`",完全抑制(检测不出)
+
+ft3.value,FT3.数值,Number,"游离三碘甲状腺原氨酸。<br>单位: pmol/L<br>**参考范围**: 3.1-6.8 pmol/L<br>**甲亢**: 升高",12.5
+ft3.referenceRange,FT3.参考范围,String,实验室参考范围,3.1-6.8 pmol/L
+ft3.elevationFold,FT3.升高倍数,Number,"FT3超过正常上限的倍数。<br>**临床意义**: >2倍为显著升高",1.8
+
+ft4.value,FT4.数值,Number,"游离甲状腺素。<br>单位: pmol/L<br>**参考范围**: 12-22 pmol/L<br>**甲亢**: 升高",35.6
+ft4.referenceRange,FT4.参考范围,String,实验室参考范围,12-22 pmol/L
+ft4.elevationFold,FT4.升高倍数,Number,"FT4超过正常上限的倍数。<br>**临床意义**: >2倍为显著升高",1.6
+
+tt3.value,TT3.总三碘甲状腺原氨酸,Number,"总T3(如检测)。<br>单位: nmol/L<br>**参考范围**: 1.3-3.1 nmol/L",4.8
+tt4.value,TT4.总甲状腺素,Number,"总T4(如检测)。<br>单位: nmol/L<br>**参考范围**: 66-181 nmol/L",256
+
+thyroidHormonePattern,甲状腺激素模式,String,"甲状腺激素异常模式。<br>**建议值**: `T3型甲亢(T3↑ T4正常)`, `T4型甲亢(T4↑ T3正常)`, `T3+T4型甲亢`, `亚临床甲亢(TSH↓ FT3/FT4正常)`",T3+T4型甲亢
+
+# 甲状腺自身抗体
+trab.value,TRAb.数值,Number,"TSH受体抗体(TRAb)。<br>单位: IU/L<br>**参考范围**: <1.75 IU/L<br>**Graves病**: >1.75，常>10",25.6
+trab.result,TRAb.定性结果,String,"TRAb定性结果。<br>**建议值**: `阴性`, `阳性`<br>**Graves病诊断**: 阳性是重要依据",阳性
+trab.interpretation,TRAb.解读,String,"TRAb临床意义。<br>**高滴度**: 提示Graves病，预测复发风险",高滴度阳性，支持Graves病诊断
+
+tpoab.value,TPOAb.数值,Number,"甲状腺过氧化物酶抗体。<br>单位: IU/mL<br>**参考范围**: <34 IU/mL<br>**临床意义**: 自身免疫性甲状腺病标志",156.8
+tpoab.result,TPOAb.定性结果,String,"TPOAb定性结果。<br>**建议值**: `阴性`, `阳性`",阳性
+tpoab.titer,TPOAb.抗体滴度,String,"抗体滴度。<br>**建议值**: `阴性`, `低滴度`, `中滴度`, `高滴度`",中滴度
+
+tgab.value,TgAb.数值,Number,"甲状腺球蛋白抗体。<br>单位: IU/mL<br>**参考范围**: <115 IU/mL",256.5
+tgab.result,TgAb.定性结果,String,"TgAb定性结果。<br>**建议值**: `阴性`, `阳性`",阳性
+tgab.titer,TgAb.抗体滴度,String,"抗体滴度。<br>**建议值**: `阴性`, `低滴度`, `中滴度`, `高滴度`",中滴度
+
+antibodyProfile,抗体谱,String,"抗体组合模式。<br>**Graves病**: TRAb(+) ± TPOAb(+) ± TgAb(+)<br>**桥本甲亢**: TPOAb(+) TgAb(+) TRAb(-)<br>**建议值**: `TRAb单阳`, `TRAb+TPOAb双阳`, `TRAb+TPOAb+TgAb三阳`, `TPOAb+TgAb(桥本)`, `全阴性`",TRAb+TPOAb+TgAb三阳
+
+# 甲状腺超声
+ultrasound.thyroidVolume,超声.甲状腺体积,Number,"甲状腺总体积。<br>单位: mL<br>**正常值**: 女性<18mL, 男性<25mL",35.6
+ultrasound.echogenicity,超声.回声,String,"甲状腺回声。<br>**建议值**: `正常回声`, `低回声`, `高回声`, `不均匀回声`<br>**Graves病**: 弥漫性低回声",弥漫性低回声
+ultrasound.bloodFlow,超声.血流,String,"血流情况。<br>**建议值**: `正常`, `血流丰富`, `血流显著增加(火海征)`<br>**Graves病特征**: 血流显著增加",血流显著增加(火海征)
+ultrasound.peakSystolicVelocity,超声.甲状腺上动脉PSV,Number,"甲状腺上动脉收缩期峰值流速。<br>单位: cm/s<br>**正常**: <40 cm/s<br>**Graves病**: 常>50-100 cm/s",85.6
+ultrasound.nodules,超声.结节,String,"甲状腺结节。<br>**建议值**: `无`, `单发结节`, `多发结节`, `自主功能结节`",无
+ultrasound.lymphNodes,超声.淋巴结,String,"颈部淋巴结。<br>**建议值**: `未见异常`, `反应性增大`, `可疑转移`",未见异常
+
+# 甲状腺摄碘率 (RAIU - Radioactive Iodine Uptake)
+raiu.test2h,摄碘率.2小时摄碘率,Number,"2小时摄碘率。<br>单位: %<br>**参考范围**: 5-15%<br>**Graves病**: 显著升高",45.6
+raiu.test24h,摄碘率.24小时摄碘率,Number,"24小时摄碘率。<br>单位: %<br>**参考范围**: 15-35%<br>**Graves病**: 常>35%，可达60-90%",68.5
+raiu.pattern,摄碘率.摄碘模式,String,"摄碘模式。<br>**建议值**: `正常摄碘`, `高摄碘(Graves病/毒性结节)`, `低摄碘(破坏性甲亢/碘甲亢)`<br>**鉴别诊断**: 区分Graves病和甲状腺炎",高摄碘(Graves病)
+
+# 甲状腺核素显像
+scan.pattern,核素显像.显像模式,String,"甲状腺核素显像模式。<br>**建议值**: `未做`, `弥漫性均匀摄取增高`, `弥漫性不均匀摄取`, `热结节`, `冷结节`<br>**Graves病**: 弥漫性均匀摄取增高",弥漫性均匀摄取增高
+scan.functionalNodule,核素显像.自主功能结节,String,"自主功能结节(热结节)。<br>**建议值**: `无`, `单发热结节`, `多发热结节`, `毒性多结节性甲状腺肿`",无
+
+# 病因诊断
+etiology,病因诊断,String,"甲亢病因。<br>**建议值**: `Graves病`, `毒性多结节性甲状腺肿`, `毒性腺瘤`, `桥本甲亢(Hashitoxicosis)`, `亚急性甲状腺炎`, `无痛性甲状腺炎`, `碘甲亢`, `药物性甲亢`, `垂体TSH瘤`, `HCG相关甲亢`, `其他`",Graves病
+etiologyConfidence,病因诊断置信度,String,"病因诊断的可信度。<br>**建议值**: `确诊`, `高度可能`, `可能`, `待明确`<br>**Graves病确诊**: TRAb(+) + 典型临床表现 + 甲功异常",确诊
+
+# Graves病特异性评估
+gravesDisease.clinicalScore,Graves病.临床评分,Number,"Graves病临床评分(如使用评分系统)。<br>**评估**: 甲状腺肿大、眼征、TRAb等综合评分",8
+gravesDisease.severity,Graves病.严重程度,String,"Graves病严重程度。<br>**建议值**: `轻度`, `中度`, `重度`, `甲亢危象`, `不适用`",中度
+gravesDisease.triggeringFactor,Graves病.诱发因素,String,"诱发因素。<br>**常见**: 精神创伤、感染、过度疲劳、碘摄入过多、产后",精神创伤
+
+# 并发症
+complications.atrialFibrillation,并发症.心房颤动,String,"心房颤动。<br>**建议值**: `无`, `阵发性`, `持续性`, `永久性`<br>**高危**: 老年、甲亢严重、病程长",无
+complications.heartFailure,并发症.心力衰竭,String,"甲亢性心脏病/心力衰竭。<br>**建议值**: `无`, `NYHA Ⅰ级`, `NYHA Ⅱ级`, `NYHA Ⅲ级`, `NYHA Ⅳ级`",无
+complications.osteoporosis,并发症.骨质疏松,String,"骨质疏松。<br>**建议值**: `无`, `骨量减少`, `骨质疏松`<br>**机制**: 甲状腺激素过多致骨转换加速",骨量减少
+complications.periodicParalysis,并发症.周期性麻痹,String,"甲亢性周期性麻痹。<br>**建议值**: `无`, `有`<br>**特点**: 低钾血症、肌无力，亚洲男性多见",无
+complications.thyroidStorm,并发症.甲亢危象,String,"甲亢危象风险/发生。<br>**建议值**: `无风险`, `有风险因素`, `发生中`<br>**诱因**: 感染、手术、碘剂、停药",无风险
+complications.liverDysfunction,并发症.肝功能异常,String,"肝功能异常。<br>**建议值**: `正常`, `轻度异常`, `中度异常`, `重度异常`<br>**原因**: 甲亢本身或抗甲状腺药物",轻度异常
+
+# 治疗方案
+treatment.strategy,治疗.治疗策略,String,"治疗策略选择。<br>**建议值**: `抗甲状腺药物(ATD)`, `放射性碘(RAI)治疗`, `手术治疗`, `观察随访`, `联合治疗`<br>**初治Graves病**: 多选ATD",抗甲状腺药物(ATD)
+treatment.atdRegimen,治疗.ATD方案,String,"抗甲状腺药物方案。<br>**建议值**: `甲巯咪唑(MMI)`, `丙硫氧嘧啶(PTU)`, `未治疗`<br>**首选**: MMI<br>**PTU适应证**: 妊娠早期、甲亢危象、MMI过敏",甲巯咪唑(MMI)
+treatment.atdDose,治疗.ATD剂量,String,"ATD起始剂量。<br>**MMI**: 10-30 mg/日<br>**PTU**: 150-450 mg/日",MMI 20 mg/日
+treatment.atdDuration,治疗.ATD疗程,Number,"已治疗时长。<br>单位: 月<br>**标准疗程**: 12-18个月",0
+treatment.betaBlocker,治疗.β受体阻滞剂,String,"β受体阻滞剂使用。<br>**建议值**: `未使用`, `普萘洛尔`, `美托洛尔`, `阿替洛尔`<br>**适应证**: 心率>90、心悸、震颤等",普萘洛尔
+treatment.betaBlockerDose,治疗.β受体阻滞剂剂量,String,β受体阻滞剂剂量,普萘洛尔 10mg tid
+
+treatment.responseToPreviousTreatment,治疗.既往治疗反应,String,"既往治疗反应(如非初治)。<br>**建议值**: `初治`, `ATD有效`, `ATD无效`, `ATD不耐受`, `RAI治疗后`, `术后复发`",初治
+treatment.adherence,治疗.依从性,String,"治疗依从性。<br>**建议值**: `良好`, `一般`, `差`, `不适用`",不适用
+treatment.adverseReactions,治疗.药物不良反应,String,"抗甲状腺药物不良反应。<br>**常见**: 皮疹、肝损伤、粒细胞减少、关节痛<br>**建议值**: `无`, `皮疹`, `肝损伤`, `粒细胞减少`, `其他`",无
+
+# 复发风险评估
+relapseRisk.trabLevel,复发风险.TRAb水平,String,"治疗后TRAb水平。<br>**建议值**: `未检测`, `阴转`, `持续阳性`, `不适用`<br>**复发预测**: 停药时TRAb阳性复发率高",未检测
+relapseRisk.goiterSize,复发风险.甲状腺大小,String,"治疗后甲状腺大小变化。<br>**建议值**: `明显缩小`, `轻度缩小`, `无变化`, `增大`, `不适用`<br>**复发预测**: 肿大持续者复发率高",不适用
+relapseRisk.overallRisk,复发风险.总体风险,String,"复发总体风险评估。<br>**建议值**: `低风险`, `中风险`, `高风险`, `不适用`<br>**高危因素**: TRAb高滴度、甲状腺显著肿大、FT3显著升高、男性、吸烟、年轻",不适用
+
+# 手术/RAI治疗相关
+surgery.indication,手术.手术指征,String,"手术指征(如考虑手术)。<br>**建议值**: `巨大甲状腺肿`, `压迫症状`, `可疑恶变`, `ATD/RAI治疗失败`, `患者意愿`, `不适用`",不适用
+surgery.risk,手术.手术风险,String,"手术风险评估。<br>**建议值**: `低风险`, `中风险`, `高风险`, `不适用`<br>**风险因素**: 年龄、心肺功能、甲亢控制情况",不适用
+
+rai.indication,RAI治疗.治疗指征,String,"RAI治疗指征(如考虑RAI)。<br>**建议值**: `ATD治疗失败/复发`, `ATD不耐受`, `毒性结节`, `患者意愿`, `不适用`",不适用
+rai.contraindication,RAI治疗.禁忌证,String,"RAI治疗禁忌证。<br>**建议值**: `无`, `妊娠`, `哺乳`, `活动性Graves眼病`, `甲状腺癌可疑`, `不适用`",不适用
+
+# 妊娠相关
+pregnancy.status,妊娠.妊娠状态,String,"妊娠状态(女性)。<br>**建议值**: `未孕`, `妊娠期`, `计划妊娠`, `产后`, `不适用`<br>**重要**: 妊娠期甲亢管理特殊",未孕
+pregnancy.trimester,妊娠.孕期,String,"孕期(如妊娠)。<br>**建议值**: `早期(<13周)`, `中期(13-27周)`, `晚期(≥28周)`, `不适用`<br>**ATD选择**: 早期用PTU，中晚期可换MMI",不适用
+pregnancy.fetalThyroidStatus,妊娠.胎儿甲状腺状态,String,"胎儿甲状腺状态(如妊娠)。<br>**建议值**: `正常`, `胎儿甲亢`, `胎儿甲减`, `未评估`, `不适用`<br>**监测**: 母体TRAb高滴度需监测胎儿",不适用
+
+# 实验室监测指标
+monitoring.wbc,监测.白细胞计数,Number,"白细胞计数。<br>单位: ×10⁹/L<br>**参考范围**: 3.5-9.5<br>**ATD副作用**: 粒细胞减少",6.8
+monitoring.neutrophil,监测.中性粒细胞,Number,"中性粒细胞绝对值。<br>单位: ×10⁹/L<br>**警戒**: <1.5需停药，<0.5为粒细胞缺乏症",4.2
+monitoring.alt,监测.ALT,Number,"谷丙转氨酶。<br>单位: U/L<br>**参考范围**: <40<br>**ATD副作用**: 肝损伤",58
+monitoring.ast,监测.AST,Number,"谷草转氨酶。<br>单位: U/L<br>**参考范围**: <40",45
+monitoring.tbil,监测.总胆红素,Number,"总胆红素。<br>单位: μmol/L<br>**参考范围**: 3.4-20.5",18.5
+
+# 随访计划
+followUp.interval,随访.随访间隔,String,"随访间隔建议。<br>**建议值**: `2周`, `4周`, `2-3月`, `6月`, `立即随访`<br>**初治**: 2-4周复查甲功和血常规、肝功",2-4周
+followUp.parameters,随访.监测指标,String,随访需监测的指标,甲状腺功能(TSH、FT3、FT4)、血常规、肝功能、TRAb
+followUp.targetTsh,随访.目标TSH,String,"治疗目标TSH范围。<br>**建议值**: `0.3-2.5 mIU/L(妊娠)`, `0.5-2.5 mIU/L(一般)`, `抑制TSH(分化型甲状腺癌)`",0.5-2.5 mIU/L
+followUp.targetFt4,随访.目标FT4,String,治疗目标FT4范围,正常范围内
+
+# 患者教育
+patientEducation.diseaseKnowledge,患者教育.疾病知识,String,是否已进行疾病知识教育,已告知甲亢病因、症状、治疗方案、预后
+patientEducation.medicationInstruction,患者教育.用药指导,String,是否已进行用药指导,已详细说明ATD用法、疗程、不良反应监测
+patientEducation.dietaryAdvice,患者教育.饮食建议,String,饮食建议,避免高碘食物(海带、紫菜、海鱼等)，戒烟
+patientEducation.warningSymptoms,患者教育.警示症状,String,需警惕的症状,发热、咽痛(粒细胞减少)、黄疸(肝损伤)、皮疹等需立即就诊
+
+# 特殊情况
+specialSituations.subclinicalHyperthyroidism,特殊情况.亚临床甲亢,String,"是否为亚临床甲亢。<br>**定义**: TSH↓ + FT3/FT4正常<br>**建议值**: `否`, `是`",否
+specialSituations.t3Toxicosis,特殊情况.T3型甲亢,String,"是否为T3型甲亢。<br>**定义**: FT3↑ + FT4正常<br>**建议值**: `否`, `是`",否
+specialSituations.elderlyPatient,特殊情况.老年甲亢,String,"老年甲亢(≥65岁)。<br>**建议值**: `否`, `是`<br>**特点**: 症状不典型，心血管并发症多",否
+specialSituations.apathetic,特殊情况.淡漠型甲亢,String,"淡漠型甲亢(老年多见)。<br>**建议值**: `否`, `是`<br>**特点**: 无典型症状，乏力、消瘦、抑郁为主",否
+
+# 综合评估
+overallSeverity,总体严重程度,String,"甲亢总体严重程度。<br>**建议值**: `轻度`, `中度`, `重度`, `危重(甲亢危象)`<br>**依据**: 症状、激素水平、并发症",中度
+prognosisAssessment,预后评估,String,"预后评估。<br>**建议值**: `良好`, `一般`, `需警惕`, `差`<br>**影响因素**: 病因、严重程度、并发症、治疗反应",良好
+clinicalRecommendation,临床建议,String,综合临床建议,确诊Graves病，建议开始ATD治疗(MMI 20mg/日) + β受体阻滞剂，避免高碘食物，2-4周复查甲功和血常规、肝功能
+
+# 报告信息
+reportDate,报告日期,String,报告日期,2025-08-16
+reportingPhysician,报告医师,String,报告医师,王医师
+reviewPhysician,审核医师,String,审核医师,李主任内分泌科
+urgentFlag,紧急标识,String,"是否紧急。<br>**建议值**: `否`, `是`<br>**紧急情况**: 甲亢危象、严重心律失常、粒细胞缺乏",否

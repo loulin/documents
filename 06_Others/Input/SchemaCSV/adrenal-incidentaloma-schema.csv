@@ -1,0 +1,109 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,肾上腺意外瘤评估日期,2025-10-01
+patientID,患者ID,String,患者唯一标识符,P123456
+discoveryContext,发现背景,String,"偶然发现的影像学检查类型。<br>**建议值**: `腹部CT`, `胸部CT`, `MRI`, `PET-CT`, `超声`",腹部CT
+discoveryReason,检查原因,String,"进行影像学检查的原因(必须非肾上腺疾病相关)。<br>**建议值**: `腹痛`, `外伤`, `肿瘤分期`, `体检`, `其他器官疾病`",腹痛
+patientAge,患者年龄,Number,"患者年龄。<br>单位: 岁<br>**流行病学**: <30岁<1%，>70岁7-10%",58
+knownMalignancy,已知恶性肿瘤病史,Boolean,是否有已知恶性肿瘤病史(影响转移瘤可能性),false
+malignancyType,恶性肿瘤类型,String,"原发恶性肿瘤类型。<br>**常见转移至肾上腺**: 肺癌(30-50%)、乳腺癌、黑色素瘤、肾癌<br>**建议值**: `无`, `肺癌`, `乳腺癌`, `黑色素瘤`, `肾癌`, `结肠癌`, `其他`",无
+familyHistory.endocrine,家族史.内分泌肿瘤,Boolean,"内分泌肿瘤家族史(MEN1、MEN2、VHL、NF1)",false
+familyHistory.syndrome,家族史.遗传综合征,String,"遗传综合征类型。<br>**建议值**: `无`, `MEN1`, `MEN2`, `VHL`, `NF1`, `Lynch综合征`, `Carney复合征`",无
+symptoms.cushingoid,症状.库欣综合征表现,Boolean,"是否有典型库欣综合征症状(满月脸、水牛背、紫纹、向心性肥胖)",false
+symptoms.hypertension,症状.高血压,Boolean,是否存在高血压,true
+symptoms.hypertensionType,症状.高血压类型,String,"高血压类型。<br>**建议值**: `无高血压`, `轻度高血压`, `难治性高血压`, `阵发性高血压(提示嗜铬细胞瘤)`",难治性高血压
+symptoms.hypokalemia,症状.低钾血症,Boolean,是否存在低钾血症(提示原醛症),false
+symptoms.pheochromocytomaTr iad,症状.嗜铬细胞瘤三联征,Boolean,"是否有嗜铬细胞瘤三联征(头痛、心悸、出汗)",false
+symptoms.virilization,症状.男性化,Boolean,女性是否出现男性化表现,false
+symptoms.feminization,症状.女性化,Boolean,男性是否出现女性化表现,false
+symptoms.weightGain,症状.体重增加,Boolean,近期是否有不明原因体重增加,false
+symptoms.osteoporosis,症状.骨质疏松,Boolean,是否有骨质疏松或骨折史,false
+symptoms.diabetes,症状.糖尿病,Boolean,是否合并糖尿病,true
+tumorCharacteristics.laterality,肿瘤特征.侧别,String,"肿瘤侧别。<br>**建议值**: `左侧`, `右侧`, `双侧(10-15%)`",右侧
+tumorCharacteristics.size,肿瘤特征.最大径,Number,"肿瘤最大径。<br>单位: cm<br>**诊断标准**: ≥1 cm<br>**恶性风险**: >4 cm风险↑10-25%",3.2
+tumorCharacteristics.bilateralLesions,肿瘤特征.双侧病变,Boolean,是否为双侧肾上腺病变(需鉴别BMAH、转移瘤、遗传综合征),false
+tumorCharacteristics.multipleLesions,肿瘤特征.多发病变,Boolean,同侧是否多发病变,false
+ctImaging.performed,CT影像.已完成,Boolean,是否完成肾上腺CT检查,true
+ctImaging.unenhancedHU,CT影像.平扫HU值,Number,"CT平扫密度(Hounsfield单位)。<br>**关键指标**: <10 HU=富脂质腺瘤(良性，<1%恶性)，10-20 HU=中等可疑(5-10%恶性)，>20 HU=高度可疑(20-30%恶性)",15
+ctImaging.huInterpretation,CT影像.HU值解读,String,"平扫HU值解读。<br>**建议值**: `<10 HU(富脂质腺瘤，良性)`, `10-20 HU(中等可疑)`, `>20 HU(高度可疑恶性/PHEO/转移瘤)`",10-20 HU(中等可疑)
+ctImaging.enhancedPeakHU,CT影像.增强峰值HU,Number,"增强扫描峰值HU(注射对比剂后60秒)。<br>单位: HU<br>**说明**: 仅HU≥10时需做增强扫描",85
+ctImaging.delayed10minHU,CT影像.延迟10分钟HU,Number,"延迟10-15分钟HU值。<br>单位: HU",45
+ctImaging.apw,CT影像.绝对廓清率APW,Number,"绝对廓清率(Absolute Percentage Washout)。<br>计算: [(峰值HU - 延迟HU) / (峰值HU - 平扫HU)] × 100%<br>**判读**: >60%=良性腺瘤(敏感性88%，特异性96%)，<60%=恶性可能↑",57
+ctImaging.rpw,CT影像.相对廓清率RPW,Number,"相对廓清率(Relative Percentage Washout)。<br>计算: [(峰值HU - 延迟HU) / 峰值HU] × 100%<br>**判读**: >40%=良性腺瘤",47
+ctImaging.washoutInterpretation,CT影像.廓清率解读,String,"廓清率解读。<br>**建议值**: `APW>60%或RPW>40%(良性腺瘤)`, `APW<60%(恶性可能↑，需进一步评估)`",APW<60%(恶性可能↑，需进一步评估)
+ctImaging.border,CT影像.边界,String,"肿瘤边界。<br>**建议值**: `清晰规则(良性)`, `不规则`, `模糊(提示恶性)`",清晰规则(良性)
+ctImaging.density,CT影像.密度均匀性,String,"肿瘤密度。<br>**建议值**: `均匀(良性)`, `不均匀`, `坏死区(提示恶性)`",均匀(良性)
+ctImaging.calcification,CT影像.钙化,Boolean,是否存在钙化(可见于腺瘤、恶性、出血),false
+ctImaging.hemorrhage,CT影像.出血征象,Boolean,是否有出血征象(高密度),false
+ctImaging.invasion,CT影像.周围侵犯,Boolean,是否侵犯周围组织或血管(提示恶性),false
+ctImaging.lymphNodes,CT影像.淋巴结肿大,Boolean,是否有肿大淋巴结(提示恶性),false
+mriImaging.performed,MRI影像.已完成,Boolean,是否完成MRI检查(CT禁忌或补充检查),false
+mriImaging.csi,MRI影像.化学位移成像,Boolean,是否完成化学位移成像(CSI),false
+mriImaging.sii,MRI影像.信号强度指数SII,Number,"信号强度指数。<br>计算: [(同相位SI - 反相位SI) / 同相位SI] × 100%<br>**判读**: >16.5%=富脂质腺瘤(良性)",未完成
+mriImaging.t2Signal,MRI影像.T2WI信号,String,"T2加权像信号强度。<br>**建议值**: `等信号`, `稍高信号`, `明显高信号('灯泡征'，提示嗜铬细胞瘤)`",未完成
+mriImaging.dwiSignal,MRI影像.DWI信号,String,"弥散加权成像信号。<br>**建议值**: `低信号`, `等信号`, `高信号(提示恶性)`",未完成
+mriImaging.adcValue,MRI影像.ADC值,Number,"表观弥散系数。<br>单位: ×10⁻³ mm²/s<br>**说明**: 低ADC值提示恶性",未完成
+petCtImaging.performed,PET-CT影像.已完成,Boolean,"是否完成18F-FDG PET-CT(适应证: 已知恶性肿瘤史或高度怀疑ACC)",false
+petCtImaging.suvMax,PET-CT影像.SUVmax,Number,"最大标准化摄取值。<br>**判读**: >3.4 + 患侧/健侧比值>1.5 → 恶性可能大",未完成
+petCtImaging.lesionToLiverRatio,PET-CT影像.病灶/肝脏比值,Number,"患侧SUV/健侧SUV比值。<br>**判读**: >1.5提示恶性",未完成
+petCtImaging.interpretation,PET-CT影像.解读,String,"PET-CT解读。<br>**建议值**: `低代谢(良性腺瘤)`, `高代谢(恶性可能)`, `未完成`",未完成
+imagingBasedMalignancyRisk,影像学恶性风险评估,String,"综合影像学恶性风险。<br>**建议值**: `低风险(<5%)`, `中风险(5-20%)`, `高风险(>20%)`",中风险(5-20%)
+hormonalScreening.dst1mg,激素筛查.1mg地塞米松抑制试验,Boolean,是否完成1mg DST(所有意外瘤必查),true
+hormonalScreening.dst1mgCortisol,激素筛查.1mg DST后皮质醇,Number,"1mg DST后次日晨8:00血清皮质醇。<br>单位: nmol/L<br>**判读**: <50=正常，50-138=可能SCS，>138=确诊自主分泌",65
+hormonalScreening.dst1mgInterpretation,激素筛查.1mg DST解读,String,"1mg DST结果解读。<br>**建议值**: `正常(<50 nmol/L)`, `可能SCS(50-138 nmol/L)`, `确诊自主分泌(>138 nmol/L)`",可能SCS(50-138 nmol/L)
+hormonalScreening.ufc,激素筛查.24h尿游离皮质醇,Number,"24小时尿游离皮质醇(UFC)。<br>单位: nmol/24h<br>**参考范围**: 55-248<br>**说明**: DST异常时补充检测",180
+hormonalScreening.midnightSalivaryCortisol,激素筛查.午夜唾液皮质醇,Number,"午夜(23:00-24:00)唾液皮质醇(2次平均)。<br>单位: nmol/L<br>**参考范围**: <9.3",未完成
+hormonalScreening.acth,激素筛查.ACTH,Number,"血浆促肾上腺皮质激素。<br>单位: pmol/L<br>**参考范围**: 2.2-17.6<br>**SCS**: 通常被抑制至<10",6.5
+hormonalScreening.scsClassification,激素筛查.SCS分类,String,"亚临床库欣综合征分类。<br>**建议值**: `无SCS`, `可能SCS(DST 50-138 + 至少1项异常)`, `明确SCS(DST>138 + ACTH抑制)`",可能SCS(DST 50-138 + 至少1项异常)
+hormonalScreening.pheoScreen,激素筛查.嗜铬细胞瘤筛查,Boolean,是否完成嗜铬细胞瘤筛查(所有患者必查),true
+hormonalScreening.plasmaMetanephrines,激素筛查.血浆游离甲氧基肾上腺素,String,"血浆游离甲氧基肾上腺素(首选)。<br>**建议值**: `正常`, `轻度升高(<3倍ULN)`, `明显升高(>3倍ULN，确诊PHEO)`",正常
+hormonalScreening.urineMetanephrines,激素筛查.24h尿甲氧基肾上腺素,String,"24小时尿甲氧基肾上腺素。<br>**建议值**: `正常`, `升高`",正常
+hormonalScreening.urineVMA,激素筛查.24h尿VMA,String,"24小时尿香草扁桃酸。<br>**建议值**: `正常`, `升高`",正常
+hormonalScreening.paScreen,激素筛查.原醛症筛查,Boolean,"是否完成原醛症筛查(仅高血压患者需要)",true
+hormonalScreening.arr,激素筛查.醛固酮肾素比值ARR,Number,"清晨血浆醛固酮/肾素比值。<br>**阳性标准**: 见原醛症章节",18
+hormonalScreening.paInterpretation,激素筛查.原醛症解读,String,"原醛症筛查结果。<br>**建议值**: `未筛查(无高血压)`, `阴性`, `阳性(需确诊试验)`",阴性
+hormonalScreening.sexHormoneScreen,激素筛查.性激素筛查,Boolean,"是否完成性激素筛查(仅男性化/女性化或肿瘤>4cm)",false
+hormonalScreening.testosterone,激素筛查.睾酮,Number,"血清睾酮。<br>单位: nmol/L",未完成
+hormonalScreening.dheas,激素筛查.DHEA-S,Number,"硫酸脱氢表雄酮。<br>单位: μmol/L<br>**说明**: 明显升高提示ACC",未完成
+hormonalScreening.estradiol,激素筛查.雌二醇,Number,"血清雌二醇。<br>单位: pmol/L",未完成
+functionalStatus,功能状态,String,"肿瘤功能状态。<br>**建议值**: `非功能性(85-92%)`, `亚临床库欣综合征(5-10%)`, `嗜铬细胞瘤(5-7%)`, `原发性醛固酮增多症(1-2%)`, `性激素分泌(<1%)`",亚临床库欣综合征(5-10%)
+pathologyType,病理类型推测,String,"基于影像和激素的病理类型推测。<br>**建议值**: `肾上腺皮质腺瘤(70-80%)`, `嗜铬细胞瘤(5-7%)`, `肾上腺皮质癌(5-8%)`, `转移瘤(2-5%)`, `髓样脂肪瘤(5-10%)`, `囊肿/出血(4-6%)`",肾上腺皮质腺瘤(70-80%)
+comorbidities.osteoporosisFracture,合并症.骨质疏松与骨折,Boolean,是否合并骨质疏松或骨折(SCS并发症),false
+comorbidities.difficultHypertension,合并症.难治性高血压,Boolean,是否为难治性高血压(SCS并发症),true
+comorbidities.difficultDiabetes,合并症.难控制糖尿病,Boolean,糖尿病是否难以控制(SCS并发症),true
+comorbidities.metabolicSyndrome,合并症.代谢综合征,Boolean,是否符合代谢综合征诊断,true
+surgicalIndication.absolute,手术指征.绝对指征,Boolean,"是否存在绝对手术指征(功能性肿瘤、明确恶性、>4cm)",false
+surgicalIndication.absoluteReason,手术指征.绝对指征原因,String,"绝对手术指征具体原因。<br>**建议值**: `无`, `嗜铬细胞瘤`, `原醛症腺瘤`, `明确库欣综合征`, `明确/高度怀疑ACC`, `肿瘤>4cm`",无
+surgicalIndication.relative,手术指征.相对指征,Boolean,"是否存在相对手术指征(SCS+并发症、3-4cm+不典型、年轻患者)",true
+surgicalIndication.relativeReason,手术指征.相对指征原因,String,"相对手术指征具体原因。<br>**建议值**: `无`, `SCS+骨质疏松/骨折`, `SCS+难治性高血压/糖尿病`, `SCS+肿瘤>3cm`, `3-4cm+影像不典型(HU>20)`, `年龄<40岁`, `随访期间增长>1cm/年`, `患者焦虑/强烈手术意愿`",SCS+难治性高血压/糖尿病
+surgeryRecommendation,手术建议,String,"手术建议。<br>**建议值**: `不推荐手术`, `可考虑手术(个体化评估)`, `建议手术`, `强烈推荐手术`",可考虑手术(个体化评估)
+surgeryType,手术方式,String,"推荐手术方式。<br>**建议值**: `腹腔镜肾上腺切除术(首选)`, `开放手术(肿瘤>6-8cm或侵犯)`, `未计划手术`",腹腔镜肾上腺切除术(首选)
+surgeryPerformed,手术已完成,Boolean,是否已完成手术,false
+surgeryDate,手术日期,String,手术日期,未完成
+postopPathology,术后病理,String,"术后病理诊断。<br>**建议值**: `肾上腺皮质腺瘤`, `嗜铬细胞瘤`, `肾上腺皮质癌`, `转移瘤`, `髓样脂肪瘤`, `囊肿`, `未手术`",未手术
+postopHormonalImprovement,术后激素改善,Boolean,术后激素水平是否改善,未评估
+postopComplicationImprovement,术后并发症改善,Boolean,"术后代谢并发症是否改善(血压、血糖、骨密度)",未评估
+followUp.required,随访.需要随访,Boolean,"是否需要随访(非功能性良性腺瘤<4cm需要)",true
+followUp.duration,随访.随访时长,String,"随访计划时长。<br>**建议值**: `2年(低风险<3cm+HU<10)`, `4年(标准方案)`, `5-10年(年轻患者<40岁)`, `终身(双侧意外瘤)`, `无需随访(手术切除或<1cm)`",4年(标准方案)
+followUp.imagingSchedule,随访.影像学随访计划,String,"影像学随访时间表。<br>**标准方案**: 6-12月、1-2年、4年无变化可停止<br>**建议值**: `6-12月复查CT/MRI`, `1-2年再次复查`, `4年无变化停止`, `已停止监测`",6-12月复查CT/MRI
+followUp.hormonalSchedule,随访.激素随访计划,String,"激素功能随访计划。<br>**基线正常**: 1年后再查，正常可停止<br>**基线SCS可能**: 年度检测，持续4年<br>**建议值**: `1年后复查`, `年度检测`, `已停止`, `无需随访`",年度检测
+followUp.stopCriteria,随访.停止随访标准,Boolean,"是否符合停止随访标准(肿瘤无增长<5mm/年、影像稳定、激素持续阴性、随访4年)",false
+followUp.needReassessment,随访.需重新评估,Boolean,"是否需重新评估(肿瘤增长>1cm、影像改变、新出现激素异常或症状)",false
+followUp.reassessmentReason,随访.重新评估原因,String,"需重新评估的原因。<br>**建议值**: `无`, `肿瘤增长>1cm`, `影像特征改变(密度↑、不均匀)`, `新出现激素过量症状`, `新发高血压/糖尿病/骨质疏松`",无
+specialSituations.bilateral,特殊情况.双侧病变,Boolean,是否为双侧肾上腺意外瘤(10-15%),false
+specialSituations.bilateralDifferential,特殊情况.双侧鉴别诊断,String,"双侧病变鉴别诊断。<br>**建议值**: `单侧`, `双侧大结节性增生BMAH`, `转移瘤`, `结核/真菌感染`, `遗传综合征(MEN1/VHL/NF1/SDHB)`, `需进一步评估`",单侧
+specialSituations.knownCancerPatient,特殊情况.已知恶性肿瘤患者,Boolean,是否为已知恶性肿瘤患者的肾上腺意外瘤,false
+specialSituations.metastasisProbability,特殊情况.转移瘤可能性,String,"转移瘤可能性评估。<br>**建议值**: `无已知恶性肿瘤`, `低(<20%)`, `中(20-50%)`, `高(>50%，双侧+HU>20+PET高代谢)`",无已知恶性肿瘤
+specialSituations.youngPatient,特殊情况.年轻患者,Boolean,是否为年轻患者<40岁(恶性比例↑10-15%),false
+specialSituations.cysticLesion,特殊情况.囊性病变,Boolean,是否为肾上腺囊肿(典型囊肿<4cm无需随访),false
+specialSituations.myelolipoma,特殊情况.髓样脂肪瘤,Boolean,"是否为髓样脂肪瘤(CT显示脂肪密度，良性，无需手术)",false
+geneticTesting.indicated,基因检测.指征,Boolean,"是否有基因检测指征(年轻患者/家族史/嗜铬细胞瘤/ACC)",false
+geneticTesting.performed,基因检测.已完成,Boolean,是否已完成基因检测,false
+geneticTesting.result,基因检测.结果,String,"基因检测结果。<br>**建议值**: `未完成`, `未发现致病突变`, `SDHB突变`, `VHL突变`, `MEN1突变`, `MEN2突变`, `NF1突变`, `其他`",未完成
+biopsy.indicated,活检.指征,Boolean,"是否有活检指征(怀疑转移瘤或感染，需排除嗜铬细胞瘤后)",false
+biopsy.performed,活检.已完成,Boolean,是否已完成CT引导下穿刺活检,false
+biopsy.result,活检.结果,String,"活检病理结果。<br>**建议值**: `未完成`, `良性腺瘤`, `ACC`, `转移瘤`, `炎症/感染`, `非诊断性标本`",未完成
+riskStratification,风险分层,String,"综合风险分层。<br>**建议值**: `低风险(非功能性+<3cm+HU<10)`, `中风险(可能SCS或3-4cm或HU 10-20)`, `高风险(功能性或>4cm或HU>20或恶性特征)`",中风险(可能SCS或3-4cm或HU 10-20)
+clinicalDecision,临床决策,String,"临床管理决策。<br>**建议值**: `随访4年(非功能性良性<4cm)`, `手术治疗`, `短期随访后决定`, `需进一步检查(MRI/PET)`, `需多学科讨论`",随访4年(非功能性良性<4cm)
+patientPreference,患者意愿,String,"患者治疗意愿。<br>**建议值**: `倾向保守随访`, `倾向手术治疗`, `焦虑要求手术`, `接受医生建议`",焦虑要求手术
+diagnosisImpression,诊断印象,String,综合诊断结果和临床印象,右侧肾上腺意外瘤(3.2cm)，CT平扫HU 15，增强廓清率APW 57%(中等可疑)，可能亚临床库欣综合征(1mg DST后皮质醇65 nmol/L)，合并难治性高血压和糖尿病，嗜铬细胞瘤和原醛症筛查阴性
+recommendation,建议,String,治疗建议和随访计划,1. 补充检查: 24h尿游离皮质醇、午夜唾液皮质醇(2次)确认SCS; 2. 补充MRI化学位移成像或考虑手术(SCS+难治性高血压/糖尿病符合相对手术指征); 3. 评估骨密度; 4. 如选择保守: 年度激素检测+影像随访(6-12月、1-2年、4年); 5. 多学科讨论(内分泌+外科); 6. 患者教育: SCS并发症风险和手术获益

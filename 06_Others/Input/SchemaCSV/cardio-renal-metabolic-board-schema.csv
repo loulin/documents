@@ -1,0 +1,24 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+meetingDate,会诊日期,String,进行心肾代谢多学科会诊的日期,2025-06-10
+patientId,患者编号,String,患者唯一编号,CRM-2025-033
+primaryIssues,主要问题概述,String,"需多学科讨论的核心问题",顽固高血压伴慢性肾病与心衰
+participatingSpecialties,参与专科列表,String,"参与的科室。示例: `心内科`, `肾内科`, `内分泌科`, `营养科`, `护理`",心内科/肾内科/内分泌科/营养科
+caseSummary,病例摘要,String,"主诉、现病史、既往史等关键摘要",T2DM15年，eGFR38mL/min，近3月心衰住院两次
+vitalStatusOverview,生命体征概览,String,"最近生命体征及稳定性",血压160/92 mmHg，体重84kg，心率86次/分
+laboratoryHighlights,关键实验室指标,String,"与会诊相关的实验室要点",HbA1c 7.8%，eGFR 38，NT-proBNP 2200 pg/mL
+imagingHighlights,影像学要点,String,"近期影像关键结论",心脏彩超LVEF 38%，肾动脉CTA无狭窄
+riskStratification,风险分层,String,"总体风险评估。<br>**建议值**: `低`, `中`, `高`, `极高`",高
+medicationReview,药物评估,String,"现用药物及调整建议",ACEI剂量不足，SGLT2i建议继续，考虑ARBs
+heartFailureManagementPlan,心衰管理方案,String,"会诊对心衰处理的结论",推荐加用ARNI并优化利尿策略
+renalProtectionPlan,肾脏保护方案,String,"CKD管理建议",建议增加ACEI剂量并评估非甾体用药
+bloodPressureTarget,血压目标,String,"多学科一致的血压控制目标。<br>单位: mmHg",<130/80
+lipidManagementPlan,血脂管理方案,String,"调脂策略与目标",LDL-C目标<1.4 mmol/L，建议加用PCSK9i
+volumeStatusAssessment,容量状态评估,String,"体液管理意见",轻度容量负荷，建议超滤评估
+nutritionIntervention,营养干预计划,String,"营养科意见",建议优质蛋白0.8g/kg，限制钠摄入<2g/d
+physicalActivityRecommendation,运动建议,String,"运动处方与注意事项",低强度步行30分钟/日，避开症状期
+careCoordinationTasks,协同事项,String,"需跨团队执行的任务列表",安排心肾联合门诊复诊
+patientEducationItems,患者教育要点,String,"需向患者/家属强调的核心信息",监测血压，识别心衰加重信号
+followUpLeader,随访负责人,String,"指定负责推进计划的团队成员",肾内科主任医师
+followUpTimeline,随访时间轴,String,"计划复诊节点及检查安排",2周后心内科复诊，1月后复查eGFR
+decisionSummary,决策总结,String,"会诊形成的最终决策简述",达成强化心肾协同管理方案
+recommendation,综合建议,String,"整体建议",按计划调整药物并2周内复评心功能

@@ -1,0 +1,70 @@
+fieldKey,fieldName,fieldType,fieldDescription,exampleValue
+screeningMethod,筛查方法,String,"结直肠癌筛查方法。<br>**建议值**: `粪便免疫化学试验(FIT)`, `愈创木脂粪便隐血试验(gFOBT)`, `多靶点粪便FIT-DNA(mt-sDNA)`, `结肠镜检查`, `乙状结肠镜检查`, `CT结肠成像(虚拟肠镜)`, `问卷+FIT初筛(中国模式)`<br>**指南推荐**: 平均风险人群FIT年度筛查或结肠镜10年筛查",粪便免疫化学试验(FIT)
+patientAge,患者年龄,Number,"患者年龄,单位岁。<br>**筛查起始年龄**: 45岁(USPSTF 2021更新,原为50岁)<br>**筛查终止年龄**: 75岁(76-85岁个体化决策,>85岁不推荐)<br>**中国指南**: 50-75岁高危人群筛查",52
+riskLevel,风险等级,String,"结直肠癌风险等级。<br>**建议值**: `平均风险`, `高风险(家族史)`, `极高风险(遗传综合征)`, `炎症性肠病(IBD)`<br>**平均风险**: 无家族史、无症状、无IBD<br>**高风险**: 一级亲属患CRC或进展期腺瘤、个人腺瘤史<br>**极高风险**: Lynch综合征、FAP、HNPCC等",平均风险
+screeningHistory,既往筛查史,String,"既往结直肠癌筛查历史。<br>**建议值**: `首次筛查`, `既往筛查阴性`, `既往发现腺瘤已切除`, `既往发现高危腺瘤`, `既往CRC治疗后随访`<br>**临床意义**: 筛查史影响随访策略",既往筛查阴性
+lastColonoscopyDate,上次肠镜日期,String,"上次结肠镜检查日期,格式YYYY-MM-DD。<br>**筛查间隔**:<br>- 阴性结肠镜: 10年<br>- 低危腺瘤(1-2个<10mm管状腺瘤): 5-10年<br>- 高危腺瘤(≥3个或≥10mm或绒毛/高级别异型增生): 3年",2015-06-20
+familyHistory.crc,家族史.结直肠癌,String,"一级亲属结直肠癌家族史。<br>**建议值**: `无家族史`, `1个一级亲属≥60岁诊断`, `1个一级亲属<60岁诊断(高危)`, `≥2个一级亲属任何年龄(高危)`<br>**临床意义**: 一级亲属<60岁或≥2个亲属患CRC → 筛查提前至40岁或较最小诊断年龄提前10年",无家族史
+familyHistory.lynch,家族史.Lynch综合征,Boolean,"家族中是否有Lynch综合征(遗传性非息肉病性结直肠癌, HNPCC)。<br>**特征**: MSH2/MLH1/MSH6/PMS2/EPCAM基因突变<br>**CRC风险**: 终生风险40-80%<br>**筛查策略**: 20-25岁开始,每1-2年肠镜",false
+familyHistory.fap,家族史.家族性腺瘤性息肉病,Boolean,"家族中是否有家族性腺瘤性息肉病(FAP)。<br>**特征**: APC基因突变,结肠数百至数千息肉<br>**CRC风险**: 几乎100%进展为癌(30-40岁)<br>**筛查策略**: 10-15岁开始年度肠镜,通常需预防性结肠切除",false
+ibd.history,炎症性肠病.病史,String,"炎症性肠病病史。<br>**建议值**: `无IBD`, `溃疡性结肠炎(UC)`, `克罗恩病(CD)`<br>**CRC风险**: 病程>8年风险显著增加,累积风险8年2%、20年8%、30年18%<br>**筛查策略**: 病程8年后开始每1-3年监测肠镜",无IBD
+ibd.duration,炎症性肠病.病程,Number,"炎症性肠病病程,单位年。<br>**关键阈值**: ≥8年开始结肠癌监测<br>**风险分层**: 病程越长风险越高",0
+ibd.extent,炎症性肠病.病变范围,String,"炎症性肠病累及范围。<br>**建议值**: `直肠炎(最低风险)`, `左半结肠炎`, `广泛性结肠炎(最高风险)`<br>**临床意义**: 广泛性结肠炎CRC风险是直肠炎的2-3倍",
+symptoms.rectalBleeding,症状.便血,String,"便血情况。<br>**建议值**: `无`, `鲜血便(提示下消化道出血)`, `黑便(提示上消化道出血)`, `大便潜血阳性`, `持续性便血`<br>**临床意义**: 有症状者不适合筛查,应直接诊断性肠镜",无
+symptoms.bowelHabitChange,症状.排便习惯改变,String,"排便习惯改变。<br>**建议值**: `无`, `便秘`, `腹泻`, `便秘与腹泻交替`, `大便性状改变(变细)`<br>**临床意义**: 持续性改变提示肿瘤可能,需诊断性评估",无
+symptoms.abdominalPain,症状.腹痛,String,"腹痛情况。<br>**建议值**: `无`, `轻微腹部不适`, `持续性腹痛`, `腹部绞痛`, `伴腹胀`<br>**临床意义**: 症状性患者需诊断性肠镜而非筛查",无
+symptoms.unexplainedWeightLoss,症状.不明原因体重下降,Boolean,"近期不明原因体重下降(>5% in 6个月)。<br>**临床意义**: 是结直肠癌的报警症状,需立即评估",false
+symptoms.ironDeficiencyAnemia,症状.缺铁性贫血,Boolean,"缺铁性贫血。<br>**临床意义**: 不明原因缺铁性贫血,尤其男性和绝经后女性,需排除消化道恶性肿瘤",false
+fit.performed,FIT.已检测,Boolean,"是否进行了粪便免疫化学试验(FIT)。<br>**筛查推荐**: 年度FIT是平均风险人群的一线筛查方案<br>**优点**: 无创、简便、成本低、无饮食限制",true
+fit.testType,FIT.检测类型,String,"FIT检测类型。<br>**建议值**: `定性FIT(阳性/阴性)`, `定量FIT(ng Hb/mL或μg Hb/g粪便)`<br>**临床意义**: 定量FIT可设置不同阈值平衡敏感性和特异性",定量FIT
+fit.threshold,FIT.阳性阈值,Number,"定量FIT的阳性判断阈值,单位μg Hb/g粪便或ng/mL。<br>**常用阈值**: 10-20 μg Hb/g(高敏感性)、50-100 μg Hb/g(高特异性)<br>**USPSTF建议**: 推荐阈值<20 μg Hb/g<br>**临床意义**: 阈值越低敏感性越高但假阳性率也越高",20
+fit.result,FIT.结果,String,"FIT检测结果。<br>**建议值**: `阴性`, `阳性`<br>**临床意义**: FIT阳性预测值(PPV) - 癌症约5-10%,进展期腺瘤约20-30%",阴性
+fit.quantitativeValue,FIT.定量数值,Number,"定量FIT的具体数值,单位μg Hb/g粪便。<br>**参考范围**: <阈值为阴性<br>**风险分层**: 数值越高,进展期肿瘤风险越高(>100 μg/g癌症风险显著增加)",5
+fit.interpretation,FIT.结果解读,String,"FIT结果解读和临床意义。<br>**阴性**: CRC敏感性约74-80%,进展期腺瘤敏感性约20-30%,阴性预测值>99%<br>**阳性**: 需结肠镜确诊,阳性者中约5-10%为癌症,20-30%为进展期腺瘤<br>**假阳性因素**: 痔疮、上消化道出血、NSAIDs、抗凝药",阴性，建议1年后重复FIT筛查
+fobt.performed,gFOBT.已检测,Boolean,"是否进行了愈创木脂粪便隐血试验(gFOBT)。<br>**临床意义**: 传统筛查方法,现推荐FIT替代(敏感性和特异性更优)",false
+fobt.result,gFOBT.结果,String,"gFOBT检测结果。<br>**建议值**: `阴性`, `阳性`, `弱阳性`<br>**临床意义**: 敏感性低于FIT(约50-75%),需连续3次标本",
+fobt.dietary,gFOBT.饮食限制,Boolean,"检测前是否遵循饮食限制。<br>**限制**: 避免红肉、某些水果蔬菜(过氧化物酶)、维生素C(假阴性)<br>**临床意义**: 未遵循饮食限制可能导致假阳性/假阴性,FIT无此限制",
+mtsDna.performed,多靶点粪便DNA.已检测,Boolean,"是否进行多靶点粪便FIT-DNA检测(mt-sDNA, 如Cologuard)。<br>**检测内容**: FIT + KRAS突变 + NDRG4/BMP3甲基化 + β-actin<br>**敏感性**: 癌症92%, 进展期腺瘤42%<br>**筛查间隔**: 3年",false
+mtsDna.result,多靶点粪便DNA.结果,String,"mt-sDNA检测结果。<br>**建议值**: `阴性`, `阳性`<br>**临床意义**: 敏感性高于单独FIT,但特异性稍低(假阳性率约13%),成本较高",
+mtsDna.fitComponent,多靶点粪便DNA.FIT成分,String,"mt-sDNA中FIT成分结果。<br>**建议值**: `阴性`, `阳性`<br>**临床意义**: 帮助区分出血来源",
+mtsDna.dnaMutations,多靶点粪便DNA.DNA突变标志物,String,"检测到的DNA异常。<br>**检测标志物**: KRAS突变、NDRG4甲基化、BMP3甲基化<br>**临床意义**: DNA标志物阳性提示肿瘤细胞脱落",
+colonoscopy.performed,结肠镜.已检查,Boolean,"是否进行了结肠镜检查。<br>**金标准**: 结肠镜是诊断和筛查的金标准<br>**筛查间隔**: 阴性10年,有腺瘤者3-10年",false
+colonoscopy.indication,结肠镜.检查指征,String,"结肠镜检查指征。<br>**建议值**: `筛查(无症状平均风险)`, `FIT阳性随访`, `高危人群监测`, `诊断性检查(有症状)`, `腺瘤术后监测`, `IBD监测`, `家族史监测`<br>**临床意义**: 不同指征影响检查间隔和管理",
+colonoscopy.bowelPrep,结肠镜.肠道准备质量,String,"肠道准备质量(Boston Bowel Preparation Scale)。<br>**建议值**: `优秀(充分,BBPS≥7)`, `良好(足够,BBPS 5-6)`, `尚可(BBPS 3-4)`, `差(不充分,BBPS<3,需重复检查)`<br>**临床意义**: 肠道准备差会降低腺瘤检出率(ADR)15-20%",
+colonoscopy.cecalIntubation,结肠镜.到达盲肠,Boolean,"是否成功到达盲肠(完整检查标志)。<br>**质量指标**: 盲肠到达率应>95%<br>**临床意义**: 未到盲肠的检查不完整,可能遗漏近端病变",
+colonoscopy.withdrawalTime,结肠镜.退镜时间,Number,"退镜检查时间,单位分钟。<br>**质量指标**: ≥6分钟(平均风险筛查)或≥9分钟(高质量标准)<br>**临床意义**: 退镜时间越长,腺瘤检出率越高",
+colonoscopy.adenomaDetectionRate,结肠镜.腺瘤检出率,String,"内镜医师的腺瘤检出率(ADR)。<br>**质量指标**: 男性≥30%, 女性≥20% (≥50岁筛查人群)<br>**临床意义**: ADR是结肠镜质量最重要指标,与间期癌发生率负相关",
+findings.polyps,发现.息肉,Boolean,"是否发现结肠息肉。<br>**患病率**: 筛查肠镜息肉检出率约25-50%<br>**临床意义**: 大多数CRC由腺瘤性息肉进展而来(腺瘤-癌序列)",false
+findings.polypCount,发现.息肉数量,Number,"检出的息肉总数量。<br>**风险分层**:<br>- 1-2个小腺瘤: 低危<br>- ≥3个腺瘤: 高危<br>- ≥10个腺瘤: 考虑锯齿状息肉病综合征或FAP",0
+findings.largestPolypSize,发现.最大息肉大小,Number,"最大息肉的大小,单位mm。<br>**关键阈值**:<br>- <10mm: 低危(除非绒毛成分/高级别异型增生)<br>- ≥10mm: 高危(进展期腺瘤)<br>**临床意义**: 大小是腺瘤恶变风险的主要预测因素",0
+findings.polypHistology,发现.息肉病理类型,String,"息肉的病理类型(活检或切除后)。<br>**建议值**: `管状腺瘤(Tubular adenoma,最常见75-80%)`, `管状绒毛状腺瘤(Tubulovillous,10-25%)`, `绒毛状腺瘤(Villous,5%,最高风险)`, `锯齿状病变(Serrated polyp)`, `增生性息肉(Hyperplastic,无癌变风险)`, `炎性息肉`<br>**恶变风险**: 绒毛状>管状绒毛状>管状",
+findings.dysplasiaGrade,发现.异型增生级别,String,"腺瘤异型增生(上皮内瘤变)级别。<br>**建议值**: `低级别异型增生(Low-grade dysplasia)`, `高级别异型增生(High-grade dysplasia)`<br>**临床意义**: 高级别异型增生是进展期腺瘤标准之一,3年随访",
+findings.advancedAdenoma,发现.进展期腺瘤,Boolean,"是否为进展期腺瘤(Advanced Adenoma)。<br>**定义**: 满足以下任一条件:<br>- ≥10mm<br>- 绒毛状成分≥25%<br>- 高级别异型增生<br>**临床意义**: 进展期腺瘤进展为CRC风险高,需3年随访肠镜",false
+findings.serratedPolyp,发现.锯齿状病变,String,"锯齿状病变类型。<br>**建议值**: `无`, `增生性息肉(HP,<10mm直肠/乙状结肠,低风险)`, `无蒂锯齿状腺瘤/息肉(SSA/P,癌变风险)`, `传统锯齿状腺瘤(TSA,癌变风险)`<br>**临床意义**: SSA/P和TSA是CRC替代通路(锯齿状通路),易漏诊",无
+findings.serratedPolypSize,发现.锯齿状病变大小,Number,"锯齿状病变最大直径,单位mm。<br>**关键阈值**: ≥10mm的近端SSA/P定义为进展期锯齿状病变,3年随访",0
+findings.cancer,发现.结直肠癌,Boolean,"是否发现结直肠癌。<br>**筛查检出率**: 约0.1-0.3%<br>**临床意义**: 筛查检出的CRC通常为早期,预后较症状性发现好",false
+findings.cancerLocation,发现.癌肿位置,String,"结直肠癌位置。<br>**建议值**: `盲肠`, `升结肠`, `横结肠`, `降结肠`, `乙状结肠`, `直肠`<br>**流行病学**: 近端结肠癌(右半)比例上升趋势",
+findings.cancerStaging,发现.癌肿临床分期,String,"结直肠癌临床分期(初步评估)。<br>**分期系统**: TNM分期或Dukes分期<br>**示例**: `局限于肠壁(T1-T2)`, `侵犯浆膜(T3-T4)`, `淋巴结转移可疑`, `远处转移可疑`<br>**临床意义**: 分期决定治疗方案",
+findings.inflammatoryChanges,发现.炎症性改变,String,"肠道炎症性改变。<br>**建议值**: `无`, `轻度非特异性炎症`, `IBD活动期表现`, `憩室炎`, `缺血性肠炎`<br>**临床意义**: 炎症性改变可能影响筛查结果判读",无
+polypectomy.performed,息肉切除.已切除,Boolean,"是否进行了息肉切除术。<br>**标准做法**: 筛查肠镜中应切除所有可疑息肉并送病理<br>**临床意义**: 息肉切除可预防CRC(阻断腺瘤-癌序列)",false
+polypectomy.technique,息肉切除.切除方式,String,"息肉切除技术。<br>**建议值**: `冷钳活检(<5mm)`, `冷圈套切除(<10mm)`, `热圈套切除(≥10mm)`, `EMR内镜黏膜切除术(大息肉)`, `ESD内镜黏膜下剥离术(巨大息肉)`<br>**临床意义**: 不同大小息肉需不同切除技术",
+polypectomy.completeResection,息肉切除.完整切除,Boolean,"息肉是否完整切除(R0切除)。<br>**评估方法**: 内镜下判断+病理切缘<br>**临床意义**: 不完整切除复发率高,需短期随访肠镜",
+polypectomy.complications,息肉切除.并发症,String,"息肉切除术并发症。<br>**建议值**: `无`, `即时出血(已处理)`, `延迟出血`, `穿孔`, `息肉综合征(腹痛发热)`<br>**发生率**: 总并发症率约0.5-2%,穿孔<0.1%",无
+sigmoidoscopy.performed,乙状结肠镜.已检查,Boolean,"是否进行了软式乙状结肠镜检查。<br>**筛查间隔**: 每5年(可联合年度FIT)<br>**优点**: 比全结肠镜简便,无需镇静,肠道准备简单<br>**缺点**: 仅检查远端结肠(约60cm),遗漏近端病变",false
+sigmoidoscopy.findings,乙状结肠镜.发现,String,"乙状结肠镜检查发现。<br>**管理**: 发现任何腺瘤或进展期病变应转诊全结肠镜检查<br>**临床意义**: 远端腺瘤提示近端同步病变风险增加",
+ctColonography.performed,CT结肠成像.已检查,Boolean,"是否进行CT结肠成像(虚拟肠镜,CTC)。<br>**筛查间隔**: 每5年<br>**优点**: 无创,无镇静,可评估肠外病变<br>**缺点**: 辐射暴露,不能活检/切除息肉,对<6mm息肉敏感性低",false
+ctColonography.findings,CT结肠成像.发现,String,"CTC检查发现。<br>**报告标准**: C-RADS分级(0-4)<br>**管理**: C-RADS 3(6-9mm病变)或C-RADS 4(≥10mm病变)需结肠镜确认",
+riskQuestionnaire.performed,风险问卷.已评估,Boolean,"是否进行结直肠癌风险问卷评估(中国筛查模式)。<br>**中国指南**: 推荐问卷+FIT初筛识别高危人群,高危者转诊肠镜<br>**内容**: 年龄、症状、家族史、既往病史等",false
+riskQuestionnaire.score,风险问卷.评分,Number,"风险问卷总分。<br>**高危定义**: 依据具体问卷评分系统(如亚太问卷APCS、中国问卷)<br>**临床意义**: 高分者推荐肠镜,中低分者FIT筛查",0
+riskQuestionnaire.riskCategory,风险问卷.风险分类,String,"基于问卷的风险分类。<br>**建议值**: `低危`, `中危`, `高危`<br>**管理**: 高危 → 肠镜;中低危 → FIT年度筛查",
+surveillance.indication,监测指征,String,"需要肠镜监测的指征。<br>**建议值**: `无需监测(筛查阴性)`, `腺瘤术后监测`, `CRC术后监测`, `IBD监测`, `家族史监测`, `Lynch综合征监测`<br>**临床意义**: 不同指征监测间隔不同",无需监测(筛查阴性)
+surveillance.nextInterval,监测间隔,String,"下次肠镜检查推荐间隔(2020 USMSTF指南)。<br>**基于发现的间隔**:<br>- 阴性或增生性息肉: 10年<br>- 1-2个<10mm管状腺瘤(低级别): 7-10年<br>- 3-4个<10mm腺瘤: 3-5年<br>- 5-10个腺瘤或≥10mm或绒毛/高级别: 3年<br>- >10个腺瘤: 1年(疑遗传综合征)<br>- 进展期锯齿状病变: 3年<br>**CRC术后**: 1年,后续依病理和既往发现",10年
+management.recommendation,管理建议,String,"综合筛查管理建议。<br>**示例**:<br>- FIT阴性: 1年后重复FIT<br>- FIT阳性: 转诊结肠镜检查<br>- 肠镜阴性: 10年后重复筛查<br>- 进展期腺瘤: 3年肠镜监测<br>- 发现癌症: 转诊多学科肿瘤团队(MDT)",FIT阴性，1年后重复FIT筛查
+management.urgency,管理紧急程度,String,"处理的紧急程度。<br>**建议值**: `常规(年度或多年筛查)`, `尽快安排(FIT阳性,3个月内肠镜)`, `紧急(报警症状,1个月内肠镜)`, `急诊(急性出血、梗阻、穿孔)`<br>**临床意义**: FIT阳性应3-6个月内完成肠镜",常规(年度筛查)
+prevention.lifestyle,预防建议.生活方式,String,"降低结直肠癌风险的生活方式建议。<br>**循证建议**:<br>- 避免吸烟(RR 1.2-1.5)<br>- 限制酒精(<2杯/天)<br>- 控制体重(肥胖RR 1.3-1.5)<br>- 增加体力活动(运动降低25%风险)<br>- 高纤维饮食,减少红肉/加工肉<br>**药物**: 阿司匹林长期使用可降低20-30%风险(但有出血风险)",建议健康饮食、规律运动、控制体重、戒烟限酒
+prevention.aspirin,预防建议.阿司匹林,String,"阿司匹林化学预防建议。<br>**USPSTF 2022**: 50-59岁、10年心血管风险≥10%、预期寿命≥10年、愿意服用10年、无出血风险者,可考虑低剂量阿司匹林(75-100mg/天)用于心血管和CRC一级预防<br>**获益**: 降低CRC风险约30-40%<br>**风险**: 出血风险增加",不推荐仅为CRC预防使用阿司匹林(需综合心血管获益考虑)
+reportSummary.overallInterpretation,报告总结.综合解读,String,"筛查结果综合解读摘要。<br>**应包含**: 筛查方法、主要发现、风险评估、管理建议<br>**示例**: 'FIT阴性,无症状,平均风险,建议1年后重复FIT筛查或考虑10年一次结肠镜筛查'",FIT阴性，平均风险，建议1年后重复FIT筛查
+reportSummary.keyRecommendation,报告总结.关键建议,String,"最关键的临床建议。<br>**示例**:<br>- '1年后重复FIT筛查'<br>- '需尽快(3个月内)转诊消化内科行结肠镜检查'<br>- '肠镜发现腺瘤已切除,建议3年后复查肠镜'",建议1年后重复FIT筛查
+qualityControl.fitCompliance,质控.FIT依从性,String,"FIT检测依从性相关因素。<br>**影响因素**: 标本采集方法、保存条件、运输时间<br>**质控要点**: 室温保存不超过7天,避免高温,单次采样(不需连续3天)",患者正确采集标本并及时送检
+qualityControl.colonoscopyQuality,质控.肠镜质量指标,String,"结肠镜检查质量指标。<br>**关键指标**:<br>- 腺瘤检出率(ADR): 男≥30%,女≥20%<br>- 盲肠到达率: ≥95%<br>- 退镜时间: ≥6分钟<br>- 肠道准备充分率: ≥85%<br>**临床意义**: 高质量肠镜降低间期癌发生率",
+notes.additionalInfo,备注.补充信息,String,"其他临床相关补充信息。<br>**示例**: '患者正在服用抗凝药物华法林'、'患者因焦虑拒绝肠镜,选择FIT筛查'等",

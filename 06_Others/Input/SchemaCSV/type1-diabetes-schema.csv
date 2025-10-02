@@ -1,0 +1,174 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+diagnosisDate,诊断日期,String,首次诊断1型糖尿病的日期,2020-03-15
+onsetAge,发病年龄,Number,"发病年龄。<br>单位: 岁<br>**典型**: <30岁，尤其儿童青少年<br>**LADA**: 成人缓慢起病",14
+diabetesDuration,糖尿病病程,Number,"糖尿病病程。<br>单位: 年",5.5
+currentAge,当前年龄,Number,"患者当前年龄。<br>单位: 岁",19.5
+
+# 临床表现
+presentation.onset,临床表现.起病方式,String,"起病方式。<br>**建议值**: `急性起病`, `亚急性起病`, `隐匿起病(LADA)`, `DKA首发`<br>**典型1型**: 急性起病",急性起病
+presentation.classicSymptoms,临床表现.三多一少,String,"经典三多一少症状。<br>**建议值**: `无`, `轻度`, `典型(多饮多尿多食+体重下降)`, `不典型`",典型(多饮多尿多食+体重下降)
+presentation.weightLoss,临床表现.体重下降,Number,"诊断前体重下降。<br>单位: kg<br>**1型**: 常显著体重下降",12
+presentation.dka,临床表现.DKA,String,"是否以DKA起病。<br>**建议值**: `否`, `是`<br>**1型**: 20-40%以DKA起病",否
+presentation.symptomDuration,临床表现.症状持续时间,Number,"症状持续时间(发病到确诊)。<br>单位: 周<br>**1型**: 常数周至数月",8
+
+# 诊断时血糖
+diagnosisGlucose.fasting,诊断时血糖.空腹血糖,Number,"诊断时空腹血糖。<br>单位: mmol/L",18.5
+diagnosisGlucose.random,诊断时血糖.随机血糖,Number,"诊断时随机血糖。<br>单位: mmol/L",25.6
+diagnosisGlucose.hba1c,诊断时血糖.HbA1c,Number,"诊断时糖化血红蛋白。<br>单位: %<br>**1型**: 常显著升高",12.5
+diagnosisGlucose.oralGlucose2h,诊断时血糖.OGTT 2小时血糖,Number,"OGTT 2小时血糖(如做)。<br>单位: mmol/L",未做
+
+# 当前血糖控制
+currentGlucose.fasting,当前血糖.空腹血糖,Number,"当前空腹血糖。<br>单位: mmol/L<br>**目标**: 4.4-7.0 mmol/L",6.8
+currentGlucose.postprandial2h,当前血糖.餐后2小时血糖,Number,"餐后2小时血糖。<br>单位: mmol/L<br>**目标**: <10.0 mmol/L",9.2
+currentGlucose.hba1c,当前血糖.HbA1c,Number,"当前糖化血红蛋白。<br>单位: %<br>**目标**: <7.0% (一般成人), <7.5% (儿童/青少年)",7.2
+currentGlucose.controlStatus,当前血糖.控制状态,String,"血糖控制状态。<br>**建议值**: `优良(<7%)`, `良好(7-8%)`, `尚可(8-9%)`, `差(≥9%)`",良好(7-8%)
+
+# CGM数据 (连续葡萄糖监测)
+cgm.usage,CGM.使用情况,String,"CGM使用情况。<br>**建议值**: `未使用`, `偶尔使用`, `规律使用`, `实时CGM`, `扫描式CGM(瞬感)`<br>**推荐**: 1型糖尿病推荐使用CGM",规律使用
+cgm.tir,CGM.目标范围内时间,Number,"TIR (Time in Range, 3.9-10.0 mmol/L)。<br>单位: %<br>**目标**: >70%",68
+cgm.tbr,CGM.低血糖时间,Number,"TBR (Time Below Range, <3.9 mmol/L)。<br>单位: %<br>**目标**: <4%",5
+cgm.tar,CGM.高血糖时间,Number,"TAR (Time Above Range, >10.0 mmol/L)。<br>单位: %<br>**目标**: <25%",27
+cgm.cv,CGM.血糖变异系数,Number,"CV (Coefficient of Variation)。<br>单位: %<br>**目标**: ≤36%<br>**稳定性指标**: CV越低越稳定",38
+cgm.gmi,CGM.葡萄糖管理指标,Number,"GMI (Glucose Management Indicator)。<br>单位: %<br>**意义**: 估算的HbA1c",7.3
+cgm.averageGlucose,CGM.平均血糖,Number,"CGM平均血糖。<br>单位: mmol/L",8.5
+cgm.gvi,CGM.血糖变异指数,Number,"GVI (Glycemic Variability Index)。<br>**意义**: 综合血糖变异指标",1.2
+
+# 自身抗体检测
+antibodies.gad,自身抗体.GAD抗体,String,"谷氨酸脱羧酶抗体(GADA)。<br>**建议值**: `阴性`, `阳性`, `未检测`<br>**1型**: 70-80%阳性",阳性
+antibodies.gadValue,自身抗体.GAD抗体滴度,Number,"GADA滴度(如检测)。<br>单位: U/mL<br>**阳性**: >5-10 U/mL (各实验室不同)",156.8
+antibodies.ia2,自身抗体.IA-2抗体,String,"酪氨酸磷酸酶抗体(IA-2A)。<br>**建议值**: `阴性`, `阳性`, `未检测`<br>**1型**: 50-70%阳性",阳性
+antibodies.ica,自身抗体.ICA,String,"胰岛细胞抗体(ICA)。<br>**建议值**: `阴性`, `阳性`, `未检测`<br>**1型**: 80-90%初诊时阳性",阳性
+antibodies.znt8,自身抗体.ZnT8抗体,String,"锌转运体8抗体(ZnT8A)。<br>**建议值**: `阴性`, `阳性`, `未检测`<br>**1型**: 60-80%阳性",未检测
+antibodies.iaa,自身抗体.IAA,String,"胰岛素自身抗体(IAA，用胰岛素前检测)。<br>**建议值**: `阴性`, `阳性`, `未检测`, `不适用(已用胰岛素)`<br>**1型**: 40-70%阳性(尤其儿童)",不适用(已用胰岛素)
+antibodies.numberOfPositive,自身抗体.阳性抗体数,Number,"阳性抗体数量。<br>**≥2种阳性**: 1型糖尿病可能性>90%",2
+
+# C肽/胰岛功能
+cPeptide.fasting,C肽.空腹C肽,Number,"空腹C肽。<br>单位: ng/mL 或 pmol/L<br>**参考范围**: 0.8-4.0 ng/mL<br>**1型**: 显著降低或测不出",0.2
+cPeptide.postprandial,C肽.餐后2小时C肽,Number,"餐后2小时C肽(或OGTT刺激后)。<br>单位: ng/mL",0.3
+cPeptide.interpretation,C肽.解读,String,"C肽水平解读。<br>**建议值**: `正常`, `降低`, `显著降低(<0.6)`, `测不出`<br>**1型**: 显著降低或测不出",显著降低(<0.6)
+cPeptide.residualFunction,C肽.残余胰岛功能,String,"残余胰岛功能评估。<br>**建议值**: `无残余功能`, `少量残余功能`, `中等残余功能`, `较多残余功能`<br>**蜜月期**: 可有残余功能",少量残余功能
+
+insulinLevel.fasting,胰岛素水平.空腹胰岛素,Number,"空腹胰岛素(未用外源胰岛素前检测)。<br>单位: mU/L<br>**1型**: 显著降低",未检测(已用胰岛素)
+
+# 1型糖尿病分型
+t1dmSubtype,1型糖尿病分型,String,"1型糖尿病亚型。<br>**建议值**: `1A型(免疫介导)`, `1B型(特发性)`, `LADA(成人隐匿性自身免疫糖尿病)`, `急性1型`, `暴发性1型`",1A型(免疫介导)
+lada.diagnosis,LADA.是否LADA,String,"是否为LADA。<br>**定义**: ≥30岁发病 + 自身抗体阳性 + 初期无需胰岛素治疗(>6个月)<br>**建议值**: `否`, `是`, `可疑`",否
+fulminant.diagnosis,暴发性1型.是否暴发性,String,"是否为暴发性1型糖尿病。<br>**特征**: 起病极快(<1周)、DKA、HbA1c正常或轻度升高、抗体阴性<br>**建议值**: `否`, `是`, `可疑`",否
+
+# 胰岛素治疗
+insulin.regimenType,胰岛素.方案类型,String,"胰岛素治疗方案类型。<br>**建议值**: `每日2次预混`, `基础+餐时(MDI)`, `胰岛素泵(CSII)`, `未治疗`, `其他`<br>**1型推荐**: MDI或胰岛素泵",基础+餐时(MDI)
+insulin.basalType,胰岛素.基础胰岛素,String,"基础胰岛素类型。<br>**建议值**: `甘精胰岛素(来得时)`, `地特胰岛素(诺和平)`, `德谷胰岛素(诺和达)`, `NPH`, `未使用`, `其他`",甘精胰岛素(来得时)
+insulin.basalDose,胰岛素.基础胰岛素剂量,Number,"基础胰岛素剂量。<br>单位: U/日",18
+insulin.basalTiming,胰岛素.基础胰岛素时间,String,"基础胰岛素注射时间",睡前22:00
+insulin.bolusType,胰岛素.餐时胰岛素,String,"餐时胰岛素类型。<br>**建议值**: `门冬胰岛素(诺和锐)`, `赖脯胰岛素(优泌乐)`, `谷赖胰岛素(速秀霖)`, `普通胰岛素`, `未使用`, `其他`",门冬胰岛素(诺和锐)
+insulin.bolusDoseBreakfast,胰岛素.早餐前剂量,Number,"早餐前餐时胰岛素剂量。<br>单位: U",8
+insulin.bolusDoseLunch,胰岛素.午餐前剂量,Number,"午餐前餐时胰岛素剂量。<br>单位: U",10
+insulin.bolusDoseDinner,胰岛素.晚餐前剂量,Number,"晚餐前餐时胰岛素剂量。<br>单位: U",10
+insulin.totalDailyDose,胰岛素.每日总剂量,Number,"每日胰岛素总剂量(TDD)。<br>单位: U/日",46
+insulin.dosePerKg,胰岛素.单位体重剂量,Number,"单位体重胰岛素剂量。<br>单位: U/kg/日<br>**参考**: 新诊0.5-0.6, 蜜月期0.3-0.5, 青春期0.8-1.2, 成人0.5-1.0",0.8
+insulin.icRatio,胰岛素.碳水化合物系数,String,"胰岛素碳水化合物系数(ICR)。<br>**意义**: 1U胰岛素可处理的碳水克数<br>**计算**: 500/TDD 或 450/TDD",早餐1:10, 午餐1:12, 晚餐1:12
+insulin.isf,胰岛素.胰岛素敏感系数,String,"胰岛素敏感系数(ISF)。<br>**意义**: 1U胰岛素降低血糖值(mmol/L)<br>**计算**: 100/TDD (mg/dL) 或 1.8/TDD (mmol/L)",1:3.9 (1U降3.9 mmol/L)
+
+# 胰岛素泵相关
+pump.usage,胰岛素泵.使用情况,String,"胰岛素泵使用情况。<br>**建议值**: `未使用`, `开环泵`, `闭环泵(APS)`, `混合闭环泵`<br>**优势**: 模拟生理分泌，更好控制",未使用
+pump.basalRates,胰岛素泵.基础率,String,"基础率设置(如使用泵)。<br>格式: 时间段-剂量",不适用
+pump.totalBasal,胰岛素泵.基础量总剂量,Number,"24小时基础量总剂量(如使用泵)。<br>单位: U",不适用
+pump.boluses,胰岛素泵.大剂量策略,String,"大剂量策略(如使用泵)。<br>**建议值**: `标准大剂量`, `方波大剂量`, `双波大剂量`, `不适用`",不适用
+
+# 血糖监测
+monitoring.smbgFrequency,血糖监测.SMBG频率,String,"指血血糖监测(SMBG)频率。<br>**建议值**: `<1次/日`, `1-3次/日`, `4-7次/日(7点法)`, `>7次/日`, `已改用CGM`<br>**1型推荐**: ≥4次/日(餐前+睡前)",4-7次/日(7点法)
+monitoring.cgmType,血糖监测.CGM类型,String,"CGM类型(如使用)。<br>**建议值**: `未使用`, `实时CGM(RT-CGM)`, `扫描式CGM(FGM/瞬感)`, `专业CGM`",扫描式CGM(瞬感)
+monitoring.cgmCompliance,血糖监测.CGM依从性,Number,"CGM佩戴依从性(如使用)。<br>单位: %<br>**目标**: >70%",85
+
+# 低血糖
+hypoglycemia.frequency,低血糖.发生频率,String,"低血糖发生频率。<br>**建议值**: `无`, `<1次/月`, `1-4次/月`, `>1次/周`, `几乎每日`<br>**1型**: 易发生低血糖",1-4次/月
+hypoglycemia.severeEvents,低血糖.严重低血糖次数,Number,"过去1年严重低血糖次数(需他人帮助)。<br>**目标**: 0次",1
+hypoglycemia.awareness,低血糖.感知能力,String,"低血糖感知能力(Clarke评分)。<br>**建议值**: `正常感知(0-2分)`, `感知减弱(3-4分)`, `感知缺失(≥5分)`<br>**风险**: 感知缺失增加严重低血糖风险",正常感知
+hypoglycemia.nocturnalEvents,低血糖.夜间低血糖,String,"夜间低血糖发生情况。<br>**建议值**: `无`, `偶尔`, `频繁`<br>**CGM**: 有助发现夜间低血糖",偶尔
+hypoglycemia.hypoglycemiaUnawareness,低血糖.无感知低血糖,String,"无感知低血糖(IAH)。<br>**建议值**: `否`, `是`<br>**危险**: 严重低血糖高风险",否
+
+# 急性并发症
+acuteComplications.dka,急性并发症.DKA,String,"糖尿病酮症酸中毒发生情况。<br>**建议值**: `从未`, `偶尔(<1次/年)`, `频繁(≥1次/年)`, `近期发生`",偶尔(<1次/年)
+acuteComplications.lastDkaDate,急性并发症.最近DKA日期,String,最近一次DKA发生日期,2023-08-15
+acuteComplications.dkaTrigger,急性并发症.DKA诱因,String,"DKA诱因。<br>**常见**: 感染、停用胰岛素、胰岛素泵故障、首发<br>**建议值**: `感染`, `停药/减药`, `泵故障`, `首发`, `应激`, `不明`, `不适用`",感染
+
+# 慢性并发症
+chronicComplications.retinopathy,慢性并发症.视网膜病变,String,"糖尿病视网膜病变(DR)。<br>**建议值**: `无`, `非增殖期DR`, `增殖期DR(PDR)`, `黄斑水肿`, `未筛查`",无
+chronicComplications.retinopathyGrade,慢性并发症.DR分级,String,"DR分级(如有)。<br>**建议值**: `1级(微血管瘤)`, `2级(硬性渗出)`, `3级(棉絮斑)`, `4级(静脉串珠)`, `5级(新生血管)`, `6级(玻璃体积血/牵拉性视网膜脱离)`, `不适用`",不适用
+chronicComplications.lastEyeExam,慢性并发症.最近眼底检查,String,最近一次眼底检查日期,2025-06-15
+
+chronicComplications.nephropathy,慢性并发症.肾脏病变,String,"糖尿病肾脏病(DKD)。<br>**建议值**: `无`, `微量白蛋白尿期`, `大量白蛋白尿期`, `肾功能不全期`, `未筛查`",无
+chronicComplications.uacr,慢性并发症.尿白蛋白肌酐比,Number,"尿白蛋白/肌酐比值(UACR)。<br>单位: mg/g<br>**正常**: <30<br>**微量白蛋白尿**: 30-300<br>**大量白蛋白尿**: >300",18
+chronicComplications.egfr,慢性并发症.肾小球滤过率,Number,"估算肾小球滤过率(eGFR)。<br>单位: mL/min/1.73m²<br>**分期**: G1(≥90), G2(60-89), G3a(45-59), G3b(30-44), G4(15-29), G5(<15)",95
+
+chronicComplications.neuropathy,慢性并发症.神经病变,String,"糖尿病神经病变。<br>**建议值**: `无`, `周围神经病变`, `自主神经病变`, `多种神经病变`, `未筛查`",无
+chronicComplications.neuropathySymptoms,慢性并发症.神经病变症状,String,"神经病变症状(如有)。<br>**建议值**: `无`, `麻木刺痛`, `疼痛`, `感觉减退`, `胃轻瘫`, `直立性低血压`, `勃起功能障碍`, `多种`",无
+
+chronicComplications.cardiovascular,慢性并发症.心血管疾病,String,"心血管疾病。<br>**建议值**: `无`, `冠心病`, `心肌梗死`, `脑卒中`, `外周动脉病`, `多种`",无
+
+chronicComplications.diabeticFoot,慢性并发症.糖尿病足,String,"糖尿病足风险。<br>**建议值**: `低风险`, `中风险`, `高风险`, `活动性足溃疡`, `既往足溃疡史`",低风险
+
+# 伴发自身免疫病
+autoimmuneDiseases.thyroid,伴发自身免疫病.甲状腺疾病,String,"自身免疫性甲状腺疾病。<br>**建议值**: `无`, `桥本甲状腺炎`, `Graves病`, `亚临床甲减`, `亚临床甲亢`<br>**1型**: 15-30%合并",桥本甲状腺炎
+autoimmuneDiseases.celiac,伴发自身免疫病.乳糜泻,String,"乳糜泻。<br>**建议值`: `无`, `确诊`, `可疑`, `未筛查`<br>**1型**: 5-10%合并",无
+autoimmuneDiseases.addisonDisease,伴发自身免疫病.Addison病,String,"Addison病(原发性肾上腺皮质功能减退)。<br>**建议值**: `无`, `确诊`, `可疑`, `未筛查`<br>**1型**: 0.5%合并",无
+autoimmuneDiseases.other,伴发自身免疫病.其他,String,"其他自身免疫病。<br>**建议值**: `无`, `恶性贫血`, `白癜风`, `类风湿关节炎`, `系统性红斑狼疮`, `多种`",无
+
+# 蜜月期
+honeymoonPhase.present,蜜月期.是否在蜜月期,String,"是否处于蜜月期。<br>**定义**: 诊断后残余胰岛功能，胰岛素需求量减少(<0.5 U/kg/日)<br>**建议值**: `否`, `是`, `已过蜜月期`<br>**持续时间**: 通常数月至1-2年",已过蜜月期
+honeymoonPhase.duration,蜜月期.持续时长,Number,"蜜月期持续时长(如经历过)。<br>单位: 月",8
+
+# 生活方式
+lifestyle.diet,生活方式.饮食,String,"饮食管理。<br>**建议值**: `未控制`, `一般控制`, `较好控制`, `碳水计数`<br>**1型**: 推荐碳水计数",碳水计数
+lifestyle.carbCounting,生活方式.碳水计数,String,"是否掌握碳水计数。<br>**建议值**: `不会`, `基本掌握`, `熟练掌握`<br>**重要**: 精准配对胰岛素",熟练掌握
+lifestyle.exercise,生活方式.运动,String,"运动情况。<br>**建议值**: `不运动`, `偶尔运动`, `规律运动(≥3次/周)`, `职业运动`",规律运动(≥3次/周)
+lifestyle.exerciseType,生活方式.运动类型,String,主要运动类型,游泳、慢跑
+lifestyle.alcohol,生活方式.饮酒,String,"饮酒情况。<br>**建议值**: `不饮酒`, `偶尔饮酒`, `经常饮酒`<br>**风险**: 饮酒可致延迟性低血糖",偶尔饮酒
+lifestyle.smoking,生活方式.吸烟,String,"吸烟情况。<br>**建议值**: `不吸烟`, `已戒烟`, `吸烟`<br>**危害**: 增加并发症风险",不吸烟
+
+# 心理社会
+psychosocial.depressionAnxiety,心理社会.抑郁焦虑,String,"抑郁/焦虑症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度`, `已确诊`<br>**1型**: 患病率高",轻度
+psychosocial.diabetesDistress,心理社会.糖尿病痛苦,String,"糖尿病痛苦(DDS评分)。<br>**建议值**: `无或轻度(<2.0分)`, `中度(2.0-2.9分)`, `重度(≥3.0分)`",中度
+psychosocial.eatingDisorder,心理社会.进食障碍,String,"进食障碍(尤其女性)。<br>**建议值**: `无`, `可疑`, `确诊`<br>**特殊**: 减少胰岛素剂量以减重(diabulimia)",无
+psychosocial.compliance,心理社会.治疗依从性,String,"治疗依从性。<br>**建议值**: `良好`, `一般`, `差`<br>**影响因素**: 心理状态、家庭支持、经济负担",良好
+psychosocial.familySupport,心理社会.家庭支持,String,"家庭支持情况。<br>**建议值**: `良好`, `一般`, `缺乏`<br>**重要**: 尤其儿童青少年",良好
+
+# 糖尿病教育
+education.structuredEducation,糖尿病教育.结构化教育,String,"是否接受结构化糖尿病教育。<br>**建议值**: `未接受`, `部分接受`, `完整接受(DAFNE/DSME)`<br>**重要**: 改善血糖控制和生活质量",完整接受
+education.selfManagementSkills,糖尿病教育.自我管理技能,String,"自我管理技能掌握。<br>**建议值**: `差`, `一般`, `良好`, `优秀`<br>**包括**: 血糖监测、胰岛素调整、低血糖处理、碳水计数",良好
+education.sicDayRules,糖尿病教育.生病日规则,String,"是否掌握生病日规则。<br>**建议值**: `不了解`, `部分了解`, `熟练掌握`<br>**重要**: 预防DKA",熟练掌握
+
+# 妊娠相关(女性)
+pregnancy.status,妊娠.妊娠状态,String,"妊娠状态(女性)。<br>**建议值**: `未孕`, `计划妊娠`, `妊娠期`, `产后`, `不适用`<br>**1型妊娠**: 需更严格控制",未孕
+pregnancy.preconceptionHbA1c,妊娠.孕前HbA1c,Number,"孕前HbA1c(如计划妊娠)。<br>单位: %<br>**目标**: <6.5%，理想<6.0%",不适用
+pregnancy.gestationalAge,妊娠.孕周,Number,"孕周(如妊娠)。<br>单位: 周",不适用
+pregnancy.trimesterTarget,妊娠.孕期血糖目标,String,"孕期血糖目标(如妊娠)。<br>**空腹**: <5.3 mmol/L<br>**餐后1h**: <7.8 mmol/L<br>**餐后2h**: <6.7 mmol/L",不适用
+
+# 特殊情况
+special.adolescent,特殊情况.青春期,String,"是否青春期(10-19岁)。<br>**建议值**: `否`, `是`<br>**特点**: 胰岛素抵抗增加，血糖难控制，依从性问题",是
+special.extremeSports,特殊情况.极限运动,String,"是否从事极限/高危运动。<br>**建议值**: `否`, `是`<br>**风险**: 低血糖风险，需特殊管理",否
+special.shiftWork,特殊情况.倒班工作,String,"是否倒班工作。<br>**建议值**: `否`, `是`<br>**挑战**: 胰岛素剂量调整困难",否
+
+# 治疗目标
+targets.hba1cTarget,治疗目标.HbA1c目标,String,"个体化HbA1c目标。<br>**一般成人**: <7.0%<br>**儿童青少年**: <7.5%<br>**老年/低血糖高风险**: <8.0%<br>**妊娠**: <6.0-6.5%",<7.0%
+targets.fastingTarget,治疗目标.空腹血糖目标,String,空腹血糖目标范围,4.4-7.0 mmol/L
+targets.postprandialTarget,治疗目标.餐后血糖目标,String,餐后血糖目标,<10.0 mmol/L
+targets.tirTarget,治疗目标.TIR目标,String,"TIR目标(如使用CGM)。<br>**建议值**: `>70%`, `>50%(老年/低血糖高风险)`",>70%
+
+# 综合评估
+overallControl,综合控制状态,String,"综合血糖控制状态。<br>**建议值**: `优良`, `良好`, `尚可`, `差`, `极差`",良好
+riskLevel,风险等级,String,"并发症风险等级。<br>**建议值**: `低风险`, `中风险`, `高风险`, `极高风险`<br>**评估**: 血糖控制、病程、已有并发症、心血管危险因素",中风险
+qualityOfLife,生活质量,String,"生活质量评估。<br>**建议值**: `良好`, `一般`, `差`",良好
+
+# 随访计划
+followUp.frequency,随访.随访频率,String,"随访频率。<br>**建议值**: `1-3月`, `3-6月`, `6-12月`<br>**1型推荐**: 3个月",3个月
+followUp.nextVisit,随访.下次就诊日期,String,计划下次就诊日期,2025-11-15
+followUp.monitoring,随访.监测项目,String,下次随访需监测项目,HbA1c、血脂、肝肾功能、尿微量白蛋白、眼底检查
+
+# 临床建议
+clinicalRecommendation,临床建议,String,综合临床建议,继续胰岛素强化治疗，规律使用CGM，加强碳水计数训练，提高TIR至>70%，预防低血糖，3个月后复查
+
+# 报告信息
+reportDate,报告日期,String,报告日期,2025-08-15
+attendingPhysician,主治医师,String,主治医师,王医师内分泌科
+diabetesEducator,糖尿病教育护士,String,糖尿病教育护士,李护士
