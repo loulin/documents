@@ -65,7 +65,8 @@ build/
 *.m~
 
 # Data files
-*.csv
+# 取消忽略所有 CSV
+#*.csv
 *.xlsx
 *.xls
 *.json
