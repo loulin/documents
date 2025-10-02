@@ -1,0 +1,362 @@
+ICD-10代码,速记码,拼音码,中文名称,英文名称,分类,描述,严重程度
+E10,T1DM,1XTNB,1型糖尿病,Type 1 diabetes mellitus,主要诊断,胰岛素依赖性糖尿病,严重
+E10.0,T1DM-COMA,1XTNBBHM,1型糖尿病伴昏迷,Type 1 diabetes mellitus with coma,并发症,1型糖尿病伴发昏迷状态,危重
+E10.1,T1DM-KA,1XTNBBTZSSZD,1型糖尿病伴酮症酸中毒,Type 1 diabetes mellitus with ketoacidosis,并发症,1型糖尿病伴发酮症酸中毒,危重
+E10.2,T1DM-KIDNEY,1XTNBBSZBJZ,1型糖尿病伴肾脏并发症,Type 1 diabetes mellitus with kidney complications,并发症,1型糖尿病性肾病,严重
+E10.3,T1DM-EYE,1XTNBBYBBJZ,1型糖尿病伴眼部并发症,Type 1 diabetes mellitus with ophthalmic complications,并发症,1型糖尿病性视网膜病变,严重
+E10.4,T1DM-NEURO,1XTNBBSJXTBJZ,1型糖尿病伴神经系统并发症,Type 1 diabetes mellitus with neurological complications,并发症,1型糖尿病性神经病变,严重
+E10.5,T1DM-CIRCU,1XTNBBXHXTBJZ,1型糖尿病伴循环系统并发症,Type 1 diabetes mellitus with circulatory complications,并发症,1型糖尿病性血管病变,严重
+E10.6,T1DM-OTHER,1XTNBBQTTZBFJZ,1型糖尿病伴其他特指并发症,Type 1 diabetes mellitus with other specified complications,并发症,1型糖尿病伴其他并发症,中等
+E10.7,T1DM-MULTI,1XTNBBDFXBJZ,1型糖尿病伴多发性并发症,Type 1 diabetes mellitus with multiple complications,并发症,1型糖尿病伴多种并发症,严重
+E10.8,T1DM-UNSP,1XTNBBWTZBJZ,1型糖尿病伴未特指并发症,Type 1 diabetes mellitus with unspecified complications,并发症,1型糖尿病伴未明确并发症,中等
+E10.9,T1DM-SIMPLE,1XTNBBBJZ,1型糖尿病不伴并发症,Type 1 diabetes mellitus without complications,主要诊断,无并发症的1型糖尿病,中等
+E11,T2DM,2XTNB,2型糖尿病,Type 2 diabetes mellitus,主要诊断,非胰岛素依赖性糖尿病,中等
+E11.0,T2DM-COMA,2XTNBBHM,2型糖尿病伴昏迷,Type 2 diabetes mellitus with coma,并发症,2型糖尿病伴发昏迷状态,危重
+E11.1,T2DM-KA,2XTNBBTZSSZD,2型糖尿病伴酮症酸中毒,Type 2 diabetes mellitus with ketoacidosis,并发症,2型糖尿病伴发酮症酸中毒,危重
+E11.2,T2DM-KIDNEY,2XTNBBSZBJZ,2型糖尿病伴肾脏并发症,Type 2 diabetes mellitus with kidney complications,并发症,2型糖尿病性肾病,严重
+E11.3,T2DM-EYE,2XTNBBYBBJZ,2型糖尿病伴眼部并发症,Type 2 diabetes mellitus with ophthalmic complications,并发症,2型糖尿病性视网膜病变,严重
+E11.4,T2DM-NEURO,2XTNBBSJXTBJZ,2型糖尿病伴神经系统并发症,Type 2 diabetes mellitus with neurological complications,并发症,2型糖尿病性神经病变,严重
+E11.5,T2DM-CIRCU,2XTNBBXHXTBJZ,2型糖尿病伴循环系统并发症,Type 2 diabetes mellitus with circulatory complications,并发症,2型糖尿病性血管病变,严重
+E11.6,T2DM-OTHER,2XTNBBQTTZBFJZ,2型糖尿病伴其他特指并发症,Type 2 diabetes mellitus with other specified complications,并发症,2型糖尿病伴其他并发症,中等
+E11.7,T2DM-MULTI,2XTNBBDFXBJZ,2型糖尿病伴多发性并发症,Type 2 diabetes mellitus with multiple complications,并发症,2型糖尿病伴多种并发症,严重
+E11.8,T2DM-UNSP,2XTNBBWTZBJZ,2型糖尿病伴未特指并发症,Type 2 diabetes mellitus with unspecified complications,并发症,2型糖尿病伴未明确并发症,中等
+E11.9,T2DM-SIMPLE,2XTNBBBJZ,2型糖尿病不伴并发症,Type 2 diabetes mellitus without complications,主要诊断,无并发症的2型糖尿病,轻度
+E12,MRDM,YYBGXGTNB,营养不良相关糖尿病,Malnutrition-related diabetes mellitus,特殊类型,由营养不良引起的糖尿病,严重
+E12.0,MRDM-COMA,YYBGXGTNBBHM,营养不良相关糖尿病伴昏迷,Malnutrition-related diabetes mellitus with coma,并发症,营养不良相关糖尿病伴昏迷,危重
+E12.1,MRDM-KA,YYBGXGTNBBTZSSZD,营养不良相关糖尿病伴酮症酸中毒,Malnutrition-related diabetes mellitus with ketoacidosis,并发症,营养不良相关糖尿病伴酮症酸中毒,危重
+E12.2,MRDM-KIDNEY,YYBGXGTNBBSZBJZ,营养不良相关糖尿病伴肾脏并发症,Malnutrition-related diabetes mellitus with kidney complications,并发症,营养不良相关糖尿病性肾病,严重
+E12.3,MRDM-EYE,YYBGXGTNBBYBBJZ,营养不良相关糖尿病伴眼部并发症,Malnutrition-related diabetes mellitus with ophthalmic complications,并发症,营养不良相关糖尿病性视网膜病变,严重
+E12.4,MRDM-NEURO,YYBGXGTNBBSJXTBJZ,营养不良相关糖尿病伴神经系统并发症,Malnutrition-related diabetes mellitus with neurological complications,并发症,营养不良相关糖尿病性神经病变,严重
+E12.5,MRDM-CIRCU,YYBGXGTNBBXHXTBJZ,营养不良相关糖尿病伴循环系统并发症,Malnutrition-related diabetes mellitus with circulatory complications,并发症,营养不良相关糖尿病性血管病变,严重
+E12.6,MRDM-OTHER,YYBGXGTNBBQTTZBFJZ,营养不良相关糖尿病伴其他特指并发症,Malnutrition-related diabetes mellitus with other specified complications,并发症,营养不良相关糖尿病伴其他并发症,中等
+E12.7,MRDM-MULTI,YYBGXGTNBBDFXBJZ,营养不良相关糖尿病伴多发性并发症,Malnutrition-related diabetes mellitus with multiple complications,并发症,营养不良相关糖尿病伴多种并发症,严重
+E12.8,MRDM-UNSP,YYBGXGTNBBWTZBJZ,营养不良相关糖尿病伴未特指并发症,Malnutrition-related diabetes mellitus with unspecified complications,并发症,营养不良相关糖尿病伴未明确并发症,中等
+E12.9,MRDM-SIMPLE,YYBGXGTNBBBJZ,营养不良相关糖尿病不伴并发症,Malnutrition-related diabetes mellitus without complications,特殊类型,无并发症的营养不良相关糖尿病,中等
+E13,OSDM,QTTZDTNB,其他特指的糖尿病,Other specified diabetes mellitus,特殊类型,其他类型的糖尿病,中等
+E13.0,OSDM-COMA,QTTZDTNBBHM,其他特指糖尿病伴昏迷,Other specified diabetes mellitus with coma,并发症,其他特指糖尿病伴昏迷,危重
+E13.1,OSDM-KA,QTTZDTNBBTZSSZD,其他特指糖尿病伴酮症酸中毒,Other specified diabetes mellitus with ketoacidosis,并发症,其他特指糖尿病伴酮症酸中毒,危重
+E13.2,OSDM-KIDNEY,QTTZDTNBBSZBJZ,其他特指糖尿病伴肾脏并发症,Other specified diabetes mellitus with kidney complications,并发症,其他特指糖尿病性肾病,严重
+E13.3,OSDM-EYE,QTTZDTNBBYBBJZ,其他特指糖尿病伴眼部并发症,Other specified diabetes mellitus with ophthalmic complications,并发症,其他特指糖尿病性视网膜病变,严重
+E13.4,OSDM-NEURO,QTTZDTNBBSJXTBJZ,其他特指糖尿病伴神经系统并发症,Other specified diabetes mellitus with neurological complications,并发症,其他特指糖尿病性神经病变,严重
+E13.5,OSDM-CIRCU,QTTZDTNBBXHXTBJZ,其他特指糖尿病伴循环系统并发症,Other specified diabetes mellitus with circulatory complications,并发症,其他特指糖尿病性血管病变,严重
+E13.6,OSDM-OTHER,QTTZDTNBBQTTZBFJZ,其他特指糖尿病伴其他特指并发症,Other specified diabetes mellitus with other specified complications,并发症,其他特指糖尿病伴其他并发症,中等
+E13.7,OSDM-MULTI,QTTZDTNBBDFXBJZ,其他特指糖尿病伴多发性并发症,Other specified diabetes mellitus with multiple complications,并发症,其他特指糖尿病伴多种并发症,严重
+E13.8,OSDM-UNSP,QTTZDTNBBWTZBJZ,其他特指糖尿病伴未特指并发症,Other specified diabetes mellitus with unspecified complications,并发症,其他特指糖尿病伴未明确并发症,中等
+E13.9,OSDM-SIMPLE,QTTZDTNBBBJZ,其他特指糖尿病不伴并发症,Other specified diabetes mellitus without complications,特殊类型,无并发症的其他特指糖尿病,中等
+E14,UDM,WTZDTNB,未特指的糖尿病,Unspecified diabetes mellitus,未分类,类型未明确的糖尿病,中等
+E14.0,UDM-COMA,WTZDTNBBHM,未特指糖尿病伴昏迷,Unspecified diabetes mellitus with coma,并发症,未特指糖尿病伴昏迷,危重
+E14.1,UDM-KA,WTZDTNBBTZSSZD,未特指糖尿病伴酮症酸中毒,Unspecified diabetes mellitus with ketoacidosis,并发症,未特指糖尿病伴酮症酸中毒,危重
+E14.2,UDM-KIDNEY,WTZDTNBBSZBJZ,未特指糖尿病伴肾脏并发症,Unspecified diabetes mellitus with kidney complications,并发症,未特指糖尿病性肾病,严重
+E14.3,UDM-EYE,WTZDTNBBYBBJZ,未特指糖尿病伴眼部并发症,Unspecified diabetes mellitus with ophthalmic complications,并发症,未特指糖尿病性视网膜病变,严重
+E14.4,UDM-NEURO,WTZDTNBBSJXTBJZ,未特指糖尿病伴神经系统并发症,Unspecified diabetes mellitus with neurological complications,并发症,未特指糖尿病性神经病变,严重
+E14.5,UDM-CIRCU,WTZDTNBBXHXTBJZ,未特指糖尿病伴循环系统并发症,Unspecified diabetes mellitus with circulatory complications,并发症,未特指糖尿病性血管病变,严重
+E14.6,UDM-OTHER,WTZDTNBBQTTZBFJZ,未特指糖尿病伴其他特指并发症,Unspecified diabetes mellitus with other specified complications,并发症,未特指糖尿病伴其他并发症,中等
+E14.7,UDM-MULTI,WTZDTNBBDFXBJZ,未特指糖尿病伴多发性并发症,Unspecified diabetes mellitus with multiple complications,并发症,未特指糖尿病伴多种并发症,严重
+E14.8,UDM-UNSP,WTZDTNBBWTZBJZ,未特指糖尿病伴未特指并发症,Unspecified diabetes mellitus with unspecified complications,并发症,未特指糖尿病伴未明确并发症,中等
+E14.9,UDM-SIMPLE,WTZDTNBBBJZ,未特指糖尿病不伴并发症,Unspecified diabetes mellitus without complications,未分类,无并发症的未特指糖尿病,轻度
+O24,PDM,RSQTNB,妊娠期糖尿病,Diabetes mellitus in pregnancy,妊娠相关,妊娠期间的糖尿病,中等
+O24.0,PDM-T1,RSQTNB-1X,妊娠前糖尿病-1型,Pre-existing diabetes mellitus - type 1,妊娠相关,孕前已有1型糖尿病,严重
+O24.1,PDM-T2,RSQTNB-2X,妊娠前糖尿病-2型,Pre-existing diabetes mellitus - type 2,妊娠相关,孕前已有2型糖尿病,中等
+O24.2,PDM-MR,RSQTNB-YYBGXG,妊娠前糖尿病-营养不良相关,Pre-existing diabetes mellitus - malnutrition-related,妊娠相关,孕前营养不良相关糖尿病,严重
+O24.3,PDM-UNSP,RSQTNB-WTZ,妊娠前糖尿病-未特指,Pre-existing diabetes mellitus - unspecified,妊娠相关,孕前糖尿病类型未明,中等
+O24.40,GDM,RSQTNB,妊娠期糖尿病,Diabetes mellitus arising in pregnancy,妊娠相关,妊娠期间新发糖尿病,中等
+O24.9,PDM-UNK,RSQTNB-WTZ,妊娠期糖尿病-未特指,Diabetes mellitus in pregnancy - unspecified,妊娠相关,妊娠期糖尿病未详细分类,中等
+P70.0,IOD-GDM,TEHXSEDXTZHZ,胎儿和新生儿低血糖综合征,Syndrome of infant of mother with gestational diabetes,新生儿,妊娠期糖尿病母亲的婴儿综合征,中等
+P70.1,IOD-DM,TEHXSEDXTZHZ,胎儿和新生儿低血糖综合征,Syndrome of infant of a diabetic mother,新生儿,糖尿病母亲的婴儿综合征,中等
+P70.2,NDM,XSEETNB,新生儿糖尿病,Neonatal diabetes mellitus,新生儿,新生儿期糖尿病,严重
+E15,NDHC,FTNBXGXTXHM,非糖尿病性高血糖性昏迷,Nondiabetic hypoglycemic coma,相关疾病,非糖尿病引起的低血糖昏迷,危重
+E16.0,DIH,YWXDXTBBHM,药物性低血糖不伴昏迷,Drug-induced hypoglycemia without coma,相关疾病,药物引起的低血糖,中等
+E16.1,OH,QTDXT,其他低血糖,Other hypoglycemia,相关疾病,其他原因的低血糖,轻度
+E16.2,HU,WTZDXT,未特指的低血糖,Hypoglycemia unspecified,相关疾病,原因不明的低血糖,轻度
+R73.0,AGT,TNLYCG,糖耐量异常,Abnormal glucose tolerance test,糖尿病前期,葡萄糖耐量受损,轻度
+R73.01,IFG,KFDXTSW,空腹血糖受损,Impaired fasting glucose,糖尿病前期,空腹血糖异常,轻度
+R73.02,IGT,TNLYSW,糖耐量受损,Impaired glucose tolerance,糖尿病前期,餐后血糖异常,轻度
+R73.03,PREDIAB,TNBQQ,糖尿病前期,Prediabetes,糖尿病前期,糖尿病前期状态,轻度
+R73.9,HYPERGLY,XTYCGWTZ,血糖异常未特指,Hyperglycemia unspecified,相关疾病,未明确的血糖异常,轻度
+Z79.4,LTINS,CQSYYDSS,长期使用胰岛素,Long term current use of insulin,治疗相关,长期胰岛素治疗状态,管理
+Z79.84,LTOHD,CQSYKFJTXY,长期使用口服降血糖药,Long term current use of oral hypoglycemic drugs,治疗相关,长期口服降糖药治疗,管理
+Z13.1,DMSCREEN,TNBSC,糖尿病筛查,Encounter for screening for diabetes mellitus,预防,糖尿病筛查检查,预防
+Z71.3,DMNUTRI,TNBYSZX,糖尿病饮食咨询,Dietary counseling and surveillance,教育管理,糖尿病饮食指导,管理
+E88.81,METS,DXZHZ,代谢综合征,Metabolic syndrome,代谢疾病,代谢综合征X,中等
+E88.89,OMET,QTTZDXWL,其他特指的代谢紊乱,Other specified metabolic disorders,代谢疾病,其他代谢异常,中等
+E66,OB,FP,肥胖,Obesity,代谢疾病,肥胖症,中等
+E66.0,OB-DIET,YSGLDZ,饮食过量所致的肥胖,Obesity due to excess calories,代谢疾病,单纯性肥胖,中等
+E66.1,OB-DRUG,YWXFP,药物性肥胖,Drug-induced obesity,代谢疾病,药物引起的肥胖,中等
+E66.2,OB-MORB,JDFPBPPTQBZ,极度肥胖伴肺泡通气不足,Morbid obesity with alveolar hypoventilation,代谢疾病,病理性肥胖伴呼吸功能不全,严重
+E66.8,OB-OTH,QTFP,其他肥胖,Other obesity,代谢疾病,其他类型肥胖,中等
+E66.9,OB-UNSP,FPWTZ,肥胖未特指,Obesity unspecified,代谢疾病,肥胖症未分类,中等
+Z68.1,BMI-L,TZZSXHYD,体重指数19.9或以下,Body mass index 19.9 or less,体重管理,低体重指数,轻度
+Z68.2,BMI-N,TZZSZCCHCZ,体重指数20.0-29.9,Body mass index 20.0-29.9,体重管理,正常或超重体重指数,轻度
+Z68.3,BMI-OB,TZZSYPFP,体重指数30.0-39.9,Body mass index 30.0-39.9,体重管理,肥胖体重指数,中等
+Z68.4,BMI-MO,TZZSJJYS,体重指数40.0及以上,Body mass index 40.0 and greater,体重管理,病理性肥胖体重指数,严重
+Z51.6,WLT,JZ,减重治疗,Desensitization to allergens,减重治疗,减肥治疗,管理
+Z71.82,WLC,JZZX,减重咨询,Exercise counseling,减重治疗,减重指导咨询,管理
+O24.4,GDM-GEN,RSQTNB,妊娠期糖尿病,Gestational diabetes mellitus,妊娠糖尿病,妊娠期间新发糖尿病,中等
+O24.41,GDM-DIET,RSQTNB-YSKZ,妊娠期糖尿病-饮食控制,Gestational diabetes mellitus in pregnancy controlled by diet,妊娠糖尿病,饮食控制的妊娠糖尿病,轻度
+O24.42,GDM-INS,RSQTNB-YSSKZ,妊娠期糖尿病-胰岛素控制,Gestational diabetes mellitus in pregnancy controlled by insulin,妊娠糖尿病,胰岛素控制的妊娠糖尿病,中等
+O24.43,GDM-UNCTRL,RSQTNB-WKZ,妊娠期糖尿病-未控制,Gestational diabetes mellitus in pregnancy uncontrolled,妊娠糖尿病,未控制的妊娠糖尿病,严重
+Z86.32,HXGDM,RSTNBS,妊娠糖尿病史,Personal history of gestational diabetes,妊娠糖尿病,既往妊娠糖尿病史,管理
+E79.0,GOUT-PRI,YFXTFGJB,原发性痛风性关节病,Primary gout,痛风,原发性痛风关节炎,中等
+E79.1,GOUT-LEAD,QZDXTFGJB,铅中毒性痛风性关节病,Lead-induced gout,痛风,铅中毒引起的痛风,严重
+E79.2,GOUT-DRUG,YWXTFGJB,药物性痛风性关节病,Drug-induced gout,痛风,药物引起的痛风,中等
+E79.3,GOUT-REN,JFYSZSZHTFGJB,继发于肾脏损害的痛风性关节病,Gout secondary to renal impairment,痛风,肾功能不全继发痛风,严重
+E79.8,PURIN-OTH,QTPHLHLDDXWL,其他嘌呤和嘧啶代谢紊乱,Other disorders of purine and pyrimidine metabolism,痛风,其他嘌呤代谢异常,中等
+E79.9,PURIN-UNSP,PHLHLDDXWLWTZ,嘌呤和嘧啶代谢紊乱未特指,Disorder of purine and pyrimidine metabolism unspecified,痛风,嘌呤代谢异常未分类,中等
+M10.0,GOUT-ID,TFXTF,特发性痛风,Idiopathic gout,痛风,特发性痛风关节炎,中等
+M10.1,GOUT-LEAD2,QZDXTF,铅中毒性痛风,Lead-induced gout,痛风,铅中毒性痛风关节炎,严重
+M10.2,GOUT-DRUG2,YWXTF,药物性痛风,Drug-induced gout,痛风,药物性痛风关节炎,中等
+M10.3,GOUT-REN2,JFYSZSZHTF,继发于肾脏损害的痛风,Gout due to renal impairment,痛风,继发于肾病的痛风,严重
+M10.4,GOUT-SEC,QTJFXTF,其他继发性痛风,Other secondary gout,痛风,其他继发性痛风,中等
+M10.9,GOUT-UNSP,TFWTZ,痛风未特指,Gout unspecified,痛风,痛风未分类,中等
+E83.39,PHOS-OTH,QTLDXHLSQWL,其他磷代谢和磷酸酶紊乱,Other disorders of phosphorus metabolism and phosphatases,高尿酸血症,其他磷代谢异常,轻度
+R82.99,URIN-ABN,NYQTYCGFX,尿液其他异常发现,Other abnormal findings in urine,高尿酸血症,尿液异常包括尿酸,轻度
+C25,PANC-CA,YZEL,胰腺恶性肿瘤,Malignant neoplasm of pancreas,胰腺癌,胰腺癌,危重
+C25.0,PANC-HEAD,YZEL,胰头恶性肿瘤,Malignant neoplasm of head of pancreas,胰腺癌,胰头癌,危重
+C25.1,PANC-BODY,YZEL,胰体恶性肿瘤,Malignant neoplasm of body of pancreas,胰腺癌,胰体癌,危重
+C25.2,PANC-TAIL,YZEL,胰尾恶性肿瘤,Malignant neoplasm of tail of pancreas,胰腺癌,胰尾癌,危重
+C25.3,PANC-DUCT,YZEL,胰腺导管恶性肿瘤,Malignant neoplasm of pancreatic duct,胰腺癌,胰管癌,危重
+C25.4,PANC-ISLET,YDXBEL,胰岛细胞恶性肿瘤,Malignant neoplasm of endocrine pancreas,胰腺癌,胰岛细胞癌,危重
+C25.7,PANC-OTH,YQTBWEL,胰腺其他部位恶性肿瘤,Malignant neoplasm of other parts of pancreas,胰腺癌,胰腺其他部位癌,危重
+C25.8,PANC-OVER,YZCDBWEL,胰腺重叠部位恶性肿瘤,Malignant neoplasm of overlapping sites of pancreas,胰腺癌,胰腺多部位癌,危重
+C25.9,PANC-UNSP,YELWTZ,胰腺恶性肿瘤未特指,Malignant neoplasm of pancreas unspecified,胰腺癌,胰腺癌未分类,危重
+D13.6,PANC-BEN,YLXZL,胰腺良性肿瘤,Benign neoplasm of pancreas,胰腺肿瘤,胰腺良性肿瘤,轻度
+D13.7,ISLET-BEN,YDXBLXZL,胰岛细胞良性肿瘤,Benign neoplasm of endocrine pancreas,胰腺肿瘤,胰岛细胞良性肿瘤,轻度
+K76.0,NAFLD,ZFG,脂肪肝未特指,Fatty liver unspecified,脂肪肝,脂肪肝病,中等
+K75.81,NASH,FJJXZFXGG,非酒精性脂肪性肝病,Nonalcoholic steatohepatitis,脂肪肝,非酒精性脂肪肝,中等
+K70.0,AFLD,JJXZFG,酒精性脂肪肝,Alcoholic fatty liver,脂肪肝,酒精性脂肪肝,中等
+K70.1,AH,JJXGY,酒精性肝炎,Alcoholic hepatitis,脂肪肝,酒精性肝炎,严重
+K70.2,AF,JJXGQWHHX,酒精性肝纤维化和硬化,Alcoholic fibrosis and sclerosis of liver,脂肪肝,酒精性肝硬化,严重
+K70.3,AC,JJXGHX,酒精性肝硬化,Alcoholic cirrhosis of liver,脂肪肝,酒精性肝硬化,严重
+K70.4,AHF,JJXGSJ,酒精性肝衰竭,Alcoholic hepatic failure,脂肪肝,酒精性肝衰竭,危重
+K70.9,ALD-UNSP,JJXGGBWTZ,酒精性肝病未特指,Alcoholic liver disease unspecified,脂肪肝,酒精性肝病未分类,中等
+K72.90,HF,GSJWTZBBHM,肝衰竭未特指不伴昏迷,Hepatic failure unspecified without coma,脂肪肝,肝功能衰竭,危重
+K73.0,CPH,MXCCXGYWTZ,慢性持续性肝炎未特指,Chronic persistent hepatitis not elsewhere classified,脂肪肝,慢性肝炎,严重
+K73.2,CAH,MXHDXGYWTZ,慢性活动性肝炎未特指,Chronic active hepatitis not elsewhere classified,脂肪肝,慢性活动性肝炎,严重
+K73.9,CH-UNSP,MXGYWTZ,慢性肝炎未特指,Chronic hepatitis unspecified,脂肪肝,慢性肝炎未分类,中等
+E00,CRET,XKXJXZSJ,先天性碘缺乏综合征,Congenital iodine-deficiency syndrome,甲状腺疾病,先天性克汀病,严重
+E00.0,CRET-NEUR,XKXJXZSJBSJXTBX,先天性碘缺乏综合征伴神经系统表现,Congenital iodine-deficiency syndrome neurological type,甲状腺疾病,神经性克汀病,严重
+E00.1,CRET-MYX,XKXJXZSJBZXSW,先天性碘缺乏综合征伴粘液性水肿,Congenital iodine-deficiency syndrome myxedematous type,甲状腺疾病,粘液性水肿型克汀病,严重
+E00.2,CRET-MIX,XKXJXZSJBHX,先天性碘缺乏综合征伴混合型,Congenital iodine-deficiency syndrome mixed type,甲状腺疾病,混合型克汀病,严重
+E00.9,CRET-UNSP,XKXJXZSJWTZ,先天性碘缺乏综合征未特指,Congenital iodine-deficiency syndrome unspecified,甲状腺疾病,克汀病未分类,严重
+E01,IOD-REL,JXZJBHQTJXZJB,碘相关性甲状腺肿和其他碘相关性甲状腺疾病,Iodine-deficiency-related thyroid disorders and allied conditions,甲状腺疾病,碘缺乏相关甲状腺病,中等
+E01.0,IOD-GOITRE,JXZDJXZZ,碘缺乏性弥漫性甲状腺肿,Iodine-deficiency-related diffuse goitre,甲状腺疾病,碘缺乏性甲状腺肿,中等
+E01.1,IOD-MULTI,JXZDJXZFJ,碘缺乏性多结节性甲状腺肿,Iodine-deficiency-related multinodular goitre,甲状腺疾病,碘缺乏性多结节甲状腺肿,中等
+E01.2,IOD-GOITRE-US,JXZDJXZZWTZ,碘缺乏性甲状腺肿未特指,Iodine-deficiency-related goitre unspecified,甲状腺疾病,碘缺乏性甲状腺肿未分类,中等
+E01.8,IOD-OTH,QTJXZJB,其他碘缺乏相关性甲状腺疾病,Other iodine-deficiency-related thyroid disorders,甲状腺疾病,其他碘缺乏甲状腺病,中等
+E02,SUBCLIN-HYPO,YLXJXZGNDX,亚临床性甲状腺功能减退,Subclinical iodine-deficiency hypothyroidism,甲状腺疾病,亚临床甲减,轻度
+E03,HYPO,QTJXZGNDX,其他甲状腺功能减退,Other hypothyroidism,甲状腺疾病,甲状腺功能减退症,中等
+E03.0,CONG-HYPO,XKXJXZGNDX,先天性甲状腺功能减退伴弥漫性甲状腺肿,Congenital hypothyroidism with diffuse goitre,甲状腺疾病,先天性甲减伴甲状腺肿,严重
+E03.1,CONG-HYPO-NG,XKXJXZGNDXBMFJXZZ,先天性甲状腺功能减退不伴弥漫性甲状腺肿,Congenital hypothyroidism without goitre,甲状腺疾病,先天性甲减不伴甲状腺肿,严重
+E03.2,DRUG-HYPO,YWJQTWZHQ,药物及其他外源性物质所致甲状腺功能减退,Hypothyroidism due to medicaments and other exogenous substances,甲状腺疾病,药物性甲减,中等
+E03.3,POST-INF-HYPO,GRHJXZGNDX,感染后甲状腺功能减退,Postinfectious hypothyroidism,甲状腺疾病,感染后甲减,中等
+E03.4,ATRO-HYPO,JXZWSJXZGNDX,甲状腺萎缩所致甲状腺功能减退,Atrophy of thyroid acquired,甲状腺疾病,甲状腺萎缩性甲减,中等
+E03.5,MYX-COMA,ZXSWHM,粘液性水肿昏迷,Myxoedema coma,甲状腺疾病,粘液水肿昏迷,危重
+E03.8,HYPO-OTH,QTJXZGNDX,其他特指甲状腺功能减退,Other specified hypothyroidism,甲状腺疾病,其他甲减,中等
+E03.9,HYPO-UNSP,JXZGNDXWTZ,甲状腺功能减退未特指,Hypothyroidism unspecified,甲状腺疾病,甲减未分类,中等
+E04,NONTOX-GOITRE,FDXJXZZ,非毒性甲状腺肿,Other nontoxic goitre,甲状腺疾病,非毒性甲状腺肿,轻度
+E04.0,NONTOX-DIF,FDXMFJXZZ,非毒性弥漫性甲状腺肿,Nontoxic diffuse goitre,甲状腺疾病,非毒性弥漫性甲状腺肿,轻度
+E04.1,NONTOX-UNI,FDXDJJXZZ,非毒性单结节性甲状腺肿,Nontoxic single thyroid nodule,甲状腺疾病,非毒性单结节甲状腺肿,轻度
+E04.2,NONTOX-MULTI,FDXDJJXZZ,非毒性多结节性甲状腺肿,Nontoxic multinodular goitre,甲状腺疾病,非毒性多结节甲状腺肿,中等
+E04.8,NONTOX-OTH,QTFDXJXZZ,其他特指非毒性甲状腺肿,Other specified nontoxic goitre,甲状腺疾病,其他非毒性甲状腺肿,轻度
+E04.9,NONTOX-UNSP,FDXJXZZWTZ,非毒性甲状腺肿未特指,Nontoxic goitre unspecified,甲状腺疾病,非毒性甲状腺肿未分类,轻度
+E05,HYPER,JXZGNKJ,甲状腺毒症,Thyrotoxicosis,甲状腺疾病,甲状腺功能亢进症,中等
+E05.0,HYPER-DIF-GOITRE,DXJXZZJXZDZ,毒性弥漫性甲状腺肿,Thyrotoxicosis with diffuse goitre,甲状腺疾病,弥漫性毒性甲状腺肿,中等
+E05.1,HYPER-UNI-NOD,DXDJJJXZDZ,毒性单结节性甲状腺肿,Thyrotoxicosis with toxic single thyroid nodule,甲状腺疾病,毒性单结节甲状腺肿,中等
+E05.2,HYPER-MULTI-NOD,DXDJJJXZDZ,毒性多结节性甲状腺肿,Thyrotoxicosis with toxic multinodular goitre,甲状腺疾病,毒性多结节甲状腺肿,中等
+E05.3,HYPER-ECTOP,YWTJXZZDZ,异位甲状腺组织甲状腺毒症,Thyrotoxicosis from ectopic thyroid tissue,甲状腺疾病,异位甲状腺毒症,中等
+E05.4,HYPER-FACTIT,RWXJXZDZ,人为性甲状腺毒症,Thyrotoxicosis factitia,甲状腺疾病,人工甲亢,中等
+E05.5,HYPER-CRISIS,JXZWJ,甲状腺危机,Thyroid crisis or storm,甲状腺疾病,甲亢危象,危重
+E05.8,HYPER-OTH,QTJXZDZ,其他甲状腺毒症,Other thyrotoxicosis,甲状腺疾病,其他甲状腺毒症,中等
+E05.9,HYPER-UNSP,JXZDZWTZ,甲状腺毒症未特指,Thyrotoxicosis unspecified,甲状腺疾病,甲状腺毒症未分类,中等
+E06,THYROID,JXZY,甲状腺炎,Thyroiditis,甲状腺疾病,甲状腺炎,中等
+E06.0,ACUTE-THYROID,JXJXZY,急性甲状腺炎,Acute thyroiditis,甲状腺疾病,急性甲状腺炎,中等
+E06.1,SUBACUTE-THYROID,YJXJXZY,亚急性甲状腺炎,Subacute thyroiditis,甲状腺疾病,亚急性甲状腺炎,中等
+E06.2,CHRONIC-THYROID,MXJXZY,慢性甲状腺炎伴一过性甲状腺毒症,Chronic thyroiditis with transient thyrotoxicosis,甲状腺疾病,慢性甲状腺炎,中等
+E06.3,AUTO-THYROID,ZSMXJXZY,自身免疫性甲状腺炎,Autoimmune thyroiditis,甲状腺疾病,自身免疫性甲状腺炎,中等
+E06.4,DRUG-THYROID,YWXJXZY,药物性甲状腺炎,Drug-induced thyroiditis,甲状腺疾病,药物性甲状腺炎,中等
+E06.5,RIEDEL-THYROID,QTTSJXZY,其他慢性甲状腺炎,Riedel thyroiditis,甲状腺疾病,Riedel甲状腺炎,中等
+E06.9,THYROIDITIS-UNSP,JXZYWTZ,甲状腺炎未特指,Thyroiditis unspecified,甲状腺疾病,甲状腺炎未分类,中等
+E07,THYROID-OTH,QTJXZJB,其他甲状腺疾病,Other disorders of thyroid,甲状腺疾病,其他甲状腺疾病,轻度
+E07.0,HYPER-SECRETION,JXZSSGJFM,甲状腺素分泌过多,Hypersecretion of calcitonin,甲状腺疾病,甲状腺素分泌过多,轻度
+E07.1,DYSHORMON-GOITRE,JXZSSHJXZZ,甲状腺激素生成障碍性甲状腺肿,Dyshormogenetic goitre,甲状腺疾病,激素合成障碍性甲状腺肿,中等
+E07.8,THYROID-SPEC-OTH,QTTZJXZJB,其他特指甲状腺疾病,Other specified disorders of thyroid,甲状腺疾病,其他特指甲状腺病,轻度
+E07.9,THYROID-DIS-UNSP,JXZJBWTZ,甲状腺疾病未特指,Disorder of thyroid unspecified,甲状腺疾病,甲状腺疾病未分类,轻度
+C73,THYROID-CA,JXZEL,甲状腺恶性肿瘤,Malignant neoplasm of thyroid gland,甲状腺肿瘤,甲状腺癌,危重
+C73.0,PAPIL-CA,RZXJXZEL,乳头状甲状腺癌,Papillary carcinoma of thyroid,甲状腺肿瘤,乳头状甲状腺癌,危重
+C73.1,FOLLIC-CA,LZBXJXZEL,滤泡性甲状腺癌,Follicular carcinoma of thyroid,甲状腺肿瘤,滤泡性甲状腺癌,危重
+C73.2,MEDUL-CA,SZXJXZEL,髓样甲状腺癌,Medullary carcinoma of thyroid,甲状腺肿瘤,髓样甲状腺癌,危重
+C73.3,ANAPLAS-CA,WTXTJXZEL,未分化甲状腺癌,Anaplastic carcinoma of thyroid,甲状腺肿瘤,未分化甲状腺癌,危重
+C73.9,THYROID-CA-US,JXZELWTZ,甲状腺恶性肿瘤未特指,Malignant neoplasm of thyroid gland unspecified,甲状腺肿瘤,甲状腺癌未分类,危重
+D34,THYROID-BEN,JXZLXZL,甲状腺良性肿瘤,Benign neoplasm of thyroid gland,甲状腺肿瘤,甲状腺良性肿瘤,轻度
+D44.0,THYROID-UNC,JXZWDXXZL,甲状腺不确定性肿瘤,Neoplasm of uncertain behavior of thyroid gland,甲状腺肿瘤,甲状腺不确定性肿瘤,中等
+Z90.02,THYROID-ABS,HQJXZQCSSZT,获得性甲状腺全切除术后状态,Acquired absence of thyroid part of endocrine glands,甲状腺手术,甲状腺切除后,管理
+Z98.89,POST-THYROID,JXZSSHJZT,甲状腺手术后状态,Other specified postprocedural states,甲状腺手术,甲状腺手术后状态,管理
+E78,LIPID,XZDDXWL,脂蛋白代谢紊乱和其他脂血症,Disorders of lipoprotein metabolism and other lipidaemias,血脂异常,脂质代谢异常,中等
+E78.0,FAM-HYPERCHOL,JZXGGZC,家族性高胆固醇血症,Familial hypercholesterolaemia,血脂异常,家族性高胆固醇血症,中等
+E78.1,FAM-HYPERTG,JZXGGYSZ,家族性高甘油三酯血症,Familial hypertriglyceridaemia,血脂异常,家族性高甘油三酯血症,中等
+E78.2,MIXED-HYPERLIP,HXGXZ,混合性高脂血症,Mixed hyperlipidaemia,血脂异常,混合性高脂血症,中等
+E78.3,HYPERCHYLOM,GLWXZ,高乳糜微粒血症,Hyperchylomicronaemia,血脂异常,高乳糜微粒血症,中等
+E78.4,HYPERLIP-OTH,QTGXZ,其他高脂血症,Other hyperlipidaemia,血脂异常,其他高脂血症,中等
+E78.5,HYPERLIP-UNSP,GXZWTZ,高脂血症未特指,Hyperlipidaemia unspecified,血脂异常,高脂血症未分类,中等
+E78.6,LIPOPROT-DEF,XDBQX,脂蛋白缺乏症,Lipoprotein deficiency,血脂异常,脂蛋白缺乏症,中等
+E78.8,LIPID-OTH,QTXZDDXWL,其他脂蛋白代谢紊乱,Other disorders of lipoprotein metabolism,血脂异常,其他脂蛋白代谢异常,中等
+E78.9,LIPID-UNSP,XZDDXWLWTZ,脂蛋白代谢紊乱未特指,Disorder of lipoprotein metabolism unspecified,血脂异常,脂蛋白代谢紊乱未分类,中等
+I10,HTN-PRIM,YFXGXY,原发性高血压,Essential hypertension,血脂异常,原发性高血压,中等
+I11,HTN-HEART,GXYBXJB,高血压性心脏病,Hypertensive heart disease,血脂异常,高血压心脏病,严重
+I12,HTN-KIDNEY,GXYBSZJB,高血压性肾脏病,Hypertensive kidney disease,血脂异常,高血压肾病,严重
+I13,HTN-HEART-KID,GXYBXZJB,高血压性心脏和肾脏病,Hypertensive heart and kidney disease,血脂异常,高血压心肾疾病,严重
+Z79.899,STATIN,CQSYHZDLJ,长期使用降胆固醇药,Long term current use of other medications,血脂异常,长期他汀类药物治疗,管理
+E27,ADRENAL,QTSXSJB,其他肾上腺疾病,Other disorders of adrenal gland,肾上腺疾病,肾上腺疾病,中等
+E27.0,ADRENAL-HYPER,SXSJB,肾上腺皮质功能亢进症,Adrenocortical hyperfunction,肾上腺疾病,库欣综合征,严重
+E27.1,ADDISON,YFXSXPQGNR,原发性肾上腺皮质功能不全,Primary adrenocortical insufficiency,肾上腺疾病,艾迪生病,严重
+E27.2,ADDISON-CRISIS,ADSSWJ,艾迪生危机,Addisonian crisis,肾上腺疾病,肾上腺危象,危重
+E27.3,DRUG-ADRENAL,YWXSXPQGNR,药物性肾上腺皮质功能不全,Drug-induced adrenocortical insufficiency,肾上腺疾病,药物性肾上腺功能不全,中等
+E27.4,ADRENAL-INSUFF-OTH,QTSXPQGNBQWTZ,其他和未特指肾上腺皮质功能不全,Other and unspecified adrenocortical insufficiency,肾上腺疾病,其他肾上腺皮质功能不全,中等
+E27.5,ADRENAL-MED-HYPER,SXSZGN,肾上腺髓质功能亢进症,Adrenomedullary hyperfunction,肾上腺疾病,嗜铬细胞瘤,严重
+E27.8,ADRENAL-SPEC-OTH,QTTZSXSJB,其他特指肾上腺疾病,Other specified disorders of adrenal gland,肾上腺疾病,其他特指肾上腺疾病,中等
+E27.9,ADRENAL-UNSP,SXSJBWTZ,肾上腺疾病未特指,Disorder of adrenal gland unspecified,肾上腺疾病,肾上腺疾病未分类,中等
+E26,ALDOSTER-HYPER,QTGYZ,醛固酮增多症,Hyperaldosteronism,肾上腺疾病,原发性醛固酮增多症,中等
+E26.0,PRIM-ALDOSTER,YFXQGYZ,原发性醛固酮增多症,Primary hyperaldosteronism,肾上腺疾病,原发性醛固酮增多症,中等
+E26.1,SEC-ALDOSTER,JFXQGYZ,继发性醛固酮增多症,Secondary hyperaldosteronism,肾上腺疾病,继发性醛固酮增多症,中等
+E26.8,ALDOSTER-OTH,QTQGYZ,其他醛固酮增多症,Other hyperaldosteronism,肾上腺疾病,其他醛固酮增多症,中等
+E26.9,ALDOSTER-UNSP,QGYZWTZ,醛固酮增多症未特指,Hyperaldosteronism unspecified,肾上腺疾病,醛固酮增多症未分类,中等
+C74,ADRENAL-CA,SXSZEL,肾上腺恶性肿瘤,Malignant neoplasm of adrenal gland,肾上腺肿瘤,肾上腺癌,危重
+D35.0,ADRENAL-BEN,SXSLXZL,肾上腺良性肿瘤,Benign neoplasm of adrenal gland,肾上腺肿瘤,肾上腺良性肿瘤,轻度
+E83.5,CALCIUM-HIGH,GGJZ,高钙血症,Disorders of calcium metabolism,钙磷代谢,高钙血症,中等
+E83.51,CALCIUM-LOW,DGJZ,低钙血症,Hypocalcemia,钙磷代谢,低钙血症,中等
+E83.30,PHOS-HIGH,GLXZ,高磷血症,Disorders of phosphorus metabolism,钙磷代谢,高磷血症,中等
+E83.31,PHOS-LOW,DLXZ,低磷血症,Familial hypophosphatemia,钙磷代谢,低磷血症,中等
+E55,VIT-D-DEF,WDSQQX,维生素D缺乏,Vitamin D deficiency,钙磷代谢,维生素D缺乏,中等
+E55.0,RICKETS,GLRLB,佝偻病,Rickets active,钙磷代谢,活动性佝偻病,严重
+E55.9,VIT-D-DEF-UNSP,WDSQQXWTZ,维生素D缺乏未特指,Vitamin D deficiency unspecified,钙磷代谢,维生素D缺乏未分类,中等
+E64.3,RICKETS-SEQ,GLRLBHZ,佝偻病后遗症,Sequelae of rickets,钙磷代谢,佝偻病后遗症,轻度
+M80,OSTEOPOROSIS-FRAC,GZSSBBGZ,骨质疏松伴骨折,Osteoporosis with pathological fracture,钙磷代谢,骨质疏松性骨折,严重
+M81,OSTEOPOROSIS,GZSS,骨质疏松不伴骨折,Osteoporosis without pathological fracture,钙磷代谢,骨质疏松症,中等
+M81.0,POST-MENO-OSTEO,JJHGZSS,绝经后骨质疏松,Postmenopausal osteoporosis,钙磷代谢,绝经后骨质疏松,中等
+M81.1,IDIO-OSTEO,TFXGZSS,特发性骨质疏松,Idiopathic osteoporosis,钙磷代谢,特发性骨质疏松,中等
+M81.8,OSTEO-OTH,QTGZSS,其他骨质疏松,Other osteoporosis,钙磷代谢,其他骨质疏松,中等
+M83,OSTEOMALACIA,GRHS,骨软化症,Adult osteomalacia,钙磷代谢,成人骨软化症,中等
+E25,PARA-HYPER,JZPQGNG,甲状旁腺功能亢进和其他甲状旁腺疾病,Disorders of parathyroid gland,甲状旁腺疾病,甲状旁腺功能亢进,中等
+E25.0,PARA-HYPER-PRIM,YFXJZPQGNG,原发性甲状旁腺功能亢进,Primary hyperparathyroidism,甲状旁腺疾病,原发性甲旁亢,中等
+E25.1,PARA-HYPER-SEC,JFXJZPQGNG,继发性甲状旁腺功能亢进,Secondary hyperparathyroidism,甲状旁腺疾病,继发性甲旁亢,中等
+E25.2,PARA-HYPER-OTH,QTJZPQGNG,其他甲状旁腺功能亢进,Other hyperparathyroidism,甲状旁腺疾病,其他甲旁亢,中等
+E20,PARA-HYPO,JZPQGNDX,甲状旁腺功能减退,Hypoparathyroidism,甲状旁腺疾病,甲状旁腺功能减退,中等
+E20.0,IDIO-PARA-HYPO,TFXJZPQGNDX,特发性甲状旁腺功能减退,Idiopathic hypoparathyroidism,甲状旁腺疾病,特发性甲旁减,中等
+E20.1,PSEUDO-PARA-HYPO,WXJZPQGNDX,假性甲状旁腺功能减退,Pseudohypoparathyroidism,甲状旁腺疾病,假性甲旁减,中等
+E20.8,PARA-HYPO-OTH,QTJZPQGNDX,其他甲状旁腺功能减退,Other hypoparathyroidism,甲状旁腺疾病,其他甲旁减,中等
+E20.9,PARA-HYPO-UNSP,JZPQGNDXWTZ,甲状旁腺功能减退未特指,Hypoparathyroidism unspecified,甲状旁腺疾病,甲旁减未分类,中等
+C75.0,PARA-CA,JZPQZEL,甲状旁腺恶性肿瘤,Malignant neoplasm of parathyroid gland,甲状旁腺肿瘤,甲状旁腺癌,危重
+D35.1,PARA-BEN,JZPQLXZL,甲状旁腺良性肿瘤,Benign neoplasm of parathyroid gland,甲状旁腺肿瘤,甲状旁腺良性肿瘤,轻度
+E22,PITUITARY-HYPER,CTGNG,垂体功能亢进,Hyperfunction of pituitary gland,垂体疾病,垂体功能亢进,中等
+E22.0,ACROMEGALY,ZDFD,肢端肥大症,Acromegaly and pituitary gigantism,垂体疾病,肢端肥大症,中等
+E22.1,HYPERPROLACT,GCSZYJZ,高催乳素血症,Hyperprolactinaemia,垂体疾病,高催乳素血症,中等
+E22.2,SIADH,KLDGSSFJZHZ,抗利尿激素分泌不当综合征,Syndrome of inappropriate secretion of antidiuretic hormone,垂体疾病,SIADH综合征,中等
+E22.8,PITUITARY-HYPER-OTH,QTCTGN,其他垂体功能亢进,Other hyperfunction of pituitary gland,垂体疾病,其他垂体功能亢进,中等
+E22.9,PITUITARY-HYPER-UNSP,CTGNWTZ,垂体功能亢进未特指,Hyperfunction of pituitary gland unspecified,垂体疾病,垂体功能亢进未分类,中等
+E23,PITUITARY-HYPO,CTGNDX,垂体功能减退,Hypofunction and other disorders of pituitary gland,垂体疾病,垂体功能减退,严重
+E23.0,PANHYPOPITU,QCTGNDX,全垂体功能减退,Hypopituitarism,垂体疾病,垂体功能减退症,严重
+E23.1,DRUG-PITUITARY,YWXCTGNDX,药物性垂体功能减退,Drug-induced hypopituitarism,垂体疾病,药物性垂体功能减退,中等
+E23.2,DIABETES-INSIP,NDC,尿崩症,Diabetes insipidus,垂体疾病,尿崩症,中等
+E23.3,POST-PROC-PITUITARY,SSHCTGN,术后垂体功能不全,Hypothalamic dysfunction not elsewhere classified,垂体疾病,术后垂体功能不全,严重
+E23.6,PITUITARY-OTH,QTCTWL,其他垂体紊乱,Other disorders of pituitary gland,垂体疾病,其他垂体疾病,中等
+E23.7,PITUITARY-UNSP,CTWLWTZ,垂体紊乱未特指,Disorder of pituitary gland unspecified,垂体疾病,垂体疾病未分类,中等
+D35.2,PITUITARY-BEN,CTLXZL,垂体良性肿瘤,Benign neoplasm of pituitary gland,垂体肿瘤,垂体腺瘤,轻度
+C75.1,PITUITARY-CA,CTZEL,垂体恶性肿瘤,Malignant neoplasm of pituitary gland,垂体肿瘤,垂体癌,危重
+D44.3,PITUITARY-UNC,CTWDXXZL,垂体不确定性肿瘤,Neoplasm of uncertain behavior of pituitary gland,垂体肿瘤,垂体不确定性肿瘤,中等
+I15,HTN-SEC,JFXGXY,继发性高血压,Secondary hypertension,高血压,继发性高血压,中等
+I15.0,HTN-RENO,SXGXY,肾血管性高血压,Renovascular hypertension,高血压,肾血管性高血压,严重
+I15.1,HTN-RENAL,SZXGXY,其他肾性高血压,Hypertension secondary to other renal disorders,高血压,肾性高血压,严重
+I15.2,HTN-ENDO,NFJXJBGXY,内分泌疾病所致高血压,Hypertension secondary to endocrine disorders,高血压,内分泌性高血压,中等
+I15.8,HTN-SEC-OTH,QTJFXGXY,其他继发性高血压,Other secondary hypertension,高血压,其他继发性高血压,中等
+I15.9,HTN-SEC-UNSP,JFXGXYWTZ,继发性高血压未特指,Secondary hypertension unspecified,高血压,继发性高血压未分类,中等
+I16,HTN-CRISIS,GXYWJ,高血压危机,Hypertensive crisis,高血压,高血压危象,危重
+I16.0,HTN-URGENCY,GXYFY,高血压急症,Hypertensive urgency,高血压,高血压急症,危重
+I16.1,HTN-ENCEPH,GXYNB,高血压脑病,Hypertensive encephalopathy,高血压,高血压脑病,危重
+I16.9,HTN-CRISIS-UNSP,GXYWJWTZ,高血压危机未特指,Hypertensive crisis unspecified,高血压,高血压危机未分类,危重
+I67.4,HTN-ENCEPH-CHR,MXGXYNB,慢性高血压脑病,Hypertensive encephalopathy,高血压脑病,慢性高血压脑病,严重
+H35.0,HTN-RETINO,GXYSWMB,高血压视网膜病变,Hypertensive retinopathy,高血压并发症,高血压视网膜病变,严重
+I10.1,BENIGN-HTN,LXGXY,良性高血压,Benign hypertension,高血压,良性高血压,轻度
+I10.9,MALIGN-HTN,EXGXY,恶性高血压,Malignant hypertension,高血压,恶性高血压,危重
+O10,HTN-PREG,RSQGXY,妊娠期高血压疾病,Pre-existing hypertension complicating pregnancy,妊娠高血压,妊娠期高血压,中等
+O10.0,HTN-PREG-ESS,RSQYFXGXY,妊娠合并原发性高血压,Pre-existing essential hypertension complicating pregnancy,妊娠高血压,妊娠合并原发性高血压,中等
+O10.1,HTN-PREG-SEC,RSQJFXGXY,妊娠合并继发性高血压,Pre-existing secondary hypertension complicating pregnancy,妊娠高血压,妊娠合并继发性高血压,严重
+O10.2,HTN-PREG-RENAL,RSQSZGXY,妊娠合并肾性高血压,Pre-existing hypertension with pre-eclampsia,妊娠高血压,妊娠合并肾性高血压,严重
+O10.3,HTN-PREG-HEART,RSQGXYXZB,妊娠合并高血压心脏病,Pre-existing hypertension with heart disease complicating pregnancy,妊娠高血压,妊娠合并高血压心脏病,严重
+O10.4,HTN-PREG-KIDNEY,RSQGXYBB,妊娠合并高血压肾病,Pre-existing hypertension with kidney disease complicating pregnancy,妊娠高血压,妊娠合并高血压肾病,严重
+O10.9,HTN-PREG-UNSP,RSQGXYWTZ,妊娠期高血压未特指,Pre-existing hypertension complicating pregnancy unspecified,妊娠高血压,妊娠期高血压未分类,中等
+O11,HTN-PREG-PROTEIN,RSQQGXY,妊娠期蛋白尿性高血压,Pre-existing hypertension with pre-eclampsia,妊娠高血压,先兆子痫合并慢性高血压,严重
+O13,HTN-GEST,RSXGXY,妊娠性高血压,Gestational hypertension,妊娠高血压,妊娠性高血压,中等
+O14,PRE-ECLAMPSIA,XZQZ,先兆子痫,Pre-eclampsia,妊娠高血压,先兆子痫,严重
+O14.0,PRE-ECLAMP-MILD,QXQZ,轻度先兆子痫,Mild pre-eclampsia,妊娠高血压,轻度先兆子痫,中等
+O14.1,PRE-ECLAMP-SEV,ZXQZ,重度先兆子痫,Severe pre-eclampsia,妊娠高血压,重度先兆子痫,严重
+O14.2,HELLP,HELLPZHZ,HELLP综合征,HELLP syndrome,妊娠高血压,HELLP综合征,危重
+O14.9,PRE-ECLAMP-UNSP,XZQZWTZ,先兆子痫未特指,Pre-eclampsia unspecified,妊娠高血压,先兆子痫未分类,严重
+O15,ECLAMPSIA,QZ,子痫,Eclampsia,妊娠高血压,子痫,危重
+O15.0,ECLAMP-PREG,RSQQZ,妊娠期子痫,Eclampsia in pregnancy,妊娠高血压,妊娠期子痫,危重
+O15.1,ECLAMP-LABOR,FCQQZ,分娩期子痫,Eclampsia in labour,妊娠高血压,分娩期子痫,危重
+O15.2,ECLAMP-PUERP,CHHQZ,产褥期子痫,Eclampsia in the puerperium,妊娠高血压,产褥期子痫,危重
+O15.9,ECLAMP-UNSP,QZWTZ,子痫未特指,Eclampsia unspecified,妊娠高血压,子痫未分类,危重
+O16,HTN-MATERNAL,MXGXYWQBJZ,母体高血压未特指并发症,Maternal hypertension unspecified,妊娠高血压,母体高血压未分类,中等
+E78.00,PURE-HYPERCHOL,DCGGZC,单纯性高胆固醇血症,Pure hypercholesterolemia,血脂异常,单纯性高胆固醇血症,中等
+E78.01,FAM-HYPERCHOL-HETERO,JZXGGZCYZX,家族性高胆固醇血症杂合子,Familial hypercholesterolemia heterozygous,血脂异常,家族性高胆固醇血症杂合子,严重
+E78.10,PURE-HYPERTG,DCXGGYSZ,单纯性高甘油三酯血症,Pure hypertriglyceridemia,血脂异常,单纯性高甘油三酯血症,中等
+E78.70,LOW-HDL,DHDLGJZC,低HDL胆固醇血症,Disorder of bile acid and cholesterol metabolism unspecified,血脂异常,低HDL胆固醇血症,中等
+E78.71,FAMILIAL-LOW-HDL,JZXDHDL,家族性低HDL胆固醇血症,Deficiency of lipoprotein lipase,血脂异常,家族性低HDL胆固醇血症,中等
+E78.72,TANGIER,TJEJB,Tangier病,Tangier disease,血脂异常,Tangier病,中等
+E78.79,LIPOPROT-DEF-OTH,QTXDBQX,其他脂蛋白缺乏症,Other lipoprotein deficiencies,血脂异常,其他脂蛋白缺乏症,中等
+E78.81,LIPOPROT-A-HIGH,GXDB(a),高脂蛋白(a)血症,Elevated lipoprotein(a),血脂异常,高脂蛋白(a)血症,中等
+E78.89,DYSLIPID-OTH,QTXZWL,其他血脂异常,Other specified disorders of lipoprotein metabolism,血脂异常,其他血脂异常,中等
+Z13.220,HTN-SCREEN,GXYSC,高血压筛查,Encounter for screening for lipoid disorders,高血压管理,高血压筛查,预防
+Z79.1,HTN-MED,CQSYKGXY,长期使用抗高血压药,Long term current use of anticoagulants,高血压管理,长期抗高血压治疗,管理
+Z86.79,HTN-HISTORY,GXYS,高血压病史,Personal history of other circulatory system disease,高血压管理,既往高血压史,管理
+B16.9,HBV-ACUTE,JXYXBGY,急性乙型病毒性肝炎,Acute hepatitis B without hepatic coma,感染性疾病,急性乙型肝炎未并发肝性脑病,严重
+B18.0,HBV-DELTA,MXYXGYBDX,慢性乙型病毒性肝炎伴丁型病毒,Chronic hepatitis B with delta-agent,感染性疾病,慢性乙型肝炎合并丁型病毒感染,严重
+B18.1,HBV-CHRON,MXYXGY,慢性乙型病毒性肝炎,Chronic hepatitis B without delta-agent,感染性疾病,慢性乙型肝炎未合并丁型病毒,严重
+B17.10,HCV-ACUTE,JXBXBGY,急性丙型病毒性肝炎,Acute hepatitis C without hepatic coma,感染性疾病,急性丙型肝炎未并发肝性脑病,严重
+B18.2,HCV-CHRON,MXXBGY,慢性丙型病毒性肝炎,Chronic viral hepatitis C,感染性疾病,慢性丙型肝炎,严重
+B96.81,HPYLORI,YMLGJ,幽门螺杆菌感染,Helicobacter pylori infection,感染性疾病,幽门螺杆菌相关感染,中等
+K74.60,CIRRHOSIS,GYHWTZ,肝硬化未特指,Unspecified cirrhosis of liver,肝胆疾病,肝硬化病程未明确病因,严重
+C22.0,HCC,YFXGXBA,原发性肝细胞癌,Liver cell carcinoma,肿瘤,原发性肝细胞癌,危重
+C16.9,GASTRIC-CA,WAWTZ,胃癌未特指,Malignant neoplasm of stomach unspecified,肿瘤,胃部恶性肿瘤未明确分型,危重
+C18.9,COLON-CA,JCAWTZ,结肠癌未特指,Malignant neoplasm of colon unspecified,肿瘤,结肠恶性肿瘤未明确部位,危重
+C20,RECTAL-CA,ZCA,直肠癌,Malignant neoplasm of rectum,肿瘤,直肠恶性肿瘤,危重
+D12.6,COLON-POLYP,JCLX,结肠良性肿瘤,Benign neoplasm of colon unspecified,肠胃疾病,结肠息肉或良性肿瘤,中等
+C34.90,LUNG-CA,FAWTZ,肺癌未特指,Malignant neoplasm of lung unspecified,肿瘤,肺部恶性肿瘤未明确部位,危重
+R91.1,LUNG-NODULE,GLXFJJ,孤立性肺结节,Solitary pulmonary nodule,呼吸系统,孤立性肺结节影像学发现,中等
+C50.919,BREAST-CA,RXAWTZ,乳腺癌未特指,Malignant neoplasm of female breast unspecified site,肿瘤,乳腺恶性肿瘤未分类部位,危重
+D05.10,DCIS,RXDGYWA,乳腺导管原位癌,Intraductal carcinoma in situ of unspecified breast,肿瘤,乳腺导管原位癌病变,严重
+C53.9,CERVIX-CA,GJAWTZ,宫颈癌未特指,Malignant neoplasm of cervix uteri unspecified,肿瘤,宫颈恶性肿瘤未明确分型,危重
+D06.9,CIN3,GJYWA,宫颈原位癌未特指,Carcinoma in situ of cervix uteri unspecified,肿瘤,宫颈高级别上皮内瘤变,严重
+N87.1,CIN2,GJZDBDZ,宫颈中度不典型增生,Moderate cervical dysplasia,妇科,宫颈上皮内瘤变Ⅱ级,中等
+C61,PROSTATE-CA,QLXA,前列腺癌,Malignant neoplasm of prostate,肿瘤,前列腺恶性肿瘤,危重
+I25.10,CAD,GZDMZYX,原发性冠状动脉粥样硬化性心脏病,Atherosclerotic heart disease without angina,心血管,冠心病未伴胸痛,严重
+I25.110,CAD-UA,GZDMZWBD,冠状动脉粥样硬化伴不稳定型心绞痛,Atherosclerotic heart disease with unstable angina,心血管,冠心病伴不稳定型心绞痛,危重
+I21.9,AMI,JXXJGS,急性心肌梗死未特指,Acute myocardial infarction unspecified,心血管,急性心肌梗死未明确部位,危重
+I50.9,CHF-UNSP,XLSJWTZ,心力衰竭未特指,Heart failure unspecified,心血管,心力衰竭未明确类型,严重
+I48.0,AFIB-P,ZFXXFD,阵发性心房颤动,Paroxysmal atrial fibrillation,心血管,阵发性心房颤动,中等
+I48.2,AFIB-C,MXXXFD,慢性心房颤动,Chronic atrial fibrillation,心血管,持续性心房颤动,中等
+I49.9,ARRHY-UNSP,XLSCWTZ,心律失常未特指,Cardiac arrhythmia unspecified,心血管,心律失常未明确类型,中等
+G45.9,TIA,DZXNXX,短暂性脑缺血发作,Transient cerebral ischemic attack unspecified,神经系统,短暂性脑供血不足发作,中等
+I63.9,STROKE,NGSWTZ,脑梗死未特指,Cerebral infarction unspecified,神经系统,脑梗死未明确血管部位,危重
+J44.9,COPD,MZFXWTZ,慢性阻塞性肺疾病未特指,Chronic obstructive pulmonary disease unspecified,呼吸系统,慢阻肺未明确分型,严重
+J44.1,COPD-AE,MZFXJXJZ,慢性阻塞性肺疾病急性加重,Chronic obstructive pulmonary disease with acute exacerbation,呼吸系统,慢阻肺急性加重期,危重
+J45.909,ASTHMA,XCWTZ,哮喘未特指,Unspecified asthma uncomplicated,呼吸系统,哮喘未明确严重程度,中等
+J45.50,ASTHMA-SEV,ZDCXXC,重度持续性哮喘伴危重状态,Severe persistent asthma with status asthmaticus,呼吸系统,重度持续性哮喘并哮喘持续状态,危重
+J18.9,PNEUMONIA,FYWTZ,肺炎未特指病原,Pneumonia unspecified organism,呼吸系统,肺炎病原未明确,严重
+N17.9,AKI,JXSSSWTZ,急性肾损伤未特指,Acute kidney failure unspecified,肾脏疾病,急性肾损伤未明确病因,危重
+N18.3,CKD3,MXSBB3Q,慢性肾病3期,Chronic kidney disease stage 3,肾脏疾病,慢性肾脏病中度减退期,严重
+N18.4,CKD4,MXSBB4Q,慢性肾病4期,Chronic kidney disease stage 4,肾脏疾病,慢性肾脏病重度减退期,严重
+N18.5,CKD5,MXSBB5Q,慢性肾病5期,Chronic kidney disease stage 5,肾脏疾病,慢性肾病终末期前,危重
+N18.6,ESRD,ZMXSZB,终末期肾病,End stage renal disease,肾脏疾病,终末期肾功能衰竭,危重
+N03.9,CHRON-GN,MXSXYWTZ,慢性肾小球肾炎未特指,Chronic nephritic syndrome unspecified,肾脏疾病,慢性肾小球肾炎未明确类型,严重
+N04.9,NEPHROTIC,SBZHZWTZ,肾病综合征未特指,Nephrotic syndrome unspecified,肾脏疾病,肾病综合征未明确病因,严重
+N39.0,UTI,NLGJWTZ,尿路感染未特指,Urinary tract infection site not specified,泌尿系统,尿路感染未明确部位,中等
+G20,PARKINSON,PJSB,帕金森病,Parkinson's disease,神经系统,帕金森病,中等
+G40.909,EPILEPSY,DXWTZ,癫痫未特指,Epilepsy unspecified not intractable,神经系统,癫痫发作未明确类型,中等
+M06.9,RA,LFSGJAWTZ,类风湿关节炎未特指,Rheumatoid arthritis unspecified,风湿免疫,类风湿关节炎未明确关节部位,严重
+M32.9,SLE,XTBLQWTZ,系统性红斑狼疮未特指,Systemic lupus erythematosus unspecified,风湿免疫,系统性红斑狼疮未明确损害范围,严重
+D64.9,ANEMIA,PXWTZ,贫血未特指,Anemia unspecified,血液疾病,贫血病因未明确,中等
+D69.6,THROMBO,XXBJSSWTZ,血小板减少症未特指,Thrombocytopenia unspecified,血液疾病,血小板减少病因未明确,严重
+K85.90,PANCREA-AC,JXYYWTZ,急性胰腺炎未特指,Acute pancreatitis unspecified without necrosis or infection,消化系统,急性胰腺炎未并发坏死或感染,严重
+K51.90,UC,KYXJCYWBFZ,溃疡性结肠炎无并发症,Ulcerative colitis without complications,消化系统,溃疡性结肠炎未并发症,严重
+K50.90,CROHN,KLEBWTZ,克罗恩病未特指无并发症,Crohn disease unspecified site without complications,消化系统,克罗恩病未明确部位无并发症,严重
