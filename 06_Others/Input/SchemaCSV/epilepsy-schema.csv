@@ -1,0 +1,129 @@
+字段名(英文),字段名(中文),数据类型,描述,示例
+patientId,患者ID,String,患者唯一标识符,EP20250325001
+diagnosisDate,确诊日期,Date,癫痫确诊日期,2025-03-25
+age,年龄,Number,确诊时年龄(岁),28
+gender,性别,String,患者性别,男
+
+# 发作特征
+seizure.type,发作.类型,String,"**局灶性发作**: 起源于一侧大脑半球<br>**全面性发作**: 双侧半球同时起源<br>**未知起源**: 无法确定起源",局灶性发作
+seizure.focalType,发作.局灶性发作类型,String,"**意识保留**: 局灶性意识保留发作(简单部分性)<br>**意识受损**: 局灶性意识受损发作(复杂部分性)<br>**继发全面性**: 局灶性至双侧强直阵挛",局灶性意识受损发作
+seizure.generalizedType,发作.全面性发作类型,String,"**全面性强直阵挛**: GTCS,大发作<br>**失神发作**: 典型/非典型失神,愣神<br>**肌阵挛发作**: 肢体抽动<br>**强直发作**: 肢体僵直<br>**阵挛发作**: 节律性抽动<br>**失张力发作**: 突然跌倒",全面性强直阵挛发作
+
+seizure.frequency,发作.频率,String,"**偶发**: <1次/年<br>**低频**: 1-12次/年<br>**中频**: 1-4次/月<br>**高频**: ≥1次/周<br>**丛集**: 24h内多次发作",中频(每月2-3次)
+seizure.duration,发作.持续时间,Number,单次发作持续时间(秒),90
+seizure.lastDate,发作.最后一次日期,Date,最近一次发作日期,2025-03-20
+
+# 发作表现
+seizure.aura,发作.先兆,Boolean,"**先兆**: 发作前预警症状<br>**类型**: 感觉、精神、自主神经先兆",true
+seizure.aura.type,发作.先兆.类型,String,"**感觉先兆**: 视觉、听觉、嗅觉、味觉异常<br>**躯体感觉**: 麻木、刺痛<br>**精神先兆**: 恐惧、似曾相识感<br>**自主神经**: 上腹部不适、心悸",上腹部不适感
+seizure.automatism,发作.自动症,Boolean,"**自动症**: 意识受损时重复性无目的动作<br>**口-舌自动症**: 咂嘴、舔唇、咀嚼<br>**手势自动症**: 摸索、整理衣物",true
+seizure.automatism.type,发作.自动症.类型,String,自动症具体表现,咂嘴、右手摸索动作
+seizure.motorManifestations,发作.运动表现,String,"**强直**: 肢体僵直<br>**阵挛**: 节律性抽动<br>**肌阵挛**: 突然短暂抽动<br>**失张力**: 肌张力突然丧失",右上肢强直后阵挛
+seizure.consciousness,发作.意识状态,String,"**意识保留**: 完全清醒<br>**意识受损**: 部分或完全丧失<br>**意识丧失**: 完全不清醒",意识受损
+seizure.postictal,发作.发作后状态,String,"**Todd瘫痪**: 发作后短暂偏瘫<br>**混乱状态**: 定向障碍<br>**嗜睡**: 疲倦想睡<br>**头痛**: 发作后头痛",混乱状态持续5-10分钟
+
+# 病因分类
+etiology.classification,病因.分类,String,"**结构性**: 脑结构异常<br>**遗传性**: 基因突变<br>**感染性**: 脑炎、脑膜炎后遗症<br>**代谢性**: 代谢障碍<br>**免疫性**: 自身免疫性脑炎<br>**未知**: 病因不明",结构性
+etiology.structural,病因.结构性病因,String,"**脑外伤**: 颅脑损伤后<br>**脑卒中**: 缺血/出血后遗症<br>**脑肿瘤**: 颅内占位<br>**皮质发育不良**: 先天发育异常<br>**海马硬化**: 颞叶内侧硬化",左侧海马硬化
+etiology.genetic,病因.遗传性病因,String,"**特发性全面性癫痫**: 遗传倾向<br>**Dravet综合征**: SCN1A突变<br>**结节性硬化**: TSC1/TSC2突变",无明确遗传性疾病
+etiology.familyHistory,病因.家族史,Boolean,"**阳性家族史**: 一级亲属癫痫病史<br>**遗传风险**: 增加2-4倍",false
+
+# 癫痫综合征
+syndrome.diagnosis,综合征.诊断,String,"**颞叶癫痫**: 最常见局灶性癫痫<br>**额叶癫痫**: 夜间发作多见<br>**儿童失神癫痫**: CAE<br>**青少年肌阵挛癫痫**: JME<br>**West综合征**: 婴儿痉挛症<br>**Lennox-Gastaut综合征**: LGS,难治性",左侧颞叶癫痫
+syndrome.ageOfOnset,综合征.发病年龄,Number,首次发作年龄(岁),18
+
+# 脑电图 (EEG)
+eeg.routine.performed,脑电图.常规EEG.是否完成,Boolean,"**常规EEG**: 30-60分钟描记<br>**发作间期**: 检出率30-50%<br>**诱发试验**: 过度换气、闪光刺激",true
+eeg.routine.findings,脑电图.常规EEG.发现,String,"**正常**: 无异常放电<br>**局灶性慢波**: 结构性病变<br>**尖波/棘波**: 癫痫样放电<br>**尖慢波复合**: 典型癫痫波<br>**暴发抑制**: 严重脑病",左侧颞区尖慢波复合
+eeg.routine.lateralization,脑电图.常规EEG.侧别,String,"**左侧**: 左半球起源<br>**右侧**: 右半球起源<br>**双侧**: 全面性发作<br>**弥漫**: 无明确侧别",左侧
+
+eeg.videoEeg.performed,脑电图.视频EEG.是否完成,Boolean,"**视频EEG**: 长程监测(24h-7天)<br>**发作期记录**: 金标准诊断<br>**发作捕捉**: 明确发作类型和起源",true
+eeg.videoEeg.seizuresCaptured,脑电图.视频EEG.捕捉发作数,Number,监测期间捕捉到的发作次数,3
+eeg.videoEeg.ictalPattern,脑电图.视频EEG.发作期图形,String,发作期EEG表现,左侧颞区5-7Hz节律性θ活动,逐渐演变为快速β活动
+eeg.videoEeg.onsetLocalization,脑电图.视频EEG.起源定位,String,发作起源部位,左侧颞叶内侧
+
+# 影像学检查
+imaging.mri.performed,影像学.头颅MRI.是否完成,Boolean,"**癫痫MRI序列**: 薄层、海马冠状位<br>**FLAIR**: 检测硬化<br>**T1/T2**: 结构异常",true
+imaging.mri.findings,影像学.MRI.发现,String,"**正常**: 无异常<br>**海马硬化**: T2高信号、体积缩小<br>**皮质发育不良**: FCD<br>**肿瘤**: 占位效应<br>**脑软化灶**: 脑外伤/卒中后",左侧海马T2高信号,体积缩小,符合海马硬化
+imaging.mri.hippocampalSclerosis,影像学.MRI.海马硬化,Boolean,"**海马硬化**: 颞叶内侧癫痫最常见病因<br>**单侧**: 手术预后好<br>**双侧**: 手术禁忌",true
+imaging.mri.hippocampalSide,影像学.MRI.海马硬化侧别,String,"**左侧**: 优势半球,语言影响<br>**右侧**: 非优势半球",左侧
+
+imaging.ct.performed,影像学.头颅CT.是否完成,Boolean,"**CT**: 急性发作、外伤<br>**钙化**: 结节性硬化、寄生虫<br>**出血/梗死**: 急性病变",true
+imaging.ct.findings,影像学.CT.发现,String,CT检查主要发现,未见明显异常
+
+imaging.petct.performed,影像学.PET-CT.是否完成,Boolean,"**FDG-PET**: 发作间期低代谢区<br>**术前评估**: 定位致痫灶<br>**侧别化**: 与MRI互补",false
+imaging.petct.hypometabolism,影像学.PET.低代谢区,String,发作间期代谢减低区域,未做
+
+# 神经心理评估
+neuropsych.performed,神经心理.评估,Boolean,"**认知功能**: 记忆、语言、执行功能<br>**术前评估**: 预测手术风险<br>**Wada试验**: 语言和记忆侧别化",true
+neuropsych.memory,神经心理.记忆功能,String,"**言语记忆**: 左侧颞叶<br>**视觉记忆**: 右侧颞叶<br>**受损**: 提示海马受累",轻度言语记忆受损
+neuropsych.language,神经心理.语言功能,String,"**语言优势半球**: 通常左侧<br>**命名困难**: 颞叶受累<br>**Wada试验**: 确定语言半球",正常,左侧语言优势
+
+# 抗癫痫药物治疗
+treatment.aed.firstLine,治疗.抗癫痫药.一线药物,String,"**局灶性**: 卡马西平、奥卡西平、拉莫三嗪、左乙拉西坦<br>**全面性**: 丙戊酸、拉莫三嗗、左乙拉西坦<br>**失神**: 乙琥胺、丙戊酸",左乙拉西坦
+treatment.aed.firstLine.dose,治疗.一线药物.剂量,String,一线药物使用剂量,左乙拉西坦1000mg bid
+treatment.aed.firstLine.response,治疗.一线药物.疗效,String,"**无发作**: 完全控制<br>**发作减少**: 部分有效<br>**无效**: 发作未减少",发作减少50%
+
+treatment.aed.secondLine,治疗.抗癫痫药.二线药物,String,"**添加治疗**: 联合用药<br>**换药**: 替换无效药物",奥卡西平
+treatment.aed.secondLine.dose,治疗.二线药物.剂量,String,二线药物使用剂量,奥卡西平600mg bid
+treatment.aed.combination,治疗.联合用药,Boolean,"**单药治疗**: 首选<br>**联合用药**: 单药无效后<br>**多药**: 难治性癫痫",true
+treatment.aed.combination.regimen,治疗.联合用药.方案,String,当前联合用药方案,左乙拉西坦1000mg bid + 奥卡西平600mg bid
+
+treatment.aed.sideEffects,治疗.药物副作用,String,"**常见**: 头晕、嗜睡、共济失调<br>**严重**: 皮疹、肝损伤、血液学异常<br>**特异性**: 丙戊酸致畸、卡马西平低钠",轻度嗜睡
+treatment.aed.adherence,治疗.依从性,String,"**良好**: 规律服药<br>**中等**: 偶尔漏服<br>**差**: 频繁漏服或自行停药",良好
+
+# 难治性癫痫评估
+refractory.criteria,难治性.诊断标准,Boolean,"**定义**: 2种或以上合理AED单药或联合治疗失败<br>**发作持续**: 仍有致残性发作<br>**考虑手术**: 药物难治性",true
+refractory.aedTrials,难治性.AED尝试数,Number,"已尝试的抗癫痫药物数量。<br>**≥2种**: 符合难治性标准",3
+refractory.seizureControl,难治性.发作控制,String,"**无发作**: 完全控制<br>**偶发**: <1次/年<br>**部分控制**: 发作减少≥50%<br>**无控制**: 发作减少<50%",部分控制(发作减少60%)
+
+# 手术治疗评估
+surgery.candidate,手术.手术候选,Boolean,"**药物难治性**: 必须条件<br>**可定位**: 明确致痫灶<br>**可切除**: 非功能区或功能可保留<br>**获益>风险**: 综合评估",true
+surgery.presurgicalWorkup,手术.术前评估,Boolean,"**视频EEG**: 定位致痫灶<br>**MRI**: 结构病变<br>**PET**: 代谢异常<br>**神经心理**: 功能评估<br>**Wada**: 语言记忆侧别",true
+
+surgery.type,手术.手术类型,String,"**前颞叶切除**: ATL,颞叶癫痫标准术式<br>**选择性杏仁海马切除**: SAH,保留颞叶皮质<br>**病灶切除**: 切除FCD、肿瘤等<br>**胼胝体切开**: 减少跨半球扩散<br>**多脑叶软脑膜下横切**: MST<br>**半球切除**: 严重半球病变",计划左侧选择性杏仁海马切除术
+surgery.engel,手术.Engel分级,String,"**Engel I**: 无致残性发作(IA:完全无发作)<br>**Engel II**: 罕见致残性发作<br>**Engel III**: 有改善<br>**Engel IV**: 无改善",术前评估中
+surgery.complications,手术.并发症风险,String,"**记忆下降**: 优势半球颞叶切除<br>**视野缺损**: 颞叶后部损伤<br>**偏瘫**: 运动区损伤<br>**感染/出血**: 一般手术风险",语言记忆下降风险(优势半球)
+
+# 其他治疗
+treatment.vns,治疗.迷走神经刺激,Boolean,"**VNS**: 难治性癫痫姑息治疗<br>**发作减少**: 30-50%患者发作减少≥50%<br>**不能手术**: 无明确致痫灶或多灶起源",false
+treatment.ketogenicDiet,治疗.生酮饮食,Boolean,"**生酮饮食**: 脂肪:碳水化合物+蛋白质=4:1<br>**儿童难治性**: 特别有效<br>**Dravet综合征**: 推荐治疗",false
+treatment.dbs,治疗.脑深部电刺激,Boolean,"**DBS**: 丘脑前核刺激<br>**难治性**: 不能手术切除的难治性癫痫",false
+
+# 触发因素
+triggers.sleepDeprivation,触发因素.睡眠剥夺,Boolean,"**最常见触发因素**: 睡眠不足<br>**建议**: 规律作息,充足睡眠",true
+triggers.stress,触发因素.压力,Boolean,"**情绪应激**: 焦虑、紧张<br>**建议**: 放松训练,心理支持",true
+triggers.alcohol,触发因素.饮酒,Boolean,"**酒精**: 降低癫痫阈值<br>**戒断**: 停酒后发作风险增加",false
+triggers.fever,触发因素.发热,Boolean,"**热性诱发**: 发热时发作<br>**儿童**: 更常见",false
+triggers.menstruation,触发因素.月经,Boolean,"**月经相关性癫痫**: 经期前后发作增加<br>**激素影响**: 雌激素/孕激素水平波动",false
+triggers.flashingLights,触发因素.闪光刺激,Boolean,"**光敏性癫痫**: 3-30Hz闪光诱发<br>**特发性全面性**: 常见<br>**避免**: 电视、电子游戏、频闪灯",false
+
+# 共病
+comorbidity.depression,共病.抑郁,Boolean,"**抑郁**: 30-50%癫痫患者<br>**双向关系**: 抑郁↔癫痫<br>**治疗**: SSRI(注意癫痫阈值)",true
+comorbidity.anxiety,共病.焦虑,Boolean,"**焦虑障碍**: 20-40%<br>**社交焦虑**: 发作恐惧<br>**治疗**: 心理治疗+药物",true
+comorbidity.cognitiveImpairment,共病.认知障碍,Boolean,"**认知功能下降**: 记忆、注意、执行功能<br>**原因**: 反复发作、AED副作用、结构病变",false
+comorbidity.adhd,共病.注意缺陷,Boolean,"**ADHD**: 儿童癫痫常见<br>**治疗**: 兴奋剂需谨慎,可能降低癫痫阈值",false
+
+# 生活质量
+qol.driving,生活质量.驾驶,String,"**驾驶限制**: 多数地区要求无发作6-12个月<br>**法律规定**: 各国不同",禁止驾驶
+qol.employment,生活质量.就业,String,"**就业歧视**: 常见问题<br>**避免**: 高空作业、机械操作、驾驶",办公室工作,已告知雇主
+qol.sports,生活质量.体育运动,String,"**安全运动**: 鼓励<br>**避免**: 游泳(单独)、攀岩、潜水等高风险活动",可进行慢跑、健身等低风险运动
+qol.pregnancy,生活质量.妊娠计划,String,"**AED致畸**: 丙戊酸风险最高<br>**叶酸补充**: 5mg/d<br>**调整用药**: 孕前咨询",女性患者暂无妊娠计划
+
+# 随访监测
+followUp.interval,随访.随访间隔,String,"**初始治疗**: 每1-3月<br>**稳定期**: 每6-12月<br>**调药期**: 每1月",每3个月
+followUp.aedLevel,随访.血药浓度监测,Boolean,"**常规监测**: 卡马西平、苯妥英、丙戊酸、苯巴比妥<br>**无需常规**: 左乙拉西坦、拉莫三嗪",true
+followUp.aedLevel.recent,随访.血药浓度.最近结果,String,最近一次血药浓度监测结果,左乙拉西坦35μg/mL(治疗范围12-46)
+followUp.liverFunction,随访.肝功能监测,Boolean,"**肝损伤风险**: 丙戊酸、卡马西平、苯妥英<br>**监测**: 治疗初期每1-3月",true
+followUp.cbc,随访.血常规监测,Boolean,"**骨髓抑制**: 卡马西平、丙戊酸<br>**再生障碍性贫血**: 罕见但严重",true
+
+followUp.seizureFree,随访.无发作时间,Number,"无发作持续时间(月)。<br>**≥12月**: 考虑减药<br>**≥24月**: 减药成功率高",8
+followUp.seizureDiary,随访.发作日记,Boolean,"**发作记录**: 日期、时间、持续时间、诱因、表现<br>**治疗调整**: 重要依据",true
+
+# 预后
+prognosis.seizureControl,预后.发作控制,String,"**完全控制**: 60-70%单药或联合治疗<br>**部分控制**: 20-30%<br>**难治性**: 20-30%",部分控制
+prognosis.remission,预后.缓解可能,String,"**儿童失神**: 缓解率高<br>**颞叶癫痫**: 药物难治性多见<br>**外伤后**: 早期治疗,缓解率高",药物部分控制,评估手术治疗可能
+
+performanceStatus,体能状态.生活自理,String,"**正常**: 完全独立<br>**轻度受限**: 不能从事高风险工作<br>**中度受限**: 需监护<br>**重度受限**: 生活依赖",轻度受限(不能驾驶、高空作业)
+
+notes,备注,String,其他重要临床信息,左侧颞叶癫痫,药物部分控制,拟行术前评估

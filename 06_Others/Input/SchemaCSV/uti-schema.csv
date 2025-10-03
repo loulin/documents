@@ -1,0 +1,130 @@
+字段名(英文),字段名(中文),数据类型,描述,示例
+patientId,患者ID,String,患者唯一标识符,UTI20250328001
+diagnosisDate,确诊日期,Date,尿路感染确诊日期,2025-03-28
+age,年龄,Number,确诊时年龄(岁),35
+gender,性别,String,患者性别,女
+
+# 临床分类
+classification.type,分类.类型,String,"**下尿路感染**: 膀胱炎、尿道炎<br>**上尿路感染**: 肾盂肾炎<br>**无症状菌尿**: 无症状,菌落计数≥10⁵",急性膀胱炎
+classification.complicated,分类.复杂性,String,"**单纯性**: 健康非孕女性,无结构功能异常<br>**复杂性**: 男性、孕妇、结构异常、免疫抑制、导尿管相关",单纯性
+classification.recurrence,分类.复发性,Boolean,"**复发性UTI**: 6月内≥2次或12月内≥3次<br>**女性**: 常见",false
+
+# 症状 - 下尿路症状
+symptoms.dysuria,症状.尿痛,Boolean,"**排尿痛**: 膀胱炎最典型症状<br>**灼烧感**: 排尿时或排尿后",true
+symptoms.frequency,症状.尿频,Boolean,"**尿频**: 排尿次数增多<br>**日间>8次**: 异常<br>**夜间>2次**: 夜尿",true
+symptoms.urgency,症状.尿急,Boolean,"**尿急**: 突发强烈排尿欲<br>**急迫性尿失禁**: 严重者",true
+symptoms.suprapubicPain,症状.下腹痛,Boolean,"**耻骨上疼痛**: 膀胱区胀痛<br>**膀胱充盈时加重**: 排尿后缓解",true
+symptoms.hematuria,症状.血尿,Boolean,"**肉眼血尿**: 可见<br>**镜下血尿**: 尿常规发现<br>**出血性膀胱炎**: 严重者",false
+
+# 症状 - 上尿路症状(肾盂肾炎)
+symptoms.fever,症状.发热,Boolean,"**发热**: 肾盂肾炎常见(>38.5°C)<br>**畏寒寒战**: 提示菌血症",false
+symptoms.fever.temperature,症状.发热.体温,Number,体温(°C),36.8
+symptoms.flankPain,症状.腰痛,Boolean,"**肋脊角叩痛**: 肾盂肾炎典型体征<br>**单侧或双侧**: 腰痛",false
+symptoms.cvat,症状.CVAT,Boolean,"**CVAT**: 肋脊角压痛(Costovertebral Angle Tenderness)<br>**阳性**: 提示肾盂肾炎",false
+symptoms.nausea,症状.恶心呕吐,Boolean,"**消化道症状**: 肾盂肾炎可伴随<br>**全身中毒症状**: 严重感染",false
+
+# 尿液分析
+urine.appearance,尿液.外观,String,"**清亮**: 正常<br>**混浊**: 白细胞、细菌<br>**血性**: 出血性膀胱炎",混浊
+urine.color,尿液.颜色,String,"**淡黄**: 正常<br>**深黄**: 浓缩<br>**红色**: 血尿<br>**浑浊**: 脓尿",淡黄色混浊
+urine.wbc,尿液.白细胞,String,"尿白细胞(个/HP)。<br>**<5**: 正常<br>**>10**: 脓尿<br>**白细胞酯酶阳性**: UTI敏感指标",30-50/HP
+urine.rbc,尿液.红细胞,String,"尿红细胞(个/HP)。<br>**<3**: 正常<br>**>3**: 血尿",5-10/HP
+urine.bacteria,尿液.细菌,String,"尿细菌。<br>**阴性**: 正常<br>**阳性**: 细菌感染<br>**每HP可见**: 提示菌尿",阳性,++++
+urine.nitrite,尿液.亚硝酸盐,String,"亚硝酸盐试验。<br>**阳性**: 革兰阴性杆菌感染(大肠杆菌)<br>**特异性高**: >90%",阳性
+urine.leukocyteEsterase,尿液.白细胞酯酶,String,"白细胞酯酶。<br>**阳性**: 脓尿(>10 WBC/HP)<br>**敏感性**: 75-96%",阳性(++)
+urine.protein,尿液.蛋白,String,"尿蛋白。<br>**阴性/-**: 正常<br>**+/-/++**: 轻度蛋白尿(炎症)<br>**+++/++++**: 肾盂肾炎或肾病",+
+urine.cast,尿液.管型,String,"尿管型。<br>**白细胞管型**: 肾盂肾炎特征性表现<br>**提示**: 肾实质感染",无
+
+# 尿培养
+culture.performed,尿培养.是否送检,Boolean,"**中段清洁尿**: 标准采集方法<br>**导尿采集**: 污染率低<br>**耻骨上穿刺**: 金标准(罕用)",true
+culture.collection,尿培养.采集方法,String,"**中段尿**: 最常用<br>**导尿**: 老年、儿童<br>**耻骨上穿刺**: 特殊情况",中段清洁尿
+culture.result,尿培养.结果,String,"**阳性**: 病原菌生长<br>**污染**: 多种菌、菌落数低<br>**阴性**: 无菌生长或污染",大肠杆菌生长
+culture.colony,尿培养.菌落计数,Number,"菌落形成单位(CFU/mL)。<br>**≥10⁵**: 诊断标准(中段尿)<br>**≥10⁴**: 有症状女性可诊断<br>**≥10²**: 导尿标本可诊断",>10⁵ CFU/mL
+culture.pathogen,尿培养.病原菌,String,"**大肠杆菌**: 75-95%(最常见)<br>**克雷伯菌**: 5-10%<br>**变形杆菌**: 5%<br>**粪肠球菌**: 5-10%<br>**金黄色葡萄球菌**: 2-5%",大肠杆菌
+culture.sensitivity,尿培养.药敏试验,String,药物敏感性试验结果,敏感:头孢曲松、左氧氟沙星;耐药:氨苄西林
+
+# 血液检查
+blood.wbc,血液.白细胞,Number,"血白细胞(×10⁹/L)。<br>**正常**: 4-10<br>**升高**: 感染<br>**肾盂肾炎**: 常升高",12.5
+blood.neutrophil,血液.中性粒细胞,Number,"中性粒细胞百分比(%)。<br>**正常**: 50-70%<br>**升高**: 细菌感染<br>**核左移**: 严重感染",82
+blood.crp,血液.CRP,Number,"C反应蛋白(mg/L)。<br>**<10**: 正常<br>**升高**: 炎症<br>**肾盂肾炎**: 显著升高",45
+blood.pct,血液.PCT,Number,"降钙素原(ng/mL)。<br>**<0.5**: 低风险<br>**>2**: 脓毒症风险<br>**肾盂肾炎**: 可升高",0.8
+blood.creatinine,血液.肌酐,Number,"血肌酐(μmol/L)。<br>**正常**: 女44-80,男53-106<br>**升高**: 肾功能受损<br>**梗阻性肾盂肾炎**: 可升高",70
+
+# 影像学检查
+imaging.ultrasound.performed,影像学.超声.是否完成,Boolean,"**肾脏超声**: 评估结构异常<br>**膀胱超声**: 残余尿<br>**适应证**: 复杂性UTI、男性、儿童、复发性",false
+imaging.ultrasound.findings,影像学.超声.发现,String,"**正常**: 无异常<br>**肾积水**: 梗阻<br>**结石**: 感染性结石<br>**残余尿**: 排尿功能障碍",未做
+
+imaging.ct.performed,影像学.CT.是否完成,Boolean,"**增强CT**: 肾脓肿、肾周脓肿<br>**适应证**: 复杂性肾盂肾炎、治疗无效<br>**排除**: 泌尿系结石、肿瘤",false
+imaging.ct.findings,影像学.CT.发现,String,"**肾周炎**: 肾周脂肪模糊<br>**肾脓肿**: 液化坏死<br>**气肿性肾盂肾炎**: 糖尿病患者,产气菌",未做
+
+imaging.vcug,影像学.VCUG.是否完成,Boolean,"**排尿性膀胱尿道造影**: 儿童复发性UTI<br>**膀胱输尿管反流**: VUR<br>**适应证**: 儿童、复发性、上尿路异常",false
+
+# 并发症
+complications.pyelonephritis,并发症.肾盂肾炎,Boolean,"**上行感染**: 膀胱炎→肾盂肾炎<br>**严重**: 菌血症、脓毒症风险",false
+complications.urosepsis,并发症.尿源性脓毒症,Boolean,"**脓毒症**: 尿路感染播散<br>**高危**: 老年、免疫抑制、梗阻<br>**死亡率**: 高",false
+complications.abscess,并发症.脓肿,Boolean,"**肾脓肿**: 肾实质化脓性感染<br>**肾周脓肿**: 肾周筋膜内积脓<br>**需引流**: 手术或穿刺",false
+complications.emphysematous,并发症.气肿性肾盂肾炎,Boolean,"**气肿性肾盂肾炎**: 产气菌感染<br>**糖尿病**: 90%患者<br>**高死亡率**: 需积极治疗",false
+
+# 危险因素
+riskFactors.female,危险因素.女性,Boolean,"**女性**: 尿道短(4cm),易上行感染<br>**发生率**: 女性>男性(50:1)",true
+riskFactors.sexualActivity,危险因素.性生活,Boolean,"**性生活**: 机械性将细菌带入膀胱<br>**"蜜月性膀胱炎"**: 频繁性生活后<br>**72h内**: 发病",true
+riskFactors.pregnancy,危险因素.妊娠,Boolean,"**妊娠**: 孕激素致输尿管蠕动减弱<br>**无症状菌尿**: 2-10%孕妇<br>**筛查**: 孕期必须治疗",false
+riskFactors.menopause,危险因素.绝经,Boolean,"**绝经**: 雌激素缺乏,阴道pH↑,乳酸杆菌↓<br>**复发性UTI**: 增加",false
+riskFactors.diabetes,危险因素.糖尿病,Boolean,"**糖尿病**: 免疫功能↓,膀胱神经病变<br>**复杂性感染**: 气肿性肾盂肾炎、真菌感染",false
+riskFactors.immunosuppression,危险因素.免疫抑制,Boolean,"**免疫抑制**: HIV、化疗、激素、器官移植<br>**机会性感染**: 真菌、结核",false
+riskFactors.catheter,危险因素.导尿管,Boolean,"**留置导尿**: 院内感染主要原因<br>**菌尿**: >3天几乎100%<br>**生物膜**: 耐药菌",false
+riskFactors.catheter.duration,危险因素.导尿管.留置时间,Number,留置导尿管时间(天),0
+riskFactors.obstruction,危险因素.尿路梗阻,Boolean,"**梗阻**: 结石、前列腺增生、肿瘤<br>**尿流不畅**: 细菌滞留<br>**复杂性感染**: 肾盂肾炎",false
+riskFactors.vur,危险因素.膀胱输尿管反流,Boolean,"**VUR**: 儿童复发性UTI主要原因<br>**上行感染**: 肾瘢痕形成",false
+riskFactors.neurogenicBladder,危险因素.神经源性膀胱,Boolean,"**神经源性膀胱**: 脊髓损伤、糖尿病神经病变<br>**残余尿**: 细菌繁殖",false
+riskFactors.benignProstaticHyperplasia,危险因素.前列腺增生,Boolean,"**BPH**: 老年男性UTI常见原因<br>**尿潴留**: 残余尿增加",false
+
+# 治疗 - 经验性治疗
+treatment.empiric.regimen,治疗.经验性抗生素.方案,String,"**单纯性膀胱炎**: 呋喃妥因、磷霉素、TMP-SMX<br>**复杂性**: 氟喹诺酮、头孢<br>**肾盂肾炎**: 氟喹诺酮、头孢曲松",呋喃妥因100mg bid
+treatment.empiric.duration,治疗.经验性抗生素.疗程,Number,"治疗天数。<br>**单纯性膀胱炎**: 3-5天<br>**复杂性**: 7-14天<br>**肾盂肾炎**: 10-14天",5
+
+# 治疗 - 目标治疗
+treatment.targeted.regimen,治疗.目标抗生素.方案,String,"**根据药敏**: 调整抗生素<br>**窄谱抗生素**: 首选<br>**降阶梯治疗**: 静脉→口服",左氧氟沙星500mg qd(药敏敏感)
+treatment.targeted.duration,治疗.目标抗生素.疗程,Number,目标治疗总疗程(天),7
+treatment.targeted.switchToOral,治疗.目标抗生素.转口服,Boolean,"**静脉→口服**: 退热48-72h后<br>**口服吸收好**: 氟喹诺酮、TMP-SMX",true
+
+# 治疗 - 具体抗生素
+treatment.antibiotics.nitrofurantoin,抗生素.呋喃妥因,String,"**呋喃妥因**: 100mg bid×5天<br>**单纯性膀胱炎**: 一线<br>**禁忌**: 肾功能不全(CrCl<60)、肾盂肾炎",100mg bid×5天
+treatment.antibiotics.fosfomycin,抗生素.磷霉素,String,"**磷霉素**: 3g单剂<br>**单纯性膀胱炎**: 一线<br>**依从性好**: 单次给药",未用
+treatment.antibiotics.tmpSmx,抗生素.TMP-SMX,String,"**复方新诺明**: TMP 160mg + SMX 800mg bid×3天<br>**耐药率**: 中国>20%,需谨慎<br>**过敏**: 磺胺过敏禁用",未用
+treatment.antibiotics.fluoroquinolone,抗生素.氟喹诺酮,String,"**左氧氟沙星**: 500mg qd×3天(膀胱炎)或7-10天(肾盂肾炎)<br>**环丙沙星**: 500mg bid<br>**保留用药**: 避免过度使用",左氧氟沙星500mg qd×7天
+treatment.antibiotics.cephalosporin,抗生素.头孢类,String,"**头孢曲松**: 1-2g qd(肾盂肾炎)<br>**头孢克肟**: 400mg bid(口服)<br>**广谱**: 复杂性UTI",未用
+treatment.antibiotics.amoxicillin,抗生素.阿莫西林,String,"**阿莫西林/克拉维酸**: 875/125mg bid×5-7天<br>**耐药**: 大肠杆菌耐药率高(>40%)<br>**孕妇**: 安全",未用
+
+# 治疗 - 对症治疗
+treatment.symptomatic.analgesic,对症治疗.镇痛,String,"**非那吡啶**: 200mg tid,尿路镇痛<br>**NSAIDs**: 布洛芬,缓解疼痛<br>**短期**: 2-3天",布洛芬400mg prn
+treatment.symptomatic.hydration,对症治疗.多饮水,Boolean,"**增加尿量**: 冲刷细菌<br>**建议**: >2L/d<br>**禁忌**: 心肾功能不全",true
+
+# 治疗反应
+treatment.response.timeToImprovement,治疗.反应.改善时间,Number,"症状改善时间(天)。<br>**48-72h**: 应改善<br>**无改善**: 考虑耐药或并发症",2
+treatment.response.symptomResolution,治疗.反应.症状消失,Boolean,"症状是否完全消失。<br>**治疗结束**: 应无症状",true
+treatment.response.cultureFollowUp,治疗.反应.复查尿培养,Boolean,"**治疗后尿培养**: 不常规推荐<br>**适应证**: 肾盂肾炎、孕妇、治疗失败",false
+
+# 预防
+prevention.cranberryProducts,预防.蔓越莓制品,Boolean,"**蔓越莓**: 预防复发性UTI<br>**机制**: 抑制细菌黏附<br>**证据**: 中等质量证据",false
+prevention.postcoitalVoiding,预防.性交后排尿,Boolean,"**性交后排尿**: 排出细菌<br>**推荐**: 复发性UTI女性",true
+prevention.estrogenTherapy,预防.雌激素治疗,Boolean,"**阴道雌激素**: 绝经后女性<br>**恢复阴道菌群**: 乳酸杆菌<br>**降低复发率**: 有效",false
+prevention.antibiotic.prophylaxis,预防.抗生素预防,Boolean,"**持续低剂量抗生素**: 复发性UTI<br>**方案**: 呋喃妥因50mg qn或TMP-SMX半片qn<br>**疗程**: 6-12个月",false
+prevention.antibiotic.postcoital,预防.性交后抗生素,Boolean,"**性交后单剂抗生素**: 性交相关UTI<br>**方案**: TMP-SMX或呋喃妥因<br>**有效**: 降低复发",false
+prevention.dMannose,预防.D-甘露糖,Boolean,"**D-甘露糖**: 2g/d<br>**机制**: 抑制大肠杆菌黏附<br>**证据**: 小样本研究显示有效",false
+
+# 特殊人群
+special.pregnancy.screening,特殊人群.孕妇.无症状菌尿筛查,Boolean,"**孕期筛查**: 12-16周尿培养<br>**治疗指征**: 菌落数≥10⁵,即使无症状<br>**预防**: 肾盂肾炎、早产、低出生体重",未孕
+special.pregnancy.treatment,特殊人群.孕妇.治疗方案,String,"**安全抗生素**: 阿莫西林、头孢类、呋喃妥因(孕晚期禁用)<br>**禁忌**: 氟喹诺酮、TMP-SMX(孕晚期)、四环素",未孕
+
+special.male.evaluation,特殊人群.男性.评估,Boolean,"**男性UTI**: 默认复杂性<br>**评估**: 前列腺、结构异常<br>**治疗**: 7-14天",非男性
+special.male.prostatitis,特殊人群.男性.前列腺炎,Boolean,"**前列腺炎**: 男性UTI常合并<br>**治疗**: 4-6周抗生素",非男性
+
+special.elderly.considerations,特殊人群.老年.注意事项,String,"**无症状菌尿**: 不需治疗(除特殊情况)<br>**症状不典型**: 谵妄、跌倒<br>**耐药**: 复杂性感染多",不适用
+
+# 预后
+prognosis.recurrence,预后.复发,Boolean,"**复发**: 治疗后症状再现<br>**再感染**: 不同菌株<br>**复发**: 相同菌株(治疗不彻底)",false
+prognosis.recurrence.rate,预后.复发.风险,String,"**单纯性**: 25-30%女性6月内复发<br>**复发性UTI**: 80%再次复发<br>**预防**: 减少复发",低风险(首次)
+
+performanceStatus,生活质量影响,String,"**轻度**: 尿路刺激症状<br>**中度**: 疼痛、影响工作<br>**重度**: 肾盂肾炎、全身症状",轻度
+
+notes,备注,String,其他重要临床信息,急性单纯性膀胱炎,大肠杆菌感染,呋喃妥因治疗反应良好

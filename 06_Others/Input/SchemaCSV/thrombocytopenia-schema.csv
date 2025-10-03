@@ -1,0 +1,123 @@
+字段名(英文),字段名(中文),数据类型,描述,示例
+patientId,患者ID,String,患者唯一标识符,TCP20250327001
+diagnosisDate,确诊日期,Date,血小板减少确诊日期,2025-03-27
+age,年龄,Number,确诊时年龄(岁),42
+gender,性别,String,患者性别,女
+
+# 血小板计数
+platelet.count,血小板.计数,Number,"血小板计数(×10⁹/L)。<br>**正常**: 125-350<br>**轻度减少**: 75-125<br>**中度减少**: 30-75<br>**重度减少**: 10-30<br>**极重度**: <10",45
+platelet.count.lowest,血小板.最低值,Number,历史最低血小板计数(×10⁹/L),28
+platelet.count.trend,血小板.趋势,String,"**稳定**: 计数稳定<br>**下降**: 进行性减少<br>**波动**: 起伏不定<br>**上升**: 治疗后恢复",波动性
+
+# 临床表现
+symptoms.bleeding,症状.出血,Boolean,"**出血**: 血小板<30常见,<10高风险<br>**严重度**: 与血小板计数相关",true
+symptoms.bleeding.type,症状.出血.类型,String,"**皮肤**: 瘀点、瘀斑、紫癜<br>**黏膜**: 鼻出血、牙龈出血、月经过多<br>**严重**: 消化道出血、颅内出血",皮肤瘀点瘀斑、牙龈出血
+symptoms.bleeding.severity,症状.出血.严重程度,String,"**轻度**: 皮肤瘀斑<br>**中度**: 鼻出血、牙龈出血<br>**重度**: 消化道出血、血尿<br>**危及生命**: 颅内出血",中度
+symptoms.petechiae,症状.瘀点,Boolean,"**瘀点**: 针尖大小出血点<br>**分布**: 下肢、压力部位<br>**重力依赖**: 站立后加重",true
+symptoms.purpura,症状.紫癜,Boolean,"**紫癜**: >3mm出血斑<br>**压之不褪色**: 与血管炎性紫癜鉴别",true
+symptoms.bruising,症状.瘀斑,Boolean,"**瘀斑**: 大片皮下出血<br>**易发生**: 轻微外伤后",true
+symptoms.mucosalBleeding,症状.黏膜出血,Boolean,"**湿性紫癜**: 黏膜出血<br>**高危**: 颅内出血风险增加",true
+symptoms.menorrhagia,症状.月经过多,Boolean,"**月经过多**: 女性常见表现<br>**严重贫血**: 长期月经过多",true
+symptoms.ich,症状.颅内出血,Boolean,"**颅内出血**: 最严重并发症<br>**血小板<10**: 高风险<br>**致死率**: 高",false
+
+# 病因分类
+etiology.category,病因.分类,String,"**生成减少**: 骨髓衰竭<br>**破坏增加**: 免疫性、非免疫性<br>**分布异常**: 脾功能亢进<br>**稀释**: 大量输液输血",破坏增加
+etiology.mechanism,病因.机制,String,"**免疫性**: ITP、药物相关<br>**非免疫性**: TTP、DIC、HIT<br>**生成减少**: 再障、白血病、化疗<br>**脾亢**: 肝硬化、门脉高压",免疫性破坏
+
+# 免疫性血小板减少症 (ITP)
+itp.diagnosis,ITP.诊断,Boolean,"**原发性ITP**: 排除性诊断<br>**抗体介导**: 抗血小板抗体<br>**脾脏破坏**: 脾脏巨噬细胞吞噬",true
+itp.type,ITP.类型,String,"**新诊断**: <3个月<br>**持续性**: 3-12个月<br>**慢性**: >12个月",慢性ITP
+itp.duration,ITP.病程,Number,ITP病程(月),18
+itp.severity,ITP.严重程度,String,"**轻度**: 血小板30-100,无/轻微出血<br>**中度**: 血小板10-30,中度出血<br>**重度**: 血小板<10,严重出血",中度
+
+# 继发性血小板减少
+secondary.drug,继发性.药物相关,Boolean,"**药物性**: 肝素(HIT)、喹宁、磺胺类、抗癫痫药<br>**停药后恢复**: 通常1-2周",false
+secondary.drug.agent,继发性.药物.可疑药物,String,可疑致病药物,无
+
+secondary.infection,继发性.感染相关,Boolean,"**病毒**: HIV、HCV、EBV、CMV<br>**细菌**: 幽门螺杆菌(10-15% ITP相关)<br>**根除感染**: 血小板可恢复",false
+secondary.infection.pathogen,继发性.感染.病原体,String,相关感染病原体,无
+
+secondary.autoimmune,继发性.自身免疫病,Boolean,"**SLE**: 系统性红斑狼疮<br>**APS**: 抗磷脂综合征<br>**RA**: 类风湿关节炎",false
+secondary.autoimmune.disease,继发性.自身免疫病.疾病,String,合并的自身免疫性疾病,无
+
+secondary.lymphoproliferative,继发性.淋巴增殖性疾病,Boolean,"**CLL**: 慢性淋巴细胞白血病<br>**淋巴瘤**: 霍奇金、非霍奇金淋巴瘤",false
+
+secondary.pregnancy,继发性.妊娠相关,Boolean,"**妊娠期血小板减少**: 5-10%孕妇<br>**HELLP综合征**: 溶血、肝酶升高、血小板减少<br>**子痫前期**: 重度",false
+
+# 骨髓检查
+bonemarrow.performed,骨髓.骨髓穿刺,Boolean,"**适应证**: >60岁、不典型表现、治疗无效<br>**排除**: 白血病、再障、骨髓增生异常综合征MDS",true
+bonemarrow.cellularity,骨髓.增生程度,String,"**增生活跃**: 正常或增加<br>**增生减低**: 再障、MDS<br>**巨核细胞**: ITP通常正常或增多",增生活跃
+bonemarrow.megakaryocyte,骨髓.巨核细胞,String,"**数量**: 正常或增多(ITP)<br>**形态**: 幼稚型增多<br>**成熟障碍**: 产板巨核细胞减少",巨核细胞数量增多,以幼稚型为主
+bonemarrow.dysplasia,骨髓.病态造血,Boolean,"**MDS**: 骨髓增生异常综合征<br>**病态造血**: 三系病态<br>**预后**: 可能进展为白血病",false
+
+# 其他实验室检查
+labs.bloodSmear,实验室.血涂片,String,"**血小板形态**: 大血小板(ITP)<br>**血小板聚集**: 假性血小板减少<br>**破碎红细胞**: TTP、HUS",血小板体积增大,偶见巨大血小板
+labs.mpv,实验室.MPV,Number,"平均血小板体积(fL)。<br>**正常**: 7-11 fL<br>**增大**: ITP(代偿性幼稚血小板增多)<br>**减小**: 生成减少",12.5
+labs.reticulate,实验室.网织血小板,Number,"网织血小板百分比(%)。<br>**增高**: 破坏增加(ITP)<br>**正常/降低**: 生成减少",15
+
+labs.antiplateletAb,实验室.抗血小板抗体,String,"**PAIgG**: 抗体检测<br>**敏感性**: 50-60%<br>**特异性**: 低,不推荐常规检测",阴性(但不排除ITP)
+labs.directAntiglobulin,实验室.直接抗球蛋白试验,String,"**DAT/Coombs试验**: 检测红细胞抗体<br>**Evans综合征**: ITP+AIHA,DAT阳性",阴性
+
+labs.ana,实验室.ANA,String,"**抗核抗体**: 筛查SLE<br>**阳性**: 考虑继发性ITP",阴性
+labs.apla,实验室.抗磷脂抗体,String,"**抗心磷脂抗体**: APS筛查<br>**lupus抗凝物**: APS",阴性
+labs.hiv,实验室.HIV,String,HIV抗体检测,阴性
+labs.hcv,实验室.HCV,String,丙肝抗体检测,阴性
+labs.hp,实验室.幽门螺杆菌,String,"**Hp**: 10-15% ITP相关<br>**根除**: 血小板可能恢复",阴性
+
+labs.coagulation.pt,实验室.凝血.PT,Number,"凝血酶原时间(秒)。<br>**正常**: 11-15<br>**延长**: DIC、肝病",12.5
+labs.coagulation.aptt,实验室.凝血.APTT,Number,"APTT(秒)。<br>**正常**: 28-40<br>**延长**: 抗凝、凝血因子缺乏",32
+labs.coagulation.fibrinogen,实验室.凝血.纤维蛋白原,Number,"纤维蛋白原(g/L)。<br>**正常**: 2-4<br>**降低**: DIC",3.2
+labs.coagulation.dDimer,实验室.凝血.D-二聚体,Number,"D-dimer(μg/mL)。<br>**升高**: DIC、血栓",0.5
+
+# 鉴别诊断
+differential.ttp,鉴别诊断.TTP,Boolean,"**血栓性血小板减少性紫癜**: 五联征<br>**ADAMTS13缺乏**: <10%<br>**微血管病性溶血**: 破碎红细胞、LDH升高<br>**急症**: 需紧急血浆置换",已排除(无溶血,ADAMTS13正常)
+differential.hit,鉴别诊断.HIT,Boolean,"**肝素诱导血小板减少**: 用肝素5-10天后<br>**血栓**: 动静脉血栓<br>**停肝素**: 必须<br>**4T评分**: 评估可能性",无肝素暴露史
+differential.dic,鉴别诊断.DIC,Boolean,"**弥散性血管内凝血**: 凝血+纤溶亢进<br>**基础疾病**: 脓毒症、恶性肿瘤、产科意外<br>**实验室**: PT/APTT延长、纤维蛋白原↓、D-dimer↑↑",已排除(凝血功能正常)
+differential.aplasticAnemia,鉴别诊断.再生障碍性贫血,Boolean,"**再障**: 全血细胞减少<br>**骨髓增生减低**: <25%<br>**巨核细胞减少**: <5%",已排除(仅血小板减少,骨髓增生活跃)
+differential.mds,鉴别诊断.MDS,Boolean,"**骨髓增生异常综合征**: 老年多见<br>**病态造血**: 三系病态<br>**染色体异常**: 50-80%<br>**进展**: 可转化为AML",已排除(无病态造血)
+
+# 治疗
+treatment.firstLine,治疗.一线治疗,String,"**糖皮质激素**: 泼尼松1mg/kg/d或地塞米松40mg/d×4天<br>**IVIG**: 静脉免疫球蛋白1g/kg<br>**抗D**: Rh(D)阳性患者",泼尼松
+treatment.corticosteroid.regimen,治疗.激素.方案,String,"**泼尼松**: 1mg/kg/d,4周后逐渐减量<br>**地塞米松**: 40mg/d×4天,每月1疗程<br>**高剂量地塞米松**: 反应快",泼尼松1mg/kg/d
+treatment.corticosteroid.response,治疗.激素.反应,String,"**完全反应CR**: 血小板≥100<br>**部分反应PR**: 血小板30-100,至少为基线2倍<br>**无反应NR**: <30或<2倍基线",部分反应(血小板升至65)
+treatment.corticosteroid.duration,治疗.激素.疗程,Number,激素治疗持续时间(月),6
+treatment.corticosteroid.dependent,治疗.激素.依赖,Boolean,"**激素依赖**: 减量或停药后血小板下降<br>**考虑二线治疗**: 激素依赖或无效",true
+
+treatment.ivig,治疗.IVIG,Boolean,"**静脉免疫球蛋白**: 1g/kg×1-2天<br>**快速起效**: 24-48小时<br>**短暂**: 2-4周<br>**适应证**: 急性出血、术前准备",true
+treatment.ivig.response,治疗.IVIG.反应,String,"**反应快**: 24-72小时<br>**持续时间**: 2-4周<br>**重复**: 可再用",血小板升至95,持续3周
+
+treatment.secondLine,治疗.二线治疗,String,"**TPO-RA**: 促血小板生成素受体激动剂(艾曲波帕、罗米司亭、阿伐曲泊帕)<br>**利妥昔单抗**: 抗CD20单抗<br>**脾切除**: 传统二线",TPO-RA
+treatment.tpoRa.agent,治疗.TPO-RA.药物,String,"**艾曲波帕**: 25-75mg qd,口服<br>**罗米司亭**: 1-10μg/kg qw,皮下注射<br>**阿伐曲泊帕**: 20-40mg qd,口服",艾曲波帕50mg qd
+treatment.tpoRa.response,治疗.TPO-RA.反应,String,"**反应率**: 60-80%<br>**起效**: 1-2周<br>**持续用药**: 停药后多数复发",血小板稳定在80-120
+treatment.tpoRa.duration,治疗.TPO-RA.疗程,Number,TPO-RA治疗持续时间(月),12
+
+treatment.rituximab,治疗.利妥昔单抗,Boolean,"**利妥昔单抗**: 375mg/m²,每周1次×4次<br>**抗CD20**: 消耗B细胞<br>**反应率**: 40-60%<br>**持续时间**: 中位10-12个月",false
+
+treatment.splenectomy,治疗.脾切除,Boolean,"**脾切除**: 传统二线治疗<br>**反应率**: 60-70%长期缓解<br>**并发症**: 感染风险(肺炎球菌、脑膜炎球菌、流感嗜血杆菌)<br>**疫苗**: 术前2周接种",false
+treatment.splenectomy.date,治疗.脾切除.日期,Date,脾切除手术日期,未做
+treatment.splenectomy.outcome,治疗.脾切除.结果,String,"**CR**: 血小板≥100<br>**PR**: 30-100<br>**NR**: <30",未做
+
+treatment.thirdLine,治疗.三线治疗,String,"**免疫抑制剂**: 环孢素、吗替麦考酚酯、硫唑嘌呤<br>**达那唑**: 雄激素<br>**长春碱类**: 长春新碱",无
+
+# 出血预防
+prevention.bleedingPrecautions,预防.出血预防措施,String,"**避免**: 外伤、剧烈运动、接触性运动<br>**禁忌**: 阿司匹林、NSAIDs、抗凝药<br>**建议**: 软毛牙刷,电动剃须刀",遵循出血预防措施
+prevention.plateletTransfusion,预防.血小板输注,Boolean,"**输注指征**: 血小板<10或活动性出血<br>**预防性**: 有创操作前<br>**效果短暂**: 免疫性破坏",false
+prevention.antifibrinolytic,预防.抗纤溶药物,Boolean,"**氨甲环酸**: 黏膜出血(月经过多、牙龈出血、鼻出血)<br>**局部应用**: 漱口、鼻腔",false
+
+# 特殊情况
+special.pregnancy,特殊情况.妊娠,Boolean,"**妊娠期ITP**: 管理复杂<br>**治疗**: IVIG、激素(避免地塞米松)<br>**分娩**: 血小板>50,>80可硬膜外<br>**新生儿**: 10%血小板减少",false
+special.surgery,特殊情况.手术,Boolean,"**术前准备**: 血小板>50(一般手术),>80(神经外科、眼科)<br>**IVIG**: 快速提升",false
+special.surgery.plateletTarget,特殊情况.手术.血小板目标,Number,"手术前血小板目标值(×10⁹/L)。<br>**一般手术**: >50<br>**神经外科**: >80<br>**眼科**: >80",未计划手术
+
+# 随访监测
+followUp.interval,随访.随访间隔,String,"**活动期**: 每1-2周<br>**稳定期**: 每1-3月<br>**缓解期**: 每3-6月",每月
+followUp.monitoring,随访.监测项目,String,"**血常规**: 血小板计数<br>**出血症状**: 评估<br>**药物副作用**: 激素、TPO-RA",血常规+出血症状评估
+followUp.remission,随访.缓解状态,String,"**完全缓解**: 血小板≥100×2次,无出血,停药≥6月<br>**部分缓解**: 血小板30-100,停药≥6月<br>**无反应**: <30或需持续治疗",部分缓解(TPO-RA维持)
+
+# 预后
+prognosis.spontaneousRemission,预后.自发缓解,String,"**儿童**: 80%自发缓解<br>**成人**: 10-20%自发缓解<br>**慢性ITP**: 多数需长期治疗",成人慢性ITP,需长期治疗
+prognosis.mortality,预后.死亡风险,String,"**出血死亡**: <1%(现代治疗)<br>**颅内出血**: 0.4%<br>**感染**: 脾切除后风险",低风险(血小板>30)
+
+performanceStatus,体能状态.生活质量,String,"**正常**: 无限制<br>**轻度受限**: 避免剧烈运动<br>**中度受限**: 频繁出血<br>**重度受限**: 严重出血",轻度受限
+
+notes,备注,String,其他重要临床信息,慢性原发性ITP,激素依赖,TPO-RA治疗中,血小板稳定在80-120

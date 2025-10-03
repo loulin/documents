@@ -1,0 +1,133 @@
+字段名(英文),字段名(中文),数据类型,描述,示例
+patientId,患者ID,String,患者唯一标识符,PD20250326001
+diagnosisDate,确诊日期,Date,帕金森病确诊日期,2025-03-26
+age,年龄,Number,确诊时年龄(岁),65
+gender,性别,String,患者性别,男
+
+# 核心运动症状
+motorSymptoms.tremor,运动症状.震颤,Boolean,"**静止性震颤**: 帕金森病最典型症状(70-80%)<br>**4-6Hz**: 频率<br>**非对称性**: 单侧起病",true
+motorSymptoms.tremor.location,运动症状.震颤.部位,String,"**上肢**: 最常见<br>**下肢**: 较少<br>**下颌**: 晚期<br>**"搓丸样"**: 拇指与食指对向运动",右上肢为著
+motorSymptoms.tremor.onset,运动症状.震颤.起病侧,String,"**单侧起病**: 典型<br>**逐渐扩展**: 对侧和下肢",右侧
+motorSymptoms.tremor.rest,运动症状.震颤.静止性,Boolean,"**静止时明显**: 特征<br>**随意运动时减轻或消失**: 与特发性震颤鉴别",true
+
+motorSymptoms.rigidity,运动症状.肌强直,Boolean,"**齿轮样强直**: 90%患者<br>**铅管样强直**: 无震颤时<br>**被动活动阻力增加**: 检查特征",true
+motorSymptoms.rigidity.type,运动症状.肌强直.类型,String,"**齿轮样**: 伴震颤时<br>**铅管样**: 持续阻力",齿轮样强直
+motorSymptoms.rigidity.distribution,运动症状.肌强直.分布,String,"**轴性**: 颈部、躯干<br>**肢体**: 上肢>下肢",颈部及四肢,右侧为重
+
+motorSymptoms.bradykinesia,运动症状.运动迟缓,Boolean,"**运动迟缓**: 帕金森病核心症状,必须具备<br>**动作缓慢**: 启动困难<br>**幅度减小**: 动作变小",true
+motorSymptoms.bradykinesia.manifestations,运动症状.运动迟缓.表现,String,"**面具脸**: 表情减少<br>**小写症**: 书写变小<br>**小步态**: 步幅减小<br>**起身困难**: 从椅子站起慢",面具脸,小写症,起身困难
+
+motorSymptoms.posturalInstability,运动症状.姿势不稳,Boolean,"**姿势不稳**: 晚期症状(通常5年后)<br>**跌倒风险**: 增加<br>**拉拽试验阳性**: 后拉易跌倒",false
+motorSymptoms.posturalInstability.falls,运动症状.姿势不稳.跌倒,Boolean,是否有跌倒史,false
+
+motorSymptoms.gait,运动症状.步态异常,Boolean,"**慌张步态**: 前冲步态<br>**冻结步态**: 起步困难,过门槛时<br>**转身困难**: 需多步小转弯",true
+motorSymptoms.gait.type,运动症状.步态.类型,String,"**小步态**: 步幅减小<br>**拖曳步态**: 足不离地<br>**冻结步态**: 双足粘地<br>**慌张步态**: 越走越快,前冲",小步态,偶有冻结
+
+# 非运动症状
+nonMotorSymptoms.rbd,非运动症状.RBD,Boolean,"**REM睡眠行为障碍**: 梦境演绎行为<br>**前驱症状**: 可先于运动症状数年<br>**预测价值**: 预测帕金森病发展",true
+nonMotorSymptoms.rbd.onset,非运动症状.RBD.出现时间,String,RBD出现时间与运动症状关系,运动症状前5年出现
+
+nonMotorSymptoms.hyposmia,非运动症状.嗅觉减退,Boolean,"**嗅觉减退/丧失**: 70-90%患者<br>**早期症状**: 可先于运动症状<br>**识别气味困难**: UPSIT测试",true
+
+nonMotorSymptoms.constipation,非运动症状.便秘,Boolean,"**便秘**: 50-80%患者<br>**早期症状**: 常先于运动症状<br>**肠道α-突触核蛋白沉积**: Braak理论",true
+
+nonMotorSymptoms.orthostatic,非运动症状.直立性低血压,Boolean,"**体位性低血压**: 30-50%<br>**头晕**: 站立时<br>**自主神经功能障碍**: α-突触核蛋白累及自主神经",true
+nonMotorSymptoms.orthostatic.symptomatic,非运动症状.直立性低血压.有症状,Boolean,是否有头晕、晕厥等症状,true
+
+nonMotorSymptoms.depression,非运动症状.抑郁,Boolean,"**抑郁**: 40-50%患者<br>**可早于运动症状**: 前驱期<br>**影响生活质量**: 重要非运动症状",true
+nonMotorSymptoms.depression.severity,非运动症状.抑郁.严重程度,String,"**轻度**: 情绪低落<br>**中度**: 兴趣减退<br>**重度**: 自杀观念",轻度抑郁
+
+nonMotorSymptoms.anxiety,非运动症状.焦虑,Boolean,"**焦虑**: 40%患者<br>**惊恐发作**: 部分患者<br>**与运动波动相关**: "关"期焦虑加重",false
+
+nonMotorSymptoms.cognition,非运动症状.认知障碍,Boolean,"**轻度认知障碍**: 20-30%<br>**帕金森病痴呆**: 30-40%(10年后)<br>**执行功能**: 最早受累",false
+nonMotorSymptoms.cognition.moca,非运动症状.认知.MoCA评分,Number,"MoCA评分(0-30分)。<br>**≥26**: 正常<br>**<26**: 认知障碍",27
+
+nonMotorSymptoms.hallucinations,非运动症状.幻觉,Boolean,"**视幻觉**: 最常见<br>**多巴胺激动剂**: 可诱发<br>**痴呆风险**: 提示认知下降",false
+
+nonMotorSymptoms.sleepiness,非运动症状.日间过度嗜睡,Boolean,"**EDS**: 30-50%<br>**多巴胺激动剂**: 加重<br>**驾驶风险**: 需警惕突然睡眠发作",true
+
+nonMotorSymptoms.urinary,非运动症状.尿频尿急,Boolean,"**膀胱过度活动**: 50-70%<br>**夜尿**: 常见<br>**自主神经功能障碍**: 机制",true
+
+# 诊断标准
+diagnosis.criteria,诊断.诊断标准,String,"**MDS临床诊断标准**(2015):<br>**必要条件**: 运动迟缓<br>**支持标准**: 静止性震颤、肌强直<br>**绝对排除标准**: 小脑征、眼肌麻痹、额颞叶痴呆等",符合MDS帕金森病临床诊断标准
+diagnosis.supportiveCriteria,诊断.支持性标准,String,"**左旋多巴反应**: 显著且持续<br>**左旋多巴诱发运动障碍**: 异动症<br>**静止性震颤**: 4-6Hz<br>**嗅觉减退**: UPSIT阳性<br>**MIBG心肌显像**: 摄取减少",左旋多巴显著反应,静止性震颤,嗅觉减退
+
+# Hoehn-Yahr分期
+staging.hoehnYahr,分期.Hoehn-Yahr分期,String,"**1期**: 单侧症状<br>**2期**: 双侧症状,无平衡障碍<br>**3期**: 轻-中度,姿势不稳,独立生活<br>**4期**: 重度残疾,仍能站立行走<br>**5期**: 卧床或轮椅",2期
+staging.hoehnYahr.score,分期.H-Y.评分,Number,"H-Y分期(1-5)。<br>**1-2**: 早期<br>**2.5-3**: 中期<br>**4-5**: 晚期",2
+
+# UPDRS评分
+updrs.part1,UPDRS.第一部分,Number,"精神、行为和情绪(0-16分)。<br>**评估**: 认知、抑郁、焦虑、淡漠",4
+updrs.part2,UPDRS.第二部分,Number,"日常生活活动(0-52分)。<br>**评估**: 言语、吞咽、书写、穿衣、翻身等",12
+updrs.part3,UPDRS.第三部分,Number,"运动检查(0-132分)。<br>**评估**: 震颤、肌强直、运动迟缓、姿势步态<br>**"开"期**: 药物作用最佳时<br>**"关"期**: 药物失效时",28
+updrs.part3.onState,UPDRS.第三部分.开期评分,Number,左旋多巴作用高峰时评分,20
+updrs.part3.offState,UPDRS.第三部分.关期评分,Number,左旋多巴作用最低时评分,35
+updrs.part4,UPDRS.第四部分,Number,"运动并发症(0-24分)。<br>**评估**: 运动波动、异动症、疼痛性肌张力障碍",8
+updrs.total,UPDRS.总分,Number,"UPDRS总分(0-199分)。<br>**<30**: 轻度<br>**30-60**: 中度<br>**>60**: 重度",52
+
+# 辅助检查
+imaging.mri.performed,影像学.头颅MRI.是否完成,Boolean,"**MRI**: 排除继发性帕金森综合征<br>**正常**: 特发性帕金森病<br>**异常**: 血管性、MSA等",true
+imaging.mri.findings,影像学.MRI.发现,String,"**正常**: 支持帕金森病诊断<br>**腔隙性梗死**: 血管性帕金森<br>**脑桥、小脑萎缩**: MSA<br>**壳核高信号**: MSA",未见明显异常
+imaging.mri.swallowTail,影像学.MRI.燕尾征,Boolean,"**燕尾征消失**: 黑质致密部损伤<br>**T2*或SWI序列**: 显示<br>**敏感性**: 90%",true
+
+imaging.datScan,影像学.DAT显像.是否完成,Boolean,"**DAT-SPECT**: 多巴胺转运体显像<br>**纹状体摄取减低**: 帕金森病/帕金森综合征<br>**鉴别**: 特发性震颤(正常)vs帕金森病(异常)",false
+imaging.datScan.result,影像学.DAT显像.结果,String,"**摄取减低**: 支持帕金森病<br>**正常**: 特发性震颤、药物性等",未做
+
+imaging.mibg,影像学.MIBG心肌显像,Boolean,"**MIBG**: 评估心脏交感神经<br>**H/M比值<1.6**: 帕金森病<br>**正常**: MSA、PSP",false
+imaging.mibg.hmRatio,影像学.MIBG.H/M比值,Number,"H/M比值。<br>**<1.6**: 帕金森病<br>**>2.0**: 正常",未做
+
+# 治疗 - 药物
+treatment.levodopa,治疗.左旋多巴,Boolean,"**左旋多巴**: 金标准治疗<br>**美多巴**: 左旋多巴+苄丝肼<br>**息宁**: 左旋多巴+卡比多巴",true
+treatment.levodopa.dose,治疗.左旋多巴.剂量,String,"左旋多巴剂量。<br>**起始**: 100-200mg/d<br>**维持**: 300-800mg/d<br>**分次服用**: 每日3-4次",美多巴125mg tid
+treatment.levodopa.response,治疗.左旋多巴.反应,String,"**显著反应**: 症状改善≥30%<br>**部分反应**: 改善<30%<br>**无反应**: 考虑非典型帕金森综合征",显著反应(症状改善约50%)
+treatment.levodopa.honeyMoon,治疗.左旋多巴.蜜月期,Boolean,"**蜜月期**: 治疗初期疗效稳定(3-5年)<br>**结束**: 出现运动波动和异动症",true
+
+treatment.daAgonist,治疗.多巴胺激动剂,Boolean,"**DA激动剂**: 普拉克索、罗匹尼罗、罗替戈汀<br>**单药**: <65岁早期患者<br>**联合**: 减少左旋多巴剂量,延缓运动并发症",true
+treatment.daAgonist.agent,治疗.多巴胺激动剂.药物,String,"**普拉克索**: 0.125-1.5mg tid<br>**罗匹尼罗**: 0.25-8mg tid<br>**罗替戈汀贴剂**: 2-8mg/24h",普拉克索0.25mg tid
+treatment.daAgonist.sideEffects,治疗.多巴胺激动剂.副作用,String,"**常见**: 恶心、体位性低血压、下肢水肿<br>**罕见但严重**: 突然睡眠发作、冲动控制障碍、幻觉",轻度恶心(已耐受)
+
+treatment.maob,治疗.MAO-B抑制剂,Boolean,"**司来吉兰**: 5-10mg/d<br>**雷沙吉兰**: 1mg/d<br>**早期单药**: 轻度症状改善<br>**联合**: 减少"关"期",false
+
+treatment.comt,治疗.COMT抑制剂,Boolean,"**恩他卡朋**: 200mg与每次左旋多巴同服<br>**延长左旋多巴作用时间**: 减少"关"期<br>**副作用**: 腹泻、尿液变色",false
+
+treatment.amantadine,治疗.金刚烷胺,Boolean,"**金刚烷胺**: 100mg bid-tid<br>**抗异动症**: 减轻左旋多巴诱发异动症<br>**轻度抗帕金森**: 早期单药或联合",false
+
+treatment.anticholinergic,治疗.抗胆碱药,Boolean,"**苯海索**: 2-6mg/d<br>**适应证**: <60岁,震颤为主型<br>**禁忌**: 老年、认知障碍<br>**副作用**: 口干、便秘、尿潴留、记忆下降",false
+
+# 运动并发症
+complications.wearingOff,并发症.剂末现象,Boolean,"**"关"期**: 药效消失前症状再现<br>**通常4-6年出现**: 左旋多巴治疗后<br>**表现**: 震颤、肌强直再现",true
+complications.wearingOff.duration,并发症.剂末现象.关期时长,Number,"每次"关"期持续时间(分钟)。<br>**延长**: 提示并发症加重",45
+
+complications.onOffPhenomenon,并发症.开关现象,Boolean,"**不可预测的波动**: "开""关"突然转换<br>**晚期**: 通常6-8年后<br>**难以控制**: 需调整用药",false
+
+complications.dyskinesia,并发症.异动症,Boolean,"**左旋多巴诱发异动症**: LID<br>**舞蹈样动作**: 不自主运动<br>**峰剂量异动症**: 药物作用高峰时<br>**双相异动症**: "开""关"转换时",true
+complications.dyskinesia.type,并发症.异动症.类型,String,"**峰剂量**: 最常见<br>**双相**: 开始和结束时<br>**"关"期肌张力障碍**: 清晨足趾痉挛",峰剂量异动症
+complications.dyskinesia.severity,并发症.异动症.严重程度,String,"**轻度**: 不影响功能<br>**中度**: 部分影响<br>**重度**: 严重影响日常生活",轻度
+
+# 手术治疗
+surgery.dbs.candidate,手术.DBS.手术候选,Boolean,"**脑深部电刺激**: DBS<br>**适应证**: 左旋多巴反应好但有严重运动并发症<br>**病程**: 通常>4年<br>**无认知障碍**: 必须条件",true
+surgery.dbs.target,手术.DBS.靶点,String,"**STN**: 丘脑底核,最常用,减少药物剂量<br>**GPi**: 苍白球内侧部,改善异动症<br>**Vim**: 丘脑腹中间核,震颤型",计划STN-DBS
+surgery.dbs.performed,手术.DBS.是否实施,Boolean,是否已实施DBS手术,false
+
+surgery.dbs.outcome,手术.DBS.疗效,String,"**运动症状改善**: UPDRS III改善30-60%<br>**"关"期减少**: 明显<br>**减少药物**: 30-50%<br>**改善异动症**: 显著",评估中
+
+# 康复治疗
+rehabilitation.pt,康复.物理治疗,Boolean,"**步态训练**: 改善冻结步态<br>**平衡训练**: 减少跌倒<br>**关节活动**: 维持灵活性",true
+rehabilitation.ot,康复.作业治疗,Boolean,"**日常生活训练**: 穿衣、进食、书写<br>**精细动作**: 手指灵活性",true
+rehabilitation.st,康复.言语治疗,Boolean,"**LSVT-LOUD**: Lee Silverman语音治疗<br>**吞咽训练**: 预防吸入性肺炎",false
+rehabilitation.exercise,康复.运动疗法,String,"**有氧运动**: 快走、游泳、骑车<br>**太极**: 改善平衡<br>**舞蹈**: Parkinson's舞蹈疗法",每日快走30分钟
+
+# 预后
+prognosis.progression,预后.疾病进展,String,"**缓慢进展**: 10-20年<br>**震颤为主型**: 进展慢<br>**姿势不稳步态障碍型**: 进展快",震颤为主型,预计进展较慢
+prognosis.mortality,预后.死亡风险,String,"**主要死因**: 肺炎、跌倒并发症<br>**生存期**: 发病后15-20年",未评估
+
+# 鉴别诊断
+differential.msa,鉴别诊断.多系统萎缩,Boolean,"**MSA**: 自主神经功能障碍严重<br>**左旋多巴反应差**: <30%改善<br>**小脑/锥体束征**: 存在<br>**MRI**: 脑桥、小脑萎缩",已排除
+differential.psp,鉴别诊断.进行性核上性麻痹,Boolean,"**PSP**: 垂直性眼球运动障碍<br>**轴性强直**: 颈后仰<br>**早期跌倒**: 起病1年内<br>**左旋多巴反应差**: 无或微弱",已排除
+differential.cbd,鉴别诊断.皮质基底节变性,Boolean,"**CBD**: 不对称性肌强直<br>**失用**: 肢体不能症<br>**肌阵挛**: 刺激敏感性肌阵挛<br>**左旋多巴反应差**: 无",已排除
+differential.lbd,鉴别诊断.路易体痴呆,Boolean,"**LBD**: 早期痴呆(帕金森症状前或1年内)<br>**波动性认知**: 警觉性波动<br>**视幻觉**: 形象生动<br>**RBD**: 常见",已排除
+differential.vascular,鉴别诊断.血管性帕金森,Boolean,"**血管性**: 下半身帕金森(下肢为主)<br>**阶梯式进展**: 非缓慢进展<br>**MRI**: 腔隙性梗死<br>**左旋多巴反应差**: 无或差",已排除
+
+performanceStatus,日常生活能力.Schwab-England评分,Number,"Schwab-England ADL量表(0-100%)。<br>**100%**: 完全独立<br>**70%**: 不完全独立,慢但能完成<br>**50%**: 需要帮助<br>**30%**: 需大量帮助<br>**0%**: 植物状态",80
+
+notes,备注,String,其他重要临床信息,特发性帕金森病,震颤为主型,左旋多巴反应良好,出现剂末现象和轻度异动症
