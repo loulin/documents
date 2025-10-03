@@ -1,0 +1,140 @@
+字段名(英文),字段名(中文),数据类型,描述,示例
+patientId,患者ID,String,患者唯一标识符,P123456
+encounterDate,就诊日期,Date,本次就诊日期,2025-01-15
+encounterType,就诊类型,String,"**建议值**: `门诊`, `急诊`, `住院`, `风湿科门诊`, `复诊`",风湿科门诊
+
+diagnosis.present,诊断.SLE诊断,String,"**2019 EULAR/ACR分类标准**: ANA阳性(≥1:80)+加权评分≥10分。<br>**建议值**: `是(符合EULAR/ACR标准)`, `否`, `可能SLE`,是
+diagnosis.duration,诊断.病程,Number,"SLE病程。<br>单位: 年",3
+
+classification.eularAcrScore,分类.EULAR/ACR评分.总分,Number,"2019 EULAR/ACR SLE分类标准。<br>**前提**: ANA≥1:80(免疫荧光HEp-2细胞)<br>**评分**: 7个临床域+3个免疫学域,加权评分<br>**≥10分**: 分类为SLE",15
+classification.eularAcrScore.constitutional,分类.EULAR/ACR评分.全身症状,Number,"**发热**(2分): >38.3℃,排除感染/药物<br>**0分**: 无<br>**2分**: 发热",2
+classification.eularAcrScore.hematologic,分类.EULAR/ACR评分.血液学,Number,"**白细胞减少**(3分): <4×10⁹/L<br>**血小板减少**(4分): <100×10⁹/L<br>**自身免疫性溶血**(4分): Coombs阳性+网织红细胞↑<br>**取最高分**",4
+
+classification.eularAcrScore.neuropsychiatric,分类.EULAR/ACR评分.神经精神,Number,"**谵妄**(2分): 急性意识障碍<br>**精神病**(3分): 妄想/幻觉<br>**癫痫**(5分): 全面性发作<br>**取最高分**",0
+classification.eularAcrScore.mucocutaneous,分类.EULAR/ACR评分.皮肤粘膜,Number,"**非瘢痕性脱发**(2分)<br>**口腔溃疡**(2分)<br>**亚急性皮肤狼疮/盘状狼疮**(4分)<br>**急性皮肤狼疮**(6分): 蝶形红斑/水疱性狼疮<br>**取最高分**",6
+classification.eularAcrScore.serosal,分类.EULAR/ACR评分.浆膜,Number,"**胸腔积液或心包积液**(5分)<br>**急性心包炎**(6分)<br>**取最高分**",0
+
+classification.eularAcrScore.musculoskeletal,分类.EULAR/ACR评分.肌肉骨骼,Number,"**关节炎**(6分): ≥2个关节肿胀/积液,或压痛+晨僵≥30分钟<br>**0分**: 无<br>**6分**: 关节炎",6
+classification.eularAcrScore.renal,分类.EULAR/ACR评分.肾脏,Number,"**蛋白尿>0.5g/24h**(4分)<br>**肾活检II或V型狼疮肾炎**(8分)<br>**肾活检III或IV型狼疮肾炎**(10分)<br>**取最高分**",10
+
+classification.eularAcrScore.antiphospholipid,分类.EULAR/ACR评分.抗磷脂抗体,Number,"**抗心磷脂IgG/IgM(>40单位或>99百分位)或抗β2GP1 IgG/IgM或狼疮抗凝物**(2分)",2
+classification.eularAcrScore.complement,分类.EULAR/ACR评分.补体,Number,"**C3或C4低**(3分)<br>**C3和C4均低**(4分)<br>**取最高分**",4
+classification.eularAcrScore.sleDna,分类.EULAR/ACR评分.抗dsDNA,Number,"**抗dsDNA(≥正常上限2倍或>99百分位)**(6分)",6
+
+symptoms.constitutional,症状.全身症状,String,"**发热/乏力/体重下降**: 常见,疾病活动指标。<br>**示例**: `无全身症状`, `乏力`, `发热(38.5℃)`, `体重下降`,乏力;发热
+symptoms.skin.malarRash,症状.皮肤.蝶形红斑,String,"**急性皮肤狼疮**: 蝶形红斑(面颊+鼻梁,不累及鼻唇沟),光敏感。<br>**建议值**: `无`, `轻度蝶形红斑`, `典型蝶形红斑`,典型蝶形红斑
+symptoms.skin.discoid,症状.皮肤.盘状红斑,String,"**慢性皮肤狼疮**: 盘状红斑,瘢痕性脱发。<br>**建议值**: `无`, `盘状红斑`,无
+symptoms.skin.subacute,症状.皮肤.亚急性皮肤狼疮,String,"**SCLE**: 环形/丘疹鳞屑性,光敏感,抗SSA阳性。<br>**建议值**: `无`, `环形红斑`, `丘疹鳞屑性`,无
+symptoms.skin.photosensitivity,症状.皮肤.光敏感,String,"**日光暴露**: 诱发/加重皮疹。<br>**建议值**: `无`, `光敏感`,光敏感
+
+symptoms.skin.alopecia,症状.皮肤.脱发,String,"**非瘢痕性脱发**: 活动期常见,可逆。<br>**瘢痕性脱发**: 盘状狼疮,不可逆。<br>**建议值**: `无脱发`, `非瘢痕性脱发`, `瘢痕性脱发`,非瘢痕性脱发
+symptoms.mucosal.oralUlcer,症状.粘膜.口腔溃疡,String,"**无痛性**: 口腔/鼻咽溃疡,SLE特征。<br>**建议值**: `无`, `口腔溃疡`, `鼻咽溃疡`,口腔溃疡
+
+symptoms.arthritis,症状.关节炎,String,"**非侵蚀性多关节炎**: 对称性,MCP/PIP/膝/腕,晨僵>30分钟。<br>**建议值**: `无关节症状`, `关节痛`, `关节炎(肿胀+压痛)`, `Jaccoud关节病(可复性畸形)`,关节炎
+symptoms.myositis,症状.肌炎,String,"**肌痛/肌无力**: CK↑。<br>**建议值**: `无`, `肌痛`, `肌无力(近端肌群)`,无
+
+symptoms.serositis.pleuritis,症状.浆膜炎.胸膜炎,String,"**胸膜炎性胸痛**: 深吸气加重,可伴胸腔积液。<br>**建议值**: `无`, `胸膜炎性胸痛`, `胸腔积液`,无
+symptoms.serositis.pericarditis,症状.浆膜炎.心包炎,String,"**急性心包炎**: 心前区疼痛,心包摩擦音,心包积液。<br>**建议值**: `无`, `心包炎`, `心包积液`,无
+symptoms.serositis.peritonitis,症状.浆膜炎.腹膜炎,String,"**腹膜炎**: 腹痛,腹水(少见)。<br>**建议值**: `无`, `腹膜炎`,无
+
+symptoms.renal,症状.肾脏,String,"**狼疮肾炎**: 蛋白尿/血尿/水肿/高血压/肾功能不全。<br>**示例**: `无肾脏症状`, `蛋白尿`, `血尿+蛋白尿`, `水肿+高血压+肾功能不全`,蛋白尿
+
+symptoms.neuropsychiatric,症状.神经精神,String,"**NPSLE**: 癫痫/精神病/认知障碍/脑血管病/周围神经病/头痛。<br>**示例**: `无神经精神症状`, `头痛`, `癫痫`, `精神病(妄想/幻觉)`, `认知障碍`,无
+
+symptoms.hematologic,症状.血液学,String,"**溶血性贫血**: 黄疸,酱油色尿。<br>**血小板减少**: 皮肤瘀点瘀斑,出血。<br>**示例**: `无血液学症状`, `贫血症状`, `出血倾向(血小板↓)`,无
+
+physicalExam.skin,体格检查.皮肤,String,"**示例**: `皮肤正常`, `面部蝶形红斑`, `盘状红斑(头皮)`, `光暴露部位红斑`,面部蝶形红斑
+physicalExam.oralCavity,体格检查.口腔,String,"**建议值**: `口腔粘膜正常`, `硬腭无痛性溃疡`, `口腔多发溃疡`,硬腭溃疡
+physicalExam.joints,体格检查.关节,String,"**示例**: `关节无异常`, `双MCP/PIP关节肿胀压痛`, `关节畸形(Jaccoud)`,双MCP/PIP肿胀
+physicalExam.lymphNodes,体格检查.淋巴结,String,"**淋巴结肿大**: 全身性,活动期。<br>**建议值**: `未触及肿大淋巴结`, `颈部/腋窝淋巴结肿大`,颈部淋巴结肿大
+physicalExam.splenomegaly,体格检查.脾大,String,"**建议值**: `脾未触及`, `脾肋下X cm`,脾未触及
+
+labs.ana.result,实验室.ANA.结果,String,"**抗核抗体**: SLE筛查,敏感性98%。<br>**EULAR/ACR前提**: ANA≥1:80(HEp-2)。<br>**建议值**: `阴性`, `阳性`,阳性
+labs.ana.titer,实验室.ANA.滴度,Number,"ANA滴度(HEp-2免疫荧光)。<br>**≥1:80**: 阳性<br>**≥1:320**: 高滴度,SLE可能性大",1:640
+labs.ana.pattern,实验室.ANA.核型,String,"**核型**: 均质型(抗dsDNA/组蛋白),斑点型(抗Sm/SSA),核仁型(抗Scl-70),着丝点型(抗着丝点)。<br>**建议值**: `不适用`, `均质型`, `斑点型`, `核仁型`, `周边型`,均质型
+
+labs.antiDsDNA,实验室.抗dsDNA抗体,Number,"抗双链DNA抗体。<br>单位: IU/mL<br>**SLE特异性抗体**: 特异性95%,与疾病活动度/肾炎相关。<br>**阳性**: >正常上限(一般>25-30)<br>**正常**: <25",180
+labs.antiDsDNA.titer,实验室.抗dsDNA抗体.滴度,String,"**建议值**: `阴性`, `低滴度阳性`, `中滴度阳性`, `高滴度阳性(>ULN 2倍)`,高滴度阳性
+
+labs.antiSm,实验室.抗Sm抗体,String,"抗Smith抗体。<br>**SLE标志性抗体**: 特异性99%,但敏感性低(20-30%),与肾炎/NPSLE相关。<br>**建议值**: `阴性`, `阳性`,阳性
+labs.antiSSA,实验室.抗SSA抗体,String,"抗SSA/Ro抗体。<br>**阳性**: 新生儿狼疮/光敏感/SCLE/干燥综合征。<br>**建议值**: `阴性`, `阳性`,阳性
+labs.antiSSB,实验室.抗SSB抗体,String,"抗SSB/La抗体。<br>**伴抗SSA**: 干燥综合征。<br>**建议值**: `阴性`, `阳性`,阴性
+labs.antiRNP,实验室.抗RNP抗体,String,"抗核糖核蛋白抗体。<br>**高滴度**: 混合性结缔组织病(MCTD)。<br>**建议值**: `阴性`, `阳性`,阴性
+labs.antiHistone,实验室.抗组蛋白抗体,String,"抗组蛋白抗体。<br>**药物性狼疮**: 阳性率高。<br>**建议值**: `未检测`, `阴性`, `阳性`,未检测
+
+labs.complement.c3,实验室.补体.C3,Number,"补体C3。<br>单位: g/L<br>**降低(<0.9)**: 免疫复合物消耗,疾病活动/肾炎。<br>**正常**: 0.9-1.8",0.55
+labs.complement.c4,实验室.补体.C4,Number,"补体C4。<br>单位: g/L<br>**降低(<0.1)**: 经典途径激活。<br>**正常**: 0.1-0.4",0.08
+labs.complement.ch50,实验室.补体.CH50,Number,"总补体活性(CH50)。<br>单位: U/mL<br>**降低**: 补体消耗。<br>**正常**: 30-60",25
+
+labs.aPL.aCL,实验室.抗磷脂抗体.抗心磷脂抗体,String,"抗心磷脂抗体(aCL)IgG/IgM。<br>**阳性**: >40单位或>99百分位,抗磷脂综合征(APS)。<br>**建议值**: `阴性`, `IgG阳性`, `IgM阳性`, `IgG+IgM阳性`,IgG阳性
+labs.aPL.antiB2GP1,实验室.抗磷脂抗体.抗β2GP1,String,"抗β2糖蛋白I抗体。<br>**建议值**: `阴性`, `IgG阳性`, `IgM阳性`,阴性
+labs.aPL.la,实验室.抗磷脂抗体.狼疮抗凝物,String,"狼疮抗凝物(LA)。<br>**阳性**: APTT延长,不被正常血浆纠正。<br>**建议值**: `阴性`, `阳性`,阳性
+
+labs.cbc.wbc,实验室.血常规.白细胞,Number,"白细胞。<br>单位: ×10⁹/L<br>**<4**: 白细胞减少(SLE常见,EULAR/ACR 3分)<br>**正常**: 4-10",3.2
+labs.cbc.lymphocyte,实验室.血常规.淋巴细胞,Number,"淋巴细胞。<br>单位: ×10⁹/L<br>**<1**: 淋巴细胞减少<br>**正常**: 1.1-3.2",0.8
+labs.cbc.hb,实验室.血常规.血红蛋白,Number,"血红蛋白。<br>单位: g/L<br>**贫血**: 慢性病贫血/溶血性贫血/肾性贫血<br>**正常**: 男120-160,女110-150",95
+labs.cbc.platelet,实验室.血常规.血小板,Number,"血小板。<br>单位: ×10⁹/L<br>**<100**: 血小板减少(EULAR/ACR 4分)<br>**正常**: 100-300",75
+
+labs.hemolyticAnemia.reticulocyte,实验室.溶血性贫血.网织红细胞,Number,"网织红细胞百分比。<br>单位: %<br>**>2%**: 骨髓代偿性↑(溶血)<br>**正常**: 0.5-1.5",3.5
+labs.hemolyticAnemia.coombs,实验室.溶血性贫血.Coombs试验,String,"直接Coombs试验。<br>**阳性**: 自身免疫性溶血性贫血(AIHA),EULAR/ACR 4分。<br>**建议值**: `未检测`, `阴性`, `阳性`,阳性
+labs.hemolyticAnemia.ldh,实验室.溶血性贫血.LDH,Number,"乳酸脱氢酶。<br>单位: U/L<br>**溶血**: LDH↑↑<br>**正常**: 120-250",650
+
+labs.renal.urineProtein,实验室.肾功能.尿蛋白,String,"24小时尿蛋白定量。<br>**>0.5 g/24h**: 狼疮肾炎可能,EULAR/ACR 4分。<br>**>3.5 g/24h**: 肾病综合征范围。<br>**示例**: `阴性`, `0.8 g/24h`, `3.2 g/24h`,1.5 g/24h
+labs.renal.upcr,实验室.肾功能.UPCR,Number,"尿蛋白/肌酐比值(UPCR)。<br>单位: mg/mg<br>**>0.5**: 相当于0.5 g/24h蛋白尿<br>**正常**: <0.2",1.2
+labs.renal.hematuria,实验室.肾功能.血尿,String,"尿沉渣红细胞。<br>**>5/HPF**: 血尿,镜下血尿/肉眼血尿。<br>**示例**: `无血尿(<3/HPF)`, `镜下血尿(10-20/HPF)`, `肉眼血尿`,镜下血尿
+labs.renal.casts,实验室.肾功能.管型,String,"**红细胞管型**: 肾小球性血尿,狼疮肾炎。<br>**示例**: `未见管型`, `透明管型`, `红细胞管型`, `颗粒管型`,红细胞管型
+
+labs.renal.creatinine,实验室.肾功能.肌酐,Number,"血清肌酐。<br>单位: μmol/L<br>**升高**: 肾功能不全<br>**正常**: 44-133",110
+labs.renal.egfr,实验室.肾功能.eGFR,Number,"估算肾小球滤过率。<br>单位: mL/min/1.73m²<br>**<60**: CKD<br>**正常**: >90",65
+
+labs.esr,实验室.血沉,Number,"红细胞沉降率(ESR)。<br>单位: mm/h<br>**疾病活动**: ↑<br>**正常**: 男<15,女<20",60
+labs.crp,实验室.CRP,Number,"C反应蛋白。<br>单位: mg/L<br>**SLE**: 一般不高(除非感染/浆膜炎)<br>**正常**: <10",15
+
+renalBiopsy.performed,肾活检.是否完成,String,"**适应证**: 蛋白尿>0.5 g/24h,血尿,肾功能↓。<br>**建议值**: `已完成`, `未完成`, `计划活检`",已完成
+renalBiopsy.class,肾活检.ISN/RPS分型,String,"**狼疮肾炎分型**(ISN/RPS 2003):<br>**I型**: 微小系膜狼疮肾炎<br>**II型**: 系膜增生性狼疮肾炎<br>**III型**: 局灶性狼疮肾炎(<50%肾小球)<br>**IV型**: 弥漫性狼疮肾炎(≥50%肾小球),最常见,预后差<br>**V型**: 膜性狼疮肾炎<br>**VI型**: 进展性硬化性狼疮肾炎<br>**建议值**: `未做`, `I型`, `II型`, `III型`, `IV型`, `V型`, `VI型`, `混合型(IV+V)`,IV型
+renalBiopsy.activity,肾活检.活动指数,Number,"活动指数(AI,0-24分): 内皮细胞增生/中性粒细胞/纤维素样坏死/细胞性新月体/间质炎症/小管病变。<br>**≥12**: 重度活动",10
+renalBiopsy.chronicity,肾活检.慢性指数,Number,"慢性指数(CI,0-12分): 肾小球硬化/纤维性新月体/小管萎缩/间质纤维化。<br>**≥4**: 不可逆损伤",2
+
+imaging.chest,影像学.胸部,String,"**胸片/CT**: 胸腔积液,心包积液,肺炎,ILD。<br>**示例**: `未查`, `正常`, `双侧胸腔积液`, `心包积液`,正常
+imaging.echo,影像学.超声心动图,String,"**心包积液**: 浆膜炎。<br>**Libman-Sacks心内膜炎**: 瓣膜赘生物(少见)。<br>**建议值**: `未查`, `正常`, `少量心包积液`, `中-大量心包积液`,少量心包积液
+imaging.brain,影像学.头颅MRI,String,"**NPSLE**: 脑梗死/脑出血/脱髓鞘/脑萎缩。<br>**建议值**: `未查`, `正常`, `脑梗死`, `脱髓鞘病变`,未查
+
+sledai.score,疾病活动度.SLEDAI-2K.评分,Number,"SLE疾病活动指数(SLEDAI-2K,0-105分)。<br>**缓解**: 0分<br>**轻度活动**: 1-5分<br>**中度活动**: 6-10分<br>**重度活动**: 11-19分<br>**极重度**: ≥20分",12
+sledai.category,疾病活动度.SLEDAI-2K.活动度分级,String,"**建议值**: `缓解(0分)`, `轻度(1-5分)`, `中度(6-10分)`, `重度(11-19分)`, `极重度(≥20分)`",重度
+
+treatment.hcq,治疗.羟氯喹,String,"**HCQ**: SLE基础用药,所有患者长期使用(除非禁忌)。<br>**剂量**: <5 mg/kg/天(实际体重),200-400 mg/天。<br>**作用**: 抗炎/降低血栓风险/改善预后。<br>**眼科**: 每年眼底检查(黄斑病变风险)。<br>**示例**: `羟氯喹200mg qd`, `羟氯喹200mg bid`,羟氯喹200mg bid
+treatment.glucocorticoids.dose,治疗.糖皮质激素.剂量,String,"**诱导缓解**: 强的松0.5-1 mg/kg/天(中-高剂量)。<br>**维持**: <7.5 mg/天(低剂量)。<br>**脉冲**: 甲泼尼龙500-1000 mg IV×3天(重症)。<br>**示例**: `强的松30mg qd(诱导)`, `强的松5mg qd(维持)`, `甲泼尼龙500mg IV×3天(脉冲)`,强的松30mg qd
+treatment.glucocorticoids.tapering,治疗.糖皮质激素.减量策略,String,"**减量**: 每2-4周减10-20%,目标<7.5 mg/天。<br>**示例**: `维持剂量`, `逐步减量中(当前20mg qd)`, `已减至低剂量(5mg qd)`,逐步减量中
+
+treatment.immunosuppressants.mmf,治疗.免疫抑制剂.吗替麦考酚酯,String,"**MMF**: 狼疮肾炎首选(III/IV/V型)。<br>**剂量**: 2-3 g/天,分2次。<br>**诱导**: 6个月,后维持治疗2-3年。<br>**示例**: `未使用`, `吗替麦考酚酯1g bid(诱导)`, `吗替麦考酚酯0.5g bid(维持)`,吗替麦考酚酯1g bid
+treatment.immunosuppressants.cyc,治疗.免疫抑制剂.环磷酰胺,String,"**CTX**: 重症狼疮肾炎(III/IV型),NPSLE。<br>**NIH方案**: 0.5-1 g/m² IV每月×6次,后每3月。<br>**Euro-Lupus方案**: 500 mg IV每2周×6次(低剂量,欧洲人群)。<br>**示例**: `未使用`, `环磷酰胺0.75g/m² IV每月`,未使用
+treatment.immunosuppressants.aza,治疗.免疫抑制剂.硫唑嘌呤,String,"**AZA**: 维持治疗,MMF/CTX诱导缓解后转换。<br>**剂量**: 1-2.5 mg/kg/天。<br>**示例**: `未使用`, `硫唑嘌呤100mg qd`,未使用
+treatment.immunosuppressants.mtx,治疗.免疫抑制剂.甲氨蝶呤,String,"**MTX**: 皮肤/关节受累为主。<br>**剂量**: 10-25 mg/周+叶酸。<br>**示例**: `未使用`, `MTX 15mg/周+叶酸5mg/周`,未使用
+treatment.immunosuppressants.cni,治疗.免疫抑制剂.钙调磷酸酶抑制剂,String,"**他克莫司/环孢素**: V型狼疮肾炎(膜性),难治性病例。<br>**示例**: `未使用`, `他克莫司3mg bid`, `环孢素100mg bid`,未使用
+
+treatment.biologics.belimumab,治疗.生物制剂.贝利尤单抗,String,"**Belimumab**: BLyS抑制剂,中-重度SLE,加用于标准治疗。<br>**剂量**: 10 mg/kg IV第0/2/4周,后每4周;或200 mg SC每周。<br>**示例**: `未使用`, `贝利尤单抗10mg/kg IV每4周`,未使用
+treatment.biologics.rituximab,治疗.生物制剂.利妥昔单抗,String,"**Rituximab**: CD20单抗,难治性SLE/肾炎/血小板减少。<br>**剂量**: 1000 mg IV第0/14天,或375 mg/m²每周×4。<br>**示例**: `未使用`, `利妥昔单抗1000mg IV(第0/14天)`,未使用
+
+treatment.anticoagulation,治疗.抗凝,String,"**APS**: 华法林(INR 2-3,静脉血栓)或阿司匹林(一级预防)。<br>**示例**: `不需要`, `阿司匹林100mg qd(aPL阳性一级预防)`, `华法林(INR 2-3,DVT史)`,阿司匹林100mg qd
+treatment.antihypertensive,治疗.降压,String,"**狼疮肾炎**: ACEI/ARB首选(降蛋白尿),血压目标<130/80。<br>**示例**: `不需要`, `依那普利10mg bid`, `缬沙坦80mg qd`,依那普利10mg bid
+
+monitoring.diseaseActivity,监测.疾病活动度,String,"**SLEDAI-2K**: 每1-3月评估。<br>**目标**: 缓解或低疾病活动度(LLDAS)。<br>**示例**: `每月SLEDAI评估`, `每3月评估(稳定期)`,每月SLEDAI评估
+monitoring.labs,监测.实验室,String,"**常规**: 血常规/尿常规/肝肾功/补体/抗dsDNA,每1-3月。<br>**免疫抑制**: 血常规(每2-4周,前3月)。<br>**示例**: `每月监测血常规/尿常规/补体/抗dsDNA`, `每3月监测(稳定期)`,每月监测
+monitoring.renalFunction,监测.肾功能,String,"**狼疮肾炎**: 尿蛋白/肌酐/eGFR,每1-3月。<br>**建议值**: `每月尿蛋白定量`, `每3月评估肾功能`,每月尿蛋白
+monitoring.adverseEvents,监测.不良反应,String,"**HCQ**: 年度眼底检查。<br>**激素**: 骨密度,血糖,血压。<br>**MMF**: 胃肠道反应,骨髓抑制。<br>**CTX**: 性腺毒性,出血性膀胱炎。<br>**示例**: `每年眼底检查(HCQ)`, `骨密度监测(激素)`,每年眼底检查
+
+complications.aps,并发症.抗磷脂综合征,String,"**APS**: aPL阳性+血栓/妊娠丢失。<br>**建议值**: `无`, `aPL阳性(未发生血栓)`, `确诊APS(动脉血栓)`, `确诊APS(静脉血栓)`, `确诊APS(妊娠丢失)`,aPL阳性
+complications.esrd,并发症.终末期肾病,String,"**ESRD**: 狼疮肾炎进展,需透析/肾移植。<br>**建议值**: `无`, `CKD G3-G4`, `ESRD(透析)`, `肾移植`,无
+complications.cvd,并发症.心血管疾病,String,"**CVD风险**: SLE↑5-10倍,动脉粥样硬化,心肌梗死。<br>**示例**: `无CVD`, `冠心病`, `心肌梗死`,无
+complications.infection,并发症.感染,String,"**感染**: 免疫抑制,机会性感染(TB/真菌/病毒)。<br>**示例**: `无严重感染`, `肺炎`, `带状疱疹`, `CMV感染`,无
+complications.osteoporosis,并发症.骨质疏松,String,"**激素相关**: 骨折风险↑。<br>**预防**: 钙剂/VitD,双膦酸盐。<br>**建议值**: `无`, `骨质疏松(T值<-2.5)`, `骨质疏松性骨折`,无
+
+prognosis.remission,预后.缓解状态,String,"**缓解**: SLEDAI 0分,激素≤5 mg/天,免疫抑制剂维持剂量。<br>**LLDAS**: 低疾病活动度(SLEDAI≤4,激素≤7.5 mg/天)。<br>**建议值**: `缓解`, `LLDAS`, `持续活动`,LLDAS
+prognosis.survival,预后.生存率,String,"**5年生存率**: >95%(早期诊断+规范治疗)。<br>**10年生存率**: >90%。<br>**死亡原因**: 活动性疾病(早期),感染/CVD/ESRD(晚期)。<br>**建议值**: `存活`, `死亡(疾病活动)`, `死亡(感染)`, `死亡(CVD)`,存活
+prognosis.renalOutcome,预后.肾脏预后,String,"**狼疮肾炎**: 15-20%进展至ESRD。<br>**IV型肾炎**: 预后最差。<br>**建议值**: `肾功能正常`, `肾功能部分恢复`, `CKD进展`, `ESRD`,肾功能部分恢复
+
+followUp.interval,随访.随访频率,String,"**高活动度**: 每1-2月。<br>**缓解/LLDAS**: 每3-6月。<br>**示例**: `每月随访(高活动度)`, `每3月随访(LLDAS)`, `每6月随访(缓解)`,每3月随访
+followUp.monitoring,随访.监测项目,String,"**示例**: `SLEDAI+血尿常规+补体+抗dsDNA`, `肾功能+尿蛋白`, `不良反应监测`,SLEDAI+实验室
+
+clinicianNotes,临床医生备注,String,自由文本备注栏,患者为28岁女性,主诉面部红斑、关节痛、脱发3个月。查体:面部蝶形红斑,双MCP/PIP关节肿胀压痛,口腔硬腭溃疡。实验室:ANA 1:640(均质型),抗dsDNA 180 IU/mL(高滴度阳性),抗Sm阳性,C3 0.55 g/L↓,C4 0.08 g/L↓,WBC 3.2×10⁹/L,血小板75×10⁹/L,24h尿蛋白1.5g。肾活检:IV型狼疮肾炎(弥漫增生性),AI 10分,CI 2分。SLEDAI-2K 12分(重度活动)。EULAR/ACR评分15分(确诊SLE)。诊断:系统性红斑狼疮+IV型狼疮肾炎。治疗:强的松30mg qd+吗替麦考酚酯1g bid(诱导治疗)+羟氯喹200mg bid。计划:每月随访SLEDAI/尿蛋白/补体/抗dsDNA,6月后评估缓解,转维持治疗(AZA)。目标:缓解或LLDAS,激素减至<7.5mg/天。
+dataSource,数据来源,String,"**建议值**: `门诊`, `急诊`, `住院`, `风湿科门诊`, `肾内科`",风湿科门诊

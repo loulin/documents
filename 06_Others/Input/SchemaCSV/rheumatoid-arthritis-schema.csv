@@ -1,0 +1,133 @@
+字段名(英文),字段名(中文),数据类型,描述,示例
+patientId,患者ID,String,患者唯一标识符,P123456
+encounterDate,就诊日期,Date,本次就诊日期,2025-01-15
+encounterType,就诊类型,String,"**建议值**: `门诊`, `住院`, `风湿科门诊`, `复诊`",风湿科门诊
+
+diagnosis.present,诊断.RA诊断,String,"**2010 ACR/EULAR分类标准**: ≥6分确诊RA。<br>**建议值**: `是(符合ACR/EULAR标准)`, `否`, `可能RA(≥6分)`, `早期RA(<6个月)`, `确诊RA`,是
+diagnosis.duration,诊断.病程,Number,"RA病程。<br>单位: 年<br>**早期RA**: <6个月<br>**确诊RA**: ≥6个月",5
+
+classification.acrEularScore,分类.ACR/EULAR评分.总分,Number,"2010 ACR/EULAR RA分类标准(0-10分)。<br>**≥6分**: 确诊RA<br>**评分项**: 受累关节(0-5分)+血清学(0-3分)+急性期反应物(0-1分)+症状持续时间(0-1分)",8
+classification.acrEularScore.joints,分类.ACR/EULAR评分.关节,Number,"**受累关节评分**:<br>**0分**: 无关节受累<br>**1分**: 1个大关节(肩/肘/髋/膝/踝)<br>**2分**: 2-10个大关节<br>**3分**: 1-3个小关节(MCP/PIP/MTP 2-5/拇指IP/腕)<br>**4分**: 4-10个小关节<br>**5分**: >10个关节(至少1个小关节)",5
+classification.acrEularScore.serology,分类.ACR/EULAR评分.血清学,Number,"**血清学评分**:<br>**0分**: RF阴性且抗CCP阴性<br>**2分**: RF低滴度阳性(正常上限3倍内)或抗CCP低滴度阳性<br>**3分**: RF高滴度阳性(>正常上限3倍)或抗CCP高滴度阳性",3
+classification.acrEularScore.acutePhase,分类.ACR/EULAR评分.急性期反应物,Number,"**0分**: CRP正常且ESR正常<br>**1分**: CRP异常或ESR异常",1
+classification.acrEularScore.duration,分类.ACR/EULAR评分.病程,Number,"**0分**: <6周<br>**1分**: ≥6周",1
+
+symptoms.jointPain,症状.关节疼痛,String,"**对称性多关节痛**: RA特征,累及双侧小关节。<br>**建议值**: `轻度`, `中度`, `重度`, `静息痛`,中度
+symptoms.morningStiffness,症状.晨僵,Number,"晨僵持续时间。<br>单位: 分钟<br>**>30-60分钟**: 炎症性关节炎特征<br>**RA**: 常>1小时",120
+symptoms.jointSwelling,症状.关节肿胀,String,"**建议值**: `无`, `少数关节(<4个)`, `多关节(≥4个)`, `多关节显著肿胀`,多关节
+symptoms.jointDeformity,症状.关节畸形,String,"**RA晚期**: 尺侧偏斜/天鹅颈畸形/纽扣花畸形/锤状趾。<br>**示例**: `无畸形`, `轻度尺侧偏斜`, `天鹅颈畸形`, `纽扣花畸形`, `多关节畸形`,轻度尺侧偏斜
+
+symptoms.affectedJoints.hand,症状.受累关节.手,String,"**RA好发**: 双侧对称,MCP/PIP关节,DIP关节少见。<br>**示例**: `未受累`, `双侧MCP 2-5肿痛`, `双侧MCP+PIP肿痛`, `双侧腕关节肿痛`,双侧MCP 2-5肿痛
+symptoms.affectedJoints.wrist,症状.受累关节.腕,String,"**建议值**: `未受累`, `单侧腕关节`, `双侧腕关节`,双侧腕关节
+symptoms.affectedJoints.elbow,症状.受累关节.肘,String,"**建议值**: `未受累`, `单侧肘关节`, `双侧肘关节`,未受累
+symptoms.affectedJoints.shoulder,症状.受累关节.肩,String,"**建议值**: `未受累`, `单侧肩关节`, `双侧肩关节`,未受累
+symptoms.affectedJoints.foot,症状.受累关节.足,String,"**MTP关节**: RA常累及,前足疼痛。<br>**示例**: `未受累`, `双侧MTP关节`, `双侧踝关节`,双侧MTP关节
+symptoms.affectedJoints.knee,症状.受累关节.膝,String,"**建议值**: `未受累`, `单侧膝关节`, `双侧膝关节`,未受累
+symptoms.affectedJoints.other,症状.受累关节.其他,String,"**颞颌关节/寰枢关节**: 少见。<br>**示例**: `无其他受累`, `颞颌关节`, `颈椎(寰枢关节)`,无
+
+symptoms.systemicSymptoms,症状.全身症状,String,"**活动期**: 乏力/低热/体重下降/食欲减退。<br>**示例**: `无全身症状`, `乏力`, `低热`, `体重下降`,乏力
+
+extraArticular.present,关节外表现.是否存在,String,"**关节外表现**: 肺/心/血管/眼/皮肤/神经受累,提示严重RA。<br>**建议值**: `无`, `有`,有
+extraArticular.rheumatoidNodules,关节外表现.类风湿结节,String,"**皮下结节**: 肘/前臂伸侧,RF阳性者常见(20-30%)。<br>**建议值**: `无`, `少数结节(<3个)`, `多发结节`,少数结节
+extraArticular.lung,关节外表现.肺部,String,"**ILD/胸膜炎/结节**: 最常见关节外表现。<br>**示例**: `无肺部受累`, `间质性肺病(ILD)`, `胸膜炎/胸腔积液`, `类风湿结节`,无
+extraArticular.heart,关节外表现.心脏,String,"**心包炎/心肌炎/冠脉炎**: 少见但严重。<br>**建议值**: `无心脏受累`, `心包炎`, `心肌炎`,无
+extraArticular.eye,关节外表现.眼部,String,"**干眼症/巩膜炎/葡萄膜炎**: 常合并干燥综合征。<br>**示例**: `无眼部受累`, `干眼症`, `巩膜炎`, `葡萄膜炎`,干眼症
+extraArticular.vasculitis,关节外表现.血管炎,String,"**类风湿血管炎**: 皮肤溃疡/周围神经病变/脏器缺血。<br>**建议值**: `无`, `皮肤血管炎`, `周围神经病变`, `脏器血管炎`,无
+
+physicalExam.jointCount.tender,体格检查.关节计数.压痛关节数,Number,"压痛关节计数(TJC)。<br>**DAS28**: 评估28个关节<br>**单位**: 个",8
+physicalExam.jointCount.swollen,体格检查.关节计数.肿胀关节数,Number,"肿胀关节计数(SJC)。<br>**DAS28**: 评估28个关节<br>**单位**: 个",6
+physicalExam.jointCount.joints28,体格检查.关节计数.28关节评估,String,"**DAS28评估关节**: 双侧肩/肘/腕/MCP 1-5/PIP 1-5/膝(共28个)。<br>**示例**: `双MCP 2-5压痛肿胀,双腕肿胀`,双MCP 2-5压痛肿胀
+
+physicalExam.rom,体格检查.活动度,String,"关节活动度受限。<br>**示例**: `活动度正常`, `双腕活动度↓`, `双手指关节僵硬`, `多关节活动受限`,双腕活动度↓
+physicalExam.deformity,体格检查.畸形,String,"**RA典型畸形**: 尺侧偏斜/天鹅颈/纽扣花/锤状趾/寰枢关节半脱位。<br>**示例**: `无畸形`, `双手尺侧偏斜`, `天鹅颈畸形(PIP过伸+DIP屈曲)`, `纽扣花畸形(PIP屈曲+DIP过伸)`,双手尺侧偏斜
+
+labs.rf,实验室.类风湿因子,Number,"类风湿因子(RF)。<br>单位: IU/mL<br>**阳性**: >20 IU/mL(实验室标准)<br>**高滴度**: >正常上限3倍(>60)<br>**正常**: <20",85
+labs.rf.titer,实验室.类风湿因子.滴度,String,"**建议值**: `阴性`, `低滴度阳性(20-60)`, `中滴度阳性(60-200)`, `高滴度阳性(>200)`,中滴度阳性
+labs.antiCCP,实验室.抗CCP抗体,Number,"抗环瓜氨酸肽抗体(anti-CCP)。<br>单位: U/mL<br>**阳性**: >20 U/mL<br>**高滴度**: >正常上限3倍(>60)<br>**特异性**: 95-98%(诊断RA)<br>**正常**: <20",150
+labs.antiCCP.titer,实验室.抗CCP抗体.滴度,String,"**建议值**: `阴性`, `低滴度阳性(20-60)`, `中滴度阳性(60-200)`, `高滴度阳性(>200)`,高滴度阳性
+
+labs.esr,实验室.血沉,Number,"红细胞沉降率(ESR)。<br>单位: mm/h<br>**炎症活动**: >30<br>**正常**: 男<15,女<20",45
+labs.crp,实验室.CRP,Number,"C反应蛋白。<br>单位: mg/L<br>**炎症活动**: >10<br>**正常**: <10",28
+
+labs.ana,实验室.抗核抗体,String,"抗核抗体(ANA)。<br>**RA**: 30-50%阳性,滴度一般不高。<br>**鉴别**: SLE(高滴度),干燥综合征。<br>**建议值**: `阴性`, `阳性(滴度1:80)`, `阳性(滴度1:320)`, `阳性(滴度≥1:640)`,阳性(滴度1:160)
+labs.ssa,实验室.抗SSA抗体,String,"抗SSA/Ro抗体。<br>**干燥综合征**: 阳性,RA可合并。<br>**建议值**: `未检测`, `阴性`, `阳性`,阴性
+labs.ssb,实验室.抗SSB抗体,String,"抗SSB/La抗体。<br>**建议值**: `未检测`, `阴性`, `阳性`,阴性
+
+labs.cbc.hb,实验室.血常规.血红蛋白,Number,"血红蛋白。<br>单位: g/L<br>**慢性病贫血**: RA常见,轻-中度正细胞性贫血<br>**正常**: 男120-160,女110-150",105
+labs.cbc.wbc,实验室.血常规.白细胞,Number,"白细胞。<br>单位: ×10⁹/L<br>**正常**: 4-10",7.5
+labs.cbc.platelet,实验室.血常规.血小板,Number,"血小板。<br>单位: ×10⁹/L<br>**血小板增多**: 炎症活动时反应性↑<br>**正常**: 100-300",380
+
+labs.liver.alt,实验室.肝功能.ALT,Number,"丙氨酸转氨酶。<br>单位: U/L<br>**MTX治疗**: 监测肝毒性<br>**正常**: <40",35
+labs.liver.ast,实验室.肝功能.AST,Number,"天冬氨酸转氨酶。<br>单位: U/L<br>**正常**: <40",32
+
+labs.renal.creatinine,实验室.肾功能.肌酐,Number,"血清肌酐。<br>单位: μmol/L<br>**监测**: NSAIDs肾毒性<br>**正常**: 44-133",85
+labs.renal.egfr,实验室.肾功能.eGFR,Number,"估算肾小球滤过率。<br>单位: mL/min/1.73m²<br>**正常**: >90",95
+
+imaging.xray.hands,影像学.X线.手,String,"**早期**: 软组织肿胀,骨质疏松。<br>**中期**: 关节间隙狭窄,边缘侵蚀。<br>**晚期**: 骨性强直,半脱位,严重畸形。<br>**示例**: `未见异常`, `双侧MCP/PIP关节周围软组织肿胀`, `MCP关节间隙狭窄+骨侵蚀`, `腕关节骨性强直`,MCP关节间隙狭窄+骨侵蚀
+imaging.xray.feet,影像学.X线.足,String,"**MTP关节**: 早期受累常见。<br>**示例**: `未见异常`, `双侧MTP关节间隙狭窄`, `MTP骨侵蚀`,双侧MTP关节间隙狭窄
+imaging.xray.cervical,影像学.X线.颈椎,String,"**寰枢关节**: 严重RA需评估,半脱位风险。<br>**建议值**: `未查`, `未见异常`, `寰枢关节半脱位`,未查
+
+imaging.ultrasound.synovitis,影像学.超声.滑膜炎,String,"**PDUS**: 能量多普勒超声,检测滑膜炎血流信号,早期诊断。<br>**示例**: `未查`, `双腕/MCP滑膜增厚+血流信号(+)`, `多关节滑膜炎`,双腕/MCP滑膜增厚
+imaging.ultrasound.erosion,影像学.超声.骨侵蚀,String,"**超声**: 比X线更早发现骨侵蚀。<br>**建议值**: `未查`, `未见骨侵蚀`, `MCP 2-3骨侵蚀`,未见骨侵蚀
+imaging.ultrasound.tenosynovitis,影像学.超声.腱鞘炎,String,"**建议值**: `未查`, `无腱鞘炎`, `屈肌腱腱鞘炎`, `伸肌腱腱鞘炎`,无腱鞘炎
+
+imaging.mri.performed,影像学.MRI.是否完成,String,"**MRI**: 最敏感检测早期滑膜炎/骨髓水肿/骨侵蚀。<br>**建议值**: `已完成`, `未完成`, `计划检查`",未完成
+imaging.mri.findings,影像学.MRI.主要表现,String,"**示例**: `不适用`, `双腕滑膜炎+骨髓水肿`, `MCP关节滑膜炎+早期骨侵蚀`,不适用
+
+imaging.chestXray,影像学.胸片,String,"**RA-ILD**: 网格状/蜂窝状,基底部为主。<br>**MTX肺毒性**: 间质性肺炎。<br>**示例**: `未查`, `未见异常`, `双肺间质性改变(RA-ILD)`, `双下肺网格影`,未见异常
+
+das28.score,疾病活动度.DAS28-CRP.评分,Number,"28关节疾病活动度评分(DAS28-CRP)。<br>DAS28-CRP = 0.56×√(TJC28) + 0.28×√(SJC28) + 0.36×ln(CRP+1) + 0.014×GH + 0.96<br>**缓解**: <2.6<br>**低活动**: 2.6-3.2<br>**中活动**: 3.2-5.1<br>**高活动**: >5.1",4.8
+das28.tjc,疾病活动度.DAS28-CRP.压痛关节数,Number,"28关节压痛关节数(TJC28)。<br>单位: 个",8
+das28.sjc,疾病活动度.DAS28-CRP.肿胀关节数,Number,"28关节肿胀关节数(SJC28)。<br>单位: 个",6
+das28.crp,疾病活动度.DAS28-CRP.CRP,Number,"C反应蛋白。<br>单位: mg/L",28
+das28.gh,疾病活动度.DAS28-CRP.患者整体评估,Number,"患者整体健康评估(GH)。<br>VAS评分(0-100 mm)<br>**0**: 非常好<br>**100**: 非常差",60
+das28.category,疾病活动度.DAS28-CRP.活动度分级,String,"**建议值**: `缓解(<2.6)`, `低活动(2.6-3.2)`, `中活动(3.2-5.1)`, `高活动(>5.1)`",中活动
+
+cdai.score,疾病活动度.CDAI.评分,Number,"临床疾病活动指数(CDAI)。<br>CDAI = TJC28 + SJC28 + PGA(0-10) + EGA(0-10)<br>**缓解**: ≤2.8<br>**低活动**: 2.8-10<br>**中活动**: 10-22<br>**高活动**: >22",18
+cdai.pga,疾病活动度.CDAI.患者整体评估,Number,"患者整体评估(PGA)。<br>0-10分<br>**0**: 非常好<br>**10**: 非常差",6
+cdai.ega,疾病活动度.CDAI.医生整体评估,Number,"医生整体评估(EGA)。<br>0-10分",4
+
+sdai.score,疾病活动度.SDAI.评分,Number,"简化疾病活动指数(SDAI)。<br>SDAI = TJC28 + SJC28 + PGA(0-10) + EGA(0-10) + CRP(mg/dL)<br>**缓解**: ≤3.3<br>**低活动**: 3.3-11<br>**中活动**: 11-26<br>**高活动**: >26",21
+
+haq.score,功能评估.HAQ.评分,Number,"健康评估问卷(Health Assessment Questionnaire)。<br>评估ADL能力(穿衣/起床/进食/行走/卫生/伸手/握持/活动),0-3分<br>**0**: 无困难<br>**1**: 有些困难<br>**2**: 很困难<br>**3**: 不能做<br>**总分**: 0-3(8项平均)",1.2
+
+treatment.csDMARDs.mtx,治疗.传统DMARDs.甲氨蝶呤,String,"**MTX**: RA一线药物,锚定药物。<br>**剂量**: 10-25 mg/周,口服/皮下注射。<br>**叶酸**: 5-10 mg/周(MTX后24-48h)。<br>**示例**: `未使用`, `MTX 10mg/周`, `MTX 15mg/周+叶酸5mg/周`, `MTX 20mg/周 SC`,MTX 15mg/周+叶酸5mg/周
+treatment.csDMARDs.leflunomide,治疗.传统DMARDs.来氟米特,String,"**LEF**: MTX不耐受/无效时使用。<br>**剂量**: 负荷量100 mg/天×3天,后10-20 mg/天维持。<br>**示例**: `未使用`, `来氟米特20mg qd`, `来氟米特10mg qd`,未使用
+treatment.csDMARDs.ssz,治疗.传统DMARDs.柳氮磺吡啶,String,"**SSZ**: 轻中度RA,肠道副作用常见。<br>**剂量**: 1-3 g/天,分次服用。<br>**示例**: `未使用`, `柳氮磺吡啶1g bid`,未使用
+treatment.csDMARDs.hcq,治疗.传统DMARDs.羟氯喹,String,"**HCQ**: 轻度RA,眼毒性需监测。<br>**剂量**: 200-400 mg/天。<br>**示例**: `未使用`, `羟氯喹200mg bid`,羟氯喹200mg qd
+
+treatment.bDMARDs.tnfi,治疗.生物制剂.TNF抑制剂,String,"**适应证**: MTX治疗3-6月无效,DAS28>3.2。<br>**药物**: 依那西普/阿达木单抗/英夫利昔单抗/戈利木单抗/赛妥珠单抗。<br>**示例**: `未使用`, `依那西普50mg SC每周`, `阿达木单抗40mg SC每2周`, `英夫利昔单抗3mg/kg IV(0/2/6周后每8周)`,未使用
+treatment.bDMARDs.il6i,治疗.生物制剂.IL-6抑制剂,String,"**托珠单抗**: IL-6受体单抗,TNFi无效时选择。<br>**剂量**: 8 mg/kg IV每4周或162 mg SC每周。<br>**示例**: `未使用`, `托珠单抗8mg/kg IV每4周`, `托珠单抗162mg SC每周`,未使用
+treatment.bDMARDs.costim,治疗.生物制剂.T细胞共刺激抑制剂,String,"**阿巴西普**: CTLA4-Ig,抑制T细胞活化。<br>**剂量**: <60kg 500mg,60-100kg 750mg,>100kg 1000mg IV每4周。<br>**示例**: `未使用`, `阿巴西普750mg IV每4周`,未使用
+treatment.bDMARDs.antiCD20,治疗.生物制剂.抗CD20单抗,String,"**利妥昔单抗**: B细胞清除,TNFi无效时选择。<br>**剂量**: 1000 mg IV,间隔2周×2次,后每6-12月重复。<br>**示例**: `未使用`, `利妥昔单抗1000mg IV(第0/14天)`,未使用
+
+treatment.tsDMARDs.jak,治疗.靶向合成DMARDs.JAK抑制剂,String,"**托法替布/巴瑞克替尼/乌帕替尼**: 口服小分子,JAK激酶抑制剂。<br>**适应证**: MTX无效,或不适合生物制剂。<br>**示例**: `未使用`, `托法替布5mg bid`, `巴瑞克替尼4mg qd`, `乌帕替尼15mg qd`,未使用
+
+treatment.glucocorticoids,治疗.糖皮质激素,String,"**桥接治疗**: 起病时短期使用(<3月),等待DMARDs起效。<br>**低剂量维持**: <7.5 mg/天强的松,尽快减停。<br>**关节内注射**: 局部控制,避免频繁(≤3-4次/年/关节)。<br>**示例**: `未使用`, `强的松10mg qd(桥接治疗)`, `强的松5mg qd(维持)`, `关节内注射曲安奈德`,强的松5mg qd
+treatment.nsaids,治疗.NSAIDs,String,"**对症治疗**: 缓解疼痛,不改变病程。<br>**示例**: `未使用`, `塞来昔布200mg bid`, `美洛昔康15mg qd`, `双氯芬酸75mg bid`,塞来昔布200mg qd
+
+treatment.combination,治疗.联合治疗策略,String,"**推荐**: MTX+生物制剂/JAK抑制剂(疗效优于单药)。<br>**三联疗法**: MTX+SSZ+HCQ(经济,轻中度RA)。<br>**示例**: `MTX单药`, `MTX+TNFi`, `MTX+托珠单抗`, `MTX+SSZ+HCQ(三联)`,MTX单药
+
+treatment.t2t,治疗.达标治疗,String,"**Treat-to-Target**: 目标缓解(DAS28<2.6)或低疾病活动度(DAS28<3.2)。<br>**调整频率**: 每1-3月评估,未达标→调整方案。<br>**建议值**: `已达标(缓解)`, `已达标(低活动)`, `未达标(需调整)`,未达标
+
+monitoring.efficacy,监测.疗效监测,String,"**评估指标**: DAS28/CDAI/SDAI,每1-3月。<br>**目标**: 3月内有改善,6月内达标。<br>**示例**: `治疗3月,DAS28从5.2→3.8(有改善)`, `治疗6月,DAS28 2.5(缓解)`,治疗3月DAS28改善
+monitoring.safety.labs,监测.安全性监测.实验室,String,"**MTX**: 每2-4周查血常规/肝功/肌酐(前3月),后每1-3月。<br>**LEF**: 同MTX。<br>**生物制剂**: 感染筛查(TB/HBV/HCV),每3-6月血常规/肝功。<br>**示例**: `每月监测肝功/血常规(MTX)`, `每3月监测(稳定期)`,每月监测
+monitoring.safety.tb,监测.安全性监测.结核筛查,String,"**生物制剂前**: PPD/IGRA,胸片排除活动性TB。<br>**潜伏TB**: 异烟肼预防治疗。<br>**建议值**: `已筛查(阴性)`, `潜伏TB(需预防治疗)`, `未筛查`,已筛查阴性
+monitoring.safety.hbv,监测.安全性监测.乙肝筛查,String,"**免疫抑制前**: 查HBsAg/抗HBc。<br>**HBsAg阳性/抗HBc阳性**: 抗病毒预防(恩替卡韦/替诺福韦)。<br>**建议值**: `已筛查(阴性)`, `HBsAg阳性(需抗病毒)`, `抗HBc阳性(监测HBV DNA)`,已筛查阴性
+
+complications.ild,并发症.间质性肺病,String,"**RA-ILD**: 10-20%,MTX可加重,预后差。<br>**HRCT**: 网格影/蜂窝肺。<br>**建议值**: `无`, `轻度ILD`, `中-重度ILD`,无
+complications.cvd,并发症.心血管疾病,String,"**CVD风险**: RA患者↑1.5-2倍,控制炎症降低风险。<br>**示例**: `无CVD`, `冠心病`, `心肌梗死史`,无
+complications.infection,并发症.感染,String,"**免疫抑制**: 感染风险↑,带状疱疹/肺炎/结核。<br>**示例**: `无严重感染`, `肺炎`, `带状疱疹`, `结核再激活`,无
+complications.osteoporosis,并发症.骨质疏松,String,"**RA+激素**: 骨折风险↑。<br>**预防**: 钙剂/VitD,双膦酸盐。<br>**建议值**: `无`, `骨质疏松(T值<-2.5)`, `骨质疏松性骨折`,无
+
+prognosis.remission,预后.缓解状态,String,"**建议值**: `缓解(DAS28<2.6)`, `低疾病活动度(2.6-3.2)`, `中活动度(3.2-5.1)`, `高活动度(>5.1)`,低疾病活动度
+prognosis.radiographic,预后.影像学进展,String,"**Sharp评分**: 评估关节破坏进展。<br>**建议值**: `无进展`, `轻度进展`, `明显进展(骨侵蚀/关节间隙狭窄加重)`,无进展
+prognosis.functional,预后.功能状态,String,"**ACR功能分级**:<br>**I级**: 能完成所有日常活动<br>**II级**: 能自理,职业活动受限<br>**III级**: 能自理,职业/日常活动均受限<br>**IV级**: 大部分活动受限,需依赖<br>**建议值**: `I级`, `II级`, `III级`, `IV级`",II级
+
+prognosis.poorPrognosticFactors,预后.不良预后因素,String,"**高危因素**: 高滴度RF/抗CCP,多关节受累,早期骨侵蚀,关节外表现,ESR/CRP持续↑。<br>**示例**: `无高危因素`, `高滴度RF+抗CCP`, `早期骨侵蚀+关节外表现`,高滴度RF+抗CCP
+
+followUp.interval,随访.随访频率,String,"**高疾病活动**: 每1-3月。<br>**低疾病活动/缓解**: 每3-6月。<br>**示例**: `每1月随访(调整治疗)`, `每3月随访(稳定期)`, `每6月随访(缓解)`,每3月随访
+followUp.monitoring,随访.监测项目,String,"**示例**: `DAS28评估+血常规/肝功/肾功`, `影像学评估(每年手足X线)`, `不良反应监测`,DAS28+实验室
+
+clinicianNotes,临床医生备注,String,自由文本备注栏,患者为45岁女性,主诉双手小关节肿痛伴晨僵6个月。晨僵持续2小时,对称性累及双侧MCP 2-5/PIP 2-5/腕关节。查体:双MCP/PIP肿胀压痛,腕关节肿胀,活动度↓。实验室:RF 85 IU/mL(阳性),抗CCP 150 U/mL(高滴度阳性),ESR 45 mm/h,CRP 28 mg/L。X线:双MCP 2-3关节间隙狭窄,边缘骨侵蚀。DAS28-CRP 4.8(中活动度)。诊断:类风湿关节炎(ACR/EULAR评分8分,确诊)。治疗:MTX 15mg/周+叶酸5mg/周,强的松5mg qd桥接,塞来昔布200mg bid对症。计划:每月随访DAS28,监测肝功/血常规,目标6月内达到缓解或低疾病活动度。
+dataSource,数据来源,String,"**建议值**: `门诊`, `风湿科门诊`, `住院`, `随访`",风湿科门诊
