@@ -1,0 +1,156 @@
+字段名(英文),字段名(中文),数据类型,描述,示例
+patientId,患者ID,String,患者唯一标识符,CRC20250318001
+diagnosisDate,确诊日期,Date,结直肠癌确诊日期,2025-03-18
+age,年龄,Number,确诊时年龄(岁),58
+gender,性别,String,患者性别,男
+
+# 临床表现
+symptoms.rectalBleeding,症状.便血,Boolean,"**鲜血便**: 直肠癌、左半结肠癌<br>**暗红血便**: 右半结肠癌<br>**60-80%患者**: 出现便血",true
+symptoms.changeInBowel,症状.排便习惯改变,Boolean,"**便秘/腹泻交替**: 左半结肠癌<br>**大便变细**: 直肠癌<br>**里急后重**: 直肠癌",true
+symptoms.abdominalPain,症状.腹痛,Boolean,"**右下腹痛**: 盲肠癌<br>**左下腹痛**: 乙状结肠癌<br>**持续性疼痛**: 晚期浸润",true
+symptoms.abdominalMass,症状.腹部包块,Boolean,"**右半结肠癌**: 可触及包块<br>**晚期**: 肿块固定",false
+symptoms.weightLoss,症状.体重下降,Boolean,"**>5kg/3月**: 提示进展期<br>**50-60%患者**: 体重下降",true
+symptoms.weightLoss.amount,症状.体重下降.数值,Number,3个月内体重下降(kg),7
+symptoms.anemia,症状.贫血,Boolean,"**慢性失血**: 缺铁性贫血<br>**右半结肠癌**: 常见",true
+symptoms.obstruction,症状.肠梗阻,Boolean,"**左半结肠癌**: 梗阻常见<br>**急性梗阻**: 需紧急处理",false
+symptoms.tenesmus,症状.里急后重,Boolean,"**直肠癌**: 特征性症状<br>**肿瘤刺激**: 排便不尽感",false
+
+# 肿瘤部位
+tumor.location,肿瘤.部位,String,"**直肠**: 35-40%<br>**乙状结肠**: 25-30%<br>**升结肠**: 15-20%<br>**横结肠**: 5-10%<br>**降结肠**: 5%<br>**盲肠**: 5-10%",直肠
+tumor.location.rectum,肿瘤.直肠癌.距肛缘距离,Number,"**低位直肠癌**: <5cm,需保肛评估<br>**中位直肠癌**: 5-10cm<br>**高位直肠癌**: >10cm",6
+tumor.size,肿瘤.最大径,Number,肿瘤最大直径(cm),4.5
+tumor.circumference,肿瘤.肠周浸润,String,"**<1/2周径**: 局部浸润<br>**≥1/2周径**: 环周浸润<br>**全周**: 狭窄梗阻",1/2周径
+
+# 病理分型
+pathology.histology,病理.组织学类型,String,"**腺癌**: 90-95%(最常见)<br>**黏液腺癌**: 10-15%<br>**印戒细胞癌**: 1-2%<br>**未分化癌**: <1%",中分化腺癌
+pathology.differentiation,病理.分化程度,String,"**高分化**: 预后好<br>**中分化**: 最常见<br>**低分化**: 预后差",中分化
+pathology.mucinous,病理.黏液成分,Boolean,"**黏液腺癌**: >50%黏液<br>**MSI-H**: 常见<br>**预后**: 争议",false
+pathology.signetRing,病理.印戒细胞成分,Boolean,"**印戒细胞癌**: >50%印戒细胞<br>**预后**: 差",false
+
+# 结肠镜检查
+colonoscopy.performed,肠镜.结肠镜检查,Boolean,"**确诊金标准**: 肠镜+活检<br>**筛查**: 50岁起,每10年",true
+colonoscopy.findings,肠镜.内镜下表现,String,"**息肉样**: 0-I型<br>**溃疡型**: 0-II型<br>**菜花样**: 隆起型<br>**浸润型**: 狭窄",直肠距肛6cm处环周浸润肿块,表面溃疡
+colonoscopy.biopsy,肠镜.活检,Boolean,"**活检**: 确诊病理<br>**多点活检**: 提高阳性率",true
+colonoscopy.biopsy.result,肠镜.活检结果,String,活检病理诊断,中分化腺癌
+colonoscopy.polyps,肠镜.息肉,Boolean,"**腺瘤性息肉**: 癌前病变<br>**>1cm**: 恶变风险增加<br>**切除**: 预防癌变",true
+colonoscopy.polyps.number,肠镜.息肉.数量,Number,腺瘤性息肉数量,3
+
+# 影像学检查
+imaging.ct.performed,影像学.增强CT.是否完成,Boolean,"**术前分期**: 胸腹盆CT<br>**评估**: T分期、淋巴结、远处转移",true
+imaging.ct.wallThickness,影像学.CT.肠壁增厚,Number,肠壁最厚处(mm),正常<3mm,10
+imaging.ct.lymphNodes,影像学.CT.淋巴结,String,"**>1cm短径**: 可疑转移<br>**位置**: 肠系膜、腹主动脉旁",肠系膜多发肿大淋巴结
+imaging.ct.liverMets,影像学.CT.肝转移,Boolean,"**肝转移**: 最常见远处转移<br>**孤立病灶**: 可考虑切除",false
+imaging.ct.lungMets,影像学.CT.肺转移,Boolean,"**肺转移**: 第二常见<br>**多发结节**: 血行转移",false
+imaging.ct.peritoneal,影像学.CT.腹膜转移,Boolean,"**腹膜种植**: 晚期表现<br>**腹水**: 癌性腹水",false
+
+imaging.mri.rectum,影像学.直肠MRI.是否完成,Boolean,"**直肠癌**: 推荐MRI<br>**评估**: 直肠系膜筋膜(MRF)、壁外血管侵犯(EMVI)<br>**新辅助**: 治疗前必查",true
+imaging.mri.mrf,影像学.MRI.MRF受累,Boolean,"**MRF**: 直肠系膜筋膜<br>**距离≤1mm**: MRF阳性,局部晚期<br>**新辅助**: 推荐",false
+imaging.mri.mrf.distance,影像学.MRI.MRF距离,Number,肿瘤距MRF最短距离(mm),5
+imaging.mri.emvi,影像学.MRI.EMVI,Boolean,"**EMVI**: 壁外血管侵犯<br>**阳性**: 复发风险增加,预后差",false
+imaging.mri.crm,影像学.MRI.CRM,String,"**CRM**: 环周切缘<br>**≤1mm**: CRM阳性,R1切除风险<br>**>1mm**: CRM阴性",CRM 5mm
+
+imaging.petct.performed,影像学.PET-CT.是否完成,Boolean,"**检测转移**: 敏感性高<br>**不常规推荐**: 昂贵,假阳性<br>**适应证**: 复发可疑",false
+imaging.petct.suvmax,影像学.PET-CT.SUVmax,Number,"SUV最大值。<br>**>2.5**: 提示恶性<br>**评估**: 治疗反应",8.5
+
+# TNM分期 (AJCC 8th Edition)
+staging.t,分期.T分期,String,"**T1**: 黏膜下层<br>**T2**: 固有肌层<br>**T3**: 穿透肌层至浆膜下/无腹膜覆盖肠周组织<br>**T4a**: 穿透腹膜<br>**T4b**: 侵犯邻近器官",T3
+staging.n,分期.N分期,String,"**N0**: 无淋巴结转移<br>**N1a**: 1个<br>**N1b**: 2-3个<br>**N1c**: 肿瘤结节无淋巴结<br>**N2a**: 4-6个<br>**N2b**: ≥7个",N1b
+staging.n.number,分期.淋巴结.转移数量,Number,区域淋巴结转移个数,3
+staging.m,分期.M分期,String,"**M0**: 无远处转移<br>**M1a**: 单器官转移(肝/肺/卵巢/非区域淋巴结)<br>**M1b**: ≥2个器官转移<br>**M1c**: 腹膜转移",M0
+staging.tnm,分期.TNM综合分期,String,"**I期**: T1-2N0M0,5年生存率>90%<br>**II期**: T3-4N0M0,70-85%<br>**IIIA期**: T1-2N1,80-85%<br>**IIIB期**: T3-4N1或T2-3N2a,60-70%<br>**IIIC期**: T4bN1-2或T3-4N2b,40-50%<br>**IV期**: M1,5-15%",IIIB期(T3N1bM0)
+
+# 治疗方案 - 结肠癌
+treatment.colon.surgery.performed,治疗.结肠癌手术.是否实施,Boolean,"**根治性切除**: 唯一治愈手段<br>**术式**: 根据部位选择",true
+treatment.colon.surgery.type,治疗.结肠癌手术.术式,String,"**右半结肠切除**: 盲肠、升结肠、肝曲<br>**横结肠切除**: 横结肠<br>**左半结肠切除**: 脾曲、降结肠<br>**乙状结肠切除**: 乙状结肠",右半结肠切除术
+treatment.colon.surgery.approach,治疗.结肠癌手术.入路,String,"**开放**: 传统手术<br>**腹腔镜**: 微创,恢复快<br>**机器人**: 精准操作",腹腔镜
+treatment.colon.surgery.lymphNodes,治疗.结肠癌手术.淋巴结清扫数,Number,"**建议≥12个**: 准确分期<br>**清扫数量**: 影响预后",18
+
+# 治疗方案 - 直肠癌
+treatment.rectum.surgery.performed,治疗.直肠癌手术.是否实施,Boolean,"**TME**: 全直肠系膜切除,标准术式<br>**保肛**: 距肛≥2cm可考虑",true
+treatment.rectum.surgery.type,治疗.直肠癌手术.术式,String,"**低位前切除(LAR)**: 保肛手术<br>**腹会阴联合切除(APR)**: 永久造口<br>**局部切除**: T1极早期",低位前切除术(LAR)
+treatment.rectum.surgery.tme,治疗.直肠癌手术.TME质量,String,"**完整**: TME完整,预后最好<br>**近完整**: 轻微缺陷<br>**不完整**: TME不完整,复发风险高",完整TME
+treatment.rectum.surgery.margin,治疗.手术.切缘状态,String,"**R0**: 切缘阴性<br>**远端切缘**: ≥2cm<br>**环周切缘(CRM)**: >1mm",R0切除,远端切缘3cm,CRM阴性
+treatment.rectum.surgery.sphincterPreservation,治疗.直肠癌手术.保肛,Boolean,"**保肛**: 肛门功能保留<br>**距肛≥2cm**: 可考虑保肛<br>**超低位**: 预防性造口",true
+
+# 新辅助治疗 (直肠癌)
+treatment.neoadjuvant.indication,治疗.新辅助治疗.适应证,String,"**局部晚期**: T3-4或N+<br>**MRF阳性**: 推荐新辅助<br>**目的**: 降期,提高R0切除率",T3N+
+treatment.neoadjuvant.performed,治疗.新辅助治疗.是否实施,Boolean,"**放化疗**: 长程放疗+卡培他滨/5-FU<br>**短程放疗**: 5Gy×5次<br>**全程新辅助治疗(TNT)**: 化疗+放化疗",true
+treatment.neoadjuvant.regimen,治疗.新辅助治疗.方案,String,"**长程放化疗**: 50Gy/25次+卡培他滨<br>**短程放疗**: 25Gy/5次<br>**TNT**: FOLFOX/CAPEOX+放化疗",长程放化疗(50Gy+卡培他滨)
+treatment.neoadjuvant.response,治疗.新辅助治疗.疗效,String,"**pCR**: 病理完全缓解,预后最好<br>**良好反应**: 肿瘤降期<br>**无反应**: 肿瘤进展",良好反应(降至T2N0)
+treatment.neoadjuvant.trg,治疗.新辅助治疗.TRG评分,String,"**TRG 0**: 病理完全缓解<br>**TRG 1**: 轻微残留<br>**TRG 2**: 中度反应<br>**TRG 3**: 反应差",TRG 1
+
+# 辅助治疗
+treatment.adjuvant.indication,治疗.辅助治疗.适应证,String,"**结肠癌**: III期必须,II期高危<br>**直肠癌**: 新辅助后ypT3-4或ypN+<br>**疗程**: 6个月",III期
+treatment.adjuvant.performed,治疗.辅助治疗.是否实施,Boolean,"**术后辅助化疗**: 降低复发风险<br>**开始时间**: 术后4-8周内",true
+treatment.adjuvant.regimen,治疗.辅助治疗.方案,String,"**FOLFOX**: 奥沙利铂+氟尿嘧啶,12周期<br>**CAPEOX**: 卡培他滨+奥沙利铂,8周期<br>**单药卡培他滨**: 老年/不耐受奥沙利铂",FOLFOX×12周期
+treatment.adjuvant.cycles,治疗.辅助治疗.周期数,Number,已完成辅助化疗周期数,12
+
+# 晚期治疗
+treatment.palliative.chemo,治疗.晚期化疗.方案,String,"**一线**: FOLFOX、FOLFIRI、CAPEOX<br>**二线**: 更换化疗方案<br>**三线**: 瑞戈非尼、TAS-102",FOLFOX
+treatment.palliative.chemo.cycles,治疗.晚期化疗.周期数,Number,已完成化疗周期数,8
+treatment.palliative.chemo.response,治疗.晚期化疗.疗效评价,String,"**CR**: 完全缓解<br>**PR**: 部分缓解<br>**SD**: 疾病稳定<br>**PD**: 疾病进展",PR
+
+treatment.targeted.bevacizumab,治疗.靶向治疗.贝伐珠单抗,Boolean,"**抗血管生成**: 贝伐珠单抗<br>**联合化疗**: 一线治疗<br>**禁忌**: 肠穿孔风险",true
+treatment.targeted.cetuximab,治疗.靶向治疗.西妥昔单抗,Boolean,"**抗EGFR**: 西妥昔单抗、帕尼单抗<br>**RAS野生型**: 必须条件<br>**左半结肠**: 疗效更好",false
+treatment.targeted.regorafenib,治疗.靶向治疗.瑞戈非尼,Boolean,"**多靶点TKI**: 三线治疗<br>**适应证**: 化疗进展后",false
+
+treatment.immunotherapy,治疗.免疫治疗,Boolean,"**MSI-H/dMMR**: 免疫治疗敏感<br>**PD-1抑制剂**: 纳武利尤单抗、帕博利珠单抗<br>**一线**: MSI-H可单药免疫",false
+treatment.immunotherapy.agent,治疗.免疫治疗.药物,String,"**帕博利珠单抗**: MSI-H一线单药<br>**纳武利尤单抗+伊匹木单抗**: MSI-H联合方案",无
+
+# 转移情况
+metastasis.liver,转移.肝转移,Boolean,"**最常见**: 50-60%IV期患者<br>**可切除**: 孤立病灶,化疗后评估手术",false
+metastasis.liver.resectable,转移.肝转移.可切除性,String,"**可切除**: 孤立/有限病灶<br>**潜在可切除**: 化疗转化<br>**不可切除**: 弥漫性转移",无肝转移
+metastasis.lung,转移.肺转移,Boolean,"**第二常见**: 10-20%IV期患者<br>**孤立病灶**: 可考虑切除",false
+metastasis.peritoneal,转移.腹膜转移,Boolean,"**腹膜种植**: 预后差<br>**HIPEC**: 腹腔热灌注化疗,选择性病例",false
+metastasis.ovarian,转移.卵巢转移,Boolean,"**Krukenberg瘤**: 女性<br>**黏液腺癌**: 易卵巢转移",false
+
+# 肿瘤标志物
+tumorMarkers.cea,肿瘤标志物.CEA,Number,"CEA水平(ng/mL)。<br>**正常值**: <5 ng/mL<br>**敏感性**: 60-70%<br>**随访**: 监测复发,每3月",25
+tumorMarkers.cea.postSurgery,肿瘤标志物.CEA术后,Number,"**术后4-6周**: CEA应降至正常<br>**持续升高**: 提示残留或转移",3
+tumorMarkers.ca199,肿瘤标志物.CA19-9,Number,"CA19-9水平(U/mL)。<br>**正常值**: <37 U/mL<br>**黏液腺癌**: 常升高",45
+
+# 基因检测
+genetics.msi,基因检测.微卫星不稳定,String,"**MSI-H**: 15%结直肠癌<br>**免疫治疗**: 敏感<br>**预后**: II-III期预后好<br>**检测**: 所有患者推荐",MSS
+genetics.mmr,基因检测.错配修复,String,"**dMMR**: MLH1/MSH2/MSH6/PMS2缺失<br>**Lynch综合征**: 筛查家族性CRC",pMMR
+genetics.kras,基因检测.KRAS,String,"**KRAS突变**: 40-45%<br>**抗EGFR**: 禁忌证<br>**外显子2/3/4**: 常见突变",野生型
+genetics.nras,基因检测.NRAS,String,"**NRAS突变**: 5-10%<br>**抗EGFR**: 禁忌证",野生型
+genetics.braf,基因检测.BRAF,String,"**BRAF V600E突变**: 5-10%<br>**预后**: 差<br>**靶向**: BRAF抑制剂(达拉非尼+曲美替尼)",野生型
+genetics.her2,基因检测.HER2,String,"**HER2扩增**: 2-5%<br>**靶向**: 曲妥珠单抗+拉帕替尼<br>**检测**: RAS/BRAF野生型耐药后",阴性
+genetics.pik3ca,基因检测.PIK3CA,String,"**PIK3CA突变**: 15-20%<br>**阿司匹林**: PIK3CA突变获益",野生型
+
+# 遗传性综合征筛查
+hereditary.lynch,遗传性.Lynch综合征,Boolean,"**Lynch综合征**: dMMR/MSI-H<br>**种系突变**: MLH1/MSH2/MSH6/PMS2<br>**筛查**: <50岁或MSI-H患者",false
+hereditary.fap,遗传性.家族性腺瘤性息肉病,Boolean,"**FAP**: APC基因突变<br>**>100个腺瘤**: 诊断FAP<br>**预防性结肠切除**: 推荐",false
+hereditary.map,遗传性.MUTYH相关息肉病,Boolean,"**MAP**: MUTYH基因突变<br>**10-100个腺瘤**: 考虑MAP",false
+
+# 随访与预后
+followUp.interval,随访.随访间隔,String,"**术后2年内**: 每3-6个月<br>**3-5年**: 每6-12个月<br>**>5年**: 每年",每3个月
+followUp.methods,随访.随访方法,String,"**体格检查**: 直肠指诊<br>**CEA**: 每3-6月<br>**CT**: 胸腹盆,每6-12月<br>**肠镜**: 1年,3年,5年",CT+CEA
+followUp.colonoscopy,随访.肠镜复查,String,"**术后1年**: 首次肠镜<br>**正常**: 3年后复查<br>**腺瘤**: 1年后复查",计划术后1年
+followUp.recurrence,随访.复发,Boolean,"**局部复发**: 5-10%<br>**远处转移**: 20-30%<br>**中位复发时间**: 12-24个月",false
+followUp.recurrence.site,随访.复发.部位,String,"**肝**: 最常见<br>**肺**: 第二常见<br>**局部**: 吻合口、盆腔",无
+
+prognosis.stage,预后.分期预后,String,"**I期**: 5年生存率>90%<br>**II期**: 70-85%<br>**IIIA期**: 80-85%<br>**IIIB期**: 60-70%<br>**IIIC期**: 40-50%<br>**IV期**: 可切除转移15-30%,不可切除<10%",IIIB期预计5年生存率60-70%
+prognosis.factors,预后.预后因素,String,"**良好**: 早期分期、MSI-H、左半结肠、R0切除<br>**不良**: 晚期分期、BRAF突变、右半结肠、CRM阳性",R0切除、MSS、N1b
+
+# 危险因素
+riskFactors.age,危险因素.年龄,Boolean,"**>50岁**: 风险增加<br>**筛查**: 50岁起肠镜",true
+riskFactors.ibd,危险因素.炎症性肠病,Boolean,"**溃疡性结肠炎**: 风险增加<br>**克罗恩病**: 风险增加<br>**病程>8年**: 监测肠镜",false
+riskFactors.diet,危险因素.饮食习惯,String,"**红肉/加工肉**: 风险增加<br>**低纤维**: 风险增加<br>**肥胖**: 相关",高红肉饮食
+riskFactors.smoking,危险因素.吸烟史,Boolean,"**OR 1.5-2**: 吸烟增加风险<br>**腺瘤**: 风险增加",true
+riskFactors.alcohol,危险因素.饮酒史,Boolean,"**>2 drinks/d**: 风险增加",false
+riskFactors.familyHistory,危险因素.家族史,Boolean,"**一级亲属**: 风险增加2-3倍<br>**≥2位亲属**: 风险更高<br>**筛查**: 提前10年或40岁",true
+
+# 营养评估
+nutrition.albumin,营养.白蛋白,Number,"血清白蛋白(g/L)。<br>**<30**: 营养不良<br>**<25**: 严重营养不良",35
+nutrition.bmi,营养.BMI,Number,体重指数(kg/m²),22.5
+nutrition.support,营养.营养支持,String,"**术前**: 营养不良者营养支持<br>**术后**: 早期肠内营养<br>**晚期**: 肠内/肠外营养",术前正常饮食
+
+# 并发症
+complications.obstruction,并发症.肠梗阻,Boolean,"**左半结肠**: 梗阻常见<br>**急性梗阻**: 支架/造口/急诊手术",false
+complications.perforation,并发症.肠穿孔,Boolean,"**穿孔**: 急腹症<br>**急诊手术**: 需立即处理",false
+complications.anastomotic.leak,并发症.吻合口瘘,Boolean,"**发生率**: 2-5%<br>**直肠**: 发生率更高<br>**处理**: 引流/再手术",false
+
+performanceStatus,体能状态.ECOG评分,Number,"**0**: 完全活动<br>**1**: 限制重体力<br>**2**: 生活自理<br>**3**: 有限自理<br>**4**: 完全失能",1
+
+notes,备注,String,其他重要临床信息,患者术前一般情况良好,已完成肠道准备

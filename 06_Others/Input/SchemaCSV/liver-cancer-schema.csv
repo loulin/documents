@@ -1,0 +1,168 @@
+字段名(英文),字段名(中文),数据类型,描述,示例
+patientId,患者ID,String,患者唯一标识符,HCC20250322001
+diagnosisDate,确诊日期,Date,肝癌确诊日期,2025-03-22
+age,年龄,Number,确诊时年龄(岁),55
+gender,性别,String,患者性别,男
+
+# 临床表现
+symptoms.abdominalPain,症状.腹痛,Boolean,"**右上腹痛**: 50-60%患者<br>**钝痛或胀痛**: 肝包膜膨胀<br>**肿瘤破裂**: 急性剧痛",true
+symptoms.abdominalDistension,症状.腹胀,Boolean,"**腹胀**: 肝脏肿大、腹水<br>**进食后加重**: 常见",true
+symptoms.weightLoss,症状.体重下降,Boolean,"**>5kg/3月**: 50-60%患者<br>**肿瘤消耗**: 营养不良",true
+symptoms.weightLoss.amount,症状.体重下降.数值,Number,3个月内体重下降(kg),6
+symptoms.jaundice,症状.黄疸,Boolean,"**黄疸**: 20-30%患者<br>**肝门侵犯**: 胆管受压<br>**肝功能失代偿**: 弥漫性肝病",false
+symptoms.ascites,症状.腹水,Boolean,"**腹水**: 门脉高压、肝功能差<br>**癌性腹水**: 腹膜转移",false
+symptoms.fever,症状.发热,Boolean,"**肿瘤热**: 30-40%患者<br>**低热**: 肿瘤坏死释放热原",false
+symptoms.bleeding,症状.出血,Boolean,"**消化道出血**: 食管胃底静脉曲张<br>**肿瘤破裂出血**: 罕见但危险",false
+
+# 肿瘤特征
+tumor.type,肿瘤.类型,String,"**肝细胞癌(HCC)**: 85-90%(最常见)<br>**肝内胆管癌(ICC)**: 10-15%<br>**混合型**: <5%",肝细胞癌(HCC)
+tumor.location,肿瘤.部位,String,"**右叶**: 60-70%<br>**左叶**: 20-30%<br>**双叶**: 10-15%",右叶
+tumor.number,肿瘤.病灶数,Number,"**单发**: 预后较好<br>**多发**: 2-3个<br>**弥漫性**: 多发病灶",1
+tumor.size,肿瘤.最大径,Number,肿瘤最大直径(cm),5.5
+tumor.macroscopic,肿瘤.大体类型,String,"**巨块型**: >5cm单发<br>**结节型**: 单发或多发结节<br>**弥漫型**: 弥漫浸润,预后差",结节型
+
+# 病理分型
+pathology.histology,病理.组织学类型,String,"**肝细胞癌**: 梁状结构<br>**胆管细胞癌**: 腺癌结构<br>**混合型**: HCC-ICC混合",肝细胞癌
+pathology.differentiation,病理.分化程度,String,"**高分化**: 预后较好<br>**中分化**: 最常见<br>**低分化**: 预后差",中分化
+pathology.vascularInvasion,病理.血管侵犯,Boolean,"**微血管侵犯(MVI)**: 复发高危因素<br>**大血管侵犯**: 门静脉、肝静脉、下腔静脉",true
+pathology.capsule,病理.包膜,Boolean,"**完整包膜**: 预后较好<br>**无包膜**: 浸润性生长,预后差",true
+
+# 基础肝病
+liverDisease.cirrhosis,基础肝病.肝硬化,Boolean,"**肝硬化**: 80-90% HCC伴肝硬化<br>**背景**: 乙肝、丙肝、酒精、NASH",true
+liverDisease.etiology,基础肝病.病因,String,"**HBV**: 中国最常见(80%)<br>**HCV**: 西方常见<br>**酒精性**: 10-15%<br>**NASH**: 非酒精性脂肪肝<br>**其他**: 自免肝、PBC、血色病",HBV相关肝硬化
+liverDisease.childPugh,基础肝病.Child-Pugh分级,String,"**A级(5-6分)**: 肝功能良好,可手术<br>**B级(7-9分)**: 肝功能中度受损<br>**C级(10-15分)**: 肝功能差,不适合手术",A级(5分)
+liverDisease.childPugh.score,基础肝病.Child-Pugh.评分,Number,"Child-Pugh评分(5-15分)。<br>**5-6**: A级<br>**7-9**: B级<br>**10-15**: C级",5
+liverDisease.meld,基础肝病.MELD评分,Number,"MELD评分。<br>**<9**: 肝功能良好<br>**10-19**: 中度<br>**≥20**: 重度<br>**公式**: 3.78×ln(胆红素)+11.2×ln(INR)+9.57×ln(肌酐)+6.43",8
+
+# 病毒性肝炎
+hepatitis.hbv,病毒性肝炎.HBV,Boolean,"**HBV感染**: 中国最主要病因<br>**HBsAg阳性**: 慢性HBV感染",true
+hepatitis.hbv.hbsag,病毒性肝炎.HBV.HBsAg,String,"**阳性**: 慢性HBV感染<br>**阴性**: 既往感染或未感染",阳性
+hepatitis.hbv.dna,病毒性肝炎.HBV.HBV-DNA,Number,"HBV-DNA载量(IU/mL)。<br>**<2000**: 低载量<br>**>2000**: 高载量,需抗病毒",5.8×10^5
+hepatitis.hbv.antiviral,病毒性肝炎.HBV.抗病毒治疗,Boolean,"**核苷类似物**: 恩替卡韦、替诺福韦<br>**术前术后**: 降低复发风险",true
+hepatitis.hbv.antiviral.drug,病毒性肝炎.HBV.抗病毒药物,String,"**恩替卡韦**: 0.5mg qd<br>**替诺福韦**: TAF 25mg qd",恩替卡韦
+
+hepatitis.hcv,病毒性肝炎.HCV,Boolean,"**HCV感染**: 西方主要病因<br>**抗HCV阳性**: HCV感染",false
+hepatitis.hcv.antibody,病毒性肝炎.HCV.抗HCV,String,"**阳性**: HCV感染(既往或现症)<br>**HCV-RNA**: 确认现症感染",阴性
+hepatitis.hcv.rna,病毒性肝炎.HCV.HCV-RNA,String,"**阳性**: 现症HCV感染<br>**DAA治疗**: 直接抗病毒药物",未检测
+
+# 肿瘤标志物
+tumorMarkers.afp,肿瘤标志物.AFP,Number,"甲胎蛋白(ng/mL)。<br>**正常值**: <20 ng/mL<br>**>400**: 高度提示HCC<br>**敏感性**: 60-70%<br>**特异性**: 80-90%",850
+tumorMarkers.afp.trend,肿瘤标志物.AFP.趋势,String,"**持续升高**: 肿瘤进展<br>**下降**: 治疗有效<br>**监测**: 每1-3月",持续升高
+tumorMarkers.afpl3,肿瘤标志物.AFP-L3,Number,"AFP-L3百分比(%)。<br>**>10%**: 高度提示HCC<br>**特异性**: 高于AFP",25
+tumorMarkers.dcp,肿瘤标志物.DCP,Number,"异常凝血酶原(mAU/mL)。<br>**正常值**: <40 mAU/mL<br>**>100**: 提示HCC<br>**血管侵犯**: DCP高度相关",280
+tumorMarkers.cea,肿瘤标志物.CEA,Number,"CEA水平(ng/mL)。<br>**ICC**: 常升高<br>**HCC**: 通常正常",3
+tumorMarkers.ca199,肿瘤标志物.CA19-9,Number,"CA19-9水平(U/mL)。<br>**ICC**: 常升高<br>**HCC**: 通常正常",15
+
+# 影像学检查
+imaging.ultrasound,影像学.超声.发现,String,"**筛查**: 高危人群每6月超声+AFP<br>**典型HCC**: 低-等-高回声<br>**门静脉癌栓**: 多普勒血流",右肝5cm低回声占位,内见血流信号
+imaging.ct.performed,影像学.增强CT.是否完成,Boolean,"**多期扫描**: 动脉期、门静脉期、延迟期<br>**典型强化**: 快进快出",true
+imaging.ct.arterial,影像学.CT.动脉期强化,String,"**快进**: 动脉期明显强化<br>**HCC典型**: 富血供肿瘤",明显强化
+imaging.ct.washout,影像学.CT.廓清,String,"**快出**: 门静脉期/延迟期廓清<br>**HCC典型**: 低密度",门静脉期廓清
+imaging.ct.capsule,影像学.CT.包膜强化,Boolean,"**包膜强化**: 延迟期包膜强化<br>**HCC特征**: 假包膜",true
+imaging.ct.pvtt,影像学.CT.门静脉癌栓,Boolean,"**PVTT**: 门静脉癌栓<br>**分型**: Cheng分型I-IV型<br>**预后**: 极差",false
+imaging.ct.metastasis,影像学.CT.转移,String,"**肺转移**: 最常见<br>**骨转移**: 椎体常见<br>**淋巴结**: 肝门、腹腔",无远处转移
+
+imaging.mri.performed,影像学.MRI.是否完成,Boolean,"**金标准**: MRI诊断HCC<br>**多期扫描**: 动态增强+DWI<br>**敏感性**: 高于CT",true
+imaging.mri.arterial,影像学.MRI.动脉期强化,String,"**明显强化**: 动脉期高信号<br>**T2高信号**: 肿瘤信号",明显强化
+imaging.mri.washout,影像学.MRI.廓清,String,"**廓清**: 门静脉期/延迟期低信号",延迟期廓清
+imaging.mri.capsule,影像学.MRI.包膜强化,Boolean,"**包膜强化**: 延迟期包膜环形强化",true
+imaging.mri.dwi,影像学.MRI.DWI,String,"**DWI高信号**: 扩散受限<br>**ADC低信号**: HCC特征",DWI高信号,ADC低信号
+imaging.mri.hbp,影像学.MRI.肝胆期,String,"**肝胆特异对比剂**: Gd-EOB-DTPA<br>**肝胆期低信号**: HCC特征",肝胆期低信号
+
+# 分期系统
+staging.bclc,分期.BCLC分期,String,"**0期**: 极早期,单发<2cm,PS 0,Child-Pugh A<br>**A期**: 早期,单发或≤3个<3cm,PS 0,Child-Pugh A-B→手术/消融<br>**B期**: 中期,多发,PS 0,Child-Pugh A-B→TACE<br>**C期**: 晚期,血管侵犯/肝外转移,PS 1-2,Child-Pugh A-B→索拉非尼/仑伐替尼<br>**D期**: 终末期,PS 3-4,Child-Pugh C→姑息治疗",A期
+staging.cnlc,分期.CNLC分期,String,"**Ia期**: 单发≤5cm,无血管侵犯<br>**Ib期**: 单发>5cm,无血管侵犯<br>**IIa期**: 2-3个≤3cm<br>**IIb期**: 2-3个,任一>3cm<br>**IIIa期**: ≥4个<br>**IIIb期**: 血管侵犯/肝外转移",Ib期
+
+staging.tnm,分期.TNM分期,String,"**T1**: 单发无血管侵犯<br>**T2**: 单发有血管侵犯或多发≤5cm<br>**T3**: 多发>5cm<br>**T4**: 侵犯门静脉/肝静脉主干或邻近器官<br>**N1**: 区域淋巴结转移<br>**M1**: 远处转移",T2N0M0,II期
+
+# 治疗方案 - 根治性治疗
+treatment.surgery.performed,治疗.手术切除.是否实施,Boolean,"**根治性切除**: 首选治疗<br>**适应证**: BCLC 0-A期,Child-Pugh A,肝功能储备好",true
+treatment.surgery.type,治疗.手术.术式,String,"**肝段切除**: 保留更多肝组织<br>**半肝切除**: 右半肝/左半肝<br>**局部切除**: 楔形切除<br>**解剖性切除**: 推荐",右后叶切除术
+treatment.surgery.approach,治疗.手术.入路,String,"**开放**: 传统手术<br>**腹腔镜**: 微创,适合小肿瘤<br>**机器人**: 精准操作",腹腔镜
+treatment.surgery.margin,治疗.手术.切缘,Number,"切缘宽度(cm)。<br>**≥1cm**: 宽切缘,复发率低<br>**<1cm**: 窄切缘,复发风险高",1.5
+treatment.surgery.bloodLoss,治疗.手术.出血量,Number,术中出血量(mL),400
+treatment.surgery.complications,治疗.手术.并发症,String,"**胆漏**: 5-10%<br>**肝衰竭**: 2-5%<br>**出血**: 1-3%<br>**感染**: 5-10%",无严重并发症
+
+treatment.ablation.performed,治疗.消融治疗.是否实施,Boolean,"**射频消融(RFA)**: ≤3个,每个≤3cm<br>**微波消融(MWA)**: 消融范围大<br>**Child-Pugh A-B**: 肝功能要求",false
+treatment.ablation.type,治疗.消融治疗.类型,String,"**RFA**: 射频消融<br>**MWA**: 微波消融<br>**冷冻**: 冷冻消融<br>**PEI**: 无水酒精注射",无
+treatment.ablation.sessions,治疗.消融治疗.次数,Number,消融治疗次数,0
+
+treatment.transplant.evaluated,治疗.肝移植.是否评估,Boolean,"**Milan标准**: 单发≤5cm或≤3个,每个≤3cm,无血管侵犯<br>**Hangzhou标准**: 中国扩大标准<br>**根治性治疗**: 合并肝硬化首选",false
+treatment.transplant.criteria,治疗.肝移植.标准,String,"**Milan标准**: 符合<br>**UCSF标准**: 单发≤6.5cm或≤3个,最大≤4.5cm,总和≤8cm<br>**Hangzhou标准**: AFP≤400 ng/mL,肿瘤≤8cm或多发总和≤15cm",超出Milan标准
+
+# 治疗方案 - 局部治疗
+treatment.tace.performed,治疗.TACE.是否实施,Boolean,"**TACE**: 肝动脉化疗栓塞<br>**适应证**: BCLC B期,中期多发肿瘤<br>**禁忌**: 门静脉主干癌栓、肝功能差",false
+treatment.tace.sessions,治疗.TACE.次数,Number,TACE治疗次数,0
+treatment.tace.response,治疗.TACE.疗效,String,"**CR**: 完全缓解<br>**PR**: 部分缓解<br>**SD**: 疾病稳定<br>**PD**: 疾病进展<br>**mRECIST**: 实体瘤疗效评价",未实施
+
+treatment.radiotherapy,治疗.放疗,Boolean,"**SBRT**: 立体定向放疗,小病灶<br>**适应证**: 不能手术/消融,门静脉癌栓<br>**剂量**: 30-60Gy",false
+
+# 治疗方案 - 系统治疗
+treatment.systemic.firstLine,治疗.系统治疗.一线方案,String,"**索拉非尼**: 多激酶抑制剂,标准一线<br>**仑伐替尼**: 非劣效于索拉非尼<br>**阿替利珠单抗+贝伐珠单抗**: IMbrave150,新一线标准<br>**Child-Pugh A**: 肝功能要求",未开始
+treatment.systemic.firstLine.cycles,治疗.系统治疗.一线疗程,Number,一线治疗持续时间(月),0
+treatment.systemic.firstLine.response,治疗.系统治疗.一线疗效,String,"**mRECIST**: 评价疗效<br>**CR/PR/SD/PD**: 疗效分级",未开始
+
+treatment.systemic.secondLine,治疗.系统治疗.二线方案,String,"**瑞戈非尼**: 索拉非尼进展后<br>**卡博替尼**: 多激酶抑制剂<br>**雷莫芦单抗**: AFP≥400,抗血管<br>**纳武利尤单抗**: PD-1抑制剂,索拉非尼耐药",无
+
+treatment.immunotherapy,治疗.免疫治疗,Boolean,"**PD-1/PD-L1抑制剂**: 纳武利尤单抗、帕博利珠单抗、阿替利珠单抗<br>**联合治疗**: 免疫+抗血管(IMbrave150)<br>**一线**: T+A成为新标准",false
+treatment.immunotherapy.agent,治疗.免疫治疗.药物,String,"**阿替利珠单抗+贝伐珠单抗**: 一线标准<br>**信迪利单抗**: 中国PD-1抑制剂<br>**卡瑞利珠单抗+阿帕替尼**: 中国方案",无
+
+# 辅助治疗
+treatment.adjuvant,治疗.术后辅助,Boolean,"**术后辅助**: 降低复发<br>**TACE**: 高危复发因素<br>**索拉非尼**: STORM研究阴性<br>**免疫治疗**: 临床研究中",false
+treatment.adjuvant.regimen,治疗.术后辅助.方案,String,"**TACE**: 微血管侵犯、多发肿瘤<br>**免疫治疗**: IMbrave050研究,T+A辅助治疗",无
+
+# 转移情况
+metastasis.lung,转移.肺转移,Boolean,"**最常见**: 血行转移<br>**肺结节**: 多发<br>**预后**: 中位生存6-12个月",false
+metastasis.bone,转移.骨转移,Boolean,"**椎体**: 常见<br>**疼痛**: 骨痛、病理性骨折<br>**放疗**: 姑息止痛",false
+metastasis.lymphNode,转移.淋巴结转移,Boolean,"**肝门**: 区域淋巴结<br>**腹膜后**: 远处淋巴结<br>**预后**: 差",false
+metastasis.peritoneal,转移.腹膜转移,Boolean,"**腹膜种植**: 罕见<br>**腹水**: 癌性腹水",false
+metastasis.adrenal,转移.肾上腺转移,Boolean,"**血行转移**: 右肾上腺多见",false
+
+# 血管侵犯
+vascularInvasion.pvtt,血管侵犯.门静脉癌栓,Boolean,"**PVTT**: 门静脉癌栓<br>**30-40%**: HCC伴PVTT<br>**预后**: 极差,中位生存2-4个月",false
+vascularInvasion.pvtt.cheng,血管侵犯.PVTT.Cheng分型,String,"**I型**: 分支<br>**II型**: 右/左门静脉<br>**III型**: 门静脉主干<br>**IV型**: 肠系膜上静脉<br>**分型**: 影响治疗选择和预后",无PVTT
+vascularInvasion.hvtt,血管侵犯.肝静脉癌栓,Boolean,"**HVTT**: 肝静脉癌栓<br>**下腔静脉**: IVC癌栓<br>**Budd-Chiari**: 类Budd-Chiari综合征",false
+vascularInvasion.ivc,血管侵犯.下腔静脉癌栓,Boolean,"**IVC癌栓**: 下腔静脉癌栓<br>**右心房**: 癌栓延伸<br>**手术**: 需体外循环",false
+
+# 随访与预后
+followUp.interval,随访.随访间隔,String,"**术后2年内**: 每3个月<br>**3-5年**: 每3-6个月<br>**>5年**: 每6-12个月",每3个月
+followUp.methods,随访.随访方法,String,"**AFP**: 每3个月<br>**影像**: 增强CT/MRI,每3-6个月<br>**肝功能**: Child-Pugh评估",AFP+增强MRI
+followUp.recurrence,随访.复发,Boolean,"**术后复发**: 50-70%,5年内<br>**肝内复发**: 最常见<br>**肝外转移**: 肺、骨",false
+followUp.recurrence.site,随访.复发.部位,String,"**肝内**: 残肝复发<br>**肺**: 最常见肝外转移<br>**骨**: 椎体",无
+followUp.recurrence.time,随访.复发.时间,Number,术后复发时间(月),无复发
+
+prognosis.stage,预后.分期预后,String,"**BCLC 0-A期**: 5年生存率50-70%<br>**BCLC B期**: 中位生存20-30个月<br>**BCLC C期**: 中位生存6-12个月<br>**BCLC D期**: 中位生存<6个月",A期,预计5年生存率60-70%
+prognosis.factors,预后.预后因素,String,"**良好**: 单发、<5cm、无血管侵犯、AFP正常、R0切除、Child-Pugh A<br>**不良**: 多发、血管侵犯、AFP高、肝功能差、肝外转移",单发、R0切除、Child-Pugh A
+
+# 危险因素
+riskFactors.hbv,危险因素.HBV感染,Boolean,"**HBV**: 中国最主要病因(80%)<br>**OR 15-20**: 相对风险<br>**预防**: 疫苗接种,抗病毒治疗",true
+riskFactors.hcv,危险因素.HCV感染,Boolean,"**HCV**: 西方主要病因<br>**OR 10-15**: 相对风险<br>**治愈**: DAA治愈后降低风险",false
+riskFactors.alcohol,危险因素.酒精性肝病,Boolean,"**酒精**: 协同HBV/HCV<br>**每日>80g**: 20-30年→肝硬化→HCC",false
+riskFactors.nafld,危险因素.非酒精性脂肪肝,Boolean,"**NASH**: 非酒精性脂肪性肝炎<br>**肥胖、糖尿病**: 危险因素<br>**西方**: 发病率上升",false
+riskFactors.aflatoxin,危险因素.黄曲霉毒素,Boolean,"**黄曲霉毒素B1**: TP53突变<br>**花生、玉米**: 霉变食物<br>**协同HBV**: 风险倍增",false
+riskFactors.cirrhosis,危险因素.肝硬化,Boolean,"**肝硬化**: 最重要危险因素<br>**年发病率**: 3-5%<br>**监测**: 每6月超声+AFP",true
+riskFactors.familyHistory,危险因素.家族史,Boolean,"**一级亲属**: 风险增加2-3倍<br>**HBV母婴传播**: 家族聚集",true
+
+# 实验室检查
+labs.liver.albumin,实验室.肝功能.白蛋白,Number,"血清白蛋白(g/L)。<br>**<35**: 肝功能受损<br>**<28**: 严重肝功能不全",38
+labs.liver.bilirubin,实验室.肝功能.总胆红素,Number,"总胆红素(μmol/L)。<br>**<34**: 正常<br>**>34**: 黄疸",28
+labs.liver.alt,实验室.肝功能.ALT,Number,丙氨酸转氨酶(U/L),正常<40,65
+labs.liver.ast,实验室.肝功能.AST,Number,天冬氨酸转氨酶(U/L),正常<40,80
+labs.liver.alp,实验室.肝功能.ALP,Number,碱性磷酸酶(U/L),正常<120,150
+labs.liver.ggt,实验室.肝功能.GGT,Number,γ-谷氨酰转肽酶(U/L),正常<50,男性<60,女性<40,180
+
+labs.coagulation.pt,实验室.凝血.PT,Number,凝血酶原时间(秒),正常11-15,14.5
+labs.coagulation.inr,实验室.凝血.INR,Number,"INR。<br>**<1.7**: Child-Pugh 1分<br>**1.7-2.3**: 2分<br>**>2.3**: 3分",1.2
+
+labs.renal.creatinine,实验室.肾功能.肌酐,Number,血清肌酐(μmol/L),男性57-111,女性41-73,85
+labs.cbc.platelet,实验室.血常规.血小板,Number,"血小板(×10⁹/L)。<br>**<100**: 门脉高压、脾功能亢进",85
+labs.cbc.wbc,实验室.血常规.白细胞,Number,白细胞(×10⁹/L),正常3.5-9.5,4.5
+
+# 基因检测
+genetics.tp53,基因检测.TP53,String,"**TP53突变**: 30-40% HCC<br>**黄曲霉毒素**: R249S突变<br>**预后**: 不良",野生型
+genetics.ctnnb1,基因检测.CTNNB1,String,"**β-catenin突变**: 20-30% HCC<br>**Wnt信号**: 激活",野生型
+genetics.tert,基因检测.TERT,String,"**TERT启动子突变**: 50-60% HCC<br>**端粒酶**: 激活",突变
+
+performanceStatus,体能状态.ECOG评分,Number,"**0**: 完全活动<br>**1**: 限制重体力<br>**2**: 生活自理<br>**3**: 有限自理<br>**4**: 完全失能",0
+
+notes,备注,String,其他重要临床信息,HBV相关肝硬化背景,肝功能Child-Pugh A级,单发肿瘤,已行手术切除

@@ -1,0 +1,129 @@
+字段名(英文),字段名(中文),数据类型,描述,示例
+patientId,患者ID,String,患者唯一标识符,P123456
+encounterDate,就诊日期,Date,本次就诊日期,2025-01-15
+encounterType,就诊类型,String,"**建议值**: `急诊`, `住院`, `ICU`, `门诊`",急诊
+
+classification.type,分类.胰腺炎类型,String,"**急性胰腺炎(AP)**: 突发,可逆。<br>**慢性胰腺炎(CP)**: 进行性不可逆纤维化,外分泌/内分泌功能不全。<br>**建议值**: `急性胰腺炎`, `慢性胰腺炎`, `急性发作慢性胰腺炎`,急性胰腺炎
+classification.severity,分类.严重程度,String,"**修订Atlanta分类**(2012):<br>**轻症AP**: 无器官衰竭,无局部/全身并发症<br>**中度重症AP**: 一过性器官衰竭(<48h)或局部/全身并发症<br>**重症AP**: 持续性器官衰竭(≥48h)<br>**建议值**: `轻症`, `中度重症`, `重症`",中度重症
+
+etiology.cause,病因.主要病因,String,"**胆源性(40%)**: 胆石症,胆道结石嵌顿壶腹部。<br>**酒精性(30%)**: 长期大量饮酒。<br>**高脂血症(10%)**: TG>11.3 mmol/L(1000 mg/dL)。<br>**特发性(10%)**: 原因不明。<br>**其他(10%)**: ERCP术后,外伤,药物,自身免疫,感染,肿瘤。<br>**建议值**: `胆源性`, `酒精性`, `高脂血症性`, `ERCP术后`, `外伤性`, `药物性`, `自身免疫性`, `肿瘤性`, `特发性`",胆源性
+etiology.gallstones,病因.胆石症,String,"**胆囊/胆道结石**: B超/CT/MRCP确认。<br>**建议值**: `无`, `胆囊结石`, `胆总管结石`, `壶腹部结石嵌顿`,胆总管结石
+etiology.alcohol,病因.饮酒史,String,"**慢性大量饮酒**: >5年,>50-80 g乙醇/天。<br>**急性大量饮酒**: 暴饮。<br>**示例**: `不饮酒`, `少量饮酒`, `长期大量饮酒(白酒半斤/天×10年)`, `急性大量饮酒`,不饮酒
+etiology.tg,病因.甘油三酯,Number,"血清甘油三酯。<br>单位: mmol/L<br>**>11.3**: 高脂血症性胰腺炎高危<br>**正常**: <1.7",3.5
+
+symptoms.abdominalPain,症状.腹痛,String,"**持续性上腹痛**: 向后背放射,弯腰前倾位可缓解。<br>**建议值**: `无腹痛(少见)`, `轻度上腹痛`, `中度上腹痛`, `重度上腹痛`, `剧烈上腹痛(向背部放射)`,剧烈上腹痛
+symptoms.nausea,症状.恶心呕吐,String,"**建议值**: `无`, `恶心`, `呕吐`, `频繁呕吐`,呕吐
+symptoms.fever,症状.发热,String,"**感染/坏死**: 发热。<br>**建议值**: `无发热`, `低热(<38℃)`, `中度发热(38-39℃)`, `高热(>39℃)`,中度发热
+symptoms.jaundice,症状.黄疸,String,"**胆源性AP**: 胆道梗阻→黄疸。<br>**建议值**: `无`, `轻度黄疸`, `中-重度黄疸`,轻度黄疸
+symptoms.distension,症状.腹胀,String,"**肠麻痹**: 重症AP常见。<br>**建议值**: `无`, `轻度腹胀`, `明显腹胀`,轻度腹胀
+
+physicalExam.vitals.temp,体格检查.生命体征.体温,Number,"体温。<br>单位: ℃",38.5
+physicalExam.vitals.hr,体格检查.生命体征.心率,Number,"心率。<br>单位: 次/分<br>**心动过速**: 低血容量/SIRS",105
+physicalExam.vitals.bp,体格检查.生命体征.血压,String,"血压。<br>单位: mmHg<br>**低血压**: 休克",100/65
+physicalExam.vitals.rr,体格检查.生命体征.呼吸频率,Number,"呼吸频率。<br>单位: 次/分<br>**≥22**: 呼吸窘迫/SIRS",20
+
+physicalExam.abdomen.tenderness,体格检查.腹部.压痛,String,"**上腹压痛**: 胰腺区。<br>**建议值**: `无压痛`, `上腹轻度压痛`, `上腹明显压痛`, `全腹压痛`,上腹明显压痛
+physicalExam.abdomen.rebound,体格检查.腹部.反跳痛,String,"**腹膜炎征**: 重症AP。<br>**建议值**: `无`, `上腹反跳痛`, `全腹反跳痛`,上腹反跳痛
+physicalExam.abdomen.rigidity,体格检查.腹部.腹肌紧张,String,"**建议值**: `腹软`, `上腹肌紧张`, `板状腹(穿孔)`,上腹肌紧张
+physicalExam.abdomen.bowelSounds,体格检查.腹部.肠鸣音,String,"**肠麻痹**: 肠鸣音减弱/消失。<br>**建议值**: `正常`, `减弱`, `消失`,减弱
+physicalExam.abdomen.greyCullen,体格检查.腹部.脐周青紫,String,"**Grey-Turner征/Cullen征**: 腹膜后出血,重症坏死性胰腺炎。<br>**建议值**: `无`, `脐周青紫(Cullen征)`,无
+physicalExam.abdomen.greyTurner,体格检查.腹部.腰背部青紫,String,"**Grey-Turner征**: 腹膜后出血。<br>**建议值**: `无`, `腰背部青紫(Grey-Turner征)`,无
+
+labs.amylase,实验室.淀粉酶,Number,"血清淀粉酶。<br>单位: U/L<br>**AP诊断**: 发病4-6h↑,>正常上限3倍<br>**48-72h达峰**: 后下降(5-7天恢复)<br>**正常**: <120",850
+labs.lipase,实验室.脂肪酶,Number,"血清脂肪酶。<br>单位: U/L<br>**AP诊断**: >正常上限3倍(敏感性/特异性优于淀粉酶)<br>**持续时间**: 7-14天(比淀粉酶长)<br>**正常**: <60",1200
+labs.amylaseLipaseRatio,实验室.淀粉酶脂肪酶比值,Number,"淀粉酶/脂肪酶比值。<br>**<2**: 典型AP<br>**>2**: 可能酒精性胰腺炎",0.7
+
+labs.wbc,实验室.白细胞,Number,"白细胞。<br>单位: ×10⁹/L<br>**SIRS**: >12或<4<br>**正常**: 4-10",16.5
+labs.hct,实验室.红细胞压积,Number,"红细胞压积。<br>单位: %<br>**血液浓缩**: Hct↑(低血容量)<br>**正常**: 男40-50,女37-48",48
+labs.crp,实验室.CRP,Number,"C反应蛋白。<br>单位: mg/L<br>**>150**: 重症AP可能<br>**正常**: <10",180
+labs.pct,实验室.降钙素原,Number,"降钙素原。<br>单位: ng/mL<br>**感染性坏死**: >0.5<br>**正常**: <0.05",2.5
+
+labs.glucose,实验室.血糖,Number,"血糖。<br>单位: mmol/L<br>**高血糖**: 胰岛β细胞损伤,应激<br>**正常**: 3.9-6.1",12.5
+labs.calcium,实验室.血钙,Number,"血钙。<br>单位: mmol/L<br>**<2.0**: 低钙血症,重症AP指标(钙皂化)<br>**正常**: 2.15-2.55",1.85
+labs.ldh,实验室.LDH,Number,"乳酸脱氢酶。<br>单位: U/L<br>**Ranson评分**: >350 U/L(入院时)<br>**正常**: 120-250",450
+
+labs.bilirubin.total,实验室.胆红素.总胆红素,Number,"总胆红素。<br>单位: μmol/L<br>**胆源性AP**: ↑<br>**正常**: 5-21",85
+labs.bilirubin.direct,实验室.胆红素.直接胆红素,Number,"直接胆红素。<br>单位: μmol/L<br>**正常**: <7",65
+labs.alt,实验室.ALT,Number,"丙氨酸转氨酶。<br>单位: U/L<br>**ALT>150**: 胆源性AP可能性大(敏感性95%)<br>**正常**: <40",250
+labs.ast,实验室.AST,Number,"天冬氨酸转氨酶。<br>单位: U/L<br>**正常**: <40",180
+labs.alp,实验室.碱性磷酸酶,Number,"碱性磷酸酶。<br>单位: U/L<br>**胆道梗阻**: ↑<br>**正常**: 40-150",280
+
+labs.bun,实验室.尿素氮,Number,"血尿素氮。<br>单位: mmol/L<br>**Ranson评分**: BUN升高>1.8 mmol/L(48h内)<br>**正常**: 2.9-8.2",9.5
+labs.creatinine,实验室.肌酐,Number,"血清肌酐。<br>单位: μmol/L<br>**AKI**: 重症AP并发症<br>**正常**: 44-133",150
+
+labs.abg.po2,实验室.动脉血气.PaO2,Number,"动脉血氧分压。<br>单位: mmHg<br>**<60**: 低氧血症,ARDS<br>**正常**: 80-100",70
+labs.abg.base,实验室.动脉血气.碱剩余,Number,"碱剩余(BE)。<br>单位: mmol/L<br>**<-4**: 代谢性酸中毒(Ranson评分)<br>**正常**: -2 to +2",-6
+
+imaging.ct.performed,影像学.CT.是否完成,String,"**CECT**: 确诊AP,评估坏死/并发症。<br>**时机**: 发病48-72h后(早期CT可低估坏死)。<br>**建议值**: `已完成`, `未完成`, `计划72h后CT`",已完成
+imaging.ct.findings,影像学.CT.主要表现,String,"**Balthazar CT严重度指数(CTSI)**:<br>**A级**: 正常胰腺<br>**B级**: 胰腺肿大<br>**C级**: 胰腺炎症+胰周脂肪浸润<br>**D级**: 单个积液<br>**E级**: 多发积液或气体<br>**示例**: `胰腺肿大+周围渗出(C级)`, `胰腺坏死+积液(E级)`,胰腺肿大+胰周渗出
+imaging.ct.necrosis,影像学.CT.坏死,String,"**胰腺坏死**: 增强CT无强化区。<br>**<30%**: 轻度<br>**30-50%**: 中度<br>**>50%**: 重度<br>**建议值**: `无坏死`, `<30%`, `30-50%`, `>50%`,30-50%
+imaging.ct.peripancreatic,影像学.CT.胰周情况,String,"**示例**: `胰周正常`, `胰周渗出`, `胰周积液`, `胰周坏死(WON)`,胰周积液
+imaging.ct.ctsi,影像学.CT.CTSI评分,Number,"CT严重度指数(CTSI,0-10分)。<br>CTSI = Balthazar分级(0-4分) + 坏死程度(0-6分)<br>**0-3分**: 轻症,死亡率<3%<br>**4-6分**: 中度,死亡率6%<br>**7-10分**: 重症,死亡率>17%",6
+
+imaging.us.gallbladder,影像学.超声.胆囊,String,"**胆囊结石**: 胆源性AP病因。<br>**建议值**: `未查`, `胆囊正常`, `胆囊结石`, `胆囊壁水肿`,胆囊结石
+imaging.us.cbd,影像学.超声.胆总管,String,"**胆总管扩张**: >8 mm,梗阻。<br>**示例**: `未查`, `胆总管正常`, `胆总管扩张(10 mm)`, `胆总管结石`,胆总管扩张
+imaging.us.pancreas,影像学.超声.胰腺,String,"**超声**: 肠气干扰,敏感性低。<br>**建议值**: `未查`, `胰腺显示不清`, `胰腺肿大`, `胰周积液`,胰腺肿大
+
+imaging.mrcp,影像学.MRCP,String,"**MRCP**: 胆胰管评估,无创,替代ERCP诊断。<br>**示例**: `未查`, `胆总管结石`, `胰管结石`, `胆胰管正常`,未查
+
+ransonScore.total,Ranson评分.总分,Number,"Ranson评分(0-11分,预测死亡率)。<br>**入院时5项+48h内6项**<br>**0-2分**: 死亡率<1%<br>**3-4分**: 死亡率15%<br>**5-6分**: 死亡率40%<br>**≥7分**: 死亡率100%",4
+ransonScore.admission.age,Ranson评分.入院时.年龄,Number,"**>55岁**: 1分",0
+ransonScore.admission.wbc,Ranson评分.入院时.白细胞,Number,"**>16×10⁹/L**: 1分",1
+ransonScore.admission.glucose,Ranson评分.入院时.血糖,Number,"**>11.1 mmol/L(>200 mg/dL)**: 1分",1
+ransonScore.admission.ldh,Ranson评分.入院时.LDH,Number,"**>350 U/L**: 1分",1
+ransonScore.admission.ast,Ranson评分.入院时.AST,Number,"**>250 U/L**: 1分",0
+ransonScore.within48h.hctDrop,Ranson评分.48h内.Hct下降,Number,"**Hct下降>10%**: 1分",0
+ransonScore.within48h.bunRise,Ranson评分.48h内.BUN升高,Number,"**BUN升高>1.8 mmol/L(>5 mg/dL)**: 1分",1
+ransonScore.within48h.calcium,Ranson评分.48h内.血钙,Number,"**<2.0 mmol/L(<8 mg/dL)**: 1分",1
+ransonScore.within48h.po2,Ranson评分.48h内.PaO2,Number,"**<60 mmHg**: 1分",0
+ransonScore.within48h.base,Ranson评分.48h内.碱剩余,Number,"**BE<-4 mmol/L**: 1分",0
+ransonScore.within48h.fluid,Ranson评分.48h内.液体潴留,Number,"**液体潴留>6L**: 1分",0
+
+apacheII.score,APACHE II评分.评分,Number,"急性生理学与慢性健康评分II(0-71分)。<br>**≥8分**: 重症AP可能<br>**预测死亡率**: 评分越高死亡率越高",12
+
+organFailure.present,器官衰竭.是否存在,String,"**修订Atlanta标准**: 器官衰竭定义重症AP。<br>**建议值**: `无器官衰竭`, `一过性(<48h)`, `持续性(≥48h)`",一过性
+organFailure.respiratory,器官衰竭.呼吸,String,"**PaO2/FiO2<300**: 急性肺损伤/ARDS。<br>**建议值**: `无`, `急性肺损伤(PaO2/FiO2 200-300)`, `ARDS(<200)`,急性肺损伤
+organFailure.renal,器官衰竭.肾脏,String,"**SCr>170 μmol/L(>2 mg/dL)**: 肾衰竭。<br>**建议值**: `无`, `AKI`, `需RRT`,AKI
+organFailure.cardiovascular,器官衰竭.心血管,String,"**SBP<90 mmHg**: 休克。<br>**建议值**: `无`, `需液体复苏`, `需血管活性药`,需液体复苏
+
+complications.local.apc,并发症.局部.急性胰周积液,String,"**APC**: 发病<4周,无壁,非感染性。<br>**建议值**: `无`, `APC`,APC
+complications.local.pp,并发症.局部.胰腺假性囊肿,String,"**PP**: 发病>4周,有壁,非感染性。<br>**建议值**: `无`, `PP(单发)`, `PP(多发)`,无
+complications.local.anc,并发症.局部.急性坏死物积聚,String,"**ANC**: 发病<4周,坏死+液体,无壁。<br>**建议值**: `无`, `ANC(无感染)`, `感染性ANC`,ANC
+complications.local.won,并发症.局部.包裹性坏死,String,"**WON**: 发病>4周,坏死+液体,有壁。<br>**建议值**: `无`, `WON(无感染)`, `感染性WON`,无
+complications.local.infection,并发症.局部.感染性坏死,String,"**感染性胰腺坏死**: 细菌感染,气体征,死亡率30-50%。<br>**建议值**: `无`, `疑似感染(发热+WBC↑)`, `确诊感染(穿刺阳性/气体征)`,无
+
+complications.systemic.sirs,并发症.全身.SIRS,String,"**全身炎症反应综合征**: 体温>38或<36,HR>90,RR>20,WBC>12或<4(≥2项)。<br>**建议值**: `无`, `SIRS`,SIRS
+complications.systemic.sepsis,并发症.全身.脓毒症,String,"**脓毒症**: 感染+器官功能障碍。<br>**建议值**: `无`, `脓毒症`, `脓毒性休克`,无
+complications.systemic.dic,并发症.全身.DIC,String,"**弥散性血管内凝血**: 重症AP。<br>**建议值**: `无`, `DIC`,无
+complications.systemic.acs,并发症.全身.腹腔间隔室综合征,String,"**ACS**: 腹内压>20 mmHg+器官功能障碍。<br>**建议值**: `无`, `腹腔高压`, `ACS`,无
+
+complications.gastrointestinal,并发症.消化道,String,"**消化道出血/肠瘘/肠梗阻**: 重症AP。<br>**示例**: `无`, `应激性溃疡出血`, `肠瘘`, `肠梗阻`,无
+complications.vascular,并发症.血管,String,"**假性动脉瘤/门静脉血栓/脾静脉血栓**: 坏死性胰腺炎。<br>**示例**: `无`, `脾动脉假性动脉瘤`, `门静脉血栓`,无
+
+treatment.resuscitation.fluid,治疗.复苏.液体复苏,String,"**早期积极液体复苏**(0-24h): 晶体液200-500 mL/h,目标尿量0.5-1 mL/kg/h,Hct 35-44%。<br>**林格液**: 优于生理盐水(减少SIRS)。<br>**示例**: `林格液250 mL/h`, `生理盐水200 mL/h`,林格液250 mL/h
+treatment.resuscitation.target,治疗.复苏.复苏目标,String,"**目标**: 尿量>0.5 mL/kg/h,MAP>65 mmHg,Hct 35-44%。<br>**示例**: `已达标`, `尿量不足(需增加液体)`, `肺水肿(液体过多)`,已达标
+
+treatment.analgesia,治疗.镇痛,String,"**NSAIDs/阿片类**: 充分镇痛。<br>**示例**: `吗啡5mg IV prn`, `芬太尼50μg IV prn`, `PCA镇痛泵`,吗啡镇痛
+treatment.nutrition.timing,治疗.营养.启动时机,String,"**早期肠内营养**(24-72h): 优于肠外营养,减少感染/器官衰竭。<br>**轻症AP**: 症状耐受即可进食。<br>**建议值**: `已口服进食`, `鼻空肠管EN`, `全肠外营养(TPN)`, `禁食`,鼻空肠管EN
+treatment.nutrition.route,治疗.营养.途径,String,"**肠内营养**: 首选(鼻胃管/鼻空肠管)。<br>**肠外营养**: EN不耐受/肠梗阻时。<br>**建议值**: `口服`, `鼻胃管`, `鼻空肠管`, `TPN`,鼻空肠管
+
+treatment.antibiotics,治疗.抗生素,String,"**不常规预防**: 无感染证据不用抗生素。<br>**感染性坏死**: 碳青霉烯类/喹诺酮+甲硝唑。<br>**示例**: `未使用`, `亚胺培南1g q8h`, `莫西沙星400mg qd+甲硝唑`,未使用
+treatment.biliary,治疗.胆道处理,String,"**胆源性AP+胆管炎/黄疸**: 72h内ERCP+取石。<br>**示例**: `不需要`, `计划ERCP`, `已行ERCP+EST+取石`,计划ERCP
+
+treatment.intervention.indication,治疗.介入治疗.指征,String,"**感染性坏死**: 穿刺引流/坏死组织清除。<br>**建议值**: `无指征`, `有指征(感染性坏死)`, `已行穿刺引流`, `已行手术清创`,无指征
+treatment.intervention.timing,治疗.介入治疗.时机,String,"**降阶梯策略**: 尽量延迟(>4周),等待包裹形成(WON)。<br>**建议值**: `不适用`, `早期干预(<4周)`, `延迟干预(>4周)`,不适用
+treatment.intervention.method,治疗.介入治疗.方式,String,"**微创优先**: 经皮穿刺引流,内镜引流,后腹腔镜。<br>**开放手术**: 最后选择。<br>**示例**: `不适用`, `经皮穿刺引流`, `内镜下引流`, `腹腔镜坏死组织清除`, `开放手术`,不适用
+
+prognosis.outcome,预后.结局,String,"**轻症AP**: 死亡率<1%。<br>**重症AP**: 死亡率15-30%。<br>**感染性坏死**: 死亡率30-50%。<br>**建议值**: `治愈出院`, `好转出院`, `转院`, `死亡`,好转出院
+prognosis.lengthOfStay,预后.住院天数,Number,"住院天数。<br>单位: 天",12
+prognosis.icuStay,预后.ICU天数,Number,"ICU天数。<br>单位: 天",5
+
+chronicPancreatitis.present,慢性胰腺炎.是否存在,String,"**CP**: 反复发作AP→进展为CP。<br>**建议值**: `不适用(急性)`, `已有CP`, `本次为CP急性发作`,不适用
+chronicPancreatitis.exocrine,慢性胰腺炎.外分泌功能,String,"**胰腺外分泌不全**: 腹泻,脂肪泻,营养不良。<br>**建议值**: `不适用`, `功能正常`, `外分泌不全`,不适用
+chronicPancreatitis.endocrine,慢性胰腺炎.内分泌功能,String,"**胰源性糖尿病**: 胰岛破坏。<br>**建议值**: `不适用`, `功能正常`, `糖尿病`,不适用
+
+followUp.plan,随访.随访计划,String,"**轻症AP**: 出院后1-2周门诊复查。<br>**重症AP**: 出院后定期随访,评估并发症。<br>**胆源性**: 3个月内胆囊切除术。<br>**示例**: `2周后门诊复查`, `1个月后复查CT`, `计划胆囊切除术`,计划胆囊切除术
+followUp.prevention,随访.预防措施,String,"**胆源性**: 胆囊切除。<br>**酒精性**: 戒酒。<br>**高脂血症**: 控制血脂(TG<5.6)。<br>**示例**: `戒酒宣教`, `降脂治疗(TG 3.5)`, `已预约胆囊切除`,已预约胆囊切除
+
+clinicianNotes,临床医生备注,String,自由文本备注栏,患者为52岁女性,主诉持续性上腹痛12小时,向后背放射,伴恶心呕吐。既往胆囊结石病史。查体:上腹明显压痛,轻度反跳痛,肠鸣音减弱。实验室:淀粉酶850 U/L,脂肪酶1200 U/L(>正常3倍),WBC 16.5×10⁹/L,CRP 180 mg/L,ALT 250 U/L(提示胆源性),血钙1.85 mmol/L。腹部超声:胆囊结石,胆总管扩张(10 mm)。增强CT(入院72h):胰腺肿大,胰周渗出,30-50%胰腺坏死,胰周积液,CTSI 6分。Ranson评分4分(WBC>16,血糖>11.1,BUN升高>1.8,血钙<2.0)。诊断:急性胰腺炎(中度重症,胆源性),胰腺坏死30-50%,一过性呼吸衰竭。治疗:禁食,林格液250 mL/h积极复苏,吗啡镇痛,72h后启动鼻空肠管肠内营养,计划ERCP取石。病情好转,转普通病房,出院后3个月行胆囊切除术。
+dataSource,数据来源,String,"**建议值**: `急诊`, `ICU`, `消化科`, `普外科`",ICU
