@@ -1,0 +1,182 @@
+字段名(英文),字段名(中文),数据类型,描述,示例
+patientId,患者ID,String,患者唯一标识符,P123456
+presentationDate,就诊日期,Date,ACS发生日期,2025-01-15
+presentationTime,发病时间,String,胸痛开始时间,14:30
+encounterType,就诊类型,String,"**建议值**: `急诊`, `门诊转急诊`, `住院期间发生`, `院前急救`, `直接PCI导管室`",急诊
+
+acsType.classification,ACS类型.分类,String,"**ACS分类**:<br>**STEMI**: ST段抬高型心肌梗死(需紧急再灌注)<br>**NSTEMI**: 非ST段抬高型心肌梗死(心肌标志物升高)<br>**UA**: 不稳定型心绞痛(心肌标志物阴性)<br>**建议值**: `STEMI`, `NSTEMI`, `不稳定型心绞痛(UA)`, `待分类(疑似ACS)`",STEMI
+acsType.territory,ACS类型.受累区域,String,"**STEMI部位**(根据ECG导联):<br>**前壁**: V1-V6,LAD供血<br>**下壁**: II,III,aVF,RCA/LCX供血<br>**侧壁**: I,aVL,V5-V6,LCX供血<br>**后壁**: V7-V9(或V1-V3 ST压低+高R波),RCA供血<br>**右室**: V3R-V4R,RCA供血<br>**建议值**: `前壁`, `下壁`, `侧壁`, `广泛前壁`, `下壁+右室`, `后壁`, `不适用(NSTEMI/UA)`",前壁
+
+symptoms.chestPain.present,症状.胸痛.是否存在,String,"**典型心绞痛**: 胸骨后压榨感/紧缩感,放射至左臂/下颌/肩背,持续>10分钟。<br>**建议值**: `有典型胸痛`, `有非典型胸痛`, `无胸痛(等同物症状)`, `不能表述(意识障碍)`",有典型胸痛
+symptoms.chestPain.onset,症状.胸痛.起病方式,String,"**建议值**: `静息时发作`, `轻微活动时发作`, `剧烈活动后发作`, `情绪激动后发作`,静息时发作
+symptoms.chestPain.duration,症状.胸痛.持续时间,String,"**不稳定型心绞痛**: >10分钟或频繁发作<br>**心肌梗死**: 通常>30分钟。<br>**建议值**: `<10分钟`, `10-30分钟`, `>30分钟`, `持续至就诊`",持续至就诊
+symptoms.chestPain.character,症状.胸痛.性质,String,"**建议值**: `压榨性/紧缩性(典型)`, `刺痛/针刺感`, `烧灼感`, `撕裂样疼痛(需除外主动脉夹层)`, `闷胀感`",压榨性
+symptoms.chestPain.location,症状.胸痛.部位,String,"**建议值**: `胸骨后`, `左胸`, `全胸`, `心前区`, `上腹部(下壁MI)`, `不能定位(弥漫性)`",胸骨后
+symptoms.chestPain.radiation,症状.胸痛.放射,String,"**示例**: `无放射`, `左臂`, `双臂`, `颈部`, `下颌`, `肩背部`, `上腹部`",左臂;下颌
+symptoms.chestPain.severity,症状.胸痛.严重程度,String,"**VAS评分**: 0-10分。<br>**建议值**: `轻度(1-3分)`, `中度(4-6分)`, `重度(7-10分)`",重度(9/10)
+
+symptoms.chestPain.responseToNTG,症状.胸痛.硝酸甘油反应,String,"**稳定型心绞痛**: 舌下含服NTG 3-5分钟缓解<br>**心肌梗死**: NTG通常无效或缓解不完全。<br>**建议值**: `未使用NTG`, `完全缓解`, `部分缓解`, `无缓解`,部分缓解
+
+symptoms.dyspnea,症状.呼吸困难,String,"**建议值**: `无`, `轻度`, `中度`, `重度(端坐呼吸)`, `急性肺水肿`,中度
+symptoms.diaphoresis,症状.出汗,String,"**冷汗**: 交感神经兴奋。<br>**建议值**: `无`, `轻度`, `大汗淋漓`,大汗淋漓
+symptoms.nausea,症状.恶心,String,"**下壁MI常见**。<br>**建议值**: `无`, `有`,有
+symptoms.vomiting,症状.呕吐,String,"**建议值**: `无`, `有`,有
+symptoms.palpitations,症状.心悸,String,"**建议值**: `无`, `有(室性心律失常可能)`,有
+symptoms.syncope,症状.晕厥,String,"**建议值**: `无`, `晕厥/先兆晕厥(心室颤动/心源性休克)`,无
+symptoms.weakness,症状.乏力,String,"**建议值**: `无`, `轻度`, `明显乏力/虚弱`,明显乏力
+
+symptoms.atypical,症状.非典型表现,String,"**高危人群**(老年/女性/糖尿病): 常无典型胸痛。<br>**示例**: `典型症状`, `仅呼吸困难`, `仅恶心呕吐`, `上腹痛(误认为胃病)`, `意识障碍`, `心源性休克`, `心脏骤停`",典型症状
+
+riskFactors.age,危险因素.年龄,Number,"年龄。<br>单位: 岁<br>**男性≥45岁,女性≥55岁**: 危险因素",62
+riskFactors.gender,危险因素.性别,String,"**建议值**: `男`, `女`<br>**男性**: 发病年龄早于女性10年",男
+riskFactors.hypertension,危险因素.高血压,String,"**建议值**: `无`, `有(已治疗)`, `有(未治疗/控制不佳)`,有(已治疗)
+riskFactors.diabetes,危险因素.糖尿病,String,"**建议值**: `无`, `有`, `糖尿病前期`<br>**糖尿病**: CAD风险↑2-4倍",有
+riskFactors.dyslipidemia,危险因素.血脂异常,String,"**建议值**: `无`, `高胆固醇血症`, `高LDL-C`, `低HDL-C`, `高甘油三酯`, `混合型`,高LDL-C
+riskFactors.smoking,危险因素.吸烟,String,"**建议值**: `从不吸烟`, `已戒烟(>1年)`, `已戒烟(<1年)`, `现吸烟`",现吸烟
+riskFactors.familyHistory,危险因素.早发CAD家族史,String,"一级亲属早发CAD(男性<55岁,女性<65岁)。<br>**建议值**: `无`, `父母`, `兄弟姐妹`, `多位亲属`,父亲(MI 52岁)
+riskFactors.obesity,危险因素.肥胖,String,"**建议值**: `BMI<25`, `超重(BMI 25-30)`, `肥胖(BMI 30-35)`, `重度肥胖(BMI>35)`,超重
+riskFactors.physicalInactivity,危险因素.缺乏运动,String,"**建议值**: `规律运动`, `偶尔运动`, `久坐不动`,久坐不动
+riskFactors.ckd,危险因素.慢性肾病,String,"**建议值**: `无CKD`, `CKD 3期(eGFR 30-59)`, `CKD 4-5期(eGFR<30)`, `透析`<br>**CKD**: CAD风险↑",无CKD
+riskFactors.priorCAD,危险因素.既往冠心病史,String,"**建议值**: `无`, `稳定型心绞痛`, `既往PCI`, `既往CABG`, `既往心肌梗死`,既往PCI
+riskFactors.priorStroke,危险因素.既往脑卒中,String,"**建议值**: `无`, `缺血性卒中`, `TIA`, `脑出血`,无
+riskFactors.pad,危险因素.外周动脉疾病,String,"**建议值**: `无`, `有`,无
+riskFactors.cocaine,危险因素.可卡因使用,String,"**可卡因诱发心肌梗死**: 年轻人无传统危险因素ACS需考虑。<br>**建议值**: `无`, `近期使用`, `长期滥用`,无
+
+physicalExam.generalAppearance,体格检查.一般情况,String,"**建议值**: `神志清楚`, `焦虑不安`, `痛苦面容`, `烦躁`, `嗜睡`, `意识模糊`, `昏迷`,痛苦面容
+physicalExam.bloodPressure,体格检查.血压,String,"血压。<br>单位: mmHg<br>**低血压(<90/60)**: 心源性休克/右室MI<br>**高血压**: 交感兴奋/后负荷过重",85/50
+physicalExam.heartRate,体格检查.心率,Number,"心率。<br>单位: 次/分<br>**窦性心动过速**: 交感兴奋,疼痛,心衰,休克<br>**心动过缓**: 下壁MI(迷走反射),三度AVB,β受体阻滞剂",110
+physicalExam.respiratoryRate,体格检查.呼吸频率,Number,"呼吸频率。<br>单位: 次/分",24
+physicalExam.spo2,体格检查.SpO2,Number,"脉搏血氧饱和度。<br>单位: %<br>**<90%**: 肺水肿/心源性休克",95
+
+physicalExam.jvd,体格检查.颈静脉怒张,String,"**建议值**: `无`, `有(右室MI/心衰)`,无
+physicalExam.cardiacAuscultation,体格检查.心脏听诊,String,"**示例**: `心律齐,无杂音`, `心律不齐(早搏/房颤)`, `S3奔马律(左心衰)`, `S4奔马律(顺应性下降)`, `新出现杂音(二尖瓣反流/室间隔穿孔)`,心律不齐;S3奔马律
+physicalExam.lungAuscultation,体格检查.肺部听诊,String,"**示例**: `双肺呼吸音清`, `双肺底湿啰音(肺水肿)`, `双肺广泛湿啰音+哮鸣音(急性肺水肿)`,双肺底湿啰音
+physicalExam.peripheralEdema,体格检查.外周水肿,String,"**建议值**: `无`, `下肢水肿(心衰)`,无
+physicalExam.peripheralPulses,体格检查.外周动脉搏动,String,"**建议值**: `正常`, `减弱/消失(休克/PAD)`,正常
+
+killipClass,Killip分级,String,"**Killip分级**(急性MI心功能分级):<br>**I级**: 无心衰体征(死亡率6%)<br>**II级**: 轻-中度心衰(肺部啰音<50%肺野,S3奔马律,颈静脉怒张,死亡率17%)<br>**III级**: 重度心衰/急性肺水肿(肺部啰音>50%肺野,死亡率38%)<br>**IV级**: 心源性休克(死亡率81%)<br>**建议值**: `I级`, `II级`, `III级`, `IV级`,II级
+
+ecg.initialFindings,心电图.首次心电图主要表现,String,"**STEMI诊断**: 相邻2个导联ST段抬高(V2-V3: ≥2mm男性/≥1.5mm女性;其他导联≥1mm)或新发LBBB。<br>**NSTEMI/UA**: ST段压低,T波倒置,无ST抬高。<br>**示例**: `V1-V6 ST段抬高(广泛前壁)`, `II/III/aVF ST抬高(下壁)`, `V1-V3 ST压低+T波倒置`, `正常ECG(不能排除ACS)`, `新发LBBB`",V1-V6 ST段抬高
+ecg.stElevationLeads,心电图.ST抬高导联,String,"**STEMI**: 记录ST抬高的导联。<br>**示例**: `V1-V6`, `II,III,aVF`, `I,aVL,V5-V6`, `V7-V9`, `V3R-V4R`, `不适用`",V1-V6
+ecg.stDepressionLeads,心电图.ST压低导联,String,"**镜像改变**: 对侧导联ST压低(如下壁MI→V1-V3 ST压低)。<br>**NSTEMI**: ST压低。<br>**示例**: `V1-V3`, `I,aVL`, `广泛ST压低`, `无ST压低`",无ST压低
+ecg.tWaveChanges,心电图.T波改变,String,"**建议值**: `正常`, `T波倒置`, `T波低平`, `超急性期高大T波`, `无明显T波改变`",T波倒置(V1-V6)
+ecg.qWaves,心电图.Q波,String,"**病理性Q波**: 宽≥0.04秒,深≥1/4 R波振幅。<br>**建议值**: `无病理性Q波`, `新出现病理性Q波(透壁性MI)`, `陈旧性Q波(既往MI)`,无病理性Q波
+ecg.arrhythmia,心电图.心律失常,String,"**常见**: 室性早搏,室速/室颤(致死性),房颤,传导阻滞。<br>**示例**: `窦性心律`, `窦性心动过速`, `室性早搏`, `房颤`, `完全性房室传导阻滞`, `室速`, `室颤`",窦性心动过速;频发室早
+ecg.conductionAbnormality,心电图.传导异常,String,"**示例**: `无`, `一度AVB(PR>200ms)`, `二度I型AVB(Wenckebach)`, `二度II型AVB(Mobitz II)`, `三度AVB(完全性房室分离)`, `新发LBBB`, `新发RBBB`,无
+
+ecg.rvInvolvement,心电图.右室受累,String,"**下壁MI合并右室MI**: V3R-V4R ST抬高≥1mm。<br>**建议值**: `不适用`, `未做右侧导联`, `右室受累(V3R-V4R ST↑)`, `无右室受累`",不适用
+ecg.posteriorMI,心电图.后壁心肌梗死,String,"**后壁MI**: V1-V3 ST压低(≥0.5mm)+高R波(R/S>1)+直立高T波,需加做V7-V9(ST抬高)。<br>**建议值**: `不适用`, `疑似后壁MI(需加V7-V9)`, `确诊后壁MI`, `无后壁受累`",不适用
+
+ecg.doorToECG,心电图.到院至心电图时间,Number,"STEMI质控指标: 到院至首份ECG时间。<br>单位: 分钟<br>**目标**: ≤10分钟",8
+
+cardiacBiomarkers.troponin.type,心肌标志物.肌钙蛋白.类型,String,"**建议值**: `高敏肌钙蛋白I(hs-cTnI)`, `高敏肌钙蛋白T(hs-cTnT)`, `常规cTnI`, `常规cTnT`",高敏肌钙蛋白I
+cardiacBiomarkers.troponin.baseline,心肌标志物.肌钙蛋白.首次数值,Number,"首次(0h)肌钙蛋白。<br>单位: ng/L(hs-cTn)或ng/mL(常规)<br>**hs-cTn正常上限**: 通常10-20 ng/L(性别特异)<br>**诊断MI**: 至少1次超过99th百分位正常上限",850
+cardiacBiomarkers.troponin.baselineTime,心肌标志物.肌钙蛋白.首次采血时间,String,首次采血时间(从发病起),发病后2小时
+cardiacBiomarkers.troponin.repeat,心肌标志物.肌钙蛋白.复查数值,Number,"复查(1-3h)肌钙蛋白。<br>**hs-cTn**: 0/1h或0/2h算法",1250
+cardiacBiomarkers.troponin.repeatTime,心肌标志物.肌钙蛋白.复查采血时间,String,复查采血时间,首次后1小时
+cardiacBiomarkers.troponin.delta,心肌标志物.肌钙蛋白.动态变化,Number,"Δ肌钙蛋白(复查-首次)。<br>**hs-cTn 0/1h算法**: Δ≥正常上限,提示急性MI",400
+cardiacBiomarkers.troponin.interpretation,心肌标志物.肌钙蛋白.判读,String,"**建议值**: `阴性(排除MI)`, `阳性(确诊MI)`, `轻度升高(需结合临床)`, `极高值(>10倍正常上限)`, `待复查`,阳性
+
+cardiacBiomarkers.ckmb,心肌标志物.CK-MB,Number,"肌酸激酶同工酶MB。<br>单位: ng/mL<br>**正常**: <5<br>**诊断价值**: 不如肌钙蛋白,但可用于判断再梗死(24-72h内复发时cTn仍高,CK-MB再次升高)",35
+cardiacBiomarkers.myoglobin,心肌标志物.肌红蛋白,Number,"肌红蛋白。<br>单位: ng/mL<br>**特点**: 最早升高(1-2h),但特异性差(骨骼肌损伤也升高)",
+
+cardiacBiomarkers.bnp,心肌标志物.BNP/NT-proBNP,Number,"脑钠肽(评估心功能/预后)。<br>单位: pg/mL<br>**升高**: 左心功能不全,预后差",1200
+
+labs.cbc.wbc,实验室.血常规.白细胞,Number,"白细胞计数。<br>单位: ×10⁹/L<br>**升高(10-20)**: 心肌梗死应激反应",15.2
+labs.cbc.hemoglobin,实验室.血常规.血红蛋白,Number,"血红蛋白。<br>单位: g/L<br>**贫血**: 影响氧供,加重心肌缺血",130
+labs.cbc.platelet,实验室.血常规.血小板,Number,"血小板计数。<br>单位: ×10⁹/L<br>**<50**: 抗血小板/抗凝禁忌",220
+
+labs.glucose,实验室.血糖,Number,"血糖(应激性高血糖常见)。<br>单位: mmol/L",10.5
+labs.creatinine,实验室.肌酐,Number,"血清肌酐(评估肾功能,对比剂肾病风险,药物剂量调整)。<br>单位: μmol/L",95
+labs.egfr,实验室.eGFR,Number,"估算肾小球滤过率。<br>单位: mL/min/1.73m²",75
+labs.lipid.tc,实验室.血脂.总胆固醇,Number,"总胆固醇(入院即刻检测,MI后24-48h下降)。<br>单位: mmol/L",6.8
+labs.lipid.ldl,实验室.血脂.LDL-C,Number,"低密度脂蛋白胆固醇。<br>单位: mmol/L<br>**目标**: ACS后<1.4 mmol/L",4.5
+labs.lipid.hdl,实验室.血脂.HDL-C,Number,"高密度脂蛋白胆固醇。<br>单位: mmol/L",1.0
+labs.lipid.tg,实验室.血脂.甘油三酯,Number,"甘油三酯。<br>单位: mmol/L",2.8
+
+labs.hba1c,实验室.HbA1c,Number,"糖化血红蛋白。<br>单位: %",7.5
+labs.tsh,实验室.TSH,Number,"促甲状腺激素(甲亢可加重心肌缺血)。<br>单位: mIU/L",2.5
+
+grace.score,GRACE评分,Number,"GRACE评分(Global Registry of Acute Coronary Events,预测NSTE-ACS住院死亡率/6个月死亡/MI)。<br>**评分项目**: 年龄,心率,收缩压,肌酐,Killip分级,心脏骤停,ST段改变,心肌标志物升高<br>**≤108**: 低危(<1%)<br>**109-140**: 中危(1-3%)<br>**>140**: 高危(>3%)",155
+grace.riskCategory,GRACE评分.危险分层,String,"**建议值**: `低危(≤108)`, `中危(109-140)`, `高危(>140)`",高危
+
+timi.score,TIMI评分,Number,"**TIMI评分**:<br>**STEMI**: TIMI Risk Score for STEMI(0-14分)<br>**NSTEMI/UA**: TIMI Risk Score for UA/NSTEMI(0-7分)<br>**NSTEMI/UA评分项目**: 年龄≥65岁,≥3个CAD危险因素,已知冠脉狭窄≥50%,过去7天使用阿司匹林,≥2次严重心绞痛发作,ST段改变≥0.5mm,心肌标志物升高(各1分)",5
+timi.riskCategory,TIMI评分.危险分层,String,"**NSTEMI/UA**: 0-2分(低危,死亡/MI率4.7%),3-4分(中危,13.2%),5-7分(高危,26.2%)。<br>**建议值**: `低危`, `中危`, `高危`",高危
+
+imaging.chestXray,影像学.胸部X线,String,"**适应证**: 评估肺水肿,除外主动脉夹层。<br>**建议值**: `心影正常`, `心影增大`, `肺淤血`, `肺水肿`, `胸腔积液`, `纵隔增宽(除外夹层)`,肺淤血
+
+echocardiography.performed,超声心动图.是否完成,String,"**适应证**: 评估心功能,室壁运动异常,机械并发症(VSD/乳头肌断裂/心脏破裂),除外主动脉夹层。<br>**建议值**: `已完成(急诊)`, `已完成(住院期间)`, `计划检查`, `未做`",已完成(急诊)
+echocardiography.lvef,超声心动图.左室射血分数,Number,"LVEF。<br>单位: %<br>**正常**: ≥50%<br>**轻度降低**: 40-49%<br>**中度降低**: 30-39%<br>**重度降低**: <30%",40
+echocardiography.wallMotion,超声心动图.室壁运动,String,"**节段性室壁运动异常**(RWMA): 提示心肌缺血/坏死区域。<br>**示例**: `正常`, `前壁+前间隔运动减弱`, `下壁无动`, `广泛运动减弱`, `心尖部室壁瘤`",前壁+前间隔运动减弱
+echocardiography.lvDiastolic,超声心动图.左室舒张功能,String,"**建议值**: `正常`, `I级舒张功能不全`, `II级`, `III级(限制性充盈)`,I级
+echocardiography.valvular,超声心动图.瓣膜异常,String,"**示例**: `无明显瓣膜异常`, `轻度二尖瓣反流`, `中-重度二尖瓣反流(乳头肌功能不全/断裂)`, `主动脉瓣反流(除外夹层)`,轻度二尖瓣反流
+echocardiography.pericardialEffusion,超声心动图.心包积液,String,"**建议值**: `无`, `少量`, `中-大量(心脏破裂/Dressler综合征)`, `心包填塞`,无
+echocardiography.mechanicalComplications,超声心动图.机械并发症,String,"**建议值**: `无`, `室间隔穿孔(VSD)`, `乳头肌断裂`, `左室游离壁破裂`, `右室梗死`,无
+
+coronaryAngiography.timing,冠脉造影.时机,String,"**建议值**: `急诊PCI(STEMI)`, `早期侵入性策略(<24h,NSTEMI高危)`, `延迟侵入性策略(72h内,NSTEMI中危)`, `保守策略(未行造影)`, `择期造影`,急诊PCI
+coronaryAngiography.access,冠脉造影.入路,String,"**建议值**: `桡动脉(首选,出血并发症少)`, `股动脉`, `尺动脉`",桡动脉
+coronaryAngiography.culpritVessel,冠脉造影.罪犯血管,String,"**建议值**: `LAD(左前降支)`, `LCX(左回旋支)`, `RCA(右冠状动脉)`, `LM(左主干,高危)`, `多支病变`, `无明显狭窄(MINOCA)`",LAD
+coronaryAngiography.culpritLesion,冠脉造影.罪犯病变,String,"罪犯病变描述。<br>**示例**: `LAD近段100%闭塞`, `LAD中段90%狭窄`, `LCX急性血栓闭塞`, `RCA近段99%狭窄+TIMI 0级血流`",LAD近段100%闭塞;TIMI 0级
+coronaryAngiography.syntax,冠脉造影.SYNTAX评分,Number,"SYNTAX评分(解剖复杂性评分,指导PCI vs CABG)。<br>**≤22**: 低危,PCI/CABG均可<br>**23-32**: 中危<br>**≥33**: 高危,CABG优于PCI",
+
+pci.performed,PCI.是否实施,String,"**建议值**: `已完成`, `未完成(保守治疗)`, `未完成(CABG指征)`, `未完成(患者拒绝)`,已完成
+pci.doorToBalloon,PCI.到院至球囊扩张时间,Number,"**STEMI质控指标**: D2B时间。<br>单位: 分钟<br>**目标**: ≤90分钟(直接PCI医院),≤120分钟(转运PCI)",75
+pci.symptomToBalloon,PCI.发病至球囊扩张时间,Number,"总缺血时间。<br>单位: 分钟<br>**黄金时间**: <120分钟",180
+pci.stent.type,PCI.支架.类型,String,"**建议值**: `药物洗脱支架(DES)`, `生物可吸收支架`, `药物涂层球囊(DCB)`, `单纯球囊扩张`, `未置入支架(POBA)`",药物洗脱支架
+pci.stent.number,PCI.支架.数量,Number,置入支架数量,1
+pci.stent.specifications,PCI.支架.规格,String,"支架长度和直径。<br>**示例**: `3.0×28mm`, `2.75×18mm+3.5×24mm(重叠)`",3.0×28mm
+pci.timi.prePCI,PCI.TIMI血流.PCI前,String,"**TIMI血流分级**:<br>**0级**: 完全闭塞,无前向血流<br>**1级**: 对比剂通过但不充盈远端<br>**2级**: 对比剂通过但充盈/清除延迟<br>**3级**: 正常血流<br>**建议值**: `TIMI 0`, `TIMI 1`, `TIMI 2`, `TIMI 3`",TIMI 0
+pci.timi.postPCI,PCI.TIMI血流.PCI后,String,"**建议值**: `TIMI 0`, `TIMI 1`, `TIMI 2`, `TIMI 3`<br>**目标**: TIMI 3级血流",TIMI 3
+pci.noReflow,PCI.无复流,String,"**无复流**: PCI后TIMI<3级,无机械阻塞,微循环障碍。<br>**建议值**: `无`, `有(TIMI 0-2)`,无
+pci.complications,PCI.并发症,String,"**示例**: `无并发症`, `冠脉夹层`, `冠脉穿孔`, `急性支架内血栓`, `入路部位出血/血肿`, `对比剂肾病`, `卒中`, `死亡`,无并发症
+
+fibrinolysis.indication,溶栓治疗.指征,String,"**STEMI溶栓适应证**: 发病<12h+不能及时PCI(FMC至球囊扩张>120分钟)。<br>**建议值**: `符合溶栓指征`, `不符合(发病>12h/已行PCI)`, `有禁忌症`, `已溶栓`",不符合
+fibrinolysis.agent,溶栓治疗.溶栓药物,String,"**特异性纤溶酶原激活剂**: 阿替普酶(rt-PA),替奈普酶(TNK-tPA,单次推注,方便)<br>**非特异性**: 尿激酶,链激酶。<br>**示例**: `未溶栓`, `替奈普酶(TNK-tPA)`, `阿替普酶(rt-PA)`, `尿激酶`",未溶栓
+fibrinolysis.doorToNeedle,溶栓治疗.到院至溶栓时间,Number,"D2N时间。<br>单位: 分钟<br>**目标**: ≤30分钟",
+fibrinolysis.success,溶栓治疗.溶栓成功,String,"**再灌注标志**: 胸痛缓解,ST段回落>50%,再灌注性心律失常(加速性室性自主心律)。<br>**建议值**: `不适用`, `成功(ST段回落>50%)`, `失败(需补救PCI)`,
+fibrinolysis.complications,溶栓治疗.并发症,String,"**主要并发症**: 大出血(颅内出血1%,致命),再闭塞。<br>**建议值**: `不适用`, `无并发症`, `大出血(部位)`, `颅内出血`, `过敏反应`,
+
+medications.antiplatelet.loadingDose,药物.抗血小板.负荷剂量,String,"**双联抗血小板(DAPT)**: 阿司匹林+P2Y12抑制剂。<br>**负荷剂量**:<br>- 阿司匹林300mg嚼服(或150-300mg IV)<br>- 氯吡格雷600mg(择期PCI可用300mg)<br>- 替格瑞洛180mg(推荐,起效快,PLATO研究优于氯吡格雷)<br>- 普拉格雷60mg(欧美,中国未上市)<br>**示例**: `阿司匹林300mg+替格瑞洛180mg`, `阿司匹林+氯吡格雷600mg`, `未使用`,阿司匹林300mg+替格瑞洛180mg
+medications.antiplatelet.maintenance,药物.抗血小板.维持治疗,String,"**维持剂量**:<br>- 阿司匹林100mg qd<br>- 氯吡格雷75mg qd<br>- 替格瑞洛90mg bid<br>**DAPT疗程**: 至少12个月(ACS后)<br>**示例**: `阿司匹林100mg+替格瑞洛90mg bid`, `阿司匹林100mg+氯吡格雷75mg`,阿司匹林100mg+替格瑞洛90mg bid
+
+medications.anticoagulation,药物.抗凝治疗,String,"**PCI围术期抗凝**: 普通肝素IV,依诺肝素SC,比伐卢定IV(直接凝血酶抑制剂)。<br>**长期抗凝**: 房颤合并ACS(三联抗栓,短期后改为双联)。<br>**示例**: `普通肝素IV(PCI中)`, `依诺肝素1mg/kg bid`, `比伐卢定`, `华法林(房颤)`, `利伐沙班(房颤)`",普通肝素IV
+
+medications.statin,药物.他汀类,String,"**高强度他汀**(ACS后强制推荐,降LDL-C>50%):<br>- 阿托伐他汀40-80mg qd<br>- 瑞舒伐他汀20-40mg qd<br>**示例**: `阿托伐他汀80mg qd`, `瑞舒伐他汀20mg qd`, `未使用`,阿托伐他汀80mg qd
+
+medications.betaBlocker,药物.β受体阻滞剂,String,"**适应证**: 除非禁忌(心源性休克/心动过缓/AVB),所有ACS患者。<br>**示例**: `美托洛尔25mg bid`, `比索洛尔2.5mg qd`, `卡维地洛6.25mg bid`, `未使用(休克)`,美托洛尔25mg bid
+
+medications.acei,药物.ACEI/ARB,String,"**适应证**: LVEF<40%,高血压,糖尿病,CKD。<br>**示例**: `依那普利10mg bid`, `贝那普利10mg qd`, `缬沙坦80mg qd(不耐受ACEI)`, `未使用`,依那普利10mg bid
+
+medications.aldosterone,药物.醛固酮受体拮抗剂,String,"**适应证**: LVEF≤40%+心衰或糖尿病,无严重肾功能不全/高钾血症。<br>**示例**: `螺内酯20mg qd`, `依普利酮25mg qd`, `未使用`,螺内酯20mg qd
+
+medications.nitrates,药物.硝酸酯类,String,"**急性期**: 舌下含服NTG,IV硝酸甘油(持续胸痛/高血压/心衰)。<br>**长期**: 单硝酸异山梨酯缓释片。<br>**示例**: `硝酸甘油IV 10μg/min`, `单硝酸异山梨酯50mg qd`, `未使用(低血压)`,硝酸甘油IV
+medications.morphine,药物.吗啡,String,"**适应证**: 剧烈胸痛,焦虑,急性肺水肿。<br>**剂量**: 吗啡3-5mg IV,必要时5-15分钟重复。<br>**建议值**: `已使用`, `未使用`,已使用
+
+complications.cardiogenicShock,并发症.心源性休克,String,"**定义**: 持续低血压(SBP<90mmHg)+组织低灌注(尿少/意识障碍/四肢湿冷)+肺淤血。<br>**死亡率**: 40-50%。<br>**建议值**: `无`, `有(需血管活性药/IABP/ECMO)`,无
+complications.acuteHeartFailure,并发症.急性心力衰竭,String,"**建议值**: `无`, `Killip II级`, `Killip III级(急性肺水肿)`, `Killip IV级(心源性休克)`,Killip II级
+complications.vf,并发症.心室颤动,String,"**建议值**: `无`, `VF(已除颤复律)`, `持续性VT`, `心脏骤停(CPR后恢复)`,无
+complications.avBlock,并发症.房室传导阻滞,String,"**下壁MI**: 房室结缺血,一过性AVB<br>**前壁MI**: 希氏束坏死,持久性AVB,预后差。<br>**建议值**: `无`, `一度AVB`, `二度AVB`, `三度AVB(需临时起搏)`, `已置入永久起搏器`,无
+complications.vsd,并发症.室间隔穿孔,String,"**发生率**: <1%,MI后3-5天。<br>**建议值**: `无`, `有(需急诊外科修补)`,无
+complications.papillaryMuscle,并发症.乳头肌断裂,String,"**发生率**: 罕见,下壁MI多见,急性重度二尖瓣反流→急性肺水肿。<br>**建议值**: `无`, `乳头肌功能不全(可逆)`, `乳头肌断裂(需急诊手术)`,无
+complications.freeWallRupture,并发症.心脏游离壁破裂,String,"**发生率**: 1-3%,MI后1-5天,老年女性多见。<br>**建议值**: `无`, `亚急性破裂(心包填塞)`, `急性破裂(猝死)`,无
+complications.lvAneurysm,并发症.左室室壁瘤,String,"**慢性并发症**: 透壁MI后数周-数月。<br>**建议值**: `无`, `有(超声心动图确认)`,无
+complications.lvThrombus,并发症.左室附壁血栓,String,"**危险因素**: 前壁MI,广泛心肌梗死,LVEF<40%,室壁瘤。<br>**建议值**: `无`, `有(需抗凝3-6个月)`,无
+complications.pericarditis,并发症.心包炎,String,"**早期心包炎**: MI后24-96h,胸膜摩擦音。<br>**Dressler综合征**: MI后数周-数月,自身免疫反应。<br>**建议值**: `无`, `早期心包炎`, `Dressler综合征`,无
+complications.recurrentMI,并发症.再发心肌梗死,String,"**建议值**: `无`, `早期再梗死(<30天)`, `晚期再梗死`,无
+complications.majorBleeding,并发症.大出血,String,"抗栓治疗相关出血。<br>**建议值**: `无`, `大出血(颅内/消化道/需输血)`, `BARC 3-5级出血`,无
+
+prognosis.outcome,预后.结局,String,"**建议值**: `存活出院`, `住院期间死亡`, `转院`, `自动出院`,存活出院
+prognosis.lengthOfStay,预后.住院天数,Number,"住院天数。<br>单位: 天<br>**STEMI**: 通常5-7天(无并发症)",7
+prognosis.icuStay,预后.ICU天数,Number,"ICU住院天数。<br>单位: 天",2
+
+cardiacRehab.referral,心脏康复.转诊,String,"**强烈推荐**: 所有ACS患者出院后参加心脏康复。<br>**建议值**: `已转诊`, `建议转诊`, `未转诊`,已转诊
+
+followUp.plan,随访.随访计划,String,"**出院后随访**: 2-4周,后1/3/6/12个月。<br>**监测**: 症状,用药依从性,危险因素控制(血压/血糖/血脂),心功能。<br>**示例**: `出院后2周门诊复查`, `1个月后复查肝肾功能/血脂`, `3个月后复查超声心动图`,出院后2周门诊复查
+
+secondaryPrevention.lifestyle,二级预防.生活方式,String,"**建议值**: `已教育(戒烟/低盐低脂饮食/规律运动/控制体重/心理调适)`, `未教育`,已教育
+secondaryPrevention.targetLDL,二级预防.LDL-C目标,String,"**ACS后**: LDL-C<1.4 mmol/L(55 mg/dL)且较基线降低≥50%。<br>**建议值**: `已达标`, `未达标(需加强他汀/加用依折麦布/PCSK9i)`,未达标
+secondaryPrevention.targetBP,二级预防.血压目标,String,"**ACS后**: <130/80 mmHg。<br>**建议值**: `已达标`, `未达标`,已达标
+secondaryPrevention.diabetesControl,二级预防.糖尿病控制,String,"**ACS合并糖尿病**: HbA1c<7%,优选SGLT2i/GLP-1RA(心血管获益)。<br>**建议值**: `不适用(无糖尿病)`, `已达标`, `未达标`,已达标
+
+clinicianNotes,临床医生备注,String,自由文本备注栏,患者为62岁男性,有高血压、糖尿病、吸烟史。静息时突发剧烈胸痛持续2小时就诊。ECG示V1-V6 ST段抬高(广泛前壁STEMI)。急诊CAG示LAD近段100%闭塞,急诊PCI置入DES 3.0×28mm,术后TIMI 3级血流。D2B时间75分钟。hs-cTnI峰值5800 ng/L。超声心动图LVEF 40%,前壁+前间隔运动减弱。Killip II级。已启动DAPT(阿司匹林+替格瑞洛)、高强度他汀、ACEI、β受体阻滞剂、醛固酮受体拮抗剂。住院7天好转出院,已转诊心脏康复。嘱戒烟、控制血压血糖血脂,DAPT至少12个月。
+dataSource,数据来源,String,"**建议值**: `急诊`, `院前急救`, `住院`, `ICU`, `导管室`,急诊

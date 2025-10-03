@@ -1,0 +1,166 @@
+字段名(英文),字段名(中文),数据类型,描述,示例
+patientId,患者ID,String,患者唯一标识符,P123456
+admissionDate,入院日期,Date,DKA入院日期,2025-01-15
+admissionTime,入院时间,String,入院时间,14:30
+encounterType,就诊类型,String,"**建议值**: `急诊`, `ICU直接收治`, `普通病房转入ICU`, `门诊发现`",急诊
+
+diagnosis.severity,诊断.严重程度,String,"DKA严重程度分级(ADA标准)。<br>**轻度**: pH 7.25-7.30,HCO₃ 15-18 mmol/L,神志清醒<br>**中度**: pH 7.00-7.24,HCO₃ 10-14,嗜睡/意识模糊<br>**重度**: pH<7.00,HCO₃<10,昏迷<br>**建议值**: `轻度`, `中度`, `重度`",中度
+diagnosis.type,诊断.类型,String,"**建议值**: `单纯DKA`, `DKA合并HHS(高渗高血糖状态)`, `正常血糖性DKA(SGLT2i相关)`",单纯DKA
+
+diabetesHistory.diabetesType,糖尿病史.糖尿病类型,String,"**建议值**: `1型糖尿病`, `2型糖尿病`, `新诊断糖尿病(以DKA起病)`, `特殊类型糖尿病`, `妊娠糖尿病`",1型糖尿病
+diabetesHistory.diagnosisDate,糖尿病史.诊断日期,Date,糖尿病诊断日期,2020-03-10
+diabetesHistory.previousDKA,糖尿病史.既往DKA史,String,"**建议值**: `首次DKA`, `既往1次`, `既往≥2次(复发性DKA)`, `不详`",既往1次
+diabetesHistory.usualControl,糖尿病史.平时控制情况,String,"**建议值**: `良好(HbA1c<7%)`, `中等(HbA1c 7-9%)`, `差(HbA1c>9%)`, `不规律就诊`, `不详`",差
+diabetesHistory.lastHbA1c,糖尿病史.最近HbA1c,Number,"最近一次HbA1c(3个月内)。<br>单位: %",11.5
+
+precipitatingFactors.infection,诱因.感染,String,"**最常见诱因(30-40%)**。<br>**示例**: `肺炎`, `泌尿系感染`, `胃肠道感染`, `COVID-19`, `脓毒症`, `无明确感染`",肺炎
+precipitatingFactors.insulinOmission,诱因.胰岛素中断/不足,String,"**建议值**: `患者自行停药`, `胰岛素泵故障`, `经济原因停药`, `遗忘注射`, `剂量不足`, `无此因素`<br>**常见于1型糖尿病青少年**",患者自行停药
+precipitatingFactors.newOnsetDM,诱因.新发糖尿病,String,"**建议值**: `是(DKA为首发表现)`, `否`<br>**1型糖尿病**: 20-30%以DKA起病",否
+precipitatingFactors.mi,诱因.心肌梗死,String,"**建议值**: `无`, `疑似(需查心肌酶/ECG)`, `确诊`,无
+precipitatingFactors.stroke,诱因.脑卒中,String,"**建议值**: `无`, `疑似`, `确诊`,无
+precipitatingFactors.pancreatitis,诱因.急性胰腺炎,String,"**建议值**: `无`, `疑似(腹痛+淀粉酶升高)`, `确诊`,无
+precipitatingFactors.trauma,诱因.创伤/手术,String,"**建议值**: `无`, `有(具体)`,无
+precipitatingFactors.medications,诱因.药物,String,"**示例**: `糖皮质激素`, `噻嗪类利尿剂`, `抗精神病药物(非典型,如奥氮平)`, `SGLT2抑制剂(正常血糖性DKA)`, `无相关用药`",无相关用药
+precipitatingFactors.pregnancy,诱因.妊娠,String,"**建议值**: `非妊娠`, `妊娠期(妊娠期DKA,母胎高危)`,非妊娠
+precipitatingFactors.alcohol,诱因.酒精/药物滥用,String,"**建议值**: `无`, `酒精中毒`, `可卡因等毒品`,无
+precipitatingFactors.unknown,诱因.不明原因,String,"**建议值**: `诱因明确`, `无明确诱因(约20%)`",诱因明确
+
+symptoms.duration,症状.症状持续时间,String,"从症状出现到就诊的时间。<br>**建议值**: `<24小时`, `1-3天`, `>3天`",1-3天
+symptoms.polyuria,症状.多尿,String,"**建议值**: `是`, `否`",是
+symptoms.polydipsia,症状.多饮,String,"**建议值**: `是`, `否`",是
+symptoms.weightLoss,症状.体重下降,String,"**建议值**: `无`, `轻度(<5kg)`, `明显(≥5kg)`",明显
+symptoms.weakness,症状.乏力,String,"**建议值**: `无`, `轻度`, `明显`,明显
+symptoms.nausea,症状.恶心,String,"**建议值**: `无`, `有`,有
+symptoms.vomiting,症状.呕吐,String,"**建议值**: `无`, `1-2次`, `频繁(>3次)`,频繁
+symptoms.abdominalPain,症状.腹痛,String,"**建议值**: `无`, `轻度`, `中-重度(可误诊为急腹症)`,中-重度
+symptoms.breathlessness,症状.呼吸困难,String,"Kussmaul呼吸(深大呼吸)。<br>**建议值**: `无`, `有`,有
+symptoms.alteredMental,症状.意识改变,String,"**建议值**: `神志清醒`, `嗜睡`, `意识模糊`, `昏迷`,意识模糊
+
+physicalExam.consciousness,体格检查.意识状态,String,"**建议值**: `清醒`, `嗜睡`, `昏睡`, `昏迷`<br>**GCS评分**: 可记录",嗜睡
+physicalExam.gcs,体格检查.GCS评分,Number,"格拉斯哥昏迷评分(3-15分)。<br>**≤8**: 昏迷,需气管插管",12
+physicalExam.dehydration,体格检查.脱水程度,String,"**建议值**: `轻度(5%)`, `中度(5-10%)`, `重度(>10%)`<br>**体征**: 皮肤弹性差,黏膜干燥,眼窝凹陷,血压下降",重度
+physicalExam.ketonBreath,体格检查.呼气烂苹果味,String,"丙酮味。<br>**建议值**: `无`, `有`,有
+physicalExam.kussmaul,体格检查.Kussmaul呼吸,String,"深大呼吸(代偿性呼吸性碱中毒)。<br>**建议值**: `无`, `有`,有
+
+physicalExam.temperature,体格检查.体温,Number,"体温。<br>单位: ℃<br>**体温正常/低**: DKA常见(有感染时可发热)",36.8
+physicalExam.heartRate,体格检查.心率,Number,"心率。<br>单位: 次/分<br>**窦性心动过速**: 常见(脱水/酸中毒)",110
+physicalExam.bloodPressure,体格检查.血压,String,"血压。<br>单位: mmHg<br>**低血压**: 重度脱水/休克",95/60
+physicalExam.respiratoryRate,体格检查.呼吸频率,Number,"呼吸频率。<br>单位: 次/分<br>**增快**: Kussmaul呼吸",28
+physicalExam.spo2,体格检查.SpO2,Number,"脉搏血氧饱和度(室内空气)。<br>单位: %",96
+
+physicalExam.abdominalExam,体格检查.腹部体征,String,"**示例**: `腹软,无压痛`, `全腹压痛(假性急腹症)`, `反跳痛(需除外真性急腹症)`, `肠鸣音减弱`,全腹压痛
+physicalExam.neurologicalExam,体格检查.神经系统,String,"**示例**: `正常`, `腱反射减弱`, `病理征阳性`, `局灶性神经体征(需除外脑卒中/脑水肿)`,腱反射减弱
+
+labInitial.glucose,初始实验室.血糖,Number,"毛细血管或静脉血糖。<br>单位: mmol/L<br>**DKA诊断**: 通常>13.9 mmol/L(>250 mg/dL)<br>**正常血糖性DKA**: <11.1 mmol/L(SGLT2i相关)",24.5
+labInitial.glucoseMgDl,初始实验室.血糖(mg/dL),Number,"血糖。<br>单位: mg/dL",441
+
+labInitial.arterialPH,初始实验室.动脉血pH,Number,"动脉血pH。<br>**DKA诊断**: pH<7.30<br>**轻度**: 7.25-7.30<br>**中度**: 7.00-7.24<br>**重度**: <7.00",7.15
+labInitial.venousPH,初始实验室.静脉血pH,Number,"静脉血pH(如无动脉血)。<br>**静脉pH**: 比动脉pH低0.03",7.12
+labInitial.paco2,初始实验室.PaCO2,Number,"动脉血二氧化碳分压。<br>单位: mmHg<br>**降低**: 代偿性呼吸性碱中毒",22
+labInitial.pao2,初始实验室.PaO2,Number,"动脉血氧分压。<br>单位: mmHg",95
+labInitial.hco3,初始实验室.碳酸氢根,Number,"血清HCO₃⁻。<br>单位: mmol/L<br>**DKA诊断**: <18 mmol/L<br>**轻度**: 15-18<br>**中度**: 10-14<br>**重度**: <10",12
+labInitial.anionGap,初始实验室.阴离子间隙,Number,"AG = Na⁺ - (Cl⁻ + HCO₃⁻)。<br>单位: mmol/L<br>**正常**: 12±2<br>**DKA**: >10,通常>15(高AG代谢性酸中毒)",28
+
+labInitial.ketones.blood.bhb,初始实验室.酮体.血酮.β-羟丁酸,Number,"血β-羟丁酸(最准确)。<br>单位: mmol/L<br>**<0.6**: 正常<br>**0.6-1.5**: 轻度升高<br>**1.5-3.0**: 中度升高<br>**>3.0**: DKA诊断,重度酮症",5.8
+labInitial.ketones.blood.qualitative,初始实验室.酮体.血酮.定性,String,"血酮定性(如无定量)。<br>**建议值**: `阴性(-)`, `弱阳性(+)`, `阳性(++)`, `强阳性(+++)`",强阳性
+labInitial.ketones.urine,初始实验室.酮体.尿酮,String,"尿酮定性(硝普钠法,主要测乙酰乙酸)。<br>**建议值**: `阴性(-)`, `±`, `+`, `++`, `+++`, `++++`<br>**注意**: 治疗后β-羟丁酸转化为乙酰乙酸,尿酮可假性升高",++++
+
+labInitial.sodium,初始实验室.血钠,Number,"血清钠。<br>单位: mmol/L<br>**正常**: 135-145<br>**假性低钠**: 高血糖稀释,校正钠=测定钠+1.6×(血糖-5.6)/5.6",128
+labInitial.correctedSodium,初始实验室.校正钠,Number,"校正血钠。<br>单位: mmol/L",138
+labInitial.potassium,初始实验室.血钾,Number,"血清钾。<br>单位: mmol/L<br>**正常**: 3.5-5.5<br>**DKA初始**: 正常或升高(酸中毒/胰岛素缺乏)<br>**治疗中**: 快速下降,需密切监测补钾",5.2
+labInitial.chloride,初始实验室.血氯,Number,"血清氯。<br>单位: mmol/L<br>**正常**: 98-106",98
+labInitial.phosphate,初始实验室.血磷,Number,"血清磷。<br>单位: mmol/L<br>**正常**: 0.8-1.5<br>**DKA初始**: 正常或升高<br>**治疗中**: 下降,重度低磷(<0.3)需补充",1.2
+labInitial.magnesium,初始实验室.血镁,Number,"血清镁。<br>单位: mmol/L<br>**正常**: 0.7-1.0",0.8
+
+labInitial.creatinine,初始实验室.肌酐,Number,"血清肌酐。<br>单位: μmol/L<br>**升高**: 肾前性急性肾损伤(脱水)",150
+labInitial.bun,初始实验室.尿素氮,Number,"血尿素氮。<br>单位: mmol/L<br>**升高**: 脱水/肾功能不全",12
+labInitial.bunCreatinineRatio,初始实验室.BUN/Cr比值,Number,"BUN/Cr比值。<br>**>20:1**: 肾前性",28
+
+labInitial.osmolality.measured,初始实验室.血浆渗透压.实测值,Number,"实测血浆渗透压。<br>单位: mOsm/kg",
+labInitial.osmolality.calculated,初始实验室.血浆渗透压.计算值,Number,"计算血浆渗透压 = 2×Na⁺ + 葡萄糖(mmol/L) + 尿素(mmol/L)。<br>单位: mOsm/kg<br>**正常**: 280-295<br>**DKA**: 通常<320<br>**HHS**: >320",310
+labInitial.effectiveOsmolality,初始实验室.有效渗透压,Number,"有效渗透压 = 2×Na⁺ + 葡萄糖(mmol/L)。<br>单位: mOsm/kg<br>**>320**: 高渗状态",305
+
+labInitial.wbc,初始实验室.白细胞,Number,"白细胞计数。<br>单位: ×10⁹/L<br>**升高(15-40)**: DKA应激反应,不一定代表感染<br>**>25或左移**: 感染可能",18.5
+labInitial.hemoglobin,初始实验室.血红蛋白,Number,"血红蛋白。<br>单位: g/L<br>**升高**: 血液浓缩",155
+labInitial.hematocrit,初始实验室.红细胞压积,Number,"红细胞压积。<br>单位: %<br>**升高**: 血液浓缩",48
+labInitial.platelet,初始实验室.血小板,Number,"血小板计数。<br>单位: ×10⁹/L",280
+
+labInitial.amylase,初始实验室.淀粉酶,Number,"血清淀粉酶。<br>单位: U/L<br>**轻度升高(2-3倍)**: 常见于DKA,不一定是胰腺炎<br>**>5倍**: 胰腺炎可能",180
+labInitial.lipase,初始实验室.脂肪酶,Number,"血清脂肪酶。<br>单位: U/L<br>**更特异**: 胰腺炎诊断",95
+
+labInitial.lactate,初始实验室.乳酸,Number,"血乳酸。<br>单位: mmol/L<br>**正常**: <2<br>**>4**: 乳酸酸中毒(脓毒症/休克/组织低灌注)",2.8
+
+labInitial.troponin,初始实验室.肌钙蛋白,String,"cTnI/cTnT(排除ACS)。<br>**建议值**: `正常`, `轻度升高(需求缺血)`, `明显升高(心肌梗死)`, `未检测`",正常
+labInitial.bnp,初始实验室.BNP,Number,"脑钠肽(如疑心衰)。<br>单位: pg/mL",
+
+labInitial.cReactiveProtein,初始实验室.CRP,Number,"C反应蛋白。<br>单位: mg/L<br>**>10**: 感染/炎症",85
+labInitial.procalcitonin,初始实验室.降钙素原,Number,"降钙素原。<br>单位: ng/mL<br>**>0.5**: 细菌感染/脓毒症",1.2
+
+labInitial.urinalysis,初始实验室.尿常规,String,"**示例**: `尿糖++++,尿酮++++,尿蛋白±,白细胞++(需尿培养除外UTI)`,尿糖++++;尿酮++++
+
+imaging.chestXray,影像学.胸部X线,String,"**适应证**: 排除肺炎。<br>**建议值**: `未做`, `正常`, `肺炎`, `肺水肿(过度补液)`, `ARDS`",肺炎
+imaging.ecg,影像学.心电图,String,"**适应证**: 排除心肌梗死,监测电解质紊乱(T波改变)。<br>**建议值**: `正常窦性心律`, `窦速`, `高钾T波高尖`, `低钾T波低平/U波`, `心肌缺血`, `STEMI`",窦速;T波低平
+imaging.ctHead,影像学.头颅CT,String,"**适应证**: 持续意识障碍(除外脑水肿/脑卒中)。<br>**建议值**: `未做`, `正常`, `脑水肿`, `脑梗死`, `脑出血`",未做
+
+treatment.location,治疗.治疗地点,String,"**建议值**: `ICU`, `急诊留观`, `内分泌病房`, `普通病房`<br>**ICU指征**: pH<7.0,昏迷,血流动力学不稳定,严重电解质紊乱",ICU
+treatment.protocol,治疗.治疗方案,String,"**建议值**: `遵循ADA指南`, `遵循中华医学会指南`, `自拟方案`",遵循ADA指南
+
+treatment.fluids.initialFluid,治疗.液体复苏.初始液体,String,"**首选**: 0.9%生理盐水。<br>**建议值**: `0.9% NS`, `乳酸林格液`, `平衡盐溶液`",0.9% NS
+treatment.fluids.initialRate,治疗.液体复苏.初始输液速度,String,"**成人**: 1000-1500 mL/h×1-2小时(血流动力学不稳定)或250-500 mL/h(稳定)。<br>**示例**: `1000 mL/h×1h`, `500 mL/h`,1000 mL/h×1h
+treatment.fluids.maintenanceFluid,治疗.液体复苏.维持液体,String,"校正钠后选择:<br>**校正钠高**: 0.45% NS<br>**校正钠正常/低**: 0.9% NS<br>**血糖<14 mmol/L后**: 加5%葡萄糖。<br>**示例**: `0.9% NS 250 mL/h`, `0.45% NS+5%葡萄糖 150 mL/h`",0.9% NS 250 mL/h
+treatment.fluids.totalFirst12h,治疗.液体复苏.前12小时总量,Number,"前12小时补液总量。<br>单位: mL<br>**目标**: 补足液体缺失(约100 mL/kg体重)",4500
+
+treatment.insulin.initialBolus,治疗.胰岛素.初始负荷量,String,"**ADA 2023**: 0.1 U/kg IV bolus(可选,直接持续输注也可)。<br>**示例**: `0.1 U/kg IV(6 U)`, `未给负荷量`",0.1 U/kg IV
+treatment.insulin.initialInfusion,治疗.胰岛素.初始输注速度,String,"**标准**: 0.1 U/kg/h(或0.14 U/kg/h不给负荷量)。<br>**示例**: `0.1 U/kg/h(6 U/h)`, `固定剂量4-6 U/h`",0.1 U/kg/h
+treatment.insulin.adjustmentProtocol,治疗.胰岛素.调整方案,String,"**目标**: 血糖下降2.8-4.2 mmol/h。<br>**血糖下降不足**: 每小时增加1 U/h。<br>**血糖<14 mmol/L**: 降至0.05-0.1 U/kg/h,同时输注5%葡萄糖。<br>**建议值**: `按标准方案调整`, `个体化调整`",按标准方案调整
+treatment.insulin.dualInsulin,治疗.胰岛素.双胰岛素方案,String,"血糖<14 mmol/L后:<br>**方案1**: 持续IV胰岛素+5%葡萄糖<br>**方案2**: 持续IV胰岛素+皮下基础胰岛素(重叠2-4h)。<br>**建议值**: `单纯IV`, `IV+SC基础胰岛素`, `未到该阶段`",未到该阶段
+
+treatment.potassium.initialK,治疗.钾补充.初始血钾,Number,"治疗前血钾。<br>单位: mmol/L",5.2
+treatment.potassium.supplementProtocol,治疗.钾补充.补钾方案,String,"**血钾<3.3**: 暂缓胰岛素,补钾至>3.3<br>**血钾3.3-5.2**: 补钾20-30 mEq/L液体<br>**血钾>5.2**: 暂不补钾,监测<br>**目标**: 维持血钾4-5 mmol/L。<br>**示例**: `KCl 20 mEq/L(补液中)`, `KCl 10 mEq/h IV`, `暂不补钾`",KCl 20 mEq/L
+treatment.potassium.monitoring,治疗.钾补充.监测频率,String,"**建议值**: `每1-2小时`, `每2-4小时`, `血钾稳定后每4-6小时`",每2小时
+
+treatment.bicarbonate.indication,治疗.碳酸氢钠.使用指征,String,"**争议大,不常规推荐**。<br>**可能适应证**: pH<6.9+血流动力学不稳定/高钾血症(>6 mmol/L)。<br>**建议值**: `未使用(pH≥6.9)`, `使用(pH<6.9)`, `使用(高钾血症)`",未使用
+treatment.bicarbonate.dose,治疗.碳酸氢钠.剂量,String,"**剂量**(如使用): 100 mmol碳酸氢钠+20 mEq KCl于400 mL水中,2小时输注。<br>**示例**: `100 mmol NaHCO₃ IV over 2h`, `未使用`",未使用
+
+treatment.phosphate.supplementation,治疗.磷补充,String,"**常规不推荐**。<br>**适应证**: 血磷<0.3 mmol/L+心肌病/呼吸肌无力/溶血。<br>**建议值**: `未补充`, `补充(磷酸钾)`",未补充
+
+monitoring.glucoseFrequency,监测.血糖监测频率,String,"**建议值**: `每1小时(至血糖<14)`, `血糖稳定后每2-4小时`",每1小时
+monitoring.electrolyteFrequency,监测.电解质监测频率,String,"**建议值**: `每2-4小时(至稳定)`, `稳定后每6-8小时`",每2-4小时
+monitoring.abgFrequency,监测.血气监测频率,String,"**建议值**: `每2-4小时(至AG<12,pH>7.30)`, `稳定后1-2次/天`",每2-4小时
+
+resolution.criteria,DKA纠正.达标标准,String,"**DKA纠正标准**(满足以下所有条件):<br>1. 血糖<11.1 mmol/L(200 mg/dL)<br>2. 血清HCO₃⁻≥18 mmol/L<br>3. 静脉pH>7.30<br>4. AG≤12。<br>**建议值**: `已达标`, `部分达标`, `未达标`",已达标
+resolution.timeToResolution,DKA纠正.纠正时间,Number,"从治疗开始到DKA纠正的时间。<br>单位: 小时<br>**通常**: 12-24小时",18
+
+transition.scInsulinStart,过渡治疗.皮下胰岛素启动,String,"**时机**: DKA纠正+患者能进食。<br>**方案**: 皮下速效/短效胰岛素(餐前)+基础胰岛素(每日1-2次)或预混胰岛素。<br>**重叠**: 皮下注射后继续IV胰岛素2-4小时(防止酮症反弹)。<br>**建议值**: `已启动(方案)`, `计划启动`, `仍在IV胰岛素`",已启动(基础-餐时)
+transition.totalDailyDose,过渡治疗.每日胰岛素总量,Number,"TDD(皮下)。<br>单位: U/天<br>**估算**: 0.5-0.8 U/kg/天(1型),0.5-1.0 U/kg/天(2型)",40
+transition.basalBolus,过渡治疗.基础-餐时分配,String,"**基础胰岛素**: TDD的50%<br>**餐时胰岛素**: TDD的50%,三餐分配。<br>**示例**: `基础20U(甘精/地特),餐前各6-7U(门冬/赖脯)`",基础20U;餐时各7U
+
+complications.cerebralEdema,并发症.脑水肿,String,"**罕见但致命(儿童多见)**。<br>**危险因素**: 年龄<5岁,新诊断DM,高BUN,重度酸中毒,过度补液,血糖下降过快。<br>**表现**: 头痛,意识恶化,呕吐,心动过缓,瞳孔改变。<br>**建议值**: `无`, `疑似(需头颅CT)`, `确诊`,无
+complications.akiRequiringDialysis,并发症.急性肾损伤需透析,String,"**建议值**: `无AKI`, `AKI 1-2期(肾前性,可逆)`, `AKI 3期`, `需透析`,无AKI
+complications.ards,并发症.急性呼吸窘迫综合征,String,"**建议值**: `无`, `有(需机械通气)`,无
+complications.thrombosis,并发症.血栓形成,String,"DKA高凝状态。<br>**示例**: `无`, `深静脉血栓`, `肺栓塞`, `脑卒中`, `心肌梗死`",无
+complications.rhabdomyolysis,并发症.横纹肌溶解,String,"**建议值**: `无`, `有(CK升高>5倍,肌红蛋白尿)`,无
+complications.mucormycosis,并发症.毛霉菌病,String,"**罕见但严重**(鼻脑型)。<br>**建议值**: `无`, `疑似(鼻窦炎/眼眶周围症状)`, `确诊`,无
+
+outcome.dischargeCriteria,结局.出院标准,String,"**出院标准**: DKA纠正+皮下胰岛素稳定+能正常进食+患者/家属教育完成。<br>**建议值**: `已出院`, `住院中`,住院中
+outcome.lengthOfStay,结局.住院天数,Number,"住院总天数。<br>单位: 天",
+outcome.icuLengthOfStay,结局.ICU住院天数,Number,"ICU住院天数。<br>单位: 天",
+outcome.finalOutcome,结局.最终结局,String,"**建议值**: `痊愈出院`, `好转出院`, `转院`, `死亡`, `自动出院`",
+outcome.mortality,结局.死亡,String,"**建议值**: `否`, `是`<br>**DKA死亡率**: <1%(发达国家),儿童脑水肿致死多见",否
+
+education.dkaEducation,健康教育.DKA教育,String,"**内容**: 病情日记,胰岛素不能中断,生病日规则(Sick Day Rules),酮体监测,何时就医。<br>**建议值**: `已教育`, `部分教育`, `未教育`,已教育
+education.sickDayRules,健康教育.病情日规则,String,"**要点**: 继续胰岛素(即使不能进食),多饮水,监测血糖/血酮,血酮>1.5或持续呕吐需就医。<br>**建议值**: `已书面告知`, `口头教育`, `未教育`",已书面告知
+education.insulinPump,健康教育.胰岛素泵教育,String,"如使用泵。<br>**建议值**: `不适用`, `已教育(泵故障处理/基础率调整)`, `未教育`",不适用
+
+followUp.endocrinologyReferral,随访.内分泌专科转诊,String,"**建议值**: `已预约`, `建议转诊`, `已在专科随访`, `无需转诊`,已预约
+followUp.nextVisitDate,随访.下次随访日期,Date,出院后随访日期,2025-02-01
+followUp.hba1cPlan,随访.HbA1c复查,String,"**建议值**: `出院后3个月`, `已安排`, `未安排`",出院后3个月
+
+riskFactors.recurrence,复发风险.复发风险评估,String,"**高危因素**: 1型DM青少年,精神心理问题,依从性差,经济困难,既往≥2次DKA。<br>**建议值**: `低风险`, `中风险`, `高风险(需加强教育/心理支持)`,中风险
+
+specialPopulations.pediatric,特殊人群.儿童,String,"**建议值**: `否`, `是(年龄:<18岁)`,否
+specialPopulations.pregnant,特殊人群.妊娠,String,"**妊娠期DKA**: 母胎死亡率高(胎儿>30%),需多学科协作。<br>**建议值**: `否`, `是(孕周:XX周)`,否
+specialPopulations.esrd,特殊人群.终末期肾病,String,"**建议值**: `否`, `是(需调整补液/胰岛素剂量)`",否
+
+clinicianNotes,临床医生备注,String,自由文本备注栏,患者为1型糖尿病青年,自行停用胰岛素3天后出现DKA。已纠正,加强依从性教育和心理支持。
+dataSource,数据来源,String,"**建议值**: `急诊`, `ICU`, `内分泌科`, `转院`,急诊

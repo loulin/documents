@@ -1,0 +1,162 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+examDate,检查日期,String,进行心律失常检查的日期,2025-08-15
+diagnosisDate,初诊日期,String,首次诊断心律失常的日期,2024-10-20
+arrhythmiaType,心律失常类型,String,"心律失常类型。<br>**建议值**: `心房颤动`, `心房扑动`, `室性早搏`, `房性早搏`, `室性心动过速`, `室上性心动过速`, `窦性心动过缓`, `窦性心动过速`, `房室传导阻滞`, `病态窦房结综合征`, `预激综合征`, `多种心律失常`",心房颤动
+
+# 症状
+symptoms.palpitations,症状.心悸,String,"心悸症状。<br>**建议值**: `无`, `偶发`, `频发`, `持续性`",频发
+symptoms.dizziness,症状.头晕,String,"头晕症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度(晕厥前兆)`",轻度
+symptoms.syncope,症状.晕厥,String,"晕厥史。<br>**建议值`: `无`, `1次`, `2-3次`, `>3次`, `近期发作`<br>**警示**: 恶性心律失常征象",无
+symptoms.chestPain,症状.胸痛,String,"胸痛症状。<br>**建议值**: `无`, `轻度`, `心绞痛样`, `典型心绞痛`",无
+symptoms.dyspnea,症状.呼吸困难,String,"呼吸困难。<br>**建议值**: `无`, `活动后`, `静息时`, `夜间阵发性`<br>**快速房颤**: 可致心功能不全",活动后
+symptoms.fatigue,症状.乏力,String,"乏力症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
+symptoms.asymptomatic,症状.无症状,String,"是否无症状(体检发现)。<br>**建议值**: `否`, `是`",否
+
+# 心电图检查
+ecg.heartRate,心电图.心率,Number,"心率。<br>单位: 次/分<br>**正常**: 60-100<br>**心动过缓**: <60<br>**心动过速**: >100",98
+ecg.rhythm,心电图.心律,String,"心律。<br>**建议值**: `窦性心律`, `心房颤动`, `心房扑动`, `交界性心律`, `室性心律`, `心房起搏`, `心室起搏`, `其他`",心房颤动
+ecg.prInterval,心电图.PR间期,Number,"PR间期。<br>单位: ms<br>**正常**: 120-200ms<br>**一度AVB**: >200ms<br>**预激综合征**: <120ms",未测(房颤无P波)
+ecg.qrsDuration,心电图.QRS时限,Number,"QRS波时限。<br>单位: ms<br>**正常**: <120ms<br>**束支传导阻滞**: ≥120ms",95
+ecg.qtInterval,心电图.QT间期,Number,"QT间期。<br>单位: ms",380
+ecg.qtc,心电图.校正QT间期,Number,"校正QT间期(QTc)。<br>单位: ms<br>**正常**: 男<450ms, 女<470ms<br>**长QT综合征**: 男>450, 女>470<br>**短QT**: <340ms",425
+
+# 房颤特异性评估
+afib.type,房颤.房颤类型,String,"房颤类型分类。<br>**建议值**: `初发房颤`, `阵发性房颤(<7天自行转复)`, `持续性房颤(>7天)`, `长程持续性房颤(>1年)`, `永久性房颤`, `不适用`",阵发性房颤(<7天自行转复)
+afib.duration,房颤.房颤病程,Number,"房颤诊断病程。<br>单位: 月",10
+afib.episodeFrequency,房颤.发作频率,String,"房颤发作频率(阵发性)。<br>**建议值**: `<1次/月`, `1-4次/月`, `每周发作`, `几乎每日`, `持续性`",每周发作
+afib.ventricular Rate,房颤.心室率,Number,"房颤时心室率。<br>单位: 次/分<br>**快速房颤**: >100<br>**慢速房颤**: <60",110
+afib.rateControl,房颤.心室率控制,String,"心室率控制状态。<br>**建议值**: `未控制(>110静息)`, `宽松控制(<110)`, `严格控制(<80)`, `过度控制(<60)`",未控制(>110静息)
+afib.chadsvascScore,房颤.CHA₂DS₂-VASc评分,Number,"CHA₂DS₂-VASc卒中风险评分。<br>**评分**: C(充血性心衰1分)、H(高血压1分)、A₂(年龄≥75岁2分)、D(糖尿病1分)、S₂(卒中/TIA史2分)、V(血管病1分)、A(年龄65-74岁1分)、Sc(女性1分)<br>**≥2分**: 推荐抗凝<br>**分值**: 0-9分",3
+afib.hasbledScore,房颤.HAS-BLED评分,Number,"HAS-BLED出血风险评分。<br>**评分**: H(高血压1分)、A(肾肝功能异常各1分)、S(卒中1分)、B(出血史1分)、L(INR不稳1分)、E(老年>65岁1分)、D(药物/酒精各1分)<br>**≥3分**: 高出血风险<br>**分值**: 0-9分",2
+afib.anticoagulation,房颤.抗凝治疗,String,"抗凝治疗状态。<br>**建议值**: `未抗凝`, `华法林`, `达比加群`, `利伐沙班`, `阿哌沙班`, `依度沙班`, `其他`",利伐沙班
+afib.inr,房颤.INR,Number,"国际标准化比值(华法林治疗)。<br>**目标范围**: 2.0-3.0",不适用(NOAC)
+afib.leftAtrialDiameter,房颤.左房内径,Number,"左房内径(超声)。<br>单位: mm<br>**正常**: 男<40mm, 女<38mm<br>**房颤**: 常增大",45
+afib.leftAtrialThrombus,房颤.左房血栓,String,"左房血栓(TEE或CT)。<br>**建议值**: `未检查`, `未见血栓`, `可疑血栓`, `确诊血栓`<br>**左房耳**: 血栓好发部位",未检查
+
+# 室性心律失常
+vt.type,室性心律失常.类型,String,"室性心律失常类型。<br>**建议值**: `室性早搏(PVC)`, `非持续性室速(VT <30秒)`, `持续性室速(VT ≥30秒)`, `室颤(VF)`, `尖端扭转型室速(TdP)`, `不适用`",不适用
+vt.pvcBurden,室性心律失常.室早负荷,Number,"PVC负荷(24小时Holter)。<br>单位: %<br>**频发**: >10%<br>**极频发**: >20%<br>**PVC心肌病风险**: >10-15%",不适用
+vt.pvcMorphology,室性心律失常.室早形态,String,"PVC形态。<br>**建议值**: `单形性`, `多形性`, `二联律`, `三联律`, `成对`, `短阵室速`, `不适用`",不适用
+vt.origin,室性心律失常.起源部位,String,"VT起源部位(如评估)。<br>**建议值**: `右室流出道(RVOT)`, `左室`, `右室`, `特发性`, `器质性心脏病相关`, `不适用`",不适用
+vt.sustainedVt,室性心律失常.持续性室速,String,"持续性VT(≥30秒)。<br>**建议值**: `无`, `有`, `不适用`<br>**危险**: 可致血流动力学障碍、猝死",不适用
+vt.icdImplanted,室性心律失常.ICD植入,String,"植入式心律转复除颤器(ICD)。<br>**建议值**: `未植入`, `已植入`, `计划植入`, `不适用`<br>**适应证**: 恶性室性心律失常、心脏性猝死幸存者",不适用
+
+# 室上性心律失常
+svt.type,室上速.类型,String,"室上性心动过速类型。<br>**建议值**: `房室结折返性心动过速(AVNRT)`, `房室折返性心动过速(AVRT)`, `房性心动过速(AT)`, `窦房结折返性心动过速`, `不适用`",不适用
+svt.episodeFrequency,室上速.发作频率,String,"SVT发作频率。<br>**建议值**: `<1次/年`, `数次/年`, `每月发作`, `频繁发作`, `不适用`",不适用
+svt.episodeDuration,室上速.发作持续时间,String,"单次发作持续时间。<br>**建议值**: `数秒-分钟`, `数分钟-小时`, `>1小时`, `不适用`",不适用
+svt.ablation,室上速.射频消融,String,"射频消融治疗。<br>**建议值**: `未做`, `已成功消融`, `消融失败`, `计划消融`, `不适用`<br>**AVNRT/AVRT**: 消融根治",不适用
+
+# 缓慢性心律失常
+bradycardia.type,缓慢心律失常.类型,String,"缓慢心律失常类型。<br>**建议值**: `窦性心动过缓`, `窦性停搏`, `窦房阻滞`, `一度房室传导阻滞`, `二度I型AVB(文氏)`, `二度II型AVB(莫氏)`, `三度AVB(完全性)`, `病态窦房结综合征`, `不适用`",不适用
+bradycardia.lowestHeartRate,缓慢心律失常.最低心率,Number,"记录到的最低心率(Holter)。<br>单位: 次/分",不适用
+bradycardia.pause,缓慢心律失常.最长间歇,Number,"最长心脏间歇(Holter)。<br>单位: 秒<br>**≥3秒**: 需警惕",不适用
+bradycardia.pacemakerImplanted,缓慢心律失常.起搏器植入,String,"起搏器植入。<br>**建议值**: `未植入`, `已植入`, `计划植入`, `不适用`<br>**适应证**: 症状性心动过缓、高度AVB、三度AVB",不适用
+bradycardia.pacingMode,缓慢心律失常.起搏模式,String,"起搏器模式(如已植入)。<br>**建议值**: `AAI`, `VVI`, `DDD`, `CRT-P`, `CRT-D`, `不适用`",不适用
+
+# 预激综合征
+wpw.present,预激综合征.是否存在,String,"预激综合征(WPW)。<br>**建议值**: `否`, `显性预激`, `隐匿性预激`, `间歇性预激`",否
+wpw.accessoryPathway,预激综合征.旁路位置,String,"旁路位置(如有)。<br>**建议值**: `左侧`, `右侧`, `后间隔`, `其他`, `不适用`",不适用
+wpw.afWithRapidConduction,预激综合征.房颤快速传导,String,"合并房颤时快速传导(危险)。<br>**建议值**: `无房颤`, `房颤慢传导`, `房颤快传导(>250/min)`, `不适用`<br>**快传导**: 室颤风险",不适用
+wpw.ablation,预激综合征.消融治疗,String,"旁路消融治疗。<br>**建议值**: `未做`, `已成功消融`, `计划消融`, `不适用`",不适用
+
+# 24小时Holter监测
+holter.performed,Holter.是否检查,String,"是否行24小时Holter监测。<br>**建议值`: `否`, `是`, `计划做`",是
+holter.totalBeats,Holter.总心搏数,Number,24小时总心搏数,105680
+holter.minHeartRate,Holter.最低心率,Number,"最低心率。<br>单位: 次/分",52
+holter.maxHeartRate,Holter.最高心率,Number,"最高心率。<br>单位: 次/分",145
+holter.avgHeartRate,Holter.平均心率,Number,"平均心率。<br>单位: 次/分",78
+holter.pacCount,Holter.房早数量,Number,房性早搏(PAC)总数,356
+holter.pvcCount,Holter.室早数量,Number,室性早搏(PVC)总数,85
+holter.svtEpisodes,Holter.室上速发作,Number,室上速发作次数,0
+holter.vtEpisodes,Holter.室速发作,Number,室速发作次数,0
+holter.longestPause,Holter.最长间歇,Number,"最长心脏间歇。<br>单位: 秒",2.1
+holter.stSegmentChanges,Holter.ST段改变,String,"ST段压低/抬高。<br>**建议值**: `无`, `ST段压低`, `ST段抬高`, `T波倒置`",无
+holter.hrvAnalysis,Holter.心率变异性,String,"心率变异性(HRV)分析。<br>**建议值**: `正常`, `降低`, `显著降低`<br>**降低**: 自主神经功能异常、猝死风险增加",正常
+
+# 电生理检查
+eps.performed,电生理检查.是否检查,String,"是否行心脏电生理检查(EPS)。<br>**建议值**: `否`, `是`, `计划做`<br>**适应证**: 晕厥原因不明、恶性心律失常、消融术前",否
+eps.findings,电生理检查.检查发现,String,EPS检查发现,未检查
+eps.inducibleArrhythmia,电生理检查.可诱发心律失常,String,"可诱发的心律失常(如检查)。<br>**建议值**: `无`, `室速`, `室颤`, `房颤`, `室上速`, `未检查`",未检查
+
+# 超声心动图
+echo.lvef,超声心动图.左室射血分数,Number,"左室射血分数(LVEF)。<br>单位: %<br>**正常**: ≥50%<br>**轻度降低**: 40-49%<br>**中度降低**: 30-39%<br>**重度降低**: <30%",55
+echo.lvedv,超声心动图.左室舒张末容积,Number,"左室舒张末容积。<br>单位: mL",120
+echo.lvesd,超声心动图.左室收缩末容积,Number,"左室收缩末容积。<br>单位: mL",54
+echo.lvh,超声心动图.左室肥厚,String,"左室肥厚。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+echo.laDiameter,超声心动图.左房内径,Number,"左房内径。<br>单位: mm<br>**正常**: 男<40mm, 女<38mm",45
+echo.valvularDisease,超声心动图.瓣膜病,String,"瓣膜病。<br>**建议值**: `无`, `二尖瓣反流`, `主动脉瓣狭窄`, `其他瓣膜病`, `多瓣膜病`",轻度二尖瓣反流
+echo.pericardialEffusion,超声心动图.心包积液,String,"心包积液。<br>**建议值**: `无`, `少量`, `中量`, `大量`",无
+echo.wallMotionAbnormality,超声心动图.室壁运动异常,String,"室壁运动异常。<br>**建议值**: `无`, `节段性运动减弱`, `弥漫性运动减弱`",无
+
+# 基础疾病
+underlying.coronaryArteryDisease,基础疾病.冠心病,String,"冠状动脉疾病。<br>**建议值**: `无`, `稳定性心绞痛`, `不稳定性心绞痛`, `陈旧性心肌梗死`, `急性心肌梗死`, `冠脉介入术后`",陈旧性心肌梗死
+underlying.heartFailure,基础疾病.心力衰竭,String,"心力衰竭。<br>**建议值**: `无`, `HFrEF(LVEF<40%)`, `HFpEF(LVEF≥50%)`, `HFmrEF(LVEF 40-49%)`<br>**房颤**: 可致或加重心衰",无
+underlying.cardiomyopathy,基础疾病.心肌病,String,"心肌病。<br>**建议值**: `无`, `扩张型心肌病`, `肥厚型心肌病`, `致心律失常性右室心肌病`, `限制性心肌病`, `PVC诱导的心肌病`",无
+underlying.valvularHeartDisease,基础疾病.瓣膜性心脏病,String,"瓣膜性心脏病。<br>**建议值**: `无`, `二尖瓣病变`, `主动脉瓣病变`, `三尖瓣病变`, `多瓣膜病`",无
+underlying.hypertension,基础疾病.高血压,String,"高血压。<br>**建议值**: `无`, `1级`, `2级`, `3级`, `控制良好`, `控制不佳`",2级(控制不佳)
+underlying.diabetes,基础疾病.糖尿病,String,"糖尿病。<br>**建议值**: `无`, `1型`, `2型`, `糖尿病前期`",2型
+underlying.thyroid,基础疾病.甲状腺疾病,String,"甲状腺疾病。<br>**建议值**: `无`, `甲亢`, `甲减`, `亚临床甲亢`, `亚临床甲减`<br>**甲亢**: 可诱发房颤",无
+underlying.osa,基础疾病.阻塞性睡眠呼吸暂停,String,"OSA。<br>**建议值**: `无`, `轻度`, `中度`, `重度`, `未评估`<br>**OSA**: 房颤危险因素",未评估
+underlying.ckd,基础疾病.慢性肾脏病,String,"慢性肾脏病。<br>**建议值**: `无`, `G1`, `G2`, `G3a`, `G3b`, `G4`, `G5`",无
+
+# 药物治疗
+medications.betaBlocker,药物.β受体阻滞剂,String,"β受体阻滞剂。<br>**建议值**: `未使用`, `美托洛尔`, `比索洛尔`, `卡维地洛`, `阿替洛尔`, `其他`<br>**作用**: 控制心室率、抗心律失常",美托洛尔
+medications.betaBlockerDose,药物.β阻滞剂剂量,String,β受体阻滞剂剂量,美托洛尔 47.5mg bid
+medications.ccb,药物.钙通道阻滞剂,String,"非二氢吡啶类CCB。<br>**建议值**: `未使用`, `维拉帕米`, `地尔硫䓬`, `其他`<br>**房颤**: 控制心室率",未使用
+medications.digoxin,药物.地高辛,String,"地高辛。<br>**建议值**: `未使用`, `使用中`<br>**房颤**: 辅助控制心室率",未使用
+medications.aad,药物.抗心律失常药,String,"抗心律失常药(AAD)。<br>**建议值**: `未使用`, `I类(钠通道阻滞剂)`, `III类(胺碘酮/索他洛尔/多非利特)`, `其他`",III类(胺碘酮)
+medications.aadType,药物.抗心律失常药类型,String,"AAD具体药物。<br>**Ia**: 奎尼丁<br>**Ic**: 普罗帕酮、氟卡尼<br>**III**: 胺碘酮、索他洛尔、多非利特",胺碘酮 200mg qd
+medications.anticoagulant,药物.抗凝药,String,"抗凝药物。<br>**建议值**: `未使用`, `华法林`, `达比加群(Pradaxa)`, `利伐沙班(Xarelto)`, `阿哌沙班(Eliquis)`, `依度沙班`<br>**房颤**: CHA₂DS₂-VASc≥2推荐抗凝",利伐沙班 20mg qd
+medications.antiplatelet,药物.抗血小板,String,"抗血小板药。<br>**建议值**: `未使用`, `阿司匹林`, `氯吡格雷`, `双联抗血小板`<br>**注**: 抗凝优于抗血小板",阿司匹林
+medications.acei,药物.ACEI/ARB,String,"ACEI/ARB。<br>**建议值**: `未使用`, `ACEI`, `ARB`, `ARNI`<br>**心衰**: 减少房颤发生",ACEI
+
+# 介入治疗
+intervention.cardioversion,介入治疗.电复律,String,"电复律。<br>**建议值**: `未做`, `成功复律`, `复律失败`, `复律后复发`, `计划复律`<br>**持续性房颤**: 可尝试复律",未做
+intervention.ablation,介入治疗.导管消融,String,"导管消融治疗。<br>**建议值**: `未做`, `已成功消融`, `消融后复发`, `计划消融`<br>**房颤**: 肺静脉隔离<br>**SVT/VT**: 射频消融",未做
+intervention.ablationDate,介入治疗.消融日期,String,消融治疗日期(如已做),未做
+intervention.ablationType,介入治疗.消融类型,String,"消融类型(如已做)。<br>**建议值**: `肺静脉隔离(PVI)`, `房室结消融`, `室速消融`, `SVT消融`, `不适用`",不适用
+intervention.deviceImplant,介入治疗.装置植入,String,"心脏装置植入。<br>**建议值**: `无`, `起搏器`, `ICD`, `CRT-P`, `CRT-D`, `左心耳封堵器`",无
+
+# 卒中/血栓栓塞史
+thromboembolism.stroke,血栓栓塞.卒中史,String,"卒中/TIA史。<br>**建议值**: `无`, `缺血性卒中`, `TIA(短暂性脑缺血发作)`, `出血性卒中`, `多次卒中`<br>**房颤**: 卒中风险增加5倍",无
+thromboembolism.systemicEmbolism,血栓栓塞.系统性栓塞,String,"系统性栓塞(除卒中外)。<br>**建议值**: `无`, `肢体动脉栓塞`, `内脏栓塞`, `其他`",无
+thromboembolism.bleeding,血栓栓塞.出血史,String,"出血病史。<br>**建议值**: `无`, `消化道出血`, `颅内出血`, `其他部位出血`<br>**抗凝**: 出血风险评估",无
+
+# 生活方式
+lifestyle.caffeine,生活方式.咖啡因,String,"咖啡因摄入。<br>**建议值**: `不摄入`, `少量(<200mg/日)`, `中量(200-400mg/日)`, `大量(>400mg/日)`<br>**争议**: 可能诱发心律失常",中量(200-400mg/日)
+lifestyle.alcohol,生活方式.饮酒,String,"饮酒情况。<br>**建议值**: `不饮酒`, `少量饮酒`, `中量饮酒`, `过量饮酒(>2杯/日)`<br>**假日心脏综合征**: 饮酒诱发房颤",少量饮酒
+lifestyle.smoking,生活方式.吸烟,String,"吸烟状况。<br>**建议值**: `不吸烟`, `已戒烟`, `吸烟`<br>**危害**: 增加房颤和恶性心律失常风险",已戒烟
+lifestyle.exercise,生活方式.运动,String,"运动情况。<br>**建议值**: `不运动`, `轻度运动`, `中度运动`, `高强度运动/职业运动员`<br>**注**: 高强度运动可增加房颤风险",中度运动
+lifestyle.stress,生活方式.精神压力,String,"精神压力。<br>**建议值**: `低`, `中`, `高`<br>**应激`: 可诱发心律失常",中
+
+# 风险评估
+risk.suddenCardiacDeath,风险评估.心脏性猝死风险,String,"心脏性猝死(SCD)风险。<br>**建议值**: `低风险`, `中风险`, `高风险`<br>**高风险**: 恶性室性心律失常、LVEF<35%、HCM、遗传性离子通道病",低风险
+risk.strokeRisk,风险评估.卒中风险,String,"卒中风险(房颤)。<br>**建议值**: `低风险(0-1分)`, `中风险(2分)`, `高风险(≥3分)`, `不适用`<br>**依据**: CHA₂DS₂-VASc评分",中风险(3分)
+risk.bleedingRisk,风险评估.出血风险,String,"抗凝出血风险。<br>**建议值**: `低风险(<3分)`, `高风险(≥3分)`, `不适用`<br>**依据**: HAS-BLED评分",低风险(2分)
+risk.tachycardiomyopathy,风险评估.快速心律失常性心肌病,String,"快速心律失常性心肌病风险。<br>**建议值**: `无风险`, `有风险`, `已发生`<br>**定义**: 长期快速心室率致LVEF降低",有风险
+
+# 治疗策略
+treatmentStrategy,治疗策略,String,"总体治疗策略。<br>**房颤**: 节律控制 vs 心室率控制<br>**建议值**: `节律控制(复律+维持窦律)`, `心室率控制`, `观察随访`, `装置治疗`, `综合治疗`",心室率控制+抗凝
+treatmentGoals,治疗目标,String,具体治疗目标,"1. 控制心室率60-100/分; 2. CHA₂DS₂-VASc≥2予抗凝预防卒中; 3. 控制症状; 4. 治疗基础心脏病"
+
+# 随访计划
+followUp.frequency,随访.随访频率,String,"随访频率。<br>**建议值**: `2周`, `1月`, `3月`, `6月`, `按需随访`<br>**新诊断/调药**: 频繁随访<br>**稳定期**: 3-6月",1月
+followUp.monitoring,随访.监测项目,String,随访监测项目,"心电图、Holter(必要时)、超声心动图(年度)、INR(华法林)、肾功能电解质、甲状腺功能(胺碘酮)"
+followUp.nextVisit,随访.下次就诊日期,String,计划下次就诊日期,2025-09-15
+
+# 患者教育
+patientEducation.diseaseKnowledge,患者教育.疾病知识,String,疾病知识教育,已告知房颤病因、卒中风险、治疗方案
+patientEducation.medicationCompliance,患者教育.用药依从性,String,用药依从性教育,已强调抗凝药规律服用重要性，漏服处理方法
+patientEducation.lifestyleModification,患者教育.生活方式,String,生活方式建议,已建议限制酒精咖啡因、戒烟、规律作息、避免过度劳累
+patientEducation.warningSymptoms,患者教育.警示症状,String,需警惕的症状,已告知晕厥、胸痛、呼吸困难加重、出血征象需立即就诊
+
+# 综合评估
+overallSeverity,总体严重程度,String,"心律失常严重程度。<br>**建议值**: `轻度(偶发、无症状)`, `中度(症状轻、血流动力学稳定)`, `重度(症状重或血流动力学不稳定)`, `危及生命(恶性心律失常)`",中度
+qualityOfLife,生活质量,String,"生活质量评估。<br>**建议值**: `良好`, `一般`, `差`",一般
+clinicalRecommendation,临床建议,String,综合临床建议,"阵发性房颤，CHA₂DS₂-VASc 3分(卒中中风险)，HAS-BLED 2分(出血低风险)。建议: 1.利伐沙班20mg qd抗凝; 2.美托洛尔控制心室率目标<110/分; 3.胺碘酮维持窦律; 4.控制基础疾病(高血压); 5.生活方式干预; 6.1月后复查心电图评估疗效"
+
+# 报告信息
+reportDate,报告日期,String,报告日期,2025-08-15
+attendingPhysician,主治医师,String,主治医师,张医师心内科
+urgentFlag,紧急标识,String,"是否紧急。<br>**建议值**: `否`, `是`<br>**紧急**: 持续性室速、室颤、症状性缓慢心律失常、血流动力学不稳定",否

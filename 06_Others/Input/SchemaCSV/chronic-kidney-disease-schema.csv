@@ -1,0 +1,174 @@
+字段名 (英文),字段名 (中文),数据类型,描述,示例
+diagnosisDate,诊断日期,String,首次诊断慢性肾脏病的日期,2022-05-10
+examDate,检查日期,String,本次检查日期,2025-08-15
+ckdDuration,CKD病程,Number,"CKD病程。<br>单位: 年",3.3
+currentAge,当前年龄,Number,"患者当前年龄。<br>单位: 岁",58
+
+# CKD分期
+ckdStage,CKD分期,String,"CKD分期(KDIGO)。<br>**G1**: eGFR≥90 + 肾损伤证据<br>**G2**: eGFR 60-89 + 肾损伤证据<br>**G3a**: eGFR 45-59<br>**G3b**: eGFR 30-44<br>**G4**: eGFR 15-29<br>**G5**: eGFR<15或透析<br>**建议值**: `G1`, `G2`, `G3a`, `G3b`, `G4`, `G5`, `G5D(透析)`",G3a
+ckdStageProgression,CKD分期变化,String,"CKD分期变化趋势。<br>**建议值**: `稳定`, `进展`, `好转`, `快速进展(eGFR下降>5/年)`",稳定
+albuminuriaStage,白蛋白尿分期,String,"白蛋白尿分期(KDIGO)。<br>**A1**: UACR <30 mg/g (正常或轻度升高)<br>**A2**: UACR 30-300 mg/g (中度升高/微量白蛋白尿)<br>**A3**: UACR >300 mg/g (重度升高/大量白蛋白尿)<br>**建议值**: `A1`, `A2`, `A3`",A2
+kdoqiRiskCategory,KDOQI风险分类,String,"KDOQI风险分类(基于eGFR+白蛋白尿)。<br>**建议值**: `低风险(绿色)`, `中度风险(黄色)`, `高风险(橙色)`, `极高风险(红色)`<br>**G1A1/G2A1**: 低风险<br>**G3aA2/G3bA1**: 高风险<br>**G4/G5或A3**: 极高风险",高风险
+
+# 肾功能指标
+serumCreatinine,血肌酐,Number,"血清肌酐。<br>单位: μmol/L<br>**参考范围**: 男44-133, 女70-106",156
+bloodUreaNitrogen,血尿素氮,Number,"血尿素氮(BUN)。<br>单位: mmol/L<br>**参考范围**: 2.9-8.2",10.5
+egfr,肾小球滤过率,Number,"估算肾小球滤过率(eGFR)。<br>单位: mL/min/1.73m²<br>**计算**: CKD-EPI公式<br>**分期**: G1(≥90), G2(60-89), G3a(45-59), G3b(30-44), G4(15-29), G5(<15)",52
+egfrFormula,eGFR计算公式,String,"eGFR计算公式。<br>**建议值**: `CKD-EPI`, `MDRD`, `Cockcroft-Gault`, `CKD-EPI肌酐-胱抑素C联合`<br>**推荐**: CKD-EPI",CKD-EPI
+cystatin,胱抑素C,Number,"胱抑素C(如检测)。<br>单位: mg/L<br>**参考范围**: 0.51-1.09<br>**优势**: 不受肌肉量影响",1.35
+egfrCystatinC,eGFR(胱抑素C),Number,"基于胱抑素C的eGFR(如检测)。<br>单位: mL/min/1.73m²",48
+
+# 尿白蛋白
+uacr,尿白蛋白肌酐比,Number,"尿白蛋白/肌酐比值(UACR)。<br>单位: mg/g或mg/mmol<br>**正常**: <30 mg/g<br>**微量白蛋白尿**: 30-300 mg/g<br>**大量白蛋白尿**: >300 mg/g",85
+uacrCategory,UACR分类,String,"UACR分类。<br>**建议值**: `正常(<30)`, `微量白蛋白尿(30-300)`, `大量白蛋白尿(>300)`, `肾病综合征范围(>3500)`",微量白蛋白尿(30-300)
+urineAlbumin24h,24小时尿白蛋白,Number,"24小时尿白蛋白定量(如检测)。<br>单位: mg/24h<br>**正常**: <30 mg/24h",126
+urineProtein24h,24小时尿蛋白,Number,"24小时尿蛋白定量。<br>单位: g/24h<br>**正常**: <0.15 g/24h",0.52
+proteinuriaCategory,蛋白尿分类,String,"蛋白尿分类。<br>**建议值**: `无或微量(<0.15)`, `轻度(0.15-0.5)`, `中度(0.5-3.5)`, `大量/肾病范围(>3.5)`",中度(0.5-3.5)
+
+# 尿常规
+urinalysis.protein,尿常规.尿蛋白,String,"尿蛋白定性。<br>**建议值**: `阴性(-)`, `微量(±)`, `1+`, `2+`, `3+`, `4+`",2+
+urinalysis.blood,尿常规.尿潜血,String,"尿潜血。<br>**建议值**: `阴性(-)`, `微量(±)`, `1+`, `2+`, `3+`, `4+`",1+
+urinalysis.rbc,尿常规.红细胞,Number,"尿红细胞计数。<br>单位: 个/HP<br>**正常**: <3个/HP",8
+urinalysis.rbcMorphology,尿常规.红细胞形态,String,"红细胞形态。<br>**建议值**: `正常形态`, `畸形红细胞(>80%提示肾小球源性)`, `混合形态`",畸形红细胞
+urinalysis.wbc,尿常规.白细胞,Number,"尿白细胞计数。<br>单位: 个/HP",5
+urinalysis.casts,尿常规.管型,String,"尿管型。<br>**建议值**: `无`, `透明管型`, `颗粒管型`, `红细胞管型`, `白细胞管型`, `蜡样管型`<br>**红细胞管型**: 提示肾小球肾炎",颗粒管型
+
+# 电解质和酸碱平衡
+electrolytes.sodium,电解质.血钠,Number,"血清钠。<br>单位: mmol/L<br>**参考范围**: 135-145",138
+electrolytes.potassium,电解质.血钾,Number,"血清钾。<br>单位: mmol/L<br>**参考范围**: 3.5-5.5<br>**CKD**: 易发生高钾血症",4.8
+electrolytes.chloride,电解质.血氯,Number,"血清氯。<br>单位: mmol/L<br>**参考范围**: 98-108",102
+electrolytes.calcium,电解质.血钙,Number,"血清总钙。<br>单位: mmol/L<br>**参考范围**: 2.1-2.7",2.15
+electrolytes.correctedCalcium,电解质.校正钙,Number,"白蛋白校正钙。<br>单位: mmol/L<br>**公式**: 总钙 + 0.02 × (40 - 白蛋白g/L)",2.25
+electrolytes.phosphorus,电解质.血磷,Number,"血清磷。<br>单位: mmol/L<br>**参考范围**: 0.8-1.5<br>**CKD**: 易升高",1.65
+electrolytes.magnesium,电解质.血镁,Number,"血清镁。<br>单位: mmol/L<br>**参考范围**: 0.7-1.0",0.85
+
+acidBase.bicarbonate,酸碱.碳酸氢根,Number,"血碳酸氢根(HCO3-)。<br>单位: mmol/L<br>**参考范围**: 22-28<br>**代谢性酸中毒**: <22",20
+acidBase.ph,酸碱.pH值,Number,"动脉血pH(如检测)。<br>**参考范围**: 7.35-7.45",7.32
+acidBase.anionGap,酸碱.阴离子间隙,Number,"阴离子间隙(AG)。<br>**计算**: Na - (Cl + HCO3)<br>**参考范围**: 8-16 mmol/L",14
+
+# 贫血指标
+anemia.hemoglobin,贫血.血红蛋白,Number,"血红蛋白。<br>单位: g/L<br>**参考范围**: 男130-175, 女115-150<br>**肾性贫血诊断**: 男<130, 女<120",105
+anemia.hematocrit,贫血.红细胞压积,Number,"红细胞压积(HCT)。<br>单位: %<br>**参考范围**: 男40-50, 女35-45",32
+anemia.mcv,贫血.平均红细胞体积,Number,"MCV。<br>单位: fL<br>**参考范围**: 82-100<br>**肾性贫血**: 正细胞正色素性",88
+anemia.ironStatus.ferritin,贫血.铁蛋白,Number,"血清铁蛋白。<br>单位: ng/mL或μg/L<br>**CKD目标**: >100 ng/mL(非透析), >200 ng/mL(透析)",85
+anemia.ironStatus.transferrinSaturation,贫血.转铁蛋白饱和度,Number,"转铁蛋白饱和度(TSAT)。<br>单位: %<br>**CKD目标**: >20%(非透析), >20%(透析)",18
+anemia.epo,贫血.促红细胞生成素,Number,"内源性EPO水平(如检测)。<br>单位: mU/mL<br>**肾性贫血**: EPO相对不足",35
+anemia.anemiaType,贫血.贫血类型,String,"贫血类型。<br>**建议值**: `无贫血`, `肾性贫血`, `缺铁性贫血`, `混合性贫血`, `其他`",肾性贫血
+
+# 矿物质和骨代谢(CKD-MBD)
+ckdMbd.pth,CKD-MBD.甲状旁腺激素,Number,"全段甲状旁腺激素(iPTH)。<br>单位: pg/mL<br>**CKD 3-5期目标**: 根据分期不同<br>**G3**: 35-70<br>**G4**: 70-110<br>**G5**: 150-300",185
+ckdMbd.pthTarget,CKD-MBD.PTH目标范围,String,"根据CKD分期的PTH目标范围",G3a: 35-70 pg/mL
+ckdMbd.vitaminD,CKD-MBD.25羟维生素D,Number,"25(OH)维生素D。<br>单位: ng/mL或nmol/L<br>**充足**: ≥30 ng/mL<br>**不足**: 20-29<br>**缺乏**: <20",18
+ckdMbd.vitaminD3Active,CKD-MBD.1,25双羟维生素D,Number,"1,25(OH)2维生素D(活性维生素D，如检测)。<br>单位: pg/mL",25
+ckdMbd.alkalinePhosphatase,CKD-MBD.碱性磷酸酶,Number,"碱性磷酸酶(ALP)。<br>单位: U/L<br>**参考范围**: 35-125<br>**骨转换标志**: 升高提示高转换骨病",156
+ckdMbd.bap,CKD-MBD.骨特异性碱性磷酸酶,Number,"骨特异性碱性磷酸酶(BAP，如检测)。<br>单位: μg/L",未检测
+ckdMbd.calciumPhosphateProduct,CKD-MBD.钙磷乘积,Number,"钙磷乘积(Ca×P)。<br>单位: mg²/dL²<br>**目标**: <55<br>**高值**: 血管钙化风险",52
+ckdMbd.boneDensity,CKD-MBD.骨密度,String,"骨密度检查(如做)。<br>**建议值**: `正常`, `骨量减少`, `骨质疏松`, `未检测`",未检测
+
+# 心血管相关
+cardiovascular.bloodPressure.systolic,心血管.收缩压,Number,"收缩压。<br>单位: mmHg<br>**CKD目标**: <130 mmHg",145
+cardiovascular.bloodPressure.diastolic,心血管.舒张压,Number,"舒张压。<br>单位: mmHg<br>**CKD目标**: <80 mmHg",88
+cardiovascular.bpControl,心血管.血压控制,String,"血压控制状态。<br>**建议值**: `达标(<130/80)`, `未达标`, `低血压风险`",未达标
+cardiovascular.lvh,心血管.左心室肥厚,String,"左心室肥厚(超声心动图)。<br>**建议值**: `无`, `轻度`, `中度`, `重度`, `未检测`<br>**CKD**: 常见并发症",轻度
+cardiovascular.ecg,心血管.心电图,String,"心电图异常。<br>**建议值**: `正常`, `左室肥厚`, `T波改变`, `心律失常`, `其他`",左室肥厚
+cardiovascular.bnp,心血管.BNP/NT-proBNP,Number,"B型利钠肽(如检测)。<br>单位: pg/mL<br>**升高**: 心力衰竭、容量负荷",未检测
+
+# 糖尿病相关(如糖尿病肾病)
+diabetes.present,糖尿病.是否合并糖尿病,String,"是否合并糖尿病。<br>**建议值**: `否`, `1型糖尿病`, `2型糖尿病`",2型糖尿病
+diabetes.duration,糖尿病.糖尿病病程,Number,"糖尿病病程。<br>单位: 年",12
+diabetes.hba1c,糖尿病.HbA1c,Number,"糖化血红蛋白。<br>单位: %<br>**CKD合并糖尿病目标**: 7.0-8.0% (避免低血糖)",7.5
+diabetes.fastingGlucose,糖尿病.空腹血糖,Number,"空腹血糖。<br>单位: mmol/L",7.2
+diabetes.diabeticRetinopathy,糖尿病.糖尿病视网膜病变,String,"糖尿病视网膜病变。<br>**建议值**: `无`, `非增殖期`, `增殖期`, `未检查`<br>**注**: DR常与DN并存",非增殖期
+
+# 病因诊断
+etiology,病因,String,"CKD病因。<br>**建议值**: `糖尿病肾病`, `高血压肾病`, `慢性肾小球肾炎`, `IgA肾病`, `多囊肾`, `梗阻性肾病`, `药物性肾病`, `狼疮性肾炎`, `痛风性肾病`, `不明原因`, `其他`",糖尿病肾病
+etiologyConfidence,病因诊断置信度,String,"病因诊断可信度。<br>**建议值**: `确诊(有病理)`, `临床诊断(高度可能)`, `可能`, `不明`",临床诊断(高度可能)
+renalBiopsy,肾活检,String,"是否行肾活检。<br>**建议值**: `未做`, `已做`, `计划做`<br>**适应证**: 病因不明、非糖尿病肾病怀疑、急性进展",未做
+biopsyPathology,活检病理,String,"肾活检病理诊断(如做)",未做
+
+# 并发症
+complications.cvd,并发症.心血管疾病,String,"心血管疾病。<br>**建议值**: `无`, `冠心病`, `心力衰竭`, `脑卒中`, `外周血管病`, `多种`<br>**CKD**: 心血管疾病是主要死因",冠心病
+complications.aki,并发症.急性肾损伤,String,"急性肾损伤(AKI)发作史。<br>**建议值**: `无`, `既往有AKI`, `近期AKI(<3月)`, `AKI on CKD`",无
+complications.uremia,并发症.尿毒症症状,String,"尿毒症症状。<br>**建议值**: `无`, `乏力`, `食欲减退`, `恶心呕吐`, `瘙痒`, `多种症状`<br>**G4-G5**: 可出现",轻度乏力
+complications.fluidOverload,并发症.容量负荷,String,"容量负荷/水肿。<br>**建议值**: `无`, `轻度水肿`, `中度水肿`, `重度水肿/肺水肿`",轻度水肿
+complications.hyperkalemia,并发症.高钾血症,String,"高钾血症发作史。<br>**建议值**: `无`, `偶发`, `频发`, `近期发作`",无
+complications.metabolicAcidosis,并发症.代谢性酸中毒,String,"代谢性酸中毒。<br>**建议值**: `无`, `轻度`, `中度`, `重度`<br>**G4-G5**: 常见",轻度
+
+# 肾脏影像学
+imaging.ultrasound.kidneySize.right,影像.超声.右肾大小,String,"右肾大小。<br>单位: cm×cm×cm<br>**正常**: 长径9-12cm<br>**萎缩**: <9cm",10.2×5.1×4.8
+imaging.ultrasound.kidneySize.left,影像.超声.左肾大小,String,"左肾大小。<br>单位: cm×cm×cm",10.5×5.3×5.0
+imaging.ultrasound.echogenicity,影像.超声.回声,String,"肾实质回声。<br>**建议值**: `正常回声`, `回声增强(慢性肾病)`, `不均匀回声`",回声增强
+imaging.ultrasound.corticomedullaryDifferentiation,影像.超声.皮髓质分界,String,"皮髓质分界。<br>**建议值**: `清晰`, `模糊`, `消失`<br>**慢性肾病**: 分界模糊或消失",模糊
+imaging.ultrasound.hydronephrosis,影像.超声.肾积水,String,"肾积水。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+imaging.ultrasound.cysts,影像.超声.囊肿,String,"肾囊肿。<br>**建议值**: `无`, `单纯性囊肿`, `多发囊肿`, `多囊肾`",无
+imaging.ultrasound.stones,影像.超声.结石,String,"肾结石。<br>**建议值**: `无`, `单发`, `多发`",无
+
+# 肾脏替代治疗
+rrt.status,肾脏替代治疗.状态,String,"肾脏替代治疗状态。<br>**建议值**: `未接受RRT`, `血液透析`, `腹膜透析`, `肾移植`, `计划RRT`",未接受RRT
+rrt.indication,肾脏替代治疗.指征,String,"RRT启动指征(如G4-G5)。<br>**绝对指征**: 尿毒症症状、严重酸中毒、高钾、肺水肿、eGFR<10<br>**建议值**: `无指征`, `有相对指征`, `有绝对指征`",无指征
+rrt.dialysisDate,肾脏替代治疗.透析开始日期,String,透析开始日期(如已透析),未透析
+rrt.dialysisFrequency,肾脏替代治疗.透析频率,String,"透析频率(如已透析)。<br>**血透**: 通常3次/周<br>**腹透**: CAPD持续或APD夜间",未透析
+rrt.vascularAccess,肾脏替代治疗.血管通路,String,"血管通路(如血透)。<br>**建议值**: `动静脉内瘘`, `中心静脉置管`, `移植血管`, `未建立`, `不适用`",不适用
+rrt.transplantStatus,肾脏替代治疗.肾移植状态,String,"肾移植状态(如适用)。<br>**建议值**: `等待移植`, `已移植`, `移植后CKD`, `不适用`",不适用
+
+# 药物治疗
+medications.acei,药物.ACEI,String,"血管紧张素转换酶抑制剂(ACEI)。<br>**建议值**: `未使用`, `使用中`, `不耐受`, `禁忌`<br>**肾保护**: ACEI/ARB延缓CKD进展",使用中
+medications.aceiName,药物.ACEI名称,String,ACEI药物名称,培哚普利 4mg qd
+medications.arb,药物.ARB,String,"血管紧张素受体拮抗剂(ARB)。<br>**建议值**: `未使用`, `使用中`, `不耐受`, `禁忌`",未使用
+medications.sglt2i,药物.SGLT2抑制剂,String,"SGLT2抑制剂(新型肾保护药)。<br>**建议值**: `未使用`, `使用中`, `不适用`<br>**适应证**: CKD合并糖尿病或心衰，eGFR≥20",使用中
+medications.sglt2iName,药物.SGLT2i名称,String,SGLT2抑制剂名称,达格列净 10mg qd
+medications.mra,药物.盐皮质激素受体拮抗剂,String,"MRA(螺内酯/依普利酮/非奈利酮)。<br>**建议值**: `未使用`, `使用中`, `高钾禁用`<br>**新证据**: 非奈利酮肾保护作用",未使用
+medications.diuretics,药物.利尿剂,String,"利尿剂使用。<br>**建议值**: `未使用`, `噻嗪类`, `袢利尿剂`, `联合利尿剂`<br>**G4-G5**: 需袢利尿剂",袢利尿剂(呋塞米)
+medications.phosphateBinders,药物.磷结合剂,String,"磷结合剂。<br>**建议值**: `未使用`, `碳酸钙`, `醋酸钙`, `司维拉姆`, `碳酸镧`<br>**G3b-G5**: 控制高磷血症",碳酸钙
+medications.activeVitaminD,药物.活性维生素D,String,"活性维生素D。<br>**建议值**: `未使用`, `骨化三醇`, `阿法骨化醇`, `帕立骨化醇`<br>**G3-G5**: 控制PTH升高",骨化三醇
+medications.esa,药物.促红细胞生成素,String,"ESA(促红素)治疗。<br>**建议值**: `未使用`, `重组人EPO`, `达依泊汀α`, `罗沙司他(口服)`, `其他`<br>**适应证**: Hb<100 g/L",未使用
+medications.ironSupplement,药物.铁剂,String,"铁剂补充。<br>**建议值**: `未使用`, `口服铁剂`, `静脉铁剂`<br>**指征**: 铁蛋白<100或TSAT<20%",口服铁剂
+medications.statins,药物.他汀类,String,"他汀类降脂药。<br>**建议值**: `未使用`, `使用中`<br>**CKD**: 推荐使用，降低心血管风险",使用中
+medications.antiplatelet,药物.抗血小板,String,"抗血小板药物。<br>**建议值**: `未使用`, `阿司匹林`, `氯吡格雷`, `联合抗血小板`",阿司匹林
+medications.sodiumBicarbonate,药物.碳酸氢钠,String,"碳酸氢钠。<br>**建议值**: `未使用`, `使用中`<br>**适应证**: HCO3<22 mmol/L",使用中
+
+# 生活方式
+lifestyle.diet,生活方式.饮食,String,"饮食管理。<br>**建议值**: `未限制`, `低蛋白饮食`, `低盐饮食`, `低钾饮食`, `低磷饮食`, `综合饮食管理`<br>**CKD**: 推荐低蛋白(0.6-0.8g/kg/d)",综合饮食管理
+lifestyle.proteinIntake,生活方式.蛋白质摄入,Number,"蛋白质摄入量。<br>单位: g/kg/日<br>**CKD 3-5期**: 0.6-0.8 g/kg/日",0.8
+lifestyle.sodiumIntake,生活方式.钠摄入,Number,"钠摄入量。<br>单位: g/日<br>**目标**: <5g/日(食盐)",5
+lifestyle.potassiumRestriction,生活方式.钾限制,String,"钾摄入限制。<br>**建议值**: `不限制`, `适度限制`, `严格限制`<br>**G4-G5或高钾**: 需限制",适度限制
+lifestyle.fluidRestriction,生活方式.液体限制,String,"液体摄入限制。<br>**建议值**: `不限制`, `限制(<1500mL/日)`, `严格限制`<br>**G5或容量负荷**: 需限制",不限制
+lifestyle.exercise,生活方式.运动,String,"运动情况。<br>**建议值**: `不运动`, `轻度运动`, `中度运动`, `规律运动`<br>**CKD**: 鼓励适度运动",中度运动
+lifestyle.smoking,生活方式.吸烟,String,"吸烟状况。<br>**建议值**: `不吸烟`, `已戒烟`, `吸烟`<br>**危害**: 加速CKD进展",已戒烟
+
+# 疾病进展风险
+progression.riskFactors,疾病进展.危险因素,String,"CKD进展危险因素。<br>**包括**: 蛋白尿、高血压未控、糖尿病、肥胖、吸烟、AKI史、NSAIDs使用",蛋白尿、糖尿病
+progression.egfrSlope,疾病进展.eGFR下降速度,Number,"eGFR年下降速度。<br>单位: mL/min/1.73m²/年<br>**正常老化**: 0.5-1<br>**快速进展**: >5",2.5
+progression.progressionRate,疾病进展.进展速度,String,"进展速度评估。<br>**建议值**: `缓慢进展`, `中速进展`, `快速进展(>5/年)`",中速进展
+progression.predictedEsrd,疾病进展.预测ESRD时间,String,"预测进展至ESRD(G5)时间(如可估算)",约5-8年
+
+# 肾毒性风险
+nephrotoxicity.nsaids,肾毒性.NSAIDs使用,String,"非甾体抗炎药使用。<br>**建议值**: `不使用`, `偶尔使用`, `经常使用`<br>**风险**: 加重肾损伤，CKD应避免",不使用
+nephrotoxicity.contrast,肾毒性.造影剂暴露,String,"造影剂暴露史。<br>**建议值**: `无`, `近期暴露(<1月)`, `既往暴露`<br>**风险**: 造影剂肾病",无
+nephrotoxicity.antibiotics,肾毒性.肾毒性抗生素,String,"肾毒性抗生素使用(氨基糖苷、万古霉素等)。<br>**建议值**: `不使用`, `使用中(需监测)`, `既往使用`",不使用
+nephrotoxicity.herbals,肾毒性.中草药,String,"中草药/保健品使用。<br>**建议值**: `不使用`, `使用中`, `既往使用`<br>**风险**: 某些中草药肾毒性(马兜铃酸等)",不使用
+
+# 综合评估
+overallRiskLevel,综合风险等级,String,"综合风险等级(心血管+肾脏)。<br>**建议值**: `低风险`, `中风险`, `高风险`, `极高风险`<br>**依据**: KDOQI风险分类+心血管危险因素",高风险
+qualityOfLife,生活质量,String,"生活质量评估。<br>**建议值**: `良好`, `一般`, `差`",一般
+treatmentGoals,治疗目标,String,个体化治疗目标,"1. 延缓CKD进展(eGFR下降<3/年); 2. 血压<130/80; 3. UACR降低30%以上; 4. HbA1c 7-8%; 5. 预防并发症"
+
+# 随访计划
+followUp.frequency,随访.随访频率,String,"随访频率建议。<br>**G1-G2**: 6-12月<br>**G3a**: 3-6月<br>**G3b-G4**: 1-3月<br>**G5**: 1-3月或更频<br>**建议值**: `1月`, `2-3月`, `3-6月`, `6-12月`",3-6月
+followUp.monitoring,随访.监测项目,String,随访需监测的项目,"eGFR、肌酐、UACR、电解质、HbA1c、血压、贫血指标、PTH、钙磷"
+followUp.nextVisit,随访.下次就诊日期,String,计划下次就诊日期,2025-11-15
+followUp.nephrologistReferral,随访.肾内科转诊,String,"肾内科转诊建议。<br>**建议值**: `不需要`, `建议转诊`, `已转诊`, `定期随诊中`<br>**转诊指征**: G3b及以上、进展快、蛋白尿重、病因不明",已转诊
+
+# 患者教育
+patientEducation.diseaseKnowledge,患者教育.疾病知识,String,是否已进行CKD疾病知识教育,已告知CKD分期、病因、进展风险、治疗目标
+patientEducation.dietaryEducation,患者教育.饮食教育,String,是否已进行饮食教育,已详细指导低蛋白、低盐、低钾、低磷饮食
+patientEducation.medicationCompliance,患者教育.用药依从性,String,用药依从性教育,已强调长期规律用药的重要性
+patientEducation.avoidNephrotoxins,患者教育.避免肾毒性物质,String,避免肾毒性物质教育,已告知避免NSAIDs、某些中草药、造影剂风险
+
+# 临床建议
+clinicalRecommendation,临床建议,String,综合临床建议,"CKD 3a期(糖尿病肾病)，继续ACEI+SGLT2i肾保护治疗，严格控制血压(<130/80)和血糖(HbA1c 7-8%)，低蛋白饮食(0.8g/kg/d)，监测eGFR和UACR，3-6月复查肾功能，目标延缓CKD进展至透析"
+
+# 报告信息
+reportDate,报告日期,String,报告日期,2025-08-15
+attendingPhysician,主治医师,String,主治医师,王医师肾内科
+urgentFlag,紧急标识,String,"是否紧急。<br>**建议值**: `否`, `是`<br>**紧急**: 严重高钾、肺水肿、尿毒症危象",否

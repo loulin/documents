@@ -1,0 +1,152 @@
+字段名(英文),字段名(中文),数据类型,描述,示例
+patientId,患者ID,String,患者唯一标识符,P123456
+admissionDate,入院日期,Date,PE发生/确诊日期,2025-01-15
+admissionTime,入院时间,String,发病/就诊时间,16:30
+encounterType,就诊类型,String,"**建议值**: `急诊`, `门诊`, `住院期间发生`, `ICU`",急诊
+
+clinicalPresentation.onset,临床表现.起病方式,String,"**建议值**: `突然起病(<1小时)`, `急性起病(数小时)`, `亚急性(数天)`, `慢性(数周-数月,慢性血栓栓塞性肺动脉高压)`",突然起病
+clinicalPresentation.dyspnea,临床表现.呼吸困难,String,"**最常见症状(80%)**。<br>**建议值**: `无`, `轻度(活动时)`, `中度(轻微活动时)`, `重度(休息时)`,重度
+clinicalPresentation.chestPain,临床表现.胸痛,String,"胸膜性胸痛(深呼吸/咳嗽加重)或心绞痛样胸痛。<br>**建议值**: `无`, `胸膜性胸痛`, `胸骨后压榨感`, `非特异性胸痛`",胸膜性胸痛
+clinicalPresentation.cough,临床表现.咳嗽,String,"**建议值**: `无`, `干咳`, `咳痰`, `咯血(肺梗死)`",干咳
+clinicalPresentation.hemoptysis,临床表现.咯血,String,"**建议值**: `无`, `痰中带血`, `少量咯血`, `大咯血(罕见)`<br>**咯血**: 提示肺梗死",痰中带血
+clinicalPresentation.syncope,临床表现.晕厥,String,"**建议值**: `无`, `晕厥(提示血流动力学不稳定,大面积PE)`, `头晕/黑矇`",无
+clinicalPresentation.palpitations,临床表现.心悸,String,"**建议值**: `无`, `有`,有
+clinicalPresentation.anxiety,临床表现.焦虑,String,"濒死感。<br>**建议值**: `无`, `有`,有
+
+clinicalPresentation.legSwelling,临床表现.下肢肿胀,String,"DVT体征。<br>**建议值**: `无`, `单侧下肢肿胀`, `双侧下肢肿胀`",单侧下肢肿胀
+clinicalPresentation.legPain,临床表现.下肢疼痛,String,"DVT体征。<br>**建议值**: `无`, `小腿疼痛/压痛`, `大腿疼痛`",小腿疼痛
+
+physicalExam.hemodynamicStatus,体格检查.血流动力学状态,String,"**建议值**: `稳定`, `不稳定(休克/持续低血压)`<br>**低血压**: 收缩压<90mmHg或下降≥40mmHg持续>15分钟",稳定
+physicalExam.bloodPressure,体格检查.血压,String,"血压。<br>单位: mmHg",110/70
+physicalExam.heartRate,体格检查.心率,Number,"心率。<br>单位: 次/分<br>**窦性心动过速**: 常见(>100)",115
+physicalExam.respiratoryRate,体格检查.呼吸频率,Number,"呼吸频率。<br>单位: 次/分<br>**>20**: 呼吸急促",26
+physicalExam.temperature,体格检查.体温,Number,"体温。<br>单位: ℃<br>**低热**: 常见",37.8
+physicalExam.spo2,体格检查.SpO2,Number,"脉搏血氧饱和度(室内空气)。<br>单位: %<br>**<95%**: 低氧血症",92
+
+physicalExam.jugularVenousDistension,体格检查.颈静脉怒张,String,"**建议值**: `无`, `有(右心衰)`",无
+physicalExam.lungExam,体格检查.肺部听诊,String,"**建议值**: `正常`, `呼吸音减弱`, `湿啰音`, `胸膜摩擦音(肺梗死)`, `哮鸣音`,呼吸音减弱
+physicalExam.cardiacExam,体格检查.心脏听诊,String,"**建议值**: `正常`, `P2亢进(肺动脉高压)`, `三尖瓣反流杂音`, `S3奔马律(右心衰)`, `心动过速`",P2亢进
+physicalExam.lowerExtremity,体格检查.下肢体征,String,"**DVT体征**。<br>**示例**: `无异常`, `右小腿肿胀+压痛`, `Homans征阳性(背屈足踝时小腿疼痛)`, `腓肠肌压痛`, `双侧对称无肿胀`",右小腿肿胀+压痛
+
+riskFactors.recentSurgery,危险因素.近期手术,String,"**最近3个月**。<br>**高危手术**: 骨科大手术(髋/膝关节置换),腹盆腔手术,神经外科手术,肿瘤手术。<br>**建议值**: `无`, `高危手术(具体,XX天前)`, `低危手术`,无
+riskFactors.recentTrauma,危险因素.近期创伤,String,"**建议值**: `无`, `下肢/骨盆骨折`, `脊髓损伤`, `其他严重创伤`,无
+riskFactors.immobilization,危险因素.制动,String,"**建议值**: `无`, `卧床≥3天`, `长途旅行(>4小时,经济舱综合征)`, `石膏固定`, `偏瘫`,长途旅行(飞行8小时)
+riskFactors.activeCancer,危险因素.活动性肿瘤,String,"**恶性肿瘤**: VTE风险↑4-7倍。<br>**高危肿瘤**: 胰腺癌,胃癌,脑癌,卵巢癌,肺癌,淋巴瘤,骨髓增生性疾病。<br>**建议值**: `无`, `确诊肿瘤未治疗`, `正在化疗/放疗`, `姑息治疗`, `肿瘤病史(已治愈>5年)`",正在化疗
+riskFactors.previousVTE,危险因素.既往VTE史,String,"**最强危险因素**,复发风险显著增加。<br>**建议值**: `无`, `既往DVT`, `既往PE`, `既往DVT+PE`, `复发性VTE(≥2次)`",无
+riskFactors.thrombophilia,危险因素.易栓症,String,"**遗传性**: FV Leiden突变,凝血酶原G20210A突变,AT III缺乏,PC/PS缺乏。<br>**获得性**: 抗磷脂综合征。<br>**建议值**: `无`, `已知易栓症(具体)`, `未检测`, `家族史阳性(疑似)`",未检测
+
+riskFactors.pregnancy,危险因素.妊娠/产褥期,String,"**妊娠**: VTE风险↑5倍,**产后6周**: 风险最高。<br>**建议值**: `非妊娠`, `妊娠期(孕周XX周)`, `产后6周内`, `产后>6周`",非妊娠
+riskFactors.hormonalTherapy,危险因素.激素治疗,String,"**口服避孕药**: 风险↑2-4倍,**激素替代治疗**: 风险↑2倍。<br>**建议值**: `无`, `口服避孕药`, `激素替代治疗`, `他莫昔芬(乳腺癌治疗)`, `其他激素`",口服避孕药
+
+riskFactors.medicalConditions,危险因素.基础疾病,String,"**示例**: `心力衰竭`, `COPD`, `炎症性肠病`, `肾病综合征`, `骨髓增生性疾病(真性红细胞增多症/原发性血小板增多症)`, `阵发性睡眠性血红蛋白尿`, `无特殊基础病`",心力衰竭
+riskFactors.obesity,危险因素.肥胖,String,"**建议值**: `BMI<30`, `BMI 30-40`, `BMI>40`,BMI<30
+riskFactors.smoking,危险因素.吸烟,String,"**建议值**: `从不吸烟`, `已戒烟`, `现吸烟`,现吸烟
+riskFactors.age,危险因素.年龄,Number,"年龄。<br>单位: 岁<br>**>60岁**: VTE风险↑",58
+riskFactors.varicoseVeins,危险因素.静脉曲张,String,"**建议值**: `无`, `有`,有
+riskFactors.centralVenousCatheter,危险因素.中心静脉置管,String,"**建议值**: `无`, `有(留置时间XX天)`,无
+
+wellsScore.clinicalDVT,Wells评分.临床提示DVT,Number,"下肢肿胀和静脉触痛。<br>**3分**: 是<br>**0分**: 否",3
+wellsScore.alternativeDiagnosis,Wells评分.替代诊断可能性,Number,"PE的替代诊断可能性小于或等于PE。<br>**-2分**: 否(有其他更可能诊断)<br>**0分**: 是",0
+wellsScore.heartRateOver100,Wells评分.心率>100,Number,"**1.5分**: 是<br>**0分**: 否",1.5
+wellsScore.immobilizationOrSurgery,Wells评分.制动或手术,Number,"最近4周内制动≥3天或手术。<br>**1.5分**: 是<br>**0分**: 否",0
+wellsScore.previousVTE,Wells评分.既往VTE,Number,"**1.5分**: 是<br>**0分**: 否",0
+wellsScore.hemoptysis,Wells评分.咯血,Number,"**1分**: 是<br>**0分**: 否",0
+wellsScore.malignancy,Wells评分.恶性肿瘤,Number,"治疗中或6个月内治疗或姑息治疗。<br>**1分**: 是<br>**0分**: 否",0
+wellsScore.totalScore,Wells评分.总分,Number,"Wells评分总分。<br>**≤4分**: PE可能性小<br>**>4分**: PE可能性大<br>**两分法**: ≤4分 vs >4分<br>**三分法**: 0-1分(低危),2-6分(中危),≥7分(高危)",4.5
+wellsScore.probability,Wells评分.临床概率,String,"**建议值**: `PE可能性小(≤4分)`, `PE可能性大(>4分)`, `低危(0-1)`, `中危(2-6)`, `高危(≥7)`",PE可能性大
+
+genevaScore.performed,Geneva改良评分.是否计算,String,"**建议值**: `已计算`, `未计算(使用Wells评分)`,未计算
+genevaScore.totalScore,Geneva改良评分.总分,Number,"改良Geneva评分(0-22分)。<br>**0-3**: 低度临床可能性<br>**4-10**: 中度<br>**≥11**: 高度",
+genevaScore.probability,Geneva改良评分.临床概率,String,"**建议值**: `低度(0-3)`, `中度(4-10)`, `高度(≥11)`",
+
+dDimer.value,D-二聚体.数值,Number,"血浆D-二聚体。<br>单位: μg/L(FEU)或mg/L<br>**<500 μg/L**: 阴性,可排除低-中度临床可能性PE<br>**≥500**: 阳性,需影像学检查<br>**年龄调整阈值**: >50岁,阈值=年龄×10 μg/L",1850
+dDimer.method,D-二聚体.检测方法,String,"**建议值**: `ELISA`, `胶乳凝集法`, `免疫比浊法`, `POCT`,ELISA
+dDimer.interpretation,D-二聚体.解读,String,"**建议值**: `阴性(低-中度临床概率可排除PE)`, `阳性(需影像学检查)`, `阳性但使用年龄调整阈值后阴性`,阳性
+
+abg.ph,动脉血气.pH,Number,"动脉血pH。<br>**正常**: 7.35-7.45<br>**呼吸性碱中毒**: 常见(过度通气)",7.48
+abg.pao2,动脉血气.PaO2,Number,"动脉血氧分压。<br>单位: mmHg<br>**正常**: 80-100<br>**<80**: 低氧血症",68
+abg.paco2,动脉血气.PaCO2,Number,"动脉血二氧化碳分压。<br>单位: mmHg<br>**正常**: 35-45<br>**<35**: 低碳酸血症(过度通气)",30
+abg.aaDO2,动脉血气.A-aDO2,Number,"肺泡-动脉氧分压差 = PAO₂ - PaO₂ = (FiO₂×(大气压-47) - PaCO₂/0.8) - PaO₂。<br>单位: mmHg<br>**正常**: <15(年轻人),<预期值(预期A-aDO₂=2.5+0.21×年龄)<br>**增大**: V/Q失配(PE)",38
+
+labs.troponin,实验室.肌钙蛋白,String,"cTnI/cTnT(心肌损伤标志物)。<br>**升高**: 右心应变,提示预后差。<br>**建议值**: `正常`, `轻度升高`, `中度升高`, `明显升高`,轻度升高
+labs.bnp,实验室.BNP/NT-proBNP,Number,"脑钠肽。<br>单位: pg/mL<br>**升高**: 右心功能不全,预后差<br>**NT-proBNP>500或BNP>90**: 提示右心应变",650
+
+labs.wbc,实验室.白细胞,Number,"白细胞计数。<br>单位: ×10⁹/L",11.5
+labs.hemoglobin,实验室.血红蛋白,Number,"血红蛋白。<br>单位: g/L",140
+labs.platelet,实验室.血小板,Number,"血小板计数。<br>单位: ×10⁹/L",250
+labs.creatinine,实验室.肌酐,Number,"血清肌酐。<br>单位: μmol/L<br>**升高**: 肾功能不全,影响抗凝药选择",88
+
+ecg.findings,心电图.主要表现,String,"**经典三联征(S1Q3T3)**(仅20-30%)。<br>**常见表现**: 窦性心动过速(最常见),右束支传导阻滞(完全或不完全),肺型P波,V1-V4 T波倒置(右心应变),I导联S波加深+III导联Q波+III导联T波倒置。<br>**示例**: `窦性心动过速`, `S1Q3T3`, `右束支传导阻滞`, `V1-V4 T波倒置`, `正常ECG(不能排除PE)`",窦性心动过速;V1-V4 T波倒置
+
+chestXray.findings,胸部X线.主要表现,String,"**胸片**: 常不特异,主要用于排除其他诊断(气胸/肺炎)。<br>**PE征象**: Westermark征(局部肺纹理稀疏),Hampton驼峰(楔形阴影,肺梗死),肺动脉扩张,胸腔积液。<br>**建议值**: `正常(40%)`, `非特异性改变`, `Westermark征`, `Hampton驼峰`, `胸腔积液`, `肺不张`, `排除气胸/肺炎`",非特异性改变
+
+ctpa.date,CTPA.检查日期,Date,CT肺动脉造影检查日期,2025-01-15
+ctpa.performed,CTPA.是否完成,String,"**CTPA**: PE诊断金标准。<br>**建议值**: `已完成`, `未完成(禁忌症/技术原因)`, `计划检查`",已完成
+ctpa.quality,CTPA.图像质量,String,"**建议值**: `优`, `良`, `可`, `差(需重复或选择其他检查)`",良
+ctpa.result,CTPA.结果,String,"**建议值**: `阴性(无PE)`, `阳性(确诊PE)`, `不确定(需进一步检查)`",阳性
+
+ctpa.embolusLocation,CTPA.栓子位置,String,"**示例**: `主肺动脉`, `左/右主肺动脉`, `肺动脉主干分叉处(鞍状栓子)`, `叶动脉(右上叶/右中叶/右下叶/左上叶/左下叶)`, `段动脉`, `亚段动脉(孤立亚段PE,临床意义有争议)`",右下叶肺动脉
+ctpa.bilateral,CTPA.双侧,String,"**建议值**: `单侧`, `双侧`,双侧
+ctpa.thrombusBurden,CTPA.栓子负荷,String,"**Qanadli评分**(0-40分,评估栓塞严重程度)。<br>**建议值**: `轻度(<25%)`, `中度(25-50%)`, `重度(>50%)`, `未量化`,中度
+ctpa.rvRvRatio,CTPA.RV/LV比值,Number,"右心室/左心室最大径比值(4腔心切面)。<br>**>0.9**: 右心扩大,提示预后差<br>**>1.0**: 右心功能不全",1.15
+ctpa.contrastreflux,CTPA.下腔静脉/肝静脉造影剂反流,String,"**建议值**: `无`, `有(提示右心衰/三尖瓣反流)`",有
+
+ctpa.incidentalFindings,CTPA.其他发现,String,"**示例**: `肺梗死(楔形实变)`, `胸腔积液`, `肺动脉高压(肺动脉扩大>29mm)`, `纵隔淋巴结肿大`, `肺结节(需随访)`, `无其他阳性发现`",肺梗死;少量胸腔积液
+
+vteLowerExtremity.performed,下肢静脉超声.是否完成,String,"**适应证**: 确诊PE后寻找栓子来源,疑似DVT。<br>**建议值**: `已完成`, `未完成`, `计划检查`",已完成
+vteLowerExtremity.result,下肢静脉超声.结果,String,"**建议值**: `阴性(无DVT)`, `阳性(确诊DVT)`<br>**PE患者**: 50-70%合并DVT",阳性
+vteLowerExtremity.location,下肢静脉超声.DVT部位,String,"**近端DVT**: 腘静脉及以上(股静脉/髂静脉),高危。<br>**远端DVT**: 小腿肌间静脉,复发风险较低。<br>**示例**: `无DVT`, `右侧腘静脉+股静脉血栓`, `左侧小腿肌间静脉血栓`, `双侧股静脉血栓`",右侧腘静脉+股静脉血栓
+
+echocardiography.performed,超声心动图.是否完成,String,"**适应证**: 评估右心功能,血流动力学不稳定PE,中危PE风险分层。<br>**建议值**: `已完成`, `未完成`, `计划检查`",已完成
+echocardiography.rvDilation,超声心动图.右室扩大,String,"**建议值**: `无`, `轻度`, `中度`, `重度`<br>**RV扩大**: 预后差",中度
+echocardiography.rvDysfunction,超声心动图.右室功能不全,String,"**McConnell征**: RV游离壁运动减弱+心尖部运动正常(PE特征性表现)。<br>**TAPSE**: <16mm提示RV功能不全。<br>**建议值**: `无`, `有(McConnell征)`, `有(TAPSE减低)`, `右室运动普遍减弱`",有(McConnell征)
+echocardiography.trRegurgitation,超声心动图.三尖瓣反流,String,"**建议值**: `无/微量`, `轻度`, `中度`, `重度`,中度
+echocardiography.rvsp,超声心动图.右室收缩压,Number,"估测肺动脉收缩压。<br>单位: mmHg<br>**>40**: 肺动脉高压",55
+echocardiography.ivsSeptum,超声心动图.室间隔运动,String,"**室间隔矛盾运动**: 右心负荷过重。<br>**建议值**: `正常`, `扁平`, `矛盾运动(向左心室运动)`,矛盾运动
+echocardiography.thrombus,超声心动图.右心腔血栓,String,"**建议值**: `未见`, `右房血栓`, `右室血栓`, `肺动脉内血栓(罕见,预后极差)`",未见
+
+ventilationPerfusion.performed,通气灌注扫描.是否完成,String,"**V/Q扫描**: CTPA禁忌(肾功能不全/对比剂过敏/妊娠)时的替代检查。<br>**建议值**: `已完成`, `未完成`,未完成
+ventilationPerfusion.result,通气灌注扫描.结果,String,"**PISAPED标准**:<br>**正常**: 排除PE<br>**高概率**: 诊断PE(敏感性92%,特异性87%)<br>**非高概率**: 需进一步检查<br>**建议值**: `正常`, `高概率PE`, `中概率`, `低概率`, `非诊断性`, `未做`",未做
+
+riskStratification.severity,危险分层.严重程度,String,"**ESC 2019分类**:<br>**高危PE**: 休克/持续低血压(死亡率>15%)<br>**中危PE**: 血流动力学稳定+右心功能不全/心肌损伤(死亡率3-15%)<br>**低危PE**: 无右心功能不全,无心肌损伤(死亡率<1%)<br>**建议值**: `高危PE`, `中高危PE`, `中低危PE`, `低危PE`",中高危PE
+riskStratification.pesi,危险分层.PESI评分,Number,"肺栓塞严重指数(Pulmonary Embolism Severity Index,0-30+分)。<br>**I类(≤65)**: 极低危,30天死亡率0-1.6%<br>**II类(66-85)**: 低危,1.7-3.5%<br>**III类(86-105)**: 中危,3.2-7.1%<br>**IV类(106-125)**: 高危,4.0-11.4%<br>**V类(>125)**: 极高危,10-24.5%",
+riskStratification.pesiClass,危险分层.PESI分级,String,"**建议值**: `I类`, `II类`, `III类`, `IV类`, `V类`",
+riskStratification.simplifiedPESI,危险分层.简化PESI,Number,"sPESI(0-6分): 年龄>80岁,癌症,心肺疾病,心率≥110,收缩压<100,SpO2<90(各1分)。<br>**0分**: 低危,30天死亡率1%<br>**≥1分**: 非低危,10.9%",2
+
+treatment.initialOxygen,治疗.氧疗,String,"**建议值**: `不需要氧疗(SpO2>90%)`, `鼻导管吸氧`, `面罩吸氧`, `高流量吸氧`, `机械通气`",鼻导管吸氧
+treatment.hemodynamicSupport,治疗.血流动力学支持,String,"**高危PE**: 液体复苏,血管活性药物。<br>**建议值**: `不需要`, `液体复苏`, `去甲肾上腺素`, `多巴胺`, `ECMO(极重症)`,不需要
+
+treatment.anticoagulation.initial,治疗.抗凝.初始治疗,String,"**初始抗凝**(确诊后或高度怀疑时立即启动):<br>**肠道外抗凝**: 低分子肝素(依诺肝素/那曲肝素),磺达肝癸钠,普通肝素IV(高危PE/溶栓前/需快速逆转)<br>**口服直接抗凝药**: 利伐沙班,阿哌沙班(前3周需加倍剂量)<br>**示例**: `依诺肝素1mg/kg bid sc`, `利伐沙班15mg bid×3周`, `普通肝素IV(APTT 1.5-2.5倍)`, `磺达肝癸钠(按体重)`",依诺肝素1mg/kg bid sc
+treatment.anticoagulation.longTerm,治疗.抗凝.长期治疗,String,"**长期抗凝**(至少3个月):<br>**DOAC**(首选): 利伐沙班,阿哌沙班,达比加群,依度沙班<br>**维生素K拮抗剂**: 华法林(INR 2-3)<br>**示例**: `利伐沙班20mg qd(3周后)`, `阿哌沙班5mg bid(3周后)`, `华法林(INR 2-3)`, `LMWH长期(肿瘤相关VTE)`",利伐沙班20mg qd
+treatment.anticoagulation.duration,治疗.抗凝.疗程,String,"**疗程**:<br>**可逆诱因(手术/创伤)**: 3个月<br>**无明显诱因/肿瘤相关**: 至少3-6个月,可能需延长/无限期<br>**复发性VTE/易栓症**: 延长/终身<br>**建议值**: `3个月`, `6个月`, `延长至12个月`, `无限期`, `待评估`,3个月
+
+treatment.anticoagulation.contraindication,治疗.抗凝.禁忌症,String,"**绝对禁忌**: 活动性出血,近期颅内出血/神经外科手术,严重血小板减少(<50×10⁹/L)。<br>**相对禁忌**: 近期大手术/创伤,消化道溃疡,严重肾功能不全,严重高血压。<br>**建议值**: `无禁忌症`, `有禁忌症(具体)`, `相对禁忌(权衡利弊)`",无禁忌症
+
+treatment.thrombolysis.indication,治疗.溶栓.指征,String,"**溶栓适应证**: 高危PE(休克/持续低血压)。<br>**中危PE**: 个体化决策(如病情恶化)。<br>**禁忌证**: 颅内出血史,缺血性卒中<3个月,活动性出血,近期大手术(<3周),主动脉夹层。<br>**建议值**: `符合指征`, `不符合指征(低-中危PE)`, `有禁忌症`, `已溶栓`",不符合指征
+treatment.thrombolysis.agent,治疗.溶栓.药物,String,"**溶栓药物**:<br>- **rt-PA(阿替普酶)**: 100mg IV 2小时,或50mg IV推注<br>- **尿激酶**: 4400 IU/kg IV推注+4400 IU/kg/h×12h<br>- **链激酶**: 250000 IU IV 30分钟+100000 IU/h×12-24h<br>**建议值**: `未溶栓`, `rt-PA`, `尿激酶`, `链激酶`",未溶栓
+treatment.thrombolysis.outcome,治疗.溶栓.效果,String,"**建议值**: `未溶栓`, `症状改善`, `血流动力学改善`, `无明显改善`, `并发症(出血)`,未溶栓
+
+treatment.embolectomy,治疗.外科取栓/介入治疗,String,"**适应证**: 高危PE+溶栓禁忌/溶栓失败,中高危PE+右心功能恶化。<br>**方法**: 导管介入取栓(AngioJet/Penumbra),外科肺动脉切开取栓,ECMO支持。<br>**建议值**: `未行`, `导管介入取栓`, `外科取栓`, `计划手术`,未行
+
+treatment.ivcFilter.indication,治疗.下腔静脉滤器.指征,String,"**IVC滤器适应证**(不推荐常规使用):<br>1. 抗凝绝对禁忌<br>2. 充分抗凝下VTE复发<br>3. 可回收滤器: 近期大手术+DVT。<br>**建议值**: `无指征`, `符合指征`, `已置入(永久性)`, `已置入(可回收,XX天)`, `已取出`",无指征
+
+complications.recurrentPE,并发症.复发性PE,String,"**建议值**: `首次PE`, `复发性PE(第X次)`,首次PE
+complications.majorBleeding,并发症.大出血,String,"抗凝/溶栓相关出血。<br>**大出血**: 致命性,颅内,需输血≥2U,Hb下降≥2g/dL。<br>**建议值**: `无`, `大出血(颅内/消化道/其他)`, `临床相关非大出血`, `轻微出血`,无
+complications.hit,并发症.肝素诱导血小板减少,String,"HIT(肝素治疗5-10天后血小板<150或下降>50%)。<br>**建议值**: `无`, `疑似HIT(需检测HIT抗体)`, `确诊HIT(改用阿加曲班/磺达肝癸钠)`",无
+complications.cteph,并发症.慢性血栓栓塞性肺动脉高压,String,"CTEPH(PE后3个月仍有症状+肺动脉高压)。<br>**建议值**: `不适用(急性期)`, `随访中未发现`, `疑似(需右心导管)`, `确诊CTEPH`,不适用
+complications.postthrombotic,并发症.血栓后综合征,String,"DVT后遗症(下肢肿胀/疼痛/色素沉着/溃疡)。<br>**建议值**: `不适用`, `无`, `轻度PTS`, `重度PTS`,不适用
+
+prognosis.mortality,预后.死亡,String,"**建议值**: `否`, `是(PE直接导致)`, `是(其他原因)`,否
+prognosis.outcome,预后.结局,String,"**建议值**: `治愈出院`, `好转出院`, `转院`, `住院治疗中`, `死亡`,好转出院
+prognosis.lengthOfStay,预后.住院天数,Number,"住院天数。<br>单位: 天<br>**低危PE**: 可考虑门诊治疗或早期出院",7
+
+followUp.plan,随访.随访计划,String,"**示例**: `出院后2-4周门诊复查`, `3个月后评估是否延长抗凝`, `监测INR(华法林)`, `评估出血风险`, `肿瘤相关VTE长期抗凝`, `CTEPH筛查(持续症状)`",出院后2-4周门诊复查
+followUp.anticoagMonitoring,随访.抗凝监测,String,"**华法林**: 每周INR至稳定,后每月1次<br>**DOAC**: 肾功能/肝功能监测<br>**建议值**: `INR监测`, `肾功能监测`, `无需监测(DOAC+肾功能正常)`, `已停药`",肾功能监测
+followUp.imaging,随访.影像学随访,String,"**建议值**: `不需要常规影像学随访`, `3-6个月超声心动图(评估肺动脉高压)`, `3个月CTPA(如持续症状)`, `已安排`,不需要常规影像学随访
+
+prevention.mobilization,预防.早期活动,String,"**建议值**: `已开始早期活动`, `卧床(血流动力学不稳定)`, `逐步活动`,已开始早期活动
+prevention.compression,预防.压力袜,String,"弹力袜(预防PTS,PE急性期不推荐)。<br>**建议值**: `未使用`, `已使用(预防PTS)`,未使用
+prevention.secondaryProphylaxis,预防.二级预防,String,"长期抗凝,避免危险因素。<br>**建议值**: `已教育(停用激素/减重/活动/避免长时间制动)`, `未教育`,已教育
+
+clinicianNotes,临床医生备注,String,自由文本备注栏,患者为58岁女性,长途飞行后出现突发呼吸困难+胸痛。CTPA确诊双侧叶动脉PE,合并右侧近端DVT。中高危PE(RV扩大+肌钙蛋白轻度升高)。已启动依诺肝素抗凝,病情稳定,后续转利伐沙班长期治疗3个月。已停用口服避孕药。
+dataSource,数据来源,String,"**建议值**: `急诊`, `住院`, `ICU`, `门诊(疑似PE)`, `住院期间并发PE`",急诊

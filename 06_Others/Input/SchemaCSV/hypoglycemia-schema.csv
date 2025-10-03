@@ -1,0 +1,129 @@
+字段名(英文),字段名(中文),数据类型,描述,示例
+patientId,患者ID,String,患者唯一标识符,P123456
+eventDate,事件日期,Date,低血糖事件发生日期,2025-01-15
+eventTime,事件时间,String,低血糖发生时间,03:30
+eventType,事件类型,String,"**建议值**: `单次低血糖事件`, `反复低血糖评估`, `严重低血糖`, `无症状性低血糖`, `夜间低血糖`, `运动相关低血糖`",严重低血糖
+
+classification.level,分级.低血糖水平,String,"**ADA 2023分级**:<br>**1级(警戒值)**: 葡萄糖3.0-3.9 mmol/L(54-70 mg/dL),需采取行动<br>**2级(临床显著)**: 葡萄糖<3.0 mmol/L(<54 mg/dL),严重低血糖风险<br>**3级(严重)**: 认知障碍,需外界帮助,无特定血糖阈值<br>**建议值**: `1级`, `2级`, `3级(严重)`",3级(严重)
+classification.symptomatic,分级.症状性低血糖,String,"**建议值**: `有症状`, `无症状(未察觉)`, `症状不典型`",有症状
+classification.nocturnal,分级.夜间低血糖,String,"**建议值**: `否`, `是(00:00-06:00)`, `不详`",是
+classification.recurrent,分级.反复低血糖,String,"过去1周内低血糖频率。<br>**建议值**: `单次事件`, `2-3次/周`, `≥4次/周(频繁)`, `每日多次`",单次事件
+
+glucose.lowestValue,血糖.最低血糖值,Number,"记录的最低血糖值。<br>单位: mmol/L<br>**<3.9**: 低血糖<br>**<3.0**: 显著低血糖<br>**<2.8**: 严重低血糖",2.3
+glucose.lowestValueMgDl,血糖.最低血糖值(mg/dL),Number,"最低血糖值。<br>单位: mg/dL",41
+glucose.measurementMethod,血糖.测量方法,String,"**建议值**: `毛细血管血糖(SMBG)`, `CGM实时数据`, `CGM回顾性数据`, `静脉血糖(实验室)`, `急诊快速血糖`, `未测量(仅症状)`",毛细血管血糖
+glucose.cgmAlert,血糖.CGM低血糖预警,String,"如使用CGM。<br>**建议值**: `不适用`, `有预警但未采取行动`, `预警后及时处理`, `无预警(设置阈值过低/关闭)`, `无CGM`",不适用
+
+symptoms.autonomic,症状.自主神经症状,String,"**肾上腺素能反应**(血糖<3.9时)。<br>**示例**: `心悸`, `颤抖`, `出汗`, `饥饿感`, `焦虑/紧张`, `面色苍白`, `无自主神经症状`",心悸;出汗;颤抖
+symptoms.neuroglycopenic,症状.神经性低血糖症状,String,"**中枢神经系统功能障碍**(血糖<3.0时)。<br>**示例**: `意识模糊`, `注意力不集中`, `言语困难`, `视物模糊`, `头晕`, `行为异常`, `嗜睡`, `昏迷`, `癫痫发作`, `偏瘫(可误诊为卒中)`, `无神经症状`",意识模糊;癫痫发作
+symptoms.nonspecific,症状.非特异性症状,String,"**示例**: `恶心`, `头痛`, `疲劳`, `无力`, `无非特异症状`",头痛
+symptoms.noSymptoms,症状.无症状性低血糖,String,"**未察觉低血糖**(Impaired Awareness of Hypoglycemia, IAH)。<br>**建议值**: `有症状`, `无症状(未察觉)`, `症状减轻(部分未察觉)`<br>**IAH**: 反复低血糖导致自主神经反应阈值下降",无症状
+
+timing.relationToMeal,时机.与进餐关系,String,"**建议值**: `空腹(餐前)`, `餐后1-2小时`, `餐后3-5小时(晚期餐后低血糖)`, `夜间(睡眠中)`, `不确定`",空腹
+timing.relationToExercise,时机.与运动关系,String,"**建议值**: `运动中`, `运动后0-12小时`, `运动后12-24小时(延迟性)`, `与运动无关`",运动后12-24小时
+timing.relationToAlcohol,时机.与饮酒关系,String,"**建议值**: `饮酒后6-24小时内`, `与饮酒无关`",与饮酒无关
+
+severity.consciousnessLevel,严重程度.意识水平,String,"**建议值**: `清醒`, `嗜睡`, `意识模糊`, `昏迷`, `癫痫发作`",昏迷
+severity.assistanceRequired,严重程度.需外界帮助,String,"**严重低血糖定义**: 需他人帮助恢复。<br>**建议值**: `自行处理`, `需提醒但可自行进食`, `需他人喂食`, `需静脉葡萄糖/胰高糖素`,需静脉葡萄糖
+severity.motorFunction,严重程度.运动功能,String,"**建议值**: `正常`, `震颤/不协调`, `肢体无力`, `癫痫发作`, `去大脑强直`",癫痫发作
+
+treatment.oralGlucose,处理.口服葡萄糖,String,"**15-15法则**: 15g快速碳水化合物(葡萄糖片3-4片/果汁150mL/蜂蜜1汤匙),15分钟后复测。<br>**建议值**: `未使用(无法口服)`, `使用(剂量)`,未使用
+treatment.glucagon,处理.胰高糖素,String,"**适应证**: 无法口服/昏迷。<br>**剂量**: 1mg IM/SC(成人),0.5mg(<25kg儿童)<br>**鼻用胰高糖素**: 3mg鼻喷<br>**建议值**: `未使用`, `1mg IM`, `鼻用3mg`, `微量胰高糖素(0.1-0.2mg)`,1mg IM
+treatment.ivGlucose,处理.静脉葡萄糖,String,"**急诊/昏迷**: 25-50mL 50%葡萄糖IV推注(12.5-25g),随后10%葡萄糖持续输注。<br>**示例**: `50mL 50%葡萄糖IV bolus`, `10%葡萄糖100mL/h`, `未使用`,50mL 50%葡萄糖IV
+treatment.responseTime,处理.恢复时间,Number,"从治疗到血糖>3.9mmol/L且症状缓解的时间。<br>单位: 分钟<br>**口服糖**: 10-20分钟<br>**胰高糖素**: 10-15分钟<br>**IV葡萄糖**: 5-10分钟",15
+
+treatment.emergencyServices,处理.急救服务,String,"**建议值**: `未呼叫`, `呼叫120`, `家人送医`, `自行就医`",呼叫120
+treatment.hospitalAdmission,处理.住院,String,"**建议值**: `未住院(门急诊处理后出院)`, `留观`, `住院`, `ICU`",留观
+treatment.duration,处理.观察时长,Number,"急诊/住院观察时长。<br>单位: 小时<br>**长效胰岛素/磺脲类**: 需观察12-24小时",6
+
+diabetesHistory.diabetesType,糖尿病史.糖尿病类型,String,"**建议值**: `1型糖尿病`, `2型糖尿病`, `妊娠糖尿病`, `无糖尿病(其他原因低血糖)`, `糖尿病前期`, `反应性低血糖(餐后)`",1型糖尿病
+diabetesHistory.duration,糖尿病史.糖尿病病程,Number,"糖尿病病程。<br>单位: 年<br>**病程长**: 低血糖未察觉风险增加",15
+diabetesHistory.lastHbA1c,糖尿病史.最近HbA1c,Number,"最近一次HbA1c(3个月内)。<br>单位: %<br>**<7%**: 严格控制,低血糖风险高<br>**快速下降**: 低血糖风险高",6.5
+diabetesHistory.previousSevereHypoglycemia,糖尿病史.既往严重低血糖,String,"过去1年严重低血糖史。<br>**建议值**: `从未`, `1次`, `≥2次(反复严重低血糖)`, `不详`",1次
+diabetesHistory.hypoglycemiaUnawareness,糖尿病史.低血糖未察觉,String,"**Clarke评分或Gold评分**评估IAH。<br>**建议值**: `察觉正常(有自主神经症状)`, `部分未察觉`, `完全未察觉(无警觉症状)`<br>**完全未察觉**: 严重低血糖风险↑6-7倍",部分未察觉
+
+medications.insulin.regimen,药物.胰岛素.方案,String,"**示例**: `基础-餐时(多次注射)`, `预混胰岛素bid`, `胰岛素泵(CSII)`, `基础胰岛素qd`, `未用胰岛素`",基础-餐时
+medications.insulin.basalType,药物.胰岛素.基础胰岛素类型,String,"**示例**: `甘精胰岛素U100`, `地特胰岛素`, `德谷胰岛素(超长效)`, `NPH`, `未用基础胰岛素`",甘精胰岛素U100
+medications.insulin.basalDose,药物.胰岛素.基础胰岛素剂量,String,"基础胰岛素剂量。<br>**示例**: `20 U qd`, `12 U bid`",20 U qd
+medications.insulin.bolusType,药物.胰岛素.餐时胰岛素类型,String,"**示例**: `门冬胰岛素`, `赖脯胰岛素`, `谷赖胰岛素`, `常规胰岛素(短效)`, `未用餐时胰岛素`",门冬胰岛素
+medications.insulin.bolusDose,药物.胰岛素.餐时胰岛素剂量,String,"餐时胰岛素剂量。<br>**示例**: `早6U,午6U,晚8U`, `ICR 1:10`, `可变剂量`",早6U,午6U,晚8U
+medications.insulin.recentChange,药物.胰岛素.近期调整,String,"**建议值**: `无近期调整`, `剂量增加(XX天前)`, `剂量减少`, `更换类型`, `新启动胰岛素`",剂量增加(3天前)
+
+medications.sulfonylurea,药物.磺脲类,String,"**最常见口服降糖药致低血糖**。<br>**示例**: `格列本脲(最高风险)`, `格列齐特`, `格列美脲`, `格列吡嗪`, `未使用磺脲类`",格列本脲
+medications.sulfonylurea.dose,药物.磺脲类.剂量,String,磺脲类剂量,格列本脲5mg bid
+medications.glinide,药物.格列奈类,String,"**短效促泌剂**。<br>**示例**: `瑞格列奈`, `那格列奈`, `未使用`",瑞格列奈
+medications.otherDM,药物.其他降糖药,String,"**低血糖风险低**。<br>**示例**: `二甲双胍`, `SGLT2i`, `GLP-1RA`, `DPP-4i`, `α-糖苷酶抑制剂`, `吡格列酮`",二甲双胍;DPP-4i
+
+medications.nonDM,药物.非降糖药物,String,"**可致低血糖的药物**。<br>**示例**: `喹诺酮类(左氧氟沙星)`, `磺胺类`, `奎宁/奎尼丁`, `五羟色胺再摄取抑制剂(氟西汀)`, `β受体阻滞剂(掩盖低血糖症状)`, `血管紧张素转换酶抑制剂(增强胰岛素敏感性)`, `水杨酸盐(大剂量)`, `无相关用药`",β受体阻滞剂
+
+precipitatingFactors.missedMeal,诱因.漏餐/进食不足,String,"**建议值**: `否`, `是(漏餐)`, `是(进食量明显减少)`, `是(呕吐/腹泻)`,是(漏餐)
+precipitatingFactors.exercise,诱因.运动,String,"**建议值**: `无运动`, `轻度运动`, `中等强度运动`, `剧烈运动`, `运动时间延长`",剧烈运动
+precipitatingFactors.alcohol,诱因.饮酒,String,"**机制**: 抑制肝糖原分解,空腹饮酒高危。<br>**建议值**: `未饮酒`, `少量饮酒(<1单位)`, `中等量(1-3单位)`, `大量饮酒(>3单位)`, `空腹饮酒`,大量饮酒
+precipitatingFactors.renalFailure,诱因.肾功能恶化,String,"**机制**: 胰岛素清除减少,磺脲类蓄积。<br>**建议值**: `无肾功能问题`, `eGFR下降(需调整剂量)`, `急性肾损伤`, `透析患者`",无肾功能问题
+precipitatingFactors.hepaticFailure,诱因.肝功能不全,String,"**机制**: 糖异生减少。<br>**建议值**: `无肝功能问题`, `慢性肝病`, `急性肝衰竭`",无肝功能问题
+precipitatingFactors.adrenalInsufficiency,诱因.肾上腺功能不全,String,"**建议值**: `无`, `疑似(需查皮质醇/ACTH)`, `确诊Addison病`",无
+precipitatingFactors.infection,诱因.感染/疾病,String,"**建议值**: `无`, `胃肠炎(呕吐/腹泻→进食减少)`, `其他感染`, `慢性疾病恶化`",无
+precipitatingFactors.fasting,诱因.禁食,String,"**示例**: `无`, `检查前禁食`, `宗教禁食`, `术前禁食`,无
+
+riskFactors.age,危险因素.年龄,Number,"年龄。<br>单位: 岁<br>**老年人(≥65岁)**: 低血糖风险↑(认知功能下降,多重用药,肾功能下降)",72
+riskFactors.ckd,危险因素.慢性肾病,String,"**建议值**: `无CKD`, `CKD 3期(eGFR 30-59)`, `CKD 4-5期(eGFR<30)`, `透析`<br>**CKD**: 胰岛素/磺脲类半衰期延长",CKD 3期
+riskFactors.cognitiveDysfunction,危险因素.认知功能障碍,String,"**建议值**: `无`, `轻度认知障碍`, `痴呆`<br>**影响**: 用药依从性差,无法识别低血糖",轻度认知障碍
+riskFactors.liveAlone,危险因素.独居,String,"**建议值**: `否`, `是`<br>**风险**: 严重低血糖无人发现",是
+riskFactors.hypoglycemiaHistory,危险因素.低血糖史,String,"**最强预测因子**。<br>**建议值**: `无低血糖史`, `偶发低血糖(<1次/周)`, `频繁低血糖(≥2次/周)`, `既往严重低血糖`",既往严重低血糖
+
+cgmData.available,CGM数据.是否可用,String,"**建议值**: `有CGM数据`, `无CGM`,有CGM数据
+cgmData.tbr,CGM数据.低血糖时间<3.9mmol/L,Number,"TBR(Time Below Range <3.9 mmol/L)。<br>单位: %<br>**目标**: <4%(1型DM),<1%(2型DM)",8
+cgmData.tbrSevere,CGM数据.低血糖时间<3.0mmol/L,Number,"TBR <3.0 mmol/L。<br>单位: %<br>**目标**: <1%",2
+cgmData.nocturnalTbr,CGM数据.夜间低血糖时间,Number,"夜间(00:00-06:00) TBR <3.9 mmol/L。<br>单位: %",15
+cgmData.cv,CGM数据.血糖变异系数,Number,"CV(Coefficient of Variation)。<br>单位: %<br>**>36%**: 血糖波动大,低血糖风险高",45
+cgmData.lowestGlucose,CGM数据.最低血糖,Number,"过去7-14天最低血糖。<br>单位: mmol/L",2.5
+
+labTests.serumGlucose,实验室.静脉血糖,Number,"实验室静脉血糖(如在急诊/住院)。<br>单位: mmol/L",2.1
+labTests.cPeptide,实验室.C肽,Number,"血清C肽(如怀疑胰岛素瘤/外源胰岛素)。<br>单位: ng/mL<br>**低血糖时C肽**: <0.6提示外源胰岛素,>0.6提示内源性高胰岛素血症",
+labTests.insulin,实验室.胰岛素,Number,"血清胰岛素(低血糖时)。<br>单位: μU/mL<br>**低血糖时胰岛素**: >3提示不适当高胰岛素",
+labTests.proinsulin,实验室.胰岛素原,Number,"胰岛素原。<br>单位: pmol/L<br>**胰岛素瘤**: 胰岛素原/胰岛素比值>0.2",
+labTests.betaHydroxybutyrate,实验室.β-羟丁酸,Number,"血酮体。<br>单位: mmol/L<br>**低血糖时**: 应被抑制(<0.6),升高提示酮症性低血糖",
+labTests.cortisol,实验室.皮质醇,Number,"血清皮质醇(低血糖时)。<br>单位: μg/dL<br>**低血糖时应激反应**: 应>18-20,低提示肾上腺功能不全",
+labTests.gh,实验室.生长激素,Number,"血清生长激素(低血糖时)。<br>单位: ng/mL<br>**低血糖时**: 应>10,低提示GH缺乏",
+
+labTests.creatinine,实验室.肌酐,Number,"血清肌酐。<br>单位: μmol/L",110
+labTests.egfr,实验室.eGFR,Number,"估算肾小球滤过率。<br>单位: mL/min/1.73m²<br>**<60**: 需调整降糖药剂量",52
+labTests.alt,实验室.ALT,Number,"丙氨酸转氨酶。<br>单位: U/L<br>**升高**: 肝病,影响糖异生",35
+labTests.ast,实验室.AST,Number,"天冬氨酸转氨酶。<br>单位: U/L",40
+
+nonDiabeticCauses.insulinoma,非糖尿病原因.胰岛素瘤,String,"**Whipple三联征**: ①空腹/运动后低血糖症状②血糖<2.8 mmol/L③进食后症状缓解。<br>**建议值**: `不考虑`, `疑似(需72h禁食试验)`, `确诊`,不考虑
+nonDiabeticCauses.postBariatric,非糖尿病原因.减重术后低血糖,String,"胃旁路术后晚期倾倒综合征。<br>**建议值**: `无减重手术史`, `胃旁路术后`, `袖状胃切除术后`",无减重手术史
+nonDiabeticCauses.criticalIllness,非糖尿病原因.危重症相关,String,"脓毒症、肝衰竭、心衰、肾衰、营养不良。<br>**建议值**: `无`, `有(具体)`,无
+nonDiabeticCauses.autoimmune,非糖尿病原因.自身免疫性低血糖,String,"胰岛素自身抗体综合征(IAS)、胰岛素受体抗体。<br>**建议值**: `不考虑`, `疑似(需查胰岛素抗体)`,不考虑
+nonDiabeticCauses.factitious,非糖尿病原因.人为低血糖,String,"外源胰岛素/磺脲类滥用。<br>**建议值**: `不考虑`, `疑似(低血糖时低C肽+高胰岛素)`,不考虑
+
+management.immediateActions,管理.即刻处理,String,"本次低血糖处理总结。<br>**示例**: `口服15g葡萄糖,15分钟后血糖恢复`, `IM胰高糖素1mg+急诊IV葡萄糖`, `ICU监护24h(长效胰岛素)`",IM胰高糖素+急诊IV葡萄糖
+management.treatmentAdjustment,管理.治疗调整,String,"低血糖后降糖方案调整。<br>**示例**: `基础胰岛素减量20%`, `停用磺脲类,改用DPP-4i`, `放宽血糖目标至HbA1c<8%`, `启动CGM`, `暂不调整`,基础胰岛素减量20%
+management.glucoseTarget,管理.血糖目标调整,String,"**放宽目标适应证**: 反复低血糖/低血糖未察觉/预期寿命短/老年/严重合并症。<br>**示例**: `维持原目标(HbA1c<7%)`, `放宽至HbA1c<8%`, `放宽至HbA1c<8.5%`,放宽至HbA1c<8%
+
+education.recognitionTraining,教育.低血糖识别训练,String,"**建议值**: `已教育(症状识别+血糖监测)`, `未教育`,已教育
+education.treatment15_15Rule,教育.15-15法则教育,String,"**建议值**: `已教育`, `需强化教育`, `未教育`",已教育
+education.glucagonKit,教育.胰高糖素套装,String,"**建议值**: `已配备家用胰高糖素+家人已培训`, `已配备但家人未培训`, `未配备`, `不适用(低危患者)`",已配备+家人已培训
+education.sickDayRules,教育.病情日规则,String,"**建议值**: `已教育(生病时血糖监测频率↑,调整胰岛素)`, `未教育`,已教育
+
+prevention.structuredEducation,预防.结构化教育,String,"**DAFNE(1型DM)**, **DESMOND(2型DM)**等。<br>**建议值**: `已参加`, `建议参加`, `未参加`,建议参加
+prevention.cgmInitiation,预防.启动CGM,String,"**适应证**: 反复低血糖/低血糖未察觉。<br>**建议值**: `已使用CGM`, `建议启动CGM`, `经济原因未启动`, `不需要`",建议启动CGM
+prevention.pumpWithLGS,预防.带低血糖暂停功能的胰岛素泵,String,"LGS(Low Glucose Suspend)或混合闭环系统。<br>**建议值**: `已使用`, `建议使用`, `不适用`,不适用
+prevention.avoidOvertreatment,预防.避免过度治疗,String,"放宽血糖目标,简化方案。<br>**建议值**: `已调整`, `需调整`,已调整
+
+complicationsOfHypoglycemia.cardiovascular,低血糖并发症.心血管事件,String,"低血糖诱发心律失常/心肌缺血/猝死。<br>**建议值**: `无`, `心律失常`, `心肌梗死`, `猝死`",无
+complicationsOfHypoglycemia.neurological,低血糖并发症.神经系统后遗症,String,"严重低血糖致永久性脑损伤(罕见)。<br>**建议值**: `无`, `认知功能下降`, `癫痫`, `昏迷>30分钟(脑损伤风险)`",无
+complicationsOfHypoglycemia.traumaticInjury,低血糖并发症.创伤,String,"低血糖致跌倒/车祸。<br>**示例**: `无`, `跌倒`, `交通事故`, `其他创伤`",跌倒
+complicationsOfHypoglycemia.death,低血糖并发症.死亡,String,"**建议值**: `否`, `是(死于低血糖)`, `是(低血糖可能相关)`",否
+
+drivingRisk.assessed,驾驶风险.已评估,String,"**建议值**: `已评估`, `未评估`<br>**反复低血糖**: 需限制驾驶",已评估
+drivingRisk.recommendation,驾驶风险.建议,String,"**建议值**: `可驾驶`, `驾驶前测血糖`, `暂停驾驶(至低血糖控制)`, `永久不宜驾驶`,驾驶前测血糖
+
+followUp.plan,随访.随访计划,String,"**示例**: `2周后门诊复查`, `1个月后评估CGM数据`, `每日电话随访血糖`, `转诊内分泌专科`",2周后门诊复查
+followUp.cgmReview,随访.CGM数据回顾,String,"**建议值**: `已安排(7-14天后)`, `未安排`, `不适用`,已安排
+followUp.medicationReview,随访.药物重新评估,String,"**建议值**: `已安排`, `未安排`,已安排
+
+prognosis.risk,预后.复发风险,String,"**建议值**: `低风险(诱因已去除)`, `中风险`, `高风险(低血糖未察觉/反复低血糖/未调整治疗)`,高风险
+
+clinicianNotes,临床医生备注,String,自由文本备注栏,患者为老年1型糖尿病,合并CKD 3期和部分低血糖未察觉。本次为夜间严重低血糖,家人发现昏迷,急诊IM胰高糖素后恢复。已减少基础胰岛素剂量20%,放宽HbA1c目标至<8%,建议启动CGM。
+dataSource,数据来源,String,"**建议值**: `急诊`, `门诊`, `住院`, `患者自报(电话/APP)`, `CGM回顾性数据`",急诊

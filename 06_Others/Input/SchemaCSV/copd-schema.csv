@@ -1,0 +1,170 @@
+字段名(英文),字段名(中文),数据类型,描述,示例
+patientId,患者ID,String,患者唯一标识符,P123456
+assessmentDate,评估日期,Date,COPD评估日期,2025-01-15
+assessmentType,评估类型,String,"评估类型。<br>**建议值**: `初诊评估`, `稳定期随访`, `急性加重期评估`, `术前评估`, `康复评估`",初诊评估
+
+diagnosisInfo.diagnosisDate,诊断信息.诊断日期,Date,COPD诊断日期,2020-03-10
+diagnosisInfo.goldStage,诊断信息.GOLD分级,String,"GOLD严重程度分级(基于FEV1% predicted)。<br>**GOLD 1**: FEV1 ≥80%<br>**GOLD 2**: 50% ≤ FEV1 < 80%<br>**GOLD 3**: 30% ≤ FEV1 < 50%<br>**GOLD 4**: FEV1 < 30%",GOLD 2
+diagnosisInfo.goldGroup,诊断信息.GOLD综合评估组别,String,"GOLD 2023分组(基于症状+加重史)。<br>**A组**: 症状轻(CAT<10或mMRC 0-1)+加重低风险(0-1次/年,无住院)<br>**B组**: 症状重(CAT≥10或mMRC≥2)+加重低风险<br>**E组**: 任何症状+加重高风险(≥2次/年或≥1次住院)",B组
+diagnosisInfo.phenotype,诊断信息.表型,String,"COPD临床表型。<br>**建议值**: `肺气肿型(粉红喷气者)`, `支气管炎型(蓝肿者)`, `混合型`, `频繁急性加重表型(≥2次/年)`, `ACOS(哮喘-COPD重叠)`",混合型
+diagnosisInfo.smokingHistory,诊断信息.吸烟史,String,"吸烟状态。<br>**建议值**: `从不吸烟`, `已戒烟`, `现吸烟`",已戒烟
+diagnosisInfo.packYears,诊断信息.吸烟包年数,Number,"包年数 = (每天支数/20) × 吸烟年数。<br>单位: 包年<br>**COPD风险**: >10包年",30
+
+symptoms.cat.score,症状.CAT评分.总分,Number,"COPD评估测试总分(0-40分)。<br>**<10**: 症状轻微<br>**10-20**: 中等影响<br>**21-30**: 高度影响<br>**≥30**: 极高影响",15
+symptoms.cat.q1Cough,症状.CAT评分.Q1咳嗽,Number,我从不咳嗽(0)-我总是咳嗽(5),3
+symptoms.cat.q2Sputum,症状.CAT评分.Q2痰液,Number,我肺里完全没有痰(0)-我肺里充满了痰(5),2
+symptoms.cat.q3ChestTightness,症状.CAT评分.Q3胸闷,Number,我胸部一点不闷(0)-我胸部非常闷(5),2
+symptoms.cat.q4Breathlessness,症状.CAT评分.Q4气短爬坡,Number,当我爬坡或爬一段楼梯时不气短(0)-非常气短(5),3
+symptoms.cat.q5Activities,症状.CAT评分.Q5家务活动受限,Number,我做家务活动不受限(0)-非常受限(5),2
+symptoms.cat.q6Confidence,症状.CAT评分.Q6外出信心,Number,我外出很有信心(0)-完全没有信心(5),1
+symptoms.cat.q7Sleep,症状.CAT评分.Q7睡眠,Number,我睡得很香(0)-我睡得不香(5),1
+symptoms.cat.q8Energy,症状.CAT评分.Q8精力,Number,我精力很充沛(0)-完全没有精力(5),1
+
+symptoms.mmrc.score,症状.mMRC呼吸困难分级,Number,"改良英国医学研究委员会呼吸困难量表。<br>**0级**: 仅剧烈活动时气短<br>**1级**: 平地快走或爬缓坡时气短<br>**2级**: 平地行走比同龄人慢或需停下休息<br>**3级**: 平地步行约100米或数分钟后需停下<br>**4级**: 穿脱衣服时即感气短,不能离开房间",2
+
+symptoms.chronicBronchitis,症状.慢性支气管炎症状,String,"慢性咳嗽咳痰≥3个月,连续2年。<br>**建议值**: `是`, `否`",是
+symptoms.dyspneaProgression,症状.呼吸困难进展,String,"**建议值**: `稳定`, `逐渐加重`, `快速恶化`",逐渐加重
+symptoms.nighttimeSymptoms,症状.夜间症状,String,"夜间咳嗽、喘息。<br>**建议值**: `无`, `偶尔(1-2次/周)`, `频繁(≥3次/周)`",偶尔(1-2次/周)
+symptoms.wheeze,症状.喘息,String,"**建议值**: `无`, `偶尔`, `频繁`, `持续性`",偶尔
+
+exacerbationHistory.lastYearCount,急性加重史.过去1年次数,Number,"过去12个月急性加重次数。<br>**≥2次/年**: 加重高风险",2
+exacerbationHistory.hospitalizationCount,急性加重史.过去1年住院次数,Number,因COPD急性加重住院次数,1
+exacerbationHistory.icuAdmission,急性加重史.ICU入住史,String,"是否有ICU入住史。<br>**建议值**: `无`, `有`",无
+exacerbationHistory.mechanicalVentilation,急性加重史.机械通气史,String,"是否有机械通气史。<br>**建议值**: `无`, `无创通气`, `有创通气`",无创通气
+exacerbationHistory.lastExacerbationDate,急性加重史.最近一次加重日期,Date,最近一次急性加重日期,2024-11-20
+exacerbationHistory.commonTriggers,急性加重史.常见诱因,String,"**建议值**: `呼吸道感染`, `空气污染`, `气温骤变`, `用药不规律`, `不明原因`",呼吸道感染
+
+spirometry.date,肺功能.检查日期,Date,肺功能检查日期,2025-01-15
+spirometry.prebronchodilator.fev1,肺功能.支扩前.FEV1,Number,"第1秒用力呼气容积(支扩前)。<br>单位: L",1.45
+spirometry.prebronchodilator.fvc,肺功能.支扩前.FVC,Number,"用力肺活量(支扩前)。<br>单位: L",2.80
+spirometry.prebronchodilator.fev1FvcRatio,肺功能.支扩前.FEV1/FVC,Number,"FEV1/FVC比值(支扩前)。<br>**COPD诊断标准**: <0.70(固定比值法)或<LLN(下限正常值法)",0.52
+
+spirometry.postbronchodilator.fev1,肺功能.支扩后.FEV1,Number,"支气管扩张剂后FEV1。<br>单位: L<br>**用于确诊和分级**",1.58
+spirometry.postbronchodilator.fvc,肺功能.支扩后.FVC,Number,"支气管扩张剂后FVC。<br>单位: L",3.05
+spirometry.postbronchodilator.fev1FvcRatio,肺功能.支扩后.FEV1/FVC,Number,"支气管扩张剂后比值。<br>**COPD确诊**: <0.70",0.52
+spirometry.postbronchodilator.fev1Predicted,肺功能.支扩后.FEV1预计值%,Number,"支扩后FEV1占预计值百分比。<br>单位: %<br>**用于GOLD分级**",65
+spirometry.bronchodilatorResponse,肺功能.支气管扩张试验反应性,Number,"FEV1改善量(mL)或改善率(%)。<br>**阳性标准**: FEV1增加>200mL且>12%<br>**阳性提示**: ACOS可能",130
+
+spirometry.dlco.value,肺功能.弥散功能.DLCO,Number,"一氧化碳弥散量。<br>单位: mmol/min/kPa<br>**降低**: 肺气肿表型",5.2
+spirometry.dlco.predicted,肺功能.弥散功能.DLCO预计值%,Number,"DLCO占预计值百分比。<br>单位: %<br>**<40%**: 重度障碍",55
+spirometry.rvTlc,肺功能.残气/肺总量比值,Number,"RV/TLC比值。<br>单位: %<br>**>40%**: 肺气肿/气体陷闭",48
+
+imaging.chestXray.date,影像学.胸部X线.检查日期,Date,胸部X线检查日期,2025-01-10
+imaging.chestXray.findings,影像学.胸部X线.主要发现,String,"胸片主要表现。<br>**示例**: `双肺透亮度增加`, `肋间隙增宽`, `膈肌低平`, `肺纹理稀疏`, `肺动脉段突出`, `心影垂直狭小(滴状心)`",双肺透亮度增加,膈肌低平
+
+imaging.chestCT.date,影像学.胸部CT.检查日期,Date,胸部CT检查日期,2024-10-15
+imaging.chestCT.emphysemaType,影像学.胸部CT.肺气肿类型,String,"肺气肿CT分型。<br>**建议值**: `无`, `小叶中央型(吸烟相关)`, `全小叶型`, `间隔旁型`, `混合型`",小叶中央型
+imaging.chestCT.emphysemaDistribution,影像学.胸部CT.肺气肿分布,String,"**建议值**: `上叶为主`, `下叶为主`, `弥漫分布`",上叶为主
+imaging.chestCT.emphysemaExtent,影像学.胸部CT.肺气肿程度,String,"**建议值**: `轻度(<25%)`, `中度(25-50%)`, `重度(>50%)`",中度(25-50%)
+imaging.chestCT.bronchialWallThickening,影像学.胸部CT.支气管壁增厚,String,"**建议值**: `无`, `轻度`, `明显`",明显
+imaging.chestCT.airTrapping,影像学.胸部CT.气体陷闭,String,"呼气相气体陷闭。<br>**建议值**: `无`, `局灶性`, `弥漫性`",弥漫性
+imaging.chestCT.bullae,影像学.胸部CT.肺大疱,String,"肺大疱(直径>1cm含气囊腔)。<br>**建议值**: `无`, `散在小肺大疱`, `巨大肺大疱(>1/3胸腔)`",散在小肺大疱
+
+bloodGas.ph,血气分析.pH,Number,"动脉血pH值。<br>**正常**: 7.35-7.45<br>**<7.35**: 酸中毒",7.38
+bloodGas.paco2,血气分析.PaCO2,Number,"动脉血二氧化碳分压。<br>单位: mmHg<br>**正常**: 35-45<br>**>45**: 高碳酸血症/II型呼衰",48
+bloodGas.pao2,血气分析.PaO2,Number,"动脉血氧分压(海平面,静息,呼吸空气)。<br>单位: mmHg<br>**正常**: 80-100<br>**<60**: I型呼衰",65
+bloodGas.sao2,血气分析.SaO2,Number,"动脉血氧饱和度。<br>单位: %<br>**<90%**: 需长期氧疗",92
+bloodGas.hco3,血气分析.HCO3-,Number,"碳酸氢根。<br>单位: mmol/L<br>**正常**: 22-26<br>**>26**: 代偿性碱中毒",28
+bloodGas.respiratoryFailureType,血气分析.呼吸衰竭类型,String,"**建议值**: `无`, `I型(低氧血症,PaO2<60)`, `II型(高碳酸血症,PaCO2>50)`, `混合型`",I型
+
+labs.cbc.wbc,实验室.血常规.白细胞,Number,"白细胞计数。<br>单位: ×10⁹/L<br>**升高**: 急性加重/感染",8.5
+labs.cbc.hemoglobin,实验室.血常规.血红蛋白,Number,"血红蛋白。<br>单位: g/L<br>**升高**: 慢性缺氧继发红细胞增多症",165
+labs.cbc.hematocrit,实验室.血常规.红细胞压积,Number,"红细胞压积。<br>单位: %<br>**>52%(男)/>47%(女)**: 红细胞增多症",51
+
+labs.inflammatoryMarkers.crp,实验室.炎症指标.CRP,Number,"C反应蛋白。<br>单位: mg/L<br>**>10**: 细菌感染可能",15
+labs.inflammatoryMarkers.procalcitonin,实验室.炎症指标.降钙素原,Number,"降钙素原。<br>单位: ng/mL<br>**>0.25**: 细菌感染<br>**>0.5**: 脓毒症可能",0.08
+labs.inflammatoryMarkers.eosinophils,实验室.炎症指标.嗜酸性粒细胞计数,Number,"嗜酸性粒细胞绝对值。<br>单位: ×10⁹/L<br>**≥0.3**: 嗜酸性粒细胞表型,ICS反应好<br>**≥0.1**: 中度升高",0.25
+
+labs.alpha1Antitrypsin,实验室.α1-抗胰蛋白酶,Number,"α1-AT水平。<br>单位: g/L<br>**<0.9**: α1-AT缺乏症<br>**适应证**: 早发COPD(<45岁),下叶肺气肿,无吸烟史",1.2
+
+labs.bnp,实验室.BNP/NT-proBNP,Number,"脑钠肽/N端脑钠肽前体。<br>单位: pg/mL<br>**升高**: 右心衰竭/肺心病",450
+
+comorbidities.cardiovascular,合并症.心血管疾病,String,"**示例**: `冠心病`, `高血压`, `心力衰竭`, `心房颤动`, `无`",高血压;冠心病
+comorbidities.pulmonaryHypertension,合并症.肺动脉高压,String,"**建议值**: `无`, `疑似(超声)`, `确诊(右心导管)`,确诊(右心导管)
+comorbidities.corPulmonale,合并症.肺源性心脏病,String,"**建议值**: `无`, `有`",有
+comorbidities.sleepApnea,合并症.睡眠呼吸暂停,String,"**重叠综合征**。<br>**建议值**: `无`, `疑似`, `确诊OSA`",确诊OSA
+comorbidities.osteoporosis,合并症.骨质疏松,String,"**建议值**: `无`, `骨量减少`, `骨质疏松`<br>**危险因素**: 年龄、长期ICS、低体重",骨质疏松
+comorbidities.anxiety,合并症.焦虑,String,"**建议值**: `无`, `有(GAD-7≥10)`",有
+comorbidities.depression,合并症.抑郁,String,"**建议值**: `无`, `有(PHQ-9≥10)`",有
+comorbidities.gerd,合并症.胃食管反流病,String,"**建议值**: `无`, `有`<br>**COPD加重诱因**",有
+comorbidities.lungCancer,合并症.肺癌,String,"**建议值**: `无`, `疑似`, `确诊`<br>**COPD患者肺癌风险高**",无
+comorbidities.diabetes,合并症.糖尿病,String,"**建议值**: `无`, `有`",有
+comorbidities.metabolicSyndrome,合并症.代谢综合征,String,"**建议值**: `无`, `有`",无
+
+echocardiography.rvsp,超声心动图.右室收缩压,Number,"右室收缩压(估测肺动脉收缩压)。<br>单位: mmHg<br>**>40**: 肺动脉高压可能",45
+echocardiography.rvDilation,超声心动图.右室扩大,String,"**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
+echocardiography.rvDysfunction,超声心动图.右室功能不全,String,"**建议值**: `无`, `有`",无
+echocardiography.trRegurgitation,超声心动图.三尖瓣反流,String,"**建议值**: `无/微量`, `轻度`, `中度`, `重度`",轻度
+echocardiography.lvef,超声心动图.左室射血分数,Number,"LVEF。<br>单位: %<br>**<40%**: 左心功能不全",60
+
+sixMWT.date,6分钟步行试验.测试日期,Date,6分钟步行试验日期,2025-01-12
+sixMWT.distance,6分钟步行试验.步行距离,Number,"6分钟步行距离。<br>单位: 米<br>**<350米**: 运动耐量差<br>**350-450米**: 中等<br>**>450米**: 良好",380
+sixMWT.baselineSpo2,6分钟步行试验.基线SpO2,Number,"基线氧饱和度。<br>单位: %",95
+sixMWT.lowestSpo2,6分钟步行试验.最低SpO2,Number,"运动中最低SpO2。<br>单位: %<br>**<88%**: 运动性低氧血症",88
+sixMWT.dyspneaScore,6分钟步行试验.Borg呼吸困难评分,Number,"Borg量表(0-10分)。<br>**0**: 无困难<br>**10**: 最大困难",5
+
+medications.bronchodilators.laba,药物.支气管扩张剂.LABA,String,"长效β2受体激动剂。<br>**示例**: `福莫特罗`, `沙美特罗`, `茚达特罗`, `奥达特罗`, `维兰特罗`",茚达特罗
+medications.bronchodilators.lama,药物.支气管扩张剂.LAMA,String,"长效抗胆碱能药物(长效毒蕈碱受体拮抗剂)。<br>**示例**: `噻托溴铵`, `格隆溴铵`, `阿地溴铵`, `乌美溴铵`",噻托溴铵
+medications.bronchodilators.labaLamaCombination,药物.支气管扩张剂.LABA+LAMA复方,String,"双支扩复方制剂。<br>**示例**: `茚达特罗/格隆溴铵`, `维兰特罗/乌美溴铵`, `奥达特罗/噻托溴铵`",茚达特罗/格隆溴铵
+
+medications.ics.agent,药物.吸入糖皮质激素.ICS药物,String,"ICS单药或复方制剂。<br>**示例**: `布地奈德`, `氟替卡松`, `倍氯米松`",氟替卡松
+medications.ics.dose,药物.吸入糖皮质激素.剂量,String,"ICS日剂量(氟替卡松当量)。<br>**低剂量**: <250μg<br>**中剂量**: 250-500μg<br>**高剂量**: >500μg",中剂量(500μg)
+medications.ics.indication,药物.吸入糖皮质激素.使用指征,String,"**GOLD 2023推荐**: E组(≥2次加重/年或≥1次住院)+血嗜酸性粒细胞≥100或≥300。<br>**建议值**: `符合指征`, `不符合指征(肺炎风险)`, `ACOS`",符合指征
+medications.tripleTherapy,药物.三联治疗,String,"ICS+LABA+LAMA。<br>**示例**: `氟替卡松/维兰特罗/乌美溴铵`, `倍氯米松/福莫特罗/格隆溴铵`, `布地奈德/格隆溴铵/福莫特罗`",氟替卡松/维兰特罗/乌美溴铵
+
+medications.pde4Inhibitor,药物.PDE4抑制剂,String,"磷酸二酯酶-4抑制剂。<br>**适应证**: 慢性支气管炎+频繁加重+FEV1<50%。<br>**示例**: `罗氟司特`",罗氟司特
+medications.macrolide,药物.长期大环内酯类,String,"长期小剂量大环内酯(抗炎作用)。<br>**适应证**: 频繁加重患者。<br>**示例**: `阿奇霉素250mg,每周3次`",阿奇霉素250mg,每周3次
+medications.mucolytics,药物.祛痰药,String,"**示例**: `乙酰半胱氨酸`, `羧甲司坦`, `氨溴索`",乙酰半胱氨酸
+
+oxygenTherapy.indication,氧疗.指征,String,"**长期氧疗指征**: PaO2≤55mmHg或SaO2≤88%;或PaO2 56-60mmHg合并肺心病/红细胞增多症(Hct>55%)。<br>**建议值**: `符合指征`, `不符合指征`, `运动性低氧血症`, `夜间低氧血症`",符合指征
+oxygenTherapy.flowRate,氧疗.氧流量,Number,"氧流量。<br>单位: L/min<br>**目标**: PaO2>60mmHg或SaO2>90%",2
+oxygenTherapy.dailyDuration,氧疗.每日使用时长,Number,"每日氧疗时长。<br>单位: 小时<br>**长期氧疗标准**: ≥15小时/天",16
+oxygenTherapy.method,氧疗.给氧方式,String,"**建议值**: `鼻导管`, `文丘里面罩`, `储氧面罩`, `便携式氧气瓶`, `家庭制氧机`, `液态氧`",家庭制氧机
+
+niv.indication,无创通气.指征,String,"**建议值**: `无指征`, `急性加重期`, `慢性II型呼衰+日间PaCO2>52mmHg`, `夜间低通气`",慢性II型呼衰
+niv.mode,无创通气.模式,String,"**建议值**: `BiPAP(S/T模式)`, `CPAP`, `平均容量保证压力支持(AVAPS)`",BiPAP(S/T模式)
+niv.settings,无创通气.参数设置,String,"NIV参数。<br>**示例**: `IPAP 16cmH2O, EPAP 6cmH2O, 备用频率12次/分`",IPAP 16cmH2O, EPAP 6cmH2O
+
+pulmonaryRehab.status,肺康复.状态,String,"**建议值**: `从未参加`, `正在参加`, `已完成疗程`, `因XXX原因中断`",正在参加
+pulmonaryRehab.components,肺康复.康复内容,String,"**示例**: `运动训练`, `呼吸肌训练`, `营养支持`, `心理支持`, `健康教育`, `气道清理技术`",运动训练;呼吸肌训练;健康教育
+pulmonaryRehab.exerciseCapacity,肺康复.运动耐量改善,String,"**建议值**: `未评估`, `显著改善(6MWT↑>30m)`, `轻度改善`, `无改善`",显著改善
+
+vaccinations.influenza.lastDate,疫苗接种.流感疫苗.最近接种日期,Date,"**推荐**: 每年1次",2024-10-10
+vaccinations.pneumococcal.status,疫苗接种.肺炎球菌疫苗.接种状态,String,"**推荐**: PCV13(13价结合疫苗)+PPSV23(23价多糖疫苗)序贯接种。<br>**建议值**: `未接种`, `仅PCV13`, `仅PPSV23`, `序贯接种完成`",序贯接种完成
+vaccinations.covid19.doses,疫苗接种.新冠疫苗.剂次,Number,新冠疫苗接种剂次,3
+
+smokingCessation.status,戒烟.状态,String,"**建议值**: `现吸烟-未准备戒烟`, `现吸烟-准备戒烟`, `戒烟中(<6个月)`, `戒烟成功(≥6个月)`, `从不吸烟`",戒烟成功
+smokingCessation.intervention,戒烟.干预措施,String,"**建议值**: `无`, `简短劝诫`, `戒烟咨询`, `尼古丁替代疗法(NRT)`, `伐尼克兰`, `安非他酮`, `手机APP支持`",尼古丁替代疗法
+smokingCessation.quitDate,戒烟.戒烟日期,Date,戒烟开始日期,2023-05-01
+
+nutritionalStatus.bmi,营养状态.BMI,Number,"体重指数。<br>单位: kg/m²<br>**<21**: 营养不良风险<br>**<18.5**: 低体重",19.5
+nutritionalStatus.weightLoss,营养状态.体重下降,String,"**建议值**: `无`, `<5%/年`, `5-10%/年`, `>10%/年`<br>**体重下降**: 预后差",5-10%/年
+nutritionalStatus.ffmi,营养状态.去脂体重指数,Number,"FFMI(去脂体重/身高²)。<br>单位: kg/m²<br>**<15(女)/<17(男)**: 肌肉减少",16
+
+riskAssessment.bodeIndex,风险评估.BODE指数,Number,"BODE指数(0-10分,预测死亡率)。<br>**B**(BMI): <21→1分<br>**O**(airflow Obstruction,FEV1% predicted): 50-64→1分,36-49→2分,≤35→3分<br>**D**(Dyspnea,mMRC): 2→1分,3→2分,4→3分<br>**E**(Exercise,6MWT): 250-349m→1分,150-249m→2分,≤149m→3分<br>**0-2**: 低风险<br>**3-4**: 中风险<br>**5-6**: 高风险<br>**7-10**: 极高风险",5
+
+surgical.bullectomy,外科治疗.肺大疱切除术,String,"**适应证**: 巨大肺大疱(>1/3胸腔)+压迫正常肺。<br>**建议值**: `无指征`, `候选者`, `已行手术`",无指征
+surgical.lvrs,外科治疗.肺减容手术,String,"LVRS。<br>**适应证**: 重度肺气肿+上叶病变为主+FEV1 20-45%+低运动耐量。<br>**建议值**: `无指征`, `候选者`, `已行手术`, `高风险(FEV1<20%且DLCO<20%或弥漫性肺气肿)`",无指征
+surgical.lungTransplant,外科治疗.肺移植,String,"**适应证**: GOLD 4级+BODE 7-10分+频繁加重。<br>**建议值**: `无指征`, `候选者评估中`, `等待供体`, `已行移植`",无指征
+surgical.bronchoscopicInterventions,外科治疗.支气管镜介入治疗,String,"**示例**: `支气管内瓣膜(EBV)`, `支气管热成形术`, `肺减容线圈`。<br>**适应证**: 肺气肿+气体陷闭。<br>**建议值**: `无指征`, `候选者`, `已行治疗`",无指征
+
+exacerbation.currentStatus,急性加重.当前状态,String,"**建议值**: `稳定期`, `轻度加重(门诊)`, `中度加重(住院)`, `重度加重(ICU)`, `极重度加重(机械通气)`",稳定期
+exacerbation.severity,急性加重.严重程度分级,String,"**轻度**: 仅需SABA<br>**中度**: SABA+抗生素和/或口服激素<br>**重度**: 需住院或急诊就诊",
+exacerbation.trigger,急性加重.诱因,String,"**建议值**: `细菌感染`, `病毒感染`, `空气污染`, `寒冷刺激`, `用药不依从`, `不明原因`",
+exacerbation.antibiotics,急性加重.抗生素使用,String,"**适应证**: 痰量增加+痰液脓性。<br>**示例**: `阿莫西林/克拉维酸`, `左氧氟沙星`, `阿奇霉素`, `头孢类`",
+exacerbation.systemicSteroids,急性加重.全身激素,String,"**推荐**: 泼尼松40mg/天,口服5天。<br>**示例**: `泼尼松40mg×5天`, `甲泼尼龙40mg IV q8h`",
+
+followUp.nextVisitDate,随访.下次随访日期,Date,下次随访日期,2025-04-15
+followUp.frequency,随访.随访频率,String,"**建议值**: `稳定期:3-6个月`, `加重后:4-6周`, `新诊断:1-3个月`",稳定期:3-6个月
+followUp.spirometryFrequency,随访.肺功能复查频率,String,"**建议值**: `稳定期:每年1次`, `病情变化:3-6个月`, `治疗调整后:6-12周`",稳定期:每年1次
+followUp.monitoringPlan,随访.监测计划,String,"**示例**: `症状评估(CAT/mMRC)`, `肺功能`, `急性加重次数`, `用药依从性`, `吸入技术检查`, `合并症筛查`, `疫苗接种`",症状评估;用药依从性;吸入技术
+
+education.inhalerTechnique,健康教育.吸入技术,String,"**建议值**: `正确`, `需改进`, `未评估`<br>**每次随访必查**",正确
+education.actionPlan,健康教育.急性加重行动计划,String,"**建议值**: `已制定书面计划`, `口头教育`, `未教育`",已制定书面计划
+education.selfManagement,健康教育.自我管理能力,String,"**建议值**: `良好`, `中等`, `差`",良好
+
+prognosis.risk,预后.风险评估,String,"**建议值**: `低风险`, `中风险`, `高风险`, `极高风险`<br>**基于**: GOLD分级,加重史,合并症,BODE指数",高风险
+prognosis.predictedSurvival,预后.预测生存,String,"**BODE指数预测**: 0-2分→4年生存率80%;7-10分→4年生存率≈20%",
+
+clinicianNotes,临床医生备注,String,自由文本备注栏,患者依从性好,但运动耐量仍差,建议转诊肺康复中心
+dataSource,数据来源,String,"**建议值**: `门诊`, `住院`, `体检中心`, `远程监测`, `患者自报`",门诊

@@ -1,0 +1,170 @@
+字段名(英文),字段名(中文),数据类型,描述,示例
+patientId,患者ID,String,患者唯一标识符,P123456
+assessmentDate,评估日期,Date,骨质疏松评估日期,2025-01-15
+assessmentType,评估类型,String,"评估类型。<br>**建议值**: `初诊评估`, `骨折风险评估`, `治疗前评估`, `疗效监测`, `绝经后评估`, `继发性骨质疏松筛查`",初诊评估
+
+diagnosisInfo.diagnosisDate,诊断信息.诊断日期,Date,骨质疏松诊断日期,2024-08-20
+diagnosisInfo.diagnosisCategory,诊断信息.诊断分类,String,"**基于BMD T值**(WHO标准):<br>**正常**: T值≥-1.0<br>**骨量减少**: -2.5<T值<-1.0<br>**骨质疏松**: T值≤-2.5<br>**严重骨质疏松**: T值≤-2.5+脆性骨折",骨质疏松
+diagnosisInfo.type,诊断信息.类型,String,"**建议值**: `原发性(绝经后/老年性)`, `继发性(药物/疾病相关)`, `特发性(青少年/中青年)`",原发性
+diagnosisInfo.secondaryCauses,诊断信息.继发性原因,String,"**示例**: `糖皮质激素使用`, `甲亢/甲旁亢`, `性腺功能减退`, `糖尿病`, `慢性肾病`, `吸收不良`, `类风湿关节炎`, `多发性骨髓瘤`, `长期制动`, `器官移植`, `无继发因素`",无继发因素
+
+demographics.age,基本信息.年龄,Number,"年龄。<br>单位: 岁<br>**≥50岁**: 骨折风险增加",68
+demographics.gender,基本信息.性别,String,"**建议值**: `女`, `男`<br>**女性**: 骨折风险更高",女
+demographics.menopauseStatus,基本信息.绝经状态,String,"**建议值**: `绝经前`, `围绝经期`, `绝经后`, `早发绝经(<40岁)`, `手术绝经`, `男性`",绝经后
+demographics.menopauseAge,基本信息.绝经年龄,Number,"绝经年龄。<br>单位: 岁<br>**<40岁**: 骨质疏松高危",50
+demographics.yearsPostmenopause,基本信息.绝经年限,Number,"绝经后年限。<br>单位: 年<br>**前5-10年**: 骨量快速丢失期",18
+
+anthropometry.height,人体测量.身高,Number,"当前身高。<br>单位: cm",158
+anthropometry.weight,人体测量.体重,Number,"当前体重。<br>单位: kg",52
+anthropometry.bmi,人体测量.BMI,Number,"体重指数。<br>单位: kg/m²<br>**<18.5**: 骨折风险增加<br>**<20**: 老年人高危",20.8
+anthropometry.heightLoss,人体测量.身高缩短,Number,"与年轻时相比身高下降。<br>单位: cm<br>**>4cm**: 提示椎体骨折可能",6
+
+riskFactors.previousFracture,危险因素.既往骨折史,String,"**建议值**: `无`, `有(低创伤骨折)`, `有(高创伤骨折)`<br>**最重要的骨折风险预测因子**",有(低创伤骨折)
+riskFactors.previousFractureDetails,危险因素.既往骨折详情,String,"**示例**: `2022年桡骨远端骨折(跌倒)`, `2020年椎体压缩骨折`, `2018年髋部骨折`",2022年桡骨远端骨折
+riskFactors.parentalHipFracture,危险因素.父母髋部骨折史,String,"**建议值**: `无`, `母亲有`, `父亲有`, `双方均有`",母亲有
+
+riskFactors.smoking,危险因素.吸烟,String,"**建议值**: `从不吸烟`, `已戒烟(>1年)`, `现吸烟`",从不吸烟
+riskFactors.alcohol,危险因素.饮酒,String,"**建议值**: `不饮酒`, `轻度(<1单位/天)`, `中度(1-2单位/天)`, `过量(≥3单位/天)`<br>**≥3单位/天**: 骨折风险增加",轻度
+
+riskFactors.glucocorticoids,危险因素.糖皮质激素使用,String,"**建议值**: `从未使用`, `既往使用`, `当前使用(≥5mg/天泼尼松当量,≥3个月)`, `当前使用(<5mg/天或<3个月)`",当前使用(≥5mg/天,≥3个月)
+riskFactors.glucocorticoidsDetails,危险因素.激素详情,String,"激素种类、剂量、疗程。<br>**示例**: `泼尼松10mg/天×2年(类风湿关节炎)`, `吸入激素(哮喘)`, `无`",泼尼松10mg/天×2年
+
+riskFactors.rheumatoidArthritis,危险因素.类风湿关节炎,String,"**建议值**: `无`, `有`",无
+riskFactors.secondaryOsteoporosis,危险因素.继发性骨质疏松相关疾病,String,"**示例**: `甲亢`, `甲状旁腺功能亢进`, `性腺功能减退`, `1型糖尿病`, `成人骨软化症`, `慢性肾病`, `慢性肝病`, `炎症性肠病`, `乳糜泻`, `多发性骨髓瘤`, `恶性肿瘤`, `无`",无
+
+riskFactors.falls,危险因素.跌倒,String,"过去1年跌倒史。<br>**建议值**: `无`, `1次`, `≥2次(高危)`",1次
+riskFactors.fallRiskFactors,危险因素.跌倒风险因素,String,"**示例**: `视力下降`, `平衡障碍`, `肌力减退`, `认知障碍`, `镇静药物`, `环境危险(地毯/光线暗)`, `体位性低血压`, `无`",视力下降;平衡障碍
+
+riskFactors.physicalActivity,危险因素.体力活动,String,"**建议值**: `规律运动`, `轻度活动`, `久坐少动`",轻度活动
+riskFactors.sunExposure,危险因素.日照,String,"**建议值**: `充足(≥15分钟/天)`, `不足`, `很少户外活动`",不足
+
+riskFactors.calcium,危险因素.钙摄入,String,"膳食钙摄入评估。<br>**建议值**: `充足(>800mg/天)`, `不足(<800mg/天)`, `严重不足(<400mg/天)`",不足
+riskFactors.vitaminD,危险因素.维生素D摄入,String,"**建议值**: `充足`, `不足`, `从不补充`",从不补充
+
+symptoms.backPain,症状.腰背痛,String,"**建议值**: `无`, `轻度`, `中度`, `重度(影响日常活动)`",中度
+symptoms.kyphosis,症状.驼背,String,"胸椎后凸畸形。<br>**建议值**: `无`, `轻度`, `明显(提示多发椎体骨折)`",明显
+symptoms.mobility,症状.活动能力,String,"**建议值**: `正常`, `轻度受限`, `中度受限`, `需辅助器具`, `卧床`",轻度受限
+
+dxa.date,DXA骨密度.检查日期,Date,双能X线骨密度检查日期,2025-01-15
+dxa.lumbarSpine.bmd,DXA骨密度.腰椎(L1-L4).BMD,Number,"腰椎骨密度。<br>单位: g/cm²",0.685
+dxa.lumbarSpine.tScore,DXA骨密度.腰椎(L1-L4).T值,Number,"T值(与年轻成人峰值骨量比较)。<br>**≥-1.0**: 正常<br>**-2.5~-1.0**: 骨量减少<br>**≤-2.5**: 骨质疏松",-3.2
+dxa.lumbarSpine.zScore,DXA骨密度.腰椎(L1-L4).Z值,Number,"Z值(与同龄人比较)。<br>**≤-2.0**: 低于同龄人预期,需排查继发原因",-1.8
+
+dxa.femoral.totalHip.bmd,DXA骨密度.股骨.全髋BMD,Number,"全髋骨密度。<br>单位: g/cm²",0.620
+dxa.femoral.totalHip.tScore,DXA骨密度.股骨.全髋T值,Number,全髋T值,-2.8
+dxa.femoral.femNeck.bmd,DXA骨密度.股骨.股骨颈BMD,Number,"股骨颈骨密度(最常用的髋部骨折预测部位)。<br>单位: g/cm²",0.580
+dxa.femoral.femNeck.tScore,DXA骨密度.股骨.股骨颈T值,Number,"股骨颈T值。<br>**诊断依据**: 腰椎或髋部最低T值",-3.0
+
+dxa.lowestTScore,DXA骨密度.最低T值,Number,"腰椎、全髋、股骨颈中的最低T值(用于诊断)",-3.2
+dxa.diagnosticSite,DXA骨密度.诊断部位,String,"**建议值**: `腰椎`, `股骨颈`, `全髋`, `桡骨远端(腰椎/髋部无法测量时)`",腰椎
+
+dxa.interpretation,DXA骨密度.结果解读,String,"**建议值**: `正常`, `骨量减少`, `骨质疏松`, `严重骨质疏松(伴骨折)`, `结果不可靠(腰椎退变/血管钙化)`",骨质疏松
+dxa.artifacts,DXA骨密度.干扰因素,String,"**示例**: `腰椎退行性变(骨赘)`, `腹主动脉钙化`, `压缩性骨折`, `脊柱侧弯`, `髋关节置换`, `无明显干扰`",腰椎退行性变
+
+vertebralFractureAssessment.vfaPerformed,椎体骨折评估.VFA检查,String,"DXA同时行VFA(侧位脊柱影像)。<br>**建议值**: `已做`, `未做`<br>**适应证**: T值≤-1.5,身高缩短,驼背,长期激素",已做
+vertebralFractureAssessment.result,椎体骨折评估.VFA结果,String,"**Genant半定量分级**:<br>**0级**: 正常<br>**1级**: 轻度变形(高度下降20-25%)<br>**2级**: 中度变形(25-40%)<br>**3级**: 重度变形(>40%)<br>**建议值**: `未见骨折`, `可疑骨折`, `明确骨折(级别+部位)`",明确骨折(T12:2级,L1:1级)
+
+trabecularBoneScore.value,骨小梁评分.TBS值,Number,"TBS(腰椎DXA衍生指标,评估骨微结构)。<br>**>1.350**: 正常<br>**1.200-1.350**: 部分退化<br>**<1.200**: 退化,骨折风险高",1.180
+trabecularBoneScore.interpretation,骨小梁评分.解读,String,"**建议值**: `正常`, `部分退化`, `退化`,退化
+
+labs.calcium.serum,实验室.钙代谢.血钙,Number,"血清总钙(白蛋白校正后)。<br>单位: mmol/L<br>**正常**: 2.15-2.55<br>**>2.6**: 高钙血症(甲旁亢/恶性肿瘤/维生素D中毒)<br>**<2.1**: 低钙血症",2.30
+labs.calcium.ionized,实验室.钙代谢.离子钙,Number,"血清离子钙。<br>单位: mmol/L<br>**正常**: 1.15-1.35",1.20
+labs.calcium.urine24h,实验室.钙代谢.24小时尿钙,Number,"24小时尿钙排泄。<br>单位: mmol/24h<br>**正常**: 2.5-7.5<br>**>7.5**: 高尿钙症(补钙需谨慎)<br>**<2.5**: 低尿钙症",4.2
+
+labs.phosphorus,实验室.血磷,Number,"血清磷。<br>单位: mmol/L<br>**正常**: 0.8-1.5<br>**低**: 骨软化症/维生素D缺乏<br>**高**: 肾功能不全",1.1
+
+labs.alp,实验室.碱性磷酸酶,Number,"血清碱性磷酸酶(ALP)。<br>单位: U/L<br>**正常**: 40-150<br>**升高**: 骨转换增快,Paget病,骨软化症,骨折愈合",95
+
+labs.vitaminD.date,实验室.维生素D.检测日期,Date,25(OH)D检测日期,2025-01-15
+labs.vitaminD.value,实验室.维生素D.25(OH)D,Number,"血清25-羟维生素D。<br>单位: ng/mL(或nmol/L,×2.5转换)<br>**<20 ng/mL(<50 nmol/L)**: 缺乏<br>**20-30 ng/mL(50-75)**: 不足<br>**30-50(75-125)**: 充足<br>**>50(>125)**: 可能过量",18
+labs.vitaminD.interpretation,实验室.维生素D.判读,String,"**建议值**: `严重缺乏(<10 ng/mL)`, `缺乏(10-20)`, `不足(20-30)`, `充足(30-50)`, `过量(>50)`",缺乏
+
+labs.pth,实验室.甲状旁腺激素,Number,"血清PTH(完整分子)。<br>单位: pg/mL<br>**正常**: 15-65<br>**升高**: 原发性甲旁亢(伴高钙),继发性甲旁亢(维生素D缺乏,肾病,伴低钙/正常钙)",72
+labs.pthInterpretation,实验室.PTH解读,String,"**建议值**: `正常`, `轻度升高(继发性,维生素D缺乏)`, `明显升高(原发性甲旁亢可能)`, `抑制`",轻度升高
+
+labs.btm.ctx,实验室.骨转换标志物.CTX,Number,"β-CTX(I型胶原C端肽,骨吸收标志物)。<br>单位: ng/mL<br>**绝经后女性正常**: 0.142-1.351<br>**升高**: 骨转换快,骨质疏松,甲旁亢<br>**抑制**: 抗骨吸收治疗中",0.620
+labs.btm.p1np,实验室.骨转换标志物.P1NP,Number,"I型前胶原N端前肽(骨形成标志物)。<br>单位: ng/mL<br>**绝经后女性正常**: 16.3-73.9<br>**升高**: 骨转换快,甲旁亢,骨折愈合",85
+
+labs.tsh,实验室.甲状腺功能.TSH,Number,"促甲状腺激素。<br>单位: mIU/L<br>**<0.4**: 甲亢(骨量丢失加速)<br>**0.4-4.0**: 正常",1.8
+labs.ft4,实验室.甲状腺功能.FT4,Number,"游离T4。<br>单位: pmol/L<br>**>22**: 甲亢",15.2
+
+labs.testosterone,实验室.性激素.睾酮(男性),Number,"血清总睾酮(男性)。<br>单位: nmol/L<br>**<8**: 性腺功能减退(骨质疏松风险)",
+labs.estradiol,实验室.性激素.雌二醇(女性),Number,"血清雌二醇(绝经前女性)。<br>单位: pmol/L<br>**低**: 卵巢功能减退",
+
+labs.kidneyFunction.creatinine,实验室.肾功能.肌酐,Number,"血清肌酐。<br>单位: μmol/L<br>**升高**: CKD(影响维生素D活化,骨代谢)",68
+labs.kidneyFunction.egfr,实验室.肾功能.eGFR,Number,"估算肾小球滤过率。<br>单位: mL/min/1.73m²<br>**<60**: CKD 3期及以上(继发性骨质疏松风险)",85
+
+labs.cbc.hemoglobin,实验室.血常规.血红蛋白,Number,"血红蛋白。<br>单位: g/L<br>**低**: 贫血(多发性骨髓瘤/恶性肿瘤筛查)",130
+
+labs.spep,实验室.血清蛋白电泳,String,"SPEP(排查多发性骨髓瘤)。<br>**建议值**: `未做`, `正常`, `M蛋白阳性`",未做
+labs.celiacScreen,实验室.乳糜泻筛查,String,"抗组织转谷氨酰胺酶抗体(tTG-IgA,吸收不良相关)。<br>**建议值**: `未做`, `阴性`, `阳性`",未做
+
+frax.calculated,FRAX评分.是否计算,String,"FRAX(骨折风险评估工具)。<br>**建议值**: `已计算`, `未计算`<br>**适应证**: 40-90岁,骨量减少或低创伤骨折史",已计算
+frax.majorOsteoporoticFracture,FRAX评分.10年主要骨质疏松性骨折概率,Number,"10年内发生髋部/椎体/肱骨近端/前臂骨折的概率。<br>单位: %<br>**≥20%**: 高危,推荐药物治疗(美国标准)",18
+frax.hipFracture,FRAX评分.10年髋部骨折概率,Number,"10年髋部骨折概率。<br>单位: %<br>**≥3%**: 高危,推荐药物治疗(美国标准)",8
+frax.treatmentThreshold,FRAX评分.是否达到治疗阈值,String,"**中国建议**: 10年主要骨折≥20%或髋部骨折≥3%。<br>**建议值**: `达到`, `未达到`,达到
+
+treatmentDecision.indication,治疗决策.药物治疗指征,String,"**药物治疗适应证**:<br>1. 髋部或椎体骨折史<br>2. T值≤-2.5(腰椎/股骨颈/全髋)<br>3. T值-1.0~-2.5+FRAX高危<br>4. 长期激素(≥5mg/天≥3个月)<br>**建议值**: `符合指征`, `不符合指征`,符合指征
+treatmentDecision.goal,治疗决策.治疗目标,String,"**示例**: `预防骨折`, `减轻疼痛`, `改善骨密度`, `预防进一步骨量丢失`",预防骨折;改善骨密度
+
+medications.calcium.supplement,药物.钙剂.补充状态,String,"**建议值**: `未补充`, `碳酸钙`, `柠檬酸钙`, `其他钙剂`, `饮食摄入充足无需补充`",碳酸钙
+medications.calcium.dose,药物.钙剂.剂量,Number,"元素钙日剂量。<br>单位: mg/天<br>**推荐**: 饮食+补充剂共1000-1200mg/天<br>**不超过**: 单次500mg,总量2000mg/天",600
+
+medications.vitaminD.supplement,药物.维生素D.补充方案,String,"**示例**: `维生素D3 800 IU/天(维持)`, `维生素D3 2000 IU/天(治疗不足)`, `维生素D2 50000 IU/周×8周(治疗缺乏)`, `骨化三醇(活性VitD)`, `未补充`",维生素D3 2000 IU/天
+medications.vitaminD.dose,药物.维生素D.日剂量,Number,"维生素D日剂量(IU)。<br>单位: IU/天<br>**预防**: 600-800<br>**治疗不足/缺乏**: 1000-2000或更高<br>**老年人**: 800-2000",2000
+
+medications.antiResorptive.agent,药物.抗骨吸收药物.药物名称,String,"**双膦酸盐**:<br>- `阿仑膦酸钠70mg qw po(一线)`<br>- `利塞膦酸钠35mg qw po`<br>- `伊班膦酸钠150mg qm po或3mg q3m IV`<br>- `唑来膦酸5mg qy IV(依从性好,髋部骨折术后)`<br>**RANKL单抗**:<br>- `地舒单抗60mg q6m sc(双膦酸盐不耐受/肾功能不全)`<br>**SERM(选择性雌激素受体调节剂)**:<br>- `雷洛昔芬60mg qd po(绝经后女性,椎体骨折)`,阿仑膦酸钠70mg qw
+medications.antiResorptive.startDate,药物.抗骨吸收药物.开始日期,Date,抗骨吸收药物开始日期,2024-09-01
+medications.antiResorptive.duration,药物.抗骨吸收药物.疗程,String,"**双膦酸盐**: 3-5年后评估药物假期(低危患者)。<br>**地舒单抗**: 不宜停药(骨折反弹风险)。<br>**示例**: `<1年`, `1-3年`, `3-5年`, `>5年`,1-3年
+
+medications.anabolic.agent,药物.促骨形成药物.药物名称,String,"**PTH类似物**:<br>- `特立帕肽20μg qd sc×18-24个月(重度骨质疏松,多发骨折)`<br>- `阿巴洛肽(未在中国上市)`<br>**抗硬骨素单抗**:<br>- `罗莫索珠单抗210mg qm sc×12个月(新药,骨折高危)`,特立帕肽20μg qd sc
+medications.anabolic.startDate,药物.促骨形成药物.开始日期,Date,促骨形成药物开始日期,2024-09-01
+medications.anabolic.duration,药物.促骨形成药物.疗程,String,"**特立帕肽**: 最长24个月,停药后序贯抗骨吸收治疗。<br>**罗莫索珠单抗**: 12个月,停药后序贯双膦酸盐。<br>**示例**: `<6个月`, `6-12个月`, `12-18个月`, `18-24个月`,12-18个月
+
+medications.hrt.agent,药物.激素替代治疗.方案,String,"HRT(绝经激素治疗,仅用于有更年期症状的绝经早期女性)。<br>**示例**: `雌二醇+孕激素(有子宫)`, `雌二醇单药(无子宫)`, `替勃龙`, `不适用/未使用`",未使用
+medications.hrt.contraindications,药物.激素替代治疗.禁忌症筛查,String,"**禁忌症**: 乳腺癌史,VTE史,冠心病,卒中,活动性肝病,不明原因阴道出血。<br>**建议值**: `无禁忌症`, `有禁忌症(具体)`, `未评估`",
+
+medications.sideEffects,药物.不良反应,String,"**示例**: `双膦酸盐:上消化道不适/急性期反应/下颌骨坏死(罕见)/非典型股骨骨折(罕见)`, `地舒单抗:停药后骨折反弹/低钙血症`, `特立帕肽:注射部位反应/一过性高钙血症`, `无不良反应`",轻度上消化道不适
+medications.adherence,药物.依从性,String,"**建议值**: `良好(>80%)`, `中等(50-80%)`, `差(<50%)`, `已自行停药`",良好
+
+nonPharmacological.exercise,非药物治疗.运动,String,"**推荐**: 负重运动+抗阻训练+平衡训练。<br>**建议值**: `规律运动(≥3次/周)`, `偶尔运动`, `久坐不动`",偶尔运动
+nonPharmacological.fallPrevention,非药物治疗.防跌倒措施,String,"**示例**: `家居环境改善(去除地毯/加扶手/照明)`, `视力矫正`, `评估用药(镇静剂/降压药)`, `平衡训练`, `使用辅助器具`, `未采取措施`",家居环境改善;视力矫正
+nonPharmacological.backBrace,非药物治疗.腰背支具,String,"椎体骨折后腰围/支具。<br>**建议值**: `未使用`, `急性期短期使用`, `长期使用(不推荐,肌肉萎缩)`",未使用
+nonPharmacological.physicalTherapy,非药物治疗.物理治疗,String,"**建议值**: `未接受`, `正在接受(康复训练)`, `已完成疗程`",正在接受
+
+monitoring.dxaFollowup,监测.DXA随访计划,String,"**推荐频率**: 治疗中1-2年复查;稳定后2-3年。<br>**建议值**: `1年后`, `2年后`, `未安排`",1年后
+monitoring.btmFollowup,监测.骨转换标志物随访,String,"**用途**: 评估治疗依从性和反应(治疗后3-6个月)。<br>**建议值**: `3个月后`, `6个月后`, `未安排`",6个月后
+monitoring.vitaminDFollowup,监测.维生素D随访,String,"**建议值**: `治疗3个月后复查`, `已达标无需复查`, `未安排`",治疗3个月后复查
+
+imaging.spineXray.date,影像学.脊柱X线.检查日期,Date,脊柱X线检查日期,2025-01-10
+imaging.spineXray.findings,影像学.脊柱X线.主要发现,String,"**示例**: `T12椎体压缩性骨折(前柱高度下降40%)`, `L1楔形变(前柱高度下降30%)`, `多发椎体骨折`, `未见明确骨折`, `退行性变`, `骨质疏松影像(骨小梁稀疏,皮质变薄)`",T12椎体压缩性骨折;L1楔形变
+
+fractures.currentFracture,骨折情况.当前骨折,String,"**建议值**: `无`, `急性骨折(部位)`, `骨折愈合中`",无
+fractures.vertebralCount,骨折情况.椎体骨折数量,Number,椎体骨折总数(含陈旧性),2
+fractures.hipFracture,骨折情况.髋部骨折史,String,"**建议值**: `无`, `有(年份)`,无
+fractures.wristFracture,骨折情况.腕部骨折史,String,"桡骨远端骨折(Colles骨折)。<br>**建议值**: `无`, `有(年份)`",有(2022年)
+fractures.humerusFracture,骨折情况.肱骨近端骨折史,String,"**建议值**: `无`, `有(年份)`",无
+fractures.otherFractures,骨折情况.其他脆性骨折,String,"**示例**: `肋骨骨折`, `骨盆骨折`, `踝部骨折`, `无`",无
+
+complications.chronicPain,并发症.慢性疼痛,String,"椎体骨折后慢性疼痛。<br>**建议值**: `无`, `轻度`, `中度`, `重度(影响生活质量)`",中度
+complications.disability,并发症.残疾,String,"**建议值**: `无`, `轻度活动受限`, `中度残疾(需辅助器具)`, `重度残疾(卧床)`",轻度活动受限
+complications.respiratoryImpairment,并发症.呼吸功能受限,String,"多发胸椎骨折致胸廓畸形。<br>**建议值**: `无`, `有`",无
+complications.qolImpairment,并发症.生活质量,String,"**建议值**: `良好`, `中等`, `差(焦虑抑郁/社交退缩/自理困难)`",中等
+
+surgery.vertebroplasty,外科治疗.椎体成形术,String,"PVP/PKP(适应证:急性椎体骨折,保守治疗4-6周无效,持续疼痛)。<br>**建议值**: `未做`, `已行手术(部位+时间)`, `计划手术`, `有禁忌症(感染/骨折不稳定)`",已行手术(T12,2024年12月)
+
+education.lifestyle,健康教育.生活方式指导,String,"**建议值**: `已教育(戒烟/限酒/运动/防跌倒)`, `未教育`",已教育
+education.medicationInstructions,健康教育.用药指导,String,"**双膦酸盐**: 晨起空腹,白水送服,服后30分钟内保持直立,避免与钙剂同服。<br>**建议值**: `已详细指导`, `简单告知`, `未指导`",已详细指导
+
+followUp.nextVisitDate,随访.下次随访日期,Date,下次随访日期,2025-07-15
+followUp.frequency,随访.随访频率,String,"**建议值**: `治疗初期:3-6个月`, `稳定期:6-12个月`, `高危患者:3个月`",治疗初期:3-6个月
+followUp.plan,随访.随访计划,String,"**示例**: `评估依从性`, `监测不良反应`, `复查骨密度(1-2年)`, `复查维生素D(3个月)`, `复查BTM(3-6个月)`, `脊柱X线(症状变化时)`, `FRAX重新评估`",评估依从性;复查维生素D
+
+prognosis.fractureRisk,预后.骨折风险,String,"**建议值**: `低风险`, `中风险`, `高风险`, `极高风险(既往骨折+T值≤-2.5+多个危险因素)`",高风险
+prognosis.treatmentResponse,预后.治疗反应预测,String,"**良好预测因子**: 依从性好,维生素D充足,规律运动,无继发因素。<br>**建议值**: `预期良好`, `预期欠佳(依从性差/继发因素未纠正)`",预期良好
+
+specialPopulations.gisd,特殊人群.糖皮质激素诱导骨质疏松,String,"GIOP。<br>**建议值**: `是(预防/治疗)`, `否`<br>**预防**: 开始≥5mg/天泼尼松≥3个月即启动钙D+双膦酸盐/特立帕肽",是
+specialPopulations.male,特殊人群.男性骨质疏松,String,"**建议值**: `是`, `否`<br>**特点**: 继发性原因多(性腺减退/酒精/激素),诊断延迟,骨折死亡率高",否
+
+clinicianNotes,临床医生备注,String,自由文本备注栏,患者依从性好。已完成T12椎体成形术,疼痛明显缓解。建议加强抗阻训练和平衡训练以降低跌倒风险。
+dataSource,数据来源,String,"**建议值**: `门诊`, `住院`, `骨质疏松专科`, `体检中心`, `骨科会诊`",骨质疏松专科

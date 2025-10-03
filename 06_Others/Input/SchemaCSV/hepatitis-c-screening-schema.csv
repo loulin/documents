@@ -1,0 +1,130 @@
+字段名(英文),字段名(中文),数据类型,描述,示例
+patientId,患者ID,String,患者唯一标识符,P123456
+screeningDate,筛查日期,Date,丙肝筛查日期,2025-01-15
+screeningReason,筛查原因,String,"**建议值**: `常规体检筛查`, `肝功能异常`, `高危人群筛查`, `输血前筛查`, `术前筛查`, `既往感染者随访`, `配偶/性伴阳性`, `职业暴露`, `妊娠筛查`",常规体检筛查
+
+riskFactors.ivdu,危险因素.静脉注射毒品史,String,"**建议值**: `从未`, `既往史`, `当前使用`<br>**最高危因素**",从未
+riskFactors.transfusion,危险因素.1992年前输血或血制品,String,"**建议值**: `无`, `有(1992年前)`, `有(1992年后,风险低)`<br>**1992年前**: 供血筛查HCV前",无
+riskFactors.hemodialysis,危险因素.血液透析,String,"**建议值**: `从未`, `既往`, `当前透析`",从未
+riskFactors.hiv,危险因素.HIV感染,String,"**建议值**: `阴性`, `阳性(HCV合并感染常见)`",阴性
+riskFactors.healthcare,危险因素.医源性暴露,String,"**示例**: `针刺伤`, `医疗器械污染(内镜/牙科)`, `不规范注射`, `纹身/穿刺(非正规机构)`, `无暴露史`",无暴露史
+riskFactors.sexualRisk,危险因素.性传播风险,String,"**建议值**: `无`, `多性伴`, `HCV阳性配偶/性伴`, `男男性行为`",无
+riskFactors.motherToChild,危险因素.母婴传播史,String,"**建议值**: `母亲HCV阴性`, `母亲HCV阳性`, `不详`",不详
+riskFactors.occupational,危险因素.职业暴露,String,"医务人员针刺伤等。<br>**建议值**: `无`, `有职业暴露史`, `高危职业(医务/急救)`",无
+
+riskFactors.liverDisease,危险因素.不明原因肝病,String,"**建议值**: `无`, `ALT升高`, `肝硬化`, `肝癌`",ALT升高
+riskFactors.birthCohort,危险因素.1945-1965年出生,String,"**建议值**: `是`, `否`<br>**美国CDC推荐**: 该出生队列一次性筛查(HCV流行高峰)",否
+riskFactors.incarceration,危险因素.监禁史,String,"**建议值**: `无`, `有(高危环境)`",无
+
+antiHCV.date,抗-HCV.检测日期,Date,抗-HCV抗体检测日期,2025-01-15
+antiHCV.method,抗-HCV.检测方法,String,"**建议值**: `化学发光免疫分析(CLIA)`, `ELISA`, `快速检测`, `不详`",化学发光免疫分析
+antiHCV.result,抗-HCV.结果,String,"**建议值**: `阴性(-)`, `阳性(+)`, `不确定(灰区)`<br>**阳性**: 曾经或现在感染HCV",阴性
+antiHCV.signalCutoff,抗-HCV.S/CO比值,Number,"信号/临界值比值(Signal-to-Cutoff ratio)。<br>**≥1.0**: 阳性<br>**高S/CO(>10)**: 真阳性可能大",
+
+hcvRna.date,HCV RNA.检测日期,Date,HCV RNA病毒载量检测日期,2025-01-16
+hcvRna.method,HCV RNA.检测方法,String,"**建议值**: `实时荧光定量PCR(RT-qPCR)`, `TMA(转录介导扩增)`, `未做`",实时荧光定量PCR
+hcvRna.result,HCV RNA.定性结果,String,"**建议值**: `未检出(阴性)`, `检出(阳性)`, `未做`<br>**检出**: 现症感染,需治疗<br>**抗-HCV(+)+HCV RNA(-)**: 既往感染已清除或自愈",检出
+hcvRna.quantitative,HCV RNA.定量结果,Number,"HCV RNA病毒载量。<br>单位: IU/mL<br>**检出下限**: 通常15 IU/mL<br>**高病毒载量**: >800,000 IU/mL",1.5×10⁶
+hcvRna.log10,HCV RNA.log10 IU/mL,Number,"病毒载量对数值。<br>**示例**: 1,000,000 IU/mL = 6.0 log IU/mL",6.18
+
+hcvGenotype.tested,HCV基因型.是否检测,String,"**建议值**: `已检测`, `未检测`, `计划检测`<br>**用途**: 指导DAA治疗方案选择(部分新方案泛基因型,可不测)",已检测
+hcvGenotype.result,HCV基因型.结果,String,"**HCV基因型**(1-6型):<br>**中国常见**: 1b(56.8%),2a(24.1%),3a/3b(9.1%),6a(6.3%)<br>**示例**: `1b型`, `2a型`, `3a型`, `1a型`, `混合型`, `未分型`",1b型
+hcvGenotype.subtype,HCV基因型.亚型,String,"**示例**: `1a`, `1b`, `2a`, `2b`, `3a`, `未详细分型`",1b
+
+liverFunction.alt,肝功能.ALT,Number,"丙氨酸转氨酶。<br>单位: U/L<br>**正常**: <40(男)/<35(女)<br>**升高**: 肝细胞损伤",85
+liverFunction.ast,肝功能.AST,Number,"天冬氨酸转氨酶。<br>单位: U/L<br>**正常**: <40",65
+liverFunction.astAltRatio,肝功能.AST/ALT比值,Number,"**<1**: 慢性肝炎<br>**>1**: 肝硬化/酒精性肝病可能",0.76
+liverFunction.alp,肝功能.ALP,Number,"碱性磷酸酶。<br>单位: U/L<br>**正常**: 40-150",95
+liverFunction.ggt,肝功能.GGT,Number,"γ-谷氨酰转肽酶。<br>单位: U/L<br>**正常**: <50(男)/<32(女)<br>**升高**: 胆汁淤积/酒精性肝病",120
+liverFunction.tbil,肝功能.总胆红素,Number,"总胆红素。<br>单位: μmol/L<br>**正常**: 5-21<br>**升高**: 黄疸/肝衰竭",18
+liverFunction.dbil,肝功能.直接胆红素,Number,"直接胆红素。<br>单位: μmol/L<br>**正常**: <7",6
+liverFunction.albumin,肝功能.白蛋白,Number,"血清白蛋白。<br>单位: g/L<br>**正常**: 35-50<br>**<35**: 肝合成功能下降",40
+liverFunction.globulin,肝功能.球蛋白,Number,"血清球蛋白。<br>单位: g/L<br>**升高**: 慢性炎症",32
+liverFunction.ag,肝功能.A/G比值,Number,"白蛋白/球蛋白比值。<br>**正常**: 1.5-2.5<br>**<1.0**: 肝硬化可能",1.25
+
+liverFunction.pt,肝功能.凝血酶原时间,Number,"PT。<br>单位: 秒<br>**正常**: 11-15<br>**延长**: 肝合成功能障碍",13.5
+liverFunction.inr,肝功能.INR,Number,"国际标准化比值。<br>**正常**: 0.8-1.2<br>**>1.5**: 肝衰竭风险",1.1
+
+cbc.platelet,血常规.血小板,Number,"血小板计数。<br>单位: ×10⁹/L<br>**正常**: 100-300<br>**<100**: 血小板减少,肝硬化/脾功能亢进",150
+cbc.wbc,血常规.白细胞,Number,"白细胞计数。<br>单位: ×10⁹/L<br>**<4**: 脾功能亢进",6.5
+
+fibrosis.apri,肝纤维化评估.APRI指数,Number,"AST-to-Platelet Ratio Index = (AST/ULN)×100/血小板(10⁹/L)。<br>**<0.5**: 无显著纤维化可能大<br>**>1.5**: 肝硬化可能大<br>**0.5-1.5**: 中间灰区",0.43
+fibrosis.fib4,肝纤维化评估.FIB-4指数,Number,"FIB-4 = 年龄×AST/(血小板×√ALT)。<br>**<1.45**: 无显著纤维化可能大<br>**>3.25**: 进展期纤维化/肝硬化可能大<br>**1.45-3.25**: 中间灰区",1.85
+
+fibrosis.fibroscan.date,肝纤维化评估.FibroScan.检测日期,Date,肝脏瞬时弹性成像检查日期,2025-01-18
+fibrosis.fibroscan.lsm,肝纤维化评估.FibroScan.肝硬度值,Number,"肝硬度测定值(LSM)。<br>单位: kPa<br>**<7.0**: F0-F1(无/轻度纤维化)<br>**7.0-9.5**: F2(中度纤维化)<br>**9.5-12.5**: F3(进展期纤维化)<br>**>12.5**: F4(肝硬化)",8.5
+fibrosis.fibroscan.cap,肝纤维化评估.FibroScan.脂肪衰减参数,Number,"CAP(受控衰减参数,评估脂肪变)。<br>单位: dB/m<br>**<238**: S0(无脂肪变)<br>**238-260**: S1(轻度)<br>**260-290**: S2(中度)<br>**>290**: S3(重度)",250
+
+fibrosis.metavir,肝纤维化评估.METAVIR分期,String,"**肝纤维化分期**(如有肝活检):<br>**F0**: 无纤维化<br>**F1**: 汇管区纤维化<br>**F2**: 汇管区周围纤维化<br>**F3**: 纤维间隔形成(桥接纤维化)<br>**F4**: 肝硬化<br>**建议值**: `F0`, `F1`, `F2`, `F3`, `F4`, `未活检`",未活检
+fibrosis.ishak,肝纤维化评估.Ishak评分,String,"Ishak纤维化评分(0-6分,如有肝活检)。<br>**0**: 无纤维化<br>**1-2**: 轻度<br>**3-4**: 中度<br>**5**: 进展期纤维化(不完全肝硬化)<br>**6**: 确定肝硬化<br>**建议值**: `0`, `1-2`, `3-4`, `5`, `6`, `未活检`",未活检
+
+imaging.ultrasound.date,影像学.肝脏超声.检查日期,Date,腹部超声检查日期,2025-01-12
+imaging.ultrasound.liverEcho,影像学.肝脏超声.肝脏回声,String,"**建议值**: `正常`, `增粗增强(脂肪肝/纤维化)`, `不均匀`, `肝表面不光滑(肝硬化)`, `结节状(肝硬化)`",增粗增强
+imaging.ultrasound.liverSize,影像学.肝脏超声.肝脏大小,String,"**建议值**: `正常`, `肿大`, `缩小(肝硬化)`",正常
+imaging.ultrasound.spleen,影像学.肝脏超声.脾脏,String,"**示例**: `正常(厚度<4cm)`, `轻度肿大(4-5cm)`, `中度肿大(5-6cm)`, `明显肿大(>6cm,门脉高压)`",正常
+imaging.ultrasound.ascites,影像学.肝脏超声.腹水,String,"**建议值**: `无`, `少量`, `中量`, `大量`",无
+imaging.ultrasound.portalVein,影像学.肝脏超声.门静脉,String,"**示例**: `直径正常(<13mm)`, `扩张(≥13mm,门脉高压)`, `血流方向正常`, `血流逆向(门脉高压)`",直径正常
+imaging.ultrasound.focalLesion,影像学.肝脏超声.占位性病变,String,"**建议值**: `未见`, `囊肿`, `血管瘤`, `可疑占位(需增强CT/MRI)`",未见
+
+imaging.ct.performed,影像学.增强CT/MRI.是否完成,String,"**建议值**: `已做`, `未做`, `计划检查`<br>**适应证**: FibroScan提示肝硬化,可疑肝癌,治疗前评估",未做
+imaging.ct.cirrhosis,影像学.增强CT/MRI.肝硬化征象,String,"**示例**: `肝表面结节`, `肝叶比例失调(尾叶/右叶肥大)`, `门脉高压(侧支循环/脾大/腹水)`, `无肝硬化征象`",
+imaging.ct.hcc,影像学.增强CT/MRI.肝细胞癌,String,"**建议值**: `未见`, `可疑(需活检)`, `确诊`",
+
+cirrhosisComplications.decompensated,肝硬化并发症.失代偿表现,String,"**建议值**: `无肝硬化`, `代偿期肝硬化(Child-Pugh A)`, `失代偿期(B/C级,出现腹水/静脉曲张出血/肝性脑病/黄疸)`",无肝硬化
+cirrhosisComplications.ascites,肝硬化并发症.腹水,String,"**建议值**: `无`, `少量`, `中-大量`",无
+cirrhosisComplications.varices,肝硬化并发症.食管胃底静脉曲张,String,"**建议值**: `未行胃镜`, `无静脉曲张`, `轻度`, `中度`, `重度`, `曲张破裂出血史`",未行胃镜
+cirrhosisComplications.encephalopathy,肝硬化并发症.肝性脑病,String,"**建议值**: `无`, `隐性(轻微认知障碍)`, `I-II度`, `III-IV度(昏迷)`",无
+cirrhosisComplications.spondaneousBacterialPeritonitis,肝硬化并发症.自发性细菌性腹膜炎,String,"SBP。<br>**建议值**: `无`, `既往史`, `当前感染`",无
+cirrhosisComplications.hepatorenalSyndrome,肝硬化并发症.肝肾综合征,String,"**建议值**: `无`, `I型(急性)`, `II型(慢性)`",无
+cirrhosisComplications.hcc,肝硬化并发症.肝细胞癌,String,"**建议值**: `无`, `可疑`, `确诊`",无
+
+childPugh.score,Child-Pugh评分.总分,Number,"Child-Pugh分级(5-15分,评估肝功能储备)。<br>**A级(5-6分)**: 代偿期,预后好<br>**B级(7-9分)**: 中度失代偿<br>**C级(10-15分)**: 重度失代偿<br>**评分项目**: 胆红素(1-3分)、白蛋白(1-3分)、PT/INR(1-3分)、腹水(1-3分)、肝性脑病(1-3分)",
+childPugh.class,Child-Pugh评分.分级,String,"**建议值**: `A级`, `B级`, `C级`, `不适用(无肝硬化)`",不适用
+
+meld.score,MELD评分,Number,"终末期肝病模型评分 = 3.78×ln(胆红素mg/dL)+11.2×ln(INR)+9.57×ln(肌酐mg/dL)+6.43。<br>**用途**: 肝移植优先级评估<br>**≥15**: 肝移植候选者",
+
+coinfections.hbv.hbsag,合并感染.HBV.HBsAg,String,"**建议值**: `阴性`, `阳性(HBV/HCV合并感染)`<br>**合并感染**: 肝硬化/肝癌风险更高",阴性
+coinfections.hiv.status,合并感染.HIV.HIV状态,String,"**建议值**: `阴性`, `阳性(HIV/HCV合并感染)`<br>**合并感染**: 肝病进展快,需同时治疗",阴性
+coinfections.hav.antiHAV,合并感染.HAV.抗-HAV IgG,String,"甲肝免疫状态。<br>**建议值**: `阳性(有免疫力)`, `阴性(需接种疫苗)`, `未检测`",阳性
+coinfections.hdv.antiHDV,合并感染.HDV.抗-HDV,String,"丁肝抗体(仅HBsAg阳性者需检测)。<br>**建议值**: `阴性`, `阳性`, `不适用(HBsAg阴性)`, `未检测`",不适用
+
+treatment.indication,治疗.治疗指征,String,"**适应证**: 所有慢性HCV感染者(HCV RNA阳性)均应考虑治疗。<br>**建议值**: `符合指征(HCV RNA+)`, `不符合(抗-HCV+但RNA-)`, `患者拒绝`, `有治疗禁忌`",符合指征
+treatment.urgency,治疗.治疗紧迫性,String,"**优先治疗**: 进展期纤维化/肝硬化,肝移植受者,HBV/HIV合并感染,肝外表现,肾病。<br>**建议值**: `高优先级`, `标准优先级`, `暂缓治疗`",高优先级
+
+treatment.daaRegimen,治疗.DAA方案,String,"**直接抗病毒药物(DAA)方案**(泛基因型或基因型特异性):<br>**泛基因型**:<br>- `索磷布韦/维帕他韦(SOF/VEL)12周`<br>- `格卡瑞韦/哌仑他韦(GLE/PIB)8-12周`<br>**基因型特异性**:<br>- `艾尔巴韦/格拉瑞韦(EBR/GZR)12周(GT1/4)`<br>- `来迪派韦/索磷布韦(LDV/SOF)12周(GT1)`<br>- `达卡他韦+索磷布韦(DCV+SOF)12周(GT3)`<br>**示例**: `SOF/VEL 12周`, `未开始治疗`, `正在治疗中`, `已完成治疗`",SOF/VEL 12周
+treatment.startDate,治疗.开始日期,Date,DAA治疗开始日期,2025-02-01
+treatment.duration,治疗.疗程,String,"**建议值**: `8周(无肝硬化)`, `12周(标准疗程)`, `16-24周(肝硬化/既往治疗失败)`, `未开始`",12周
+treatment.ribavirin,治疗.利巴韦林联合,String,"RBV(部分难治患者需联合)。<br>**建议值**: `未使用`, `联合使用(剂量:XXX mg/天)`, `因贫血/肾功能不全禁用`",未使用
+
+treatment.onTreatmentResponse,治疗.治疗中监测,String,"**监测**: 治疗第4周HCV RNA(早期病毒学应答),治疗结束时RNA。<br>**建议值**: `未开始`, `治疗中(RNA下降良好)`, `治疗中(RNA未转阴,需调整)`, `已完成治疗`",未开始
+treatment.etr,治疗.治疗结束应答,String,"ETR(治疗结束时HCV RNA)。<br>**建议值**: `未完成治疗`, `HCV RNA阴性(理想)`, `HCV RNA仍阳性(治疗失败)`",
+
+treatment.svr12,治疗.SVR12,String,"持续病毒学应答(治疗结束后12周HCV RNA)。<br>**建议值**: `未到随访时间`, `SVR12达到(HCV RNA阴性,治愈)`, `SVR12未达到(复发)`, `失访`<br>**SVR12达到**: 相当于治愈(复发率<1%)",
+treatment.svr24,治疗.SVR24,String,"治疗结束后24周HCV RNA。<br>**建议值**: `未到随访时间`, `SVR24达到`, `复发`, `失访`",
+
+treatment.sideEffects,治疗.不良反应,String,"**DAA常见不良反应**(轻微,耐受性好):<br>**示例**: `疲劳`, `头痛`, `失眠`, `恶心`, `皮疹`, `无不良反应`<br>**利巴韦林**: `溶血性贫血(需监测Hb)`, `皮疹`, `致畸(孕妇禁用)`",无不良反应
+treatment.adherence,治疗.依从性,String,"**建议值**: `良好(>95%)`, `中等(80-95%)`, `差(<80%)`<br>**差依从性**: 治疗失败/耐药风险",良好
+
+postTreatment.liverMonitoring,治疗后监测.肝功能监测,String,"**建议值**: `治疗结束后每3-6个月监测`, `已正常`, `需持续监测`",
+postTreatment.hccSurveillance,治疗后监测.肝癌监测,String,"**肝硬化患者**: SVR后仍需终身监测HCC(每6个月超声+AFP)。<br>**建议值**: `需监测(有肝硬化)`, `无需监测(无肝硬化/轻度纤维化)`, `正在监测中`",需监测
+postTreatment.fibrosisRegression,治疗后监测.纤维化逆转,String,"SVR后纤维化可逆转。<br>**建议值**: `未评估`, `FibroScan显示纤维化减轻`, `纤维化稳定`, `肝硬化不可逆`",未评估
+
+prevention.counseling,预防.健康教育,String,"**建议值**: `已教育(避免酒精/肝毒药物/再感染途径)`, `未教育`",已教育
+prevention.alcoholAbstinence,预防.戒酒,String,"**建议值**: `不饮酒`, `已戒酒`, `仍饮酒(需劝诫)`, `酒精依赖(需转诊)`",不饮酒
+prevention.vaccination,预防.疫苗接种,String,"**推荐**: HAV疫苗(如抗-HAV阴性),HBV疫苗(如抗-HBs阴性)。<br>**建议值**: `HAV疫苗已接种`, `HBV疫苗已接种`, `均未接种`, `已有免疫力无需接种`",已有免疫力
+
+extrahepatic.cryoglobulinemia,肝外表现.冷球蛋白血症,String,"**建议值**: `无`, `有(紫癜/关节痛/肾炎)`",无
+extrahepatic.glomerulonephritis,肝外表现.膜增生性肾小球肾炎,String,"**建议值**: `无`, `有`",无
+extrahepatic.porCutTard,肝外表现.迟发性皮肤卟啉症,String,"**建议值**: `无`, `有`",无
+extrahepatic.sicca,肝外表现.干燥综合征样表现,String,"**建议值**: `无`, `有(口干/眼干)`",无
+extrahepatic.thyroid,肝外表现.自身免疫性甲状腺疾病,String,"**建议值**: `无`, `桥本甲状腺炎`, `Graves病`",无
+extrahepatic.lymphoma,肝外表现.非霍奇金淋巴瘤,String,"**建议值**: `无`, `有`",无
+
+specialPopulations.pregnant,特殊人群.妊娠,String,"**建议值**: `非妊娠`, `妊娠期(DAA安全性数据有限,通常产后治疗)`, `哺乳期`",非妊娠
+specialPopulations.ckd,特殊人群.慢性肾病,String,"**建议值**: `无CKD`, `CKD 1-3期(多数DAA安全)`, `CKD 4-5期/透析(需调整方案,GLE/PIB首选)`",无CKD
+specialPopulations.transplant,特殊人群.器官移植,String,"**建议值**: `无移植史`, `肝移植术前(HCV+)`, `肝移植术后(HCV复发)`, `肾移植(需调整免疫抑制剂)`",无移植史
+
+screening.recommendation,筛查建议.后续筛查,String,"**抗-HCV阴性者**: 持续高危行为者需定期筛查。<br>**抗-HCV阳性但RNA阴性者**: 无需进一步随访(已自愈/既往治愈)。<br>**建议值**: `无需进一步筛查`, `每年筛查(持续高危)`, `已确诊HCV感染,转入治疗流程`",无需进一步筛查
+
+clinicianNotes,临床医生备注,String,自由文本备注栏,患者抗-HCV阴性,无高危因素,无需进一步检查。建议健康生活方式。
+dataSource,数据来源,String,"**建议值**: `体检中心`, `门诊`, `传染病专科`, `肝病门诊`, `住院`, `献血筛查`",体检中心

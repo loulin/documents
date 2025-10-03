@@ -1,0 +1,152 @@
+字段名(英文),字段名(中文),数据类型,描述,示例
+patientId,患者ID,String,患者唯一标识符,P123456
+assessmentDate,评估日期,Date,哮喘评估日期,2025-01-15
+assessmentType,评估类型,String,"评估类型。<br>**建议值**: `初诊评估`, `控制水平评估`, `急性发作评估`, `治疗调整评估`, `运动诱发哮喘评估`",控制水平评估
+
+diagnosisInfo.diagnosisDate,诊断信息.诊断日期,Date,哮喘诊断日期,2018-06-15
+diagnosisInfo.phenotype,诊断信息.表型,String,"**建议值**: `过敏性哮喘`, `非过敏性哮喘`, `晚发型哮喘`, `固定气流受限哮喘`, `肥胖相关哮喘`",过敏性哮喘
+diagnosisInfo.severity,诊断信息.严重程度分级,String,"**初始评估严重程度**:<br>**间歇**: 日间症状<2次/周,夜间<2次/月,FEV1≥80%<br>**轻度持续**: 日间>2次/周但<1次/天,夜间3-4次/月,FEV1≥80%<br>**中度持续**: 日间每天,夜间>1次/周,FEV1 60-80%<br>**重度持续**: 日间持续,夜间频繁,FEV1<60%",中度持续
+diagnosisInfo.onsetAge,诊断信息.发病年龄,Number,"发病年龄。<br>单位: 岁<br>**<12岁**: 儿童期发病<br>**≥40岁**: 晚发型哮喘",8
+diagnosisInfo.familyHistory,诊断信息.家族史,String,"哮喘或过敏性疾病家族史。<br>**建议值**: `无`, `父母一方`, `父母双方`, `兄弟姐妹`, `其他亲属`",父母一方
+
+controlLevel.act.score,控制水平.ACT评分.总分,Number,"哮喘控制测试(Asthma Control Test)总分(5-25分)。<br>**≥20**: 控制良好<br>**16-19**: 部分控制<br>**≤15**: 控制不佳",18
+controlLevel.act.q1Activities,控制水平.ACT评分.Q1活动受限,Number,过去4周哮喘妨碍工作/学习/家务的频率(1-5分),3
+controlLevel.act.q2Breathlessness,控制水平.ACT评分.Q2气短频率,Number,过去4周气短的频率(1-5分),4
+controlLevel.act.q3NightSymptoms,控制水平.ACT评分.Q3夜间症状,Number,过去4周夜间症状/憋醒的频率(1-5分),4
+controlLevel.act.q4RescueUse,控制水平.ACT评分.Q4急救药使用,Number,过去4周使用急救药物的频率(1-5分),3
+controlLevel.act.q5SelfRating,控制水平.ACT评分.Q5自我评价,Number,如何评价过去4周哮喘控制(1-5分),4
+
+controlLevel.gina.assessment,控制水平.GINA控制评估,String,"GINA 2023哮喘控制评估。<br>**控制良好**: 过去4周内所有项目均为否<br>**部分控制**: 1-2项为是<br>**控制不佳**: 3-4项为是<br>**评估项目**:<br>1. 日间症状>2次/周<br>2. 夜间憋醒<br>3. 因哮喘需用急救药>2次/周<br>4. 活动受限",部分控制
+controlLevel.gina.daySymptoms,控制水平.GINA评估.日间症状,String,"过去4周日间症状>2次/周。<br>**建议值**: `是`, `否`",是
+controlLevel.gina.nightSymptoms,控制水平.GINA评估.夜间憋醒,String,"过去4周夜间憋醒。<br>**建议值**: `是`, `否`",否
+controlLevel.gina.rescueUse,控制水平.GINA评估.急救药使用,String,"过去4周因哮喘需用急救药>2次/周(不包括运动前预防)。<br>**建议值**: `是`, `否`",是
+controlLevel.gina.activityLimitation,控制水平.GINA评估.活动受限,String,"过去4周活动受限。<br>**建议值**: `是`, `否`",否
+
+controlLevel.treatmentStep,控制水平.当前治疗阶梯,String,"GINA 2023治疗阶梯(1-5级)。<br>**阶梯1**: 按需低剂量ICS-福莫特罗<br>**阶梯2**: 低剂量ICS-福莫特罗维持+按需,或低剂量ICS每日<br>**阶梯3**: 低剂量ICS-LABA维持+按需ICS-福莫特罗<br>**阶梯4**: 中/高剂量ICS-LABA+按需ICS-福莫特罗<br>**阶梯5**: 阶梯4+附加治疗(生物制剂/OCS)",阶梯3
+
+symptoms.wheeze,症状.喘息,String,"**建议值**: `无`, `偶尔`, `频繁(≥2次/周)`, `持续性`, `仅运动时`, `仅夜间`",频繁(≥2次/周)
+symptoms.cough,症状.咳嗽,String,"**建议值**: `无`, `偶尔`, `频繁`, `持续性`, `夜间或凌晨加重`, `运动后`",夜间或凌晨加重
+symptoms.chestTightness,症状.胸闷,String,"**建议值**: `无`, `偶尔`, `频繁`, `持续性`",偶尔
+symptoms.dyspnea,症状.呼吸困难,String,"**建议值**: `无`, `轻度活动时`, `日常活动时`, `休息时`",轻度活动时
+symptoms.variability,症状.变异性特征,String,"哮喘典型的症状变异性。<br>**建议值**: `昼夜变异明显`, `季节性变异`, `随感染/过敏原/运动/冷空气/情绪变化`, `无明显规律`",昼夜变异明显;随过敏原变化
+
+triggers.allergens,触发因素.过敏原,String,"**示例**: `尘螨`, `花粉`, `动物皮屑(猫/狗)`, `霉菌`, `蟑螂`",尘螨;猫毛
+triggers.irritants,触发因素.刺激物,String,"**示例**: `烟雾(吸烟/二手烟)`, `强烈气味(香水/清洁剂)`, `空气污染`, `油烟`",烟雾
+triggers.infections,触发因素.呼吸道感染,String,"**建议值**: `病毒感染(常见诱因)`, `细菌感染`, `支原体感染`, `无明显相关`",病毒感染
+triggers.exercise,触发因素.运动,String,"**建议值**: `是(运动诱发支气管收缩)`, `否`",是
+triggers.weather,触发因素.气候变化,String,"**建议值**: `冷空气`, `季节变化`, `湿度变化`, `无明显相关`",冷空气
+triggers.emotions,触发因素.情绪,String,"**建议值**: `大笑`, `哭泣`, `紧张焦虑`, `无明显相关`",大笑
+triggers.medications,触发因素.药物,String,"**示例**: `阿司匹林`, `NSAIDs(非甾体抗炎药)`, `β受体阻滞剂`",无
+triggers.gerd,触发因素.胃食管反流,String,"**建议值**: `是(夜间哮喘加重)`, `否`",是
+triggers.occupational,触发因素.职业暴露,String,"职业性哮喘。<br>**示例**: `面粉(面包师)`, `异氰酸酯(喷漆工)`, `动物蛋白(实验室)`, `无职业暴露`",无职业暴露
+
+spirometry.date,肺功能.检查日期,Date,肺功能检查日期,2025-01-15
+spirometry.prebronchodilator.fev1,肺功能.支扩前.FEV1,Number,"第1秒用力呼气容积(支扩前)。<br>单位: L",2.10
+spirometry.prebronchodilator.fvc,肺功能.支扩前.FVC,Number,"用力肺活量(支扩前)。<br>单位: L",2.85
+spirometry.prebronchodilator.fev1FvcRatio,肺功能.支扩前.FEV1/FVC,Number,"FEV1/FVC比值(支扩前)。<br>**<0.75-0.80**: 气流受限",0.74
+
+spirometry.postbronchodilator.fev1,肺功能.支扩后.FEV1,Number,"支气管扩张剂后FEV1。<br>单位: L",2.50
+spirometry.postbronchodilator.fvc,肺功能.支扩后.FVC,Number,"支气管扩张剂后FVC。<br>单位: L",3.10
+spirometry.postbronchodilator.fev1FvcRatio,肺功能.支扩后.FEV1/FVC,Number,支气管扩张剂后比值,0.81
+spirometry.postbronchodilator.fev1Predicted,肺功能.支扩后.FEV1预计值%,Number,"支扩后FEV1占预计值百分比。<br>单位: %",85
+
+spirometry.bronchodilatorResponse,肺功能.支气管扩张试验阳性,String,"支扩试验反应性。<br>**阳性标准**: FEV1增加≥12%且≥200mL。<br>**建议值**: `阳性(支持哮喘诊断)`, `阴性`",阳性
+spirometry.bronchodilatorFev1Change,肺功能.支扩后FEV1改善量,Number,"FEV1改善量。<br>单位: mL",400
+spirometry.bronchodilatorFev1ChangePercent,肺功能.支扩后FEV1改善率,Number,"FEV1改善率。<br>单位: %",19
+
+peakFlow.personalBest,峰流速.个人最佳值,Number,"个人最佳PEF。<br>单位: L/min",450
+peakFlow.currentMorning,峰流速.今晨PEF,Number,"今晨峰流速。<br>单位: L/min",380
+peakFlow.currentEvening,峰流速.今晚PEF,Number,"今晚峰流速。<br>单位: L/min",410
+peakFlow.diurnalVariability,峰流速.昼夜变异率,Number,"昼夜变异率 = (当日最高-当日最低)/平均值×100%。<br>单位: %<br>**>10%**: 提示哮喘未控制<br>**>20%**: 明显变异",15
+peakFlow.monitoring,峰流速.监测状态,String,"**建议值**: `家庭自测(每日2次)`, `仅门诊测量`, `未监测`",家庭自测
+
+fenoTest.value,FeNO检测.数值,Number,"呼出气一氧化氮浓度。<br>单位: ppb<br>**<25**: 正常/低嗜酸性粒细胞炎症<br>**25-50**: 中度升高<br>**>50**: 高嗜酸性粒细胞炎症,ICS反应好",45
+fenoTest.date,FeNO检测.检测日期,Date,FeNO检测日期,2025-01-15
+fenoTest.interpretation,FeNO检测.临床意义,String,"**建议值**: `支持过敏性哮喘诊断`, `预测ICS反应性好`, `提示气道炎症未控制`, `正常范围`",提示气道炎症未控制
+
+allergyTesting.skinPrickTest,过敏原检测.皮肤点刺试验,String,"SPT阳性过敏原。<br>**示例**: `尘螨(+++,风团直径8mm)`, `猫毛(++)`, `艾蒿花粉(+)`",尘螨(+++);猫毛(++)
+allergyTesting.specificIgE,过敏原检测.血清特异性IgE,String,"sIgE检测结果。<br>**示例**: `尘螨Der p1: 50.2 kU/L(5级)`, `猫毛: 15.3 kU/L(4级)`",尘螨Der p1: 50.2 kU/L
+allergyTesting.totalIgE,过敏原检测.总IgE,Number,"血清总IgE。<br>单位: IU/mL<br>**>100**: 升高(成人)<br>**明显升高**: 提示过敏性哮喘",420
+allergyTesting.bloodEosinophils,过敏原检测.外周血嗜酸性粒细胞,Number,"嗜酸性粒细胞绝对计数。<br>单位: ×10⁹/L<br>**≥0.3**: 嗜酸性粒细胞型哮喘,ICS反应好,生物制剂候选<br>**≥0.15**: 中度升高",0.35
+
+exacerbationHistory.lastYearCount,急性发作史.过去1年次数,Number,"过去12个月急性发作次数(需要全身激素或住院)。<br>**≥2次**: 未来加重风险高",2
+exacerbationHistory.hospitalizations,急性发作史.过去1年住院次数,Number,因哮喘急性发作住院次数,1
+exacerbationHistory.icuAdmission,急性发作史.ICU入住史,String,"**建议值**: `无`, `有(提示严重哮喘)`",无
+exacerbationHistory.intubation,急性发作史.气管插管史,String,"**建议值**: `无`, `有(近致命哮喘)`",无
+exacerbationHistory.lastExacerbationDate,急性发作史.最近一次发作日期,Date,最近一次急性发作日期,2024-12-10
+exacerbationHistory.lastExacerbationSeverity,急性发作史.最近一次严重程度,String,"**建议值**: `轻度(门诊/急诊,未用全身激素)`, `中度(需全身激素)`, `重度(住院)`, `危及生命(ICU/插管)`",中度
+
+currentExacerbation.status,当前急性发作.状态,String,"**建议值**: `稳定期`, `轻度发作`, `中度发作`, `重度发作`, `危及生命的发作`",稳定期
+currentExacerbation.pefr,当前急性发作.PEF%预计值,Number,"峰流速占个人最佳值或预计值的百分比。<br>单位: %<br>**>80%**: 轻度<br>**60-80%**: 中度<br>**<60%**: 重度",
+currentExacerbation.breathlessness,当前急性发作.呼吸困难程度,String,"**建议值**: `步行时`, `说话时(说话不成句)`, `休息时`, `难以说话/进食`",
+currentExacerbation.consciousness,当前急性发作.意识状态,String,"**建议值**: `清醒`, `烦躁不安`, `嗜睡/意识模糊(危险征象)`",
+currentExacerbation.spo2,当前急性发作.SpO2,Number,"脉搏血氧饱和度。<br>单位: %<br>**<90%**: 重度发作",
+
+medications.ics.agent,药物.ICS单药或复方.药物名称,String,"吸入糖皮质激素。<br>**示例**: `布地奈德`, `氟替卡松`, `倍氯米松`, `环索奈德`",布地奈德
+medications.ics.dose,药物.ICS单药或复方.剂量,String,"ICS日剂量(布地奈德当量)。<br>**低剂量**: <400μg(成人)/<200μg(儿童)<br>**中剂量**: 400-800μg(成人)/200-400μg(儿童)<br>**高剂量**: >800μg(成人)/>400μg(儿童)",中剂量(800μg/天)
+medications.ics.device,药物.ICS单药或复方.吸入装置,String,"**示例**: `pMDI(定量气雾剂)`, `pMDI+储雾罐`, `DPI(干粉吸入器,都保)`, `软雾吸入器`",DPI(都保)
+medications.ics.adherence,药物.ICS单药或复方.依从性,String,"**建议值**: `良好(>80%)`, `中等(50-80%)`, `差(<50%)`, `未使用`,良好
+
+medications.icslaba.combination,药物.ICS-LABA复方制剂,String,"**示例**: `布地奈德/福莫特罗(信必可)`, `氟替卡松/沙美特罗(舒利迭)`, `倍氯米松/福莫特罗`",布地奈德/福莫特罗
+medications.icslaba.regimen,药物.ICS-LABA复方制剂.方案,String,"**MART方案**(维持和急救治疗): 布地奈德/福莫特罗规律使用+按需使用。<br>**建议值**: `MART方案`, `固定剂量维持`, `未使用ICS-LABA`",MART方案
+
+medications.rescue.saba,药物.急救药物.SABA,String,"短效β2受体激动剂。<br>**示例**: `沙丁胺醇(万托林)`, `特布他林`",沙丁胺醇
+medications.rescue.frequency,药物.急救药物.使用频率,String,"**建议值**: `<2次/周`, `2-4次/周`, `每日使用`, `一天多次`<br>**频繁使用**: 提示控制不佳",<2次/周
+
+medications.ltra,药物.白三烯受体拮抗剂,String,"LTRA。<br>**适应证**: 过敏性鼻炎合并哮喘,运动诱发哮喘,阿司匹林敏感哮喘。<br>**示例**: `孟鲁司特10mg qd(成人)/5mg qd(6-14岁)`, `扎鲁司特`",孟鲁司特10mg qd
+
+medications.biologics.agent,药物.生物制剂.药物名称,String,"**适应证**: 重度哮喘(阶梯4-5治疗后仍控制不佳)。<br>**示例**: `奥马珠单抗(抗IgE,过敏性哮喘)`, `度普利尤单抗(抗IL-4Rα,嗜酸性粒细胞/T2型)`, `美泊利单抗(抗IL-5)`, `贝那利珠单抗(抗IL-5Rα)`, `特泽鲁单抗(抗TSLP)`",度普利单抗
+medications.biologics.indication,药物.生物制剂.适应证评估,String,"**建议值**: `符合指征(重度哮喘+≥2次/年加重+血嗜酸≥0.3或FeNO>25)`, `不符合指征`, `正在使用中`, `经济原因未使用`",符合指征
+medications.biologics.response,药物.生物制剂.治疗反应,String,"**建议值**: `显著改善(加重减少≥50%,ACT↑≥3分)`, `部分改善`, `无效`, `未使用`",
+
+medications.ocs.use,药物.口服激素.使用状态,String,"**建议值**: `从不使用`, `急性发作时短期使用`, `长期小剂量维持(重度哮喘)`, `激素依赖(需要>泼尼松7.5mg/天)`",急性发作时短期使用
+medications.ocs.maintenanceDose,药物.口服激素.维持剂量,String,"长期口服激素剂量(泼尼松当量)。<br>**示例**: `泼尼松5mg qd`, `甲泼尼龙4mg qd`",
+
+medications.tiotropium,药物.噻托溴铵,String,"长效抗胆碱能药(LAMA)。<br>**适应证**: 阶梯4-5哮喘的附加治疗。<br>**建议值**: `使用中(5μg qd)`, `未使用`",未使用
+
+inhalerTechnique.assessment,吸入技术.评估,String,"**建议值**: `正确`, `错误(具体描述)`, `未评估`<br>**每次随访必须评估**",错误(未充分呼气,吸气速度过快)
+inhalerTechnique.errors,吸入技术.常见错误,String,"**示例**: `未充分摇匀(pMDI)`, `未充分呼气至功能残气量`, `吸气速度不当`, `吸气后未屏气`, `口含不紧密漏气`, `未按时清洁装置`",未充分呼气;吸气速度过快
+
+comorbidities.allergicRhinitis,合并症.过敏性鼻炎,String,"**建议值**: `无`, `有(轻度)`, `有(中-重度)`<br>**合并率>80%**",有(中-重度)
+comorbidities.chronicRhinosinusitis,合并症.慢性鼻窦炎,String,"**建议值**: `无`, `有`, `伴鼻息肉`",伴鼻息肉
+comorbidities.gerd,合并症.胃食管反流病,String,"**建议值**: `无`, `有`<br>**影响**: 夜间哮喘加重",有
+comorbidities.obesity,合并症.肥胖,String,"**建议值**: `无(BMI<25)`, `超重(BMI 25-30)`, `肥胖(BMI≥30)`<br>**肥胖**: 哮喘控制难度增加",肥胖(BMI 32)
+comorbidities.osa,合并症.阻塞性睡眠呼吸暂停,String,"**建议值**: `无`, `疑似`, `确诊`",确诊
+comorbidities.anxiety,合并症.焦虑,String,"**建议值**: `无`, `有`",有
+comorbidities.depression,合并症.抑郁,String,"**建议值**: `无`, `有`",无
+comorbidities.vcd,合并症.声带功能障碍,String,"VCD(模拟哮喘症状但对支扩剂无反应)。<br>**建议值**: `无`, `疑似(喉镜确诊)`",无
+comorbidities.bronchiectasis,合并症.支气管扩张,String,"**建议值**: `无`, `有(CT确认)`",无
+
+severeAsthma.criteria,重度哮喘.诊断标准,String,"**重度哮喘定义**: 需要GINA阶梯4-5治疗(中/高剂量ICS-LABA±附加控制药物)才能控制,或尽管接受这些治疗仍未控制。<br>**建议值**: `符合重度哮喘定义`, `不符合`",符合重度哮喘定义
+severeAsthma.difficultToTreat,重度哮喘.难治性哮喘评估,String,"**难治性哮喘**: 排除可纠正因素后仍未控制。<br>**可纠正因素**: 依从性差、吸入技术错误、持续暴露于触发因素、合并症未治疗、诊断错误。<br>**建议值**: `真正的重度哮喘`, `难治性哮喘(存在可纠正因素)`",难治性哮喘
+severeAsthma.phenotyping,重度哮喘.T2型表型,String,"**T2高型**(FeNO>25或血嗜酸≥0.15): 对ICS和生物制剂反应好。<br>**T2低型**: 考虑支气管热成形术,大环内酯类。<br>**建议值**: `T2高型`, `T2低型`, `未分型`",T2高型
+
+exerciseInducedBronchoconstriction.history,运动诱发支气管收缩.病史,String,"EIB病史。<br>**建议值**: `有(运动后5-10分钟出现症状)`, `无`, `未评估`",有
+exerciseInducedBronchoconstriction.exerciseChallenge,运动诱发支气管收缩.运动激发试验,String,"运动激发试验(运动后FEV1下降≥10%)。<br>**建议值**: `阳性`, `阴性`, `未做`",阳性
+exerciseInducedBronchoconstriction.prevention,运动诱发支气管收缩.预防策略,String,"**建议值**: `运动前15分钟吸入SABA`, `规律使用ICS-LABA(MART方案更佳)`, `运动前15-30分钟吸入LTRA`, `充分热身`, `避免冷空气运动`, `无措施`",运动前吸入SABA;规律ICS-LABA
+
+imaging.chestXray.findings,影像学.胸部X线.主要发现,String,"**建议值**: `正常`, `肺气肿改变`, `肺过度充气`, `支气管壁增厚`, `合并感染`, `气胸(严重发作并发症)`",肺过度充气
+imaging.chestCT.indication,影像学.胸部CT.检查指征,String,"**适应证**: 诊断不明确,疑似COPD/支扩/肺栓塞,重度哮喘评估。<br>**建议值**: `未做`, `已做`",已做
+imaging.chestCT.findings,影像学.胸部CT.主要发现,String,"**示例**: `支气管壁增厚`, `黏液栓`, `马赛克灌注/空气陷闭`, `支气管扩张`, `肺气肿`",支气管壁增厚;空气陷闭
+
+education.asthmaActionPlan,健康教育.哮喘行动计划,String,"**书面行动计划**: 绿区(控制良好)、黄区(警戒)、红区(危险,需急诊)。<br>**建议值**: `已制定书面计划`, `口头教育`, `未提供`",已制定书面计划
+education.triggerAvoidance,健康教育.触发因素回避,String,"**建议值**: `已教育(尘螨防护、戒烟、避免冷空气等)`, `未教育`",已教育
+education.selfMonitoring,健康教育.自我监测能力,String,"**建议值**: `良好(能识别症状变化并调整治疗)`, `中等`, `差`",良好
+
+vaccinations.influenza.lastDate,疫苗接种.流感疫苗.最近接种日期,Date,"**推荐**: 每年接种",2024-10-15
+vaccinations.pneumococcal.status,疫苗接种.肺炎球菌疫苗.接种状态,String,"**推荐**: 重度哮喘或长期OCS患者。<br>**建议值**: `未接种`, `已接种`",已接种
+vaccinations.covid19.doses,疫苗接种.新冠疫苗.剂次,Number,新冠疫苗接种剂次,3
+
+specialTests.bronchialChallenge,特殊检查.支气管激发试验,String,"用于诊断气道高反应性。<br>**方法**: 乙酰甲胆碱/组胺激发,运动激发。<br>**建议值**: `阳性(PC20<8mg/mL)`, `阴性`, `未做`",阳性
+specialTests.methacholinePC20,特殊检查.乙酰甲胆碱PC20,Number,"使FEV1下降20%的乙酰甲胆碱浓度。<br>单位: mg/mL<br>**<8**: 阳性,气道高反应性",4.5
+
+followUp.nextVisitDate,随访.下次随访日期,Date,下次随访日期,2025-04-15
+followUp.frequency,随访.随访频率,String,"**建议值**: `控制良好:3-6个月`, `部分控制:1-3个月`, `控制不佳:2-6周`, `加重后:1周`, `调整治疗后:4-12周`",部分控制:1-3个月
+followUp.monitoringPlan,随访.监测计划,String,"**示例**: `症状评估(ACT)`, `肺功能`, `FeNO`, `吸入技术`, `依从性`, `急救药使用频率`, `合并症`, `疫苗接种`",症状评估;肺功能;吸入技术
+
+riskFactors.futureExacerbation,危险因素.未来急性加重风险,String,"**高危因素**:<br>1. 过去1年≥1次加重需全身激素<br>2. 未使用ICS<br>3. FEV1<60%预计值<br>4. 严重心理问题<br>5. 过敏原持续暴露<br>6. 吸烟<br>7. 血嗜酸≥0.3<br>8. 急救药过度使用。<br>**建议值**: `低风险(0-1项)`, `高风险(≥2项)`",高风险
+
+prognosis.fixedAirflowLimitation,预后.固定气流受限风险,String,"**危险因素**: 暴露于有害气体(吸烟),未治疗的慢性气道炎症,持续症状/加重,低基线肺功能。<br>**建议值**: `低风险`, `高风险`",高风险
+
+clinicianNotes,临床医生备注,String,自由文本备注栏,患者过敏性鼻炎未充分治疗,建议鼻用激素+抗组胺药。吸入技术需改进,已重新演示。
+dataSource,数据来源,String,"**建议值**: `门诊`, `急诊`, `住院`, `专科哮喘门诊`, `体检中心`",专科哮喘门诊

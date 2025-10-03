@@ -1,0 +1,145 @@
+字段名(英文),字段名(中文),数据类型,描述,示例
+patientId,患者ID,String,患者唯一标识符,P123456
+presentationDate,就诊日期,Date,DVT发现/确诊日期,2025-01-15
+encounterType,就诊类型,String,"**建议值**: `门诊`, `急诊`, `住院期间发现`, `体检发现`",急诊
+
+symptoms.legSwelling,症状.下肢肿胀,String,"**最常见症状(80%)**。<br>**建议值**: `无`, `单侧肿胀`, `双侧肿胀(少见,提示髂静脉/下腔静脉血栓)`, `近端(大腿)肿胀`, `远端(小腿)肿胀`",单侧肿胀
+symptoms.legPain,症状.下肢疼痛,String,"**建议值**: `无`, `轻度胀痛`, `中度疼痛`, `重度疼痛(活动时加重)`",中度疼痛
+symptoms.warmth,症状.局部皮温升高,String,"**建议值**: `无`, `有(患肢较对侧温热)`",有
+symptoms.erythema,症状.皮肤发红,String,"**建议值**: `无`, `轻度发红`, `明显发红/紫绀`",轻度发红
+symptoms.onset,症状.起病方式,String,"**建议值**: `急性(数小时-1天)`, `亚急性(数天)`, `慢性(数周)`, `无症状(影像学偶然发现)`",急性
+
+symptoms.duration,症状.症状持续时间,String,"从症状出现到就诊。<br>**建议值**: `<24小时`, `1-3天`, `4-7天`, `>1周`",1-3天
+symptoms.pe,症状.肺栓塞症状,String,"呼吸困难/胸痛/咯血/晕厥。<br>**建议值**: `无PE症状`, `有疑似PE症状(呼吸困难/胸痛)`, `已确诊合并PE`",无PE症状
+
+physicalExam.affectedLimb,体格检查.患肢,String,"**建议值**: `左下肢`, `右下肢`, `双下肢`, `上肢(少见,UEDVT)`",右下肢
+physicalExam.circumferenceDifference,体格检查.周径差,Number,"患肢与健肢周径差异(小腿最粗处或大腿中部)。<br>单位: cm<br>**≥3cm**: 提示DVT(Wells评分标准)",4.5
+physicalExam.pitting,体格检查.凹陷性水肿,String,"**建议值**: `无`, `轻度(+)`, `中度(++)`, `重度(+++)`",中度(++)
+physicalExam.tenderness,体格检查.压痛,String,"沿静脉走行压痛。<br>**建议值**: `无`, `腓肠肌压痛`, `腘窝压痛`, `股静脉/内收肌管压痛`, `腹股沟区压痛(髂静脉)`",腓肠肌压痛;腘窝压痛
+physicalExam.homansSign,体格检查.Homans征,String,"背屈足踝时小腿疼痛(敏感性低,特异性差,不推荐常规使用)。<br>**建议值**: `阴性`, `阳性`, `未检查`",阳性
+physicalExam.palpableCord,体格检查.可触及条索状硬结,String,"触及血栓化静脉。<br>**建议值**: `无`, `有`",有
+
+physicalExam.collateralVeins,体格检查.侧支循环,String,"浅静脉扩张/曲张。<br>**建议值**: `无`, `有(慢性DVT/近端阻塞)`",无
+physicalExam.cyanosis,体格检查.发绀,String,"**股青肿**(phlegmasia cerulea dolens): 广泛髂股静脉血栓+发绀+动脉缺血,危及肢体。<br>**建议值**: `无`, `轻度`, `重度(股青肿,急症)`",无
+physicalExam.pulses,体格检查.动脉搏动,String,"**建议值**: `正常`, `减弱(股青肿或腔隙综合征)`, `消失(股青肿)`",正常
+
+location.proximal,部位.近端DVT,String,"**近端DVT**: 腘静脉及以上(腘静脉/股静脉/股总静脉/髂静脉/下腔静脉),PE风险高,需抗凝治疗。<br>**建议值**: `无近端DVT`, `腘静脉`, `股浅静脉`, `股总静脉`, `髂外静脉`, `髂总静脉`, `下腔静脉`, `多处近端血栓`",腘静脉;股浅静脉
+location.distal,部位.远端DVT,String,"**远端DVT**(小腿肌间静脉): 胫后静脉/胫前静脉/腓静脉/肌间静脉,PE风险较低,抗凝策略有争议。<br>**建议值**: `无远端DVT`, `小腿肌间静脉血栓`, `胫后静脉`, `胫前静脉`, `腓静脉`",无远端DVT
+location.superficial,部位.浅静脉血栓,String,"**浅静脉血栓性静脉炎**(SVT): 大隐/小隐静脉,通常良性,但近端SVT(距隐股交界<5cm)可延伸至深静脉。<br>**建议值**: `无SVT`, `大隐静脉SVT(远端)`, `大隐静脉SVT(近端,需抗凝)`, `小隐静脉SVT`",无SVT
+
+location.uedvt,部位.上肢DVT,String,"**上肢DVT(UEDVT)**: 锁骨下/腋静脉/肱静脉。<br>**原发性**: Paget-Schroetter综合征(运动相关)<br>**继发性**: 中心静脉置管相关。<br>**建议值**: `不适用(下肢DVT)`, `上肢DVT(锁骨下/腋静脉)`, `导管相关上肢DVT`",不适用
+
+riskFactors.recentSurgery,危险因素.近期手术,String,"**最近3个月**。<br>**高危手术**: 骨科大手术(髋/膝关节置换,髋部骨折),腹盆腔手术,神经外科手术,肿瘤手术。<br>**建议值**: `无`, `高危手术(具体,XX天前)`, `中危手术`, `低危手术`",高危手术(全髋关节置换,2周前)
+riskFactors.recentTrauma,危险因素.近期创伤,String,"**建议值**: `无`, `下肢/骨盆骨折`, `脊髓损伤`, `其他严重创伤`,无
+riskFactors.immobilization,危险因素.制动,String,"**建议值**: `无`, `卧床≥3天`, `长途旅行(>4-6小时)`, `石膏固定`, `偏瘫/截瘫`, `重症监护室制动`",无
+riskFactors.activeCancer,危险因素.活动性肿瘤,String,"**恶性肿瘤**: VTE风险↑4-7倍。<br>**高危肿瘤**: 胰腺癌,胃癌,脑癌,卵巢癌,肺癌,淋巴瘤,骨髓增生性疾病。<br>**建议值**: `无`, `确诊肿瘤未治疗`, `正在化疗/放疗`, `转移性肿瘤`, `肿瘤病史(已治愈>5年)`",无
+
+riskFactors.previousVTE,危险因素.既往VTE史,String,"**最强危险因素**,复发风险↑5-7倍。<br>**建议值**: `无`, `既往DVT(同侧)`, `既往DVT(对侧)`, `既往PE`, `既往DVT+PE`, `复发性VTE(≥2次)`",无
+riskFactors.thrombophilia,危险因素.易栓症,String,"**遗传性**: FV Leiden突变,凝血酶原G20210A突变,抗凝血酶III缺乏,蛋白C/S缺乏。<br>**获得性**: 抗磷脂综合征。<br>**建议值**: `无`, `已知易栓症(具体)`, `未检测`, `家族史阳性(疑似)`, `检测中`",未检测
+
+riskFactors.pregnancy,危险因素.妊娠/产褥期,String,"**妊娠**: VTE风险↑5倍,**产后6周**: 风险最高,**剖宫产**: 风险更高。<br>**建议值**: `非妊娠`, `妊娠期(孕周XX周)`, `产后6周内`, `产后>6周`",非妊娠
+riskFactors.hormonalTherapy,危险因素.激素治疗,String,"**口服避孕药**: 风险↑2-4倍,**激素替代治疗**: 风险↑2倍。<br>**建议值**: `无`, `口服避孕药`, `激素替代治疗`, `他莫昔芬`, `其他激素`",无
+
+riskFactors.centralLine,危险因素.中心静脉置管,String,"**导管相关DVT**: 锁骨下/颈内静脉置管。<br>**建议值**: `无`, `中心静脉置管(留置XX天)`, `PICC导管`, `已拔除(XX天前)`",无
+riskFactors.pacemaker,危险因素.起搏器/ICD导线,String,"**建议值**: `无`, `心脏起搏器`, `ICD`, `置入XX年`",无
+
+riskFactors.medicalConditions,危险因素.基础疾病,String,"**示例**: `心力衰竭`, `呼吸衰竭`, `炎症性肠病(UC/CD)`, `肾病综合征`, `骨髓增生性疾病(真红/原发性血小板增多症)`, `阵发性睡眠性血红蛋白尿`, `Behcet病`, `抗磷脂综合征`, `无特殊基础病`",无特殊基础病
+riskFactors.varicoseVeins,危险因素.静脉曲张,String,"**建议值**: `无`, `有`,有
+riskFactors.obesity,危险因素.肥胖,String,"**建议值**: `BMI<30`, `BMI 30-40`, `BMI>40(极重度肥胖,VTE风险↑2-3倍)`,BMI<30
+riskFactors.smoking,危险因素.吸烟,String,"**建议值**: `从不吸烟`, `已戒烟`, `现吸烟`,从不吸烟
+riskFactors.age,危险因素.年龄,Number,"年龄。<br>单位: 岁<br>**>60岁**: VTE风险↑",58
+
+wellsScore.activeCancer,Wells评分.活动性肿瘤,Number,"治疗中/6个月内治疗/姑息治疗。<br>**1分**: 是<br>**0分**: 否",0
+wellsScore.paralysis,Wells评分.瘫痪/近期下肢石膏,Number,"瘫痪/近期下肢不动。<br>**1分**: 是<br>**0分**: 否",0
+wellsScore.recentImmobilization,Wells评分.近期卧床或手术,Number,"近期卧床≥3天或大手术(4周内)。<br>**1分**: 是<br>**0分**: 否",1
+wellsScore.tenderness,Wells评分.深静脉压痛,Number,"沿深静脉走行压痛。<br>**1分**: 是<br>**0分**: 否",1
+wellsScore.entireLegSwollen,Wells评分.全腿肿胀,Number,"**1分**: 是<br>**0分**: 否",0
+wellsScore.calfCircumference,Wells评分.小腿周径差≥3cm,Number,"患侧较健侧大≥3cm(胫骨结节下10cm处测量)。<br>**1分**: 是<br>**0分**: 否",1
+wellsScore.pittingEdema,Wells评分.凹陷性水肿,Number,"患肢凹陷性水肿(大于对侧)。<br>**1分**: 是<br>**0分**: 否",1
+wellsScore.collateralVeins,Wells评分.浅静脉侧支,Number,"浅静脉侧支(非静脉曲张)。<br>**1分**: 是<br>**0分**: 否",0
+wellsScore.previousVTE,Wells评分.既往DVT,Number,"既往DVT病史。<br>**1分**: 是<br>**0分**: 否",0
+wellsScore.alternativeDiagnosis,Wells评分.替代诊断可能性,Number,"DVT的替代诊断可能性大于或等于DVT。<br>**-2分**: 是(如蜂窝织炎/肌肉拉伤/Baker囊肿破裂/充血性心衰/淋巴水肿)<br>**0分**: 否",-2
+wellsScore.totalScore,Wells评分.总分,Number,"Wells评分总分。<br>**≤0分**: DVT可能性小(患病率5%)<br>**1-2分**: 中度可能性(17%)<br>**≥3分**: 高度可能性(53%)<br>**简化两分法**: ≤1分(不太可能)vs ≥2分(可能)",3
+wellsScore.probability,Wells评分.临床概率,String,"**建议值**: `DVT不太可能(≤1分)`, `DVT可能(≥2分)`, `低度(≤0)`, `中度(1-2)`, `高度(≥3)`",高度(≥3)
+
+dDimer.value,D-二聚体.数值,Number,"血浆D-二聚体。<br>单位: μg/L(FEU)或mg/L<br>**<500 μg/L**: 阴性,可排除低-中度临床可能性DVT<br>**≥500**: 阳性,需超声检查<br>**年龄调整阈值**: >50岁,阈值=年龄×10 μg/L",1200
+dDimer.method,D-二聚体.检测方法,String,"**建议值**: `ELISA`, `胶乳凝集法`, `免疫比浊法`, `POCT`,ELISA
+dDimer.interpretation,D-二聚体.解读,String,"**建议值**: `阴性(Wells低分可排除DVT)`, `阳性(需超声检查)`, `阳性但使用年龄调整阈值后阴性`,阳性
+
+ultrasound.date,静脉超声.检查日期,Date,下肢静脉超声检查日期,2025-01-15
+ultrasound.type,静脉超声.检查类型,String,"**建议值**: `压迫超声(CUS)`, `全下肢静脉超声`, `彩色多普勒超声(CDUS)`, `双功能超声(压迫+多普勒)`",全下肢静脉超声
+ultrasound.result,静脉超声.结果,String,"**建议值**: `阴性(无DVT)`, `阳性(确诊DVT)`, `可疑(需重复检查)`,阳性
+
+ultrasound.acuteChronic,静脉超声.急性或慢性,String,"**急性DVT**: 静脉扩张,低回声/无回声血栓,不可压缩,无侧支。<br>**慢性DVT**: 静脉正常或缩小,强回声血栓,部分可压缩,侧支形成。<br>**建议值**: `急性DVT`, `亚急性DVT`, `慢性DVT`, `急性加重慢性DVT`, `无法区分`",急性DVT
+ultrasound.nonCompressibility,静脉超声.静脉不可压缩性,String,"**诊断金标准**: 加压后静脉管腔不能完全闭合。<br>**建议值**: `完全可压缩(正常)`, `不可压缩(DVT)`, `部分可压缩(部分闭塞/慢性DVT)`",不可压缩
+ultrasound.intraluminalEchoes,静脉超声.管腔内回声,String,"血栓回声。<br>**建议值**: `无管腔内回声(正常)`, `低回声血栓(急性)`, `等回声/高回声血栓(亚急性/慢性)`, `附壁血栓`",低回声血栓
+ultrasound.bloodFlow,静脉超声.血流,String,"彩色多普勒血流信号。<br>**建议值**: `血流正常`, `血流缺失(完全闭塞)`, `血流减少(部分闭塞)`, `侧支血流`",血流缺失
+
+ultrasound.thrombusMobility,静脉超声.血栓活动度,String,"**漂浮血栓**: PE高危。<br>**建议值**: `血栓固定`, `漂浮血栓(PE高危)`, `不适用`",血栓固定
+ultrasound.extent,静脉超声.血栓累及范围,String,"详细描述血栓位置和长度。<br>**示例**: `右侧腘静脉完全闭塞,向上延伸至股浅静脉中段`, `左侧小腿肌间静脉多发血栓`, `双侧股静脉血栓`,右侧腘静脉+股浅静脉血栓
+
+venography.performed,静脉造影.是否完成,String,"**金标准**(但有创,现已较少使用,超声阴性但临床高度怀疑时考虑)。<br>**建议值**: `已完成`, `未完成(超声已确诊)`, `未完成(超声阴性,临床低度怀疑)`",未完成
+venography.result,静脉造影.结果,String,"**建议值**: `阴性`, `阳性(DVT)`, `未做`",未做
+
+mri.performed,MRI静脉成像.是否完成,String,"**MRV适应证**: 髂静脉/下腔静脉血栓(超声显示受限),上肢DVT,中枢静脉血栓(脑静脉窦血栓)。<br>**建议值**: `已完成`, `未完成`, `不需要`",未完成
+mri.result,MRI静脉成像.结果,String,"**建议值**: `阴性`, `阳性(髂静脉/下腔静脉血栓)`, `未做`",未做
+
+labs.platelets,实验室.血小板,Number,"血小板计数。<br>单位: ×10⁹/L<br>**<50**: 抗凝禁忌/相对禁忌",220
+labs.hemoglobin,实验室.血红蛋白,Number,"血红蛋白。<br>单位: g/L",135
+labs.creatinine,实验室.肌酐,Number,"血清肌酐。<br>单位: μmol/L<br>**CrCl<30**: DOAC需调整剂量或禁用",75
+labs.egfr,实验室.eGFR,Number,"估算肾小球滤过率。<br>单位: mL/min/1.73m²",85
+labs.alt,实验室.ALT,Number,"丙氨酸转氨酶。<br>单位: U/L<br>**严重肝病**: 抗凝药选择受限",28
+labs.inr,实验室.基线INR,Number,"基线INR(华法林前)。<br>**正常**: 0.8-1.2",1.05
+
+thrombophiliaScreen.performed,易栓症筛查.是否完成,String,"**筛查适应证**: 年轻(<50岁)无明显诱因VTE,复发性VTE,家族史,不寻常部位血栓(肠系膜/脑静脉)。<br>**不推荐常规筛查**: 不改变急性期抗凝治疗。<br>**建议值**: `已完成`, `未完成`, `符合筛查指征但暂未做`, `不符合筛查指征`",未完成
+thrombophiliaScreen.factorVLeiden,易栓症筛查.FV Leiden突变,String,"**最常见遗传性易栓症**(欧洲人5%,杂合子VTE风险↑3-8倍)。<br>**建议值**: `阴性`, `杂合子`, `纯合子`, `未检测`",未检测
+thrombophiliaScreen.prothrombinMutation,易栓症筛查.凝血酶原G20210A,String,"**建议值**: `阴性`, `杂合子`, `纯合子`, `未检测`",未检测
+thrombophiliaScreen.atIII,易栓症筛查.抗凝血酶III,String,"**建议值**: `正常`, `缺乏`, `未检测`",未检测
+thrombophiliaScreen.proteinC,易栓症筛查.蛋白C,String,"**建议值**: `正常`, `缺乏`, `未检测`",未检测
+thrombophiliaScreen.proteinS,易栓症筛查.蛋白S,String,"**建议值**: `正常`, `缺乏`, `未检测`",未检测
+thrombophiliaScreen.aPL,易栓症筛查.抗磷脂抗体,String,"抗心磷脂抗体/狼疮抗凝物/抗β2-GP1抗体。<br>**建议值**: `阴性`, `阳性(抗磷脂综合征)`, `未检测`",未检测
+
+treatment.anticoagulation.initial,治疗.抗凝.初始治疗,String,"**初始抗凝**(确诊后立即启动):<br>**近端DVT**: 必须抗凝<br>**远端DVT**: 抗凝或密切监测(2周内重复超声,如无进展可不抗凝)<br>**肠道外抗凝**: 低分子肝素(依诺肝素1mg/kg bid,那曲肝素),磺达肝癸钠,普通肝素IV(严重肾功能不全)<br>**口服直接抗凝药**: 利伐沙班,阿哌沙班<br>**示例**: `依诺肝素1mg/kg bid sc`, `利伐沙班15mg bid×3周`, `普通肝素IV`, `磺达肝癸钠(按体重)`, `观察(孤立性小腿DVT)`",依诺肝素1mg/kg bid sc
+treatment.anticoagulation.longTerm,治疗.抗凝.长期治疗,String,"**长期抗凝**(至少3个月):<br>**DOAC**(首选): 利伐沙班,阿哌沙班,达比加群,依度沙班<br>**VKA**: 华法林(INR 2-3)<br>**LMWH**: 肿瘤相关VTE首选<br>**示例**: `利伐沙班20mg qd`, `阿哌沙班5mg bid`, `华法林(INR 2-3)`, `依诺肝素长期(肿瘤)`, `达比加群150mg bid`",利伐沙班20mg qd
+treatment.anticoagulation.duration,治疗.抗凝.疗程,String,"**抗凝疗程**:<br>**可逆诱因(手术/创伤/制动)**: 3个月<br>**无明显诱因**(首次): 至少3个月,权衡出血/复发风险后决定延长或停药<br>**复发性VTE**: 延长/终身<br>**肿瘤相关VTE**: 至少3-6个月,肿瘤治愈前持续抗凝<br>**易栓症**: 个体化,可能需延长/终身<br>**建议值**: `3个月`, `6个月`, `延长至12个月`, `无限期`, `待评估`,3个月
+
+treatment.anticoagulation.contraindication,治疗.抗凝.禁忌症,String,"**绝对禁忌**: 活动性出血,近期颅内出血,严重血小板减少(<50×10⁹/L)。<br>**相对禁忌**: 近期大手术/创伤,消化道溃疡,严重肾功能不全(CrCl<15),严重肝病,严重高血压。<br>**建议值**: `无禁忌症`, `有绝对禁忌症(具体)`, `有相对禁忌症(权衡利弊)`,无禁忌症
+
+treatment.thrombolysis.indication,治疗.溶栓.指征,String,"**CDT(导管定向溶栓)适应证**: 广泛髂股静脉DVT+肢体缺血/股青肿(挽救肢体),症状<14天,年轻患者,预期寿命>1年,出血风险低。<br>**不常规推荐系统性溶栓**。<br>**建议值**: `无指征(单纯抗凝)`, `符合CDT指征`, `股青肿(急症,需溶栓/取栓)`, `已溶栓`, `有溶栓禁忌`",无指征
+treatment.thrombolysis.performed,治疗.溶栓.是否实施,String,"**建议值**: `未溶栓`, `导管定向溶栓(CDT)`, `系统性溶栓(不推荐)`, `药物机械性血栓清除(PMT)`",未溶栓
+
+treatment.thrombectomy,治疗.外科/介入取栓,String,"**适应证**: 股青肿,广泛髂股静脉DVT(防止血栓后综合征)。<br>**方法**: 导管血栓抽吸术,静脉血栓切除术。<br>**建议值**: `未行`, `导管介入取栓`, `外科血栓切除术`, `计划手术`,未行
+
+treatment.ivcFilter.indication,治疗.下腔静脉滤器.指征,String,"**IVC滤器适应证**(不推荐常规使用):<br>1. 近端DVT+抗凝绝对禁忌(活动性出血)<br>2. 充分抗凝下发生PE<br>3. 漂浮血栓+高PE风险<br>4. 可回收滤器: 近期大手术+近端DVT(暂时性禁忌)。<br>**建议值**: `无指征`, `符合指征`, `已置入(永久性)`, `已置入(可回收,留置XX天)`, `已取出`, `计划置入`",无指征
+
+treatment.compression.therapy,治疗.压迫治疗,String,"**医用弹力袜**(30-40 mmHg,膝下):<br>**急性期**: 减轻水肿和疼痛<br>**长期**: 预防血栓后综合征(PTS)。<br>**使用时间**: 至少2年(有争议)。<br>**建议值**: `已开始使用`, `计划开始(水肿减轻后)`, `未使用`, `有禁忌症(动脉疾病)`",计划开始
+treatment.elevation,治疗.患肢抬高,String,"**建议值**: `已指导患肢抬高`, `未指导`,已指导
+treatment.mobilization,治疗.早期活动,String,"**旧观念**: 卧床制动(担心血栓脱落)。<br>**新证据**: 早期活动(戴弹力袜)+抗凝不增加PE风险,且减轻症状,预防PTS。<br>**建议值**: `已开始早期活动(戴弹力袜)`, `暂时卧床(股青肿/漂浮血栓)`, `逐步活动`,已开始早期活动
+
+complications.pe,并发症.肺栓塞,String,"**近端DVT**: 50%合并无症状性PE,10-20%有症状PE。<br>**建议值**: `无PE`, `疑似PE(需CTPA)`, `已确诊合并PE(无症状)`, `已确诊合并PE(有症状)`",无PE
+complications.recurrentDVT,并发症.复发性DVT,String,"**复发风险**: 首次无诱因DVT,10年累积复发率30-40%。<br>**建议值**: `首次DVT`, `复发性DVT(第X次,同侧)`, `复发性DVT(第X次,对侧)`,首次DVT
+complications.phlegmasiaCeruleaDolens,并发症.股青肿,String,"**急症**: 广泛髂股静脉血栓→静脉回流完全阻断→肢体高度肿胀+发绀+动脉缺血→肢体坏疽/休克/死亡。<br>**需紧急溶栓/取栓/筋膜切开减压**。<br>**建议值**: `无`, `有(急症处理中)`,无
+complications.pts,并发症.血栓后综合征,String,"**PTS**(Post-Thrombotic Syndrome): DVT后1-2年,20-50%患者出现慢性下肢水肿/疼痛/沉重感/色素沉着/静脉曲张/溃疡。<br>**建议值**: `不适用(急性期)`, `随访中未发现`, `轻度PTS(水肿/不适)`, `中度PTS`, `重度PTS(静脉性溃疡)`",不适用
+complications.majorBleeding,并发症.大出血,String,"抗凝相关出血。<br>**建议值**: `无`, `大出血(颅内/消化道/需输血)`, `临床相关非大出血`, `轻微出血`,无
+complications.hit,并发症.肝素诱导血小板减少,String,"HIT(肝素治疗5-10天后血小板<150或下降>50%)。<br>**建议值**: `无`, `疑似HIT(需HIT抗体检测)`, `确诊HIT(停肝素,改用阿加曲班/磺达肝癸钠/DOAC)`",无
+
+prognosis.outcome,预后.结局,String,"**建议值**: `症状改善出院`, `住院治疗中`, `转院`, `死亡(PE/其他原因)`",症状改善出院
+prognosis.recurrenceRisk,预后.复发风险,String,"**低风险**: 手术/创伤等可逆诱因,3个月抗凝后停药,年复发率1-3%<br>**中风险**: 无明显诱因,停药年复发率5-10%<br>**高风险**: 复发性VTE/易栓症/肿瘤,年复发率10-15%<br>**建议值**: `低风险`, `中风险`, `高风险`,中风险
+
+followUp.plan,随访.随访计划,String,"**示例**: `2-4周门诊复查(症状+超声)`, `3个月评估是否延长抗凝`, `INR监测(华法林)`, `肾功能/肝功能监测(DOAC)`, `评估PTS风险`, `远端DVT 2周内重复超声`",2-4周门诊复查
+followUp.ultrasoundRepeat,随访.重复超声,String,"**适应证**:<br>- 远端DVT观察策略: 2周内重复超声(评估是否向近端延伸)<br>- 症状恶化<br>- 3-6个月评估血栓消退(可选)<br>**建议值**: `已安排(2周后)`, `已安排(3-6个月)`, `不需要重复超声`,不需要重复超声
+followUp.anticoagMonitoring,随访.抗凝监测,String,"**华法林**: 每周INR至稳定(连续2-3次INR 2-3),后每月1次<br>**DOAC**: 肾功能监测(利伐沙班/阿哌沙班: 每年;达比加群CrCl<50: 每6个月)<br>**LMWH**: 血小板监测(第3-5天,后每周,监测HIT)<br>**建议值**: `INR监测`, `肾功能监测`, `血小板监测`, `无需常规监测`,肾功能监测
+
+followUp.durationDecision,随访.抗凝疗程决策,String,"**3个月后评估**: 出血风险(HAS-BLED评分),复发风险(HERDOO2评分/维也纳预测模型/D-二聚体)。<br>**建议值**: `3个月后停药`, `延长抗凝`, `终身抗凝`, `待3个月后评估`,待3个月后评估
+
+prevention.mechanicalProphylaxis,预防.机械预防,String,"**住院/围术期DVT预防**: 间歇充气加压装置(IPC),梯度压力弹力袜(GCS)。<br>**建议值**: `不适用`, `已使用IPC/GCS`, `未使用`,不适用
+prevention.pharmacologicalProphylaxis,预防.药物预防,String,"**围术期/住院患者VTE预防**: LMWH,磺达肝癸钠,低剂量普通肝素。<br>**建议值**: `不适用`, `已使用预防剂量LMWH`, `未使用(低危)`, `应使用但未使用`",不适用
+prevention.riskAssessment,预防.VTE风险评估,String,"**住院患者**: Padua评分,Caprini评分(外科)。<br>**建议值**: `已评估(高危,需预防)`, `已评估(低危)`, `未评估`, `不适用`",不适用
+
+education.adherence,健康教育.抗凝依从性教育,String,"**建议值**: `已教育(规律服药,不自行停药,出血风险)`, `未教育`,已教育
+education.compression,健康教育.弹力袜使用指导,String,"**建议值**: `已教育(穿戴方法,每日使用,至少2年)`, `未教育`,已教育
+education.lifestyle,健康教育.生活方式,String,"**建议值**: `已教育(避免长时间制动,活动,减重,戒烟,停用激素)`, `未教育`,已教育
+education.warningSymptoms,健康教育.警示症状,String,"PE症状(呼吸困难/胸痛/咯血),出血症状,DVT复发症状。<br>**建议值**: `已教育`, `未教育`,已教育
+
+clinicianNotes,临床医生备注,String,自由文本备注栏,患者为58岁女性,无明显诱因右下肢肿胀疼痛3天。超声确诊右侧腘静脉+股浅静脉急性血栓形成(近端DVT)。Wells评分3分,D-二聚体1200 μg/L。已启动依诺肝素抗凝,后续转利伐沙班长期治疗。计划至少3个月抗凝,3个月后评估复发/出血风险决定疗程。已指导弹力袜使用和早期活动。
+dataSource,数据来源,String,"**建议值**: `门诊`, `急诊`, `住院`, `体检发现`, `住院期间并发DVT`, `产后/术后监测`",急诊

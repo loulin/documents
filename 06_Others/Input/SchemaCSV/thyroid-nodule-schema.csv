@@ -1,0 +1,131 @@
+字段名(英文),字段名(中文),数据类型,描述,示例
+patientId,患者ID,String,患者唯一标识符,P123456
+assessmentDate,评估日期,Date,甲状腺结节评估日期,2025-01-15
+discoveryMethod,发现方式,String,"**建议值**: `体检超声偶然发现`, `自己触及颈部肿块`, `家人发现`, `其他影像学检查(CT/PET-CT)偶然发现`, `甲状腺功能异常进一步检查`",体检超声偶然发现
+
+symptoms.palpableMass,症状.颈部肿块,String,"**建议值**: `无(不可触及)`, `可触及但不明显`, `明显肿块`",可触及但不明显
+symptoms.growth,症状.生长速度,String,"**建议值**: `无明显变化`, `缓慢生长(>6个月)`, `快速生长(<6个月,恶性警示)`, `不详`",无明显变化
+symptoms.pain,症状.疼痛,String,"**建议值**: `无`, `轻微胀痛`, `明显疼痛(亚急性甲状腺炎/出血)`,无
+symptoms.compressive,症状.压迫症状,String,"**示例**: `无`, `吞咽困难`, `呼吸困难`, `声音嘶哑(喉返神经受压)`, `颈部压迫感`",无
+symptoms.hoarseness,症状.声音嘶哑,String,"**建议值**: `无`, `有(持续性,恶性警示)`, `有(间歇性)`",无
+
+riskFactors.radiationExposure,危险因素.头颈部放射史,String,"**建议值**: `无`, `儿童期头颈部放射治疗史`, `核辐射暴露史`, `频繁放射检查`<br>**儿童期放射史**: 甲状腺癌风险显著增加",无
+riskFactors.familyHistory,危险因素.家族史,String,"**建议值**: `无`, `一级亲属甲状腺癌史`, `家族性甲状腺癌综合征(MEN2/FMTC)`, `一级亲属甲状腺结节史`",无
+riskFactors.age,危险因素.年龄,Number,"年龄。<br>单位: 岁<br>**<20岁或>70岁**: 结节恶性风险增加",45
+riskFactors.gender,危险因素.性别,String,"**建议值**: `女`, `男`<br>**男性**: 结节恶性风险相对高(但女性结节发病率高4倍)",女
+
+physicalExam.noduleSize,体格检查.结节大小,String,"触诊估计大小。<br>**示例**: `不可触及`, `约1cm`, `约2cm`, `>3cm`",约1cm
+physicalExam.consistency,体格检查.质地,String,"**建议值**: `软`, `中等`, `硬(恶性警示)`, `囊性`,中等
+physicalExam.mobility,体格检查.活动度,String,"**建议值**: `活动良好`, `活动受限(与周围组织粘连,恶性警示)`,活动良好
+physicalExam.lymphNodes,体格检查.颈部淋巴结,String,"**建议值**: `未触及肿大淋巴结`, `可触及肿大淋巴结(质硬/固定,恶性警示)`,未触及肿大淋巴结
+physicalExam.thyroidSize,体格检查.甲状腺大小,String,"**建议值**: `正常大小`, `轻度肿大(I度)`, `中度肿大(II度)`, `重度肿大(III度,胸骨后甲状腺肿)`",正常大小
+
+ultrasound.date,超声.检查日期,Date,甲状腺超声检查日期,2025-01-15
+ultrasound.noduleCount,超声.结节数量,String,"**建议值**: `单发结节`, `多发结节(2-3个)`, `多发结节(≥4个)`, `弥漫性多发(>10个)`",单发结节
+ultrasound.dominantNodule,超声.主要结节,String,"如多发结节,描述最大或最可疑结节。<br>**建议值**: `单发结节即为主要结节`, `多发结节中的最大结节`, `多发结节中TI-RADS评分最高结节`",单发结节即为主要结节
+
+nodule1.location,结节1.位置,String,"**建议值**: `右叶上极`, `右叶中部`, `右叶下极`, `左叶上极`, `左叶中部`, `左叶下极`, `峡部`",右叶中部
+nodule1.size.length,结节1.大小.长径,Number,"最大径。<br>单位: mm<br>**≥10mm**: 考虑FNA",15
+nodule1.size.width,结节1.大小.宽径,Number,"宽径。<br>单位: mm",12
+nodule1.size.depth,结节1.大小.前后径,Number,"前后径。<br>单位: mm",10
+nodule1.volume,结节1.体积,Number,"体积(椭球体积公式)。<br>单位: mL<br>体积 = π/6 × 长径 × 宽径 × 前后径",0.94
+
+nodule1.composition,结节1.成分,String,"**ACR TI-RADS分类**:<br>**囊性**: 0分<br>**囊实性(囊性为主)**: 0分<br>**囊实性(实性为主)**: 1分<br>**实性或几乎完全实性**: 2分<br>**建议值**: `囊性`, `囊实性(囊性为主)`, `囊实性(实性为主)`, `实性`",实性
+nodule1.echogenicity,结节1.回声,String,"**ACR TI-RADS**:<br>**无回声(囊性)**: 0分<br>**高回声或等回声**: 1分<br>**低回声**: 2分<br>**极低回声(低于颈部肌肉)**: 3分<br>**建议值**: `无回声`, `高回声`, `等回声`, `低回声`, `极低回声`",低回声
+nodule1.shape,结节1.形态,String,"**ACR TI-RADS**:<br>**宽大于高(横切面)**: 0分<br>**高大于宽(纵切面,恶性警示)**: 3分<br>**建议值**: `宽>高`, `高>宽`",宽>高
+nodule1.margin,结节1.边缘,String,"**ACR TI-RADS**:<br>**光滑**: 0分<br>**不规则(分叶/锯齿状)**: 2分<br>**小叶外生长(extrathyroidal extension)**: 3分<br>**建议值**: `光滑`, `不规则`, `小叶外生长`",光滑
+nodule1.echoFoci,结节1.强回声灶,String,"**ACR TI-RADS**:<br>**无或大彗星尾征(胶质囊肿)**: 0分<br>**粗大钙化**: 1分<br>**边缘钙化(蛋壳样)**: 2分<br>**微小钙化(砂粒体,恶性最强指征)**: 3分<br>**建议值**: `无强回声`, `大彗星尾征`, `粗大钙化`, `边缘钙化`, `微小钙化`",无强回声
+
+nodule1.tirads,结节1.TI-RADS分级,String,"**ACR TI-RADS评分**(累加上述5项得分):<br>**TR1**: 0分,良性(大彗星尾征囊肿)<br>**TR2**: 2分,不可疑<br>**TR3**: 3分,轻度可疑<br>**TR4**: 4-6分,中度可疑<br>**TR5**: ≥7分,高度可疑恶性<br>**建议值**: `TR1`, `TR2`, `TR3`, `TR4`, `TR5`",TR3
+nodule1.tiradsOther,结节1.其他TI-RADS分级,String,"如使用其他分级系统。<br>**示例**: `中国C-TIRADS 4a`, `欧洲EU-TIRADS 3`, `韩国K-TIRADS 3`, `Kwak分类4类`",
+
+nodule1.vascularity,结节1.血流,String,"彩色多普勒血流。<br>**建议值**: `无血流(0级)`, `少量周边血流(I级)`, `周边为主+少量内部血流(II级)`, `内部为主血流(III级)`, `丰富内部血流(IV级,恶性倾向)`",少量周边血流
+nodule1.elastography,结节1.弹性成像,String,"应变弹性成像评分。<br>**建议值**: `未做`, `1分(软,绿色)`, `2分`, `3分`, `4分(硬,蓝色,恶性倾向)`,未做
+
+nodule1.fnaRecommendation,结节1.FNA建议,String,"**ACR TI-RADS FNA指征**:<br>**TR5**: ≥10mm<br>**TR4**: ≥15mm<br>**TR3**: ≥25mm<br>**TR2**: 不推荐FNA<br>**TR1**: 不需要FNA<br>**建议值**: `符合FNA指征`, `不符合FNA指征`, `观察随访`",观察随访
+
+nodule2.present,结节2.是否存在,String,"如有第2个结节。<br>**建议值**: `无第2个结节`, `有`,无第2个结节
+nodule2.location,结节2.位置,String,第2个结节位置,
+nodule2.size.length,结节2.大小.长径,Number,"单位: mm",
+nodule2.tirads,结节2.TI-RADS分级,String,"**建议值**: `TR1`, `TR2`, `TR3`, `TR4`, `TR5`",
+
+nodule3.present,结节3.是否存在,String,"如有第3个结节。<br>**建议值**: `无第3个结节`, `有`,无第3个结节
+nodule3.location,结节3.位置,String,第3个结节位置,
+nodule3.size.length,结节3.大小.长径,Number,"单位: mm",
+nodule3.tirads,结节3.TI-RADS分级,String,"**建议值**: `TR1`, `TR2`, `TR3`, `TR4`, `TR5`",
+
+lymphNodes.suspicious,淋巴结.可疑淋巴结,String,"超声评估颈部淋巴结。<br>**可疑征象**: 圆形(L/S<2),囊性变,微钙化,周边血流,失去脂肪门。<br>**建议值**: `未见可疑淋巴结`, `可疑淋巴结(II区)`, `可疑淋巴结(III区)`, `可疑淋巴结(IV区)`, `可疑淋巴结(VI区,中央区)`",未见可疑淋巴结
+
+thyroidFunction.tsh,甲状腺功能.TSH,Number,"促甲状腺激素。<br>单位: mIU/L<br>**正常**: 0.4-4.0<br>**<0.1**: 抑制,功能自主性结节/毒性腺瘤<br>**>4.0**: 升高",2.5
+thyroidFunction.ft4,甲状腺功能.FT4,Number,"游离T4。<br>单位: pmol/L<br>**正常**: 9-25",15.2
+thyroidFunction.ft3,甲状腺功能.FT3,Number,"游离T3。<br>单位: pmol/L<br>**正常**: 2.6-6.5",4.8
+thyroidFunction.interpretation,甲状腺功能.判读,String,"**建议值**: `甲功正常`, `亚临床甲亢(TSH低,FT4/FT3正常)`, `临床甲亢`, `亚临床甲减(TSH高,FT4正常)`, `临床甲减`",甲功正常
+
+thyroidFunction.autonomousNodule,甲状腺功能.功能自主性结节,String,"**TSH<0.1时考虑**。<br>**建议值**: `不考虑(TSH正常)`, `疑似(需核素扫描)`, `确诊(热结节,恶性风险<1%)`",不考虑
+
+antibodies.tpo,自身抗体.TPOAb,Number,"甲状腺过氧化物酶抗体。<br>单位: IU/mL<br>**>60**: 阳性(桥本甲状腺炎)",35
+antibodies.tg,自身抗体.TgAb,Number,"甲状腺球蛋白抗体。<br>单位: IU/mL<br>**>60**: 阳性",25
+antibodies.autoimmune,自身抗体.自身免疫性甲状腺炎,String,"**建议值**: `无(抗体阴性)`, `桥本甲状腺炎(抗体阳性)`, `Graves病(TRAb阳性)`",无
+
+tumorMarkers.thyroglobulin,肿瘤标志物.甲状腺球蛋白,Number,"Tg(术后随访指标,初诊不常规检测)。<br>单位: ng/mL",
+tumorMarkers.calcitonin,肿瘤标志物.降钙素,Number,"血清降钙素(怀疑髓样癌时)。<br>单位: pg/mL<br>**正常**: <10(男)/<5(女)<br>**>100**: 高度怀疑髓样癌",
+tumorMarkers.cea,肿瘤标志物.癌胚抗原,Number,"CEA(髓样癌标志物)。<br>单位: ng/mL<br>**正常**: <5",
+
+scintigraphy.performed,核素扫描.是否完成,String,"**适应证**: TSH<0.1(功能自主性结节鉴别)。<br>**建议值**: `已做`, `未做`, `不需要(TSH正常)`",不需要
+scintigraphy.result,核素扫描.结果,String,"**建议值**: `热结节(功能自主,恶性率<1%)`, `温结节(摄取与周围甲状腺组织相似)`, `凉结节(摄取减低)`, `冷结节(无摄取,恶性率10-15%)`, `未做`",未做
+
+fna.indication,细针穿刺.穿刺指征,String,"**建议值**: `符合指征(TI-RADS+大小)`, `不符合指征`, `患者拒绝`, `技术困难(位置深/钙化重)`, `已完成FNA`",符合指征
+fna.date,细针穿刺.穿刺日期,Date,FNA日期,
+fna.technique,细针穿刺.技术,String,"**建议值**: `超声引导FNA`, `触诊FNA`, `未做`",
+fna.adequacy,细针穿刺.标本充分性,String,"**Bethesda系统**:<br>**I类**: 标本不满意/不充分。<br>**建议值**: `充分`, `不充分(需重复FNA)`, `未做`",
+
+fna.bethesda,细针穿刺.Bethesda分类,String,"**Bethesda甲状腺细胞病理学分类系统**:<br>**I类**: 标本不满意/不充分(恶性率5-10%)<br>**II类**: 良性(恶性率0-3%)<br>**III类**: 意义不明确的非典型性/意义不明确的滤泡性病变(AUS/FLUS,恶性率10-30%)<br>**IV类**: 滤泡性肿瘤/可疑滤泡性肿瘤(FN/SFN,恶性率25-40%)<br>**V类**: 可疑恶性(恶性率50-75%)<br>**VI类**: 恶性(恶性率97-99%)<br>**建议值**: `I类`, `II类`, `III类`, `IV类`, `V类`, `VI类`, `未做FNA`",未做FNA
+
+fna.cytology,细针穿刺.细胞学描述,String,"详细细胞学描述(如已做FNA)。<br>**示例**: `胶质,良性滤泡上皮细胞`, `滤泡上皮增生,Hürthle细胞`, `可疑乳头状癌`, `乳头状癌(核沟,核内包涵体)`, `未做`",未做
+
+molecularTesting.performed,分子检测.是否完成,String,"**适应证**: Bethesda III-IV类(辅助鉴别良恶性)。<br>**建议值**: `已做`, `未做`, `不适用(Bethesda II或VI类)`",未做
+molecularTesting.panel,分子检测.检测类型,String,"**示例**: `ThyroSeq基因组分类器`, `Afirma基因表达分类器`, `BRAF V600E突变`, `RAS突变`, `RET/PTC融合`, `未做`",
+molecularTesting.result,分子检测.结果,String,"**建议值**: `良性(恶性风险低)`, `可疑(中度风险)`, `恶性(高风险)`, `未做`",
+
+imaging.ct.performed,其他影像学.增强CT.是否完成,String,"**适应证**: 大结节(>4cm),胸骨后甲状腺肿,评估气管受压/淋巴结转移。<br>**建议值**: `已做`, `未做`, `不需要`",未做
+imaging.ct.findings,其他影像学.增强CT.主要发现,String,"**示例**: `甲状腺肿块伴气管受压`, `纵隔淋巴结肿大`, `甲状腺外侵犯`, `未做`",
+imaging.mri.performed,其他影像学.MRI.是否完成,String,"**建议值**: `已做`, `未做`, `不需要`",未做
+imaging.petct.performed,其他影像学.PET-CT.是否完成,String,"**适应证**: 意外发现甲状腺摄取增高(FDG-avid nodule,恶性率30-50%),术后复发监测。<br>**建议值**: `已做`, `未做(偶然发现需超声)`, `不需要`",未做
+imaging.petct.suv,其他影像学.PET-CT.SUVmax,Number,"最大标准摄取值。<br>**>2.5**: 可疑恶性",
+
+management.initialRecommendation,管理.初步建议,String,"**建议值**: `随访观察`, `FNA`, `手术治疗`, `TSH抑制治疗(慎用)`, `放射性碘治疗(功能自主性结节)`,随访观察
+management.followUpInterval,管理.随访间隔,String,"**ACR TI-RADS随访建议**:<br>**TR3**: 1年、3年、5年<br>**TR4**: 1年、2-3年、3-5年<br>**TR5**: 如不FNA,6-12个月随访<br>**Bethesda II**: 12-24个月<br>**建议值**: `6个月`, `12个月`, `24个月`, `不需要随访`, `已手术`",12个月
+management.followUpCriteria,管理.随访期间手术指征,String,"**手术指征**:<br>1. FNA恶性/可疑恶性(Bethesda V-VI)<br>2. 结节增大>20%体积(或2个维度各增加>2mm)<br>3. 新出现可疑超声特征<br>4. 新出现淋巴结转移<br>5. 压迫症状<br>6. 美容考虑<br>**建议值**: `暂无手术指征`, `符合手术指征`,暂无手术指征
+
+surgery.indication,手术.手术指征,String,"**建议值**: `无手术指征`, `Bethesda V-VI(恶性)`, `Bethesda IV+分子检测可疑`, `结节快速增大`, `压迫症状`, `功能自主性结节(难治性甲亢)`, `美容需求`, `患者要求`, `已手术`",无手术指征
+surgery.type,手术.手术方式,String,"**建议值**: `未手术`, `腺叶切除术`, `腺叶切除+峡部切除`, `近全甲状腺切除`, `全甲状腺切除`, `全甲状腺切除+淋巴结清扫`",未手术
+surgery.date,手术.手术日期,Date,手术日期,
+
+pathology.finalDiagnosis,病理.最终诊断,String,"**良性**:<br>- 结节性甲状腺肿<br>- 滤泡腺瘤<br>- Hürthle细胞腺瘤<br>- 胶质囊肿<br>- 亚急性甲状腺炎<br>- 桥本甲状腺炎<br>**恶性**:<br>- 乳头状癌(最常见,85%)<br>- 滤泡癌(10%)<br>- Hürthle细胞癌<br>- 髓样癌(5%)<br>- 未分化癌(1%,预后极差)<br>- 甲状腺淋巴瘤<br>- 转移癌<br>**建议值**: `未手术`, `良性(具体诊断)`, `恶性(具体诊断)`",未手术
+
+pathology.ptc.subtype,病理.乳头状癌.亚型,String,"如病理诊断为PTC。<br>**示例**: `经典型`, `滤泡亚型(预后好)`, `高细胞亚型(预后差)`, `柱状细胞亚型(预后差)`, `弥漫硬化型`, `微小癌(≤1cm)`, `不适用`",
+pathology.ptc.size,病理.乳头状癌.肿瘤大小,Number,"最大径。<br>单位: mm",
+pathology.ptc.extrathyroidal,病理.乳头状癌.甲状腺外侵犯,String,"**建议值**: `无`, `微小甲状腺外侵犯`, `大体甲状腺外侵犯(T4)`, `不适用`",
+pathology.ptc.lymphaticInvasion,病理.乳头状癌.淋巴管侵犯,String,"**建议值**: `无`, `有`, `不适用`",
+pathology.ptc.vascularInvasion,病理.乳头状癌.血管侵犯,String,"**建议值**: `无`, `有`, `不适用`",
+pathology.ptc.lymphNodes,病理.乳头状癌.淋巴结转移,String,"**示例**: `未清扫`, `0/5(清扫5枚,无转移)`, `3/12(清扫12枚,3枚转移)`, `不适用`",
+pathology.ptc.tnmStaging,病理.乳头状癌.TNM分期,String,"**AJCC第8版**(2018):<br>**<55岁**: I期(任何T,N,M0)或II期(任何T,N,M1)<br>**≥55岁**: I-IVB期<br>**示例**: `T1aN0M0, I期`, `T3N1bM0, III期`, `不适用`",
+
+medicalTreatment.levothyroxine,药物治疗.左甲状腺素,String,"**TSH抑制治疗**(有争议)。<br>**可能适应证**: 术后预防复发,高危结节TSH>正常上限。<br>**建议值**: `未使用`, `使用(目标TSH 0.5-2.0)`, `使用(目标TSH<0.1,分化型甲状腺癌术后)`, `使用(甲减替代治疗)`",未使用
+
+rai.indication,放射性碘治疗.指征,String,"**131I治疗适应证**:<br>1. 功能自主性结节(毒性腺瘤/毒性多结节性甲状腺肿)<br>2. 分化型甲状腺癌术后清除残余甲状腺/转移灶<br>**建议值**: `无指征`, `功能自主性结节`, `甲状腺癌术后`, `已完成131I治疗`",无指征
+rai.date,放射性碘治疗.治疗日期,Date,131I治疗日期,
+
+prognosis.benignNodule,预后.良性结节,String,"**良性结节自然史**: 大多数稳定,20-30%可能增大,恶变率极低(<1%)。<br>**建议值**: `预期稳定`, `需长期随访`, `不适用(恶性/手术)`",预期稳定
+prognosis.ptc,预后.乳头状癌预后,String,"**PTC预后因素**:<br>**预后好**: 年轻(<55岁),小肿瘤(≤2cm),无甲状腺外侵犯,无远处转移<br>**预后差**: 年龄>55岁,大肿瘤,甲状腺外侵犯,淋巴结转移多,远处转移<br>**10年生存率**: >95%(早期PTC)<br>**建议值**: `预后极好(微小癌)`, `预后好`, `预后中等`, `预后差`, `不适用`",
+
+complications.surgicalComplications,并发症.手术并发症,String,"**常见并发症**:<br>- 喉返神经损伤(1-2%,声音嘶哑)<br>- 甲状旁腺功能减退(暂时性10-20%,永久性1-2%,低钙抽搐)<br>- 出血/血肿<br>- 术后甲减(全切后必然,需终身替代)<br>**建议值**: `未手术`, `无并发症`, `有(具体)`,未手术
+
+patientPreferences.anxiety,患者偏好.焦虑程度,String,"**建议值**: `无焦虑`, `轻度焦虑`, `中-重度焦虑(影响决策)`, `癌恐惧(过度治疗倾向)`",轻度焦虑
+patientPreferences.sharedDecision,患者偏好.共同决策,String,"**建议值**: `已充分讨论利弊`, `患者倾向保守观察`, `患者倾向积极手术`, `未充分讨论`,已充分讨论
+
+specialPopulations.pregnancy,特殊人群.妊娠,String,"**建议值**: `非妊娠`, `妊娠期(避免FNA和手术,除非快速增大)`, `哺乳期`<br>**妊娠期**: TSH目标适当放宽,避免不必要的放射检查",非妊娠
+specialPopulations.pediatric,特殊人群.儿童,String,"**建议值**: `成人`, `儿童(<18岁)`<br>**儿童结节**: 恶性率更高(20-25%),更积极的评估和治疗",成人
+
+clinicianNotes,临床医生备注,String,自由文本备注栏,患者为体检超声发现右叶15mm实性低回声结节,TI-RADS 3级,甲功正常。目前不符合FNA指征,建议12个月后复查超声。已告知恶性风险低(<5%),患者理解并同意随访观察。
+dataSource,数据来源,String,"**建议值**: `体检中心`, `内分泌门诊`, `普外科门诊`, `甲状腺专科`, `超声科`, `病理科`",体检中心
