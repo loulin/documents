@@ -1,58 +1,107 @@
-字段名 (英文),字段名 (中文),数据类型,描述,示例
-examDate,检查日期,String,进行乳腺影像检查的日期,2025-10-01
-examType,检查类型,String,"乳腺影像检查类型。<br>**建议值**: `乳腺钼靶(数字化)`, `乳腺钼靶(3D断层)`, `乳腺超声`, `乳腺MRI`, `乳腺钼靶+超声联合`<br>**临床意义**: 不同检查方式互补,钼靶适合脂肪型乳腺,超声适合致密型乳腺",乳腺超声
-indication,检查指征,String,"乳腺影像检查的临床指征。<br>**建议值**: `常规筛查`, `乳腺肿块触诊`, `乳头溢液`, `乳腺疼痛`, `乳腺癌术后随访`, `高危人群筛查(家族史)`, `既往良性病变随访`",常规筛查
-patientAge,患者年龄,Number,"患者年龄(岁)。<br>**筛查建议**: 40岁开始年度钼靶筛查(美国指南),高危人群30岁开始",45
-familyHistory,乳腺癌家族史,String,"乳腺癌或卵巢癌家族史。<br>**建议值**: `无家族史`, `一级亲属1人`, `一级亲属≥2人`, `BRCA基因突变携带者`, `男性乳腺癌家族史`<br>**高危定义**: 一级亲属(母亲/姐妹/女儿)患乳腺癌,终生风险增加2-3倍",无家族史
-previousBreastDisease,既往乳腺疾病史,String,"既往乳腺疾病史。<br>**建议值**: `无`, `乳腺增生`, `纤维腺瘤`, `导管内乳头状瘤`, `不典型增生`, `乳腺癌(已治疗)`, `乳腺癌(对侧)`",乳腺增生
+字段名(英文),字段名(中文),数据类型,描述,示例
+patientId,患者ID,String,唯一患者标识符,P123456
+examDate,检查日期,Date,乳腺影像检查日期,2025-03-15
+examType,检查类型,String,"**钼靶**: 乳腺X线摄影(Mammography)<br>**超声**: 乳腺超声(Ultrasound)<br>**MRI**: 乳腺核磁共振<br>**联合**: 钼靶+超声",钼靶+超声
+indication,检查指征,String,"**筛查**: 无症状筛查<br>**诊断**: 可触及肿块/疼痛/乳头溢液<br>**随访**: 术后/BI-RADS 3随访<br>**高危筛查**: BRCA突变/家族史",筛查
+breastDensity,乳腺密度分级,String,"**A类**: 几乎完全脂肪型(密度<25%)<br>**B类**: 散在纤维腺体型(25-50%)<br>**C类**: 不均匀致密型(51-75%)→超声敏感性↑<br>**D类**: 极度致密型(>75%)→钼靶敏感性↓<br>**影响**: 致密乳腺降低钼靶敏感性15-20%",C类
+lesion.present,病灶存在,Boolean,是否发现病灶,true
+lesion.location,病灶部位,String,"**位置**: 左/右乳<br>**象限**: 外上/外下/内上/内下/中央区<br>**钟面位置**: 1-12点方向<br>**距离**: 距乳头X cm",右乳外上象限2点方向距乳头3.5cm
+lesion.size,病灶大小,Number,最大径(mm),18.5
+lesion.count,病灶数量,Number,同侧乳腺病灶数量,1
 
-breastDensity.mammography,乳腺密度.钼靶分级,String,"钼靶摄影乳腺密度分级(ACR BI-RADS 5th Edition)。<br>**建议值**: `A类(几乎完全脂肪型，<25%腺体)`, `B类(散在纤维腺体型，25-50%腺体)`, `C类(不均匀致密型，51-75%腺体)`, `D类(极度致密型，>75%腺体)`<br>**临床意义**: C/D类致密型乳腺降低钼靶敏感性,建议补充超声检查",B类(散在纤维腺体型，25-50%腺体)
-breastDensity.clinicalSignificance,乳腺密度.临床意义,String,"乳腺密度的临床意义。<br>**致密型乳腺(C/D类)影响**: ①降低钼靶病灶检出率 ②本身是乳腺癌危险因素(风险增加1.2-2倍) ③推荐补充超声或MRI检查<br>**2024 FDA规定**: 美国所有钼靶报告必须包含乳腺密度信息并告知患者",致密型乳腺可能影响钼靶检出率，建议补充超声检查
+# BI-RADS分级系统 (Breast Imaging Reporting and Data System 5th Edition)
+birads.category,BI-RADS分类,String,"**BI-RADS 0**: 需要追加检查(钼靶召回率10-12%)<br>**BI-RADS 1**: 阴性,无异常发现<br>**BI-RADS 2**: 良性发现(纤维腺瘤/囊肿/脂肪瘤等)<br>**BI-RADS 3**: 可能良性,建议短期随访(恶性率<2%)<br>**BI-RADS 4A**: 低度可疑恶性(恶性率2-10%,活检推荐)<br>**BI-RADS 4B**: 中度可疑恶性(恶性率10-50%)<br>**BI-RADS 4C**: 高度可疑恶性(恶性率50-95%)<br>**BI-RADS 5**: 高度提示恶性(恶性率≥95%)<br>**BI-RADS 6**: 已活检证实恶性",BI-RADS 4A
+birads.assessment,BI-RADS评估,String,病灶特征描述及分类理由,边界清晰的圆形低回声结节,纵横比<1,后方回声增强,考虑纤维腺瘤可能
+birads.recommendation,处理建议,String,"**BI-RADS 1-2**: 常规筛查(1-2年)<br>**BI-RADS 3**: 短期随访(初次6个月,后12/24个月,共2年)<br>**BI-RADS 4-5**: 活检病理诊断<br>**BI-RADS 6**: 手术治疗或新辅助化疗",建议6个月后复查
 
-mammography.view,钼靶.摄影体位,String,"钼靶摄影体位。<br>**建议值**: `双侧CC位(头尾位)`, `双侧MLO位(内外斜位)`, `局部加压位`, `放大位`, `切线位`<br>**标准筛查**: 双侧CC位 + 双侧MLO位(共4张)",双侧CC位+双侧MLO位
-mammography.imageQuality,钼靶.图像质量,String,"钼靶图像质量评价。<br>**建议值**: `优(乳腺后间隙清晰显示)`, `良(乳腺组织显示完整)`, `可(部分乳腺组织未包括)`, `差(需重新摄影)`",良(乳腺组织显示完整)
-mammography.calcification,钼靶.钙化描述,String,"钼靶发现的钙化描述。<br>**形态分类**: ①良性钙化(皮肤钙化/血管钙化/粗大钙化/环形钙化/爆米花样钙化) ②可疑钙化(不定形钙化/粗大不均质钙化) ③高度可疑恶性钙化(细小多形性钙化/细线样或线样分支状钙化)<br>**分布分类**: 弥漫性/区域性/成簇性/线样性/段样性",未见钙化
-mammography.calcificationSize,钼靶.钙化大小范围,String,"钙化灶的大小范围。<br>**钙化粒大小**: 大钙化(>0.5mm,多良性)、微钙化(<0.5mm,需警惕)<br>**范围**: 簇状(5mm内≥5个)、区域性(>2cm)、节段性(沿导管分布)",不适用
-mammography.mass,钼靶.肿块描述,String,"钼靶发现的肿块描述。<br>**形态**: 圆形/椭圆形/不规则形<br>**边缘**: 清晰光滑/模糊/微小分叶/成角/毛刺状<br>**密度**: 高密度/等密度/低密度/含脂肪密度",未见肿块
-mammography.asymmetry,钼靶.不对称描述,String,"双侧乳腺不对称描述。<br>**类型**: ①不对称(单次检查)②整体不对称(与既往一致)③局灶性不对称(占位性)④发展中的不对称(较既往增大)<br>**临床意义**: 发展中的不对称需高度警惕",双侧对称
-mammography.architecturalDistortion,钼靶.结构扭曲,String,"乳腺结构扭曲描述。<br>**定义**: 无明显肿块,但正常乳腺结构破坏,呈放射状或星芒状改变<br>**临床意义**: 结构扭曲是恶性的可疑征象(即使无肿块),恶性率15-30%",未见结构扭曲
-mammography.skinThickening,钼靶.皮肤增厚,String,"乳腺皮肤增厚。<br>**正常厚度**: <2mm<br>**病理性增厚**: ≥3mm<br>**可能原因**: 炎性乳腺癌、淋巴水肿、放疗后改变、感染",皮肤厚度正常
+# 钼靶检查特有字段
+mammography.view,钼靶体位,String,"**CC**: 头尾位(Craniocaudal)<br>**MLO**: 内外斜位(Mediolateral Oblique)<br>**附加体位**: 点压/放大/外侧位",CC+MLO双侧
+mammography.mass.shape,肿块形态,String,"**圆形/椭圆形**: 良性可能<br>**不规则**: 可疑恶性<br>**分叶状**: 中等可疑",不规则
+mammography.mass.margin,肿块边缘,String,"**清晰光滑**: 良性(纤维腺瘤/囊肿)<br>**模糊不清**: 可疑<br>**微分叶**: 中等可疑<br>**毛刺征**: 高度可疑恶性(恶性率80-90%)<br>**浸润性**: 高度可疑",毛刺征
+mammography.mass.density,肿块密度,String,"**高密度**: 常见于癌/纤维腺瘤<br>**等密度**: 可良可恶<br>**低密度**: 多为良性(脂肪瘤)<br>**含脂密度**: 良性(脂肪瘤/油囊肿)",高密度
 
-ultrasound.transducerFrequency,超声.探头频率,String,"超声探头频率。<br>**建议值**: `7.5-10 MHz`, `10-15 MHz(高频)`, `5-7.5 MHz(肥胖患者)`<br>**临床意义**: 高频探头分辨率高,适合浅表病变",10-12 MHz
-ultrasound.technique,超声.扫查技术,String,"超声扫查技术。<br>**建议值**: `常规灰阶超声`, `彩色多普勒血流显像(CDFI)`, `能量多普勒`, `弹性成像`, `造影增强超声(CEUS)`",常规灰阶超声+彩色多普勒
-ultrasound.lesionLocation,超声.病灶位置,String,"超声发现病灶的位置。<br>**象限描述**: 右乳/左乳 + 外上象限/外下象限/内上象限/内下象限/中央区<br>**钟点描述**: 1-12点钟方向<br>**距离**: 距乳头X cm",左乳外上象限9点钟方向距乳头3cm
-ultrasound.lesionSize,超声.病灶大小,String,"超声发现病灶的大小。<br>单位: mm<br>格式: 长径×宽径×高径<br>**临床意义**: 肿块>1cm时钼靶敏感性提高",12×8×10 mm
-ultrasound.lesionShape,超声.病灶形态,String,"超声病灶形态。<br>**建议值**: `圆形或椭圆形(良性)`, `不规则形(可疑)`, `微小分叶(可疑)`, `成角(恶性)`<br>**BI-RADS描述**: 平行生长(良性)、非平行生长(恶性)",椭圆形
-ultrasound.lesionMargin,超声.病灶边界,String,"超声病灶边界特征。<br>**建议值**: `界限清晰光整(良性)`, `界限清晰微分叶(可疑)`, `界限不清(恶性)`, `毛刺征(恶性)`, `成角(恶性)`<br>**恶性特异征象**: 毛刺征、成角",界限清晰光整
-ultrasound.lesionEchogenicity,超声.病灶回声,String,"超声病灶回声特征。<br>**建议值**: `无回声(囊性)`, `低回声(实性，最常见)`, `等回声`, `高回声`, `混合回声(囊实性)`<br>**恶性倾向**: 低回声+后方回声衰减",低回声
-ultrasound.posteriorAcoustic,超声.后方回声,String,"病灶后方声学特征。<br>**建议值**: `无变化`, `后方回声增强(囊肿特征)`, `后方回声衰减(恶性特征)`, `后方声影(钙化)`<br>**临床意义**: 后方回声衰减是恶性的重要征象",无变化
-ultrasound.calcification,超声.钙化,String,"超声发现的钙化。<br>**建议值**: `无钙化`, `粗大钙化(良性)`, `微钙化(恶性倾向)`, `钙化伴声影`<br>**注意**: 超声对微钙化检出不如钼靶",无钙化
-ultrasound.vascularity,超声.血流信号(CDFI),String,"彩色多普勒血流信号。<br>**建议值**: `0级(无血流)`, `I级(少量点状血流)`, `II级(中量血流)`, `III级(丰富血流)`<br>**血流分布**: 周边型/内部型/混合型<br>**恶性倾向**: 内部丰富血流",I级(少量点状血流)
-ultrasound.resistanceIndex,超声.阻力指数(RI),Number,"血流阻力指数。<br>**正常参考值**: <0.70<br>**恶性可疑**: RI ≥0.75<br>**临床意义**: 恶性肿瘤新生血管阻力低,血流快,RI降低",0.65
-ultrasound.elastography,超声.弹性成像评分,String,"超声弹性成像评分(Strain Elastography)。<br>**建议值**: `1分(软，绿色为主)`, `2分(大部分绿色)`, `3分(蓝绿混合)`, `4分(蓝色为主，硬)`, `5分(完全蓝色，极硬)`<br>**诊断价值**: 4-5分时恶性可能性大(硬度↑)",2分(良性倾向)
-ultrasound.strainRatio,超声.应变率比值,Number,"弹性成像应变率比值(病灶硬度/周围脂肪硬度)。<br>**良性阈值**: <3.0<br>**恶性可疑**: ≥4.0<br>**临床意义**: 比值越高,病灶越硬,恶性可能性越大",2.1
+# 钙化灶分析 (Calcification)
+calcification.present,钙化存在,Boolean,是否存在钙化,true
+calcification.distribution,钙化分布,String,"**散在**: 良性<br>**区域性**: 可疑<br>**线性/段状**: 高度可疑(导管内癌可能)<br>**簇状**: 可疑(≥5个钙化点/1cm²)",簇状
+calcification.morphology,钙化形态,String,"**粗大良性钙化**: 爆米花样/棒状/圆形/蛋壳样/血管壁钙化<br>**可疑钙化**: 无定形/粗糙不均匀<br>**高度可疑钙化**: 细小多形性(<0.5mm)/细小线样/分支状",细小多形性钙化
+calcification.birads,钙化BI-RADS,String,"**典型良性钙化**: BI-RADS 2<br>**可疑钙化**: BI-RADS 4A-4B<br>**高度可疑钙化**: BI-RADS 4C-5",BI-RADS 4B
+calcification.size,钙化范围,Number,钙化灶范围最大径(mm),12
 
-biradsCategory,BI-RADS分级,String,"BI-RADS分级(ACR 5th Edition)。<br>**建议值**: `0类(需补充检查)`, `1类(阴性)`, `2类(良性)`, `3类(可能良性)`, `4A类(低度可疑恶性)`, `4B类(中度可疑恶性)`, `4C类(高度可疑恶性)`, `5类(高度提示恶性)`, `6类(已活检证实恶性)`<br>**关键阈值**: ≥4类建议活检",3类(可能良性)
-biradsCategory.malignancyRisk,BI-RADS分级.恶性风险,String,"各BI-RADS分级对应的恶性风险。<br>**风险范围**:<br>- 1类/2类: 0%<br>- 3类: <2%<br>- 4A类: 2-10%<br>- 4B类: 10-50%<br>- 4C类: 50-95%<br>- 5类: ≥95%<br>- 6类: 已确诊",<2%恶性风险
-biradsCategory.recommendation,BI-RADS分级.管理建议,String,"基于BI-RADS分级的管理建议。<br>**1类/2类**: 常规筛查(1年)<br>**3类**: 短期随访(6个月)<br>**4A类**: 考虑活检<br>**4B类**: 建议活检<br>**4C类**: 强烈建议活检<br>**5类**: 立即活检<br>**6类**: 按恶性处理",建议6个月后短期随访
+# 超声检查特有字段
+ultrasound.mass.shape,超声肿块形态,String,"**圆形/椭圆形**: 良性倾向<br>**不规则**: 可疑恶性",椭圆形
+ultrasound.mass.orientation,肿块纵横比,String,"**纵横比<1**: 良性倾向(平行于皮肤)<br>**纵横比≥1**: 可疑恶性(垂直于皮肤,不平行征)",纵横比0.7
+ultrasound.mass.margin,超声边缘,String,"**清晰光滑**: 良性<br>**微分叶**: 中等可疑<br>**不规则**: 可疑<br>**成角/毛刺**: 高度可疑恶性",清晰光滑
+ultrasound.mass.echoPattern,回声特征,String,"**无回声**: 囊肿<br>**低回声**: 纤维腺瘤/癌<br>**等回声**: 少见<br>**高回声**: 脂肪瘤/错构瘤<br>**复杂回声**: 可疑",低回声
+ultrasound.mass.posteriorFeatures,后方回声,String,"**后方增强**: 良性(囊肿/纤维腺瘤)<br>**后方衰减**: 可疑恶性/纤维化<br>**无变化**: 无特异性",后方增强
+ultrasound.calcification,超声钙化,String,"**粗大钙化**: 良性<br>**微小钙化**: 可疑(需结合钼靶)",无钙化
 
-lesionCharacteristics.suspiciousFeatures,病灶特征.可疑恶性征象,String,"病灶的可疑恶性征象总结。<br>**钼靶恶性征象**: 毛刺状肿块、微钙化(细小多形性/线样分支状)、结构扭曲、发展中的不对称<br>**超声恶性征象**: 不规则形态、边界不清/毛刺、纵横比>1、后方回声衰减、微钙化、内部丰富血流、弹性评分4-5分",无明显可疑恶性征象
-lesionCharacteristics.benignFeatures,病灶特征.良性征象,String,"病灶的良性征象总结。<br>**钼靶良性征象**: 圆形光滑肿块、粗大钙化/爆米花样钙化、脂肪密度病灶<br>**超声良性征象**: 圆形/椭圆形、边界清晰光整、平行生长、后方回声增强、周边或无血流、弹性评分1-2分",椭圆形肿块+边界清晰+后方回声无变化
-lesionCharacteristics.differentialDiagnosis,病灶特征.鉴别诊断,String,"病灶的影像学鉴别诊断。<br>**常见良性**: 纤维腺瘤、囊肿、乳腺增生结节、脂肪坏死、导管内乳头状瘤<br>**可疑恶性**: 浸润性导管癌、浸润性小叶癌、导管原位癌(DCIS)、黏液癌<br>**建议**: 最终诊断依赖病理学检查",考虑纤维腺瘤可能性大，建议短期随访观察
+# 超声弹性成像 (Elastography)
+elastography.performed,弹性成像检查,Boolean,是否进行超声弹性成像,true
+elastography.strain.score,应变弹性评分,Number,"**1分**: 整体弹性均匀(良性)<br>**2分**: 大部分弹性(良性倾向)<br>**3分**: 部分弹性(可疑)<br>**4分**: 整体僵硬(可疑恶性)<br>**5分**: 整体僵硬+周围组织(高度可疑)",2
+elastography.shearWave.velocity,剪切波速度,Number,"**良性**: <3.5 m/s<br>**恶性**: >4.5 m/s<br>**灰区**: 3.5-4.5 m/s",2.8
+elastography.shearWave.elasticity,杨氏模量,Number,"**良性**: <50 kPa<br>**恶性**: >80 kPa<br>**界值**: 50-80 kPa",38
 
-comparisonWithPrior,与既往对比,String,"与既往影像学检查的对比。<br>**建议值**: `无既往检查可对比`, `较既往无明显变化`, `较既往病灶增大`, `较既往病灶缩小`, `较既往新发病灶`<br>**临床意义**: 病灶增大或新发需提高警惕",无既往检查可对比
+# 血流评估 (Color Doppler)
+doppler.performed,多普勒检查,Boolean,是否进行彩色多普勒血流检查,true
+doppler.vascularity,血流分级,String,"**0级**: 无血流<br>**I级**: 少许血流(1-2个血管)<br>**II级**: 中等血流(3-4个血管)<br>**III级**: 丰富血流(≥5个血管或穿支血管)<br>**恶性倾向**: II-III级",I级
+doppler.ri,阻力指数RI,Number,"**良性**: RI <0.7<br>**恶性**: RI >0.75<br>**灰区**: 0.7-0.75",0.58
+doppler.pulsatility,搏动指数PI,Number,动脉搏动指数,1.2
 
-biopsy.indicated,活检指征,String,"是否有活检指征。<br>**建议值**: `无需活检`, `考虑活检(BI-RADS 4A)`, `建议活检(BI-RADS 4B/4C)`, `强烈建议活检(BI-RADS 5)`, `已完成活检`<br>**活检方法**: 空芯针穿刺活检(CNB，首选)、细针穿刺(FNA)、真空辅助活检(VAB)、手术切除活检",无需活检
-biopsy.method,活检方法,String,"推荐的活检方法。<br>**建议值**: `空芯针穿刺活检(CNB)`, `真空辅助活检(VAB)`, `细针穿刺(FNA)`, `切除活检`, `不适用`<br>**首选**: 超声引导下空芯针穿刺活检(准确率>95%)",不适用
-biopsy.guidance,活检引导方式,String,"活检的影像引导方式。<br>**建议值**: `超声引导`, `钼靶立体定位`, `MRI引导`, `徒手触诊`, `不适用`<br>**选择**: 超声可见病灶首选超声引导,仅钼靶可见病灶选立体定位",不适用
+# 淋巴结评估
+lymphNode.present,腋窝淋巴结,Boolean,是否发现腋窝淋巴结肿大,false
+lymphNode.location,淋巴结位置,String,"**腋窝**: I/II/III组<br>**锁骨上**: 可疑远处转移<br>**内乳**: 少见",腋窝I组
+lymphNode.size,淋巴结大小,Number,"淋巴结短径(mm)<br>**正常**: <10mm<br>**可疑**: >10mm",8
+lymphNode.morphology,淋巴结形态,String,"**正常**: 椭圆形,皮髓质分界清,门部血流<br>**可疑**: 圆形,皮髓质分界消失,周边血流<br>**高度可疑**: 不规则形态,不均匀回声",正常椭圆形
 
-additionalImaging.needed,补充检查需求,String,"是否需要补充影像学检查。<br>**建议值**: `无需补充`, `建议乳腺超声`, `建议乳腺钼靶`, `建议乳腺MRI`, `建议腋窝淋巴结超声`<br>**补充检查指征**: ①致密型乳腺(C/D类)补充超声 ②高危人群补充MRI ③钼靶不能明确诊断补充超声",无需补充
-additionalImaging.reason,补充检查原因,String,"需要补充检查的原因。<br>**常见原因**: 致密型乳腺降低钼靶敏感性、病灶性质不明确需进一步鉴别、高危人群需MRI筛查、评估腋窝淋巴结状态",不适用
+# MRI检查字段 (高危筛查/术前评估)
+mri.performed,MRI检查,Boolean,是否进行乳腺MRI检查,false
+mri.indication,MRI指征,String,"**高危筛查**: BRCA突变(年度MRI+钼靶)<br>**术前评估**: 评估肿瘤范围/多灶性/对侧乳腺<br>**钼靶/超声不确定**: BI-RADS 0/3/4<br>**新辅助化疗评估**: 肿瘤退缩评估<br>**假体完整性**: 假体破裂评估",术前评估
+mri.enhancement.pattern,强化模式,String,"**良性强化**: 缓慢持续性强化<br>**可疑强化**: 快速早期强化+平台期<br>**恶性强化**: 快进快出(wash-out型)",缓慢持续性强化
+mri.enhancement.morphology,强化形态,String,"**肿块样强化**: 边缘/内部强化特点<br>**非肿块样强化**: 线样/段样/区域性/弥漫性<br>**环形强化**: 可疑恶性",肿块样强化
+mri.diffusion,DWI扩散受限,Boolean,"**DWI高信号+ADC低值**: 可疑恶性(细胞密度高)<br>**ADC值**: <1.0×10⁻³ mm²/s可疑恶性",false
+mri.birads,MRI BI-RADS,String,MRI检查BI-RADS分类,BI-RADS 2
 
-followUpRecommendation,随访建议,String,"随访建议和时间。<br>**BI-RADS 1/2类**: 常规筛查(12个月)<br>**BI-RADS 3类**: 短期随访(6个月,连续2年稳定后改为12个月)<br>**BI-RADS 4/5类**: 活检明确诊断<br>**BI-RADS 6类**: 按肿瘤治疗方案随访",建议6个月后短期随访(BI-RADS 3类)
+# 活检建议与穿刺
+biopsy.recommended,活检推荐,Boolean,"**BI-RADS 4-5**: 强烈推荐活检<br>**BI-RADS 3**: 短期随访或活检可选",true
+biopsy.type,活检方式,String,"**空芯针活检**: CNB(14-16G),首选<br>**真空辅助**: VAB(8-11G),微小钙化灶<br>**细针穿刺**: FNA(21-25G),囊肿抽吸<br>**切除活检**: 开放手术活检",空芯针活检(14G)
+biopsy.guidance,引导方式,String,"**超声引导**: 实时可视,常用<br>**立体定位**: 钼靶引导,钙化灶<br>**MRI引导**: MRI可见非超声可见病灶",超声引导
+biopsy.clips,标记夹放置,Boolean,"活检后放置金属标记夹<br>**目的**: 术前定位/新辅助化疗后定位",true
 
-screeningRecommendation.general,筛查建议.普通人群,String,"普通风险女性的乳腺癌筛查建议。<br>**ACS 2024指南**: ①40-44岁:可选择开始年度筛查 ②45-54岁:年度筛查 ③55岁以上:年度或每2年筛查<br>**中国指南**: 40岁开始,每1-2年筛查<br>**方法**: 钼靶±超声",建议40岁开始年度乳腺钼靶筛查
-screeningRecommendation.highrisk,筛查建议.高危人群,String,"高危人群的乳腺癌筛查建议。<br>**高危定义**: ①BRCA基因突变携带者 ②一级亲属≥2人患乳腺癌 ③既往胸部放疗史 ④终生风险>20%<br>**建议**: 30岁开始,年度钼靶+MRI筛查",不适用
+# 病理结果 (如已活检)
+pathology.performed,病理检查,Boolean,是否已完成病理检查,false
+pathology.result,病理结果,String,"**良性**: 纤维腺瘤/腺病/导管内乳头状瘤/脂肪坏死<br>**高危病变**: 不典型增生(ADH/ALH)/LCIS/扁平上皮不典型增生/放射状瘢痕<br>**恶性**: 浸润性导管癌/浸润性小叶癌/DCIS/LCIS",纤维腺瘤
+pathology.histology,组织学类型,String,"**浸润性导管癌**: 70-80%<br>**浸润性小叶癌**: 10-15%<br>**DCIS**: 导管原位癌<br>**LCIS**: 小叶原位癌<br>**特殊类型**: 黏液癌/髓样癌/管状癌",浸润性导管癌
+pathology.grade,组织学分级,String,"**G1**: 高分化(预后好)<br>**G2**: 中分化<br>**G3**: 低分化(预后差)",G2
+pathology.ihc.er,ER受体,String,"**阳性**: ≥1%细胞核阳性<br>**Allred评分**: 0-8分",ER阳性(80%)
+pathology.ihc.pr,PR受体,String,"**阳性**: ≥1%细胞核阳性",PR阳性(60%)
+pathology.ihc.her2,HER2状态,String,"**0/1+**: 阴性<br>**2+**: 可疑,需FISH确认<br>**3+**: 阳性(曲妥珠单抗适应证)<br>**FISH**: HER2/CEP17比值≥2.0",HER2 1+(阴性)
+pathology.ihc.ki67,Ki-67增殖指数,Number,"**<14%**: 低增殖<br>**14-30%**: 中等增殖<br>**>30%**: 高增殖(化疗获益)",18
+pathology.molecularSubtype,分子分型,String,"**Luminal A**: ER+/PR+,HER2-,Ki67<14%(预后最好)<br>**Luminal B(HER2-)**: ER+,HER2-,Ki67≥14%或PR低<br>**Luminal B(HER2+)**: ER+,HER2+<br>**HER2富集**: ER-,PR-,HER2+<br>**三阴性**: ER-,PR-,HER2-(预后最差,BRCA相关)",Luminal A
 
-diagnosisImpression,诊断/印象,String,基于乳腺影像检查的影像学诊断或印象。建议结合临床触诊和必要时的病理学检查综合判断,左乳外上象限低回声结节，BI-RADS 3类，考虑纤维腺瘤可能性大，建议6个月短期随访
-recommendation,建议,String,"基于乳腺影像检查的综合建议,包括是否需要活检、补充检查、随访时间等。",建议6个月后复查乳腺超声，观察病灶大小和形态变化。如短期内出现乳腺肿块增大、乳头溢液等症状请及时就医。建议保持健康生活方式(控制体重、限制酒精、规律运动)。
+# 高危因素评估
+riskFactors.age,年龄,Number,患者年龄(岁),45
+riskFactors.familyHistory,家族史,Boolean,"一级亲属乳腺癌/卵巢癌史<br>**BRCA1/2突变**: 终生乳腺癌风险40-80%",false
+riskFactors.brca,BRCA基因检测,String,"**BRCA1突变**: 乳腺癌风险55-72%,卵巢癌风险39-46%<br>**BRCA2突变**: 乳腺癌风险45-69%,卵巢癌风险11-27%<br>**建议年度MRI+钼靶**: 25-30岁起",未检测
+riskFactors.priorBiopsy,既往活检史,String,"**高危病变**: ADH/ALH/LCIS/放射状瘢痕→癌变风险↑4-5倍<br>**良性病变**: 纤维腺瘤/囊肿→风险不增加",无
+riskFactors.priorCancer,既往乳腺癌史,Boolean,对侧乳腺癌风险↑2-6倍,false
+riskFactors.chestRadiation,胸部放疗史,Boolean,"10-30岁间胸部放疗(霍奇金淋巴瘤)<br>**癌变风险**: ↑8-10倍,放疗后8-10年起筛查",false
+riskFactors.menstrualHistory,月经史,String,"**初潮早**: <12岁<br>**绝经晚**: >55岁<br>**未生育/晚育**: >30岁首次生育<br>**未哺乳**: 风险↑",初潮13岁,绝经未至
+riskFactors.hrt,激素替代治疗,Boolean,"**雌孕激素联合HRT**: 风险↑1.26倍<br>**单纯雌激素**: 风险不明显↑<br>**停用5年后**: 风险恢复正常",false
+
+# 筛查建议
+screening.category,筛查风险分层,String,"**一般风险**: 无高危因素<br>**中等风险**: 一级亲属乳腺癌史/既往高危病变<br>**高危**: BRCA突变/胸部放疗史/终生风险>20%",一般风险
+screening.recommendation,筛查建议,String,"**一般风险女性**:<br>  - 40-44岁: 可选择年度钼靶<br>  - 45-54岁: 年度钼靶<br>  - ≥55岁: 每2年钼靶或继续年度<br>  - 致密乳腺: 联合超声<br>**高危女性**:<br>  - 25-30岁起: 年度MRI+钼靶<br>  - BRCA突变: 考虑预防性乳房切除/卵巢切除",45岁起年度钼靶+超声
+screening.nextExam,下次检查时间,Date,建议下次检查日期,2026-03-15
+
+# 随访计划
+followUp.required,需要随访,Boolean,是否需要随访,true
+followUp.interval,随访间隔,String,"**BI-RADS 3**: 6个月/12个月/24个月(共2年)<br>**BI-RADS 4-5活检后**: 根据病理结果<br>**良性高危病变**: 6个月影像+每年体检",6个月
+followUp.modality,随访方式,String,"**超声**: 致密乳腺年轻女性<br>**钼靶**: 标准筛查<br>**MRI**: 高危人群/术前评估<br>**联合**: 钼靶+超声",钼靶+超声
+
+# 报告信息
+reportingPhysician,报告医师,String,影像报告医师姓名,李医师
+reportDate,报告日期,Date,报告签发日期,2025-03-16
+reportFinalized,报告终审,Boolean,报告是否已终审,true
+comparisonStudy,对比检查,String,与既往检查对比情况,较2024-03-10检查无明显变化
+impression,影像学印象,String,总体影像学印象和结论,右乳外上象限圆形低回声结节,考虑纤维腺瘤,BI-RADS 3,建议6个月随访
+notes,备注,String,其他重要信息或特殊说明,患者对活检有顾虑,选择短期随访方案
