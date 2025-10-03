@@ -1,0 +1,142 @@
+字段名(英文),字段名(中文),数据类型,描述,示例
+patientId,患者ID,String,患者唯一标识符,P123456
+encounterDate,就诊日期,Date,本次就诊日期,2025-01-15
+encounterType,就诊类型,String,"**建议值**: `急诊`, `住院`, `ICU`, `术后`, `门诊发现`",ICU
+
+diagnosisInfo.aki,诊断.AKI诊断,String,"**KDIGO标准**(符合以下任一条):<br>**48h内SCr升高≥26.5 μmol/L(≥0.3 mg/dL)**<br>**或7天内SCr升高≥基线值1.5倍**<br>**或尿量<0.5 mL/kg/h持续6小时**<br>**建议值**: `是`, `否`, `疑似AKI`",是
+diagnosisInfo.stage,诊断.KDIGO分期,String,"**KDIGO AKI分期**:<br>**1期**: SCr升高1.5-1.9倍基线值,或升高≥26.5 μmol/L;尿量<0.5 mL/kg/h持续6-12h<br>**2期**: SCr升高2.0-2.9倍基线值;尿量<0.5 mL/kg/h持续≥12h<br>**3期**: SCr升高≥3倍基线值,或SCr≥353.6 μmol/L(≥4.0 mg/dL),或启动肾脏替代治疗(RRT),或<18岁eGFR降至<35;尿量<0.3 mL/kg/h持续≥24h或无尿≥12h<br>**建议值**: `1期`, `2期`, `3期`, `未分期`",2期
+diagnosisInfo.baseline,诊断.基线肾功能,String,"**基线SCr**: 发病前7-365天内最近一次稳定值,或入院时最低值,或估算值(MDRD反算,假设基线eGFR 75)。<br>**示例**: `基线SCr 88 μmol/L(3个月前)`, `入院后最低值SCr 92 μmol/L`, `估算基线SCr 106 μmol/L(MDRD反算)`,入院后最低值SCr 92 μmol/L
+
+clinicalContext.setting,临床背景.发生场景,String,"**社区获得性AKI**: 入院时已存在<br>**医院获得性AKI**: 住院期间发生<br>**建议值**: `社区获得性`, `医院获得性(术后)`, `医院获得性(ICU)`, `医院获得性(造影剂后)`, `医院获得性(药物相关)`",医院获得性(术后)
+clinicalContext.ckd,临床背景.慢性肾病史,String,"**AKD**: Acute Kidney Disease(急性肾病,AKI持续7-90天)<br>**CKD**: Chronic Kidney Disease(慢性肾病,≥3个月)<br>**AKI-CKD**: AKI叠加CKD<br>**建议值**: `无CKD(单纯AKI)`, `CKD G3a-G5基础上发生AKI`, `不明(基线肾功能未知)`",无CKD
+
+akiType.category,AKI类型.分类,String,"**肾前性AKI(55%)**: 有效循环血量↓→肾灌注↓,肾实质无损伤,及时纠正可逆<br>**肾性AKI(40%)**: 肾实质损伤(ATN/AIN/肾小球肾炎/血管病)<br>**肾后性AKI(5%)**: 尿路梗阻<br>**建议值**: `肾前性`, `肾性`, `肾后性`, `混合型`, `待明确`",肾性
+akiType.etiology,AKI类型.病因,String,"**示例**: `低血容量(失血/呕吐/腹泻)`, `心源性休克`, `脓毒症`, `肝肾综合征`, `急性肾小管坏死(ATN)`, `造影剂肾病`, `急性间质性肾炎(AIN)`, `急进性肾小球肾炎(RPGN)`, `横纹肌溶解`, `肿瘤溶解综合征`, `尿路梗阻(结石/前列腺增生/肿瘤压迫)`, `药物性(NSAID/ACEI/ARB/万古霉素)`, `不明原因`",脓毒症相关ATN
+
+precipitatingFactors.sepsis,诱因.脓毒症,String,"**脓毒症**: AKI最常见原因(ICU患者50%)。<br>**建议值**: `无`, `脓毒症`, `感染性休克`,脓毒症
+precipitatingFactors.hypovolemia,诱因.低血容量,String,"**示例**: `无`, `失血(消化道出血/手术)`, `胃肠道丢失(呕吐/腹泻)`, `第三间隙丢失(腹水/肠梗阻)`, `利尿剂过度`,无
+precipitatingFactors.surgery,诱因.手术,String,"**术后AKI**: 心脏手术(30%)、血管手术、大手术。<br>**建议值**: `无`, `心脏手术`, `血管手术`, `腹部大手术`, `其他手术`,无
+precipitatingFactors.contrast,诱因.造影剂暴露,String,"**造影剂肾病(CIN)**: 造影剂后48-72h SCr升高≥25%或≥44 μmol/L。<br>**高危**: CKD、糖尿病、高龄、低血容量、高剂量造影剂。<br>**建议值**: `无造影剂暴露`, `24h内碘对比剂(剂量XXmL)`, `48h内碘对比剂`, `钆对比剂(MRI)`,24h内碘对比剂(150mL)
+precipitatingFactors.nephrotoxicDrugs,诱因.肾毒性药物,String,"**常见肾毒性药物**: NSAID、ACEI/ARB、利尿剂、万古霉素、氨基糖苷类、两性霉素B、顺铂、含碘造影剂。<br>**示例**: `无`, `NSAID(XX)`, `ACEI/ARB`, `万古霉素`, `氨基糖苷类(庆大霉素)`, `多种肾毒性药物`,万古霉素
+precipitatingFactors.rhabdomyolysis,诱因.横纹肌溶解,String,"**肌红蛋白尿**: 茶色尿,CK↑↑。<br>**病因**: 挤压伤、过度运动、癫痫持续状态、他汀类药物。<br>**建议值**: `无`, `横纹肌溶解(CK>5000 U/L)`",无
+precipitatingFactors.tumorLysis,诱因.肿瘤溶解综合征,String,"**TLS**: 化疗后大量肿瘤细胞破裂→高钾/高磷/高尿酸/低钙→尿酸结晶性AKI。<br>**建议值**: `无`, `肿瘤溶解综合征`,无
+
+symptoms.urineOutput,症状.尿量,String,"**少尿**: <400-500 mL/24h或<0.5 mL/kg/h<br>**无尿**: <100 mL/24h<br>**非少尿性AKI**: 尿量正常但SCr升高(预后较好)<br>**示例**: `正常尿量(非少尿性AKI)`, `少尿(300 mL/24h)`, `无尿(<100 mL/24h)`,少尿(350 mL/24h)
+symptoms.fluidOverload,症状.容量过负荷,String,"**表现**: 水肿、呼吸困难、肺水肿、胸腔积液。<br>**建议值**: `无`, `轻度水肿`, `肺水肿`, `全身水肿+胸腔积液`,肺水肿
+symptoms.uremia,症状.尿毒症症状,String,"**尿毒症**: 恶心、呕吐、嗜睡、意识障碍、心包炎、出血倾向。<br>**建议值**: `无`, `恶心呕吐`, `意识障碍`, `心包炎`,恶心呕吐
+symptoms.acidosis,症状.代谢性酸中毒症状,String,"**Kussmaul呼吸**: 深大呼吸。<br>**建议值**: `无`, `Kussmaul呼吸`, `呼吸困难`,无
+
+physicalExam.bp,体格检查.血压,String,"**低血压**: 肾前性AKI/脓毒症休克。<br>**高血压**: 急进性肾小球肾炎/HUS。<br>单位: mmHg",90/55
+physicalExam.jvp,体格检查.颈静脉压,String,"**JVP升高**: 容量过负荷/心源性休克。<br>**JVP降低**: 低血容量。<br>**建议值**: `正常`, `升高(容量过负荷)`, `降低(低血容量)`, `未评估`,正常
+physicalExam.edema,体格检查.水肿,String,"**建议值**: `无`, `下肢轻度凹陷性水肿`, `全身水肿`, `肺水肿`,下肢轻度水肿
+physicalExam.rash,体格检查.皮疹,String,"**AIN**: 药疹。<br>**血管炎**: 紫癜、网状青斑。<br>**建议值**: `无`, `药疹`, `紫癜`, `网状青斑`,无
+physicalExam.bladderDistention,体格检查.膀胱充盈,String,"**梗阻性AKI**: 膀胱充盈,叩诊浊音。<br>**建议值**: `无`, `膀胱充盈(梗阻可能)`",无
+
+labs.scr.baseline,实验室.肌酐.基线值,Number,"基线血清肌酐。<br>单位: μmol/L",92
+labs.scr.peak,实验室.肌酐.峰值,Number,"AKI期间最高肌酐值。<br>单位: μmol/L",265
+labs.scr.current,实验室.肌酐.当前值,Number,"当前肌酐值。<br>单位: μmol/L",220
+labs.scr.foldIncrease,实验室.肌酐.倍数升高,Number,"峰值/基线值。<br>**1.5-1.9倍**: 1期<br>**2-2.9倍**: 2期<br>**≥3倍**: 3期",2.9
+
+labs.bun,实验室.尿素氮,Number,"血尿素氮。<br>单位: mmol/L<br>**BUN/SCr比值**: 肾前性AKI>20:1(正常10-15:1),肾性AKI正常或↓",18.5
+labs.bunScrRatio,实验室.BUN/SCr比值,Number,"BUN(mg/dL)/SCr(mg/dL)。<br>**>20**: 提示肾前性AKI<br>**10-15**: 肾性AKI",25
+
+labs.egfr.baseline,实验室.eGFR.基线值,Number,"基线估算肾小球滤过率。<br>单位: mL/min/1.73m²",78
+labs.egfr.current,实验室.eGFR.当前值,Number,"当前eGFR。<br>单位: mL/min/1.73m²",25
+
+labs.electrolytes.na,实验室.电解质.钠,Number,"血钠。<br>单位: mmol/L<br>**正常**: 135-145",138
+labs.electrolytes.k,实验室.电解质.钾,Number,"血钾。<br>单位: mmol/L<br>**高钾血症**: AKI常见并发症,>6.0 mmol/L危及生命<br>**正常**: 3.5-5.5",5.8
+labs.electrolytes.hco3,实验室.电解质.碳酸氢根,Number,"血碳酸氢根(HCO₃⁻)。<br>单位: mmol/L<br>**代谢性酸中毒**: <18 mmol/L<br>**正常**: 22-28",16
+labs.electrolytes.cl,实验室.电解质.氯,Number,"血氯。<br>单位: mmol/L<br>**正常**: 98-106",102
+labs.electrolytes.ca,实验室.电解质.钙,Number,"血钙。<br>单位: mmol/L<br>**低钙**: 横纹肌溶解/肿瘤溶解<br>**正常**: 2.15-2.55",2.18
+labs.electrolytes.phos,实验室.电解质.磷,Number,"血磷。<br>单位: mmol/L<br>**高磷**: 肿瘤溶解综合征/AKI<br>**正常**: 0.8-1.5",1.8
+labs.electrolytes.mg,实验室.电解质.镁,Number,"血镁。<br>单位: mmol/L<br>**正常**: 0.7-1.05",0.9
+
+labs.abg.ph,实验室.动脉血气.pH,Number,"**代谢性酸中毒**: pH<7.35常见<br>**正常**: 7.35-7.45",7.28
+labs.abg.pco2,实验室.动脉血气.PaCO2,Number,"动脉血二氧化碳分压。<br>单位: mmHg<br>**代偿性呼吸性碱中毒**: ↓<br>**正常**: 35-45",28
+labs.abg.po2,实验室.动脉血气.PaO2,Number,"动脉血氧分压。<br>单位: mmHg<br>**正常**: 80-100",85
+labs.abg.lactate,实验室.动脉血气.乳酸,Number,"血乳酸。<br>单位: mmol/L<br>**升高**: 脓毒症/低灌注<br>**正常**: <2",3.5
+
+labs.cbc.hb,实验室.全血细胞.血红蛋白,Number,"血红蛋白。<br>单位: g/L<br>**贫血**: 失血/溶血/CKD",105
+labs.cbc.wbc,实验室.全血细胞.白细胞,Number,"白细胞计数。<br>单位: ×10⁹/L<br>**升高**: 感染/脓毒症<br>**降低**: AIN(嗜酸粒细胞增多)",15.8
+labs.cbc.platelet,实验室.全血细胞.血小板,Number,"血小板计数。<br>单位: ×10⁹/L<br>**降低**: HUS/TTP/DIC",180
+
+labs.ck,实验室.肌酸激酶,Number,"肌酸激酶。<br>单位: U/L<br>**横纹肌溶解**: CK>5000,常>50000",350
+labs.myoglobin,实验室.肌红蛋白,Number,"血清肌红蛋白。<br>单位: μg/L<br>**横纹肌溶解**: ↑↑<br>**正常**: <90",80
+
+labs.uricAcid,实验室.尿酸,Number,"血尿酸。<br>单位: μmol/L<br>**肿瘤溶解综合征**: >475(>8 mg/dL)<br>**正常**: 150-420",420
+
+labs.ldh,实验室.LDH,Number,"乳酸脱氢酶。<br>单位: U/L<br>**溶血**: HUS/TTP,↑↑<br>**肿瘤溶解**: ↑<br>**正常**: 120-250",280
+
+labs.crp,实验室.CRP,Number,"C反应蛋白。<br>单位: mg/L<br>**升高**: 感染/炎症(脓毒症/AIN)<br>**正常**: <10",150
+labs.pct,实验室.降钙素原,Number,"降钙素原。<br>单位: ng/mL<br>**脓毒症**: >0.5<br>**正常**: <0.05",8.5
+
+urine.dipstick.protein,尿液分析.尿蛋白,String,"**建议值**: `阴性`, `痕量`, `1+`, `2+`, `3+`, `4+(肾小球疾病/AIN)`,2+
+urine.dipstick.blood,尿液分析.尿潜血,String,"**血尿**: 肾小球肾炎、血管炎、结石、肿瘤。<br>**肌红蛋白尿**: 横纹肌溶解,潜血阳性但镜检无RBC。<br>**建议值**: `阴性`, `痕量`, `1+`, `2+`, `3+`, `4+`,3+
+urine.dipstick.leukocytes,尿液分析.尿白细胞,String,"**WBC**: 感染、AIN。<br>**建议值**: `阴性`, `痕量`, `1+`, `2+`, `3+`",1+
+urine.dipstick.ph,尿液分析.尿pH,Number,"**尿pH**: 酸性(<5.5,肾前性AKI),碱性(>7.0,尿路感染/肾小管性酸中毒)<br>**正常**: 5.0-7.0",5.2
+
+urine.microscopy.rbc,尿液镜检.红细胞,String,"**示例**: `<3/HPF`, `5-10/HPF`, `>50/HPF(肾小球肾炎)`, `满视野`,5-10/HPF
+urine.microscopy.wbc,尿液镜检.白细胞,String,"**示例**: `<5/HPF`, `10-20/HPF`, `>50/HPF(AIN/UTI)`,10-20/HPF
+urine.microscopy.casts,尿液镜检.管型,String,"**肾性AKI特征性表现**:<br>**颗粒管型**: ATN<br>**红细胞管型**: 肾小球肾炎<br>**白细胞管型**: AIN/肾盂肾炎<br>**蜡样管型**: 慢性肾衰<br>**透明管型**: 正常或肾前性<br>**示例**: `未见管型`, `透明管型`, `颗粒管型(ATN)`, `红细胞管型(肾小球肾炎)`, `白细胞管型(AIN)`,颗粒管型
+urine.microscopy.crystals,尿液镜检.结晶,String,"**尿酸结晶**: 肿瘤溶解综合征。<br>**草酸钙结晶**: 乙二醇中毒。<br>**示例**: `未见`, `尿酸结晶`, `草酸钙结晶`,未见
+
+urine.indices.una,尿液指标.尿钠,Number,"尿钠浓度。<br>单位: mmol/L<br>**肾前性AKI**: <20(肾素-血管紧张素系统激活,钠重吸收↑)<br>**肾性AKI**: >40(肾小管受损,钠重吸收↓)",15
+urine.indices.fena,尿液指标.FENa,Number,"钠排泄分数(Fractional Excretion of Sodium)。<br>FENa(%) = (尿钠×血肌酐)/(血钠×尿肌酐)×100<br>**<1%**: 肾前性AKI(肾小管功能正常,钠重吸收↑)<br>**>2%**: 肾性AKI(肾小管受损,钠重吸收↓)<br>**1-2%**: 灰区(利尿剂/CKD)<br>**注意**: 利尿剂使用者FENa不可靠,改用FEUrea",0.8
+urine.indices.feurea,尿液指标.FEUrea,Number,"尿素排泄分数(用于利尿剂使用者)。<br>FEUrea(%) = (尿尿素×血肌酐)/(血尿素×尿肌酐)×100<br>**<35%**: 肾前性<br>**>50%**: 肾性",28
+urine.indices.uosm,尿液指标.尿渗透压,Number,"尿渗透压。<br>单位: mOsm/kg<br>**>500**: 肾前性AKI(浓缩能力保留)<br>**<350**: 肾性AKI(浓缩功能受损)<br>**正常**: 300-900",550
+urine.indices.usg,尿液指标.尿比重,Number,"尿比重。<br>**>1.020**: 肾前性<br>**<1.015**: 肾性ATN<br>**正常**: 1.010-1.030",1.025
+
+imaging.ultrasound.kidneySize,影像学.肾脏超声.肾脏大小,String,"**正常**: 长径9-12 cm。<br>**增大**: 急性肾小球肾炎、浸润性疾病(淋巴瘤)。<br>**缩小**: CKD(慢性肾损伤)。<br>**示例**: `正常大小`, `双肾增大(12.5 cm)`, `双肾缩小(8 cm,提示CKD)`,正常大小
+imaging.ultrasound.echogenicity,影像学.肾脏超声.回声,String,"**回声增强**: CKD/糖尿病肾病。<br>**建议值**: `正常回声`, `回声增强`, `回声不均`,正常回声
+imaging.ultrasound.hydronephrosis,影像学.肾脏超声.肾积水,String,"**肾后性AKI**: 梗阻→双侧肾积水。<br>**单侧肾积水**: 一般不引起AKI(除非孤立肾)。<br>**建议值**: `无肾积水`, `单侧轻度肾积水`, `双侧肾积水(梗阻性AKI)`, `重度肾积水`,无肾积水
+imaging.ultrasound.resistiveIndex,影像学.肾脏超声.阻力指数,Number,"肾动脉阻力指数(RI)。<br>RI = (收缩期峰值流速-舒张末期流速)/收缩期峰值流速<br>**正常**: <0.7<br>**>0.7**: 肾实质病变/ATN",0.65
+
+imaging.ct.findings,影像学.CT.主要表现,String,"**适应证**: 排除梗阻、肾血管病变、肾实质病变。<br>**示例**: `未做`, `双肾正常`, `双侧肾积水(输尿管结石)`, `肾静脉血栓`, `双肾增大`,未做
+
+biomarkers.ngal,生物标志物.NGAL,Number,"中性粒细胞明胶酶相关脂质运载蛋白(Neutrophil Gelatinase-Associated Lipocalin)。<br>单位: ng/mL<br>**早期AKI标志物**: AKI后2-6h升高(早于SCr 24-48h)<br>**>150**: AKI高危<br>**正常**: <150",280
+biomarkers.kim1,生物标志物.KIM-1,String,"肾损伤分子-1(Kidney Injury Molecule-1)。<br>**ATN标志物**: 升高提示近端肾小管损伤。<br>**建议值**: `未检测`, `正常`, `升高`,未检测
+biomarkers.cystatin,生物标志物.胱抑素C,Number,"胱抑素C。<br>单位: mg/L<br>**eGFR替代指标**: 不受肌肉量影响,更准确。<br>**正常**: 0.51-0.98",1.5
+
+diagnosis.prerenal,诊断.肾前性AKI,String,"**诊断依据**: 有效循环血量↓(低血压/失血/脱水),FENa<1%,尿钠<20,尿渗透压>500,BUN/SCr>20,补液后肌酐迅速下降。<br>**建议值**: `是`, `否`, `可能`,否
+diagnosis.intrinsic,诊断.肾性AKI,String,"**ATN**: 最常见肾性AKI,缺血性(脓毒症/休克)/肾毒性(药物/造影剂),FENa>2%,尿颗粒管型。<br>**AIN**: 药物过敏,发热/皮疹/嗜酸粒细胞增多,尿WBC管型。<br>**肾小球肾炎**: 血尿+蛋白尿,红细胞管型。<br>**建议值**: `ATN`, `AIN`, `急进性肾小球肾炎`, `血管炎`, `HUS/TTP`, `不明`,ATN
+diagnosis.postrenal,诊断.肾后性AKI,String,"**诊断依据**: 双侧肾积水(或单侧孤立肾),膀胱充盈/前列腺增生,导尿后尿量↑。<br>**建议值**: `是(梗阻部位XX)`, `否`,否
+
+rrt.indication,肾脏替代治疗.指征,String,"**RRT绝对指征**(AEIOU):<br>**A**: Acidosis难治性代谢性酸中毒(pH<7.1)<br>**E**: Electrolyte异常(高钾>6.5 mmol/L,低钙抽搐)<br>**I**: Intoxication中毒(甲醇/乙二醇/锂/水杨酸)<br>**O**: Overload难治性容量过负荷(肺水肿)<br>**U**: Uremia尿毒症(心包炎/脑病/出血)<br>**建议值**: `无指征`, `有指征(具体)`, `已启动RRT`, `暂不需要(密切观察)`",有指征(高钾+容量过负荷)
+rrt.modality,肾脏替代治疗.治疗方式,String,"**CRRT**: 连续性肾脏替代治疗(血流动力学不稳定,ICU首选)。<br>**IHD**: 间歇性血液透析(血流动力学稳定)。<br>**PD**: 腹膜透析(少用)。<br>**建议值**: `未启动`, `CRRT(CVVHDF)`, `IHD`, `SLED(持续低效血液透析)`,CRRT(CVVHDF)
+rrt.timing,肾脏替代治疗.启动时机,String,"**早期启动(Early RRT)**: KDIGO 2-3期,BUN>30 mmol/L或少尿>12h。<br>**晚期启动(Late RRT)**: 传统指征(AEIOU)。<br>**示例**: `未启动`, `早期启动(KDIGO 2期+少尿)`, `晚期启动(高钾+肺水肿)`,早期启动
+rrt.duration,肾脏替代治疗.治疗天数,Number,"RRT持续天数。<br>单位: 天",7
+
+treatment.fluid.strategy,治疗.液体管理.策略,String,"**肾前性AKI**: 积极补液(晶体液首选,0.9%生理盐水/林格液)。<br>**肾性AKI**: 限制液体(容量过负荷)。<br>**建议值**: `积极补液(肾前性)`, `限制液体入量`, `等容量`,限制液体入量
+treatment.fluid.type,治疗.液体管理.液体类型,String,"**晶体液**: 生理盐水/林格液/平衡盐(首选)。<br>**胶体液**: 白蛋白(低蛋白血症),避免羟乙基淀粉(肾毒性)。<br>**示例**: `生理盐水`, `林格液`, `白蛋白`, `未补液`,林格液
+treatment.fluid.balance,治疗.液体管理.液体平衡,String,"出入量平衡。<br>单位: mL/24h<br>**示例**: `+1500(液体正平衡)`, `-500(负平衡)`, `0(等容量)`,+800
+
+treatment.diuretics,治疗.利尿剂,String,"**袢利尿剂**: 呋塞米,减少容量过负荷,转化为非少尿性AKI(不改善预后)。<br>**注意**: 不能逆转AKI,避免过度利尿加重肾前性因素。<br>**示例**: `未使用`, `呋塞米20mg IV q12h`, `呋塞米持续泵注`,呋塞米40mg IV bid
+
+treatment.vasoactiveAgents,治疗.血管活性药物,String,"**去甲肾上腺素**: 脓毒症休克,维持MAP≥65 mmHg。<br>**多巴胺**: 无肾保护作用,不推荐。<br>**示例**: `未使用`, `去甲肾上腺素(维持MAP≥65)`, `多巴胺`,去甲肾上腺素
+
+treatment.medication.nephrotoxicAvoidance,治疗.药物.避免肾毒性药物,String,"**停用**: NSAID、ACEI/ARB(急性期)、造影剂、万古霉素、氨基糖苷类。<br>**建议值**: `已停用肾毒性药物`, `已调整剂量(肾功能不全)`, `继续使用(获益>风险)`,已停用
+treatment.medication.dosageAdjustment,治疗.药物.肾功能调整剂量,String,"**肾排泄药物**: 根据eGFR调整剂量(抗生素/降糖药/抗凝药)。<br>**示例**: `已调整`, `未调整(不需要)`,已调整
+
+treatment.sepsisTreatment,治疗.脓毒症治疗,String,"**脓毒症相关AKI**: 抗感染、液体复苏、血管活性药物、源头控制。<br>**建议值**: `不适用(无脓毒症)`, `广谱抗生素+液体复苏`, `已完成源头控制`,广谱抗生素+去甲肾
+treatment.obstructionRelief,治疗.梗阻解除,String,"**肾后性AKI**: 导尿(膀胱出口梗阻)、输尿管支架/肾造瘘(上尿路梗阻)。<br>**示例**: `不适用`, `已导尿`, `已放置输尿管支架`,不适用
+
+complications.hyperkalemia,并发症.高钾血症,String,"**高钾血症**: K⁺>5.5 mmol/L,AKI最危险并发症。<br>**≥6.5或心电图改变**: 紧急透析指征。<br>**治疗**: 10%葡萄糖酸钙(稳定心肌)、胰岛素+葡萄糖(转钾入细胞)、利尿/透析(排钾)。<br>**建议值**: `无`, `轻度(5.5-6.0)`, `中度(6.0-6.5)`, `重度(>6.5,危及生命)`,中度(6.2 mmol/L)
+complications.metabolicAcidosis,并发症.代谢性酸中毒,String,"**HCO₃⁻<18 mmol/L**: 常见。<br>**pH<7.1**: 透析指征。<br>**治疗**: 碳酸氢钠(pH>7.2暂不需要)、透析。<br>**建议值**: `无`, `轻度`, `重度(pH<7.2)`,重度(pH 7.20)
+complications.pulmonaryEdema,并发症.肺水肿,String,"**容量过负荷**: 少尿性AKI常见并发症。<br>**建议值**: `无`, `肺水肿(利尿剂治疗)`, `难治性肺水肿(透析指征)`,肺水肿
+complications.uremia,并发症.尿毒症,String,"**尿毒症**: BUN>35 mmol/L,心包炎/脑病/出血/恶心呕吐。<br>**建议值**: `无`, `轻度尿毒症症状`, `心包炎(透析指征)`, `尿毒症脑病`,轻度症状
+complications.infection,并发症.感染,String,"**AKI易感染**: 免疫功能↓,导尿管/透析导管相关感染。<br>**示例**: `无`, `导尿管相关UTI`, `CRBSI(中心静脉导管血流感染)`, `VAP`,无
+complications.anemia,并发症.贫血,String,"**AKI贫血**: EPO↓,出血,溶血。<br>**建议值**: `无明显贫血`, `中度贫血(Hb 70-90 g/L)`, `重度贫血(需输血)`,中度贫血
+complications.bleeding,并发症.出血,String,"**尿毒症性出血**: 血小板功能障碍。<br>**建议值**: `无`, `轻度出血(皮肤瘀斑)`, `消化道出血`, `颅内出血`,无
+
+prognosis.recovery,预后.肾功能恢复,String,"**完全恢复**: SCr恢复至基线值±26.5 μmol/L。<br>**部分恢复**: SCr下降但未达基线值。<br>**无恢复**: 进展至ESRD,需长期透析。<br>**建议值**: `完全恢复`, `部分恢复(残留CKD)`, `无恢复(ESRD)`, `尚未恢复(AKI持续中)`,部分恢复
+prognosis.ckdProgression,预后.CKD进展风险,String,"**AKI→CKD**: AKI存活者25-50%进展为CKD。<br>**高危**: 多次AKI发作、重度AKI(3期)、老年、糖尿病、基础CKD。<br>**建议值**: `低风险`, `中等风险`, `高风险(需长期随访)`,高风险
+prognosis.mortality,预后.死亡率,String,"**AKI死亡率**: 社区获得性15-20%,ICU 50-60%。<br>**建议值**: `存活`, `死亡(直接AKI相关)`, `死亡(多脏器衰竭)`, `死亡(脓毒症)`,存活
+
+prognosis.lengthOfStay,预后.住院天数,Number,"住院天数。<br>单位: 天",18
+prognosis.icuStay,预后.ICU天数,Number,"ICU住院天数。<br>单位: 天",10
+
+followUp.plan,随访.随访计划,String,"**AKI恢复后**: 1个月后复查肾功能,后3/6/12个月随访。<br>**监测**: SCr/eGFR、尿常规、血压、蛋白尿,评估CKD进展。<br>**示例**: `出院后1个月门诊复查肾功能`, `3个月后评估CKD分期`, `不需要随访(完全恢复+无危险因素)`,出院后1个月复查
+followUp.ckdScreening,随访.CKD筛查,String,"**建议**: 所有AKI存活者≥3个月随访,评估是否进展为CKD。<br>**建议值**: `计划3个月后CKD筛查`, `已确诊CKD`, `不需要(完全恢复)`,计划3个月后筛查
+
+clinicianNotes,临床医生备注,String,自由文本备注栏,患者为65岁男性,因脓毒症休克入ICU。基线SCr 92→峰值265 μmol/L(2.9倍),尿量<300 mL/24h,诊断AKI 2期(KDIGO)。尿钠15 mmol/L,FENa 0.8%,初始考虑肾前性,但补液后肌酐无改善,尿颗粒管型(+),修正诊断为脓毒症相关ATN。出现高钾(6.2 mmol/L)+代谢性酸中毒(pH 7.20)+肺水肿,启动CRRT(CVVHDF)治疗7天。肌酐逐渐下降至150 μmol/L出院,部分恢复,计划1个月后随访评估CKD风险。
+dataSource,数据来源,String,"**建议值**: `急诊`, `ICU`, `肾内科`, `术后`, `普通病房`",ICU

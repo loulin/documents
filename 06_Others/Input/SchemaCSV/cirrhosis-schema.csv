@@ -1,0 +1,150 @@
+字段名(英文),字段名(中文),数据类型,描述,示例
+patientId,患者ID,String,患者唯一标识符,P123456
+encounterDate,就诊日期,Date,本次就诊日期,2025-01-15
+encounterType,就诊类型,String,"**建议值**: `门诊`, `急诊`, `住院`, `ICU`",门诊
+
+etiology.primary,病因.主要病因,String,"**中国**: 乙肝(60%),丙肝(20%),酒精(10%),其他(10%)<br>**西方**: 酒精(40%),NASH(30%),丙肝(20%),其他(10%)<br>**建议值**: `乙型肝炎`, `丙型肝炎`, `酒精性`, `非酒精性脂肪性肝炎(NASH)`, `自身免疫性肝炎`, `原发性胆汁性胆管炎(PBC)`, `原发性硬化性胆管炎(PSC)`, `血色病`, `Wilson病`, `隐源性`, `混合病因`",乙型肝炎
+etiology.duration,病因.病程,Number,"肝硬化病程。<br>单位: 年",8
+
+clinicalStage.compensation,临床分期.代偿期,String,"**代偿期**: 无并发症,Child-Pugh A级,MELD<10。<br>**失代偿期**: 出现腹水/静脉曲张出血/肝性脑病/黄疸,Child-Pugh B-C级。<br>**建议值**: `代偿期`, `失代偿期`",失代偿期
+clinicalStage.decompensationEvent,临床分期.失代偿事件,String,"**首次失代偿**: 中位生存期2年。<br>**示例**: `未失代偿`, `腹水`, `静脉曲张出血`, `肝性脑病`, `黄疸`, `多个事件`",腹水
+
+symptoms.ascites,症状.腹水,String,"**腹水**: 最常见失代偿表现(60%)。<br>**建议值**: `无`, `少量`, `中量`, `大量(张力性腹水)`, `难治性腹水`,中量
+symptoms.jaundice,症状.黄疸,String,"**建议值**: `无`, `轻度`, `中度`, `重度`,轻度
+symptoms.gi,症状.消化道症状,String,"**示例**: `无`, `食欲减退`, `恶心呕吐`, `腹胀`, `腹泻`,食欲减退;腹胀
+symptoms.hematemesis,症状.呕血黑便,String,"**食管胃底静脉曲张破裂出血**: 年发生率10-15%,首次出血死亡率15-20%。<br>**建议值**: `无`, `既往出血史`, `本次出血(呕血/黑便)`,无
+symptoms.encephalopathy,症状.肝性脑病,String,"**建议值**: `无`, `轻度(亚临床HE,仅心理测试异常)`, `I度(淡漠/注意力障碍/睡眠颠倒)`, `II度(嗜睡/定向力障碍/扑翼样震颤)`, `III度(昏睡/谵妄)`, `IV度(昏迷)`,I度
+
+symptoms.fatigue,症状.乏力,String,"**建议值**: `无`, `轻度`, `中度`, `重度(影响日常活动)`,中度
+symptoms.pruritus,症状.瘙痒,String,"**胆汁淤积性肝病**: PBC/PSC,瘙痒显著。<br>**建议值**: `无`, `轻度`, `重度(影响睡眠)`,无
+symptoms.edema,症状.水肿,String,"**下肢水肿**: 低蛋白血症+腹水。<br>**建议值**: `无`, `下肢轻度水肿`, `全身水肿`,下肢轻度水肿
+
+physicalExam.jaundice,体格检查.黄疸,String,"**建议值**: `无`, `巩膜黄染`, `全身黄疸`,巩膜黄染
+physicalExam.spider,体格检查.蜘蛛痣,String,"**肝病体征**: 雌激素灭活↓。<br>**建议值**: `无`, `少量(<3个)`, `多个`,多个
+physicalExam.palmarErythema,体格检查.肝掌,String,"**建议值**: `无`, `有`,有
+physicalExam.gynecomastia,体格检查.男性乳房发育,String,"**建议值**: `不适用(女性)`, `无`, `有`,有
+physicalExam.splenomegaly,体格检查.脾大,String,"**门静脉高压**: 脾肿大+脾功能亢进(血小板↓/白细胞↓)。<br>**建议值**: `未触及`, `肋下X cm`, `巨脾`,肋下3 cm
+physicalExam.ascites,体格检查.腹水体征,String,"**移动性浊音**: 中-大量腹水。<br>**液波震颤**: 大量腹水。<br>**建议值**: `无`, `移动性浊音(+)`, `液波震颤(+)`,移动性浊音(+)
+physicalExam.caputMedusae,体格检查.腹壁静脉曲张,String,"**门静脉高压**: 脐周静脉曲张(海蛇头)。<br>**建议值**: `无`, `有`,无
+physicalExam.asterixis,体格检查.扑翼样震颤,String,"**肝性脑病**: II度及以上。<br>**建议值**: `阴性`, `阳性(肝性脑病)`,阴性
+
+labs.liver.alt,实验室.肝功能.ALT,Number,"丙氨酸转氨酶。<br>单位: U/L<br>**肝硬化**: ALT常轻度升高或正常(肝细胞减少)<br>**正常**: <40",65
+labs.liver.ast,实验室.肝功能.AST,Number,"天冬氨酸转氨酶。<br>单位: U/L<br>**AST/ALT>1**: 酒精性肝病/肝硬化特征<br>**正常**: <40",95
+labs.liver.astAltRatio,实验室.肝功能.AST/ALT比值,Number,"**>1**: 酒精性肝病/肝硬化<br>**<1**: 病毒性肝炎/脂肪肝",1.5
+labs.liver.alp,实验室.肝功能.ALP,Number,"碱性磷酸酶。<br>单位: U/L<br>**胆汁淤积**: PBC/PSC,ALP↑↑<br>**正常**: 40-150",180
+labs.liver.ggt,实验室.肝功能.GGT,Number,"γ-谷氨酰转肽酶。<br>单位: U/L<br>**酒精性肝病**: GGT↑↑<br>**正常**: <50",220
+
+labs.liver.tbil,实验室.肝功能.总胆红素,Number,"总胆红素。<br>单位: μmol/L<br>**黄疸**: >34.2<br>**正常**: 5-21",45
+labs.liver.dbil,实验室.肝功能.直接胆红素,Number,"直接胆红素。<br>单位: μmol/L<br>**正常**: <7",28
+labs.liver.albumin,实验室.肝功能.白蛋白,Number,"白蛋白。<br>单位: g/L<br>**肝功能↓**: <35(合成功能下降)<br>**正常**: 35-50",32
+labs.liver.globulin,实验室.肝功能.球蛋白,Number,"球蛋白。<br>单位: g/L<br>**肝硬化**: 球蛋白↑(免疫激活)<br>**正常**: 20-30",38
+labs.liver.agRatio,实验室.肝功能.A/G比值,Number,"白蛋白/球蛋白比值。<br>**肝硬化**: <1(倒置)<br>**正常**: 1.5-2.5",0.84
+
+labs.coag.pt,实验室.凝血功能.PT,Number,"凝血酶原时间。<br>单位: 秒<br>**肝硬化**: PT延长(凝血因子合成↓)<br>**正常**: 11-13.5",16.5
+labs.coag.inr,实验室.凝血功能.INR,Number,"国际标准化比值。<br>**正常**: 0.9-1.1<br>**肝硬化**: INR↑反映肝功能↓",1.8
+labs.coag.aptt,实验室.凝血功能.APTT,Number,"活化部分凝血活酶时间。<br>单位: 秒<br>**正常**: 25-35",38
+labs.coag.fibrinogen,实验室.凝血功能.纤维蛋白原,Number,"纤维蛋白原。<br>单位: g/L<br>**肝硬化**: ↓(合成↓)<br>**正常**: 2-4",1.8
+
+labs.cbc.wbc,实验室.全血细胞.白细胞,Number,"白细胞。<br>单位: ×10⁹/L<br>**脾功能亢进**: 白细胞↓<br>**正常**: 4-10",3.2
+labs.cbc.hb,实验室.全血细胞.血红蛋白,Number,"血红蛋白。<br>单位: g/L<br>**贫血**: 消化道出血/脾亢/营养不良<br>**正常**: 男120-160,女110-150",98
+labs.cbc.platelet,实验室.全血细胞.血小板,Number,"血小板。<br>单位: ×10⁹/L<br>**脾功能亢进**: 血小板↓(最敏感指标)<br>**<50**: 出血风险↑<br>**正常**: 100-300",68
+
+labs.renal.creatinine,实验室.肾功能.肌酐,Number,"血清肌酐。<br>单位: μmol/L<br>**肝肾综合征**: 肌酐↑<br>**正常**: 44-133",110
+labs.renal.bun,实验室.肾功能.尿素氮,Number,"血尿素氮。<br>单位: mmol/L<br>**上消化道出血**: BUN↑↑<br>**正常**: 2.9-8.2",12.5
+labs.renal.na,实验室.肾功能.血钠,Number,"血钠。<br>单位: mmol/L<br>**稀释性低钠**: 腹水/利尿剂<br>**<130**: 肝肾综合征高危<br>**正常**: 135-145",132
+labs.renal.k,实验室.肾功能.血钾,Number,"血钾。<br>单位: mmol/L<br>**低钾**: 利尿剂/呕吐/腹泻<br>**正常**: 3.5-5.5",3.8
+
+labs.ammonia,实验室.血氨,Number,"血氨。<br>单位: μmol/L<br>**肝性脑病**: 血氨↑(80%,但不完全相关)<br>**正常**: 11-32",85
+
+childPugh.score,Child-Pugh评分.总分,Number,"Child-Pugh评分(5-15分)。<br>**A级(5-6分)**: 代偿期,1年生存率95%,2年生存率90%<br>**B级(7-9分)**: 失代偿期,1年生存率80%,2年生存率70%<br>**C级(10-15分)**: 重度失代偿,1年生存率45%,2年生存率35%",9
+childPugh.bilirubin,Child-Pugh评分.胆红素,Number,"**1分**: <34 μmol/L(<2 mg/dL)<br>**2分**: 34-51(2-3)<br>**3分**: >51(>3)<br>**PBC/PSC**: 界值×4",2
+childPugh.albumin,Child-Pugh评分.白蛋白,Number,"**1分**: >35 g/L<br>**2分**: 28-35<br>**3分**: <28",3
+childPugh.inr,Child-Pugh评分.INR,Number,"**1分**: <1.7<br>**2分**: 1.7-2.3<br>**3分**: >2.3",2
+childPugh.ascites,Child-Pugh评分.腹水,Number,"**1分**: 无<br>**2分**: 少-中量(易控制)<br>**3分**: 大量(难治性)",2
+childPugh.encephalopathy,Child-Pugh评分.肝性脑病,Number,"**1分**: 无<br>**2分**: I-II度(轻度)<br>**3分**: III-IV度(重度)",1
+childPugh.class,Child-Pugh评分.分级,String,"**建议值**: `A级(5-6分)`, `B级(7-9分)`, `C级(10-15分)`",B级
+
+meld.score,MELD评分.总分,Number,"MELD评分(Model for End-stage Liver Disease,6-40分)。<br>MELD = 3.78×ln(胆红素mg/dL) + 11.2×ln(INR) + 9.57×ln(肌酐mg/dL) + 6.43<br>**<10**: 3个月死亡率<5%<br>**10-19**: 6%<br>**20-29**: 20%<br>**30-39**: 50%<br>**≥40**: 70%<br>**≥15**: 考虑肝移植评估",18
+meld.tbil,MELD评分.胆红素,Number,"总胆红素(μmol/L,计算时转换为mg/dL,÷17.1)",45
+meld.inr,MELD评分.INR,Number,国际标准化比值,1.8
+meld.creatinine,MELD评分.肌酐,Number,"肌酐(μmol/L,计算时转换为mg/dL,÷88.4)",110
+meld.dialysis,MELD评分.透析史,String,"**肾替代治疗**: 过去7天内透析≥2次,肌酐按4.0 mg/dL计算。<br>**建议值**: `否`, `是(肌酐按4.0计算)`",否
+
+meldNa.score,MELD-Na评分.总分,Number,"MELD-Na = MELD + 1.32×(137-Na) - [0.033×MELD×(137-Na)]<br>**纳入血钠**: 改善预测腹水患者预后(血钠<135时准确性↑)<br>**血钠范围**: 125-137(超出按边界值)",19
+
+imaging.ultrasound.liver,影像学.超声.肝脏,String,"**肝硬化超声**: 肝表面不光滑/结节状,肝实质回声增强/不均匀,肝边缘钝圆/不规则,肝右叶萎缩/左叶或尾状叶代偿性增生。<br>**示例**: `肝表面光滑`, `肝表面不规则+实质回声不均(肝硬化征象)`, `肝萎缩+结节性改变`,肝表面不规则+回声不均
+imaging.ultrasound.spleen,影像学.超声.脾脏,String,"**脾大**: 门静脉高压。<br>**脾厚度**: >4 cm提示脾大。<br>**示例**: `脾脏正常大小`, `脾大(12×6×4 cm)`,脾大(13×7×5 cm)
+imaging.ultrasound.ascites,影像学.超声.腹水,String,"**超声**: 最敏感检测腹水方法(可检出50-100 mL)。<br>**建议值**: `无腹水`, `少量`, `中量`, `大量`,中量
+imaging.ultrasound.pvt,影像学.超声.门静脉血栓,String,"**门静脉血栓(PVT)**: 肝硬化并发症,10-25%。<br>**建议值**: `门静脉通畅`, `门静脉血栓`, `海绵样变性(慢性PVT)`,门静脉通畅
+imaging.ultrasound.hcc,影像学.超声.肝癌筛查,String,"**HCC监测**: 肝硬化每6个月超声+AFP。<br>**建议值**: `未见占位`, `可疑结节(需增强CT/MRI)`, `确诊HCC`,未见占位
+
+imaging.fibroscan.kpa,影像学.FibroScan.肝硬度值,Number,"瞬时弹性成像(TE)肝硬度值。<br>单位: kPa<br>**<7**: F0-F1(无/轻度纤维化)<br>**7-9.5**: F2(中度纤维化)<br>**9.5-12.5**: F3(重度纤维化)<br>**>12.5**: F4(肝硬化)<br>**>20**: 门静脉高压可能<br>**>40**: 静脉曲张高危",18.5
+imaging.fibroscan.cap,影像学.FibroScan.CAP值,Number,"受控衰减参数(肝脂肪变)。<br>单位: dB/m<br>**<238**: S0(无脂肪变)<br>**238-260**: S1(轻度)<br>**260-290**: S2(中度)<br>**>290**: S3(重度)",220
+
+imaging.ct.findings,影像学.CT.主要表现,String,"**肝硬化CT**: 肝表面不规则结节状,肝裂增宽,脾大,腹水,侧支循环(胃冠状静脉/脾肾分流)。<br>**示例**: `肝硬化改变+脾大+腹水`, `肝萎缩+门静脉海绵样变`, `未做`,肝硬化改变+脾大
+imaging.mri.findings,影像学.MRI.主要表现,String,"**MRI**: 肝硬化结节评估,HCC筛查。<br>**示例**: `肝硬化改变`, `再生结节`, `异常增生结节(HCC前病变)`, `HCC`, `未做`,未做
+
+endoscopy.varices,内镜.食管胃底静脉曲张,String,"**静脉曲张分级**:<br>**轻度(G1)**: 曲张静脉直径<5 mm,直线型<br>**中度(G2)**: 5-10 mm,迂曲型<br>**重度(G3)**: >10 mm,串珠型/瘤样型<br>**建议值**: `未查`, `无曲张`, `G1(轻度)`, `G2(中度)`, `G3(重度)`,G2(中度)
+endoscopy.redSigns,内镜.红色征,String,"**红色征**: 出血高危标志(樱桃红斑/红色条纹/血泡征)。<br>**建议值**: `无`, `樱桃红斑`, `红色条纹`, `血泡征`,红色条纹
+endoscopy.phg,内镜.门脉高压性胃病,String,"**PHG**: 胃粘膜蛇皮样/马赛克样改变。<br>**建议值**: `无`, `轻度PHG`, `重度PHG`,轻度PHG
+endoscopy.activeBleed,内镜.活动性出血,String,"**建议值**: `无`, `食管静脉曲张破裂出血(急诊内镜)`, `胃底静脉曲张破裂出血`, `PHG出血`, `消化性溃疡出血`,无
+
+portalHypertension.present,门静脉高压.是否存在,String,"**诊断标准**: HVPG≥6 mmHg(正常1-5),临床显著门脉高压HVPG≥10 mmHg。<br>**建议值**: `是`, `否`, `可能(临床征象)`,是
+portalHypertension.hvpg,门静脉高压.HVPG,Number,"肝静脉压力梯度(Hepatic Venous Pressure Gradient)。<br>单位: mmHg<br>**≥10**: 临床显著门脉高压(出现静脉曲张)<br>**≥12**: 出血风险↑<br>**≥16**: 出血后早期再出血高危",14
+portalHypertension.clinicalSigns,门静脉高压.临床征象,String,"**示例**: `脾大+血小板减少`, `食管胃底静脉曲张`, `腹水`, `腹壁静脉曲张`, `脾肾分流`,脾大+血小板减少;食管静脉曲张
+portalHypertension.collaterals,门静脉高压.侧支循环,String,"**示例**: `胃冠状静脉曲张`, `脾肾分流`, `肠系膜上静脉-下腔静脉分流`, `未评估`,胃冠状静脉曲张
+
+ascites.present,腹水.是否存在,String,"**建议值**: `无`, `有`,有
+ascites.amount,腹水.量,String,"**少量**: 仅超声可见<br>**中量**: 移动性浊音(+)<br>**大量**: 液波震颤(+),腹部明显膨隆<br>**建议值**: `少量`, `中量`, `大量`,中量
+ascites.refractory,腹水.难治性腹水,String,"**难治性腹水**: 利尿剂无反应(<800 mL尿钠/天,体重不减)或早期复发(<4周)。<br>**发生率**: 5-10%,1年生存率50%。<br>**建议值**: `否`, `利尿剂无反应型`, `早期复发型`,否
+
+ascitesAnalysis.appearance,腹水分析.外观,String,"**建议值**: `淡黄色清亮(漏出液)`, `血性(肿瘤/结核)`, `脓性(SBP)`, `乳糜样`,淡黄色清亮
+ascitesAnalysis.wbc,腹水分析.白细胞计数,Number,"腹水白细胞。<br>单位: /μL<br>**≥250 PMN**: 自发性细菌性腹膜炎(SBP)<br>**正常**: <500",120
+ascitesAnalysis.pmn,腹水分析.中性粒细胞,Number,"腹水多形核中性粒细胞(PMN)。<br>单位: /μL<br>**≥250**: SBP诊断标准<br>**正常**: <250",80
+ascitesAnalysis.protein,腹水分析.总蛋白,Number,"腹水总蛋白。<br>单位: g/L<br>**<25**: 漏出液(肝硬化腹水)<br>**>25**: 渗出液<br>**<15**: SBP高危",18
+ascitesAnalysis.albumin,腹水分析.白蛋白,Number,"腹水白蛋白。<br>单位: g/L",12
+ascitesAnalysis.saag,腹水分析.SAAG,Number,"血清-腹水白蛋白梯度(Serum-Ascites Albumin Gradient)。<br>SAAG = 血清白蛋白 - 腹水白蛋白<br>**≥11 g/L**: 门静脉高压性腹水(肝硬化97%准确性)<br>**<11 g/L**: 非门脉高压(腹膜恶性肿瘤/结核/胰腺炎)",20
+ascitesAnalysis.glucose,腹水分析.葡萄糖,Number,"腹水葡萄糖。<br>单位: mmol/L<br>**<2.8**: 继发性细菌性腹膜炎(肠穿孔)<br>**正常**: 接近血糖",5.5
+ascitesAnalysis.ldh,腹水分析.LDH,Number,"腹水LDH。<br>单位: U/L<br>**>血清LDH上限**: 继发性腹膜炎/恶性腹水",150
+ascitesAnalysis.culture,腹水分析.细菌培养,String,"**SBP病原**: 大肠杆菌(40%),肺炎克雷伯(7%),肠球菌(10%),厌氧菌少见(<5%)。<br>**建议值**: `阴性`, `阳性(具体细菌)`, `污染`,阴性
+
+sbp.diagnosis,SBP.诊断,String,"**自发性细菌性腹膜炎**: 腹水PMN≥250/μL,无腹腔内感染灶。<br>**建议值**: `否`, `SBP`, `CNNA(培养阴性中性粒细胞性腹水)`, `MNB(单核细胞性菌血症,PMN<250但培养阳性)`,否
+sbp.prophylaxis,SBP.预防,String,"**一级预防**: 腹水蛋白<15 g/L+Child≥9分或肾功能不全。<br>**二级预防**: SBP病史,诺氟沙星400mg qd长期预防。<br>**建议值**: `无需预防`, `一级预防(诺氟沙星)`, `二级预防(SBP病史)`,一级预防
+
+hrs.diagnosis,肝肾综合征.诊断,String,"**HRS**: 肝硬化腹水患者出现肾功能衰竭,排除其他肾病。<br>**HRS-AKI(1型)**: 急性(<2周),SCr翻倍至>226 μmol/L,中位生存期2周。<br>**HRS-CKD(2型)**: 慢性进展,中位生存期6个月。<br>**建议值**: `否`, `HRS-AKI`, `HRS-CKD`,否
+hrs.criteria,肝肾综合征.诊断标准,String,"**ICA-AKI标准**(2015):<br>1. 肝硬化+腹水<br>2. 诊断AKI(KDIGO)<br>3. 停用利尿剂+白蛋白扩容(1 g/kg,最大100 g/天×2天)无反应<br>4. 无休克<br>5. 近期无肾毒性药物<br>6. 无肾实质病变(蛋白尿<500 mg/天,无血尿,肾超声正常)<br>**建议值**: `不适用`, `符合HRS诊断标准`,不适用
+
+he.grade,肝性脑病.分级,String,"**West Haven分级**:<br>**0级**: 无异常<br>**微小型(MHE)**: 仅心理测试异常(数字连接试验/轨迹描绘试验)<br>**I级**: 淡漠/焦虑/注意力↓/睡眠颠倒/计算力↓<br>**II级**: 嗜睡/定向力障碍/扑翼样震颤/行为异常/不恰当行为<br>**III级**: 昏睡/严重意识障碍/谵妄/肌张力↑/反射亢进<br>**IV级**: 昏迷/对疼痛刺激无反应<br>**建议值**: `无`, `MHE`, `I级`, `II级`, `III级`, `IV级`",I级
+he.precipitant,肝性脑病.诱因,String,"**常见诱因**: 上消化道出血(40%),感染(20%),便秘(15%),电解质紊乱(低钾/低钠),利尿剂过度,高蛋白饮食,镇静剂。<br>**示例**: `无明显诱因`, `上消化道出血`, `SBP`, `便秘`, `低钾血症`, `苯二氮䓬类药物`,便秘
+he.ammonia,肝性脑病.血氨,Number,"血氨。<br>单位: μmol/L<br>**升高**: 80% HE患者,但不完全相关(20% HE患者血氨正常)<br>**正常**: 11-32",95
+
+bleeding.history,静脉曲张出血.出血史,String,"**建议值**: `无出血史`, `既往出血(X年前)`, `本次入院出血`,既往出血(2年前)
+bleeding.severity,静脉曲张出血.出血严重程度,String,"**建议值**: `不适用`, `轻度(Hb下降<30 g/L)`, `中度(Hb下降30-60)`, `重度(Hb下降>60,失血性休克)`,不适用
+bleeding.rebleed,静脉曲张出血.再出血,String,"**早期再出血**: 止血后6周内再出血,发生率10-20%,死亡率30%。<br>**建议值`: `无`, `早期再出血(<6周)`, `晚期再出血`,无
+
+hcc.screening,肝癌.筛查,String,"**HCC监测**: 肝硬化每6个月超声+AFP,年发生率2-5%。<br>**建议值**: `定期监测中`, `发现可疑结节`, `确诊HCC`,定期监测中
+hcc.afp,肝癌.AFP,Number,"甲胎蛋白。<br>单位: ng/mL<br>**>20**: 可疑<br>**>200**: 高度可疑HCC<br>**正常**: <20",15
+
+treatment.diuretics,治疗.利尿剂,String,"**腹水一线治疗**: 螺内酯(50-400 mg/天)+呋塞米(20-160 mg/天),比例100:40。<br>**目标**: 体重下降0.5 kg/天(无水肿)或1 kg/天(有水肿)。<br>**示例**: `未使用`, `螺内酯100mg+呋塞米40mg qd`, `螺内酯200mg+呋塞米80mg qd`,螺内酯100mg+呋塞米40mg
+treatment.paracentesis,治疗.大量放腹水,String,"**适应证**: 张力性腹水/呼吸困难/利尿剂无反应。<br>**LVP**: 一次放>5L,需白蛋白补充(8 g/L腹水)防止循环功能障碍。<br>**示例**: `未做`, `LVP 6L+白蛋白50g`,未做
+treatment.albumin,治疗.白蛋白,String,"**适应证**: LVP、SBP、HRS。<br>**示例**: `未使用`, `白蛋白20g qod`, `白蛋白50g(LVP后)`,未使用
+treatment.lactulose,治疗.乳果糖,String,"**肝性脑病**: 乳果糖30-120 mL/天,分2-3次,目标大便2-3次/天,pH<6。<br>**机制**: 酸化肠道,促进氨排出,抑制产氨菌。<br>**示例**: `未使用`, `乳果糖30 mL tid`,乳果糖30 mL tid
+treatment.rifaximin,治疗.利福昔明,String,"**难治性HE**: 利福昔明550 mg bid+乳果糖,降低HE复发。<br>**建议值**: `未使用`, `利福昔明550 mg bid`,未使用
+treatment.vasoconstrictor,治疗.血管收缩剂,String,"**HRS治疗**: 特利加压素+白蛋白(逆转HRS的唯一有效药物),去甲肾上腺素(替代)。<br>**示例**: `未使用`, `特利加压素1mg q4-6h IV+白蛋白`, `去甲肾上腺素`,未使用
+treatment.tips,治疗.TIPS,String,"**经颈静脉肝内门体分流术**: 降低门脉压,适应证:难治性腹水/静脉曲张再发出血。<br>**禁忌**: Child-Pugh>12分,严重HE,右心衰。<br>**建议值**: `未做`, `计划TIPS`, `已完成TIPS`,未做
+treatment.evl,治疗.内镜治疗,String,"**EVL**: 内镜下食管静脉曲张套扎术(一线治疗)。<br>**EIS**: 硬化剂注射(胃底曲张)。<br>**示例**: `未做`, `EVL(急诊止血)`, `EVL(二级预防,每2-4周)`, `EIS`,未做
+treatment.somatostatin,治疗.生长抑素类似物,String,"**急性静脉曲张出血**: 奥曲肽50 μg冲击+25-50 μg/h持续泵注3-5天(降低门脉压,控制出血)。<br>**示例**: `未使用`, `奥曲肽50 μg冲击+25 μg/h泵注`,未使用
+treatment.nsbb,治疗.非选择性β受体阻滞剂,String,"**一级预防**: 中-重度静脉曲张,普萘洛尔/卡维地洛,目标心率↓25%或55-60次/分。<br>**二级预防**: 出血后,NSBB+EVL。<br>**禁忌**: 难治性腹水/低血压/HRS。<br>**示例**: `未使用`, `普萘洛尔10mg bid`, `卡维地洛6.25mg qd`,普萘洛尔10mg bid
+treatment.antibiotics,治疗.抗生素,String,"**SBP**: 头孢曲松2g IV qd 5-7天。<br>**静脉曲张出血**: 预防性抗生素(头孢曲松1g IV qd 7天),降低感染/再出血/死亡率。<br>**示例**: `未使用`, `头孢曲松2g qd(SBP)`, `头孢曲松1g qd(出血预防)`,未使用
+
+transplant.listed,肝移植.移植等待,String,"**肝移植适应证**: MELD≥15,失代偿肝硬化,Child-Pugh≥7分。<br>**建议值**: `未评估`, `已列入等待名单`, `暂不符合指征`, `患者拒绝`,未评估
+transplant.contraindications,肝移植.禁忌症,String,"**绝对禁忌**: 肝外恶性肿瘤,严重心肺疾病,活动性感染/脓毒症,AIDS,难以控制的精神疾病/药物滥用。<br>**示例**: `无禁忌症`, `有禁忌症(具体)`,无禁忌症
+
+prognosis.decompensation,预后.失代偿,String,"**预后**: 代偿期10年生存率90%,失代偿期5年生存率50%。<br>**建议值**: `代偿期`, `首次失代偿`, `再发失代偿`,首次失代偿
+prognosis.mortality,预后.死亡风险,String,"**死亡原因**: 肝衰竭(40%),静脉曲张出血(25%),HCC(15%),感染(10%),HRS(5%)。<br>**建议值**: `低危(Child-Pugh A)`, `中危(Child-Pugh B)`, `高危(Child-Pugh C/MELD>20)`,中危
+
+followUp.interval,随访.随访频率,String,"**代偿期**: 6-12个月/次(肝功能+AFP+超声)。<br>**失代偿期**: 1-3个月/次。<br>**HCC监测**: 6个月/次。<br>**示例**: `6个月复查(HCC监测)`, `3个月复查(失代偿)`, `每月随访(Child-Pugh C)`,3个月复查
+followUp.parameters,随访.监测指标,String,"**示例**: `肝功能`, `血常规(脾亢)`, `AFP+超声(HCC)`, `胃镜(静脉曲张)`, `FibroScan(肝硬度)`,肝功能;AFP+超声;血常规
+
+clinicianNotes,临床医生备注,String,自由文本备注栏,患者为55岁男性,乙肝肝硬化8年(HBV DNA阴性,已抗病毒)。本次因腹胀1个月就诊。查体:脾肋下3 cm,移动性浊音(+),蜘蛛痣,肝掌。实验室:白蛋白32 g/L,INR 1.8,胆红素45 μmol/L,血小板68×10⁹/L。腹水SAAG 20 g/L(门脉高压性),PMN 80/μL(无SBP)。Child-Pugh B级(9分),MELD 18分。超声:肝硬化改变+脾大+中量腹水。胃镜:食管静脉曲张G2+红色征。诊断:失代偿期肝硬化+门静脉高压+腹水+脾功能亢进。治疗:限钠+螺内酯100mg+呋塞米40mg,普萘洛尔10mg bid(一级预防),乳果糖(I度HE)。MELD≥15建议肝移植评估。计划3个月后复查,继续HCC监测(每6个月AFP+超声)。
+dataSource,数据来源,String,"**建议值**: `门诊`, `急诊`, `住院`, `ICU`",门诊

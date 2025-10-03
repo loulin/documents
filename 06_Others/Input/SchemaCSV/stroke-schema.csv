@@ -1,0 +1,146 @@
+字段名(英文),字段名(中文),数据类型,描述,示例
+patientId,患者ID,String,患者唯一标识符,P123456
+presentationDate,就诊日期,Date,卒中发生日期,2025-01-15
+presentationTime,发病时间,String,症状开始时间,08:30
+lastKnownWell,最后正常时间,String,最后一次确认正常的时间(用于时间窗计算),前一晚22:00
+encounterType,就诊类型,String,"**建议值**: `院前急救(120)`, `急诊`, `门诊转急诊`, `住院期间发生`",院前急救
+
+strokeType.classification,卒中类型.分类,String,"**卒中分类**:<br>**缺血性卒中(87%)**: 脑血管闭塞致脑梗死<br>**出血性卒中(13%)**: 脑实质出血/蛛网膜下腔出血<br>**TIA**: 短暂性脑缺血发作(<24h完全恢复)<br>**建议值**: `急性缺血性卒中(AIS)`, `脑出血(ICH)`, `蛛网膜下腔出血(SAH)`, `TIA`, `待分类(疑似卒中)`",急性缺血性卒中
+strokeType.ischemicSubtype,卒中类型.缺血性卒中TOAST分型,String,"**TOAST分型**(缺血性卒中病因分类):<br>**LAA**: 大动脉粥样硬化<br>**CE**: 心源性栓塞<br>**SVO**: 小血管闭塞(腔隙性梗死)<br>**OE**: 其他明确病因(夹层/炎症/高凝)<br>**UE**: 不明原因<br>**建议值**: `LAA`, `CE`, `SVO`, `OE`, `UE`, `不适用(出血性/TIA)`",LAA
+strokeType.hemorrhageLocation,卒中类型.出血部位,String,"**建议值**: `不适用(缺血性)`, `基底节`, `丘脑`, `脑叶`, `脑干`, `小脑`, `蛛网膜下腔`, `脑室内出血`",不适用
+
+symptoms.focalNeurological,症状.局灶神经功能缺损,String,"**卒中特征性症状**: 突发局灶神经功能缺损。<br>**示例**: `右侧肢体无力`, `左侧偏瘫`, `失语`, `视野缺损`, `共济失调`, `眩晕+复视`, `意识障碍`",右侧肢体无力;失语
+symptoms.facialDrooping,症状.面部下垂,String,"**FAST评估-F**。<br>**建议值**: `无`, `左侧`, `右侧`, `双侧(少见)`",右侧
+symptoms.armWeakness,症状.上肢无力,String,"**FAST评估-A**。<br>**建议值**: `无`, `左上肢`, `右上肢`, `双上肢`, `完全瘫痪`",右上肢
+symptoms.legWeakness,症状.下肢无力,String,"**建议值**: `无`, `左下肢`, `右下肢`, `双下肢`, `完全瘫痪`",右下肢
+symptoms.speechDisturbance,症状.言语障碍,String,"**FAST评估-S**。<br>**失语**: Broca失语(运动性,不能说)/Wernicke失语(感觉性,听不懂)/完全性失语<br>**构音障碍**: 说话含糊不清<br>**建议值**: `无`, `Broca失语`, `Wernicke失语`, `完全性失语`, `构音障碍`,Broca失语
+
+symptoms.visionLoss,症状.视力/视野障碍,String,"**建议值**: `无`, `单眼视力丧失(视网膜中央动脉闭塞)`, `同向偏盲`, `视野缺损`, `复视`",无
+symptoms.ataxia,症状.共济失调,String,"**建议值**: `无`, `躯干性共济失调`, `肢体性共济失调`, `步态不稳`",无
+symptoms.vertigo,症状.眩晕,String,"**建议值**: `无`, `旋转性眩晕`, `非特异性头晕`<br>**后循环卒中**: 眩晕+眼震+共济失调",无
+symptoms.headache,症状.头痛,String,"**出血性卒中**: 突发剧烈头痛常见<br>**建议值**: `无`, `轻度`, `中度`, `剧烈(雷击样,SAH)`,无
+symptoms.nausea,症状.恶心呕吐,String,"**建议值**: `无`, `恶心`, `呕吐(颅内压增高)`,无
+symptoms.consciousnessLevel,症状.意识水平,String,"**建议值**: `清醒`, `嗜睡`, `昏睡`, `昏迷`, `GCS评分XX分`",清醒
+symptoms.seizure,症状.癫痫发作,String,"**建议值**: `无`, `局灶性发作`, `全面性发作(大发作)`, `癫痫持续状态`,无
+
+symptoms.onsetPattern,症状.起病方式,String,"**建议值**: `突然起病(秒-分钟,栓塞型)`, `进展性加重(数小时-数天,血栓型)`, `波动性(TIA反复发作)`, `睡眠中发病(醒后发现,时间窗不明)`,突然起病
+
+physicalExam.bloodPressure,体格检查.血压,String,"血压。<br>单位: mmHg<br>**卒中后高血压**: 常见(应激反应,颅内压↑)<br>**急性期降压**: 谨慎(脑灌注下降风险)",185/110
+physicalExam.heartRate,体格检查.心率,Number,"心率。<br>单位: 次/分<br>**心房颤动**: 心源性栓塞最常见原因",90
+physicalExam.temperature,体格检查.体温,Number,"体温。<br>单位: ℃",36.8
+physicalExam.spo2,体格检查.SpO2,Number,"脉搏血氧饱和度。<br>单位: %",97
+
+nihss.total,NIHSS评分.总分,Number,"NIH卒中量表(National Institutes of Health Stroke Scale,0-42分)。<br>**0**: 无卒中症状<br>**1-4**: 轻度卒中<br>**5-15**: 中度卒中<br>**16-20**: 中-重度<br>**21-42**: 重度卒中<br>**≥6**: 考虑静脉溶栓<br>**≥10**: 大血管闭塞可能",12
+nihss.1a_loc,NIHSS评分.1a意识水平,Number,"意识水平。<br>**0**: 清醒<br>**1**: 嗜睡<br>**2**: 昏睡<br>**3**: 昏迷",0
+nihss.1b_locQuestions,NIHSS评分.1b意识水平问答,Number,"回答月份和年龄。<br>**0**: 都正确<br>**1**: 1个正确<br>**2**: 都错误",0
+nihss.1c_locCommands,NIHSS评分.1c意识水平指令,Number,"睁眼/握拳指令。<br>**0**: 都完成<br>**1**: 1个完成<br>**2**: 都不能",0
+nihss.2_gaze,NIHSS评分.2凝视,Number,"眼球运动。<br>**0**: 正常<br>**1**: 部分凝视麻痹<br>**2**: 完全凝视麻痹",1
+nihss.3_visual,NIHSS评分.3视野,Number,"**0**: 无缺损<br>**1**: 部分偏盲<br>**2**: 完全偏盲<br>**3**: 双侧盲",0
+nihss.4_facial,NIHSS评分.4面瘫,Number,"**0**: 正常<br>**1**: 轻度(鼻唇沟变浅)<br>**2**: 部分面瘫<br>**3**: 完全面瘫",2
+nihss.5a_leftArm,NIHSS评分.5a左上肢,Number,"**0**: 无漂移<br>**1**: 漂移<br>**2**: 能抗重力<br>**3**: 不能抗重力<br>**4**: 无运动",0
+nihss.5b_rightArm,NIHSS评分.5b右上肢,Number,"同5a",3
+nihss.6a_leftLeg,NIHSS评分.6a左下肢,Number,"**0-4**: 同上肢",0
+nihss.6b_rightLeg,NIHSS评分.6b右下肢,Number,"同6a",3
+nihss.7_ataxia,NIHSS评分.7共济失调,Number,"**0**: 无<br>**1**: 1肢共济失调<br>**2**: 2肢共济失调",0
+nihss.8_sensory,NIHSS评分.8感觉,Number,"**0**: 正常<br>**1**: 轻-中度感觉丧失<br>**2**: 重度/完全感觉丧失",1
+nihss.9_language,NIHSS评分.9语言,Number,"**0**: 正常<br>**1**: 轻度失语<br>**2**: 重度失语<br>**3**: 失语/缄默",2
+nihss.10_dysarthria,NIHSS评分.10构音障碍,Number,"**0**: 正常<br>**1**: 轻-中度<br>**2**: 重度",0
+nihss.11_extinction,NIHSS评分.11忽视,Number,"**0**: 无<br>**1**: 视觉/触觉/听觉/空间忽视<br>**2**: 完全忽视",0
+
+timeWindow.symptomOnset,时间窗.症状开始时间,String,症状开始时间(或最后正常时间),08:30
+timeWindow.doorTime,时间窗.到院时间,String,到达急诊时间,09:15
+timeWindow.imagingTime,时间窗.影像检查时间,String,头颅CT/MRI完成时间,09:35
+timeWindow.onsetToDoor,时间窗.发病至到院,Number,"发病至到院时间。<br>单位: 分钟<br>**静脉溶栓窗**: 4.5小时(270分钟)<br>**血管内治疗窗**: 6-24小时",45
+timeWindow.doorToImaging,时间窗.到院至影像,Number,"到院至影像完成时间。<br>单位: 分钟<br>**质控目标**: ≤25分钟",20
+timeWindow.onsetToImaging,时间窗.发病至影像,Number,"发病至影像时间。<br>单位: 分钟",65
+
+imaging.ctBrain.date,影像学.头颅CT.检查日期,Date,头颅CT检查日期,2025-01-15
+imaging.ctBrain.findings,影像学.头颅CT.主要表现,String,"**急性期缺血性卒中**(前6h): CT常正常或早期缺血征象(脑沟消失/灰白质界限模糊/高密度动脉征)<br>**出血性卒中**: 高密度影(脑实质/蛛网膜下腔/脑室)<br>**示例**: `未见明显异常(超早期)`, `右侧大脑中动脉高密度征`, `左侧基底节区急性梗死灶`, `右侧基底节区血肿(3×4cm)`, `蛛网膜下腔出血`,右侧大脑中动脉高密度征
+imaging.ctBrain.hemorrhage,影像学.头颅CT.出血,String,"**建议值**: `无出血`, `脑实质出血`, `蛛网膜下腔出血`, `脑室内出血`, `硬膜下血肿`, `硬膜外血肿`",无出血
+imaging.ctBrain.earlyIschemicChanges,影像学.头颅CT.早期缺血改变,String,"**ASPECTS评分**: Alberta卒中项目早期CT评分(0-10分,评估MCA供血区),≥7分预后好。<br>**建议值**: `无早期缺血征象`, `ASPECTS 9分`, `ASPECTS 7分`, `ASPECTS <7分(梗死范围大,溶栓出血风险高)`",ASPECTS 8分
+
+imaging.mri.performed,影像学.头颅MRI.是否完成,String,"**适应证**: 后循环卒中诊断,DWI识别超急性期梗死(比CT敏感),鉴别诊断。<br>**建议值**: `已完成`, `未完成(急诊CT足够)`, `计划检查`",未完成
+imaging.mri.dwi,影像学.头颅MRI.DWI,String,"弥散加权成像(DWI): 超急性期梗死高信号(数分钟内即可显示)。<br>**示例**: `右侧颞顶叶DWI高信号`, `多发散在DWI高信号(小血管病)`, `未做`",
+imaging.mri.flair,影像学.头颅MRI.FLAIR,String,"液体衰减反转恢复序列: 评估梗死时间(FLAIR阴性提示<4.5h)。<br>**示例**: `FLAIR阴性(超急性期)`, `FLAIR高信号(>4.5h)`, `未做`",
+
+imaging.cta.performed,影像学.CTA.是否完成,String,"CT血管造影(评估大血管闭塞,LVO)。<br>**适应证**: NIHSS≥6,考虑血管内治疗。<br>**建议值**: `已完成`, `未完成`, `计划检查`",已完成
+imaging.cta.occlusion,影像学.CTA.血管闭塞,String,"**大血管闭塞(LVO)**: 颈内动脉/大脑中动脉M1-M2段/基底动脉。<br>**示例**: `未见明显血管闭塞`, `右侧大脑中动脉M1段闭塞`, `右侧颈内动脉末端闭塞`, `基底动脉闭塞`, `多发远端分支闭塞`",右侧大脑中动脉M1段闭塞
+imaging.cta.collaterals,影像学.CTA.侧支循环,String,"**侧支循环评估**: 良好侧支→时间窗延长,预后好。<br>**建议值**: `良好`, `中等`, `差(血管内治疗获益有限)`, `未评估`",良好
+
+labs.glucose,实验室.血糖,Number,"血糖。<br>单位: mmol/L<br>**低血糖(<2.8)**: 可模拟卒中<br>**高血糖(>11.1)**: 卒中预后差",8.5
+labs.inr,实验室.INR,Number,"国际标准化比值。<br>**>1.7**: 静脉溶栓相对禁忌<br>**>3.0**: 出血风险高",1.1
+labs.platelet,实验室.血小板,Number,"血小板计数。<br>单位: ×10⁹/L<br>**<100**: 溶栓相对禁忌",220
+labs.creatinine,实验室.肌酐,Number,"血清肌酐。<br>单位: μmol/L",88
+labs.troponin,实验室.肌钙蛋白,String,"**建议值**: `未检测`, `正常`, `升高(合并心肌梗死/心肌损伤)`,正常
+labs.bnp,实验室.BNP,Number,"脑钠肽。<br>单位: pg/mL<br>**升高**: 心源性栓塞可能,心功能不全",450
+
+ecg.findings,心电图.主要表现,String,"**适应证**: 排除心肌梗死,识别房颤(心源性栓塞)。<br>**示例**: `正常窦性心律`, `心房颤动`, `急性心肌梗死(ST段抬高)`, `左室肥厚`",心房颤动
+
+riskFactors.hypertension,危险因素.高血压,String,"**最重要的可控危险因素**(卒中风险↑3-5倍)。<br>**建议值**: `无`, `有(已治疗)`, `有(未治疗/控制不佳)`",有(控制不佳)
+riskFactors.atrialFibrillation,危险因素.心房颤动,String,"**心源性栓塞最常见原因**(缺血性卒中的20%)。<br>**建议值**: `无`, `阵发性房颤`, `持续性房颤`, `永久性房颤`, `未抗凝`, `已抗凝(华法林/DOAC)`",持续性房颤(未抗凝)
+riskFactors.diabetes,危险因素.糖尿病,String,"**建议值**: `无`, `有(卒中风险↑2倍)`, `糖尿病前期`",有
+riskFactors.dyslipidemia,危险因素.血脂异常,String,"**建议值**: `无`, `高LDL-C`, `低HDL-C`, `高甘油三酯`, `混合型`",高LDL-C
+riskFactors.smoking,危险因素.吸烟,String,"**建议值**: `从不吸烟`, `已戒烟`, `现吸烟(卒中风险↑2倍)`",现吸烟
+riskFactors.priorStroke,危险因素.既往卒中/TIA,String,"**复发风险**: 既往卒中后5年复发率30-40%。<br>**建议值**: `无`, `既往TIA`, `既往缺血性卒中`, `既往出血性卒中`",无
+riskFactors.cad,危险因素.冠心病,String,"**建议值**: `无`, `心绞痛`, `既往心肌梗死`, `PCI/CABG术后`",无
+riskFactors.heartFailure,危险因素.心力衰竭,String,"**建议值**: `无`, `有(卒中风险↑2-3倍)`,无
+riskFactors.carotidStenosis,危险因素.颈动脉狭窄,String,"**建议值`: `无`, `轻度(<50%)`, `中度(50-69%)`, `重度(70-99%)`, `闭塞`, `未评估`",未评估
+riskFactors.obesity,危险因素.肥胖,String,"**建议值**: `BMI<25`, `超重(BMI 25-30)`, `肥胖(BMI≥30)`",超重
+riskFactors.physicalInactivity,危险因素.缺乏运动,String,"**建议值**: `规律运动`, `偶尔运动`, `久坐不动`",久坐不动
+riskFactors.excessiveAlcohol,危险因素.过量饮酒,String,"**建议值**: `不饮酒`, `适量饮酒`, `过量饮酒(>2单位/天)`",适量饮酒
+riskFactors.familyHistory,危险因素.家族史,String,"一级亲属卒中史。<br>**建议值**: `无`, `父母`, `兄弟姐妹`, `多位亲属`",父亲(缺血性卒中)
+
+ivThrombolysis.indication,静脉溶栓.指征,String,"**适应证**: 急性缺血性卒中,发病<4.5h,NIHSS≥6,无禁忌症。<br>**建议值**: `符合指征`, `不符合指征(时间窗外/轻症/禁忌症)`, `已溶栓`, `患者/家属拒绝`",符合指征
+ivThrombolysis.contraindications,静脉溶栓.禁忌症,String,"**绝对禁忌**: 颅内出血,活动性出血,近期大手术(<14天),近期颅脑外伤/卒中(<3个月),主动脉夹层,血小板<100×10⁹/L,INR>1.7,血糖<2.8或>22.2。<br>**相对禁忌**: 轻症(NIHSS<6),癫痫发作,妊娠,近期消化道出血。<br>**建议值**: `无禁忌症`, `有绝对禁忌症(具体)`, `有相对禁忌症(权衡利弊)`",无禁忌症
+ivThrombolysis.agent,静脉溶栓.溶栓药物,String,"**rt-PA(阿替普酶)**: 0.9mg/kg IV(最大90mg),10%推注,90%持续输注1小时。<br>**尿激酶**: 150万单位IV 30分钟(中国常用,价格低)。<br>**示例**: `rt-PA 0.9mg/kg`, `尿激酶150万单位`, `未溶栓`",rt-PA 0.9mg/kg
+ivThrombolysis.doorToNeedle,静脉溶栓.DNT时间,Number,"Door-to-Needle时间(到院至开始溶栓)。<br>单位: 分钟<br>**质控目标**: ≤60分钟<br>**金标准**: ≤45分钟",55
+ivThrombolysis.outcome,静脉溶栓.溶栓结果,String,"**早期神经功能改善**: NIHSS下降≥4分或完全恢复。<br>**建议值**: `未溶栓`, `症状明显改善`, `部分改善`, `无改善`, `症状恶化(出血转化)`,症状明显改善
+ivThrombolysis.sICH,静脉溶栓.症状性颅内出血,String,"**sICH**: 溶栓后36h内颅内出血+NIHSS↑≥4分(rt-PA风险6-7%)。<br>**建议值`: `无`, `有(主要并发症)`",无
+
+endovascularThreatment.indication,血管内治疗.指征,String,"**适应证**: LVO(颈内动脉/MCA-M1/基底动脉)+NIHSS≥6+发病<6h(前循环)或<24h(严格筛选)。<br>**建议值**: `符合指征`, `不符合指征`, `已完成`, `转运至有能力医院`, `患者拒绝`",符合指征
+endovascularThreatment.procedure,血管内治疗.手术方式,String,"**机械取栓**: 支架取栓器(Solitaire/Trevo)。<br>**示例**: `未行`, `机械取栓(Solitaire支架)`, `球囊导引导管抽吸`, `支架取栓+抽吸联合`",机械取栓
+endovascularThreatment.recanalization,血管内治疗.血管再通,String,"**mTICI评分**(改良脑梗死溶栓分级):<br>**0**: 无灌注<br>**1**: 穿透但无灌注<br>**2a**: 部分灌注<50%<br>**2b**: 部分灌注>50%<br>**2c**: 接近完全灌注但延迟<br>**3**: 完全灌注<br>**成功**: mTICI 2b-3。<br>**建议值**: `未行`, `mTICI 0-1(失败)`, `mTICI 2a`, `mTICI 2b(成功)`, `mTICI 2c`, `mTICI 3(完全再通)`",mTICI 2b
+endovascularThreatment.complications,血管内治疗.并发症,String,"**示例**: `无`, `血管穿孔`, `血管夹层`, `远端栓塞`, `颅内出血`, `腹股沟血肿`,无
+
+acuteTreatment.antiplatelet,急性期治疗.抗血小板,String,"**缺血性卒中**: 阿司匹林100-325mg qd(溶栓后24h开始,未溶栓即刻开始)。<br>**高危TIA/轻型卒中**: 双抗(阿司匹林+氯吡格雷)21天。<br>**示例**: `阿司匹林100mg qd`, `阿司匹林+氯吡格雷(双抗21天)`, `未使用(出血性卒中)`",阿司匹林100mg qd
+acuteTreatment.anticoagulation,急性期治疗.抗凝,String,"**心源性栓塞**: 急性期暂不抗凝(出血转化风险),2-14天后启动(根据梗死大小)。<br>**示例**: `未使用`, `华法林(2周后启动)`, `DOAC(利伐沙班/阿哌沙班)`, `低分子肝素桥接`,未使用
+acuteTreatment.bp,急性期治疗.血压管理,String,"**未溶栓**: 允许性高血压(SBP<220, DBP<120)<br>**溶栓后**: 严格控制(SBP<180, DBP<105)<br>**示例**: `允许性高血压`, `降压治疗(拉贝洛尔IV)`, `升压治疗(去甲肾上腺素)`,降压治疗(拉贝洛尔)
+acuteTreatment.glucose,急性期治疗.血糖管理,String,"**目标**: 血糖4.4-11.1 mmol/L。<br>**建议值**: `血糖控制良好`, `胰岛素降糖`, `50%葡萄糖纠正低血糖`,血糖控制良好
+acuteTreatment.temperature,急性期治疗.体温管理,String,"**发热(>37.5℃)**: 预后差,积极降温。<br>**建议值**: `体温正常`, `物理降温`, `对乙酰氨基酚退热`,体温正常
+acuteTreatment.swallowing,急性期治疗.吞咽评估,String,"**吞咽困难**: 30-50%卒中患者,误吸性肺炎高危。<br>**建议值**: `吞咽正常`, `吞咽困难(禁食+鼻胃管)`, `已评估可进食`,吞咽困难(禁食)
+
+complications.hemorrhagicTransformation,并发症.出血转化,String,"缺血性卒中→脑出血。<br>**HI**: 出血性梗死(斑点状)<br>**PH**: 脑实质血肿(占位效应)<br>**建议值**: `无`, `HI-1(轻度)`, `HI-2`, `PH-1`, `PH-2(症状性,预后差)`,无
+complications.cerebralEdema,并发症.脑水肿,String,"**大面积脑梗死**: 2-5天出现脑水肿,恶性脑水肿→脑疝→死亡。<br>**建议值**: `无`, `轻度`, `中-重度(占位效应)`, `恶性脑水肿(需去骨瓣减压)`,无
+complications.seizure,并发症.癫痫,String,"**建议值**: `无`, `癫痫发作(需抗癫痫药)`, `癫痫持续状态`,无
+complications.dvt,并发症.深静脉血栓,String,"**偏瘫肢体**: DVT高危。<br>**建议值**: `无`, `已预防(低分子肝素/间歇充气加压)`, `发生DVT`, `发生PE`",已预防
+complications.pneumonia,并发症.肺炎,String,"**误吸性肺炎**: 常见并发症。<br>**建议值**: `无`, `吸入性肺炎`, `坠积性肺炎`,无
+complications.uti,并发症.泌尿系感染,String,"**留置尿管**: 感染高危。<br>**建议值**: `无`, `有`,无
+complications.pressureUlcer,并发症.压疮,String,"**建议值**: `无`, `I-II度`, `III-IV度`,无
+complications.depression,并发症.卒中后抑郁,String,"**发生率**: 30-40%。<br>**建议值**: `无`, `轻度`, `中-重度(需抗抑郁治疗)`,无
+
+mRS.discharge,mRS评分.出院时,Number,"改良Rankin量表(modified Rankin Scale,0-6分,评估残疾程度)。<br>**0**: 无症状<br>**1**: 有症状但无明显残疾,能完成所有日常活动<br>**2**: 轻度残疾,不能完成所有既往活动但能独立生活<br>**3**: 中度残疾,需要帮助但能独立行走<br>**4**: 中-重度残疾,不能独立行走,日常需要帮助<br>**5**: 重度残疾,卧床,大小便失禁,需持续护理<br>**6**: 死亡<br>**良好预后**: mRS 0-2",3
+mRS.90day,mRS评分.90天,Number,"90天mRS评分(主要结局指标)。<br>**良好预后**: mRS 0-2",2
+
+barthel.discharge,Barthel指数.出院时,Number,"Barthel指数(0-100分,评估日常生活活动能力ADL)。<br>**100**: 完全独立<br>**≥60**: 轻度依赖<br>**40-59**: 中度依赖<br>**<40**: 重度依赖",55
+
+prognosis.outcome,预后.结局,String,"**建议值**: `存活出院`, `转康复医院`, `住院期间死亡`, `植物状态`, `自动出院`,存活出院
+prognosis.lengthOfStay,预后.住院天数,Number,"住院天数。<br>单位: 天",14
+prognosis.icuStay,预后.ICU天数,Number,"ICU住院天数。<br>单位: 天",3
+prognosis.mortality,预后.死亡,String,"**建议值**: `否`, `是(卒中直接导致)`, `是(并发症)`,否
+
+secondaryPrevention.antiplatelet,二级预防.抗血小板,String,"**长期抗血小板**: 阿司匹林100mg qd或氯吡格雷75mg qd。<br>**双抗**: 高危TIA/轻型卒中后21天,后改单抗。<br>**示例**: `阿司匹林100mg qd`, `氯吡格雷75mg qd`, `阿司匹林+氯吡格雷(双抗中,XX天)`,氯吡格雷75mg qd
+secondaryPrevention.anticoagulation,二级预防.抗凝,String,"**心源性栓塞**: 华法林(INR 2-3)或DOAC(利伐沙班/阿哌沙班/达比加群/依度沙班)。<br>**示例**: `不需要(非心源性)`, `华法林(INR 2-3)`, `利伐沙班20mg qd`, `阿哌沙班5mg bid`",阿哌沙班5mg bid
+secondaryPrevention.statin,二级预防.他汀,String,"**强烈推荐**: 高强度他汀(阿托伐他汀40-80mg或瑞舒伐他汀20-40mg),LDL-C目标<1.8 mmol/L。<br>**示例**: `阿托伐他汀40mg qd`, `瑞舒伐他汀20mg qd`, `未使用`,阿托伐他汀40mg qd
+secondaryPrevention.bp,二级预防.血压控制,String,"**目标**: <140/90 mmHg(一般人群),<130/80(糖尿病/CKD)。<br>**推荐**: ACEI/ARB+利尿剂。<br>**示例**: `依那普利10mg bid`, `缬沙坦80mg+氢氯噻嗪12.5mg`, `未用降压药`,依那普利10mg bid
+secondaryPrevention.dm,二级预防.糖尿病管理,String,"**目标**: HbA1c<7%。<br>**建议值**: `不适用(无糖尿病)`, `血糖控制良好`, `血糖控制不佳(需调整)`,血糖控制良好
+secondaryPrevention.smoking,二级预防.戒烟,String,"**建议值**: `不适用(不吸烟)`, `已戒烟`, `正在戒烟`, `仍吸烟(需强化劝导)``,正在戒烟
+
+carotidIntervention.indication,颈动脉干预.指征,String,"**CEA/CAS适应证**: 症状性颈动脉狭窄50-99%,无症状性70-99%(选择性)。<br>**建议值**: `无指征`, `符合指征(症状性+重度狭窄)`, `已完成CEA/CAS`, `计划手术`,无指征
+
+rehabilitation.started,康复治疗.康复启动,String,"**急性期康复**: 48-72h内启动(生命体征稳定,无禁忌)。<br>**建议值**: `未启动`, `已启动(床旁康复)`, `已转康复科`, `已转康复医院`",已启动
+rehabilitation.components,康复治疗.康复内容,String,"**示例**: `肢体运动训练(PT)`, `作业治疗(OT)`, `言语治疗(ST)`, `吞咽训练`, `认知康复`, `心理支持`",肢体运动训练;言语治疗;吞咽训练
+
+followUp.plan,随访.随访计划,String,"**出院后随访**: 2-4周,后1/3/6/12个月。<br>**监测**: 神经功能,复发风险因素,用药依从性,康复进展。<br>**示例**: `出院后2周门诊复查`, `1个月后复查颈动脉超声`, `3个月后复查mRS`,出院后2周门诊复查
+
+clinicianNotes,临床医生备注,String,自由文本备注栏,患者为68岁男性,有高血压、房颤(未抗凝)、吸烟史。晨起突发右侧肢体无力+失语。NIHSS 12分。发病至到院45分钟。CTA示左侧大脑中动脉M1段闭塞。静脉溶栓(rt-PA)+机械取栓,mTICI 2b再通。溶栓后无出血转化。NIHSS降至6分。出院时mRS 3分,转康复医院。已启动阿哌沙班抗凝(房颤)+他汀。戒烟宣教。
+dataSource,数据来源,String,"**建议值**: `院前急救`, `急诊`, `卒中单元`, `ICU`, `神经内科`",卒中单元
