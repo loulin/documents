@@ -1,0 +1,5 @@
+gene_name,variant_name,variant_classification,interpretation_text,recommendation_text,guideline_source
+BRCA1,"c.5266dupC (p.Gln1756fs)","Pathogenic","检测到一个明确的BRCA1基因致病性变异。该变异会显著增加您一生中患乳腺癌、卵巢癌、前列腺癌和胰腺癌的风险。","强烈建议您与遗传顾问或肿瘤专科医生会面，讨论针对性的筛查方案（如增加乳腺MRI检查频率）、预防性手术（如预防性乳房或卵巢切除术）以及家人亲属的遗传风险。","NCCN Guidelines for Genetic/Familial High-Risk Assessment: Breast, Ovarian, and Pancreatic"
+BRCA2,"c.4531G>A (p.Val1511Ile)","Uncertain Significance","检测到一个临床意义未明确的BRCA2基因变异（VUS）。目前尚无足够证据证明该变异是否会增加患癌风险。它既可能无害，也可能有害。","目前不建议仅基于此VUS结果进行任何医疗干预。建议您定期（如每1-2年）与遗传顾问或医生复查该变异的最新研究进展，因为它的分类可能会随着新证据的出现而改变。","ACMG Standards and Guidelines for the Interpretation of Sequence Variants"
+BRCA1,"c.2612C>T (p.Pro871Leu)","Benign","检测到一个已知的BRCA1基因良性变异。该变异被认为是正常的基因多态性，不会增加您患癌症的风险。","您的遗传性癌症风险与普通人群无异。请遵循标准的健康体检和癌症筛查建议即可。","ClinVar Database - Benign Submission"
+PALB2,"*","Wild Type / No Variant Detected","在本次检测的PALB2基因中，未发现任何具有临床意义的致病性或可能致病性变异。","您的PALB2基因相关的遗传性癌症风险未见增加。请根据您的家族史和个人情况，遵循标准的健康筛查建议。","N/A"

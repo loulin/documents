@@ -1,0 +1,6 @@
+id,item_code,item_name,score_value,interpretation_text,severity_level,recommendation,guideline_source
+aphasia_wab_aq,WAB_AQ_SCORE,失语商 (Aphasia Quotient),">93.8","在正常范围内。未表现出有临床意义的失语症。","正常范围内","无需特殊康复训练，可回归正常生活。","Western Aphasia Battery Manual"
+aphasia_wab_aq,WAB_AQ_SCORE,"76-93.7","表现为轻度失语症。在对话中可能偶尔出现找词困难或理解错误，但沟通基本有效。","轻度障碍","建议进行认知-语言训练，强化复杂句子理解和高级命名能力，鼓励参与社交对话。","AHA/ASA Stroke Rehabilitation Guidelines"
+aphasia_wab_aq,WAB_AQ_SCORE,"51-75","表现为中度失语症。沟通存在明显障碍，对话中频繁出现错误，理解和表达均有困难。","中度障碍","需要系统的、个体化的言语治疗。重点应放在核心词汇的听理解、句子层面的表达以及功能性交流策略的训练上。","AHA/ASA Stroke Rehabilitation Guidelines"
+aphasia_wab_aq,WAB_AQ_SCORE,"26-50","表现为重度失语症。仅能理解少量简单的词语，表达能力非常有限，可能只能说出单个词或自动语。","重度障碍","需要密集的言语治疗。早期重点在于建立可靠的沟通渠道（如使用手势、图片沟通板），并提高对简单指令的听理解能力。","AHA/ASA Stroke Rehabilitation Guidelines"
+aphasia_wab_aq,WAB_AQ_SCORE,"0-25","表现为极重度失语症（完全性失语）。语言的理解和表达能力几乎完全丧失。","极重度障碍","康复重点在于非语言沟通方式的建立，并利用多感觉通道刺激（听觉、视觉、触觉）来促进最基础的语言功能恢复。","AHA/ASA Stroke Rehabilitation Guidelines"

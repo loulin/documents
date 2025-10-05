@@ -1,0 +1,5 @@
+id,item_code,item_name,score_value,interpretation_text,severity_level,recommendation,guideline_source
+newborn_bilirubin_risk,TERM_38WK_48HR,足月儿(>38周)48小时龄胆红素评估,"<5.5","胆红素水平位于低风险区。后续发展成需要干预的高胆红素血症的可能性很小。","低风险区","常规护理即可。根据出院计划进行随访，例如在3-5天时由儿科医生进行检查。","AAP Guideline for Management of Hyperbilirubinemia"
+newborn_bilirubin_risk,TERM_38WK_48HR,足月儿(>38周)48小时龄胆红素评估,"5.5-8.2","胆红素水平位于中低风险区。发展成需要干预的高胆红素血症的可能性较低。","中低风险区","建议在24-48小时内复查胆红素水平或进行经皮胆红素监测，确保数值未快速上升。","AAP Guideline for Management of Hyperbilirubinemia"
+newborn_bilirubin_risk,TERM_38WK_48HR,足月儿(>38周)48小时龄胆红素评估,"8.3-10.9","胆红素水平位于中高风险区。后续需要光疗的可能性增加，需要密切监测。","中高风险区","需要在12-24小时内复查血清总胆红素。加强喂养，并评估是否存在溶血等高危因素。","AAP Guideline for Management of Hyperbilirubinemia"
+newborn_bilirubin_risk,TERM_38WK_48HR,足月儿(>38周)48小时龄胆红素评估,">11","胆红素水平位于高风险区。强烈提示后续将发展至需要光疗的水平，甚至更高。","高风险区","应考虑立即开始光疗，或至少在4-6小时内复查胆红素以评估上升速度。必须积极寻找并处理潜在的病因（如溶血、感染）。","AAP Guideline for Management of Hyperbilirubinemia"

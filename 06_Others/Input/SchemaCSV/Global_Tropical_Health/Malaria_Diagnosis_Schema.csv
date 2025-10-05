@@ -1,0 +1,5 @@
+id,item_code,item_name,score_value,interpretation_text,severity_level,recommendation,guideline_source
+malaria_diagnosis,MICROSCOPY_RESULT,血涂片镜检结果,"P.falciparum_Positive","检测到恶性疟原虫。这是最严重的一种疟疾，可能迅速发展为重症疟疾，需要立即治疗。","非重症恶性疟 (需临床评估)","立即开始基于青蒿素的联合疗法（ACT），例如蒿甲醚-苯芴醇或青蒿琥酯-阿莫地喹。完成标准疗程，并监测重症迹象。","WHO Guidelines for Malaria"
+malaria_diagnosis,MICROSCOPY_RESULT,血涂片镜检结果,"P.vivax_Positive","检测到间日疟原虫。此类型疟疾通常不如恶性疟严重，但其特点是会在肝脏形成休眠体，导致远期复发。","间日疟","需要双重治疗：使用氯喹或ACT杀死血流中的寄生虫，并在此之后加用普瑞马喹（Primaquine）进行14天根治治疗以清除肝脏休眠体，防止复发。治疗前需检测G6PD水平。","WHO Guidelines for Malaria"
+malaria_diagnosis,MICROSCOPY_RESULT,血涂片镜检结果,"Mixed_Infection_Falciparum_Vivax","混合感染：同时检测到恶性疟原虫和间日疟原虫。","混合感染 (按恶性疟处理)","治疗方案必须首先确保能有效治疗恶性疟。使用ACT疗法。在ACT疗程结束后，同样需要加用普瑞马喹进行根治治疗以清除间日疟的休眠体。","WHO Guidelines for Malaria"
+malaria_diagnosis,RDT_RESULT,快速诊断测试结果,"Negative","疟疾快速诊断测试（RDT）结果为阴性。在疟疾低流行区，这通常可以排除疟疾诊断。但在高流行区或临床高度怀疑时，不能完全排除。","未检测到疟原虫","如果临床症状（如周期性高热）非常典型，或近期有高流行区旅居史，建议进行血涂片镜检复核。如果没有上述情况，应考虑其他发热病因。","WHO Guidelines for Malaria"

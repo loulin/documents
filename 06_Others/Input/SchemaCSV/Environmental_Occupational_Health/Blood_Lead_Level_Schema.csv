@@ -1,0 +1,6 @@
+id,item_code,item_name,score_value,interpretation_text,severity_level,recommendation,guideline_source
+blood_lead_level,BLL_PEDIATRIC,血铅水平 (儿童 μg/dL),"<3.5","血铅水平在参考范围内。目前未发现有安全血铅水平，但此水平低于绝大多数儿童，表明近期暴露风险较低。","正常范围","保持良好的卫生习惯（如勤洗手），确保饮食均衡（富含钙、铁、维生素C），定期检查家中是否存在含铅风险（如老旧油漆）。","CDC Blood Lead Reference Value"
+blood_lead_level,BLL_PEDIATRIC,血铅水平 (儿童 μg/dL),"3.5-9.9","血铅水平高于参考值，表明存在铅暴露源。虽然可能没有明显症状，但此水平的铅暴露仍可能影响儿童的神经系统发育、学习能力和行为。","轻度升高","需要采取行动。进行环境调查以寻找并清除铅源（如玩具、水、灰尘）。进行营养咨询，确保摄入足够的钙和铁。建议在1-3个月内复查血铅水平。","CDC/ACMT Guidelines for Lead Exposure"
+blood_lead_level,BLL_PEDIATRIC,血铅水平 (儿童 μg/dL),"10-19","血铅水平明显升高。此水平与儿童智商下降、注意力缺陷和学习困难有明确关联。","中度升高","必须立即采取行动。需要进行详细的环境评估和干预。需要更频繁地监测血铅水平（如1-2个月内）。家庭成员也应进行筛查。","CDC/ACMT Guidelines for Lead Exposure"
+blood_lead_level,BLL_PEDIATRIC,血铅水平 (儿童 μg/dL),"20-44","血铅水平高。除了对神经系统的损害外，还可能开始影响肾脏功能和身体发育。","高度升高","需要进行全面的医疗评估，包括详细的体格检查和营养评估。可能需要转诊至专门处理铅中毒的医疗中心。环境清除是强制性的。","CDC/ACMT Guidelines for Lead Exposure"
+blood_lead_level,BLL_PEDIATRIC,血铅水平 (儿童 μg/dL),">=45","血铅水平非常高，属于医疗急症。此水平可能导致严重的、甚至是永久性的健康损害，包括贫血、肾衰竭、腹部绞痛，甚至脑病（铅中毒性脑病）。","危险/医疗急症","需要立即住院治疗。通常需要开始螯合疗法（Chelation Therapy）以帮助身体排出铅。这是危及生命的状况，必须立即就医。","CDC/ACMT Guidelines for Lead Exposure"
