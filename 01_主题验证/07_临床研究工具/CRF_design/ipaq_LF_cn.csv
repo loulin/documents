@@ -1,0 +1,120 @@
+# IPAQ长卷问卷数据库表设计
+# 问题编号说明：Q1-Q39对应原始问卷的39个问题，时间相关问题分为小时(H)和分钟(M)
+# 跳转逻辑：根据"问题编号"列的QX编号实现条件跳转，详见"备注"列的跳转说明
+# 技术要求：根据验证规则列实现字段间的条件依赖关系
+表名,字段名,数据类型,必填,中文说明,交互设计,验证规则,选项值,关联关系,备注,问题编号
+ipaq_lf_cn_scale,patient_id,VARCHAR_32,是,患者唯一ID,外键关联,外键约束,,patient_basic_info,关联患者基本信息表,
+ipaq_lf_cn_scale,assessment_date,DATE,是,评估日期,日期选择器,必填,,,评估当日,
+ipaq_lf_cn_scale,assessor_name,VARCHAR_50,是,评估人姓名,输入框,必填,,,填写评估人员,
+
+# 一、日常工作部分
+ipaq_lf_cn_scale,currently_working,BOOLEAN,是,您目前是否外出工作,单选按钮,必选,是否,,是(跳至Q2);否(跳至Q11),Q1
+ipaq_lf_cn_scale,work_vigorous_activity,BOOLEAN,否,工作中是否参加高强度体力活动,单选按钮,currently_working为是时必选,是否,,如搬运重物、挖掘、爬楼梯等且持续时间超过10分钟;有(跳至Q3);无(跳至Q5),Q2
+ipaq_lf_cn_scale,work_vigorous_days,TINYINT,否,工作中高强度体力活动天数,下拉选择,work_vigorous_activity为是时必填,1一天;2两天;3三天;4四天;5五天;6六天;7七天,,过去7天内参加天数,Q3
+ipaq_lf_cn_scale,work_vigorous_hours,TINYINT,否,工作中高强度体力活动每天小时数,数字输入,work_vigorous_activity为是时必填,,,0-24小时,Q4H
+ipaq_lf_cn_scale,work_vigorous_minutes,TINYINT,否,工作中高强度体力活动每天分钟数,数字输入,work_vigorous_activity为是时必填,,,0-59分钟,Q4M
+ipaq_lf_cn_scale,work_moderate_activity,BOOLEAN,否,工作中是否参加中等强度体力活动,单选按钮,currently_working为是时必选,是否,,如提拎小型物品等且持续时间超过10分钟不包括步行;有(跳至Q6);无(跳至Q8),Q5
+ipaq_lf_cn_scale,work_moderate_days,TINYINT,否,工作中中等强度体力活动天数,下拉选择,work_moderate_activity为是时必填,1一天;2两天;3三天;4四天;5五天;6六天;7七天,,过去7天内参加天数,Q6
+ipaq_lf_cn_scale,work_moderate_hours,TINYINT,否,工作中中等强度体力活动每天小时数,数字输入,work_moderate_activity为是时必填,,,0-24小时,Q7H
+ipaq_lf_cn_scale,work_moderate_minutes,TINYINT,否,工作中中等强度体力活动每天分钟数,数字输入,work_moderate_activity为是时必填,,,0-59分钟,Q7M
+ipaq_lf_cn_scale,work_walking_activity,BOOLEAN,否,工作中是否步行,单选按钮,currently_working为是时必选,是否,,工作中步行时间持续超过10分钟不包括上下班路上的步行;有(跳至Q9);无(跳至Q11),Q8
+ipaq_lf_cn_scale,work_walking_days,TINYINT,否,工作中步行天数,下拉选择,work_walking_activity为是时必填,1一天;2两天;3三天;4四天;5五天;6六天;7七天,,过去7天内步行天数,Q9
+ipaq_lf_cn_scale,work_walking_hours,TINYINT,否,工作中步行每天小时数,数字输入,work_walking_activity为是时必填,,,0-24小时,Q10H
+ipaq_lf_cn_scale,work_walking_minutes,TINYINT,否,工作中步行每天分钟数,数字输入,work_walking_activity为是时必填,,,0-59分钟,Q10M
+
+# 二、日常交通部分
+ipaq_lf_cn_scale,transport_vehicle,BOOLEAN,是,是否乘车出行,单选按钮,必选,是否,,火车、公交车、汽车、地铁、摩托车、电动车;有(跳至Q12);无(跳至Q14),Q11
+ipaq_lf_cn_scale,transport_vehicle_days,TINYINT,否,乘车出行天数,下拉选择,transport_vehicle为是时必填,1一天;2两天;3三天;4四天;5五天;6六天;7七天,,过去7天内乘车天数,Q12
+ipaq_lf_cn_scale,transport_vehicle_hours,TINYINT,否,乘车出行每天小时数,数字输入,transport_vehicle为是时必填,,,0-24小时,Q13H
+ipaq_lf_cn_scale,transport_vehicle_minutes,TINYINT,否,乘车出行每天分钟数,数字输入,transport_vehicle为是时必填,,,0-59分钟,Q13M
+ipaq_lf_cn_scale,transport_cycling,BOOLEAN,是,是否骑自行车出行,单选按钮,必选,是否,,持续时间超过10分钟;有(跳至Q15);无(跳至Q17),Q14
+ipaq_lf_cn_scale,transport_cycling_days,TINYINT,否,骑自行车出行天数,下拉选择,transport_cycling为是时必填,1一天;2两天;3三天;4四天;5五天;6六天;7七天,,过去7天内骑车天数,Q15
+ipaq_lf_cn_scale,transport_cycling_hours,TINYINT,否,骑自行车出行每天小时数,数字输入,transport_cycling为是时必填,,,0-24小时,Q16H
+ipaq_lf_cn_scale,transport_cycling_minutes,TINYINT,否,骑自行车出行每天分钟数,数字输入,transport_cycling为是时必填,,,0-59分钟,Q16M
+ipaq_lf_cn_scale,transport_walking,BOOLEAN,是,是否步行出行,单选按钮,必选,是否,,持续时间超过10分钟;有(跳至Q18);无(跳至Q20),Q17
+ipaq_lf_cn_scale,transport_walking_days,TINYINT,否,步行出行天数,下拉选择,transport_walking为是时必填,1一天;2两天;3三天;4四天;5五天;6六天;7七天,,过去7天内步行天数,Q18
+ipaq_lf_cn_scale,transport_walking_hours,TINYINT,否,步行出行每天小时数,数字输入,transport_walking为是时必填,,,0-24小时,Q19H
+ipaq_lf_cn_scale,transport_walking_minutes,TINYINT,否,步行出行每天分钟数,数字输入,transport_walking为是时必填,,,0-59分钟,Q19M
+
+# 三、日常生活（家务、园艺）部分
+ipaq_lf_cn_scale,housework_vigorous,BOOLEAN,是,是否参与高强度园艺或庭院劳动,单选按钮,必选,是否,,如搬运重物、砍柴、扫雪、拖地板等且持续时间超过10分钟;有(跳至Q21);无(跳至Q23),Q20
+ipaq_lf_cn_scale,housework_vigorous_days,TINYINT,否,高强度园艺劳动天数,下拉选择,housework_vigorous为是时必填,1一天;2两天;3三天;4四天;5五天;6六天;7七天,,过去7天内参与天数,Q21
+ipaq_lf_cn_scale,housework_vigorous_hours,TINYINT,否,高强度园艺劳动每天小时数,数字输入,housework_vigorous为是时必填,,,0-24小时,Q22H
+ipaq_lf_cn_scale,housework_vigorous_minutes,TINYINT,否,高强度园艺劳动每天分钟数,数字输入,housework_vigorous为是时必填,,,0-59分钟,Q22M
+ipaq_lf_cn_scale,housework_moderate_outdoor,BOOLEAN,是,是否参与中等强度庭院外体力劳动,单选按钮,必选,是否,,如提拎小型物品、扫地、擦窗户、耙地平整花园等且持续时间超过10分钟;有(跳至Q24);无(跳至Q26),Q23
+ipaq_lf_cn_scale,housework_moderate_outdoor_days,TINYINT,否,中等强度庭院外劳动天数,下拉选择,housework_moderate_outdoor为是时必填,1一天;2两天;3三天;4四天;5五天;6六天;7七天,,过去7天内参与天数,Q24
+ipaq_lf_cn_scale,housework_moderate_outdoor_hours,TINYINT,否,中等强度庭院外劳动每天小时数,数字输入,housework_moderate_outdoor为是时必填,,,0-24小时,Q25H
+ipaq_lf_cn_scale,housework_moderate_outdoor_minutes,TINYINT,否,中等强度庭院外劳动每天分钟数,数字输入,housework_moderate_outdoor为是时必填,,,0-59分钟,Q25M
+ipaq_lf_cn_scale,housework_moderate_indoor,BOOLEAN,是,是否参与中等强度家庭内部劳动,单选按钮,必选,是否,,如整理房间等且持续时间超过10分钟;有(跳至Q27);无(跳至Q29),Q26
+ipaq_lf_cn_scale,housework_moderate_indoor_days,TINYINT,否,中等强度家庭内部劳动天数,下拉选择,housework_moderate_indoor为是时必填,1一天;2两天;3三天;4四天;5五天;6六天;7七天,,过去7天内参与天数,Q27
+ipaq_lf_cn_scale,housework_moderate_indoor_hours,TINYINT,否,中等强度家庭内部劳动每天小时数,数字输入,housework_moderate_indoor为是时必填,,,0-24小时,Q28H
+ipaq_lf_cn_scale,housework_moderate_indoor_minutes,TINYINT,否,中等强度家庭内部劳动每天分钟数,数字输入,housework_moderate_indoor为是时必填,,,0-59分钟,Q28M
+
+# 四、运动锻炼与休闲娱乐部分
+ipaq_lf_cn_scale,leisure_walking,BOOLEAN,是,是否外出散步,单选按钮,必选,是否,,持续时间超过10分钟不包括已描述过的步行时间;有(跳至Q30);无(跳至Q32),Q29
+ipaq_lf_cn_scale,leisure_walking_days,TINYINT,否,外出散步天数,下拉选择,leisure_walking为是时必填,1一天;2两天;3三天;4四天;5五天;6六天;7七天,,过去7天内散步天数,Q30
+ipaq_lf_cn_scale,leisure_walking_hours,TINYINT,否,外出散步每天小时数,数字输入,leisure_walking为是时必填,,,0-24小时,Q31H
+ipaq_lf_cn_scale,leisure_walking_minutes,TINYINT,否,外出散步每天分钟数,数字输入,leisure_walking为是时必填,,,0-59分钟,Q31M
+ipaq_lf_cn_scale,leisure_vigorous,BOOLEAN,是,是否参加高强度体育锻炼,单选按钮,必选,是否,,如有氧健身、跑步、快速骑车、游泳、足球篮球类活动等且持续时间超过10分钟;有(跳至Q33);无(跳至Q35),Q32
+ipaq_lf_cn_scale,leisure_vigorous_days,TINYINT,否,高强度体育锻炼天数,下拉选择,leisure_vigorous为是时必填,1一天;2两天;3三天;4四天;5五天;6六天;7七天,,过去7天内锻炼天数,Q33
+ipaq_lf_cn_scale,leisure_vigorous_hours,TINYINT,否,高强度体育锻炼每天小时数,数字输入,leisure_vigorous为是时必填,,,0-24小时,Q34H
+ipaq_lf_cn_scale,leisure_vigorous_minutes,TINYINT,否,高强度体育锻炼每天分钟数,数字输入,leisure_vigorous为是时必填,,,0-59分钟,Q34M
+ipaq_lf_cn_scale,leisure_moderate,BOOLEAN,是,是否参加中等强度体育锻炼,单选按钮,必选,是否,,如常速骑自行车、快速行走、跳交谊舞、打保龄球、乒乓球、羽毛球等且持续时间超过10分钟;有(跳至Q36);无(跳至Q38),Q35
+ipaq_lf_cn_scale,leisure_moderate_days,TINYINT,否,中等强度体育锻炼天数,下拉选择,leisure_moderate为是时必填,1一天;2两天;3三天;4四天;5五天;6六天;7七天,,过去7天内锻炼天数,Q36
+ipaq_lf_cn_scale,leisure_moderate_hours,TINYINT,否,中等强度体育锻炼每天小时数,数字输入,leisure_moderate为是时必填,,,0-24小时,Q37H
+ipaq_lf_cn_scale,leisure_moderate_minutes,TINYINT,否,中等强度体育锻炼每天分钟数,数字输入,leisure_moderate为是时必填,,,0-59分钟,Q37M
+
+# 五、静坐时间部分
+ipaq_lf_cn_scale,sitting_weekday_hours,TINYINT,是,工作日每天坐姿时间小时数,数字输入,必填,,,0-24小时,Q38H
+ipaq_lf_cn_scale,sitting_weekday_minutes,TINYINT,是,工作日每天坐姿时间分钟数,数字输入,必填,,,0-59分钟,Q38M
+ipaq_lf_cn_scale,sitting_weekend_hours,TINYINT,是,周末或休息日每天坐姿时间小时数,数字输入,必填,,,0-24小时,Q39H
+ipaq_lf_cn_scale,sitting_weekend_minutes,TINYINT,是,周末或休息日每天坐姿时间分钟数,数字输入,必填,,,0-59分钟,Q39M
+
+# ==================== 问题编号索引表 ====================
+# 用于技术开发参考：问题编号与数据库字段的对应关系
+# 
+# Q1    → currently_working (是否外出工作)
+# Q2    → work_vigorous_activity (工作高强度活动)
+# Q3    → work_vigorous_days (工作高强度天数)
+# Q4H/M → work_vigorous_hours/minutes (工作高强度时间)
+# Q5    → work_moderate_activity (工作中等强度活动)
+# Q6    → work_moderate_days (工作中等强度天数)
+# Q7H/M → work_moderate_hours/minutes (工作中等强度时间)
+# Q8    → work_walking_activity (工作步行)
+# Q9    → work_walking_days (工作步行天数)
+# Q10H/M → work_walking_hours/minutes (工作步行时间)
+# Q11   → transport_vehicle (乘车出行)
+# Q12   → transport_vehicle_days (乘车天数)
+# Q13H/M → transport_vehicle_hours/minutes (乘车时间)
+# Q14   → transport_cycling (骑车出行)
+# Q15   → transport_cycling_days (骑车天数)
+# Q16H/M → transport_cycling_hours/minutes (骑车时间)
+# Q17   → transport_walking (步行出行)
+# Q18   → transport_walking_days (步行天数)
+# Q19H/M → transport_walking_hours/minutes (步行时间)
+# Q20   → housework_vigorous (高强度园艺)
+# Q21   → housework_vigorous_days (高强度园艺天数)
+# Q22H/M → housework_vigorous_hours/minutes (高强度园艺时间)
+# Q23   → housework_moderate_outdoor (中等强度庭院外)
+# Q24   → housework_moderate_outdoor_days (庭院外天数)
+# Q25H/M → housework_moderate_outdoor_hours/minutes (庭院外时间)
+# Q26   → housework_moderate_indoor (中等强度家庭内部)
+# Q27   → housework_moderate_indoor_days (家庭内部天数)
+# Q28H/M → housework_moderate_indoor_hours/minutes (家庭内部时间)
+# Q29   → leisure_walking (外出散步)
+# Q30   → leisure_walking_days (散步天数)
+# Q31H/M → leisure_walking_hours/minutes (散步时间)
+# Q32   → leisure_vigorous (高强度体育锻炼)
+# Q33   → leisure_vigorous_days (高强度锻炼天数)
+# Q34H/M → leisure_vigorous_hours/minutes (高强度锻炼时间)
+# Q35   → leisure_moderate (中等强度体育锻炼)
+# Q36   → leisure_moderate_days (中等强度锻炼天数)
+# Q37H/M → leisure_moderate_hours/minutes (中等强度锻炼时间)
+# Q38H/M → sitting_weekday_hours/minutes (工作日坐姿时间)
+# Q39H/M → sitting_weekend_hours/minutes (周末坐姿时间)
+#
+# 跳转逻辑开发说明：
+# 1. 根据问题编号实现条件跳转(如Q1选择"否"直接跳至Q11)
+# 2. 时间字段(H/M)需要分别录入小时和分钟
+# 3. 根据验证规则列的条件实现字段显示/隐藏
+# 4. 选项值列的格式为"1一天;2两天..."需要解析为下拉选项

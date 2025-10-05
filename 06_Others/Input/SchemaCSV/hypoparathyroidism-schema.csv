@@ -1,0 +1,128 @@
+Category,Subcategory,Field_Name,Field_Name_CN,Data_Type,Unit,Value_Range,Normal_Range,Abnormal_Indicators,Clinical_Significance,Interpretation_Logic,Related_Diseases,Risk_Level,Recommended_Actions,LOINC_Code,Notes
+Basic_Info,Patient_Info,patient_id,患者ID,String,,,,,Patient unique identifier,,,Low,,,"Unique patient identifier"
+Basic_Info,Patient_Info,exam_date,检查日期,Date,,,,,Date of examination,,,Low,,,"Format: YYYY-MM-DD"
+Basic_Info,Patient_Info,patient_age,患者年龄,Integer,years,0-120,,,"Age at diagnosis","Can occur at any age",,Low,,,Age depends on etiology
+Basic_Info,Patient_Info,patient_gender,患者性别,Categorical,,Male/Female,,,"Gender",,,Low,,,"Male/Female"
+Basic_Info,Patient_Info,age_at_onset,发病年龄,Integer,years,0-120,,,"Age when hypoPTH developed","Important for etiology",,Medium,,,Congenital vs acquired
+
+Laboratory,Calcium,serum_calcium,血清钙,Float,mg/dL,5-12,8.5-10.5,<8.5,"Total serum calcium","Low in hypoparathyroidism",Hypocalcemia,Critical,Diagnostic hallmark,17861-6,"Correct for albumin"
+Laboratory,Calcium,corrected_calcium,校正血钙,Float,mg/dL,5-12,8.5-10.5,<8.5,"Albumin-corrected calcium","Ca + 0.8*(4-albumin)",,Critical,More accurate,,"Use if albumin abnormal"
+Laboratory,Calcium,ionized_calcium,离子钙,Float,mmol/L,0.8-1.5,1.12-1.32,<1.12,"Ionized calcium","Gold standard measurement",Hypocalcemia,Critical,Most accurate,1994-3,"Unaffected by albumin"
+Laboratory,Calcium,hypocalcemia_severity,低钙血症严重程度,Categorical,,"Normal/Mild/Moderate/Severe",,Any,"Severity of hypocalcemia","Mild 7.5-8.5; Moderate 7-7.5; Severe <7 mg/dL",,High,Severe requires urgent treatment,,"Based on corrected Ca"
+Laboratory,Calcium,symptomatic_hypocalcemia,症状性低钙血症,Boolean,,Yes/No,No,Yes,"Symptomatic hypocalcemia","Tetany, seizures, or other acute symptoms",Acute_Hypocalcemia,Critical,Urgent IV calcium,,"Medical emergency"
+
+Laboratory,PTH,intact_pth,全段甲状旁腺激素,Float,pg/mL,0-150,10-65,<10,"Intact PTH level","Low or undetectable in hypoparathyroidism",Hypoparathyroidism,Critical,Diagnostic criterion,2731-8,"Should be elevated if Ca low"
+Laboratory,PTH,pth_appropriateness,PTH适当性,Categorical,,"Appropriate/Inappropriate",,Inappropriate,"PTH level appropriate for Ca","PTH should be HIGH if Ca is low; if low/normal: hypoPTH",Hypoparathyroidism,Critical,Defines hypoparathyroidism,,"Inappropriately low PTH"
+Laboratory,Phosphorus,serum_phosphorus,血清磷,Float,mg/dL,1-8,2.5-4.5,>4.5,"Serum phosphate","Elevated in hypoparathyroidism",Hyperphosphatemia,High,PTH deficiency reduces renal excretion,2777-1,"Opposite of hyperPTH"
+Laboratory,Phosphorus,calcium_phosphorus_product,钙磷乘积,Float,mg²/dL²,20-100,<55,>55,"Ca x PO4 product","Risk of ectopic calcification if >55",Ectopic_Calcification,High,Monitor for soft tissue calcification,,"Can cause organ damage"
+Laboratory,Magnesium,serum_magnesium,血清镁,Float,mg/dL,0.8-3.0,1.7-2.4,<1.7,"Serum magnesium","Low Mg can cause functional hypoPTH",Hypomagnesemia,High,Correct Mg before Ca,2601-3,"Mg required for PTH secretion"
+Laboratory,Magnesium,hypomagnesemia,低镁血症,Boolean,,Yes/No,No,Yes,"Hypomagnesemia present","Mg <1.7 mg/dL can impair PTH release",,High,Replicate Mg first,,"Mg deficiency mimics hypoPTH"
+
+Laboratory,Vitamin_D,25oh_vitamin_d,25羟维生素D,Float,ng/mL,5-100,30-100,<20,"25-OH vitamin D","Check baseline level",,Medium,Optimize before treatment,1989-3,"May need supplementation"
+Laboratory,Vitamin_D,1_25oh_vitamin_d,1,25双羟维生素D,Float,pg/mL,10-100,19-67,<19,"1,25-(OH)2 vitamin D","Active form, may be low without PTH",,Medium,PTH stimulates activation,,"Low in hypoPTH"
+Laboratory,Renal_Function,serum_creatinine,血清肌酐,Float,mg/dL,0.3-3.0,0.6-1.2,>1.2,"Serum creatinine","Assess kidney function",,High,Hypercalciuria can damage kidneys,2160-0,
+Laboratory,Renal_Function,egfr,肾小球滤过率,Float,mL/min/1.73m²,10-150,>60,<60,"Estimated GFR","Monitor for CKD",,High,Chronic hypercalciuria risk,,"Nephrocalcinosis common"
+Laboratory,Renal_Function,24hr_urine_calcium,24小时尿钙,Float,mg/24hr,50-500,<300,>300,"24-hour urinary calcium","Often elevated in hypoPTH despite low serum Ca",Hypercalciuria,High,Monitor for kidney stones,6874-2,"Paradoxical hypercalciuria"
+Laboratory,Renal_Function,hypercalciuria,高钙尿症,Boolean,,Yes/No,No,Yes,"Hypercalciuria present","Urine Ca >300 mg/day",Nephrolithiasis,High,Risk of stones and CKD,,"Common complication"
+
+Clinical_Features,Neuromuscular,paresthesias,感觉异常,Boolean,,Yes/No,No,Yes,"Numbness and tingling","Perioral, fingertips",Hypocalcemia,High,Classic symptom,,"Most common symptom"
+Clinical_Features,Neuromuscular,muscle_cramps,肌肉痉挛,Boolean,,Yes/No,No,Yes,"Muscle cramps and spasms","Carpopedal spasm",,High,Hypocalcemia symptom,,"Can be severe"
+Clinical_Features,Neuromuscular,tetany,手足搐搦,Boolean,,Yes/No,No,Yes,"Tetany","Involuntary muscle contractions",Tetany,Critical,Medical emergency,,"Carpopedal spasm, laryngospasm"
+Clinical_Features,Neuromuscular,chvostek_sign,Chvostek征,Boolean,,Yes/No,No,Yes,"Chvostek's sign positive","Facial twitch on tapping facial nerve",,Medium,Sign of neuromuscular irritability,,"Not specific"
+Clinical_Features,Neuromuscular,trousseau_sign,Trousseau征,Boolean,,Yes/No,No,Yes,"Trousseau's sign positive","Carpopedal spasm with BP cuff inflation",,High,More specific than Chvostek,,"Inflate BP cuff >systolic for 3 min"
+Clinical_Features,Neuromuscular,seizures,癫痫发作,Boolean,,Yes/No,No,Yes,"Seizures","Generalized or focal seizures from hypocalcemia",Seizures,Critical,Urgent IV calcium,,"Medical emergency"
+Clinical_Features,Neuromuscular,laryngospasm,喉痉挛,Boolean,,Yes/No,No,Yes,"Laryngospasm","Life-threatening airway spasm",,Critical,Emergency intubation may be needed,,"Rare but fatal"
+
+Clinical_Features,Neuropsychiatric,cognitive_impairment,认知障碍,Boolean,,Yes/No,No,Yes,"Cognitive dysfunction","Memory, concentration problems",,Medium,May improve with treatment,,"Chronic hypocalcemia effect"
+Clinical_Features,Neuropsychiatric,depression_anxiety,抑郁焦虑,Boolean,,Yes/No,No,Yes,"Depression or anxiety","Psychiatric symptoms",,Medium,Screen for mood disorders,,"Common in chronic disease"
+Clinical_Features,Neuropsychiatric,psychosis,精神病,Boolean,,Yes/No,No,Yes,"Psychosis","Rarely, severe hypocalcemia causes psychosis",,High,Acute manifestation,,"Rare but reported"
+Clinical_Features,Neuropsychiatric,parkinsonism,帕金森综合征,Boolean,,Yes/No,No,Yes,"Parkinsonian features","Basal ganglia calcification",,Medium,From chronic hypocalcemia,,"Extrapyramidal symptoms"
+Clinical_Features,Cardiac,qt_prolongation,QT间期延长,Boolean,,Yes/No,No,Yes,"Prolonged QT interval","Hypocalcemia prolongs QT",Arrhythmia,High,Risk of torsades de pointes,,"Monitor ECG"
+Clinical_Features,Cardiac,heart_failure,心力衰竭,Boolean,,Yes/No,No,Yes,"Cardiomyopathy/heart failure","Chronic severe hypocalcemia",,High,Rare but serious,,"Reversible with treatment"
+
+Clinical_Features,Other,fatigue,乏力,Boolean,,Yes/No,No,Yes,"Fatigue","Common non-specific symptom",,Medium,,,"Quality of life impact"
+Clinical_Features,Other,dry_skin,皮肤干燥,Boolean,,Yes/No,No,Yes,"Dry, coarse skin","Chronic manifestation",,Low,,,"Eczema-like changes"
+Clinical_Features,Other,brittle_nails,指甲脆弱,Boolean,,Yes/No,No,Yes,"Brittle nails","Chronic finding",,Low,,,
+Clinical_Features,Other,dental_abnormalities,牙齿异常,Boolean,,Yes/No,No,Yes,"Dental problems","Enamel hypoplasia, delayed eruption",,Low,If onset in childhood,,"Permanent damage if early onset"
+Clinical_Features,Other,cataracts,白内障,Boolean,,Yes/No,No,Yes,"Cataracts","Subcapsular cataracts from chronic hypocalcemia",Cataracts,Medium,Ophthalmology evaluation,,"Common in chronic hypoPTH"
+
+Etiology,Postsurgical,postsurgical_hypopth,术后甲旁减,Boolean,,Yes/No,No,Yes,"Postsurgical hypoparathyroidism","After thyroid or parathyroid surgery",Postsurgical_HypoPTH,High,Most common cause (75%),,"Permanent if >6 months"
+Etiology,Postsurgical,surgery_type,手术类型,Categorical,,"None/Thyroidectomy/Parathyroidectomy/Other_neck_surgery",,,"Type of neck surgery","Total thyroidectomy highest risk",,High,,,Risk varies by extent
+Etiology,Postsurgical,time_since_surgery,术后时间,Integer,months,0-600,,>6,"Months since surgery","<6 months: transient; >6 months: permanent",,High,Permanent if persistent,,"Definition of permanent hypoPTH"
+Etiology,Postsurgical,transient_hypopth,暂时性甲旁减,Boolean,,Yes/No,No,,"Transient postoperative hypoPTH","Resolves within 6 months",,Medium,May recover,,"50% of postsurgical cases"
+Etiology,Postsurgical,permanent_hypopth,永久性甲旁减,Boolean,,Yes/No,No,Yes,"Permanent hypoparathyroidism","Persistent >6 months after surgery",Permanent_HypoPTH,High,Lifelong treatment needed,,"50% of postsurgical cases"
+
+Etiology,Autoimmune,autoimmune_hypopth,自身免疫性甲旁减,Boolean,,Yes/No,No,Yes,"Autoimmune hypoparathyroidism","Antibodies against parathyroid tissue",,Medium,Check for APS,,"Second most common cause"
+Etiology,Autoimmune,aps1,自身免疫性多腺体综合征1型,Boolean,,Yes/No,No,Yes,"Autoimmune polyglandular syndrome type 1","AIRE gene mutation, childhood onset",APS1,High,Screen for Addison's, candidiasis,,"Triad: candidiasis, hypoPTH, Addison's"
+Etiology,Autoimmune,parathyroid_antibodies,甲状旁腺抗体,Boolean,,Yes/No,No,Yes,"Anti-parathyroid antibodies","CaSR or NALP5 antibodies",,Medium,Confirms autoimmune etiology,,"Not routinely tested"
+Etiology,Genetic,genetic_hypopth,遗传性甲旁减,Boolean,,Yes/No,No,Yes,"Genetic hypoparathyroidism","Familial isolated or syndromic",,High,Genetic testing,,"Multiple genetic causes"
+Etiology,Genetic,digeorge_syndrome,DiGeorge综合征,Boolean,,Yes/No,No,Yes,"DiGeorge syndrome (22q11 deletion)","Thymic aplasia, cardiac defects, hypoPTH",DiGeorge_Syndrome,High,Childhood onset,,"Most common genetic cause"
+Etiology,Genetic,familial_isolated_hypopth,家族性孤立性甲旁减,Boolean,,Yes/No,No,Yes,"Familial isolated hypoparathyroidism","PTH gene mutations",,Medium,Genetic counseling,,"Autosomal dominant or recessive"
+
+Etiology,Other,hypomagnesemia_induced,低镁诱发,Boolean,,Yes/No,No,Yes,"Hypomagnesemia-induced","Functional hypoPTH from Mg deficiency",,High,Reversible with Mg replacement,,"Check Mg level"
+Etiology,Other,radiation_induced,放疗诱发,Boolean,,Yes/No,No,Yes,"Radiation-induced","After neck radiation",,Medium,Late complication,,"Rare cause"
+Etiology,Other,infiltrative_disease,浸润性疾病,Boolean,,Yes/No,No,Yes,"Infiltrative disease","Hemochromatosis, Wilson's, metastases",,Low,Rare causes,,"Very uncommon"
+Etiology,Other,idiopathic_hypopth,特发性甲旁减,Boolean,,Yes/No,No,Yes,"Idiopathic hypoparathyroidism","No identified cause",,Medium,Diagnosis of exclusion,,"May be occult autoimmune"
+
+Imaging,Radiology,brain_ct_mri,头颅CT/MRI,Boolean,,Yes/No,No,,"Brain CT or MRI performed","Assess for basal ganglia calcification",,Medium,If neurologic symptoms,,"Common finding"
+Imaging,Radiology,basal_ganglia_calcification,基底节钙化,Boolean,,Yes/No,No,Yes,"Basal ganglia calcification","Bilateral calcifications on imaging",Basal_Ganglia_Calcification,Medium,Chronic hypocalcemia finding,,"Can cause movement disorders"
+Imaging,Radiology,cerebral_calcification,脑钙化,Boolean,,Yes/No,No,Yes,"Other cerebral calcifications","Beyond basal ganglia",,Low,Chronic manifestation,,"Cerebellar, subcortical"
+Imaging,Renal,renal_imaging,肾脏影像,Boolean,,Yes/No,No,,"Renal ultrasound or CT","Screen for nephrocalcinosis",,High,Baseline and periodic,,"Common complication"
+Imaging,Renal,nephrocalcinosis,肾钙化,Boolean,,Yes/No,No,Yes,"Nephrocalcinosis","Calcium deposition in kidney parenchyma",Nephrocalcinosis,High,From chronic hypercalciuria,,"Leads to CKD"
+Imaging,Renal,kidney_stones,肾结石,Boolean,,Yes/No,No,Yes,"Nephrolithiasis","Kidney stones",,Medium,Paradoxical with low Ca,,"From hypercalciuria"
+Imaging,Bone,bone_density,骨密度,Categorical,,"Normal/Increased/Decreased",,,"Bone mineral density","May be increased in hypoPTH",High_BMD,Low,DEXA scan,,"Paradoxically high BMD"
+
+Treatment,Acute,iv_calcium,静脉补钙,Boolean,,Yes/No,No,,"IV calcium administered","For symptomatic hypocalcemia",,Critical,Urgent treatment,,"Calcium gluconate 1-2g IV"
+Treatment,Acute,calcium_infusion,钙剂输注,Boolean,,Yes/No,No,,"Continuous calcium infusion","For severe/refractory hypocalcemia",,Critical,ICU monitoring,,"10% Ca gluconate in D5W"
+Treatment,Acute,emergency_treatment,急诊治疗,Boolean,,Yes/No,No,Yes,"Emergency treatment required","Tetany, seizures, laryngospasm",,Critical,Life-threatening,,"Immediate IV calcium"
+
+Treatment,Chronic,oral_calcium,口服补钙,Boolean,,Yes/No,No,Yes,"Oral calcium supplementation","Maintenance therapy",,High,All patients require,,"1-3 grams elemental Ca/day"
+Treatment,Chronic,calcium_carbonate_dose,碳酸钙剂量,Float,mg/day,0-6000,1000-2000,,"Calcium carbonate daily dose","40% elemental calcium",,Medium,Titrate to Ca level,,"Most common formulation"
+Treatment,Chronic,calcium_citrate_dose,柠檬酸钙剂量,Float,mg/day,0-6000,1000-2000,,"Calcium citrate daily dose","21% elemental calcium, better absorbed",,Medium,For achlorhydria,,"Better with PPI use"
+Treatment,Chronic,active_vitamin_d,活性维生素D,Boolean,,Yes/No,No,Yes,"Active vitamin D therapy","Calcitriol or alfacalcidol",,Critical,Essential for treatment,,"Increases intestinal Ca absorption"
+Treatment,Chronic,calcitriol_dose,骨化三醇剂量,Float,μg/day,0-4,0.25-1.0,,"Calcitriol daily dose","1,25-(OH)2 vitamin D",,High,Start low, titrate up,,"Typical 0.25-1 mcg/day"
+Treatment,Chronic,alfacalcidol_dose,阿法骨化醇剂量,Float,μg/day,0-4,0.5-2.0,,"Alfacalcidol daily dose","1-alpha-OH vitamin D",,High,Prodrug of calcitriol,,"Requires 25-hydroxylation"
+Treatment,Chronic,native_vitamin_d,天然维生素D,Boolean,,Yes/No,No,,"Native vitamin D supplementation","Cholecalciferol or ergocalciferol",,Medium,Maintain 25-OH-D >30,,"Adjunct to calcitriol"
+
+Treatment,Chronic,thiazide_diuretic,噻嗪类利尿剂,Boolean,,Yes/No,No,,"Thiazide diuretic","Reduces urinary calcium excretion",,Medium,For hypercalciuria,,"Hydrochlorothiazide 25-50 mg/day"
+Treatment,Chronic,low_phosphate_diet,低磷饮食,Boolean,,Yes/No,No,,"Low phosphate diet","If hyperphosphatemia",,Low,Dietary counseling,,"Avoid dairy excess"
+Treatment,Chronic,phosphate_binder,磷结合剂,Boolean,,Yes/No,No,,"Phosphate binder","If high Ca-PO4 product",,Low,Sevelamer, lanthanum,,"Rare need"
+Treatment,Chronic,recombinant_pth,重组甲状旁腺激素,Boolean,,Yes/No,No,,"Recombinant PTH (1-84) therapy","For refractory cases",,Medium,Expensive, not first-line,,"Approved in some countries"
+
+Monitoring,Biochemical,target_calcium,目标血钙,Float,mg/dL,7.5-9.5,8.0-9.0,,"Target serum calcium","Low-normal range, NOT fully normal",,High,Avoid hypercalciuria,,"8-9 mg/dL target"
+Monitoring,Biochemical,current_calcium,当前血钙,Float,mg/dL,5-12,,<7.5 or >10,"Most recent calcium level","Primary monitoring parameter",,High,Check every 3-6 months when stable,,"Adjust treatment to target"
+Monitoring,Biochemical,current_phosphorus,当前血磷,Float,mg/dL,1-8,2.5-4.5,>5,"Most recent phosphate level","Monitor for hyperphosphatemia",,Medium,Keep in normal range,,"High PO4 increases Ca-PO4 product"
+Monitoring,Biochemical,monitoring_frequency,监测频率,Categorical,,"Weekly/Monthly/Every_3_months/Every_6_months",,,"Biochemical monitoring frequency","More frequent initially",,Medium,Individualize,,"Stable patients: q3-6 months"
+Monitoring,Renal,urine_calcium_monitoring,尿钙监测,Boolean,,Yes/No,No,Yes,"24-hr urine calcium monitoring","Screen for hypercalciuria",,High,Every 6-12 months,,"Goal <300 mg/day"
+Monitoring,Renal,egfr_monitoring,肾功能监测,Boolean,,Yes/No,No,Yes,"eGFR monitoring","Watch for CKD from nephrocalcinosis",,High,Annually,,"Chronic complication"
+Monitoring,Imaging,periodic_renal_imaging,定期肾脏影像,Boolean,,Yes/No,No,,"Periodic renal imaging","Screen for nephrocalcinosis progression",,Medium,Every 2-5 years,,"If hypercalciuria present"
+
+Complications,Renal,chronic_kidney_disease,慢性肾脏病,Boolean,,Yes/No,No,Yes,"Chronic kidney disease","From nephrocalcinosis/stones",CKD,High,Major long-term complication,,"Monitor closely"
+Complications,Renal,ckd_stage,CKD分期,Categorical,,"None/Stage_1/Stage_2/Stage_3/Stage_4/Stage_5",,Stage_3+,"CKD stage","Based on eGFR",,High,Adjust calcitriol dose,,"Affects treatment"
+Complications,Neurologic,seizure_disorder,癫痫疾病,Boolean,,Yes/No,No,Yes,"Seizure disorder","Recurrent seizures from hypocalcemia",,High,Antiepileptics may be needed,,"Usually improves with Ca control"
+Complications,Neurologic,movement_disorder,运动障碍,Boolean,,Yes/No,No,Yes,"Movement disorder","Parkinsonism, dystonia from basal ganglia calcification",,Medium,May be irreversible,,"Chronic complication"
+Complications,Ophthalmologic,cataract_formation,白内障形成,Boolean,,Yes/No,No,Yes,"Cataract development","Posterior subcapsular cataracts",,Medium,Ophthalmology follow-up,,"May need surgery"
+Complications,Cardiovascular,arrhythmia,心律失常,Boolean,,Yes/No,No,Yes,"Cardiac arrhythmias","From QT prolongation",,High,ECG monitoring,,"Torsades risk"
+Complications,Overtreatment,hypercalcemia_from_rx,治疗性高钙血症,Boolean,,Yes/No,No,Yes,"Hypercalcemia from overtreatment","Excessive Ca/calcitriol",Hypercalcemia,Medium,Reduce dose,,"Avoid overtreatment"
+Complications,Overtreatment,hypercalciuria_worsened,高钙尿症加重,Boolean,,Yes/No,No,Yes,"Worsening hypercalciuria","From treatment",,High,Add thiazide, reduce dose,,"Common problem"
+
+Quality_of_Life,Symptoms,symptom_control,症状控制,Categorical,,"Excellent/Good/Fair/Poor",,Poor,"Symptom control on treatment","Neuromuscular symptoms resolved",,High,Treatment goal,,"Most achieve good control"
+Quality_of_Life,Symptoms,paresthesias_controlled,感觉异常控制,Boolean,,Yes/No,No,,"Paresthesias controlled","No numbness/tingling",,High,Common residual symptom,,"May persist despite normal Ca"
+Quality_of_Life,Function,quality_of_life,生活质量,Categorical,,"Excellent/Good/Fair/Poor",,Poor,"Overall quality of life","Impaired in many patients",,Medium,Address comprehensively,,"Chronic disease burden"
+Quality_of_Life,Function,pill_burden,服药负担,Integer,pills/day,0-30,,>10,"Daily pill burden","Multiple Ca and calcitriol doses",,Medium,Simplify regimen if possible,,"10-20 pills/day common"
+
+Prognosis,Outcomes,biochemical_control,生化控制,Boolean,,Yes/No,No,,"Biochemical control achieved","Ca in target range 8-9 mg/dL",,High,Treatment goal,,"Achievable in most"
+Prognosis,Outcomes,stable_disease,疾病稳定,Boolean,,Yes/No,No,,"Stable on treatment","Ca and PO4 controlled, no progression",,High,Long-term goal,,"Requires lifelong therapy"
+Prognosis,Outcomes,normal_life_expectancy,正常预期寿命,Boolean,,Yes/No,Yes,,"Normal life expectancy","With adequate treatment",,Medium,Prognosis generally good,,"If complications prevented"
+Prognosis,Outcomes,complication_free,无并发症,Boolean,,Yes/No,No,,"Free of major complications","No CKD, cataracts, seizures, etc.",,High,Ideal outcome,,"Requires good control"
+
+Report_Summary,Diagnosis,confirmed_hypopth,确诊甲状旁腺功能减退,Boolean,,Yes/No,No,Yes,"Hypoparathyroidism confirmed","Low Ca + low/inappropriately normal PTH",Hypoparathyroidism,Critical,Biochemical diagnosis,,"Exclude pseudohypoPTH"
+Report_Summary,Diagnosis,hypopth_etiology,甲旁减病因,String,,,,,Etiology of hypoparathyroidism,"Postsurgical, autoimmune, genetic, other",,High,Determines prognosis,,"Postsurgical most common"
+Report_Summary,Diagnosis,disease_severity,疾病严重程度,Categorical,,"Mild/Moderate/Severe",,,"Severity of hypoPTH","Based on Ca level, symptoms, complications",,High,Guides treatment intensity,,
+
+Report_Summary,Treatment_Plan,treatment_regimen,治疗方案,String,,,,,Current treatment regimen,"Ca + calcitriol doses",,High,Individualized,,"Lifelong therapy"
+Report_Summary,Treatment_Plan,treatment_goal,治疗目标,String,,,,,Treatment objectives,"Ca 8-9 mg/dL, avoid hypercalciuria, prevent complications",,High,Clear targets,,
+Report_Summary,Treatment_Plan,monitoring_plan,监测方案,String,,,,,Follow-up monitoring strategy,"Ca, PO4, urine Ca, eGFR, imaging",,High,Long-term surveillance,,
+
+Report_Summary,Provider,endocrinologist_name,内分泌科医师,String,,,,,Treating endocrinologist,,,Low,,,
+Report_Summary,Provider,report_date,报告日期,Date,,,,,Date of report generation,,,Low,,,"Format: YYYY-MM-DD"

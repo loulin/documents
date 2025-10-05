@@ -1,0 +1,53 @@
+Category,Field_Name,Chinese_Name,Data_Type,Unit,Valid_Range,LOINC_Code,Required,Description,Clinical_Significance
+Basic_Info,patient_id,患者ID,string,,,,,Y,唯一标识,患者追踪
+Basic_Info,exam_date,检查日期,date,,,,,Y,检查时间,评估时点
+Basic_Info,age,年龄,integer,years,0-120,,,Y,患者年龄,年龄相关眼病
+Basic_Info,gender,性别,categorical,,Male,Female,,,Y,性别,流行病学
+Laterality,eye,眼别,categorical,,Right,Left,Both,,,Y,右眼/左眼/双眼,病变部位
+Visual_Acuity,bcva_od,右眼最佳矫正视力,decimal,,0-2,79892-6,,Y,OD BCVA,视功能评估
+Visual_Acuity,bcva_os,左眼最佳矫正视力,decimal,,0-2,79893-4,,Y,OS BCVA,视功能评估
+Visual_Acuity,va_notation,视力记录法,categorical,,Snellen,LogMAR,Decimal,,,Y,Snellen/LogMAR/小数,标准化
+Refraction,spherical_od,右眼球镜度,decimal,D,-30-30,,,Y,OD球镜,屈光不正
+Refraction,cylindrical_od,右眼柱镜度,decimal,D,-10-10,,,Y,OD柱镜,散光
+Refraction,axis_od,右眼轴位,integer,degrees,0-180,,,Y,OD轴位,散光方向
+Refraction,spherical_os,左眼球镜度,decimal,D,-30-30,,,Y,OS球镜,屈光不正
+Refraction,cylindrical_os,左眼柱镜度,decimal,D,-10-10,,,Y,OS柱镜,散光
+Refraction,axis_os,左眼轴位,integer,degrees,0-180,,,Y,OS轴位,散光方向
+IOP,iop_od,右眼眼压,integer,mmHg,0-60,56845-5,,Y,OD IOP,青光眼诊断
+IOP,iop_os,左眼眼压,integer,mmHg,0-60,56844-8,,Y,OS IOP,青光眼诊断
+IOP,iop_method,眼压测量方法,categorical,,Goldmann,Non_Contact,Rebound,,,Y,Goldmann/非接触/回弹,测量方式
+Anterior_Segment,cornea,角膜,categorical,,Clear,Edema,Scar,Dystrophy,,,Y,透明/水肿/瘢痕/营养不良,角膜状态
+Anterior_Segment,anterior_chamber,前房,categorical,,Deep,Shallow,Flat,,,Y,深/浅/平,青光眼风险
+Anterior_Segment,iris,虹膜,categorical,,Normal,Atrophy,Neovascularization,,,Y,正常/萎缩/新生血管,虹膜病变
+Anterior_Segment,lens,晶状体,categorical,,Clear,Cortical_Cataract,Nuclear_Cataract,PSC,,,Y,透明/皮质性/核性/后囊下白内障,晶状体混浊
+Anterior_Segment,cataract_grade,白内障分级,categorical,,None,Grade_1,Grade_2,Grade_3,Grade_4,,,N,0-4级,LOCS III
+Fundus_Exam,optic_disc,视盘,categorical,,Normal,Pale,Cupping,Edema,,,Y,正常/苍白/杯盘扩大/水肿,视神经
+Fundus_Exam,cup_disc_ratio,杯盘比,decimal,,0-1,71484-0,,Y,C/D比值,青光眼>0.7
+Fundus_Exam,macula,黄斑,categorical,,Normal,Drusen,Pigmentary_Changes,Atrophy,Neovascularization,Edema,,,Y,正常/玻璃膜疣/色素改变/萎缩/新生血管/水肿,黄斑病变
+Fundus_Exam,retinal_vessels,视网膜血管,categorical,,Normal,Arteriolar_Narrowing,AV_Nicking,Microaneurysms,Hemorrhages,,,Y,正常/小动脉变细/动静脉交叉压迹/微动脉瘤/出血,血管病变
+Fundus_Exam,retinal_hemorrhages,视网膜出血,boolean,,,,,Y,出血,DR/CRVO
+Fundus_Exam,cotton_wool_spots,棉絮斑,boolean,,,,,Y,棉絮斑,缺血
+Fundus_Exam,hard_exudates,硬性渗出,boolean,,,,,Y,硬性渗出,DR
+OCT,oct_performed,OCT检查,boolean,,,,,Y,光学相干断层扫描,黄斑/视盘评估
+OCT,central_macular_thickness,中心黄斑厚度,integer,μm,0-1000,,,Y,CMT,<200正常/200-300轻度增厚/>300重度
+OCT,rnfl_thickness,视网膜神经纤维层厚度,integer,μm,0-200,,,Y,RNFL,青光眼<70异常
+OCT,intraretinal_fluid,视网膜内液,boolean,,,,,N,IRF,DME/AMD
+OCT,subretinal_fluid,视网膜下液,boolean,,,,,N,SRF,CSR/AMD
+Visual_Field,vf_performed,视野检查,boolean,,,,,Y,自动视野计,青光眼/神经
+Visual_Field,vf_md,平均缺损,decimal,dB,-35-5,,,Y,MD,整体敏感度
+Visual_Field,vf_psd,模式标准差,decimal,dB,0-20,,,Y,PSD,局部缺损
+Visual_Field,vf_defect,视野缺损,categorical,,None,Peripheral,Central,Arcuate,Altitudinal,,,N,无/周边/中心/弓形/象限,缺损模式
+Diagnosis,primary_diagnosis,主要诊断,string,,,,,Y,眼科诊断,疾病分类
+Diagnosis,stage_severity,疾病分期/严重度,string,,,,,N,分期/分级,病情严重度
+Treatment_Medical,topical_medication,局部用药,boolean,,,,,Y,眼药水/眼膏,药物治疗
+Treatment_Medical,iop_lowering_drops,降眼压药,categorical,,None,Prostaglandin,Beta_Blocker,CAI,Alpha_Agonist,,,N,前列腺素/β阻滞剂/碳酸酐酶抑制剂/α激动剂,青光眼
+Treatment_Medical,anti_vegf,抗VEGF,boolean,,,,,N,抗血管内皮生长因子,AMD/DR/RVO
+Treatment_Medical,steroid,激素,boolean,,,,,N,糖皮质激素,炎症/水肿
+Treatment_Laser,laser_therapy,激光治疗,boolean,,,,,Y,激光,多种适应症
+Treatment_Laser,laser_type,激光类型,categorical,,None,PRP,Focal,YAG_Capsulotomy,SLT,,,N,全视网膜光凝/局部光凝/YAG后囊切开/选择性小梁成形,治疗类型
+Treatment_Surgical,surgery,眼科手术,boolean,,,,,Y,手术治疗,外科干预
+Treatment_Surgical,surgery_type,手术类型,categorical,,None,Cataract_Surgery,Trabeculectomy,Vitrectomy,Corneal_Transplant,,,N,白内障手术/小梁切除/玻璃体切除/角膜移植,术式
+Outcome,visual_outcome,视力结局,categorical,,Improved,Stable,Worse,,,Y,改善/稳定/下降,治疗效果
+Outcome,iop_control,眼压控制,boolean,,,,,Y,眼压达标,青光眼管理
+Report,ophthalmologist,眼科医师,string,,,,,Y,医师姓名,责任医师
+Report,report_date,报告日期,date,,,,,Y,报告时间,文档记录

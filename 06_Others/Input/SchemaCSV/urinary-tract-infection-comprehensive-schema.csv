@@ -1,0 +1,114 @@
+Category,Field_Name,Chinese_Name,Data_Type,Unit,Valid_Range,LOINC_Code,Required,Description,Clinical_Significance
+Basic_Info,patient_id,患者ID,string,,,,,Y,唯一标识,患者追踪
+Basic_Info,onset_date,起病日期,date,,,,,Y,症状开始时间,病程
+Basic_Info,age,年龄,integer,years,0-120,,,Y,患者年龄,危险分层
+Basic_Info,gender,性别,categorical,,Male,Female,,,Y,性别,女性高发
+
+UTI_Classification,uti_type,UTI类型,categorical,,Cystitis,Pyelonephritis,Asymptomatic_Bacteriuria,Catheter_Associated,Prostatitis,,,Y,膀胱炎/肾盂肾炎/无症状菌尿/导尿管相关/前列腺炎,分类
+UTI_Classification,uncomplicated_uti,单纯性UTI,boolean,,,,,Y,健康女性急性膀胱炎/肾盂肾炎,预后良好
+UTI_Classification,complicated_uti,复杂性UTI,boolean,,,,,Y,男性/尿路异常/导尿管/免疫缺陷,治疗复杂
+
+Symptoms_Cystitis,dysuria,排尿困难,boolean,,,,,Y,尿痛,膀胱炎
+Symptoms_Cystitis,urgency,尿急,boolean,,,,,Y,尿急,下尿路刺激
+Symptoms_Cystitis,frequency,尿频,boolean,,,,,Y,尿频,下尿路刺激
+Symptoms_Cystitis,suprapubic_pain,耻骨上痛,boolean,,,,,Y,下腹痛,膀胱刺激
+Symptoms_Cystitis,hematuria,血尿,boolean,,,,,Y,肉眼/镜下血尿,膀胱炎症
+
+Symptoms_Pyelonephritis,fever,发热,boolean,,,,,Y,体温≥38°C,上尿路感染
+Symptoms_Pyelonephritis,chills,寒战,boolean,,,,,Y,寒战,菌血症
+Symptoms_Pyelonephritis,flank_pain,腰痛,boolean,,,,,Y,肋脊角痛,肾脏炎症
+Symptoms_Pyelonephritis,cvat,肋脊角压痛,boolean,,,,,Y,CVAT,肾盂肾炎
+Symptoms_Pyelonephritis,nausea_vomiting,恶心呕吐,boolean,,,,,Y,消化道症状,全身感染
+
+Vital_Signs,temperature,体温,decimal,°C,35-42,8310-5,,Y,当前体温,发热程度
+Vital_Signs,heart_rate,心率,integer,bpm,0-300,8867-4,,Y,心率,脓毒症
+Vital_Signs,blood_pressure_sys,收缩压,integer,mmHg,0-300,8480-6,,Y,收缩压,血流动力学
+
+Risk_Factors,female,女性,boolean,,,,,Y,女性性别,解剖因素
+Risk_Factors,sexual_activity,性活跃,boolean,,,,,N,性行为,女性UTI
+Risk_Factors,pregnancy,妊娠,boolean,,,,,Y,怀孕,并发症风险
+Risk_Factors,diabetes,糖尿病,boolean,,,,,Y,糖尿病,免疫功能
+Risk_Factors,immunosuppression,免疫抑制,boolean,,,,,Y,免疫缺陷,复杂性UTI
+Risk_Factors,urinary_catheter,留置导尿管,boolean,,,,,Y,导尿管,CAUTI
+Risk_Factors,catheter_duration,导尿管留置时间,integer,days,0-365,,,N,留置天数,感染风险
+Risk_Factors,urological_abnormality,泌尿系统异常,boolean,,,,,Y,结构/功能异常,复杂性UTI
+Risk_Factors,kidney_stones,肾结石,boolean,,,,,Y,泌尿系结石,梗阻
+Risk_Factors,prostatic_hypertrophy,前列腺增生,boolean,,,,,Y,BPH,男性梗阻
+Risk_Factors,neurogenic_bladder,神经源性膀胱,boolean,,,,,N,膀胱功能障碍,尿潴留
+Risk_Factors,recent_antibiotic_use,近期抗生素使用,boolean,,,,,Y,3月内抗生素,耐药风险
+Risk_Factors,recurrent_uti,复发性UTI,boolean,,,,,Y,≥2次/6月或≥3次/年,反复感染
+
+Urinalysis,urinalysis_performed,尿常规,boolean,,,,,Y,尿液分析,初步诊断
+Urinalysis,leukocyte_esterase,白细胞酯酶,categorical,,Negative,Trace,1+,2+,3+,,,Y,阴性/微量/1+/2+/3+,脓尿
+Urinalysis,nitrite,亚硝酸盐,categorical,,Negative,Positive,,,Y,阴性/阳性,革兰阴性杆菌
+Urinalysis,urine_wbc,尿白细胞,categorical,,Negative,Few,Moderate,Many,,,Y,阴性/少量/中量/大量,脓尿
+Urinalysis,urine_rbc,尿红细胞,categorical,,Negative,Few,Moderate,Many,,,Y,阴性/少量/中量/大量,血尿
+Urinalysis,bacteria,细菌,categorical,,None,Few,Moderate,Many,,,Y,无/少量/中量/大量,菌尿
+Urinalysis,urine_ph,尿pH,decimal,,4-9,2756-5,,N,尿液pH,变形杆菌pH↑
+Urinalysis,specific_gravity,尿比重,decimal,,1.000-1.040,2965-2,,N,尿比重,浓缩功能
+
+Urine_Culture,urine_culture,尿培养,categorical,,Not_Done,Negative,Positive,,,Y,尿液培养,病原学
+Urine_Culture,colony_count,菌落计数,categorical,,LT_10000,10000_100000,GT_100000,,,N,<10⁴/10⁴-10⁵/>10⁵ CFU/mL,有意义菌尿≥10⁵
+Urine_Culture,organism,致病菌,categorical,,None,E_coli,Klebsiella,Proteus,Enterococcus,Pseudomonas,Staphylococcus_saprophyticus,Candida,,,Y,无/大肠杆菌/克雷伯菌/变形杆菌/肠球菌/铜绿假单胞菌/腐生葡萄球菌/念珠菌,病原学
+Urine_Culture,e_coli,大肠杆菌,boolean,,,,,N,E. coli,75-95%单纯性UTI
+Urine_Culture,klebsiella,克雷伯菌,boolean,,,,,N,Klebsiella,革兰阴性
+Urine_Culture,proteus_mirabilis,奇异变形杆菌,boolean,,,,,N,Proteus,结石相关
+Urine_Culture,enterococcus,肠球菌,boolean,,,,,N,Enterococcus,导尿管相关
+Urine_Culture,pseudomonas,铜绿假单胞菌,boolean,,,,,N,P. aeruginosa,复杂性UTI
+Urine_Culture,s_saprophyticus,腐生葡萄球菌,boolean,,,,,N,S. saprophyticus,年轻女性
+
+Antibiotic_Susceptibility,antimicrobial_susceptibility,药敏试验,boolean,,,,,Y,AST,指导治疗
+Antibiotic_Susceptibility,esbl_producer,产ESBLs,boolean,,,,,N,超广谱β-内酰胺酶,耐药
+Antibiotic_Susceptibility,carbapenem_resistant,碳青霉烯耐药,boolean,,,,,N,CRE,多重耐药
+Antibiotic_Susceptibility,fluoroquinolone_resistant,喹诺酮耐药,boolean,,,,,N,FQ耐药,经验治疗失败
+
+Blood_Tests,wbc,白细胞计数,decimal,×10⁹/L,0-100,6690-2,,Y,WBC,感染
+Blood_Tests,crp,C反应蛋白,decimal,mg/L,0-500,1988-5,,Y,CRP,炎症
+Blood_Tests,procalcitonin,降钙素原,decimal,ng/mL,0-200,33959-8,,N,PCT,菌血症
+Blood_Tests,creatinine,肌酐,decimal,μmol/L,0-2000,2160-0,,Y,Cr,肾功能
+Blood_Tests,blood_culture,血培养,categorical,,Not_Done,Negative,Positive,,,Y,血培养,菌血症
+
+Imaging,renal_ultrasound,肾脏超声,boolean,,,,,Y,肾脏B超,积水/结石
+Imaging,hydronephrosis,肾积水,boolean,,,,,N,肾盂扩张,梗阻
+Imaging,ct_urography,CT尿路造影,boolean,,,,,N,CTU,复杂性UTI
+Imaging,renal_abscess,肾脓肿,boolean,,,,,N,肾皮质/肾周脓肿,并发症
+
+Complications,urosepsis,泌尿源性脓毒症,boolean,,,,,Y,UTI源性脓毒症,严重并发症
+Complications,septic_shock,脓毒性休克,boolean,,,,,Y,休克,危及生命
+Complications,acute_kidney_injury,急性肾损伤,boolean,,,,,Y,AKI,肾功能损害
+Complications,emphysematous_pyelonephritis,气肿性肾盂肾炎,boolean,,,,,N,产气菌,糖尿病/急诊
+Complications,papillary_necrosis,肾乳头坏死,boolean,,,,,N,乳头坏死,糖尿病/镰状细胞病
+
+Treatment_Uncomplicated_Cystitis,nitrofurantoin,呋喃妥因,boolean,,,,,Y,100mg bid×5天,一线
+Treatment_Uncomplicated_Cystitis,tmp_smx,复方新诺明,boolean,,,,,Y,TMP-SMX DS bid×3天,耐药率<20%
+Treatment_Uncomplicated_Cystitis,fosfomycin,磷霉素,boolean,,,,,Y,3g单剂,单剂治疗
+
+Treatment_Pyelonephritis,ciprofloxacin,环丙沙星,boolean,,,,,Y,500mg bid×7天或400mg IV q12h,喹诺酮
+Treatment_Pyelonephritis,levofloxacin,左氧氟沙星,boolean,,,,,Y,750mg qd×5天,喹诺酮
+Treatment_Pyelonephritis,ceftriaxone,头孢曲松,boolean,,,,,Y,1g qd,第三代头孢
+Treatment_Pyelonephritis,duration_pyelonephritis,肾盂肾炎疗程,integer,days,0-21,,,Y,7-14天,充分疗程
+
+Treatment_Complicated_UTI,piperacillin_tazobactam,哌拉西林他唑巴坦,boolean,,,,,N,4.5g q6h,广谱
+Treatment_Complicated_UTI,meropenem,美罗培南,boolean,,,,,N,1g q8h,ESBLs
+Treatment_Complicated_UTI,ertapenem,厄他培南,boolean,,,,,N,1g qd,ESBLs门诊
+
+Treatment_CAUTI,catheter_removal,拔除导尿管,boolean,,,,,Y,移除导尿管,源控制
+Treatment_CAUTI,catheter_change,更换导尿管,boolean,,,,,N,新导尿管,尿培养前
+
+Pregnancy_UTI,asymptomatic_bacteriuria_pregnancy,孕期无症状菌尿,boolean,,,,,N,孕妇筛查,需治疗
+Pregnancy_UTI,pregnancy_safe_antibiotics,孕期安全抗生素,categorical,,None,Amoxicillin,Cephalexin,Nitrofurantoin,,,N,阿莫西林/头孢氨苄/呋喃妥因,避免喹诺酮
+
+Recurrent_UTI_Prevention,prophylaxis,预防用药,boolean,,,,,N,低剂量抗生素,反复感染
+Prophylaxis,tmp_smx_prophylaxis,TMP-SMX预防,boolean,,,,,N,半片qd或3次/周,预防方案
+Prophylaxis,nitrofurantoin_prophylaxis,呋喃妥因预防,boolean,,,,,N,50-100mg qd,预防方案
+Prophylaxis,post_coital_prophylaxis,性交后预防,boolean,,,,,N,性交后单剂,女性
+Prophylaxis,cranberry_products,蔓越莓制品,boolean,,,,,N,蔓越莓,辅助预防
+Prophylaxis,vaginal_estrogen,阴道雌激素,boolean,,,,,N,绝经后女性,阴道菌群
+
+Outcome,clinical_cure,临床治愈,boolean,,,,,Y,症状消失,疗效
+Outcome,microbiological_cure,微生物学治愈,boolean,,,,,N,尿培养阴转,病原清除
+Outcome,relapse,复发,boolean,,,,,Y,同一菌株再发,治疗不充分
+Outcome,reinfection,再感染,boolean,,,,,Y,不同菌株,新发感染
+
+Report,provider,诊疗医师,string,,,,,Y,医师姓名,责任医师
+Report,report_date,报告日期,date,,,,,Y,报告时间,文档记录

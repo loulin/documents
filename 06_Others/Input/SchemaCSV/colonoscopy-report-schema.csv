@@ -1,227 +1,153 @@
-字段名 (英文),字段名 (中文),数据类型,描述,示例
-examDate,检查日期,String,进行结肠镜检查的日期,2025-08-15
-examTime,检查时间,String,检查开始时间,09:30
-examDuration,检查时长,Number,"检查持续时间。<br>单位: 分钟<br>**标准**: 插镜至回盲部约10-15分钟，退镜观察≥6分钟",25
-examType,检查类型,String,"检查类型。<br>**建议值**: `普通结肠镜`, `无痛结肠镜`, `放大结肠镜`, `窄带成像(NBI)`, `色素内镜`, `超声内镜`, `胶囊内镜`",无痛结肠镜
-indication,检查指征,String,"检查指征。<br>**建议值**: `便血/黑便`, `腹痛/腹胀`, `排便习惯改变`, `腹泻/便秘`, `贫血`, `体检筛查`, `肠癌家族史筛查`, `IBD随访`, `息肉术后随访`, `肿瘤术后随访`, `其他`",体检筛查
-clinicalDiagnosis,临床诊断,String,检查前临床诊断,结肠癌筛查
+Category,Field_Name,Chinese_Name,Data_Type,Unit,Valid_Range,LOINC_Code,Required,Description,Clinical_Significance
+Basic_Info,patient_id,患者ID,string,,,,,Y,唯一患者标识,用于患者追踪
+Basic_Info,exam_date,检查日期,date,,,,,Y,结肠镜检查日期,检查时间点
+Basic_Info,exam_id,检查编号,string,,,,,N,肠镜报告编号,唯一检查标识
+Basic_Info,age,年龄,integer,years,18-120,,,Y,患者年龄,筛查年龄
+Basic_Info,gender,性别,categorical,,,"Male,Female",,,Y,患者性别,结直肠癌风险
 
-# 患者准备
-preparation.bowelPrep,准备.肠道准备,String,"肠道准备方法。<br>**建议值**: `聚乙二醇(PEG)`, `硫酸镁`, `甘露醇`, `磷酸钠`, `复方聚乙二醇`, `联合方案`",聚乙二醇(PEG)
-preparation.bowelPrepQuality,准备.肠道准备质量,String,"肠道准备质量(Boston评分或Ottawa评分)。<br>**Boston**: 0-9分，≥6分合格<br>**建议值**: `优秀`, `良好`, `尚可`, `差`",良好
-preparation.bostonScore,准备.Boston评分,String,"Boston肠道准备评分(如使用)。<br>**评分**: 右半结肠+横结肠+左半结肠，各0-3分，总分0-9分<br>**合格**: ≥6分且每段≥2分",8分(右3+横2+左3)
-preparation.fasting,准备.禁食时间,Number,"禁食时间。<br>单位: 小时<br>**要求**: 检查前至少4-6小时禁食",6
-preparation.consent,准备.知情同意,String,"知情同意。<br>**建议值**: `已签署`, `未签署`",已签署
-preparation.anesthesia,准备.麻醉方式,String,"麻醉方式。<br>**建议值**: `无麻醉`, `局部麻醉`, `静脉麻醉(丙泊酚等)`",静脉麻醉(丙泊酚)
-preparation.premedication,准备.术前用药,String,术前用药,解痉药(山莨菪碱)
+Procedure,indication,检查指征,categorical,,,"Screening,Diagnostic,Surveillance,Symptoms,GI_Bleeding,Anemia,Diarrhea,Constipation,Abdominal_Pain,IBD_Monitoring,Polyp_Follow_Up,Family_History,Other",,,Y,检查适应证,临床目的
+Procedure,screening_category,筛查类别,categorical,,,"Average_Risk,High_Risk,Family_History,IBD,Previous_Polyp,NA",,,N,筛查风险分层,筛查策略
+Procedure,endoscopist,内镜医师,string,,,,,N,操作医师姓名,质控
+Procedure,fellows_involvement,进修医师参与,categorical,,,"Yes,No",,,N,是否有学员参与,教学因素
+Procedure,sedation,镇静方式,categorical,,,"Conscious_Sedation,Deep_Sedation,General_Anesthesia,None",,,Y,镇静类型,舒适化
+Procedure,sedation_drug,镇静药物,categorical,,,"Propofol,Midazolam,Fentanyl,Combination,None,Other",,,N,镇静药物种类,麻醉方式
+Procedure,scope_type,内镜类型,categorical,,,"Standard,Pediatric,Magnifying,NBI,Chromoendoscopy",,,N,肠镜设备,检查技术
 
-# 内镜设备
-equipment.colonoscopeType,设备.肠镜类型,String,"肠镜类型。<br>**建议值**: `标准结肠镜`, `儿科结肠镜`, `NBI结肠镜`, `放大结肠镜`, `超声内镜`",标准结肠镜
-equipment.manufacturer,设备.生产厂家,String,"内镜生产厂家。<br>**建议值**: `奥林巴斯`, `富士`, `宾得`, `其他`",奥林巴斯
-equipment.model,设备.型号,String,内镜型号,CF-HQ290
+Cecal_Intubation,cecum_reached,到达回盲部,categorical,,,"Yes,No",,,Y,是否到盲肠,完整性核心
+Cecal_Intubation,cecal_landmark,盲肠标志,categorical,,,"Ileocecal_Valve,Appendiceal_Orifice,Both,None",,,N,盲肠解剖标志,到盲证据
+Cecal_Intubation,cecal_intubation_time,进镜时间,integer,minutes,0-120,,,N,到达盲肠时间,操作难度
+Cecal_Intubation,incomplete_reason,未到盲原因,categorical,,,"Poor_Preparation,Severe_Diverticulosis,Stricture,Obstructing_Mass,Angulation,Patient_Intolerance,Technical_Difficulty,Other,NA",,,N,未完成原因,质量分析
 
-# 插镜过程
-insertion.difficulty,插镜.插镜难度,String,"插镜难度。<br>**建议值**: `顺利`, `稍困难`, `困难`, `失败`",顺利
-insertion.cecalIntubation,插镜.到达回盲部,String,"是否到达回盲部。<br>**建议值**: `是`, `否`<br>**标准**: 结肠镜检查应到达回盲部",是
-insertion.cecalIntubationTime,插镜.到达回盲部时间,Number,"到达回盲部所需时间。<br>单位: 分钟<br>**标准**: <10分钟",8
-insertion.cecalLandmark,插镜.回盲部标志,String,"回盲部标志确认。<br>**建议值**: `回盲瓣`, `阑尾开口`, `回肠末段`, `三角形肠腔`, `多项标志`",回盲瓣+阑尾开口
-insertion.terminalIleum,插镜.回肠末段,String,"是否进入回肠末段。<br>**建议值**: `是`, `否`, `未尝试`",是
-insertion.ilealLength,插镜.回肠进入长度,Number,"进入回肠末段长度(如进入)。<br>单位: cm",10
-insertion.loopFormation,插镜.成袢,String,"插镜过程成袢。<br>**建议值**: `未成袢`, `轻度成袢(已解除)`, `严重成袢`",未成袢
-insertion.patientTolerance,插镜.患者耐受性,String,"患者耐受性。<br>**建议值**: `良好`, `一般`, `差(疼痛明显)`",良好
-insertion.complications,插镜.插镜并发症,String,"插镜过程并发症。<br>**建议值**: `无`, `肠壁损伤`, `出血`, `穿孔`, `其他`",无
+Bowel_Preparation,prep_quality,肠道准备质量,categorical,,,"Excellent,Good,Adequate,Inadequate,Poor",,,Y,肠道清洁度,质控核心
+Bowel_Preparation,bbps_score,BBPS评分,integer,,0-9,,,N,Boston评分,标准化评估
+Bowel_Preparation,bbps_right,BBPS右半结肠,integer,,0-3,,,N,右侧BBPS,分段评分
+Bowel_Preparation,bbps_transverse,BBPS横结肠,integer,,0-3,,,N,横结肠BBPS,分段评分
+Bowel_Preparation,bbps_left,BBPS左半结肠,integer,,0-3,,,N,左侧BBPS,分段评分
+Bowel_Preparation,prep_agent,肠道准备药物,categorical,,,"PEG,Sodium_Picosulfate,Magnesium_Citrate,Other",,,N,泻药种类,准备方案
 
-# 回肠末段 (Terminal Ileum)
-ileum.examined,回肠.是否检查,String,"是否检查回肠末段。<br>**建议值`: `是`, `否`, `未能进入`<br>**适应证**: IBD、不明原因腹泻/出血",是
-ileum.mucosa,回肠.黏膜,String,"回肠黏膜。<br>**建议值**: `光滑绒毛状`, `充血`, `水肿`, `糜烂`, `溃疡`, `结节状`",光滑绒毛状
-ileum.villi,回肠.绒毛,String,"回肠绒毛。<br>**建议值**: `正常`, `平坦`, `消失`",正常
-ileum.peristalsis,回肠.蠕动,String,"回肠蠕动。<br>**建议值**: `正常`, `亢进`, `减弱`",正常
-ileum.ulcers,回肠.溃疡,String,"回肠溃疡(克罗恩病)。<br>**建议值**: `无`, `纵行溃疡`, `阿弗他溃疡`, `铺路石样改变`",无
-ileum.mass,回肠.肿物,String,"回肠肿物。<br>**建议值**: `无`, `息肉`, `肿块`, `淋巴瘤`",无
+Terminal_Ileum,ileum_intubated,回肠插入,categorical,,,"Yes,No,Attempted",,,N,是否进入回肠,回肠检查
+Terminal_Ileum,ileum_depth,回肠深度,decimal,cm,0-50,,,N,回肠插入深度,检查范围
+Terminal_Ileum,ileum_findings,回肠发现,categorical,,,"Normal,Ileitis,Ulcer,Mass,Other,NA",,,N,回肠病变,IBD/小肠疾病
 
-# 回盲瓣 (Ileocecal Valve)
-ileocecalValve.appearance,回盲瓣.外观,String,"回盲瓣外观。<br>**建议值**: `正常唇状`, `增厚`, `变形`, `固定`, `肿大`",正常唇状
-ileocecalValve.opening,回盲瓣.开放,String,"回盲瓣开放。<br>**建议值**: `正常`, `松弛`, `狭窄`, `闭锁`",正常
-ileocecalValve.mucosa,回盲瓣.黏膜,String,"回盲瓣黏膜。<br>**建议值**: `光滑`, `充血`, `糜烂`, `溃疡`, `肿物`",光滑
+Colon_Anatomy,rectum,直肠,categorical,,,"Normal,Abnormal,Not_Visualized",,,Y,直肠,解剖部位
+Colon_Anatomy,sigmoid,乙状结肠,categorical,,,"Normal,Abnormal,Not_Visualized",,,Y,乙状结肠,解剖部位
+Colon_Anatomy,descending,降结肠,categorical,,,"Normal,Abnormal,Not_Visualized",,,Y,降结肠,解剖部位
+Colon_Anatomy,splenic_flexure,脾曲,categorical,,,"Normal,Abnormal,Not_Visualized",,,Y,脾曲,解剖部位
+Colon_Anatomy,transverse,横结肠,categorical,,,"Normal,Abnormal,Not_Visualized",,,Y,横结肠,解剖部位
+Colon_Anatomy,hepatic_flexure,肝曲,categorical,,,"Normal,Abnormal,Not_Visualized",,,Y,肝曲,解剖部位
+Colon_Anatomy,ascending,升结肠,categorical,,,"Normal,Abnormal,Not_Visualized",,,Y,升结肠,解剖部位
+Colon_Anatomy,cecum,盲肠,categorical,,,"Normal,Abnormal,Not_Visualized",,,Y,盲肠,解剖部位
 
-# 盲肠 (Cecum)
-cecum.examined,盲肠.是否检查,String,"是否检查盲肠。<br>**建议值**: `是`, `否`",是
-cecum.mucosa,盲肠.黏膜,String,"盲肠黏膜。<br>**建议值**: `光滑`, `充血`, `水肿`, `糜烂`, `溃疡`, `颗粒状`",光滑
-cecum.vascularPattern,盲肠.血管纹理,String,"血管纹理。<br>**建议值**: `清晰`, `模糊`, `充血`, `不清`",清晰
-cecum.appendicealOrifice,盲肠.阑尾开口,String,"阑尾开口。<br>**建议值**: `可见`, `充血`, `隆起`, `未见`",可见
-cecum.polyps,盲肠.息肉,String,"盲肠息肉。<br>**建议值**: `无`, `单发`, `多发`, `详见息肉记录`",无
-cecum.diverticulum,盲肠.憩室,String,"盲肠憩室。<br>**建议值**: `无`, `单发`, `多发`",无
+Polyp_Detection,polyps_found,发现息肉,categorical,,,"Yes,No",,,Y,是否有息肉,筛查关键
+Polyp_Detection,total_polyps,息肉总数,integer,,0-100,,,N,息肉总数量,腺瘤检出率
+Polyp_Detection,adenoma_detected,腺瘤检出,categorical,,,"Yes,No,Unknown",,,N,是否检出腺瘤,ADR指标
+Polyp_Detection,adenoma_number,腺瘤数量,integer,,0-100,,,N,腺瘤个数,高危腺瘤
 
-# 升结肠 (Ascending Colon)
-ascending.examined,升结肠.是否检查,String,"是否检查升结肠。<br>**建议值**: `是`, `否`",是
-ascending.mucosa,升结肠.黏膜,String,"升结肠黏膜。<br>**建议值**: `光滑`, `充血`, `水肿`, `糜烂`, `溃疡`, `假息肉`",光滑
-ascending.haustra,升结肠.结肠袋,String,"结肠袋。<br>**建议值**: `正常`, `浅平`, `消失(铅管样)`<br>**UC**: 结肠袋消失",正常
-ascending.vascularPattern,升结肠.血管纹理,String,"血管纹理。<br>**建议值**: `清晰`, `模糊`, `充血`, `不清`",清晰
-ascending.polyps,升结肠.息肉,String,"升结肠息肉。<br>**建议值**: `无`, `单发`, `多发`, `详见息肉记录`",单发
-ascending.diverticula,升结肠.憩室,String,"升结肠憩室。<br>**建议值**: `无`, `单发`, `多发`, `憩室炎`",无
+Polyp_Characteristics,polyp_1_location,息肉1部位,categorical,,,"Cecum,Ascending,Hepatic_Flexure,Transverse,Splenic_Flexure,Descending,Sigmoid,Rectum,Multiple,NA",,,N,息肉位置,定位
+Polyp_Characteristics,polyp_1_size,息肉1大小,decimal,mm,0-100,,,N,息肉最大径,≥10mm进展期
+Polyp_Characteristics,polyp_1_morphology,息肉1形态,categorical,,,"Pedunculated,Sessile,Flat,Depressed,NA",,,N,Paris分型,切除方式
+Polyp_Characteristics,polyp_1_paris,息肉1Paris分型,categorical,,,"Ip,Isp,Is,IIa,IIb,IIc,III,NA",,,N,Paris详细分型,表面形态
+Polyp_Characteristics,polyp_1_histology,息肉1病理,categorical,,,"Tubular_Adenoma,Tubulovillous_Adenoma,Villous_Adenoma,Serrated,Hyperplastic,SSA_P,TSA,Inflammatory,Hamartomatous,Carcinoma,Pending,NA",,,N,组织学类型,癌变风险
+Polyp_Characteristics,polyp_1_dysplasia,息肉1异型增生,categorical,,,"Low_Grade,High_Grade,None,Pending,NA",,,N,异型增生程度,癌前病变
+Polyp_Characteristics,polyp_1_removed,息肉1切除,categorical,,,"Yes,No,Partial,NA",,,N,是否切除,治疗完成
 
-# 肝曲 (Hepatic Flexure)
-hepatic.examined,肝曲.是否检查,String,"是否检查肝曲。<br>**建议值**: `是`, `否`",是
-hepatic.mucosa,肝曲.黏膜,String,"肝曲黏膜。<br>**建议值**: `光滑`, `充血`, `糜烂`, `溃疡`",光滑
-hepatic.polyps,肝曲.息肉,String,"肝曲息肉。<br>**建议值**: `无`, `单发`, `多发`",无
+Polyp_Characteristics,polyp_2_location,息肉2部位,categorical,,,"Cecum,Ascending,Hepatic_Flexure,Transverse,Splenic_Flexure,Descending,Sigmoid,Rectum,NA",,,N,息肉2位置,多发息肉
+Polyp_Characteristics,polyp_2_size,息肉2大小,decimal,mm,0-100,,,N,息肉2大小,评估
+Polyp_Characteristics,polyp_2_morphology,息肉2形态,categorical,,,"Pedunculated,Sessile,Flat,Depressed,NA",,,N,息肉2形态,切除策略
+Polyp_Characteristics,polyp_2_histology,息肉2病理,categorical,,,"Tubular_Adenoma,Tubulovillous_Adenoma,Villous_Adenoma,Serrated,Hyperplastic,SSA_P,Pending,NA",,,N,息肉2病理,风险评估
+Polyp_Characteristics,polyp_2_removed,息肉2切除,categorical,,,"Yes,No,Partial,NA",,,N,是否切除2,治疗
 
-# 横结肠 (Transverse Colon)
-transverse.examined,横结肠.是否检查,String,"是否检查横结肠。<br>**建议值**: `是`, `否`",是
-transverse.mucosa,横结肠.黏膜,String,"横结肠黏膜。<br>**建议值**: `光滑`, `充血`, `水肿`, `糜烂`, `溃疡`, `黑变病`",光滑
-transverse.melanosisCol,横结肠.黑变病,String,"结肠黑变病。<br>**建议值**: `无`, `轻度`, `中度`, `重度`<br>**原因**: 长期服用蒽醌类泻药",无
-transverse.vascularPattern,横结肠.血管纹理,String,"血管纹理。<br>**建议值**: `清晰`, `模糊`, `充血`",清晰
-transverse.polyps,横结肠.息肉,String,"横结肠息肉。<br>**建议值**: `无`, `单发`, `多发`",无
-transverse.diverticula,横结肠.憩室,String,"横结肠憩室。<br>**建议值**: `无`, `单发`, `多发`",无
+Advanced_Adenoma,advanced_adenoma,进展期腺瘤,categorical,,,"Yes,No,Unknown",,,N,进展期腺瘤,高危病变
+Advanced_Adenoma,aa_criteria,进展期标准,categorical,,,"Size_10mm_plus,Villous_Component,High_Grade_Dysplasia,Multiple,NA",,,N,进展期腺瘤定义,≥10mm/绒毛/HGD
+Advanced_Adenoma,serrated_polyposis,锯齿状息肉病,categorical,,,"Yes,No,Suspected",,,N,锯齿状息肉综合征,WHO标准
 
-# 脾曲 (Splenic Flexure)
-splenic.examined,脾曲.是否检查,String,"是否检查脾曲。<br>**建议值**: `是`, `否`",是
-splenic.mucosa,脾曲.黏膜,String,"脾曲黏膜。<br>**建议值**: `光滑`, `充血`, `糜烂`, `溃疡`",光滑
-splenic.polyps,脾曲.息肉,String,"脾曲息肉。<br>**建议值**: `无`, `单发`, `多发`",无
+Colonic_Findings,colitis,结肠炎,categorical,,,"Yes,No",,,N,结肠炎,炎症性肠病
+Colitis,colitis_type,结肠炎类型,categorical,,,"Ulcerative_Colitis,Crohns,Infectious,Ischemic,Radiation,Microscopic,Indeterminate,NA",,,N,结肠炎分型,病因诊断
+Colitis,colitis_extent,结肠炎范围,categorical,,,"Proctitis,Left_Sided,Extensive,Pancolitis,Segmental,NA",,,N,炎症范围,IBD分型
+Colitis,mayo_score,Mayo内镜评分,categorical,,,"0,1,2,3,NA",,,N,Mayo评分,UC活动度
+Colitis,ses_cd,SES-CD评分,integer,,0-60,,,N,简化内镜评分,CD活动度
+Colitis,ulceration,溃疡,categorical,,,"Yes,No,NA",,,N,溃疡形成,严重程度
+Colitis,pseudopolyps,假息肉,categorical,,,"Yes,No,NA",,,N,炎性息肉,慢性炎症
+Colonic_Findings,diverticulosis,憩室病,categorical,,,"Yes,No",,,N,结肠憩室,常见发现
+Diverticulosis,diverticulosis_severity,憩室程度,categorical,,,"Mild,Moderate,Severe,NA",,,N,憩室数量,憩室炎风险
+Diverticulosis,diverticulosis_location,憩室部位,categorical,,,"Sigmoid,Descending,Left_Sided,Pan_Colonic,Right_Sided,NA",,,N,憩室分布,亚洲右侧多
+Diverticulosis,diverticulitis,憩室炎,categorical,,,"Acute,Chronic,No,NA",,,N,憩室炎症,并发症
+Colonic_Findings,hemorrhoids,痔疮,categorical,,,"Internal,External,Mixed,None",,,N,痔核,出血原因
+Colonic_Findings,anal_fissure,肛裂,categorical,,,"Yes,No",,,N,肛管裂伤,疼痛出血
+Colonic_Findings,melanosis_coli,结肠黑变病,categorical,,,"Yes,No",,,N,黑变病,蒽醌类泻药
 
-# 降结肠 (Descending Colon)
-descending.examined,降结肠.是否检查,String,"是否检查降结肠。<br>**建议值**: `是`, `否`",是
-descending.mucosa,降结肠.黏膜,String,"降结肠黏膜。<br>**建议值**: `光滑`, `充血`, `水肿`, `糜烂`, `溃疡`",光滑
-descending.haustra,降结肠.结肠袋,String,"结肠袋。<br>**建议值**: `正常`, `浅平`, `消失`",正常
-descending.vascularPattern,降结肠.血管纹理,String,"血管纹理。<br>**建议值**: `清晰`, `模糊`, `充血`",清晰
-descending.polyps,降结肠.息肉,String,"降结肠息肉。<br>**建议值**: `无`, `单发`, `多发`",无
-descending.diverticula,降结肠.憩室,String,"降结肠憩室。<br>**建议值**: `无`, `单发`, `多发`, `憩室炎`<br>**好发**: 乙状结肠、降结肠",无
+Mass_Lesion,mass_found,占位性病变,categorical,,,"Yes,No",,,N,肿块/肿瘤,恶性可能
+Mass_Lesion,mass_location,肿块部位,categorical,,,"Cecum,Ascending,Hepatic_Flexure,Transverse,Splenic_Flexure,Descending,Sigmoid,Rectum,Multiple,NA",,,N,肿瘤位置,手术计划
+Mass_Lesion,mass_size,肿块大小,decimal,cm,0-30,,,N,肿块最大径,T分期
+Mass_Lesion,mass_morphology,肿块形态,categorical,,,"Polypoid,Ulcerative,Infiltrative,Annular_Stenotic,Flat,NA",,,N,肿瘤形态,Borrmann样
+Mass_Lesion,mass_obstruction,梗阻,categorical,,,"Complete,Partial,None,NA",,,N,肠腔梗阻,急症
+Mass_Lesion,scope_passage,内镜通过,categorical,,,"Yes,No,NA",,,N,镜身能否通过,狭窄程度
+Mass_Lesion,distance_from_av,距肛门距离,decimal,cm,0-200,,,N,病变距肛缘,直肠癌分期
 
-# 乙状结肠 (Sigmoid Colon)
-sigmoid.examined,乙状结肠.是否检查,String,"是否检查乙状结肠。<br>**建议值**: `是`, `否`",是
-sigmoid.mucosa,乙状结肠.黏膜,String,"乙状结肠黏膜。<br>**建议值**: `光滑`, `充血`, `水肿`, `糜烂`, `溃疡`",光滑
-sigmoid.haustra,乙状结肠.结肠袋,String,"结肠袋。<br>**建议值**: `正常`, `浅平`, `消失`",正常
-sigmoid.tortuosity,乙状结肠.迂曲,String,"乙状结肠迂曲程度。<br>**建议值**: `正常`, `轻度迂曲`, `重度迂曲`<br>**注**: 重度迂曲增加插镜难度",轻度迂曲
-sigmoid.polyps,乙状结肠.息肉,String,"乙状结肠息肉。<br>**建议值**: `无`, `单发`, `多发`",无
-sigmoid.diverticula,乙状结肠.憩室,String,"乙状结肠憩室。<br>**建议值**: `无`, `单发`, `多发`, `憩室炎`<br>**好发部位**: 乙状结肠最常见",无
+Bleeding,bleeding_source,出血来源,categorical,,,"Identified,Not_Identified,No_Active_Bleeding",,,N,出血源定位,下消化道出血
+Bleeding,bleeding_location,出血部位,categorical,,,"Cecum,Ascending,Transverse,Descending,Sigmoid,Rectum,Anus,Diffuse,Unknown",,,N,出血位置,病变定位
+Bleeding,bleeding_type,出血类型,categorical,,,"Arterial,Venous,Oozing,Diverticular,Polyp,Tumor,Hemorrhoidal,Ischemia,Other,NA",,,N,出血病因,治疗策略
+Bleeding,stigmata_bleeding,出血征象,categorical,,,"Active_Spurting,Oozing,Visible_Vessel,Adherent_Clot,Flat_Spot,None",,,N,出血Forrest分级,再出血风险
 
-# 直肠 (Rectum)
-rectum.examined,直肠.是否检查,String,"是否检查直肠。<br>**建议值**: `是`, `否`",是
-rectum.mucosa,直肠.黏膜,String,"直肠黏膜。<br>**建议值**: `光滑`, `充血`, `水肿`, `糜烂`, `溃疡`, `痔样改变`",光滑
-rectum.vascularPattern,直肠.血管纹理,String,"血管纹理。<br>**建议值**: `清晰`, `模糊`, `充血`, `静脉曲张`",清晰
-rectum.valves,直肠.直肠瓣,String,"直肠瓣(Houston瓣)。<br>**建议值**: `可见`, `不清`, `消失`",可见
-rectum.polyps,直肠.息肉,String,"直肠息肉。<br>**建议值**: `无`, `单发`, `多发`",无
-rectum.hemorrhoids,直肠.内痔,String,"内痔。<br>**建议值**: `无`, `Ⅰ度`, `Ⅱ度`, `Ⅲ度`, `Ⅳ度`",无
-rectum.proctitis,直肠.直肠炎,String,"直肠炎。<br>**建议值**: `无`, `轻度`, `中度`, `重度`<br>**UC**: 多从直肠开始",无
+Other_Findings,vascular_ectasia,血管扩张,categorical,,,"Yes,No",,,N,血管发育不良,GAVE/出血
+Other_Findings,lipoma,脂肪瘤,categorical,,,"Yes,No",,,N,脂肪瘤,黏膜下病变
+Other_Findings,external_compression,外压征,categorical,,,"Yes,No",,,N,肠腔外压,腹腔肿物
+Other_Findings,anastomosis,吻合口,categorical,,,"Normal,Stenosis,Leak,Ulcer,Recurrence,NA",,,N,术后吻合口,术后随访
+Other_Findings,stoma,造口,categorical,,,"Normal,Stenosis,Prolapse,Retraction,Hernia,NA",,,N,造口情况,造口评估
 
-# 肛管/齿状线 (Anal Canal)
-anal.examined,肛管.是否检查,String,"是否检查肛管。<br>**建议值**: `是`, `否`, `退镜时观察`",退镜时观察
-anal.dentateLineVisible,肛管.齿状线,String,"齿状线可见性。<br>**建议值**: `清晰可见`, `模糊`, `未见`",清晰可见
-anal.hemorrhoids,肛管.痔疮,String,"肛管痔疮。<br>**建议值**: `无`, `内痔`, `外痔`, `混合痔`",无
-anal.fissure,肛管.肛裂,String,"肛裂。<br>**建议值**: `无`, `有`",无
-anal.fistula,肛管.肛瘘,String,"肛瘘。<br>**建议值**: `无`, `可疑`, `有`",无
+Biopsy,biopsy_taken,活检,categorical,,,"Yes,No",,,Y,是否取活检,病理诊断
+Biopsy,biopsy_number,活检数量,integer,,0-50,,,N,活检标本数,充分性
+Biopsy,biopsy_sites,活检部位,string,,,,,N,活检位置描述,病变来源
+Biopsy,biopsy_indication,活检指征,categorical,,,"Suspicious_Malignancy,Colitis_Diagnosis,Polyp,Stricture,Ulcer,Surveillance,Other,NA",,,N,活检原因,临床目的
+Biopsy,random_biopsy,随机活检,categorical,,,"Yes,No",,,N,IBD随机活检,异型增生监测
 
-# 息肉详细记录 (Polyp Documentation)
-polyp.totalNumber,息肉.总数量,Number,"发现息肉总数量。<br>**注**: 如>20个考虑息肉病",1
-polyp.largestSize,息肉.最大直径,Number,"最大息肉直径。<br>单位: mm<br>**分级**: <5mm微小, 5-9mm小, 10-19mm中, ≥20mm大",8
+Polypectomy,polypectomy_performed,息肉切除术,categorical,,,"Yes,No",,,N,是否息肉切除,治疗性操作
+Polypectomy,polypectomy_technique,切除技术,categorical,,,"Cold_Snare,Hot_Snare,Cold_Forceps,Hot_Forceps,EMR,ESD,Hybrid,NA",,,N,切除方法,操作技术
+Polypectomy,complete_resection,完整切除,categorical,,,"Yes,No,Piecemeal,Uncertain,NA",,,N,是否整块切除,复发风险
+Polypectomy,tattooing,标记,categorical,,,"Yes,No",,,N,墨汁标记,外科定位
+Polypectomy,retrieval,标本回收,categorical,,,"Yes,No,Partial,NA",,,N,标本是否回收,病理送检
 
-# 息肉1
-polyp1.location,息肉1.部位,String,"息肉部位。<br>**建议值**: `回肠`, `盲肠`, `升结肠`, `肝曲`, `横结肠`, `脾曲`, `降结肠`, `乙状结肠`, `直肠`",升结肠
-polyp1.distance,息肉1.距肛门距离,Number,"距肛门距离。<br>单位: cm",65
-polyp1.size,息肉1.大小,Number,"息肉大小(直径)。<br>单位: mm",8
-polyp1.morphology,息肉1.形态,String,"息肉形态(Paris分类)。<br>**建议值**: `0-Ip(有蒂)`, `0-Is(无蒂隆起)`, `0-Isp(亚蒂)`, `0-IIa(平坦隆起)`, `0-IIb(完全平坦)`, `0-IIc(平坦凹陷)`, `0-III(凹陷型)`",0-Is(无蒂隆起)
-polyp1.surface,息肉1.表面,String,"息肉表面。<br>**建议值**: `光滑`, `颗粒状`, `绒毛状`, `分叶状`, `糜烂`, `凹陷`",光滑
-polyp1.color,息肉1.颜色,String,"息肉颜色。<br>**建议值**: `同周围黏膜`, `发红`, `苍白`, `暗红`",同周围黏膜
-polyp1.pitPattern,息肉1.腺管开口型,String,"腺管开口型(Kudo分型，放大内镜/NBI)。<br>**建议值**: `I型(正常圆形)`, `II型(星芒状)`, `IIIS型(管状/小圆形)`, `IIIL型(管状/粗大圆形)`, `IV型(脑回样)`, `V型(无结构)`<br>**V型**: 高度提示癌",未评估
-polyp1.niceClassification,息肉1.NICE分型,String,"NICE分型(NBI窄带成像)。<br>**Type 1**: 增生性息肉<br>**Type 2**: 腺瘤<br>**Type 3**: 深部浸润癌<br>**建议值**: `Type 1`, `Type 2`, `Type 3`, `未评估`",未评估
-polyp1.predictedHistology,息肉1.预测病理,String,"预测病理类型。<br>**建议值**: `增生性息肉`, `管状腺瘤`, `绒毛状腺瘤`, `管状绒毛状腺瘤`, `锯齿状病变`, `可疑癌`, `待病理确认`",管状腺瘤(预测)
-polyp1.intervention,息肉1.处理方式,String,"息肉处理方式。<br>**建议值**: `未处理`, `冷活检钳切除`, `热活检钳切除`, `冷圈套切除(CSP)`, `热圈套切除(HSP)`, `分块切除(EMR)`, `内镜黏膜下剥离(ESD)`, `活检`",冷圈套切除(CSP)
-polyp1.retrieval,息肉1.标本回收,String,"标本是否回收送病理。<br>**建议值**: `是`, `否(丢失)`, `烧灼(未回收)`",是
-polyp1.complications,息肉1.并发症,String,"息肉切除并发症。<br>**建议值**: `无`, `即刻出血`, `迟发出血`, `穿孔`, `凝固综合征`",无
+Hemostasis,hemostasis_performed,止血治疗,categorical,,,"Yes,No",,,N,内镜止血,治疗性操作
+Hemostasis,hemostasis_method,止血方法,categorical,,,"Epinephrine_Injection,Clip,APC,Coagulation,Band_Ligation,Combination,NA",,,N,止血技术,治疗方式
+Hemostasis,hemostasis_success,止血成功,categorical,,,"Yes,No,NA",,,N,即刻止血效果,治疗效果
 
-# 肿物/病变
-mass.present,肿物.是否存在,String,"是否发现肿物/肿块。<br>**建议值**: `否`, `是`",否
-mass.location,肿物.部位,String,"肿物部位(如有)。<br>**建议值**: `回肠`, `盲肠`, `升结肠`, `肝曲`, `横结肠`, `脾曲`, `降结肠`, `乙状结肠`, `直肠`",无
-mass.distance,肿物.距肛门距离,Number,"距肛门距离(如有)。<br>单位: cm",无
-mass.size,肿物.大小,String,"肿物大小(如有)。<br>格式: 长×宽 cm 或 占周径比例",无
-mass.morphology,肿物.形态,String,"肿物形态(如有)。<br>**建议值**: `隆起型`, `溃疡型`, `浸润型`, `狭窄型`, `菜花状`, `环周生长`",无
-mass.surface,肿物.表面,String,"肿物表面(如有)。<br>**建议值**: `光滑`, `分叶状`, `颗粒状`, `糜烂`, `溃疡`, `污秽坏死`",无
-mass.margin,肿物.边界,String,"肿物边界(如有)。<br>**建议值**: `清楚`, `不清楚`",无
-mass.hardness,肿物.质地,String,"肿物质地(如有)。<br>**建议值**: `软`, `韧`, `硬`, `脆`",无
-mass.luminalNarrowing,肿物.管腔狭窄,String,"肿物导致管腔狭窄(如有)。<br>**建议值**: `无狭窄`, `轻度狭窄(镜可通过)`, `中度狭窄(镜勉强通过)`, `重度狭窄(镜无法通过)`",无
-mass.bleeding,肿物.出血,String,"肿物出血(如有)。<br>**建议值**: `无`, `触之易出血`, `自发性出血`",无
-mass.ulceration,肿物.溃疡,String,"肿物溃疡(如有)。<br>**建议值**: `无溃疡`, `表浅溃疡`, `深大溃疡`",无
-mass.suspectedMalignancy,肿物.可疑恶性,String,"可疑恶性程度(如有)。<br>**建议值**: `良性可能`, `性质待定`, `可疑恶性`, `高度可疑恶性`",无
+Other_Intervention,stricture_dilation,狭窄扩张,categorical,,,"Yes,No",,,N,扩张术,梗阻治疗
+Other_Intervention,dilation_method,扩张方法,categorical,,,"Balloon,Through_Scope,Bougie,NA",,,N,扩张技术,治疗方式
+Other_Intervention,stent_placement,支架置入,categorical,,,"Yes,No",,,N,肠道支架,姑息治疗
+Other_Intervention,foreign_body_removal,异物取出,categorical,,,"Yes,No",,,N,异物取出术,紧急处理
+Other_Intervention,decompression,减压,categorical,,,"Yes,No",,,N,肠腔减压,急性假性梗阻
 
-# 溃疡
-ulcer.present,溃疡.是否存在,String,"是否发现溃疡。<br>**建议值**: `否`, `是`",否
-ulcer.location,溃疡.部位,String,"溃疡部位(如有)",无
-ulcer.number,溃疡.数量,Number,溃疡数量,0
-ulcer.size,溃疡.大小,String,"溃疡大小(如有)。<br>格式: 长×宽 cm",无
-ulcer.shape,溃疡.形态,String,"溃疡形态(如有)。<br>**建议值**: `圆形`, `椭圆形`, `不规则形`, `线性`, `地图状`",无
-ulcer.depth,溃疡.深度,String,"溃疡深度(如有)。<br>**建议值**: `表浅`, `中等`, `深大`, `穿透`",无
-ulcer.margin,溃疡.边缘,String,"溃疡边缘(如有)。<br>**建议值**: `整齐`, `不整齐`, `潜行性`, `隆起`",无
-ulcer.base,溃疡.基底,String,"溃疡基底(如有)。<br>**建议值**: `白苔覆盖`, `红色肉芽`, `血痂`, `污秽坏死`",无
-ulcer.distribution,溃疡.分布,String,"溃疡分布(如有)。<br>**建议值**: `散在`, `节段性`, `弥漫性`, `跳跃性`",无
+Complications,intraprocedural_complication,术中并发症,categorical,,,"Perforation,Bleeding,Post_Polypectomy_Syndrome,Cardiovascular,Respiratory,Splenic_Injury,None,Other",,,N,检查中并发症,安全性
+Complications,postprocedural_complication,术后并发症,categorical,,,"Delayed_Bleeding,Perforation,Post_Polypectomy_Syndrome,Infection,Pain,None,Other",,,N,检查后并发症,随访
+Complications,severity,并发症严重度,categorical,,,"Mild,Moderate,Severe,NA",,,N,并发症分级,ASGE标准
 
-# 炎症性肠病 (IBD) 评估
-ibd.suspicion,IBD.可疑IBD,String,"可疑炎症性肠病。<br>**建议值**: `否`, `可疑UC`, `可疑CD`, `IBD待分型`, `非IBD炎症`",否
-ibd.ucExtent,IBD.UC累及范围,String,"溃疡性结肠炎累及范围(如诊断UC)。<br>**建议值**: `直肠炎(E1)`, `左半结肠炎(E2)`, `广泛结肠炎(E3)`, `不适用`",不适用
-ibd.ucSeverity,IBD.UC严重程度,String,"UC严重程度(Mayo内镜评分)。<br>**建议值**: `正常/缓解(0分)`, `轻度(1分)`, `中度(2分)`, `重度(3分)`, `不适用`",不适用
-ibd.cdLocation,IBD.CD累及部位,String,"克罗恩病累及部位(如诊断CD)。<br>**建议值**: `回肠末段`, `回盲部`, `右半结肠`, `左半结肠`, `直肠`, `多节段`, `不适用`",不适用
-ibd.cdPattern,IBD.CD病变特征,String,"CD特征性病变(如诊断CD)。<br>**建议值**: `纵行溃疡`, `铺路石样改变`, `阿弗他溃疡`, `肠腔狭窄`, `瘘管`, `跳跃性病变`, `不适用`",不适用
-ibd.pseudopolyps,IBD.假息肉,String,"假息肉(炎性息肉)。<br>**建议值**: `无`, `少量`, `大量`<br>**见于**: UC、CD",无
+Withdrawal_Time,withdrawal_time,退镜时间,integer,minutes,0-60,,,N,退镜观察时间,质控核心≥6分钟
+Withdrawal_Time,adequate_inspection,充分观察,categorical,,,"Yes,No",,,N,退镜时充分观察,质量指标
 
-# 憩室病
-diverticulosis.present,憩室.是否存在,String,"是否发现憩室。<br>**建议值**: `否`, `是`",否
-diverticulosis.location,憩室.主要部位,String,"憩室主要分布(如有)。<br>**建议值**: `全结肠`, `左半结肠`, `右半结肠`, `乙状结肠`<br>**亚洲**: 右侧多见；**西方**: 左侧多见",无
-diverticulosis.severity,憩室.严重程度,String,"憩室严重程度(如有)。<br>**建议值**: `轻度(少量)`, `中度`, `重度(密集)`",无
-diverticulosis.inflammation,憩室.憩室炎,String,"憩室炎(如有)。<br>**建议值**: `无`, `疑似`, `确诊`<br>**征象**: 憩室周围充血水肿、脓液、出血",无
-diverticulosis.bleeding,憩室.出血,String,"憩室出血(如有)。<br>**建议值**: `无`, `活动性出血`, `陈旧性出血征象`",无
+Photo_Documentation,photo_cecum,盲肠照片,categorical,,,"Yes,No",,,N,盲肠标志照片,到盲证据
+Photo_Documentation,photo_polyp,息肉照片,categorical,,,"Yes,No,NA",,,N,息肉图像记录,病变记录
+Photo_Documentation,photo_biopsy,活检部位照片,categorical,,,"Yes,No,NA",,,N,活检位置照片,定位记录
+Photo_Documentation,total_images,图像总数,integer,,0-200,,,N,总照片数,记录完整性
 
-# 其他病变
-otherLesions.melanosis,其他病变.结肠黑变病,String,"结肠黑变病。<br>**建议值**: `无`, `轻度`, `中度`, `重度`, `节段性`<br>**原因**: 长期服用蒽醌类泻药(番泻叶等)",无
-otherLesions.angiodysplasia,其他病变.血管扩张,String,"血管扩张/血管畸形。<br>**建议值**: `无`, `有`<br>**好发**: 盲肠、升结肠",无
-otherLesions.lipoma,其他病变.脂肪瘤,String,"脂肪瘤。<br>**建议值**: `无`, `有`<br>**特征**: 黄色、柔软、枕征阳性",无
-otherLesions.externalCompression,其他病变.外压,String,"外压性改变。<br>**建议值**: `无`, `有`",无
-otherLesions.anastomosis,其他病变.吻合口,String,"吻合口(术后)。<br>**建议值**: `无`, `吻合口正常`, `吻合口狭窄`, `吻合口溃疡`, `吻合口复发`",无
-otherLesions.stoma,其他病变.造口,String,"造口(如有)。<br>**建议值**: `无`, `回肠造口`, `结肠造口`",无
+Pathology_Result,pathology_available,病理报告,categorical,,,"Available,Pending,Not_Done",,,N,病理结果状态,最终诊断
+Pathology_Result,adenoma_pathology,腺瘤病理,categorical,,,"Tubular,Tubulovillous,Villous,Serrated,NA",,,N,腺瘤组织学,分型
+Pathology_Result,carcinoma_in_situ,原位癌,categorical,,,"Yes,No,NA",,,N,原位癌/HGD,恶性病变
+Pathology_Result,invasive_carcinoma,浸润癌,categorical,,,"Yes,No,NA",,,N,浸润性癌,恶性肿瘤
+Pathology_Result,differentiation,分化程度,categorical,,,"Well,Moderate,Poor,Undifferentiated,NA",,,N,肿瘤分化,预后因素
+Pathology_Result,ibd_pathology,IBD病理,categorical,,,"Active_Colitis,Chronic_Colitis,Granuloma,Dysplasia,Normal,NA",,,N,炎症性肠病病理,诊断确认
 
-# 退镜观察
-withdrawal.time,退镜.退镜时间,Number,"退镜观察时间(从回盲部到肛门)。<br>单位: 分钟<br>**质控标准**: ≥6分钟(正常黏膜), ≥9分钟(最佳)<br>**重要**: 退镜时间与腺瘤检出率相关",9
-withdrawal.adequacy,退镜.退镜充分性,String,"退镜观察充分性。<br>**建议值**: `充分`, `基本充分`, `不充分`<br>**要求**: 仔细观察每个部位，尤其是皱襞后、曲部",充分
+Diagnosis,primary_diagnosis,主要诊断,categorical,,,"Normal,Polyps_Adenomatous,Polyps_Hyperplastic,Colon_Cancer,Diverticulosis,Colitis_IBD,Colitis_Other,Hemorrhoids,Angiodysplasia,Other",,,Y,主要内镜诊断,疾病分类
+Diagnosis,secondary_diagnoses,次要诊断,string,,,,,N,其他诊断,合并疾病
 
-# 活检
-biopsy.performed,活检.是否活检,String,"是否进行活检。<br>**建议值**: `否`, `是`",是
-biopsy.locations,活检.活检部位,String,"活检部位(多个部位分别标注)",升结肠息肉×1
-biopsy.piecesNumber,活检.活检块数,Number,活检总块数,1
-biopsy.indication,活检.活检指征,String,"活检指征。<br>**建议值**: `息肉病理`, `肿物性质鉴别`, `IBD诊断`, `炎症评估`, `其他`",息肉病理
-biopsy.complications,活检.活检并发症,String,"活检并发症。<br>**建议值**: `无`, `出血`, `穿孔`",无
+Surveillance,surveillance_interval,监测间隔,categorical,,,"No_Surveillance,1_Year,3_Years,5_Years,10_Years,Other",,,N,复查间隔,USMSTF/ESGE指南
+Surveillance,surveillance_indication,监测指征,categorical,,,"Advanced_Adenoma,Multiple_Adenomas,Serrated_Polyps,IBD_Dysplasia,CRC_Family_History,Incomplete_Resection,Other,NA",,,N,监测原因,风险分层
+Surveillance,high_risk_category,高危类别,categorical,,,"Yes,No",,,N,高危监测人群,密切随访
 
-# 内镜下治疗
-intervention.performed,治疗.是否实施治疗,String,"是否实施内镜下治疗。<br>**建议值**: `否`, `是`",是
-intervention.type,治疗.治疗类型,String,"治疗类型(如实施)。<br>**建议值**: `息肉切除`, `EMR`, `ESD`, `止血(注射/夹闭/APC)`, `扩张`, `支架置入`, `异物取出`, `其他`",息肉切除
-intervention.complications,治疗.治疗并发症,String,"治疗并发症(如实施)。<br>**建议值**: `无`, `即刻出血`, `迟发出血`, `穿孔`, `凝固综合征`, `术后腹痛`",无
+Recommendations,repeat_colonoscopy,重复肠镜,categorical,,,"Not_Needed,Recommended,Urgent",,,N,再次肠镜必要性,随访计划
+Recommendations,referral,转诊建议,categorical,,,"Surgery,Oncology,Gastroenterology,IBD_Specialist,None,Other",,,N,专科转诊,多学科协作
+Recommendations,genetic_counseling,遗传咨询,categorical,,,"Recommended,Not_Indicated",,,N,遗传咨询建议,家族性息肉病
+Recommendations,medical_management,药物治疗,categorical,,,"IBD_Therapy,Anticoagulation_Adjustment,Iron_Supplementation,None,Other",,,N,内科治疗,用药建议
 
-# 检查质量指标
-qualityMetrics.cecalIntubationRate,质量指标.回盲部到达率,String,"回盲部到达率。<br>**质控标准**: ≥95% (筛查), ≥90% (全部)<br>**建议值**: `已到达`, `未到达`",已到达
-qualityMetrics.adenomaDetectionRate,质量指标.腺瘤检出率,String,"腺瘤检出率(ADR，仅筛查肠镜统计)。<br>**质控标准**: 男性≥30%，女性≥20%<br>**本次**: 是否检出腺瘤<br>**建议值**: `检出腺瘤`, `未检出腺瘤`, `待病理确认`",检出腺瘤(待病理确认)
-qualityMetrics.bowelPrepAdequacy,质量指标.肠道准备充分性,String,"肠道准备充分性。<br>**质控标准**: ≥85%患者肠道准备充分<br>**建议值**: `充分`, `不充分`",充分
-qualityMetrics.polypResectionRate,质量指标.息肉切除率,String,"息肉切除率(发现息肉是否切除)。<br>**质控标准**: ≥90%<br>**建议值**: `全部切除`, `部分切除`, `未切除`",全部切除
-
-# 内镜诊断
-endoscopicDiagnosis,内镜诊断,String,"内镜诊断。<br>可多项",升结肠息肉(已切除，待病理)
-primaryDiagnosis,主要诊断,String,主要内镜诊断,升结肠息肉
-secondaryDiagnosis,次要诊断,String,次要诊断,无
-
-# 并发症
-complications.immediate,并发症.即刻并发症,String,"即刻并发症。<br>**建议值**: `无`, `出血`, `穿孔`, `误吸`, `心律失常`, `低氧血症`, `其他`",无
-complications.delayed,并发症.延迟并发症风险,String,"延迟并发症风险。<br>**建议值**: `低风险`, `中风险(已处理)`, `高风险`<br>**高风险**: 大息肉切除、抗凝患者",低风险
-
-# 建议
-recommendations,建议,String,检查后建议,"1. 息肉送病理检查；2. 根据病理结果决定复查时间；3. 如为腺瘤性息肉，建议3年后复查肠镜；4. 保持健康饮食，多食蔬菜水果，减少红肉摄入"
-followUpInterval,随访间隔,String,"随访间隔建议。<br>**正常或增生性息肉**: 10年<br>**1-2个<10mm腺瘤**: 5-10年<br>**3-4个<10mm腺瘤或≥10mm腺瘤**: 3年<br>**≥5个或≥10mm绒毛状腺瘤**: 1-3年<br>**高级别异型增生/癌**: 按专科建议",根据病理结果决定(如为腺瘤建议3年)
-postProcedureInstructions,术后注意事项,String,术后注意事项,"1. 术后观察30分钟无特殊可离院；2. 今日流质饮食，明日可正常饮食；3. 如出现腹痛、便血、发热等立即就诊；4. 一周内避免剧烈运动；5. 息肉切除者7-10天内避免服用抗凝药(遵医嘱)"
-
-# 报告信息
-performingPhysician,操作医师,String,实施检查的医师,张医师
-assistingNurse,协助护士,String,协助检查的护士,王护士
-anesthesiologist,麻醉医师,String,麻醉医师(无痛肠镜),李医师
-reportDate,报告日期,String,报告出具日期,2025-08-15
-reportingPhysician,报告医师,String,出具报告的医师,张医师
-reviewPhysician,审核医师,String,审核报告的医师,陈主任
-urgentFlag,紧急标识,String,"是否紧急。<br>**建议值**: `否`, `是`<br>**紧急**: 活动性出血、穿孔、高度可疑恶性",否
-
-# 图像记录
-images.totalNumber,图像.总图像数,Number,"拍摄图像总数。<br>**建议值**: 至少包括回盲部标志、各段结肠代表性图像、病变特写",25
-images.videoRecorded,图像.录像,String,"是否录像。<br>**建议值**: `否`, `是`, `部分录像`",否
-images.keyImages,图像.关键图像,String,关键图像说明,回盲瓣、阑尾开口、升结肠息肉(切除前后)、齿状线
+Quality_Metrics,adr,腺瘤检出率计算,categorical,,,"Yes,No,NA",,,N,纳入ADR计算,质控指标
+Quality_Metrics,quality_indicator_met,质量指标达标,categorical,,,"Yes,No",,,N,质控标准符合,ASGE/ESGE标准
+Quality_Metrics,boston_6plus,BBPS≥6分,categorical,,,"Yes,No",,,N,准备质量达标,最低质量标准

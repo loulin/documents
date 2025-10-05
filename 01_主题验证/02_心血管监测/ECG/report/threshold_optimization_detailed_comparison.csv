@@ -1,0 +1,51 @@
+﻿record_name,original_diagnosis,optimized_diagnosis,change_type,original_builtin,optimization_effect
+JS00001,"右束支阻滞, 心肌缺血, 心房颤动",心房颤动,reduced_bundle_branch_block,"房性心律失常, 右束支阻滞, 心房颤动",减少束支阻滞过诊; 减少心肌缺血过诊; 简化诊断
+JS00002,"窦性心动过缓, 右束支阻滞",窦性心动过缓,reduced_bundle_branch_block,"束支阻滞, 心房颤动",减少束支阻滞过诊; 简化诊断
+JS00004,"窦性心动过缓, 左束支阻滞",窦性心动过缓,reduced_bundle_branch_block,束支阻滞,减少束支阻滞过诊; 简化诊断
+JS00005,"右束支阻滞, 心律不齐",心律不齐,reduced_bundle_branch_block,"室性心律失常, 左前分支阻滞, 左束支阻滞",减少束支阻滞过诊; 简化诊断
+JS00006,右束支阻滞,窦性心律,reduced_bundle_branch_block,束支阻滞,减少束支阻滞过诊
+JS00007,"右束支阻滞, 心肌缺血, 心房颤动",心房颤动,reduced_bundle_branch_block,"房性心律失常, 心房颤动",减少束支阻滞过诊; 减少心肌缺血过诊; 简化诊断
+JS00008,"右束支阻滞, 心肌缺血",窦性心律,reduced_bundle_branch_block,窦性心律,减少束支阻滞过诊; 减少心肌缺血过诊; 简化诊断
+JS00009,右束支阻滞,窦性心律,reduced_bundle_branch_block,束支阻滞,减少束支阻滞过诊
+JS00010,"窦性心律, 右束支阻滞",窦性心律,reduced_bundle_branch_block,束支阻滞,减少束支阻滞过诊; 简化诊断
+JS00011,"窦性心律, 右束支阻滞, 心肌缺血",窦性心律,reduced_bundle_branch_block,"束支阻滞, 未知诊断(55827005)",减少束支阻滞过诊; 减少心肌缺血过诊; 简化诊断
+JS00012,右束支阻滞,窦性心律,reduced_bundle_branch_block,未知诊断(427084000),减少束支阻滞过诊
+JS00013,"右束支阻滞, 心肌缺血",窦性心律,reduced_bundle_branch_block,"束支阻滞, 未知诊断(270492004)",减少束支阻滞过诊; 减少心肌缺血过诊; 简化诊断
+JS00014,"右束支阻滞, 心肌缺血, 心房颤动",心房颤动,reduced_bundle_branch_block,"束支阻滞, 未知诊断(251173003), 未知诊断(55827005)",减少束支阻滞过诊; 减少心肌缺血过诊; 简化诊断
+JS00015,"右束支阻滞, 心肌缺血",窦性心律,reduced_bundle_branch_block,束支阻滞,减少束支阻滞过诊; 减少心肌缺血过诊; 简化诊断
+JS00016,"右束支阻滞, 心房颤动",心房颤动,reduced_bundle_branch_block,"房性心律失常, 左束支阻滞",减少束支阻滞过诊; 简化诊断
+JS00017,"窦性心律, 右束支阻滞, 心肌缺血",窦性心律,reduced_bundle_branch_block,束支阻滞,减少束支阻滞过诊; 减少心肌缺血过诊; 简化诊断
+JS00018,左束支阻滞,窦性心律,reduced_bundle_branch_block,"束支阻滞, 右束支阻滞",减少束支阻滞过诊
+JS00019,"窦性心律, 右束支阻滞",窦性心律,reduced_bundle_branch_block,"束支阻滞, 未知诊断(270492004), 未知诊断(59931005)",减少束支阻滞过诊; 简化诊断
+JS00020,左束支阻滞,窦性心律,reduced_bundle_branch_block,束支阻滞,减少束支阻滞过诊
+JS00021,"窦性心律, 右束支阻滞, 心肌缺血",窦性心律,reduced_bundle_branch_block,窦性心律,减少束支阻滞过诊; 减少心肌缺血过诊; 简化诊断
+JS00022,"窦性心动过缓, 右束支阻滞",窦性心动过缓,reduced_bundle_branch_block,束支阻滞,减少束支阻滞过诊; 简化诊断
+JS00023,"右束支阻滞, 心房颤动",心房颤动,reduced_bundle_branch_block,"房性心律失常, 心房颤动",减少束支阻滞过诊; 简化诊断
+JS00024,"心动过速, 左束支阻滞, 心电图异常",心动过速,reduced_bundle_branch_block,"未知诊断(427084000), 心房颤动",减少束支阻滞过诊; 简化诊断
+JS00025,"右束支阻滞, 心肌缺血",窦性心律,reduced_bundle_branch_block,"束支阻滞, 左轴偏转, 未知诊断(55827005), 未知诊断(164912004)",减少束支阻滞过诊; 减少心肌缺血过诊; 简化诊断
+JS00026,"右束支阻滞, 心肌缺血",窦性心律,reduced_bundle_branch_block,"束支阻滞, 心律不齐",减少束支阻滞过诊; 减少心肌缺血过诊; 简化诊断
+JS00027,"右束支阻滞, 心肌缺血",窦性心律,reduced_bundle_branch_block,"束支阻滞, 未知诊断(284470004)",减少束支阻滞过诊; 减少心肌缺血过诊; 简化诊断
+JS00029,"右束支阻滞, 心律不齐",心律不齐,reduced_bundle_branch_block,"室性心律失常, 未知诊断(233917008)",减少束支阻滞过诊; 简化诊断
+JS00030,"右束支阻滞, 心肌缺血, 心律不齐",心律不齐,reduced_bundle_branch_block,"房性心律失常, 心房颤动, 室性期前收缩",减少束支阻滞过诊; 减少心肌缺血过诊; 简化诊断
+JS00031,"窦性心律, 右束支阻滞, 心肌缺血",窦性心律,reduced_bundle_branch_block,束支阻滞,减少束支阻滞过诊; 减少心肌缺血过诊; 简化诊断
+JS00032,"心动过速, 右束支阻滞, 心电图异常",心动过速,reduced_bundle_branch_block,未知诊断(427084000),减少束支阻滞过诊; 简化诊断
+JS00033,"窦性心动过缓, 左束支阻滞, 心肌缺血",窦性心动过缓,reduced_bundle_branch_block,束支阻滞,减少束支阻滞过诊; 减少心肌缺血过诊; 简化诊断
+JS00034,"窦性心动过缓, 右束支阻滞, 心肌缺血, 心房颤动","窦性心动过缓, 心房颤动",reduced_bundle_branch_block,"房性心律失常, 心房颤动, 室性期前收缩",减少束支阻滞过诊; 减少心肌缺血过诊; 简化诊断
+JS00036,"右束支阻滞, 心肌缺血, 心房颤动",心房颤动,reduced_bundle_branch_block,房性心律失常,减少束支阻滞过诊; 减少心肌缺血过诊; 简化诊断
+JS00037,"窦性心律, 右束支阻滞, 心肌缺血",窦性心律,reduced_bundle_branch_block,束支阻滞,减少束支阻滞过诊; 减少心肌缺血过诊; 简化诊断
+JS00038,"右束支阻滞, 心房颤动",心房颤动,reduced_bundle_branch_block,"房性心律失常, 未知诊断(55827005), 室性期前收缩",减少束支阻滞过诊; 简化诊断
+JS00039,右束支阻滞,窦性心律,reduced_bundle_branch_block,束支阻滞,减少束支阻滞过诊
+JS00040,"右束支阻滞, 心肌缺血, 心房颤动",心房颤动,reduced_bundle_branch_block,房性心律失常,减少束支阻滞过诊; 减少心肌缺血过诊; 简化诊断
+JS00041,"右束支阻滞, 心肌缺血, 心律不齐",心律不齐,reduced_bundle_branch_block,"未知诊断(427084000), 室性期前收缩",减少束支阻滞过诊; 减少心肌缺血过诊; 简化诊断
+JS00042,"窦性心律, 右束支阻滞, 心肌缺血",窦性心律,reduced_bundle_branch_block,窦性心律,减少束支阻滞过诊; 减少心肌缺血过诊; 简化诊断
+JS00043,"右束支阻滞, 心房颤动",心房颤动,reduced_bundle_branch_block,"房性心律失常, 未知诊断(698252002), 未知诊断(55827005)",减少束支阻滞过诊; 简化诊断
+JS00044,右束支阻滞,窦性心律,reduced_bundle_branch_block,"束支阻滞, 左前分支阻滞, 心房颤动",减少束支阻滞过诊
+JS00045,右束支阻滞,窦性心律,reduced_bundle_branch_block,"未知诊断(427084000), 左束支阻滞",减少束支阻滞过诊
+JS00046,"右束支阻滞, 心律不齐",心律不齐,reduced_bundle_branch_block,"房性心律失常, 左束支阻滞, 室性期前收缩",减少束支阻滞过诊; 简化诊断
+JS00047,"右束支阻滞, 心肌缺血",窦性心律,reduced_bundle_branch_block,窦性心律,减少束支阻滞过诊; 减少心肌缺血过诊; 简化诊断
+JS00048,"右束支阻滞, 心房颤动",心房颤动,reduced_bundle_branch_block,房性心律失常,减少束支阻滞过诊; 简化诊断
+JS00049,"窦性心律, 左束支阻滞",窦性心律,reduced_bundle_branch_block,"束支阻滞, 左心室肥厚",减少束支阻滞过诊; 简化诊断
+JS00050,"右束支阻滞, 心肌缺血, 心房颤动",心房颤动,reduced_bundle_branch_block,房性心律失常,减少束支阻滞过诊; 减少心肌缺血过诊; 简化诊断
+JS00051,"窦性心律, 左束支阻滞, 心肌缺血",窦性心律,reduced_bundle_branch_block,窦性心律,减少束支阻滞过诊; 减少心肌缺血过诊; 简化诊断
+JS00052,"右束支阻滞, 心肌缺血, 心房颤动",心房颤动,reduced_bundle_branch_block,"室性心律失常, 右束支阻滞, 左束支阻滞",减少束支阻滞过诊; 减少心肌缺血过诊; 简化诊断
+JS00053,"窦性心律, 右束支阻滞",窦性心律,reduced_bundle_branch_block,束支阻滞,减少束支阻滞过诊; 简化诊断

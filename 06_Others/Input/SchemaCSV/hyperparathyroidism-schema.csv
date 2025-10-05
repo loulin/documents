@@ -1,0 +1,152 @@
+Category,Subcategory,Field_Name,Field_Name_CN,Data_Type,Unit,Value_Range,Normal_Range,Abnormal_Indicators,Clinical_Significance,Interpretation_Logic,Related_Diseases,Risk_Level,Recommended_Actions,LOINC_Code,Notes
+Basic_Info,Patient_Info,patient_id,患者ID,String,,,,,Patient unique identifier,,,Low,,,"Unique patient identifier"
+Basic_Info,Patient_Info,exam_date,检查日期,Date,,,,,Date of examination,,,Low,,,"Format: YYYY-MM-DD"
+Basic_Info,Patient_Info,patient_age,患者年龄,Integer,years,0-120,,,"Age at diagnosis","Peak incidence 50-60 years",,Low,,,More common in older adults
+Basic_Info,Patient_Info,patient_gender,患者性别,Categorical,,Male/Female,,,"Gender","Women 3-4 times more common than men",,Low,,,"Female predominance"
+Basic_Info,Patient_Info,menopausal_status,绝经状态,Categorical,,"Premenopausal/Postmenopausal/N/A",,,"Menopausal status (females)","Postmenopausal women at highest risk",,Medium,,,Estrogen loss increases risk
+
+Laboratory,Calcium,serum_calcium,血清钙,Float,mg/dL,7-15,8.5-10.5,>10.5,"Total serum calcium","Hallmark of PHPT",Hypercalcemia,Critical,Diagnostic parameter,17861-6,"Corrected for albumin if needed"
+Laboratory,Calcium,corrected_calcium,校正血钙,Float,mg/dL,7-15,8.5-10.5,>10.5,"Albumin-corrected calcium","Adjust for low albumin: Ca + 0.8*(4-albumin)",,Critical,Use if albumin abnormal,,"More accurate than total Ca"
+Laboratory,Calcium,ionized_calcium,离子钙,Float,mmol/L,0.8-1.5,1.12-1.32,>1.32,"Ionized (free) calcium","Gold standard, unaffected by albumin",Hypercalcemia,Critical,Most accurate measurement,1994-3,"Preferred if available"
+Laboratory,Calcium,hypercalcemia_severity,高钙血症严重程度,Categorical,,"Normal/Mild/Moderate/Severe",,Any,"Severity of hypercalcemia","Mild 10.5-12; Moderate 12-14; Severe >14 mg/dL",,High,Severe requires urgent treatment,,"Based on corrected calcium"
+Laboratory,Calcium,calcium_trend,血钙趋势,Categorical,,"Stable/Rising/Falling",,Rising,"Trend of calcium levels over time","Rising: progressive disease",,Medium,Serial monitoring,,
+
+Laboratory,PTH,intact_pth,全段甲状旁腺激素,Float,pg/mL,5-200,10-65,>65,"Intact PTH level","Inappropriately normal or elevated in PHPT",Primary_Hyperparathyroidism,Critical,Diagnostic hallmark,2731-8,"Key diagnostic test"
+Laboratory,PTH,pth_calcium_relationship,PTH与钙关系,Categorical,,"Appropriate/Inappropriate",,Inappropriate,"PTH appropriateness for calcium level","PTH should be suppressed if Ca high; if normal/high: PHPT",PHPT,Critical,Defines primary vs secondary,,"PTH >20 with hypercalcemia inappropriate"
+Laboratory,PTH,pth_elevation_degree,PTH升高程度,Categorical,,"Normal/Mildly_elevated/Moderately_elevated/Markedly_elevated",,Any,"Degree of PTH elevation","Mild: 1-2x ULN; Moderate: 2-5x; Marked: >5x ULN",,High,Higher suggests adenoma vs hyperplasia,,"Level doesn't predict severity"
+
+Laboratory,Phosphorus,serum_phosphorus,血清磷,Float,mg/dL,1-6,2.5-4.5,<2.5,"Serum phosphate","Low-normal or frankly low in PHPT",Hypophosphatemia,Medium,PTH increases phosphate excretion,2777-1,"May be normal"
+Laboratory,Phosphorus,calcium_phosphorus_product,钙磷乘积,Float,mg²/dL²,20-80,<55,>55,"Ca x PO4 product","Risk of ectopic calcification if >55",,Medium,Assess calcification risk,,"Usually normal in PHPT"
+Laboratory,Phosphorus,renal_phosphate_threshold,肾磷阈值,Float,mg/dL,2.5-4.2,2.5-4.2,<2.5,"TmP/GFR (tubular reabsorption)","Decreased in PHPT",,Low,Specialized test,,"Reflects PTH effect on kidney"
+
+Laboratory,Vitamin_D,25oh_vitamin_d,25羟维生素D,Float,ng/mL,5-100,30-100,<20,"25-OH vitamin D","Often low in PHPT",Vitamin_D_Deficiency,High,Check and supplement,1989-3,"Low D worsens PHPT"
+Laboratory,Vitamin_D,vitamin_d_status,维生素D状态,Categorical,,"Deficient/Insufficient/Sufficient",,Deficient/Insufficient,"Vitamin D status","<20: deficient; 20-30: insufficient; >30: sufficient",,High,Replicate before surgery,,"Correct before parathyroidectomy"
+Laboratory,Vitamin_D,1_25oh_vitamin_d,1,25双羟维生素D,Float,pg/mL,15-75,19-67,>67,"1,25-(OH)2 vitamin D (calcitriol)","May be elevated in PHPT",,Low,Usually not needed,,"PTH stimulates 1-alpha-hydroxylase"
+
+Laboratory,Bone_Markers,alkaline_phosphatase,碱性磷酸酶,Float,U/L,20-200,40-130,>130,"Alkaline phosphatase","Bone turnover marker, may be elevated",Bone_Turnover,Medium,Bone-specific isoform better,6768-6,"Reflects osteoblast activity"
+Laboratory,Bone_Markers,bone_specific_alp,骨特异性碱性磷酸酶,Float,μg/L,5-50,<20,>20,"Bone-specific ALP","More specific for bone turnover",,Medium,If total ALP elevated,,"Elevated in high-turnover PHPT"
+Laboratory,Bone_Markers,ctx,I型胶原C端肽,Float,ng/mL,0.1-1.5,<0.57 (F), <0.70 (M),>0.57/>0.70,"C-terminal telopeptide (CTX)","Bone resorption marker",,Medium,Reflects osteoclast activity,,"Elevated in PHPT"
+Laboratory,Bone_Markers,p1np,I型前胶原N端肽,Float,ng/mL,10-150,<76 (postmenopausal F),>76,"Procollagen type 1 N-terminal propeptide","Bone formation marker",,Medium,Reflects osteoblast activity,,"May be elevated"
+
+Laboratory,Renal_Function,serum_creatinine,血清肌酐,Float,mg/dL,0.3-3.0,0.6-1.2,>1.2,"Serum creatinine","Assess kidney function",,High,Baseline renal function,2160-0,"PHPT can cause CKD"
+Laboratory,Renal_Function,egfr,肾小球滤过率,Float,mL/min/1.73m²,10-150,>60,<60,"Estimated GFR","CKD if <60",,High,Monitor kidney function,,"PHPT is surgical if eGFR <60"
+Laboratory,Renal_Function,24hr_urine_calcium,24小时尿钙,Float,mg/24hr,50-500,<400 (M), <300 (F),>400/>300,"24-hour urinary calcium excretion","High: risk of stones; Low: FHH consideration",Hypercalciuria,High,Differentiate PHPT from FHH,6874-2,">400 mg/day abnormal"
+Laboratory,Renal_Function,calcium_creatinine_clearance_ratio,钙肌酐清除率比值,Float,ratio,0.001-0.03,<0.01,>0.02,"Ca/Cr clearance ratio","PHPT: >0.02; FHH: <0.01",FHH,High,Distinguish FHH from PHPT,,"FHH: ratio <0.01"
+Laboratory,Renal_Function,fena_calcium,尿钙排泄分数,Float,%,0.5-5,1-2,>2,"Fractional excretion of calcium","Elevated in PHPT",,Medium,,,
+
+Clinical_Features,Symptoms,asymptomatic,无症状,Boolean,,Yes/No,No,,"Asymptomatic PHPT","Incidental hypercalcemia, no symptoms",Asymptomatic_PHPT,Medium,Most common presentation today,,"80% asymptomatic at diagnosis"
+Clinical_Features,Symptoms,fatigue,乏力,Boolean,,Yes/No,No,Yes,"Fatigue/weakness","Non-specific symptom",,Medium,Common complaint,,"May improve after surgery"
+Clinical_Features,Symptoms,cognitive_impairment,认知障碍,Boolean,,Yes/No,No,Yes,"Memory/concentration problems","Hypercalcemia effect on CNS",,Medium,May be subtle,,"Can improve postop"
+Clinical_Features,Symptoms,depression,抑郁,Boolean,,Yes/No,No,Yes,"Depression/mood changes","Associated with hypercalcemia",,Medium,Screen for psychiatric symptoms,,"May improve with treatment"
+Clinical_Features,Symptoms,constipation,便秘,Boolean,,Yes/No,No,Yes,"Constipation","GI smooth muscle dysfunction from hypercalcemia",,Low,Common symptom,,"Hypercalcemia slows GI motility"
+Clinical_Features,Symptoms,nausea,恶心,Boolean,,Yes/No,No,Yes,"Nausea/vomiting","GI symptoms from hypercalcemia",,Medium,More common if Ca >12,,"Severe hypercalcemia symptom"
+Clinical_Features,Symptoms,abdominal_pain,腹痛,Boolean,,Yes/No,No,Yes,"Abdominal pain","Pancreatitis, PUD, constipation",,Medium,Multiple GI causes,,"Peptic ulcer, pancreatitis association"
+Clinical_Features,Symptoms,polyuria_polydipsia,多尿多饮,Boolean,,Yes/No,No,Yes,"Polyuria and polydipsia","Hypercalcemia impairs urine concentration",,Medium,Nephrogenic diabetes insipidus-like,,"Calcium impairs ADH action"
+
+Clinical_Features,Skeletal,bone_pain,骨痛,Boolean,,Yes/No,No,Yes,"Bone pain","Osteitis fibrosa cystica (rare now)",,High,Uncommon in mild disease,,"Seen in severe/prolonged PHPT"
+Clinical_Features,Skeletal,pathologic_fracture,病理性骨折,Boolean,,Yes/No,No,Yes,"Pathologic fracture","Fracture from minimal trauma",Low_BMD,High,Indicates severe bone disease,,"More common before widespread screening"
+Clinical_Features,Skeletal,brown_tumor,棕色瘤,Boolean,,Yes/No,No,Yes,"Brown tumor","Osteolytic lesion from fibrous replacement",Osteitis_Fibrosa_Cystica,Medium,Rare in modern era,,"Looks like bone tumor on imaging"
+
+Clinical_Features,Renal,kidney_stones,肾结石,Boolean,,Yes/No,No,Yes,"Nephrolithiasis","15-20% of PHPT patients",Kidney_Stones,High,Stone analysis if available,,"Calcium oxalate or phosphate"
+Clinical_Features,Renal,recurrent_stones,复发性肾结石,Boolean,,Yes/No,No,Yes,"Recurrent kidney stones","Multiple stone episodes",,High,Always screen for PHPT,,"PHPT in 2-5% of stone formers"
+Clinical_Features,Renal,nephrocalcinosis,肾钙化,Boolean,,Yes/No,No,Yes,"Nephrocalcinosis","Calcium deposits in kidney parenchyma",Renal_Calcification,High,Imaging finding,,"Can lead to CKD"
+
+Bone_Density,BMD_Testing,dexa_performed,骨密度检测,Boolean,,Yes/No,No,Yes,"DEXA scan performed","Essential in all PHPT patients",,Critical,Always obtain at diagnosis,,"Guides surgical decision"
+Bone_Density,BMD_Results,t_score_spine,腰椎T值,Float,SD,-5 to +3,>-1.0,≤-2.5,"Lumbar spine T-score","Osteoporosis if ≤-2.5",Osteoporosis,High,Preferentially affects cortical bone,,"May be preserved in PHPT"
+Bone_Density,BMD_Results,t_score_hip,髋部T值,Float,SD,-5 to +3,>-1.0,≤-2.5,"Total hip T-score","Osteoporosis if ≤-2.5",,High,Cortical bone site,,"Often affected in PHPT"
+Bone_Density,BMD_Results,t_score_femoral_neck,股骨颈T值,Float,SD,-5 to +3,>-1.0,≤-2.5,"Femoral neck T-score","Most affected site in PHPT",Osteoporosis,High,Cortical bone preferentially lost,,"Usually lowest T-score"
+Bone_Density,BMD_Results,t_score_distal_radius,桡骨远端T值,Float,SD,-5 to +3,>-1.0,≤-2.5,"Distal 1/3 radius T-score","Cortical site, often low in PHPT",,High,Should measure in PHPT,,"Often overlooked but important"
+Bone_Density,BMD_Results,lowest_t_score,最低T值,Float,SD,-5 to +3,>-1.0,≤-2.5,"Lowest T-score at any site","Surgical criterion if ≤-2.5",,Critical,Determines surgery indication,,"Any site counts for surgery"
+Bone_Density,BMD_Results,osteoporosis,骨质疏松,Boolean,,Yes/No,No,Yes,"Osteoporosis present","T-score ≤-2.5 at any site",Osteoporosis,High,Indication for surgery,,"30-40% of PHPT have osteoporosis"
+Bone_Density,BMD_Results,osteopenia,骨量减少,Boolean,,Yes/No,No,Yes,"Osteopenia present","T-score -1.0 to -2.5",,Medium,Monitor, may worsen,,
+Bone_Density,VFA,vertebral_fracture_assessment,椎体骨折评估,Boolean,,Yes/No,No,,"VFA performed on DEXA","Lateral spine imaging for fractures",,High,Should do with DEXA,,"Asymptomatic fractures common"
+Bone_Density,VFA,vertebral_fracture,椎体骨折,Boolean,,Yes/No,No,Yes,"Vertebral fracture present","Compression fracture on VFA or X-ray",,High,Indication for surgery,,"Even if T-score not osteoporotic"
+
+Imaging,Parathyroid,parathyroid_imaging_performed,甲状旁腺影像检查,Boolean,,Yes/No,No,,"Parathyroid localization imaging done","For preoperative planning",,High,Only if surgery planned,,"Not needed for diagnosis"
+Imaging,Parathyroid,imaging_modality,影像检查方式,Categorical,,"None/Ultrasound/Sestamibi/4D-CT/MRI/Combined",,,"Type of parathyroid imaging","Sestamibi (MIBI) and US most common",,Medium,Combination improves localization,,"Sestamibi: 80-90% sensitivity"
+Imaging,Parathyroid,ultrasound_positive,超声阳性,Boolean,,Yes/No,No,,"Neck ultrasound positive","Adenoma visualized on US",,Medium,Operator dependent,,"60-80% sensitivity"
+Imaging,Parathyroid,sestamibi_positive,核素显像阳性,Boolean,,Yes/No,No,,"Sestamibi scan positive","Tc-99m sestamibi uptake",,High,Most sensitive single modality,,"80-90% for adenomas"
+Imaging,Parathyroid,localized_adenoma,腺瘤定位,Boolean,,Yes/No,No,,"Adenoma localized preoperatively","Imaging identified probable adenoma",,High,Allows focused surgery,,"Negative imaging OK for experienced surgeon"
+Imaging,Parathyroid,adenoma_location,腺瘤位置,Categorical,,"Unknown/Superior_right/Inferior_right/Superior_left/Inferior_left/Ectopic",,,"Location of parathyroid adenoma","4 glands normally: superior and inferior on each side",,Medium,Guides surgical approach,,"Ectopic 10-20%: mediastinum, thyroid"
+Imaging,Parathyroid,multigland_disease,多腺体病变,Boolean,,Yes/No,No,Yes,"Multigland disease suspected","Multiple adenomas or hyperplasia",Multigland_Hyperplasia,Medium,Bilateral neck exploration,,"10-15% have >1 gland"
+Imaging,Parathyroid,ectopic_parathyroid,异位甲状旁腺,Boolean,,Yes/No,No,Yes,"Ectopic parathyroid tissue","Mediastinal, intrathyroidal, or elsewhere",,Medium,More difficult surgery,,"Requires extended search"
+
+Imaging,Renal,renal_ultrasound,肾脏超声,Boolean,,Yes/No,No,,"Renal ultrasound performed","Screen for stones, nephrocalcinosis",,High,Baseline imaging,,"Non-invasive stone detection"
+Imaging,Renal,renal_ct,肾脏CT,Boolean,,Yes/No,No,,"Renal CT performed","More sensitive for stones",,Medium,If US negative but clinical suspicion,,"Gold standard for stones"
+Imaging,Renal,stones_on_imaging,影像见结石,Boolean,,Yes/No,No,Yes,"Kidney stones on imaging","Nephrolithiasis visualized",,High,Indication for surgery,,"Surgical criterion"
+
+Diagnosis,PHPT_Diagnosis,confirmed_phpt,确诊原发性甲旁亢,Boolean,,Yes/No,No,Yes,"Primary hyperparathyroidism confirmed","Hypercalcemia + elevated/inappropriately normal PTH",Primary_Hyperparathyroidism,Critical,Biochemical diagnosis,,"Excludes FHH and other causes"
+Diagnosis,PHPT_Diagnosis,phpt_type,甲旁亢类型,Categorical,,"Typical/Normocalcemic",,,"PHPT subtype","Typical: high Ca + high PTH; Normocalcemic: normal Ca + high PTH",Normocalcemic_PHPT,High,Normocalcemic is variant,,"Normocalcemic PHPT controversial"
+Diagnosis,PHPT_Diagnosis,symptomatic_phpt,有症状甲旁亢,Boolean,,Yes/No,No,Yes,"Symptomatic PHPT","Classic symptoms present (stones, bones, etc.)",,High,Clear surgery indication,,"<20% symptomatic today"
+Diagnosis,PHPT_Diagnosis,asymptomatic_phpt,无症状甲旁亢,Boolean,,Yes/No,No,,"Asymptomatic PHPT","No classical symptoms, incidental finding",,Medium,Evaluate surgical criteria,,"80% of modern PHPT"
+
+Diagnosis,Etiology,solitary_adenoma,单发腺瘤,Boolean,,Yes/No,No,,"Solitary parathyroid adenoma","Single enlarged gland, most common cause",,High,85% of PHPT,,"Excellent surgical cure"
+Diagnosis,Etiology,multiple_adenomas,多发腺瘤,Boolean,,Yes/No,No,Yes,"Multiple adenomas","2+ enlarged glands",,Medium,5% of cases,,"Requires careful exploration"
+Diagnosis,Etiology,hyperplasia,增生,Boolean,,Yes/No,No,Yes,"Parathyroid hyperplasia","All 4 glands enlarged",Multigland_Disease,Medium,10% of cases,,"Subtotal parathyroidectomy"
+Diagnosis,Etiology,parathyroid_carcinoma,甲状旁腺癌,Boolean,,Yes/No,No,Yes,"Parathyroid carcinoma","Malignant parathyroid tumor",Parathyroid_Cancer,Critical,<1%, very high PTH/Ca,,"Rare but aggressive"
+Diagnosis,Etiology,men1_associated,MEN1相关,Boolean,,Yes/No,No,Yes,"MEN1 syndrome associated","Multiple endocrine neoplasia type 1",MEN1,High,Family history, genetic testing,,"Screen for pancreas, pituitary"
+Diagnosis,Etiology,men2a_associated,MEN2A相关,Boolean,,Yes/No,No,Yes,"MEN2A syndrome associated","MEN2A with medullary thyroid ca",MEN2A,High,Screen for pheochromocytoma,,"Less common than MEN1"
+Diagnosis,Etiology,familial_isolated_hpt,家族性孤立性甲旁亢,Boolean,,Yes/No,No,Yes,"Familial isolated hyperparathyroidism","Family history without MEN",,Medium,Genetic counseling,,"Rare familial form"
+
+Differential_Diagnosis,FHH,fhh_excluded,排除FHH,Boolean,,Yes/No,No,,"FHH excluded","Familial hypocalciuric hypercalcemia ruled out",,Critical,Must exclude before surgery,,"FHH: Ca/Cr ratio <0.01"
+Differential_Diagnosis,FHH,family_history_hypercalcemia,家族性高钙血症,Boolean,,Yes/No,No,Yes,"Family history of hypercalcemia","Suggests FHH",FHH,High,Check family members,,"FHH is autosomal dominant"
+Differential_Diagnosis,FHH,calcium_sensing_receptor_mutation,钙敏感受体突变,Boolean,,Yes/No,No,Yes,"CaSR gene mutation","Confirms FHH",FHH,Medium,Genetic testing if suspected,,"FHH: no surgery benefit"
+Differential_Diagnosis,Other,malignancy_excluded,排除恶性肿瘤,Boolean,,Yes/No,No,,"Malignancy-associated hypercalcemia excluded","PTHrP, myeloma, metastases",,High,PTH low in malignancy,,"Malignancy: suppressed PTH"
+Differential_Diagnosis,Other,vitamin_d_intoxication,维生素D中毒,Boolean,,Yes/No,No,Yes,"Vitamin D toxicity","Excessive supplementation",,Medium,Check 25-OH D level,,"Suppressed PTH"
+Differential_Diagnosis,Other,thiazide_use,使用噻嗪类利尿剂,Boolean,,Yes/No,No,Yes,"Thiazide diuretic use","Can cause mild hypercalcemia",,Medium,Stop thiazide, recheck,,"Usually mild elevation"
+Differential_Diagnosis,Other,lithium_use,使用锂盐,Boolean,,Yes/No,No,Yes,"Lithium therapy","Lithium raises PTH set-point",,Medium,May need surgery if chronic,,"Can cause true PHPT"
+
+Surgical_Criteria,Guidelines,meets_surgical_criteria,符合手术指征,Boolean,,Yes/No,No,Yes,"Meets surgery criteria","Based on 2022 guidelines",,Critical,Surgical decision,,"Age, Ca, BMD, eGFR, stones"
+Surgical_Criteria,Age,age_under_50,年龄小于50岁,Boolean,,Yes/No,No,Yes,"Age <50 years","Surgical criterion for asymptomatic PHPT",,High,Younger patients benefit more,,"Lifelong disease without surgery"
+Surgical_Criteria,Calcium,calcium_above_1mg,血钙高于正常值上限1mg/dL以上,Boolean,,Yes/No,No,Yes,"Serum Ca >1 mg/dL above ULN","Ca >11.5 if ULN is 10.5",,High,Surgical criterion,,"Significant hypercalcemia"
+Surgical_Criteria,Bone,bmd_t_score_below_2.5,骨密度T值低于-2.5,Boolean,,Yes/No,No,Yes,"BMD T-score ≤-2.5 at any site","Osteoporosis at spine, hip, or forearm",,High,Surgical criterion,,"Prevents fractures"
+Surgical_Criteria,Bone,prior_fragility_fracture,既往脆性骨折,Boolean,,Yes/No,No,Yes,"History of fragility fracture","Vertebral or nonvertebral",,High,Surgical criterion,,"Even if T-score not low"
+Surgical_Criteria,Renal,egfr_below_60,肾小球滤过率低于60,Boolean,,Yes/No,No,Yes,"eGFR <60 mL/min/1.73m²","CKD stage 3 or worse",,High,Surgical criterion,,"PHPT worsens kidney function"
+Surgical_Criteria,Renal,stone_or_nephrocalcinosis,结石或肾钙化,Boolean,,Yes/No,No,Yes,"Kidney stones or nephrocalcinosis","By imaging or history",,High,Surgical criterion,,"Prevents recurrent stones"
+Surgical_Criteria,Renal,hypercalciuria_risk,高钙尿症,Boolean,,Yes/No,No,Yes,"24-hr urine Ca >400 mg/day","Increased stone risk",,Medium,Surgical criterion,,"Predicts stones"
+
+Treatment,Surgery,parathyroidectomy,甲状旁腺切除术,Boolean,,Yes/No,No,,"Parathyroidectomy performed","Curative treatment",,Critical,Only curative therapy,,"90-98% cure rate"
+Treatment,Surgery,surgery_type,手术类型,Categorical,,"None/Focused/Bilateral_exploration/Minimally_invasive",,,"Type of parathyroid surgery","Focused: if localized; Bilateral: if not or multigland",Parathyroid_Surgery,High,Focused if single adenoma localized,,"Minimally invasive preferred"
+Treatment,Surgery,intraop_pth_monitoring,术中PTH监测,Boolean,,Yes/No,No,,"Intraoperative PTH monitoring","Confirms adequate resection",,High,Standard for focused approach,,"PTH drops >50% at 10 min"
+Treatment,Surgery,pth_drop_adequate,PTH下降充分,Boolean,,Yes/No,No,,"Intraop PTH drop >50%","Predicts cure",,High,Confirms removal of hyperfunctioning tissue,,"Miami criterion"
+Treatment,Surgery,postop_calcium_normal,术后血钙正常,Boolean,,Yes/No,No,,"Calcium normalized postop","Biochemical cure",,Critical,Check POD 1, week 1,,"Should normalize within days"
+Treatment,Surgery,postop_pth_normal,术后PTH正常,Boolean,,Yes/No,No,,"PTH normalized postop","Confirms cure",,High,Check at 6 months,,"May take weeks to normalize"
+Treatment,Surgery,surgical_cure,手术治愈,Boolean,,Yes/No,No,,"Surgical cure achieved","Normal Ca and PTH postop",,Critical,95-98% cure rate,,"Excellent outcomes"
+Treatment,Surgery,persistent_phpt,持续性甲旁亢,Boolean,,Yes/No,No,Yes,"Persistent PHPT after surgery","Hypercalcemia within 6 months",Persistent_PHPT,High,Reoperation may be needed,,"2-5% persistence"
+Treatment,Surgery,recurrent_phpt,复发性甲旁亢,Boolean,,Yes/No,No,Yes,"Recurrent PHPT","Hypercalcemia >6 months postop",Recurrent_PHPT,Medium,Late recurrence,,"1-5% recurrence"
+
+Treatment,Surgery_Complications,postop_hypocalcemia,术后低钙血症,Boolean,,Yes/No,No,Yes,"Postoperative hypocalcemia","Hungry bone syndrome or hypoparathyroidism",Hungry_Bone_Syndrome,High,Monitor Ca closely,,"Transient in most"
+Treatment,Surgery_Complications,hungry_bone_syndrome,饥饿骨综合征,Boolean,,Yes/No,No,Yes,"Hungry bone syndrome","Severe hypocalcemia postop from rapid bone remineralization",,High,High-dose Ca/vitamin D,,"More common if severe preop disease"
+Treatment,Surgery_Complications,permanent_hypoparathyroidism,永久性甲旁减,Boolean,,Yes/No,No,Yes,"Permanent hypoparathyroidism","All parathyroids removed or damaged",,Critical,Lifelong Ca/calcitriol,,"<1% if experienced surgeon"
+Treatment,Surgery_Complications,recurrent_laryngeal_nerve_injury,喉返神经损伤,Boolean,,Yes/No,No,Yes,"Recurrent laryngeal nerve injury","Hoarseness postop",,Medium,ENT evaluation,,"<1% permanent"
+
+Treatment,Medical,observation,观察随访,Boolean,,Yes/No,No,,"Observation without surgery","For asymptomatic PHPT not meeting criteria",,Medium,Monitor Ca, BMD, eGFR,,"If no surgical criteria met"
+Treatment,Medical,calcimimetic,拟钙剂,Boolean,,Yes/No,No,,"Calcimimetic therapy (cinacalcet)","Lowers Ca but not PTH, doesn't cure",,Medium,If surgery contraindicated,,"Not first-line"
+Treatment,Medical,bisphosphonate,双磷酸盐,Boolean,,Yes/No,No,,"Bisphosphonate therapy","For osteoporosis, doesn't treat PHPT",,Low,Adjunct only,,"Improves BMD but not Ca"
+Treatment,Medical,vitamin_d_repletion,维生素D补充,Boolean,,Yes/No,No,Yes,"Vitamin D supplementation","Correct deficiency before surgery",,High,Preop optimization,,"Don't withhold due to fear"
+
+Monitoring,Biochemical,current_calcium,当前血钙,Float,mg/dL,7-15,8.5-10.5,>10.5,"Most recent calcium level","Primary monitoring parameter if observing",,High,Every 6-12 months if observing,,"Watch for progression"
+Monitoring,Biochemical,current_pth,当前PTH,Float,pg/mL,5-200,10-65,>65,"Most recent PTH level","Monitor trend",,Medium,Annually if observing,,
+Monitoring,Bone,bmd_monitoring,骨密度监测,Boolean,,Yes/No,No,Yes,"Serial DEXA monitoring","If observing, q1-2 years",,High,Watch for bone loss,,"Indication for surgery if worsens"
+Monitoring,Bone,bmd_stable,骨密度稳定,Boolean,,Yes/No,No,,"BMD stable on observation","No significant decline",,Medium,Can continue observation,,"Reassuring if stable"
+Monitoring,Bone,bmd_declining,骨密度下降,Boolean,,Yes/No,No,Yes,"BMD declining","Meets surgical criterion",,High,Reconsider surgery,,"Progressive bone loss"
+Monitoring,Renal,egfr_monitoring,肾功能监测,Boolean,,Yes/No,No,Yes,"eGFR monitoring","Annually if observing",,High,Watch for CKD,,"Indication for surgery if declines"
+Monitoring,Renal,new_kidney_stones,新发肾结石,Boolean,,Yes/No,No,Yes,"New kidney stone formation","During observation",,High,Indication for surgery,,"Development of stones"
+
+Monitoring,Progression,disease_progression,疾病进展,Boolean,,Yes/No,No,Yes,"Disease progression during observation","Worsening Ca, BMD, eGFR, or new stones",,High,Reconsider surgery,,"30-40% progress over 15 years"
+Monitoring,Progression,conversion_to_surgical_candidate,转为手术适应症,Boolean,,Yes/No,No,Yes,"Developed surgical criteria during monitoring","Was observing, now meets criteria",,High,Recommend surgery,,"Monitor closely"
+
+Prognosis,Outcomes,biochemical_cure_rate,生化治愈率,Float,%,80-100,,,Cure rate with parathyroidectomy,"95-98% with experienced surgeon",,High,Excellent prognosis with surgery,,"Very high cure rate"
+Prognosis,Outcomes,bmd_improvement,骨密度改善,Boolean,,Yes/No,No,,"BMD improvement after surgery","Increases 10-15% over 1-2 years",,High,Major benefit of surgery,,"Fracture risk decreases"
+Prognosis,Outcomes,stone_recurrence_prevented,预防结石复发,Boolean,,Yes/No,No,,"Kidney stone recurrence prevented","Stone risk decreases dramatically postop",,High,Prevents future stones,,"Major benefit"
+Prognosis,Outcomes,symptom_improvement,症状改善,Boolean,,Yes/No,No,,"Symptom improvement after surgery","Fatigue, cognition, mood may improve",,Medium,Variable improvement,,"Not all symptoms resolve"
+Prognosis,Outcomes,qol_improvement,生活质量改善,Boolean,,Yes/No,No,,"Quality of life improvement","Most patients report subjective benefit",,Medium,Even asymptomatic patients,,"Subtle symptoms may have existed"
+
+Report_Summary,Diagnosis_Summary,final_diagnosis,最终诊断,String,,,,,Final diagnosis,"Primary hyperparathyroidism with etiology",,Critical,,,
+Report_Summary,Diagnosis_Summary,disease_severity,疾病严重程度,Categorical,,"Mild/Moderate/Severe",,,"Severity of PHPT","Based on Ca, PTH, complications",,High,Guides urgency,,"Severe: Ca >13, symptoms, fractures"
+Report_Summary,Treatment_Plan,recommended_treatment,推荐治疗,Categorical,,"Surgery/Observation/Medical",,,"Treatment recommendation","Surgery if meets criteria",,Critical,Individualized decision,,"Surgery is curative"
+Report_Summary,Treatment_Plan,surgical_urgency,手术紧急程度,Categorical,,"Elective/Urgent/Emergent/Not_indicated",,,"Urgency of surgery","Emergent if Ca >14 with symptoms",,High,Most are elective,,
+
+Report_Summary,Provider,endocrinologist_name,内分泌科医师,String,,,,,Treating endocrinologist,,,Low,,,
+Report_Summary,Provider,surgeon_name,外科医师,String,,,,,Parathyroid surgeon,,,Low,,,Experienced surgeon important
+Report_Summary,Provider,report_date,报告日期,Date,,,,,Date of report generation,,,Low,,,"Format: YYYY-MM-DD"

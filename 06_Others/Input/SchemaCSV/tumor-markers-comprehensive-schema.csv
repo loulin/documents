@@ -1,107 +1,170 @@
-字段名 (英文),字段名 (中文),数据类型,描述,示例
-examDate,检查日期,String,进行肿瘤标志物检测的日期,2025-10-01
-patientAge,患者年龄,Number,"患者年龄(岁)。<br>**重要性**: 多数肿瘤标志物随年龄增加而升高,需年龄分层解读",58
-patientSex,患者性别,String,"患者性别。<br>**建议值**: `男`, `女`<br>**重要性**: AFP/CEA在男性较高,CA125在女性较高",男
-smokingStatus,吸烟状况,String,"吸烟状况。<br>**建议值**: `从不吸烟`, `已戒烟`, `现在吸烟`<br>**重要性**: CEA在吸烟者可升高20-50%,需校正解读",现在吸烟
-smokingPackYears,吸烟包年数,Number,"吸烟包年数(每天包数×吸烟年数)。<br>单位: 包年<br>**CEA影响**: >20包年可使CEA升高至5-10 ng/mL",30
-clinicalIndication,检测指征,String,"肿瘤标志物检测的临床指征。<br>**建议值**: `健康体检筛查`, `症状性筛查`, `高危人群筛查`, `已知肿瘤监测`, `治疗后随访`, `复发监测`",健康体检筛查
-panelType,检测组合类型,String,"肿瘤标志物组合类型。<br>**建议值**: `肝癌筛查组合(AFP+CEA)`, `消化道肿瘤组合(CEA+CA199+CA724)`, `肺癌筛查组合(CEA+NSE+CYFRA211)`, `妇科肿瘤组合(CA125+CA153+CEA)`, `前列腺筛查(tPSA+fPSA)`, `全面肿瘤筛查组合`, `单项检测`",消化道肿瘤组合(CEA+CA199+CA724)
+Category,Field_Name,Chinese_Name,Data_Type,Unit,Valid_Range,LOINC_Code,Required,Description,Clinical_Significance
+Basic_Info,patient_id,患者ID,string,,,,,Y,唯一患者标识,用于患者追踪
+Basic_Info,test_date,检测日期,date,,,,,Y,肿瘤标志物检测时间,监测时间点
+Basic_Info,age,年龄,integer,years,18-120,,,Y,患者年龄,参考范围调整
+Basic_Info,gender,性别,categorical,,,Male,Female,,,Y,患者性别,性别特异性标志物
+Basic_Info,test_indication,检测目的,categorical,,,Screening,Diagnostic,Monitoring,Recurrence_Detection,Prognosis,Treatment_Response,,,Y,临床目的,解读依据
 
-afp.value,AFP.数值,Number,"甲胎蛋白(Alpha-fetoprotein)数值。<br>单位: ng/mL 或 μg/L<br>**正常参考值**: 成人 <7-20 ng/mL (因实验室而异)<br>**临床意义**: 原发性肝癌最重要标志物",8.5
-afp.referenceRange,AFP.参考范围,String,"实验室提供的AFP参考范围。<br>**注意**: 不同实验室/检测方法参考值差异大",0-20 ng/mL
-afp.interpretation,AFP.结果判读,String,"AFP结果判读。<br>**建议值**: `正常(<20)`, `轻度升高(20-200)`, `中度升高(200-400)`, `显著升高(>400，高度提示HCC)`, `极度升高(>1000，强烈提示HCC)`<br>**诊断标准**: AFP >400 ng/mL持续1个月 或 >200 ng/mL持续2个月,排除妊娠和慢性肝病活动期,可诊断原发性肝癌",正常(<20)
-afp.clinicalSignificance,AFP.临床意义,String,"AFP升高的临床意义。<br>**恶性肿瘤**: 原发性肝癌(HCC，70-80%敏感性)、生殖细胞肿瘤(睾丸/卵巢)、胃癌(部分)<br>**良性疾病**: 急慢性肝炎、肝硬化、妊娠(孕早期可达500 ng/mL)、畸胎瘤",原发性肝癌筛查标志物(敏感性70-80%)
-afp.falsePositiveCauses,AFP.假阳性原因,String,"AFP假阳性升高的常见原因。<br>**建议值**: `急性肝炎`, `慢性肝炎活动期`, `肝硬化`, `妊娠`, `生殖细胞肿瘤`, `胃肠道肿瘤(罕见)`",慢性肝炎活动期
-afp.recommendation,AFP.建议,String,"基于AFP结果的临床建议。<br>**AFP <20**: 定期体检<br>**AFP 20-200**: 复查+肝脏超声<br>**AFP 200-400**: 肝脏增强CT/MRI+排除肝炎<br>**AFP >400**: 强烈建议肝脏增强CT/MRI+肝病科就诊",建议6-12个月复查
+Cancer_History,cancer_diagnosis,肿瘤诊断,categorical,,,Yes,No,Suspected,,,Y,是否已确诊肿瘤,临床背景
+Cancer_History,cancer_type,肿瘤类型,categorical,,,Lung,Colorectal,Gastric,Liver,Pancreatic,Breast,Ovarian,Prostate,Esophageal,Thyroid,Cervical,Bladder,Renal,Lymphoma,Multiple,Other,NA,,,N,肿瘤种类,标志物选择
+Cancer_History,cancer_stage,肿瘤分期,categorical,,,I,II,III,IV,Unknown,NA,,,N,TNM分期,预后评估
+Cancer_History,pathology,病理类型,categorical,,,Adenocarcinoma,Squamous,Small_Cell,Hepatocellular,Germ_Cell,Neuroendocrine,Other,Unknown,NA,,,N,组织学类型,标志物特异性
+Cancer_History,diagnosis_date,确诊日期,date,,,,,N,肿瘤确诊时间,病程追踪
+Cancer_History,treatment_status,治疗状态,categorical,,,Untreated,On_Treatment,Post_Surgical,Post_Chemo,Post_Radiation,Remission,Recurrence,NA,,,N,当前治疗状况,标志物变化解读
 
-cea.value,CEA.数值,Number,"癌胚抗原(Carcinoembryonic Antigen)数值。<br>单位: ng/mL<br>**正常参考值**: 非吸烟者 <3.0 ng/mL, 吸烟者 <5.0 ng/mL<br>**临床意义**: 广谱肿瘤标志物,尤其消化道肿瘤",4.2
-cea.referenceRange,CEA.参考范围,String,实验室提供的CEA参考范围,非吸烟者 <3.0 ng/mL
-cea.smokingAdjusted,CEA.吸烟校正后数值,Number,"吸烟校正后的CEA数值。<br>**校正方法**: 吸烟者CEA可生理性升高20-50%,需结合吸烟史解读",4.2
-cea.interpretation,CEA.结果判读,String,"CEA结果判读。<br>**建议值**: `正常(<3.0非吸烟/<5.0吸烟)`, `轻度升高(5-10)`, `中度升高(10-20)`, `显著升高(>20，需排查恶性肿瘤)`, `极度升高(>100，高度提示晚期肿瘤)`<br>**关键阈值**: CEA >10 ng/mL时良性疾病罕见",轻度升高(5-10)
-cea.clinicalSignificance,CEA.临床意义,String,"CEA升高的临床意义。<br>**恶性肿瘤**: 结直肠癌(60-70%敏感性)、胰腺癌、胃癌、肺癌、乳腺癌<br>**良性疾病**: 吸烟、消化性溃疡、炎症性肠病、胰腺炎、肝硬化、胆汁淤积、甲状腺功能减退",结直肠癌/胰腺癌/胃癌筛查标志物
-cea.falsePositiveCauses,CEA.假阳性原因,String,"CEA假阳性升高的常见原因。<br>**建议值**: `吸烟(最常见)`, `消化性溃疡`, `炎症性肠病`, `胰腺炎`, `肝硬化`, `慢性肾衰竭`, `甲状腺功能减退`",吸烟相关性升高
-cea.recommendation,CEA.建议,String,"基于CEA结果的临床建议。<br>**CEA <5**: 定期体检<br>**CEA 5-10**: 排除吸烟因素,3个月复查<br>**CEA 10-20**: 消化道/肺部CT检查<br>**CEA >20**: 全面肿瘤排查(消化道镜+胸腹CT)",建议3个月后戒烟复查
+Liver_Markers,afp,甲胎蛋白,decimal,ng/mL,0-100000,1834-1,,N,AFP水平,肝癌/生殖细胞瘤
+Liver_Markers,afp_reference,AFP参考值上限,decimal,ng/mL,,,,,N,实验室参考值,通常<20
+Liver_Markers,afp_interpretation,AFP解读,categorical,,,Normal,Mildly_Elevated,Moderately_Elevated,Markedly_Elevated,NA,,,N,AFP分层,<20/20-200/200-400/>400
+Liver_Markers,afp_l3,AFP-L3百分比,decimal,%,0-100,58209-8,,N,AFP异质体L3,>10%HCC高特异性
+Liver_Markers,des_gamma_carboxy_prothrombin,异常凝血酶原,decimal,mAU/mL,0-10000,27811-9,,N,DCP/PIVKA-II,HCC敏感标志物
+Liver_Markers,afp_trend,AFP趋势,categorical,,,Increasing,Decreasing,Stable,First_Test,NA,,,N,AFP动态变化,疗效评估
 
-ca199.value,CA199.数值,Number,"糖类抗原19-9(Carbohydrate Antigen 19-9)数值。<br>单位: U/mL<br>**正常参考值**: <37 U/mL<br>**临床意义**: 胰腺癌和胆管癌最敏感标志物",28.5
-ca199.referenceRange,CA199.参考范围,String,实验室提供的CA199参考范围,0-37 U/mL
-ca199.interpretation,CA199.结果判读,String,"CA199结果判读。<br>**建议值**: `正常(<37)`, `轻度升高(37-100)`, `中度升高(100-1000)`, `显著升高(>1000，高度提示胰腺癌)`, `极度升高(>10000)`<br>**诊断价值**: CA199 >1000 U/mL时胰腺癌可能性极大(>90%)",正常(<37)
-ca199.clinicalSignificance,CA199.临床意义,String,"CA199升高的临床意义。<br>**恶性肿瘤**: 胰腺癌(80-90%敏感性)、胆管癌、胃癌、结直肠癌<br>**良性疾病**: 肝硬化、胆汁淤积、胆管炎、胰腺炎(通常<1000 U/mL)<br>**特殊人群**: 5-10%人群Lewis血型阴性,无法产生CA199(终生为0)",胰腺癌/胆管癌最重要标志物
-ca199.falsePositiveCauses,CA199.假阳性原因,String,"CA199假阳性升高的常见原因。<br>**建议值**: `肝硬化`, `胆汁淤积`, `胆管炎`, `急性胰腺炎`, `慢性胰腺炎`, `胆囊炎`, `胆石症`",无
-ca199.lewisAntigenStatus,CA199.Lewis抗原状态,String,"Lewis抗原表达状态。<br>**建议值**: `未检测`, `Lewis阳性(可产生CA199)`, `Lewis阴性(无法产生CA199)`<br>**临床意义**: 5-10%人群Lewis阴性,CA199始终为0,无法用于监测",未检测
-ca199.recommendation,CA199.建议,String,"基于CA199结果的临床建议。<br>**CA199 <37**: 定期体检<br>**CA199 37-100**: 排除胆囊炎/胰腺炎,3-6个月复查<br>**CA199 100-1000**: 胰腺/胆管增强CT/MRI+肝胆外科就诊<br>**CA199 >1000**: 强烈建议胰腺增强CT/MRI+肿瘤科就诊",定期体检即可
+GI_Markers,cea,癌胚抗原,decimal,ng/mL,0-1000,2039-6,,N,CEA水平,消化道/肺/乳腺癌
+GI_Markers,cea_reference,CEA参考值上限,decimal,ng/mL,,,,,N,实验室参考值,通常<5
+GI_Markers,cea_interpretation,CEA解读,categorical,,,Normal,Mildly_Elevated,Moderately_Elevated,Markedly_Elevated,NA,,,N,CEA分层,<5/5-10/10-20/>20
+GI_Markers,cea_trend,CEA趋势,categorical,,,Increasing,Decreasing,Stable,First_Test,NA,,,N,CEA动态,监测复发
+GI_Markers,ca19_9,糖类抗原19-9,decimal,U/mL,0-10000,24108-3,,N,CA19-9水平,胰腺/胆道/胃肠癌
+GI_Markers,ca19_9_reference,CA19-9参考值,decimal,U/mL,,,,,N,实验室参考值,通常<37
+GI_Markers,ca19_9_interpretation,CA19-9解读,categorical,,,Normal,Mildly_Elevated,Moderately_Elevated,Markedly_Elevated,NA,,,N,CA19-9分层,<37/37-100/100-1000/>1000
+GI_Markers,ca19_9_trend,CA19-9趋势,categorical,,,Increasing,Decreasing,Stable,First_Test,NA,,,N,CA19-9动态,治疗反应
+GI_Markers,ca72_4,糖类抗原72-4,decimal,U/mL,0-1000,25390-6,,N,CA72-4,胃癌特异性
+GI_Markers,ca72_4_reference,CA72-4参考值,decimal,U/mL,,,,,N,实验室参考值,通常<6.9
+GI_Markers,ca50,糖类抗原50,decimal,U/mL,0-1000,,,N,CA50,胰腺/胃肠癌
 
-ca125.value,CA125.数值,Number,"糖类抗原125(Cancer Antigen 125)数值。<br>单位: U/mL<br>**正常参考值**: 女性<35 U/mL, 男性<20 U/mL<br>**临床意义**: 卵巢上皮癌最重要标志物",42.0
-ca125.referenceRange,CA125.参考范围,String,实验室提供的CA125参考范围,0-35 U/mL
-ca125.interpretation,CA125.结果判读,String,"CA125结果判读。<br>**建议值**: `正常(女性<35/男性<20)`, `轻度升高(35-100)`, `中度升高(100-500)`, `显著升高(>500，高度提示卵巢癌)`, `极度升高(>1000)`<br>**诊断价值**: CA125 >65 U/mL时恶性风险显著增加",轻度升高(35-100)
-ca125.menstrualStatus,CA125.月经状态,String,"月经状态(女性)。<br>**建议值**: `月经期`, `非月经期`, `绝经前`, `绝经后`, `妊娠期`, `产褥期`, `不适用(男性)`<br>**重要性**: CA125在月经期可生理性升高至50-100 U/mL",非月经期
-ca125.clinicalSignificance,CA125.临床意义,String,"CA125升高的临床意义。<br>**恶性肿瘤**: 卵巢上皮癌(80-85%敏感性)、子宫内膜癌、输卵管癌、乳腺癌、肺癌、胰腺癌<br>**良性疾病**: 子宫内膜异位症、盆腔炎、卵巢囊肿、月经期、妊娠早期、肝硬化、腹水",卵巢癌筛查标志物(敏感性80-85%)
-ca125.falsePositiveCauses,CA125.假阳性原因,String,"CA125假阳性升高的常见原因。<br>**建议值**: `月经期`, `妊娠早期`, `子宫内膜异位症`, `卵巢囊肿`, `盆腔炎`, `肝硬化伴腹水`, `胸腔积液`, `腹膜炎`",可能月经期影响
-ca125.recommendation,CA125.建议,String,"基于CA125结果的临床建议。<br>**CA125 <35**: 定期体检<br>**CA125 35-100**: 非月经期复查+盆腔超声<br>**CA125 100-500**: 盆腔增强CT/MRI+妇科肿瘤专科就诊<br>**CA125 >500**: 强烈建议妇科肿瘤专科就诊+排除卵巢癌",建议非月经期复查+盆腔超声
+Ovarian_Markers,ca125,糖类抗原125,decimal,U/mL,0-10000,6875-9,,N,CA125水平,卵巢癌/妇科肿瘤
+Ovarian_Markers,ca125_reference,CA125参考值,decimal,U/mL,,,,,N,实验室参考值,通常<35
+Ovarian_Markers,ca125_interpretation,CA125解读,categorical,,,Normal,Mildly_Elevated,Moderately_Elevated,Markedly_Elevated,NA,,,N,CA125分层,<35/35-65/65-500/>500
+Ovarian_Markers,ca125_trend,CA125趋势,categorical,,,Increasing,Decreasing,Stable,First_Test,NA,,,N,CA125动态,复发监测
+Ovarian_Markers,he4,人附睾蛋白4,decimal,pmol/L,0-1000,83080-7,,N,HE4,卵巢癌补充标志
+Ovarian_Markers,he4_reference,HE4参考值,decimal,pmol/L,,,,,N,参考值,绝经前<70/绝经后<140
+Ovarian_Markers,roma_index,ROMA指数,decimal,%,0-100,,,N,卵巢恶性风险算法,CA125+HE4综合
+Ovarian_Markers,roma_risk,ROMA风险,categorical,,,Low_Risk,High_Risk,NA,,,N,ROMA分层,绝经前<11.4%低风险
+Ovarian_Markers,ova1_score,OVA1评分,decimal,,0-10,,,N,OVA1多标志物评分,卵巢癌风险算法
 
-ca153.value,CA153.数值,Number,"糖类抗原15-3(Cancer Antigen 15-3)数值。<br>单位: U/mL<br>**正常参考值**: <25-30 U/mL<br>**临床意义**: 乳腺癌监测最常用标志物",18.5
-ca153.referenceRange,CA153.参考范围,String,实验室提供的CA153参考范围,0-25 U/mL
-ca153.interpretation,CA153.结果判读,String,"CA153结果判读。<br>**建议值**: `正常(<25)`, `轻度升高(25-50)`, `中度升高(50-100)`, `显著升高(>100，提示晚期乳腺癌或转移)`, `极度升高(>200)`<br>**注意**: CA153对早期乳腺癌敏感性低(20-30%),主要用于监测",正常(<25)
-ca153.clinicalSignificance,CA153.临床意义,String,"CA153升高的临床意义。<br>**恶性肿瘤**: 乳腺癌(晚期60-80%敏感性,早期仅20-30%)、卵巢癌、肺癌、胰腺癌<br>**良性疾病**: 乳腺良性病变、肝硬化、结核、系统性红斑狼疮<br>**最佳用途**: 已知乳腺癌患者的治疗监测和复发监测",乳腺癌治疗监测标志物(不适合早期筛查)
-ca153.falsePositiveCauses,CA153.假阳性原因,String,"CA153假阳性升高的常见原因。<br>**建议值**: `乳腺良性病变`, `肝硬化`, `慢性肝炎`, `肺结核`, `系统性红斑狼疮`, `妊娠晚期`",无
-ca153.recommendation,CA153.建议,String,"基于CA153结果的临床建议。<br>**CA153 <25**: 定期体检,乳腺钼靶/超声筛查<br>**CA153 25-50**: 乳腺超声/钼靶检查,3-6个月复查<br>**CA153 50-100**: 乳腺超声+钼靶+乳腺外科就诊<br>**CA153 >100**: 乳腺增强MRI+肿瘤科就诊",定期乳腺影像学筛查
+Breast_Markers,ca15_3,糖类抗原15-3,decimal,U/mL,0-1000,6549-0,,N,CA15-3,乳腺癌监测
+Breast_Markers,ca15_3_reference,CA15-3参考值,decimal,U/mL,,,,,N,参考值,通常<31.3
+Breast_Markers,ca15_3_interpretation,CA15-3解读,categorical,,,Normal,Mildly_Elevated,Moderately_Elevated,Markedly_Elevated,NA,,,N,CA15-3分层,监测转移
+Breast_Markers,ca15_3_trend,CA15-3趋势,categorical,,,Increasing,Decreasing,Stable,First_Test,NA,,,N,CA15-3动态,疗效评估
+Breast_Markers,ca27_29,糖类抗原27-29,decimal,U/mL,0-1000,6875-9,,N,CA27-29,乳腺癌相关
+Breast_Markers,cea_breast,CEA(乳腺),decimal,ng/mL,0-1000,2039-6,,N,CEA,乳腺癌辅助
+Breast_Markers,ctc_breast,循环肿瘤细胞,integer,cells/7.5mL,0-1000,,,N,CTC计数,预后标志物
 
-psa.total,PSA.总PSA,Number,"总前列腺特异性抗原(Total Prostate-Specific Antigen)数值。<br>单位: ng/mL<br>**正常参考值**: <4.0 ng/mL<br>**临床意义**: 前列腺癌筛查最重要标志物",2.8
-psa.free,PSA.游离PSA,Number,"游离前列腺特异性抗原(Free PSA)数值。<br>单位: ng/mL<br>**临床意义**: 用于计算f/t PSA比值,鉴别良恶性",0.56
-psa.freeToTotalRatio,PSA.游离PSA/总PSA比值,Number,"游离PSA/总PSA比值(f/t PSA)。<br>单位: %<br>**诊断价值**: f/t PSA <10%提示前列腺癌可能性大, >25%提示良性增生可能性大<br>**关键阈值**: f/t PSA 10-25%为灰区,需进一步检查",20
-psa.referenceRange,PSA.参考范围,String,实验室提供的总PSA参考范围,0-4.0 ng/mL
-psa.ageAdjusted,PSA.年龄校正参考值,String,"年龄校正的PSA参考值。<br>**建议值**: `40-49岁: <2.5 ng/mL`, `50-59岁: <3.5 ng/mL`, `60-69岁: <4.5 ng/mL`, `70-79岁: <6.5 ng/mL`<br>**意义**: 年龄增加,前列腺体积增大,PSA生理性升高",50-59岁: <3.5 ng/mL
-psa.interpretation,PSA.结果判读,String,"PSA结果判读。<br>**建议值**: `正常(<4.0)`, `轻度升高(4-10，灰区)`, `中度升高(10-20)`, `显著升高(>20，高度提示前列腺癌)`, `极度升高(>100)`<br>**4-10 ng/mL灰区**: 前列腺癌概率25%,需结合f/t PSA、DRE、前列腺MRI决策",正常(<4.0)
-psa.clinicalSignificance,PSA.临床意义,String,"PSA升高的临床意义。<br>**恶性肿瘤**: 前列腺癌(PSA >4 ng/mL敏感性70-80%,特异性60-70%)<br>**良性疾病**: 前列腺增生(BPH,最常见)、前列腺炎、尿潴留、前列腺按摩/活检后、射精后<br>**注意**: PSA >10 ng/mL时前列腺癌可能性50%,>20 ng/mL时>80%",前列腺癌筛查标志物(推荐50岁以上男性年检)
-psa.falsePositiveCauses,PSA.假阳性原因,String,"PSA假阳性升高的常见原因。<br>**建议值**: `前列腺增生(BPH)`, `前列腺炎`, `尿潴留`, `前列腺按摩`, `前列腺活检(3周内)`, `射精(48小时内)`, `剧烈运动(骑车)`, `导尿`",可能前列腺增生
-psa.recommendation,PSA.建议,String,"基于PSA结果的临床建议。<br>**PSA <4**: 年度复查(50岁以上男性)<br>**PSA 4-10 + f/t >25%**: 观察,3-6个月复查<br>**PSA 4-10 + f/t <10%**: 前列腺MRI+泌尿外科就诊<br>**PSA >10**: 前列腺MRI+穿刺活检+泌尿外科就诊",建议每年复查
+Prostate_Markers,psa_total,总前列腺特异抗原,decimal,ng/mL,0-1000,2857-1,,N,tPSA,前列腺癌筛查/监测
+Prostate_Markers,psa_reference,PSA参考值,decimal,ng/mL,,,,,N,年龄调整参考值,通常<4
+Prostate_Markers,psa_interpretation,PSA解读,categorical,,,Normal,Gray_Zone,Elevated,Markedly_Elevated,NA,,,N,PSA分层,<4/4-10/10-20/>20
+Prostate_Markers,psa_free,游离PSA,decimal,ng/mL,0-100,10886-0,,N,fPSA,游离PSA
+Prostate_Markers,psa_free_total_ratio,fPSA/tPSA,decimal,%,0-100,,,N,游离/总PSA比值,<10%恶性风险高
+Prostate_Markers,psa_density,PSA密度,decimal,ng/mL/cc,0-10,,,N,PSA/前列腺体积,>0.15可疑
+Prostate_Markers,psa_velocity,PSA速率,decimal,ng/mL/year,0-100,,,N,PSA年增长率,>0.75疑癌
+Prostate_Markers,psa_doubling_time,PSA倍增时间,decimal,months,0-240,,,N,PSA DT,<3月预后差
+Prostate_Markers,phi,前列腺健康指数,decimal,,0-100,,,N,PHI,[-2]proPSA衍生
+Prostate_Markers,four_k_score,4Kscore,decimal,%,0-100,,,N,4K评分,tPSA/fPSA/iPSA/hK2
+Prostate_Markers,pca3,PCA3尿检,decimal,,0-200,48133-7,,N,PCA3评分,前列腺癌基因3
+Prostate_Markers,selectmdx,SelectMDX,categorical,,,Low_Risk,High_Risk,NA,,,N,尿液DLX1/HOXC6,活检决策
 
-nse.value,NSE.数值,Number,"神经元特异性烯醇化酶(Neuron-Specific Enolase)数值。<br>单位: ng/mL<br>**正常参考值**: <16.3 ng/mL<br>**临床意义**: 小细胞肺癌(SCLC)最敏感标志物",12.5
-nse.referenceRange,NSE.参考范围,String,实验室提供的NSE参考范围,0-16.3 ng/mL
-nse.interpretation,NSE.结果判读,String,"NSE结果判读。<br>**建议值**: `正常(<16.3)`, `轻度升高(16.3-25)`, `中度升高(25-50)`, `显著升高(>50，高度提示SCLC)`, `极度升高(>100)`<br>**诊断价值**: NSE >25 ng/mL时SCLC可能性大",正常(<16.3)
-nse.clinicalSignificance,NSE.临床意义,String,"NSE升高的临床意义。<br>**恶性肿瘤**: 小细胞肺癌(SCLC,80-90%敏感性)、神经母细胞瘤、神经内分泌肿瘤<br>**良性疾病**: 肺部良性病变、溶血样本(假性升高)、脑梗死、癫痫<br>**最佳用途**: SCLC的诊断、疗效监测和预后评估",小细胞肺癌(SCLC)标志物
-nse.falsePositiveCauses,NSE.假阳性原因,String,"NSE假阳性升高的常见原因。<br>**建议值**: `溶血样本(最常见)`, `肺部良性病变`, `脑梗死`, `癫痫发作`, `神经系统疾病`",无
-nse.recommendation,NSE.建议,String,"基于NSE结果的临床建议。<br>**NSE <16.3**: 定期体检<br>**NSE 16.3-25**: 胸部CT检查,3-6个月复查<br>**NSE 25-50**: 胸部增强CT+呼吸科/肿瘤科就诊<br>**NSE >50**: 强烈建议胸部增强CT+支气管镜+肿瘤科就诊",定期体检即可
+Lung_Markers,cea_lung,CEA(肺),decimal,ng/mL,0-1000,2039-6,,N,CEA,肺癌常用标志物
+Lung_Markers,cyfra21_1,细胞角蛋白19片段,decimal,ng/mL,0-100,10876-1,,N,CYFRA21-1,鳞癌特异
+Lung_Markers,cyfra21_1_reference,CYFRA21-1参考值,decimal,ng/mL,,,,,N,参考值,通常<3.3
+Lung_Markers,nse,神经元特异性烯醇化酶,decimal,ng/mL,0-500,9349-9,,N,NSE,小细胞肺癌
+Lung_Markers,nse_reference,NSE参考值,decimal,ng/mL,,,,,N,参考值,通常<16.3
+Lung_Markers,scc_ag,鳞状细胞癌抗原,decimal,ng/mL,0-100,10471-1,,N,SCC-Ag,鳞癌标志
+Lung_Markers,progastrin_releasing_peptide,胃泌素释放肽前体,decimal,pg/mL,0-1000,33051-5,,N,ProGRP,SCLC高敏感性
+Lung_Markers,ca125_lung,CA125(肺),decimal,U/mL,0-10000,6875-9,,N,CA125,腺癌辅助
 
-cyfra211.value,CYFRA211.数值,Number,"细胞角蛋白19片段(Cytokeratin Fragment 21-1)数值。<br>单位: ng/mL<br>**正常参考值**: <3.3 ng/mL<br>**临床意义**: 非小细胞肺癌(NSCLC)标志物,尤其鳞癌",1.8
-cyfra211.referenceRange,CYFRA211.参考范围,String,实验室提供的CYFRA211参考范围,0-3.3 ng/mL
-cyfra211.interpretation,CYFRA211.结果判读,String,"CYFRA211结果判读。<br>**建议值**: `正常(<3.3)`, `轻度升高(3.3-10)`, `中度升高(10-30)`, `显著升高(>30，高度提示NSCLC)`, `极度升高(>100)`<br>**诊断价值**: CYFRA211对NSCLC敏感性60-70%,鳞癌更高(70-80%)",正常(<3.3)
-cyfra211.clinicalSignificance,CYFRA211.临床意义,String,"CYFRA211升高的临床意义。<br>**恶性肿瘤**: 非小细胞肺癌(NSCLC,尤其鳞癌)、膀胱癌、食管癌、头颈部肿瘤<br>**良性疾病**: 肺部感染、间质性肺病、肾功能不全<br>**最佳用途**: NSCLC的诊断辅助和疗效监测",非小细胞肺癌(NSCLC)标志物
-cyfra211.falsePositiveCauses,CYFRA211.假阳性原因,String,"CYFRA211假阳性升高的常见原因。<br>**建议值**: `肺部感染`, `间质性肺病`, `慢性肾功能不全`, `肝硬化`",无
-cyfra211.recommendation,CYFRA211.建议,String,"基于CYFRA211结果的临床建议。<br>**CYFRA211 <3.3**: 定期体检<br>**CYFRA211 3.3-10**: 胸部CT检查,排除肺部疾病<br>**CYFRA211 10-30**: 胸部增强CT+呼吸科就诊<br>**CYFRA211 >30**: 胸部增强CT+支气管镜+肿瘤科就诊",定期体检即可
+Germ_Cell_Markers,beta_hcg,β-人绒毛膜促性腺激素,decimal,mIU/mL,0-100000,21198-7,,N,β-HCG,生殖细胞瘤/滋养细胞瘤
+Germ_Cell_Markers,beta_hcg_reference,β-HCG参考值,decimal,mIU/mL,,,,,N,参考值,非孕<5
+Germ_Cell_Markers,afp_germ_cell,AFP(生殖细胞),decimal,ng/mL,0-100000,1834-1,,N,AFP,非精原细胞瘤
+Germ_Cell_Markers,ldh,乳酸脱氢酶,decimal,U/L,0-10000,14804-9,,N,LDH,生殖细胞瘤预后
+Germ_Cell_Markers,ldh_reference,LDH参考值,decimal,U/L,,,,,N,参考值,通常<250
+Germ_Cell_Markers,plap,胎盘碱性磷酸酶,decimal,U/L,0-1000,,,N,PLAP,精原细胞瘤
 
-scc.value,SCC.数值,Number,"鳞状细胞癌抗原(Squamous Cell Carcinoma Antigen)数值。<br>单位: ng/mL<br>**正常参考值**: <1.5 ng/mL<br>**临床意义**: 鳞状细胞癌标志物(宫颈/肺/食管/头颈部)",0.9
-scc.referenceRange,SCC.参考范围,String,实验室提供的SCC参考范围,0-1.5 ng/mL
-scc.interpretation,SCC.结果判读,String,"SCC结果判读。<br>**建议值**: `正常(<1.5)`, `轻度升高(1.5-3.0)`, `中度升高(3.0-10)`, `显著升高(>10，高度提示鳞癌)`, `极度升高(>30)`<br>**诊断价值**: SCC >2.0 ng/mL时鳞癌可能性增加",正常(<1.5)
-scc.clinicalSignificance,SCC.临床意义,String,"SCC升高的临床意义。<br>**恶性肿瘤**: 宫颈鳞癌(60-80%敏感性)、肺鳞癌、食管鳞癌、头颈部鳞癌<br>**良性疾病**: 皮肤疾病(湿疹、银屑病)、肾功能不全、肺部良性病变<br>**最佳用途**: 鳞癌的疗效监测和复发监测",鳞状细胞癌标志物
-scc.falsePositiveCauses,SCC.假阳性原因,String,"SCC假阳性升高的常见原因。<br>**建议值**: `皮肤疾病(湿疹/银屑病)`, `慢性肾功能不全`, `肺部良性病变`, `肝脏疾病`",无
-scc.recommendation,SCC.建议,String,"基于SCC结果的临床建议。<br>**SCC <1.5**: 定期体检<br>**SCC 1.5-3.0**: 根据临床症状进一步检查<br>**SCC 3.0-10**: 相应部位影像学检查(胸部/宫颈/食管)<br>**SCC >10**: 肿瘤专科就诊+针对性检查",定期体检即可
+Neuroendocrine_Markers,chromogranin_a,嗜铬粒蛋白A,decimal,ng/mL,0-1000,20569-0,,N,CgA,神经内分泌瘤通用标志
+Neuroendocrine_Markers,cga_reference,CgA参考值,decimal,ng/mL,,,,,N,参考值,通常<100
+Neuroendocrine_Markers,nse_neuroendocrine,NSE(神经内分泌),decimal,ng/mL,0-500,9349-9,,N,NSE,神经内分泌瘤
+Neuroendocrine_Markers,serotonin,5-羟色胺,decimal,ng/mL,0-1000,1694-9,,N,血清素,类癌综合征
+Neuroendocrine_Markers,five_hiaa,5-HIAA尿,decimal,mg/24h,0-100,1695-6,,N,5-羟吲哚乙酸,类癌代谢物
+Neuroendocrine_Markers,gastrin,胃泌素,decimal,pg/mL,0-10000,2088-3,,N,胃泌素,胃泌素瘤
 
-ca724.value,CA724.数值,Number,"糖类抗原72-4(Cancer Antigen 72-4)数值。<br>单位: U/mL<br>**正常参考值**: <6.9 U/mL<br>**临床意义**: 胃癌和卵巢癌辅助标志物",3.2
-ca724.referenceRange,CA724.参考范围,String,实验室提供的CA724参考范围,0-6.9 U/mL
-ca724.interpretation,CA724.结果判读,String,"CA724结果判读。<br>**建议值**: `正常(<6.9)`, `轻度升高(6.9-20)`, `中度升高(20-50)`, `显著升高(>50，提示胃癌或卵巢癌)`, `极度升高(>100)`<br>**诊断价值**: CA724对胃癌特异性优于CEA和CA199",正常(<6.9)
-ca724.clinicalSignificance,CA724.临床意义,String,"CA724升高的临床意义。<br>**恶性肿瘤**: 胃癌(40-50%敏感性,特异性较高)、卵巢癌、胰腺癌、结直肠癌<br>**良性疾病**: 良性卵巢囊肿、肝硬化、胃炎、胰腺炎(通常<20 U/mL)<br>**最佳用途**: 与CEA/CA199联合提高胃癌检出率",胃癌辅助诊断标志物(特异性高)
-ca724.falsePositiveCauses,CA724.假阳性原因,String,"CA724假阳性升高的常见原因。<br>**建议值**: `良性卵巢囊肿`, `肝硬化`, `胃炎`, `胰腺炎`, `胆囊炎`",无
-ca724.recommendation,CA724.建议,String,"基于CA724结果的临床建议。<br>**CA724 <6.9**: 定期体检<br>**CA724 6.9-20**: 胃镜检查+复查<br>**CA724 20-50**: 胃镜+腹部增强CT+消化科就诊<br>**CA724 >50**: 胃镜+腹部增强CT+肿瘤科就诊",定期体检即可
+Thyroid_Markers,thyroglobulin,甲状腺球蛋白,decimal,ng/mL,0-1000,3013-0,,N,Tg,分化型甲状腺癌监测
+Thyroid_Markers,thyroglobulin_antibody,抗甲状腺球蛋白抗体,decimal,IU/mL,0-1000,8098-6,,N,TgAb,Tg干扰因素
+Thyroid_Markers,calcitonin,降钙素,decimal,pg/mL,0-10000,1690-7,,N,降钙素,甲状腺髓样癌
+Thyroid_Markers,calcitonin_reference,降钙素参考值,decimal,pg/mL,,,,,N,参考值,通常<10
+Thyroid_Markers,cea_thyroid,CEA(甲状腺),decimal,ng/mL,0-1000,2039-6,,N,CEA,髓样癌辅助
 
-he4.value,HE4.数值,Number,"人附睾蛋白4(Human Epididymis Protein 4)数值。<br>单位: pmol/L<br>**正常参考值**: 绝经前 <70 pmol/L, 绝经后 <140 pmol/L<br>**临床意义**: 卵巢癌标志物,敏感性和特异性优于CA125",48.5
-he4.referenceRange,HE4.参考范围,String,实验室提供的HE4参考范围,绝经前 <70 pmol/L
-he4.interpretation,HE4.结果判读,String,"HE4结果判读。<br>**建议值**: `正常(绝经前<70/绝经后<140)`, `轻度升高(70-150/140-300)`, `中度升高(150-500/>300)`, `显著升高(>500，高度提示卵巢癌)`, `极度升高(>1000)`<br>**诊断价值**: HE4对早期卵巢癌敏感性优于CA125(75% vs 65%)",正常(绝经前<70)
-he4.clinicalSignificance,HE4.临床意义,String,"HE4升高的临床意义。<br>**恶性肿瘤**: 卵巢上皮癌(尤其浆液性和子宫内膜样癌,75-80%敏感性)、子宫内膜癌<br>**良性疾病**: 肾功能不全(最常见假阳性原因)、肝硬化、子宫内膜异位症(较CA125少见)<br>**优势**: 受月经周期影响小,假阳性率低于CA125",卵巢癌标志物(特异性优于CA125)
-he4.falsePositiveCauses,HE4.假阳性原因,String,"HE4假阳性升高的常见原因。<br>**建议值**: `慢性肾功能不全(最常见)`, `肝硬化`, `肺纤维化`, `心力衰竭`, `胸腔积液`",无
-he4.recommendation,HE4.建议,String,"基于HE4结果的临床建议。<br>**HE4正常**: 定期妇科体检<br>**HE4轻度升高**: 检查肾功能+盆腔超声+3-6个月复查<br>**HE4中度升高**: 盆腔增强CT/MRI+妇科肿瘤专科就诊<br>**HE4 >500**: 强烈建议妇科肿瘤专科就诊",定期妇科体检
+Other_Markers,beta_2_microglobulin,β2微球蛋白,decimal,mg/L,0-100,1952-1,,N,β2-MG,血液系统肿瘤
+Other_Markers,ferritin,铁蛋白,decimal,ng/mL,0-10000,2276-4,,N,铁蛋白,肝癌/白血病升高
+Other_Markers,sil_2r,可溶性白介素2受体,decimal,U/mL,0-10000,26962-1,,N,sIL-2R,淋巴瘤
+Other_Markers,immunoglobulin,免疫球蛋白,string,,,,,N,Ig异常,骨髓瘤M蛋白
+Other_Markers,m_protein,M蛋白,categorical,,,Positive,Negative,NA,,,N,单克隆蛋白,骨髓瘤
+Other_Markers,light_chains,轻链,string,mg/L,,,,,N,κ/λ轻链,κ/λ比值异常
 
-roma.index,ROMA指数.数值,Number,"卵巢恶性肿瘤风险评估指数(Risk of Ovarian Malignancy Algorithm)。<br>单位: %<br>**计算公式**: 基于CA125和HE4的预测模型<br>**临床意义**: 综合评估卵巢癌风险",8.5
-roma.interpretation,ROMA指数.判读,String,"ROMA指数判读。<br>**建议值**: `低风险(绝经前<11.4%/绝经后<29.9%)`, `高风险(绝经前≥11.4%/绝经后≥29.9%)`<br>**诊断价值**: ROMA高风险时卵巢癌概率增加,需进一步检查",低风险(绝经前<11.4%)
-roma.recommendation,ROMA指数.建议,String,"基于ROMA指数的临床建议。<br>**低风险**: 定期妇科超声随访<br>**高风险**: 妇科肿瘤专科就诊+盆腔增强MRI+必要时腹腔镜探查",定期妇科超声随访
+ctDNA,ctdna_testing,循环肿瘤DNA,categorical,,,Yes,No,,,N,ctDNA检测,液体活检
+ctDNA,ctdna_mutations,ctDNA突变,string,,,,,N,检出突变,分子残留病灶
+ctDNA,ctdna_variant_allele_frequency,ctDNA VAF,decimal,%,0-100,,,N,变异等位基因频率,肿瘤负荷
+ctDNA,mrd_status,分子残留病灶,categorical,,,Positive,Negative,NA,,,N,MRD状态,微小残留病
 
-combinedInterpretation.panelSummary,联合解读.组合总结,String,"多个肿瘤标志物的联合判读总结。<br>**示例模式**:<br>- 肝癌高危组合: AFP↑ + CEA正常<br>- 胰腺癌高危组合: CA199↑↑ + CEA↑<br>- 结直肠癌高危组合: CEA↑↑ + CA199↑ + CA724↑<br>- 肺癌高危组合: CEA↑ + NSE↑(SCLC) 或 CYFRA211↑(NSCLC)<br>- 卵巢癌高危组合: CA125↑ + HE4↑ + ROMA高风险",所有肿瘤标志物在正常范围内
-combinedInterpretation.suspectedCancerType,联合解读.疑似肿瘤类型,String,"基于多标志物组合提示的疑似肿瘤类型。<br>**建议值**: `未见异常`, `肝癌风险`, `胰腺癌风险`, `结直肠癌风险`, `胃癌风险`, `肺癌风险(SCLC)`, `肺癌风险(NSCLC)`, `乳腺癌风险`, `卵巢癌风险`, `前列腺癌风险`, `多种可能需进一步鉴别`",未见异常
-combinedInterpretation.riskLevel,联合解读.风险等级,String,"基于联合判读的总体恶性肿瘤风险等级。<br>**建议值**: `低风险(所有指标正常)`, `中风险(1-2项轻度升高)`, `高风险(多项升高或单项显著升高)`, `极高风险(多项显著升高)`<br>**风险分层意义**: 指导后续检查的紧迫性和方案",低风险(所有指标正常)
-combinedInterpretation.nextSteps,联合解读.下一步建议,String,"基于联合判读的综合建议。<br>**低风险**: 定期体检,1年后复查<br>**中风险**: 3-6个月复查+针对性影像学检查<br>**高风险**: 尽快完善影像学检查(CT/MRI)+专科就诊<br>**极高风险**: 立即肿瘤专科就诊+全面检查",建议保持健康生活方式，12个月后常规体检复查肿瘤标志物
+Liquid_Biopsy,ctc,循环肿瘤细胞,integer,cells,0-10000,,,N,CTC计数,预后/疗效
+ctDNA,circulating_tumor_cells_count,CTC数量,integer,cells/7.5mL,0-1000,,,N,循环肿瘤细胞计数,≥5高危
+Liquid_Biopsy,exosome_analysis,外泌体分析,categorical,,,Performed,Not_Performed,,,N,外泌体检测,新兴标志物
 
-limitations.screening,局限性.筛查局限性,String,"肿瘤标志物用于筛查的局限性说明。<br>**关键信息**: 除PSA外,其他肿瘤标志物敏感性和特异性不足,不推荐用于无症状人群的肿瘤筛查。肿瘤标志物主要用于: ①高危人群筛查 ②已知肿瘤患者的疗效监测 ③术后复发监测",肿瘤标志物升高不等于确诊癌症，正常也不能完全排除癌症
-limitations.falseNegative,局限性.假阴性说明,String,"肿瘤标志物假阴性的可能性说明。<br>**关键信息**: 早期肿瘤患者可能肿瘤标志物正常(如早期乳腺癌CA153仅20-30%敏感性)。某些肿瘤类型不产生特定标志物(如Lewis阴性人群CA199为0)。肿瘤标志物正常不能排除癌症,需结合影像学和病理检查",早期癌症可能肿瘤标志物正常
-limitations.falsePositive,局限性.假阳性说明,String,"肿瘤标志物假阳性的可能性说明。<br>**关键信息**: 多种良性疾病可导致肿瘤标志物升高,如吸烟(CEA)、月经期(CA125)、肝硬化(AFP/CEA/CA199)、前列腺增生(PSA)等。轻度升高时良性原因更常见,需动态观察和排除良性疾病",良性疾病也可能导致肿瘤标志物升高
+Multi_Marker_Panels,liver_cancer_panel,肝癌标志物组合,categorical,,,AFP_DCP,AFP_AFP_L3_DCP,AFP_Only,NA,,,N,肝癌联合检测,提高敏感性
+Multi_Marker_Panels,pancreatic_panel,胰腺癌组合,categorical,,,CA19_9_CEA,CA19_9_CA125,CA19_9_CEA_CA125,NA,,,N,胰腺癌组合,综合判断
+Multi_Marker_Panels,ovarian_risk_algorithm,卵巢癌风险算法,categorical,,,ROMA,OVA1,RMI,Copenhagen_Index,NA,,,N,多标志物算法,风险分层
+Multi_Marker_Panels,gastric_cancer_panel,胃癌组合,categorical,,,CEA_CA19_9_CA72_4,CEA_CA72_4,NA,,,N,胃癌组合,提高诊断率
+Multi_Marker_Panels,colorectal_panel,结直肠癌组合,categorical,,,CEA_CA19_9,CEA_Alone,NA,,,N,结直肠癌组合,监测复发
 
-diagnosisImpression,诊断/印象,String,基于肿瘤标志物结果的初步印象。建议结合临床症状、影像学检查和病理诊断综合判断,所有肿瘤标志物均在正常参考范围内，提示当前无明显肿瘤标志物异常。建议定期体检随访。
-recommendation,建议,String,"基于肿瘤标志物结果的综合建议,包括复查时间、需要的影像学检查、专科就诊建议等。",建议保持健康生活方式(戒烟限酒、均衡饮食、规律运动)，12个月后常规体检时复查肿瘤标志物。如出现不适症状请及时就医。
+Clinical_Context,benign_conditions,良性疾病,categorical,,,Liver_Cirrhosis,Hepatitis,Pancreatitis,Cholecystitis,Inflammatory_Bowel_Disease,Endometriosis,Ovarian_Cyst,BPH,Renal_Insufficiency,Pregnancy,None,Other,,,N,良性病因,假阳性原因
+Clinical_Context,physiologic_factors,生理因素,categorical,,,Smoking,Pregnancy,Menstruation,Recent_Surgery,Infection,None,Other,,,N,生理影响,干扰因素
+Clinical_Context,medications,药物影响,categorical,,,PPI,Anticoagulants,Biotin,None,Other,,,N,用药史,检测干扰
+Clinical_Context,imaging_findings,影像学发现,categorical,,,Mass_Detected,Nodule_Detected,Lymphadenopathy,Metastasis,Normal,NA,,,N,影像结果,综合诊断
+Clinical_Context,symptoms,症状,categorical,,,Asymptomatic,Abdominal_Pain,Jaundice,Palpable_Mass,Weight_Loss,Bleeding,Other,,,N,临床症状,提示病变
+
+Serial_Monitoring,baseline_value,基线值,decimal,,0-1000000,,,N,首次检测值,动态比较基线
+Serial_Monitoring,previous_value,前次值,decimal,,0-1000000,,,N,上次检测值,连续监测
+Serial_Monitoring,current_value,本次值,decimal,,0-1000000,,,N,本次检测值,当前水平
+Serial_Monitoring,change_from_baseline,较基线变化,categorical,,,Increased,Decreased,Stable,First_Test,,,N,与基线比较,绝对变化
+Serial_Monitoring,percent_change,变化百分比,decimal,%,-100-10000,,,N,相对变化率,疗效评估
+Serial_Monitoring,doubling_time,倍增时间,decimal,days,0-3650,,,N,标志物DT,生长速度
+Serial_Monitoring,marker_kinetics,动态学分类,categorical,,,Rapid_Rise,Slow_Rise,Plateau,Decline,Fluctuating,NA,,,N,变化模式,疗效/复发
+
+Treatment_Response,post_treatment_baseline,治疗后基线,decimal,,0-1000000,,,N,治疗后nadir,缓解基线
+Treatment_Response,response_category,治疗反应,categorical,,,Complete_Response,Partial_Response,Stable_Disease,Progressive_Disease,NA,,,N,RECIST样分类,标志物疗效评估
+Treatment_Response,marker_normalization,标志物正常化,categorical,,,Yes,No,Partial,NA,,,N,恢复正常,完全缓解指标
+Treatment_Response,time_to_normalization,正常化时间,integer,days,0-365,,,N,治疗到正常天数,反应速度
+Treatment_Response,post_surgery_marker,术后标志物,decimal,,0-1000000,,,N,术后检测值,根治性评估
+Treatment_Response,nadir_value,最低值,decimal,,0-1000000,,,N,治疗期间nadir,最佳反应
+
+Recurrence_Detection,surveillance_marker,监测标志物,categorical,,,Yes,No,,,N,缓解期监测,复发筛查
+Recurrence_Detection,recurrence_threshold,复发阈值,decimal,,0-1000000,,,N,复发临界值,上升>2-3倍基线
+Recurrence_Detection,biochemical_recurrence,生化复发,categorical,,,Yes,No,NA,,,N,标志物提示复发,早于影像
+Recurrence_Detection,lead_time,领先时间,integer,months,0-120,,,N,标志物先于影像月数,早期发现优势
+Recurrence_Detection,recurrence_confirmed,复发确认,categorical,,,Imaging_Confirmed,Biopsy_Confirmed,Clinical_Suspected,Not_Confirmed,NA,,,N,复发证实,影像/病理验证
+
+Prognosis,prognostic_value,预后价值,categorical,,,Favorable,Unfavorable,Indeterminate,NA,,,N,标志物预后意义,初诊预测
+Prognosis,high_risk_threshold,高危阈值,decimal,,0-1000000,,,N,预后不良临界值,分层
+Prognosis,survival_correlation,生存相关性,categorical,,,Strong_Positive,Moderate,Weak,None,NA,,,N,与生存相关性,预后因子
+
+Interpretation,clinical_significance,临床意义,categorical,,,Highly_Suggestive_Malignancy,Moderately_Suggestive,Mildly_Elevated_Uncertain,Likely_Benign,Normal,,,N,综合判断,临床决策
+Interpretation,false_positive_risk,假阳性风险,categorical,,,High,Moderate,Low,NA,,,N,假阳性可能,良性病因
+Interpretation,sensitivity_specificity,敏感性/特异性,categorical,,,High_Sensitivity_Low_Specificity,Balanced,High_Specificity_Low_Sensitivity,NA,,,N,检测性能,解读权重
+Interpretation,ppv_context,阳性预测值,categorical,,,High_PPV,Moderate_PPV,Low_PPV,NA,,,N,PPV,患病率依赖
+Interpretation,recommended_action,推荐措施,categorical,,,Urgent_Imaging,Routine_Imaging,Repeat_Marker,Clinical_Correlation,Benign_Follow_Up,No_Action,,,N,后续建议,临床决策
+
+Quality_Control,specimen_type,标本类型,categorical,,,Serum,Plasma,Urine,Pleural_Fluid,Ascites,Other,,,N,标本来源,检测要求
+Quality_Control,hemolysis,溶血,categorical,,,Yes_Mild,Yes_Moderate,Yes_Severe,No,,,N,溶血程度,干扰检测
+Quality_Control,lipemia,脂血,categorical,,,Yes,No,,,N,脂血,干扰因素
+Quality_Control,icterus,黄疸,categorical,,,Yes,No,,,N,黄疸,胆红素干扰
+Quality_Control,assay_method,检测方法,categorical,,,ECLIA,CLIA,ELISA,RIA,CMIA,Other,,,N,分析方法,方法学差异
+Quality_Control,instrument,检测仪器,string,,,,,N,仪器平台,试剂差异
+Quality_Control,lot_number,批号,string,,,,,N,试剂批号,质控追溯
+Quality_Control,hook_effect,钩状效应,categorical,,,Possible,Unlikely,Dilution_Done,NA,,,N,超高值钩状效应,极高值稀释复查
+
+Guidelines,test_appropriate,检测恰当性,categorical,,,Guideline_Recommended,Off_Label_Reasonable,Not_Recommended,,,N,指南推荐,循证依据
+Guidelines,screening_guideline,筛查指南,categorical,,,USPSTF,NCCN,ASCO,ESMO,National,None,,,N,遵循指南,标准化
+Guidelines,monitoring_frequency,监测频率,categorical,,,Every_3_Months,Every_6_Months,Annually,As_Needed,NA,,,N,随访间隔,指南建议
+
+Report,reporting_pathologist,报告医师,string,,,,,N,报告人,质控
+Report,report_date,报告日期,date,,,,,N,报告时间,时效性
+Report,interpretation_summary,解读总结,string,,,,,N,综合解读,临床指导
+Report,limitations,局限性说明,string,,,,,N,检测局限,知情告知
+Report,recommendations,建议,string,,,,,N,后续建议,临床决策支持

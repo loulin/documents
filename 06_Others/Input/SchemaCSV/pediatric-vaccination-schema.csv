@@ -1,0 +1,128 @@
+Category,Field_Name,Chinese_Name,Data_Type,Unit,Valid_Range,LOINC_Code,Required,Description,Clinical_Significance
+Basic_Info,patient_id,患者ID,string,,,,,Y,唯一标识,接种记录
+Basic_Info,visit_date,接种日期,date,,,,,Y,接种时间,免疫程序
+Basic_Info,chronological_age_months,月龄,integer,months,0-216,,,Y,接种时月龄,适龄接种
+Basic_Info,gender,性别,categorical,,"Male,Female",,,Y,性别,HPV性别差异
+
+Contraindications,contraindication_present,有禁忌证,boolean,,,,,Y,存在禁忌,延迟接种
+Contraindications,severe_allergy,严重过敏史,boolean,,,,,N,对疫苗成分过敏,绝对禁忌
+Contraindications,immunocompromised,免疫缺陷,boolean,,,,,N,原发/继发免疫缺陷,活疫苗禁忌
+Contraindications,acute_illness,急性疾病,boolean,,,,,N,发热/急性感染,暂缓接种
+Contraindications,encephalopathy,脑病史,boolean,,,,,N,未控制癫痫/进行性神经病,DTaP禁忌
+
+HepB,hepb_birth,乙肝疫苗出生剂,boolean,,,,,Y,HepB #1,出生24小时内
+HepB,hepb_birth_date,HepB出生剂日期,date,,,,,N,接种时间,及时性
+HepB,hepb_1month,乙肝疫苗1月,boolean,,,,,Y,HepB #2,1月龄
+HepB,hepb_1month_date,HepB 1月日期,date,,,,,N,接种时间,间隔≥28天
+HepB,hepb_6month,乙肝疫苗6月,boolean,,,,,Y,HepB #3,6月龄
+HepB,hepb_6month_date,HepB 6月日期,date,,,,,N,接种时间,完成基础免疫
+HepB,hepb_manufacturer,HepB生产厂家,string,,,,,N,疫苗厂商,追溯
+HepB,hepb_lot_number,HepB批号,string,,,,,N,批次号,不良反应追溯
+
+BCG,bcg_vaccine,卡介苗,boolean,,,,,Y,BCG,结核预防
+BCG,bcg_date,BCG日期,date,,,,,N,接种时间,出生时或1月内
+BCG,bcg_scar,卡疤,categorical,,"Present,Absent,Not_Assessed",,,N,存在/无/未评估,接种成功标志
+
+DTaP_DTP,dtap_dose1,百白破疫苗第1剂,boolean,,,,,Y,DTaP/DTP #1,3月龄
+DTaP_DTP,dtap_dose1_date,DTaP #1日期,date,,,,,N,接种时间,基础免疫
+DTaP_DTP,dtap_dose2,百白破疫苗第2剂,boolean,,,,,Y,DTaP #2,4月龄
+DTaP_DTP,dtap_dose2_date,DTaP #2日期,date,,,,,N,接种时间,间隔≥28天
+DTaP_DTP,dtap_dose3,百白破疫苗第3剂,boolean,,,,,Y,DTaP #3,5月龄
+DTaP_DTP,dtap_dose3_date,DTaP #3日期,date,,,,,N,接种时间,基础免疫完成
+DTaP_DTP,dtap_dose4,百白破疫苗第4剂,boolean,,,,,N,DTaP #4,18月龄
+DTaP_DTP,dtap_dose4_date,DTaP #4日期,date,,,,,N,接种时间,加强免疫
+DTaP_DTP,dtap_dose5,百白破疫苗第5剂,boolean,,,,,N,DTaP #5,4-6岁
+DTaP_DTP,dtap_dose5_date,DTaP #5日期,date,,,,,N,接种时间,学龄前加强
+
+Polio,ipv_dose1,脊髓灰质炎疫苗第1剂,boolean,,,,,Y,IPV/OPV #1,2月龄
+Polio,ipv_dose1_date,IPV #1日期,date,,,,,N,接种时间,灭活/减毒
+Polio,ipv_dose2,脊髓灰质炎疫苗第2剂,boolean,,,,,Y,IPV #2,3月龄
+Polio,ipv_dose2_date,IPV #2日期,date,,,,,N,接种时间,基础免疫
+Polio,ipv_dose3,脊髓灰质炎疫苗第3剂,boolean,,,,,Y,IPV #3,4月龄
+Polio,ipv_dose3_date,IPV #3日期,date,,,,,N,接种时间,基础免疫完成
+Polio,ipv_dose4,脊髓灰质炎疫苗第4剂,boolean,,,,,N,IPV #4,4岁
+Polio,ipv_dose4_date,IPV #4日期,date,,,,,N,接种时间,加强免疫
+
+Hib,hib_dose1,b型流感嗜血杆菌疫苗第1剂,boolean,,,,,Y,Hib #1,3月龄
+Hib,hib_dose1_date,Hib #1日期,date,,,,,N,接种时间,脑膜炎预防
+Hib,hib_dose2,b型流感嗜血杆菌疫苗第2剂,boolean,,,,,Y,Hib #2,4月龄
+Hib,hib_dose2_date,Hib #2日期,date,,,,,N,接种时间,基础免疫
+Hib,hib_dose3,b型流感嗜血杆菌疫苗第3剂,boolean,,,,,Y,Hib #3,5月龄
+Hib,hib_dose3_date,Hib #3日期,date,,,,,N,接种时间,基础免疫完成
+Hib,hib_booster,b型流感嗜血杆菌加强,boolean,,,,,N,Hib加强,18月龄
+
+PCV,pcv13_dose1,13价肺炎球菌疫苗第1剂,boolean,,,,,Y,PCV13 #1,3月龄
+PCV,pcv13_dose1_date,PCV13 #1日期,date,,,,,N,接种时间,肺炎预防
+PCV,pcv13_dose2,13价肺炎球菌疫苗第2剂,boolean,,,,,Y,PCV13 #2,4月龄
+PCV,pcv13_dose2_date,PCV13 #2日期,date,,,,,N,接种时间,基础免疫
+PCV,pcv13_dose3,13价肺炎球菌疫苗第3剂,boolean,,,,,Y,PCV13 #3,5月龄
+PCV,pcv13_dose3_date,PCV13 #3日期,date,,,,,N,接种时间,基础免疫完成
+PCV,pcv13_booster,13价肺炎球菌加强,boolean,,,,,N,PCV13加强,12-15月龄
+
+MMR,mmr_dose1,麻腮风疫苗第1剂,boolean,,,,,Y,MMR #1,8月龄
+MMR,mmr_dose1_date,MMR #1日期,date,,,,,N,接种时间,活疫苗
+MMR,mmr_dose2,麻腮风疫苗第2剂,boolean,,,,,N,MMR #2,18月龄
+MMR,mmr_dose2_date,MMR #2日期,date,,,,,N,接种时间,加强免疫
+
+Varicella,varicella_dose1,水痘疫苗第1剂,boolean,,,,,Y,VAR #1,12月龄
+Varicella,varicella_dose1_date,VAR #1日期,date,,,,,N,接种时间,活疫苗
+Varicella,varicella_dose2,水痘疫苗第2剂,boolean,,,,,N,VAR #2,4岁
+Varicella,varicella_dose2_date,VAR #2日期,date,,,,,N,接种时间,加强免疫
+
+HepA,hepa_dose1,甲肝疫苗第1剂,boolean,,,,,Y,HepA #1,18月龄
+HepA,hepa_dose1_date,HepA #1日期,date,,,,,N,接种时间,灭活疫苗
+HepA,hepa_dose2,甲肝疫苗第2剂,boolean,,,,,N,HepA #2,24-30月龄
+HepA,hepa_dose2_date,HepA #2日期,date,,,,,N,接种时间,完成免疫
+
+MenACWY,menacwy_dose1,流脑ACWY疫苗,boolean,,,,,N,MenACWY,3月龄/青少年
+MenACWY,menacwy_dose1_date,MenACWY日期,date,,,,,N,接种时间,脑膜炎球菌
+
+HPV,hpv_dose1,人乳头瘤病毒疫苗第1剂,boolean,,,,,N,HPV #1,9-14岁
+HPV,hpv_dose1_date,HPV #1日期,date,,,,,N,接种时间,宫颈癌预防
+HPV,hpv_dose2,人乳头瘤病毒疫苗第2剂,boolean,,,,,N,HPV #2,间隔6-12月
+HPV,hpv_dose2_date,HPV #2日期,date,,,,,N,接种时间,9价/4价/2价
+HPV,hpv_dose3,人乳头瘤病毒疫苗第3剂,boolean,,,,,N,HPV #3,15岁以上需3剂
+HPV,hpv_dose3_date,HPV #3日期,date,,,,,N,接种时间,完成免疫
+
+Influenza,flu_current_season,流感疫苗本季,boolean,,,,,Y,当季流感疫苗,≥6月龄每年接种
+Influenza,flu_date,流感疫苗日期,date,,,,,N,接种时间,秋季接种
+
+Rotavirus,rotavirus_dose1,轮状病毒疫苗第1剂,boolean,,,,,N,RV #1,2月龄
+Rotavirus,rotavirus_dose1_date,RV #1日期,date,,,,,N,接种时间,口服疫苗
+Rotavirus,rotavirus_dose2,轮状病毒疫苗第2剂,boolean,,,,,N,RV #2,4月龄
+Rotavirus,rotavirus_dose2_date,RV #2日期,date,,,,,N,接种时间,腹泻预防
+Rotavirus,rotavirus_dose3,轮状病毒疫苗第3剂,boolean,,,,,N,RV #3,6月龄(5价)
+Rotavirus,rotavirus_dose3_date,RV #3日期,date,,,,,N,接种时间,Rotarix 2剂/RotaTeq 3剂
+
+JE,je_vaccine,乙脑疫苗,boolean,,,,,N,JE,8月龄
+JE,je_date,JE日期,date,,,,,N,接种时间,日本脑炎
+
+Rabies,rabies_vaccine,狂犬疫苗,boolean,,,,,N,暴露后接种,咬伤后
+Rabies,rabies_date,狂犬疫苗日期,date,,,,,N,接种时间,紧急接种
+Rabies,rabies_immunoglobulin,狂犬免疫球蛋白,boolean,,,,,N,HRIG/ERIG,III度暴露
+
+Adverse_Events,adverse_event,不良反应,boolean,,,,,N,AEFI,疫苗安全性
+Adverse_Events,adverse_event_type,不良反应类型,categorical,,"None,Local_Reaction,Fever,Allergic_Reaction,Seizure,Anaphylaxis",,,N,无/局部反应/发热/过敏/惊厥/过敏性休克,严重程度
+Adverse_Events,adverse_event_date,不良反应日期,date,,,,,N,发生时间,时间关联
+Adverse_Events,aefi_reported,AEFI上报,boolean,,,,,N,已上报,监测系统
+
+Completion_Status,up_to_date,接种及时,boolean,,,,,Y,符合程序,免疫保护
+Completion_Status,overdue_vaccines,逾期疫苗,string,,,,,N,应补种疫苗,追赶接种
+Completion_Status,catch_up_schedule,追赶接种计划,boolean,,,,,N,补种方案,晚接种儿童
+
+Special_Populations,preterm_infant,早产儿,boolean,,,,,N,<37周,按实际日龄接种
+Special_Populations,immunocompromised_child,免疫缺陷儿童,boolean,,,,,N,原发/继发免疫缺陷,特殊程序
+Special_Populations,chronic_disease,慢性疾病,boolean,,,,,N,心肺肾疾病,高危儿童
+Special_Populations,asplenia,无脾,boolean,,,,,N,解剖性/功能性,肺炎球菌/脑膜炎球菌
+
+International_Travel,travel_vaccines,旅行疫苗,boolean,,,,,N,黄热病/伤寒等,特殊接种
+International_Travel,yellow_fever,黄热病疫苗,boolean,,,,,N,YF,前往疫区
+International_Travel,typhoid,伤寒疫苗,boolean,,,,,N,伤寒,卫生条件差地区
+
+Exemptions,exemption,免于接种,boolean,,,,,N,医学/宗教/哲学豁免,入学要求
+Exemptions,exemption_type,豁免类型,categorical,,"None,Medical,Religious,Philosophical",,,N,无/医学/宗教/哲学,公共卫生风险
+
+Report,vaccinator,接种人员,string,,,,,Y,接种者,资质认证
+Report,vaccination_site,接种地点,string,,,,,Y,接种机构,追溯管理
+Report,report_date,报告日期,date,,,,,Y,记录时间,免疫档案
+

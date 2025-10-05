@@ -1,0 +1,159 @@
+Category,Subcategory,Field_Name,Field_Name_CN,Data_Type,Unit,Value_Range,Normal_Range,Abnormal_Indicators,Clinical_Significance,Interpretation_Logic,Related_Diseases,Risk_Level,Recommended_Actions,LOINC_Code,Notes
+Basic_Info,Patient_Info,patient_id,患者ID,String,,,,,Patient unique identifier,,,Low,,,"Unique patient identifier"
+Basic_Info,Patient_Info,exam_date,检查日期,Date,,,,,Date of brain MRI examination,,,Low,,,"Format: YYYY-MM-DD"
+Basic_Info,Patient_Info,patient_age,患者年龄,Integer,years,0-120,,,"Age at examination, affects interpretation",,,Low,,,"Age-related changes common in elderly"
+Basic_Info,Patient_Info,patient_gender,患者性别,Categorical,,Male/Female,,,"Gender for reference",,,Low,,,"Male/Female"
+Basic_Info,Exam_Info,indication,检查适应症,String,,,,,Reason for brain MRI,,,Low,,,Headache/stroke/tumor/seizure/dementia
+Basic_Info,Exam_Info,contrast_used,使用对比剂,Boolean,,Yes/No,No,,"Whether gadolinium contrast was administered",,,Low,,,Enhances tumor/inflammation detection
+Basic_Info,Exam_Info,mri_field_strength,磁场强度,Categorical,,"1.5T/3.0T/7.0T",,,"MRI scanner field strength","Higher field: better resolution, longer scan time",,Low,,,Most clinical scans 1.5T or 3.0T
+Basic_Info,Exam_Info,sequences_performed,扫描序列,String,,,,,MRI sequences acquired,"T1, T2, FLAIR, DWI, SWI, MRA, etc.",,Low,,,Protocol varies by indication
+
+Brain_Parenchyma,General,brain_volume,脑体积,Categorical,,"Normal/Mildly_decreased/Moderately_decreased/Severely_decreased",Normal,Decreased,"Overall brain volume assessment","Age-related atrophy expected >60 years",Cerebral_Atrophy,Low,Correlate with cognition if severe,,"Atrophy common in dementia"
+Brain_Parenchyma,General,atrophy_pattern,萎萎缩模式,Categorical,,"None/Generalized/Focal/Cortical/Subcortical",None,Any,"Pattern of brain atrophy","Generalized: aging/AD; Focal: FTD/stroke; Subcortical: vascular",Dementia,Medium,Guides dementia subtype,,"Pattern helps differential diagnosis"
+Brain_Parenchyma,General,cortical_atrophy,皮层萎缩,Categorical,,"None/Mild/Moderate/Severe",None,Moderate/Severe,"Cerebral cortex atrophy","Prominent in Alzheimer's disease, temporal/parietal",Alzheimers_Disease,Medium,Neuropsychological testing,,"Medial temporal atrophy typical of AD"
+Brain_Parenchyma,General,white_matter_volume,白质体积,Categorical,,"Normal/Decreased",Normal,Decreased,"White matter volume reduction","Loss suggests demyelination or small vessel disease",Leukoencephalopathy,Medium,Correlate with symptoms,,
+
+White_Matter,Hyperintensities,wmh_present,白质高信号存在,Boolean,,Yes/No,No,Yes,"White matter hyperintensities on T2/FLAIR","Common in elderly, vascular disease, hypertension",Small_Vessel_Disease,Medium,Risk factor control,,"Fazekas scale for grading"
+White_Matter,Hyperintensities,wmh_severity,白质高信号严重程度,Categorical,,"None/Mild/Moderate/Severe",None/Mild,Moderate/Severe,"Severity of WMH burden (Fazekas scale)","Mild: dots; Moderate: coalescing; Severe: confluent",Cerebrovascular_Disease,Medium,Control vascular risk factors,,"Fazekas 0-3 scale widely used"
+White_Matter,Hyperintensities,wmh_distribution,白质高信号分布,Categorical,,"None/Periventricular/Deep/Both",None,Both,"Distribution of WMH","Periventricular: more specific for SVD; Deep: nonspecific",Small_Vessel_Disease,Medium,,,
+White_Matter,Hyperintensities,periventricular_wmh,脑室周围白质高信号,Categorical,,"None/Caps/Halo/Irregular/Confluent",None,Irregular/Confluent,"Periventricular WMH (Fazekas PV score 0-3)","Grade 3 (irregular/confluent): advanced SVD",Vascular_Dementia,Medium,Associated with cognitive decline,,"Strong association with dementia"
+White_Matter,Hyperintensities,deep_wmh,深部白质高信号,Categorical,,"None/Punctate/Coalescing/Confluent",None,Coalescing/Confluent,"Deep WMH (Fazekas deep score 0-3)","Grade 3 (confluent): severe burden",Small_Vessel_Disease,Medium,,,
+White_Matter,Lacunes,lacunar_infarcts,腔隙性梗死,Boolean,,Yes/No,No,Yes,"Small (<15mm) infarcts in deep brain","Marker of small vessel disease",Lacunar_Stroke,High,Antiplatelet/risk factors,,"Silent infarcts common in elderly"
+White_Matter,Lacunes,lacune_count,腔隙数量,Integer,lesions,0-50,0,≥3,"Number of lacunar infarcts","≥3 lacunes: high vascular burden",Small_Vessel_Disease,High,Aggressive vascular prevention,,"Multiple lacunes worsen prognosis"
+White_Matter,Lacunes,lacune_locations,腔隙位置,String,,,,,Anatomical locations of lacunes,"Basal ganglia, thalamus, pons, internal capsule",,Medium,Correlate with symptoms,,"Basal ganglia most common"
+White_Matter,Microbleeds,cerebral_microbleeds,脑微出血,Boolean,,Yes/No,No,Yes,"Cerebral microbleeds on SWI/GRE","Marker of small vessel disease, hemorrhage risk",Cerebral_Amyloid_Angiopathy,High,Anticoagulation caution,,"Contraindication to anticoagulation if numerous"
+White_Matter,Microbleeds,microbleed_count,微出血数量,Integer,lesions,0-100,0,≥5,"Number of cerebral microbleeds","≥5: significant burden; ≥10: high risk",Hemorrhagic_Risk,High,Avoid anticoagulation if >10,,"High burden increases ICH risk"
+White_Matter,Microbleeds,microbleed_distribution,微出血分布,Categorical,,"None/Lobar/Deep/Mixed",None,Any,"CMB distribution pattern","Lobar: CAA; Deep: hypertensive; Mixed: severe SVD",Cerebral_Amyloid_Angiopathy,High,Distribution guides etiology,,"Pattern has therapeutic implications"
+
+Infarction,Acute,acute_infarct,急性梗死,Boolean,,Yes/No,No,Yes,"Acute ischemic infarct (DWI positive)","Hyperintense on DWI, low ADC",Acute_Stroke,Critical,Urgent stroke protocol,,"DWI detects within minutes"
+Infarction,Acute,infarct_location,梗死部位,String,,,,,Anatomical location of acute infarct,"MCA, ACA, PCA, vertebrobasilar, lacunar",,Critical,Determines vascular territory,,"Guides treatment approach"
+Infarction,Acute,infarct_size,梗死大小,Categorical,,"Small/Medium/Large",,Large,"Size of acute infarct","Small <1cm; Medium 1-3cm; Large >3cm",Large_Vessel_Stroke,Critical,Large: thrombectomy consideration,,"Size affects prognosis"
+Infarction,Acute,infarct_age,梗死时期,Categorical,,"Hyperacute/Acute/Subacute/Chronic",,,"Estimated age of infarct","Hyperacute <6h; Acute <24h; Subacute 24h-weeks; Chronic >weeks",,Critical,Affects treatment window,,"DWI/ADC help timing"
+Infarction,Acute,hemorrhagic_transformation,出血转化,Boolean,,Yes/No,No,Yes,"Hemorrhage within infarct","Complication of reperfusion, anticoagulation",Hemorrhagic_Stroke,High,May contraindicate anticoagulation,,"20-40% of large infarcts"
+Infarction,Chronic,old_infarcts,陈旧梗死,Boolean,,Yes/No,No,Yes,"Chronic infarcts present","Encephalomalacia, gliosis",Prior_Stroke,Medium,Secondary prevention,,"Indicates stroke history"
+Infarction,Chronic,old_infarct_count,陈旧梗死数量,Integer,lesions,0-20,0,≥2,"Number of old infarcts","Multiple: recurrent stroke risk",Recurrent_Stroke,Medium,Optimize prevention,,"Recurrence risk higher"
+Infarction,Chronic,old_infarct_locations,陈旧梗死部位,String,,,,,Locations of chronic infarcts,,,Medium,Pattern may suggest etiology,,
+
+Hemorrhage,Acute,intracranial_hemorrhage,颅内出血,Boolean,,Yes/No,No,Yes,"Acute intracranial hemorrhage present","Hyperintense on T1, blooming on SWI",Hemorrhagic_Stroke,Critical,Urgent neurosurgery consult,,"Medical emergency"
+Hemorrhage,Acute,hemorrhage_location,出血部位,Categorical,,"None/Intraparenchymal/Subdural/Epidural/Subarachnoid/Intraventricular",,Any,"Location of hemorrhage","Determines etiology and management",,Critical,Location affects prognosis,,"Intraparenchymal: HTN; SAH: aneurysm"
+Hemorrhage,Acute,hemorrhage_size,出血大小,Float,cm,0-10,,>3,"Hemorrhage diameter","<3cm: conservative; >3cm: surgery consideration",Large_ICH,Critical,Size determines intervention,,"Volume = ABC/2 formula"
+Hemorrhage,Acute,hemorrhage_volume,出血体积,Float,mL,0-150,,>30,"Estimated hemorrhage volume",">30mL: poor prognosis; surgery may help if accessible",Large_ICH,Critical,Volume predicts outcome,,"Calculator: length×width×height/2"
+Hemorrhage,Acute,midline_shift,中线移位,Float,mm,0-20,0,≥5,"Midline shift from mass effect","≥5mm: significant; ≥10mm: critical",Mass_Effect,Critical,Urgent intervention if ≥5mm,,"Indicates herniation risk"
+Hemorrhage,Acute,hydrocephalus_present,脑积水存在,Boolean,,Yes/No,No,Yes,"Obstructive hydrocephalus","IVH may cause hydrocephalus",Hydrocephalus,Critical,May need EVD,,"Obstructive vs communicating"
+Hemorrhage,Chronic,hemosiderin_deposition,含铁血黄素沉积,Boolean,,Yes/No,No,Yes,"Chronic hemorrhage residue (SWI)","Blooming on SWI from old bleeds",Prior_Hemorrhage,Medium,Indicates prior bleeding,,
+
+Tumors,Presence,brain_mass,脑肿块,Boolean,,Yes/No,No,Yes,"Space-occupying lesion present",,,Critical,Urgent workup required,,"May be tumor, abscess, hematoma"
+Tumors,Characteristics,mass_location,肿块部位,String,,,,,Anatomical location of mass,"Frontal, temporal, parietal, occipital, cerebellum, brainstem",,Critical,Guides differential diagnosis,,"Location narrows differential"
+Tumors,Characteristics,mass_size,肿块大小,Float,cm,0-15,,>3,"Maximum diameter of mass","<3cm: small; 3-6cm: medium; >6cm: large",,Critical,Size affects resectability,,"Measure largest dimension"
+Tumors,Characteristics,mass_margins,肿块边缘,Categorical,,"Well-defined/Ill-defined",,Ill-defined,"Mass border characteristics","Well-defined: benign/metastasis; Ill-defined: glioma",,High,Helps characterize tumor type,,"Infiltrative suggests glioma"
+Tumors,Characteristics,contrast_enhancement,对比增强,Categorical,,"None/Homogeneous/Heterogeneous/Ring",,Any,"Enhancement pattern","None: low-grade; Homogeneous: meningioma/mets; Ring: GBM/abscess",,High,Pattern suggests etiology,,"Ring enhancement broad differential"
+Tumors,Characteristics,perilesional_edema,瘤周水肿,Categorical,,"None/Mild/Moderate/Severe",,Moderate/Severe,"Edema surrounding mass","Severe edema: mass effect, worse prognosis",Brain_Edema,High,Steroids if significant,,"T2/FLAIR hyperintense halo"
+Tumors,Characteristics,mass_effect,占位效应,Boolean,,Yes/No,No,Yes,"Mass effect present","Midline shift, ventricular compression, herniation",Brain_Herniation,Critical,Urgent intervention if severe,,"May require surgery/steroids"
+Tumors,Characteristics,necrosis_present,坏死存在,Boolean,,Yes/No,No,Yes,"Central necrosis in mass","Common in high-grade glioma (GBM), abscess",Glioblastoma,High,Suggests high-grade malignancy,,"Non-enhancing central area"
+Tumors,Characteristics,restricted_diffusion,弥散受限,Boolean,,Yes/No,No,Yes,"Restricted diffusion on DWI","High DWI signal, low ADC; suggests abscess or hypercellular tumor",Brain_Abscess,High,Abscess vs tumor differentiation,,"Abscess: complete restriction; tumor: partial"
+Tumors,Differential,suspected_tumor_type,疑似肿瘤类型,Categorical,,"None/Glioblastoma/Low-grade_glioma/Meningioma/Metastasis/Lymphoma/Abscess/Other",,Any,"Suspected diagnosis based on imaging","Requires histology for confirmation",,High,Tissue diagnosis needed,,"Imaging suggests, biopsy confirms"
+
+Meningioma,Characteristics,meningioma_present,脑膜瘤存在,Boolean,,Yes/No,No,Yes,"Meningioma suspected","Extra-axial, dural-based, homogeneous enhancement",Meningioma,High,Neurosurgery referral,,"Most common benign brain tumor"
+Meningioma,Characteristics,meningioma_location,脑膜瘤位置,String,,,,,Location of meningioma,"Convexity, parasagittal, falx, sphenoid wing, olfactory groove",,Medium,Location affects symptoms,,"Parasagittal may invade sinus"
+Meningioma,Characteristics,meningioma_size,脑膜瘤大小,Float,cm,0-10,,>3,"Meningioma diameter","<3cm: observation possible; >3cm: surgery consideration",,Medium,Size determines management,,"Growth rate ~2mm/year"
+Meningioma,Characteristics,dural_tail_sign,硬膜尾征,Boolean,,Yes/No,No,Yes,"Dural tail sign present","Enhancement along dura, classic for meningioma",,Low,Highly specific for meningioma,,"Not 100% sensitive"
+
+Metastases,Characteristics,brain_metastases,脑转移瘤,Boolean,,Yes/No,No,Yes,"Brain metastases present","Multiple enhancing lesions at gray-white junction",Brain_Metastases,Critical,Oncology consult,,"Common in lung/breast/melanoma"
+Metastases,Characteristics,metastasis_count,转移灶数量,Integer,lesions,0-50,0,≥1,"Number of brain metastases","Single: surgery+RT; Multiple (>3): WBRT or SRS",Multiple_Metastases,Critical,Count affects treatment,,"1-3 mets: surgery/SRS; >3: WBRT"
+Metastases,Characteristics,largest_metastasis_size,最大转移灶大小,Float,cm,0-8,,>3,"Size of largest metastasis","Large lesions may need resection",,High,Affects surgical planning,,"Symptoms from largest lesion"
+Metastases,Characteristics,metastasis_locations,转移灶分布,String,,,,,Brain regions involved by metastases,"Supratentorial/infratentorial",,High,Location affects prognosis,,"Posterior fossa mets: higher risk"
+
+Ventricles,Size,ventricular_size,脑室大小,Categorical,,"Normal/Mildly_enlarged/Moderately_enlarged/Severely_enlarged",Normal,Moderately/Severely_enlarged,"Ventricular system size","Mild: age-related; Moderate/Severe: hydrocephalus",Hydrocephalus,High,Assess for obstruction,,"Evans index >0.3 = enlarged"
+Ventricles,Hydrocephalus,hydrocephalus_type,脑积水类型,Categorical,,"None/Obstructive/Communicating/NPH/Ex-vacuo",,Obstructive/Communicating,"Type of hydrocephalus","Obstructive: CSF flow blocked; Communicating: absorption deficit; Ex-vacuo: atrophy",Hydrocephalus,High,Obstructive requires urgent intervention,,"Different etiologies"
+Ventricles,NPH,nph_suspected,正常压力脑积水,Boolean,,Yes/No,No,Yes,"Normal pressure hydrocephalus suspected","Triad: gait, dementia, incontinence + ventriculomegaly",Normal_Pressure_Hydrocephalus,Medium,Gait assessment, shunt evaluation,,"Treatable cause of dementia"
+Ventricles,NPH,evans_index,Evans指数,Float,ratio,0.2-0.5,<0.3,≥0.3,"Ratio of frontal horn width to skull width","≥0.3 suggests ventriculomegaly",Hydrocephalus,Medium,NPH if ≥0.3 with symptoms,,"Simple measurement on axial CT/MRI"
+
+Vascular,Aneurysm,intracranial_aneurysm,颅内动脉瘤,Boolean,,Yes/No,No,Yes,"Intracranial aneurysm present","Usually on MRA, may be incidental or ruptured",Intracranial_Aneurysm,Critical,Neurovascular consult,,"5% prevalence in general population"
+Vascular,Aneurysm,aneurysm_location,动脉瘤位置,String,,,,,Location of aneurysm,"AComm, ACA, MCA, ICA, PComm, basilar, PICA",,Critical,Location affects rupture risk,,"AComm/PComm most common"
+Vascular,Aneurysm,aneurysm_size,动脉瘤大小,Float,mm,2-50,<7,≥7,"Aneurysm maximum diameter","<7mm: low rupture risk; 7-24mm: moderate; ≥25mm: high",Large_Aneurysm,Critical,Size determines treatment urgency,,"ISUIA study: size critical"
+Vascular,Aneurysm,aneurysm_morphology,动脉瘤形态,Categorical,,"Saccular/Fusiform/Dissecting",,,"Aneurysm shape","Saccular: berry aneurysm, most common; Fusiform: atherosclerotic; Dissecting: trauma/dissection",,High,Guides treatment approach,,"Saccular most amenable to coiling"
+Vascular,Stenosis,intracranial_stenosis,颅内动脉狭窄,Boolean,,Yes/No,No,Yes,"Significant intracranial stenosis","≥50% stenosis on MRA/CTA",Intracranial_Stenosis,High,Consider antiplatelet, risk factors,,"Asian populations higher risk"
+Vascular,Stenosis,stenosis_location,狭窄位置,String,,,,,Location of stenosis,"ICA, MCA, vertebral, basilar",,High,Stroke risk varies by location,,"MCA stenosis: high stroke risk"
+Vascular,AVM,avm_present,动静脉畸形存在,Boolean,,Yes/No,No,Yes,"Arteriovenous malformation present","Tangle of abnormal vessels, nidus, early draining veins",AVM,Critical,Neurovascular consult,,"Hemorrhage risk 2-4% per year"
+Vascular,AVM,avm_size,AVM大小,Categorical,,"Small/Medium/Large",,Medium/Large,"AVM size (Spetzler-Martin)","<3cm: small; 3-6cm: medium; >6cm: large",Large_AVM,High,Size affects treatment risk,,"Spetzler-Martin grading"
+Vascular,Cavernoma,cavernous_malformation,海绵状血管瘤,Boolean,,Yes/No,No,Yes,"Cavernous malformation present","Popcorn appearance, mixed signal, hemosiderin rim",Cavernoma,Medium,Neurosurgery if symptomatic,,"Bleed risk ~0.5%/year if no prior bleed"
+
+Pituitary,Size,pituitary_size,垂体大小,Categorical,,"Normal/Enlarged",Normal,Enlarged,"Pituitary gland size","Normal height <10mm; enlarged: microadenoma <10mm, macroadenoma ≥10mm",Pituitary_Adenoma,Medium,Endocrine workup if enlarged,,"Microadenoma very common (10%)"
+Pituitary,Adenoma,pituitary_adenoma,垂体腺瘤,Boolean,,Yes/No,No,Yes,"Pituitary adenoma present","Hypointense on T1, may enhance",Pituitary_Adenoma,Medium,Endocrine evaluation,,"Functional vs non-functional"
+Pituitary,Adenoma,adenoma_size,腺瘤大小,Categorical,,"None/Microadenoma/Macroadenoma",,Macroadenoma,"Adenoma size classification","Micro <10mm; Macro ≥10mm",Pituitary_Macroadenoma,Medium,Macro: visual fields, hormones,,"Macroadenomas may compress chiasm"
+Pituitary,Adenoma,chiasm_compression,视交叉受压,Boolean,,Yes/No,No,Yes,"Optic chiasm compression","Suprasellar extension compressing chiasm",Bitemporal_Hemianopia,High,Urgent ophthalmology/neurosurgery,,"Causes bitemporal hemianopia"
+Pituitary,Stalk,stalk_deviation,垂体柄偏移,Boolean,,Yes/No,No,Yes,"Pituitary stalk deviation","May indicate adenoma or other mass",,Medium,Suggests lateral mass,,"Stalk deviates away from adenoma"
+
+Sinuses,Mastoid,mastoiditis,乳突炎,Boolean,,Yes/No,No,Yes,"Mastoid air cell opacification/fluid","Acute mastoiditis, complication of otitis media",Mastoiditis,High,ENT referral, antibiotics,,"May cause intracranial complications"
+Sinuses,Paranasal,sinusitis,鼻窦炎,Categorical,,"None/Mild/Moderate/Severe",None,Moderate/Severe,"Paranasal sinus opacification","Incidental finding on brain MRI, correlate clinically",Sinusitis,Low,Usually incidental,,"Very common, often asymptomatic"
+Sinuses,Paranasal,sinus_mucocele,鼻窦粘液囊肿,Boolean,,Yes/No,No,Yes,"Mucocele in paranasal sinus","Expanded sinus filled with mucus, may erode bone",,Medium,ENT referral if symptomatic,,"Can cause orbital/brain complications"
+
+Skull,Bone_Lesions,skull_lesion,颅骨病变,Boolean,,Yes/No,No,Yes,"Skull bone lesion detected","Lytic, sclerotic, or mixed lesion in calvarium",Bone_Lesion,Medium,Further imaging/biopsy,,"Metastasis, myeloma, fibrous dysplasia"
+Skull,Fracture,skull_fracture,颅骨骨折,Boolean,,Yes/No,No,Yes,"Skull fracture present","Acute or old fracture line",Skull_Fracture,High,Correlate with trauma history,,"CT better for acute fractures"
+Skull,Hyperostosis,hyperostosis,颅骨增生,Boolean,,Yes/No,No,Yes,"Skull bone thickening","May be due to meningioma, Paget's disease",,Low,Identify cause,,
+
+Scalp,Soft_Tissue,scalp_mass,头皮肿块,Boolean,,Yes/No,No,Yes,"Scalp soft tissue mass","Lipoma, sebaceous cyst, dermoid",,Low,Usually benign,,"Lipoma most common"
+Scalp,Soft_Tissue,scalp_hematoma,头皮血肿,Boolean,,Yes/No,No,Yes,"Scalp hematoma/contusion","Trauma-related",,Medium,Correlate with history,,"May indicate trauma"
+
+Orbits,Globe,orbital_mass,眼眶肿块,Boolean,,Yes/No,No,Yes,"Intraorbital mass","Hemangioma, lymphoma, pseudotumor, metastasis",,Medium,Ophthalmology referral,,"May cause proptosis"
+Orbits,Optic_Nerve,optic_nerve_enhancement,视神经强化,Boolean,,Yes/No,No,Yes,"Optic nerve enhancement","Optic neuritis, sarcoidosis, lymphoma",Optic_Neuritis,High,Neurology/ophthalmology,,"MS, NMO, sarcoidosis"
+Orbits,Muscle,orbital_myositis,眼眶肌炎,Boolean,,Yes/No,No,Yes,"Extraocular muscle enlargement/enhancement","Thyroid eye disease, idiopathic orbital inflammation",,Medium,Endocrine/ophthalmology workup,,"Graves most common cause"
+
+Cerebellum,Atrophy,cerebellar_atrophy,小脑萎缩,Categorical,,"None/Mild/Moderate/Severe",None,Moderate/Severe,"Cerebellar atrophy","Alcohol, paraneoplastic, inherited (SCA, FA)",Cerebellar_Degeneration,Medium,Genetic/paraneoplastic workup,,"Causes ataxia"
+Cerebellum,Lesions,cerebellar_lesion,小脑病变,Boolean,,Yes/No,No,Yes,"Space-occupying lesion in cerebellum","Stroke, tumor (medulloblastoma, hemangioblastoma, metastasis)",,High,Determine etiology,,"Posterior fossa mass: hydrocephalus risk"
+
+Brainstem,Infarction,brainstem_infarct,脑干梗死,Boolean,,Yes/No,No,Yes,"Brainstem infarction","Vertebrobasilar stroke, high mortality",Brainstem_Stroke,Critical,Urgent stroke protocol,,"High morbidity/mortality"
+Brainstem,Lesions,brainstem_lesion,脑干病变,Boolean,,Yes/No,No,Yes,"Brainstem mass/lesion","Glioma (children), cavernoma, demyelination, metastasis",,High,Biopsy often contraindicated,,"Surgical risk very high"
+Brainstem,MS_Plaques,brainstem_plaques,脑干斑块,Boolean,,Yes/No,No,Yes,"Demyelinating plaques in brainstem","Multiple sclerosis typical location",Multiple_Sclerosis,Medium,Neurology referral,,"Brainstem/cerebellum common in MS"
+
+Corpus_Callosum,Atrophy,callosal_atrophy,胼胝体萎缩,Boolean,,Yes/No,No,Yes,"Corpus callosum thinning","Dementia, chronic alcohol use, MS",,Medium,Correlate with cognition,,"Prominent in AD, MS"
+Corpus_Callosum,Lesions,callosal_lesions,胼胝体病变,Boolean,,Yes/No,No,Yes,"Lesions in corpus callosum","MS plaques, lymphoma, GBM infiltration",,High,Biopsy may be needed,,"Butterfly glioma crosses midline"
+
+Hippocampus,Atrophy,hippocampal_atrophy,海马萎缩,Categorical,,"None/Mild/Moderate/Severe",None,Moderate/Severe,"Hippocampal volume loss","Alzheimer's disease, temporal lobe epilepsy",Alzheimers_Disease,High,Neuropsych testing,,"Early sign of AD"
+Hippocampus,Sclerosis,hippocampal_sclerosis,海马硬化,Boolean,,Yes/No,No,Yes,"Mesial temporal sclerosis","T2/FLAIR hyperintensity, atrophy; cause of TLE",Temporal_Lobe_Epilepsy,High,Epilepsy surgery evaluation,,"Most common cause of drug-resistant TLE"
+Hippocampus,Signal,hippocampal_t2_signal,海马T2信号,Categorical,,"Normal/Hyperintense",Normal,Hyperintense,"Hippocampal T2/FLAIR signal","Hyperintense: sclerosis, encephalitis, seizure",Encephalitis,High,Acute: encephalitis; Chronic: epilepsy,,"HSV encephalitis preferentially affects hippocampus"
+
+Basal_Ganglia,Signal_Abnormality,basal_ganglia_signal,基底节信号异常,Boolean,,Yes/No,No,Yes,"Abnormal signal in basal ganglia","T2 hyperintense: lacunes, Wilson's, CO poisoning; T1 hyper: manganese, liver failure",,Medium,Determine etiology,,"Multiple causes, correlate clinically"
+Basal_Ganglia,Calcification,basal_ganglia_calcification,基底节钙化,Boolean,,Yes/No,No,Yes,"Basal ganglia calcification","Age-related, hypoparathyroid, Fahr's disease",,Low,Usually benign if age-related,,"Common incidental finding in elderly"
+Basal_Ganglia,Lesions,basal_ganglia_lesion,基底节病变,String,,,,,Specific lesions in basal ganglia,"Lacunes, hemorrhage, tumor, toxin",,High,Correlate with symptoms,,"Movement disorders common"
+
+Thalamus,Lesions,thalamic_lesion,丘脑病变,Boolean,,Yes/No,No,Yes,"Thalamic lesion present","Lacune, hemorrhage, tumor, Creutzfeldt-Jakob (pulvinar sign)",,High,Determine etiology,,"CJD: pulvinar sign highly specific"
+
+Cerebral_Arteries,MRA_Quality,mra_performed,MRA检查,Boolean,,Yes/No,No,,"MR angiography performed",,,Low,,,May be separate or part of protocol
+Cerebral_Arteries,Circle_of_Willis,circle_of_willis,Willis环,Categorical,,"Complete/Incomplete",,,"Circle of Willis completeness","Incomplete in 50-80% of population",,Low,Affects collateral flow,,"Anatomical variation common"
+Cerebral_Arteries,Stenosis_MRA,mra_stenosis,MRA动脉狭窄,Boolean,,Yes/No,No,Yes,"Arterial stenosis on MRA","≥50% stenosis",Intracranial_Stenosis,High,Antiplatelet, risk factors,,"MRA may overestimate stenosis"
+Cerebral_Arteries,Occlusion,arterial_occlusion,动脉闭塞,Boolean,,Yes/No,No,Yes,"Arterial occlusion on MRA","Complete vessel cutoff",Acute_Stroke,Critical,Thrombectomy consideration,,"Within 6-24h window"
+
+Venous,Thrombosis,venous_sinus_thrombosis,静脉窦血栓,Boolean,,Yes/No,No,Yes,"Cerebral venous sinus thrombosis","Lack of flow void, thrombus signal, no enhancement",Venous_Sinus_Thrombosis,Critical,Anticoagulation,,"Rare but serious, young women"
+Venous,Thrombosis,thrombosed_sinus,血栓窦名称,String,,,,,Which sinus is thrombosed,"Superior sagittal, transverse, sigmoid, cavernous, cortical veins",,Critical,Location affects symptoms,,"SSS: bilateral findings; Transverse: headache"
+
+Meninges,Enhancement,meningeal_enhancement,脑膜强化,Boolean,,Yes/No,No,Yes,"Abnormal meningeal enhancement","Meningitis, carcinomatosis, post-LP, sarcoidosis",Meningitis,High,LP, infectious workup,,"DDx: infectious, neoplastic, inflammatory"
+Meninges,Thickening,pachymeningeal_thickening,硬脑膜增厚,Boolean,,Yes/No,No,Yes,"Dural thickening with enhancement","Subdural hematoma, IgG4 disease, granulomatosis",,Medium,Determine cause,,"May be due to CSF leak"
+
+Demyelination,MS_Plaques,ms_plaques_present,MS斑块存在,Boolean,,Yes/No,No,Yes,"Demyelinating plaques consistent with MS","Periventricular, juxtacortical, infratentorial, spinal cord",Multiple_Sclerosis,High,McDonald criteria, neurology,,"Need dissemination in space/time"
+Demyelination,MS_Plaques,ms_plaque_count,MS斑块数量,Integer,lesions,0-100,0,≥9,"Number of MS plaques","≥9 plaques: high specificity for MS (Barkhof criteria)",Multiple_Sclerosis,High,≥9 supports MS diagnosis,,"Barkhof/McDonald criteria"
+Demyelination,MS_Plaques,active_ms_lesions,活动性MS病灶,Boolean,,Yes/No,No,Yes,"Active enhancing MS lesions","Gadolinium enhancement indicates active inflammation",Active_MS,High,Consider DMT escalation,,"Enhancement lasts ~6 weeks"
+Demyelination,Other,adem_pattern,ADEM模式,Boolean,,Yes/No,No,Yes,"Pattern consistent with ADEM","Large, poorly demarcated lesions, children/post-infection",ADEM,High,Steroids, distinguish from MS,,"Acute disseminated encephalomyelitis"
+Demyelination,Other,pml_pattern,PML模式,Boolean,,Yes/No,No,Yes,"Pattern consistent with PML","Subcortical white matter, no enhancement, immunocompromised",PML,High,HIV test, immunosuppression,,"Progressive multifocal leukoencephalopathy"
+
+Infection,Encephalitis,encephalitis,脑炎,Boolean,,Yes/No,No,Yes,"Encephalitis findings","T2/FLAIR hyperintensity, enhancement, restricted diffusion",Encephalitis,Critical,LP, infectious workup, acyclovir,,"HSV, VZV, autoimmune"
+Infection,Encephalitis,hsv_pattern,HSV脑炎模式,Boolean,,Yes/No,No,Yes,"Pattern suggestive of HSV encephalitis","Temporal lobe involvement, hemorrhagic",HSV_Encephalitis,Critical,Empiric acyclovir immediately,,"Medical emergency, high mortality"
+Infection,Abscess,brain_abscess,脑脓肿,Boolean,,Yes/No,No,Yes,"Brain abscess present","Ring enhancement, restricted diffusion, smooth capsule",Brain_Abscess,Critical,Neurosurgery, antibiotics,,"Aspiration + antibiotics"
+Infection,TB,tuberculoma,结核瘤,Boolean,,Yes/No,No,Yes,"Tuberculoma suspected","Ring-enhancing lesions, basal meningitis, endemic areas",CNS_Tuberculosis,High,Anti-TB therapy,,"TB endemic areas, HIV"
+Infection,Toxoplasmosis,toxoplasma,弓形虫脑病,Boolean,,Yes/No,No,Yes,"Toxoplasmosis pattern","Multiple ring-enhancing lesions, basal ganglia, HIV/immunosuppressed",Toxoplasmosis,High,Anti-toxoplasma therapy,,"HIV with CD4 <100"
+Infection,Neurocysticercosis,neurocysticercosis,脑囊虫病,Boolean,,Yes/No,No,Yes,"Neurocysticercosis","Cysts with scolex, calcifications, endemic areas",Neurocysticercosis,Medium,Anti-parasitic therapy,,"Taenia solium, endemic areas"
+
+Metabolic,Wernicke,wernicke_encephalopathy,韦尼克脑病,Boolean,,Yes/No,No,Yes,"Wernicke encephalopathy pattern","Mammillary bodies, thalamus, periaqueductal T2 hyperintensity",Wernicke_Encephalopathy,High,Urgent thiamine,,"Alcoholism, malnutrition"
+Metabolic,Osmotic,osmotic_demyelination,渗透性脱髓鞘,Boolean,,Yes/No,No,Yes,"Osmotic demyelination syndrome (central pontine)","Pons T2 hyperintensity, rapid Na correction",Osmotic_Demyelination,High,Supportive care,,"Iatrogenic, correct Na slowly"
+Metabolic,Hepatic,hepatic_encephalopathy,肝性脑病,Boolean,,Yes/No,No,Yes,"Hepatic encephalopathy MRI findings","Basal ganglia T1 hyperintensity (manganese deposition)",Hepatic_Encephalopathy,Medium,Treat liver disease,,"Chronic liver failure"
+
+Report_Summary,Overall_Impression,primary_finding,主要发现,String,,,,,Primary radiological diagnosis,,,High,,,Most important finding
+Report_Summary,Overall_Impression,differential_diagnosis,鉴别诊断,String,,,,,Differential diagnosis list,,,Medium,,,Alternative possibilities
+Report_Summary,Overall_Impression,comparison_to_prior,与前次比较,String,,,,,Comparison with prior imaging if available,,,Medium,,,Progression/stability/improvement
+Report_Summary,Recommendations,recommended_followup,建议随访,String,,,,,Follow-up imaging recommendations,"Repeat MRI in X months, contrast study, specific sequences",,Medium,,,
+Report_Summary,Recommendations,clinical_correlation,临床相关,String,,,,,Recommend clinical correlation,"Neurological exam, LP, biopsy, lab tests",,Medium,,,Findings requiring workup
+Report_Summary,Recommendations,urgent_action,紧急处理,Boolean,,Yes/No,No,Yes,"Urgent clinical action needed","Acute stroke, hemorrhage, mass effect, infection",Emergency,Critical,Immediate intervention,,"Communicate directly to clinician"
+
+Report_Summary,Quality,radiologist_name,影像科医师,String,,,,,Reporting radiologist name,,,Low,,,
+Report_Summary,Quality,report_date,报告日期,Date,,,,,Date of report generation,,,Low,,,"Format: YYYY-MM-DD"
+Report_Summary,Quality,image_quality,图像质量,Categorical,,"Excellent/Good/Fair/Poor/Non-diagnostic",,Fair/Poor,"MRI image quality","Motion artifact, patient cooperation",,Medium,Repeat if non-diagnostic,,"Motion degrades MRI significantly"

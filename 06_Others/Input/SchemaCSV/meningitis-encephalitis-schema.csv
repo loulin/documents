@@ -1,0 +1,165 @@
+Category,Field_Name,Chinese_Name,Data_Type,Unit,Valid_Range,LOINC_Code,Required,Description,Clinical_Significance
+Basic_Info,patient_id,患者ID,string,,,,,Y,唯一标识,患者追踪
+Basic_Info,onset_date,起病日期,date,,,,,Y,症状开始时间,病程
+Basic_Info,age,年龄,integer,years,0-120,,,Y,患者年龄,病原分布
+Basic_Info,gender,性别,categorical,,Male,Female,,,Y,性别,流行病学
+
+Syndrome,clinical_syndrome,临床综合征,categorical,,Meningitis,Encephalitis,Meningoencephalitis,,,Y,脑膜炎/脑炎/脑膜脑炎,诊断分类
+Syndrome,meningitis,脑膜炎,boolean,,,,,Y,脑膜刺激征,炎症局限脑膜
+Syndrome,encephalitis,脑炎,boolean,,,,,Y,意识改变/癫痫/局灶神经缺损,脑实质受累
+
+Symptoms,headache,头痛,boolean,,,,,Y,头痛,脑膜刺激
+Symptoms,fever,发热,boolean,,,,,Y,体温升高,感染
+Symptoms,altered_mental_status,意识改变,boolean,,,,,Y,嗜睡/意识模糊/昏迷,脑炎/脑病
+Symptoms,neck_stiffness,颈项强直,boolean,,,,,Y,颈部僵硬,脑膜炎
+Symptoms,photophobia,畏光,boolean,,,,,Y,光敏感,脑膜刺激
+Symptoms,nausea_vomiting,恶心呕吐,boolean,,,,,Y,消化道症状,颅高压
+Symptoms,seizure,癫痫发作,boolean,,,,,Y,抽搐,脑炎
+Symptoms,focal_neurological_deficit,局灶神经缺损,boolean,,,,,Y,偏瘫/失语,脑炎/局灶性病变
+Symptoms,behavioral_change,行为改变,boolean,,,,,N,性格异常,边缘性脑炎
+Symptoms,confusion,意识模糊,boolean,,,,,Y,定向力障碍,脑病
+
+Onset_Pattern,onset_speed,起病速度,categorical,,Fulminant_LT_24h,Acute_1_7days,Subacute_GT_1week,,,Y,暴发性<24h/急性1-7天/亚急性>1周,病因线索
+
+Vital_Signs,temperature,体温,decimal,°C,35-42,8310-5,,Y,当前体温,发热程度
+Vital_Signs,heart_rate,心率,integer,bpm,0-300,8867-4,,Y,心率,循环状态
+Vital_Signs,sbp,收缩压,integer,mmHg,0-300,8480-6,,Y,收缩压,Cushing三联征
+Vital_Signs,respiratory_rate,呼吸频率,integer,次/min,0-60,9279-1,,Y,呼吸频率,脑干受累
+
+GCS,gcs_total,GCS总分,integer,,3-15,9269-2,,Y,意识状态,神经功能
+GCS,gcs_eye,睁眼反应,integer,,1-4,9267-6,,Y,E评分,意识评估
+GCS,gcs_verbal,语言反应,integer,,1-5,9270-0,,Y,V评分,认知功能
+GCS,gcs_motor,运动反应,integer,,1-6,9268-4,,Y,M评分,运动功能
+
+Meningeal_Signs,kernig_sign,Kernig征,boolean,,,,,Y,屈髋伸膝受限,脑膜刺激
+Meningeal_Signs,brudzinski_sign,Brudzinski征,boolean,,,,,Y,屈颈双髋屈曲,脑膜刺激
+Meningeal_Signs,jolt_accentuation,摇头加重,boolean,,,,,N,头部摇动头痛加重,脑膜炎敏感性差
+
+Focal_Signs,hemiparesis,偏瘫,boolean,,,,,N,单侧肢体无力,局灶性病变
+Focal_Signs,aphasia,失语,boolean,,,,,N,语言障碍,优势半球
+Focal_Signs,cranial_nerve_palsy,颅神经麻痹,boolean,,,,,Y,颅神经受累,基底脑膜炎
+Focal_Signs,ataxia,共济失调,boolean,,,,,N,协调障碍,小脑
+
+Papilledema,papilledema,视乳头水肿,boolean,,,,,Y,眼底检查,颅高压/禁忌腰穿
+
+Risk_Factors,immunocompromised,免疫抑制,boolean,,,,,Y,HIV/器官移植/激素/化疗,机会性病原
+Risk_Factors,neurosurgery,神经外科手术,boolean,,,,,N,颅脑手术,院内感染
+Risk_Factors,csf_shunt,脑脊液分流器,boolean,,,,,N,VP分流管,分流管相关
+Risk_Factors,head_trauma,颅脑外伤,boolean,,,,,N,头部创伤,创伤后
+Risk_Factors,otitis_sinusitis,中耳炎鼻窦炎,boolean,,,,,Y,邻近感染,直接蔓延
+Risk_Factors,endocarditis,感染性心内膜炎,boolean,,,,,N,IE,血源性播散
+Risk_Factors,pneumonia,肺炎,boolean,,,,,Y,肺炎链球菌,菌血症
+
+Lumbar_Puncture,lp_performed,腰椎穿刺,boolean,,,,,Y,腰穿,诊断金标准
+Lumbar_Puncture,lp_timing,腰穿时机,categorical,,Before_Antibiotics,After_Antibiotics,Not_Done,,,Y,抗生素前/抗生素后/未做,影响结果
+Lumbar_Puncture,opening_pressure,脑脊液压力,decimal,mmH2O,0-500,LP29463-7,,Y,开放压,颅高压>200mmH2O
+
+CSF_Analysis,csf_appearance,脑脊液外观,categorical,,Clear,Cloudy,Turbid,Purulent,Bloody,Xanthochromic,,,Y,清亮/微浊/混浊/脓性/血性/黄色,初步判断
+CSF_Analysis,csf_wbc,脑脊液白细胞,decimal,×10⁶/L,0-10000,26465-5,,Y,CSF WBC,炎症指标
+CSF_Analysis,csf_wbc_differential,白细胞分类,categorical,,Neutrophil_Predominant,Lymphocyte_Predominant,Mixed,,,Y,中性粒细胞/淋巴细胞为主/混合,病因线索
+CSF_Analysis,csf_neutrophil_percent,中性粒细胞百分比,decimal,%,0-100,,,N,中性粒%,细菌性>80%
+CSF_Analysis,csf_lymphocyte_percent,淋巴细胞百分比,decimal,%,0-100,,,N,淋巴细胞%,病毒/结核>50%
+CSF_Analysis,csf_glucose,脑脊液葡萄糖,decimal,mmol/L,0-10,2342-4,,Y,CSF GLU,消耗
+CSF_Analysis,serum_glucose,血糖,decimal,mmol/L,0-50,2345-7,,Y,血糖,CSF/血糖比
+CSF_Analysis,csf_glucose_ratio,CSF/血糖比,decimal,,0-2,,,Y,CSF GLU/血GLU,<0.4提示细菌性/结核
+CSF_Analysis,csf_protein,脑脊液蛋白,decimal,g/L,0-10,2880-3,,Y,CSF蛋白,血脑屏障破坏
+CSF_Analysis,csf_lactate,脑脊液乳酸,decimal,mmol/L,0-10,LP17596-6,,N,CSF Lac,>4mmol/L提示细菌性
+
+CSF_Pattern,bacterial_pattern,细菌性模式,boolean,,,,,Y,WBC↑↑(>1000)中性为主+GLU↓+蛋白↑↑,化脓性脑膜炎
+CSF_Pattern,viral_pattern,病毒性模式,boolean,,,,,Y,WBC轻中度↑(<500)淋巴为主+GLU正常+蛋白正常/轻度↑,无菌性脑膜炎
+CSF_Pattern,tuberculous_pattern,结核性模式,boolean,,,,,Y,WBC中度↑(100-500)淋巴为主+GLU↓↓+蛋白↑↑,结核性脑膜炎
+CSF_Pattern,fungal_pattern,真菌性模式,boolean,,,,,N,类似结核,新型隐球菌
+
+Gram_Stain,csf_gram_stain,脑脊液革兰染色,categorical,,Not_Done,Negative,Gram_Positive_Cocci,Gram_Negative_Cocci,Gram_Negative_Bacilli,,,Y,革兰阳性球菌/革兰阴性球菌/革兰阴性杆菌,快速诊断
+Gram_Stain,organism_morphology,细菌形态,categorical,,None,Diplococci,Chains,Clusters,Bacilli,,,N,双球菌/链状/葡萄串/杆菌,病原线索
+
+CSF_Culture,csf_culture,脑脊液培养,categorical,,Not_Done,Negative,Positive,,,Y,细菌培养,病原学
+CSF_Culture,organism_identified,培养阳性菌,categorical,,None,S_pneumoniae,N_meningitidis,H_influenzae,L_monocytogenes,S_aureus,GBS,E_coli,,,N,肺炎链球菌/脑膜炎奈瑟菌/流感嗜血杆菌/单核增生李斯特菌/金葡菌/B组链球菌/大肠杆菌,病原学
+CSF_Culture,s_pneumoniae,肺炎链球菌,boolean,,,,,N,最常见,成人细菌性脑膜炎50%
+CSF_Culture,n_meningitidis,脑膜炎奈瑟菌,boolean,,,,,N,脑膜炎球菌,青少年流行
+CSF_Culture,listeria,单核增生李斯特菌,boolean,,,,,N,Listeria,老年/免疫缺陷
+
+Viral_Testing,viral_pcr_panel,病毒PCR检测,boolean,,,,,Y,多重PCR,快速诊断
+Viral_Testing,hsv_pcr,HSV PCR,categorical,,Not_Done,Negative,HSV1,HSV2,,,Y,单纯疱疹病毒,最常见病毒性脑炎
+Viral_Testing,vzv_pcr,VZV PCR,categorical,,Not_Done,Negative,Positive,,,N,水痘带状疱疹病毒,血管炎/脑炎
+Viral_Testing,enterovirus_pcr,肠道病毒PCR,categorical,,Not_Done,Negative,Positive,,,Y,肠道病毒,无菌性脑膜炎最常见
+Viral_Testing,west_nile_pcr,西尼罗病毒PCR,categorical,,Not_Done,Negative,Positive,,,N,WNV,蚊媒传播
+Viral_Testing,cmv_pcr,CMV PCR,categorical,,Not_Done,Negative,Positive,,,N,巨细胞病毒,免疫缺陷
+Viral_Testing,ebv_pcr,EBV PCR,categorical,,Not_Done,Negative,Positive,,,N,EB病毒,淋巴瘤/PTLD
+
+TB_Testing,csf_afb_smear,脑脊液抗酸染色,categorical,,Not_Done,Negative,Positive,,,Y,AFB涂片,结核性脑膜炎
+TB_Testing,csf_tb_culture,脑脊液结核培养,categorical,,Not_Done,Negative,Positive,,,Y,MTB培养,确诊
+TB_Testing,csf_genexpert,脑脊液GeneXpert,categorical,,Not_Done,MTB_Not_Detected,MTB_Detected,,,Y,Xpert MTB/RIF,快速诊断
+TB_Testing,ada,腺苷脱氨酶,decimal,U/L,0-100,,,N,ADA,>10U/L提示结核
+
+Fungal_Testing,csf_india_ink,脑脊液墨汁染色,categorical,,Not_Done,Negative,Positive,,,N,墨汁染色,隐球菌
+Fungal_Testing,cryptococcal_antigen,隐球菌抗原,categorical,,Not_Done,Negative,Positive,,,Y,CrAg,隐球菌性脑膜炎
+Fungal_Testing,csf_fungal_culture,脑脊液真菌培养,categorical,,Not_Done,Negative,Cryptococcus,Candida,,,N,新型隐球菌/念珠菌,真菌培养
+
+Autoimmune_Encephalitis,nmda_receptor_antibody,NMDA受体抗体,categorical,,Not_Done,Negative,Positive,,,N,抗NMDA受体,自身免疫性脑炎
+Autoimmune_Encephalitis,autoimmune_panel,自身免疫性脑炎抗体组,boolean,,,,,N,LGI1/CASPR2/AMPAR/GABABR,自身免疫
+
+Blood_Tests,blood_culture,血培养,categorical,,Not_Done,Negative,Positive,,,Y,血培养,菌血症
+Blood_Tests,wbc,白细胞计数,decimal,×10⁹/L,0-100,6690-2,,Y,WBC,感染
+Blood_Tests,crp,C反应蛋白,decimal,mg/L,0-500,1988-5,,Y,CRP,炎症
+Blood_Tests,procalcitonin,降钙素原,decimal,ng/mL,0-200,33959-8,,Y,PCT,细菌感染
+Blood_Tests,sodium,钠,decimal,mmol/L,0-200,2951-2,,Y,Na+,SIADH
+Blood_Tests,hiv_test,HIV检测,categorical,,Not_Done,Negative,Positive,,,Y,HIV,隐球菌/弓形虫
+
+Imaging,ct_head,头颅CT,boolean,,,,,Y,CT平扫,排除占位/出血
+Imaging,ct_findings,CT表现,categorical,,Normal,Edema,Hydrocephalus,Mass_Effect,,,N,正常/水肿/脑积水/占位效应,并发症
+Imaging,mri_brain,头颅MRI,boolean,,,,,Y,脑MRI,脑炎首选
+Imaging,mri_findings,MRI表现,categorical,,Normal,Temporal_Lobe_Involvement,Leptomeningeal_Enhancement,Hydrocephalus,Abscess,,,N,正常/颞叶受累/软脑膜强化/脑积水/脓肿,诊断线索
+Imaging,temporal_lobe_signal,颞叶信号改变,boolean,,,,,N,HSV脑炎特征,边缘性脑炎
+Imaging,basal_meningeal_enhancement,基底脑膜强化,boolean,,,,,N,基底部强化,结核性脑膜炎
+
+EEG,eeg_performed,脑电图,boolean,,,,,N,EEG,癫痫/脑病
+EEG,eeg_findings,EEG表现,categorical,,Normal,Diffuse_Slowing,Focal_Slowing,PLEDS,,,N,正常/弥漫慢波/局灶慢波/周期性放电,脑炎
+EEG,pleds,周期性侧方癫痫样放电,boolean,,,,,N,PLEDS,HSV脑炎
+
+Antibiotic_Therapy,empiric_antibiotics_started,经验性抗生素,boolean,,,,,Y,立即启动,勿延误
+Antibiotic_Therapy,time_to_antibiotics,至抗生素时间,integer,min,0-720,,,Y,从就诊到首剂抗生素,<60分钟
+Antibiotic_Therapy,ceftriaxone,头孢曲松,boolean,,,,,Y,2g q12h,覆盖肺炎链/脑膜炎球
+Antibiotic_Therapy,vancomycin,万古霉素,boolean,,,,,Y,15-20mg/kg q8-12h,DRSP/MRSA
+Antibiotic_Therapy,ampicillin,氨苄西林,boolean,,,,,Y,2g q4h,单核增生李斯特菌>50岁/免疫缺陷
+Antibiotic_Therapy,cefepime,头孢吡肟,boolean,,,,,N,2g q8h,铜绿假单胞菌
+Antibiotic_Therapy,meropenem,美罗培南,boolean,,,,,N,2g q8h,ESBLs/耐药革兰阴性杆菌
+
+Antiviral_Therapy,acyclovir,阿昔洛韦,boolean,,,,,Y,10mg/kg q8h,HSV脑炎
+Antiviral_Therapy,acyclovir_started,阿昔洛韦启动,boolean,,,,,Y,经验性启动,可疑脑炎即启动
+Antiviral_Therapy,ganciclovir,更昔洛韦,boolean,,,,,N,5mg/kg q12h,CMV
+
+Antituberculous_Therapy,anti_tb_therapy,抗结核治疗,boolean,,,,,N,HRZE,结核性脑膜炎
+Antituberculous_Therapy,rifampin,利福平,boolean,,,,,N,10mg/kg qd,穿透血脑屏障
+Antituberculous_Therapy,isoniazid,异烟肼,boolean,,,,,N,5mg/kg qd,一线药物
+Antituberculous_Therapy,pyrazinamide,吡嗪酰胺,boolean,,,,,N,25mg/kg qd,初始强化
+Antituberculous_Therapy,ethambutol,乙胺丁醇,boolean,,,,,N,15mg/kg qd,四联方案
+
+Antifungal_Therapy,amphotericin_b,两性霉素B,boolean,,,,,N,0.7-1mg/kg qd,隐球菌脑膜炎
+Antifungal_Therapy,flucytosine,氟胞嘧啶,boolean,,,,,N,100mg/kg/day分4次,联合两性霉素B
+Antifungal_Therapy,fluconazole,氟康唑,boolean,,,,,N,400-800mg qd,巩固治疗
+
+Adjunctive_Therapy,dexamethasone,地塞米松,boolean,,,,,Y,0.15mg/kg q6h×4天,肺炎链球菌脑膜炎
+Dexamethasone,steroid_timing,激素时机,categorical,,NA,Before_Antibiotics,With_Antibiotics,After_Antibiotics,,,N,抗生素前/同时/后,抗生素前或同时
+Adjunctive_Therapy,mannitol,甘露醇,boolean,,,,,N,降颅压,颅高压
+Adjunctive_Therapy,antiepileptics,抗癫痫药,boolean,,,,,N,苯妥英/左乙拉西坦,癫痫发作
+
+Complications,cerebral_edema,脑水肿,boolean,,,,,Y,颅高压,脑疝风险
+Complications,hydrocephalus,脑积水,boolean,,,,,Y,交通性/梗阻性,CSF分流
+Complications,seizures,癫痫,boolean,,,,,Y,抽搐,脑炎
+Complications,siadh,抗利尿激素分泌不当综合征,boolean,,,,,Y,低钠血症,限制液体
+Complications,cerebral_venous_thrombosis,脑静脉窦血栓,boolean,,,,,N,静脉窦血栓形成,抗凝
+Complications,hearing_loss,听力丧失,boolean,,,,,Y,感音神经性耳聋,肺炎链球菌后遗症
+Complications,focal_deficits_persistent,持续局灶缺损,boolean,,,,,N,永久性神经功能缺损,后遗症
+
+Outcome,clinical_improvement,临床好转,boolean,,,,,Y,症状改善,疗效
+Outcome,full_recovery,完全恢复,boolean,,,,,Y,无后遗症,预后
+Outcome,neurological_sequelae,神经后遗症,boolean,,,,,Y,认知障碍/癫痫/偏瘫,功能障碍
+Outcome,mortality,死亡,boolean,,,,,Y,院内死亡,病死率
+Outcome,length_of_stay,住院天数,integer,days,0-365,,,N,LOS,医疗负担
+
+Prevention,vaccination,疫苗接种,boolean,,,,,Y,肺炎链球菌/脑膜炎球菌/Hib,预防
+Prevention,chemoprophylaxis,化学预防,boolean,,,,,N,密切接触者预防,脑膜炎球菌/Hib
+
+Report,attending_physician,主治医师,string,,,,,Y,诊治医师,责任医师
+Report,report_date,报告日期,date,,,,,Y,报告时间,文档记录

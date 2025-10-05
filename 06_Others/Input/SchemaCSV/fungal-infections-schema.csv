@@ -1,0 +1,111 @@
+Category,Field_Name,Chinese_Name,Data_Type,Unit,Valid_Range,LOINC_Code,Required,Description,Clinical_Significance
+Basic_Info,patient_id,患者ID,string,,,,,Y,唯一标识,患者追踪
+Basic_Info,onset_date,起病日期,date,,,,,Y,症状开始时间,病程
+Basic_Info,age,年龄,integer,years,0-120,,,Y,患者年龄,免疫状态
+Basic_Info,gender,性别,categorical,,Male,Female,,,Y,性别,流行病学
+
+Fungal_Type,fungal_infection_type,真菌感染类型,categorical,,Candidiasis,Aspergillosis,Cryptococcosis,Mucormycosis,Pneumocystis,Endemic_Mycoses,Dermatophytosis,,,Y,念珠菌病/曲霉病/隐球菌病/毛霉病/肺孢子菌/地方性真菌病/皮肤癣菌病,分类
+
+Immunosuppression,immunocompromised,免疫抑制,boolean,,,,,Y,免疫缺陷,机会性感染
+Immunosuppression,hiv_aids,HIV/AIDS,boolean,,,,,Y,HIV感染,CD4<100
+Immunosuppression,neutropenia,中性粒细胞减少,boolean,,,,,Y,ANC<500,血液病/化疗
+Immunosuppression,transplant,器官移植,boolean,,,,,Y,实体器官/造血干细胞移植,免疫抑制剂
+Immunosuppression,chemotherapy,化疗,boolean,,,,,Y,细胞毒药物,粒细胞缺乏
+Immunosuppression,corticosteroids,糖皮质激素,boolean,,,,,Y,长期激素,免疫抑制
+Immunosuppression,biologics,生物制剂,boolean,,,,,N,TNF拮抗剂等,免疫调节
+
+Candidiasis,invasive_candidiasis,侵袭性念珠菌病,boolean,,,,,Y,IC,血流/深部器官
+Candidiasis,candidemia,念珠菌血症,boolean,,,,,Y,血流感染,ICU
+Candidiasis,chronic_disseminated_candidiasis,慢性播散性念珠菌病,boolean,,,,,N,肝脾念珠菌病,血液病化疗后
+Candidiasis,candida_endocarditis,念珠菌心内膜炎,boolean,,,,,N,心脏瓣膜,IVDU/心脏手术
+Candidiasis,oropharyngeal_candidiasis,口咽念珠菌病,boolean,,,,,Y,鹅口疮,HIV/吸入激素
+Candidiasis,esophageal_candidiasis,食管念珠菌病,boolean,,,,,Y,吞咽痛,AIDS定义性疾病
+Candidiasis,vulvovaginal_candidiasis,外阴阴道念珠菌病,boolean,,,,,N,VVC,妇女常见
+
+Aspergillosis,invasive_aspergillosis,侵袭性曲霉病,boolean,,,,,Y,IA,中性粒细胞减少
+Aspergillosis,invasive_pulmonary_aspergillosis,侵袭性肺曲霉病,boolean,,,,,Y,IPA,肺部最常见
+Aspergillosis,aspergillus_sinusitis,曲霉鼻窦炎,boolean,,,,,N,侵袭性鼻窦炎,糖尿病/血液病
+Aspergillosis,cns_aspergillosis,中枢神经曲霉病,boolean,,,,,N,脑曲霉病,血源性播散
+Aspergillosis,aspergilloma,曲霉球,boolean,,,,,N,真菌球,空洞性肺病
+Aspergillosis,abpa,过敏性支气管肺曲霉病,boolean,,,,,N,ABPA,哮喘/囊性纤维化
+
+Cryptococcosis,cryptococcal_meningitis,隐球菌脑膜炎,boolean,,,,,Y,CM,AIDS最常见CNS机会性感染
+Cryptococcosis,pulmonary_cryptococcosis,肺隐球菌病,boolean,,,,,Y,肺部感染,免疫正常/缺陷
+Cryptococcosis,disseminated_cryptococcosis,播散性隐球菌病,boolean,,,,,N,血源性播散,皮肤/骨骼
+
+Mucormycosis,rhinocerebral_mucormycosis,鼻脑毛霉病,boolean,,,,,Y,鼻窦→眼眶→脑,糖尿病酮症酸中毒
+Mucormycosis,pulmonary_mucormycosis,肺毛霉病,boolean,,,,,N,肺部感染,中性粒细胞减少
+Mucormycosis,cutaneous_mucormycosis,皮肤毛霉病,boolean,,,,,N,创伤后,烧伤/手术
+
+Pneumocystis,pneumocystis_pneumonia,肺孢子菌肺炎,boolean,,,,,Y,PCP/PJP,AIDS/免疫抑制
+
+Endemic_Mycoses,histoplasmosis,组织胞浆菌病,boolean,,,,,N,Histoplasma,俄亥俄/密西西比河谷
+Endemic_Mycoses,coccidioidomycosis,球孢子菌病,boolean,,,,,N,Coccidioides,美国西南部
+Endemic_Mycoses,blastomycosis,芽生菌病,boolean,,,,,N,Blastomyces,美国东南部
+
+Symptoms,fever,发热,boolean,,,,,Y,发热,全身感染
+Symptoms,cough,咳嗽,boolean,,,,,Y,咳嗽,肺部感染
+Symptoms,dyspnea,呼吸困难,boolean,,,,,Y,气促,肺功能受损
+Symptoms,hemoptysis,咯血,boolean,,,,,N,咯血,侵袭性肺曲霉
+Symptoms,headache,头痛,boolean,,,,,Y,头痛,脑膜炎
+Symptoms,altered_mental_status,意识改变,boolean,,,,,Y,意识障碍,CNS感染
+Symptoms,skin_lesions,皮肤病变,boolean,,,,,Y,皮疹/溃疡,播散性/皮肤
+
+Labs,wbc,白细胞计数,decimal,×10⁹/L,0-100,6690-2,,Y,WBC,中性粒细胞减少
+Labs,anc,中性粒细胞绝对计数,decimal,×10⁹/L,0-50,751-8,,Y,ANC,<500高危
+Labs,cd4_count,CD4计数,decimal,cells/μL,0-2000,24467-3,,N,CD4+ T细胞,<100隐球菌/<200PCP
+Labs,beta_d_glucan,β-D-葡聚糖,decimal,pg/mL,0-1000,LP407923-1,,Y,BDG,真菌感染标志物
+Labs,galactomannan,半乳甘露聚糖,decimal,,0-10,,,Y,GM试验,曲霉抗原
+Labs,cryptococcal_antigen,隐球菌抗原,categorical,,Not_Done,Negative,Positive,,,Y,CrAg,隐球菌
+Labs,aspergillus_pcr,曲霉PCR,categorical,,Not_Done,Negative,Positive,,,N,核酸检测,曲霉
+
+Blood_Culture,blood_culture_fungal,真菌血培养,categorical,,Not_Done,Negative,Positive,,,Y,真菌培养,念珠菌血症
+Blood_Culture,candida_species,念珠菌种,categorical,,None,C_albicans,C_glabrata,C_parapsilosis,C_tropicalis,C_krusei,,,N,白念/光滑念/近平滑念/热带念/克柔念,抗真菌敏感性不同
+
+Respiratory_Samples,sputum_culture,痰培养,categorical,,Not_Done,Negative,Positive,,,Y,痰真菌培养,肺部感染
+Respiratory_Samples,bal,支气管肺泡灌洗,boolean,,,,,Y,BAL,侵袭性肺曲霉
+Respiratory_Samples,bal_gms_stain,BAL GMS染色,categorical,,Not_Done,Negative,Positive,,,N,六胺银染色,真菌菌丝
+Respiratory_Samples,bal_culture,BAL培养,categorical,,Not_Done,Negative,Positive,,,Y,BAL真菌培养,病原学
+
+CSF_Analysis,csf_opening_pressure,脑脊液压力,decimal,mmH2O,0-500,LP29463-7,,N,开放压,隐球菌脑膜炎>250
+CSF_Analysis,csf_wbc,脑脊液白细胞,decimal,×10⁶/L,0-1000,26465-5,,Y,CSF WBC,轻度升高
+CSF_Analysis,csf_glucose,脑脊液葡萄糖,decimal,mmol/L,0-10,2342-4,,Y,CSF GLU,降低
+CSF_Analysis,csf_protein,脑脊液蛋白,decimal,g/L,0-10,2880-3,,Y,CSF蛋白,升高
+CSF_Analysis,csf_india_ink,脑脊液墨汁染色,categorical,,Not_Done,Negative,Positive,,,Y,墨汁染色,隐球菌荚膜
+CSF_Analysis,csf_cryptococcal_antigen,脑脊液隐球菌抗原,categorical,,Not_Done,Negative,Positive,,,Y,CSF CrAg,诊断金标准
+CSF_Analysis,csf_fungal_culture,脑脊液真菌培养,categorical,,Not_Done,Negative,Positive,,,Y,CSF培养,确诊
+
+Biopsy,tissue_biopsy,组织活检,boolean,,,,,Y,病理+培养,确诊
+Biopsy,histopathology,组织病理,categorical,,Not_Done,Budding_Yeast,Hyphae,Broad_Nonseptate_Hyphae,Spherules,,,N,芽生酵母/菌丝/宽无隔菌丝/球体,形态学
+Biopsy,tissue_culture,组织培养,categorical,,Not_Done,Negative,Positive,,,Y,组织真菌培养,确诊
+
+Imaging_Chest,chest_ct,胸部CT,boolean,,,,,Y,胸部CT,肺部病变
+Imaging_Chest,halo_sign,晕征,boolean,,,,,Y,结节周围磨玻璃影,早期侵袭性肺曲霉
+Imaging_Chest,air_crescent_sign,新月征,boolean,,,,,Y,空洞内新月形气体,恢复期曲霉球
+Imaging_Chest,cavitation,空洞,boolean,,,,,Y,空洞形成,坏死
+Imaging_Chest,nodules,结节,boolean,,,,,Y,肺结节,真菌感染
+
+Imaging_CNS,brain_mri,头颅MRI,boolean,,,,,Y,脑MRI,CNS感染
+Imaging_CNS,meningeal_enhancement,脑膜强化,boolean,,,,,N,脑膜强化,脑膜炎
+Imaging_CNS,brain_abscess,脑脓肿,boolean,,,,,N,脑内脓肿,曲霉/隐球菌
+
+Antifungal_Therapy,antifungal_treatment,抗真菌治疗,boolean,,,,,Y,抗真菌药,治疗
+Antifungal_Therapy,fluconazole,氟康唑,boolean,,,,,Y,200-800mg qd,隐球菌/念珠菌
+Antifungal_Therapy,voriconazole,伏立康唑,boolean,,,,,Y,6mg/kg q12h×2→4mg/kg q12h,侵袭性曲霉一线
+Antifungal_Therapy,amphotericin_b,两性霉素B,boolean,,,,,Y,0.7-1mg/kg qd,重症/毛霉
+Antifungal_Therapy,liposomal_amphotericin,脂质体两性霉素,boolean,,,,,Y,3-5mg/kg qd,肾毒性低
+Antifungal_Therapy,caspofungin,卡泊芬净,boolean,,,,,Y,70mg×1→50mg qd,念珠菌/难治性曲霉
+Antifungal_Therapy,micafungin,米卡芬净,boolean,,,,,N,100-150mg qd,棘白菌素
+Antifungal_Therapy,posaconazole,泊沙康唑,boolean,,,,,N,300mg qd,预防/难治性
+Antifungal_Therapy,isavuconazole,艾沙康唑,boolean,,,,,N,替代伏立康唑,侵袭性曲霉
+
+PCP_Treatment,tmp_smx,复方新诺明,boolean,,,,,Y,TMP 15mg/kg + SMX 75mg/kg/day分3-4次,PCP一线
+PCP_Treatment,prednisone,泼尼松,boolean,,,,,N,PaO2<70mmHg加用激素,中重度PCP
+PCP_Treatment,pcp_prophylaxis,PCP预防,boolean,,,,,Y,CD4<200或AIDS定义性疾病,预防用药
+
+Outcome,clinical_response,临床应答,boolean,,,,,Y,症状改善,疗效
+Outcome,mortality,死亡,boolean,,,,,Y,院内死亡,预后
+Outcome,relapse,复发,boolean,,,,,N,停药后再发,慢性抑制治疗
+
+Report,provider,诊疗医师,string,,,,,Y,医师姓名,责任医师
+Report,report_date,报告日期,date,,,,,Y,报告时间,文档记录

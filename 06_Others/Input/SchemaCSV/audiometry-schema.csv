@@ -1,0 +1,126 @@
+Category,Field_Name,Chinese_Name,Data_Type,Unit,Valid_Range,LOINC_Code,Required,Description,Clinical_Significance
+Basic_Info,patient_id,患者ID,string,,,,,Y,唯一标识,患者追踪
+Basic_Info,test_date,测试日期,date,,,,,Y,检查日期,听力监测
+Basic_Info,age,年龄,integer,years,0-120,,,Y,患者年龄,老年性聋
+Basic_Info,gender,性别,categorical,,"Male,Female",,,Y,性别,人群特征
+
+Indication,test_indication,检查指征,categorical,,"Screening,Hearing_Loss_Complaint,Tinnitus,Vertigo,Ototoxic_Monitoring,Occupational,Pre_Employment,Post_Treatment",,,Y,筛查/听力下降主诉/耳鸣/眩晕/耳毒性监测/职业/入职/治疗后,检查目的
+
+Symptoms,hearing_loss,听力下降,boolean,,,,,Y,听力减退,主诉
+Symptoms,laterality,侧别,categorical,,"Bilateral,Right,Left",,,Y,双侧/右/左,对称性
+Symptoms,onset,起病,categorical,,"Gradual,Sudden,Congenital",,,Y,渐进/突发/先天,病因线索
+Symptoms,duration,病程,categorical,,"<1_week,1_4_weeks,1_6_months,>6_months",,,N,<1周/1-4周/1-6月/>6月,急慢性
+Symptoms,progression,进展,categorical,,"Stable,Progressive,Fluctuating",,,N,稳定/进展/波动,病程特点
+Symptoms,tinnitus,耳鸣,boolean,,,,,N,耳鸣,常见伴随症状
+Symptoms,aural_fullness,耳闷胀感,boolean,,,,,N,耳闷,梅尼埃病
+Symptoms,vertigo,眩晕,boolean,,,,,N,眩晕发作,内耳病变
+Symptoms,otalgia,耳痛,boolean,,,,,N,耳痛,中耳炎
+Symptoms,otorrhea,耳漏,boolean,,,,,N,耳流脓/液,中耳炎
+
+Risk_Factors,noise_exposure,噪声暴露,boolean,,,,,Y,职业/娱乐噪声,噪声性聋
+Risk_Factors,ototoxic_medications,耳毒性药物,boolean,,,,,N,氨基糖苷类/顺铂/呋塞米,药物性聋
+Risk_Factors,head_trauma,头部外伤,boolean,,,,,N,颞骨骨折,外伤性聋
+Risk_Factors,ear_surgery_history,耳部手术史,boolean,,,,,N,既往耳科手术,医源性
+Risk_Factors,family_history,家族史,boolean,,,,,N,家族性聋,遗传性聋
+Risk_Factors,diabetes,糖尿病,boolean,,,,,N,DM,微血管病变
+Risk_Factors,hypertension,高血压,boolean,,,,,N,HTN,心血管因素
+Risk_Factors,smoking,吸烟,boolean,,,,,N,吸烟史,危险因素
+
+Otoscopy,otoscopy_performed,耳镜检查,boolean,,,,,Y,外耳道鼓膜检查,前置检查
+Otoscopy,otoscopy_right,右耳镜检查,categorical,,"Normal,Cerumen_Impaction,Foreign_Body,Infection,TM_Perforation,Cholesteatoma,Otitis_Media,Not_Done",,,Y,正常/耵聍栓塞/异物/感染/鼓膜穿孔/胆脂瘤/中耳炎,右耳发现
+Otoscopy,otoscopy_left,左耳镜检查,categorical,,"Normal,Cerumen_Impaction,Foreign_Body,Infection,TM_Perforation,Cholesteatoma,Otitis_Media,Not_Done",,,Y,正常/耵聍栓塞/异物/感染/鼓膜穿孔/胆脂瘤/中耳炎,左耳发现
+
+PTA,pure_tone_audiometry,纯音听阈测试,boolean,,,,,Y,PTA,听力评估金标准
+PTA,test_environment,测试环境,categorical,,"Sound_Booth,Quiet_Room",,,Y,隔声室/安静房间,测试质量
+PTA,transducer,换能器,categorical,,"Headphones,Insert_Earphones,Bone_Oscillator",,,Y,耳机/插入式耳机/骨振器,气导/骨导
+
+AC_Right,ac_right_250hz,右气导250Hz,integer,dB HL,-10-120,,,N,右耳气导阈值,低频
+AC_Right,ac_right_500hz,右气导500Hz,integer,dB HL,-10-120,,,Y,右耳气导阈值,语频
+AC_Right,ac_right_1000hz,右气导1000Hz,integer,dB HL,-10-120,,,Y,右耳气导阈值,语频
+AC_Right,ac_right_2000hz,右气导2000Hz,integer,dB HL,-10-120,,,Y,右耳气导阈值,语频
+AC_Right,ac_right_3000hz,右气导3000Hz,integer,dB HL,-10-120,,,N,右耳气导阈值,高频
+AC_Right,ac_right_4000hz,右气导4000Hz,integer,dB HL,-10-120,,,Y,右耳气导阈值,高频
+AC_Right,ac_right_6000hz,右气导6000Hz,integer,dB HL,-10-120,,,N,右耳气导阈值,高频
+AC_Right,ac_right_8000hz,右气导8000Hz,integer,dB HL,-10-120,,,Y,右耳气导阈值,高频
+
+AC_Left,ac_left_250hz,左气导250Hz,integer,dB HL,-10-120,,,N,左耳气导阈值,低频
+AC_Left,ac_left_500hz,左气导500Hz,integer,dB HL,-10-120,,,Y,左耳气导阈值,语频
+AC_Left,ac_left_1000hz,左气导1000Hz,integer,dB HL,-10-120,,,Y,左耳气导阈值,语频
+AC_Left,ac_left_2000hz,左气导2000Hz,integer,dB HL,-10-120,,,Y,左耳气导阈值,语频
+AC_Left,ac_left_3000hz,左气导3000Hz,integer,dB HL,-10-120,,,N,左耳气导阈值,高频
+AC_Left,ac_left_4000hz,左气导4000Hz,integer,dB HL,-10-120,,,Y,左耳气导阈值,高频
+AC_Left,ac_left_6000hz,左气导6000Hz,integer,dB HL,-10-120,,,N,左耳气导阈值,高频
+AC_Left,ac_left_8000hz,左气导8000Hz,integer,dB HL,-10-120,,,Y,左耳气导阈值,高频
+
+BC_Right,bc_right_250hz,右骨导250Hz,integer,dB HL,-10-80,,,N,右耳骨导阈值,低频
+BC_Right,bc_right_500hz,右骨导500Hz,integer,dB HL,-10-80,,,Y,右耳骨导阈值,语频
+BC_Right,bc_right_1000hz,右骨导1000Hz,integer,dB HL,-10-80,,,Y,右耳骨导阈值,语频
+BC_Right,bc_right_2000hz,右骨导2000Hz,integer,dB HL,-10-80,,,Y,右耳骨导阈值,语频
+BC_Right,bc_right_4000hz,右骨导4000Hz,integer,dB HL,-10-80,,,Y,右耳骨导阈值,高频
+
+BC_Left,bc_left_250hz,左骨导250Hz,integer,dB HL,-10-80,,,N,左耳骨导阈值,低频
+BC_Left,bc_left_500hz,左骨导500Hz,integer,dB HL,-10-80,,,Y,左耳骨导阈值,语频
+BC_Left,bc_left_1000hz,左骨导1000Hz,integer,dB HL,-10-80,,,Y,左耳骨导阈值,语频
+BC_Left,bc_left_2000hz,左骨导2000Hz,integer,dB HL,-10-80,,,Y,左耳骨导阈值,语频
+BC_Left,bc_left_4000hz,左骨导4000Hz,integer,dB HL,-10-80,,,Y,左耳骨导阈值,高频
+
+PTA_Summary,pta_right,右耳PTA,decimal,dB HL,0-120,,,Y,右耳纯音平均(500/1k/2k Hz),听力级别
+PTA_Summary,pta_left,左耳PTA,decimal,dB HL,0-120,,,Y,左耳纯音平均,听力级别
+PTA_Summary,better_ear_pta,较好耳PTA,decimal,dB HL,0-120,,,Y,较好耳听阈,残疾评定
+
+HL_Classification_Right,right_hearing_level,右耳听力级别,categorical,,"Normal,Mild,Moderate,Moderately_Severe,Severe,Profound",,,Y,正常≤25/轻度26-40/中度41-55/中重度56-70/重度71-90/极重度≥91 dB HL,WHO分级
+HL_Classification_Right,right_hearing_type,右耳听力类型,categorical,,"Normal,Conductive,Sensorineural,Mixed",,,Y,正常/传导性/感音神经性/混合性,病变定位
+HL_Classification_Right,right_air_bone_gap,右耳气骨导差,decimal,dB,0-60,,,N,ABG,传导性成分
+
+HL_Classification_Left,left_hearing_level,左耳听力级别,categorical,,"Normal,Mild,Moderate,Moderately_Severe,Severe,Profound",,,Y,正常≤25/轻度26-40/中度41-55/中重度56-70/重度71-90/极重度≥91 dB HL,WHO分级
+HL_Classification_Left,left_hearing_type,左耳听力类型,categorical,,"Normal,Conductive,Sensorineural,Mixed",,,Y,正常/传导性/感音神经性/混合性,病变定位
+HL_Classification_Left,left_air_bone_gap,左耳气骨导差,decimal,dB,0-60,,,N,ABG,传导性成分
+
+Audiogram_Configuration,audiogram_pattern,听力图型,categorical,,"Flat,Sloping,Rising,Cookie_Bite,Notched,Precipitous",,,Y,平坦/下降/上升/碟形/切迹/陡降,病因线索
+Audiogram_Configuration,noise_notch,噪声性切迹,boolean,,,,,N,4000 Hz切迹,噪声性聋特征
+Audiogram_Configuration,high_frequency_loss,高频听力下降,boolean,,,,,N,老年性聋模式,高频先受累
+
+Speech_Audiometry,srt_right,右耳言语接受阈,integer,dB HL,0-120,,,N,SRT,与PTA一致性
+Speech_Audiometry,srt_left,左耳言语接受阈,integer,dB HL,0-120,,,N,SRT,言语测听
+Speech_Audiometry,wrs_right,右耳言语识别率,decimal,%,0-100,,,N,WRS/SDS,言语辨别能力
+Speech_Audiometry,wrs_left,左耳言语识别率,decimal,%,0-100,,,N,WRS,蜗后病变下降
+
+Tympanometry,tympanometry_performed,声导抗测试,boolean,,,,,N,中耳功能,鼓膜活动度
+Tympanometry,tympanogram_right,右耳鼓室图,categorical,,"Type_A,Type_As,Type_Ad,Type_B,Type_C,Not_Done",,,N,A正常/As僵硬/Ad松弛/B平坦/C负压,中耳状态
+Tympanometry,tympanogram_left,左耳鼓室图,categorical,,"Type_A,Type_As,Type_Ad,Type_B,Type_C,Not_Done",,,N,A/As/Ad/B/C,中耳状态
+Tympanometry,static_compliance_right,右耳静态声顺,decimal,mL,0-5,,,N,右耳鼓膜顺应性,0.3-1.6 mL正常
+Tympanometry,static_compliance_left,左耳静态声顺,decimal,mL,0-5,,,N,左耳鼓膜顺应性,0.3-1.6 mL正常
+
+Acoustic_Reflex,acoustic_reflex_performed,声反射,boolean,,,,,N,镫骨肌反射,蜗后病变
+Acoustic_Reflex,ipsilateral_reflex_right,右耳同侧反射,categorical,,"Present,Absent,Elevated,Not_Done",,,N,存在/缺失/阈值升高,面神经功能
+Acoustic_Reflex,ipsilateral_reflex_left,左耳同侧反射,categorical,,"Present,Absent,Elevated,Not_Done",,,N,存在/缺失/阈值升高,面神经功能
+Acoustic_Reflex,contralateral_reflex_right,右耳对侧反射,categorical,,"Present,Absent,Elevated,Not_Done",,,N,存在/缺失/阈值升高,听神经病
+Acoustic_Reflex,contralateral_reflex_left,左耳对侧反射,categorical,,"Present,Absent,Elevated,Not_Done",,,N,存在/缺失/阈值升高,听神经病
+Acoustic_Reflex,reflex_decay,反射衰减,categorical,,"Negative,Positive_Right,Positive_Left,Not_Done",,,N,阴性/右侧阳性/左侧阳性,蜗后病变
+
+OAE,oae_performed,耳声发射,boolean,,,,,N,OAE,耳蜗功能
+OAE,teoae_right,右耳TEOAE,categorical,,"Pass,Refer,Not_Done",,,N,通过/转诊,瞬态诱发
+OAE,teoae_left,左耳TEOAE,categorical,,"Pass,Refer,Not_Done",,,N,通过/转诊,瞬态诱发
+OAE,dpoae_right,右耳DPOAE,categorical,,"Pass,Refer,Not_Done",,,N,通过/转诊,畸变产物
+OAE,dpoae_left,左耳DPOAE,categorical,,"Pass,Refer,Not_Done",,,N,通过/转诊,畸变产物
+
+ABR,abr_performed,听性脑干反应,boolean,,,,,N,ABR,客观测听
+ABR,abr_threshold_right,右耳ABR阈值,integer,dB nHL,0-100,,,N,右耳ABR阈,蜗后评估
+ABR,abr_threshold_left,左耳ABR阈值,integer,dB nHL,0-100,,,N,左耳ABR阈,蜗后评估
+ABR,wave_v_latency_right,右耳V波潜伏期,decimal,ms,4-8,,,N,右耳V波,蜗后病变延长
+ABR,wave_v_latency_left,左耳V波潜伏期,decimal,ms,4-8,,,N,左耳V波,蜗后病变延长
+ABR,interaural_latency_difference,耳间潜伏期差,decimal,ms,0-1,,,N,ILD,>0.3 ms蜗后
+ABR,retrocochlear_findings,蜗后发现,boolean,,,,,N,听神经瘤可疑,转MRI
+
+Etiology,probable_etiology,可能病因,categorical,,"Presbycusis,Noise_Induced,Ototoxic,Otitis_Media,Otosclerosis,Meniere_Disease,Acoustic_Neuroma,Congenital,Sudden_SNHL,Unknown",,,Y,老年性/噪声性/耳毒性/中耳炎/耳硬化/梅尼埃病/听神经瘤/先天性/突发性感音神经性聋/未知,病因诊断
+
+Recommendations,hearing_aid,助听器,boolean,,,,,N,HA适配,听力康复
+Recommendations,cochlear_implant_referral,人工耳蜗转诊,boolean,,,,,N,CI评估,重度/极重度双侧感音神经性聋
+Recommendations,ent_referral,ENT转诊,boolean,,,,,N,耳鼻喉专科,病因治疗
+Recommendations,audiology_followup,听力学随访,boolean,,,,,N,定期复查,监测进展
+Recommendations,mri_brain,颅脑MRI,boolean,,,,,N,影像学检查,蜗后病变排查
+Recommendations,genetic_counseling,遗传咨询,boolean,,,,,N,基因检测,遗传性聋
+
+Report,audiologist,听力师,string,,,,,Y,测试人员,资质认证
+Report,report_date,报告日期,date,,,,,Y,报告时间,文档记录
+

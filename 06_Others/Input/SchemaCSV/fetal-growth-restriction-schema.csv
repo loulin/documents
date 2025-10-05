@@ -1,0 +1,16 @@
+Category,Field_Name,Chinese_Name,Data_Type,Unit,Valid_Range,LOINC_Code,Required,Description,Clinical_Significance
+Basic_Info,patient_id,患者ID,string,,,,,Y,唯一标识,患者追踪
+Basic_Info,date,日期,date,,,,,Y,事件日期,时间记录
+Basic_Info,age,年龄,integer,years,10-60,,,Y,患者年龄,危险因素
+Basic_Info,gestational_age,孕龄,decimal,weeks,0-45,49052-4,,Y,妊娠周数,孕期阶段
+Clinical_Presentation,primary_symptom,主要症状,categorical,,Bleeding,Pain,Discharge,Asymptomatic,,,Y,出血/疼痛/分泌物/无症状,临床表现
+Physical_Exam,vital_signs_stable,生命体征,boolean,,,,,Y,生命体征平稳,血流动力学
+Diagnosis,primary_diagnosis,主要诊断,string,,,,,Y,诊断名称,疾病分类
+Labs,hemoglobin,血红蛋白,decimal,g/L,50-200,718-7,,Y,Hb,贫血评估
+Imaging,ultrasound,超声检查,boolean,,,,,Y,超声评估,影像学
+Treatment,medical_management,内科治疗,boolean,,,,,Y,药物治疗,保守治疗
+Treatment,surgical_management,外科治疗,boolean,,,,,N,手术治疗,手术干预
+Outcome,maternal_outcome,母体结局,categorical,,Favorable,Complicated,Death,,,Y,良好/并发症/死亡,预后
+Outcome,fetal_outcome,胎儿结局,categorical,,Live_Birth,Fetal_Loss,,,N,活产/胎儿丢失,围产结局
+Report,provider,诊疗医师,string,,,,,Y,医师姓名,责任医师
+Report,report_date,报告日期,date,,,,,Y,报告时间,文档记录

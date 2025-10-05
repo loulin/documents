@@ -1,146 +1,50 @@
-字段名(英文),字段名(中文),数据类型,描述,示例
-patientId,患者ID,String,患者唯一标识符,PC20250312001
-diagnosisDate,确诊日期,Date,胰腺癌确诊日期,2025-03-12
-age,年龄,Number,确诊时年龄(岁),65
-gender,性别,String,患者性别,男
-
-# 临床表现
-symptoms.jaundice,症状.黄疸,Boolean,"**胰头癌**: 70-80%出现黄疸<br>**胰体尾癌**: 少见(<10%)",true
-symptoms.jaundice.onset,症状.黄疸.发生时间,String,"**进行性加重**: 提示胆管梗阻<br>**波动性**: 壶腹周围癌可能",进行性加重
-symptoms.pain,症状.腹痛,Boolean,"**钝痛/绞痛**: 60-80%患者主诉<br>**夜间加重**: 提示后腹膜侵犯",true
-symptoms.pain.location,症状.腹痛.部位,String,"**上腹部/左上腹**: 胰体尾癌<br>**右上腹**: 胰头癌<br>**腰背部**: 腹膜后侵犯",上腹部放射至腰背部
-symptoms.pain.courvoisier,症状.Courvoisier征,Boolean,"**阳性**: 无痛性黄疸+胆囊肿大,提示胰头癌可能",true
-symptoms.weightLoss,症状.体重下降,Boolean,"**>10%体重下降**: 80%患者出现<br>**提示**: 肿瘤消耗+食欲减退",true
-symptoms.weightLoss.amount,症状.体重下降.数值,Number,3个月内体重下降百分比(%),15
-symptoms.diabetes.newOnset,症状.新发糖尿病,Boolean,"**新发DM**: 40-50%胰腺癌患者<br>**血糖突然难控**: 警惕胰腺癌可能",true
-symptoms.steatorrhea,症状.脂肪泻,Boolean,"**外分泌功能不全**: 胰酶分泌减少<br>**表现**: 大便油腻、恶臭",false
-symptoms.thrombosis,症状.游走性血栓,Boolean,"**Trousseau综合征**: 胰腺癌相关高凝状态<br>**DVT/肺栓塞**: 提示预后不良",false
-
-# 肿瘤部位与大小
-tumor.location,肿瘤.部位,String,"**胰头**: 60-70%(最常见)<br>**胰体**: 15-20%<br>**胰尾**: 5-10%<br>**弥漫**: 5-10%",胰头
-tumor.size,肿瘤.最大径,Number,肿瘤最大直径(cm),3.5
-tumor.histology,肿瘤.组织学类型,String,"**导管腺癌**: 85-90%(最常见)<br>**腺泡细胞癌**: 1-2%<br>**神经内分泌肿瘤**: 5%<br>**囊腺癌**: 1-2%",导管腺癌
-tumor.differentiation,肿瘤.分化程度,String,"**高分化**: 预后相对较好<br>**中分化**: 最常见<br>**低分化**: 预后差",中分化
-
-# 肿瘤标志物
-tumorMarkers.ca199,肿瘤标志物.CA19-9,Number,"CA19-9水平(U/mL)。<br>**正常值**: <37 U/mL<br>**>1000**: 提示不可切除/转移<br>**敏感性**: 79%,特异性82%",850
-tumorMarkers.ca199.postTreatment,肿瘤标志物.CA19-9治疗后,Number,"**下降>50%**: 化疗有效<br>**持续升高**: 疾病进展",320
-tumorMarkers.cea,肿瘤标志物.CEA,Number,"CEA水平(ng/mL)。<br>**正常值**: <5 ng/mL<br>**辅助指标**: 与CA19-9联合提高诊断率",12
-tumorMarkers.ca125,肿瘤标志物.CA125,Number,CA125水平(U/mL),正常值<35,45
-
-# 影像学检查
-imaging.ct.performed,影像学.CT.是否完成,Boolean,"**增强CT**: 胰腺癌诊断金标准<br>**胰腺专用方案**: 动脉期+静脉期+延迟期",true
-imaging.ct.tumorEnhancement,影像学.CT.肿瘤强化,String,"**低强化肿块**: 典型表现<br>**边界不清**: 侵犯周围组织",低强化结节,边界不清
-imaging.ct.pancreaticDuct,影像学.CT.胰管扩张,Boolean,"**主胰管>3mm**: 异常扩张<br>**截断征**: 肿瘤阻塞胰管",true
-imaging.ct.pancreaticDuct.diameter,影像学.CT.胰管直径,Number,主胰管最大直径(mm),6
-imaging.ct.bileDuct,影像学.CT.胆管扩张,Boolean,"**胆总管>8mm**: 异常扩张<br>**双管征**: 胰管+胆管同时扩张",true
-imaging.ct.bileDuct.diameter,影像学.CT.胆管直径,Number,胆总管直径(mm),12
-imaging.ct.vascularInvolvement,影像学.CT.血管侵犯,String,"**门静脉/肠系膜上静脉**: 评估可切除性<br>**肝动脉/腹腔干**: 局部晚期<br>**包绕>180°**: 不可切除",肠系膜上静脉部分包绕<180°
-
-imaging.mri.performed,影像学.MRI/MRCP.是否完成,Boolean,"**MRCP**: 评估胆胰管系统<br>**DWI**: 检出小病灶<br>**肝脏转移**: MRI优于CT",true
-imaging.mri.findings,影像学.MRI.主要发现,String,MRI/MRCP关键影像学表现,T1低信号T2稍高信号肿块,DWI高信号
-
-imaging.eus.performed,影像学.EUS.是否完成,Boolean,"**超声内镜**: 检出<2cm病灶<br>**敏感性**: 94%<br>**可行EUS-FNA活检**",true
-imaging.eus.tumorSize,影像学.EUS.肿瘤大小,Number,EUS测量肿瘤直径(cm),2.8
-imaging.eus.fna,影像学.EUS-FNA.活检,Boolean,"**细针穿刺活检**: 获取病理诊断<br>**准确率**: 85-95%",true
-imaging.eus.fna.result,影像学.EUS-FNA.病理结果,String,穿刺活检病理诊断,腺癌
-
-imaging.petct.performed,影像学.PET-CT.是否完成,Boolean,"**检测远处转移**: 敏感性高<br>**SUVmax**: 评估肿瘤活性<br>**不常规推荐**: 昂贵,假阳性率高",false
-imaging.petct.suvmax,影像学.PET-CT.SUVmax,Number,"SUV最大值。<br>**>2.5**: 提示恶性<br>**>5**: 高度恶性",6.8
-
-# TNM分期 (AJCC 8th Edition)
-staging.t,分期.T分期,String,"**T1**: ≤2cm,局限胰腺内<br>**T2**: 2-4cm<br>**T3**: >4cm<br>**T4**: 侵犯腹腔干/肠系膜上动脉(不可切除)",T2
-staging.n,分期.N分期,String,"**N0**: 无淋巴结转移<br>**N1**: 1-3个区域淋巴结<br>**N2**: ≥4个区域淋巴结",N1
-staging.n.number,分期.淋巴结.转移数量,Number,区域淋巴结转移个数,2
-staging.m,分期.M分期,String,"**M0**: 无远处转移<br>**M1**: 远处转移(肝、肺、腹膜)",M0
-staging.tnm,分期.TNM综合分期,String,"**IA**: T1N0M0,5年生存率50-70%<br>**IB**: T2N0M0<br>**IIA**: T3N0M0<br>**IIB**: T1-3N1M0<br>**III**: T4或N2<br>**IV**: M1,5年生存率<5%",IIB期(T2N1M0)
-
-# 可切除性评估 (NCCN分类)
-resectability.status,可切除性.状态,String,"**可切除**: 无血管侵犯,无转移<br>**交界可切除**: 静脉<180°受累或短段动脉接触<br>**局部晚期**: 动脉>180°包绕<br>**转移性**: 远处转移",交界可切除
-resectability.sma,可切除性.肠系膜上动脉,String,"**SMA**: Superior Mesenteric Artery<br>**无接触**: 可切除<br>**>180°包绕**: 不可切除",<180°接触
-resectability.celiacAxis,可切除性.腹腔干,String,"**CA**: Celiac Axis<br>**>180°包绕或短段闭塞**: 不可切除",无侵犯
-resectability.hepaticArtery,可切除性.肝总动脉,String,"**CHA**: Common Hepatic Artery<br>**短段侵犯**: 可能可切除重建",无侵犯
-resectability.smv,可切除性.肠系膜上静脉,String,"**SMV**: Superior Mesenteric Vein<br>**单侧狭窄<180°**: 交界可切除<br>**闭塞不能重建**: 不可切除",单侧<180°受累,可重建
-resectability.pv,可切除性.门静脉,String,"**PV**: Portal Vein<br>**可行静脉切除重建**: 交界可切除",部分受累
-
-# 治疗方案
-treatment.surgery.performed,治疗.手术.是否实施,Boolean,"**根治性切除**: 唯一可能治愈的方法<br>**仅15-20%患者**: 诊断时可切除",true
-treatment.surgery.type,治疗.手术.术式,String,"**Whipple(胰十二指肠切除)**: 胰头癌<br>**胰体尾+脾切除**: 胰体尾癌<br>**全胰切除**: 弥漫性病变",Whipple手术(胰十二指肠切除术)
-treatment.surgery.date,治疗.手术.日期,Date,手术实施日期,2025-04-15
-treatment.surgery.margin,治疗.手术.切缘状态,String,"**R0**: 切缘阴性,预后最好<br>**R1**: 镜下阳性,中位生存27月<br>**R2**: 肉眼阳性,预后差",R0切除
-treatment.surgery.lymphNodes,治疗.手术.淋巴结清扫数,Number,"**建议≥15个**: 准确分期<br>**清扫数量**: 与预后相关",18
-treatment.surgery.complications,治疗.手术.并发症,String,"**胰瘘**: 10-30%(最常见)<br>**出血**: 5-10%<br>**胃排空延迟**: 20-40%",无严重并发症
-
-treatment.neoadjuvant,治疗.新辅助治疗,Boolean,"**交界可切除**: 推荐新辅助化疗±放疗<br>**目的**: 降期,提高R0切除率",true
-treatment.neoadjuvant.regimen,治疗.新辅助治疗.方案,String,"**FOLFIRINOX**: mFOLFIRINOX 4-6周期<br>**Gem/Abraxane**: 吉西他滨+白蛋白紫杉醇",mFOLFIRINOX×4周期
-treatment.neoadjuvant.response,治疗.新辅助治疗.疗效,String,"**PR**: 部分缓解<br>**SD**: 疾病稳定<br>**PD**: 疾病进展",PR(肿瘤缩小40%)
-
-treatment.adjuvant,治疗.辅助治疗,Boolean,"**术后辅助化疗**: 推荐所有R0/R1切除患者<br>**开始时间**: 术后8-12周内",true
-treatment.adjuvant.regimen,治疗.辅助治疗.方案,String,"**mFOLFIRINOX**: 一线推荐,6个月<br>**Gem/Capecitabine**: 吉西他滨+卡培他滨,6个月<br>**单药Gem**: 体能状态差者",mFOLFIRINOX×12周期
-
-treatment.palliative.chemo,治疗.晚期化疗.方案,String,"**FOLFIRINOX**: 一线(体能状态好,ECOG 0-1)<br>**Gem/nab-paclitaxel**: 一线(ECOG 1-2)<br>**单药Gem**: 二线/体能状态差",FOLFIRINOX
-treatment.palliative.chemo.cycles,治疗.晚期化疗.周期数,Number,已完成化疗周期数,8
-treatment.palliative.chemo.response,治疗.晚期化疗.疗效评价,String,"**CR**: 完全缓解<br>**PR**: 部分缓解<br>**SD**: 疾病稳定<br>**PD**: 疾病进展",SD
-
-treatment.palliative.biliary,治疗.姑息治疗.胆道引流,Boolean,"**ERCP支架**: 内镜下支架置入<br>**PTCD**: 经皮肝穿刺引流<br>**适应症**: 梗阻性黄疸,胆管炎",true
-treatment.palliative.biliary.method,治疗.姑息治疗.引流方式,String,"**金属支架**: 开放性好,维持时间长<br>**塑料支架**: 易堵塞,需定期更换",ERCP金属支架置入
-treatment.palliative.pain,治疗.姑息治疗.疼痛控制,String,"**三阶梯镇痛**: WHO方案<br>**神经丛阻滞**: 腹腔神经丛酒精注射<br>**放疗**: 局部缓解疼痛",阿片类镇痛+腹腔神经丛阻滞
-
-# 转移情况
-metastasis.liver,转移.肝转移,Boolean,"**最常见转移部位**: 50-60%晚期患者<br>**预后**: 中位生存6-11个月",false
-metastasis.liver.number,转移.肝转移.病灶数,Number,肝转移灶数量,0
-metastasis.peritoneal,转移.腹膜转移,Boolean,"**腹膜种植**: 20-30%晚期患者<br>**腹水**: 癌性腹水,预后差",false
-metastasis.lung,转移.肺转移,Boolean,"**肺转移**: 10-20%晚期患者<br>**血行转移**: 提示晚期",false
-metastasis.ascites,转移.腹水,Boolean,"**癌性腹水**: 腹膜转移常见表现<br>**细胞学检查**: 确诊",false
-
-# 随访与预后
-followUp.ca199.trend,随访.CA19-9.趋势,String,"**持续下降**: 治疗有效<br>**持续升高**: 复发/进展<br>**建议**: 每2-3月检测",下降后稳定
-followUp.imaging.interval,随访.影像学.间隔,String,"**术后2年内**: 每3-6个月CT<br>**2-5年**: 每6-12个月<br>**>5年**: 每年",每3个月
-followUp.recurrence,随访.复发,Boolean,"**局部复发**: 20-30%<br>**远处转移**: 40-50%<br>**中位复发时间**: 12-18个月",false
-followUp.recurrence.site,随访.复发.部位,String,"**肝**: 最常见<br>**局部**: 残胰、吻合口<br>**腹膜**: 种植",无
-
-prognosis.resectable,预后.可切除患者,String,"**R0切除**: 中位生存24-30个月,5年生存率20-30%<br>**R1切除**: 中位生存15-20个月,5年生存率10-15%",预计中位生存24个月
-prognosis.borderline,预后.交界可切除患者,String,"**新辅助后切除**: 5年生存率10-20%<br>**未能切除**: 中位生存12-18个月",新辅助治疗后评估
-prognosis.unresectable,预后.局部晚期患者,String,"**化疗**: 中位生存10-12个月<br>**单纯支持**: 中位生存4-6个月",计划FOLFIRINOX化疗
-prognosis.metastatic,预后.转移性患者,String,"**FOLFIRINOX**: 中位生存11.1个月<br>**Gem/nab-P**: 中位生存8.5个月<br>**单药Gem**: 中位生存6.8个月<br>**5年生存率**: <5%",预计中位生存8-12个月
-
-# 危险因素
-riskFactors.smoking,危险因素.吸烟史,Boolean,"**OR 2.2**: 吸烟者风险增加<br>**戒烟10年**: 风险降至正常",true
-riskFactors.smoking.packYears,危险因素.吸烟.包年,Number,吸烟包年数(每日包数×年数),30
-riskFactors.diabetes,危险因素.糖尿病,Boolean,"**长期DM**: 风险增加2倍<br>**新发DM**: 可能是胰腺癌表现",true
-riskFactors.diabetes.duration,危险因素.糖尿病.病程,Number,糖尿病病程(年),2
-riskFactors.chronicPancreatitis,危险因素.慢性胰腺炎,Boolean,"**风险增加**: 13-16倍<br>**遗传性胰腺炎**: 风险更高",false
-riskFactors.familyHistory,危险因素.家族史,Boolean,"**一级亲属**: 风险增加2-3倍<br>**≥2位亲属**: 考虑遗传性胰腺癌综合征",false
-riskFactors.obesity,危险因素.肥胖,Boolean,"**BMI>30**: 风险增加<br>**中心性肥胖**: 相关性更强",true
-riskFactors.bmi,危险因素.BMI,Number,体重指数(kg/m²),28.5
-
-# 基因检测
-genetics.brca,基因检测.BRCA1/2,String,"**BRCA突变**: 5-10%胰腺癌<br>**铂类敏感**: PARP抑制剂有效<br>**建议**: 所有患者检测",阴性
-genetics.mismatch,基因检测.错配修复基因,String,"**dMMR/MSI-H**: 免疫治疗敏感<br>**MLH1/MSH2/MSH6/PMS2**: 检测",pMMR
-genetics.kras,基因检测.KRAS,String,"**KRAS突变**: 90%胰腺癌<br>**G12C突变**: 靶向药物研发中",KRAS G12D突变
-genetics.tp53,基因检测.TP53,String,"**TP53突变**: 50-75%胰腺癌<br>**预后**: 提示侵袭性强",突变
-genetics.cdkn2a,基因检测.CDKN2A,String,"**CDKN2A/p16**: 95%胰腺癌失活<br>**家族性黑色素瘤**: CDKN2A种系突变",失活
-
-# 多学科团队 (MDT)
-mdt.discussion,MDT.讨论,Boolean,"**推荐**: 所有新诊断患者MDT讨论<br>**成员**: 外科、肿瘤内科、放疗科、影像科、病理科、营养科",true
-mdt.date,MDT.讨论日期,Date,多学科团队讨论日期,2025-03-20
-mdt.recommendation,MDT.推荐方案,String,MDT讨论后推荐治疗方案,新辅助mFOLFIRINOX 4周期后评估手术
-
-# 营养支持
-nutrition.albumin,营养.白蛋白,Number,"血清白蛋白(g/L)。<br>**<30**: 营养不良<br>**<25**: 严重营养不良",32
-nutrition.support,营养.营养支持,String,"**口服**: 高蛋白高热量饮食<br>**肠内**: 鼻饲/空肠造瘘<br>**肠外**: 静脉营养<br>**胰酶替代**: 改善消化吸收",口服营养补充+胰酶替代
-nutrition.pancreaticEnzyme,营养.胰酶替代,Boolean,"**外分泌功能不全**: 补充胰酶<br>**改善**: 脂肪泻、营养吸收",true
-
-# 其他实验室指标
-labs.bilirubin.total,实验室.总胆红素,Number,"总胆红素(μmol/L)。<br>**正常**: <21<br>**梗阻性黄疸**: 显著升高",180
-labs.bilirubin.direct,实验室.直接胆红素,Number,"直接胆红素(μmol/L)。<br>**>17**: 升高<br>**直接/总>0.5**: 梗阻性黄疸",150
-labs.alt,实验室.ALT,Number,丙氨酸转氨酶(U/L),正常<40,85
-labs.ast,实验室.AST,Number,天冬氨酸转氨酶(U/L),正常<40,78
-labs.alp,实验室.碱性磷酸酶,Number,"ALP(U/L)。<br>**正常**: <120<br>**胆道梗阻**: 显著升高",450
-labs.ggt,实验室.GGT,Number,γ-谷氨酰转肽酶(U/L),正常<50,胆道梗阻时升高,380
-labs.amylase,实验室.淀粉酶,Number,血清淀粉酶(U/L),正常25-125,可正常或轻度升高,95
-labs.lipase,实验室.脂肪酶,Number,血清脂肪酶(U/L),正常13-60,可正常或轻度升高,120
-
-performanceStatus,体能状态.ECOG评分,Number,"**0**: 完全活动<br>**1**: 限制重体力<br>**2**: 生活自理,>50%时间卧床<br>**3**: 有限自理,>50%时间卧床<br>**4**: 完全失能",1
-
-notes,备注,String,其他重要临床信息,患者一般情况尚可,积极配合治疗
+Category,Field_Name,Chinese_Name,Data_Type,Unit,Valid_Range,LOINC_Code,Required,Description,Clinical_Significance
+Basic_Info,patient_id,患者ID,string,,,,,Y,唯一标识,患者追踪
+Basic_Info,diagnosis_date,诊断日期,date,,,,,Y,确诊时间,疾病起点
+Basic_Info,age,年龄,integer,years,18-120,,,Y,患者年龄,预后因素
+Basic_Info,gender,性别,categorical,,Male,Female,,,Y,性别,流行病学
+Risk_Factors,smoking_history,吸烟史,categorical,,Never,Former,Current,,,N,从不/戒烟/现吸,危险因素
+Risk_Factors,diabetes_history,糖尿病史,categorical,,None,Longstanding,New_Onset,,,N,无/既往/新发,新发糖尿病提示胰腺癌
+Risk_Factors,chronic_pancreatitis,慢性胰腺炎,boolean,,,,,N,慢性胰腺炎史,癌前病变
+Risk_Factors,family_history,家族史,categorical,,None,Pancreatic_Cancer,Other_Cancer,Hereditary_Syndrome,,,N,无/胰腺癌/其他癌/遗传综合征,遗传风险
+Histology,histologic_type,组织学类型,categorical,,Ductal_Adenocarcinoma,Acinar_Cell,Neuroendocrine,Cystic_Neoplasm,Other,,,Y,导管腺癌/腺泡细胞癌/神经内分泌肿瘤/囊性肿瘤/其他,PDAC占90%
+Histology,differentiation,分化程度,categorical,,Well,Moderate,Poor,Undifferentiated,,,N,高/中/低/未分化,预后因素
+Tumor_Location,tumor_site,肿瘤部位,categorical,,Head,Uncinate,Body,Tail,Diffuse,,,Y,头部/钩突/体部/尾部/弥漫,解剖位置
+Tumor_Location,tumor_size,肿瘤大小,decimal,cm,0-20,33878-0,,Y,最大径,分期因素
+TNM_Staging,clinical_t,临床T分期,categorical,,T1,T2,T3,T4,,,Y,T1≤2cm/T2>2-4cm/T3>4cm/T4侵犯腹腔动脉或肠系膜上动脉,可切除性关键
+TNM_Staging,clinical_n,临床N分期,categorical,,N0,N1,N2,,,Y,N0无/N1:1-3个/N2:≥4个,区域淋巴结
+TNM_Staging,clinical_m,临床M分期,categorical,,M0,M1,,,Y,M0无/M1有远处转移,远处转移
+TNM_Staging,tnm_stage,TNM总分期,categorical,,IA,IB,IIA,IIB,III,IV,,,Y,AJCC 8th,预后分层
+Resectability,resectability_status,可切除性,categorical,,Resectable,Borderline_Resectable,Locally_Advanced,Metastatic,,,Y,可切除/交界可切除/局部晚期/转移性,治疗决策核心
+Resectability,vascular_involvement,血管受累,categorical,,None,Venous_Contact,Arterial_Contact,Venous_Occlusion,Arterial_Encasement,,,N,无/静脉接触/动脉接触/静脉阻塞/动脉包绕,NCCN可切除性标准
+Performance,ecog_ps,ECOG体能状态,integer,,0-5,89247-1,,Y,0-5分,治疗耐受性
+Labs,ca199,糖类抗原199,decimal,U/mL,0-100000,24108-7,,Y,CA19-9,诊断监测预后
+Labs,cea,癌胚抗原,decimal,ng/mL,0-1000,2039-6,,N,CEA,辅助标志物
+Labs,total_bilirubin,总胆红素,decimal,μmol/L,0-500,1975-2,,Y,TBIL,梗阻性黄疸
+Labs,alkaline_phosphatase,碱性磷酸酶,decimal,U/L,0-1000,6768-6,,N,ALP,胆汁淤积
+Labs,albumin,白蛋白,decimal,g/L,0-100,1751-7,,Y,ALB,营养状态
+Imaging,ct_findings,CT表现,string,,,,,Y,胰腺肿块/血管关系,可切除性评估
+Imaging,mri_findings,MRI表现,string,,,,,N,软组织分辨率,血管和肝转移
+Imaging,pet_ct,PET-CT,categorical,,Not_Done,Negative,Positive,,,N,未做/阴性/阳性,远处转移筛查
+Diagnosis,biopsy_method,活检方式,categorical,,EUS_FNA,CT_Guided,Surgical,None,,,N,超声内镜细针/CT引导/手术/无,病理确诊
+Diagnosis,biliary_drainage,胆道引流,categorical,,None,ERCP_Stent,PTBD,,,N,无/ERCP支架/PTCD,黄疸处理
+Treatment_Surgery,surgical_procedure,手术方式,categorical,,None,Whipple,Distal_Pancreatectomy,Total_Pancreatectomy,,,N,无/Whipple/胰体尾切除/全胰切除,根治性手术
+Treatment_Surgery,surgical_margins,切缘状态,categorical,,R0,R1,R2,,,N,阴性/镜下阳性/肉眼阳性,R0切除预后相对好
+Treatment_Surgery,lymph_nodes_examined,淋巴结检查数,integer,,0-100,,,N,病理检查淋巴结数,≥15个准确分期
+Treatment_Surgery,lymph_nodes_positive,阳性淋巴结数,integer,,0-100,,,N,转移淋巴结数,预后因素
+Treatment_Perioperative,neoadjuvant_therapy,新辅助治疗,categorical,,None,FOLFIRINOX,Gemcitabine_Based,Chemoradiation,,,N,无/FOLFIRINOX/吉西他滨为基础/放化疗,交界可切除标准治疗
+Treatment_Perioperative,adjuvant_chemotherapy,辅助化疗,categorical,,None,Gemcitabine,mFOLFIRINOX,Gemcitabine_Capecitabine,,,N,无/吉西他滨/改良FOLFIRINOX/吉西他滨+卡培他滨,术后标准治疗6个月
+Treatment_Advanced,first_line_chemotherapy,一线化疗,categorical,,None,FOLFIRINOX,Gemcitabine_Nab_Paclitaxel,Gemcitabine_Monotherapy,,,N,无/FOLFIRINOX/吉西他滨+白蛋白紫杉醇/吉西他滨单药,晚期一线
+Treatment_Advanced,second_line_chemotherapy,二线化疗,categorical,,None,5FU_Liposomal_Irinotecan,FOLFIRINOX,Gemcitabine,,,N,无/5-FU+脂质体伊立替康/FOLFIRINOX/吉西他滨,疾病进展后
+Treatment_Targeted,targeted_therapy,靶向治疗,categorical,,None,Erlotinib,Olaparib,,,N,无/厄洛替尼/奥拉帕利,EGFR抑制剂/PARP抑制剂(BRCA突变)
+Treatment_Immunotherapy,immunotherapy,免疫治疗,categorical,,None,Pembrolizumab,,,N,无/帕博利珠单抗,MSI-H/dMMR
+Molecular,brca_mutation,BRCA突变,categorical,,Not_Tested,Negative,BRCA1,BRCA2,,,N,未检测/阴性/BRCA1突变/BRCA2突变,PARP抑制剂和铂类敏感
+Molecular,msi_status,微卫星不稳定性,categorical,,Not_Tested,MSS,MSI_H,,,N,未检测/稳定/高度不稳定,免疫治疗预测
+Response,treatment_response,治疗反应,categorical,,Complete_Response,Partial_Response,Stable_Disease,Progressive_Disease,,,N,完全缓解/部分缓解/疾病稳定/疾病进展,RECIST标准
+Complications,postoperative_pancreatic_fistula,术后胰瘘,categorical,,None,Grade_A,Grade_B,Grade_C,,,N,无/A级生化瘘/B级临床瘘/C级严重瘘,ISGPF分级
+Complications,delayed_gastric_emptying,胃排空延迟,categorical,,None,Grade_A,Grade_B,Grade_C,,,N,无/A级/B级/C级,ISGPS分级
+Follow_Up,ca199_response,CA19-9反应,categorical,,Normalized,Decreased,Increased,,,N,正常化/下降/升高,治疗反应监测
+Follow_Up,progression_free_survival,无进展生存期,integer,months,0-200,,,N,PFS,疗效指标
+Follow_Up,overall_survival,总生存期,integer,months,0-200,,,N,OS,预后指标中位OS约6-11个月
+Report,oncologist,肿瘤科医师,string,,,,,Y,主管医师,责任医师
+Report,report_date,报告日期,date,,,,,Y,报告时间,文档记录

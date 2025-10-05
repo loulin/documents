@@ -1,0 +1,46 @@
+Category,Field_Name,Chinese_Name,Data_Type,Unit,Valid_Range,LOINC_Code,Required,Description,Clinical_Significance
+Basic_Info,patient_id,患者ID,string,,,,,Y,唯一标识,患者追踪
+Basic_Info,diagnosis_date,诊断日期,date,,,,,Y,确诊时间,疾病起点
+Basic_Info,age,年龄,integer,years,18-120,,,Y,患者年龄,预后因素
+Basic_Info,gender,性别,categorical,,Male,Female,,,Y,性别,男性多见
+Etiology,underlying_liver_disease,基础肝病,categorical,,HBV,HCV,Alcohol,NAFLD,Hemochromatosis,None,,,Y,乙肝/丙肝/酒精性/非酒精性脂肪肝/血色病/无,病因
+Etiology,cirrhosis,肝硬化,categorical,,Absent,Compensated,Decompensated,,,Y,无/代偿期/失代偿期,背景肝脏状态
+Etiology,hbv_dna,乙肝病毒DNA,decimal,IU/mL,0-10000000,49373-4,,N,HBV DNA,病毒载量
+Etiology,hcv_rna,丙肝病毒RNA,decimal,IU/mL,0-10000000,11011-4,,N,HCV RNA,病毒载量
+Liver_Function,child_pugh_score,Child-Pugh评分,integer,,5-15,,,Y,Child-Pugh分级,A:5-6/B:7-9/C:10-15
+Liver_Function,child_pugh_class,Child-Pugh分级,categorical,,A,B,C,,,Y,A/B/C级,肝功能储备
+Liver_Function,meld_score,MELD评分,integer,,6-40,103064-6,,N,终末期肝病模型评分,移植优先级
+Liver_Function,albumin,白蛋白,decimal,g/L,0-100,1751-7,,Y,ALB,肝脏合成功能
+Liver_Function,bilirubin,总胆红素,decimal,μmol/L,0-500,1975-2,,Y,TBIL,肝功能
+Liver_Function,inr,国际标准化比值,decimal,,0-10,6301-6,,Y,INR,凝血功能
+Liver_Function,ascites,腹水,categorical,,Absent,Mild,Moderate_to_Severe,,,Y,无/轻度/中重度,门脉高压
+Liver_Function,encephalopathy,肝性脑病,categorical,,None,Grade_I_II,Grade_III_IV,,,Y,无/I-II级/III-IV级,肝功能失代偿
+Labs,afp,甲胎蛋白,decimal,ng/mL,0-100000,1834-1,,Y,AFP,诊断和监测
+Labs,afp_l3,甲胎蛋白异质体L3,decimal,%,0-100,32677-1,,N,AFP-L3,HCC特异性
+Labs,dcp,异常凝血酶原,decimal,mAU/mL,0-10000,79366-8,,N,DCP/PIVKA-II,肿瘤标志物
+Imaging,ct_mri_findings,CT/MRI表现,string,,,,,Y,动脉期增强门脉期廓清,典型影像学特征
+Imaging,lirads_category,LI-RADS分类,categorical,,LR_1,LR_2,LR_3,LR_4,LR_5,LR_M,,,N,LR-1明确良性/LR-2可能良性/LR-3中度可能HCC/LR-4可能HCC/LR-5明确HCC/LR-M可能恶性非HCC,肝脏影像报告和数据系统
+Imaging,largest_tumor_size,最大肿瘤直径,decimal,cm,0-30,33878-0,,Y,肿瘤大小,分期关键
+Imaging,tumor_number,肿瘤数目,categorical,,Solitary,2_to_3,Multiple,,,Y,单发/2-3个/多发,分期和治疗
+Imaging,vascular_invasion,血管侵犯,categorical,,None,Microscopic,Macroscopic_Portal,Macroscopic_Hepatic,,,N,无/镜下/门静脉肉眼/肝静脉肉眼,预后关键
+Imaging,extrahepatic_spread,肝外转移,categorical,,None,Lymph_Nodes,Lung,Bone,Peritoneum,Other,,,N,无/淋巴结/肺/骨/腹膜/其他,远处转移
+BCLC_Staging,bclc_stage,BCLC分期,categorical,,Stage_0,Stage_A,Stage_B,Stage_C,Stage_D,,,Y,0期极早期/A早期/B中期/C晚期/D终末期,Barcelona分期
+BCLC_Staging,performance_status,体能状态,integer,,0-4,89247-1,,Y,ECOG 0-4,治疗决策
+TNM_Staging,tnm_stage,TNM分期,categorical,,IA,IB,II,IIIA,IIIB,IVA,IVB,,,N,AJCC 8th,解剖分期
+Treatment_Curative,treatment_modality,治疗方式,categorical,,Resection,Transplantation,Ablation,TACE,SBRT,Systemic,Best_Supportive_Care,,,Y,切除/移植/消融/TACE/SBRT/系统治疗/最佳支持,治疗策略
+Treatment_Surgery,surgical_resection,手术切除,categorical,,None,Anatomic_Resection,Non_Anatomic_Resection,,,N,无/解剖性/非解剖性,根治性切除
+Treatment_Surgery,surgical_margins,切缘状态,categorical,,R0,R1,R2,,,N,阴性/镜下阳性/肉眼阳性,完全切除
+Treatment_Ablation,ablation_type,消融方式,categorical,,None,RFA,MWA,Cryoablation,Ethanol_Injection,,,N,无/射频/微波/冷冻/无水酒精,局部治疗
+Treatment_Ablation,ablation_margin,消融安全边界,decimal,cm,0-3,,,N,消融边缘,局部控制
+Treatment_Locoregional,tace_type,TACE类型,categorical,,None,Conventional_TACE,Drug_Eluting_Beads,,,N,无/传统cTACE/载药微球DEB-TACE,介入治疗
+Treatment_Locoregional,radioembolization,放射性栓塞,categorical,,None,Y90_Microspheres,,,N,无/钇90微球,选择性内放疗
+Treatment_Systemic,systemic_therapy,系统治疗,categorical,,None,Sorafenib,Lenvatinib,Atezolizumab_Bevacizumab,Durvalumab_Tremelimumab,Regorafenib,Cabozantinib,,,N,无/索拉非尼/仑伐替尼/阿替利珠单抗+贝伐珠单抗/度伐利尤单抗+曲美木单抗/瑞戈非尼/卡博替尼,晚期HCC
+Transplant,milan_criteria,Milan标准,categorical,,Within,Beyond,Not_Applicable,,,N,符合/超出/不适用,单个≤5cm或≤3个且最大≤3cm无血管侵犯无肝外转移
+Transplant,ucsf_criteria,UCSF标准,categorical,,Within,Beyond,Not_Applicable,,,N,符合/超出/不适用,单个≤6.5cm或≤3个且最大≤4.5cm且总径≤8cm
+Response,mrecist_response,mRECIST反应,categorical,,Complete_Response,Partial_Response,Stable_Disease,Progressive_Disease,,,N,完全缓解/部分缓解/疾病稳定/疾病进展,实体瘤疗效评价修订版
+Prognosis,alpha_fetoprotein_response,AFP反应,categorical,,Complete,Partial,No_Response,,,N,完全(AFP<20)/部分(下降≥20%)/无反应,疗效预测
+Follow_Up,recurrence,复发,categorical,,No,Intrahepatic,Extrahepatic,Both,,,N,无/肝内/肝外/两者,复发模式
+Follow_Up,time_to_recurrence,复发时间,integer,months,0-200,,,N,手术/消融后至复发,早期复发<2年预后差
+Follow_Up,overall_survival,总生存期,integer,months,0-200,,,N,OS,预后指标
+Report,oncologist,肿瘤科医师,string,,,,,Y,主管医师,责任医师
+Report,report_date,报告日期,date,,,,,Y,报告时间,文档记录

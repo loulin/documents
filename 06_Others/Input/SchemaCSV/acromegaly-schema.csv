@@ -1,0 +1,148 @@
+Category,Subcategory,Field_Name,Field_Name_CN,Data_Type,Unit,Value_Range,Normal_Range,Abnormal_Indicators,Clinical_Significance,Interpretation_Logic,Related_Diseases,Risk_Level,Recommended_Actions,LOINC_Code,Notes
+Basic_Info,Patient_Info,patient_id,患者ID,String,,,,,Patient unique identifier,,,Low,,,"Unique patient identifier"
+Basic_Info,Patient_Info,exam_date,检查日期,Date,,,,,Date of examination,,,Low,,,"Format: YYYY-MM-DD"
+Basic_Info,Patient_Info,patient_age,患者年龄,Integer,years,0-120,,,"Age at diagnosis","Peak incidence 40-50 years",,Low,,,Mean delay in diagnosis 7-10 years
+Basic_Info,Patient_Info,patient_gender,患者性别,Categorical,,Male/Female,,,"Gender",,,Low,,,"Male/Female, equal prevalence"
+Basic_Info,Patient_Info,age_at_symptom_onset,症状起始年龄,Integer,years,10-80,,,"Age when symptoms first appeared","Helps estimate disease duration",,Medium,,,Important for prognosis
+Basic_Info,Patient_Info,symptom_duration,症状持续时间,Integer,years,0-40,,>10,"Duration of symptoms before diagnosis","Longer duration: more complications",Multiple_Complications,High,Earlier detection crucial,,"Average 7-10 years delay"
+
+Clinical_Features,Acral_Changes,acral_enlargement,肢端肥大,Boolean,,Yes/No,No,Yes,"Enlargement of hands and feet","Cardinal feature, progressive",Acromegaly,High,Diagnostic clue,,"Patients report ring/shoe size increase"
+Clinical_Features,Acral_Changes,hand_size_change,手部增大,Boolean,,Yes/No,No,Yes,"Increased hand size","Ring size increase over years",,High,Ask about ring fitting,,"Very specific symptom"
+Clinical_Features,Acral_Changes,foot_size_change,足部增大,Boolean,,Yes/No,No,Yes,"Increased foot size","Shoe size increase over years",,High,Ask about shoe size,,"Common presenting complaint"
+Clinical_Features,Facial_Changes,frontal_bossing,额部隆起,Boolean,,Yes/No,No,Yes,"Prominent forehead","Bony overgrowth",,Medium,Physical examination finding,,"Gradual development"
+Clinical_Features,Facial_Changes,prognathism,下颌前突,Boolean,,Yes/No,No,Yes,"Jaw protrusion","Mandibular enlargement",Dental_Malocclusion,Medium,Dental problems common,,"Causes malocclusion"
+Clinical_Features,Facial_Changes,interdental_separation,牙间隙增宽,Boolean,,Yes/No,No,Yes,"Teeth spacing increased","Jaw growth causes gap teeth",,Medium,Dental examination,,"Ask dentist about changes"
+Clinical_Features,Facial_Changes,macroglossia,巨舌,Boolean,,Yes/No,No,Yes,"Enlarged tongue","May cause OSA",Obstructive_Sleep_Apnea,High,Sleep study if present,,"Contributes to airway obstruction"
+Clinical_Features,Facial_Changes,facial_coarsening,面容粗糙,Boolean,,Yes/No,No,Yes,"Coarse facial features","Soft tissue overgrowth",,Medium,Compare old photos,,"Progressive change"
+Clinical_Features,Facial_Changes,nasal_enlargement,鼻增大,Boolean,,Yes/No,No,Yes,"Enlarged nose",,,,Low,,,
+Clinical_Features,Skin,skin_thickening,皮肤增厚,Boolean,,Yes/No,No,Yes,"Thickened skin","Increased collagen deposition",,Medium,,,"Oily, thick skin"
+Clinical_Features,Skin,hyperhidrosis,多汗,Boolean,,Yes/No,No,Yes,"Excessive sweating","GH-induced sweat gland hypertrophy",,Medium,QOL impact,,"Very common complaint"
+Clinical_Features,Skin,skin_tags,皮赘,Boolean,,Yes/No,No,Yes,"Multiple skin tags","Associated with insulin resistance",Insulin_Resistance,Medium,Screen for diabetes,,"Marker of metabolic dysfunction"
+
+Clinical_Features,Systemic,headache,头痛,Boolean,,Yes/No,No,Yes,"Headache present","Mass effect or GH-mediated",Pituitary_Macroadenoma,Medium,Assess tumor size,,"60-80% of patients"
+Clinical_Features,Systemic,visual_disturbance,视力障碍,Boolean,,Yes/No,No,Yes,"Visual field defects or vision loss","Chiasm compression by tumor",Pituitary_Macroadenoma,Critical,Urgent visual field testing,,"Bitemporal hemianopsia classic"
+Clinical_Features,Systemic,fatigue,乏力,Boolean,,Yes/No,No,Yes,"Chronic fatigue",,,,Medium,Common symptom,,"Multifactorial etiology"
+Clinical_Features,Systemic,arthralgias,关节痛,Boolean,,Yes/No,No,Yes,"Joint pain","Cartilage overgrowth, arthropathy",Arthropathy,High,Common and debilitating,,"60-70% of patients"
+Clinical_Features,Systemic,back_pain,腰背痛,Boolean,,Yes/No,No,Yes,"Back pain","Spinal changes, kyphosis",,Medium,,,"Vertebral overgrowth"
+Clinical_Features,Systemic,paresthesias,感觉异常,Boolean,,Yes/No,No,Yes,"Numbness or tingling","Carpal tunnel syndrome common",Carpal_Tunnel_Syndrome,Medium,Nerve conduction studies,,"Median nerve compression"
+Clinical_Features,Voice,voice_deepening,声音低沉,Boolean,,Yes/No,No,Yes,"Deepening of voice","Laryngeal soft tissue enlargement",,Low,,,"Vocal cord thickening"
+
+Hormonal_Diagnosis,GH_Levels,random_gh,随机生长激素,Float,ng/mL,0-50,<5,>5,"Random GH level","Not diagnostic alone, needs suppression test",,Medium,Proceed to OGTT,2516-4,"Unreliable due to pulsatile secretion"
+Hormonal_Diagnosis,GH_Levels,basal_gh,基础生长激素,Float,ng/mL,0-50,<2,>2,"Fasting baseline GH","Elevated suggests acromegaly but needs confirmation",,Medium,,,
+Hormonal_Diagnosis,OGTT,ogtt_performed,OGTT检查,Boolean,,Yes/No,No,,"Oral glucose tolerance test performed","Gold standard for diagnosis",,High,Essential for diagnosis,,"75g glucose load"
+Hormonal_Diagnosis,OGTT,gh_nadir_ogtt,OGTT最低GH值,Float,ng/mL,0-20,<1,≥1,"Nadir GH during OGTT","Failure to suppress <1 ng/mL diagnostic of acromegaly",Acromegaly,Critical,GH <1: normal; ≥1: acromegaly,2516-4,"Most specific test"
+Hormonal_Diagnosis,OGTT,gh_suppression_adequate,GH抑制充分,Boolean,,Yes/No,Yes,No,"GH suppression to <1 ng/mL","No: confirms acromegaly diagnosis",Acromegaly,Critical,Diagnostic criterion,,"Must use sensitive assay"
+Hormonal_Diagnosis,OGTT,gh_paradoxical_rise,GH矛盾性升高,Boolean,,Yes/No,No,Yes,"GH rises instead of suppressing","Some acromegaly patients show paradoxical rise",,High,Strongly suggests acromegaly,,"Rare but specific finding"
+
+Hormonal_Diagnosis,IGF1,igf1_level,IGF-1水平,Float,ng/mL,50-1000,,,"Absolute IGF-1 level","Must be interpreted with age/gender norms",,High,Age-adjusted interpretation critical,2484-4,"Age and gender dependent"
+Hormonal_Diagnosis,IGF1,igf1_upper_limit_normal,IGF-1正常上限,Float,ng/mL,200-400,,,"Age-specific ULN for IGF-1","Reference range varies by age",,Medium,Use lab-specific norms,,"Decreases with age"
+Hormonal_Diagnosis,IGF1,igf1_elevation_fold,IGF-1升高倍数,Float,fold,0-10,<1,≥1,"Fold elevation above ULN","1.3x ULN diagnostic if GH non-suppressed",Acromegaly,Critical,>1.3x ULN highly suggestive,,"Correlates with disease activity"
+Hormonal_Diagnosis,IGF1,igf1_normalized,IGF-1正常化,Boolean,,Yes/No,No,,"IGF-1 within normal range for age","Treatment target",,High,Goal of therapy,,"Best marker of disease control"
+Hormonal_Diagnosis,IGF1,igf1_z_score,IGF-1 Z评分,Float,SD,-5 to +10,<2,≥2,"IGF-1 standard deviations above mean","Z-score >2 abnormal",,High,Standardized comparison,,"Adjusts for age/gender"
+
+Hormonal_Diagnosis,Other_Pituitary,prolactin,泌乳素,Float,ng/mL,0-200,<20 (M) <25 (F),>100,"Prolactin level","30% of GH tumors cosecrete PRL",Prolactinoma,Medium,>100: consider coprolactinoma,2842-3,"Mild elevation from stalk effect"
+Hormonal_Diagnosis,Other_Pituitary,tsh,促甲状腺激素,Float,mIU/L,0.1-20,0.4-4.0,<0.4 or >4,"TSH level","Assess for pituitary thyroid dysfunction",,Medium,Check free T4 if abnormal,3016-3,
+Hormonal_Diagnosis,Other_Pituitary,free_t4,游离T4,Float,ng/dL,0.5-3.0,0.8-1.8,<0.8 or >1.8,"Free thyroxine","Secondary hypothyroidism possible",,Medium,,3024-7,
+Hormonal_Diagnosis,Other_Pituitary,lh,黄体生成素,Float,mIU/mL,0-50,"1-9 (M), varies (F)",,"LH level","Assess gonadal axis",,Medium,,,
+Hormonal_Diagnosis,Other_Pituitary,fsh,卵泡刺激素,Float,mIU/mL,0-50,"1-12 (M), varies (F)",,"FSH level","Assess gonadal axis",,Medium,,,
+Hormonal_Diagnosis,Other_Pituitary,testosterone,睾酮,Float,ng/dL,50-1200,300-1000 (M),<300,"Testosterone (males)","Hypogonadism common in acromegaly",Hypogonadism,Medium,Consider replacement,2986-8,
+Hormonal_Diagnosis,Other_Pituitary,estradiol,雌二醇,Float,pg/mL,10-500,"varies by cycle (F)",,"Estradiol (females)",,,,Medium,,,
+Hormonal_Diagnosis,Other_Pituitary,morning_cortisol,晨8点皮质醇,Float,μg/dL,3-30,7-25,<5,"8 AM cortisol","Screen for hypocortisolism",,Medium,Confirm with stimulation test,2143-6,
+Hormonal_Diagnosis,Other_Pituitary,acth,促肾上腺皮质激素,Float,pg/mL,0-100,10-60,<10 or >100,"ACTH level","Assess adrenal axis",,Medium,,2141-0,
+
+Imaging,MRI_Pituitary,pituitary_mri_performed,垂体MRI检查,Boolean,,Yes/No,No,Yes,"Pituitary MRI done","Essential for diagnosis and surgical planning",,Critical,Always required,,"With and without contrast"
+Imaging,MRI_Pituitary,tumor_present,肿瘤存在,Boolean,,Yes/No,No,Yes,"Pituitary adenoma visualized","95% have visible adenoma",Pituitary_Adenoma,Critical,Localize tumor,,"5% have ectopic source"
+Imaging,MRI_Pituitary,tumor_size,肿瘤大小,Categorical,,"Microadenoma/Macroadenoma/Giant",,,"Adenoma size classification","Micro <10mm; Macro ≥10mm; Giant ≥40mm",Pituitary_Macroadenoma,High,Size affects treatment,,"Most acromegaly are macroadenomas"
+Imaging,MRI_Pituitary,tumor_diameter,肿瘤最大径,Float,mm,0-100,,≥10,"Maximum tumor diameter","Macroadenoma ≥10mm much more common",,High,Measure for surgical planning,,"Median size 10-15mm at diagnosis"
+Imaging,MRI_Pituitary,suprasellar_extension,鞍上扩展,Boolean,,Yes/No,No,Yes,"Suprasellar growth","May compress optic chiasm",Chiasm_Compression,High,Visual field testing,,"Common in macroadenomas"
+Imaging,MRI_Pituitary,cavernous_sinus_invasion,海绵窦侵犯,Boolean,,Yes/No,No,Yes,"Cavernous sinus invasion","Predicts surgical difficulty and recurrence",Invasive_Adenoma,High,Affects surgical cure rate,,"Knosp grade ≥3"
+Imaging,MRI_Pituitary,knosp_grade,Knosp分级,Categorical,,"0/1/2/3/4",,≥3,"Cavernous sinus invasion grading","0-2: no invasion; 3-4: invasion",Invasive_Adenoma,High,Grade 3-4: lower cure rate,,"Predicts resectability"
+Imaging,MRI_Pituitary,sphenoid_extension,蝶窦扩展,Boolean,,Yes/No,No,Yes,"Sphenoid sinus extension","Affects surgical approach",,Medium,,,"May facilitate transsphenoidal surgery"
+Imaging,MRI_Pituitary,optic_chiasm_compression,视交叉受压,Boolean,,Yes/No,No,Yes,"Optic chiasm compression","Causes visual field defects",Visual_Loss,Critical,Urgent ophthalmology,,"Requires prompt treatment"
+
+Imaging,Other_Imaging,chest_xray,胸片,Boolean,,Yes/No,No,,"Chest X-ray performed","May show cardiomegaly, rib changes",,Low,,,"Costal cartilage calcification"
+Imaging,Other_Imaging,echocardiogram,超声心动图,Boolean,,Yes/No,No,Yes,"Echocardiogram performed","Screen for cardiac complications",,High,All patients should have baseline,,"30-50% have LVH"
+Imaging,Other_Imaging,colonoscopy,结肠镜检查,Boolean,,Yes/No,No,,"Colonoscopy performed","Screen for colon polyps",,High,Recommended at diagnosis,,"Increased polyp/cancer risk"
+Imaging,Other_Imaging,sleep_study,睡眠监测,Boolean,,Yes/No,No,,"Sleep study (PSG) performed","Screen for OSA",,High,If symptoms of OSA,,"60-80% have OSA"
+
+Complications,Cardiovascular,hypertension,高血压,Boolean,,Yes/No,No,Yes,"Hypertension present","30-50% prevalence",Hypertension,High,Antihypertensive therapy,,"GH-mediated sodium retention"
+Complications,Cardiovascular,lvh,左室肥厚,Boolean,,Yes/No,No,Yes,"Left ventricular hypertrophy","Acromegalic cardiomyopathy",Cardiomyopathy,High,Echo monitoring,,"Independent of hypertension"
+Complications,Cardiovascular,heart_failure,心力衰竭,Boolean,,Yes/No,No,Yes,"Congestive heart failure","Late complication",,Critical,Cardiology referral,,"Biventricular dysfunction"
+Complications,Cardiovascular,arrhythmia,心律失常,Boolean,,Yes/No,No,Yes,"Cardiac arrhythmias","AF, ventricular arrhythmias",,High,,,"ECG monitoring"
+Complications,Cardiovascular,valvular_disease,瓣膜病变,Boolean,,Yes/No,No,Yes,"Valvular heart disease","Mitral/aortic regurgitation",,Medium,Echo assessment,,"Valve thickening"
+
+Complications,Metabolic,diabetes_mellitus,糖尿病,Boolean,,Yes/No,No,Yes,"Diabetes mellitus","20-56% prevalence",Type_2_Diabetes,High,OGTT screening,,"GH causes insulin resistance"
+Complications,Metabolic,impaired_glucose_tolerance,糖耐量受损,Boolean,,Yes/No,No,Yes,"Impaired glucose tolerance","Prediabetes stage",Prediabetes,Medium,Annual glucose monitoring,,"16-46% prevalence"
+Complications,Metabolic,hba1c,糖化血红蛋白,Float,%,4-14,<5.7,≥6.5,"Hemoglobin A1c","Diabetes if ≥6.5%",Diabetes,High,,4548-4,
+Complications,Metabolic,dyslipidemia,血脂异常,Boolean,,Yes/No,No,Yes,"Dyslipidemia present","Lipid abnormalities common",,Medium,Lipid panel,,"Cardiovascular risk factor"
+Complications,Metabolic,insulin_resistance,胰岛素抵抗,Boolean,,Yes/No,No,Yes,"Insulin resistance","GH antagonizes insulin",Metabolic_Syndrome,High,HOMA-IR assessment,,"Core metabolic feature"
+
+Complications,Respiratory,sleep_apnea,睡眠呼吸暂停,Boolean,,Yes/No,No,Yes,"Obstructive sleep apnea","60-80% prevalence",OSA,High,Sleep study essential,,"Macroglossia, soft tissue"
+Complications,Respiratory,ahi,AHI指数,Float,events/hr,0-100,<5,≥15,"Apnea-hypopnea index","≥15: moderate-severe OSA",Severe_OSA,High,CPAP therapy,,"Severity grading"
+Complications,Respiratory,cpap_use,使用CPAP,Boolean,,Yes/No,No,,"CPAP therapy initiated",,,,Medium,,,"May need after surgery too"
+
+Complications,Musculoskeletal,arthropathy,关节病变,Boolean,,Yes/No,No,Yes,"Acromegalic arthropathy","60-70% prevalence",Osteoarthritis,High,Common cause of disability,,"Cartilage overgrowth"
+Complications,Musculoskeletal,carpal_tunnel,腕管综合征,Boolean,,Yes/No,No,Yes,"Carpal tunnel syndrome","20-60% prevalence",Carpal_Tunnel_Syndrome,Medium,Nerve conduction studies,,"Median nerve compression"
+Complications,Musculoskeletal,proximal_myopathy,近端肌病,Boolean,,Yes/No,No,Yes,"Proximal muscle weakness","Acromegalic myopathy",,Medium,,,"Reversible with treatment"
+Complications,Musculoskeletal,vertebral_fracture,椎体骨折,Boolean,,Yes/No,No,Yes,"Vertebral fractures","Increased risk despite normal BMD",,Medium,Spine imaging if back pain,,"Bone quality impaired"
+
+Complications,Neoplastic,colon_polyps,结肠息肉,Boolean,,Yes/No,No,Yes,"Colonic polyps detected","20-50% prevalence",Colorectal_Polyps,High,Colonoscopy surveillance,,"Increased adenoma risk"
+Complications,Neoplastic,colon_cancer,结肠癌,Boolean,,Yes/No,No,Yes,"Colorectal cancer","2-3 fold increased risk",Colorectal_Cancer,Critical,Urgent treatment,,"Screen at diagnosis"
+Complications,Neoplastic,thyroid_nodules,甲状腺结节,Boolean,,Yes/No,No,Yes,"Thyroid nodules","Increased prevalence",Thyroid_Nodules,Medium,Thyroid ultrasound,,"Higher than general population"
+
+Complications,Other,hyperhidrosis_severe,严重多汗,Boolean,,Yes/No,No,Yes,"Severe hyperhidrosis","Major QOL impact",,Medium,Anticholinergics if severe,,"Very bothersome symptom"
+Complications,Other,vision_loss,视力丧失,Boolean,,Yes/No,No,Yes,"Visual field loss or blindness","Chiasm compression",Chiasm_Compression,Critical,Urgent surgery,,"Permanent if not treated"
+Complications,Other,headache_severe,严重头痛,Boolean,,Yes/No,No,Yes,"Severe chronic headache","Mass effect or GH effect",,Medium,Often improves with treatment,,"May need analgesia"
+
+Treatment,Surgery,surgery_performed,手术治疗,Boolean,,Yes/No,No,,"Transsphenoidal surgery performed","First-line treatment for most",,High,Preferred initial therapy,,"90% undergo surgery"
+Treatment,Surgery,surgery_date,手术日期,Date,,,,,Date of pituitary surgery,,,Medium,,,
+Treatment,Surgery,surgery_type,手术方式,Categorical,,"Transsphenoidal/Transcranial/None",,,"Surgical approach","Transsphenoidal preferred",,,High,Transsphenoidal less morbidity,,"Endoscopic transsphenoidal most common"
+Treatment,Surgery,gross_total_resection,全切除,Boolean,,Yes/No,No,,"Gross total resection achieved","Goal of surgery",,High,Predicts remission,,"Easier if microadenoma"
+Treatment,Surgery,postop_igf1_normal,术后IGF-1正常,Boolean,,Yes/No,No,,"IGF-1 normalized after surgery","Biochemical remission",,High,Remission criterion,,"Check at 3 months"
+Treatment,Surgery,postop_gh_suppressed,术后GH抑制,Boolean,,Yes/No,No,,"GH suppression <1 on OGTT postop","Confirms cure",,High,Repeat OGTT,,"At 3-6 months"
+Treatment,Surgery,surgical_remission,手术缓解,Boolean,,Yes/No,No,,"Biochemical remission after surgery","Cure rate 40-90% depending on tumor",,High,Higher for microadenomas,,"Macroadenomas: 40-60%"
+Treatment,Surgery,surgical_complications,手术并发症,Boolean,,Yes/No,No,Yes,"Surgical complications occurred","CSF leak, hypopituitarism, DI, meningitis",,Medium,Experienced surgeon important,,"2-10% major complications"
+Treatment,Surgery,postop_hypopituitarism,术后垂体功能减退,Boolean,,Yes/No,No,Yes,"New hypopituitarism after surgery","May need hormone replacement",,Medium,Check all axes,,"10-20% risk"
+Treatment,Surgery,postop_diabetes_insipidus,术后尿崩症,Boolean,,Yes/No,No,Yes,"Diabetes insipidus after surgery","Transient or permanent",,Medium,Usually transient,,"5-10% transient, 1% permanent"
+
+Treatment,Medical,somatostatin_analog,生长抑素类似物,Boolean,,Yes/No,No,,"Somatostatin analog therapy","Octreotide, lanreotide, pasireotide",,High,First-line medical therapy,,"60-70% biochemical control"
+Treatment,Medical,ssa_type,SSA药物类型,Categorical,,"None/Octreotide/Lanreotide/Pasireotide",,,"Type of SSA used","Pasireotide if resistant to first-gen",,Medium,,,
+Treatment,Medical,ssa_response,SSA治疗反应,Categorical,,"Not_assessed/Controlled/Partial/Resistant",,,"Response to SSA therapy","Controlled: IGF-1 normal; Partial: >50% reduction; Resistant: <50%",,High,Assess at 3-6 months,,"Resistant: 30-40%"
+Treatment,Medical,dopamine_agonist,多巴胺激动剂,Boolean,,Yes/No,No,,"Dopamine agonist therapy","Cabergoline, bromocriptine",,Medium,Adjunct therapy,,"Less effective than SSA"
+Treatment,Medical,pegvisomant,培维索孟,Boolean,,Yes/No,No,,"Pegvisomant (GH receptor antagonist)","For resistant cases",,High,Normalizes IGF-1 in 90%,,"Expensive, monitor LFTs"
+Treatment,Medical,medical_remission,药物治疗缓解,Boolean,,Yes/No,No,,"Biochemical control on medication","IGF-1 normal on therapy",,High,Treatment goal,,"Lifelong therapy usually"
+
+Treatment,Radiation,radiation_therapy,放射治疗,Boolean,,Yes/No,No,,"Radiation therapy performed","Third-line treatment",,Medium,For persistent disease,,"Stereotactic or conventional"
+Treatment,Radiation,radiation_type,放射治疗类型,Categorical,,"None/Stereotactic/Conventional",,,"Type of radiation","SRS preferred if small residual",,Medium,,,
+Treatment,Radiation,radiation_date,放射治疗日期,Date,,,,,Date of radiation treatment,,,Low,,,
+Treatment,Radiation,radiation_response,放射治疗反应,Categorical,,"Not_assessed/Controlled/Partial/No_response",,,"Response to radiation","Slow effect, years to maximal benefit",,Medium,Monitor IGF-1 annually,,"50-80% remission at 10 years"
+Treatment,Radiation,radiation_hypopituitarism,放疗后垂体功能减退,Boolean,,Yes/No,No,Yes,"Hypopituitarism after radiation","Common long-term complication",,High,Annual hormone testing,,"50-100% by 10 years"
+
+Monitoring,Disease_Activity,disease_controlled,疾病控制,Boolean,,Yes/No,No,,"Disease biochemically controlled","IGF-1 normal for age/gender",,High,Treatment goal,,"Normalization of IGF-1"
+Monitoring,Disease_Activity,current_igf1,当前IGF-1,Float,ng/mL,50-1000,,>ULN,"Most recent IGF-1 level","Primary monitoring parameter",,High,Check every 3-6 months,,"Treatment target"
+Monitoring,Disease_Activity,symptom_improvement,症状改善,Boolean,,Yes/No,No,,"Clinical symptoms improved","Soft tissue swelling, headache, sweating reduction",,Medium,Assess at each visit,,"May improve before biochemical control"
+Monitoring,Disease_Activity,tumor_recurrence,肿瘤复发,Boolean,,Yes/No,No,Yes,"Tumor recurrence after surgery","5-10% recurrence rate",,High,Annual MRI first 5 years,,"Earlier if IGF-1 rises"
+
+Monitoring,Complications,cardiac_monitoring,心脏监测,Boolean,,Yes/No,No,,"Cardiac monitoring ongoing","Echo, ECG periodic",,High,Annually or biannually,,"Assess LVH, ejection fraction"
+Monitoring,Complications,glucose_monitoring,血糖监测,Boolean,,Yes/No,No,,"Glucose monitoring ongoing","Annual HbA1c or OGTT",,High,Screen for diabetes,,"Metabolic complication common"
+Monitoring,Complications,colonoscopy_surveillance,结肠镜监测,Boolean,,Yes/No,No,,"Colonoscopy surveillance","Every 3-5 years",,High,At diagnosis then periodic,,"Increased polyp/cancer risk"
+Monitoring,Complications,sleep_monitoring,睡眠监测,Boolean,,Yes/No,No,,"Sleep study monitoring","Repeat if OSA, especially post-treatment",,Medium,OSA may persist,,"Even after biochemical control"
+
+Prognosis,Mortality,excess_mortality,超额死亡率,Boolean,,Yes/No,No,Yes,"Increased mortality risk","2-3 fold if uncontrolled",Increased_Mortality,High,Aggressive treatment,,"Normalizes with control"
+Prognosis,Mortality,cardiovascular_risk,心血管风险,Categorical,,"Low/Moderate/High",,High,"Cardiovascular disease risk","Leading cause of death",,High,Risk factor control,,"Hypertension, cardiomyopathy"
+Prognosis,QOL,quality_of_life_impaired,生活质量受损,Boolean,,Yes/No,No,Yes,"Impaired quality of life","Arthropathy, appearance, fatigue",,Medium,Address with treatment,,"Multifactorial causes"
+Prognosis,QOL,acroqol_score,AcroQoL评分,Float,score,0-100,>75,<60,"Acromegaly QOL questionnaire score","Disease-specific QOL tool, higher is better",,Medium,Validated instrument,,"Physical and psychological subscales"
+
+Report_Summary,Diagnosis,confirmed_acromegaly,确诊肢端肥大症,Boolean,,Yes/No,No,Yes,"Acromegaly diagnosis confirmed","IGF-1 elevated + GH non-suppressed + adenoma",Acromegaly,Critical,Requires all 3 criteria,,"Biochemical and imaging"
+Report_Summary,Diagnosis,disease_severity,疾病严重程度,Categorical,,"Mild/Moderate/Severe",,,"Disease severity assessment","Based on IGF-1 elevation, tumor size, complications",,High,Guides treatment intensity,,"Subjective assessment"
+Report_Summary,Diagnosis,age_at_diagnosis,确诊年龄,Integer,years,10-90,,,"Age at confirmed diagnosis","Mean 40-50 years",,Medium,,,"Long diagnostic delay typical"
+
+Report_Summary,Treatment_Plan,primary_treatment,首选治疗,Categorical,,"Surgery/Medical/Radiation/Observation",,,"Primary treatment modality","Surgery first-line for most",,High,Individualized decision,,"Depends on surgical candidacy"
+Report_Summary,Treatment_Plan,treatment_goal,治疗目标,String,,,,,Treatment objectives,"Biochemical control, symptom relief, complication prevention",,High,,,
+Report_Summary,Treatment_Plan,monitoring_plan,监测方案,String,,,,,Follow-up monitoring strategy,"IGF-1, MRI, complication screening",,High,,,
+
+Report_Summary,Outcomes,biochemical_remission,生化缓解,Boolean,,Yes/No,No,,"Biochemical remission achieved","IGF-1 normal + GH <1 on OGTT",,High,Treatment goal,,"Best predictor of outcomes"
+Report_Summary,Outcomes,clinical_remission,临床缓解,Boolean,,Yes/No,No,,"Clinical improvement achieved","Symptom resolution, complication improvement",,Medium,May lag biochemical,,"Soft tissue changes may persist"
+
+Report_Summary,Provider,endocrinologist_name,内分泌科医师,String,,,,,Treating endocrinologist,,,Low,,,
+Report_Summary,Provider,report_date,报告日期,Date,,,,,Date of report generation,,,Low,,,"Format: YYYY-MM-DD"

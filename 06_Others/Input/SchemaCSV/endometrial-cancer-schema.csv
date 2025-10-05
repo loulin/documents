@@ -1,0 +1,137 @@
+Category,Field_Name,Chinese_Name,Data_Type,Unit,Valid_Range,LOINC_Code,Required,Description,Clinical_Significance
+Basic_Info,patient_id,患者ID,string,,,,,Y,唯一患者标识,用于患者追踪
+Basic_Info,diagnosis_date,确诊日期,date,,,,,Y,子宫内膜癌确诊日期,疾病起点
+Basic_Info,age_at_diagnosis,确诊年龄,integer,岁,18-100,,,Y,确诊时年龄,绝经后多发
+Basic_Info,menopausal_status,绝经状态,categorical,,,"Premenopausal,Perimenopausal,Postmenopausal",,,Y,绝经情况,90%绝经后
+Basic_Info,age_at_menarche,初潮年龄,integer,岁,8-20,,,N,月经初潮,早初潮风险
+Basic_Info,age_at_menopause,绝经年龄,integer,岁,35-65,,,N,绝经年龄,晚绝经风险
+Basic_Info,nulliparity,未产,categorical,,,"Yes,No",,,N,从未生育,危险因素
+Basic_Info,parity,产次,integer,次,0-15,,,N,生育次数,保护因素
+Basic_Info,obesity,肥胖,categorical,,,"Yes,No",,,N,BMI>30,主要危险因素
+Basic_Info,bmi,体重指数,decimal,kg/m²,15-60,,,N,BMI,雌激素过多
+Basic_Info,diabetes_mellitus,糖尿病,categorical,,,"Yes,No",,,N,糖尿病史,代谢综合征
+Basic_Info,hypertension,高血压,categorical,,,"Yes,No",,,N,高血压史,代谢综合征
+Basic_Info,pcos,多囊卵巢综合征,categorical,,,"Yes,No",,,N,PCOS病史,无排卵雌激素
+Basic_Info,tamoxifen_use,他莫昔芬使用,categorical,,,"Yes,No",,,N,抗雌激素药物,增加内膜癌风险
+Basic_Info,tamoxifen_duration,他莫昔芬使用时长,decimal,年,0-20,,,N,用药年限,累积暴露
+Basic_Info,hrt_use,激素替代治疗,categorical,,,"Never,Estrogen_Only,Combined,Progestin_Only",,,N,HRT使用,单雌激素增加风险
+Basic_Info,lynch_syndrome,Lynch综合征,categorical,,,"Yes,No,Unknown",,,N,遗传性非息肉性结直肠癌,遗传性内膜癌
+Basic_Info,family_history_endometrial,内膜癌家族史,categorical,,,"Yes,No",,,N,一级亲属内膜癌,遗传易感
+Presentation,abnormal_uterine_bleeding,异常子宫出血,categorical,,,"Yes,No",,,Y,AUB,最常见症状90%
+Presentation,postmenopausal_bleeding,绝经后出血,categorical,,,"Yes,No",,,Y,PMB,警示症状
+Presentation,bleeding_duration,出血持续时间,categorical,,,"<1month,1-3months,3-6months,>6months",,,N,症状病程,早期诊断
+Presentation,vaginal_discharge,阴道排液,categorical,,,"Watery,Bloody,Purulent,None",,,N,阴道分泌物,晚期症状
+Presentation,pelvic_pain,盆腔疼痛,categorical,,,"Yes,No",,,N,下腹痛,晚期或并发症
+Presentation,abdominal_distension,腹胀,categorical,,,"Yes,No",,,N,腹部膨隆,晚期腹腔受累
+Presentation,weight_loss,体重下降,categorical,,,"Yes,No",,,N,非刻意减重,全身症状
+Presentation,incidental_finding,偶然发现,categorical,,,"Yes,No",,,N,无症状发现,影像/病理
+Imaging,endometrial_thickness,子宫内膜厚度,decimal,mm,0-50,,,N,超声内膜厚度,>4mm绝经后异常
+Imaging,endometrial_heterogeneity,内膜异质性,categorical,,,"Yes,No",,,N,不均匀回声,肿瘤征象
+Imaging,myometrial_invasion_imaging,肌层侵犯影像,categorical,,,"None,<50%,≥50%,Unknown",,,N,MRI/超声评估,深肌层侵犯
+Imaging,cervical_involvement_imaging,宫颈受累影像,categorical,,,"Yes,No,Uncertain",,,N,影像学宫颈侵犯,II期
+Imaging,uterine_size_enlarged,子宫增大,categorical,,,"Yes,No",,,N,子宫体积,肿瘤负荷
+Imaging,adnexal_mass,附件肿块,categorical,,,"Unilateral,Bilateral,None",,,N,卵巢/输卵管,转移或合并
+Imaging,ascites,腹水,categorical,,,"Yes,No",,,N,腹腔积液,腹膜转移
+Imaging,lymph_node_enlargement,淋巴结肿大,categorical,,,"Pelvic,Para-aortic,Both,None",,,N,淋巴结,影像学转移
+Imaging,distant_metastases,远处转移,categorical,,,"Yes,No,Suspicious",,,N,远隔转移,M分期
+Imaging,metastasis_site,转移部位,categorical,,,"Lung,Liver,Bone,Brain,Peritoneum,Multiple,None",,,N,转移位置,血行转移
+Pathology_Biopsy,endometrial_sampling_method,内膜取样方法,categorical,,,"Pipelle,D&C,Hysteroscopy_Biopsy,Hysterectomy",,,Y,诊断方式,D&C金标准
+Pathology_Biopsy,sampling_date,取样日期,date,,,,,N,活检时间,病理诊断
+Pathology_Biopsy,biopsy_adequate,活检标本充分,categorical,,,"Yes,No",,,N,标本代表性,诊断可靠性
+Pathology,histologic_type,组织学类型,categorical,,,"Endometrioid,Serous,Clear_Cell,Carcinosarcoma,Mucinous,Squamous,Mixed,Undifferentiated,Other",,,Y,病理分型,预后分层关键
+Pathology,endometrioid_grade,子宫内膜样癌分级,categorical,,,"Grade1,Grade2,Grade3,Not_Applicable",,,N,腺体分化,仅内膜样癌
+Pathology,architectural_grade,结构分级,categorical,,,"Grade1,Grade2,Grade3",,,N,腺体构成,<5% solid=G1
+Pathology,nuclear_grade,核分级,categorical,,,"Grade1,Grade2,Grade3",,,N,核异型,严重核异型提升分级
+Pathology,figo_grade,FIGO分级,categorical,,,"Grade1,Grade2,Grade3",,,Y,国际妇产科联盟分级,标准分级
+Pathology,serous_component,浆液性成分,categorical,,,"Pure,Mixed,Absent",,,N,浆液性癌成分,II型高级别
+Pathology,clear_cell_component,透明细胞成分,categorical,,,"Pure,Mixed,Absent",,,N,透明细胞癌成分,II型高级别
+Pathology,carcinosarcoma,癌肉瘤,categorical,,,"Yes,No",,,N,恶性中胚叶混合瘤,极高危
+Pathology,lvsi,淋巴血管间隙侵犯,categorical,,,"None,Focal,Substantial",,,Y,LVSI,高危因素
+Pathology,lvsi_extent,LVSI程度,categorical,,,"Absent,Focal,Extensive",,,N,淋巴管侵犯范围,转移风险
+Pathology,myometrial_invasion,肌层侵犯,categorical,,,"None,<50%,≥50%",,,Y,肌层浸润深度,FIGO IA vs IB
+Pathology,myometrial_invasion_percent,肌层侵犯百分比,decimal,%,0-100,,,N,侵犯肌层比例,精确深度
+Pathology,cervical_stromal_invasion,宫颈间质侵犯,categorical,,,"Yes,No",,,N,宫颈侵犯,FIGO II期
+Pathology,cervical_glandular_only,仅宫颈腺体,categorical,,,"Yes,No",,,N,内膜腺体蔓延,非间质侵犯
+Pathology,uterine_serosa_invasion,子宫浆膜侵犯,categorical,,,"Yes,No",,,N,浆膜层侵犯,FIGO IIIA
+Pathology,adnexa_involvement,附件受累,categorical,,,"Yes,No",,,N,卵巢/输卵管直接蔓延,FIGO IIIA
+Pathology,vaginal_involvement,阴道受累,categorical,,,"Yes,No",,,N,阴道转移,FIGO IIIB
+Pathology,parametrium_invasion,宫旁侵犯,categorical,,,"Yes,No",,,N,宫旁组织,FIGO IIIB
+Pathology,bladder_mucosa_invasion,膀胱粘膜侵犯,categorical,,,"Yes,No",,,N,膀胱侵犯,FIGO IVA
+Pathology,bowel_mucosa_invasion,肠粘膜侵犯,categorical,,,"Yes,No",,,N,肠道侵犯,FIGO IVA
+Pathology,tumor_size,肿瘤最大径,decimal,cm,0.1-20,,,N,肿瘤大小,肿瘤负荷
+Pathology,lower_uterine_segment,子宫下段受累,categorical,,,"Yes,No",,,N,宫体下段侵犯,高危因素
+Staging,figo_2009_stage,FIGO 2009分期,categorical,,,"IA,IB,II,IIIA,IIIB,IIIC1,IIIC2,IVA,IVB",,,Y,2009版FIGO,手术病理分期
+Staging,figo_stage_ia_ib,IA/IB细分,categorical,,,"IA,IB,Not_Applicable",,,N,I期细分,肌层侵犯深度
+Staging,figo_stage_iiic,IIIC细分,categorical,,,"IIIC1,IIIC2,Not_Applicable",,,N,淋巴结转移细分,盆腔vs主动脉旁
+Staging,lymph_nodes_removed_pelvic,盆腔淋巴结切除数,integer,个,0-50,,,N,盆腔LN数,充分分期
+Staging,lymph_nodes_positive_pelvic,盆腔阳性淋巴结,integer,个,0-40,,,N,盆腔LN转移数,IIIC1
+Staging,lymph_nodes_removed_paraaortic,主动脉旁淋巴结数,integer,个,0-30,,,N,PALN切除数,系统分期
+Staging,lymph_nodes_positive_paraaortic,主动脉旁阳性淋巴结,integer,个,0-20,,,N,PALN转移数,IIIC2
+Staging,peritoneal_cytology,腹腔细胞学,categorical,,,"Positive,Negative,Not_Done",,,N,腹腔冲洗,2009后非分期因素
+Staging,tnm_t_stage,TNM T分期,categorical,,,"T1a,T1b,T2,T3a,T3b,T4",,,N,肿瘤原发,对应FIGO
+Staging,tnm_n_stage,TNM N分期,categorical,,,"N0,N1,N2",,,N,淋巴结,N1盆腔N2主动脉旁
+Staging,tnm_m_stage,TNM M分期,categorical,,,"M0,M1",,,N,远处转移,腹膜外转移
+Risk_Stratification,risk_group,风险分层,categorical,,,"Low,Intermediate,High_Intermediate,High",,,Y,复发风险分层,辅助治疗依据
+Risk_Stratification,esmo_risk,ESMO风险分类,categorical,,,"Low,Intermediate,High,Advanced_Metastatic",,,N,欧洲指南分层,治疗推荐
+Risk_Stratification,esgo_risk,ESGO风险分类,categorical,,,"Low,Intermediate,High_Intermediate,High",,,N,欧洲指南2020,分子分型整合
+Molecular,msi_status,MSI状态,categorical,,,"MSI-H,MSS,Unknown",81695-9,,Y,微卫星不稳定,免疫治疗预测
+Molecular,msi_testing_method,MSI检测方法,categorical,,,"IHC,PCR,NGS",,,N,检测技术,IHC筛查
+Molecular,mmr_status,MMR状态,categorical,,,"dMMR,pMMR,Unknown",,,Y,错配修复蛋白,IHC检测
+Molecular,mmr_proteins_lost,缺失MMR蛋白,categorical,,,"MLH1,MSH2,MSH6,PMS2,MLH1_PMS2,MSH2_MSH6,Multiple,None",,,N,缺失蛋白类型,Lynch vs散发
+Molecular,mlh1_promoter_methylation,MLH1启动子甲基化,categorical,,,"Yes,No,Unknown",,,N,MLH1甲基化,散发dMMR
+Molecular,pole_mutation,POLE突变,categorical,,,"Pathogenic,Non-pathogenic,Wild-type,Unknown",,,Y,DNA聚合酶ε,超突变型
+Molecular,pole_mutation_type,POLE突变类型,categorical,,,"P286R,V411L,S297F,A456P,Other,None",,,N,具体POLE突变,致病性突变
+Molecular,p53_status,p53状态,categorical,,,"Abnormal,Wild-type,Unknown",,,Y,p53蛋白,浆液性特征
+Molecular,p53_ihc_pattern,p53 IHC模式,categorical,,,"Overexpression,Null,Wild-type,Unknown",,,N,免疫组化模式,异常=突变型
+Molecular,molecular_subtype,分子分型,categorical,,,"POLE_Ultramutated,MSI_Hypermutated,p53_Abnormal,NSMP",,,Y,TCGA四分型,预后分层关键
+Molecular,her2_status,HER2状态,categorical,,,"Positive,Negative,Unknown",,,N,HER2过表达,浆液性癌
+Molecular,estrogen_receptor,雌激素受体,categorical,,,"Positive,Negative,Unknown",,,N,ER表达,内膜样癌阳性
+Molecular,progesterone_receptor,孕激素受体,categorical,,,"Positive,Negative,Unknown",,,N,PR表达,分化程度
+Molecular,er_percentage,ER阳性百分比,decimal,%,0-100,,,N,ER阳性肿瘤细胞,激素治疗预测
+Molecular,pr_percentage,PR阳性百分比,decimal,%,0-100,,,N,PR阳性肿瘤细胞,分化标志
+Treatment_Surgery,primary_surgery,初次手术,categorical,,,"Yes,No",,,Y,是否手术,分期治疗基础
+Treatment_Surgery,surgery_type,手术类型,categorical,,,"TAH-BSO,TAH-BSO-LND,Simple_Hysterectomy,Radical_Hysterectomy,Staging_Surgery,Debulking",,,Y,手术方式,标准vs扩大
+Treatment_Surgery,surgical_approach,手术入路,categorical,,,"Open,Laparoscopic,Robotic,Vaginal",,,N,手术途径,微创优先
+Treatment_Surgery,hysterectomy_type,子宫切除类型,categorical,,,"Extrafascial,Modified_Radical,Radical",,,N,切除范围,II期广泛
+Treatment_Surgery,bso_performed,双侧附件切除,categorical,,,"Yes,No,Unilateral",,,Y,卵巢输卵管切除,标准分期
+Treatment_Surgery,pelvic_lnd,盆腔淋巴结清扫,categorical,,,"Yes,No",,,Y,盆腔LND,分期必需
+Treatment_Surgery,paraaortic_lnd,主动脉旁淋巴结清扫,categorical,,,"Yes,No",,,N,PALN清扫,系统分期
+Treatment_Surgery,omentectomy,大网膜切除,categorical,,,"Yes,No",,,N,网膜切除,浆液性/透明
+Treatment_Surgery,sentinel_lymph_node,前哨淋巴结,categorical,,,"Yes,No",,,N,SLN活检,低危替代LND
+Treatment_Surgery,slnb_result,前哨淋巴结结果,categorical,,,"Negative,Positive,Failed_Mapping",,,N,SLN病理,超分期
+Treatment_Surgery,surgical_completeness,手术完整性,categorical,,,"R0,R1,R2",,,N,残留病灶,完全切除R0
+Treatment_Radiotherapy,adjuvant_radiotherapy,辅助放疗,categorical,,,"Yes,No",,,N,术后放疗,高危局部控制
+Treatment_Radiotherapy,rt_type,放疗类型,categorical,,,"EBRT,Brachytherapy,Combined,None",,,N,放疗方式,外照射/腔内
+Treatment_Radiotherapy,ebrt_field,外照射野,categorical,,,"Pelvic,Pelvic_PALN,Extended,Not_Applicable",,,N,照射范围,盆腔±主动脉旁
+Treatment_Radiotherapy,ebrt_dose,外照射剂量,decimal,Gy,20-60,,,N,EBRT总剂量,45-50 Gy标准
+Treatment_Radiotherapy,brachytherapy_technique,腔内放疗技术,categorical,,,"HDR,LDR,Not_Done",,,N,近距离治疗,阴道残端
+Treatment_Radiotherapy,vaginal_brachytherapy_dose,阴道腔内剂量,decimal,Gy,5-30,,,N,阴道顶放疗,局部控制
+Treatment_Chemotherapy,adjuvant_chemotherapy,辅助化疗,categorical,,,"Yes,No",,,N,术后化疗,高危/晚期
+Treatment_Chemotherapy,chemo_regimen,化疗方案,categorical,,,"Carboplatin_Paclitaxel,Cisplatin_Doxorubicin,AP,TC,Other,None",,,N,化疗组合,铂类为基础
+Treatment_Chemotherapy,chemo_cycles,化疗周期数,integer,周期,0-12,,,N,完成周期数,通常6周期
+Treatment_Chemotherapy,chemo_rt_sequence,化放疗顺序,categorical,,,"Sequential,Sandwich,Concurrent,Chemo_Only,RT_Only",,,N,联合治疗顺序,三明治方案
+Treatment_Hormonal,hormonal_therapy,激素治疗,categorical,,,"Yes,No",,,N,孕激素治疗,保留生育/晚期
+Treatment_Hormonal,hormonal_agent,激素药物,categorical,,,"MPA,Megestrol,Letrozole,Tamoxifen,Other,None",,,N,具体药物,孕激素/芳香化酶
+Treatment_Hormonal,hormonal_indication,激素治疗指征,categorical,,,"Fertility_Sparing,Advanced_Recurrent,Adjuvant,Not_Applicable",,,N,用药目的,年轻保育
+Treatment_Hormonal,fertility_sparing,保留生育能力,categorical,,,"Yes,No",,,N,年轻患者保育,IA G1 ER+
+Treatment_Immunotherapy,checkpoint_inhibitor,免疫检查点抑制剂,categorical,,,"Yes,No",,,N,PD-1/PD-L1,dMMR/MSI-H
+Treatment_Immunotherapy,io_agent,免疫药物,categorical,,,"Pembrolizumab,Dostarlimab,Lenvatinib_Pembrolizumab,Other,None",,,N,具体IO药物,晚期二线
+Treatment_Immunotherapy,io_indication,免疫治疗指征,categorical,,,"dMMR_MSI-H,Advanced_Recurrent,Not_Applicable",,,N,用药适应证,分子标志物依赖
+Treatment_Immunotherapy,io_response,免疫治疗反应,categorical,,,"CR,PR,SD,PD,Not_Applicable",,,N,疗效评价,持久缓解
+Response,recurrence_status,复发状态,categorical,,,"No_Recurrence,Local,Distant,Both",,,N,肿瘤复发,随访结局
+Response,recurrence_date,复发日期,date,,,,,N,首次复发时间,RFS计算
+Response,recurrence_site,复发部位,categorical,,,"Vaginal_Vault,Pelvic,Para-aortic,Lung,Liver,Bone,Peritoneum,Multiple,Other",,,N,复发位置,阴道顶/远处
+Response,time_to_recurrence,复发时间,decimal,月,0-200,,,N,治疗至复发间隔,早期复发预后差
+Survival,vital_status,生存状态,categorical,,,"Alive,Dead,Lost_to_Followup",,,Y,随访结局,总生存
+Survival,death_date,死亡日期,date,,,,,N,死亡时间,OS计算
+Survival,cause_of_death,死亡原因,categorical,,,"Endometrial_Cancer,Treatment_Toxicity,Cardiovascular,Other_Cancer,Other,Unknown",,,N,死因分类,肿瘤特异性死亡
+Survival,overall_survival,总生存期,decimal,月,0-300,,,N,诊断至死亡,OS
+Survival,disease_specific_survival,疾病特异生存,decimal,月,0-300,,,N,肿瘤相关死亡,DSS
+Survival,progression_free_survival,无进展生存,decimal,月,0-200,,,N,治疗至进展,PFS
+Survival,recurrence_free_survival,无复发生存,decimal,月,0-200,,,N,治疗至复发,RFS
+Survival,last_followup_date,末次随访日期,date,,,,,N,最后接触日期,删失数据
+Complications,lymphedema,下肢淋巴水肿,categorical,,,"None,Mild,Moderate,Severe",,,N,淋巴回流障碍,LND并发症
+Complications,vaginal_stenosis,阴道狭窄,categorical,,,"None,Mild,Moderate,Severe",,,N,放疗后狭窄,性功能影响
+Complications,bowel_obstruction,肠梗阻,categorical,,,"Yes,No",,,N,术后粘连/复发,急症
+Complications,vesicovaginal_fistula,膀胱阴道瘘,categorical,,,"Yes,No",,,N,放疗/手术并发症,严重并发症
+Complications,rectovaginal_fistula,直肠阴道瘘,categorical,,,"Yes,No",,,N,放疗并发症,生活质量

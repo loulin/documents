@@ -1,0 +1,27 @@
+Category,Field_Name,Chinese_Name,Data_Type,Unit,Valid_Range,LOINC_Code,Required,Description,Clinical_Significance
+Basic_Info,patient_id,患者ID,string,,,,,Y,唯一标识,患者追踪
+Basic_Info,admission_date,入院日期,date,,,,,Y,入院时间,创伤/择期
+Basic_Info,age,年龄,integer,years,1-120,,,Y,患者年龄,手术风险
+Basic_Info,gender,性别,categorical,,Male,Female,,,Y,性别,流行病学
+Indication,primary_diagnosis,主要诊断,string,,,,,Y,疾病诊断,手术指征
+Indication,urgency,手术紧迫性,categorical,,Elective,Urgent,Emergency,,,Y,择期/紧急/急诊,手术时机
+Preoperative,asa_score,ASA分级,categorical,,ASA_I,ASA_II,ASA_III,ASA_IV,ASA_V,,,Y,ASA I-V级,麻醉风险
+Imaging,imaging_findings,影像学表现,string,,,,,Y,CT/MRI/血管造影,术前评估
+Anesthesia,anesthesia_type,麻醉方式,categorical,,Local,Regional,Spinal,General,,,Y,局麻/区域/腰麻/全麻,麻醉选择
+Surgery_Approach,surgical_approach,手术入路,categorical,,Open,Minimally_Invasive,Endovascular,Endoscopic,,,Y,开放/微创/血管内/内镜,手术方式
+Surgery_Details,procedure_performed,手术操作,string,,,,,Y,具体手术术式,手术记录
+Surgery_Details,operative_time,手术时间,integer,minutes,10-720,,,Y,手术时长分钟,手术复杂度
+Surgery_Details,estimated_blood_loss,估计失血量,integer,mL,0-10000,,,Y,术中失血量,出血程度
+Surgery_Details,blood_transfusion,输血,boolean,,,,,Y,术中/术后输血,失血补充
+Implants,implant_device,植入物/器械,string,,,,,N,钢板/螺钉/支架/假体,植入材料
+Complications,intraoperative_complications,术中并发症,categorical,,None,Bleeding,Organ_Injury,Vascular_Injury,Nerve_Injury,,,Y,无/出血/脏器损伤/血管损伤/神经损伤,术中意外
+Complications,postoperative_complications,术后并发症,categorical,,None,Wound_Infection,Hematoma,DVT,PE,Neurological_Deficit,,,Y,无/切口感染/血肿/深静脉血栓/肺栓塞/神经功能缺损,术后并发症
+Complications,reoperation,再次手术,boolean,,,,,Y,二次手术,严重并发症
+Outcome,length_of_stay,住院天数,integer,days,0-90,,,Y,住院时长,恢复指标
+Outcome,functional_outcome,功能结局,categorical,,Excellent,Good,Fair,Poor,,,N,优/良/可/差,功能恢复
+Outcome,mortality,死亡,boolean,,,,,Y,围术期死亡,极端结局
+Follow_Up,follow_up_imaging,随访影像,string,,,,,N,术后影像学复查,愈合评估
+Follow_Up,complication_long_term,远期并发症,string,,,,,N,晚期并发症,长期结局
+Report,surgeon,手术医师,string,,,,,Y,主刀医师,责任医师
+Report,operation_date,手术日期,date,,,,,Y,手术时间,手术记录
+Report,report_date,报告日期,date,,,,,Y,报告时间,文档记录

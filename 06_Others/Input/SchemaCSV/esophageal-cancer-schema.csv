@@ -1,147 +1,48 @@
-字段名(英文),字段名(中文),数据类型,描述,示例
-patientId,患者ID,String,患者唯一标识符,EC20250320001
-diagnosisDate,确诊日期,Date,食管癌确诊日期,2025-03-20
-age,年龄,Number,确诊时年龄(岁),60
-gender,性别,String,患者性别,男
-
-# 临床表现
-symptoms.dysphagia,症状.吞咽困难,Boolean,"**进行性吞咽困难**: 食管癌最常见症状(90%)<br>**固体→液体**: 逐渐加重<br>**梗阻位置**: 症状出现时肿瘤已浸润2/3周径",true
-symptoms.dysphagia.grade,症状.吞咽困难.分级,String,"**0级**: 无吞咽困难<br>**I级**: 咽固体食物困难<br>**II级**: 半流质困难<br>**III级**: 流质困难<br>**IV级**: 完全梗阻",II级
-symptoms.odynophagia,症状.吞咽疼痛,Boolean,"**疼痛性吞咽**: 30-40%患者<br>**提示**: 深部浸润、食管炎",false
-symptoms.chestPain,症状.胸痛,Boolean,"**胸骨后疼痛**: 肿瘤浸润深层<br>**放射痛**: 肩背部<br>**提示**: 局部晚期",true
-symptoms.weightLoss,症状.体重下降,Boolean,"**显著体重下降**: >5kg/3月<br>**70-80%患者**: 营养不良",true
-symptoms.weightLoss.amount,症状.体重下降.数值,Number,3个月内体重下降(kg),10
-symptoms.regurgitation,症状.反流,Boolean,"**食物反流**: 梗阻近端食物潴留<br>**误吸**: 吸入性肺炎风险",true
-symptoms.hoarseness,症状.声音嘶哑,Boolean,"**喉返神经侵犯**: 左侧常见<br>**提示**: 不可切除(T4b)",false
-symptoms.cough,症状.咳嗽,Boolean,"**气管受侵**: 持续性咳嗽<br>**气管食管瘘**: 进食呛咳,严重并发症",false
-symptoms.hematemesis,症状.呕血,Boolean,"**肿瘤出血**: 罕见<br>**大出血**: 侵犯大血管,危及生命",false
-
-# 肿瘤部位
-tumor.location,肿瘤.部位,String,"**中段食管**: 50-60%(最常见,鳞癌)<br>**下段食管**: 30-40%(腺癌多见)<br>**上段食管**: 5-10%<br>**胃食管交界(GEJ)**: 10-15%",中段食管
-tumor.location.distance,肿瘤.距门齿距离,Number,"**上段**: 15-24cm<br>**中段**: 24-32cm<br>**下段**: 32-40cm<br>**GEJ**: >40cm",28
-tumor.length,肿瘤.长度,Number,肿瘤纵向长度(cm),5
-tumor.circumference,肿瘤.周径浸润,String,"**<1/2周径**: 局部浸润<br>**≥1/2周径**: 环周浸润<br>**全周**: 狭窄梗阻",3/4周径
-
-# 病理分型
-pathology.histology,病理.组织学类型,String,"**鳞状细胞癌**: 85-90%(中国最常见)<br>**腺癌**: 10-15%(下段、GEJ,西方多见)<br>**小细胞癌**: <1%<br>**未分化癌**: <1%",鳞状细胞癌
-pathology.differentiation,病理.分化程度,String,"**高分化**: 预后较好<br>**中分化**: 最常见<br>**低分化/未分化**: 预后差",中分化
-pathology.barrett,病理.Barrett食管,Boolean,"**Barrett食管**: 腺癌癌前病变<br>**肠化生**: 低级别→高级别异型增生→腺癌<br>**西方**: 常见",false
-
-# 内镜检查
-endoscopy.performed,内镜.胃镜检查,Boolean,"**确诊金标准**: 内镜+活检<br>**早期诊断**: 碘染色/NBI窄带成像",true
-endoscopy.findings,内镜.内镜下表现,String,"**早期**: 平坦型、糜烂型、斑块型<br>**进展期**: 髓质型、蕈伞型、溃疡型、缩窄型",中段食管环周溃疡型病变,长约5cm
-endoscopy.biopsy,内镜.活检,Boolean,"**多点活检**: 提高阳性率<br>**建议**: ≥6个活检点",true
-endoscopy.biopsy.result,内镜.活检结果,String,活检病理诊断,中分化鳞状细胞癌
-endoscopy.stenosis,内镜.狭窄,Boolean,"**狭窄**: 内镜不能通过<br>**需扩张**: 评估远端病变",true
-
-# 影像学检查
-imaging.ct.performed,影像学.增强CT.是否完成,Boolean,"**术前分期**: 胸腹部增强CT<br>**评估**: T分期、淋巴结、远处转移",true
-imaging.ct.wallThickness,影像学.CT.管壁增厚,Number,食管壁最厚处(mm),正常<3mm,15
-imaging.ct.lymphNodes.cervical,影像学.CT.颈部淋巴结,Boolean,"**锁骨上淋巴结**: 远处转移(M1)",false
-imaging.ct.lymphNodes.mediastinal,影像学.CT.纵隔淋巴结,Boolean,"**区域淋巴结**: 食管旁、气管旁、隆突下",true
-imaging.ct.lymphNodes.abdominal,影像学.CT.腹部淋巴结,Boolean,"**腹腔淋巴结**: 胃左动脉、腹腔干周围",false
-imaging.ct.trachea,影像学.CT.气管受侵,Boolean,"**气管受侵**: T4b,不可切除<br>**气管食管瘘**: 严重并发症",false
-imaging.ct.aorta,影像学.CT.主动脉受侵,Boolean,"**主动脉受侵**: T4b,不可切除",false
-imaging.ct.metastasis,影像学.CT.远处转移,String,"**肝转移**: 最常见<br>**肺转移**: 第二常见<br>**骨转移**: 少见",无远处转移
-
-imaging.eus.performed,影像学.超声内镜.是否完成,Boolean,"**T分期**: 评估浸润深度,准确率85%<br>**N分期**: 食管旁淋巴结,准确率70%<br>**新辅助前**: 必须检查",true
-imaging.eus.tStage,影像学.EUS.T分期,String,"**T1a**: 黏膜层<br>**T1b**: 黏膜下层<br>**T2**: 固有肌层<br>**T3**: 外膜<br>**T4a**: 可切除邻近结构<br>**T4b**: 不可切除邻近结构",T3
-imaging.eus.lymphNodes,影像学.EUS.淋巴结,String,"**可疑淋巴结**: 低回声、圆形、>1cm<br>**FNA**: 细针穿刺活检确诊",食管旁多个可疑淋巴结
-
-imaging.petct.performed,影像学.PET-CT.是否完成,Boolean,"**检测转移**: 敏感性高<br>**改变分期**: 15-20%病例<br>**新辅助前**: 推荐检查",true
-imaging.petct.primarySuv,影像学.PET-CT.原发灶SUVmax,Number,"SUV最大值。<br>**>2.5**: 提示恶性<br>**基线SUV**: 评估治疗反应",12.5
-imaging.petct.metastasis,影像学.PET-CT.转移灶,String,PET-CT发现的转移灶,无远处转移
-
-# TNM分期 (AJCC 8th Edition)
-staging.t,分期.T分期,String,"**T1a**: 黏膜层<br>**T1b**: 黏膜下层<br>**T2**: 固有肌层<br>**T3**: 外膜<br>**T4a**: 胸膜/心包/膈肌(可切除)<br>**T4b**: 主动脉/气管/椎体(不可切除)",T3
-staging.n,分期.N分期,String,"**N0**: 无淋巴结转移<br>**N1**: 1-2个区域淋巴结<br>**N2**: 3-6个<br>**N3**: ≥7个",N1
-staging.n.number,分期.淋巴结.转移数量,Number,区域淋巴结转移个数,2
-staging.m,分期.M分期,String,"**M0**: 无远处转移<br>**M1**: 远处转移(锁骨上淋巴结、腹腔淋巴结、肝、肺)",M0
-staging.tnm,分期.TNM综合分期,String,"**I期**: T1N0M0,5年生存率>80%<br>**II期**: T2-3N0M0,40-60%<br>**IIIA期**: T1-2N1,30-40%<br>**IIIB期**: T3N1-2,15-25%<br>**IVA期**: T4或N3,10-15%<br>**IVB期**: M1,<5%",IIIB期(T3N1M0)
-
-# 治疗方案
-treatment.neoadjuvant.indication,治疗.新辅助治疗.适应证,String,"**局部晚期**: T3-4a或N+<br>**标准治疗**: 新辅助放化疗+手术<br>**目的**: 降期,提高R0切除率",T3N1
-treatment.neoadjuvant.performed,治疗.新辅助治疗.是否实施,Boolean,"**放化疗**: 标准新辅助治疗<br>**鳞癌/腺癌**: 均推荐",true
-treatment.neoadjuvant.regimen,治疗.新辅助治疗.方案,String,"**CROSS方案**: 卡铂+紫杉醇+41.4Gy放疗(鳞癌/腺癌)<br>**氟尿嘧啶+顺铂+50Gy**: 传统方案(鳞癌)<br>**围手术期化疗**: FLOT方案(腺癌)",CROSS方案(卡铂+紫杉醇+41.4Gy)
-treatment.neoadjuvant.response,治疗.新辅助治疗.疗效,String,"**pCR**: 病理完全缓解,预后最好<br>**良好反应**: 肿瘤降期<br>**无反应**: 肿瘤进展",良好反应(降至T2N0)
-treatment.neoadjuvant.trg,治疗.新辅助治疗.TRG评分,String,"**TRG 1**: 完全缓解<br>**TRG 2**: 轻微残留<br>**TRG 3**: 中度反应<br>**TRG 4-5**: 反应差",TRG 2
-
-treatment.surgery.performed,治疗.手术.是否实施,Boolean,"**根治性手术**: 唯一治愈手段<br>**可切除率**: 30-40%",true
-treatment.surgery.type,治疗.手术.术式,String,"**Ivor-Lewis**: 右胸+腹两切口(中下段)<br>**McKeown**: 颈胸腹三切口(中上段)<br>**经裂孔**: 下段/GEJ<br>**微创**: 胸腹腔镜/机器人",Ivor-Lewis食管癌根治术
-treatment.surgery.approach,治疗.手术.入路,String,"**开放**: 传统手术<br>**微创**: 胸腹腔镜,创伤小,恢复快<br>**机器人**: 精准操作",微创(胸腹腔镜)
-treatment.surgery.lymphNodes,治疗.手术.淋巴结清扫数,Number,"**建议≥15个**: 准确分期<br>**两野清扫**: 胸腹部<br>**三野清扫**: 颈胸腹部",20
-treatment.surgery.margin,治疗.手术.切缘状态,String,"**R0**: 切缘阴性,预后最好<br>**近端≥5cm**: 鳞癌<br>**近端≥3cm**: 腺癌<br>**R1**: 镜下阳性,预后差",R0切除,近端切缘6cm,远端切缘5cm
-treatment.surgery.complications,治疗.手术.并发症,String,"**吻合口瘘**: 5-15%(最严重)<br>**肺部感染**: 20-30%<br>**喉返神经损伤**: 5-10%<br>**乳糜胸**: 2-5%",无严重并发症
-
-treatment.adjuvant,治疗.辅助治疗,Boolean,"**术后辅助**: 新辅助未做或无pCR<br>**鳞癌**: 术后放化疗<br>**腺癌**: 围手术期化疗",false
-treatment.adjuvant.regimen,治疗.辅助治疗.方案,String,"**氟尿嘧啶+顺铂**: 鳞癌术后放化疗<br>**FOLFOX/FLOT**: 腺癌术后化疗",无
-
-treatment.definitive.chemoRT,治疗.根治性放化疗,Boolean,"**不可切除**: T4b或医学不能手术<br>**鳞癌**: 放化疗疗效好<br>**50-50.4Gy**: 放疗剂量",false
-treatment.definitive.regimen,治疗.根治性放化疗.方案,String,"**氟尿嘧啶+顺铂+50Gy**: 标准方案<br>**卡铂+紫杉醇+50Gy**: 替代方案",无
-
-treatment.palliative.chemo,治疗.晚期化疗.方案,String,"**一线**: 氟尿嘧啶+铂类±紫杉类<br>**HER2阳性**: 化疗+曲妥珠单抗(腺癌)<br>**二线**: 紫杉醇、伊立替康",氟尿嘧啶+顺铂
-treatment.palliative.chemo.cycles,治疗.晚期化疗.周期数,Number,已完成化疗周期数,0
-treatment.palliative.chemo.response,治疗.晚期化疗.疗效评价,String,"**CR**: 完全缓解<br>**PR**: 部分缓解<br>**SD**: 疾病稳定<br>**PD**: 疾病进展",未开始
-
-treatment.stent,治疗.支架置入,Boolean,"**姑息治疗**: 缓解吞咽困难<br>**食管支架**: 改善进食<br>**适应证**: 梗阻、瘘",false
-treatment.feeding.tube,治疗.营养管,Boolean,"**空肠营养管**: 术前营养不良<br>**胃造瘘**: 长期肠内营养",false
-
-treatment.targeted,治疗.靶向治疗,Boolean,"**HER2阳性腺癌**: 曲妥珠单抗<br>**抗血管生成**: 雷莫芦单抗(二线)",false
-treatment.immunotherapy,治疗.免疫治疗,Boolean,"**PD-1抑制剂**: 纳武利尤单抗、帕博利珠单抗<br>**一线**: 鳞癌PD-L1阳性<br>**二线**: 化疗失败后",false
-treatment.immunotherapy.agent,治疗.免疫治疗.药物,String,"**帕博利珠单抗**: PD-L1 CPS≥10,一线联合化疗<br>**纳武利尤单抗**: 二线单药",无
-
-# 转移情况
-metastasis.liver,转移.肝转移,Boolean,"**血行转移**: 腺癌常见<br>**预后**: 中位生存6-9个月",false
-metastasis.lung,转移.肺转移,Boolean,"**血行转移**: 鳞癌常见<br>**多发结节**: 晚期表现",false
-metastasis.bone,转移.骨转移,Boolean,"**骨转移**: 5-10%<br>**疼痛**: 病理性骨折",false
-metastasis.lymphNode.cervical,转移.颈部淋巴结,Boolean,"**锁骨上淋巴结**: M1<br>**预后**: 差",false
-metastasis.lymphNode.celiac,转移.腹腔淋巴结,Boolean,"**腹腔淋巴结**: M1(下段食管癌)<br>**预后**: 差",false
-
-# 肿瘤标志物
-tumorMarkers.scc,肿瘤标志物.SCC,Number,"鳞状细胞癌抗原(ng/mL)。<br>**正常值**: <1.5 ng/mL<br>**鳞癌**: 50-60%升高<br>**随访**: 监测复发",2.8
-tumorMarkers.cyfra211,肿瘤标志物.CYFRA21-1,Number,"细胞角蛋白19片段(ng/mL)。<br>**正常值**: <3.3 ng/mL<br>**鳞癌**: 敏感性高",5.5
-tumorMarkers.cea,肿瘤标志物.CEA,Number,"CEA水平(ng/mL)。<br>**正常值**: <5 ng/mL<br>**腺癌**: 常升高",8
-tumorMarkers.ca199,肿瘤标志物.CA19-9,Number,"CA19-9水平(U/mL)。<br>**正常值**: <37 U/mL<br>**腺癌**: 辅助标志物",45
-
-# 随访与预后
-followUp.interval,随访.随访间隔,String,"**术后2年内**: 每3个月<br>**3-5年**: 每6个月<br>**>5年**: 每年",每3个月
-followUp.methods,随访.随访方法,String,"**体格检查**: 体重、淋巴结<br>**肿瘤标志物**: SCC/CEA<br>**CT**: 胸腹部,每6月<br>**内镜**: 吻合口,每年",CT+肿瘤标志物
-followUp.recurrence,随访.复发,Boolean,"**局部复发**: 吻合口、纵隔<br>**远处转移**: 肝、肺、骨<br>**中位复发时间**: 12-18个月",false
-followUp.recurrence.site,随访.复发.部位,String,"**纵隔淋巴结**: 最常见<br>**吻合口**: 局部复发<br>**肝肺**: 远处转移",无
-
-prognosis.stage,预后.分期预后,String,"**I期**: 5年生存率>80%<br>**IIA期**: 50-60%<br>**IIB期**: 40-50%<br>**IIIA期**: 30-40%<br>**IIIB期**: 15-25%<br>**IVA期**: 10-15%<br>**IVB期**: <5%",IIIB期预计5年生存率15-25%
-prognosis.factors,预后.预后因素,String,"**良好**: 早期分期、pCR、R0切除、腺癌<br>**不良**: 晚期分期、R1切除、鳞癌、淋巴结≥3个",新辅助良好反应、R0切除、N1
-
-# 危险因素
-riskFactors.smoking,危险因素.吸烟史,Boolean,"**OR 5-10**: 吸烟强危险因素<br>**鳞癌**: 相关性极强<br>**戒烟**: 降低风险",true
-riskFactors.smoking.packYears,危险因素.吸烟.包年,Number,吸烟包年数(每日包数×年数),40
-riskFactors.alcohol,危险因素.饮酒史,Boolean,"**OR 3-5**: 饮酒增加风险<br>**白酒**: 高度酒,风险更高<br>**协同**: 吸烟+饮酒风险倍增",true
-riskFactors.diet,危险因素.饮食习惯,String,"**缺乏蔬果**: 维生素A/C缺乏<br>**热食热饮**: 慢性损伤<br>**腌制食品**: 亚硝胺",热食热饮,蔬果摄入少
-riskFactors.barrett,危险因素.Barrett食管,Boolean,"**Barrett食管**: 腺癌癌前病变<br>**胃食管反流**: 长期反流→Barrett→腺癌<br>**监测**: 内镜随访",false
-riskFactors.gerd,危险因素.胃食管反流,Boolean,"**GERD**: Barrett食管危险因素<br>**下段腺癌**: 西方常见",false
-riskFactors.achalasia,危险因素.贲门失弛缓,Boolean,"**贲门失弛缓症**: 鳞癌风险增加<br>**食物潴留**: 慢性刺激",false
-riskFactors.causticInjury,危险因素.腐蚀性损伤,Boolean,"**碱烧伤**: 狭窄→鳞癌<br>**潜伏期**: 20-40年",false
-
-# 基因检测
-genetics.her2,基因检测.HER2,String,"**HER2阳性**: 15-20%腺癌<br>**靶向**: 曲妥珠单抗+化疗<br>**检测**: 腺癌推荐",阴性(鳞癌)
-genetics.pdl1,基因检测.PD-L1,String,"**CPS≥10**: 免疫治疗适应证<br>**鳞癌**: PD-L1阳性率高<br>**一线**: 联合化疗",CPS 5
-genetics.msi,基因检测.微卫星不稳定,String,"**MSI-H**: 罕见(<5%)<br>**免疫治疗**: 敏感",MSS
-genetics.tp53,基因检测.TP53,String,"**TP53突变**: >90%食管鳞癌<br>**预后**: 预后指标",突变
-genetics.cdkn2a,基因检测.CDKN2A,String,"**CDKN2A缺失**: 常见<br>**细胞周期**: 失调",缺失
-
-# 营养评估
-nutrition.albumin,营养.白蛋白,Number,"血清白蛋白(g/L)。<br>**<30**: 营养不良<br>**<25**: 严重营养不良",26
-nutrition.prealbumin,营养.前白蛋白,Number,"前白蛋白(mg/L)。<br>**<200**: 营养不良<br>**术前优化**: 营养支持1-2周",120
-nutrition.bmi,营养.BMI,Number,体重指数(kg/m²),18.5
-nutrition.support,营养.营养支持,String,"**术前**: 营养不良者肠内营养<br>**术后**: 空肠营养管<br>**晚期**: 肠内/肠外营养",术前肠内营养支持2周
-nutrition.feeding,营养.喂养途径,String,"**口服**: 早期<br>**鼻肠管**: 围手术期<br>**空肠造瘘**: 长期营养支持<br>**肠外营养**: 肠梗阻",鼻肠管
-
-# 并发症
-complications.tef,并发症.气管食管瘘,Boolean,"**TEF**: 气管食管瘘<br>**严重并发症**: 进食呛咳、吸入性肺炎<br>**处理**: 支架、姑息治疗",false
-complications.perforation,并发症.穿孔,Boolean,"**自发穿孔**: 罕见<br>**医源性**: 内镜扩张、支架<br>**急诊**: 需立即处理",false
-complications.bleeding,并发症.出血,Boolean,"**肿瘤出血**: 侵犯大血管<br>**危及生命**: 主动脉瘘,大出血",false
-complications.aspiration,并发症.吸入性肺炎,Boolean,"**误吸**: 吞咽功能障碍<br>**肺炎**: 严重感染",false
-
-performanceStatus,体能状态.ECOG评分,Number,"**0**: 完全活动<br>**1**: 限制重体力<br>**2**: 生活自理<br>**3**: 有限自理<br>**4**: 完全失能",2
-
-notes,备注,String,其他重要临床信息,患者营养不良明显,已行鼻肠管置入营养支持
+Category,Field_Name,Chinese_Name,Data_Type,Unit,Valid_Range,LOINC_Code,Required,Description,Clinical_Significance
+Basic_Info,patient_id,患者ID,string,,,,,Y,唯一标识,患者追踪
+Basic_Info,diagnosis_date,诊断日期,date,,,,,Y,确诊时间,疾病起点
+Basic_Info,age,年龄,integer,years,18-120,,,Y,患者年龄,预后因素
+Basic_Info,gender,性别,categorical,,Male,Female,,,Y,性别,男性多见
+Risk_Factors,smoking_history,吸烟史,categorical,,Never,Former,Current,,,Y,从不/戒烟/现吸,主要危险因素
+Risk_Factors,alcohol_use,饮酒史,categorical,,None,Moderate,Heavy,,,Y,无/适度/重度,危险因素
+Risk_Factors,barrett_esophagus,Barrett食管,categorical,,No,Yes,,,N,无/有,腺癌前驱病变
+Histology,histologic_type,组织学类型,categorical,,Squamous_Cell_Carcinoma,Adenocarcinoma,Other,,,Y,鳞状细胞癌/腺癌/其他,中国鳞癌为主西方腺癌增多
+Histology,differentiation,分化程度,categorical,,Well,Moderate,Poor,Undifferentiated,,,Y,高/中/低/未分化,预后因素
+Tumor_Location,anatomic_location,解剖位置,categorical,,Cervical,Upper_Thoracic,Middle_Thoracic,Lower_Thoracic,GEJ,,,Y,颈段/胸上段/胸中段/胸下段/胃食管交界,治疗策略
+Tumor_Location,distance_from_incisors,距门齿距离,integer,cm,15-50,,,N,内镜测量距离,解剖定位
+Tumor_Location,tumor_length,肿瘤长度,decimal,cm,0-20,,,Y,纵向范围,分期和治疗
+TNM_Staging,clinical_t,临床T分期,categorical,,Tis,T1a,T1b,T2,T3,T4a,T4b,,,Y,Tis原位/T1a黏膜/T1b黏膜下/T2肌层/T3外膜/T4a侵犯邻近结构/T4b不可切除,浸润深度
+TNM_Staging,clinical_n,临床N分期,categorical,,N0,N1,N2,N3,,,Y,N0无/N1:1-2个/N2:3-6个/N3:≥7个,区域淋巴结
+TNM_Staging,clinical_m,临床M分期,categorical,,M0,M1,,,Y,M0无/M1有远处转移,远处转移
+TNM_Staging,tnm_stage,TNM总分期,categorical,,0,IA,IB,IIA,IIB,IIIA,IIIB,IVA,IVB,,,Y,AJCC 8th,预后分层
+Performance,ecog_ps,ECOG体能状态,integer,,0-5,89247-1,,Y,0-5分,治疗耐受性
+Nutrition,weight_loss,体重下降,decimal,kg,0-50,,,Y,6个月体重丢失,营养状态
+Nutrition,dysphagia_grade,吞咽困难分级,categorical,,Grade_0,Grade_1,Grade_2,Grade_3,Grade_4,,,Y,0无/1固体/2半流质/3流质/4完全梗阻,症状严重度
+Labs,scc_ag,鳞状细胞癌抗原,decimal,ng/mL,0-100,34677-8,,N,SCC,鳞癌标志物
+Labs,cea,癌胚抗原,decimal,ng/mL,0-1000,2039-6,,N,CEA,腺癌标志物
+Labs,ca199,糖类抗原199,decimal,U/mL,0-10000,24108-7,,N,CA19-9,肿瘤标志物
+Labs,albumin,白蛋白,decimal,g/L,0-100,1751-7,,Y,ALB,营养状态
+Imaging,endoscopy_findings,内镜表现,string,,,,,Y,病灶描述形态,内镜诊断
+Imaging,eus_depth,超声内镜浸润深度,categorical,,T1,T2,T3,T4,,,N,浸润层次,精确T分期
+Imaging,ct_findings,CT表现,string,,,,,Y,食管壁增厚/淋巴结,影像学特征
+Imaging,pet_suv_max,PET最大摄取值,decimal,,0-50,82668-8,,N,SUV max,代谢活性和远处转移筛查
+Treatment_Endoscopic,endoscopic_therapy,内镜治疗,categorical,,None,EMR,ESD,,,N,无/内镜黏膜切除/内镜黏膜下剥离,早期癌治疗
+Treatment_Surgery,surgical_approach,手术方式,categorical,,None,Ivor_Lewis,McKeown,Transhiatal,MIE,,,N,无/Ivor Lewis/McKeown三切口/经裂孔/微创MIE,根治性手术
+Treatment_Surgery,surgical_margins,切缘状态,categorical,,R0,R1,R2,,,N,阴性/镜下阳性/肉眼阳性,完全切除
+Treatment_Surgery,lymph_nodes_examined,淋巴结检查数,integer,,0-100,,,N,病理检查淋巴结数,≥15个准确分期
+Treatment_Surgery,lymph_nodes_positive,阳性淋巴结数,integer,,0-100,,,N,转移淋巴结数,预后因素
+Treatment_Neoadjuvant,neoadjuvant_therapy,新辅助治疗,categorical,,None,Chemotherapy,Chemoradiation,,,N,无/化疗/放化疗,CROSS方案标准
+Treatment_Neoadjuvant,neoadjuvant_response,新辅助反应,categorical,,Not_Applicable,Complete_Pathologic_Response,Partial_Response,No_Response,,,N,不适用/病理完全缓解pCR/部分缓解/无反应,预后预测
+Treatment_Chemotherapy,chemotherapy_regimen,化疗方案,categorical,,None,Fluoropyrimidine_Platinum,Paclitaxel_Carboplatin,,,N,无/氟尿嘧啶+铂类/紫杉醇+卡铂,CROSS方案
+Treatment_Radiation,radiation_therapy,放疗,categorical,,None,Definitive_CRT,Neoadjuvant_CRT,Palliative,,,N,无/根治性放化疗/新辅助放化疗/姑息性,放疗目的
+Treatment_Radiation,radiation_dose,放疗剂量,decimal,Gy,0-70,,,N,总剂量,治疗强度
+Treatment_Advanced,palliative_therapy,姑息治疗,categorical,,None,Stent,Feeding_Tube,,,N,无/食管支架/喂养管,症状缓解
+Treatment_Immunotherapy,immunotherapy,免疫治疗,categorical,,None,Nivolumab,Pembrolizumab,Camrelizumab,,,N,无/纳武利尤单抗/帕博利珠单抗/卡瑞利珠单抗,晚期二线或一线联合
+Response,treatment_response,治疗反应,categorical,,Complete_Response,Partial_Response,Stable_Disease,Progressive_Disease,,,N,完全缓解/部分缓解/疾病稳定/疾病进展,RECIST标准
+Complications,anastomotic_leak,吻合口瘘,boolean,,,,,N,术后吻合口瘘,严重并发症
+Complications,recurrent_laryngeal_nerve_injury,喉返神经损伤,boolean,,,,,N,术中神经损伤,功能并发症
+Follow_Up,recurrence,复发,categorical,,No,Local,Regional,Distant,,,N,无/局部/区域/远处,复发模式
+Follow_Up,disease_free_survival,无病生存期,integer,months,0-200,,,N,DFS,预后指标
+Follow_Up,overall_survival,总生存期,integer,months,0-200,,,N,OS,预后指标
+Report,oncologist,肿瘤科医师,string,,,,,Y,主管医师,责任医师
+Report,report_date,报告日期,date,,,,,Y,报告时间,文档记录

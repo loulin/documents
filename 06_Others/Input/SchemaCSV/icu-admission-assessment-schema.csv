@@ -1,0 +1,35 @@
+Category,Field_Name,Chinese_Name,Data_Type,Unit,Valid_Range,LOINC_Code,Required,Description,Clinical_Significance
+Basic_Info,patient_id,患者ID,string,,,,,Y,唯一标识,患者追踪
+Basic_Info,icu_admission_date,ICU入住日期,datetime,,,,,Y,入ICU时间,起始时间
+Basic_Info,age,年龄,integer,years,0-120,,,Y,患者年龄,预后因素
+Basic_Info,gender,性别,categorical,,Male,Female,,,Y,性别,流行病学
+Admission,admission_diagnosis,入ICU诊断,string,,,,,Y,入ICU主要诊断,原发病
+Admission,admission_source,入ICU来源,categorical,,Emergency_Department,Operating_Room,Ward,Transfer,,,Y,急诊/手术室/病房/转院,来源
+Severity_Scores,apache_ii_score,APACHE II评分,integer,,0-71,9279-1,,Y,急性生理慢性健康评分,病死率预测
+Severity_Scores,sofa_score,SOFA评分,integer,,0-24,96790-1,,Y,序贯器官衰竭评分,器官功能
+Severity_Scores,glasgow_coma_scale,GCS评分,integer,,3-15,9269-2,,Y,意识状态,神经功能
+Vital_Signs,heart_rate,心率,integer,bpm,0-300,8867-4,,Y,心率,循环状态
+Vital_Signs,sbp,收缩压,integer,mmHg,0-300,8480-6,,Y,收缩压,血流动力学
+Vital_Signs,map,平均动脉压,integer,mmHg,0-200,8478-0,,Y,MAP,器官灌注
+Vital_Signs,temperature,体温,decimal,°C,30-43,8310-5,,Y,体温,发热/低体温
+Vital_Signs,spo2,血氧饱和度,decimal,%,0-100,59408-5,,Y,SpO2,氧合
+Respiratory_Support,mechanical_ventilation,机械通气,boolean,,,,,Y,有创通气,呼吸支持
+Respiratory_Support,ventilator_mode,通气模式,categorical,,None,AC,SIMV,PSV,PRVC,,,N,辅助控制/同步间歇/压力支持/压力调节容量控制,通气策略
+Respiratory_Support,fio2,吸氧浓度,decimal,%,21-100,3150-0,,Y,FiO2,氧供
+Respiratory_Support,peep,呼气末正压,integer,cmH2O,0-25,20079-0,,Y,PEEP,肺复张
+Hemodynamic_Support,vasopressors,血管升压药,boolean,,,,,Y,缩血管药物,循环支持
+Hemodynamic_Support,norepinephrine,去甲肾上腺素,boolean,,,,,Y,最常用升压药,一线药物
+Hemodynamic_Support,inotropes,正性肌力药,boolean,,,,,N,多巴酚丁胺,心功能不全
+Labs,lactate,乳酸,decimal,mmol/L,0-20,2524-7,,Y,Lac,组织灌注
+Labs,creatinine,肌酐,decimal,μmol/L,0-2000,2160-0,,Y,Cr,肾功能
+Labs,bilirubin,总胆红素,decimal,μmol/L,0-500,1975-2,,Y,TBil,肝功能
+Organ_Support,renal_replacement,肾脏替代治疗,boolean,,,,,Y,CRRT/HD,AKI
+Organ_Support,ecmo,体外膜肺氧合,boolean,,,,,N,ECMO,极重度ARDS
+Complications,sepsis,脓毒症,boolean,,,,,Y,感染+器官功能障碍,常见并发症
+Complications,ards,急性呼吸窘迫综合征,boolean,,,,,Y,ARDS,Berlin标准
+Complications,aki,急性肾损伤,boolean,,,,,Y,AKI,KDIGO分期
+Outcome,icu_mortality,ICU死亡,boolean,,,,,Y,ICU内死亡,ICU病死率
+Outcome,icu_los,ICU住院天数,integer,days,0-365,,,N,ICU LOS,住院时长
+Outcome,ventilator_days,通气天数,integer,days,0-365,,,N,机械通气天数,呼吸机依赖
+Report,intensivist,重症医师,string,,,,,Y,ICU医师,责任医师
+Report,report_date,报告日期,date,,,,,Y,报告时间,文档记录

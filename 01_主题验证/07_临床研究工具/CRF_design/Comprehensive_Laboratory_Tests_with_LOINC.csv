@@ -1,0 +1,156 @@
+﻿panel_id,panel_name,domain_code,icd10_codes,test_count,test_id,test_name,test_name_en,loinc_code,primary_unit,reference_range,frequency,priority
+01_diabetes_metabolism,糖尿病及糖代谢检测面板,DM,"['E10', 'E11', 'E12', 'E13', 'E14']",25,DM001,空腹血糖,Fasting Glucose,1558-6,mmol/L,3.9-6.1 mmol/L,每3个月,必需
+01_diabetes_metabolism,糖尿病及糖代谢检测面板,DM,"['E10', 'E11', 'E12', 'E13', 'E14']",25,DM002,餐后2小时血糖,2-Hour Postprandial Glucose,20438-8,mmol/L,<7.8 mmol/L,每3个月,必需
+01_diabetes_metabolism,糖尿病及糖代谢检测面板,DM,"['E10', 'E11', 'E12', 'E13', 'E14']",25,DM003,糖化血红蛋白,HbA1c,4548-4,%,<7.0%,每3个月,必需
+01_diabetes_metabolism,糖尿病及糖代谢检测面板,DM,"['E10', 'E11', 'E12', 'E13', 'E14']",25,DM004,糖化白蛋白,Glycated Albumin,1834-7,%,11.0-16.0%,每月,推荐
+01_diabetes_metabolism,糖尿病及糖代谢检测面板,DM,"['E10', 'E11', 'E12', 'E13', 'E14']",25,DM005,"1,5-脱水葡萄糖醇","1,5-Anhydroglucitol",33743-9,μg/mL,14.0-28.0 μg/mL,按需,可选
+01_diabetes_metabolism,糖尿病及糖代谢检测面板,DM,"['E10', 'E11', 'E12', 'E13', 'E14']",25,DM006,空腹胰岛素,Fasting Insulin,20448-7,mIU/L,2.6-24.9 mIU/L,每6个月,推荐
+01_diabetes_metabolism,糖尿病及糖代谢检测面板,DM,"['E10', 'E11', 'E12', 'E13', 'E14']",25,DM007,空腹C肽,Fasting C-peptide,1986-9,nmol/L,0.3-0.6 nmol/L,每6个月,推荐
+01_diabetes_metabolism,糖尿病及糖代谢检测面板,DM,"['E10', 'E11', 'E12', 'E13', 'E14']",25,DM008,餐后C肽,Postprandial C-peptide,1987-7,nmol/L,1.0-3.0 nmol/L,按需,可选
+01_diabetes_metabolism,糖尿病及糖代谢检测面板,DM,"['E10', 'E11', 'E12', 'E13', 'E14']",25,DM009,胰岛素抗体,Insulin Autoantibodies,8086-3,nU/mL,<7.0 nU/mL,初诊,推荐
+01_diabetes_metabolism,糖尿病及糖代谢检测面板,DM,"['E10', 'E11', 'E12', 'E13', 'E14']",25,DM010,谷氨酸脱羧酶抗体,Anti-GAD,13926-0,IU/mL,<1.0 IU/mL,初诊,推荐
+01_diabetes_metabolism,糖尿病及糖代谢检测面板,DM,"['E10', 'E11', 'E12', 'E13', 'E14']",25,DM011,蛋白酪氨酸磷酸酶抗体,Anti-IA2,31835-7,U/mL,<0.75 U/mL,初诊,推荐
+01_diabetes_metabolism,糖尿病及糖代谢检测面板,DM,"['E10', 'E11', 'E12', 'E13', 'E14']",25,DM012,锌转运蛋白8抗体,Anti-ZnT8,62301-5,U/mL,<15.0 U/mL,初诊,可选
+01_diabetes_metabolism,糖尿病及糖代谢检测面板,DM,"['E10', 'E11', 'E12', 'E13', 'E14']",25,DM013,胰岛细胞抗体,Islet Cell Antibodies,13927-8,JDF units,<2.5 JDF units,初诊,可选
+01_diabetes_metabolism,糖尿病及糖代谢检测面板,DM,"['E10', 'E11', 'E12', 'E13', 'E14']",25,DM014,果糖胺,Fructosamine,2752-4,μmol/L,205-285 μmol/L,每月,可选
+01_diabetes_metabolism,糖尿病及糖代谢检测面板,DM,"['E10', 'E11', 'E12', 'E13', 'E14']",25,DM015,乳酸,Lactate,2524-7,mmol/L,0.5-2.2 mmol/L,按需,可选
+01_diabetes_metabolism,糖尿病及糖代谢检测面板,DM,"['E10', 'E11', 'E12', 'E13', 'E14']",25,DM016,酮体,Ketones,2514-8,mmol/L,<0.6 mmol/L,按需,推荐
+01_diabetes_metabolism,糖尿病及糖代谢检测面板,DM,"['E10', 'E11', 'E12', 'E13', 'E14']",25,DM017,游离脂肪酸,Free Fatty Acids,33747-0,mmol/L,0.1-0.6 mmol/L,按需,可选
+01_diabetes_metabolism,糖尿病及糖代谢检测面板,DM,"['E10', 'E11', 'E12', 'E13', 'E14']",25,DM018,胰高血糖素,Glucagon,2963-7,pmol/L,50-150 pmol/L,研究用,可选
+01_diabetes_metabolism,糖尿病及糖代谢检测面板,DM,"['E10', 'E11', 'E12', 'E13', 'E14']",25,DM019,胰岛素原,Proinsulin,10401-7,pmol/L,1.1-11.0 pmol/L,研究用,可选
+01_diabetes_metabolism,糖尿病及糖代谢检测面板,DM,"['E10', 'E11', 'E12', 'E13', 'E14']",25,DM020,完整胰岛素原,Intact Proinsulin,33747-0,pmol/L,<5.0 pmol/L,研究用,可选
+01_diabetes_metabolism,糖尿病及糖代谢检测面板,DM,"['E10', 'E11', 'E12', 'E13', 'E14']",25,DM021,OGTT 0.5h血糖,OGTT 0.5h Glucose,33743-9,mmol/L,<10.0 mmol/L,按需,可选
+01_diabetes_metabolism,糖尿病及糖代谢检测面板,DM,"['E10', 'E11', 'E12', 'E13', 'E14']",25,DM022,OGTT 1h血糖,OGTT 1h Glucose,20436-2,mmol/L,<10.0 mmol/L,按需,可选
+01_diabetes_metabolism,糖尿病及糖代谢检测面板,DM,"['E10', 'E11', 'E12', 'E13', 'E14']",25,DM023,OGTT 3h血糖,OGTT 3h Glucose,6777-3,mmol/L,<7.8 mmol/L,按需,可选
+01_diabetes_metabolism,糖尿病及糖代谢检测面板,DM,"['E10', 'E11', 'E12', 'E13', 'E14']",25,DM024,口服葡萄糖耐量试验胰岛素释放曲线,OGTT Insulin Response,6883-9,mIU/L,变量,按需,可选
+01_diabetes_metabolism,糖尿病及糖代谢检测面板,DM,"['E10', 'E11', 'E12', 'E13', 'E14']",25,DM025,连续血糖监测数据,Continuous Glucose Monitoring,33747-0,mmol/L,3.9-10.0 mmol/L,持续,推荐
+02_lipid_metabolism,血脂代谢检测面板,LM,['E78'],18,LM001,总胆固醇,Total Cholesterol,2093-3,mmol/L,<5.2 mmol/L,每年,必需
+02_lipid_metabolism,血脂代谢检测面板,LM,['E78'],18,LM002,甘油三酯,Triglycerides,2571-8,mmol/L,<1.7 mmol/L,每年,必需
+02_lipid_metabolism,血脂代谢检测面板,LM,['E78'],18,LM003,高密度脂蛋白胆固醇,HDL Cholesterol,2085-9,mmol/L,>1.0 mmol/L (男); >1.3 mmol/L (女),每年,必需
+02_lipid_metabolism,血脂代谢检测面板,LM,['E78'],18,LM004,低密度脂蛋白胆固醇,LDL Cholesterol,18262-6,mmol/L,<3.4 mmol/L,每年,必需
+02_lipid_metabolism,血脂代谢检测面板,LM,['E78'],18,LM005,极低密度脂蛋白胆固醇,VLDL Cholesterol,13457-7,mmol/L,0.13-0.65 mmol/L,按需,可选
+02_lipid_metabolism,血脂代谢检测面板,LM,['E78'],18,LM006,非HDL胆固醇,Non-HDL Cholesterol,43396-1,mmol/L,<4.1 mmol/L,每年,推荐
+02_lipid_metabolism,血脂代谢检测面板,LM,['E78'],18,LM007,载脂蛋白A1,Apolipoprotein A1,1869-7,g/L,1.0-1.6 g/L,每年,推荐
+02_lipid_metabolism,血脂代谢检测面板,LM,['E78'],18,LM008,载脂蛋白B,Apolipoprotein B,1884-6,g/L,0.6-1.2 g/L,每年,推荐
+02_lipid_metabolism,血脂代谢检测面板,LM,['E78'],18,LM009,脂蛋白a,Lipoprotein(a),10835-7,g/L,<0.3 g/L,基线一次,推荐
+02_lipid_metabolism,血脂代谢检测面板,LM,['E78'],18,LM010,小而密LDL,Small Dense LDL,33747-0,mg/dL,<50 mg/dL,按需,可选
+02_lipid_metabolism,血脂代谢检测面板,LM,['E78'],18,LM011,氧化低密度脂蛋白,Oxidized LDL,33747-0,U/L,<60 U/L,研究用,可选
+02_lipid_metabolism,血脂代谢检测面板,LM,['E78'],18,LM012,磷脂酶A2,Phospholipase A2,33026-9,ng/mL,<200 ng/mL,按需,可选
+02_lipid_metabolism,血脂代谢检测面板,LM,['E78'],18,LM013,胆固醇7α-羟化酶,Cholesterol 7α-hydroxylase,33747-0,pg/mL,变量,研究用,可选
+02_lipid_metabolism,血脂代谢检测面板,LM,['E78'],18,LM014,脂蛋白电泳,Lipoprotein Electrophoresis,24320-4,%,变量,按需,可选
+02_lipid_metabolism,血脂代谢检测面板,LM,['E78'],18,LM015,胆酸,Bile Acids,1925-7,μmol/L,<10 μmol/L,按需,可选
+02_lipid_metabolism,血脂代谢检测面板,LM,['E78'],18,LM016,植物固醇,Plant Sterols,33747-0,mg/dL,<2.0 mg/dL,按需,可选
+02_lipid_metabolism,血脂代谢检测面板,LM,['E78'],18,LM017,胆固醇吸收标志物,Cholesterol Absorption Markers,33747-0,μg/mL,变量,研究用,可选
+02_lipid_metabolism,血脂代谢检测面板,LM,['E78'],18,LM018,胆固醇合成标志物,Cholesterol Synthesis Markers,33747-0,ng/mL,变量,研究用,可选
+03_liver_function,肝功能检测面板,LF,['K70-K77'],15,LF001,丙氨酸氨基转移酶,ALT,1742-6,U/L,男 9-50 U/L; 女 7-40 U/L,每6个月,必需
+03_liver_function,肝功能检测面板,LF,['K70-K77'],15,LF002,天门冬氨酸氨基转移酶,AST,1920-8,U/L,男 15-40 U/L; 女 13-35 U/L,每6个月,必需
+03_liver_function,肝功能检测面板,LF,['K70-K77'],15,LF003,γ-谷氨酰转移酶,GGT,2324-2,U/L,男 10-60 U/L; 女 7-45 U/L,每6个月,必需
+03_liver_function,肝功能检测面板,LF,['K70-K77'],15,LF004,碱性磷酸酶,ALP,6768-6,U/L,40-150 U/L,每6个月,必需
+03_liver_function,肝功能检测面板,LF,['K70-K77'],15,LF005,总胆红素,Total Bilirubin,1975-2,μmol/L,3.4-20.5 μmol/L,每6个月,必需
+03_liver_function,肝功能检测面板,LF,['K70-K77'],15,LF006,直接胆红素,Direct Bilirubin,1968-7,μmol/L,<8.6 μmol/L,按需,推荐
+03_liver_function,肝功能检测面板,LF,['K70-K77'],15,LF007,间接胆红素,Indirect Bilirubin,1971-1,μmol/L,1.7-13.7 μmol/L,按需,推荐
+03_liver_function,肝功能检测面板,LF,['K70-K77'],15,LF008,血清白蛋白,Albumin,1751-7,g/L,35-55 g/L,每6个月,必需
+03_liver_function,肝功能检测面板,LF,['K70-K77'],15,LF009,总蛋白,Total Protein,2885-2,g/L,60-83 g/L,每6个月,推荐
+03_liver_function,肝功能检测面板,LF,['K70-K77'],15,LF010,白蛋白/球蛋白比值,Albumin/Globulin Ratio,1759-0,比值,1.2-2.4,按需,可选
+03_liver_function,肝功能检测面板,LF,['K70-K77'],15,LF011,前白蛋白,Prealbumin,2862-1,mg/L,200-400 mg/L,按需,可选
+03_liver_function,肝功能检测面板,LF,['K70-K77'],15,LF012,胆汁酸,Bile Acids,1925-7,μmol/L,<10 μmol/L,按需,可选
+03_liver_function,肝功能检测面板,LF,['K70-K77'],15,LF013,5'-核苷酸酶,5'-Nucleotidase,1799-2,U/L,0-17 U/L,按需,可选
+03_liver_function,肝功能检测面板,LF,['K70-K77'],15,LF014,亮氨酸氨肽酶,Leucine Aminopeptidase,11045-0,U/L,男 18-55 U/L; 女 15-45 U/L,按需,可选
+03_liver_function,肝功能检测面板,LF,['K70-K77'],15,LF015,胆碱酯酶,Cholinesterase,2325-9,U/L,5320-12920 U/L,按需,可选
+04_kidney_function,肾功能检测面板,KF,['N00-N29'],14,KF001,血肌酐,Serum Creatinine,2160-0,μmol/L,男 62-115 μmol/L; 女 53-97 μmol/L,每3个月,必需
+04_kidney_function,肾功能检测面板,KF,['N00-N29'],14,KF002,血尿素氮,Blood Urea Nitrogen,3094-0,mmol/L,2.9-8.2 mmol/L,每3个月,必需
+04_kidney_function,肾功能检测面板,KF,['N00-N29'],14,KF003,尿酸,Uric Acid,3084-1,μmol/L,男 208-428 μmol/L; 女 155-357 μmol/L,每3个月,必需
+04_kidney_function,肾功能检测面板,KF,['N00-N29'],14,KF004,估算肾小球滤过率,eGFR,33914-3,mL/min/1.73m²,>90 mL/min/1.73m²,每3个月,必需
+04_kidney_function,肾功能检测面板,KF,['N00-N29'],14,KF005,尿微量白蛋白,Urine Microalbumin,14957-5,mg/L,<20 mg/L,每年,必需
+04_kidney_function,肾功能检测面板,KF,['N00-N29'],14,KF006,尿白蛋白/肌酐比,Albumin/Creatinine Ratio,14959-1,mg/g,<30 mg/g,每年,必需
+04_kidney_function,肾功能检测面板,KF,['N00-N29'],14,KF007,胱抑素C,Cystatin C,33950-8,mg/L,0.70-1.21 mg/L,按需,推荐
+04_kidney_function,肾功能检测面板,KF,['N00-N29'],14,KF008,β2微球蛋白,β2-Microglobulin,1952-1,mg/L,1.0-2.4 mg/L,按需,可选
+04_kidney_function,肾功能检测面板,KF,['N00-N29'],14,KF009,尿转铁蛋白,Urine Transferrin,3174-0,mg/L,<2.0 mg/L,按需,可选
+04_kidney_function,肾功能检测面板,KF,['N00-N29'],14,KF010,N-乙酰-β-D-氨基葡萄糖苷酶,NAG,33747-0,U/L,<11.5 U/L,按需,可选
+04_kidney_function,肾功能检测面板,KF,['N00-N29'],14,KF011,肾损伤分子1,KIM-1,33747-0,pg/mL,<2380 pg/mL,研究用,可选
+04_kidney_function,肾功能检测面板,KF,['N00-N29'],14,KF012,中性粒细胞明胶酶相关脂质运载蛋白,NGAL,33747-0,ng/mL,<150 ng/mL,研究用,可选
+04_kidney_function,肾功能检测面板,KF,['N00-N29'],14,KF013,24小时尿蛋白定量,24h Urine Protein,2888-6,g/24h,<0.15 g/24h,按需,推荐
+04_kidney_function,肾功能检测面板,KF,['N00-N29'],14,KF014,尿肌酐清除率,Creatinine Clearance,2164-2,mL/min,>80 mL/min,按需,可选
+05_cardiovascular_markers,心血管疾病标志物面板,CV,"['I20-I25', 'I30-I52']",16,CV001,肌钙蛋白I,Troponin I,10839-9,ng/mL,<0.04 ng/mL,急诊按需,必需
+05_cardiovascular_markers,心血管疾病标志物面板,CV,"['I20-I25', 'I30-I52']",16,CV002,肌钙蛋白T,Troponin T,6598-7,ng/mL,<0.014 ng/mL,急诊按需,必需
+05_cardiovascular_markers,心血管疾病标志物面板,CV,"['I20-I25', 'I30-I52']",16,CV003,肌酸激酶同工酶,CK-MB,13969-1,ng/mL,<6.3 ng/mL,按需,推荐
+05_cardiovascular_markers,心血管疾病标志物面板,CV,"['I20-I25', 'I30-I52']",16,CV004,肌红蛋白,Myoglobin,30934-4,ng/mL,男 28-72 ng/mL; 女 25-58 ng/mL,按需,可选
+05_cardiovascular_markers,心血管疾病标志物面板,CV,"['I20-I25', 'I30-I52']",16,CV005,NT-proBNP,NT-proBNP,33762-6,pg/mL,<125 pg/mL,按需,推荐
+05_cardiovascular_markers,心血管疾病标志物面板,CV,"['I20-I25', 'I30-I52']",16,CV006,B型利钠肽,BNP,30522-7,pg/mL,<100 pg/mL,按需,推荐
+05_cardiovascular_markers,心血管疾病标志物面板,CV,"['I20-I25', 'I30-I52']",16,CV007,超敏C反应蛋白,hs-CRP,30522-7,mg/L,<1.0 mg/L,每年,推荐
+05_cardiovascular_markers,心血管疾病标志物面板,CV,"['I20-I25', 'I30-I52']",16,CV008,同型半胱氨酸,Homocysteine,4481-8,μmol/L,<15 μmol/L,每年,推荐
+05_cardiovascular_markers,心血管疾病标志物面板,CV,"['I20-I25', 'I30-I52']",16,CV009,纤维蛋白原,Fibrinogen,3255-7,g/L,2.0-4.0 g/L,按需,可选
+05_cardiovascular_markers,心血管疾病标志物面板,CV,"['I20-I25', 'I30-I52']",16,CV010,D-二聚体,D-Dimer,48066-5,mg/L,<0.5 mg/L,按需,可选
+05_cardiovascular_markers,心血管疾病标志物面板,CV,"['I20-I25', 'I30-I52']",16,CV011,脂蛋白磷脂酶A2,Lp-PLA2,33026-9,ng/mL,<200 ng/mL,按需,可选
+05_cardiovascular_markers,心血管疾病标志物面板,CV,"['I20-I25', 'I30-I52']",16,CV012,胱抑素C,Cystatin C,33950-8,mg/L,0.70-1.21 mg/L,按需,可选
+05_cardiovascular_markers,心血管疾病标志物面板,CV,"['I20-I25', 'I30-I52']",16,CV013,可溶性ST2,sST2,33747-0,ng/mL,<35 ng/mL,研究用,可选
+05_cardiovascular_markers,心血管疾病标志物面板,CV,"['I20-I25', 'I30-I52']",16,CV014,半乳糖凝集素3,Galectin-3,33747-0,ng/mL,<17.8 ng/mL,研究用,可选
+05_cardiovascular_markers,心血管疾病标志物面板,CV,"['I20-I25', 'I30-I52']",16,CV015,生长分化因子15,GDF-15,33747-0,pg/mL,<1200 pg/mL,研究用,可选
+05_cardiovascular_markers,心血管疾病标志物面板,CV,"['I20-I25', 'I30-I52']",16,CV016,心型脂肪酸结合蛋白,H-FABP,33747-0,ng/mL,<6.2 ng/mL,研究用,可选
+06_thyroid_function,甲状腺功能检测面板,TF,['E00-E07'],12,TF001,促甲状腺激素,TSH,3016-3,mIU/L,0.27-4.2 mIU/L,每年,必需
+06_thyroid_function,甲状腺功能检测面板,TF,['E00-E07'],12,TF002,游离甲状腺素,Free T4,3024-7,pmol/L,12.0-22.0 pmol/L,按TSH结果,必需
+06_thyroid_function,甲状腺功能检测面板,TF,['E00-E07'],12,TF003,游离三碘甲状腺原氨酸,Free T3,3051-0,pmol/L,3.1-6.8 pmol/L,按需,推荐
+06_thyroid_function,甲状腺功能检测面板,TF,['E00-E07'],12,TF004,总甲状腺素,Total T4,3053-6,nmol/L,66-181 nmol/L,按需,可选
+06_thyroid_function,甲状腺功能检测面板,TF,['E00-E07'],12,TF005,总三碘甲状腺原氨酸,Total T3,3049-4,nmol/L,1.3-3.1 nmol/L,按需,可选
+06_thyroid_function,甲状腺功能检测面板,TF,['E00-E07'],12,TF006,反T3,Reverse T3,3052-8,ng/dL,9.2-24.1 ng/dL,按需,可选
+06_thyroid_function,甲状腺功能检测面板,TF,['E00-E07'],12,TF007,抗甲状腺过氧化物酶抗体,Anti-TPO,11571-5,IU/mL,<34 IU/mL,初诊一次,推荐
+06_thyroid_function,甲状腺功能检测面板,TF,['E00-E07'],12,TF008,抗甲状腺球蛋白抗体,Anti-Tg,8099-6,IU/mL,<115 IU/mL,甲癌监测,推荐
+06_thyroid_function,甲状腺功能检测面板,TF,['E00-E07'],12,TF009,TSH受体抗体,TRAb,5385-0,IU/L,<1.75 IU/L,Graves病,推荐
+06_thyroid_function,甲状腺功能检测面板,TF,['E00-E07'],12,TF010,甲状腺球蛋白,Thyroglobulin,3013-0,ng/mL,1.4-78.0 ng/mL,甲癌监测,可选
+06_thyroid_function,甲状腺功能检测面板,TF,['E00-E07'],12,TF011,降钙素,Calcitonin,17861-6,pg/mL,男 <11.5 pg/mL; 女 <4.6 pg/mL,按需,可选
+06_thyroid_function,甲状腺功能检测面板,TF,['E00-E07'],12,TF012,甲状腺结合球蛋白,TBG,3016-3,mg/L,13-30 mg/L,按需,可选
+07_hematology,血液学检测面板,HM,['D50-D89'],20,HM001,血红蛋白,Hemoglobin,718-7,g/L,男 120-160 g/L; 女 110-150 g/L,每年,必需
+07_hematology,血液学检测面板,HM,['D50-D89'],20,HM002,红细胞计数,RBC Count,789-8,×10¹²/L,男 4.0-5.5×10¹²/L; 女 3.5-5.0×10¹²/L,每年,必需
+07_hematology,血液学检测面板,HM,['D50-D89'],20,HM003,白细胞计数,WBC Count,6690-2,×10⁹/L,4.0-10.0×10⁹/L,每年,必需
+07_hematology,血液学检测面板,HM,['D50-D89'],20,HM004,血小板计数,Platelet Count,777-3,×10⁹/L,100-300×10⁹/L,每年,必需
+07_hematology,血液学检测面板,HM,['D50-D89'],20,HM005,红细胞压积,Hematocrit,4544-3,%,男 40-54%; 女 37-47%,每年,推荐
+07_hematology,血液学检测面板,HM,['D50-D89'],20,HM006,平均红细胞体积,MCV,787-2,fL,80-100 fL,每年,推荐
+07_hematology,血液学检测面板,HM,['D50-D89'],20,HM007,平均红细胞血红蛋白含量,MCH,785-6,pg,27-34 pg,每年,推荐
+07_hematology,血液学检测面板,HM,['D50-D89'],20,HM008,平均红细胞血红蛋白浓度,MCHC,786-4,g/L,320-360 g/L,每年,推荐
+07_hematology,血液学检测面板,HM,['D50-D89'],20,HM009,红细胞分布宽度,RDW,788-0,%,11.5-14.5%,每年,推荐
+07_hematology,血液学检测面板,HM,['D50-D89'],20,HM010,中性粒细胞计数,Neutrophil Count,751-8,×10⁹/L,2.0-7.0×10⁹/L,按需,推荐
+07_hematology,血液学检测面板,HM,['D50-D89'],20,HM011,淋巴细胞计数,Lymphocyte Count,731-0,×10⁹/L,0.8-4.0×10⁹/L,按需,推荐
+07_hematology,血液学检测面板,HM,['D50-D89'],20,HM012,单核细胞计数,Monocyte Count,742-7,×10⁹/L,0.12-0.8×10⁹/L,按需,推荐
+07_hematology,血液学检测面板,HM,['D50-D89'],20,HM013,嗜酸性粒细胞计数,Eosinophil Count,711-2,×10⁹/L,0.02-0.52×10⁹/L,按需,可选
+07_hematology,血液学检测面板,HM,['D50-D89'],20,HM014,嗜碱性粒细胞计数,Basophil Count,704-7,×10⁹/L,0-0.1×10⁹/L,按需,可选
+07_hematology,血液学检测面板,HM,['D50-D89'],20,HM015,红细胞沉降率,ESR,4537-7,mm/h,男 <15 mm/h; 女 <20 mm/h,按需,可选
+07_hematology,血液学检测面板,HM,['D50-D89'],20,HM016,网织红细胞计数,Reticulocyte Count,4679-7,%,0.5-1.5%,按需,可选
+07_hematology,血液学检测面板,HM,['D50-D89'],20,HM017,血小板平均体积,MPV,32623-1,fL,7.4-12.5 fL,按需,可选
+07_hematology,血液学检测面板,HM,['D50-D89'],20,HM018,血小板分布宽度,PDW,32207-3,%,9-17%,按需,可选
+07_hematology,血液学检测面板,HM,['D50-D89'],20,HM019,血小板压积,PCT,32207-3,%,0.108-0.272%,按需,可选
+07_hematology,血液学检测面板,HM,['D50-D89'],20,HM020,异形淋巴细胞,Atypical Lymphocytes,13046-8,%,<2%,按需,可选
+08_iron_metabolism,铁代谢检测面板,IM,"['D50', 'E83.1']",8,IM001,血清铁,Serum Iron,2498-4,μmol/L,男 14-32 μmol/L; 女 11-29 μmol/L,按需,必需
+08_iron_metabolism,铁代谢检测面板,IM,"['D50', 'E83.1']",8,IM002,总铁结合力,TIBC,2500-7,μmol/L,45-82 μmol/L,按需,必需
+08_iron_metabolism,铁代谢检测面板,IM,"['D50', 'E83.1']",8,IM003,转铁蛋白饱和度,Transferrin Saturation,2502-3,%,20-50%,按需,必需
+08_iron_metabolism,铁代谢检测面板,IM,"['D50', 'E83.1']",8,IM004,血清铁蛋白,Ferritin,2276-4,μg/L,男 15-400 μg/L; 女 12-150 μg/L,按需,必需
+08_iron_metabolism,铁代谢检测面板,IM,"['D50', 'E83.1']",8,IM005,转铁蛋白,Transferrin,3034-6,g/L,2.0-4.0 g/L,按需,推荐
+08_iron_metabolism,铁代谢检测面板,IM,"['D50', 'E83.1']",8,IM006,可溶性转铁蛋白受体,sTfR,30248-9,mg/L,2.9-8.3 mg/L,按需,可选
+08_iron_metabolism,铁代谢检测面板,IM,"['D50', 'E83.1']",8,IM007,血红蛋白F,Hemoglobin F,4576-5,%,<2%,按需,可选
+08_iron_metabolism,铁代谢检测面板,IM,"['D50', 'E83.1']",8,IM008,血红蛋白A2,Hemoglobin A2,4551-8,%,2.5-3.5%,按需,可选
+09_vitamins_trace_elements,维生素及微量元素面板,VT,['E50-E64'],15,VT001,25羟维生素D,25(OH) Vitamin D,14635-7,nmol/L,75-250 nmol/L,每年,推荐
+09_vitamins_trace_elements,维生素及微量元素面板,VT,['E50-E64'],15,VT002,维生素B12,Vitamin B12,2132-9,pmol/L,156-672 pmol/L,每年,推荐
+09_vitamins_trace_elements,维生素及微量元素面板,VT,['E50-E64'],15,VT003,叶酸,Folate,2284-8,nmol/L,10-42.4 nmol/L,每年,推荐
+09_vitamins_trace_elements,维生素及微量元素面板,VT,['E50-E64'],15,VT004,维生素B1,Vitamin B1 (Thiamine),14056-6,nmol/L,66-200 nmol/L,按需,可选
+09_vitamins_trace_elements,维生素及微量元素面板,VT,['E50-E64'],15,VT005,维生素B6,Vitamin B6,4047-6,nmol/L,20-121 nmol/L,按需,可选
+09_vitamins_trace_elements,维生素及微量元素面板,VT,['E50-E64'],15,VT006,维生素A,Vitamin A,2919-5,μmol/L,1.05-2.8 μmol/L,按需,可选
+09_vitamins_trace_elements,维生素及微量元素面板,VT,['E50-E64'],15,VT007,维生素E,Vitamin E,13965-9,μmol/L,12-46 μmol/L,按需,可选
+09_vitamins_trace_elements,维生素及微量元素面板,VT,['E50-E64'],15,VT008,维生素C,Vitamin C,33747-0,μmol/L,23-85 μmol/L,按需,可选
+09_vitamins_trace_elements,维生素及微量元素面板,VT,['E50-E64'],15,VT009,血清锌,Serum Zinc,3501-8,μmol/L,10.7-22.9 μmol/L,按需,可选
+09_vitamins_trace_elements,维生素及微量元素面板,VT,['E50-E64'],15,VT010,血清铜,Serum Copper,2500-7,μmol/L,11-22 μmol/L,按需,可选
+09_vitamins_trace_elements,维生素及微量元素面板,VT,['E50-E64'],15,VT011,血清硒,Serum Selenium,2892-8,μmol/L,0.8-2.0 μmol/L,按需,可选
+09_vitamins_trace_elements,维生素及微量元素面板,VT,['E50-E64'],15,VT012,血清镁,Serum Magnesium,2601-3,mmol/L,0.75-1.25 mmol/L,按需,推荐
+09_vitamins_trace_elements,维生素及微量元素面板,VT,['E50-E64'],15,VT013,同型半胱氨酸,Homocysteine,4481-8,μmol/L,<15 μmol/L,按需,推荐
+09_vitamins_trace_elements,维生素及微量元素面板,VT,['E50-E64'],15,VT014,甲基丙二酸,Methylmalonic Acid,25428-9,nmol/L,<370 nmol/L,按需,可选
+09_vitamins_trace_elements,维生素及微量元素面板,VT,['E50-E64'],15,VT015,全血硫胺素,Whole Blood Thiamine,33747-0,nmol/L,70-180 nmol/L,按需,可选
+10_bone_metabolism,骨代谢检测面板,BM,['M80-M85'],12,BM001,血清钙,Serum Calcium,17861-6,mmol/L,2.20-2.65 mmol/L,每年,必需
+10_bone_metabolism,骨代谢检测面板,BM,['M80-M85'],12,BM002,血清磷,Serum Phosphate,2777-1,mmol/L,0.81-1.45 mmol/L,每年,必需
+10_bone_metabolism,骨代谢检测面板,BM,['M80-M85'],12,BM003,碱性磷酸酶,Alkaline Phosphatase,6768-6,U/L,40-150 U/L,每年,推荐
+10_bone_metabolism,骨代谢检测面板,BM,['M80-M85'],12,BM004,甲状旁腺素,PTH,2731-8,pg/mL,15-65 pg/mL,按需,推荐
+10_bone_metabolism,骨代谢检测面板,BM,['M80-M85'],12,BM005,25羟维生素D,25(OH) Vitamin D,14635-7,nmol/L,75-250 nmol/L,每年,推荐
+10_bone_metabolism,骨代谢检测面板,BM,['M80-M85'],12,BM006,"1,25二羟维生素D","1,25(OH)2 Vitamin D",1918-2,pmol/L,60-108 pmol/L,按需,可选
+10_bone_metabolism,骨代谢检测面板,BM,['M80-M85'],12,BM007,降钙素,Calcitonin,17861-6,pg/mL,男 <11.5 pg/mL; 女 <4.6 pg/mL,按需,可选
+10_bone_metabolism,骨代谢检测面板,BM,['M80-M85'],12,BM008,骨特异性碱性磷酸酶,Bone ALP,15348-8,μg/L,男 15-41.3 μg/L; 女 11.6-29.6 μg/L,按需,可选
+10_bone_metabolism,骨代谢检测面板,BM,['M80-M85'],12,BM009,骨钙素,Osteocalcin,30086-3,ng/mL,男 14-42 ng/mL; 女 15-46 ng/mL,按需,可选
+10_bone_metabolism,骨代谢检测面板,BM,['M80-M85'],12,BM010,I型胶原羧基端肽,CTX,30832-2,pg/mL,男 <584 pg/mL; 女 <573 pg/mL,按需,可选
+10_bone_metabolism,骨代谢检测面板,BM,['M80-M85'],12,BM011,I型前胶原氨基端前肽,P1NP,33747-0,μg/L,男 20-76 μg/L; 女 16-73.9 μg/L,按需,可选
+10_bone_metabolism,骨代谢检测面板,BM,['M80-M85'],12,BM012,抗酒石酸酸性磷酸酶5b,TRAP5b,33747-0,U/L,男 1.5-4.7 U/L; 女 1.8-7.0 U/L,按需,可选

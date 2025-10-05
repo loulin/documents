@@ -1,0 +1,35 @@
+Category,Field_Name,Chinese_Name,Data_Type,Unit,Valid_Range,LOINC_Code,Required,Description,Clinical_Significance
+Basic_Info,patient_id,患者ID,string,,,,,Y,唯一标识,患者追踪
+Basic_Info,gestational_age,孕龄,decimal,weeks,20-45,49052-4,,Y,妊娠周数,发病孕周
+PE_Classification,pe_diagnosis,子痫前期诊断,boolean,,,,,Y,高血压+蛋白尿或器官损害,PE
+PE_Classification,pe_severity,PE严重度,categorical,,Preeclampsia_Without_Severe_Features,Preeclampsia_With_Severe_Features,Eclampsia,,,Y,无严重特征/有严重特征/子痫,分层治疗
+PE_Classification,early_onset_pe,早发子痫前期,boolean,,,,,Y,<34周,胎盘源性/预后差
+PE_Classification,late_onset_pe,晚发子痫前期,boolean,,,,,Y,≥34周,母体因素为主
+Blood_Pressure,sbp_max,最高收缩压,integer,mmHg,100-250,8480-6,,Y,SBP峰值,≥140诊断/≥160严重
+Blood_Pressure,dbp_max,最高舒张压,integer,mmHg,60-150,8462-4,,Y,DBP峰值,≥90诊断/≥110严重
+Blood_Pressure,severe_hypertension,重度高血压,boolean,,,,,Y,SBP≥160/DBP≥110,严重特征
+Proteinuria,proteinuria,蛋白尿,boolean,,,,,Y,尿蛋白,≥300mg/24h或PCR≥0.3
+Proteinuria,urine_protein_24h,24小时尿蛋白,decimal,mg,0-10000,2889-4,,Y,24h尿蛋白定量,≥300mg诊断
+Proteinuria,urine_protein_creatinine,蛋白肌酐比,decimal,,0-10,9318-7,,Y,PCR,≥0.3诊断
+Severe_Features,pulmonary_edema,肺水肿,boolean,,,,,Y,肺水肿,严重特征
+Severe_Features,thrombocytopenia,血小板减少,boolean,,,,,Y,PLT<100×10⁹/L,严重特征
+Severe_Features,renal_insufficiency,肾功能不全,boolean,,,,,Y,Cr>97μmol/L或倍增,严重特征
+Severe_Features,liver_dysfunction,肝功能异常,boolean,,,,,Y,转氨酶≥2倍正常,严重特征
+Severe_Features,cerebral_symptoms,脑部症状,boolean,,,,,Y,持续头痛/视觉障碍,严重特征
+Severe_Features,right_upper_quadrant_pain,右上腹痛,boolean,,,,,Y,肝包膜下血肿/HELLP,严重特征
+HELLP_Syndrome,hellp_syndrome,HELLP综合征,boolean,,,,,Y,溶血+肝酶升高+血小板减少,PE严重并发症
+HELLP_Syndrome,hemolysis,溶血,boolean,,,,,Y,LDH>600U/L,H
+HELLP_Syndrome,elevated_liver_enzymes,肝酶升高,boolean,,,,,Y,AST/ALT≥2倍,EL
+HELLP_Syndrome,low_platelets,血小板减少,boolean,,,,,Y,PLT<100×10⁹/L,LP
+Eclampsia,eclamptic_seizure,子痫发作,boolean,,,,,Y,妊娠期癫痫发作,危及生命
+Eclampsia,seizure_timing,发作时机,categorical,,None,Antepartum,Intrapartum,Postpartum,,,N,产前/产时/产后,48h内最常见
+Treatment,antihypertensives,降压药,boolean,,,,,Y,SBP≥160/DBP≥110启动,严重高血压
+Treatment,labetalol,拉贝洛尔,boolean,,,,,Y,10-20mg IV,首选
+Treatment,hydralazine,肼屈嗪,boolean,,,,,Y,5-10mg IV,备选
+Treatment,nifedipine,硝苯地平,boolean,,,,,Y,10-20mg PO,口服
+Treatment,magnesium_sulfate,硫酸镁,boolean,,,,,Y,4-6g负荷+1-2g/h维持,抽搐预防/治疗
+Treatment,delivery,终止妊娠,boolean,,,,,Y,分娩,根治措施
+Outcome,maternal_death,孕产妇死亡,boolean,,,,,Y,死亡,病死率
+Outcome,stroke,卒中,boolean,,,,,Y,脑血管意外,严重并发症
+Report,provider,诊疗医师,string,,,,,Y,医师姓名,责任医师
+Report,report_date,报告日期,date,,,,,Y,报告时间,文档记录

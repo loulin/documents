@@ -1,0 +1,27 @@
+Category,Field_Name,Chinese_Name,Data_Type,Unit,Valid_Range,LOINC_Code,Required,Description,Clinical_Significance
+Basic_Info,patient_id,患者ID,string,,,,,Y,唯一标识,患者追踪
+Basic_Info,procedure_date,操作日期,date,,,,,Y,麻醉/操作时间,时间记录
+Basic_Info,age,年龄,integer,years,1-120,,,Y,患者年龄,生理特点
+Basic_Info,gender,性别,categorical,,Male,Female,,,Y,性别,药物代谢
+Basic_Info,weight,体重,decimal,kg,1-300,29463-7,,Y,体重,药物剂量
+Indication,surgical_procedure,手术术式,string,,,,,Y,手术名称,麻醉方案
+Indication,asa_score,ASA分级,categorical,,ASA_I,ASA_II,ASA_III,ASA_IV,ASA_V,,,Y,ASA I-V级,麻醉风险
+Technique,anesthesia_technique,麻醉技术,categorical,,Induction,Maintenance,Regional_Block,Sedation,Emergence,,,Y,诱导/维持/区域阻滞/镇静/苏醒,麻醉阶段
+Technique,method,麻醉方法,string,,,,,Y,具体麻醉方法,技术细节
+Monitoring,vital_signs_monitoring,生命体征监测,string,,,,,Y,BP/HR/SpO2/ETCO2/Temperature,标准监测
+Monitoring,invasive_monitoring,有创监测,categorical,,None,Arterial_Line,Central_Line,PA_Catheter,ICP,,,N,无/动脉置管/中心静脉/肺动脉导管/颅内压,高危监测
+Medications,anesthetic_agents,麻醉药物,string,,,,,Y,药物名称剂量,用药记录
+Medications,adjuvant_medications,辅助药物,string,,,,,N,肌松药/镇痛药/抗生素,辅助用药
+Complications,adverse_events,不良事件,categorical,,None,Hypotension,Hypertension,Bradycardia,Tachycardia,Hypoxia,Bronchospasm,,,Y,无/低血压/高血压/心动过缓/心动过速/低氧/支气管痉挛,麻醉并发症
+Complications,management,处理措施,string,,,,,N,并发症处理,应急管理
+Outcome,anesthesia_duration,麻醉时长,integer,minutes,0-720,,,Y,麻醉持续时间,麻醉管理
+Outcome,recovery_status,恢复状态,categorical,,Excellent,Good,Fair,Poor,,,Y,优/良/可/差,恢复质量
+Outcome,extubation_time,拔管时间,integer,minutes,0-240,,,N,术毕至拔管时间,苏醒情况
+Outcome,pacu_stay,PACU停留时间,integer,minutes,0-720,,,N,麻醉恢复室时间,恢复时长
+Pain_Management,pain_assessment,疼痛评估,categorical,,None,Mild,Moderate,Severe,,,Y,无/轻度/中度/重度,术后镇痛
+Pain_Management,pain_score,疼痛评分,integer,,0-10,38208-5,,Y,VAS/NRS 0-10分,疼痛量化
+Pain_Management,analgesic_regimen,镇痛方案,string,,,,,Y,镇痛药物及方法,疼痛控制
+Safety,complications_serious,严重并发症,categorical,,None,Anaphylaxis,Cardiac_Arrest,Aspiration,Death,,,Y,无/过敏性休克/心脏骤停/误吸/死亡,患者安全
+Safety,incident_report,不良事件报告,boolean,,,,,Y,需上报事件,质量管理
+Report,anesthesiologist,麻醉医师,string,,,,,Y,主管麻醉医师,责任医师
+Report,report_date,报告日期,date,,,,,Y,报告时间,文档记录

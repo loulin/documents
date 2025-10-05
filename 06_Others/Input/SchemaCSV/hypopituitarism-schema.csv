@@ -1,0 +1,177 @@
+Category,Subcategory,Field_Name,Field_Name_CN,Data_Type,Unit,Value_Range,Normal_Range,Abnormal_Indicators,Clinical_Significance,Interpretation_Logic,Related_Diseases,Risk_Level,Recommended_Actions,LOINC_Code,Notes
+Basic_Info,Patient_Info,patient_id,患者ID,String,,,,,Patient unique identifier,,,Low,,,"Unique patient identifier"
+Basic_Info,Patient_Info,exam_date,检查日期,Date,,,,,Date of examination,,,Low,,,"Format: YYYY-MM-DD"
+Basic_Info,Patient_Info,patient_age,患者年龄,Integer,years,0-120,,,"Age at diagnosis","Can occur at any age",,Low,,,Affects hormone reference ranges
+Basic_Info,Patient_Info,patient_gender,患者性别,Categorical,,Male/Female,,,"Gender",,,Low,,,"Male/Female"
+Basic_Info,Patient_Info,age_at_onset,发病年龄,Integer,years,0-120,,,"Age when hypopituitarism developed","Congenital vs acquired",,Medium,,,Determines etiology likelihood
+
+GH_Axis,Basal_GH,random_gh,随机生长激素,Float,ng/mL,0-50,,,Random GH level,"Not diagnostic, pulsatile secretion",,,Low,Stimulation test needed,2516-4,"GH secretion is pulsatile"
+GH_Axis,Stimulation_Test,gh_stimulation_test,GH兴奋试验,Categorical,,"None/ITT/GHRH_arginine/Glucagon",,,"Type of GH stimulation test","ITT gold standard, GHRH-arginine alternative",,High,Required for diagnosis,,"Multiple test options"
+GH_Axis,ITT,itt_performed,胰岛素低血糖试验,Boolean,,Yes/No,No,,"Insulin tolerance test performed","Gold standard for GH and ACTH deficiency",,High,Most physiologic,,"Contraindicated if seizure/CAD"
+GH_Axis,ITT,itt_nadir_glucose,ITT最低血糖,Float,mg/dL,20-80,,<40,"Nadir glucose during ITT","Must achieve <40 mg/dL for adequate test",,High,Adequate hypoglycemia required,,"Need symptomatic hypoglycemia"
+GH_Axis,ITT,itt_peak_gh,ITT峰值GH,Float,ng/mL,0-50,>5,<5,"Peak GH response to ITT","<5 ng/mL diagnostic of GH deficiency",GH_Deficiency,High,Severe if <3,,"Cutoff varies by assay"
+GH_Axis,Alternative_Tests,ghrh_arginine_peak_gh,GHRH精氨酸峰值GH,Float,ng/mL,0-50,>11,<11,"Peak GH to GHRH-arginine","<11 ng/mL (BMI<25) or <8 (BMI 25-30) or <4 (BMI>30)",GH_Deficiency,High,BMI-adjusted cutoffs,,"Alternative to ITT"
+GH_Axis,Alternative_Tests,glucagon_peak_gh,胰高血糖素峰值GH,Float,ng/mL,0-50,>3,<3,"Peak GH to glucagon stimulation","<3 ng/mL suggests GH deficiency",,Medium,Less commonly used,,
+
+GH_Axis,IGF1,igf1_level,IGF-1水平,Float,ng/mL,20-1000,,,"IGF-1 level","Age and gender dependent",,High,Age-adjusted interpretation,2484-4,"Reflects integrated GH secretion"
+GH_Axis,IGF1,igf1_z_score,IGF-1 Z评分,Float,SD,-5 to +3,>-2,<-2,"IGF-1 standard deviations below mean","Z-score <-2 suggests GH deficiency",,High,Standardized measure,,"Low IGF-1 suggestive but not diagnostic"
+GH_Axis,Diagnosis,gh_deficiency,生长激素缺乏,Boolean,,Yes/No,No,Yes,"GH deficiency confirmed","Failed stimulation test + low IGF-1",GH_Deficiency,High,Replacement indicated,,"Diagnosis requires stimulation test"
+GH_Axis,Diagnosis,gh_deficiency_severity,GH缺乏严重程度,Categorical,,"None/Partial/Severe",,Any,"GH deficiency severity","Severe: peak <3; Partial: 3-5 ng/mL",,Medium,Affects replacement dose,,
+
+Thyroid_Axis,TSH,tsh,促甲状腺激素,Float,mIU/L,0.01-20,0.4-4.0,<0.4,"TSH level","Low or inappropriately normal in central hypothyroidism",Secondary_Hypothyroidism,High,Check free T4,3016-3,"May be normal, low-normal, or low"
+Thyroid_Axis,Thyroid_Hormones,free_t4,游离T4,Float,ng/dL,0.3-3.0,0.8-1.8,<0.8,"Free thyroxine","Low in central hypothyroidism",Secondary_Hypothyroidism,High,Diagnostic for central hypothyroidism,3024-7,"Key diagnostic parameter"
+Thyroid_Axis,Thyroid_Hormones,total_t4,总T4,Float,μg/dL,2-18,5-12,<5,"Total T4","Affected by binding proteins",,Medium,Free T4 preferred,3053-6,"Less reliable than free T4"
+Thyroid_Axis,Thyroid_Hormones,free_t3,游离T3,Float,pg/mL,1-8,2.3-4.2,<2.3,"Free T3","Usually low in hypothyroidism",,Low,Not needed for diagnosis,3051-0,"T3 not needed for diagnosis"
+Thyroid_Axis,TRH_Test,trh_stimulation,TRH兴奋试验,Boolean,,Yes/No,No,,"TRH stimulation test performed","Differentiates pituitary from hypothalamic",,Low,Rarely done now,,"Not routinely needed"
+Thyroid_Axis,Diagnosis,central_hypothyroidism,中枢性甲减,Boolean,,Yes/No,No,Yes,"Central (secondary) hypothyroidism","Low/normal TSH + low free T4",Secondary_Hypothyroidism,High,Levothyroxine replacement,,"2-10% of hypopituitarism"
+
+Gonadal_Axis_Male,Testosterone,testosterone,睾酮,Float,ng/dL,50-1500,300-1000,<300,"Total testosterone (males)","Low in hypogonadotropic hypogonadism",Hypogonadism,High,Check AM fasting sample,2986-8,"Diurnal variation, check AM"
+Gonadal_Axis_Male,Testosterone,free_testosterone,游离睾酮,Float,pg/mL,30-300,50-200,<50,"Free testosterone (males)","Bioavailable fraction",,High,If SHBG abnormal,2990-0,"More accurate if SHBG altered"
+Gonadal_Axis_Male,Gonadotropins,lh_male,黄体生成素(男性),Float,mIU/mL,0-20,1-9,<1,"LH level (males)","Low in central hypogonadism",Hypogonadotropic_Hypogonadism,High,Low LH + low T = central,,
+Gonadal_Axis_Male,Gonadotropins,fsh_male,卵泡刺激素(男性),Float,mIU/mL,0-20,1-12,<1,"FSH level (males)","Low in central hypogonadism",,High,Check with LH,,
+Gonadal_Axis_Male,Clinical,erectile_dysfunction,勃起功能障碍,Boolean,,Yes/No,No,Yes,"Erectile dysfunction","Common symptom of hypogonadism",,Medium,Clinical manifestation,,"May improve with treatment"
+Gonadal_Axis_Male,Clinical,decreased_libido_male,性欲减退(男性),Boolean,,Yes/No,No,Yes,"Decreased libido (males)","Low testosterone symptom",,Medium,Assess at each visit,,
+Gonadal_Axis_Male,Clinical,infertility_male,男性不育,Boolean,,Yes/No,No,Yes,"Male infertility","Oligo/azoospermia from gonadotropin deficiency",,High,Semen analysis,,"May require gonadotropin therapy"
+Gonadal_Axis_Male,Diagnosis,male_hypogonadism,男性性腺功能减退,Boolean,,Yes/No,No,Yes,"Male hypogonadotropic hypogonadism","Low T + low/normal LH/FSH",Hypogonadotropic_Hypogonadism,High,Testosterone replacement,,"Very common in hypopituitarism"
+
+Gonadal_Axis_Female,Estrogen,estradiol,雌二醇,Float,pg/mL,5-500,"30-400 (premenopausal)",<30,"Estradiol (premenopausal females)","Low in central hypogonadism",,High,Cycle dependent,,"Varies with menstrual cycle"
+Gonadal_Axis_Female,Gonadotropins,lh_female,黄体生成素(女性),Float,mIU/mL,0-100,"2-15 (follicular)",<2,"LH level (females)","Low in central hypogonadism",Hypogonadotropic_Hypogonadism,High,Cycle dependent,,"Varies with cycle phase"
+Gonadal_Axis_Female,Gonadotropins,fsh_female,卵泡刺激素(女性),Float,mIU/mL,0-100,"3-20 (follicular)",<3,"FSH level (females)","Low in central hypogonadism",,High,Check cycle phase,,
+Gonadal_Axis_Female,Clinical,amenorrhea,闭经,Boolean,,Yes/No,No,Yes,"Amenorrhea","Absence of menses, common presentation in females",,High,Exclude pregnancy first,,"Primary or secondary"
+Gonadal_Axis_Female,Clinical,oligomenorrhea,月经稀发,Boolean,,Yes/No,No,Yes,"Oligomenorrhea","Infrequent menses",,Medium,Menstrual dysfunction,,
+Gonadal_Axis_Female,Clinical,infertility_female,女性不孕,Boolean,,Yes/No,No,Yes,"Female infertility","Anovulation from gonadotropin deficiency",,High,May require gonadotropin therapy,,"Potentially reversible"
+Gonadal_Axis_Female,Clinical,hot_flashes,潮热,Boolean,,Yes/No,No,Yes,"Hot flashes","Estrogen deficiency symptom",,Low,Common in hypoestrogenism,,
+Gonadal_Axis_Female,Clinical,vaginal_dryness,阴道干燥,Boolean,,Yes/No,No,Yes,"Vaginal atrophy","From estrogen deficiency",,Low,Local estrogen may help,,
+Gonadal_Axis_Female,Diagnosis,female_hypogonadism,女性性腺功能减退,Boolean,,Yes/No,No,Yes,"Female hypogonadotropic hypogonadism","Low E2 + low/normal LH/FSH + amenorrhea",Hypogonadotropic_Hypogonadism,High,Estrogen replacement,,"Common in hypopituitarism"
+
+ACTH_Axis,Basal_Cortisol,morning_cortisol,晨8点皮质醇,Float,μg/dL,1-30,7-25,<5,"8 AM cortisol","Low suggests adrenal insufficiency",Adrenal_Insufficiency,High,If <5: likely deficient; >15: likely normal,2143-6,"Time-dependent"
+ACTH_Axis,Basal_Cortisol,random_cortisol,随机皮质醇,Float,μg/dL,1-30,5-25,<3,"Random cortisol","Less reliable than AM sample",,Low,8 AM preferred,,"Diurnal variation"
+ACTH_Axis,ACTH,acth,促肾上腺皮质激素,Float,pg/mL,0-200,10-60,<10,"ACTH level","Low or normal in secondary adrenal insufficiency",Secondary_AI,High,Differentiates primary from secondary,2141-0,"Low/normal with low cortisol = secondary"
+ACTH_Axis,Stimulation_Test,cosyntropin_test,促皮质素兴奋试验,Boolean,,Yes/No,No,,"ACTH stimulation test (cosyntropin)","Standard-dose or low-dose",,High,Tests adrenal reserve,,"May be normal in acute/partial secondary AI"
+ACTH_Axis,Stimulation_Test,cosyntropin_peak_cortisol,ACTH兴奋后峰值皮质醇,Float,μg/dL,5-50,>18,<18,"Peak cortisol after cosyntropin","<18 μg/dL suggests adrenal insufficiency",,High,60 min post injection,,"Standard dose 250 mcg"
+ACTH_Axis,Stimulation_Test,cosyntropin_test_result,ACTH兴奋试验结果,Categorical,,"Normal/Abnormal/Not_done",,Abnormal,"Cosyntropin test interpretation","Abnormal if peak <18 μg/dL",,High,May be normal in partial/recent secondary AI,,
+ACTH_Axis,ITT,itt_peak_cortisol,ITT峰值皮质醇,Float,μg/dL,5-50,>18,<18,"Peak cortisol during ITT","Gold standard for ACTH deficiency",,High,Most sensitive test,,"Requires adequate hypoglycemia"
+ACTH_Axis,Diagnosis,adrenal_insufficiency,肾上腺皮质功能减退,Boolean,,Yes/No,No,Yes,"Secondary adrenal insufficiency","Low cortisol + low/normal ACTH",Secondary_Adrenal_Insufficiency,Critical,Life-threatening if untreated,,"Requires glucocorticoid replacement"
+ACTH_Axis,Diagnosis,ai_severity,肾上腺功能不全严重程度,Categorical,,"None/Partial/Complete",,Any,"Severity of ACTH deficiency","Complete: undetectable cortisol; Partial: blunted response",,High,Affects replacement dose,,
+
+Prolactin,PRL,prolactin,泌乳素,Float,ng/mL,0-200,<20 (M) <25 (F),>100,"Prolactin level","Often elevated in hypopituitarism from stalk effect",Hyperprolactinemia,Medium,>100: prolactinoma; <100: stalk effect,2842-3,"Stalk compression common"
+Prolactin,Interpretation,prl_elevation_cause,泌乳素升高原因,Categorical,,"Normal/Stalk_effect/Prolactinoma",,,"Cause of PRL elevation","Stalk compression: PRL usually <100 ng/mL",,Medium,Imaging to differentiate,,"Mild elevation common in hypopituitarism"
+
+ADH_Axis,Symptoms,polyuria,多尿,Boolean,,Yes/No,No,Yes,"Polyuria","Urine output >3 L/day",Diabetes_Insipidus,High,Measure urine output,,"Central DI from ADH deficiency"
+ADH_Axis,Symptoms,polydipsia,多饮,Boolean,,Yes/No,No,Yes,"Polydipsia","Excessive thirst",,High,Compensatory mechanism,,
+ADH_Axis,Symptoms,nocturia,夜尿,Boolean,,Yes/No,No,Yes,"Nocturia","Awakening at night to urinate",,Medium,Common symptom,,"Disrupts sleep"
+ADH_Axis,Lab,serum_sodium,血钠,Float,mmol/L,120-160,135-145,>145,"Serum sodium","Hypernatremia in untreated DI",Hypernatremia,High,DI causes hypernatremia,2951-2,"If DI untreated"
+ADH_Axis,Lab,serum_osmolality,血浆渗透压,Float,mOsm/kg,260-320,280-295,>295,"Serum osmolality","Elevated in DI",,High,Paired with urine osm,2692-2,
+ADH_Axis,Lab,urine_osmolality,尿渗透压,Float,mOsm/kg,50-1400,300-900,<300,"Urine osmolality","Inappropriately dilute in DI",Diabetes_Insipidus,High,<300 with high serum osm = DI,,"Key diagnostic finding"
+ADH_Axis,Lab,urine_specific_gravity,尿比重,Float,,1.001-1.035,1.010-1.025,<1.010,"Urine specific gravity","Low in DI",,Medium,Reflects concentration ability,,"Correlates with osmolality"
+ADH_Axis,Water_Deprivation,water_deprivation_test,禁水试验,Boolean,,Yes/No,No,,"Water deprivation test performed","Diagnostic test for DI",,High,Differentiates central vs nephrogenic,,"Must monitor closely"
+ADH_Axis,Water_Deprivation,urine_osm_post_deprivation,禁水后尿渗透压,Float,mOsm/kg,50-1400,>600,<300,"Urine osm after water deprivation","Failure to concentrate suggests DI",,High,Should exceed 600 normally,,
+ADH_Axis,Water_Deprivation,ddavp_response,DDAVP反应,Categorical,,"Normal/Central_DI/Nephrogenic_DI/Partial",,,"Response to DDAVP","Central DI: concentrates with DDAVP; Nephrogenic: no response",Central_DI,High,Differentiates DI types,,"Give DDAVP after deprivation"
+ADH_Axis,Diagnosis,diabetes_insipidus,尿崩症,Boolean,,Yes/No,No,Yes,"Central diabetes insipidus","ADH deficiency",Central_Diabetes_Insipidus,High,Desmopressin replacement,,"10-20% of hypopituitarism"
+
+Imaging,MRI_Pituitary,pituitary_mri_performed,垂体MRI检查,Boolean,,Yes/No,No,Yes,"Pituitary MRI done","Essential for all hypopituitarism patients",,Critical,Always required,,"With and without contrast"
+Imaging,MRI_Pituitary,pituitary_lesion,垂体病变,Boolean,,Yes/No,No,Yes,"Pituitary lesion present","Adenoma, cyst, or other mass",,Critical,Identifies etiology,,"Most common cause"
+Imaging,MRI_Pituitary,pituitary_mass_type,垂体肿块类型,Categorical,,"None/Adenoma/Craniopharyngioma/Rathke_cleft_cyst/Meningioma/Metastasis/Other",,,"Type of pituitary lesion","Adenoma most common",,High,Determines treatment,,
+Imaging,MRI_Pituitary,pituitary_mass_size,垂体肿块大小,Float,mm,0-100,,>10,"Size of pituitary mass","Macroadenoma ≥10mm",,High,Affects treatment,,"Size correlates with hormone loss"
+Imaging,MRI_Pituitary,empty_sella,空蝶鞍,Boolean,,Yes/No,No,Yes,"Empty sella","Absence of visible pituitary tissue",Empty_Sella_Syndrome,Medium,May be primary or secondary,,"Can cause hypopituitarism"
+Imaging,MRI_Pituitary,pituitary_stalk_thickening,垂体柄增粗,Boolean,,Yes/No,No,Yes,"Pituitary stalk thickening","May suggest hypophysitis, infiltration, or tumor",,High,Broad differential,,"Inflammation, granulomas, tumor"
+Imaging,MRI_Pituitary,optic_chiasm_compression,视交叉受压,Boolean,,Yes/No,No,Yes,"Optic chiasm compression","From suprasellar mass",Visual_Loss,Critical,Urgent treatment,,"Visual field testing"
+Imaging,MRI_Pituitary,cavernous_sinus_invasion,海绵窦侵犯,Boolean,,Yes/No,No,Yes,"Cavernous sinus invasion","Indicates invasive adenoma",,Medium,Affects surgical approach,,"Knosp grading"
+
+Imaging,Visual_Fields,visual_field_testing,视野检查,Boolean,,Yes/No,No,,"Visual field testing performed","If suprasellar mass",,High,Formal perimetry,,"Required if chiasm at risk"
+Imaging,Visual_Fields,visual_field_defect,视野缺损,Boolean,,Yes/No,No,Yes,"Visual field defect present","Bitemporal hemianopsia classic",Chiasm_Compression,Critical,Ophthalmology + neurosurgery,,"Urgent if present"
+
+Etiology,Pituitary_Tumor,pituitary_adenoma,垂体腺瘤,Boolean,,Yes/No,No,Yes,"Pituitary adenoma","Most common cause of hypopituitarism",Pituitary_Adenoma,High,30-40% of cases,,"Functioning or non-functioning"
+Etiology,Pituitary_Tumor,nonfunctioning_adenoma,无功能腺瘤,Boolean,,Yes/No,No,Yes,"Non-functioning adenoma","Mass effect causes hypopituitarism",,High,Most common adenoma type,,"Presents late due to mass effect"
+Etiology,Other_Tumors,craniopharyngioma,颅咽管瘤,Boolean,,Yes/No,No,Yes,"Craniopharyngioma","Suprasellar tumor, common in children",Craniopharyngioma,High,Often causes panhypopituitarism,,"Benign but locally aggressive"
+Etiology,Other_Tumors,rathke_cleft_cyst,Rathke囊肿,Boolean,,Yes/No,No,,"Rathke's cleft cyst","Benign cyst, usually asymptomatic",,Low,May cause hypopituitarism if large,,"Often incidental"
+Etiology,Other_Tumors,pituitary_metastasis,垂体转移瘤,Boolean,,Yes/No,No,Yes,"Pituitary metastasis","Breast, lung cancer metastases",Metastatic_Disease,High,Poor prognosis,,"Rare, 1-5% of pituitary masses"
+
+Etiology,Inflammation,lymphocytic_hypophysitis,淋巴细胞性垂体炎,Boolean,,Yes/No,No,Yes,"Lymphocytic hypophysitis","Autoimmune pituitary inflammation",Hypophysitis,High,More common in women, pregnancy,,"May be IgG4-related"
+Etiology,Inflammation,postpartum_hypophysitis,产后垂体炎,Boolean,,Yes/No,No,Yes,"Postpartum hypophysitis (Sheehan's syndrome)","Pituitary infarction after postpartum hemorrhage",Sheehans_Syndrome,High,Classic presentation: failure to lactate,,"Rare in developed countries now"
+Etiology,Inflammation,granulomatous_hypophysitis,肉芽肿性垂体炎,Boolean,,Yes/No,No,Yes,"Granulomatous hypophysitis","Sarcoidosis, TB, Wegener's",,Medium,Systemic disease workup,,"Look for systemic involvement"
+
+Etiology,Iatrogenic,postsurgical_hypopituitarism,术后垂体功能减退,Boolean,,Yes/No,No,Yes,"Postsurgical hypopituitarism","After pituitary or brain surgery",,High,Common after transsphenoidal surgery,,"10-20% after surgery"
+Etiology,Iatrogenic,post_radiation,放疗后垂体功能减退,Boolean,,Yes/No,No,Yes,"Post-radiation hypopituitarism","After cranial radiation",Post_Radiation,High,Delayed onset, years later,,"50-100% by 10 years"
+Etiology,Iatrogenic,radiation_dose,放疗剂量,Float,Gy,0-100,,>30,"Cranial radiation dose","Higher dose increases risk",,Medium,>30 Gy: high risk,,"Dose-dependent"
+
+Etiology,Vascular,pituitary_apoplexy,垂体卒中,Boolean,,Yes/No,No,Yes,"Pituitary apoplexy","Hemorrhage or infarction of pituitary",Pituitary_Apoplexy,Critical,Acute emergency,,"Headache, vision loss, shock"
+Etiology,Vascular,subarachnoid_hemorrhage,蛛网膜下腔出血,Boolean,,Yes/No,No,Yes,"Subarachnoid hemorrhage","Can cause hypopituitarism",,Medium,Check pituitary function,,"After aneurysmal SAH"
+Etiology,Vascular,tbi,创伤性脑损伤,Boolean,,Yes/No,No,Yes,"Traumatic brain injury","Pituitary stalk injury",TBI,Medium,Screen post-TBI,,"15-30% after moderate-severe TBI"
+
+Etiology,Infiltrative,hemochromatosis,血色病,Boolean,,Yes/No,No,Yes,"Hemochromatosis","Iron deposition in pituitary",Hemochromatosis,Medium,Check ferritin, genetic testing,,"Hypogonadism most common"
+Etiology,Infiltrative,histiocytosis,组织细胞增生症,Boolean,,Yes/No,No,Yes,"Langerhans cell histiocytosis","Infiltrative disease",Histiocytosis,Medium,Usually in children,,"DI common manifestation"
+Etiology,Congenital,congenital_hypopituitarism,先天性垂体功能减退,Boolean,,Yes/No,No,Yes,"Congenital hypopituitarism","Genetic or developmental defects",,High,Genetic testing,,"Multiple genetic causes"
+Etiology,Congenital,septo_optic_dysplasia,视隔发育不良,Boolean,,Yes/No,No,Yes,"Septo-optic dysplasia","Midline defects, optic nerve hypoplasia",SOD,High,Childhood presentation,,"Classic triad"
+Etiology,Idiopathic,idiopathic_hypopituitarism,特发性垂体功能减退,Boolean,,Yes/No,No,Yes,"Idiopathic hypopituitarism","No identified cause",,Medium,Diagnosis of exclusion,,"~10-20% of cases"
+
+Clinical_Manifestations,General,fatigue,乏力,Boolean,,Yes/No,No,Yes,"Chronic fatigue","Most common symptom",,High,Non-specific but prevalent,,"Multifactorial"
+Clinical_Manifestations,General,weight_changes,体重变化,Boolean,,Yes/No,No,Yes,"Weight gain or loss","From multiple hormone deficiencies",,Medium,Variable presentation,,
+Clinical_Manifestations,General,cold_intolerance,怕冷,Boolean,,Yes/No,No,Yes,"Cold intolerance","From hypothyroidism",,Medium,Thyroid axis dysfunction,,
+Clinical_Manifestations,General,decreased_muscle_mass,肌肉量减少,Boolean,,Yes/No,No,Yes,"Decreased muscle mass","GH and gonadal deficiency",,Medium,Sarcopenia,,"Multiple hormone effects"
+Clinical_Manifestations,Acute,adrenal_crisis,肾上腺危象,Boolean,,Yes/No,No,Yes,"Adrenal crisis","Life-threatening acute presentation",Adrenal_Crisis,Critical,Medical emergency,,"Hypotension, shock, hyponatremia"
+Clinical_Manifestations,Acute,hypopituitary_coma,垂体危象,Boolean,,Yes/No,No,Yes,"Hypopituitary coma","Severe decompensation, multiple deficiencies",,Critical,ICU management,,"Rare but life-threatening"
+
+Diagnosis,Extent,panhypopituitarism,全垂体功能减退,Boolean,,Yes/No,No,Yes,"Panhypopituitarism","Deficiency of all anterior pituitary hormones",Panhypopituitarism,Critical,Complete replacement needed,,"All axes affected"
+Diagnosis,Extent,partial_hypopituitarism,部分垂体功能减退,Boolean,,Yes/No,No,Yes,"Partial hypopituitarism","Deficiency of 1-4 axes",,High,Most common presentation,,"Selective deficiencies"
+Diagnosis,Extent,number_of_deficient_axes,缺陷轴数,Integer,axes,0-5,0,≥1,"Number of deficient hormone axes","GH, TSH, ACTH, LH/FSH, ADH",,High,Determines replacement complexity,,"1-5 axes"
+Diagnosis,Hierarchy,axes_affected,受累激素轴,String,,,,,Which axes are deficient,"GH, gonadal, thyroid, adrenal, ADH",,High,Document all deficiencies,,"Order of loss: GH>gonadal>TSH>ACTH>ADH"
+
+Treatment,GH_Replacement,gh_therapy,生长激素替代治疗,Boolean,,Yes/No,No,,"GH replacement therapy","Recombinant human GH",,High,Consider in adults,,"Improves body composition, QOL"
+Treatment,GH_Replacement,gh_dose,生长激素剂量,Float,mg/day,0-2,0.2-0.6,,"Daily GH dose","Start low, titrate based on IGF-1",,Medium,Weight-based dosing,,"0.2-0.5 mg/day typical"
+Treatment,GH_Replacement,gh_response,GH治疗反应,Categorical,,"Not_assessed/Good/Partial/Poor",,,"Response to GH therapy","IGF-1 normalization, symptom improvement",,Medium,Monitor IGF-1,,"Goal: mid-normal IGF-1"
+
+Treatment,Thyroid_Replacement,levothyroxine,左甲状腺素替代,Boolean,,Yes/No,No,Yes,"Levothyroxine therapy","T4 replacement for central hypothyroidism",,Critical,Always needed if TSH deficient,,"Essential replacement"
+Treatment,Thyroid_Replacement,levothyroxine_dose,左甲状腺素剂量,Float,μg/day,0-300,50-150,,"Daily levothyroxine dose","Typical 1-1.6 mcg/kg",,High,Adjust by free T4, NOT TSH,,"Monitor free T4, ignore TSH"
+Treatment,Thyroid_Replacement,thyroid_adequacy,甲状腺替代充分性,Boolean,,Yes/No,No,,"Adequate thyroid replacement","Free T4 in mid-upper normal range",,High,Target free T4 upper half of normal,,"TSH unreliable in central hypothyroidism"
+
+Treatment,Glucocorticoid,hydrocortisone,氢化可的松替代,Boolean,,Yes/No,No,Yes,"Hydrocortisone therapy","Glucocorticoid replacement for ACTH deficiency",,Critical,Life-saving,,"Essential if ACTH deficient"
+Treatment,Glucocorticoid,hydrocortisone_dose,氢化可的松剂量,Float,mg/day,0-40,15-25,,"Daily hydrocortisone dose","Divided 2-3 times daily",,Critical,Mimic diurnal rhythm,,"15-25 mg/day typical"
+Treatment,Glucocorticoid,stress_dosing_education,应激剂量教育,Boolean,,Yes/No,No,Yes,"Stress dose education provided","Double/triple dose for illness/surgery",,Critical,Patient must know,,"Prevent adrenal crisis"
+Treatment,Glucocorticoid,medical_alert,医疗警示,Boolean,,Yes/No,No,Yes,"Medical alert bracelet/card","Identifies adrenal insufficiency",,Critical,All patients should have,,"Emergency identification"
+
+Treatment,Sex_Hormone_Male,testosterone_replacement,睾酮替代治疗,Boolean,,Yes/No,No,,"Testosterone therapy (males)","For hypogonadism",,High,If fertility not desired,,"Multiple formulations"
+Treatment,Sex_Hormone_Male,testosterone_formulation,睾酮制剂,Categorical,,"None/Injection/Gel/Patch",,,"Testosterone formulation","Injection, transdermal gel, or patch",,Medium,Patient preference,,"IM injection most common"
+Treatment,Sex_Hormone_Male,testosterone_dose,睾酮剂量,Float,mg/week,0-400,75-200,,"Weekly testosterone dose (if injection)","Typical 75-100 mg IM weekly",,Medium,Adjust to mid-normal levels,,"Monitor trough levels"
+Treatment,Sex_Hormone_Male,gonadotropin_therapy_male,促性腺激素治疗(男性),Boolean,,Yes/No,No,,"Gonadotropin therapy (males)","hCG/FSH for fertility",,Medium,If fertility desired,,"Induces spermatogenesis"
+
+Treatment,Sex_Hormone_Female,estrogen_replacement,雌激素替代治疗,Boolean,,Yes/No,No,,"Estrogen therapy (females)","For hypogonadism",,High,If premenopausal,,"Oral or transdermal"
+Treatment,Sex_Hormone_Female,progesterone_replacement,孕激素替代治疗,Boolean,,Yes/No,No,,"Progesterone therapy (females)","With estrogen if uterus intact",,High,Prevent endometrial hyperplasia,,"Essential if has uterus"
+Treatment,Sex_Hormone_Female,gonadotropin_therapy_female,促性腺激素治疗(女性),Boolean,,Yes/No,No,,"Gonadotropin therapy (females)","FSH/LH for ovulation induction",,High,If fertility desired,,"Can achieve pregnancy"
+
+Treatment,ADH_Replacement,desmopressin,去氨加压素,Boolean,,Yes/No,No,,"Desmopressin (DDAVP) therapy","For central diabetes insipidus",,High,If DI present,,"Intranasal or oral"
+Treatment,ADH_Replacement,desmopressin_dose,去氨加压素剂量,Float,μg/day,0-1200,100-400,,"Daily desmopressin dose","Intranasal 10-40 mcg or oral 100-800 mcg",,Medium,Titrate to symptoms,,"Adjust to avoid hyponatremia"
+Treatment,ADH_Replacement,desmopressin_formulation,去氨加压素制剂,Categorical,,"None/Intranasal/Oral/Sublingual",,,"DDAVP formulation","Intranasal or oral",,Low,Patient preference,,"Intranasal more potent"
+
+Treatment,Order_of_Replacement,replacement_order,替代治疗顺序,String,,,,,Order of hormone replacement initiation,"ACTH → TSH → GH → gonadal → ADH",,Critical,CRITICAL: Glucocorticoid FIRST,,"ALWAYS start hydrocortisone before levothyroxine"
+Treatment,Order_of_Replacement,steroid_before_thyroid,激素前先补皮质醇,Boolean,,Yes/No,No,Yes,"Glucocorticoid started before thyroid","Essential safety measure to prevent adrenal crisis",Adrenal_Crisis,Critical,Levothyroxine can precipitate crisis,,"Thyroid increases cortisol metabolism"
+
+Monitoring,Biochemical,monitoring_frequency,监测频率,Categorical,,"Monthly/Every_3_months/Every_6_months/Annually",,,"Biochemical monitoring frequency","More frequent initially",,Medium,Stable patients: annually,,
+Monitoring,Biochemical,current_free_t4,当前游离T4,Float,ng/dL,0.3-3.0,0.8-1.8,,"Most recent free T4","Monitor thyroid replacement",,High,Target upper half of normal,,"NOT TSH"
+Monitoring,Biochemical,current_igf1,当前IGF-1,Float,ng/mL,20-1000,,,"Most recent IGF-1","Monitor GH replacement if on therapy",,Medium,Age-adjusted target,,
+Monitoring,Biochemical,current_testosterone,当前睾酮,Float,ng/dL,50-1500,300-1000,,"Most recent testosterone (males)","Monitor testosterone replacement",,Medium,Mid-normal target,,
+Monitoring,Biochemical,current_morning_cortisol,当前晨皮质醇,Float,μg/dL,1-30,10-20,,"Morning cortisol on replacement","Trough level before AM dose",,Medium,Should be 10-20 at trough,,"Check before AM dose"
+
+Monitoring,Imaging,mri_surveillance,MRI监测,Boolean,,Yes/No,No,,"MRI surveillance","For pituitary mass",,High,If tumor present,,"Frequency depends on size/type"
+Monitoring,Imaging,tumor_growth,肿瘤增长,Boolean,,Yes/No,No,Yes,"Tumor growth on imaging","Mass enlargement",,High,May need intervention,,"Surgery/radiation consideration"
+Monitoring,Imaging,tumor_stable,肿瘤稳定,Boolean,,Yes/No,No,,"Tumor stable on imaging","No growth",,Medium,Continue observation,,"Reassuring"
+
+Complications,Metabolic,metabolic_syndrome,代谢综合征,Boolean,,Yes/No,No,Yes,"Metabolic syndrome","From multiple hormone deficiencies",Metabolic_Syndrome,High,Address with replacement,,"Visceral obesity, insulin resistance"
+Complications,Metabolic,dyslipidemia,血脂异常,Boolean,,Yes/No,No,Yes,"Dyslipidemia","Low HDL, high LDL",,Medium,May improve with GH,,"Multiple hormone effects"
+Complications,Bone,low_bone_density,骨密度降低,Boolean,,Yes/No,No,Yes,"Osteoporosis/osteopenia","From GH, gonadal, thyroid deficiencies",Osteoporosis,High,DEXA scan,,"Fracture risk"
+Complications,Cardiovascular,increased_cv_risk,心血管风险增加,Boolean,,Yes/No,No,Yes,"Increased cardiovascular risk","GH deficiency, lipid abnormalities",,High,Aggressive risk factor control,,"Mortality increased if untreated"
+Complications,QOL,impaired_qol,生活质量受损,Boolean,,Yes/No,No,Yes,"Impaired quality of life","Fatigue, cognitive issues, sexual dysfunction",,Medium,Comprehensive replacement improves,,"Significant impact"
+
+Prognosis,Outcomes,biochemical_control,生化控制,Boolean,,Yes/No,No,,"Adequate hormone replacement achieved","All deficiencies corrected",,High,Treatment goal,,"Achievable in most"
+Prognosis,Outcomes,life_expectancy,预期寿命,Categorical,,"Normal/Reduced",,Reduced,"Life expectancy with treatment","Reduced if inadequate replacement or untreated",Increased_Mortality,High,Adequate replacement essential,,"Mortality increased if undertreated"
+Prognosis,Outcomes,qol_improved,生活质量改善,Boolean,,Yes/No,No,,"QOL improved with treatment","Fatigue, cognition, sexual function better",,Medium,Major benefit,,"Usually improves"
+
+Report_Summary,Diagnosis,confirmed_hypopituitarism,确诊垂体功能减退,Boolean,,Yes/No,No,Yes,"Hypopituitarism confirmed","≥1 anterior pituitary hormone deficiency",Hypopituitarism,Critical,Requires lifelong replacement,,"Dynamic testing required"
+Report_Summary,Diagnosis,hypopituitarism_etiology,垂体功能减退病因,String,,,,,Etiology of hypopituitarism,"Tumor, surgery, radiation, inflammation, etc.",,High,Determines prognosis,,"Multiple etiologies"
+Report_Summary,Diagnosis,deficient_axes_list,缺陷激素轴列表,String,,,,,List of deficient hormone axes,"GH, TSH, ACTH, gonadal, ADH",,High,Guide replacement,,"Document all"
+
+Report_Summary,Treatment_Plan,replacement_regimen,替代治疗方案,String,,,,,Current hormone replacement regimen,"Hydrocortisone, levothyroxine, testosterone/estrogen, GH, DDAVP",,High,Individualized,,"Lifelong therapy"
+Report_Summary,Treatment_Plan,treatment_goals,治疗目标,String,,,,,Treatment objectives,"Normalize hormone levels, prevent complications, improve QOL",,High,,,
+
+Report_Summary,Provider,endocrinologist_name,内分泌科医师,String,,,,,Treating endocrinologist,,,Low,,,Complex condition requires specialist
+Report_Summary,Provider,report_date,报告日期,Date,,,,,Date of report generation,,,Low,,,"Format: YYYY-MM-DD"

@@ -1,0 +1,131 @@
+Category,Field_Name,Chinese_Name,Data_Type,Unit,Valid_Range,LOINC_Code,Required,Description,Clinical_Significance
+Basic_Info,patient_id,患者ID,string,,,,,Y,唯一标识,患者追踪
+Basic_Info,admission_date,入院日期,date,,,,,Y,入院时间,HAI时间界定
+Basic_Info,infection_date,感染日期,date,,,,,Y,感染诊断日期,发病时间
+Basic_Info,age,年龄,integer,years,0-120,,,Y,患者年龄,危险因素
+Basic_Info,gender,性别,categorical,,Male,Female,,,Y,性别,流行病学
+
+HAI_Classification,hai_type,HAI类型,categorical,,CLABSI,CAUTI,VAP,SSI,CDI,,,Y,中心静脉导管相关血流感染/导尿管相关尿路感染/呼吸机相关肺炎/手术部位感染/艰难梭菌感染,分类
+HAI_Classification,onset_timing,发病时机,categorical,,Hospital_Onset,Community_Onset_Healthcare_Associated,,,Y,住院期间发病/社区发病医疗相关,定义
+
+CLABSI,clabsi,中心静脉导管相关血流感染,boolean,,,,,Y,CLABSI,中心静脉导管
+CLABSI,central_line,中心静脉导管,boolean,,,,,Y,CVC,危险因素
+CLABSI,central_line_duration,导管留置时间,integer,days,0-365,,,Y,CVC天数,风险累积
+CLABSI,catheter_site,置管部位,categorical,,None,Internal_Jugular,Subclavian,Femoral,PICC,,,N,无/颈内静脉/锁骨下/股静脉/PICC,感染风险不同
+CLABSI,catheter_removal,拔除导管,boolean,,,,,Y,移除CVC,源控制
+CLABSI,catheter_tip_culture,导管尖端培养,categorical,,Not_Done,Negative,Positive,,,N,拔出导管尖端培养,>15CFU
+
+CAUTI,cauti,导尿管相关尿路感染,boolean,,,,,Y,CAUTI,留置导尿管
+CAUTI,urinary_catheter,留置导尿管,boolean,,,,,Y,Foley导尿管,最常见HAI
+CAUTI,catheter_days,导尿管天数,integer,days,0-365,,,Y,留置天数,每日风险3-7%
+CAUTI,catheter_removal_cauti,拔除导尿管,boolean,,,,,Y,移除导尿管,源控制
+
+VAP,vap,呼吸机相关肺炎,boolean,,,,,Y,VAP,机械通气
+VAP,mechanical_ventilation,机械通气,boolean,,,,,Y,有创通气,VAP前提
+VAP,ventilator_days,通气天数,integer,days,0-365,,,Y,通气天数,VAP发病率1-3%/天
+VAP,early_onset_vap,早发VAP,boolean,,,,,N,≤4天,社区病原
+VAP,late_onset_vap,晚发VAP,boolean,,,,,Y,>4天,MDR病原
+VAP,cpis_score,CPIS评分,integer,,0-12,,,N,临床肺部感染评分,>6分提示VAP
+
+SSI,ssi,手术部位感染,boolean,,,,,Y,SSI,术后30天(或1年人工植入物)
+SSI,surgical_procedure,手术操作,string,,,,,Y,手术名称,相关手术
+SSI,surgery_date,手术日期,date,,,,,Y,手术时间,30天内
+SSI,ssi_type,SSI类型,categorical,,None,Superficial_Incisional,Deep_Incisional,Organ_Space,,,Y,无/浅表切口/深部切口/器官/腔隙,CDC分类
+SSI,wound_class,切口分类,categorical,,Clean,Clean_Contaminated,Contaminated,Dirty,,,Y,清洁/清洁污染/污染/污秽,感染风险
+
+CDI,cdi,艰难梭菌感染,boolean,,,,,Y,CDI,抗生素相关腹泻
+CDI,antibiotic_exposure,抗生素暴露,boolean,,,,,Y,近期抗生素,主要危险因素
+CDI,cdi_severity,CDI严重度,categorical,,None,Non_Severe,Severe,Fulminant,,,Y,无/非重症/重症/暴发性,治疗策略
+CDI,recurrent_cdi,复发性CDI,boolean,,,,,Y,复发,>1次发作
+
+Risk_Factors,icu_admission,ICU入住,boolean,,,,,Y,重症监护,高危环境
+Risk_Factors,icu_los,ICU住院天数,integer,days,0-365,,,N,ICU天数,暴露时间
+Risk_Factors,immunosuppression,免疫抑制,boolean,,,,,Y,免疫缺陷,易感性
+Risk_Factors,diabetes,糖尿病,boolean,,,,,Y,糖尿病,SSI风险
+Risk_Factors,malnutrition,营养不良,boolean,,,,,Y,低蛋白血症,伤口愈合
+Risk_Factors,obesity,肥胖,boolean,,,,,Y,BMI>30,SSI风险
+Risk_Factors,smoking,吸烟,boolean,,,,,N,吸烟史,SSI风险
+Risk_Factors,recent_surgery,近期手术,boolean,,,,,Y,手术暴露,HAI
+
+Device_Days,central_line_days,中心静脉导管日,integer,days,0-365,,,N,CVC-days,CLABSI分母
+Device_Days,urinary_catheter_days,导尿管日,integer,days,0-365,,,N,UC-days,CAUTI分母
+Device_Days,ventilator_days,呼吸机日,integer,days,0-365,,,N,Vent-days,VAP分母
+
+Symptoms_CLABSI,fever_clabsi,发热,boolean,,,,,Y,体温升高,菌血症
+Symptoms_CLABSI,catheter_site_erythema,置管处红斑,boolean,,,,,Y,局部红,导管感染
+Symptoms_CLABSI,catheter_site_purulence,置管处脓液,boolean,,,,,Y,脓性分泌物,导管感染
+
+Symptoms_VAP,fever_vap,发热,boolean,,,,,Y,发热,感染
+Symptoms_VAP,purulent_secretions,脓性痰,boolean,,,,,Y,脓痰,肺炎
+Symptoms_VAP,hypoxemia,低氧血症,boolean,,,,,Y,氧合恶化,肺炎
+
+Symptoms_SSI,wound_erythema,切口红斑,boolean,,,,,Y,伤口发红,炎症
+Symptoms_SSI,wound_warmth,切口温热,boolean,,,,,Y,局部温度升高,炎症
+Symptoms_SSI,wound_swelling,切口肿胀,boolean,,,,,Y,伤口水肿,炎症
+Symptoms_SSI,wound_dehiscence,切口裂开,boolean,,,,,Y,伤口裂开,深部SSI
+Symptoms_SSI,purulent_drainage,脓性引流,boolean,,,,,Y,脓液,感染
+
+Symptoms_CDI,diarrhea_cdi,腹泻,boolean,,,,,Y,≥3次/天不成形便,CDI定义
+Symptoms_CDI,abdominal_pain,腹痛,boolean,,,,,Y,腹部疼痛,结肠炎
+Symptoms_CDI,fever_cdi,发热,boolean,,,,,Y,发热,炎症
+Symptoms_CDI,ileus,肠梗阻,boolean,,,,,Y,肠蠕动停止,重症CDI
+Symptoms_CDI,toxic_megacolon,中毒性巨结肠,boolean,,,,,N,结肠扩张,暴发性CDI
+
+Labs,wbc,白细胞计数,decimal,×10⁹/L,0-100,6690-2,,Y,WBC,感染
+Labs,crp,C反应蛋白,decimal,mg/L,0-500,1988-5,,Y,CRP,炎症
+Labs,procalcitonin,降钙素原,decimal,ng/mL,0-200,33959-8,,Y,PCT,细菌感染
+Labs,creatinine,肌酐,decimal,μmol/L,0-2000,2160-0,,Y,Cr,肾功能
+Labs,albumin,白蛋白,decimal,g/L,0-60,1751-7,,Y,Alb,营养状态
+
+Blood_Culture,blood_culture,血培养,categorical,,Not_Done,Negative,Positive,,,Y,血培养,CLABSI/菌血症
+Blood_Culture,organism,致病菌,string,,,,,N,病原菌,具体致病菌
+Blood_Culture,cons,凝固酶阴性葡萄球菌,boolean,,,,,N,CoNS,CLABSI最常见
+Blood_Culture,s_aureus,金黄色葡萄球菌,boolean,,,,,N,S. aureus,CLABSI/SSI
+Blood_Culture,enterococcus,肠球菌,boolean,,,,,N,Enterococcus,CLABSI/CAUTI
+Blood_Culture,candida,念珠菌,boolean,,,,,N,Candida,CLABSI真菌
+
+MDR_Pathogens,mdr_organism,多重耐药菌,boolean,,,,,Y,MDR病原,HAI特征
+MDR_Pathogens,mrsa,MRSA,boolean,,,,,Y,耐甲氧西林金葡菌,VAP/SSI
+MDR_Pathogens,vre,VRE,boolean,,,,,Y,耐万古霉素肠球菌,CLABSI/CAUTI
+MDR_Pathogens,esbl,产ESBLs,boolean,,,,,Y,超广谱β-内酰胺酶,革兰阴性杆菌
+MDR_Pathogens,cre,CRE,boolean,,,,,Y,碳青霉烯耐药肠杆菌,VAP
+MDR_Pathogens,mdr_pseudomonas,多重耐药铜绿假单胞菌,boolean,,,,,Y,MDR P. aeruginosa,VAP
+MDR_Pathogens,mdr_acinetobacter,多重耐药不动杆菌,boolean,,,,,Y,MDR Acinetobacter,VAP
+
+CDI_Testing,cdi_naat,CDI核酸检测,categorical,,Not_Done,Negative,Positive,,,Y,C. difficile NAAT,快速诊断
+CDI_Testing,cdi_toxin,CDI毒素检测,categorical,,Not_Done,Negative,Positive,,,Y,Toxin A/B,确诊
+CDI_Testing,glutamate_dehydrogenase,谷氨酸脱氢酶,categorical,,Not_Done,Negative,Positive,,,N,GDH,筛查
+
+Imaging_VAP,chest_xray,胸部X线,boolean,,,,,Y,胸片,肺炎
+Imaging_VAP,new_infiltrate,新发浸润,boolean,,,,,Y,新出现影像学改变,VAP诊断
+
+Imaging_CDI,ct_abdomen,腹部CT,boolean,,,,,N,腹部CT,重症CDI
+Imaging_CDI,colonic_wall_thickening,结肠壁增厚,boolean,,,,,N,结肠炎,CT表现
+
+Treatment_Empiric,empiric_antibiotics,经验性抗生素,boolean,,,,,Y,早期启动,覆盖MDR
+Treatment_Empiric,vancomycin,万古霉素,boolean,,,,,Y,15-20mg/kg q8-12h,MRSA
+Treatment_Empiric,linezolid,利奈唑胺,boolean,,,,,N,600mg q12h,MRSA/VRE
+Treatment_Empiric,daptomycin,达托霉素,boolean,,,,,N,6-10mg/kg qd,MRSA菌血症
+Treatment_Empiric,meropenem,美罗培南,boolean,,,,,Y,1-2g q8h,MDR革兰阴性
+Treatment_Empiric,piperacillin_tazobactam,哌拉西林他唑巴坦,boolean,,,,,Y,4.5g q6h,广谱
+Treatment_Empiric,cefepime,头孢吡肟,boolean,,,,,Y,2g q8h,铜绿假单胞菌
+Treatment_Empiric,colistin,粘菌素,boolean,,,,,N,最后手段,CRE/MDR不动杆菌
+
+Treatment_CDI,metronidazole_cdi,甲硝唑,boolean,,,,,Y,500mg tid PO,非重症CDI
+Treatment_CDI,vancomycin_oral,万古霉素口服,boolean,,,,,Y,125mg qid PO,重症CDI
+Treatment_CDI,fidaxomicin,非达霉素,boolean,,,,,N,200mg bid,复发性CDI
+Treatment_CDI,fecal_microbiota_transplant,粪菌移植,boolean,,,,,N,FMT,复发性CDI
+
+Prevention,chlorhexidine_bathing,氯己定沐浴,boolean,,,,,N,每日CHG擦浴,CLABSI预防
+Prevention,maximal_sterile_barriers,最大无菌屏障,boolean,,,,,N,置管时,CLABSI预防
+Prevention,antimicrobial_stewardship,抗菌药物管理,boolean,,,,,Y,AMS项目,减少HAI
+Prevention,contact_precautions,接触隔离,boolean,,,,,Y,手套/隔离衣,MDR传播控制
+Prevention,ventilator_bundle,呼吸机集束化措施,boolean,,,,,Y,VAP bundle,VAP预防
+Prevention,hand_hygiene_compliance,手卫生依从性,decimal,%,0-100,,,Y,手卫生执行率,HAI预防核心
+
+Outcome,clinical_cure,临床治愈,boolean,,,,,Y,症状消失,疗效
+Outcome,attributable_mortality,归因死亡,boolean,,,,,Y,HAI导致死亡,预后
+Outcome,length_of_stay_increase,住院天数延长,integer,days,0-365,,,N,HAI致LOS增加,医疗负担
+
+Report,infection_preventionist,感染预防专员,string,,,,,Y,IPC,监测
+Report,report_date,报告日期,date,,,,,Y,报告时间,文档记录

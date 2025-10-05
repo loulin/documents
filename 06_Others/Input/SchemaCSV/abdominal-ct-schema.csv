@@ -1,0 +1,164 @@
+Category,Subcategory,Field_Name,Field_Name_CN,Data_Type,Unit,Value_Range,Normal_Range,Abnormal_Indicators,Clinical_Significance,Interpretation_Logic,Related_Diseases,Risk_Level,Recommended_Actions,LOINC_Code,Notes
+Basic_Info,Patient_Info,patient_id,患者ID,String,,,,,Patient unique identifier,,,Low,,,"Unique patient identifier"
+Basic_Info,Patient_Info,exam_date,检查日期,Date,,,,,Date of abdominal CT examination,,,Low,,,"Format: YYYY-MM-DD"
+Basic_Info,Patient_Info,patient_age,患者年龄,Integer,years,0-120,,,"Age at examination",,,Low,,,
+Basic_Info,Patient_Info,patient_gender,患者性别,Categorical,,Male/Female,,,"Gender",,,Low,,,"Male/Female"
+Basic_Info,Exam_Info,indication,检查适应症,String,,,,,Reason for abdominal CT,,,Low,,,Abdominal pain/mass/trauma/cancer staging
+Basic_Info,Exam_Info,contrast_phase,对比增强期相,Categorical,,"Non-contrast/Arterial/Portal_venous/Delayed/Multiphasic",,,"CT phases acquired","Portal venous: routine; Arterial: liver mass; Multiphasic: liver/pancreas/kidney",,Low,Phase affects lesion detection,,"Portal venous phase standard for abdomen"
+Basic_Info,Exam_Info,oral_contrast,口服对比剂,Boolean,,Yes/No,No,,"Oral contrast given","Helps outline bowel, detect bowel pathology",,Low,Not always needed,,"Water or positive contrast"
+Basic_Info,Exam_Info,iv_contrast_volume,静脉对比剂量,Float,mL,50-150,,,"Volume of IV iodinated contrast",,,Low,,,Typical 80-120mL
+Basic_Info,Exam_Info,image_quality,图像质量,Categorical,,"Excellent/Good/Fair/Poor",,Fair/Poor,"CT image quality assessment","Motion, artifact, contrast timing",,Medium,Repeat if poor,,
+
+Liver,Size,liver_size,肝脏大小,Categorical,,"Normal/Enlarged/Shrunken",Normal,Enlarged/Shrunken,"Liver size assessment","Enlarged: infiltration, congestion; Shrunken: cirrhosis",Hepatomegaly,Medium,Determine cause,,"Measure craniocaudal span"
+Liver,Size,liver_span,肝脏跨度,Float,cm,10-20,12-16,<10 or >18,"Craniocaudal liver span","<10cm: cirrhosis; >18cm: hepatomegaly",,Medium,Correlate with clinical,,"Measure at mid-clavicular line"
+Liver,Contour,liver_contour,肝脏轮廓,Categorical,,"Smooth/Nodular/Irregular",Smooth,Nodular/Irregular,"Liver surface contour","Nodular: cirrhosis; Irregular: tumor/metastasis",Cirrhosis,High,Assess for portal HTN,,"Nodular contour hallmark of cirrhosis"
+Liver,Parenchyma,liver_attenuation,肝实质密度,Categorical,,"Normal/Decreased/Increased",Normal,Any,"Liver parenchymal attenuation","Decreased: fatty liver; Increased: hemochromatosis, amiodarone",Fatty_Liver,Medium,Correlate with labs,,"Steatosis: liver<spleen on non-contrast"
+Liver,Parenchyma,fatty_liver,脂肪肝,Categorical,,"None/Mild/Moderate/Severe",None,Moderate/Severe,"Hepatic steatosis severity","Liver HU <40 on non-contrast suggests steatosis",NAFLD,Medium,Metabolic workup,,"Liver normally 50-70 HU"
+Liver,Focal_Lesion,liver_lesion_present,肝脏占位病变,Boolean,,Yes/No,No,Yes,"Focal liver lesion detected",,,High,Characterization needed,,"Common: cyst, hemangioma, HCC, metastasis"
+Liver,Focal_Lesion,liver_lesion_count,肝脏病灶数量,Integer,lesions,0-100,0,≥1,"Number of liver lesions","Single: primary tumor; Multiple: metastases/abscesses",Multiple_Liver_Lesions,High,Oncology workup if multiple,,"Multiple suggests metastatic disease"
+Liver,Focal_Lesion,largest_lesion_size,最大病灶大小,Float,cm,0-30,,>3,"Size of largest liver lesion","<1cm: too small to characterize; >5cm: higher malignancy risk",,High,Size affects management,,"Measure largest dimension"
+Liver,Focal_Lesion,lesion_enhancement,病灶强化模式,Categorical,,"None/Hypoenhancing/Hyperenhancing/Peripheral_nodular/Washout",,,"Enhancement pattern of liver lesion","Hyperenhancing arterial + washout: HCC; Peripheral nodular: hemangioma",Liver_Mass,High,Pattern suggests diagnosis,,"Dynamic phases critical"
+Liver,Focal_Lesion,suspected_lesion_type,疑似病灶类型,Categorical,,"None/Simple_cyst/Hemangioma/FNH/Adenoma/HCC/Metastasis/Abscess/Other",,Malignant,"Suspected diagnosis","Biopsy for confirmation if indeterminate",,High,Tissue diagnosis if uncertain,,"Imaging characteristics suggest type"
+
+Liver,Cyst,liver_cyst,肝囊肿,Boolean,,Yes/No,No,,"Simple hepatic cyst","Round, water density, no enhancement",Benign_Liver_Cyst,Low,Usually benign, no action,,"Very common, increase with age"
+Liver,Cyst,cyst_count,囊肿数量,Integer,cysts,0-50,0,>10,"Number of liver cysts",">10 suggests polycystic liver disease",Polycystic_Liver_Disease,Low,Assess kidneys for PKD,,"Associated with ADPKD"
+Liver,Hemangioma,hemangioma,肝血管瘤,Boolean,,Yes/No,No,,"Hepatic hemangioma","Peripheral nodular enhancement, progressive fill-in",Hemangioma,Low,Benign, no treatment needed,,"Most common benign liver tumor"
+Liver,HCC,hcc_suspected,肝癌疑似,Boolean,,Yes/No,No,Yes,"Hepatocellular carcinoma suspected","Arterial hyperenhancement + washout, in cirrhotic liver",Hepatocellular_Carcinoma,Critical,AFP, hepatology, transplant eval,,"LI-RADS for cirrhotic patients"
+Liver,HCC,lirads_category,LI-RADS分类,Categorical,,"LR-1/LR-2/LR-3/LR-4/LR-5/LR-M",,LR-4/LR-5,"LI-RADS category in cirrhotic patients","LR-5: definite HCC; LR-4: probable HCC; LR-M: malignant not HCC-specific",HCC,Critical,LR-5: treat as HCC,,"Standardized HCC reporting"
+Liver,Metastases,liver_metastases,肝转移瘤,Boolean,,Yes/No,No,Yes,"Hepatic metastases present","Multiple hypoenhancing lesions, known primary tumor",Liver_Metastases,Critical,Oncology referral,,"Common sites: colon, breast, lung, pancreas"
+
+Biliary,CBD,cbd_diameter,胆总管直径,Float,mm,2-10,<7,≥7,"Common bile duct diameter","<7mm normal; 7-10mm: borderline; >10mm: dilated",CBD_Dilation,Medium,Assess for obstruction,,"Upper limit 7mm, 10mm if post-cholecystectomy"
+Biliary,CBD,cbd_obstruction,胆总管梗阻,Boolean,,Yes/No,No,Yes,"CBD obstruction present","Dilated CBD with abrupt cutoff",Biliary_Obstruction,High,ERCP/MRCP,,"Stone, stricture, tumor"
+Biliary,CBD,obstruction_level,梗阻平面,Categorical,,"None/Distal/Mid/Proximal/Hilar",,Any,"Level of biliary obstruction","Distal: ampulla/pancreas; Proximal/Hilar: cholangiocarcinoma",Cholangiocarcinoma,High,Level determines etiology,,"Hilar (Klatskin): cholangiocarcinoma"
+Biliary,IHD,ihd_dilation,肝内胆管扩张,Boolean,,Yes/No,No,Yes,"Intrahepatic duct dilation","Suggests obstruction at hilum or below",Biliary_Obstruction,High,MRCP to define level,,"Central ducts >3mm dilated"
+Biliary,Stones,choledocholithiasis,胆总管结石,Boolean,,Yes/No,No,Yes,"CBD stone detected","Hyperdense focus in CBD",Choledocholithiasis,High,ERCP for extraction,,"May cause pancreatitis/cholangitis"
+Biliary,Pneumobilia,pneumobilia,胆道积气,Boolean,,Yes/No,No,Yes,"Air in biliary tree","Post-ERCP/sphincterotomy, or biliary-enteric fistula",,Medium,Determine cause,,"May be iatrogenic (post-ERCP) or pathologic"
+
+Gallbladder,Wall,gb_wall_thickness,胆囊壁厚度,Float,mm,1-5,<3,≥3,"Gallbladder wall thickness","≥3mm: acute cholecystitis, chronic inflammation, CHF, liver disease",Cholecystitis,Medium,Correlate clinically,,"Multiple causes of thickening"
+Gallbladder,Wall,gb_wall_edema,胆囊壁水肿,Boolean,,Yes/No,No,Yes,"GB wall edema/stratification","Acute cholecystitis",Acute_Cholecystitis,High,Surgery consult,,"Trilaminar appearance"
+Gallbladder,Distension,gb_distension,胆囊扩张,Boolean,,Yes/No,No,Yes,"Gallbladder distension","Obstruction, acute cholecystitis",Cholecystitis,Medium,Assess for obstruction,,
+Gallbladder,Stones,cholelithiasis,胆囊结石,Boolean,,Yes/No,No,,"Gallstones present","Hyperdense foci in GB, may layer dependently",Cholelithiasis,Low,Asymptomatic: observe; Symptomatic: surgery,,"Very common, often asymptomatic"
+Gallbladder,Stones,stone_size,结石大小,Float,cm,0.2-5,,>3,"Size of largest gallstone","Large stones (>3cm): higher complication risk",,Low,Giant stones may cause ileus,,
+Gallbladder,Pericholecystic,pericholecystic_fluid,胆囊周围积液,Boolean,,Yes/No,No,Yes,"Pericholecystic fluid","Acute cholecystitis, perforation",Acute_Cholecystitis,High,Urgent surgery if perforated,,"Sign of severe inflammation"
+Gallbladder,Mass,gb_mass,胆囊肿块,Boolean,,Yes/No,No,Yes,"Gallbladder mass/polyp","Polyp >1cm: malignancy risk; Asymmetric wall thickening: cancer",Gallbladder_Cancer,High,Surgery if suspicious,,"GB cancer has poor prognosis"
+
+Pancreas,Size,pancreas_size,胰腺大小,Categorical,,"Normal/Enlarged/Atrophic",Normal,Enlarged/Atrophic,"Pancreas size","Enlarged: pancreatitis; Atrophic: chronic pancreatitis, elderly",Pancreatitis,Medium,Determine cause,,"Head 2-3cm, body/tail 1-2cm"
+Pancreas,Contour,pancreas_contour,胰腺轮廓,Categorical,,"Smooth/Lobulated/Irregular",Smooth,Irregular,"Pancreatic contour","Irregular: tumor, chronic pancreatitis",,Medium,Mass vs inflammation,,
+Pancreas,Attenuation,pancreas_attenuation,胰腺密度,Categorical,,"Normal/Decreased/Increased",Normal,Any,"Pancreatic parenchymal attenuation","Decreased: edema/necrosis; Increased: hemochromatosis",Pancreatitis,Medium,,,
+Pancreas,Duct,pancreatic_duct_diameter,胰管直径,Float,mm,1-4,<3,≥3,"Main pancreatic duct diameter","≥3mm: dilated; ≥6mm: obstruction",Pancreatic_Duct_Dilation,High,MRCP/EUS for cause,,"Dilated suggests obstruction"
+Pancreas,Duct,duct_dilation,胰管扩张,Boolean,,Yes/No,No,Yes,"Pancreatic duct dilation","Obstruction from stone, stricture, tumor",Pancreatic_Cancer,High,Assess for mass,,"Abrupt cutoff suggests tumor"
+
+Pancreas,Pancreatitis,acute_pancreatitis,急性胰腺炎,Boolean,,Yes/No,No,Yes,"Acute pancreatitis findings","Enlarged, edematous pancreas, peripancreatic fat stranding",Acute_Pancreatitis,High,Severity scoring, ICU if severe,,"Alcohol, gallstones most common"
+Pancreas,Pancreatitis,pancreatitis_severity,胰腺炎严重度,Categorical,,"None/Mild/Moderate/Severe",,Severe,"Severity of pancreatitis","Mild: interstitial; Severe: necrosis, organ failure",Severe_Pancreatitis,Critical,CTSI or modified CTSI,,"CTSI: CT Severity Index"
+Pancreas,Necrosis,pancreatic_necrosis,胰腺坏死,Boolean,,Yes/No,No,Yes,"Pancreatic necrosis","Non-enhancing pancreatic tissue",Necrotizing_Pancreatitis,Critical,ICU, may need intervention,,"High mortality, infection risk"
+Pancreas,Necrosis,necrosis_percentage,坏死百分比,Integer,%,0-100,0,>30,"Percentage of pancreatic necrosis",">30%: severe, higher mortality",Severe_Pancreatitis,Critical,Surgery if infected,,"Extent correlates with outcome"
+Pancreas,Collections,peripancreatic_fluid,胰周积液,Boolean,,Yes/No,No,Yes,"Peripancreatic fluid collections","Acute: APFC; Mature: pseudocyst",Pancreatic_Pseudocyst,Medium,Follow-up CT in 4 weeks,,"Revised Atlanta classification"
+Pancreas,Collections,pseudocyst,胰腺假性囊肿,Boolean,,Yes/No,No,Yes,"Pancreatic pseudocyst","Encapsulated fluid collection, >4 weeks after pancreatitis",Pseudocyst,Medium,Intervention if symptomatic,,"May require drainage if large/symptomatic"
+
+Pancreas,Mass,pancreatic_mass,胰腺肿块,Boolean,,Yes/No,No,Yes,"Pancreatic mass detected",,,Critical,Urgent workup,,"High suspicion for malignancy"
+Pancreas,Mass,mass_location,肿块部位,Categorical,,"Head/Neck/Body/Tail",,,"Location of pancreatic mass","Head: more jaundice; Body/tail: later presentation",Pancreatic_Cancer,Critical,Head lesions present earlier,,"60-70% in head"
+Pancreas,Mass,mass_size,肿块大小,Float,cm,0-20,,>2,"Size of pancreatic mass","Larger: worse prognosis, less resectable",Pancreatic_Cancer,Critical,Size affects resectability,,"<2cm better prognosis"
+Pancreas,Mass,vascular_involvement,血管受累,Boolean,,Yes/No,No,Yes,"Major vessel involvement by mass","SMA/SMV/portal vein encasement: unresectable",Unresectable_Pancreatic_Cancer,Critical,Determines resectability,,"Vascular involvement key finding"
+Pancreas,Mass,suspected_pancreatic_ca,疑似胰腺癌,Boolean,,Yes/No,No,Yes,"Pancreatic adenocarcinoma suspected","Hypoenhancing mass, duct cutoff, vessel involvement",Pancreatic_Cancer,Critical,EUS/biopsy, oncology,,"Poor prognosis, early metastasis"
+
+Spleen,Size,spleen_size,脾脏大小,Categorical,,"Normal/Enlarged/Shrunken",Normal,Enlarged,"Spleen size assessment",,,Medium,,,
+Spleen,Size,spleen_length,脾脏长度,Float,cm,8-15,<13,≥13,"Spleen craniocaudal length","≥13cm: splenomegaly",Splenomegaly,Medium,Determine cause,,"Portal HTN, lymphoma, infection"
+Spleen,Lesions,splenic_lesion,脾脏病变,Boolean,,Yes/No,No,Yes,"Splenic lesion present","Cyst, hemangioma, infarct, lymphoma, metastasis",,Medium,Characterize lesion,,"Cysts and hemangiomas benign"
+Spleen,Trauma,splenic_laceration,脾脏裂伤,Boolean,,Yes/No,No,Yes,"Splenic laceration/injury","Trauma-related",Splenic_Injury,Critical,Trauma surgery,,"May require splenectomy if severe"
+Spleen,Trauma,splenic_hematoma,脾脏血肿,Boolean,,Yes/No,No,Yes,"Splenic hematoma","Subcapsular or intraparenchymal",,High,Monitor for rupture,,"Risk of delayed rupture"
+Spleen,Infarction,splenic_infarct,脾梗死,Boolean,,Yes/No,No,Yes,"Splenic infarction","Wedge-shaped non-enhancing area",Splenic_Infarct,Medium,Assess for embolic source,,"Cardioembolic, vasculitis"
+
+Kidneys,Size,kidney_size_right,右肾大小,Categorical,,"Normal/Enlarged/Shrunken",Normal,Any,"Right kidney size",,CKD,Medium,Shrunken: chronic disease,,"Normal length 10-12cm"
+Kidneys,Size,kidney_length_right,右肾长度,Float,cm,8-14,10-12,<9 or >13,"Right kidney length","<9cm: atrophic; >13cm: enlarged/obstructed",,Medium,Correlate with function,,
+Kidneys,Size,kidney_size_left,左肾大小,Categorical,,"Normal/Enlarged/Shrunken",Normal,Any,"Left kidney size",,CKD,Medium,,,
+Kidneys,Size,kidney_length_left,左肾长度,Float,cm,8-14,10-12,<9 or >13,"Left kidney length",,,Medium,,,
+Kidneys,Cortex,cortical_thinning,肾皮质变薄,Boolean,,Yes/No,No,Yes,"Renal cortical thinning","Chronic kidney disease, vascular disease",CKD,Medium,Assess renal function,,"Cortex normally >7mm"
+Kidneys,Atrophy,renal_atrophy,肾萎缩,Categorical,,"None/Unilateral/Bilateral",None,Any,"Kidney atrophy pattern","Bilateral: CKD; Unilateral: RAS, obstruction, reflux",,Medium,Determine cause,,"Small kidneys indicate chronicity"
+
+Kidneys,Hydronephrosis,hydronephrosis_right,右肾积水,Categorical,,"None/Mild/Moderate/Severe",None,Moderate/Severe,"Right kidney hydronephrosis","Mild: blunted calyces; Severe: ballooned calyces, thin cortex",Obstructive_Uropathy,High,Assess for obstruction cause,,"Stone, stricture, tumor"
+Kidneys,Hydronephrosis,hydronephrosis_left,左肾积水,Categorical,,"None/Mild/Moderate/Severe",None,Moderate/Severe,"Left kidney hydronephrosis",,,High,,,
+Kidneys,Obstruction,ureteral_obstruction,输尿管梗阻,Boolean,,Yes/No,No,Yes,"Ureteral obstruction present","Stone, stricture, extrinsic compression",,High,Urology consult,,"Identify level and cause"
+Kidneys,Stone,nephrolithiasis_right,右肾结石,Boolean,,Yes/No,No,,"Right kidney stone","Hyperdense focus in collecting system",Nephrolithiasis,Medium,Hydration, urology if symptomatic,,"Very common"
+Kidneys,Stone,nephrolithiasis_left,左肾结石,Boolean,,Yes/No,No,,"Left kidney stone",,,Medium,,,
+Kidneys,Stone,stone_size,结石大小,Float,mm,2-30,,>5,"Size of largest kidney stone",">5mm: less likely to pass spontaneously",,Medium,Large stones may need intervention,,"<5mm usually pass"
+
+Kidneys,Mass,renal_mass_present,肾脏肿块,Boolean,,Yes/No,No,Yes,"Renal mass detected",,,High,Characterization critical,,"Cyst vs solid mass"
+Kidneys,Mass,mass_side,肿块侧别,Categorical,,"Right/Left/Bilateral",,,"Side of renal mass",,,High,,,
+Kidneys,Mass,mass_size_kidney,肾肿块大小,Float,cm,0-30,,>4,"Size of renal mass","<4cm: T1a; 4-7cm: T1b; >7cm: T2",Renal_Cell_Carcinoma,High,Size affects staging,,"pT staging by size"
+Kidneys,Mass,bosniak_category,Bosniak分类,Categorical,,"I/II/IIF/III/IV",,III/IV,"Bosniak classification for cystic renal masses","I/II: benign; IIF: follow; III/IV: surgical",Renal_Cyst,High,III/IV require surgery,,"For cystic masses only"
+Kidneys,Mass,suspected_rcc,疑似肾癌,Boolean,,Yes/No,No,Yes,"Renal cell carcinoma suspected","Solid enhancing renal mass",Renal_Cell_Carcinoma,Critical,Urology, staging CT,,"Most common renal malignancy"
+Kidneys,Cyst,renal_cysts,肾囊肿,Boolean,,Yes/No,No,,"Renal cysts present","Simple cysts very common, benign",,Low,Simple cysts: no action,,"Increase with age"
+Kidneys,Cyst,simple_cyst_count,单纯囊肿数量,Integer,cysts,0-50,0,>10,"Number of simple renal cysts",">10 suggests polycystic kidney disease",ADPKD,Medium,Assess for ADPKD if numerous,,"ADPKD: autosomal dominant"
+Kidneys,Polycystic,adpkd,多囊肾,Boolean,,Yes/No,No,Yes,"Autosomal dominant polycystic kidney disease","Bilateral numerous cysts, enlarged kidneys",ADPKD,High,Genetic counseling, nephrology,,"Eventually leads to ESRD"
+
+Adrenals,Size,adrenal_size_right,右肾上腺大小,Categorical,,"Normal/Enlarged",Normal,Enlarged,"Right adrenal gland size",,,Medium,,,
+Adrenals,Size,adrenal_size_left,左肾上腺大小,Categorical,,"Normal/Enlarged",Normal,Enlarged,"Left adrenal gland size",,,Medium,,,
+Adrenals,Mass,adrenal_mass,肾上腺占位,Boolean,,Yes/No,No,Yes,"Adrenal mass/nodule","Adenoma, pheochromocytoma, metastasis, ACC",Adrenal_Incidentaloma,High,Functional workup,,"Incidentaloma common"
+Adrenals,Mass,mass_side_adrenal,肾上腺肿块侧别,Categorical,,"Right/Left/Bilateral",,Bilateral,"Side of adrenal mass","Bilateral: metastases, hyperplasia, infections",,High,Bilateral suggests specific etiologies,,
+Adrenals,Mass,adrenal_mass_size,肾上腺肿块大小,Float,cm,0-20,,>4,"Size of adrenal mass","<4cm: likely adenoma; >4cm: increased malignancy risk",Adrenocortical_Carcinoma,High,>4cm requires surgery consideration,,"Size critical for management"
+Adrenals,Mass,adrenal_hu_noncontrast,肾上腺非增强HU值,Integer,HU,-30-60,<10,>10,"Adrenal mass HU on non-contrast CT","<10 HU: lipid-rich adenoma (benign); >10 HU: indeterminate",,High,<10 HU confirms benign adenoma,,"Lipid-rich adenomas benign"
+Adrenals,Mass,adrenal_washout,肾上腺廓清率,Integer,%,0-100,>50,<50,"Adrenal mass contrast washout","Absolute washout >60%: adenoma; Relative >40%: adenoma",Adrenal_Adenoma,High,Washout confirms adenoma,,"Delayed phase at 10-15 min"
+
+Stomach,Wall,gastric_wall_thickening,胃壁增厚,Boolean,,Yes/No,No,Yes,"Gastric wall thickening","Gastritis, ulcer, tumor",Gastric_Cancer,Medium,Endoscopy for evaluation,,"Normal wall <5mm when distended"
+Stomach,Mass,gastric_mass,胃肿块,Boolean,,Yes/No,No,Yes,"Gastric mass","Adenocarcinoma, GIST, lymphoma",Gastric_Cancer,High,Endoscopy with biopsy,,"EGD required for diagnosis"
+Stomach,Distension,gastric_distension,胃扩张,Boolean,,Yes/No,No,Yes,"Gastric distension","Outlet obstruction, ileus, gastroparesis",,Medium,Determine cause,,"May need decompression"
+
+Small_Bowel,Dilation,small_bowel_dilation,小肠扩张,Boolean,,Yes/No,No,Yes,"Small bowel dilation","≥3cm: dilated; suggests obstruction or ileus",Small_Bowel_Obstruction,High,Assess for transition point,,"Normal diameter <3cm"
+Small_Bowel,Obstruction,sbo_present,小肠梗阻,Boolean,,Yes/No,No,Yes,"Small bowel obstruction","Dilated proximal bowel, collapsed distal bowel, transition point",SBO,High,Surgery consult,,"Adhesions most common cause"
+Small_Bowel,Obstruction,transition_point,梗阻转折点,String,,,,,Location of transition point in SBO,,,High,Identifies obstruction site,,"Closed-loop: surgical emergency"
+Small_Bowel,Obstruction,closed_loop_obstruction,闭襻梗阻,Boolean,,Yes/No,No,Yes,"Closed-loop obstruction","U-shaped dilated loop, whirl sign",Closed_Loop_Obstruction,Critical,Urgent surgery,,"High risk of ischemia"
+Small_Bowel,Ischemia,bowel_ischemia,肠缺血,Boolean,,Yes/No,No,Yes,"Bowel ischemia/infarction","Wall thickening, pneumatosis, portal venous gas",Mesenteric_Ischemia,Critical,Urgent surgery,,"Medical emergency"
+Small_Bowel,Ischemia,pneumatosis,肠壁积气,Boolean,,Yes/No,No,Yes,"Pneumatosis intestinalis","Air in bowel wall, may indicate ischemia or benign",Bowel_Ischemia,Critical,Assess for ischemia,,"Benign if asymptomatic, no PVG"
+Small_Bowel,Wall,small_bowel_wall_thickening,小肠壁增厚,Boolean,,Yes/No,No,Yes,"Small bowel wall thickening","IBD, ischemia, infection, radiation",Crohns_Disease,Medium,Correlate clinically,,"Crohn's: terminal ileum"
+
+Colon,Wall,colonic_wall_thickening,结肠壁增厚,Boolean,,Yes/No,No,Yes,"Colonic wall thickening","Colitis (infectious, ischemic, IBD), tumor",Colitis,Medium,Colonoscopy for diagnosis,,"Normal wall <3mm"
+Colon,Inflammation,colitis,结肠炎,Boolean,,Yes/No,No,Yes,"Colitis present","Wall thickening, hyperemia, stranding",Colitis,Medium,Determine etiology: infectious, ischemic, IBD,,"C. diff, UC, Crohn's, ischemic"
+Colon,Diverticulosis,diverticulosis,结肠憩室,Boolean,,Yes/No,No,,"Colonic diverticula","Outpouchings of colonic wall, very common",,Low,Asymptomatic: no action,,"High-fiber diet"
+Colon,Diverticulitis,diverticulitis,憩室炎,Boolean,,Yes/No,No,Yes,"Acute diverticulitis","Inflamed diverticulum, pericolic fat stranding",Diverticulitis,High,Antibiotics, surgery if complicated,,"Hinchey classification for severity"
+Colon,Diverticulitis,diverticulitis_severity,憩室炎严重度,Categorical,,"None/Uncomplicated/Complicated",,Complicated,"Diverticulitis severity","Uncomplicated: phlegmon; Complicated: abscess, perforation, fistula",Complicated_Diverticulitis,High,Complicated requires intervention,,"Hinchey I-IV"
+Colon,Abscess,pericolic_abscess,结肠周围脓肿,Boolean,,Yes/No,No,Yes,"Pericolic abscess","Fluid collection from diverticulitis/Crohn's",,High,Drainage + antibiotics,,"May need percutaneous drainage"
+Colon,Mass,colonic_mass,结肠肿块,Boolean,,Yes/No,No,Yes,"Colonic mass","Adenocarcinoma, polyp",Colorectal_Cancer,High,Colonoscopy with biopsy,,"Colonoscopy required"
+Colon,Obstruction,colonic_obstruction,结肠梗阻,Boolean,,Yes/No,No,Yes,"Large bowel obstruction","Dilated colon >6cm (cecum >9cm), transition point",Large_Bowel_Obstruction,High,Surgery/endoscopy,,"Tumor, volvulus, diverticulitis"
+
+Appendix,Appendicitis,appendicitis,阑尾炎,Boolean,,Yes/No,No,Yes,"Acute appendicitis","Dilated appendix >7mm, wall thickening, periappendiceal stranding",Acute_Appendicitis,High,Surgery consult,,"Clinical + imaging diagnosis"
+Appendix,Appendicitis,appendix_diameter,阑尾直径,Float,mm,3-20,<7,≥7,"Appendix diameter","≥7mm: appendicitis; ≥10mm: definite",,High,Diameter correlates with severity,,
+Appendix,Appendicitis,appendicolith,阑尾粪石,Boolean,,Yes/No,No,Yes,"Appendicolith present","Calcified fecalith in appendix",Appendicitis,Medium,Higher perforation risk,,"Increases perforation risk"
+Appendix,Perforation,appendiceal_perforation,阑尾穿孔,Boolean,,Yes/No,No,Yes,"Appendiceal perforation","Periappendiceal abscess, free air, free fluid",Perforated_Appendicitis,Critical,Urgent surgery,,"Higher morbidity"
+
+Peritoneum,Ascites,ascites,腹水,Boolean,,Yes/No,No,Yes,"Ascites present","Free intraperitoneal fluid",Ascites,Medium,Determine cause,,"Cirrhosis, malignancy, CHF, infection"
+Peritoneum,Ascites,ascites_volume,腹水量,Categorical,,"None/Trace/Small/Moderate/Large",None,Moderate/Large,"Ascites volume","Trace: perihepatic; Small: Morrison's pouch; Moderate: diffuse; Large: tense",,Medium,Large may need paracentesis,,"Trace often incidental"
+Peritoneum,Carcinomatosis,peritoneal_carcinomatosis,腹膜癌病,Boolean,,Yes/No,No,Yes,"Peritoneal carcinomatosis","Nodular peritoneum, omental caking, ascites",Peritoneal_Metastases,Critical,Oncology, palliative care,,"Ovarian, gastric, colon primaries"
+Peritoneum,Inflammation,peritonitis,腹膜炎,Boolean,,Yes/No,No,Yes,"Peritonitis findings","Peritoneal enhancement, free fluid, fat stranding",Peritonitis,Critical,Urgent surgery if secondary,,"Primary (SBP) vs secondary"
+Peritoneum,Free_Air,pneumoperitoneum,气腹,Boolean,,Yes/No,No,Yes,"Free intraperitoneal air","Perforation, post-surgery",Bowel_Perforation,Critical,Urgent surgery if not post-op,,"Rigler's sign, football sign"
+
+Mesentery,Lymphadenopathy,mesenteric_lymphadenopathy,肠系膜淋巴结肿大,Boolean,,Yes/No,No,Yes,"Mesenteric lymphadenopathy","Nodes >1cm short axis",Lymphadenopathy,Medium,Determine cause,,"Infection, IBD, lymphoma, metastasis"
+Mesentery,Stranding,mesenteric_stranding,肠系膜模糊,Boolean,,Yes/No,No,Yes,"Mesenteric fat stranding","Inflammation, ischemia, venous congestion",,Medium,Correlate with clinical,,"Non-specific finding"
+Mesentery,Ischemia,mesenteric_ischemia,肠系膜缺血,Boolean,,Yes/No,No,Yes,"Mesenteric ischemia","SMA/SMV occlusion, bowel wall thickening, pneumatosis",Mesenteric_Ischemia,Critical,Urgent vascular surgery,,"High mortality"
+
+Retroperitoneum,Lymphadenopathy,retroperitoneal_lymphadenopathy,腹膜后淋巴结肿大,Boolean,,Yes/No,No,Yes,"Retroperitoneal lymphadenopathy","Nodes >1cm short axis",Lymphoma,Medium,Biopsy if isolated,,"Lymphoma, metastasis, infection"
+Retroperitoneum,Lymphadenopathy,largest_node_size,最大淋巴结大小,Float,cm,0.5-10,,>1,"Size of largest retroperitoneal node","<1cm: normal; >1cm: enlarged; >2cm: highly suspicious",,Medium,Size indicates significance,,"Measure short axis"
+Retroperitoneum,Mass,retroperitoneal_mass,腹膜后肿块,Boolean,,Yes/No,No,Yes,"Retroperitoneal mass","Sarcoma, lymphoma, neurogenic tumor",,High,Biopsy for diagnosis,,"Often large at presentation"
+
+Vessels,Aorta,aortic_diameter,腹主动脉直径,Float,cm,1.5-5,<3,≥3,"Abdominal aortic diameter","<3cm: normal; 3-5.5cm: aneurysm; ≥5.5cm: surgical",AAA,High,≥5.5cm or ≥0.5cm/year: surgery,,"Rupture risk increases with size"
+Vessels,Aorta,aaa_present,腹主动脉瘤,Boolean,,Yes/No,No,Yes,"Abdominal aortic aneurysm (≥3cm)","Focal dilation ≥3cm",AAA,High,Vascular surgery if large,,"Repair if ≥5.5cm or symptomatic"
+Vessels,Aorta,aortic_calcification,主动脉钙化,Categorical,,"None/Mild/Moderate/Severe",None,Severe,"Aortic atherosclerotic calcification",,Atherosclerosis,Low,Marker of cardiovascular risk,,"Very common in elderly"
+Vessels,Portal_Vein,portal_vein_thrombosis,门静脉血栓,Boolean,,Yes/No,No,Yes,"Portal vein thrombosis","Filling defect in portal vein",Portal_Vein_Thrombosis,High,Anticoagulation, treat cause,,"Cirrhosis, malignancy, hypercoagulable"
+Vessels,IVC,ivc_thrombosis,下腔静脉血栓,Boolean,,Yes/No,No,Yes,"IVC thrombosis","Filling defect in IVC",IVC_Thrombosis,High,Anticoagulation,,"May cause bilateral leg edema"
+Vessels,SMA,sma_stenosis,肠系膜上动脉狭窄,Boolean,,Yes/No,No,Yes,"SMA stenosis/occlusion","May cause mesenteric ischemia",Mesenteric_Ischemia,Critical,Vascular surgery,,"Chronic: mesenteric angina"
+Vessels,Renal_Artery,renal_artery_stenosis,肾动脉狭窄,Boolean,,Yes/No,No,Yes,"Renal artery stenosis","May cause renovascular hypertension",Renovascular_Hypertension,Medium,Consider angioplasty,,"Fibromuscular dysplasia, atherosclerosis"
+
+Musculoskeletal,Spine,vertebral_fracture,椎体骨折,Boolean,,Yes/No,No,Yes,"Vertebral compression fracture","Acute or chronic fracture",Vertebral_Fracture,Medium,Assess for malignancy vs osteoporosis,,"Pathologic vs osteoporotic"
+Musculoskeletal,Spine,degenerative_changes,脊柱退行性改变,Boolean,,Yes/No,No,,"Degenerative spine changes","Osteophytes, disc space narrowing",,Low,Usually age-related,,"Very common, often asymptomatic"
+Musculoskeletal,Bone,bone_lesion,骨病变,Boolean,,Yes/No,No,Yes,"Bone lesion detected","Lytic, sclerotic, or mixed",Bone_Metastasis,High,Further imaging/biopsy,,"Metastasis, myeloma, primary tumor"
+
+Miscellaneous,Hernia,hernia,疝,Boolean,,Yes/No,No,,"Hernia present","Inguinal, femoral, ventral, incisional",,Low,Surgery if symptomatic/incarcerated,,"Very common"
+Miscellaneous,Hernia,hernia_type,疝类型,Categorical,,"None/Inguinal/Femoral/Umbilical/Ventral/Incisional",,,"Type of hernia",,,Low,,,
+Miscellaneous,Hernia,incarcerated_hernia,嵌顿疝,Boolean,,Yes/No,No,Yes,"Incarcerated/strangulated hernia","Bowel trapped in hernia, no contrast enhancement if strangulated",Incarcerated_Hernia,Critical,Urgent surgery,,"Strangulation: surgical emergency"
+
+Report_Summary,Overall,primary_finding,主要发现,String,,,,,Primary diagnosis from abdominal CT,,,High,,,Most significant finding
+Report_Summary,Overall,incidental_findings,偶然发现,String,,,,,Incidental findings,"Renal cysts, gallstones, hemangiomas",,Medium,Communicate significant findings,,"Many incidentalomas on abdominal CT"
+Report_Summary,Recommendations,recommended_imaging,建议检查,String,,,,,Recommended follow-up or additional imaging,"MRI, US, repeat CT",,Medium,,,
+Report_Summary,Recommendations,urgent_intervention,需紧急处理,Boolean,,Yes/No,No,Yes,"Urgent intervention needed","Bowel perforation, ischemia, AAA rupture, appendicitis",Emergency,Critical,Immediate communication,,"Directly contact clinician"
+
+Report_Summary,Quality,radiologist_name,影像科医师,String,,,,,Reporting radiologist name,,,Low,,,
+Report_Summary,Quality,report_date,报告日期,Date,,,,,Date of report generation,,,Low,,,"Format: YYYY-MM-DD"

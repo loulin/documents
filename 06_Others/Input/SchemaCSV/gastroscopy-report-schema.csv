@@ -1,196 +1,129 @@
-字段名 (英文),字段名 (中文),数据类型,描述,示例
-examDate,检查日期,String,进行胃镜检查的日期,2025-08-15
-examTime,检查时间,String,检查开始时间,14:30
-examDuration,检查时长,Number,"检查持续时间。<br>单位: 分钟",15
-examType,检查类型,String,"检查类型。<br>**建议值**: `普通胃镜`, `无痛胃镜`, `经鼻胃镜`, `胶囊内镜`, `超声内镜(EUS)`, `放大内镜`, `窄带成像(NBI)`, `色素内镜`",无痛胃镜
-indication,检查指征,String,"检查指征。<br>**建议值**: `上腹痛/不适`, `反酸烧心`, `吞咽困难`, `呕血/黑便`, `贫血`, `体检筛查`, `幽门螺杆菌感染`, `术后随访`, `溃疡复查`, `肿瘤筛查`, `其他`",上腹痛/不适
-clinicalDiagnosis,临床诊断,String,检查前临床诊断,慢性胃炎？消化性溃疡？
+Category,Field_Name,Chinese_Name,Data_Type,Unit,Valid_Range,LOINC_Code,Required,Description,Clinical_Significance
+Basic_Info,patient_id,患者ID,string,,,,,Y,唯一患者标识,用于患者追踪
+Basic_Info,exam_date,检查日期,date,,,,,Y,胃镜检查日期,检查时间点
+Basic_Info,exam_id,检查编号,string,,,,,N,胃镜报告编号,唯一检查标识
+Basic_Info,age,年龄,integer,years,0-120,,,N,患者年龄,风险评估
+Basic_Info,gender,性别,categorical,,,"Male,Female",,,N,患者性别,疾病差异
 
-# 患者准备
-preparation.fasting,准备.禁食时间,Number,"禁食时间。<br>单位: 小时<br>**要求**: 至少6-8小时",8
-preparation.anticoagulants,准备.抗凝药物,String,"抗凝药物使用。<br>**建议值**: `未使用`, `已停用`, `正在使用`<br>**注**: 活检前需停用",已停用
-preparation.consent,准备.知情同意,String,"知情同意。<br>**建议值**: `已签署`, `未签署`",已签署
-preparation.anesthesia,准备.麻醉方式,String,"麻醉方式。<br>**建议值**: `咽部局麻`, `静脉麻醉`, `无麻醉`",静脉麻醉
-preparation.premedication,准备.术前用药,String,术前用药,去泡剂、利多卡因胶浆
+Procedure,indication,检查指征,categorical,,,"Screening,Dyspepsia,GERD,Abdominal_Pain,GI_Bleeding,Anemia,Weight_Loss,Surveillance,Follow_Up,Other",,,Y,检查适应证,临床目的
+Procedure,endoscopist,内镜医师,string,,,,,N,操作医师姓名,质控
+Procedure,sedation,镇静方式,categorical,,,"Conscious_Sedation,Deep_Sedation,General_Anesthesia,None",,,N,镇静类型,舒适化
+Procedure,sedation_drug,镇静药物,categorical,,,"Propofol,Midazolam,Fentanyl,Combination,None,Other",,,N,镇静药物种类,麻醉方式
+Procedure,scope_type,内镜类型,categorical,,,"Standard,Magnifying,NBI,Chromoendoscopy",,,N,内镜设备,检查技术
+Procedure,procedure_completeness,检查完整性,categorical,,,"Complete,Incomplete",,,Y,是否完成,质量指标
+Procedure,incomplete_reason,未完成原因,categorical,,,"Patient_Intolerance,Obstruction,Technical_Difficulty,Other,NA",,,N,未完成原因,质量分析
+Procedure,bowel_preparation,准备质量,categorical,,,"Excellent,Good,Fair,Poor,NA",,,N,胃肠道准备,视野质量
 
-# 内镜设备
-equipment.endoscopeType,设备.内镜类型,String,"内镜类型。<br>**建议值**: `标准白光内镜`, `NBI窄带成像`, `放大内镜`, `超声内镜`, `共聚焦内镜`",标准白光内镜
-equipment.manufacturer,设备.生产厂家,String,"内镜生产厂家。<br>**建议值**: `奥林巴斯`, `富士`, `宾得`, `其他`",奥林巴斯
-equipment.model,设备.型号,String,内镜型号,GIF-HQ290
+Esophagus_Anatomy,esophagus_examined,食管检查,categorical,,,"Yes,No",,,Y,是否检查食管,部位完整性
+Esophagus_Anatomy,esophagus_normal,食管正常,categorical,,,"Yes,No",,,N,食管是否正常,初步评估
+Esophagus_Anatomy,z_line,Z线,categorical,,,"Clear,Irregular,Elevated,Not_Visualized",,,N,齿状线,食管胃交界
 
-# 插镜过程
-insertion.route,插镜.进镜途径,String,"进镜途径。<br>**建议值**: `经口`, `经鼻`",经口
-insertion.difficulty,插镜.插镜难度,String,"插镜难度。<br>**建议值**: `顺利`, `稍困难`, `困难`",顺利
-insertion.complications,插镜.插镜并发症,String,"插镜过程并发症。<br>**建议值**: `无`, `咽部损伤`, `出血`, `穿孔`, `其他`",无
+Esophagus_Findings,esophagitis,食管炎,categorical,,,"Yes,No",,,N,反流性食管炎,GERD表现
+Esophagitis,la_classification,LA分级,categorical,,,"Grade_A,Grade_B,Grade_C,Grade_D,NA",,,N,洛杉矶分级,食管炎严重度
+Esophagitis,esophagitis_location,食管炎部位,categorical,,,"Lower_Third,Middle_Third,Upper_Third,Diffuse,NA",,,N,炎症位置,病变范围
+Esophagus_Findings,barretts_esophagus,Barrett食管,categorical,,,"Yes,No,Suspected",,,N,Barrett食管,癌前病变
+Barretts,barretts_length,Barrett长度,categorical,,,"Short_Segment,Long_Segment,NA",,,N,Barrett长度,<3cm短段>=3cm长段
+Barretts,prague_classification,Prague分级,string,,,,,N,Prague C&M,C环形M最大长度
+Barretts,dysplasia,异型增生,categorical,,,"High_Grade,Low_Grade,No_Dysplasia,NA",,,N,异型增生,癌变风险
+Esophagus_Findings,esophageal_varices,食管静脉曲张,categorical,,,"Yes,No",,,N,食管静脉曲张,门脉高压
+Varices,varices_grade,曲张程度,categorical,,,"F1_Small,F2_Medium,F3_Large,NA",,,N,静脉曲张分级,出血风险
+Varices,red_color_signs,红色征,categorical,,,"Present,Absent,NA",,,N,红色征,出血高危
+Varices,varices_location,曲张部位,categorical,,,"Lower_Esophagus,Mid_Esophagus,Upper_Esophagus,Gastric,NA",,,N,曲张位置,治疗靶点
+Esophagus_Findings,esophageal_ulcer,食管溃疡,categorical,,,"Yes,No",,,N,食管溃疡,黏膜损伤
+Esophagus_Findings,esophageal_stricture,食管狭窄,categorical,,,"Yes,No",,,N,食管狭窄,梗阻症状
+Esophagus_Findings,esophageal_mass,食管肿块,categorical,,,"Yes,No",,,N,食管占位,肿瘤可能
+Esophagus_Findings,hiatal_hernia,食管裂孔疝,categorical,,,"Yes,No",,,N,裂孔疝,GERD病因
+Hernia,hernia_size,疝囊大小,decimal,cm,0-20,,,N,裂孔疝大小,严重程度
 
-# 食管检查 (Esophagus)
-esophagus.examined,食管.是否检查,String,"是否检查食管。<br>**建议值**: `是`, `否`, `未完整检查`",是
-esophagus.mucosa,食管.黏膜,String,"食管黏膜外观。<br>**建议值**: `光滑`, `充血`, `糜烂`, `溃疡`, `粗糙`, `颗粒状`, `柱状上皮化生`",光滑
-esophagus.color,食管.颜色,String,"黏膜颜色。<br>**建议值**: `淡红`, `充血发红`, `苍白`, `色素沉着`",淡红
-esophagus.vascularPattern,食管.血管纹理,String,"血管纹理。<br>**建议值**: `清晰`, `模糊`, `曲张`, `不清`",清晰
-esophagus.peristalsis,食管.蠕动,String,"蠕动功能。<br>**建议值**: `正常`, `亢进`, `减弱`, `消失`",正常
-esophagus.lumen,食管.管腔,String,"管腔情况。<br>**建议值**: `通畅`, `狭窄`, `扩张`, `梗阻`",通畅
-esophagus.zLine,食管.Z线,String,"齿状线(Z线)。<br>**建议值**: `清晰规则`, `模糊`, `不规则`, `上移`, `下移`<br>**正常**: 距门齿约40cm",清晰规则
-esophagus.zLineDistance,食管.Z线距门齿距离,Number,"Z线距门齿距离。<br>单位: cm<br>**正常**: 约40cm",40
+Stomach_Anatomy,stomach_examined,胃检查,categorical,,,"Yes,No",,,Y,是否检查胃,部位完整性
+Stomach_Anatomy,cardia,贲门,categorical,,,"Normal,Abnormal,Not_Visualized",,,N,贲门,解剖部位
+Stomach_Anatomy,fundus,胃底,categorical,,,"Normal,Abnormal,Not_Visualized",,,N,胃底,解剖部位
+Stomach_Anatomy,body,胃体,categorical,,,"Normal,Abnormal,Not_Visualized",,,N,胃体,解剖部位
+Stomach_Anatomy,antrum,胃窦,categorical,,,"Normal,Abnormal,Not_Visualized",,,N,胃窦,解剖部位
+Stomach_Anatomy,pylorus,幽门,categorical,,,"Normal,Abnormal,Not_Visualized",,,N,幽门,解剖部位
+Stomach_Anatomy,incisura_angularis,胃角,categorical,,,"Normal,Abnormal,Not_Visualized",,,N,胃角切迹,解剖标志
 
-# 食管病变
-esophagus.esophagitis,食管.食管炎,String,"食管炎。<br>**建议值**: `无`, `反流性食管炎`, `嗜酸性食管炎`, `感染性食管炎`, `放射性食管炎`",反流性食管炎
-esophagus.refluxGrade,食管.反流性食管炎分级,String,"反流性食管炎分级(LA分级)。<br>**建议值**: `无`, `A级(黏膜破损<5mm)`, `B级(≥5mm,未融合)`, `C级(融合<75%周径)`, `D级(融合≥75%周径)`",A级(黏膜破损<5mm)
-esophagus.barrettEsophagus,食管.Barrett食管,String,"Barrett食管。<br>**建议值**: `无`, `短节段(<3cm)`, `长节段(≥3cm)`<br>**重要**: 癌前病变",无
-esophagus.barrettLength,食管.Barrett长度,Number,"Barrett食管长度(如有)。<br>单位: cm",0
-esophagus.varices,食管.静脉曲张,String,"食管静脉曲张。<br>**建议值**: `无`, `轻度(F1)`, `中度(F2)`, `重度(F3)`<br>**肝硬化**: 常见并发症",无
-esophagus.varicesLocation,食管.静脉曲张部位,String,"曲张静脉部位(如有)。<br>**建议值**: `食管下段`, `食管中段`, `食管上段`, `胃底`",无
-esophagus.redColorSign,食管.红色征,String,"静脉曲张红色征(如有)。<br>**建议值**: `无`, `有`<br>**意义**: 提示出血高风险",无
+Stomach_Findings,gastritis,胃炎,categorical,,,"Yes,No",,,N,胃炎,黏膜炎症
+Gastritis,gastritis_type,胃炎类型,categorical,,,"Chronic,Acute,Chronic_Atrophic,Erosive,Hemorrhagic,NA",,,N,胃炎分型,病理类型
+Gastritis,gastritis_location,胃炎部位,categorical,,,"Antrum,Body,Fundus,Pangastritis,NA",,,N,胃炎分布,病变范围
+Gastritis,atrophy,萎缩,categorical,,,"Mild,Moderate,Severe,None,NA",,,N,黏膜萎缩,癌前病变
+Gastritis,intestinal_metaplasia,肠化生,categorical,,,"Yes,No,NA",,,N,肠上皮化生,癌前病变
+Gastritis,im_extent,肠化程度,categorical,,,"Focal,Extensive,NA",,,N,肠化范围,癌变风险
+Stomach_Findings,gastric_erosion,胃糜烂,categorical,,,"Yes,No",,,N,胃黏膜糜烂,浅表损伤
+Erosion,erosion_type,糜烂类型,categorical,,,"Flat,Raised,Complete,Incomplete,NA",,,N,糜烂形态,内镜分型
+Erosion,erosion_location,糜烂部位,categorical,,,"Antrum,Body,Fundus,Multiple,NA",,,N,糜烂位置,病变分布
+Stomach_Findings,gastric_ulcer,胃溃疡,categorical,,,"Yes,No",,,N,胃溃疡,深达肌层
+Ulcer,ulcer_number,溃疡数量,integer,,0-20,,,N,溃疡个数,病变范围
+Ulcer,ulcer_location,溃疡部位,categorical,,,"Lesser_Curvature,Greater_Curvature,Anterior_Wall,Posterior_Wall,Antrum,Body,Cardia,Multiple",,,N,溃疡位置,好发部位
+Ulcer,ulcer_size,溃疡大小,decimal,cm,0-20,,,N,溃疡最大直径,严重程度
+Ulcer,ulcer_stage,溃疡分期,categorical,,,"A1_Active,A2_Active,H1_Healing,H2_Healing,S1_Scar,S2_Scar",,,N,Sakita分期,愈合评估
+Ulcer,ulcer_bleeding,溃疡出血,categorical,,,"Active_Spurting,Oozing,Visible_Vessel,Adherent_Clot,Flat_Spot,None",,,N,Forrest分级,出血风险
+Stomach_Findings,gastric_polyp,胃息肉,categorical,,,"Yes,No",,,N,胃息肉,良性病变
+Polyp,polyp_number,息肉数量,categorical,,,"Solitary,2to5,6to10,More_than_10,NA",,,N,息肉个数,息肉病
+Polyp,polyp_type,息肉类型,categorical,,,"Hyperplastic,Adenomatous,Fundic_Gland,Inflammatory,NA",,,N,息肉病理,癌变风险
+Polyp,polyp_size,息肉大小,decimal,cm,0-10,,,N,最大息肉直径,恶变风险
+Polyp,polyp_morphology,息肉形态,categorical,,,"Pedunculated,Sessile,Flat,NA",,,N,Paris分型,切除方式
+Stomach_Findings,gastric_mass,胃肿块,categorical,,,"Yes,No",,,N,胃占位性病变,肿瘤可能
+Mass_Gastric,mass_location,肿块部位,categorical,,,"Cardia,Fundus,Body,Antrum,Pylorus,Multiple,NA",,,N,肿块位置,手术计划
+Mass_Gastric,mass_size,肿块大小,decimal,cm,0-30,,,N,肿块最大径,T分期参考
+Mass_Gastric,mass_morphology,肿块形态,categorical,,,"Borrmann_I,Borrmann_II,Borrmann_III,Borrmann_IV,Early_Gastric_Cancer,NA",,,N,Borrmann分型,进展期胃癌
+Mass_Gastric,mass_border,肿块边界,categorical,,,"Well_Defined,Ill_Defined,NA",,,N,边界清晰度,浸润评估
+Mass_Gastric,egc_type,早期胃癌分型,categorical,,,"Type_I,Type_IIa,Type_IIb,Type_IIc,Type_III,NA",,,N,早癌内镜分型,ESD指征
+Stomach_Findings,gist,胃间质瘤,categorical,,,"Suspected,No",,,N,疑似GIST,黏膜下肿瘤
+Stomach_Findings,xanthoma,黄色瘤,categorical,,,"Yes,No",,,N,黄色瘤,脂质沉积
+Stomach_Findings,gastropathy,胃病,categorical,,,"Portal_Hypertensive,NSAID,Bile_Reflux,None,Other",,,N,特殊胃病,病因相关
 
-# 食管肿物/病变
-esophagus.mass,食管.肿物,String,"食管肿物。<br>**建议值**: `无`, `息肉`, `肿块`, `溃疡型肿物`, `狭窄型肿物`",无
-esophagus.massLocation,食管.肿物部位,String,"肿物部位(如有)。<br>**建议值**: `颈段`, `胸上段`, `胸中段`, `胸下段`, `食管胃交界`",无
-esophagus.massSize,食管.肿物大小,String,"肿物大小(如有)。<br>格式: 长×宽 cm",无
-esophagus.massMorphology,食管.肿物形态,String,"肿物形态(如有)。<br>**建议值**: `隆起型`, `平坦型`, `凹陷型`, `溃疡型`, `浸润型`",无
-esophagus.suspiciousMalignancy,食管.可疑恶性,String,"可疑恶性。<br>**建议值**: `无`, `可疑`, `高度可疑`",无
+Helicobacter_Pylori,hp_status,幽门螺杆菌,categorical,,,"Positive,Negative,Unknown",,,N,Hp感染状态,重要致病因素
+Helicobacter_Pylori,hp_test_method,Hp检测方法,categorical,,,"Rapid_Urease_Test,Histology,Culture,Serology,Breath_Test,Stool_Antigen,Not_Done",,,N,Hp检测方式,诊断方法
+Helicobacter_Pylori,hp_eradication,Hp根除治疗,categorical,,,"Yes,No,Unknown",,,N,是否根除治疗,治疗史
 
-# 贲门 (Cardia)
-cardia.examined,贲门.是否检查,String,"是否检查贲门。<br>**建议值**: `是`, `否`",是
-cardia.closure,贲门.闭合功能,String,"贲门闭合功能。<br>**建议值**: `良好`, `松弛`, `痉挛`<br>**松弛**: 见于反流性食管炎",良好
-cardia.mucosa,贲门.黏膜,String,"贲门黏膜。<br>**建议值**: `光滑`, `充血`, `糜烂`, `溃疡`, `隆起`",光滑
-cardia.mass,贲门.肿物,String,"贲门肿物。<br>**建议值**: `无`, `息肉`, `肿块`, `溃疡`",无
+Duodenum_Anatomy,duodenum_examined,十二指肠检查,categorical,,,"Yes,No",,,Y,是否检查十二指肠,部位完整性
+Duodenum_Anatomy,bulb,球部,categorical,,,"Normal,Abnormal,Not_Visualized",,,N,十二指肠球部,解剖部位
+Duodenum_Anatomy,descending_part,降部,categorical,,,"Normal,Abnormal,Not_Visualized",,,N,十二指肠降部,解剖部位
 
-# 胃底 (Fundus)
-fundus.examined,胃底.是否检查,String,"是否检查胃底。<br>**建议值**: `是`, `否`, `部分检查`",是
-fundus.mucosa,胃底.黏膜,String,"胃底黏膜。<br>**建议值**: `光滑`, `充血`, `糜烂`, `萎缩`, `颗粒状`",光滑
-fundus.folds,胃底.皱襞,String,"胃底皱襞。<br>**建议值**: `正常`, `增粗`, `平坦`, `结节状`",正常
-fundus.varices,胃底.静脉曲张,String,"胃底静脉曲张。<br>**建议值**: `无`, `轻度(GOV1/IGV1)`, `重度(GOV2/IGV2)`<br>**分型**: GOV(食管胃曲张)、IGV(孤立性胃曲张)",无
-fundus.mass,胃底.肿物,String,"胃底肿物。<br>**建议值**: `无`, `息肉`, `平滑肌瘤`, `间质瘤`, `肿块`",无
+Duodenum_Findings,duodenitis,十二指肠炎,categorical,,,"Yes,No",,,N,十二指肠炎,黏膜炎症
+Duodenum_Findings,duodenal_ulcer,十二指肠溃疡,categorical,,,"Yes,No",,,N,十二指肠溃疡,消化性溃疡
+Du_Ulcer,du_location,DU部位,categorical,,,"Bulb_Anterior,Bulb_Posterior,Bulb_Superior,Bulb_Inferior,Post_Bulb,NA",,,N,DU位置,好发部位
+Du_Ulcer,du_size,DU大小,decimal,cm,0-5,,,N,DU直径,严重程度
+Du_Ulcer,du_stage,DU分期,categorical,,,"A1,A2,H1,H2,S1,S2,NA",,,N,DU Sakita分期,愈合评估
+Du_Ulcer,du_bleeding,DU出血,categorical,,,"Active,Recent,None,NA",,,N,DU出血征象,Forrest分级
+Duodenum_Findings,duodenal_polyp,十二指肠息肉,categorical,,,"Yes,No",,,N,十二指肠息肉,少见
+Duodenum_Findings,papilla,十二指肠乳头,categorical,,,"Normal,Enlarged,Tumor,Not_Visualized",,,N,Vater壶腹,胆胰疾病
 
-# 胃体 (Body)
-body.examined,胃体.是否检查,String,"是否检查胃体。<br>**建议值**: `是`, `否`",是
-body.mucosa,胃体.黏膜,String,"胃体黏膜。<br>**建议值**: `光滑`, `充血`, `水肿`, `糜烂`, `萎缩`, `颗粒状`, `结节状`",充血
-body.color,胃体.颜色,String,"黏膜颜色。<br>**建议值**: `粉红`, `充血红`, `苍白`, `花斑样`",充血红
-body.folds,胃体.皱襞,String,"胃体皱襞。<br>**建议值**: `正常`, `增粗`, `平坦`, `结节状`, `消失`<br>**萎缩性胃炎**: 皱襞平坦或消失",正常
-body.vascularPattern,胃体.血管纹理,String,"血管纹理(NBI/放大内镜)。<br>**建议值**: `正常`, `树枝状血管可见`, `血管透见增多(萎缩)`, `异常血管`",正常
-body.erosions,胃体.糜烂,String,"糜烂情况。<br>**建议值**: `无`, `点状糜烂`, `片状糜烂`, `融合性糜烂`",点状糜烂
-body.erythema,胃体.红斑,String,"红斑。<br>**建议值**: `无`, `散在红斑`, `片状红斑`, `弥漫性红斑`",散在红斑
-body.bile,胃体.胆汁反流,String,"胆汁反流。<br>**建议值**: `无`, `少量`, `中量`, `大量`",无
+Biopsy,biopsy_taken,活检,categorical,,,"Yes,No",,,Y,是否取活检,病理诊断
+Biopsy,biopsy_sites,活检部位,categorical,,,"Esophagus,Stomach_Antrum,Stomach_Body,Stomach_Cardia,Duodenum,Mass_Lesion,Multiple,NA",,,N,活检位置,病理来源
+Biopsy,biopsy_number,活检数量,integer,,0-20,,,N,活检标本数,充分性
+Biopsy,biopsy_indication,活检指征,categorical,,,"Suspicious_Malignancy,Gastritis_Staging,HP_Detection,Barrett_Surveillance,Ulcer,Other,NA",,,N,活检原因,临床目的
 
-# 胃角 (Angulus)
-angulus.examined,胃角.是否检查,String,"是否检查胃角。<br>**建议值**: `是`, `否`",是
-angulus.mucosa,胃角.黏膜,String,"胃角黏膜。<br>**建议值**: `光滑`, `充血`, `糜烂`, `溃疡`, `萎缩`",光滑
-angulus.ulcer,胃角.溃疡,String,"胃角溃疡(好发部位)。<br>**建议值**: `无`, `活动期溃疡`, `愈合期溃疡`, `瘢痕期`",无
+Intervention,therapeutic_procedure,治疗性操作,categorical,,,"Yes,No",,,N,是否治疗性操作,内镜治疗
+Intervention,hemostasis,止血,categorical,,,"Injection,Clip,APC,Band_Ligation,Combination,None",,,N,内镜止血,治疗方法
+Intervention,polypectomy,息肉切除,categorical,,,"Cold_Snare,Hot_Snare,EMR,ESD,None",,,N,息肉切除术,治疗方式
+Intervention,esd_emr,ESD/EMR,categorical,,,"ESD,EMR,None",,,N,内镜黏膜切除,早癌治疗
+Intervention,dilation,扩张术,categorical,,,"Balloon,Bougie,None",,,N,狭窄扩张,梗阻治疗
+Intervention,variceal_ligation,静脉曲张套扎,categorical,,,"Yes,No",,,N,EVL,曲张出血
+Intervention,sclerotherapy,硬化剂注射,categorical,,,"Yes,No",,,N,硬化治疗,曲张治疗
+Intervention,foreign_body_removal,异物取出,categorical,,,"Yes,No",,,N,异物取出术,紧急处理
 
-# 胃窦 (Antrum)
-antrum.examined,胃窦.是否检查,String,"是否检查胃窦。<br>**建议值**: `是`, `否`",是
-antrum.mucosa,胃窦.黏膜,String,"胃窦黏膜。<br>**建议值**: `光滑`, `充血`, `水肿`, `糜烂`, `萎缩`, `颗粒状`, `结节状`",充血水肿
-antrum.color,胃窦.颜色,String,"黏膜颜色。<br>**建议值**: `粉红`, `充血红`, `苍白`, `花斑样`",充血红
-antrum.folds,胃窦.皱襞,String,"胃窦皱襞。<br>**建议值**: `正常`, `增粗`, `水肿`, `平坦`, `结节状`",增粗
-antrum.erosions,胃窦.糜烂,String,"糜烂情况。<br>**建议值**: `无`, `点状糜烂`, `片状糜烂`, `隆起性糜烂`, `平坦性糜烂`",点状糜烂
-antrum.nodularity,胃窦.结节状改变,String,"结节状改变。<br>**建议值**: `无`, `有`<br>**临床意义**: 常见于Hp感染",有
-antrum.peristalsis,胃窦.蠕动,String,"胃窦蠕动。<br>**建议值**: `正常`, `增强`, `减弱`, `消失`",正常
+Complications,intraprocedural_complication,术中并发症,categorical,,,"Perforation,Bleeding,Aspiration,Cardiovascular,Respiratory,None,Other",,,N,检查中并发症,安全性
+Complications,postprocedural_complication,术后并发症,categorical,,,"Bleeding,Perforation,Infection,Pain,None,Other",,,N,检查后并发症,随访
 
-# 幽门 (Pylorus)
-pylorus.examined,幽门.是否检查,String,"是否检查幽门。<br>**建议值**: `是`, `否`",是
-pylorus.opening,幽门.开放,String,"幽门开放情况。<br>**建议值**: `开放良好`, `痉挛`, `关闭不全`, `狭窄`, `梗阻`",开放良好
-pylorus.mucosa,幽门.黏膜,String,"幽门黏膜。<br>**建议值**: `光滑`, `充血`, `糜烂`, `溃疡`, `息肉`",光滑
-pylorus.passage,幽门.通过性,String,"内镜通过幽门。<br>**建议值**: `顺利通过`, `稍困难`, `无法通过`",顺利通过
+Image_Quality,image_quality,图像质量,categorical,,,"Excellent,Good,Fair,Poor",,,N,内镜图像质量,质控指标
+Image_Quality,retroflexion,反转观察,categorical,,,"Performed,Not_Performed",,,N,是否反转,胃底贲门
 
-# 十二指肠 (Duodenum)
-duodenum.examined,十二指肠.是否检查,String,"是否检查十二指肠。<br>**建议值**: `是`, `否`, `球部`, `降部`",是
-duodenum.bulb.mucosa,十二指肠.球部黏膜,String,"十二指肠球部黏膜。<br>**建议值**: `光滑`, `充血`, `水肿`, `糜烂`, `变形`, `假息肉`",光滑
-duodenum.bulb.ulcer,十二指肠.球部溃疡,String,"球部溃疡。<br>**建议值**: `无`, `活动期(A期)`, `愈合期(H期)`, `瘢痕期(S期)`, `变形`<br>**好发部位**: 球部前壁",无
-duodenum.descending.mucosa,十二指肠.降部黏膜,String,"十二指肠降部黏膜。<br>**建议值**: `光滑`, `充血`, `绒毛消失`, `结节状`",光滑
-duodenum.descending.papilla,十二指肠.乳头,String,"十二指肠大乳头。<br>**建议值**: `正常`, `肿大`, `充血`, `肿物`",正常
-duodenum.bile,十二指肠.胆汁,String,"十二指肠内胆汁。<br>**建议值**: `可见`, `少量`, `未见`",可见
+Pathology_Result,pathology_report,病理报告,categorical,,,"Available,Pending,Not_Done",,,N,病理结果状态,最终诊断
+Pathology_Result,histology,组织学,categorical,,,"Normal,Chronic_Gastritis,Atrophic_Gastritis,Intestinal_Metaplasia,Dysplasia_LG,Dysplasia_HG,Adenocarcinoma,Signet_Ring_Cell,Lymphoma,GIST,Other,Pending",,,N,病理诊断,金标准
+Pathology_Result,sydney_system,Sydney系统评分,string,,,,,N,Sydney胃炎分级,炎症活动度评分
+Pathology_Result,olga_stage,OLGA分期,categorical,,,"Stage_0,Stage_I,Stage_II,Stage_III,Stage_IV,NA",,,N,胃炎癌变风险,萎缩分期
+Pathology_Result,olgim_stage,OLGIM分期,categorical,,,"Stage_0,Stage_I,Stage_II,Stage_III,Stage_IV,NA",,,N,肠化癌变风险,肠化分期
 
-# 溃疡详细描述 (如发现溃疡)
-ulcer.present,溃疡.是否存在,String,"是否发现溃疡。<br>**建议值**: `否`, `是`",否
-ulcer.location,溃疡.部位,String,"溃疡部位(如有)。<br>**建议值**: `食管`, `胃底`, `胃体`, `胃角`, `胃窦`, `幽门`, `十二指肠球部`, `十二指肠降部`",无
-ulcer.number,溃疡.数量,Number,溃疡数量,0
-ulcer.size,溃疡.大小,String,"溃疡大小(如有)。<br>格式: 长×宽 cm<br>**分级**: <0.5cm小, 0.5-1.0cm中, >1.0cm大",无
-ulcer.shape,溃疡.形态,String,"溃疡形态(如有)。<br>**建议值**: `圆形`, `椭圆形`, `不规则形`, `线性`",无
-ulcer.margin,溃疡.边缘,String,"溃疡边缘(如有)。<br>**建议值**: `整齐`, `不整齐`, `隆起`, `平坦`<br>**恶性征象**: 边缘不整、隆起",无
-ulcer.base,溃疡.基底,String,"溃疡基底(如有)。<br>**建议值**: `白苔覆盖`, `红色肉芽`, `黑色血痂`, `污秽坏死`, `穿透`",无
-ulcer.surroundingMucosa,溃疡.周围黏膜,String,"溃疡周围黏膜(如有)。<br>**建议值**: `正常`, `充血水肿`, `结节状`, `僵硬`, `放射状皱襞`",无
-ulcer.stage,溃疡.分期,String,"溃疡分期(如有)。<br>**Sakita分期**: A1(活动期急性)、A2(活动期亚急性)、H1(愈合期)、H2(愈合期)、S1(瘢痕期红色)、S2(瘢痕期白色)<br>**建议值**: `A1`, `A2`, `H1`, `H2`, `S1`, `S2`",无
-ulcer.complications,溃疡.并发症,String,"溃疡并发症(如有)。<br>**建议值**: `无`, `出血`, `穿孔`, `幽门梗阻`, `癌变`",无
-ulcer.malignancySuspicion,溃疡.恶性可能,String,"溃疡恶性可能(如有)。<br>**建议值**: `良性溃疡`, `不除外恶性`, `可疑恶性`, `高度可疑恶性`",无
+Diagnosis,primary_diagnosis,主要诊断,categorical,,,"Normal,GERD,Gastritis,Gastric_Ulcer,Duodenal_Ulcer,Gastric_Polyp,Gastric_Cancer,Barretts_Esophagus,Esophageal_Varices,Other",,,Y,主要内镜诊断,疾病分类
+Diagnosis,secondary_diagnosis,次要诊断,string,,,,,N,其他诊断,合并疾病
 
-# 肿物/病变
-mass.present,肿物.是否存在,String,"是否发现肿物/病变。<br>**建议值**: `否`, `是`",否
-mass.location,肿物.部位,String,"肿物部位(如有)。<br>**建议值**: `食管`, `贲门`, `胃底`, `胃体`, `胃角`, `胃窦`, `幽门`, `十二指肠`",无
-mass.number,肿物.数量,Number,肿物数量,0
-mass.size,肿物.大小,String,"肿物大小(如有)。<br>格式: 长×宽×高 cm 或 直径 cm",无
-mass.morphology,肿物.形态,String,"肿物形态(如有)。<br>**建议值**: `隆起型(0-I型)`, `表浅型(0-II型)`, `凹陷型(0-III型)`, `混合型`<br>**Paris分型**: 早期胃癌",无
-mass.surface,肿物.表面,String,"肿物表面(如有)。<br>**建议值**: `光滑`, `分叶状`, `颗粒状`, `糜烂`, `溃疡`, `菜花状`, `污秽坏死`",无
-mass.color,肿物.颜色,String,"肿物颜色(如有)。<br>**建议值**: `同周围黏膜`, `发红`, `苍白`, `暗红`, `污秽灰白`",无
-mass.margin,肿物.边界,String,"肿物边界(如有)。<br>**建议值**: `清楚`, `不清楚`",无
-mass.hardness,肿物.质地,String,"肿物质地(触诊或活检钳触碰)(如有)。<br>**建议值**: `软`, `韧`, `硬`, `脆`",无
-mass.mobility,肿物.活动度,String,"肿物活动度(如有)。<br>**建议值**: `活动良好`, `活动受限`, `固定`",无
-mass.bleeding,肿物.出血倾向,String,"肿物出血倾向(如有)。<br>**建议值**: `无`, `触之易出血`, `自发性出血`",无
+Recommendation,follow_up,随访建议,categorical,,,"No_Follow_Up,3_Months,6_Months,1_Year,2_Years,3_Years,Other",,,N,复查间隔,监测计划
+Recommendation,repeat_indication,复查指征,categorical,,,"Ulcer_Healing,Polyp_Surveillance,Barrett_Surveillance,Cancer_Staging,HP_Eradication,Other,NA",,,N,复查原因,随访目的
+Recommendation,referral,转诊建议,categorical,,,"Surgery,Oncology,Gastroenterology,None,Other",,,N,专科转诊,多学科协作
+Recommendation,medication,用药建议,categorical,,,"PPI,H2RA,HP_Eradication,Mucosal_Protective,None,Other",,,N,药物治疗,医嘱
 
-# 息肉 (Polyp)
-polyp.present,息肉.是否存在,String,"是否发现息肉。<br>**建议值**: `否`, `是`",否
-polyp.location,息肉.部位,String,"息肉部位(如有)。<br>可多发",无
-polyp.number,息肉.数量,String,"息肉数量(如有)。<br>**建议值**: `单发`, `2-5个`, `5-10个`, `>10个(息肉病)`",无
-polyp.size,息肉.大小,String,"息肉大小(如有)。<br>格式: 直径 cm<br>**分级**: <0.5cm小, 0.5-1.0cm中, >1.0cm大",无
-polyp.morphology,息肉.形态,String,"息肉形态(如有)。<br>**建议值**: `有蒂型(Ip)`, `亚蒂型(Isp)`, `无蒂型(Is)`, `平坦型`, `凹陷型`",无
-polyp.surface,息肉.表面,String,"息肉表面(如有)。<br>**建议值**: `光滑`, `分叶状`, `颗粒状`, `糜烂`, `绒毛状`",无
-polyp.type,息肉.类型,String,"息肉类型(如有)。<br>**建议值**: `增生性息肉`, `腺瘤性息肉`, `炎性息肉`, `错构瘤性息肉`, `待病理确认`",无
-
-# 其他病变
-otherLesions.xanthoma,其他病变.黄色瘤,String,"黄色瘤(胆固醇沉积)。<br>**建议值**: `无`, `散在`, `多发`",无
-otherLesions.angiodysplasia,其他病变.血管扩张,String,"血管扩张/血管畸形。<br>**建议值**: `无`, `有`",无
-otherLesions.diverticulum,其他病变.憩室,String,"憩室。<br>**建议值**: `无`, `食管憩室`, `胃憩室`, `十二指肠憩室`",无
-otherLesions.foreignBody,其他病变.异物,String,"异物。<br>**建议值**: `无`, `食物残渣`, `药物`, `其他异物`",无
-otherLesions.bezoar,其他病变.胃石,String,"胃石。<br>**建议值**: `无`, `植物性胃石`, `毛发性胃石`, `其他`",无
-
-# 幽门螺杆菌评估
-helicobacterPylori.evidence,幽门螺杆菌.内镜下征象,String,"Hp感染内镜下征象。<br>**建议值**: `未见明显征象`, `胃窦结节状改变`, `黏膜花斑样`, `黏膜粗糙颗粒状`, `黏液增多`",胃窦结节状改变
-helicobacterPylori.suspicion,幽门螺杆菌.可疑感染,String,"可疑Hp感染。<br>**建议值**: `低度可疑`, `中度可疑`, `高度可疑`, `不除外`",高度可疑
-helicobacterPylori.rutPerformed,幽门螺杆菌.快速尿素酶试验,String,"是否行RUT。<br>**建议值**: `未做`, `已做-阴性`, `已做-阳性`",已做-阳性
-
-# 内镜下治疗操作
-intervention.performed,治疗操作.是否实施,String,"是否实施治疗操作。<br>**建议值**: `否`, `是`",否
-intervention.type,治疗操作.操作类型,String,"治疗操作类型(如实施)。<br>**建议值**: `息肉切除(圈套器)`, `息肉切除(热活检钳)`, `ESD(内镜黏膜下剥离术)`, `EMR(内镜黏膜切除术)`, `止血(注射/夹闭/APC)`, `扩张`, `支架置入`, `异物取出`, `其他`",无
-intervention.details,治疗操作.操作详情,String,治疗操作详细描述,无
-intervention.complications,治疗操作.并发症,String,"操作并发症(如实施)。<br>**建议值**: `无`, `出血`, `穿孔`, `其他`",无
-
-# 活检
-biopsy.performed,活检.是否活检,String,"是否进行活检。<br>**建议值**: `否`, `是`",是
-biopsy.locations,活检.活检部位,String,"活检部位。<br>**标准**: 胃窦2块+胃体2块+病变部位<br>**Sydney系统**: 胃窦大小弯、胃体大小弯、胃角各1块",胃窦×2、胃体×2
-biopsy.piecesNumber,活检.活检块数,Number,活检总块数,4
-biopsy.indication,活检.活检指征,String,"活检指征。<br>**建议值**: `慢性胃炎评估`, `Hp感染评估`, `萎缩/肠化评估`, `可疑肿瘤`, `溃疡性质鉴别`, `其他`",慢性胃炎评估+Hp感染评估
-biopsy.complications,活检.活检并发症,String,"活检并发症。<br>**建议值**: `无`, `出血`, `穿孔`",无
-
-# 内镜诊断
-endoscopicDiagnosis,内镜诊断,String,"内镜诊断。<br>可多项",慢性非萎缩性胃炎(胃窦为著)伴糜烂；十二指肠球部正常
-primaryDiagnosis,主要诊断,String,主要内镜诊断,慢性非萎缩性胃炎
-secondaryDiagnosis,次要诊断,String,次要诊断,胃窦糜烂
-
-# 慢性胃炎相关
-gastritis.type,慢性胃炎.类型,String,"慢性胃炎类型(如诊断)。<br>**建议值**: `非萎缩性胃炎`, `萎缩性胃炎`, `特殊类型胃炎`",非萎缩性胃炎
-gastritis.location,慢性胃炎.部位,String,"胃炎主要累及部位(如诊断)。<br>**建议值**: `胃窦为著`, `胃体为著`, `全胃`<br>**Hp胃炎**: 多胃窦为著",胃窦为著
-gastritis.severity,慢性胃炎.严重程度,String,"胃炎严重程度(如诊断)。<br>**建议值**: `轻度`, `中度`, `重度`",中度
-gastritis.activity,慢性胃炎.活动度,String,"胃炎活动度(如诊断)。<br>**建议值**: `静止期`, `轻度活动`, `中度活动`, `重度活动`<br>**活动**: 中性粒细胞浸润",中度活动
-gastritis.atrophy,慢性胃炎.萎缩,String,"黏膜萎缩(如诊断萎缩性胃炎)。<br>**建议值**: `无`, `轻度`, `中度`, `重度`<br>**OLGA分期**: 结合病理",无
-gastritis.intestinalMetaplasia,慢性胃炎.肠化生,String,"肠化生(如诊断)。<br>**建议值**: `无`, `轻度`, `中度`, `重度`, `待病理确认`<br>**癌前病变**: 需监测",无
-gastritis.dysplasia,慢性胃炎.异型增生,String,"异型增生/上皮内瘤变(如诊断)。<br>**建议值**: `无`, `低级别`, `高级别`, `待病理确认`<br>**癌前病变**: 高级别需治疗",无
-
-# 检查质量
-examQuality.adequacy,检查质量.充分性,String,"检查充分性。<br>**建议值**: `充分`, `基本充分`, `不充分`",充分
-examQuality.visualization,检查质量.视野,String,"视野清晰度。<br>**建议值**: `清晰`, `尚可`, `差(食物/黏液残留)`",清晰
-examQuality.completeness,检查质量.完整性,String,"检查完整性。<br>**建议值**: `完整`, `基本完整`, `不完整(未到达十二指肠降部)`",完整
-
-# 并发症
-complications.intraoperative,并发症.术中并发症,String,"术中并发症。<br>**建议值**: `无`, `出血`, `穿孔`, `误吸`, `心律失常`, `低氧血症`, `其他`",无
-complications.postoperative,并发症.术后并发症,String,"术后并发症。<br>**建议值**: `无`, `咽喉痛`, `腹痛腹胀`, `出血`, `穿孔`, `感染`, `其他`",无
-
-# 建议
-recommendations,建议,String,检查后建议,"1. 活检病理检查；2. Hp检测(RUT已做)；3. 根据病理结果决定治疗方案；4. 如Hp(+)建议根除治疗；5. 规律饮食，避免刺激性食物"
-followUpPlan,随访计划,String,随访计划,根据病理结果决定复查时间
-
-# 报告信息
-performingPhysician,操作医师,String,实施检查的医师,张医师
-assistingNurse,协助护士,String,协助检查的护士,李护士
-reportDate,报告日期,String,报告出具日期,2025-08-15
-reportingPhysician,报告医师,String,出具报告的医师,张医师
-reviewPhysician,审核医师,String,审核报告的医师,王主任
-urgentFlag,紧急标识,String,"是否紧急。<br>**建议值**: `否`, `是`<br>**紧急**: 急性出血、穿孔、可疑恶性",否
+Quality_Indicators,withdrawal_time,退镜时间,integer,seconds,0-1800,,,N,退镜观察时间,质控指标>6分钟
+Quality_Indicators,complete_visualization,完整观察,categorical,,,"Yes,No",,,N,所有部位检查,质量标准
+Quality_Indicators,photo_documentation,图像记录,categorical,,,"Adequate,Inadequate",,,N,照片记录充分性,质控

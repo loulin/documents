@@ -1,0 +1,158 @@
+Category,Subcategory,Field_Name,Field_Name_CN,Data_Type,Unit,Value_Range,Normal_Range,Abnormal_Indicators,Clinical_Significance,Interpretation_Logic,Related_Diseases,Risk_Level,Recommended_Actions,LOINC_Code,Notes
+Basic_Info,Patient_Info,patient_id,患者ID,String,,,,,Patient unique identifier,,,Low,,,"Unique patient identifier"
+Basic_Info,Patient_Info,exam_date,检查日期,Date,,,,,Date of bone scan examination,,,Low,,,"Format: YYYY-MM-DD"
+Basic_Info,Patient_Info,patient_age,患者年龄,Integer,years,0-120,,,"Age at examination",,,Low,,,"Affects interpretation of findings"
+Basic_Info,Patient_Info,patient_gender,患者性别,Categorical,,Male/Female,,,"Gender",,,Low,,,"Male/Female"
+Basic_Info,Exam_Info,indication,检查适应症,String,,,,,Reason for bone scan,,,Low,,,Bone pain/cancer staging/metastasis detection/infection
+Basic_Info,Exam_Info,radiopharmaceutical,放射性药物,String,,,,,"Radiopharmaceutical used","Tc-99m MDP (methylene diphosphonate) most common",,Low,,,Standard tracer for bone imaging
+Basic_Info,Exam_Info,injected_dose,注射剂量,Float,mCi,15-30,20-25,,"Dose of Tc-99m MDP injected","Typical adult dose 20-25 mCi",,Low,,,Weight-based dosing
+Basic_Info,Exam_Info,time_post_injection,注射后时间,Integer,hours,2-4,3-4,,"Time from injection to imaging","2-4 hours delay for optimal imaging",,Low,,,Allows soft tissue clearance
+Basic_Info,Exam_Info,scan_type,扫描类型,Categorical,,"Whole_body/Three_phase/Limited/SPECT",,,"Type of bone scan","Whole-body: metastases; Three-phase: infection/RSD; SPECT: detail",,Low,,,Protocol depends on indication
+
+Scan_Quality,Technical,image_quality,图像质量,Categorical,,"Excellent/Good/Fair/Poor",,Fair/Poor,"Image quality assessment","Motion, count statistics, patient cooperation",,Medium,Repeat if poor,,"Poor hydration affects quality"
+Scan_Quality,Technical,adequate_hydration,充分水化,Boolean,,Yes/No,Yes,No,"Patient adequately hydrated","Good hydration improves soft tissue clearance and image quality",,Low,Renal/bladder activity decreased,,"Hydration critical for quality"
+Scan_Quality,Technical,motion_artifact,运动伪影,Boolean,,Yes/No,No,Yes,"Significant motion artifact present","May obscure lesions",,Medium,Repeat if severe,,"Patient movement during scan"
+Scan_Quality,Biodistribution,normal_biodistribution,正常生物分布,Boolean,,Yes/No,Yes,No,"Normal tracer distribution","Uniform skeletal uptake, minimal soft tissue",,Low,Abnormal suggests pathology,,"Skeleton, kidneys, bladder normal"
+
+Overall_Pattern,Distribution,uptake_pattern,摄取模式,Categorical,,"Normal/Focal/Multifocal/Diffuse/Superscan",,Abnormal,"Pattern of radiotracer uptake","Normal: uniform; Focal: single lesion; Multifocal: metastases; Diffuse: metabolic; Superscan: extensive metastases",Bone_Metastases,High,Pattern guides differential,,"Pattern narrows differential diagnosis"
+Overall_Pattern,Distribution,superscan,超级扫描,Boolean,,Yes/No,No,Yes,"Superscan pattern","Diffusely increased skeletal uptake, faint/absent kidneys, skeleton brighter than soft tissue",Extensive_Bone_Metastases,Critical,Indicates extensive disease,,"Prostate/breast mets, metabolic bone disease"
+Overall_Pattern,Metastases,metastatic_pattern,转移模式,Boolean,,Yes/No,No,Yes,"Pattern consistent with bone metastases","Multiple focal areas in axial skeleton, random distribution",Bone_Metastases,Critical,Oncology referral,,"Axial > appendicular in metastases"
+Overall_Pattern,Degenerative,degenerative_pattern,退变模式,Boolean,,Yes/No,No,,"Pattern consistent with degenerative changes","Uptake at joint margins, facets, osteophytes",Degenerative_Joint_Disease,Low,Usually benign, correlate with imaging,,"Very common, increases with age"
+
+Skull,Lesions,skull_lesion,颅骨病灶,Boolean,,Yes/No,No,Yes,"Abnormal skull uptake","Metastasis, Paget's, fibrous dysplasia, trauma",Skull_Metastasis,High,Correlate with CT/MRI,,"CT/MRI for characterization"
+Skull,Lesions,skull_lesion_location,颅骨病灶部位,String,,,,,Location of skull lesion,"Calvarium, base, facial bones",,Medium,,,
+Skull,Lesions,skull_uptake_intensity,颅骨病灶摄取强度,Categorical,,"None/Mild/Moderate/Intense",,Moderate/Intense,"Intensity of skull lesion uptake","Intense uptake: metastasis, Paget's",Bone_Metastasis,High,Intense uptake concerning,,"Intensity correlates with activity"
+
+Facial_Bones,Sinuses,sinus_uptake,鼻窦摄取,Boolean,,Yes/No,No,,"Paranasal sinus uptake","Often incidental, sinusitis, polyps",Sinusitis,Low,Usually benign/incidental,,"Very common incidental finding"
+Facial_Bones,Mandible,mandible_uptake,下颌骨摄取,Boolean,,Yes/No,No,Yes,"Mandibular uptake","Dental disease, infection, tumor, osteoradionecrosis",Mandibular_Pathology,Medium,Dental/ENT evaluation,,"Correlate with dental history"
+Facial_Bones,TMJ,tmj_uptake,颞下颌关节摄取,Boolean,,Yes/No,No,,"TMJ uptake","Degenerative changes, arthritis",TMJ_Arthritis,Low,Often benign,,"Common degenerative finding"
+
+Spine,Cervical,cervical_spine_lesion,颈椎病灶,Boolean,,Yes/No,No,Yes,"Cervical spine abnormal uptake","Metastasis, degenerative, trauma, infection",Spine_Metastasis,High,Correlate with MRI,,"MRI for cord compression risk"
+Spine,Cervical,cervical_lesion_count,颈椎病灶数量,Integer,lesions,0-20,0,≥1,"Number of cervical spine lesions",,,Medium,,,
+Spine,Cervical,cervical_degenerative,颈椎退变,Boolean,,Yes/No,No,,"Degenerative cervical spine uptake","Facet joints, endplates, uncovertebral joints",Cervical_Spondylosis,Low,Usually benign,,"Very common in elderly"
+Spine,Thoracic,thoracic_spine_lesion,胸椎病灶,Boolean,,Yes/No,No,Yes,"Thoracic spine abnormal uptake",,,High,,,
+Spine,Thoracic,thoracic_lesion_count,胸椎病灶数量,Integer,lesions,0-20,0,≥1,"Number of thoracic spine lesions",,,Medium,Multiple suggests metastases,,
+Spine,Lumbar,lumbar_spine_lesion,腰椎病灶,Boolean,,Yes/No,No,Yes,"Lumbar spine abnormal uptake",,,High,,,
+Spine,Lumbar,lumbar_lesion_count,腰椎病灶数量,Integer,lesions,0-20,0,≥1,"Number of lumbar spine lesions",,,Medium,,,
+Spine,Lumbar,lumbar_degenerative,腰椎退变,Boolean,,Yes/No,No,,"Degenerative lumbar spine uptake","Facet joints, endplates",Lumbar_Spondylosis,Low,Very common finding,,"Nearly universal in elderly"
+Spine,Sacrum,sacral_lesion,骶骨病灶,Boolean,,Yes/No,No,Yes,"Sacral abnormal uptake","Metastasis, insufficiency fracture, sacroiliitis",Sacral_Insufficiency_Fracture,Medium,Correlate with MRI/CT,,"Insufficiency fracture common in elderly osteoporotic women"
+Spine,Sacrum,sacral_insufficiency_fracture,骶骨应力性骨折,Boolean,,Yes/No,No,Yes,"Sacral insufficiency fracture pattern","H-pattern or Honda sign: bilateral vertical + horizontal uptake",Insufficiency_Fracture,Medium,Osteoporosis workup,,"Classic H/Honda sign highly specific"
+
+Spine,SI_Joints,si_joint_uptake,骶髂关节摄取,Boolean,,Yes/No,No,Yes,"Sacroiliac joint uptake","Sacroiliitis (inflammatory), degenerative, infection",Sacroiliitis,Medium,Consider inflammatory arthropathy,,"Ankylosing spondylitis, reactive arthritis"
+Spine,SI_Joints,si_uptake_pattern,骶髂关节摄取模式,Categorical,,"None/Unilateral/Bilateral",,Bilateral,"SI joint uptake pattern","Bilateral: inflammatory; Unilateral: degenerative/infection",Ankylosing_Spondylitis,Medium,Bilateral suggests inflammatory,,"Bilateral sacroiliitis in SpA"
+
+Ribs,Lesions,rib_lesion,肋骨病灶,Boolean,,Yes/No,No,Yes,"Rib abnormal uptake","Metastasis, trauma, Paget's",Rib_Metastasis,High,Determine cause,,"Very common site for metastases"
+Ribs,Lesions,rib_lesion_count,肋骨病灶数量,Integer,lesions,0-50,0,≥1,"Number of rib lesions","Multiple: metastases or trauma; Single: could be either",,Medium,Pattern helps differentiation,,"Trauma: linear, posterior"
+Ribs,Lesions,rib_lesion_locations,肋骨病灶部位,String,,,,,Locations of rib lesions,"Right/left, anterior/lateral/posterior, numbered ribs",,Medium,Posterior: trauma; Random: metastases,,"Trauma typically posterior, linear"
+Ribs,Trauma,rib_fracture_pattern,肋骨骨折模式,Boolean,,Yes/No,No,,"Pattern consistent with rib fractures","Linear uptake, posterior/lateral, adjacent ribs",Rib_Fracture,Low,Benign if trauma history,,"Posterior ribs, linear, recent trauma"
+
+Sternum,Lesions,sternal_lesion,胸骨病灶,Boolean,,Yes/No,No,Yes,"Sternal abnormal uptake","Metastasis, post-sternotomy, costochondritis",Sternal_Metastasis,Medium,Correlate with history/imaging,,"Post-sternotomy uptake normal up to 1 year"
+Sternum,Trauma,manubriosternal_uptake,胸骨柄体连接摄取,Boolean,,Yes/No,No,,"Manubriosternal junction uptake","Often degenerative/calcification",Degenerative_Change,Low,Usually benign,,"Common incidental finding"
+
+Clavicles,Lesions,clavicle_lesion,锁骨病灶,Boolean,,Yes/No,No,Yes,"Clavicle abnormal uptake","Metastasis, trauma, arthritis",Clavicle_Metastasis,Medium,,,
+Clavicles,Joints,sc_joint_uptake,胸锁关节摄取,Boolean,,Yes/No,No,,"Sternoclavicular joint uptake","Degenerative, SAPHO, infection",SC_Joint_Arthritis,Low,Consider SAPHO if prominent,,"SAPHO syndrome: SC joint involvement"
+
+Scapulae,Lesions,scapula_lesion,肩胛骨病灶,Boolean,,Yes/No,No,Yes,"Scapula abnormal uptake","Metastasis, trauma",Scapula_Metastasis,Medium,,,
+
+Shoulders,AC_Joint,ac_joint_uptake,肩锁关节摄取,Boolean,,Yes/No,No,,"Acromioclavicular joint uptake","Degenerative, post-traumatic",AC_Joint_Arthritis,Low,Very common, often asymptomatic,,"Nearly universal in adults"
+Shoulders,Glenohumeral,glenohumeral_uptake,肩关节摄取,Boolean,,Yes/No,No,Yes,"Glenohumeral joint uptake","Arthritis, rotator cuff disease, AVN",Shoulder_Arthritis,Medium,Correlate with symptoms,,"Assess for AVN, arthritis"
+
+Humerus,Lesions,humerus_lesion,肱骨病灶,Boolean,,Yes/No,No,Yes,"Humerus abnormal uptake","Metastasis, trauma, primary tumor",Humerus_Metastasis,High,Risk of pathologic fracture,,"Proximal humerus common metastatic site"
+Humerus,Lesions,humerus_lesion_location,肱骨病灶部位,Categorical,,"None/Proximal/Shaft/Distal",,,"Location of humerus lesion","Proximal: metastasis; Shaft: trauma/tumor; Distal: trauma",,Medium,,,
+
+Elbows,Lesions,elbow_uptake,肘关节摄取,Boolean,,Yes/No,No,,"Elbow uptake","Arthritis, trauma, epicondylitis",Elbow_Arthritis,Low,Often degenerative,,"Lateral epicondylitis common"
+
+Forearm,Lesions,radius_ulna_lesion,桡尺骨病灶,Boolean,,Yes/No,No,Yes,"Radius/ulna abnormal uptake","Trauma, metastasis (rare in forearm)",,Medium,,,
+
+Wrists,Lesions,wrist_uptake,腕关节摄取,Boolean,,Yes/No,No,Yes,"Wrist uptake","Arthritis (RA, OA), trauma, AVN (lunate)",Wrist_Arthritis,Medium,RA commonly affects wrists,,"Rheumatoid arthritis predilection"
+
+Hands,Lesions,hand_uptake,手部摄取,Boolean,,Yes/No,No,Yes,"Hand/finger uptake","Arthritis, trauma, reflex sympathetic dystrophy",Hand_Arthritis,Medium,RA, OA, psoriatic arthritis,,"Small joint involvement in RA"
+Hands,Pattern,diffuse_hand_uptake,弥漫性手部摄取,Boolean,,Yes/No,No,Yes,"Diffuse bilateral hand uptake","Inflammatory arthritis (RA, psoriatic), RSD",Rheumatoid_Arthritis,Medium,Suggests inflammatory arthropathy,,"Symmetric: RA; Asymmetric: PsA"
+
+Pelvis,Lesions,pelvic_lesion,骨盆病灶,Boolean,,Yes/No,No,Yes,"Pelvic bone abnormal uptake","Metastasis, Paget's, fracture",Pelvic_Metastasis,High,Common site for metastases,,"Ilium, sacrum, pubis common sites"
+Pelvis,Lesions,pelvic_lesion_count,骨盆病灶数量,Integer,lesions,0-20,0,≥1,"Number of pelvic lesions",,,Medium,,,
+Pelvis,Lesions,iliac_lesion,髂骨病灶,Boolean,,Yes/No,No,Yes,"Iliac bone uptake","Metastasis most common, Paget's, trauma",,High,,,
+Pelvis,Lesions,pubic_lesion,耻骨病灶,Boolean,,Yes/No,No,Yes,"Pubic bone uptake","Insufficiency fracture, metastasis, osteitis pubis",Pubic_Insufficiency_Fracture,Medium,Insufficiency fracture in elderly,,"Bilateral pubic rami: insufficiency fracture"
+Pelvis,Lesions,ischial_lesion,坐骨病灶,Boolean,,Yes/No,No,Yes,"Ischial bone uptake",,,Medium,,,
+Pelvis,Fracture,pelvic_insufficiency_fracture,骨盆应力性骨折,Boolean,,Yes/No,No,Yes,"Pelvic insufficiency fracture pattern","Bilateral pubic rami, sacral H-sign",Insufficiency_Fracture,Medium,Osteoporosis treatment,,"Elderly osteoporotic women"
+
+Hips,Lesions,hip_uptake,髋关节摄取,Boolean,,Yes/No,No,Yes,"Hip joint uptake","Arthritis, AVN, fracture, metastasis",Hip_Arthritis,Medium,Common site for OA,,"Hip OA very common"
+Hips,AVN,femoral_head_avn,股骨头缺血坏死,Boolean,,Yes/No,No,Yes,"Femoral head avascular necrosis","Photopenic defect or increased uptake depending on stage",Avascular_Necrosis,High,MRI for confirmation,,"Steroids, alcohol, trauma risk factors"
+Hips,Prosthesis,hip_prosthesis,髋关节假体,Boolean,,Yes/No,No,,"Hip prosthesis present","Photopenic metal prosthesis",,Low,Baseline for future comparison,,"Uptake at tip or along stem: loosening"
+Hips,Prosthesis,prosthesis_uptake,假体周围摄取,Boolean,,Yes/No,No,Yes,"Uptake around hip prosthesis","Loosening, infection, normal bone remodeling (<1 year)",Prosthesis_Loosening,Medium,Infection vs loosening,,"Focal intense uptake: loosening/infection"
+
+Femur,Lesions,femur_lesion,股骨病灶,Boolean,,Yes/No,No,Yes,"Femur abnormal uptake","Metastasis, fracture, primary tumor",Femur_Metastasis,High,Proximal femur at fracture risk,,"Proximal femur common metastatic site"
+Femur,Lesions,femur_lesion_location,股骨病灶部位,Categorical,,"None/Proximal/Shaft/Distal",,,"Location of femur lesion","Proximal: metastasis; Shaft: trauma; Distal: trauma/arthritis",,High,Proximal lesions high fracture risk,,"Prophylactic fixation if >50% cortex"
+
+Knees,Lesions,knee_uptake,膝关节摄取,Boolean,,Yes/No,No,Yes,"Knee uptake","Arthritis, meniscal tear, trauma, infection",Knee_Arthritis,Medium,Very common site for OA,,"Knee OA extremely common"
+Knees,Compartments,tricompartmental_knee,膝关节三室摄取,Boolean,,Yes/No,No,,"Tricompartmental knee uptake","Medial, lateral, patellofemoral compartments",Severe_Knee_OA,Medium,Severe OA, consider replacement,,"Tricompartmental: advanced OA"
+
+Tibia_Fibula,Lesions,tibia_fibula_lesion,胫腓骨病灶,Boolean,,Yes/No,No,Yes,"Tibia/fibula abnormal uptake","Stress fracture, trauma, Paget's, metastasis (rare)",,Medium,,,
+Tibia_Fibula,Stress_Fracture,tibial_stress_fracture,胫骨应力性骨折,Boolean,,Yes/No,No,Yes,"Tibial stress fracture","Linear cortical uptake, often distal 1/3",Stress_Fracture,Medium,Rest, activity modification,,"Athletes, military recruits"
+
+Ankles,Lesions,ankle_uptake,踝关节摄取,Boolean,,Yes/No,No,Yes,"Ankle uptake","Arthritis, trauma, tarsal coalition",Ankle_Arthritis,Medium,,,
+
+Feet,Lesions,foot_uptake,足部摄取,Boolean,,Yes/No,No,Yes,"Foot uptake","Arthritis, trauma, plantar fasciitis, stress fracture",,Medium,,,
+Feet,Lesions,calcaneus_uptake,跟骨摄取,Boolean,,Yes/No,No,Yes,"Calcaneal uptake","Plantar fasciitis insertion, stress fracture, Paget's",Plantar_Fasciitis,Low,Common, usually benign,,"Insertion plantar fasciitis very common"
+Feet,Lesions,metatarsal_uptake,跖骨摄取,Boolean,,Yes/No,No,Yes,"Metatarsal uptake","Stress fracture (march fracture), arthritis",Metatarsal_Stress_Fracture,Medium,Second/third metatarsals common,,"March fracture in military/athletes"
+
+Whole_Skeleton,Metastases,number_of_metastases,转移灶数量,Categorical,,"None/Solitary/Oligometastatic/Numerous/Superscan",,Any,"Estimated number of bone metastases","None; Solitary (1); Oligo (2-5); Numerous (>5); Superscan (diffuse)",Bone_Metastases,Critical,Burden affects prognosis,,"Oligometastatic: potentially curable"
+Whole_Skeleton,Metastases,metastatic_distribution,转移分布,Categorical,,"None/Axial/Appendicular/Mixed",,,"Distribution of metastases","Axial: spine, pelvis, ribs, skull; Appendicular: limbs",Bone_Metastases,High,Axial distribution typical,,"Metastases prefer axial red marrow"
+Whole_Skeleton,Metastases,primary_tumor_type,原发肿瘤类型,String,,,,,Known primary malignancy,"Prostate, breast, lung, thyroid, kidney, myeloma",,High,Common primaries that metastasize to bone,,"Prostate/breast most common"
+Whole_Skeleton,Metastases,blastic_lytic,成骨溶骨,Categorical,,"Normal/Blastic/Lytic/Mixed",,,"Metastases classification","Blastic (increased uptake): prostate, breast; Lytic (photopenic/increased rim): myeloma, kidney, thyroid",,High,Pattern suggests primary,,"Bone scan detects blastic better than lytic"
+
+Degenerative_Changes,Spine,multilevel_spondylosis,多节段脊柱病,Boolean,,Yes/No,No,,"Multilevel degenerative spine disease","Facet uptake, endplate uptake, osteophytes",Degenerative_Spine_Disease,Low,Age-related, correlate clinically,,"Universal in elderly"
+Degenerative_Changes,Joints,polyarticular_arthritis,多关节炎,Boolean,,Yes/No,No,Yes,"Multiple joint uptake","RA, psoriatic arthritis, OA",Polyarticular_Arthritis,Medium,Rheumatology workup if inflammatory,,"Symmetric small joints: RA"
+
+Infection,Osteomyelitis,osteomyelitis_suspected,骨髓炎疑似,Boolean,,Yes/No,No,Yes,"Findings suggestive of osteomyelitis","Focal intense uptake, soft tissue uptake on blood pool",Osteomyelitis,High,MRI, biopsy, antibiotics,,"Three-phase scan for diagnosis"
+Infection,Osteomyelitis,osteomyelitis_location,骨髓炎部位,String,,,,,Location of suspected osteomyelitis,"Diabetic foot, vertebra (discitis), long bone",,High,Diabetic foot common,,"Diabetic foot osteomyelitis common"
+Infection,Discitis,discitis_osteomyelitis,椎间盘炎骨髓炎,Boolean,,Yes/No,No,Yes,"Discitis-osteomyelitis pattern","Increased uptake in adjacent vertebral endplates",Discitis_Osteomyelitis,High,MRI, blood cultures, biopsy,,"Infection crosses disc space"
+
+Paget_Disease,Presence,paget_disease,Paget病,Boolean,,Yes/No,No,Yes,"Paget's disease of bone","Intensely increased uptake, expanded bone, coarse trabeculae on X-ray",Paget_Disease,Medium,Alkaline phosphatase, bisphosphonates,,"Monostotic or polyostotic"
+Paget_Disease,Distribution,paget_locations,Paget病部位,String,,,,,Bones involved by Paget's,"Pelvis, spine, femur, skull, tibia",Paget_Disease,Medium,Common sites,,"Pelvis most common, then spine"
+Paget_Disease,Activity,paget_activity,Paget病活动度,Categorical,,"None/Mild/Moderate/Intense",,,"Activity level of Paget's disease","Intense uptake indicates active disease, may need treatment",,Medium,Intense: consider treatment,,"Bisphosphonates for symptomatic"
+
+Trauma,Fractures,acute_fracture,急性骨折,Boolean,,Yes/No,No,Yes,"Acute/recent fracture present","Linear increased uptake, correlate with trauma history",Fracture,Medium,Fracture management,,"Bone scan positive within hours"
+Trauma,Fractures,fracture_locations,骨折部位,String,,,,,Locations of fractures,"Ribs, spine, pelvis, long bones",,Medium,,,
+Trauma,Stress_Fracture,stress_fracture_present,应力性骨折,Boolean,,Yes/No,No,Yes,"Stress fracture detected","Linear cortical uptake without trauma history",Stress_Fracture,Medium,Activity modification, rest,,"Athletes, military, elderly (insufficiency)"
+Trauma,Old_Fracture,old_fracture,陈旧骨折,Boolean,,Yes/No,No,,"Old healed fracture","Mild uptake or normal, deformity on correlative imaging",,Low,Incidental finding,,"Uptake normalizes over months to years"
+
+Soft_Tissue,Uptake,soft_tissue_uptake,软组织摄取,Boolean,,Yes/No,No,Yes,"Abnormal soft tissue uptake","Heterotopic ossification, myositis ossificans, tumor calcification, recent MI",Soft_Tissue_Calcification,Medium,Determine cause,,"Ddx: HO, tumor, infarct, injection site"
+Soft_Tissue,Heterotopic_Ossification,heterotopic_ossification,异位骨化,Boolean,,Yes/No,No,Yes,"Heterotopic ossification","Soft tissue uptake around joints after trauma/surgery",Heterotopic_Ossification,Low,Common after hip surgery/trauma,,"Peaks 3-6 months post-injury"
+Soft_Tissue,Calcification,vascular_calcification,血管钙化,Boolean,,Yes/No,No,,"Vascular calcification","Linear uptake along vessels, common in diabetics/renal failure",,Low,Marker of vascular disease,,"Common incidental finding"
+
+Kidneys_Bladder,Renal,renal_uptake,肾脏摄取,Categorical,,"Normal/Decreased/Absent/Increased",Normal,Decreased/Absent,"Renal tracer uptake","Normal: bilateral symmetric; Decreased: renal dysfunction; Absent: superscan or renal failure",,Medium,Absent kidneys: superscan or renal failure,,"Absent in superscan"
+Kidneys_Bladder,Bladder,bladder_activity,膀胱活性,Categorical,,"Normal/Decreased/Intense",Normal,Decreased,"Bladder tracer activity","Normal: significant activity from urinary excretion; Decreased: dehydration, obstruction",,Low,Decreased: poor hydration,,"Reflects renal clearance"
+Kidneys_Bladder,Obstruction,urinary_obstruction,尿路梗阻,Boolean,,Yes/No,No,Yes,"Urinary tract obstruction","Dilated collecting system, delayed drainage",Urinary_Obstruction,Medium,Assess for hydronephrosis,,"Delayed renal clearance"
+
+Breast,Uptake,breast_uptake,乳腺摄取,Boolean,,Yes/No,No,Yes,"Breast uptake","Breast cancer with microcalcifications, metastases",Breast_Microcalcifications,Medium,Correlate with mammogram,,"Uncommon, suggests calcifications"
+
+Thyroid,Uptake,thyroid_uptake,甲状腺摄取,Boolean,,Yes/No,No,Yes,"Thyroid gland uptake","Thyroid cancer metastases, medullary thyroid ca",Thyroid_Cancer,Medium,Endocrine evaluation,,"Uncommon on bone scan"
+
+Lung,Uptake,lung_uptake,肺部摄取,Boolean,,Yes/No,No,Yes,"Pulmonary uptake","Metastatic calcification (hypercalcemia), bone metastases to lung",Metastatic_Calcification,High,Check calcium level,,"Hypercalcemia causes lung uptake"
+
+Liver,Uptake,liver_uptake,肝脏摄取,Boolean,,Yes/No,No,Yes,"Hepatic uptake","Metastatic disease, colloid shift, liver disease",Liver_Metastases,High,Assess for metastases,,"Abnormal soft tissue uptake"
+
+Special_Patterns,Flare,flare_phenomenon,闪烁现象,Boolean,,Yes/No,No,,"Flare phenomenon","Paradoxical increase in uptake/number of lesions after starting treatment in responding patients",Treatment_Response,Medium,May indicate response, not progression,,"Healing bone increases uptake"
+Special_Patterns,Response,treatment_response,治疗反应,Categorical,,"Not_assessed/Complete_response/Partial_response/Stable/Progression",,,"Response to therapy","Decrease in intensity/number: response; Increase: progression or flare",Cancer_Treatment_Response,High,Sequential scans for comparison,,"Compare with prior scans"
+
+Three_Phase_Scan,Blood_Flow,blood_flow_phase,血流相,Categorical,,"Not_performed/Normal/Increased/Decreased",,,"Blood flow phase (if performed)","Increased: infection, tumor, RSD; Normal: degenerative",Osteomyelitis,High,Increased flow: infection/tumor,,"Osteomyelitis: positive all 3 phases"
+Three_Phase_Scan,Blood_Pool,blood_pool_phase,血池相,Categorical,,"Not_performed/Normal/Increased/Decreased",,,"Blood pool phase (if performed)","Increased soft tissue: infection, inflammation, RSD",Cellulitis,High,Differentiates infection from other causes,,"Soft tissue phase"
+Three_Phase_Scan,Delayed,delayed_phase,延迟相,Categorical,,"Normal/Increased/Decreased",,,"Delayed bone phase","Standard phase for bone imaging, always performed",,High,Always performed,,
+Three_Phase_Scan,Interpretation,three_phase_pattern,三期扫描模式,Categorical,,"Normal/Osteomyelitis/Cellulitis/Fracture/Tumor/RSD",,,"Three-phase scan interpretation","Osteomyelitis: +/+/+; Cellulitis: +/+/-; Fracture: -/-/+; RSD: +/+/+",Osteomyelitis,High,Pattern differentiates etiologies,,"Triple positive: infection, RSD, tumor"
+
+SPECT_CT,Performed,spect_ct_performed,SPECT-CT检查,Boolean,,Yes/No,No,,"SPECT/CT performed","Hybrid imaging for anatomical localization",,Low,Improves lesion localization,,"SPECT/CT increasingly standard"
+SPECT_CT,Benefit,spect_ct_benefit,SPECT-CT获益,Boolean,,Yes/No,No,,"SPECT/CT provided additional value","Improved anatomical localization, characterization",,Medium,Especially for spine, pelvis,,"Particularly useful for complex anatomy"
+
+Report_Summary,Impression,primary_finding,主要发现,String,,,,,Primary bone scan finding,,,High,,,Most important finding
+Report_Summary,Impression,differential_diagnosis,鉴别诊断,String,,,,,Differential diagnosis,,,Medium,,,Possible etiologies
+Report_Summary,Impression,comparison_prior,与前次比较,String,,,,,Comparison with prior bone scan if available,"Progression, stability, improvement, response to therapy",,High,Serial scans critical for monitoring,,"Always compare if prior available"
+Report_Summary,Impression,metastatic_burden_change,转移负荷变化,Categorical,,"Not_applicable/Decreased/Stable/Increased",,Increased,"Change in metastatic burden","Decreased: response; Increased: progression (or flare)",,High,Guide treatment decisions,,"Flare vs progression: clinical correlation"
+
+Report_Summary,Recommendations,correlative_imaging,相关影像检查,String,,,,,Recommended correlative imaging,"X-ray, CT, MRI, PET-CT for characterization",,Medium,Bone scan nonspecific, needs correlation,,"MRI for spine, X-ray for extremities"
+Report_Summary,Recommendations,follow_up_scan,随访扫描,String,,,,,Recommended follow-up bone scan interval,"3-6 months for metastases monitoring",,Medium,Monitor treatment response,,"Timing depends on indication"
+Report_Summary,Recommendations,clinical_correlation,临床相关性,String,,,,,Clinical correlation needed,"Tumor markers, biopsy, labs, clinical symptoms",,Medium,,,
+
+Report_Summary,Quality,nuclear_medicine_physician,核医学医师,String,,,,,Interpreting nuclear medicine physician,,,Low,,,
+Report_Summary,Quality,report_date,报告日期,Date,,,,,Date of report generation,,,Low,,,"Format: YYYY-MM-DD"
+Report_Summary,Quality,comparison_available,既往对比,Boolean,,Yes/No,No,,"Prior bone scan available for comparison",,,Low,Comparison critical for interpretation,,"Always request priors"

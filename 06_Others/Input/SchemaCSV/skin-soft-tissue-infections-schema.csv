@@ -1,0 +1,86 @@
+Category,Field_Name,Chinese_Name,Data_Type,Unit,Valid_Range,LOINC_Code,Required,Description,Clinical_Significance
+Basic_Info,patient_id,患者ID,string,,,,,Y,唯一标识,患者追踪
+Basic_Info,onset_date,起病日期,date,,,,,Y,症状开始时间,病程
+Basic_Info,age,年龄,integer,years,0-120,,,Y,患者年龄,流行病学
+Basic_Info,gender,性别,categorical,,Male,Female,,,Y,性别,流行病学
+
+SSTI_Type,ssti_classification,SSTI类型,categorical,,Impetigo,Erysipelas,Cellulitis,Necrotizing_Fasciitis,Abscess,Furuncle,Carbuncle,,,Y,脓疱疮/丹毒/蜂窝织炎/坏死性筋膜炎/脓肿/疖/痈,分类
+SSTI_Type,purulent,化脓性,boolean,,,,,Y,脓液形成,引流指征
+SSTI_Type,non_purulent,非化脓性,boolean,,,,,Y,无脓液,β-溶血性链球菌
+
+Severity,severity,严重度,categorical,,Mild,Moderate,Severe,,,Y,轻度/中度/重度,IDSA分级
+Severity,systemic_signs,全身症状,boolean,,,,,Y,发热/心动过速/低血压,严重感染
+
+Location,anatomic_location,解剖部位,categorical,,Head_Neck,Trunk,Upper_Extremity,Lower_Extremity,Perineum,,,Y,头颈/躯干/上肢/下肢/会阴,部位
+Location,bilateral,双侧,boolean,,,,,N,双侧受累,严重
+Location,area_involved,累及面积,decimal,cm²,0-10000,,,N,病变面积,严重度
+
+Symptoms,erythema,红斑,boolean,,,,,Y,皮肤发红,炎症
+Symptoms,warmth,温热,boolean,,,,,Y,局部温度升高,炎症
+Symptoms,swelling,肿胀,boolean,,,,,Y,水肿,炎症
+Symptoms,pain,疼痛,boolean,,,,,Y,局部疼痛,炎症
+Symptoms,tenderness,压痛,boolean,,,,,Y,触痛,炎症
+Symptoms,fluctuance,波动感,boolean,,,,,Y,触诊波动,脓肿
+Symptoms,purulent_drainage,脓性分泌物,boolean,,,,,Y,脓液,化脓性感染
+Symptoms,crepitus,捻发感,boolean,,,,,Y,皮下气体,产气菌/坏死性感染
+Symptoms,skin_necrosis,皮肤坏死,boolean,,,,,Y,组织坏死,坏死性筋膜炎
+Symptoms,bullae,大疱,boolean,,,,,Y,水疱,严重
+
+Vital_Signs,temperature,体温,decimal,°C,35-42,8310-5,,Y,当前体温,全身感染
+Vital_Signs,heart_rate,心率,integer,bpm,0-300,8867-4,,Y,心率,SIRS
+Vital_Signs,blood_pressure_sys,收缩压,integer,mmHg,0-300,8480-6,,Y,收缩压,休克
+
+Labs,wbc,白细胞计数,decimal,×10⁹/L,0-100,6690-2,,Y,WBC,感染
+Labs,crp,C反应蛋白,decimal,mg/L,0-500,1988-5,,Y,CRP,炎症
+Labs,creatine_kinase,肌酸激酶,decimal,U/L,0-100000,2157-6,,Y,CK,肌肉坏死/坏死性筋膜炎
+Labs,lactate,乳酸,decimal,mmol/L,0-20,2524-7,,Y,Lac,组织灌注/坏死性感染
+Labs,sodium,钠,decimal,mmol/L,0-200,2951-2,,Y,Na+,LRINEC评分
+
+LRINEC_Score,lrinec_score,LRINEC评分,integer,,0-13,,,N,坏死性筋膜炎风险评分,≥6分高风险
+LRINEC_Score,lrinec_crp,CRP评分,integer,,0-4,,,N,CRP分值,LRINEC组分
+LRINEC_Score,lrinec_wbc,WBC评分,integer,,0-2,,,N,WBC分值,LRINEC组分
+LRINEC_Score,lrinec_hb,Hb评分,integer,,0-2,,,N,Hb分值,LRINEC组分
+LRINEC_Score,lrinec_sodium,Na评分,integer,,0-2,,,N,Na分值,LRINEC组分
+LRINEC_Score,lrinec_creatinine,Cr评分,integer,,0-2,,,N,Cr分值,LRINEC组分
+LRINEC_Score,lrinec_glucose,GLU评分,integer,,0-1,,,N,GLU分值,LRINEC组分
+
+Culture,wound_culture,创面培养,categorical,,Not_Done,Negative,Positive,,,Y,创面分泌物培养,病原学
+Culture,blood_culture,血培养,categorical,,Not_Done,Negative,Positive,,,Y,血培养,菌血症
+Culture,organism,致病菌,categorical,,None,S_aureus,MRSA,Streptococcus_pyogenes,Polymicrobial,Clostridium,Vibrio,Aeromonas,,,Y,无/金葡菌/MRSA/A组链球菌/多菌/梭菌/弧菌/气单胞菌,病原学
+
+Imaging,xray,X线,boolean,,,,,Y,X线平片,皮下气体
+Imaging,ct_scan,CT扫描,boolean,,,,,Y,CT,深部感染/坏死性筋膜炎
+Imaging,mri,MRI,boolean,,,,,N,MRI,软组织/骨髓炎
+Imaging,gas_in_soft_tissue,软组织积气,boolean,,,,,Y,皮下/筋膜气体,产气菌/坏死性感染
+
+Necrotizing_Fasciitis,necrotizing_fasciitis,坏死性筋膜炎,boolean,,,,,Y,NF,外科急症
+Necrotizing_Fasciitis,pain_out_of_proportion,疼痛不成比例,boolean,,,,,Y,剧烈疼痛超出体征,NF特征
+Necrotizing_Fasciitis,dishwater_discharge,洗肉水样分泌物,boolean,,,,,N,特征性分泌物,NF
+Necrotizing_Fasciitis,fournier_gangrene,Fournier坏疽,boolean,,,,,N,会阴坏死性筋膜炎,泌尿生殖源
+
+Treatment_Mild_Moderate,outpatient_oral,门诊口服,boolean,,,,,Y,轻中度口服治疗,无全身症状
+Treatment_Mild_Moderate,cephalexin,头孢氨苄,boolean,,,,,Y,500mg qid,非化脓性
+Treatment_Mild_Moderate,dicloxacillin,双氯西林,boolean,,,,,N,500mg qid,MSSA
+Treatment_Mild_Moderate,tmp_smx,复方新诺明,boolean,,,,,Y,TMP-SMX DS bid,MRSA
+Treatment_Mild_Moderate,doxycycline,多西环素,boolean,,,,,Y,100mg bid,MRSA
+Treatment_Mild_Moderate,clindamycin,克林霉素,boolean,,,,,Y,300-450mg tid,化脓性
+
+Treatment_Severe,inpatient_iv,住院静脉,boolean,,,,,Y,重度静脉治疗,全身感染
+Treatment_Severe,vancomycin,万古霉素,boolean,,,,,Y,15-20mg/kg q8-12h,MRSA
+Treatment_Severe,linezolid,利奈唑胺,boolean,,,,,N,600mg q12h,MRSA
+Treatment_Severe,daptomycin,达托霉素,boolean,,,,,N,4-6mg/kg qd,MRSA
+Treatment_Severe,cefazolin,头孢唑林,boolean,,,,,Y,1-2g q8h,MSSA
+Treatment_Severe,piperacillin_tazobactam,哌拉西林他唑巴坦,boolean,,,,,N,4.5g q6h,多菌/坏死性
+Treatment_Severe,meropenem,美罗培南,boolean,,,,,N,1g q8h,坏死性筋膜炎
+Treatment_Severe,clindamycin_toxin,克林霉素抑毒素,boolean,,,,,Y,600-900mg q8h,抑制外毒素产生
+
+Surgical_Intervention,surgical_debridement,外科清创,boolean,,,,,Y,清除坏死组织,源控制
+Surgical_Intervention,incision_drainage,切开引流,boolean,,,,,Y,脓肿引流,化脓性感染
+Surgical_Intervention,amputation,截肢,boolean,,,,,N,肢体切除,挽救生命
+Surgical_Intervention,repeated_debridement,反复清创,boolean,,,,,N,多次手术,坏死性筋膜炎
+
+Outcome,clinical_cure,临床治愈,boolean,,,,,Y,症状消失,疗效
+Outcome,mortality,死亡,boolean,,,,,Y,院内死亡,NF病死率20-40%
+
+Report,provider,诊疗医师,string,,,,,Y,医师姓名,责任医师
+Report,report_date,报告日期,date,,,,,Y,报告时间,文档记录

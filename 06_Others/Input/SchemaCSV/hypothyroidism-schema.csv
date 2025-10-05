@@ -1,190 +1,135 @@
-字段名 (英文),字段名 (中文),数据类型,描述,示例
-examDate,检查日期,String,进行甲减相关检查的日期,2025-08-15
-diagnosisDate,诊断日期,String,首次诊断甲减的日期,2025-06-10
-clinicalPresentation,临床表现,String,"主要临床表现。<br>**建议值**: `无症状(筛查发现)`, `典型甲减症状`, `黏液性水肿昏迷`, `不典型症状`",典型甲减症状
-diseaseStatus,疾病状态,String,"疾病当前状态。<br>**建议值**: `初诊未治疗`, `治疗中`, `治疗达标`, `治疗未达标`, `停药后复发`",治疗中
+Category,Field_Name,Chinese_Name,Data_Type,Unit,Valid_Range,LOINC_Code,Required,Description,Clinical_Significance
+Basic_Info,patient_id,患者ID,string,,,,,Y,唯一患者标识,用于患者追踪
+Basic_Info,diagnosis_date,确诊日期,date,,,,,Y,甲减确诊日期,疾病起点
+Basic_Info,age_at_diagnosis,确诊年龄,integer,years,0-120,,,N,甲减确诊时年龄,各年龄段可发病
+Basic_Info,gender,性别,categorical,,,"Male,Female,Other",,,Y,患者性别,女性更常见
+Basic_Info,ethnicity,种族,categorical,,,"Han,Minority,Caucasian,African,Asian,Other",,,N,种族背景,流行病学
 
-# 症状评分
-symptoms.fatigue,症状.乏力,String,"乏力程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`<br>**甲减最常见症状**: 90%患者有乏力",中度
-symptoms.coldIntolerance,症状.怕冷,String,"怕冷程度。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
-symptoms.weightGain,症状.体重增加,Number,"近3个月体重增加。<br>单位: kg<br>**甲减特点**: 体重增加主要为水钠潴留而非脂肪",5.5
-symptoms.constipation,症状.便秘,String,"便秘情况。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
-symptoms.drySkin,症状.皮肤干燥,String,"皮肤干燥情况。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",重度
-symptoms.hairLoss,症状.脱发,String,"脱发情况。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
-symptoms.memoryImpairment,症状.记忆力减退,String,"记忆力减退。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
-symptoms.depression,症状.抑郁,String,"抑郁症状。<br>**建议值**: `无`, `轻度`, `中度`, `重度`<br>**甲减**: 可引起抑郁情绪",轻度
-symptoms.menstrualChange,症状.月经改变,String,"月经改变(女性)。<br>**建议值**: `正常`, `月经过多`, `月经延长`, `闭经`, `不适用`<br>**甲减**: 常见月经过多、月经延长",月经过多
-symptoms.hoarseness,症状.声音嘶哑,String,"声音嘶哑。<br>**建议值**: `无`, `有`<br>**原因**: 声带黏液性水肿",有
-symptoms.muscleAche,症状.肌肉酸痛,String,"肌肉酸痛。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
-symptoms.jointPain,症状.关节疼痛,String,"关节疼痛。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
-symptoms.paresthesia,症状.手足麻木,String,"手足麻木(腕管综合征)。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",轻度
-symptoms.hearingLoss,症状.听力下降,String,"听力下降。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",无
+Etiology,primary_etiology,主要病因,categorical,,,"Hashimoto_Thyroiditis,Iatrogenic,Iodine_Deficiency,Congenital,Pituitary,Hypothalamic,Drug_Induced,Transient,Other",,,Y,甲减病因分类,桥本最常见
+Etiology,hashimoto_thyroiditis,桥本甲状腺炎,categorical,,,"Yes,No,Suspected",,,N,是否桥本甲状腺炎,自身免疫最常见
+Etiology,post_treatment,医源性甲减,categorical,,,"Post_RAI,Post_Surgery,Post_External_Radiation,None",,,N,治疗后甲减,甲亢/癌症术后
+Etiology,iodine_status,碘状态,categorical,,,"Deficient,Sufficient,Excess,Unknown",,,N,碘营养状况,缺碘地区
+Etiology,congenital_hypothyroidism,先天性甲减,categorical,,,"Yes,No,Unknown",,,N,是否先天性,新生儿筛查
+Etiology,central_hypothyroidism,中枢性甲减,categorical,,,"Pituitary,Hypothalamic,No",,,N,继发/三级甲减,TSH正常或低
+Etiology,medication_cause,药物诱因,categorical,,,"Lithium,Amiodarone,Interferon,Tyrosine_Kinase_Inhibitor,Anti_Thyroid_Drug,None,Other",,,N,药物相关,锂盐/胺碘酮
 
-# 体格检查
-physicalExam.heartRate,体格检查.心率,Number,"静息心率。<br>单位: 次/分<br>**甲减**: 常<60次/分",56
-physicalExam.bloodPressure.systolic,体格检查.收缩压,Number,"收缩压。<br>单位: mmHg",125
-physicalExam.bloodPressure.diastolic,体格检查.舒张压,Number,"舒张压。<br>单位: mmHg<br>**甲减**: 舒张压可升高",88
-physicalExam.weight,体格检查.体重,Number,"当前体重。<br>单位: kg",68.5
-physicalExam.bmi,体格检查.BMI,Number,"体质指数。<br>单位: kg/m²",26.5
-physicalExam.bodyTemperature,体格检查.体温,Number,"体温。<br>单位: ℃<br>**甲减**: 基础体温偏低",36.2
+Presentation_Symptoms,symptom_onset,症状起始,categorical,,,"Gradual,Sudden,Insidious,Unknown",,,N,症状起病方式,隐匿起病常见
+Presentation_Symptoms,symptom_onset_date,症状起始日期,date,,,,,N,首次症状时间,病程评估
+Presentation_Symptoms,fatigue,乏力,categorical,,,"Severe,Moderate,Mild,None",,,N,疲劳程度,最常见症状
+Presentation_Symptoms,weight_gain,体重增加,categorical,,,"Yes,No",,,N,是否体重增加,低代谢
+Presentation_Symptoms,weight_change,体重变化,decimal,kg,-50-50,,,N,体重改变量,通常增加2-10kg
+Presentation_Symptoms,cold_intolerance,怕冷,categorical,,,"Severe,Moderate,Mild,None",,,N,畏寒程度,低代谢表现
+Presentation_Symptoms,constipation,便秘,categorical,,,"Severe,Moderate,Mild,None",,,N,便秘程度,肠蠕动减慢
+Presentation_Symptoms,dry_skin,皮肤干燥,categorical,,,"Severe,Moderate,Mild,None",,,N,皮肤干燥程度,黏液性水肿
+Presentation_Symptoms,hair_loss,脱发,categorical,,,"Severe,Moderate,Mild,None",,,N,脱发程度,毛发稀疏
+Presentation_Symptoms,hoarseness,声音嘶哑,categorical,,,"Yes,No",,,N,是否声嘶,声带水肿
+Presentation_Symptoms,muscle_cramps,肌肉痉挛,categorical,,,"Frequent,Occasional,None",,,N,肌肉痉挛,肌病表现
+Presentation_Symptoms,paresthesia,感觉异常,categorical,,,"Yes,No",,,N,麻木刺痛,周围神经病变
+Presentation_Symptoms,menorrhagia,月经过多,categorical,,,"Yes,No,NA",,,N,月经量增加(女性),生育影响
+Presentation_Symptoms,cognitive_impairment,认知障碍,categorical,,,"Severe,Moderate,Mild,None",,,N,记忆力减退,精神症状
+Presentation_Symptoms,depression,抑郁,categorical,,,"Severe,Moderate,Mild,None",,,N,抑郁程度,情绪改变
+Presentation_Symptoms,bradycardia,心动过缓,categorical,,,"Yes,No",,,N,是否心率慢,心脏表现
 
-physicalExam.facialEdema,体格检查.面部水肿,String,"面部水肿(黏液性水肿面容)。<br>**建议值**: `无`, `轻度`, `中度`, `重度`<br>**特征**: 眼睑浮肿、面色苍白、表情淡漠",中度
-physicalExam.periorbitalEdema,体格检查.眼睑水肿,String,"眼睑水肿。<br>**建议值**: `无`, `轻度`, `中度`, `重度`",中度
-physicalExam.skinTexture,体格检查.皮肤质地,String,"皮肤质地。<br>**建议值**: `正常`, `粗糙干燥`, `苍白`, `蜡黄`, `鳞屑`",粗糙干燥
-physicalExam.hairQuality,体格检查.毛发,String,"毛发状态。<br>**建议值**: `正常`, `干枯`, `稀疏`, `眉毛外1/3脱落`<br>**典型征象**: 眉毛外1/3脱落",眉毛外1/3脱落
-physicalExam.peripheralEdema,体格检查.外周水肿,String,"外周水肿(非凹陷性)。<br>**建议值**: `无`, `轻度`, `中度`, `重度`<br>**特点**: 指压不凹陷",轻度
-physicalExam.reflexes,体格检查.腱反射,String,"腱反射。<br>**建议值**: `正常`, `减弱`, `迟缓(延迟松弛)`<br>**甲减特征**: 腱反射迟缓",迟缓(延迟松弛)
+Physical_Exam,heart_rate,心率,integer,bpm,30-200,8867-4,,N,静息心率,心动过缓<60
+Physical_Exam,systolic_bp,收缩压,integer,mmHg,60-250,8480-6,,N,收缩压,舒张压升高为主
+Physical_Exam,diastolic_bp,舒张压,integer,mmHg,30-150,8462-4,,N,舒张压,舒张压升高
+Physical_Exam,bmi,体质指数,decimal,kg/m²,10-60,39156-5,,N,BMI,体重增加趋势
+Physical_Exam,temperature,体温,decimal,°C,35-42,8310-5,,N,体温,偏低
+Physical_Exam,goiter,甲状腺肿大,categorical,,,"None,Grade_1,Grade_2,Grade_3",,,N,甲状腺肿大程度,桥本可有肿大
+Physical_Exam,thyroid_texture,甲状腺质地,categorical,,,"Firm,Nodular,Rubbery,Soft,Normal",,,N,甲状腺触诊,桥本质韧
+Physical_Exam,myxedema,黏液性水肿,categorical,,,"Severe,Moderate,Mild,None",,,N,非凹陷性水肿,面部/眼睑
+Physical_Exam,periorbital_edema,眼睑水肿,categorical,,,"Present,Absent",,,N,眼周水肿,特征表现
+Physical_Exam,facial_puffiness,面部浮肿,categorical,,,"Present,Absent",,,N,颜面浮肿,黏液性水肿
+Physical_Exam,macroglossia,舌大,categorical,,,"Present,Absent",,,N,舌体肥大,黏蛋白沉积
+Physical_Exam,delayed_relaxation,腱反射延迟,categorical,,,"Present,Absent,Not_Tested",,,N,反射松弛期延长,神经系统体征
+Physical_Exam,skin_pallor,皮肤苍白,categorical,,,"Present,Absent",,,N,皮肤苍白,贫血/循环
+Physical_Exam,yellowish_skin,皮肤发黄,categorical,,,"Present,Absent",,,N,胡萝卜素血症,维生素A代谢
 
-# 甲状腺检查
-thyroidExam.goiter,甲状腺检查.甲状腺肿大,String,"甲状腺肿大程度。<br>**建议值**: `0度(不肿大)`, `Ⅰ度(可触及不可见)`, `Ⅱ度(可触及可见)`, `Ⅲ度(显著肿大)`, `萎缩`<br>**桥本甲减**: 可肿大或萎缩",Ⅰ度(可触及不可见)
-thyroidExam.texture,甲状腺检查.质地,String,"甲状腺质地。<br>**建议值**: `柔软`, `中等`, `坚韧`, `坚硬`, `橡皮样`<br>**桥本甲状腺炎**: 坚韧或橡皮样",坚韧
-thyroidExam.symmetry,甲状腺检查.对称性,String,"甲状腺对称性。<br>**建议值**: `对称`, `不对称`",对称
-thyroidExam.tenderness,甲状腺检查.触痛,String,"触痛情况。<br>**建议值**: `无触痛`, `轻度触痛`, `明显触痛`<br>**亚急性甲状腺炎**: 明显触痛",无触痛
-thyroidExam.nodules,甲状腺检查.结节,String,"甲状腺结节。<br>**建议值**: `无`, `单发结节`, `多发结节`",无
+Laboratory_Thyroid,tsh,促甲状腺激素,decimal,mIU/L,0-200,3016-3,,Y,TSH水平,原发性甲减升高
+Laboratory_Thyroid,ft4,游离甲状腺素,decimal,pmol/L,0-50,3024-7,,Y,FT4水平,原发性甲减降低
+Laboratory_Thyroid,ft3,游离三碘甲腺原氨酸,decimal,pmol/L,0-20,3021-3,,N,FT3水平,晚期降低
+Laboratory_Thyroid,total_t4,总甲状腺素,decimal,nmol/L,0-300,3053-6,,N,TT4水平,受结合蛋白影响
+Laboratory_Thyroid,total_t3,总三碘甲腺原氨酸,decimal,nmol/L,0-5,3051-0,,N,TT3水平,辅助诊断
+Laboratory_Thyroid,tsh_ft4_pattern,甲功模式,categorical,,,"Primary_Hypothyroidism,Subclinical_Hypothyroidism,Central_Hypothyroidism,Normal",,,N,甲减类型,诊断分类
 
-# 甲状腺功能检测
-tsh.value,TSH.数值,Number,"促甲状腺激素。<br>单位: mIU/L<br>**参考范围**: 0.27-4.2 mIU/L<br>**甲减**: TSH升高",15.6
-tsh.referenceRange,TSH.参考范围,String,实验室参考范围,0.27-4.2 mIU/L
-tsh.elevationLevel,TSH.升高程度,String,"TSH升高程度。<br>**建议值**: `正常`, `轻度升高(4.5-10)`, `中度升高(10-20)`, `显著升高(>20)`<br>**亚临床甲减**: 4.5-10",显著升高(>20)
+Laboratory_Antibodies,tpo_antibody,甲状腺过氧化物酶抗体,decimal,IU/mL,0-2000,8099-7,,N,TPO-Ab滴度,桥本标志
+Laboratory_Antibodies,tpo_positive,TPO-Ab阳性,categorical,,,"Positive,Negative",,,N,TPO-Ab定性,90-95%桥本阳性
+Laboratory_Antibodies,tg_antibody,甲状腺球蛋白抗体,decimal,IU/mL,0-1000,8098-9,,N,TG-Ab滴度,桥本80%阳性
+Laboratory_Antibodies,tg_positive,TG-Ab阳性,categorical,,,"Positive,Negative",,,N,TG-Ab定性,辅助桥本诊断
+Laboratory_Antibodies,trab,TSH受体抗体,decimal,IU/L,0-50,8098-9,,N,TRAb水平,罕见阻断型抗体
 
-ft4.value,FT4.数值,Number,"游离甲状腺素。<br>单位: pmol/L<br>**参考范围**: 12-22 pmol/L<br>**甲减**: FT4降低",8.5
-ft4.referenceRange,FT4.参考范围,String,实验室参考范围,12-22 pmol/L
-ft4.decreaseLevel,FT4.降低程度,String,"FT4降低程度。<br>**建议值**: `正常`, `轻度降低`, `中度降低`, `显著降低`",中度降低
+Laboratory_Lipids,total_cholesterol,总胆固醇,decimal,mmol/L,0-20,2093-3,,N,TC水平,常升高
+Laboratory_Lipids,ldl_cholesterol,低密度脂蛋白胆固醇,decimal,mmol/L,0-15,18262-6,,N,LDL-C水平,升高显著
+Laboratory_Lipids,hdl_cholesterol,高密度脂蛋白胆固醇,decimal,mmol/L,0-5,2085-9,,N,HDL-C水平,可降低
+Laboratory_Lipids,triglycerides,甘油三酯,decimal,mmol/L,0-20,2571-8,,N,TG水平,常升高
+Laboratory_Lipids,lipid_abnormality,血脂异常,categorical,,,"Yes,No",,,N,是否血脂异常,继发性高脂血症
 
-ft3.value,FT3.数值,Number,"游离三碘甲状腺原氨酸。<br>单位: pmol/L<br>**参考范围**: 3.1-6.8 pmol/L<br>**注**: 轻度甲减FT3可正常",2.8
-ft3.referenceRange,FT3.参考范围,String,实验室参考范围,3.1-6.8 pmol/L
+Laboratory_Other,hemoglobin,血红蛋白,decimal,g/L,0-250,718-7,,N,Hb水平,贫血常见
+Laboratory_Other,anemia_type,贫血类型,categorical,,,"Normocytic,Macrocytic,Microcytic,None",,,N,贫血分型,正细胞性常见
+Laboratory_Other,creatine_kinase,肌酸激酶,integer,U/L,0-5000,2157-6,,N,CK水平,肌病升高
+Laboratory_Other,liver_alt,丙氨酸转氨酶,integer,U/L,0-1000,1742-6,,N,ALT水平,偶尔升高
+Laboratory_Other,liver_ast,天冬氨酸转氨酶,integer,U/L,0-1000,1920-8,,N,AST水平,肝功能
+Laboratory_Other,creatinine,肌酐,decimal,μmol/L,0-1000,2160-0,,N,血肌酐,肾功能
+Laboratory_Other,sodium,血钠,decimal,mmol/L,100-200,2951-2,,N,血清钠,低钠血症风险
+Laboratory_Other,prolactin,泌乳素,decimal,ng/mL,0-200,2842-3,,N,PRL水平,原发性甲减可升高
+Laboratory_Other,ferritin,铁蛋白,decimal,ng/mL,0-2000,2276-4,,N,铁蛋白水平,评估铁储备
 
-tt4.value,TT4.总甲状腺素,Number,"总T4(如检测)。<br>单位: nmol/L<br>**参考范围**: 66-181 nmol/L",58
-tt3.value,TT3.总三碘甲状腺原氨酸,Number,"总T3(如检测)。<br>单位: nmol/L<br>**参考范围**: 1.3-3.1 nmol/L",1.1
+Subclinical,subclinical_hypothyroidism,亚临床甲减,categorical,,,"Yes,No",,,N,是否亚临床甲减,TSH↑FT4正常
+Subclinical,tsh_level_category,TSH水平分层,categorical,,,"4.5_to_10,10_to_20,Greater_than_20,Normal",,,N,TSH升高程度,治疗指征
+Subclinical,symptoms_present,有症状,categorical,,,"Yes,No,Unclear",,,N,亚临床是否有症状,治疗决策
+Subclinical,cardiovascular_risk,心血管风险,categorical,,,"High,Moderate,Low,Unknown",,,N,心血管危险分层,亚临床治疗考量
+Subclinical,pregnancy_planning,备孕/妊娠,categorical,,,"Yes,No,NA",,,N,是否备孕或妊娠,治疗指征
 
-hypothyroidismType,甲减类型,String,"甲减类型。<br>**建议值**: `亚临床甲减(TSH↑ FT4正常)`, `临床甲减(TSH↑ FT4↓)`, `中枢性甲减(TSH正常/↓ FT4↓)`",临床甲减(TSH↑ FT4↓)
+Imaging,ultrasound_performed,超声检查,categorical,,,"Yes,No",,,N,是否做甲状腺超声,基线评估
+Imaging,ultrasound_date,超声日期,date,,,,,N,甲状腺超声时间,影像时间
+Imaging,thyroid_volume,甲状腺体积,decimal,mL,0-150,,,N,腺体总体积,萎缩或肿大
+Imaging,gland_size,腺体大小,categorical,,,"Enlarged,Normal,Atrophic",,,N,大小评估,桥本可肿大
+Imaging,echogenicity,回声,categorical,,,"Hypoechoic,Heterogeneous,Normal",,,N,回声特征,桥本低回声
+Imaging,vascularity,血流,categorical,,,"Increased,Normal,Decreased",,,N,血流信号,炎症期增加
+Imaging,nodules,结节,categorical,,,"Yes,No",,,N,是否有结节,桥本可伴结节
 
-# 甲状腺自身抗体
-tpoab.value,TPOAb.数值,Number,"甲状腺过氧化物酶抗体。<br>单位: IU/mL<br>**参考范围**: <34 IU/mL<br>**桥本甲状腺炎**: 高滴度阳性",856.8
-tpoab.result,TPOAb.定性结果,String,"TPOAb定性结果。<br>**建议值**: `阴性`, `阳性`<br>**桥本甲状腺炎**: 95%阳性",阳性
-tpoab.titer,TPOAb.抗体滴度,String,"抗体滴度。<br>**建议值**: `阴性`, `低滴度`, `中滴度`, `高滴度`<br>**高滴度**: >500 IU/mL",高滴度
+Congenital,newborn_screening,新生儿筛查,categorical,,,"Positive,Negative,Not_Done,NA",,,N,新筛结果,先天性甲减
+Congenital,screening_tsh,筛查TSH,decimal,mIU/L,0-200,,,N,新筛TSH值,>20可疑
+Congenital,age_at_treatment_start,治疗开始年龄,integer,days,0-365,,,N,开始治疗日龄,<14天理想
+Congenital,congenital_type,先天类型,categorical,,,"Dysgenesis,Dyshormonogenesis,Central,Transient,Unknown,NA",,,N,先天性甲减分型,病因分类
 
-tgab.value,TgAb.数值,Number,"甲状腺球蛋白抗体。<br>单位: IU/mL<br>**参考范围**: <115 IU/mL<br>**桥本甲状腺炎**: 常阳性",656.5
-tgab.result,TgAb.定性结果,String,"TgAb定性结果。<br>**建议值**: `阴性`, `阳性`<br>**桥本甲状腺炎**: 60-80%阳性",阳性
-tgab.titer,TgAb.抗体滴度,String,"抗体滴度。<br>**建议值**: `阴性`, `低滴度`, `中滴度`, `高滴度`",高滴度
+Treatment_LT4,levothyroxine_treatment,左旋甲状腺素治疗,categorical,,,"Yes,No,Planned",,,Y,是否LT4替代,标准治疗
+Treatment_LT4,lt4_start_date,LT4开始日期,date,,,,,N,开始替代治疗时间,治疗记录
+Treatment_LT4,lt4_initial_dose,LT4起始剂量,decimal,μg/day,0-500,,,N,初始每日剂量,1.6μg/kg理想体重
+Treatment_LT4,lt4_current_dose,LT4当前剂量,decimal,μg/day,0-500,,,N,当前每日剂量,个体化调整
+Treatment_LT4,lt4_formulation,LT4制剂,categorical,,,"Tablet,Liquid,Gel_Cap,Injection",,,N,剂型,液体吸收更稳定
+Treatment_LT4,lt4_brand,LT4品牌,categorical,,,"Consistent_Brand,Switched,Generic,Unknown",,,N,品牌一致性,避免频繁更换
+Treatment_LT4,lt4_timing,服药时间,categorical,,,"Morning_Fasting,Bedtime,With_Food,Variable",,,N,服药时机,空腹晨服吸收最佳
+Treatment_LT4,lt4_compliance,依从性,categorical,,,"Good,Moderate,Poor,Unknown",,,N,服药依从性,疗效关键
 
-trab.value,TRAb.数值,Number,"TSH受体抗体(如检测)。<br>单位: IU/L<br>**参考范围**: <1.75 IU/L<br>**临床意义**: 阻断型TRAb可致甲减",0.8
-trab.result,TRAb.定性结果,String,"TRAb定性结果。<br>**建议值**: `阴性`, `阳性`, `未检测`",阴性
+Treatment_Pregnancy,pregnancy_hypothyroidism,妊娠期甲减,categorical,,,"Yes,No,NA",,,N,妊娠合并甲减,特殊人群
+Treatment_Pregnancy,pregnancy_trimester,妊娠期,categorical,,,"Preconception,First,Second,Third,Postpartum,NA",,,N,妊娠阶段,剂量调整
+Treatment_Pregnancy,lt4_dose_increase,孕期剂量增加,categorical,,,"Yes,No,NA",,,N,是否增加LT4,通常需增加25-50%
+Treatment_Pregnancy,pregnancy_tsh_target,孕期TSH目标,categorical,,,"Less_than_2.5,2.5_to_3.0,Individualized,NA",,,N,TSH控制目标,孕早期<2.5
+Treatment_Pregnancy,fetal_development,胎儿发育,categorical,,,"Normal,Abnormal,Unknown,NA",,,N,胎儿发育情况,神经发育关键
 
-antibodyProfile,抗体谱,String,"抗体组合模式。<br>**建议值**: `TPOAb+TgAb双阳(桥本)`, `TPOAb单阳`, `TgAb单阳`, `全阴性`, `TRAb阳性(萎缩性甲状腺炎)`",TPOAb+TgAb双阳(桥本)
+Response_Assessment,latest_tsh,最近TSH,decimal,mIU/L,0-200,3016-3,,N,最近TSH水平,疗效监测
+Response_Assessment,latest_ft4,最近FT4,decimal,pmol/L,0-50,3024-7,,N,最近FT4水平,达标评估
+Response_Assessment,latest_assessment_date,最近评估日期,date,,,,,N,最近一次随访时间,监测频率
+Response_Assessment,euthyroid_achieved,达到甲功正常,categorical,,,"Yes,No,Not_Yet",,,N,是否恢复正常,治疗目标
+Response_Assessment,time_to_euthyroid,达正常时间,integer,weeks,0-104,,,N,从治疗到正常周数,通常6-8周
+Response_Assessment,dose_stable,剂量稳定,categorical,,,"Yes,No",,,N,LT4剂量是否稳定,调整完成
+Response_Assessment,overtreatment,过度治疗,categorical,,,"Yes,No",,,N,是否过度替代,TSH抑制风险
+Response_Assessment,undertreatment,治疗不足,categorical,,,"Yes,No",,,N,是否替代不足,TSH仍高
 
-# 甲状腺超声
-ultrasound.thyroidVolume,超声.甲状腺体积,Number,"甲状腺总体积。<br>单位: mL<br>**正常值**: 女性<18mL, 男性<25mL<br>**桥本**: 可增大或萎缩",12.5
-ultrasound.echogenicity,超声.回声,String,"甲状腺回声。<br>**建议值**: `正常回声`, `弥漫性低回声`, `不均匀回声`, `网格状低回声`<br>**桥本特征**: 弥漫性低回声或网格状",弥漫性低回声
-ultrasound.echoTexture,超声.回声结构,String,"回声结构。<br>**建议值**: `均匀`, `不均匀`, `粗糙`, `网格状`<br>**桥本**: 不均匀或网格状",网格状
-ultrasound.bloodFlow,超声.血流,String,"血流情况。<br>**建议值**: `正常`, `血流减少`, `血流增多`",正常
-ultrasound.nodules,超声.结节,String,"甲状腺结节。<br>**建议值**: `无`, `单发结节`, `多发结节`<br>**桥本**: 可伴结节",多发结节
-ultrasound.lymphNodes,超声.淋巴结,String,"颈部淋巴结。<br>**建议值**: `未见异常`, `反应性增大`, `可疑转移`",未见异常
+Complications,myxedema_coma,黏液性水肿昏迷,categorical,,,"Yes,No,Resolved",,,N,是否发生昏迷,严重急症
+Complications,coma_trigger,昏迷诱因,categorical,,,"Infection,Cold_Exposure,Sedatives,Stroke,Surgery,Unknown,NA",,,N,触发因素,急症预防
+Complications,cardiac_complications,心脏并发症,categorical,,,"Pericardial_Effusion,Heart_Failure,Bradycardia,None,Other",,,N,心脏受累,心包积液
+Complications,atherosclerosis,动脉粥样硬化,categorical,,,"Yes,No,Unknown",,,N,是否动脉硬化,长期并发症
+Complications,fertility_issues,生育问题,categorical,,,"Infertility,Miscarriage,None,Unknown,NA",,,N,生育受影响,女性并发症
+Complications,cognitive_decline,认知下降,categorical,,,"Severe,Moderate,Mild,None",,,N,认知功能减退,老年患者
 
-# 病因诊断
-etiology,病因诊断,String,"甲减病因。<br>**建议值**: `慢性淋巴细胞性甲状腺炎(桥本)`, `甲状腺手术后`, `放射性碘治疗后`, `外照射后`, `亚急性甲状腺炎后`, `药物性(抗甲状腺药、碘、锂等)`, `碘缺乏`, `先天性甲减`, `中枢性甲减(垂体/下丘脑)`, `甲状腺激素抵抗综合征`, `其他`",慢性淋巴细胞性甲状腺炎(桥本)
-etiologyConfidence,病因诊断置信度,String,"病因诊断的可信度。<br>**建议值**: `确诊`, `高度可能`, `可能`, `待明确`<br>**桥本确诊**: 甲减 + TPOAb/TgAb阳性 + 超声典型表现",确诊
+Follow_Up,follow_up_interval,随访间隔,categorical,,,"Every_4_Weeks,Every_6_to_8_Weeks,Every_3_Months,Every_6_Months,Annually",,,N,随访频率,调整期vs稳定期
+Follow_Up,monitoring_parameters,监测指标,categorical,,,"TSH_Only,TSH_FT4,Full_Panel,Plus_Lipids,Comprehensive",,,N,监测项目,个体化
+Follow_Up,dose_adjustment_frequency,剂量调整频率,categorical,,,"Frequent,Occasional,Stable,Not_Needed",,,N,调整频率,滴定阶段
+Follow_Up,interfering_factors,干扰因素,categorical,,,"Medications,Malabsorption,Pregnancy,None,Other",,,N,影响因素,调整考量
+Follow_Up,medication_interactions,药物相互作用,categorical,,,"PPI,Iron,Calcium,Soy,Fiber,None,Other",,,N,相互作用药物,分开服用
 
-# 桥本甲状腺炎特异性评估
-hashimoto.diagnosticCriteria,桥本甲状腺炎.诊断依据,String,"桥本甲状腺炎诊断依据。<br>**标准**: ①甲减或甲功正常 ②TPOAb和/或TgAb阳性 ③超声弥漫性低回声",甲减 + 抗体阳性 + 超声典型
-hashimoto.phase,桥本甲状腺炎.疾病阶段,String,"桥本甲状腺炎疾病阶段。<br>**建议值**: `甲功正常期`, `亚临床甲减期`, `临床甲减期`, `短暂甲亢期(Hashitoxicosis)`, `不适用`",临床甲减期
-hashimoto.severity,桥本甲状腺炎.严重程度,String,"桥本甲状腺炎严重程度。<br>**建议值**: `轻度`, `中度`, `重度`, `不适用`",中度
-
-# 其他病因特异性评估
-postOperative.surgeryType,术后甲减.手术类型,String,"手术类型(如术后甲减)。<br>**建议值**: `甲状腺全切`, `甲状腺次全切`, `甲状腺部分切除`, `甲状腺癌根治术`, `不适用`",不适用
-postOperative.surgeryDate,术后甲减.手术日期,String,手术日期,不适用
-postOperative.remainingThyroidTissue,术后甲减.残留甲状腺,String,"残留甲状腺组织。<br>**建议值**: `无残留(全切)`, `少量残留`, `较多残留`, `不适用`",不适用
-
-postRAI.raiDate,RAI治疗后.治疗日期,String,放射性碘治疗日期,不适用
-postRAI.raiDose,RAI治疗后.治疗剂量,Number,"RAI治疗剂量。<br>单位: mCi",不适用
-
-druginduced.causativeDrug,药物性甲减.致病药物,String,"导致甲减的药物。<br>**建议值**: `抗甲状腺药物`, `碘/含碘药物(胺碘酮)`, `锂盐`, `干扰素`, `酪氨酸激酶抑制剂`, `免疫检查点抑制剂`, `其他`, `不适用`",不适用
-
-central.pituitaryLesion,中枢性甲减.垂体病变,String,"垂体病变(如中枢性甲减)。<br>**建议值**: `垂体腺瘤`, `垂体手术后`, `垂体放疗后`, `Sheehan综合征`, `空蝶鞍`, `其他`, `不适用`",不适用
-central.hypothalamusLesion,中枢性甲减.下丘脑病变,String,"下丘脑病变。<br>**建议值**: `肿瘤`, `炎症`, `创伤`, `其他`, `不适用`",不适用
-central.tshValue,中枢性甲减.TSH值,String,"中枢性甲减TSH特点。<br>**建议值**: `TSH正常`, `TSH降低`, `TSH轻度升高但生物活性低`, `不适用`<br>**特点**: TSH不升高或不适当正常",不适用
-
-# 并发症和合并症
-complications.dyslipidemia,并发症.血脂异常,String,"血脂异常。<br>**建议值**: `无`, `总胆固醇升高`, `LDL-C升高`, `甘油三酯升高`, `混合型`<br>**甲减**: 常有血脂升高",总胆固醇升高
-complications.cardiovascular,并发症.心血管疾病,String,"心血管疾病。<br>**建议值**: `无`, `冠心病`, `心力衰竭`, `心包积液`, `高血压`<br>**甲减**: 增加心血管风险",无
-complications.pericardialEffusion,并发症.心包积液,String,"心包积液。<br>**建议值**: `无`, `少量`, `中量`, `大量`",无
-complications.pleuralEffusion,并发症.胸腔积液,String,"胸腔积液。<br>**建议值`: `无`, `少量`, `中量`, `大量`",无
-complications.ascites,并发症.腹水,String,"腹水。<br>**建议值**: `无`, `少量`, `中量`, `大量`",无
-complications.anemia,并发症.贫血,String,"贫血。<br>**建议值**: `无`, `正细胞正色素性贫血`, `大细胞性贫血`, `小细胞低色素性贫血`<br>**甲减**: 可致贫血",轻度正细胞性贫血
-complications.ckElevation,并发症.CK升高,String,"肌酸激酶升高。<br>**建议值**: `正常`, `轻度升高`, `中度升高`, `显著升高`<br>**甲减**: 可致CK/LDH/AST升高",轻度升高
-complications.myxedemaClinic,并发症.黏液性水肿面容,String,"典型黏液性水肿面容。<br>**建议值**: `无`, `有`",有
-complications.myxedemaComa,并发症.黏液性水肿昏迷,String,"黏液性水肿昏迷。<br>**建议值**: `无风险`, `有风险因素`, `发生中`<br>**诱因**: 寒冷、感染、镇静剂、手术",无风险
-
-# 妊娠相关
-pregnancy.status,妊娠.妊娠状态,String,"妊娠状态(女性)。<br>**建议值**: `未孕`, `妊娠期`, `计划妊娠`, `产后`, `不适用`<br>**重要**: 妊娠期甲减影响胎儿智力发育",未孕
-pregnancy.trimester,妊娠.孕期,String,"孕期(如妊娠)。<br>**建议值**: `早期(<13周)`, `中期(13-27周)`, `晚期(≥28周)`, `不适用`<br>**早期**: 甲减对胎儿影响最大",不适用
-pregnancy.trimesterSpecificTSH,妊娠.孕期特异TSH目标,String,"孕期特异TSH目标(如妊娠)。<br>**早期**: <2.5 mIU/L<br>**中期**: <3.0 mIU/L<br>**晚期**: <3.5 mIU/L",不适用
-pregnancy.fetalDevelopment,妊娠.胎儿发育,String,"胎儿发育(如妊娠)。<br>**建议值**: `正常`, `生长受限`, `智力发育风险`, `未评估`, `不适用`<br>**甲减影响**: 胎儿智力发育",不适用
-
-infertility,不孕不育,String,"不孕不育。<br>**建议值**: `无`, `原发不孕`, `继发不孕`, `不育`<br>**甲减**: 可致不孕和反复流产",无
-
-# 实验室检查
-lipids.totalCholesterol,血脂.总胆固醇,Number,"总胆固醇。<br>单位: mmol/L<br>**参考范围**: <5.2<br>**甲减**: 常升高",6.8
-lipids.ldlCholesterol,血脂.LDL胆固醇,Number,"LDL胆固醇。<br>单位: mmol/L<br>**参考范围**: <3.4<br>**甲减**: 常升高",4.2
-lipids.hdlCholesterol,血脂.HDL胆固醇,Number,"HDL胆固醇。<br>单位: mmol/L<br>**参考范围**: >1.0",1.2
-lipids.triglycerides,血脂.甘油三酯,Number,"甘油三酯。<br>单位: mmol/L<br>**参考范围**: <1.7",2.1
-
-hematology.hemoglobin,血常规.血红蛋白,Number,"血红蛋白。<br>单位: g/L<br>**参考范围**: 男130-175, 女115-150",110
-hematology.mcv,血常规.平均红细胞体积,Number,"MCV。<br>单位: fL<br>**参考范围**: 82-100",92
-
-ck.value,肌酸激酶.CK,Number,"肌酸激酶。<br>单位: U/L<br>**参考范围**: <190<br>**甲减**: 可升高数倍",356
-ldh.value,乳酸脱氢酶.LDH,Number,"乳酸脱氢酶。<br>单位: U/L<br>**参考范围**: <245<br>**甲减**: 可升高",285
-ast.value,转氨酶.AST,Number,"谷草转氨酶。<br>单位: U/L<br>**参考范围**: <40<br>**甲减**: 可升高",52
-alt.value,转氨酶.ALT,Number,"谷丙转氨酶。<br>单位: U/L<br>**参考范围**: <40",38
-
-# 治疗方案
-treatment.indication,治疗.治疗指征,String,"治疗指征。<br>**临床甲减**: 必须治疗<br>**亚临床甲减**: TSH>10或有症状、TPOAb(+)、妊娠等需治疗<br>**建议值**: `临床甲减-需治疗`, `亚临床甲减-需治疗`, `亚临床甲减-暂不治疗观察`, `观察随访`",临床甲减-需治疗
-treatment.medication,治疗.治疗药物,String,"治疗药物。<br>**建议值**: `左甲状腺素钠(优甲乐)`, `干甲状腺片`, `T3+T4联合`, `未治疗`<br>**首选**: 左甲状腺素钠",左甲状腺素钠(优甲乐)
-treatment.initialDose,治疗.起始剂量,String,"起始剂量。<br>**成人**: 50-100 μg/日<br>**老年/心脏病**: 12.5-25 μg/日起<br>**妊娠**: 按体重 2 μg/kg/日",50 μg/日
-treatment.currentDose,治疗.当前剂量,String,当前治疗剂量,75 μg/日
-treatment.durationOfTreatment,治疗.治疗时长,Number,"治疗时长。<br>单位: 月<br>**桥本甲减**: 需终身治疗",3
-treatment.compliance,治疗.依从性,String,"治疗依从性。<br>**建议值**: `良好(规律服药)`, `一般(偶尔漏服)`, `差(经常漏服)`, `不适用`<br>**重要**: 需空腹服药，与其他药物间隔",良好(规律服药)
-treatment.takingMethod,治疗.服药方法,String,"服药方法。<br>**正确方法**: 晨起空腹服用，30-60分钟后进食<br>**建议值**: `正确`, `不正确`, `不适用`",正确
-treatment.drugInteractions,治疗.药物相互作用,String,"影响左甲状腺素吸收的药物/食物。<br>**常见**: 钙剂、铁剂、质子泵抑制剂、豆制品<br>**建议值**: `无`, `有(需调整服药时间)`, `不适用`",无
-
-treatment.targetTsh,治疗.目标TSH,String,"治疗目标TSH范围。<br>**一般成人**: 0.5-2.5 mIU/L<br>**老年**: 4-6 mIU/L<br>**妊娠**: <2.5 mIU/L(早期), <3.0(中期), <3.5(晚期)<br>**甲状腺癌**: 抑制TSH",0.5-2.5 mIU/L
-treatment.targetAchieved,治疗.达标情况,String,"治疗达标情况。<br>**建议值**: `已达标`, `未达标`, `不适用`",未达标
-treatment.responseToTreatment,治疗.治疗反应,String,"治疗反应。<br>**建议值**: `症状改善`, `症状无改善`, `治疗时间过短待评估`, `不适用`<br>**注**: 甲功达标需6-8周",治疗时间过短待评估
-
-# 随访计划
-followUp.interval,随访.随访间隔,String,"随访间隔建议。<br>**建议值**: `4-6周(调整剂量期)`, `3个月(达标后)`, `6-12个月(稳定期)`, `立即随访`<br>**剂量调整后**: 6-8周复查",4-6周(调整剂量期)
-followUp.parameters,随访.监测指标,String,随访需监测的指标,甲状腺功能(TSH、FT4)、血脂、抗体滴度(年度)
-followUp.doseAdjustment,随访.剂量调整建议,String,剂量调整建议,TSH 15.6偏高，建议增加剂量至100 μg/日，6周后复查
-
-# 特殊情况
-specialSituations.subclinicalHypothyroidism,特殊情况.亚临床甲减,String,"是否为亚临床甲减。<br>**定义**: TSH↑ + FT4正常<br>**建议值**: `否`, `是`",否
-specialSituations.tshOnly,特殊情况.单纯TSH升高,String,"单纯TSH升高(FT4/FT3正常)。<br>**建议值**: `否`, `是`",否
-specialSituations.elderlyPatient,特殊情况.老年甲减,String,"老年甲减(≥65岁)。<br>**建议值**: `否`, `是`<br>**特点**: 症状不典型，治疗从小剂量起始",否
-specialSituations.congenitalHypothyroidism,特殊情况.先天性甲减,String,"先天性甲减。<br>**建议值**: `否`, `是`<br>**重要**: 新生儿筛查，早期治疗避免智力障碍",否
-specialSituations.levothyroxineResistance,特殊情况.左甲状腺素抵抗,String,"左甲状腺素治疗抵抗。<br>**建议值**: `无`, `有(需大剂量)`, `依从性差`, `吸收不良`, `不适用`",无
-
-# 共存疾病
-comorbidities.diabetes,共病.糖尿病,String,"糖尿病。<br>**建议值**: `无`, `1型糖尿病`, `2型糖尿病`<br>**注**: 1型糖尿病常合并桥本甲状腺炎",无
-comorbidities.coronaryHeartDisease,共病.冠心病,String,"冠心病。<br>**建议值**: `无`, `稳定性心绞痛`, `不稳定性心绞痛`, `心肌梗死史`<br>**注**: 甲减治疗初期需谨慎，避免心绞痛加重",无
-comorbidities.adrenalInsufficiency,共病.肾上腺功能不全,String,"肾上腺功能不全。<br>**建议值**: `无`, `有`<br>**重要**: 需先治疗肾上腺功能不全，再治疗甲减",无
-comorbidities.autoimmuneDiseases,共病.其他自身免疫病,String,"其他自身免疫性疾病。<br>**建议值**: `无`, `1型糖尿病`, `恶性贫血`, `白癜风`, `乳糜泻`, `类风湿关节炎`, `系统性红斑狼疮`, `多种`<br>**多腺体自身免疫综合征**: 可多种共存",无
-
-# 患者教育
-patientEducation.diseaseKnowledge,患者教育.疾病知识,String,是否已进行疾病知识教育,已告知甲减病因、症状、治疗必要性、预后
-patientEducation.medicationInstruction,患者教育.用药指导,String,是否已进行用药指导,已详细说明左甲状腺素用法(空腹、与其他药物间隔)、终身治疗必要性
-patientEducation.pregnancyCounseling,患者教育.妊娠咨询,String,妊娠相关咨询(育龄女性),已告知计划妊娠需提前甲功达标，妊娠期需增加剂量
-patientEducation.lifestyleAdvice,患者教育.生活方式建议,String,生活方式建议,规律作息、均衡饮食、适量运动、定期复查
-
-# 预后评估
-prognosisAssessment,预后评估,String,"预后评估。<br>**建议值**: `预后良好(规律治疗可正常生活)`, `需警惕并发症`, `预后欠佳`<br>**桥本甲减**: 规律替代治疗预后良好",预后良好(规律治疗可正常生活)
-longTermPrognosis,长期预后,String,"长期预后。<br>**建议值**: `终身需治疗`, `部分患者可停药(如亚甲炎后)`, `需密切随访`",终身需治疗
-
-# 综合评估
-overallSeverity,总体严重程度,String,"甲减总体严重程度。<br>**建议值**: `轻度(亚临床)`, `中度(临床甲减)`, `重度(严重甲减)`, `危重(黏液性水肿昏迷)`",中度(临床甲减)
-clinicalRecommendation,临床建议,String,综合临床建议,确诊桥本甲状腺炎所致临床甲减，建议继续左甲状腺素治疗，剂量调整至100 μg/日，6周后复查甲功，监测血脂，终身治疗
-
-# 报告信息
-reportDate,报告日期,String,报告日期,2025-08-16
-reportingPhysician,报告医师,String,报告医师,王医师
-reviewPhysician,审核医师,String,审核医师,李主任内分泌科
-urgentFlag,紧急标识,String,"是否紧急。<br>**建议值**: `否`, `是`<br>**紧急情况**: 黏液性水肿昏迷、严重心血管并发症",否
+Prognosis,long_term_outcome,长期结局,categorical,,,"Well_Controlled,Partial_Control,Refractory,Progression,Unknown",,,N,疾病转归,治疗效果
+Prognosis,quality_of_life,生活质量,categorical,,,"Good,Fair,Poor,Unknown",,,N,生活质量评估,症状控制
+Prognosis,treatment_burden,治疗负担,categorical,,,"Low,Moderate,High,Unknown",,,N,治疗负担程度,依从性影响

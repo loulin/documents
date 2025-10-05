@@ -1,0 +1,138 @@
+Category,Subcategory,Field_Name,Field_Name_CN,Data_Type,Unit,Value_Range,Normal_Range,Abnormal_Indicators,Clinical_Significance,Interpretation_Logic,Related_Diseases,Risk_Level,Recommended_Actions,LOINC_Code,Notes
+Basic_Info,Patient_Info,patient_id,患者ID,String,,,,,Patient unique identifier,,,Low,,,"Unique patient identifier"
+Basic_Info,Patient_Info,exam_date,检查日期,Date,,,,,Date of examination,,,Low,,,"Format: YYYY-MM-DD"
+Basic_Info,Patient_Info,patient_age,患者年龄,Integer,years,0-120,,,"Age at diagnosis","Peak incidence 20-50 years, varies by gender",,Low,,,Women present younger than men
+Basic_Info,Patient_Info,patient_gender,患者性别,Categorical,,Male/Female,,,"Gender","Women more common (10:1 for microprolactinomas)",,Low,,,"Male/Female"
+Basic_Info,Patient_Info,menopausal_status,绝经状态,Categorical,,"Premenopausal/Postmenopausal/N/A",,,"Menopausal status (females)","Affects presentation and treatment urgency",,Medium,,,Important for treatment decisions
+
+Clinical_Features,Female_Symptoms,menstrual_irregularity,月经不规律,Boolean,,Yes/No,No,Yes,"Menstrual cycle irregularities","Oligomenorrhea or amenorrhea",Hyperprolactinemia,High,Most common female symptom,,"80-90% of premenopausal women"
+Clinical_Features,Female_Symptoms,amenorrhea,闭经,Boolean,,Yes/No,No,Yes,"Absence of menstruation","Primary or secondary amenorrhea",,High,Warrants evaluation,,"Secondary amenorrhea most common"
+Clinical_Features,Female_Symptoms,oligomenorrhea,月经稀发,Boolean,,Yes/No,No,Yes,"Infrequent periods","Cycle >35 days",,Medium,,,"Less severe than amenorrhea"
+Clinical_Features,Female_Symptoms,galactorrhea,泌乳,Boolean,,Yes/No,No,Yes,"Inappropriate lactation","Milk production in non-pregnant/nursing woman",,High,Classic symptom,,"30-80% of women"
+Clinical_Features,Female_Symptoms,infertility,不孕,Boolean,,Yes/No,No,Yes,"Inability to conceive","Due to anovulation",Anovulation,High,Major presenting complaint,,"Reversible with treatment"
+Clinical_Features,Female_Symptoms,decreased_libido_female,性欲减退,Boolean,,Yes/No,No,Yes,"Decreased libido (female)",,,,Medium,Common but underreported,,
+
+Clinical_Features,Male_Symptoms,erectile_dysfunction,勃起功能障碍,Boolean,,Yes/No,No,Yes,"Erectile dysfunction","Impotence",Hypogonadism,High,Common male presentation,,"Often attributed to other causes initially"
+Clinical_Features,Male_Symptoms,decreased_libido_male,性欲减退,Boolean,,Yes/No,No,Yes,"Decreased libido (male)","Loss of sexual interest",,High,Common in males,,"May be first symptom"
+Clinical_Features,Male_Symptoms,gynecomastia,男性乳房发育,Boolean,,Yes/No,No,Yes,"Breast enlargement in males","Gynecomastia",,Medium,Less common,,"10-20% of males"
+Clinical_Features,Male_Symptoms,galactorrhea_male,泌乳(男性),Boolean,,Yes/No,No,Yes,"Galactorrhea in males","Rare in men",,Low,Uncommon,,"<5% of males"
+Clinical_Features,Male_Symptoms,infertility_male,不育,Boolean,,Yes/No,No,Yes,"Male infertility","Low sperm count, motility",,High,Affects fertility,,
+
+Clinical_Features,Mass_Effect,headache,头痛,Boolean,,Yes/No,No,Yes,"Headache present","From mass effect of macroadenoma",Pituitary_Macroadenoma,Medium,Common in macroadenomas,,"More common in males (larger tumors)"
+Clinical_Features,Mass_Effect,visual_disturbance,视力障碍,Boolean,,Yes/No,No,Yes,"Visual symptoms","Visual field defects, vision loss",Chiasm_Compression,Critical,Requires urgent treatment,,"Bitemporal hemianopsia classic"
+Clinical_Features,Mass_Effect,visual_field_defect,视野缺损,Boolean,,Yes/No,No,Yes,"Visual field defect documented","Formal perimetry showing defect",,Critical,Ophthalmology evaluation,,"Chiasm compression"
+Clinical_Features,Other_Symptoms,fatigue,乏力,Boolean,,Yes/No,No,Yes,"Fatigue/tiredness","Non-specific symptom",,Medium,Common complaint,,"May be from hypogonadism"
+Clinical_Features,Other_Symptoms,weight_gain,体重增加,Boolean,,Yes/No,No,Yes,"Weight gain","Often reported",,Low,Multifactorial,,"Hypogonadism, decreased activity"
+
+Hormonal_Diagnosis,Prolactin,serum_prolactin,血清泌乳素,Float,ng/mL,0-1000,<20 (M) <25 (F),>25,"Serum prolactin level","Diagnostic hallmark",Hyperprolactinemia,Critical,Diagnostic test,2842-3,"Key diagnostic parameter"
+Hormonal_Diagnosis,Prolactin,prolactin_category,泌乳素分类,Categorical,,"Normal/Mildly_elevated/Moderately_elevated/Markedly_elevated",,Any_elevated,"PRL level category","Mild <50; Moderate 50-200; Marked >200 ng/mL",,High,Helps differential diagnosis,,"Level correlates with etiology"
+Hormonal_Diagnosis,Prolactin,prl_elevation_degree,泌乳素升高程度,Categorical,,"Normal/25-50/50-100/100-200/>200",<25,≥25,"Degree of PRL elevation (ng/mL)","<50: physiologic/drug; 50-100: possible tumor; >100: likely tumor; >200: macro",Prolactinoma,Critical,>200 highly specific for macro,,"PRL >200 virtually diagnostic"
+Hormonal_Diagnosis,Prolactin,macroprolactin_check,大分子泌乳素检测,Boolean,,Yes/No,No,,"Macroprolactin checked","Rule out macroprolactinemia (false positive)",,Medium,If PRL 25-100 without clear cause,,"Biologically inactive"
+Hormonal_Diagnosis,Prolactin,macroprolactinemia,大分子泌乳素血症,Boolean,,Yes/No,No,,"Macroprolactinemia present","High molecular weight PRL, not clinically significant",,Low,No treatment needed,,"Explains asymptomatic elevation"
+Hormonal_Diagnosis,Prolactin,hook_effect_excluded,钩状效应排除,Boolean,,Yes/No,No,,"Hook effect excluded","Dilution test for very large tumors",,High,If large tumor with modest PRL elevation,,"Can falsely lower PRL"
+Hormonal_Diagnosis,Prolactin,repeat_prolactin,复查泌乳素,Float,ng/mL,0-1000,,,"Repeat PRL to confirm","Confirm sustained elevation",,High,Always repeat,,"Single value insufficient"
+
+Hormonal_Diagnosis,Gonadal_Axis,lh,黄体生成素,Float,mIU/mL,0-50,"1-9 (M), 2-15 (F)",<1,"LH level","Low/normal in hyperprolactinemia",Hypogonadotropic_Hypogonadism,Medium,Suppressed by high PRL,,
+Hormonal_Diagnosis,Gonadal_Axis,fsh,卵泡刺激素,Float,mIU/mL,0-50,"1-12 (M), 3-20 (F)",<1,"FSH level","Low/normal in hyperprolactinemia",,Medium,Suppressed by high PRL,,
+Hormonal_Diagnosis,Gonadal_Axis,testosterone,睾酮,Float,ng/dL,50-1200,300-1000 (M),<300,"Testosterone (males)","Often low due to PRL suppression of LH",Hypogonadism,High,Check in all males,2986-8,"May need replacement if persistent"
+Hormonal_Diagnosis,Gonadal_Axis,estradiol,雌二醇,Float,pg/mL,10-500,"30-400 (premenopausal)",<30,"Estradiol (females)","Often low in hyperprolactinemic women",,High,Check in premenopausal women,,"Hypoestrogenism"
+
+Hormonal_Diagnosis,Other_Pituitary,tsh,促甲状腺激素,Float,mIU/L,0.1-20,0.4-4.0,<0.4 or >4,"TSH level","Screen for thyroid dysfunction",Hypothyroidism,Medium,TRH can raise PRL,3016-3,"Hypothyroidism can cause hyperprolactinemia"
+Hormonal_Diagnosis,Other_Pituitary,free_t4,游离T4,Float,ng/dL,0.5-3.0,0.8-1.8,<0.8,"Free T4","Rule out hypothyroidism",,Medium,Check if TSH abnormal,3024-7,"Hypothyroidism raises PRL"
+Hormonal_Diagnosis,Other_Pituitary,igf1,IGF-1,Float,ng/mL,50-1000,,,"IGF-1 level","Check for GH cosecretion",,Medium,If acromegalic features,2484-4,"10-15% cosecrete GH"
+Hormonal_Diagnosis,Other_Pituitary,acth,促肾上腺皮质激素,Float,pg/mL,0-100,10-60,,"ACTH","Usually normal unless large tumor",,Low,If concern for hypopituitarism,2141-0,
+Hormonal_Diagnosis,Other_Pituitary,morning_cortisol,晨8点皮质醇,Float,μg/dL,3-30,7-25,<5,"8 AM cortisol","Screen for adrenal insufficiency in large tumors",,Medium,,2143-6,
+
+Imaging,MRI_Pituitary,pituitary_mri_performed,垂体MRI检查,Boolean,,Yes/No,No,Yes,"Pituitary MRI done","Essential for all prolactinomas",,Critical,Always required,,"With and without gadolinium"
+Imaging,MRI_Pituitary,tumor_present,肿瘤存在,Boolean,,Yes/No,No,Yes,"Pituitary adenoma visualized","Usually visible if PRL >100",,Critical,Identifies adenoma,,"May be subtle if microprolactinoma"
+Imaging,MRI_Pituitary,tumor_size_category,肿瘤大小分类,Categorical,,"Microadenoma/Macroadenoma/Giant/None",Microadenoma (F) / varies (M),Macroadenoma,"Adenoma size","Micro <10mm; Macro ≥10mm; Giant ≥40mm",Pituitary_Macroadenoma,High,Determines treatment approach,,"Women: usually micro; Men: often macro"
+Imaging,MRI_Pituitary,tumor_diameter,肿瘤最大径,Float,mm,0-100,,≥10,"Maximum tumor diameter","Macroadenoma if ≥10mm",,High,Measure for monitoring,,"Size correlates with PRL level"
+Imaging,MRI_Pituitary,suprasellar_extension,鞍上扩展,Boolean,,Yes/No,No,Yes,"Suprasellar growth","May compress optic chiasm",Chiasm_Compression,High,Visual fields if present,,"Requires treatment"
+Imaging,MRI_Pituitary,cavernous_sinus_invasion,海绵窦侵犯,Boolean,,Yes/No,No,Yes,"Cavernous sinus invasion","Predicts resistance to medical therapy",Invasive_Prolactinoma,Medium,May need higher DA dose,,"Less common than in other adenomas"
+Imaging,MRI_Pituitary,optic_chiasm_compression,视交叉受压,Boolean,,Yes/No,No,Yes,"Optic chiasm compression","Visual field defects",Visual_Loss,Critical,Urgent treatment,,"Surgery if no response to DA"
+Imaging,MRI_Pituitary,pituitary_stalk_deviation,垂体柄偏移,Boolean,,Yes/No,No,,"Pituitary stalk deviation","Indicates laterality of microadenoma",,Low,Helps localization,,"Common finding"
+
+Differential_Diagnosis,Physiologic,pregnancy,妊娠,Boolean,,Yes/No,No,,"Pregnancy","Physiologic hyperprolactinemia",,Critical,Always rule out in women,,"β-hCG test"
+Differential_Diagnosis,Physiologic,lactation,哺乳期,Boolean,,Yes/No,No,,"Breastfeeding","Physiologic elevation",,High,Normal during lactation,,"PRL elevated for months after weaning"
+Differential_Diagnosis,Physiologic,stress,应激状态,Boolean,,Yes/No,No,,"Venipuncture stress/recent meals","Mild transient elevation",,Low,Repeat fasting AM sample,,"PRL pulsatile"
+Differential_Diagnosis,Physiologic,recent_breast_exam,近期乳房检查,Boolean,,Yes/No,No,,"Recent breast/chest wall stimulation","Can transiently raise PRL",,Low,Avoid before blood draw,,
+
+Differential_Diagnosis,Medications,drug_induced,药物性高泌乳素,Boolean,,Yes/No,No,Yes,"Drug-induced hyperprolactinemia","Antipsychotics, antiemetics, antidepressants",Drug_Induced,High,Review medications,,"Very common cause"
+Differential_Diagnosis,Medications,antipsychotic_use,抗精神病药,Boolean,,Yes/No,No,,"Taking antipsychotics","Risperidone, haloperidol, others",,High,Consider switch if possible,,"D2 antagonists"
+Differential_Diagnosis,Medications,metoclopramide_use,甲氧氯普胺使用,Boolean,,Yes/No,No,,"Taking metoclopramide","Antiemetic",,Medium,Alternative antiemetic,,"Common culprit"
+Differential_Diagnosis,Medications,ssri_use,SSRI使用,Boolean,,Yes/No,No,,"Taking SSRIs","Selective serotonin reuptake inhibitors",,Low,Mild PRL elevation,,"Usually PRL <50"
+
+Differential_Diagnosis,Other_Causes,hypothyroidism_present,甲状腺功能减退,Boolean,,Yes/No,No,Yes,"Primary hypothyroidism","TRH stimulates lactotrophs",Hypothyroidism,High,Treat hypothyroidism,,"PRL normalizes with levothyroxine"
+Differential_Diagnosis,Other_Causes,renal_failure,肾功能衰竭,Boolean,,Yes/No,No,Yes,"Chronic kidney disease","Decreased PRL clearance",CKD,Medium,Check creatinine,,"CKD can raise PRL"
+Differential_Diagnosis,Other_Causes,liver_cirrhosis,肝硬化,Boolean,,Yes/No,No,Yes,"Hepatic cirrhosis","Decreased clearance",,Medium,Assess liver function,,"Cirrhosis can raise PRL"
+Differential_Diagnosis,Other_Causes,pituitary_stalk_compression,垂体柄受压,Boolean,,Yes/No,No,Yes,"Stalk effect from non-PRL tumor","Other tumor compressing stalk",Non_Functioning_Adenoma,High,PRL usually <100,,"Interrupts dopamine delivery"
+Differential_Diagnosis,Other_Causes,chest_wall_lesion,胸壁病变,Boolean,,Yes/No,No,,"Chest wall stimulation","Shingles, thoracotomy scar, breast surgery",,Low,Rare cause,,"Reflex stimulation"
+
+Treatment,Medical_Therapy,dopamine_agonist,多巴胺激动剂治疗,Boolean,,Yes/No,No,,"Dopamine agonist therapy","First-line treatment for all prolactinomas",,Critical,Preferred initial therapy,,"Cabergoline or bromocriptine"
+Treatment,Medical_Therapy,da_type,多巴胺激动剂类型,Categorical,,"None/Cabergoline/Bromocriptine/Quinagolide",,,"Type of DA used","Cabergoline preferred (better efficacy, tolerability)",,High,Cabergoline first choice,,"Bromocriptine if pregnancy planned"
+Treatment,Medical_Therapy,cabergoline_dose,卡麦角林剂量,Float,mg/week,0-7,0.5-1.0,,"Weekly cabergoline dose","Typical dose 0.5-1 mg twice weekly",,Medium,Start low, titrate slowly,,"Max 3-3.5 mg/week usually"
+Treatment,Medical_Therapy,bromocriptine_dose,溴隐亭剂量,Float,mg/day,0-20,2.5-7.5,,"Daily bromocriptine dose","Typical 2.5-7.5 mg/day in divided doses",,Medium,Start 1.25 mg qhs,,"Max 10-15 mg/day"
+Treatment,Medical_Therapy,da_side_effects,多巴胺激动剂副作用,Boolean,,Yes/No,No,Yes,"DA side effects present","Nausea, dizziness, headache, fatigue",,Medium,Very common initially,,"Usually improve with time"
+Treatment,Medical_Therapy,da_intolerance,多巴胺激动剂不耐受,Boolean,,Yes/No,No,Yes,"DA intolerance","Cannot tolerate medication",,High,Try alternative DA or surgery,,"5-10% cannot tolerate"
+
+Treatment,Medical_Response,prl_normalization,泌乳素正常化,Boolean,,Yes/No,No,,"PRL normalized on DA","Treatment goal achieved",,High,Check at 1-3 months,,"80-90% normalize with cabergoline"
+Treatment,Medical_Response,tumor_shrinkage,肿瘤缩小,Boolean,,Yes/No,No,,"Tumor shrinkage on DA","Reduction in adenoma size",,High,MRI at 6-12 months,,"70-90% shrink significantly"
+Treatment,Medical_Response,visual_improvement,视力改善,Boolean,,Yes/No,No,,"Visual field improvement","If there was chiasm compression",,Critical,Can be rapid (weeks),,"Often dramatic improvement"
+Treatment,Medical_Response,symptom_resolution,症状消失,Boolean,,Yes/No,No,,"Clinical symptoms resolved","Menses resume, fertility restored, ED improved",,High,May take 3-6 months,,"Fertility can return quickly"
+Treatment,Medical_Response,da_resistance,多巴胺激动剂抵抗,Boolean,,Yes/No,No,Yes,"Resistance to DA therapy","Failure to normalize PRL or shrink tumor despite high dose",,High,Consider surgery,,"5-10% of cases"
+Treatment,Medical_Response,time_to_normalization,泌乳素正常化时间,Integer,months,0-24,,,"Months to PRL normalization","Most normalize within 3 months",,Medium,,,
+
+Treatment,Surgery,surgery_indicated,手术适应症,Boolean,,Yes/No,No,,"Surgery indicated","DA intolerance/resistance, CSF leak, apoplexy",,Medium,Second-line treatment,,"<10% need surgery"
+Treatment,Surgery,surgery_performed,手术治疗,Boolean,,Yes/No,No,,"Transsphenoidal surgery performed","Usually for DA-resistant cases",,Medium,Less common than other adenomas,,"10-20% surgical cure for macros"
+Treatment,Surgery,surgical_indication,手术指征,Categorical,,"None/DA_resistance/DA_intolerance/CSF_leak/Apoplexy/Patient_preference",,,"Reason for surgery","Most common: DA resistance or intolerance",,High,,,
+Treatment,Surgery,postop_prl_normal,术后泌乳素正常,Boolean,,Yes/No,No,,"PRL normalized after surgery","Biochemical cure",,High,Remission marker,,"60-90% for micro; 20-50% for macro"
+Treatment,Surgery,postop_recurrence,术后复发,Boolean,,Yes/No,No,Yes,"Recurrence after surgery","PRL re-elevation",,Medium,May need DA therapy,,"10-50% recur"
+
+Treatment,Pregnancy_Management,pregnancy_desired,计划妊娠,Boolean,,Yes/No,No,,"Pregnancy desired","Affects treatment decisions",,High,Switch to bromocriptine,,"Cabergoline less pregnancy data"
+Treatment,Pregnancy_Management,fertility_restored,生育力恢复,Boolean,,Yes/No,No,,"Fertility restored with treatment","Ovulation resumed",,High,Contraception if not desired,,"Can occur rapidly"
+Treatment,Pregnancy_Management,da_during_pregnancy,孕期多巴胺激动剂,Boolean,,Yes/No,No,,"DA continued during pregnancy","Usually stopped when pregnant",,High,Stop once pregnancy confirmed,,"Bromocriptine safer than cabergoline"
+Treatment,Pregnancy_Management,tumor_growth_pregnancy,孕期肿瘤增长,Boolean,,Yes/No,No,Yes,"Tumor growth during pregnancy","Microprolactinoma: 2-5%; Macroprolactinoma: 20-30%",Tumor_Expansion,High,Monitor symptoms closely,,"Restart DA if symptomatic"
+
+Treatment,Withdrawal_Trial,da_withdrawal_attempted,尝试停药,Boolean,,Yes/No,No,,"DA withdrawal trial attempted","After ≥2 years of PRL normalization + tumor shrinkage",,Medium,Consider if criteria met,,"30-40% remain in remission"
+Treatment,Withdrawal_Trial,withdrawal_successful,成功停药,Boolean,,Yes/No,No,,"Successful withdrawal","PRL remains normal off DA",,Medium,Monitor PRL every 3 months year 1,,"Higher success if microprolactinoma"
+Treatment,Withdrawal_Trial,relapse_after_withdrawal,停药后复发,Boolean,,Yes/No,No,Yes,"Relapse after DA withdrawal","PRL re-elevation requiring restart",,Medium,60-70% relapse,,"Can restart DA"
+
+Monitoring,Biochemical,current_prolactin,当前泌乳素,Float,ng/mL,0-1000,,>25,"Most recent PRL level","Primary monitoring parameter",,High,Check every 3 months initially,,"Treatment target: normal range"
+Monitoring,Biochemical,monitoring_frequency,监测频率,Categorical,,"Monthly/Every_3_months/Every_6_months/Annually",,,"PRL monitoring frequency","Depends on treatment phase",,Medium,More frequent initially,,"Annual once stable"
+Monitoring,Imaging,mri_monitoring,MRI监测,Boolean,,Yes/No,No,,"Serial MRI monitoring","Especially for macroadenomas",,Medium,Baseline, 6-12 months, then PRN,,"Can space out if stable"
+Monitoring,Imaging,tumor_stable,肿瘤稳定,Boolean,,Yes/No,No,,"Tumor size stable on imaging","No growth on DA",,High,Ideal outcome,,"Most shrink or stabilize"
+Monitoring,Imaging,tumor_progression,肿瘤进展,Boolean,,Yes/No,No,Yes,"Tumor progression despite DA","Enlargement on therapy",DA_Resistance,High,Consider surgery,,"Rare"
+
+Monitoring,Clinical,menses_regular,月经规律,Boolean,,Yes/No,No,,"Regular menses restored (females)","Clinical marker of PRL normalization",,High,Treatment goal,,"Usually resumes within 3-6 months"
+Monitoring,Clinical,fertility_achieved,实现妊娠,Boolean,,Yes/No,No,,"Pregnancy achieved if desired","Successful fertility outcome",,High,Goal for infertile patients,,
+Monitoring,Clinical,sexual_function_improved,性功能改善,Boolean,,Yes/No,No,,"Sexual function improved","Libido and erectile function in males",,Medium,May take months,,"Testosterone may normalize"
+
+Complications,Tumor_Related,pituitary_apoplexy,垂体卒中,Boolean,,Yes/No,No,Yes,"Pituitary apoplexy","Hemorrhage/infarction of adenoma",Pituitary_Apoplexy,Critical,Neurosurgical emergency,,"Rare, presents with severe headache"
+Complications,Tumor_Related,csf_leak,脑脊液漏,Boolean,,Yes/No,No,Yes,"CSF rhinorrhea","Tumor erodes into sphenoid sinus",CSF_Leak,Critical,Urgent neurosurgical evaluation,,"Rare complication"
+Complications,Tumor_Related,hypopituitarism,垂体功能减退,Boolean,,Yes/No,No,Yes,"Hypopituitarism from tumor","Large tumors compress normal pituitary",,Medium,Test other axes if macroadenoma,,"Uncommon in prolactinomas"
+
+Complications,Hypoestrogenism,osteopenia_osteoporosis,骨量减少/骨质疏松,Boolean,,Yes/No,No,Yes,"Low bone density","From chronic hypoestrogenism in women",Osteoporosis,Medium,BMD if prolonged amenorrhea,,"Risk if untreated"
+Complications,Hypoestrogenism,bone_density_tested,骨密度检测,Boolean,,Yes/No,No,,"Bone mineral density assessed","DEXA scan",,Medium,If prolonged hypogonadism,,"Screen at risk patients"
+Complications,Hypoestrogenism,vaginal_dryness,阴道干燥,Boolean,,Yes/No,No,,"Vaginal atrophy","From estrogen deficiency",,Low,Local estrogen if needed,,"Hypoestrogenism symptom"
+
+Complications,DA_Related,cardiac_valvulopathy,心脏瓣膜病,Boolean,,Yes/No,No,Yes,"Cardiac valvular disease","Very rare with cabergoline at typical doses",Valvular_Disease,Low,Baseline echo if high dose,,"Risk very low at doses <2 mg/week"
+Complications,DA_Related,impulse_control_disorder,冲动控制障碍,Boolean,,Yes/No,No,Yes,"Impulse control disorder","Gambling, hypersexuality, compulsive shopping",Behavioral_Disorder,Medium,Screen at visits,,"Rare but important"
+
+Prognosis,Remission,biochemical_remission,生化缓解,Boolean,,Yes/No,No,,"Biochemical remission achieved","Normal PRL on or off therapy",,High,Treatment goal,,"Excellent with DA"
+Prognosis,Remission,cure_rate_micro,微腺瘤治愈率,Float,%,0-100,,,Cure rate for microprolactinomas,"90%+ normalize with DA; 30-40% remain off after withdrawal",,Medium,,,"Very good prognosis"
+Prognosis,Remission,cure_rate_macro,大腺瘤治愈率,Float,%,0-100,,,Cure rate for macroprolactinomas,"80-90% normalize with DA; lower chance of withdrawal",,Medium,,,"Good response but lifelong therapy often"
+Prognosis,QOL,quality_of_life,生活质量,Categorical,,"Excellent/Good/Fair/Poor",,Poor,"Overall quality of life","Usually excellent once treated",,Medium,Improved dramatically with treatment,,"Fertility, sexual function restored"
+
+Report_Summary,Diagnosis,confirmed_prolactinoma,确诊泌乳素瘤,Boolean,,Yes/No,No,Yes,"Prolactinoma diagnosis confirmed","Elevated PRL + pituitary adenoma + excluded other causes",Prolactinoma,Critical,Requires biochemical + imaging,,"Most common functioning pituitary tumor"
+Report_Summary,Diagnosis,microprolactinoma,微腺瘤,Boolean,,Yes/No,No,,"Microprolactinoma (<10mm)","Common in women",,High,Excellent prognosis,,"90% of female prolactinomas"
+Report_Summary,Diagnosis,macroprolactinoma,大腺瘤,Boolean,,Yes/No,No,,"Macroprolactinoma (≥10mm)","More common in men",,High,Good response to DA,,"More common presentation in males"
+Report_Summary,Diagnosis,idiopathic_hyperprolactinemia,特发性高泌乳素血症,Boolean,,Yes/No,No,,"Idiopathic hyperprolactinemia","Elevated PRL without visible adenoma",,Medium,May have small tumor,,"Treat symptomatically"
+
+Report_Summary,Treatment_Plan,primary_treatment,首选治疗,Categorical,,"Dopamine_agonist/Surgery/Observation",,,"Primary treatment modality","DA first-line for all",,Critical,Medical therapy preferred,,"Surgery rarely needed"
+Report_Summary,Treatment_Plan,treatment_goal,治疗目标,String,,,,,Treatment objectives,"Normalize PRL, restore fertility, shrink tumor, relieve symptoms",,High,,,
+Report_Summary,Treatment_Plan,long_term_plan,长期方案,String,,,,,Long-term management strategy,"Continue DA until trial of withdrawal, monitor if off therapy",,Medium,,,
+
+Report_Summary,Outcomes,treatment_success,治疗成功,Boolean,,Yes/No,No,,"Successful treatment outcome","PRL normal, tumor controlled, symptoms resolved",,High,Expected in >90%,,"Excellent overall prognosis"
+
+Report_Summary,Provider,endocrinologist_name,内分泌科医师,String,,,,,Treating endocrinologist,,,Low,,,
+Report_Summary,Provider,report_date,报告日期,Date,,,,,Date of report generation,,,Low,,,"Format: YYYY-MM-DD"

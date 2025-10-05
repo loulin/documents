@@ -1,0 +1,99 @@
+Category,Field_Name,Chinese_Name,Data_Type,Unit,Valid_Range,LOINC_Code,Required,Description,Clinical_Significance
+Basic_Info,patient_id,患者ID,string,,,,,Y,唯一标识,患者追踪
+Basic_Info,arrival_time,到达时间,datetime,,,,,Y,患者到达急诊时间,分诊时间点
+Basic_Info,age,年龄,integer,years,0-120,,,Y,患者年龄,优先级因素
+Basic_Info,gender,性别,categorical,,Male,Female,,,Y,性别,人群特征
+Basic_Info,arrival_mode,到达方式,categorical,,Ambulatory,Wheelchair,Stretcher,Ambulance,Police,Helicopter,,,Y,步行/轮椅/担架/救护车/警车/直升机,紧急程度
+
+Chief_Complaint,chief_complaint,主诉,string,,,,,Y,患者主要症状,分诊评估
+Chief_Complaint,symptom_duration,症状持续时间,integer,hours,0-720,,,Y,症状时长,急慢性
+
+Vital_Signs,sbp,收缩压,integer,mmHg,0-300,8480-6,,Y,收缩压,休克/高血压危象
+Vital_Signs,dbp,舒张压,integer,mmHg,0-200,8462-4,,Y,舒张压,灌注
+Vital_Signs,heart_rate,心率,integer,bpm,0-300,8867-4,,Y,心率,心动过速/过缓
+Vital_Signs,respiratory_rate,呼吸频率,integer,次/min,0-60,9279-1,,Y,呼吸频率,呼吸窘迫
+Vital_Signs,temperature,体温,decimal,°C,30-42,8310-5,,Y,体温,发热/低体温
+Vital_Signs,spo2,血氧饱和度,decimal,%,0-100,59408-5,,Y,SpO2,低氧血症
+Vital_Signs,pain_score,疼痛评分,integer,,0-10,,,Y,VAS/NRS,疼痛严重度
+Vital_Signs,glucose_poc,即时血糖,decimal,mmol/L,0-50,2345-7,,N,POC血糖,低血糖/高血糖
+
+Airway_Breathing,airway_patent,气道通畅,categorical,,Patent,Compromised,Obstructed,,,Y,通畅/受损/阻塞,即刻威胁
+Airway_Breathing,breathing_adequate,呼吸充分,categorical,,Adequate,Labored,Inadequate,Absent,,,Y,充分/费力/不充分/无,呼吸窘迫
+Airway_Breathing,oxygen_required,需要氧疗,boolean,,,,,Y,补充氧气,低氧血症
+
+Circulation,skin_perfusion,皮肤灌注,categorical,,Warm_Pink,Cool_Pale,Mottled,Cyanotic,,,Y,温暖红润/湿冷苍白/花斑/发绀,休克评估
+Circulation,capillary_refill,毛细血管再充盈时间,categorical,,<2_sec,2_3_sec,>3_sec,,,Y,<2秒正常/2-3秒/>3秒,周围灌注
+
+Neurological,consciousness,意识状态,categorical,,Alert,Confused,Lethargic,Obtunded,Stuporous,Comatose,,,Y,清醒/意识模糊/嗜睡/迟钝/昏睡/昏迷,意识水平
+Neurological,avpu,AVPU量表,categorical,,Alert,Voice,Pain,Unresponsive,,,Y,清醒/语言反应/疼痛反应/无反应,快速评估
+Neurological,gcs_estimate,GCS估计,integer,,3-15,9269-2,,N,格拉斯哥昏迷评分,详细意识评估
+
+Red_Flags,chest_pain,胸痛,boolean,,,,,Y,胸痛,ACS/PE/主动脉夹层
+Red_Flags,dyspnea,呼吸困难,boolean,,,,,Y,气促,肺栓塞/心衰/COPD
+Red_Flags,altered_mental_status,意识改变,boolean,,,,,Y,AMS,卒中/低血糖/感染
+Red_Flags,severe_pain,剧烈疼痛,boolean,,,,,Y,VAS≥7,急腹症/心梗/主动脉夹层
+Red_Flags,uncontrolled_bleeding,难以控制出血,boolean,,,,,Y,活动性出血,失血性休克
+Red_Flags,seizure,癫痫发作,boolean,,,,,Y,抽搐,癫痫持续状态
+Red_Flags,anaphylaxis_signs,过敏反应征象,boolean,,,,,Y,荨麻疹+呼吸困难+低血压,过敏性休克
+Red_Flags,stroke_symptoms,卒中症状,boolean,,,,,Y,偏瘫/失语/面瘫,卒中时间窗
+Red_Flags,trauma_major,重大创伤,boolean,,,,,Y,高能量损伤,创伤激活
+
+ESI,esi_triage_system,ESI分诊系统,boolean,,,,,Y,Emergency Severity Index,美国5级分诊
+ESI,esi_level,ESI级别,categorical,,Level_1,Level_2,Level_3,Level_4,Level_5,,,Y,1级濒危/2级危重/3级紧急/4级次紧急/5级非紧急,分诊优先级
+ESI,esi_level_1,ESI 1级,boolean,,,,,Y,需要即刻救命干预,心脏骤停/重度休克/重度呼吸窘迫/GCS<10
+ESI,esi_level_2,ESI 2级,boolean,,,,,Y,高危患者或困惑/嗜睡/重度痛苦/新发神经缺陷,<10min
+ESI,esi_level_3,ESI 3级,boolean,,,,,Y,需要≥2项资源,<30min
+ESI,esi_level_4,ESI 4级,boolean,,,,,Y,需要1项资源,<60min
+ESI,esi_level_5,ESI 5级,boolean,,,,,Y,不需要资源,<120min
+ESI,resource_prediction,预测资源需求,integer,,0-10,,,Y,检验/影像/静脉/药物等,资源分配
+
+MTS,mts_triage_system,MTS分诊系统,boolean,,,,,N,Manchester Triage System,英国5级
+MTS,mts_discriminator,MTS鉴别标准,string,,,,,N,生命威胁/疼痛/出血/意识/体温,流程图
+MTS,mts_priority,MTS优先级,categorical,,Immediate,Very_Urgent,Urgent,Standard,Non_Urgent,,,N,即刻红色0min/很紧急橙色10min/紧急黄色60min/标准绿色120min/非紧急蓝色240min,等待时间
+
+CTAS,ctas_triage_system,CTAS分诊系统,boolean,,,,,N,Canadian Triage Acuity Scale,加拿大5级
+CTAS,ctas_level,CTAS级别,categorical,,Level_1,Level_2,Level_3,Level_4,Level_5,,,N,1级复苏/2级紧急/3级紧迫/4级次紧迫/5级非紧迫,分诊级别
+CTAS,ctas_time_target,CTAS时间目标,categorical,,NA,Immediate,<15min,<30min,<60min,<120min,,,N,即刻/15min/30min/60min/120min,医师接诊时间
+
+ATS,ats_triage_system,ATS分诊系统,boolean,,,,,N,Australasian Triage Scale,澳大利亚5级
+ATS,ats_category,ATS分类,categorical,,Category_1,Category_2,Category_3,Category_4,Category_5,,,N,1类即刻/2类10min/3类30min/4类60min/5类120min,处置时间
+
+Obstetric,pregnancy,妊娠,boolean,,,,,Y,孕妇,高危人群
+Obstetric,gestational_age,孕周,integer,weeks,0-45,,,N,孕周,孕期
+Obstetric,obstetric_emergency,产科急症,boolean,,,,,N,阴道出血/先兆子痫/胎心异常,产科会诊
+
+Pediatric,pediatric_patient,儿科患者,boolean,,,,,Y,<18岁,特殊人群
+Pediatric,pediatric_red_flags,儿科红旗征,categorical,,None,Severe_Respiratory_Distress,Altered_LOC,Sepsis_Signs,Dehydration,Seizure,,,N,无/严重呼吸窘迫/意识改变/脓毒症征/脱水/癫痫,儿科优先
+
+Geriatric,geriatric_patient,老年患者,boolean,,,,,Y,≥65岁,特殊人群
+Geriatric,frail,虚弱,boolean,,,,,N,衰弱综合征,高危
+Geriatric,falls,跌倒,boolean,,,,,N,跌倒史,创伤/骨折风险
+
+Immunocompromised,immunosuppression,免疫抑制,boolean,,,,,Y,化疗/HIV/器官移植/激素,感染高危
+Immunocompromised,neutropenic_fever,中性粒细胞减少性发热,boolean,,,,,N,ANC<500+T≥38.3,脓毒症
+
+Isolation,infectious_precautions,感染隔离,categorical,,None,Standard,Contact,Droplet,Airborne,,,Y,无/标准/接触/飞沫/空气,院感控制
+Isolation,suspected_covid19,疑似COVID-19,boolean,,,,,N,发热+呼吸道症状,隔离
+Isolation,suspected_tb,疑似结核,boolean,,,,,N,咳嗽>3周+盗汗+消瘦,负压隔离
+
+Psychiatric,psychiatric_chief_complaint,精神科主诉,boolean,,,,,N,精神症状,精神科
+Psychiatric,suicidal_ideation,自杀观念,boolean,,,,,Y,自杀意图,一对一看护
+Psychiatric,homicidal_ideation,他杀观念,boolean,,,,,N,伤害他人意图,安全评估
+Psychiatric,violent_behavior,暴力行为,boolean,,,,,N,攻击性,安保/约束
+
+Violence,domestic_violence,家庭暴力,boolean,,,,,N,家暴,社工介入
+Violence,assault,袭击,boolean,,,,,N,暴力伤害,报警
+Violence,sexual_assault,性侵犯,boolean,,,,,N,性暴力,取证
+
+Substance_Use,intoxication,中毒,boolean,,,,,Y,酒精/药物中毒,毒理学
+Substance_Use,withdrawal,戒断,boolean,,,,,N,酒精/阿片戒断,监测/治疗
+
+Disposition,triage_area,分诊去向,categorical,,Resuscitation,Trauma_Bay,Critical_Care,Acute,Fast_Track,Waiting_Room,,,Y,抢救室/创伤间/危重区/急症区/快速通道/候诊区,处置区域
+Disposition,time_to_physician,至医师时间,integer,min,0-500,,,Y,分诊至医师接诊,质量指标
+Disposition,time_to_treatment,至治疗时间,integer,min,0-500,,,N,分诊至开始治疗,流程指标
+
+Triage_Nurse,triage_nurse,分诊护士,string,,,,,Y,分诊护士姓名,责任人
+Triage_Nurse,triage_time,分诊时间,datetime,,,,,Y,完成分诊时间,时间戳
+Triage_Nurse,triage_reassessment,重新分诊,boolean,,,,,N,病情变化再评估,动态评估
+
+Report,report_date,报告日期,date,,,,,Y,报告时间,文档记录

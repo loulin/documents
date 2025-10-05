@@ -1,0 +1,112 @@
+Category,Field_Name,Chinese_Name,Data_Type,Unit,Valid_Range,LOINC_Code,Required,Description,Clinical_Significance
+Basic_Info,patient_id,患者ID,string,,,,,Y,唯一标识,患者追踪
+Basic_Info,onset_date,起病日期,date,,,,,Y,症状开始时间,病程
+Basic_Info,age,年龄,integer,years,0-120,,,Y,患者年龄,骨髓炎分布
+Basic_Info,gender,性别,categorical,,Male,Female,,,Y,性别,流行病学
+
+Infection_Type,infection_type,感染类型,categorical,,Osteomyelitis,Septic_Arthritis,Prosthetic_Joint_Infection,,,Y,骨髓炎/化脓性关节炎/人工关节感染,分类
+Infection_Type,osteomyelitis,骨髓炎,boolean,,,,,Y,骨骼感染,OM
+Infection_Type,septic_arthritis,化脓性关节炎,boolean,,,,,Y,关节感染,SA
+Infection_Type,prosthetic_joint_infection,人工关节感染,boolean,,,,,Y,PJI,晚期并发症
+
+Osteomyelitis_Classification,om_pathogenesis,OM发病机制,categorical,,NA,Hematogenous,Contiguous_Focus,Vascular_Insufficiency,,,N,血源性/临近病灶蔓延/血管功能不全,分类
+Osteomyelitis_Classification,hematogenous_om,血源性骨髓炎,boolean,,,,,N,菌血症播散,儿童长骨/成人脊柱
+Osteomyelitis_Classification,contiguous_om,临近病灶骨髓炎,boolean,,,,,N,软组织蔓延,糖尿病足/术后
+Osteomyelitis_Classification,chronic_om,慢性骨髓炎,boolean,,,,,N,>4周/死骨形成,难治
+
+Location_Bone,bone_location,骨骼部位,categorical,,Vertebral,Femur,Tibia,Foot,Skull,Other,,,Y,脊柱/股骨/胫骨/足/颅骨/其他,解剖部位
+Location_Bone,vertebral_osteomyelitis,脊柱骨髓炎,boolean,,,,,N,椎体炎,成人血源性
+Location_Bone,diabetic_foot_osteomyelitis,糖尿病足骨髓炎,boolean,,,,,N,足部OM,糖尿病
+
+Location_Joint,joint_involved,累及关节,categorical,,None,Knee,Hip,Shoulder,Ankle,Wrist,Small_Joints,,,Y,无/膝/髋/肩/踝/腕/小关节,化脓性关节炎部位
+Location_Joint,monoarticular,单关节,boolean,,,,,Y,单个关节,90%SA
+Location_Joint,polyarticular,多关节,boolean,,,,,N,多个关节,RA/SLE/播散性淋球菌
+
+Symptoms,pain,疼痛,boolean,,,,,Y,局部疼痛,主要症状
+Symptoms,swelling,肿胀,boolean,,,,,Y,关节肿胀,关节积液
+Symptoms,erythema,红斑,boolean,,,,,Y,皮肤发红,炎症
+Symptoms,warmth,温热,boolean,,,,,Y,局部温度升高,炎症
+Symptoms,limited_range_of_motion,活动受限,boolean,,,,,Y,关节活动度减少,功能障碍
+Symptoms,limp,跛行,boolean,,,,,N,步态异常,下肢
+Symptoms,fever,发热,boolean,,,,,Y,体温升高,全身感染
+Symptoms,weight_bearing_inability,不能负重,boolean,,,,,N,拒绝站立/行走,儿童
+
+Vital_Signs,temperature,体温,decimal,°C,35-42,8310-5,,Y,当前体温,发热
+Vital_Signs,heart_rate,心率,integer,bpm,0-300,8867-4,,Y,心率,全身感染
+
+Physical_Exam,tenderness,压痛,boolean,,,,,Y,触痛,局部炎症
+Physical_Exam,joint_effusion,关节积液,boolean,,,,,Y,关节肿胀,化脓性关节炎
+Physical_Exam,draining_sinus,窦道,boolean,,,,,N,引流通道,慢性骨髓炎
+Physical_Exam,ulcer,溃疡,boolean,,,,,Y,皮肤破溃,糖尿病足
+
+Labs,wbc,白细胞计数,decimal,×10⁹/L,0-100,6690-2,,Y,WBC,感染
+Labs,esr,红细胞沉降率,decimal,mm/h,0-150,4537-7,,Y,ESR,炎症/监测疗效
+Labs,crp,C反应蛋白,decimal,mg/L,0-500,1988-5,,Y,CRP,急性炎症/监测疗效
+Labs,procalcitonin,降钙素原,decimal,ng/mL,0-200,33959-8,,N,PCT,细菌感染
+
+Blood_Culture,blood_culture,血培养,categorical,,Not_Done,Negative,Positive,,,Y,血培养,菌血症
+Blood_Culture,organism_blood,血培养致病菌,string,,,,,N,病原菌,致病菌
+
+Joint_Aspiration,arthrocentesis,关节穿刺,boolean,,,,,Y,关节抽液,诊断金标准
+Synovial_Fluid,sf_appearance,滑液外观,categorical,,Clear,Cloudy,Purulent,,,Y,清亮/混浊/脓性,化脓性积液
+Synovial_Fluid,sf_wbc,滑液白细胞,decimal,×10⁶/L,0-500000,26465-5,,Y,SF WBC,>50000提示化脓性
+Synovial_Fluid,sf_neutrophil_percent,滑液中性粒%,decimal,%,0-100,,,Y,中性粒细胞%,>90%化脓性
+Synovial_Fluid,sf_glucose,滑液葡萄糖,decimal,mmol/L,0-10,,,N,SF GLU,<血糖50%
+Synovial_Fluid,sf_protein,滑液蛋白,decimal,g/L,0-100,,,N,SF蛋白,炎症升高
+Synovial_Fluid,sf_lactate,滑液乳酸,decimal,mmol/L,0-30,,,N,SF Lac,>10提示化脓性
+Synovial_Fluid,sf_gram_stain,滑液革兰染色,categorical,,Not_Done,Negative,Positive,,,Y,革兰染色,快速诊断
+Synovial_Fluid,sf_culture,滑液培养,categorical,,Not_Done,Negative,Positive,,,Y,滑液培养,病原学
+Synovial_Fluid,organism_synovial,滑液培养菌,string,,,,,N,病原菌,致病菌
+
+Bone_Biopsy,bone_biopsy,骨活检,boolean,,,,,Y,骨组织培养,骨髓炎金标准
+Bone_Biopsy,bone_culture,骨培养,categorical,,Not_Done,Negative,Positive,,,Y,骨组织培养,病原学
+Bone_Biopsy,bone_pathology,骨病理,categorical,,Not_Done,Acute_Osteomyelitis,Chronic_Osteomyelitis,Negative,,,N,急性OM/慢性OM/阴性,组织学
+Bone_Biopsy,organism_bone,骨培养菌,string,,,,,N,病原菌,致病菌
+
+Microbiology,s_aureus,金黄色葡萄球菌,boolean,,,,,N,S. aureus,最常见病原
+Microbiology,mrsa,MRSA,boolean,,,,,N,耐甲氧西林金葡菌,医疗相关
+Microbiology,streptococcus,链球菌,boolean,,,,,N,Streptococcus,β-溶血性
+Microbiology,n_gonorrhoeae,淋病奈瑟菌,boolean,,,,,N,N. gonorrhoeae,性活跃年轻人
+Microbiology,salmonella,沙门菌,boolean,,,,,N,Salmonella,镰状细胞病
+Microbiology,pseudomonas,铜绿假单胞菌,boolean,,,,,N,P. aeruginosa,糖尿病足/IVDU
+Microbiology,polymicrobial,多菌感染,boolean,,,,,N,混合菌,糖尿病足/临近病灶
+
+Imaging_Xray,xray,X线,boolean,,,,,Y,X线平片,初步评估
+Imaging_Xray,xray_findings,X线表现,categorical,,Normal,Soft_Tissue_Swelling,Periosteal_Reaction,Bone_Destruction,Sequestrum,,,N,正常/软组织肿胀/骨膜反应/骨破坏/死骨,骨髓炎
+Imaging_Xray,probe_to_bone,探针触骨试验,boolean,,,,,N,PTB阳性,糖尿病足OM敏感性高
+
+Imaging_MRI,mri,MRI,boolean,,,,,Y,磁共振,诊断金标准
+Imaging_MRI,mri_findings,MRI表现,categorical,,Normal,Bone_Marrow_Edema,Abscess,Sequestrum,Soft_Tissue_Involvement,,,N,正常/骨髓水肿/脓肿/死骨/软组织累及,敏感性90-100%
+
+Imaging_Other,ct_scan,CT扫描,boolean,,,,,N,CT,死骨/脊柱
+Imaging_Other,bone_scan,骨扫描,boolean,,,,,N,Tc-99m,敏感非特异
+Imaging_Other,pet_ct,PET-CT,boolean,,,,,N,FDG-PET,脊柱OM/PJI
+
+PJI_Criteria,pjI_diagnosis,PJI诊断,boolean,,,,,Y,人工关节感染,MSIS标准
+PJI_Criteria,sinus_tract,窦道,boolean,,,,,N,与假体相通,主要标准
+PJI_Criteria,pji_timeline,PJI时间,categorical,,None,Early_LT_3mo,Delayed_3_24mo,Late_GT_24mo,,,N,早期<3月/延迟3-24月/晚期>24月,病原不同
+
+Treatment_Antibiotics,empiric_therapy,经验治疗,boolean,,,,,Y,经验性抗生素,培养前
+Treatment_Antibiotics,vancomycin,万古霉素,boolean,,,,,Y,15-20mg/kg q8-12h,MRSA
+Treatment_Antibiotics,cefazolin,头孢唑林,boolean,,,,,Y,2g q8h,MSSA
+Treatment_Antibiotics,ceftriaxone,头孢曲松,boolean,,,,,Y,2g qd,淋球菌
+Treatment_Antibiotics,fluoroquinolone,氟喹诺酮,boolean,,,,,Y,口服骨穿透,慢性OM
+Treatment_Antibiotics,rifampin,利福平,boolean,,,,,N,300-450mg bid,生物膜/葡萄球菌
+Treatment_Antibiotics,duration_om,OM抗生素疗程,integer,weeks,0-24,,,Y,4-6周,长疗程
+Treatment_Antibiotics,duration_sa,SA抗生素疗程,integer,weeks,0-8,,,Y,2-4周,关节炎疗程
+Treatment_Antibiotics,duration_pji,PJI抗生素疗程,integer,weeks,0-24,,,N,3-6月,假体保留需长疗程
+
+Surgical_Treatment,surgical_intervention,外科治疗,boolean,,,,,Y,手术干预,源控制
+Surgical_Treatment,arthrotomy_washout,关节切开冲洗,boolean,,,,,Y,关节清创引流,化脓性关节炎
+Surgical_Treatment,debridement,清创,boolean,,,,,Y,坏死组织清除,骨髓炎
+Surgical_Treatment,sequestrectomy,死骨切除,boolean,,,,,N,移除死骨,慢性OM
+Surgical_Treatment,prosthesis_removal,假体移除,boolean,,,,,N,取出假体,PJI
+Surgical_Treatment,two_stage_exchange,二期翻修,boolean,,,,,N,移除+抗生素骨水泥+再植入,PJI金标准
+
+Outcome,clinical_cure,临床治愈,boolean,,,,,Y,症状消失,疗效
+Outcome,relapse,复发,boolean,,,,,Y,治疗后再发,慢性OM
+Outcome,joint_destruction,关节破坏,boolean,,,,,N,软骨损伤,SA后遗症
+Outcome,chronic_pain,慢性疼痛,boolean,,,,,N,持续疼痛,后遗症
+
+Report,provider,诊疗医师,string,,,,,Y,医师姓名,责任医师
+Report,report_date,报告日期,date,,,,,Y,报告时间,文档记录

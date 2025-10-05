@@ -1,0 +1,116 @@
+Category,Subcategory,Field_Name,Field_Name_CN,Data_Type,Unit,Value_Range,Normal_Range,Abnormal_Indicators,Clinical_Significance,Interpretation_Logic,Related_Diseases,Risk_Level,Recommended_Actions,LOINC_Code,Notes
+Basic_Info,Patient_Info,patient_id,患者ID,String,,,,,Patient unique identifier,,,Low,,,"Unique patient identifier"
+Basic_Info,Patient_Info,exam_date,检查日期,Date,,,,,Date of coronary CTA examination,,,Low,,,"Format: YYYY-MM-DD"
+Basic_Info,Patient_Info,patient_age,患者年龄,Integer,years,0-120,,,"Age at examination, affects reference ranges",,,Low,,,"Age affects calcium score interpretation"
+Basic_Info,Patient_Info,patient_gender,患者性别,Categorical,,Male/Female,,,"Gender affects CAD risk stratification",,,Low,,,"Male/Female"
+Basic_Info,Exam_Info,indication,检查适应症,String,,,,,Reason for coronary CTA,,,Low,,,Chest pain/CAD screening/pre-surgery evaluation
+Basic_Info,Exam_Info,contrast_volume,对比剂用量,Float,mL,50-150,,,"Volume of iodinated contrast used",,,Low,,,Typical range 60-100mL
+Basic_Info,Exam_Info,heart_rate_during_scan,扫描时心率,Integer,bpm,40-100,<65,"HR >65","Heart rate affects image quality, lower is better","HR <65 bpm optimal, >65 may need beta-blocker",Arrhythmia,Medium,HR control before scan,8867-4,"Target <65 bpm for optimal imaging"
+Basic_Info,Exam_Info,beta_blocker_used,使用β受体阻滞剂,Boolean,,Yes/No,,,"Whether beta-blocker was given for HR control",,,Low,,,To achieve target HR <65 bpm
+Basic_Info,Exam_Info,image_quality,图像质量,Categorical,,"Excellent/Good/Fair/Poor",,Fair/Poor,"Image quality assessment","Excellent/Good: diagnostic; Fair/Poor: may need repeat",,Medium,Consider repeat if poor,,"Motion artifacts affect interpretation"
+Basic_Info,Exam_Info,radiation_dose,辐射剂量,Float,mSv,1-15,<5,>10,"Effective radiation dose",,,,Low,,,Modern scanners typically 2-5 mSv
+
+Calcium_Score,Agatston_Score,total_calcium_score,总钙化积分,Float,Agatston,0-4000,0,>0,"Agatston calcium score, predictor of CAD severity","0: very low risk; 1-99: mild; 100-399: moderate; ≥400: severe",Coronary_Artery_Disease,High,Risk stratification,,"Strong predictor of cardiovascular events"
+Calcium_Score,Agatston_Score,calcium_score_category,钙化积分分类,Categorical,,"0/1-10/11-100/101-400/401-1000/>1000",,">0","Categorical classification of calcium burden","0: minimal; 1-100: mild; 101-400: moderate; >400: extensive",CAD,High,Guides treatment intensity,,"Based on age/gender percentiles"
+Calcium_Score,Agatston_Score,calcium_percentile,钙化积分百分位,Integer,%,0-100,,">75","Age and gender adjusted percentile","<25: below average; 25-75: average; >75: above average",CAD,Medium,Compare with age-matched,,"More specific than absolute score"
+Calcium_Score,Distribution,lad_calcium_score,左前降支钙化积分,Float,Agatston,0-2000,0,>0,"LAD calcium burden",,,Medium,Most critical artery,,"LAD supplies large myocardial territory"
+Calcium_Score,Distribution,lcx_calcium_score,左回旋支钙化积分,Float,Agatston,0-2000,0,>0,"LCX calcium burden",,,Medium,,,"Left circumflex"
+Calcium_Score,Distribution,rca_calcium_score,右冠状动脉钙化积分,Float,Agatston,0-2000,0,>0,"RCA calcium burden",,,Medium,,,"Right coronary artery"
+Calcium_Score,Distribution,lm_calcium_score,左主干钙化积分,Float,Agatston,0-500,0,>0,"Left main calcium burden","Any LM calcification is high risk",Left_Main_Disease,High,Consider invasive angiography,,"Left main disease requires urgent attention"
+
+Coronary_Anatomy,Dominance,coronary_dominance,冠脉优势型,Categorical,,"Right/Left/Codominant",,,"Determines which artery supplies posterior circulation","Right dominance: 70%; Left: 10%; Co: 20%",,Low,,,Affects surgical planning
+Coronary_Anatomy,Anomalies,coronary_anomaly,冠脉异常,Boolean,,Yes/No,No,Yes,"Presence of coronary anomalies","May affect hemodynamics or surgical approach",Coronary_Anomaly,Medium,Determine clinical significance,,"1-2% prevalence in general population"
+Coronary_Anatomy,Anomalies,anomaly_type,异常类型,String,,,,,Type of coronary anomaly if present,"Anomalous origin, myocardial bridge, fistula, etc.",,Medium,Risk stratification,,"Interarterial course is high-risk"
+Coronary_Anatomy,Myocardial_Bridge,myocardial_bridge_present,心肌桥存在,Boolean,,Yes/No,No,Yes,"Myocardial bridge detected","Segment of coronary artery tunnels through myocardium",Myocardial_Bridge,Low,Usually benign unless symptomatic,,"Common in LAD, usually benign"
+Coronary_Anatomy,Myocardial_Bridge,bridge_location,心肌桥位置,String,,,,,Location of myocardial bridge,"Most common in mid-LAD",,Low,,,
+Coronary_Anatomy,Myocardial_Bridge,bridge_length,心肌桥长度,Float,mm,5-40,,>20,"Length of myocardial bridge","Longer bridges (>20mm) more likely symptomatic",,Low,Consider if symptomatic,,"Systolic compression may cause ischemia"
+
+Left_Main,Stenosis,lm_stenosis_degree,左主干狭窄程度,Categorical,,None/Mild/Moderate/Severe,None,Any,"LM stenosis severity","None:<25%; Mild:25-49%; Moderate:50-69%; Severe:≥70%",Left_Main_Disease,Critical,Urgent cardiology referral if ≥50%,,"LM disease is surgical emergency"
+Left_Main,Stenosis,lm_stenosis_percent,左主干狭窄百分比,Integer,%,0-100,<25,≥25,"LM stenosis percentage","≥50% requires revascularization",Left_Main_Disease,Critical,CABG usually preferred,,"≥50% is indication for CABG"
+Left_Main,Plaque,lm_plaque_present,左主干斑块存在,Boolean,,Yes/No,No,Yes,"Presence of LM plaque",,Left_Main_Disease,High,Close monitoring,,"Any LM disease is high-risk"
+Left_Main,Plaque,lm_plaque_type,左主干斑块类型,Categorical,,"None/Calcified/Mixed/Non-calcified",,Mixed/Non-calcified,"LM plaque composition","Non-calcified: vulnerable; Calcified: stable; Mixed: intermediate",,High,Non-calcified requires aggressive Rx,,"Non-calcified plaques more prone to rupture"
+
+LAD,Proximal,lad_proximal_stenosis,左前降支近段狭窄,Categorical,,None/Mild/Moderate/Severe,None,Moderate/Severe,"Proximal LAD stenosis","None:<25%; Mild:25-49%; Moderate:50-69%; Severe:≥70%",CAD,High,Proximal LAD like LM disease,,"Supplies large myocardial territory"
+LAD,Proximal,lad_proximal_stenosis_percent,左前降支近段狭窄百分比,Integer,%,0-100,<25,≥50,"Proximal LAD stenosis %","≥70% requires revascularization",CAD,High,Consider PCI or CABG,,"Functional testing if 50-69%"
+LAD,Proximal,lad_proximal_plaque_type,左前降支近段斑块类型,Categorical,,"None/Calcified/Mixed/Non-calcified",,Mixed/Non-calcified,"Proximal LAD plaque composition",,CAD,High,Aggressive lipid lowering,,"Non-calcified plaques higher risk"
+LAD,Mid,lad_mid_stenosis,左前降支中段狭窄,Categorical,,None/Mild/Moderate/Severe,None,Moderate/Severe,"Mid LAD stenosis",,CAD,Medium,,,"Second most important LAD segment"
+LAD,Mid,lad_mid_stenosis_percent,左前降支中段狭窄百分比,Integer,%,0-100,<25,≥50,"Mid LAD stenosis %",,CAD,Medium,Functional testing if borderline,,
+LAD,Mid,lad_mid_plaque_type,左前降支中段斑块类型,Categorical,,"None/Calcified/Mixed/Non-calcified",,Mixed/Non-calcified,"Mid LAD plaque composition",,CAD,Medium,,,
+LAD,Distal,lad_distal_stenosis,左前降支远段狭窄,Categorical,,None/Mild/Moderate/Severe,None,Severe,"Distal LAD stenosis",,CAD,Low,Usually managed medically unless severe,,
+LAD,Distal,lad_distal_stenosis_percent,左前降支远段狭窄百分比,Integer,%,0-100,<25,≥70,"Distal LAD stenosis %",,CAD,Low,,,
+LAD,Diagonal,diagonal_stenosis,对角支狭窄,Categorical,,None/Mild/Moderate/Severe,None,Severe,"Diagonal branch stenosis",,CAD,Low,Depends on vessel size,,
+LAD,Diagonal,diagonal_stenosis_percent,对角支狭窄百分比,Integer,%,0-100,<25,≥70,"Diagonal branch stenosis %",,CAD,Low,Large diagonals more important,,
+
+LCX,Proximal,lcx_proximal_stenosis,左回旋支近段狭窄,Categorical,,None/Mild/Moderate/Severe,None,Moderate/Severe,"Proximal LCX stenosis",,CAD,Medium,,,
+LCX,Proximal,lcx_proximal_stenosis_percent,左回旋支近段狭窄百分比,Integer,%,0-100,<25,≥50,"Proximal LCX stenosis %",,CAD,Medium,Consider revascularization if ≥70%,,
+LCX,Proximal,lcx_proximal_plaque_type,左回旋支近段斑块类型,Categorical,,"None/Calcified/Mixed/Non-calcified",,Mixed/Non-calcified,"Proximal LCX plaque composition",,CAD,Medium,,,
+LCX,Distal,lcx_distal_stenosis,左回旋支远段狭窄,Categorical,,None/Mild/Moderate/Severe,None,Severe,"Distal LCX stenosis",,CAD,Low,,,
+LCX,Distal,lcx_distal_stenosis_percent,左回旋支远段狭窄百分比,Integer,%,0-100,<25,≥70,"Distal LCX stenosis %",,CAD,Low,,,
+LCX,Obtuse_Marginal,om_stenosis,钝缘支狭窄,Categorical,,None/Mild/Moderate/Severe,None,Severe,"Obtuse marginal branch stenosis",,CAD,Low,Depends on vessel size,,
+LCX,Obtuse_Marginal,om_stenosis_percent,钝缘支狭窄百分比,Integer,%,0-100,<25,≥70,"OM branch stenosis %",,CAD,Low,,,
+
+RCA,Proximal,rca_proximal_stenosis,右冠状动脉近段狭窄,Categorical,,None/Mild/Moderate/Severe,None,Moderate/Severe,"Proximal RCA stenosis",,CAD,Medium,,,
+RCA,Proximal,rca_proximal_stenosis_percent,右冠状动脉近段狭窄百分比,Integer,%,0-100,<25,≥50,"Proximal RCA stenosis %",,CAD,Medium,,,
+RCA,Proximal,rca_proximal_plaque_type,右冠状动脉近段斑块类型,Categorical,,"None/Calcified/Mixed/Non-calcified",,Mixed/Non-calcified,"Proximal RCA plaque composition",,CAD,Medium,,,
+RCA,Mid,rca_mid_stenosis,右冠状动脉中段狭窄,Categorical,,None/Mild/Moderate/Severe,None,Moderate/Severe,"Mid RCA stenosis",,CAD,Medium,,,
+RCA,Mid,rca_mid_stenosis_percent,右冠状动脉中段狭窄百分比,Integer,%,0-100,<25,≥50,"Mid RCA stenosis %",,CAD,Medium,,,
+RCA,Distal,rca_distal_stenosis,右冠状动脉远段狭窄,Categorical,,None/Mild/Moderate/Severe,None,Severe,"Distal RCA stenosis",,CAD,Low,,,
+RCA,Distal,rca_distal_stenosis_percent,右冠状动脉远段狭窄百分比,Integer,%,0-100,<25,≥70,"Distal RCA stenosis %",,CAD,Low,,,
+RCA,PDA,pda_stenosis,后降支狭窄,Categorical,,None/Mild/Moderate/Severe,None,Severe,"Posterior descending artery stenosis",,CAD,Low,,,
+RCA,PDA,pda_stenosis_percent,后降支狭窄百分比,Integer,%,0-100,<25,≥70,"PDA stenosis %",,CAD,Low,,,
+
+Overall_Assessment,Stenosis_Burden,number_of_diseased_vessels,病变血管数,Integer,vessels,0-4,0,≥1,"Number of vessels with significant stenosis (≥50%)","0: no CAD; 1-vessel: low-moderate; 2-vessel: moderate; 3-vessel/LM: severe",Multivessel_CAD,High,Guides revascularization strategy,,"Major determinant of treatment"
+Overall_Assessment,Stenosis_Burden,cad_severity,冠心病严重程度,Categorical,,"None/Minimal/Non-obstructive/Obstructive",,Obstructive,"Overall CAD severity","None: no plaque; Minimal: <25%; Non-obstructive: 25-49%; Obstructive: ≥50%",CAD,High,Obstructive requires treatment,,"Clinical decision based on this"
+Overall_Assessment,Stenosis_Burden,syntax_score,SYNTAX积分,Integer,points,0-60,<22,≥33,"SYNTAX score for complex CAD","<22: low; 23-32: intermediate; ≥33: high complexity",Complex_CAD,High,High score favors CABG over PCI,,"Validated scoring system"
+Overall_Assessment,Stenosis_Burden,max_stenosis_location,最大狭窄位置,String,,,,,Location of most severe stenosis,,,High,Target for revascularization,,
+Overall_Assessment,Stenosis_Burden,max_stenosis_percent,最大狭窄百分比,Integer,%,0-100,<25,≥50,"Percentage of maximum stenosis",,CAD,High,Determines urgency,,
+
+Overall_Assessment,Plaque_Characteristics,total_plaque_burden,总斑块负荷,Categorical,,"None/Mild/Moderate/Severe",,Moderate/Severe,"Overall atherosclerotic burden","Mild: few segments; Moderate: multiple; Severe: diffuse",Diffuse_CAD,Medium,Aggressive risk factor control,,"Independent of stenosis severity"
+Overall_Assessment,Plaque_Characteristics,high_risk_plaque_features,高危斑块特征,Boolean,,Yes/No,No,Yes,"Presence of vulnerable plaque features","Positive remodeling, low attenuation, napkin-ring sign",Vulnerable_Plaque,High,Intensive statin therapy,,"Predictors of acute events"
+Overall_Assessment,Plaque_Characteristics,napkin_ring_sign,餐巾环征,Boolean,,Yes/No,No,Yes,"Napkin-ring sign present","Central low attenuation with peripheral higher attenuation ring",Vulnerable_Plaque,High,Sign of vulnerable plaque,,"Associated with thin-cap fibroatheroma"
+Overall_Assessment,Plaque_Characteristics,positive_remodeling,正性重构,Boolean,,Yes/No,No,Yes,"Positive arterial remodeling","Vessel expansion at plaque site, marker of vulnerability",Vulnerable_Plaque,High,High-risk feature,,"Associated with plaque rupture"
+Overall_Assessment,Plaque_Characteristics,low_attenuation_plaque,低衰减斑块,Boolean,,Yes/No,No,Yes,"Low attenuation (<30 HU) plaque","Lipid-rich plaque core, vulnerable to rupture",Vulnerable_Plaque,High,Very high-risk feature,,"<30 HU suggests large lipid core"
+
+Overall_Assessment,CAD-RADS,cad_rads_category,CAD-RADS分类,Categorical,,"0/1/2/3/4A/4B/5/N",,≥3,"CAD-RADS reporting standard","0: zero; 1: minimal; 2: mild; 3: moderate; 4: severe; 5: total occlusion",CAD,High,Standardized reporting,,"Widely adopted reporting system"
+Overall_Assessment,CAD-RADS,cad_rads_modifier_v,CAD-RADS修饰符V,Boolean,,Yes/No,No,Yes,"Vulnerability modifier","Presence of high-risk plaque features",,High,Consider intensive therapy,,"Indicates plaque vulnerability"
+Overall_Assessment,CAD-RADS,cad_rads_modifier_s,CAD-RADS修饰符S,Boolean,,Yes/No,No,Yes,"Stent modifier","Prior coronary stent present",,Medium,Stent patency assessment,,
+Overall_Assessment,CAD-RADS,cad_rads_modifier_g,CAD-RADS修饰符G,Boolean,,Yes/No,No,Yes,"Graft modifier","Prior CABG graft present",,Medium,Graft patency assessment,,
+
+Cardiac_Function,LV_Function,lv_ejection_fraction,左室射血分数,Integer,%,20-80,≥50,<50,"LV ejection fraction from CTA","≥50%: normal; 40-49%: mild; 30-39%: moderate; <30%: severe dysfunction",Heart_Failure,High,Reduced EF requires workup,,"May need dedicated echo"
+Cardiac_Function,LV_Function,lv_wall_motion_abnormality,左室壁运动异常,Boolean,,Yes/No,No,Yes,"Regional wall motion abnormality","May indicate prior MI or ischemia",Prior_MI,High,Correlate with stenosis location,,"Suggests myocardial damage"
+Cardiac_Function,LV_Function,lv_aneurysm,左室室壁瘤,Boolean,,Yes/No,No,Yes,"LV aneurysm present","Consequence of transmural MI",Prior_MI,High,Anticoagulation may be needed,,"Risk of thrombus formation"
+Cardiac_Function,Chamber_Size,lv_enlargement,左室增大,Boolean,,Yes/No,No,Yes,"Left ventricular enlargement",,Cardiomyopathy,Medium,Workup for cause,,"Multiple etiologies possible"
+Cardiac_Function,Chamber_Size,la_enlargement,左房增大,Boolean,,Yes/No,No,Yes,"Left atrial enlargement","Associated with AF, mitral disease, LV dysfunction",Atrial_Fibrillation,Medium,Consider echo for valves,,"Common in chronic AF"
+Cardiac_Function,Chamber_Size,rv_enlargement,右室增大,Boolean,,Yes/No,No,Yes,"Right ventricular enlargement","Pulmonary hypertension, RV dysfunction",Pulmonary_Hypertension,Medium,Assess for pulmonary disease,,"May indicate pulmonary issues"
+
+Valvular,Aortic_Valve,aortic_valve_calcification,主动脉瓣钙化,Categorical,,"None/Mild/Moderate/Severe",None,Moderate/Severe,"Aortic valve calcification","May indicate aortic stenosis",Aortic_Stenosis,Medium,Echo to assess gradient,,"Common in elderly"
+Valvular,Mitral_Valve,mitral_valve_calcification,二尖瓣钙化,Categorical,,"None/Mild/Moderate/Severe",None,Moderate/Severe,"Mitral valve calcification","Associated with mitral stenosis/regurgitation",Mitral_Valve_Disease,Low,Consider echo,,"Less common than aortic"
+Valvular,Mitral_Annulus,mitral_annular_calcification,二尖瓣环钙化,Boolean,,Yes/No,No,Yes,"Mitral annular calcification (MAC)","Marker of atherosclerosis, elderly, CKD",CKD,Low,Associated with CAD risk,,"Very common in elderly"
+
+Aorta,Ascending_Aorta,ascending_aorta_diameter,升主动脉直径,Float,mm,20-45,<40,≥40,"Ascending aorta diameter","Normal <37-40mm; ≥40mm: dilated; ≥45mm: aneurysm",Aortic_Aneurysm,Medium,Monitor if ≥40mm,,"Dilation requires monitoring"
+Aorta,Ascending_Aorta,ascending_aorta_aneurysm,升主动脉瘤,Boolean,,Yes/No,No,Yes,"Ascending aortic aneurysm (≥45mm)","Surgical threshold typically 55mm",Aortic_Aneurysm,High,Vascular surgery referral,,"Risk of dissection/rupture"
+Aorta,Root,aortic_root_diameter,主动脉根部直径,Float,mm,20-40,<38,≥40,"Aortic root diameter",,Aortic_Root_Dilation,Medium,Monitor if enlarged,,
+Aorta,Atherosclerosis,aortic_atherosclerosis,主动脉粥样硬化,Categorical,,"None/Mild/Moderate/Severe",None,Moderate/Severe,"Atherosclerotic disease in aorta",,Atherosclerosis,Low,Marker of systemic disease,,"Common incidental finding"
+
+Pericardium,Effusion,pericardial_effusion,心包积液,Categorical,,"None/Trace/Small/Moderate/Large",None,Moderate/Large,"Pericardial fluid","Trace/Small: often benign; Moderate/Large: investigate cause",Pericardial_Effusion,Medium,Echo to assess hemodynamics,,"Large effusion may cause tamponade"
+Pericardium,Thickening,pericardial_thickening,心包增厚,Boolean,,Yes/No,No,Yes,"Pericardial thickening","May indicate prior pericarditis, constrictive pericarditis",Constrictive_Pericarditis,Medium,Consider echo/MRI,,"Normal thickness <2mm"
+Pericardium,Calcification,pericardial_calcification,心包钙化,Boolean,,Yes/No,No,Yes,"Pericardial calcification","Sequela of prior pericarditis, TB, uremia",Prior_Pericarditis,Low,Clinical correlation,,"May indicate old inflammation"
+
+Extracardiac,Lungs,lung_nodule,肺结节,Boolean,,Yes/No,No,Yes,"Pulmonary nodule detected","Incidental finding requiring follow-up",Lung_Nodule,Medium,Chest CT for characterization,,"1-2% of cardiac CTA find nodules"
+Extracardiac,Lungs,lung_findings,肺部异常,String,,,,,Other lung findings,"Consolidation, emphysema, effusion, mass",,Medium,Correlate clinically,,"Scan includes lung bases"
+Extracardiac,Mediastinum,mediastinal_lymphadenopathy,纵隔淋巴结肿大,Boolean,,Yes/No,No,Yes,"Enlarged mediastinal lymph nodes","May indicate malignancy, sarcoidosis, infection",Lymphadenopathy,Medium,Further imaging if significant,,"Nodes >1cm considered enlarged"
+Extracardiac,Thorax,other_findings,其他发现,String,,,,,Other incidental findings,"Thyroid nodule, breast mass, bone lesion, etc.",,Varies,Case-specific workup,,"Communicate significant findings"
+
+Report_Summary,Conclusion,primary_diagnosis,主要诊断,String,,,,,Primary coronary CTA diagnosis,,,High,,,Structured conclusion
+Report_Summary,Conclusion,stenosis_summary,狭窄总结,String,,,,,Summary of stenosis findings,,,High,,,Key takeaway message
+Report_Summary,Conclusion,additional_comments,附加说明,Text,,,,,Additional relevant comments,,,Low,,,
+Report_Summary,Recommendations,functional_testing_needed,需要功能学检查,Boolean,,Yes/No,No,Yes,"Recommend stress test/FFR","For borderline stenosis (50-70%) in major vessels",,High,Clarify ischemia,,"Functional significance uncertain on CTA"
+Report_Summary,Recommendations,invasive_angio_needed,需要冠脉造影,Boolean,,Yes/No,No,Yes,"Recommend invasive coronary angiography","For LM ≥50%, multivessel severe disease, symptoms",,High,For definitive treatment planning,,"Gold standard for intervention"
+Report_Summary,Recommendations,medical_therapy_optimization,优化药物治疗,Boolean,,Yes/No,Yes,,"Optimize medical therapy","All CAD patients need statin, antiplatelet, BP/DM control",,High,Cornerstone of CAD management,,"Always recommended for CAD"
+Report_Summary,Recommendations,repeat_imaging_interval,复查间隔,Categorical,,"Not_needed/6_months/1_year/2_years/3_years",,,"Recommended follow-up CTA interval","Depends on stenosis severity and plaque burden",,Medium,For progression monitoring,,"Calcium score 0: no repeat; CAD: individualized"
+Report_Summary,Recommendations,lifestyle_modification,生活方式干预,Boolean,,Yes/No,Yes,,"Recommend lifestyle changes","Diet, exercise, smoking cessation, weight loss",,Medium,All CAD/risk factors,,"First-line for all patients"
+
+Report_Summary,Quality_Assurance,radiologist_name,影像科医师,String,,,,,Reporting radiologist name,,,Low,,,
+Report_Summary,Quality_Assurance,report_date,报告日期,Date,,,,,Date of report generation,,,Low,,,"Format: YYYY-MM-DD"
+Report_Summary,Quality_Assurance,interpretable_segments,可评估节段,Integer,segments,0-18,18,<18,"Number of coronary segments interpretable","18-segment model; <18 may miss disease",,Medium,Note non-diagnostic segments,,"Standard coronary segmentation"
+Report_Summary,Quality_Assurance,non_diagnostic_reason,不可评估原因,String,,,,,Reason for non-diagnostic segments,"Motion artifact, heavy calcification, small vessel",,Medium,,,May need invasive angiography

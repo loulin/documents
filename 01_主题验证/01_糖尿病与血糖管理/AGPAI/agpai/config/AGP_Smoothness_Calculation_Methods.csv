@@ -1,0 +1,33 @@
+平滑度类型,方法名称,计算公式,适用场景,数据要求,正常范围,异常阈值,Python实现示例,临床解读
+一阶差分平滑度,连续差值变异系数,CV of ΔG = SD(G[i+1]-G[i]) / Mean(|G[i+1]-G[i]|),血糖连续性评估,等间距时间序列,CV < 1.0,CV > 1.5为不平滑,np.std(np.diff(glucose)) / np.mean(np.abs(np.diff(glucose))),数值越小越平滑
+一阶差分平滑度,平均绝对差值,MAD = Mean(|G[i+1] - G[i]|),血糖变化幅度,连续血糖数据,< 0.5 mmol/L,> 1.0为波动大,np.mean(np.abs(np.diff(glucose))),反映血糖跳跃程度
+一阶差分平滑度,标准化一阶差分,NormΔG = SD(G[i+1]-G[i]) / Mean(G),相对平滑度评估,标准化血糖数据,< 0.15,> 0.25为相对不平滑,np.std(np.diff(glucose)) / np.mean(glucose),消除血糖水平影响
+二阶差分平滑度,二阶导数方差,Var(G'') = Var(G[i-1] - 2*G[i] + G[i+1]),血糖加速度变化,密集采样数据,< 1.0,> 2.0为加速度大,np.var(glucose[:-2] - 2*glucose[1:-1] + glucose[2:]),反映血糖变化率变化
+二阶差分平滑度,曲率平滑指数,CSI = 1 / (1 + Mean(|G''|)),曲线弯曲程度,高频血糖数据,> 0.7,< 0.5为弯曲严重,1 / (1 + np.mean(np.abs(second_diff))),曲线越直越平滑
+移动平均平滑度,移动平均偏差,MAD_MA = Mean(|G[i] - MA[i]|),与趋势的偏离,任意血糖数据,< 1.0 mmol/L,> 2.0为偏离大,np.mean(np.abs(glucose - moving_avg)),反映围绕趋势波动
+移动平均平滑度,趋势一致性指数,TCI = Corr(G, MA),与平滑趋势相关性,连续数据序列,> 0.9,< 0.7为一致性差,np.corrcoef(glucose, moving_avg)[0,1],趋势跟随程度
+频域平滑度,高频能量比例,HFR = E_high / E_total,高频成分占比,等间距时间序列,< 20%,> 40%为高频多,high_freq_power / total_power,高频成分越少越平滑
+频域平滑度,频谱集中度,SC = Sum(f * P(f)) / Sum(P(f)),频率重心位置,FFT适用数据,低频集中,高频集中为不平滑,np.sum(freqs * power) / np.sum(power),能量分布特征
+频域平滑度,谱平坦度,SF = GeomMean(P(f)) / ArithMean(P(f)),频谱平坦程度,频域分析,接近0,接近1为白噪声,stats.gmean(power) / np.mean(power),平滑信号能量集中
+统计学平滑度,自相关衰减,ACF_decay = -ln(ACF(lag=1)),血糖记忆效应,时间序列数据,0.2-0.5,> 1.0为记忆差,-np.log(np.abs(autocorr_lag1)),记忆效应强度
+统计学平滑度,Hurst指数,H = 0.5 + slope(log(R/S)),长程相关性,长时间序列,0.5-0.7,偏离0.5为异常,hurst_exponent(glucose),分形特征评估
+统计学平滑度,近似熵,ApEn = -Sum(C_ratio * ln(C_ratio)),序列复杂度,中等长度序列,0.1-0.4,> 0.8为复杂,approximate_entropy(glucose),复杂度越低越平滑
+数学形态学,形态学梯度,MG = Dilation(G) - Erosion(G),边缘检测强度,离散血糖序列,小梯度值,大梯度为边缘多,morphological_gradient(glucose),边缘越少越平滑
+数学形态学,开运算平滑度,OS = Mean(|G - Opening(G)|),去除尖峰后差异,形态学适用,< 0.5,> 1.0为尖峰多,np.mean(np.abs(glucose - opening)),尖峰去除效果
+小波变换,小波方差比,WVR = Var(detail) / Var(approx),细节vs近似方差比,小波分析,< 0.3,> 0.7为细节多,np.var(detail) / np.var(approx),细节成分占比
+小波变换,多尺度平滑度,MSS = Sum(w_i * S_i),多尺度综合评估,多分辨率数据,加权平均,综合评估,weighted_sum_smoothness,多层次平滑评估
+血糖特异性,血糖平滑指数,GSI = 1 - (MAGE / Mean(G)),基于MAGE的平滑度,CGM数据,> 0.7,< 0.5为不平滑,1 - (mage / np.mean(glucose)),血糖专用平滑指标
+血糖特异性,连续血糖平滑度,CGSM = 1 / (1 + CONGA),基于CONGA的平滑度,连续血糖监测,> 0.5,< 0.3为不平滑,1 / (1 + conga_value),短期稳定性指标
+血糖特异性,变异系数倒数,CV_inv = 1 / CV,变异系数平滑化,标准血糖数据,> 2.8,< 1.5为变异大,1 / coefficient_of_variation,变异性逆向指标
+时间窗口平滑度,滑动窗口平滑度,SWS = Mean(Smoothness_window),时间窗平滑评估,时间窗口数据,窗口内评估,动态阈值,sliding_window_smoothness,局部平滑程度
+时间窗口平滑度,峰谷密度,PVD = (Peaks + Valleys) / Time_span,单位时间峰谷数,峰谷检测,< 2个/小时,> 5个/小时密集,peak_valley_density,转折点频率
+AGP特异平滑度,分位数带平滑度,QBS = 1 - Var(IQR_width),分位数带宽变异,AGP分位数数据,> 0.8,< 0.5为不平滑,1 - np.var(iqr_widths),分位数带稳定性
+AGP特异平滑度,中位数曲线平滑度,MCS = 1 / (1 + MeanCurvature),中位数曲线弯曲度,AGP中位数线,> 0.7,< 0.4为弯曲多,1 / (1 + mean_curvature),中位数线平滑性
+AGP特异平滑度,百分位线一致性,PLC = Mean(Corr(P25, P50, P75)),分位线相关性,AGP百分位数据,> 0.8,< 0.6为一致性差,np.mean(percentile_correlations),分位线协调性
+临床导向平滑度,目标范围稳定度,TRS = 1 - (Exits + Entries) / TIR_time,目标范围进出频率,TIR时间数据,> 0.8,< 0.5为不稳定,1 - transitions / tir_time,目标范围维持能力
+临床导向平滑度,血糖轨迹平滑度,GTS = PathLength / StraightDistance,血糖轨迹vs直线距离,时间-血糖轨迹,接近1,> 2为迂回多,path_length / straight_distance,轨迹迂回程度
+临床导向平滑度,治疗反应平滑度,TRS = 1 / (1 + ResponseVariability),治疗反应一致性,治疗前后数据,> 0.7,< 0.4为反应不一致,1 / (1 + response_var),治疗反应稳定性
+实时平滑度,实时平滑指数,RSI = ExponentialSmooth(LocalSmoothness),实时平滑度评估,实时CGM数据,> 0.6,< 0.3为实时不平滑,exponential_smooth(local),实时监测指标
+实时平滑度,预测平滑度,PS = 1 - |Predicted - Actual| / Range,预测准确性平滑,预测模型数据,> 0.8,< 0.5为预测差,1 - prediction_error / range,预测稳定性
+综合平滑度,多维平滑指数,MSI = Weighted_Sum(各种平滑度),综合多种平滑指标,全面血糖数据,> 0.7,< 0.4为综合不平滑,weighted_combination,综合评估指标
+综合平滑度,自适应平滑度,ASI = Context_Weighted_Smoothness,基于情境的平滑度,情境血糖数据,动态基准,情境相关阈值,context_adaptive_smooth,个性化平滑评估

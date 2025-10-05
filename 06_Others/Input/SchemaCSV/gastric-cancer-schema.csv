@@ -1,137 +1,44 @@
-字段名(英文),字段名(中文),数据类型,描述,示例
-patientId,患者ID,String,患者唯一标识符,GC20250315001
-diagnosisDate,确诊日期,Date,胃癌确诊日期,2025-03-15
-age,年龄,Number,确诊时年龄(岁),62
-gender,性别,String,患者性别,男
-
-# 临床表现
-symptoms.epigastricPain,症状.上腹痛,Boolean,"**早期**: 隐痛或不适<br>**进展期**: 持续性疼痛<br>**60-80%患者**: 主要症状",true
-symptoms.weightLoss,症状.体重下降,Boolean,"**显著体重下降**: >5kg/3月<br>**60%患者**: 出现营养不良",true
-symptoms.weightLoss.amount,症状.体重下降.数值,Number,3个月内体重下降(kg),8
-symptoms.anorexia,症状.食欲减退,Boolean,"**早期预警**: 食欲不振<br>**厌食肉类**: 胃癌特征表现",true
-symptoms.nausea,症状.恶心,Boolean,"**幽门梗阻**: 餐后恶心<br>**贲门癌**: 进食困难",true
-symptoms.vomiting,症状.呕吐,Boolean,"**幽门梗阻**: 呕吐宿食<br>**胃排空障碍**: 频繁呕吐",false
-symptoms.dysphagia,症状.吞咽困难,Boolean,"**贲门癌**: 进行性吞咽困难<br>**食管胃交界癌**: 常见",false
-symptoms.hematemesis,症状.呕血,Boolean,"**肿瘤出血**: 呕吐咖啡样物或鲜血<br>**急性出血**: 需紧急处理",false
-symptoms.melena,症状.黑便,Boolean,"**慢性失血**: 柏油样便<br>**提示**: 肿瘤糜烂出血",true
-symptoms.earlySatiety,症状.早饱,Boolean,"**胃容积减小**: 少量进食即饱胀<br>**弥漫浸润型**: 常见",true
-
-# 肿瘤部位
-tumor.location.primary,肿瘤.部位.主要部位,String,"**胃窦**: 40-50%(最常见)<br>**胃体**: 30-40%<br>**贲门/胃底**: 15-25%<br>**全胃**: 5-10%",胃窦部
-tumor.location.borrmann,肿瘤.Borrmann分型,String,"**I型**: 息肉样,预后好<br>**II型**: 溃疡局限型<br>**III型**: 溃疡浸润型(最常见)<br>**IV型**: 弥漫浸润型(革囊胃),预后差",III型
-tumor.size,肿瘤.最大径,Number,肿瘤最大直径(cm),5.5
-
-# 病理分型
-pathology.lauren,病理.Lauren分型,String,"**肠型**: 分化好,预后较好,与HP相关<br>**弥漫型**: 印戒细胞癌,侵袭性强,预后差<br>**混合型**: 两者兼有",肠型
-pathology.histology,病理.组织学类型,String,"**腺癌**: 90-95%(最常见)<br>**印戒细胞癌**: 10-15%<br>**未分化癌**: 5%<br>**腺鳞癌**: 罕见",中分化腺癌
-pathology.differentiation,病理.分化程度,String,"**高分化**: 预后好<br>**中分化**: 最常见<br>**低分化/未分化**: 预后差",中分化
-pathology.signetRing,病理.印戒细胞成分,Boolean,"**>50%印戒细胞**: 印戒细胞癌<br>**年轻女性**: 多见<br>**预后**: 较差",false
-pathology.her2,病理.HER2状态,String,"**HER2阳性**: IHC 3+或FISH阳性<br>**15-20%胃癌**: HER2阳性<br>**靶向治疗**: 曲妥珠单抗适应证",阴性
-
-# 内镜检查
-endoscopy.performed,内镜.胃镜检查,Boolean,"**确诊金标准**: 胃镜+活检<br>**早期诊断**: 内镜筛查",true
-endoscopy.findings,内镜.内镜下表现,String,"**早期**: 平坦型、凹陷型、隆起型<br>**进展期**: 溃疡、肿块、狭窄",胃窦部不规则溃疡,边缘隆起
-endoscopy.biopsy,内镜.活检,Boolean,"**多点活检**: 提高阳性率<br>**建议**: ≥6个活检点",true
-endoscopy.biopsy.result,内镜.活检结果,String,活检病理诊断,中分化腺癌
-
-# 影像学检查
-imaging.ct.performed,影像学.增强CT.是否完成,Boolean,"**TNM分期**: CT评估<br>**三期扫描**: 动脉期+静脉期+延迟期",true
-imaging.ct.wallThickness,影像学.CT.胃壁增厚,Number,胃壁最厚处(mm),正常<5mm,12
-imaging.ct.lymphNodes,影像学.CT.淋巴结,String,"**>1cm**: 可疑转移<br>**位置**: 胃周、腹膜后、腹腔干周围",胃小弯侧多发肿大淋巴结
-imaging.ct.metastasis,影像学.CT.远处转移,String,"**肝转移**: 最常见<br>**腹膜**: 种植转移<br>**肺**: 血行转移",无远处转移
-imaging.ct.ascites,影像学.CT.腹水,Boolean,"**癌性腹水**: 腹膜转移<br>**预后**: 提示晚期",false
-
-imaging.eus.performed,影像学.超声内镜.是否完成,Boolean,"**T分期**: 评估浸润深度<br>**N分期**: 胃周淋巴结<br>**准确率**: T分期85%,N分期75%",true
-imaging.eus.tStage,影像学.EUS.T分期,String,"**T1a**: 黏膜层<br>**T1b**: 黏膜下层<br>**T2**: 固有肌层<br>**T3**: 浆膜下<br>**T4**: 穿透浆膜",T3
-imaging.eus.lymphNodes,影像学.EUS.淋巴结,String,EUS评估淋巴结转移情况,胃周多个可疑淋巴结
-
-imaging.petct.performed,影像学.PET-CT.是否完成,Boolean,"**检测转移**: 敏感性高<br>**弥漫型**: 假阴性率高<br>**不常规推荐**: 昂贵",false
-imaging.petct.suvmax,影像学.PET-CT.SUVmax,Number,"SUV最大值。<br>**>2.5**: 提示恶性<br>**肠型>弥漫型**: SUV摄取",7.2
-
-# TNM分期 (AJCC 8th Edition)
-staging.t,分期.T分期,String,"**T1a**: 黏膜层<br>**T1b**: 黏膜下层<br>**T2**: 固有肌层<br>**T3**: 浆膜下<br>**T4a**: 穿透浆膜<br>**T4b**: 侵犯邻近器官",T3
-staging.n,分期.N分期,String,"**N0**: 无淋巴结转移<br>**N1**: 1-2个<br>**N2**: 3-6个<br>**N3a**: 7-15个<br>**N3b**: ≥16个",N2
-staging.n.number,分期.淋巴结.转移数量,Number,区域淋巴结转移个数,5
-staging.m,分期.M分期,String,"**M0**: 无远处转移<br>**M1**: 远处转移(肝、肺、腹膜、远处淋巴结)",M0
-staging.tnm,分期.TNM综合分期,String,"**IA**: T1N0M0,5年生存率>90%<br>**IB**: T2N0M0<br>**II**: T3N0-N1<br>**III**: T4或N2-N3<br>**IV**: M1,5年生存率<5%",IIIB期(T3N2M0)
-
-# 治疗方案
-treatment.surgery.performed,治疗.手术.是否实施,Boolean,"**根治性手术**: 唯一治愈手段<br>**可切除率**: 40-50%",true
-treatment.surgery.type,治疗.手术.术式,String,"**远端胃大部切除**: 胃窦癌<br>**全胃切除**: 胃体/贲门癌<br>**近端胃切除**: 贲门癌<br>**D2淋巴结清扫**: 标准术式",远端胃大部切除+D2淋巴结清扫
-treatment.surgery.date,治疗.手术.日期,Date,手术实施日期,2025-04-20
-treatment.surgery.margin,治疗.手术.切缘状态,String,"**R0**: 切缘阴性,预后最好<br>**R1**: 镜下阳性<br>**R2**: 肉眼阳性",R0切除
-treatment.surgery.lymphNodes,治疗.手术.淋巴结清扫数,Number,"**D2淋巴结清扫**: 建议≥15个<br>**清扫数量**: 影响分期准确性和预后",22
-treatment.surgery.complications,治疗.手术.并发症,String,"**吻合口瘘**: 3-5%<br>**腹腔感染**: 5-10%<br>**胰瘘**: 3-5%",无严重并发症
-
-treatment.neoadjuvant,治疗.新辅助治疗,Boolean,"**局部晚期**: 推荐新辅助化疗<br>**降期**: 提高R0切除率<br>**方案**: SOX、XELOX",true
-treatment.neoadjuvant.regimen,治疗.新辅助治疗.方案,String,"**SOX**: 替吉奥+奥沙利铂<br>**XELOX**: 卡培他滨+奥沙利铂<br>**FLOT**: 氟尿嘧啶+奥沙利铂+多西他赛",SOX×3周期
-treatment.neoadjuvant.response,治疗.新辅助治疗.疗效,String,"**PR**: 部分缓解<br>**SD**: 疾病稳定<br>**PD**: 疾病进展",PR(肿瘤缩小35%)
-
-treatment.adjuvant,治疗.辅助治疗,Boolean,"**术后辅助化疗**: 推荐II-III期患者<br>**开始时间**: 术后4-6周内<br>**疗程**: 6-12个月",true
-treatment.adjuvant.regimen,治疗.辅助治疗.方案,String,"**XELOX**: 卡培他滨+奥沙利铂,8周期<br>**SOX**: 替吉奥+奥沙利铂,8周期<br>**单药S-1**: 替吉奥1年",XELOX×8周期
-
-treatment.palliative.chemo,治疗.晚期化疗.方案,String,"**一线**: XELOX、SOX、FOLFOX<br>**HER2阳性**: 化疗+曲妥珠单抗<br>**二线**: 紫杉醇、伊立替康",XELOX
-treatment.palliative.chemo.cycles,治疗.晚期化疗.周期数,Number,已完成化疗周期数,6
-treatment.palliative.chemo.response,治疗.晚期化疗.疗效评价,String,"**CR**: 完全缓解<br>**PR**: 部分缓解<br>**SD**: 疾病稳定<br>**PD**: 疾病进展",SD
-
-treatment.targeted,治疗.靶向治疗,Boolean,"**HER2阳性**: 曲妥珠单抗<br>**抗血管生成**: 阿帕替尼、雷莫芦单抗",false
-treatment.targeted.agent,治疗.靶向治疗.药物,String,"**曲妥珠单抗**: HER2阳性,联合化疗<br>**雷莫芦单抗**: 二线抗血管治疗",无
-
-treatment.immunotherapy,治疗.免疫治疗,Boolean,"**PD-L1阳性**: 纳武利尤单抗、帕博利珠单抗<br>**MSI-H**: 免疫治疗敏感<br>**适应证**: 三线及以上",false
-treatment.immunotherapy.agent,治疗.免疫治疗.药物,String,"**纳武利尤单抗**: PD-1抑制剂<br>**帕博利珠单抗**: MSI-H/dMMR适应证",无
-
-# 转移情况
-metastasis.liver,转移.肝转移,Boolean,"**血行转移**: 最常见<br>**预后**: 中位生存9-12个月",false
-metastasis.peritoneal,转移.腹膜转移,Boolean,"**腹膜种植**: 弥漫型常见<br>**Krukenberg瘤**: 卵巢转移<br>**预后**: 差",false
-metastasis.lung,转移.肺转移,Boolean,"**血行转移**: 10-15%晚期患者<br>**多发结节**: 常见表现",false
-metastasis.lymphNode.distant,转移.远处淋巴结,Boolean,"**Virchow淋巴结**: 左锁骨上<br>**提示**: 晚期转移",false
-metastasis.ascites,转移.腹水,Boolean,"**癌性腹水**: 腹膜转移<br>**细胞学检查**: 确诊腹膜转移",false
-
-# 肿瘤标志物
-tumorMarkers.cea,肿瘤标志物.CEA,Number,"CEA水平(ng/mL)。<br>**正常值**: <5 ng/mL<br>**敏感性**: 20-40%<br>**随访**: 监测复发",15
-tumorMarkers.ca199,肿瘤标志物.CA19-9,Number,"CA19-9水平(U/mL)。<br>**正常值**: <37 U/mL<br>**敏感性**: 15-30%",120
-tumorMarkers.ca724,肿瘤标志物.CA72-4,Number,"CA72-4水平(U/mL)。<br>**正常值**: <6.9 U/mL<br>**胃癌特异性**: 较高<br>**敏感性**: 40-50%",25
-tumorMarkers.afp,肿瘤标志物.AFP,Number,"AFP水平(ng/mL)。<br>**肝样腺癌**: AFP升高<br>**罕见**: 胃癌伴AFP升高,预后差",5
-
-# 幽门螺杆菌
-hp.status,幽门螺杆菌.感染状态,Boolean,"**HP感染**: 胃癌危险因素<br>**肠型胃癌**: 与HP强相关<br>**根除**: 降低胃癌风险",true
-hp.test,幽门螺杆菌.检测方法,String,"**C13/C14呼气试验**: 非侵入性<br>**快速尿素酶试验**: 胃镜活检<br>**组织病理**: 银染或免疫组化",C13呼气试验阳性
-
-# 随访与预后
-followUp.interval,随访.随访间隔,String,"**术后2年内**: 每3-6个月<br>**2-5年**: 每6-12个月<br>**>5年**: 每年",每3个月
-followUp.methods,随访.随访方法,String,"**体格检查**: 腹部触诊<br>**肿瘤标志物**: CEA、CA72-4<br>**CT**: 胸腹盆CT<br>**胃镜**: 残胃复查",腹部CT+肿瘤标志物
-followUp.recurrence,随访.复发,Boolean,"**局部复发**: 残胃、吻合口<br>**远处转移**: 肝、腹膜<br>**中位复发时间**: 12-24个月",false
-followUp.recurrence.site,随访.复发.部位,String,"**肝转移**: 最常见<br>**腹膜**: 第二常见<br>**局部**: 吻合口、残胃",无
-
-prognosis.stage,预后.分期预后,String,"**IA期**: 5年生存率>90%<br>**IB期**: 80-85%<br>**II期**: 60-70%<br>**IIIA期**: 40-50%<br>**IIIB期**: 20-30%<br>**IIIC期**: 10-15%<br>**IV期**: <5%",IIIB期预计5年生存率20-30%
-prognosis.factors,预后.预后因素,String,"**良好**: 早期分期、R0切除、肠型、HER2阳性(可靶向)<br>**不良**: 晚期分期、弥漫型、印戒细胞、腹膜转移",R0切除、N2、中分化肠型
-
-# 危险因素
-riskFactors.hp,危险因素.HP感染,Boolean,"**OR 3-6**: HP感染增加风险<br>**肠型胃癌**: 强相关<br>**根除**: 降低风险",true
-riskFactors.diet,危险因素.饮食习惯,String,"**高盐**: 腌制食品<br>**低蔬果**: 维生素缺乏<br>**烟熏烧烤**: 致癌物暴露",高盐饮食,腌制食品
-riskFactors.smoking,危险因素.吸烟史,Boolean,"**OR 1.5-2**: 吸烟增加风险<br>**贲门癌**: 相关性强",true
-riskFactors.alcohol,危险因素.饮酒史,Boolean,"**OR 1.2-1.5**: 饮酒增加风险",false
-riskFactors.familyHistory,危险因素.家族史,Boolean,"**遗传性弥漫型胃癌**: CDH1基因突变<br>**一级亲属**: 风险增加2-3倍",false
-riskFactors.precancerous,危险因素.癌前病变,String,"**萎缩性胃炎**: HP相关<br>**肠化生**: 癌前病变<br>**异型增生**: 高级别→原位癌",中度肠化生
-
-# 基因检测
-genetics.her2,基因检测.HER2,String,"**IHC**: 免疫组化<br>**FISH**: 荧光原位杂交<br>**0/1+**: 阴性<br>**2+**: FISH确认<br>**3+**: 阳性",IHC 1+
-genetics.msi,基因检测.微卫星不稳定,String,"**MSI-H**: 高度不稳定,免疫治疗敏感<br>**MSI-L**: 低度不稳定<br>**MSS**: 稳定",MSS
-genetics.mmr,基因检测.错配修复,String,"**dMMR**: 错配修复缺陷,MSI-H<br>**pMMR**: 错配修复完整",pMMR
-genetics.pdl1,基因检测.PD-L1,String,"**CPS≥1**: 纳武利尤单抗适应证<br>**CPS≥10**: 帕博利珠单抗单药",CPS<1
-genetics.ebv,基因检测.EBV,String,"**EBV阳性**: 10%胃癌<br>**免疫治疗**: 敏感<br>**预后**: 中等",阴性
-
-# 营养评估
-nutrition.albumin,营养.白蛋白,Number,"血清白蛋白(g/L)。<br>**<30**: 营养不良<br>**<25**: 严重营养不良",28
-nutrition.prealbumin,营养.前白蛋白,Number,"前白蛋白(mg/L)。<br>**<200**: 营养不良<br>**<100**: 严重营养不良",150
-nutrition.bmi,营养.BMI,Number,体重指数(kg/m²),19.5
-nutrition.support,营养.营养支持,String,"**术前**: 营养支持1-2周<br>**术后**: 早期肠内营养<br>**晚期**: 肠内/肠外营养",术前肠内营养支持
-
-# 并发症
-complications.bleeding,并发症.出血,Boolean,"**肿瘤出血**: 呕血、黑便<br>**急性出血**: 需内镜或手术止血",false
-complications.obstruction,并发症.梗阻,Boolean,"**幽门梗阻**: 胃窦癌<br>**贲门梗阻**: 吞咽困难<br>**全身营养不良**: 长期梗阻",false
-complications.perforation,并发症.穿孔,Boolean,"**肿瘤穿孔**: 急腹症<br>**急诊手术**: 需立即处理",false
-
-performanceStatus,体能状态.ECOG评分,Number,"**0**: 完全活动<br>**1**: 限制重体力<br>**2**: 生活自理<br>**3**: 有限自理<br>**4**: 完全失能",1
-
-notes,备注,String,其他重要临床信息,患者术前营养状态欠佳,已加强营养支持
+Category,Field_Name,Chinese_Name,Data_Type,Unit,Valid_Range,LOINC_Code,Required,Description,Clinical_Significance
+Basic_Info,patient_id,患者ID,string,,,,,Y,唯一标识,患者追踪
+Basic_Info,diagnosis_date,诊断日期,date,,,,,Y,确诊时间,疾病起点
+Basic_Info,age,年龄,integer,years,18-120,,,Y,患者年龄,预后因素
+Basic_Info,gender,性别,categorical,,Male,Female,,,Y,性别,男性多见
+Histology,lauren_classification,Lauren分型,categorical,,Intestinal,Diffuse,Mixed,,,Y,肠型/弥漫型/混合型,预后分层
+Histology,who_classification,WHO分型,categorical,,Tubular_Adenocarcinoma,Poorly_Cohesive,Mucinous,Signet_Ring_Cell,Other,,,Y,管状腺癌/低黏附性/黏液腺癌/印戒细胞癌/其他,组织学类型
+Histology,differentiation,分化程度,categorical,,Well,Moderate,Poor,Undifferentiated,,,Y,高/中/低/未分化,预后因素
+Molecular,her2_status,HER2状态,categorical,,Negative,Equivocal_IHC2+,Positive_IHC3+,FISH_Positive,,,Y,阴性/IHC2+待定/IHC3+阳性/FISH阳性,曲妥珠单抗适应证
+Molecular,msi_status,微卫星不稳定性,categorical,,MSS,MSI_Low,MSI_High,,,N,稳定/低度/高度,免疫治疗预测
+Molecular,ebv_status,EBV状态,categorical,,Negative,Positive,,,N,阴性/阳性,预后亚型
+Molecular,pdl1_cps,PD-L1 CPS评分,integer,,0-100,,,N,联合阳性分数,免疫治疗
+TNM_Staging,clinical_t,临床T分期,categorical,,T1a,T1b,T2,T3,T4a,T4b,,,Y,T1a黏膜层/T1b黏膜下/T2肌层/T3浆膜下/T4a穿透浆膜/T4b侵犯邻近结构,浸润深度
+TNM_Staging,clinical_n,临床N分期,categorical,,N0,N1,N2,N3a,N3b,,,Y,N0无/N1:1-2个/N2:3-6个/N3a:7-15个/N3b:≥16个,淋巴结转移
+TNM_Staging,clinical_m,临床M分期,categorical,,M0,M1,,,Y,M0无远处转移/M1有远处转移,远处转移
+TNM_Staging,tnm_stage,TNM总分期,categorical,,IA,IB,IIA,IIB,IIIA,IIIB,IIIC,IV,,,Y,AJCC 8th,预后分层
+Tumor_Location,tumor_site,肿瘤部位,categorical,,Cardia,Fundus,Body,Antrum,Pylorus,Diffuse,,,Y,贲门/胃底/胃体/胃窦/幽门/弥漫,解剖位置
+Tumor_Location,borrmann_type,Borrmann分型,categorical,,Type_I,Type_II,Type_III,Type_IV,,,N,I型息肉样/II型溃疡局限/III型溃疡浸润/IV型弥漫浸润,进展期胃癌分型
+Performance,ecog_ps,ECOG体能状态,integer,,0-5,89247-1,,Y,0-5分,治疗耐受性
+Labs,cea,癌胚抗原,decimal,ng/mL,0-1000,2039-6,,N,CEA,肿瘤标志物
+Labs,ca199,糖类抗原199,decimal,U/mL,0-10000,24108-7,,N,CA19-9,肿瘤标志物
+Labs,ca724,糖类抗原724,decimal,U/mL,0-1000,33782-1,,N,CA72-4,胃癌特异性
+Labs,afp,甲胎蛋白,decimal,ng/mL,0-1000,1834-1,,N,AFP,肝样腺癌
+Imaging,ct_findings,CT征象,string,,,,,Y,胃壁增厚/淋巴结肿大,影像学特征
+Imaging,endoscopy_findings,内镜表现,string,,,,,Y,病灶描述,内镜诊断
+Imaging,eus_depth,超声内镜浸润深度,categorical,,T1,T2,T3,T4,,,N,浸润层次,分期评估
+Diagnosis,h_pylori,幽门螺杆菌,categorical,,Negative,Positive,Eradicated,,,N,阴性/阳性/已根除,危险因素
+Treatment_Surgery,surgical_procedure,手术方式,categorical,,Distal_Gastrectomy,Total_Gastrectomy,Proximal_Gastrectomy,ESD,None,,,N,远端胃切除/全胃切除/近端胃切除/内镜黏膜下剥离/无,根治性治疗
+Treatment_Surgery,lymphadenectomy,淋巴结清扫,categorical,,D0,D1,D1_Plus,D2,D3,None,,,N,D0无/D1组1/D1+组1+部分2/D2组1+2/D3组1+2+3,淋巴结清扫范围
+Treatment_Surgery,surgical_margins,切缘状态,categorical,,R0,R1,R2,,,N,阴性/镜下阳性/肉眼阳性,完全切除
+Treatment_Surgery,lymph_nodes_examined,淋巴结检查数,integer,,0-100,,,N,病理检查淋巴结数,≥16个准确分期
+Treatment_Surgery,lymph_nodes_positive,阳性淋巴结数,integer,,0-100,,,N,转移淋巴结数,预后因素
+Treatment_Perioperative,neoadjuvant_therapy,新辅助治疗,categorical,,None,Chemotherapy,Chemoradiation,,,N,无/化疗/放化疗,术前治疗
+Treatment_Perioperative,adjuvant_chemotherapy,辅助化疗,categorical,,None,S1,XELOX,FOLFOX,SOX,,,N,无/替吉奥/卡培他滨+奥沙利铂/FOLFOX/S1+奥沙利铂,术后治疗
+Treatment_Advanced,palliative_chemotherapy,姑息化疗,categorical,,None,Fluoropyrimidine_Platinum,Taxane_Based,Irinotecan_Based,,,N,无/氟尿嘧啶+铂类/紫杉类/伊立替康,晚期一线
+Treatment_Advanced,targeted_therapy,靶向治疗,categorical,,None,Trastuzumab,Ramucirumab,Apatinib,,,N,无/曲妥珠单抗/雷莫芦单抗/阿帕替尼,HER2阳性/抗血管生成
+Treatment_Advanced,immunotherapy,免疫治疗,categorical,,None,Nivolumab,Pembrolizumab,,,N,无/纳武利尤单抗/帕博利珠单抗/,MSI-H/PD-L1阳性
+Response,treatment_response,治疗反应,categorical,,Complete_Response,Partial_Response,Stable_Disease,Progressive_Disease,,,N,完全缓解/部分缓解/疾病稳定/疾病进展,RECIST标准
+Complications,peritoneal_metastasis,腹膜转移,boolean,,,,,N,腹膜种植,胃癌特征性转移
+Complications,krukenberg_tumor,Krukenberg瘤,boolean,,,,,N,卵巢转移,女性胃癌转移
+Follow_Up,progression_free_survival,无进展生存期,integer,months,0-200,,,N,PFS,疗效指标
+Follow_Up,overall_survival,总生存期,integer,months,0-200,,,N,OS,预后指标
+Report,oncologist,肿瘤科医师,string,,,,,Y,主管医师,责任医师
+Report,report_date,报告日期,date,,,,,Y,报告时间,文档记录
