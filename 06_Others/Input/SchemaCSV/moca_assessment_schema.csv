@@ -1,0 +1,5 @@
+id,item_code,item_name,score_value,interpretation_text,severity_level,recommendation,guideline_source
+moca_assessment,MOCA_TOTAL_SCORE,MoCA 总分,"26-30","总分正常。认知功能在正常范围内。注：如果受教育年限≤12年，通常会在此分数上加1分进行校正。","正常认知 (Normal Cognition)","无需特殊认知干预。建议保持活跃的社交、脑力及体力活动以维持认知健康。","Nasreddine ZS, et al. J Am Geriatr Soc. 2005"
+moca_assessment,MOCA_TOTAL_SCORE,MoCA 总分,"18-25","分数提示存在轻度认知损害（MCI）。可能在记忆、执行功能或注意力等方面出现了一些轻微问题，但日常生活能力基本不受影响。","轻度认知损害 (Mild Cognitive Impairment)","这是认知能力下降的早期警示信号。建议进行全面的神经心理评估以明确受损的认知域。应积极进行认知训练、体育锻炼和心血管风险控制。","Nasreddine ZS, et al. J Am Geriatr Soc. 2005"
+moca_assessment,MOCA_TOTAL_SCORE,MoCA 总分,"10-17","分数提示存在中度认知损害。认知下降可能已开始影响到一些复杂的日常生活活动（如财务管理、用药）。","中度认知损害 (Moderate Cognitive Impairment)","通常符合轻度至中度痴呆的诊断标准。需要神经科医生进行全面评估以明确痴呆的病因。需要一定程度的日常生活支持和监督。","Nasreddine ZS, et al. J Am Geriatr Soc. 2005"
+moca_assessment,MOCA_TOTAL_SCORE,MoCA 总分,"<10","分数提示存在重度认知损害。认知功能严重受损，日常生活能力（包括基础的穿衣、进食）通常需要他人大量帮助。","重度认知损害 (Severe Cognitive Impairment)","符合重度痴呆的诊断标准。治疗重点在于安全看护、并发症预防和维持生活质量。需要全面的长期照护计划。","Nasreddine ZS, et al. J Am Geriatr Soc. 2005"

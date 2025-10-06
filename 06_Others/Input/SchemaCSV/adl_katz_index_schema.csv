@@ -1,0 +1,5 @@
+id,item_code,item_name,score_value,interpretation_text,severity_level,recommendation,guideline_source
+adl_katz_index,KATZ_ADL_SCORE,Katz ADL指数总分,"6","在所有6项基本日常生活活动中完全独立。患者可以独立完成洗澡、穿衣、如厕、床上或椅子转移、大小便控制和进食。","完全独立 (Independent)","患者在基本自我照顾方面无需帮助。应鼓励其维持身体功能和参与日常活动。","Katz S, et al. JAMA. 1963"
+adl_katz_index,KATZ_ADL_SCORE,Katz ADL指数总分,"4-5","存在中度功能损害。患者在6项活动中有2-3项需要他人帮助。通常最先丧失的是洗澡和穿衣的独立性。","中度功能损害 (Moderate Impairment)","需要提供部分日常生活辅助。建议进行职业治疗评估，以确定具体困难并提供辅助工具或环境改造建议，最大限度地保持其独立性。","Katz S, et al. JAMA. 1963"
+adl_katz_index,KATZ_ADL_SCORE,Katz ADL指数总分,"2-3","存在重度功能损害。患者在6项活动中有多项（4-5项）需要他人帮助，仅有少数活动可以独立完成。","重度功能损害 (Severe Impairment)","患者需要大量的日常生活照护。需要制定一个全面的护理计划，并可能需要专业的护理人员介入。","Katz S, et al. JAMA. 1963"
+adl_katz_index,KATZ_ADL_SCORE,Katz ADL指数总分,"0-1","存在完全的功能依赖。患者在所有或几乎所有基本日常生活活动中都需要他人帮助。","完全依赖 (Dependent)","患者需要全面的、24小时的日常生活照护。护理重点在于维持舒适、预防并发症（如压疮、感染）和保证安全。","Katz S, et al. JAMA. 1963"

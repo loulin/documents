@@ -1,0 +1,5 @@
+id,item_code,item_name,score_value,interpretation_text,severity_level,recommendation,guideline_source
+iadl_lawton_scale,LAWTON_IADL_SCORE,Lawton IADL量表总分,"8","在所有8项工具性日常生活活动中完全独立。患者能够独立处理复杂的任务，如管理财务、自行购物、准备饭菜和使用交通工具。","完全独立 (Independent)","患者具备完全的社区独立生活能力。无需特殊干预。","Lawton MP, and Brody EM. The Gerontologist. 1969"
+iadl_lawton_scale,LAWTON_IADL_SCORE,Lawton IADL量表总分,"5-7","存在轻度依赖。患者在1-3项较复杂的活动上需要他人协助，例如可能在长途交通、复杂的财务管理或准备全部餐食方面需要帮助。","轻度依赖 (Mild Dependence)","患者仍有较好的独立生活能力，但需要针对性的支持。可以考虑引入社区服务（如送餐服务）或家人定期协助来弥补特定能力的不足。","Lawton MP, and Brody EM. The Gerontologist. 1969"
+iadl_lawton_scale,LAWTON_IADL_SCORE,Lawton IADL量表总分,"2-4","存在中度依赖。患者在多项工具性活动上需要他人帮助，可能仅能独立完成最简单的几项任务。","中度依赖 (Moderate Dependence)","患者独立社区生活存在困难。需要评估引入家庭护理服务或考虑入住提供部分服务的辅助生活机构（Assisted Living）。","Lawton MP, and Brody EM. The Gerontologist. 1969"
+iadl_lawton_scale,LAWTON_IADL_SCORE,Lawton IADL量表总分,"0-1","存在重度依赖。患者在绝大多数或全部工具性日常生活活动中都需要他人帮助，无法独立在社区生活。","重度依赖 (Severe Dependence)","患者需要大量的日常生活支持，通常无法独立生活。需要全面的长期照护计划，例如专业的家庭护理或入住护理院（Nursing Home）。","Lawton MP, and Brody EM. The Gerontologist. 1969"

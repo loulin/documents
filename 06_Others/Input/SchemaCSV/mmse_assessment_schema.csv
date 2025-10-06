@@ -1,0 +1,6 @@
+id,item_code,item_name,score_value,interpretation_text,severity_level,recommendation,guideline_source
+mmse_assessment,MMSE_TOTAL_SCORE,MMSE 总分,"27-30","分数在正常范围内。通常认为认知功能完好。","正常认知 (Normal Cognition)","建议保持健康生活方式。常规随访即可。","Folstein MF, et al. J Psychiatr Res. 1975"
+mmse_assessment,MMSE_TOTAL_SCORE,MMSE 总分,"21-26","分数提示可能存在轻度认知损害。在记忆、注意或语言方面可能存在一些问题。","轻度认知损害 (Mild Cognitive Impairment)","建议进行更全面的神经心理评估（如MoCA量表）和临床评估，以明确诊断。应开始关注并管理心血管风险因素。","Folstein MF, et al. J Psychiatr Res. 1975"
+mmse_assessment,MMSE_TOTAL_SCORE,MMSE 总分,"10-20","分数提示存在中度认知损害，通常对应于轻至中度痴呆。患者的日常生活能力可能已受到影响。","中度认知损害 (Moderate Cognitive Impairment)","需要由专科医生进行全面评估以确定痴呆病因。患者可能需要日常生活上的支持和监督。应开始考虑药物治疗。","Folstein MF, et al. J Psychiatr Res. 1975"
+mmse_assessment,MMSE_TOTAL_SCORE,MMSE 总分,"0-9","分数提示存在重度认知损害，通常对应于重度痴呆。患者严重依赖他人照料。","重度认知损害 (Severe Cognitive Impairment)","治疗和管理的重点在于提供全面的生活护理、预防并发症和维持患者尊严。需要制定全面的长期照护计划。","Folstein MF, et al. J Psychiatr Res. 1975"
+mmse_assessment,MMSE_EDUCATION_ADJUSTMENT,教育程度校正说明,"*","MMSE分数解读需考虑教育背景。传统校正建议：文盲加1分，小学（≤6年）加2分，中学（>6年）不加分。请在最终解读时参考校正后的分数。","校正规则","在评估分数时，请务必结合患者的教育背景进行综合判断。","Tombaugh TN, et al. J Am Geriatr Soc. 1992"

@@ -1,0 +1,6 @@
+id,item_code,item_name,score_value,interpretation_text,severity_level,recommendation,guideline_source
+hamd_17_assessment,HAMD_17_TOTAL_SCORE,HAM-D17 总分,"0-7","分数在正常范围内，无明显抑郁症状。","正常范围 (Normal)","无需特殊干预。","Hamilton M. J Neurol Neurosurg Psychiatry. 1960"
+hamd_17_assessment,HAMD_17_TOTAL_SCORE,HAM-D17 总分,"8-13","可能为轻度抑郁。临床表现为轻微的情绪低落和相关症状。","轻度抑郁 (Mild Depression)","建议进行心理咨询和支持性心理治疗。对于持续的或功能受损的病例，可考虑开始抗抑郁药物治疗。","Hamilton M. J Neurol Neurosurg Psychiatry. 1960"
+hamd_17_assessment,HAMD_17_TOTAL_SCORE,HAM-D17 总分,"14-18","明确为中度抑郁。患者的社会和工作功能受到影响。","中度抑郁 (Moderate Depression)","通常需要进行药物治疗（如SSRI/SNRI）和/或结构化的心理治疗（如CBT, IPT）。","Hamilton M. J Neurol Neurosurg Psychiatry. 1960"
+hamd_17_assessment,HAMD_17_TOTAL_SCORE,HAM-D17 总分,"19-22","为重度抑郁。患者的社会和工作功能受到显著损害。","重度抑郁 (Severe Depression)","必须进行积极的药物治疗，并可能需要联合用药或调整方案。心理治疗作为辅助。需密切监测自杀风险。","Hamilton M. J Neurol Neurosurg Psychiatry. 1960"
+hamd_17_assessment,HAMD_17_TOTAL_SCORE,HAM-D17 总分,">23","为极重度抑郁。患者的功能严重受损，可能需要更强化的治疗，例如电休克疗法（ECT）或住院治疗。","极重度抑郁 (Very Severe Depression)","需要精神科紧急会诊和强化治疗。住院治疗通常是必要的，以确保患者安全并进行密集的综合干预。","Hamilton M. J Neurol Neurosurg Psychiatry. 1960"

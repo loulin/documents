@@ -1,0 +1,4 @@
+id,item_code,item_name,score_value,interpretation_text,severity_level,recommendation,guideline_source
+frailty_phenotype,FRIED_SCORE,衰弱表型评分,"0","您的身体状况健康强健。在5项衰弱评估标准中，您没有一项满足。","健康 (Robust)","非常棒，请继续保持积极的生活方式、均衡营养和规律锻炼，以维持您的健康状态。","Fried LP, et al. J Gerontol A Biol Sci Med Sci. 2001"
+frailty_phenotype,FRIED_SCORE,衰弱表型评分,"1-2","您处于衰弱前期状态。这意味着出现了一些衰弱的早期迹象，未来发展为衰弱状态的风险增高。","衰弱前期 (Pre-frail)","建议您咨询医生或康复师。重点应放在营养干预（特别是蛋白质摄入）和进行有针对性的锻炼（如抗阻训练和平衡训练）上，以逆转或延缓衰弱进程。","Fried LP, et al. J Gerontol A Biol Sci Med Sci. 2001"
+frailty_phenotype,FRIED_SCORE,衰弱表型评分,"3-5","您目前的状况符合衰弱的诊断标准。这意味着您的身体储备功能下降，对抗应激事件（如感染、住院）的能力减弱，跌倒、失能和住院的风险显著增加。","衰弱 (Frail)","必须进行全面的老年医学评估以确定根本原因。强烈建议在医生和康复治疗师的指导下，立即开始多维度的干预措施，包括营养支持、个体化的康复锻炼和慢性病管理。","Fried LP, et al. J Gerontol A Biol Sci Med Sci. 2001"

@@ -1,0 +1,5 @@
+id,item_code,item_name,score_value,interpretation_text,severity_level,recommendation,guideline_source
+tcm_constitution_type,TCM_CONSTITUTION,中医体质类型,"Balanced","平和质：体形匀称健壮，面色、肤色润泽，精力充沛，睡眠、饮食良好，性格随和开朗，对外界环境适应能力强。","平和质","恭喜您，这是最健康的体质。请继续保持规律作息、均衡饮食和适度锻炼的良好生活习惯。","中华中医药学会《中医体质分类与判定》"
+tcm_constitution_type,TCM_CONSTITUTION,中医体质类型,"Qi_Deficiency","气虚质：表现为元气不足，容易疲乏，气短懒言，声音低怯，精神不振，易出虚汗，舌淡红，舌边有齿痕。","气虚质","饮食上宜食补气健脾的食物，如山药、黄芪、大枣、小米。运动宜缓和，如散步、太极拳，不宜过劳。注意保暖，避免出汗后受风。","中华中医药学会《中医体质分类与判定》"
+tcm_constitution_type,TCM_CONSTITUTION,中医体质类型,"Yang_Deficiency","阳虚质：表现为阳气不足，畏寒怕冷，手足不温，喜热饮食，精神不振，舌淡胖嫩，边有齿痕，苔润。","阳虚质","饮食上宜食温阳散寒的食物，如生姜、羊肉、韭菜。注意腰部和下肢保暖。可在医生指导下进行艾灸。夏季不宜过度吹空调、吃冷饮。","中华中医药学会《中医体质分类与判定》"
+tcm_constitution_type,TCM_CONSTITUTION,中医体质类型,"Yin_Deficiency","阴虚质：表现为阴液亏少，手足心热，口燥咽干，鼻微干，喜冷饮，大便干燥，舌红少津，少苔。","阴虚质","饮食上宜食滋阴润燥的食物，如银耳、百合、梨、鸭肉。避免熬夜，保证充足睡眠。运动不宜剧烈，避免出汗过多。保持心态平静。","中华中医药学会《中医体质分类与判定》"

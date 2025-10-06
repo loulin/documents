@@ -1,0 +1,6 @@
+id,item_code,item_name,score_value,interpretation_text,severity_level,recommendation,guideline_source
+fagerstrom_nicotine_test,FTND_SCORE,法氏尼古丁依赖量表,"0-2","尼古丁依赖程度很低。您对尼古丁的生理依赖性不强。","极低依赖 (Very Low Dependence)","戒烟动力和行为干预是成功的关键。通常无需药物辅助即可成功戒烟。","Heatherton, TF, et al. Br J Addict. 1991"
+fagerstrom_nicotine_test,FTND_SCORE,法氏尼古丁依赖量表,"3-4","尼古丁依赖程度较低。存在一定的生理依赖，但可能不严重。","低度依赖 (Low Dependence)","可以考虑使用非处方的尼古丁替代疗法（NRT），如贴片或口香糖，来辅助戒烟。","Heatherton, TF, et al. Br J Addict. 1991"
+fagerstrom_nicotine_test,FTND_SCORE,法氏尼古丁依赖量表,"5","尼古丁依赖程度为中等。您存在中等程度的生理依赖。","中度依赖 (Medium Dependence)","建议使用尼古丁替代疗法（NRT）。如果自行尝试失败，应咨询医生。","Heatherton, TF, et al. Br J Addict. 1991"
+fagerstrom_nicotine_test,FTND_SCORE,法氏尼古丁依赖量表,"6-7","尼古丁依赖程度较高。您对尼古丁有很强的生理依赖，戒烟时可能会出现明显的戒断症状。","高度依赖 (High Dependence)","强烈建议在医生指导下进行戒烟治疗。联合使用不同剂型的NRT（如长效贴片+短效口香糖）或使用处方戒烟药（如伐尼克兰、安非他酮）可能是必要的。","Heatherton, TF, et al. Br J Addict. 1991"
+fagerstrom_nicotine_test,FTND_SCORE,法氏尼古丁依赖量表,"8-10","尼古丁依赖程度非常高。您对尼古丁有极强的生理依赖，是重度吸烟者。","极高依赖 (Very High Dependence)","必须在专业的戒烟门诊或医生指导下进行综合干预。通常需要高剂量的NRT或处方药，并结合强化的行为支持和心理咨询。","Heatherton, TF, et al. Br J Addict. 1991"

@@ -1,0 +1,7 @@
+id,item_code,item_name,score_value,interpretation_text,severity_level,recommendation,guideline_source
+cha2ds2_vasc_score,CHA2DS2_VASC_SCORE,CHA2DS2-VASc 评分 (男性),"0","年度卒中风险极低 (接近0%)。","低风险 (Low Risk)","无需抗血栓治疗。","ESC Guidelines for Atrial Fibrillation"
+cha2ds2_vasc_score,CHA2DS2_VASC_SCORE,CHA2DS2-VASc 评分 (男性),"1","年度卒中风险较低 (约1.3%)。","中风险 (Intermediate Risk)","应考虑使用口服抗凝药（OAC）。需要与患者讨论获益与出血风险后共同决策。","ESC Guidelines for Atrial Fibrillation"
+cha2ds2_vasc_score,CHA2DS2_VASC_SCORE,CHA2DS2-VASc 评分 (男性),">=2","年度卒中风险显著增高 (≥2.2%)，且随分数增加而急剧升高。","高风险 (High Risk)","推荐使用口服抗凝药（OAC），例如非维生素K拮抗剂口服抗凝药（NOAC）或华法林。","ESC Guidelines for Atrial Fibrillation"
+cha2ds2_vasc_score,CHA2DS2_VASC_SCORE,CHA2DS2-VASc 评分 (女性),"1","年度卒中风险极低。女性仅因性别得1分时，其风险与得0分的男性相似。","低风险 (Low Risk)","无需抗血栓治疗。","ESC Guidelines for Atrial Fibrillation"
+cha2ds2_vasc_score,CHA2DS2_VASC_SCORE,CHA2DS2-VASc 评分 (女性),"2","年度卒中风险较低 (约2.2%)。","中风险 (Intermediate Risk)","应考虑使用口服抗凝药（OAC）。需要与患者讨论获益与出血风险后共同决策。","ESC Guidelines for Atrial Fibrillation"
+cha2ds2_vasc_score,CHA2DS2_VASC_SCORE,CHA2DS2-VASc 评分 (女性),">=3","年度卒中风险显著增高 (≥3.2%)，且随分数增加而急剧升高。","高风险 (High Risk)","推荐使用口服抗凝药（OAC），例如非维生素K拮抗剂口服抗凝药（NOAC）或华法林。","ESC Guidelines for Atrial Fibrillation"

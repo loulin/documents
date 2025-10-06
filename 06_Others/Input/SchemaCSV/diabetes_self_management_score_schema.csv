@@ -1,0 +1,5 @@
+id,item_code,item_name,score_value,interpretation_text,severity_level,recommendation,guideline_source
+diabetes_self_management,DSMS_OVERALL_SCORE,糖尿病自我管理总体评分,"85-100","您的糖尿病自我管理能力非常出色。您在知识、技能和态度方面都表现出高度的自主性和有效性，能很好地将糖尿病管理融入日常生活。","优秀 (Excellent)","非常棒！请继续保持这些良好的习惯。您可以考虑成为同伴支持者，将您的宝贵经验分享给其他糖友。","ADA Standards of Medical Care in Diabetes"
+diabetes_self_management,DSMS_OVERALL_SCORE,糖尿病自我管理总体评分,"70-84","您的糖尿病自我管理能力良好。您掌握了大部分必要的知识和技能，但在某些特定领域（如应对特殊情况、饮食的精细化管理等）可能还有提升空间。","良好 (Good)","您的基础非常扎实。建议与您的糖尿病教育师或医生一起，识别一两个可以进一步优化的具体领域，并设定新的学习目标。","ADA Standards of Medical Care in Diabetes"
+diabetes_self_management,DSMS_OVERALL_SCORE,糖尿病自我管理总体评分,"50-69","您的糖尿病自我管理能力处于中等水平，有明显的改进空间。您可能在某些核心领域（如饮食、运动或血糖监测的解读与应对）存在知识或技能的不足。","中等 (Moderate)","建议您参加一次系统性的糖尿病自我管理教育（DSME）课程，或与您的医疗团队进行一次全面评估，以确定最需要改进的领域并制定一个实际的行动计划。","ADA Standards of Medical Care in Diabetes"
+diabetes_self_management,DSMS_OVERALL_SCORE,糖尿病自我管理总体评分,"_lt_50","您的糖尿病自我管理能力较差，这可能会显著增加您发生并发症的风险。您在多个核心管理领域都存在困难。","较差 (Poor)","这是需要高度重视的信号。强烈建议您立即与您的医生和糖尿病教育师会面，进行一对一的强化教育和技能培训。家庭成员的参与和支持也至关重要。","ADA Standards of Medical Care in Diabetes"

@@ -1,0 +1,5 @@
+id,item_code,item_name,score_value,interpretation_text,severity_level,recommendation,guideline_source
+bdi_ii_assessment,BDI_II_TOTAL_SCORE,BDI-II 总分,"0-13","分数处于最低范围，表明没有或仅有极微的抑郁症状。","极微/无抑郁 (Minimal)","目前无需特殊干预。可继续观察，如出现症状加重应及时就诊。","Beck, A.T., Steer, R.A., & Brown, G.K. (1996). BDI-II Manual."
+bdi_ii_assessment,BDI_II_TOTAL_SCORE,BDI-II 总分,"14-19","分数表明存在轻度抑郁。您可能感到情绪低落，对日常活动的兴趣有所减退，但通常还能维持日常工作和社交功能。","轻度抑郁 (Mild)","建议进行心理健康咨询或心理治疗（如CBT）。生活方式的调整（如增加运动、改善睡眠）也可能有所帮助。","Beck, A.T., Steer, R.A., & Brown, G.K. (1996). BDI-II Manual."
+bdi_ii_assessment,BDI_II_TOTAL_SCORE,BDI-II 总分,"20-28","分数表明存在中度抑郁。您的情绪、认知和身体症状可能已对您的社交和工作功能造成了明显影响。","中度抑郁 (Moderate)","强烈建议寻求专业的精神科评估和治疗。心理治疗和/或抗抑郁药物治疗通常是有效的。","Beck, A.T., Steer, R.A., & Brown, G.K. (1996). BDI-II Manual."
+bdi_ii_assessment,BDI_II_TOTAL_SCORE,BDI-II 总分,"29-63","分数表明存在重度抑郁。您的症状非常严重，很可能已严重损害了您的社会功能、职业功能和自理能力。","重度抑郁 (Severe)","必须立即寻求专业的精神科紧急评估和干预。通常需要药物和心理治疗的联合干预，某些情况下可能需要住院治疗。请务必告知他人您的状况并寻求帮助。","Beck, A.T., Steer, R.A., & Brown, G.K. (1996). BDI-II Manual."

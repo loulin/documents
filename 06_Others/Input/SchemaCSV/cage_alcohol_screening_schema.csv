@@ -1,0 +1,4 @@
+id,item_code,item_name,score_value,interpretation_text,severity_level,recommendation,guideline_source
+cage_alcohol_screening,CAGE_SCORE,CAGE酒精滥-用筛查,"0-1","分数表明目前存在酒精使用问题的可能性较低。","低风险 (Low Risk)","虽然风险较低，但仍建议您关注并保持健康的饮酒习惯。","Ewing, JA. JAMA. 1984"
+cage_alcohol_screening,CAGE_SCORE,CAGE酒精滥用筛查,"2-3","分数提示高度怀疑存在临床上显著的酒精使用问题（酒精滥用或依赖）。","高度怀疑 (High Suspicion)","强烈建议进行更全面的诊断性评估，例如进行详细的饮酒史访谈和使用AUDIT等更详细的量表。应与医生或心理健康专家讨论此问题。","Ewing, JA. JAMA. 1984"
+cage_alcohol_screening,CAGE_SCORE,CAGE酒精滥用筛查,"4","4个问题全部回答“是”，几乎可以肯定地表明存在酒精依赖。","极高风险 (Very High Risk)","必须进行专业的诊断和干预。请务必与您的医生、精神科医生或成瘾治疗专家会面，讨论并开始戒酒治疗计划。","Ewing, JA. JAMA. 1984"

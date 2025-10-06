@@ -1,0 +1,5 @@
+id,item_code,item_name,score_value,interpretation_text,severity_level,recommendation,guideline_source
+cssrs_suicide_risk,CSSRS_RISK_LEVEL,C-SSRS 风险等级,"No_Suicidal_Ideation_Or_Behavior","近期没有自杀意念或行为。","无风险 (No Risk)","常规随访。但仍需对抑郁、焦虑等其他精神症状保持关注。","Posner, K., et al. Am J Psychiatry. 2011"
+cssrs_suicide_risk,CSSRS_RISK_LEVEL,C-SSRS 风险等级,"Ideation_No_Plan_Intent","存在被动（如希望死去）或主动的自杀想法，但没有具体的计划、意图或准备行为。","低风险 (Low Risk)","需要提高警惕并增加随访频率。应制定安全计划，并处理引发自杀意念的潜在问题（如抑郁、生活应激事件）。","Posner, K., et al. Am J Psychiatry. 2011"
+cssrs_suicide_risk,CSSRS_RISK_LEVEL,C-SSRS 风险等级,"Ideation_With_Plan_Or_Intent","存在主动的自杀想法，并且伴有自杀的方法、意图或计划，但尚未有实际行为。","高风险 (High Risk)","需要紧急的精神科评估。必须限制患者接触潜在的致命工具。家属或监护人需要进行24小时监护，直到专业人员介入。","Posner, K., et al. Am J Psychiatry. 2011"
+cssrs_suicide_risk,CSSRS_RISK_LEVEL,C-SSRS 风险等级,"Any_Suicidal_Behavior","在评估期内有过任何自杀相关的实际行为（包括被中断的、被阻止的或实际发生的自杀未遂）。","极高/紧急风险 (Severe/Imminent Risk)","这是最高级别的警报，需要立即进行紧急医疗干预，通常意味着需要将患者送至急诊或精神科进行紧急住院治疗，以确保其生命安全。","Posner, K., et al. Am J Psychiatry. 2011"

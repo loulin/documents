@@ -1,0 +1,5 @@
+id,item_code,item_name,score_value,interpretation_text,severity_level,recommendation,guideline_source
+ascvd_risk_10_year,ASCVD_RISK_PERCENT,10年ASCVD风险评估,"<5.0","您的10年期心血管疾病风险较低。","低风险 (Low Risk)","重点在于保持健康的生活方式，包括均衡饮食、规律运动、保持理想体重和不吸烟。","2019 ACC/AHA Guideline on the Primary Prevention of Cardiovascular Disease"
+ascvd_risk_10_year,ASCVD_RISK_PERCENT,10年ASCVD风险评估,"5.0-7.4","您的10年期心血管疾病风险处于临界水平。","临界风险 (Borderline Risk)","生活方式干预是基础。如果存在其他风险增强因素（如家族史、高炎性反应等），应与医生讨论是否需要启动他汀类药物治疗。","2019 ACC/AHA Guideline on the Primary Prevention of Cardiovascular Disease"
+ascvd_risk_10_year,ASCVD_RISK_PERCENT,10年ASCVD风险评估,"7.5-19.9","您的10年期心血管疾病风险处于中等水平。","中度风险 (Intermediate Risk)","建议与医生深入讨论启动中等强度他汀类药物治疗的获益与风险。无论是否用药，生活方式干预都至关重要。","2019 ACC/AHA Guideline on the Primary Prevention of Cardiovascular Disease"
+ascvd_risk_10_year,ASCVD_RISK_PERCENT,10年ASCVD风险评估,">=20.0","您的10年期心血管疾病风险很高。","高风险 (High Risk)","强烈建议启动高强度他汀类药物治疗，以显著降低您的心血管事件风险。同时必须严格控制所有可改变的危险因素。","2019 ACC/AHA Guideline on the Primary Prevention of Cardiovascular Disease"

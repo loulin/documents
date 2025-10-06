@@ -1,0 +1,4 @@
+id,item_code,item_name,score_value,interpretation_text,severity_level,recommendation,guideline_source
+has_bled_score,HAS_BLED_SCORE,HAS-BLED 出血风险评分,"0-1","年度大出血事件风险较低 (约1.0-1.9%)。","低风险 (Low Risk)","使用口服抗凝药（OAC）相对安全。常规随访即可。","ESC Guidelines for Atrial Fibrillation"
+has_bled_score,HAS_BLED_SCORE,HAS-BLED 出血风险评分,"2","年度大出血事件风险中等 (约2.5%)。","中风险 (Intermediate Risk)","需要谨慎。建议检查并处理可逆的出血风险因素（如控制不佳的高血压、使用NSAIDs等），并考虑增加随访频率。","ESC Guidelines for Atrial Fibrillation"
+has_bled_score,HAS_BLED_SCORE,HAS-BLED 出血风险评分,">=3","年度大出血事件风险很高 (≥3.7%)。高分本身并非停用抗凝药的理由，而是需要积极干预的强烈信号。","高风险 (High Risk)","强烈建议积极纠正所有可逆的出血风险因素（如严格控制血压、避免联用增加出血风险的药物）。需要对患者进行更密切的监测和随访。","ESC Guidelines for Atrial Fibrillation"

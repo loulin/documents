@@ -1,0 +1,4 @@
+id,item_code,item_name,score_value,interpretation_text,severity_level,recommendation,guideline_source
+heart_score_mace_risk,HEART_SCORE,HEART评分 (胸痛MACE风险),"0-3","6周内发生主要不良心血管事件（MACE）的风险很低 (约0.9-1.7%)。","低危 (Low Risk)","通常可考虑从急诊科直接出院回家，无需进一步的心脏检查。建议进行门诊随访。","Six AJ, et al. Neth Heart J. 2008"
+heart_score_mace_risk,HEART_SCORE,HEART评分 (胸痛MACE风险),"4-6","6周内发生主要不良心血管事件（MACE）的风险为中等 (约12-16.6%)。","中危 (Intermediate Risk)","建议收入院进行临床观察和进一步的心脏检查（如负荷试验或冠脉CTA）。不建议直接出院。","Six AJ, et al. Neth Heart J. 2008"
+heart_score_mace_risk,HEART_SCORE,HEART评分 (胸痛MACE风险),">=7","6周内发生主要不良心血管事件（MACE）的风险非常高 (约50-72.5%)。","高危 (High Risk)","强烈建议采取紧急的、侵入性的干预措施，例如进行心导管检查和血管重建术。","Six AJ, et al. Neth Heart J. 2008"

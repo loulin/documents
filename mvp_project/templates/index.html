@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>医疗报告智能解读 MVP</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; background-color: #f8f9fa; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 2em; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h1 { color: #333; }
+        textarea { width: 95%; height: 200px; margin-top: 1em; padding: 10px; font-family: monospace; }
+        input[type="submit"] { margin-top: 1em; padding: 0.5em 1em; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>粘贴您的医疗报告内容</h1>
+        <p>请将您的报告文本内容直接粘贴到下方的输入框中。</p>
+        <form action="/interpret" method="post">
+            <textarea name="report_text" placeholder="例如：
+血常规
+白细胞计数: 12.5 x10^9/L
+血红蛋白: 110 g/L
+血小板计数: 350 x10^9/L
+..." required></textarea>
+            <br>
+            <input type="submit" value="开始解读">
+        </form>
+    </div>
+</body>
+</html>
