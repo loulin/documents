@@ -1,0 +1,69 @@
+ICD-10代码,速记码,拼音码,中文名称,英文名称,分类,描述,严重程度
+M05.9,RA-SEROPOS,LFSXXLGGJY,类风湿性关节炎,Rheumatoid arthritis seropositive,风湿免疫疾病,血清阳性类风湿关节炎,严重
+M06.9,RA,LFSXGJY,类风湿关节炎,Rheumatoid arthritis,风湿免疫疾病,类风湿关节炎未特指,严重
+M32.9,SLE,XTHBLCB,系统性红斑狼疮,SLE,风湿免疫疾病,系统性红斑狼疮,严重
+M35.00,SJOGREN,GJZHZ,干燥综合征,Sjogren syndrome,风湿免疫疾病,干燥综合征未特指,中等
+M45.9,AS,QZXJZXY,强直性脊柱炎,Ankylosing spondylitis,风湿免疫疾病,强直性脊柱炎,严重
+M10.9,GOUT,TF,痛风,Gout,风湿免疫疾病,痛风未特指,中等
+M10.00,GOUT-IDIO,TFXGJY,痛风性关节炎,Idiopathic gout,风湿免疫疾病,特发性痛风,中等
+M34.9,SYSTEMIC-SCLEROSIS,XTHYHB,系统性硬化症,Systemic sclerosis,风湿免疫疾病,系统性硬化症未特指,严重
+M33.90,DM-PM,PFXY,皮肌炎,Dermatomyositis,风湿免疫疾病,皮肌炎未特指,严重
+M33.20,PM,DFXY,多肌炎,Polymyositis,风湿免疫疾病,多发性肌炎,严重
+M31.30,WEGENER,WGNRLJXXY,韦格纳肉芽肿性血管炎,Wegener granulomatosis,风湿免疫疾病,韦格纳肉芽肿,严重
+M31.5,GCA,JXBDMY,巨细胞动脉炎,Giant cell arteritis,风湿免疫疾病,巨细胞动脉炎,严重
+M31.6,TAKAYASU,DLTDMY,大动脉炎,Takayasu arteritis,风湿免疫疾病,多发性大动脉炎,严重
+M35.2,BEHCET,BSXTB,白塞病,Behcet disease,风湿免疫疾病,白塞综合征,严重
+M79.3,PANNICULITIS,JMZY,脂膜炎,Panniculitis,风湿免疫疾病,脂膜炎未特指,中等
+M15.9,OA-MULTIPLE,DFXGJY,多发性骨关节炎,Polyosteoarthritis,骨关节病,多发性骨关节炎,中等
+M17.9,OA-KNEE,XGJY,膝骨关节炎,Knee osteoarthritis,骨关节病,膝关节骨性关节炎,中等
+M16.9,OA-HIP,KGJY,髋骨关节炎,Hip osteoarthritis,骨关节病,髋关节骨性关节炎,中等
+M81.0,OSTEOPOROSIS-PM,JJHGZSS,绝经后骨质疏松,Postmenopausal osteoporosis,代谢性骨病,绝经后骨质疏松症,中等
+M80.0,OSTEOPOROSIS-FX,GZSSBGZ,骨质疏松伴骨折,Osteoporosis with fracture,代谢性骨病,骨质疏松性骨折,严重
+B20,HIV,AZBGY,艾滋病,HIV disease,传染病-病毒,HIV病毒病,严重
+B18.1,HBV-CHRONIC,YXGYWTZ,乙型肝炎,Chronic viral hepatitis B,传染病-病毒,慢性乙型肝炎,严重
+B18.2,HCV-CHRONIC,BXGYWTZ,丙型肝炎,Chronic viral hepatitis C,传染病-病毒,慢性丙型肝炎,严重
+B15.9,HAV,JXJXGY,急性甲肝,Hepatitis A,传染病-病毒,甲型病毒性肝炎,中等
+B17.10,HEV,DXGYWTZ,戊型肝炎,Acute hepatitis E,传染病-病毒,急性戊型肝炎,中等
+A41.9,SEPSIS,NSX,脓毒症,Sepsis,传染病-细菌,脓毒症未特指,危重
+A41.51,E-COLI-SEPSIS,DDGJNSX,大肠杆菌脓毒症,E coli sepsis,传染病-细菌,大肠埃希菌脓毒症,危重
+R65.20,SEPTIC-SHOCK,GRYXZK,脓毒性休克,Septic shock,传染病-细菌,脓毒性休克,危重
+A40.9,STREP-SEPSIS,LJQJNSX,链球菌脓毒症,Streptococcal sepsis,传染病-细菌,链球菌脓毒症,危重
+A49.01,MRSA,NJYXJHPQJ,耐甲氧西林金葡菌,MRSA infection,传染病-细菌,MRSA感染,严重
+A54.9,GONORRHEA,LB,淋病,Gonococcal infection,传染病-性传播,淋球菌感染,中等
+A51.9,SYPHILIS,MD,梅毒,Syphilis,传染病-性传播,梅毒未特指,严重
+A60.9,HERPES-GENITAL,SZPZGR,生殖器疱疹,Genital herpes,传染病-性传播,生殖器疱疹病毒感染,中等
+B37.3,CANDIDA-VULVO,WYZJY,外阴阴道念珠菌病,Candidiasis of vulva and vagina,传染病-真菌,外阴阴道念珠菌病,轻度
+B59,PNEUMOCYSTIS,FBNZJFY,肺孢子菌肺炎,Pneumocystis pneumonia,传染病-真菌,卡氏肺孢子菌肺炎,严重
+U07.1,COVID-19,XGFYWTZ,COVID-19,COVID-19,传染病-新发,新冠病毒感染,中等
+F32.9,DEPRESSION,YYZ,抑郁症,Depression,精神心理疾病,抑郁症未特指,中等
+F32.0,DEPRESSION-MILD,QDYYZ,轻度抑郁,Mild depressive episode,精神心理疾病,轻度抑郁发作,轻度
+F32.1,DEPRESSION-MOD,ZDYYZ,中度抑郁,Moderate depressive episode,精神心理疾病,中度抑郁发作,中等
+F32.2,DEPRESSION-SEV,ZDYYZ,重度抑郁,Severe depressive episode,精神心理疾病,重度抑郁发作,严重
+F33.9,MDD,FZXYYZ,复发性抑郁,Recurrent depressive disorder,精神心理疾病,复发性抑郁障碍,严重
+F41.9,ANXIETY,JLZ,焦虑症,Anxiety disorder,精神心理疾病,焦虑障碍未特指,中等
+F41.0,PANIC,JKZ,惊恐障碍,Panic disorder,精神心理疾病,惊恐障碍,中等
+F41.1,GAD,GFXJLZ,广泛性焦虑,Generalized anxiety disorder,精神心理疾病,广泛性焦虑障碍,中等
+F31.9,BIPOLAR,SSQGZ,双相情感障碍,Bipolar disorder,精神心理疾病,双相障碍未特指,严重
+F20.9,SCHIZOPHRENIA,JSFZ,精神分裂症,Schizophrenia,精神心理疾病,精神分裂症未特指,严重
+F43.10,PTSD,CSHYJZ,创伤后应激障碍,PTSD,精神心理疾病,创伤后应激障碍,严重
+F90.9,ADHD,ZYYQSJZ,注意缺陷多动障碍,ADHD,精神心理疾病-儿童,注意缺陷多动障碍,中等
+F50.00,ANOREXIA,SNSYQZ,神经性厌食,Anorexia nervosa,精神心理疾病,神经性厌食症,严重
+F50.2,BULIMIA,SNXTBZ,神经性贪食,Bulimia nervosa,精神心理疾病,神经性贪食症,严重
+F10.20,ALCOHOL-DEPEND,JJJL,酒精依赖,Alcohol dependence,精神心理疾病-成瘾,酒精依赖综合征,严重
+F11.20,OPIOID-DEPEND,APLYJL,阿片依赖,Opioid dependence,精神心理疾病-成瘾,阿片类依赖,严重
+F17.200,NICOTINE-DEPEND,YCDYJL,尼古丁依赖,Nicotine dependence,精神心理疾病-成瘾,烟草依赖,中等
+Z86.59,HX-MENTAL,JSBJBS,精神病史,Personal history of mental disorder,精神病史,既往精神障碍史,管理
+O09.90,PREGNANCY,RS,妊娠,Pregnancy,妊娠,正常妊娠未特指,管理
+O14.90,PREECLAMPSIA,ZQZD,子痫前期,Preeclampsia,妊娠并发症,子痫前期,严重
+O15.9,ECLAMPSIA,ZD,子痫,Eclampsia,妊娠并发症,子痫,危重
+O44.1,PLACENTA-PREVIA,QZTP,前置胎盘,Placenta previa,妊娠并发症,前置胎盘伴出血,严重
+O45.9,ABRUPTION,TBZL,胎盘早剥,Placental abruption,妊娠并发症,胎盘早剥,危重
+O36.4,IUGR,GNFYCC,宫内发育迟缓,Intrauterine growth restriction,妊娠并发症,胎儿宫内生长受限,中等
+O60.10,PRETERM-LABOR,QCFZ,早产分娩,Preterm labor,妊娠并发症,先兆早产,严重
+O42.90,PROM,TMSPL,胎膜早破,Premature rupture of membranes,妊娠并发症,胎膜早破未特指,中等
+O70.9,PERINEAL-TEAR,HYSSLWTZ,会阴撕裂,Perineal laceration,分娩并发症,会阴撕裂未特指,中等
+O72.0,PPH,CHHCX,产后出血,Postpartum hemorrhage,分娩并发症,第三产程出血,严重
+O85,PUERPERAL-SEPSIS,CHGR,产后感染,Puerperal sepsis,产褥期并发症,产褥期脓毒症,严重
+O91.23,MASTITIS,RXY,乳腺炎,Mastitis,产褥期并发症,产后乳腺炎,中等
+N97.9,INFERTILITY,BYZ,不孕症,Infertility,生殖健康,女性不孕症,中等
+N46.9,MALE-INFERTILITY,NXBYZ,男性不育,Male infertility,生殖健康,男性不育症,中等
