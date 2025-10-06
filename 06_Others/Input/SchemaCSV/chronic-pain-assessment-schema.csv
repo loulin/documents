@@ -1,0 +1,42 @@
+Category,Field_Name,Chinese_Name,Data_Type,Unit,Valid_Range,LOINC_Code,Required,Description,Clinical_Significance
+Basic_Info,patient_id,患者ID,string,,,,,Y,唯一标识,患者追踪
+Basic_Info,visit_date,就诊日期,date,,,,,Y,疼痛评估时间,诊疗时点
+Basic_Info,age,年龄,integer,years,1-120,,,Y,患者年龄,疼痛耐受
+Basic_Info,gender,性别,categorical,,Male,Female,,,Y,性别,疼痛流行病学
+Pain_Assessment,pain_location,疼痛部位,string,,,,,Y,主要疼痛位置,定位诊断
+Pain_Assessment,pain_duration,疼痛时长,categorical,,Acute_Less_4weeks,Subacute_4_12weeks,Chronic_More_12weeks,,,Y,急性<4周/亚急性4-12周/慢性>12周,疼痛分类
+Pain_Assessment,vas_score,视觉模拟评分,integer,,0-10,38208-5,Y,VAS 0-10分,疼痛强度
+Pain_Assessment,nrs_score,数字评定量表,integer,,0-10,72514-3,Y,NRS 0-10分,疼痛强度
+Pain_Assessment,pain_character,疼痛性质,categorical,,Nociceptive,Neuropathic,Mixed,Nociplastic,,,Y,伤害感受性/神经病理性/混合性/伤害可塑性,疼痛机制
+Pain_Assessment,pain_pattern,疼痛模式,categorical,,Constant,Intermittent,Breakthrough,,,Y,持续性/间歇性/爆发性,时间特征
+Pain_Pattern,aggravating_factors,加重因素,string,,,,,N,活动/体位/天气等,触发因素
+Pain_Pattern,relieving_factors,缓解因素,string,,,,,N,休息/药物/理疗等,治疗线索
+Functional_Impact,pdi_score,疼痛残疾指数,integer,,0-70,,,N,PDI总分,功能影响
+Functional_Impact,interference_daily_life,日常生活干扰,categorical,,None,Mild,Moderate,Severe,,,Y,无/轻度/中度/重度,生活质量
+Functional_Impact,work_status,工作状态,categorical,,Working,Sick_Leave,Disability,Retired,,,N,在职/病假/残疾/退休,社会功能
+Neuropathic_Screening,dn4_score,DN4问卷评分,integer,,0-10,,,N,DN4 0-10分≥4提示神经病理性疼痛,神经病理性疼痛筛查
+Neuropathic_Screening,lanss_score,LANSS评分,integer,,0-24,,,N,LANSS 0-24分≥12提示神经病理性疼痛,神经病理性疼痛筛查
+Neuropathic_Screening,sensory_symptoms,感觉症状,categorical,,None,Burning,Electric_Shock,Numbness,Tingling,Allodynia,,,N,无/烧灼感/电击样/麻木/刺痛/异常性疼痛,神经症状
+Physical_Exam,tenderness,压痛点,string,,,,,N,触诊压痛部位,体征定位
+Physical_Exam,muscle_spasm,肌肉痉挛,boolean,,,,,N,肌肉紧张痉挛,肌筋膜疼痛
+Physical_Exam,neurological_deficit,神经功能缺损,categorical,,None,Sensory_Loss,Motor_Weakness,Reflex_Abnormality,,,N,无/感觉减退/肌力减弱/反射异常,神经损害
+Imaging,relevant_imaging,相关影像,string,,,,,N,X线/CT/MRI发现,结构病因
+Laboratory,inflammatory_markers,炎症标志物,string,,,,,N,CRP/ESR等,炎性疼痛
+Medication_Current,opioid_use,阿片类药物,categorical,,None,Weak_Opioid,Strong_Opioid,,,Y,无/弱阿片/强阿片,镇痛阶梯
+Medication_Current,adjuvant_analgesics,辅助镇痛药,string,,,,,N,抗抑郁/抗癫痫/局麻药等,神经病理性疼痛
+Medication_Current,medd,吗啡等效日剂量,float,mg,0-1000,,,N,MEDD换算剂量,阿片暴露
+Psychological_Screening,phq9_score,抑郁筛查,integer,,0-27,44249-1,N,PHQ-9评分,抑郁共病
+Psychological_Screening,gad7_score,焦虑筛查,integer,,0-21,69737-5,N,GAD-7评分,焦虑共病
+Psychological_Screening,pcs_score,疼痛灾难化量表,integer,,0-52,,,N,PCS评分,心理因素
+Diagnosis,primary_diagnosis,主要诊断,string,,,,,Y,疼痛诊断,病因分类
+Diagnosis,icd11_code,ICD-11编码,string,,,,,N,慢性疼痛分类编码,标准化诊断
+Treatment_Plan,pharmacotherapy,药物治疗,string,,,,,Y,镇痛方案,药物干预
+Treatment_Plan,interventional_therapy,介入治疗,categorical,,None,Nerve_Block,Radiofrequency,Spinal_Cord_Stimulation,Intrathecal_Pump,,,N,无/神经阻滞/射频消融/脊髓电刺激/鞘内泵,介入镇痛
+Treatment_Plan,non_pharmacological,非药物治疗,string,,,,,N,物理治疗/认知行为治疗/针灸等,综合治疗
+Adverse_Events,opioid_adverse_effects,阿片不良反应,categorical,,None,Constipation,Nausea,Sedation,Respiratory_Depression,,,N,无/便秘/恶心/镇静/呼吸抑制,阿片安全
+Adverse_Events,addiction_risk,成瘾风险,categorical,,Low,Moderate,High,,,N,低/中/高,药物依赖
+Follow_Up,follow_up_interval,随访间隔,categorical,,1_week,2_weeks,1_month,3_months,,,Y,1周/2周/1月/3月,疼痛管理
+Outcome,pain_relief,疼痛缓解,categorical,,None,Mild,Moderate,Significant,,,Y,无/轻度/中度/显著,治疗效果
+Outcome,functional_improvement,功能改善,categorical,,None,Mild,Moderate,Significant,,,N,无/轻度/中度/显著,康复程度
+Report,pain_specialist,疼痛专科医师,string,,,,,Y,主治医师,责任医师
+Report,report_date,报告日期,date,,,,,Y,报告时间,文档记录
