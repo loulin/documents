@@ -1,0 +1,106 @@
+ICD-10代码,速记码,拼音码,中文名称,英文名称,分类,描述,严重程度
+C15.9,ESOPH-CA,SGDA,食管癌,Esophageal cancer,恶性肿瘤-消化系统,食管恶性肿瘤,严重
+C15.0,ESOPH-CA-CERV,SGJDSGDA,食管颈段癌,Malignant neoplasm of cervical esophagus,恶性肿瘤-消化系统,食管颈段恶性肿瘤,严重
+C15.1,ESOPH-CA-THOR,SGXDSGDA,食管胸段癌,Malignant neoplasm of thoracic esophagus,恶性肿瘤-消化系统,食管胸段恶性肿瘤,严重
+C15.5,ESOPH-CA-LOW,SGXSDSGDA,食管下段癌,Malignant neoplasm of lower third of esophagus,恶性肿瘤-消化系统,食管下段恶性肿瘤,严重
+C16.9,GASTRIC-CA,WA,胃癌,Gastric cancer,恶性肿瘤-消化系统,胃恶性肿瘤,严重
+C16.0,GASTRIC-CA-CARD,BJWA,贲门癌,Malignant neoplasm of cardia,恶性肿瘤-消化系统,胃贲门恶性肿瘤,严重
+C16.1,GASTRIC-CA-FUND,WDWA,胃底癌,Malignant neoplasm of fundus of stomach,恶性肿瘤-消化系统,胃底恶性肿瘤,严重
+C16.2,GASTRIC-CA-BODY,WTWA,胃体癌,Malignant neoplasm of body of stomach,恶性肿瘤-消化系统,胃体恶性肿瘤,严重
+C16.3,GASTRIC-CA-ANTR,WYWA,胃窦癌,Malignant neoplasm of pyloric antrum,恶性肿瘤-消化系统,胃窦恶性肿瘤,严重
+C16.4,GASTRIC-CA-PYL,WMWA,胃幽门癌,Malignant neoplasm of pylorus,恶性肿瘤-消化系统,幽门恶性肿瘤,严重
+C18.9,COLON-CA,JCDA,结肠癌,Colon cancer,恶性肿瘤-消化系统,结肠恶性肿瘤,严重
+C18.0,COLON-CA-CEC,MJDA,盲肠癌,Malignant neoplasm of cecum,恶性肿瘤-消化系统,盲肠恶性肿瘤,严重
+C18.2,COLON-CA-ASC,SJCDA,升结肠癌,Malignant neoplasm of ascending colon,恶性肿瘤-消化系统,升结肠恶性肿瘤,严重
+C18.3,COLON-CA-HEP,GQQDA,肝曲癌,Malignant neoplasm of hepatic flexure,恶性肿瘤-消化系统,结肠肝曲恶性肿瘤,严重
+C18.4,COLON-CA-TRAN,HJCDA,横结肠癌,Malignant neoplasm of transverse colon,恶性肿瘤-消化系统,横结肠恶性肿瘤,严重
+C18.5,COLON-CA-SPL,PQQDA,脾曲癌,Malignant neoplasm of splenic flexure,恶性肿瘤-消化系统,结肠脾曲恶性肿瘤,严重
+C18.6,COLON-CA-DESC,JJCDA,降结肠癌,Malignant neoplasm of descending colon,恶性肿瘤-消化系统,降结肠恶性肿瘤,严重
+C18.7,COLON-CA-SIG,YZCJCDA,乙状结肠癌,Malignant neoplasm of sigmoid colon,恶性肿瘤-消化系统,乙状结肠恶性肿瘤,严重
+C19,RECT-SIG-CA,ZJJCDA,直肠乙状结肠交界癌,Rectosigmoid junction cancer,恶性肿瘤-消化系统,直肠乙状结肠交界恶性肿瘤,严重
+C20,RECTAL-CA,ZCDA,直肠癌,Rectal cancer,恶性肿瘤-消化系统,直肠恶性肿瘤,严重
+C22.0,HCC,GBXBAZA,肝细胞癌,Hepatocellular carcinoma,恶性肿瘤-消化系统,原发性肝细胞癌,严重
+C22.1,CHOLANGIO-CA,DGXBAZA,胆管细胞癌,Intrahepatic cholangiocarcinoma,恶性肿瘤-消化系统,肝内胆管细胞癌,严重
+C22.9,LIVER-CA,GA,肝癌,Liver cancer unspecified,恶性肿瘤-消化系统,肝恶性肿瘤未特指,严重
+C24.0,EXTRAHEP-BILE-CA,GWDGDA,肝外胆管癌,Extrahepatic bile duct cancer,恶性肿瘤-消化系统,肝外胆管恶性肿瘤,严重
+C23,GB-CA,DNDA,胆囊癌,Gallbladder cancer,恶性肿瘤-消化系统,胆囊恶性肿瘤,严重
+C25.9,PANCREAS-CA,YXDA,胰腺癌,Pancreatic cancer,恶性肿瘤-消化系统,胰腺恶性肿瘤,严重
+C25.0,PANCREAS-CA-HEAD,YXTDA,胰头癌,Malignant neoplasm of head of pancreas,恶性肿瘤-消化系统,胰头恶性肿瘤,严重
+C25.1,PANCREAS-CA-BODY,YXTDA,胰体癌,Malignant neoplasm of body of pancreas,恶性肿瘤-消化系统,胰体恶性肿瘤,严重
+C25.2,PANCREAS-CA-TAIL,YWDA,胰尾癌,Malignant neoplasm of tail of pancreas,恶性肿瘤-消化系统,胰尾恶性肿瘤,严重
+C34.90,LUNG-CA,FA,肺癌,Lung cancer,恶性肿瘤-呼吸系统,肺恶性肿瘤,严重
+C34.10,LUNG-CA-UPPER,FSYDA,肺上叶癌,Malignant neoplasm of upper lobe lung,恶性肿瘤-呼吸系统,肺上叶恶性肿瘤,严重
+C34.30,LUNG-CA-LOWER,FXYDA,肺下叶癌,Malignant neoplasm of lower lobe lung,恶性肿瘤-呼吸系统,肺下叶恶性肿瘤,严重
+C34.20,LUNG-CA-MIDDLE,FZYDA,肺中叶癌,Malignant neoplasm of middle lobe lung,恶性肿瘤-呼吸系统,肺中叶恶性肿瘤,严重
+C50.9,BREAST-CA,RXDA,乳腺癌,Breast cancer,恶性肿瘤-乳腺,乳腺恶性肿瘤,严重
+C50.0,BREAST-CA-NIPPLE,RTZJQDA,乳头乳晕区癌,Malignant neoplasm of nipple and areola,恶性肿瘤-乳腺,乳头乳晕恶性肿瘤,严重
+C50.1,BREAST-CA-CENTRAL,RXYZBDA,乳腺中央部癌,Malignant neoplasm of central portion of breast,恶性肿瘤-乳腺,乳腺中央部恶性肿瘤,严重
+C50.2,BREAST-CA-UIQ,RXSNXQDA,乳腺上内象限癌,Malignant neoplasm of upper-inner quadrant of breast,恶性肿瘤-乳腺,乳腺上内象限恶性肿瘤,严重
+C50.3,BREAST-CA-LIQ,RXXNXQDA,乳腺下内象限癌,Malignant neoplasm of lower-inner quadrant of breast,恶性肿瘤-乳腺,乳腺下内象限恶性肿瘤,严重
+C50.4,BREAST-CA-UOQ,RXSWXQDA,乳腺上外象限癌,Malignant neoplasm of upper-outer quadrant of breast,恶性肿瘤-乳腺,乳腺上外象限恶性肿瘤,严重
+C50.5,BREAST-CA-LOQ,RXXWXQDA,乳腺下外象限癌,Malignant neoplasm of lower-outer quadrant of breast,恶性肿瘤-乳腺,乳腺下外象限恶性肿瘤,严重
+C53.9,CERVIX-CA,GJDA,宫颈癌,Cervical cancer,恶性肿瘤-妇科,宫颈恶性肿瘤,严重
+C54.1,ENDO-CA,ZGNMDA,子宫内膜癌,Endometrial cancer,恶性肿瘤-妇科,子宫内膜恶性肿瘤,严重
+C56,OVARIAN-CA,LCDA,卵巢癌,Ovarian cancer,恶性肿瘤-妇科,卵巢恶性肿瘤,严重
+C61,PROSTATE-CA,QLXDA,前列腺癌,Prostate cancer,恶性肿瘤-泌尿生殖系统,前列腺恶性肿瘤,严重
+C64,KIDNEY-CA,SZDA,肾癌,Kidney cancer,恶性肿瘤-泌尿生殖系统,肾恶性肿瘤,严重
+C64.9,RCC,SZXBAZA,肾细胞癌,Renal cell carcinoma,恶性肿瘤-泌尿生殖系统,肾细胞恶性肿瘤,严重
+C67.9,BLADDER-CA,PGDA,膀胱癌,Bladder cancer,恶性肿瘤-泌尿生殖系统,膀胱恶性肿瘤,严重
+C73,THYROID-CA,ZJXDA,甲状腺癌,Thyroid cancer,恶性肿瘤-内分泌,甲状腺恶性肿瘤,严重
+C43.9,MELANOMA,HSD,黑色素瘤,Melanoma,恶性肿瘤-皮肤,恶性黑色素瘤,严重
+C43.5,MELANOMA-TRUNK,QDSD,躯干黑色素瘤,Malignant melanoma of trunk,恶性肿瘤-皮肤,躯干恶性黑色素瘤,严重
+C44.9,SKIN-CA,PFDA,皮肤癌,Skin cancer,恶性肿瘤-皮肤,皮肤恶性肿瘤,中等
+C71.9,BRAIN-CA,NLDA,脑肿瘤,Brain cancer,恶性肿瘤-神经系统,脑恶性肿瘤,严重
+C71.0,BRAIN-CA-CEREB,DNQZL,大脑肿瘤,Malignant neoplasm of cerebrum,恶性肿瘤-神经系统,大脑恶性肿瘤,严重
+C71.6,BRAIN-CA-CEREB,XNZL,小脑肿瘤,Malignant neoplasm of cerebellum,恶性肿瘤-神经系统,小脑恶性肿瘤,严重
+C79.51,BONE-METS,GZZYDGZZL,骨转移癌,Bone metastasis,恶性肿瘤-转移,骨骼转移性恶性肿瘤,严重
+C78.0,LUNG-METS,FZZYDGZZL,肺转移癌,Lung metastasis,恶性肿瘤-转移,肺转移性恶性肿瘤,严重
+C78.7,LIVER-METS,GZZYDGZZL,肝转移癌,Liver metastasis,恶性肿瘤-转移,肝转移性恶性肿瘤,严重
+C79.31,BRAIN-METS,NLZZYDGZZL,脑转移癌,Brain metastasis,恶性肿瘤-转移,脑转移性恶性肿瘤,严重
+C91.00,ALL,JXLBXBXBL,急性淋巴细胞白血病,Acute lymphoblastic leukemia,恶性肿瘤-血液,急性淋巴细胞白血病未缓解,严重
+C92.00,AML,JXSXBXBL,急性髓系白血病,Acute myeloid leukemia,恶性肿瘤-血液,急性髓系白血病未缓解,严重
+C91.10,CLL,MXLBXBXBL,慢性淋巴细胞白血病,Chronic lymphocytic leukemia,恶性肿瘤-血液,慢性淋巴细胞白血病,严重
+C92.10,CML,MXSXBXBL,慢性髓系白血病,Chronic myeloid leukemia,恶性肿瘤-血液,慢性髓系白血病,严重
+C81.90,HL,HJL,霍奇金淋巴瘤,Hodgkin lymphoma,恶性肿瘤-血液,霍奇金淋巴瘤未特指,严重
+C82.90,NHL-FL,FBXLBL,滤泡性淋巴瘤,Follicular lymphoma,恶性肿瘤-血液,滤泡性淋巴瘤未特指,严重
+C83.30,NHL-DLBCL,MXDBBXLBL,弥漫大B细胞淋巴瘤,Diffuse large B-cell lymphoma,恶性肿瘤-血液,弥漫大B细胞淋巴瘤,严重
+C90.00,MM,DFXGSZL,多发性骨髓瘤,Multiple myeloma,恶性肿瘤-血液,多发性骨髓瘤未缓解,严重
+C49.9,SOFT-TISSUE-SARCOMA,RZZRRL,软组织肉瘤,Soft tissue sarcoma,恶性肿瘤-软组织,软组织恶性肿瘤,严重
+C40.90,BONE-SARCOMA,GZZL,骨肉瘤,Bone sarcoma,恶性肿瘤-骨,骨恶性肿瘤,严重
+C32.9,LARYNX-CA,HDA,喉癌,Laryngeal cancer,恶性肿瘤-头颈,喉恶性肿瘤,严重
+C01,TONGUE-CA,SDA,舌癌,Tongue cancer,恶性肿瘤-头颈,舌恶性肿瘤,严重
+C10.9,PHARYNX-CA,YDA,咽癌,Pharyngeal cancer,恶性肿瘤-头颈,咽恶性肿瘤,严重
+C11.9,NPC,BYDA,鼻咽癌,Nasopharyngeal carcinoma,恶性肿瘤-头颈,鼻咽恶性肿瘤,严重
+C74.90,ADRENAL-CA,SSWZL,肾上腺肿瘤,Adrenal gland cancer,恶性肿瘤-内分泌,肾上腺恶性肿瘤,严重
+C75.1,PITUITARY-CA,CTZL,垂体瘤,Pituitary gland cancer,恶性肿瘤-内分泌,垂体恶性肿瘤,中等
+D09.0,CIS-BLADDER,PGYWZA,膀胱原位癌,Carcinoma in situ of bladder,原位癌,膀胱原位癌,中等
+D05.90,DCIS,RXGZNYWZA,乳腺导管原位癌,Ductal carcinoma in situ,原位癌,乳腺导管原位癌,中等
+D06.9,CIS-CERVIX,GJYWZA,宫颈原位癌,Carcinoma in situ of cervix,原位癌,宫颈原位癌,中等
+D00.1,CIS-ESOPH,SGYWZA,食管原位癌,Carcinoma in situ of esophagus,原位癌,食管原位癌,中等
+D00.2,CIS-GASTRIC,WYWZA,胃原位癌,Carcinoma in situ of stomach,原位癌,胃原位癌,中等
+D01.0,CIS-COLON,JCYWZA,结肠原位癌,Carcinoma in situ of colon,原位癌,结肠原位癌,中等
+D02.2,CIS-LUNG,ZQGYWZA,支气管原位癌,Carcinoma in situ of bronchus and lung,原位癌,支气管肺原位癌,中等
+D12.6,COLON-POLYP,JCXR,结肠息肉,Colon polyp benign,良性肿瘤-消化,结肠良性息肉,轻度
+D13.1,GASTRIC-POLYP,WXR,胃息肉,Gastric polyp benign,良性肿瘤-消化,胃良性息肉,轻度
+D25.9,FIBROID,ZGJL,子宫肌瘤,Uterine fibroid,良性肿瘤-妇科,子宫平滑肌瘤,轻度
+D27.9,OVARIAN-CYST,LCNZ,卵巢囊肿,Ovarian cyst benign,良性肿瘤-妇科,卵巢良性囊肿,轻度
+D29.1,PROSTATE-BPH,QLXZS,前列腺增生,Benign prostatic hyperplasia,良性肿瘤-泌尿,良性前列腺增生,轻度
+D34,THYROID-NODULE,ZJXJJ,甲状腺结节,Thyroid nodule benign,良性肿瘤-内分泌,甲状腺良性结节,轻度
+D35.00,ADRENAL-ADENOMA,SSWXL,肾上腺腺瘤,Adrenal adenoma,良性肿瘤-内分泌,肾上腺良性腺瘤,轻度
+D35.2,PITUITARY-ADENOMA,CTXL,垂体腺瘤,Pituitary adenoma,良性肿瘤-内分泌,垂体良性腺瘤,中等
+D48.0,BONE-TUMOR-UNC,GZZLWDXZWMQ,骨肿瘤性质不确定,Bone tumor uncertain behavior,不确定肿瘤,骨肿瘤性质未明,中等
+D48.1,SOFT-TISSUE-UNC,RZZLXZWMQ,软组织肿瘤性质不确定,Soft tissue tumor uncertain behavior,不确定肿瘤,软组织肿瘤性质未明,中等
+D49.0,DIGEST-TUMOR-UNC,XHXTZLXZWMQ,消化系统肿瘤性质不确定,Digestive tumor uncertain behavior,不确定肿瘤,消化系统肿瘤性质未明,中等
+D49.1,RESP-TUMOR-UNC,HXXTZZLXZWMQ,呼吸系统肿瘤性质不确定,Respiratory tumor uncertain behavior,不确定肿瘤,呼吸系统肿瘤性质未明,中等
+D49.2,GU-TUMOR-UNC,NSSQZZLXZWMQ,泌尿生殖系统肿瘤性质不确定,Genitourinary tumor uncertain behavior,不确定肿瘤,泌尿生殖肿瘤性质未明,中等
+Z85.3,HX-BREAST-CA,RXDABS,乳腺癌病史,Personal history of breast cancer,肿瘤病史,既往乳腺癌史,管理
+Z85.46,HX-PROSTATE-CA,QLXDABS,前列腺癌病史,Personal history of prostate cancer,肿瘤病史,既往前列腺癌史,管理
+Z85.00,HX-DIGEST-CA,XHXTZLBS,消化系统肿瘤病史,Personal history of digestive cancer,肿瘤病史,既往消化系统肿瘤史,管理
+Z85.118,HX-LUNG-CA,FDABS,肺癌病史,Personal history of lung cancer,肿瘤病史,既往肺癌史,管理
+Z51.11,CHEMO,HLJHZL,化疗,Chemotherapy session,肿瘤治疗,化学治疗状态,管理
+Z51.0,RADIO,FSLZL,放疗,Radiotherapy session,肿瘤治疗,放射治疗状态,管理
+Z08,F/U-CA,ZLHSGJC,肿瘤治疗后随访检查,Follow-up after cancer treatment,肿瘤随访,肿瘤治疗后随访,管理
+Z12.11,CA-SCREEN-COLON,JCDAZL,结肠癌筛查,Screening for colon cancer,肿瘤筛查,结直肠癌筛查,预防
+Z12.31,CA-SCREEN-BREAST,RXDAZL,乳腺癌筛查,Screening for breast cancer,肿瘤筛查,乳腺癌筛查,预防
+Z12.5,CA-SCREEN-PROSTATE,QLXDAZL,前列腺癌筛查,Screening for prostate cancer,肿瘤筛查,前列腺癌筛查,预防
+Z12.2,CA-SCREEN-GI,XHXTZLSC,消化系统肿瘤筛查,Screening for GI cancer,肿瘤筛查,消化道肿瘤筛查,预防

@@ -1,0 +1,109 @@
+ICD-10代码,速记码,拼音码,中文名称,英文名称,分类,描述,严重程度
+K21.9,GERD,WSFLLXJBY,胃食管反流病,GERD,消化系统疾病,胃食管反流病,中等
+K21.0,GERD-ESOPH,FSXWSFLLXJBY,反流性食管炎,GERD with esophagitis,消化系统疾病,反流性食管炎,中等
+K22.10,BARRETT,BTSG,Barrett食管,Barrett esophagus,消化系统疾病,Barrett食管无发育不良,中等
+K22.70,ESOPH-ULCER,SGKY,食管溃疡,Esophageal ulcer,消化系统疾病,食管溃疡,严重
+K22.2,ESOPH-OBSTR,SGGZ,食管梗阻,Esophageal obstruction,消化系统疾病,食管梗阻,严重
+K22.3,ESOPH-PERF,SGCZ,食管穿孔,Esophageal perforation,消化系统疾病,食管穿孔,危重
+K22.6,MALLORY-WEISS,MWZHZ,Mallory-Weiss综合征,Mallory-Weiss syndrome,消化系统疾病,贲门黏膜撕裂综合征,严重
+K25.9,PU-GASTRIC,WKY,胃溃疡,Gastric ulcer,消化系统疾病,胃溃疡,中等
+K25.0,PU-GASTRIC-PERF,WKYCZ,胃溃疡穿孔,Gastric ulcer with perforation,消化系统疾病,胃溃疡急性穿孔,危重
+K25.4,PU-GASTRIC-BLEED,WKYCX,胃溃疡出血,Gastric ulcer with hemorrhage,消化系统疾病,胃溃疡伴出血,严重
+K26.9,PU-DUODENAL,SEZCKYKYWC,十二指肠溃疡,Duodenal ulcer,消化系统疾病,十二指肠溃疡,中等
+K26.0,PU-DUODENAL-PERF,SEZCKYCZY,十二指肠溃疡穿孔,Duodenal ulcer with perforation,消化系统疾病,十二指肠溃疡急性穿孔,危重
+K26.4,PU-DUODENAL-BLEED,SEZCKYCX,十二指肠溃疡出血,Duodenal ulcer with hemorrhage,消化系统疾病,十二指肠溃疡伴出血,严重
+K27.9,PEPTIC-ULCER,XXKYWBMWTZ,消化性溃疡部位未特指,Peptic ulcer site unspecified,消化系统疾病,消化性溃疡,中等
+K29.70,GASTRITIS,WY,胃炎,Gastritis,消化系统疾病,胃炎未特指,轻度
+K29.00,GASTRITIS-ACUTE,JXWY,急性胃炎,Acute gastritis,消化系统疾病,急性胃炎,中等
+K29.20,ALCOHOLIC-GASTRITIS,JJXWY,酒精性胃炎,Alcoholic gastritis,消化系统疾病,酒精性胃炎,中等
+K29.30,SUPERFICIAL-GASTRITIS,QBXWY,浅表性胃炎,Chronic superficial gastritis,消化系统疾病,慢性浅表性胃炎,轻度
+K29.40,ATROPHIC-GASTRITIS,WSXWY,萎缩性胃炎,Chronic atrophic gastritis,消化系统疾病,慢性萎缩性胃炎,中等
+K29.50,GASTRITIS-CHRONIC,MXWY,慢性胃炎,Chronic gastritis,消化系统疾病,慢性胃炎未特指,中等
+K29.60,GASTRITIS-HP,MNLJGJWY,幽门螺杆菌胃炎,Gastritis with H pylori,消化系统疾病,幽门螺杆菌相关胃炎,中等
+K29.90,GASTRODUODENITIS,WSEZCXY,胃十二指肠炎,Gastroduodenitis,消化系统疾病,胃十二指肠炎,中等
+K31.84,GASTROPARESIS,WTH,胃轻瘫,Gastroparesis,消化系统疾病,胃轻瘫,中等
+K31.89,GASTRIC-POLYP,WXR,胃息肉,Gastric polyp,消化系统疾病,胃息肉,轻度
+K92.2,GI-BLEED,XHDCX,消化道出血,GI hemorrhage,消化系统疾病,胃肠出血,严重
+K92.0,HEMATEMESIS,TUX,吐血,Hematemesis,消化系统疾病,呕血,严重
+K92.1,MELENA,HXBWTZ,黑便,Melena,消化系统疾病,黑便未特指,严重
+K63.1,LOWER-GI-BLEED,XXHDCX,下消化道出血,Lower GI bleed,消化系统疾病,下消化道出血,严重
+K55.1,CHRONIC-MESEN-ISCH,MXCXMXQX,慢性肠系膜缺血,Chronic mesenteric ischemia,消化系统疾病,慢性肠系膜血管性疾病,严重
+K55.0,ACUTE-MESEN-ISCH,JXCXMXQX,急性肠系膜缺血,Acute mesenteric ischemia,消化系统疾病,急性肠系膜血管缺血,危重
+K55.21,ANGIODYSPLASIA-COLON,JCXGFYY,结肠血管发育异常,Angiodysplasia of colon with hemorrhage,消化系统疾病,结肠血管发育异常伴出血,严重
+K50.00,CROHN-SMALL,XCKRLEB,小肠克罗恩病,Crohn disease of small intestine,炎症性肠病,克罗恩病累及小肠,严重
+K50.10,CROHN-COLON,JCKLEB,结肠克罗恩病,Crohn disease of large intestine,炎症性肠病,克罗恩病累及结肠,严重
+K50.80,CROHN-BOTH,KLEB,克罗恩病累及小肠和结肠,Crohn disease of both small and large intestine,炎症性肠病,克罗恩病累及小肠和结肠,严重
+K51.00,UC-PANCOLITIS,QJCKYXJCY,全结肠溃疡性结肠炎,Ulcerative pancolitis,炎症性肠病,溃疡性全结肠炎,严重
+K51.20,UC-PROCTITIS,KYXZCZCY,溃疡性直肠炎,Ulcerative proctitis,炎症性肠病,溃疡性直肠炎,中等
+K51.30,UC-RECTOSIG,KYXZJJCYY,溃疡性直肠乙状结肠炎,Ulcerative rectosigmoiditis,炎症性肠病,溃疡性直肠乙状结肠炎,中等
+K51.50,UC-LEFT,ZJCKYXJCY,左半结肠溃疡性结肠炎,Left-sided ulcerative colitis,炎症性肠病,左半结肠炎,严重
+K52.9,GASTROENTERITIS,WCDY,胃肠炎,Gastroenteritis,消化系统疾病,非感染性胃肠炎,中等
+K52.1,TOXIC-GASTROENTERITIS,DXWCDY,毒性胃肠炎,Toxic gastroenteritis,消化系统疾病,毒性胃肠炎,严重
+K52.2,ALLERGIC-COLITIS,GMXJCY,过敏性结肠炎,Allergic colitis,消化系统疾病,过敏性结肠炎,中等
+K52.81,EOSINOPHILIC-GASTRITIS,SQXBXWY,嗜酸性粒细胞性胃炎,Eosinophilic gastritis,消化系统疾病,嗜酸性粒细胞胃肠炎,中等
+K52.82,EOSINOPHILIC-COLITIS,SQXBXJCY,嗜酸性粒细胞性结肠炎,Eosinophilic colitis,消化系统疾病,嗜酸性粒细胞结肠炎,中等
+K58.9,IBS,CJZHZ,肠易激综合征,Irritable bowel syndrome,功能性胃肠病,肠易激综合征未特指,轻度
+K58.0,IBS-D,FXXCJZHZ,腹泻型肠易激,IBS with diarrhea,功能性胃肠病,腹泻型肠易激综合征,轻度
+K58.1,IBS-C,BMXCJZHZ,便秘型肠易激,IBS with constipation,功能性胃肠病,便秘型肠易激综合征,轻度
+K59.1,DYSPEPSIA,XHBL,消化不良,Functional dyspepsia,功能性胃肠病,功能性消化不良,轻度
+K59.00,CONSTIPATION,BM,便秘,Constipation,功能性胃肠病,便秘未特指,轻度
+K59.1,DIARRHEA-FUNC,GNXFX,功能性腹泻,Functional diarrhea,功能性胃肠病,功能性腹泻,轻度
+K57.90,DIVERTICULITIS,JCXSYWTZ,结肠憩室炎,Diverticulitis,消化系统疾病,憩室炎未特指,中等
+K57.92,DIVERTICULITIS-BLEED,XSCXJCXSY,憩室炎伴出血,Diverticulitis with bleeding,消化系统疾病,憩室炎伴出血,严重
+K57.32,DIVERTICULITIS-PERF,XSCZCJCXSY,憩室炎伴穿孔,Diverticulitis with perforation,消化系统疾病,憩室炎伴穿孔,危重
+K56.60,SBO,XBXCGZ,小肠梗阻,Small bowel obstruction,消化系统急症,部分性小肠梗阻,严重
+K56.69,SBO-COMPLETE,WQXXCGZ,完全性小肠梗阻,Complete small bowel obstruction,消化系统急症,完全性小肠梗阻,危重
+K56.41,ILEUS,FJXCGZ,麻痹性肠梗阻,Paralytic ileus,消化系统急症,麻痹性肠梗阻,严重
+K56.2,VOLVULUS,CNNZ,肠扭转,Volvulus,消化系统急症,肠扭转,危重
+K56.1,INTUSSUSCEPTION,CDTL,肠套叠,Intussusception,消化系统急症,肠套叠,严重
+K63.2,INTESTINAL-FISTULA,CDL,肠瘘,Intestinal fistula,消化系统疾病,肠瘘,严重
+K65.9,PERITONITIS,FMYWTZ,腹膜炎,Peritonitis,消化系统疾病,腹膜炎未特指,严重
+K65.0,PERITONITIS-ACUTE,JXFMY,急性腹膜炎,Acute peritonitis,消化系统疾病,急性弥漫性腹膜炎,危重
+K65.2,SBP,ZFFXFMY,自发性细菌性腹膜炎,Spontaneous bacterial peritonitis,消化系统疾病,自发性细菌性腹膜炎,严重
+K66.0,PERITONEAL-ADHESION,FMNZ,腹膜粘连,Peritoneal adhesions,消化系统疾病,腹膜粘连,中等
+K70.30,ALD-CIRRHOSIS,JJXGGYHB,酒精性肝硬化,Alcoholic cirrhosis,消化系统疾病-肝病,酒精性肝硬化,严重
+K70.10,ALD-HEPATITIS,JJXGY,酒精性肝炎,Alcoholic hepatitis,消化系统疾病-肝病,酒精性肝炎,严重
+K70.0,FATTY-LIVER-ALC,JJXZFG,酒精性脂肪肝,Alcoholic fatty liver,消化系统疾病-肝病,酒精性脂肪肝,中等
+K76.0,FATTY-LIVER,ZFG,脂肪肝,Fatty liver,消化系统疾病-肝病,脂肪肝未特指,轻度
+K75.81,NAFLD,FJJXZFGB,非酒精性脂肪肝,Nonalcoholic fatty liver disease,消化系统疾病-肝病,非酒精性脂肪肝病,中等
+K75.2,NASH,FJJXZFXGY,非酒精性脂肪性肝炎,Nonalcoholic steatohepatitis,消化系统疾病-肝病,非酒精性脂肪性肝炎,严重
+K74.60,CIRRHOSIS,GGHYWTZ,肝硬化,Cirrhosis,消化系统疾病-肝病,肝硬化未特指,严重
+K74.69,CIRRHOSIS-OTHER,QTGGYH,其他肝硬化,Other cirrhosis,消化系统疾病-肝病,其他肝硬化,严重
+K74.3,PBC,YFXDGXGGYHB,原发性胆汁性肝硬化,Primary biliary cirrhosis,消化系统疾病-肝病,原发性胆汁性胆管炎,严重
+K74.4,PSC,YFXYHXDGGY,原发性硬化性胆管炎,Primary sclerosing cholangitis,消化系统疾病-肝病,原发性硬化性胆管炎,严重
+K72.00,ACUTE-LIVER-FAIL,JXGSJ,急性肝衰竭,Acute liver failure,消化系统疾病-肝病,急性肝功能衰竭,危重
+K72.10,CHRONIC-LIVER-FAIL,MXGSJ,慢性肝衰竭,Chronic liver failure,消化系统疾病-肝病,慢性肝功能衰竭,严重
+K72.90,LIVER-FAIL,GSJWTZ,肝衰竭,Hepatic failure,消化系统疾病-肝病,肝衰竭未特指,危重
+K76.6,PORTAL-HTN,MMGXY,门脉高压,Portal hypertension,消化系统疾病-肝病,门静脉高压,严重
+K76.7,HEPATORENAL-SYND,GSZZHZ,肝肾综合征,Hepatorenal syndrome,消化系统疾病-肝病,肝肾综合征,危重
+I85.00,ESOPH-VARICES,SGJMQZCX,食管静脉曲张出血,Esophageal varices with bleeding,消化系统疾病-肝病,食管静脉曲张伴出血,危重
+I85.10,ESOPH-VARICES-NO-BLEED,SGJMQZWCX,食管静脉曲张无出血,Esophageal varices without bleeding,消化系统疾病-肝病,食管静脉曲张无出血,严重
+K76.81,HEPATOPULMONARY,GFZHZ,肝肺综合征,Hepatopulmonary syndrome,消化系统疾病-肝病,肝肺综合征,严重
+K91.2,POST-GI-SURGERY,XHDSSQZHZ,消化道术后综合征,Postsurgical malabsorption,消化系统疾病,胃肠术后吸收不良,中等
+K85.90,PANCREATITIS-ACUTE,JXYXY,急性胰腺炎,Acute pancreatitis,消化系统疾病,急性胰腺炎,严重
+K85.30,ACUTE-PANC-NECROSIS,JXYHSXYXY,急性坏死性胰腺炎,Acute pancreatitis with infected necrosis,消化系统疾病,急性坏死性胰腺炎,危重
+K85.10,BILIARY-PANCREATITIS,DNYYXYXY,胆源性胰腺炎,Biliary acute pancreatitis,消化系统疾病,胆源性急性胰腺炎,严重
+K85.20,ALCOHOL-PANCREATITIS,JJXYXY,酒精性胰腺炎,Alcohol-induced acute pancreatitis,消化系统疾病,酒精性急性胰腺炎,严重
+K86.1,PANCREATITIS-CHRONIC,MXYXY,慢性胰腺炎,Chronic pancreatitis,消化系统疾病,慢性胰腺炎,严重
+K86.81,PANCREATIC-PSEUDOCYST,YXJNZ,胰腺假囊肿,Pancreatic pseudocyst,消化系统疾病,胰腺假性囊肿,中等
+K80.20,CHOLELITHIASIS,DNJSZWDNDY,胆囊结石,Cholelithiasis,消化系统疾病,胆囊结石无胆囊炎,中等
+K80.00,CHOLELITHIASIS-ACUTE,JXDNJSZDY,急性胆囊结石伴胆囊炎,Cholelithiasis with acute cholecystitis,消化系统疾病,胆囊结石伴急性胆囊炎,严重
+K80.10,CHOLELITHIASIS-CHRONIC,MXDNJSZDY,慢性胆囊结石伴胆囊炎,Cholelithiasis with chronic cholecystitis,消化系统疾病,胆囊结石伴慢性胆囊炎,中等
+K80.30,CBD-STONE,DGJS,胆总管结石,Choledocholithiasis,消化系统疾病,胆总管结石,严重
+K80.50,CBD-STONE-CHOLANGITIS,DGJSBDGY,胆总管结石伴胆管炎,Choledocholithiasis with cholangitis,消化系统疾病,胆总管结石伴胆管炎,严重
+K81.9,CHOLECYSTITIS,DNDY,胆囊炎,Cholecystitis,消化系统疾病,胆囊炎,中等
+K81.0,ACUTE-CHOLECYST,JXDNDY,急性胆囊炎,Acute cholecystitis,消化系统疾病,急性胆囊炎,严重
+K81.1,CHRONIC-CHOLECYST,MXDNDY,慢性胆囊炎,Chronic cholecystitis,消化系统疾病,慢性胆囊炎,中等
+K82.2,GB-PERF,DNCZ,胆囊穿孔,Perforation of gallbladder,消化系统疾病,胆囊穿孔,危重
+K83.0,CHOLANGITIS,DGDY,胆管炎,Cholangitis,消化系统疾病,胆管炎,严重
+K83.01,ACUTE-CHOLANGITIS,JXDGDY,急性胆管炎,Acute cholangitis,消化系统疾病,急性胆管炎,严重
+K83.09,CHOLANGITIS-OTHER,QTDGDY,其他胆管炎,Other cholangitis,消化系统疾病,其他胆管炎,中等
+K40.90,HERNIA-INGUINAL,GWSQ,腹股沟疝,Inguinal hernia,腹壁疾病,腹股沟疝未嵌顿,中等
+K40.30,HERNIA-INGUINAL-BILAT,SCGWSQ,双侧腹股沟疝,Bilateral inguinal hernia,腹壁疾病,双侧腹股沟疝,中等
+K40.40,HERNIA-INGUINAL-INCARCERATED,QDSQGWSQ,嵌顿腹股沟疝,Inguinal hernia with obstruction,腹壁疾病,嵌顿性腹股沟疝,严重
+K41.90,HERNIA-FEMORAL,GS,股疝,Femoral hernia,腹壁疾病,股疝未嵌顿,中等
+K42.9,HERNIA-UMBILICAL,QS,脐疝,Umbilical hernia,腹壁疾病,脐疝未嵌顿,轻度
+K43.9,HERNIA-VENTRAL,FQSQ,腹壁疝,Ventral hernia,腹壁疾病,腹壁疝未嵌顿,中等
+K43.0,HERNIA-INCISIONAL,QKSQWQD,切口疝,Incisional hernia,腹壁疾病,切口疝无嵌顿,中等
+K44.9,HERNIA-DIAPHRAGMATIC,GMKS,膈肌疝,Diaphragmatic hernia,腹壁疾病,膈疝,中等
+K46.9,HERNIA-ABDOMINAL,FBSQWTZ,腹部疝,Abdominal hernia,腹壁疾病,腹部未特指疝,中等

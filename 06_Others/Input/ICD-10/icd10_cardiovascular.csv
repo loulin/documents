@@ -1,0 +1,87 @@
+ICD-10代码,速记码,拼音码,中文名称,英文名称,分类,描述,严重程度
+I21.9,AMI,JXJXGJSZGZ,急性心肌梗死,Acute myocardial infarction,心血管疾病-冠心病,急性心肌梗死未特指,危重
+I21.0,STEMI-ANT,QBSTEMI,前壁STEMI,ST elevation MI anterior wall,心血管疾病-冠心病,前壁ST段抬高型心肌梗死,危重
+I21.1,STEMI-INF,XBSTEMI,下壁STEMI,ST elevation MI inferior wall,心血管疾病-冠心病,下壁ST段抬高型心肌梗死,危重
+I21.2,STEMI-LAT,CBSTEMI,侧壁STEMI,ST elevation MI lateral wall,心血管疾病-冠心病,侧壁ST段抬高型心肌梗死,危重
+I21.4,NSTEMI,FSTSTEMI,非ST抬高心梗,Non-ST elevation MI,心血管疾病-冠心病,非ST段抬高型心肌梗死,危重
+I20.0,UA,BWDXXJT,不稳定心绞痛,Unstable angina,心血管疾病-冠心病,不稳定型心绞痛,严重
+I20.1,ANGINA-SPASM,BJXXJT,痉挛性心绞痛,Angina with spasm,心血管疾病-冠心病,血管痉挛性心绞痛,严重
+I20.8,ANGINA-STABLE,WDXXJT,稳定心绞痛,Stable angina,心血管疾病-冠心病,稳定型心绞痛,中等
+I20.9,ANGINA,XXJTWTZ,心绞痛未特指,Angina pectoris unspecified,心血管疾病-冠心病,心绞痛未分类,中等
+I25.10,CAD,GXBGXB,冠心病,Coronary artery disease,心血管疾病-冠心病,动脉粥样硬化性心脏病,严重
+I25.5,ISCHEMIC-CMPY,QXXXJB,缺血性心肌病,Ischemic cardiomyopathy,心血管疾病-冠心病,缺血性心肌病变,严重
+I25.2,OLD-MI,CJXGJSZGZ,陈旧性心肌梗死,Old myocardial infarction,心血管疾病-冠心病,既往心肌梗死,中等
+I50.9,HF,XSBJWTZ,心衰,Heart failure,心血管疾病-心衰,心力衰竭未特指,严重
+I50.1,LVF,ZXSB,左心衰,Left ventricular failure,心血管疾病-心衰,左心室衰竭,严重
+I50.20,HFrEF,SJFXJXSB,射血分数降低心衰,Systolic heart failure,心血管疾病-心衰,收缩性心力衰竭,严重
+I50.30,HFpEF,SJFBCXSB,射血分数保存心衰,Diastolic heart failure,心血管疾病-心衰,舒张性心力衰竭,严重
+I50.41,ACUTE-HF,JXXSB,急性心衰,Acute combined systolic and diastolic heart failure,心血管疾病-心衰,急性心力衰竭,危重
+I50.43,ACUTE-ON-CHF,JXJXMXSB,慢性心衰急性加重,Acute on chronic combined heart failure,心血管疾病-心衰,慢性心衰急性加重,严重
+I50.84,RVHF,YXSB,右心衰,Right heart failure,心血管疾病-心衰,右心室衰竭,严重
+I10,HTN,GXY,高血压,Hypertension,心血管疾病-高血压,原发性高血压,中等
+I11.9,HTN-HD,GXYXXB,高血压心脏病,Hypertensive heart disease,心血管疾病-高血压,高血压性心脏病,严重
+I12.9,HTN-CKD,GXYSZB,高血压肾病,Hypertensive chronic kidney disease,心血管疾病-高血压,高血压性肾病,严重
+I13.0,HTN-HCKD,GXYXXJSZB,高血压心肾病,Hypertensive heart and CKD,心血管疾病-高血压,高血压性心肾病,严重
+I16.9,HYP-CRISIS,GXYWJ,高血压危象,Hypertensive crisis,心血管疾病-高血压,高血压危象,危重
+I16.0,HYP-URGENCY,GXYJZ,高血压急症,Hypertensive urgency,心血管疾病-高血压,高血压急症,严重
+I16.1,HYP-EMERGENCY,GXYWJ,高血压危症,Hypertensive emergency,心血管疾病-高血压,高血压危症伴靶器官损害,危重
+I48.91,AFIB,XZCF,心房颤动,Atrial fibrillation,心血管疾病-心律失常,心房颤动未特指,严重
+I48.0,AFIB-PAROX,ZFXXZCF,阵发性心房颤动,Paroxysmal atrial fibrillation,心血管疾病-心律失常,阵发性房颤,中等
+I48.1,AFIB-PERS,CXXZCF,持续性心房颤动,Persistent atrial fibrillation,心血管疾病-心律失常,持续性房颤,严重
+I48.2,AFIB-PERM,YGJXXZCF,永久性心房颤动,Permanent atrial fibrillation,心血管疾病-心律失常,永久性房颤,严重
+I48.3,AFLUTTER,XZPL,心房扑动,Atrial flutter,心血管疾病-心律失常,心房扑动,中等
+I47.2,VT,SSXSDGSP,室上性心动过速,Ventricular tachycardia,心血管疾病-心律失常,室性心动过速,严重
+I47.1,SVT,SSXXSDGSP,室上性心动过速,Supraventricular tachycardia,心血管疾病-心律失常,室上性心动过速,中等
+I49.01,VF,SXCF,室颤,Ventricular fibrillation,心血管疾病-心律失常,室性颤动,危重
+I46.9,CARDIAC-ARREST,XZTTZGZ,心脏骤停,Cardiac arrest,心血管疾病-心律失常,心脏骤停未特指,危重
+I44.2,AVB-COMPLETE,WQXXZZ,完全性房室传导阻滞,Complete AV block,心血管疾病-心律失常,三度房室传导阻滞,严重
+I44.1,AVB-2ND,ERDXXSZZ,二度房室阻滞,Second degree AV block,心血管疾病-心律失常,二度房室传导阻滞,中等
+I44.0,AVB-1ST,YIDXXSZZ,一度房室阻滞,First degree AV block,心血管疾病-心律失常,一度房室传导阻滞,轻度
+I49.5,SSS,BFBJZHZ,病窦综合征,Sick sinus syndrome,心血管疾病-心律失常,病态窦房结综合征,中等
+I49.8,BRADYCARDIA,XDGSH,心动过缓,Bradycardia,心血管疾病-心律失常,心动过缓,中等
+I34.0,MR,EJBGBBQ,二尖瓣关闭不全,Mitral regurgitation,心血管疾病-瓣膜病,二尖瓣反流,严重
+I34.2,MS,EJBXZ,二尖瓣狭窄,Mitral stenosis,心血管疾病-瓣膜病,二尖瓣狭窄,严重
+I35.0,AS,ZDBXZ,主动脉瓣狭窄,Aortic stenosis,心血管疾病-瓣膜病,主动脉瓣狭窄,严重
+I35.1,AR,ZDBBGBBQ,主动脉瓣关闭不全,Aortic regurgitation,心血管疾病-瓣膜病,主动脉瓣反流,严重
+I36.0,TR,SJBGBBQ,三尖瓣关闭不全,Tricuspid regurgitation,心血管疾病-瓣膜病,三尖瓣反流,中等
+I08.0,RHEUMATIC-MR,FSBEJBGBBQ,风湿性二尖瓣关闭不全,Rheumatic mitral regurgitation,心血管疾病-瓣膜病,风湿性二尖瓣病,严重
+I42.0,DCM,KSXXJB,扩张型心肌病,Dilated cardiomyopathy,心血管疾病-心肌病,扩张型心肌病,严重
+I42.1,HOCM,FSHXFDXXJB,肥厚梗阻性心肌病,Hypertrophic obstructive cardiomyopathy,心血管疾病-心肌病,肥厚梗阻性心肌病,严重
+I42.2,HCM,FSHXXJB,肥厚型心肌病,Hypertrophic cardiomyopathy,心血管疾病-心肌病,肥厚型心肌病,严重
+I42.5,RCM,XZXXJB,限制型心肌病,Restrictive cardiomyopathy,心血管疾病-心肌病,限制型心肌病,严重
+I40.9,MYOCARDITIS,XXJYWTZ,心肌炎,Myocarditis,心血管疾病-心肌病,心肌炎未特指,严重
+I30.9,PERICARDITIS,XBYWTZ,心包炎,Pericarditis,心血管疾病-心包疾病,心包炎未特指,中等
+I31.3,PERIC-EFFUSION,XBJY,心包积液,Pericardial effusion,心血管疾病-心包疾病,心包积液,中等
+I31.1,CONSTRIC-PERIC,SSXXBY,缩窄性心包炎,Constrictive pericarditis,心血管疾病-心包疾病,缩窄性心包炎,严重
+I31.4,TAMPONADE,XBTY,心包填塞,Cardiac tamponade,心血管疾病-心包疾病,心包填塞,危重
+I26.99,PE,FDSL,肺栓塞,Pulmonary embolism,心血管疾病-血栓栓塞,急性肺栓塞,严重
+I26.02,MASSIVE-PE,DZFDSL,大面积肺栓塞,Saddle embolus of pulmonary artery with acute cor pulmonale,心血管疾病-血栓栓塞,大面积肺栓塞伴右心衰,危重
+I80.10,DVT-FEMORAL,GDMJXXZ,股深静脉血栓,DVT of femoral vein,心血管疾病-血栓栓塞,股静脉血栓形成,严重
+I82.40,DVT-LOWER,XZSJMJXXZ,下肢深静脉血栓,DVT of lower extremity,心血管疾病-血栓栓塞,下肢深静脉血栓,严重
+I63.9,STROKE-ISCH,QXZQNGZWTZ,缺血性脑卒中,Ischemic stroke,心血管疾病-脑血管病,缺血性脑梗死,严重
+I61.9,STROKE-HEM,NCZXWTZ,脑出血,Hemorrhagic stroke,心血管疾病-脑血管病,出血性脑卒中,危重
+I60.9,SAH,ZMNXCX,蛛网膜下腔出血,Subarachnoid hemorrhage,心血管疾病-脑血管病,蛛网膜下腔出血,危重
+G45.9,TIA,DWZQXZFZ,短暂性脑缺血发作,Transient ischemic attack,心血管疾病-脑血管病,TIA未特指,中等
+I71.4,AAA-ABD,FZDMLS,腹主动脉瘤,Abdominal aortic aneurysm,心血管疾病-血管病,腹主动脉瘤未破裂,严重
+I71.00,AAA-RUPTURE,FZDMLSPL,主动脉瘤破裂,Aortic aneurysm rupture,心血管疾病-血管病,主动脉瘤破裂,危重
+I71.01,THORACIC-ANEURYSM,XBZDMLS,胸主动脉瘤,Thoracic aortic aneurysm,心血管疾病-血管病,胸主动脉瘤,严重
+I71.03,AORTIC-DISSECTION,ZDMJL,主动脉夹层,Aortic dissection,心血管疾病-血管病,主动脉夹层,危重
+I70.0,ATHEROSCLEROSIS-AORTA,ZDMZYHB,主动脉粥样硬化,Atherosclerosis of aorta,心血管疾病-血管病,主动脉粥样硬化,中等
+I70.2,PAD,WZMDMB,外周动脉疾病,Peripheral arterial disease,心血管疾病-血管病,下肢动脉粥样硬化,严重
+I73.9,PVD,WZXGBJWTZ,外周血管病,Peripheral vascular disease,心血管疾病-血管病,外周血管疾病未特指,中等
+I73.0,RAYNAUD,LNZHZ,雷诺综合征,Raynaud syndrome,心血管疾病-血管病,雷诺现象,轻度
+I27.0,PPHN,YDMGXY,原发性肺动脉高压,Primary pulmonary hypertension,心血管疾病-肺循环,原发性肺高压,严重
+I27.2,SECOND-PH,JFXFDMGXY,继发性肺动脉高压,Secondary pulmonary hypertension,心血管疾病-肺循环,继发性肺高压,严重
+I27.81,COR-PULMONALE,FYDXXB,肺源性心脏病,Cor pulmonale,心血管疾病-肺循环,慢性肺源性心脏病,严重
+Q21.0,VSD,SSJGQS,室间隔缺损,Ventricular septal defect,先天性心脏病,室间隔缺损,中等
+Q21.1,ASD,FZJGQS,房间隔缺损,Atrial septal defect,先天性心脏病,房间隔缺损,中等
+Q25.0,PDA,DMGWBBL,动脉导管未闭,Patent ductus arteriosus,先天性心脏病,动脉导管未闭,中等
+Q21.3,TOF,FLLDZZHX,法洛四联症,Tetralogy of Fallot,先天性心脏病,法洛四联症,严重
+Q20.3,TGA,DDMLWZ,大动脉转位,Transposition of great arteries,先天性心脏病,完全性大动脉转位,严重
+Z95.1,POST-CABG,GZJQQSH,冠状动脉旁路术后,Status post CABG,心脏术后状态,冠脉搭桥术后,管理
+Z95.5,POST-PCI,GJJRSQWZJRSH,冠脉介入术后,Status post coronary angioplasty,心脏术后状态,PCI术后,管理
+Z95.0,PACEMAKER,XZDQCRSQWZ,心脏起搏器植入术后,Cardiac pacemaker in situ,心脏术后状态,心脏起搏器状态,管理
+Z95.810,ICD-DEVICE,XZFCZQCRSQWZ,ICD植入术后,Automatic implantable cardiac defibrillator in situ,心脏术后状态,ICD植入状态,管理
+Z95.2,PROSTHETIC-VALVE,RGGXZBZRSQWZ,人工心脏瓣膜置换术后,Prosthetic heart valve in situ,心脏术后状态,人工瓣膜状态,管理
+Z79.01,ANTICOAG-LONG,CQKNJYZL,长期口服抗凝治疗,Long term use of anticoagulants,抗凝治疗,长期抗凝状态,管理
+Z79.02,ANTIPLATELET-LONG,CQKFKXXBJYZL,长期口服抗血小板治疗,Long term use of antiplatelets,抗血小板治疗,长期抗血小板状态,管理

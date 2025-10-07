@@ -1,0 +1,154 @@
+ICD-10代码,速记码,拼音码,中文名称,英文名称,分类,描述,严重程度
+G40.909,EPILEPSY,DX,癫痫,Epilepsy,神经系统疾病,癫痫未特指,严重
+G40.001,FOCAL-EPILEPSY,JXZDX,局灶性癫痫,Localization-related epilepsy,神经系统疾病,局灶性癫痫,严重
+G40.101,GENERALIZED-EPILEPSY,QMXDX,全面性癫痫,Generalized idiopathic epilepsy,神经系统疾病,全面性癫痫,严重
+G40.201,ABSENCE-EPILEPSY,SSDX,失神癫痫,Childhood absence epilepsy,神经系统疾病,儿童失神癫痫,中等
+G40.301,GRAND-MAL,DDZDX,大发作癫痫,Generalized convulsive epilepsy,神经系统疾病,全面性强直阵挛发作,严重
+G40.A09,STATUS-EPILEPSY,DXCZZT,癫痫持续状态,Status epilepticus,神经系统疾病,癫痫持续状态,危重
+G40.B09,JUVENILE-MYOCLONIC,QSNKLJX,青少年肌阵挛,Juvenile myoclonic epilepsy,神经系统疾病,青少年肌阵挛癫痫,严重
+G20,PARKINSON,PJSB,帕金森病,Parkinson disease,神经系统疾病,帕金森病,严重
+G21.0,PARKINSON-SECOND,JFXPJSB,继发性帕金森,Secondary parkinsonism,神经系统疾病,继发性帕金森综合征,严重
+G23.1,PSP,JXSHXMBMT,进行性核上性麻痹,Progressive supranuclear palsy,神经系统疾病,进行性核上性麻痹,严重
+G23.2,MSA,DFXWSXWS,多系统萎缩,Multiple system atrophy,神经系统疾病,多系统萎缩,严重
+G30.9,ALZHEIMER,ADCDB,阿尔茨海默病,Alzheimer disease,神经系统疾病,阿尔茨海默病未特指,严重
+G30.0,ALZHEIMER-EARLY,ZFDAD,早发型AD,Early-onset Alzheimer disease,神经系统疾病,早发型阿尔茨海默病,严重
+G30.1,ALZHEIMER-LATE,WFDAD,晚发型AD,Late-onset Alzheimer disease,神经系统疾病,晚发型阿尔茨海默病,严重
+G31.01,FRONTOTEMPORAL-DEMENTIA,NQLYSXCDB,额颞叶痴呆,Frontotemporal dementia,神经系统疾病,额颞叶变性痴呆,严重
+G31.83,LEWY-BODY-DEMENTIA,LWTXCDB,路易体痴呆,Dementia with Lewy bodies,神经系统疾病,路易体痴呆,严重
+G31.84,MCI,QDRZSGZ,轻度认知损害,Mild cognitive impairment,神经系统疾病,轻度认知功能障碍,中等
+F01.50,VASCULAR-DEMENTIA,XGXCDB,血管性痴呆,Vascular dementia,神经系统疾病,血管性痴呆,严重
+F03.90,DEMENTIA,CDB,痴呆,Dementia,神经系统疾病,痴呆未特指,严重
+G35,MS,DFXYHB,多发性硬化,Multiple sclerosis,神经系统疾病,多发性硬化症,严重
+G36.0,NMO,SJJYSPYYHB,视神经脊髓炎,Neuromyelitis optica,神经系统疾病,视神经脊髓炎谱系疾病,严重
+G37.3,ACUTE-TRANSVERSE-MYELITIS,JXHJXJZY,急性横贯性脊髓炎,Acute transverse myelitis,神经系统疾病,急性横贯性脊髓炎,严重
+G61.0,GBS,JLJBZHZ,吉兰-巴雷综合征,Guillain-Barre syndrome,神经系统疾病,格林巴利综合征,严重
+G60.0,CIDP,MXFMXSJXTWBY,慢性炎性脱髓鞘性多发性神经病,CIDP,神经系统疾病,慢性炎性脱髓鞘性多发性神经病,严重
+G70.00,MG,ZWLSSJ,重症肌无力,Myasthenia gravis,神经肌肉疾病,重症肌无力无急性加重,严重
+G70.01,MG-CRISIS,ZWLSSJWJ,肌无力危象,Myasthenia gravis with acute exacerbation,神经肌肉疾病,重症肌无力危象,危重
+G71.0,MUSCULAR-DYSTROPHY,JYYSZB,肌营养不良,Muscular dystrophy,神经肌肉疾病,进行性肌营养不良,严重
+G71.11,DMD,DMD,Duchenne肌营养不良,Duchenne muscular dystrophy,神经肌肉疾病,Duchenne型肌营养不良,严重
+G71.2,MYOTONIC-DYSTROPHY,QJXYSZB,强直性肌营养不良,Myotonic disorders,神经肌肉疾病,强直性肌营养不良,严重
+G72.81,CRITICAL-ILLNESS-MYOPATHY,WZBJB,危重病肌病,Critical illness myopathy,神经肌肉疾病,危重病肌病,严重
+G43.909,MIGRAINE,PT,偏头痛,Migraine,头痛疾病,偏头痛未特指,中等
+G43.109,MIGRAINE-AURA,XZPT,先兆偏头痛,Migraine with aura,头痛疾病,有先兆偏头痛,中等
+G43.009,MIGRAINE-NO-AURA,WXZPT,无先兆偏头痛,Migraine without aura,头痛疾病,无先兆偏头痛,中等
+G43.A0,CHRONIC-MIGRAINE,MXPT,慢性偏头痛,Chronic migraine,头痛疾病,慢性偏头痛,严重
+G43.D0,ABDOMINAL-MIGRAINE,FBPT,腹型偏头痛,Abdominal migraine,头痛疾病,腹型偏头痛,中等
+G44.1,VASCULAR-HA,XGXTT,血管性头痛,Vascular headache,头痛疾病,血管性头痛,中等
+G44.209,TTH,ZJXTT,紧张性头痛,Tension-type headache,头痛疾病,紧张型头痛,轻度
+G44.001,CLUSTER-HA,JXTT,丛集性头痛,Cluster headache,头痛疾病,丛集性头痛,严重
+G44.51,TAC,SJXTTBZZZD,三叉神经痛伴自主症状,Trigeminal autonomic cephalalgias,头痛疾病,三叉自主神经性头痛,严重
+G50.0,TRIGEMINAL-NEURALGIA,SJSJT,三叉神经痛,Trigeminal neuralgia,头痛疾病,三叉神经痛,严重
+G44.81,MEDICATION-OVERUSE-HA,YWGDXTT,药物过度使用性头痛,Medication overuse headache,头痛疾病,药物过度使用性头痛,中等
+G47.00,INSOMNIA,SMZ,失眠症,Insomnia,睡眠障碍,失眠未特指,中等
+G47.01,INSOMNIA-PRIMARY,YFXSMZ,原发性失眠,Primary insomnia,睡眠障碍,原发性失眠症,中等
+G47.09,INSOMNIA-SECONDARY,JFXSMZ,继发性失眠,Secondary insomnia,睡眠障碍,继发性失眠症,中等
+G47.419,NARCOLEPSY,FZXSDBC,发作性睡病,Narcolepsy,睡眠障碍,发作性睡病,中等
+G47.411,NARCOLEPSY-CATAPLEXY,FZXSDBCBRX,发作性睡病伴猝倒,Narcolepsy with cataplexy,睡眠障碍,发作性睡病伴猝倒,严重
+G47.20,CIRCADIAN-DISORDER,ZYRJZSGZ,昼夜节律紊乱,Circadian rhythm sleep disorder,睡眠障碍,昼夜节律睡眠障碍,中等
+G47.52,REM-BEHAVIOR,REMXWZ,REM睡眠行为障碍,REM sleep behavior disorder,睡眠障碍,快速眼动睡眠行为障碍,中等
+G25.81,RLS,BBLZHZ,不宁腿综合征,Restless legs syndrome,睡眠障碍,不宁腿综合征,中等
+G47.61,PLMD,ZQXZDZ,周期性肢动障碍,Periodic limb movement disorder,睡眠障碍,周期性肢体运动障碍,中等
+G62.9,POLYNEUROPATHY,DFXSJBY,多发性神经病,Polyneuropathy,周围神经病,多发性神经病变,中等
+G62.0,DRUG-NEUROPATHY,YWXSJBY,药物性神经病,Drug-induced polyneuropathy,周围神经病,药物性多发神经病,中等
+G62.1,ALCOHOLIC-NEUROPATHY,JJXSJBY,酒精性神经病,Alcoholic polyneuropathy,周围神经病,酒精性多发神经病,严重
+G63,DIABETIC-NEUROPATHY,TNBXSJBY,糖尿病神经病,Diabetic neuropathy,周围神经病,糖尿病性神经病变,严重
+G56.00,CTS,WGGZHZ,腕管综合征,Carpal tunnel syndrome,周围神经病,腕管综合征,中等
+G56.20,ULNAR-NEUROPATHY,CSJBY,尺神经病,Ulnar neuropathy,周围神经病,尺神经病变,中等
+G57.00,SCIATIC-NEUROPATHY,ZZSJT,坐骨神经痛,Sciatic neuropathy,周围神经病,坐骨神经病变,中等
+G57.60,PERONEAL-NEUROPATHY,FZSJBY,腓总神经病,Peroneal neuropathy,周围神经病,腓总神经病变,中等
+G51.0,BELL-PALSY,MBSMB,面瘫,Bell palsy,周围神经病,贝尔面瘫,中等
+G52.0,OLFACTORY-NERVE,XSJBY,嗅神经障碍,Olfactory nerve disorder,脑神经病,嗅神经功能障碍,中等
+G52.1,GLOSSOPHARYNGEAL,SHYJSJBY,舌咽神经病,Glossopharyngeal nerve disorder,脑神经病,舌咽神经功能障碍,中等
+G52.2,VAGUS-NEUROPATHY,MZZSJBY,迷走神经病,Vagus nerve disorder,脑神经病,迷走神经功能障碍,严重
+G52.3,HYPOGLOSSAL-NEUROPATHY,SHXSJBY,舌下神经病,Hypoglossal nerve disorder,脑神经病,舌下神经功能障碍,中等
+G93.1,ANOXIC-BRAIN,QYXNSSZ,缺氧性脑损伤,Anoxic brain damage,中枢神经系统损伤,缺氧缺血性脑损伤,严重
+G93.6,CEREBRAL-EDEMA,NSF,脑水肿,Cerebral edema,中枢神经系统损伤,脑水肿,严重
+G93.5,BRAIN-COMPRESSION,NSYX,脑受压,Compression of brain,中枢神经系统损伤,脑组织受压,严重
+G93.89,BRAIN-HERNIATION,NTCx,脑疝,Brain herniation,中枢神经系统损伤,脑疝形成,危重
+G91.2,NPH,ZCZLXJSF,正常颅压脑积水,Normal pressure hydrocephalus,中枢神经系统疾病,正常压力脑积水,严重
+G91.0,COMMUNICATING-HYDRO,JTXJSF,交通性脑积水,Communicating hydrocephalus,中枢神经系统疾病,交通性脑积水,严重
+G03.9,MENINGITIS,NMYWTZ,脑膜炎,Meningitis,神经系统感染,脑膜炎未特指,严重
+G00.9,BACTERIAL-MENINGITIS,XJXNMY,细菌性脑膜炎,Bacterial meningitis,神经系统感染,细菌性脑膜炎未特指,严重
+G00.1,PNEUMO-MENINGITIS,FJQJNMY,肺炎球菌脑膜炎,Pneumococcal meningitis,神经系统感染,肺炎链球菌脑膜炎,严重
+G00.2,STREP-MENINGITIS,LJQJNMY,链球菌脑膜炎,Streptococcal meningitis,神经系统感染,链球菌性脑膜炎,严重
+G00.3,STAPH-MENINGITIS,PQJNMY,葡萄球菌脑膜炎,Staphylococcal meningitis,神经系统感染,葡萄球菌性脑膜炎,严重
+G02.0,VIRAL-MENINGITIS,BDXNMY,病毒性脑膜炎,Viral meningitis,神经系统感染,病毒性脑膜炎,中等
+G03.0,ASEPTIC-MENINGITIS,FJXNMY,非菌性脑膜炎,Nonpyogenic meningitis,神经系统感染,无菌性脑膜炎,中等
+G03.1,CHRONIC-MENINGITIS,MXNMY,慢性脑膜炎,Chronic meningitis,神经系统感染,慢性脑膜炎,严重
+G04.90,ENCEPHALITIS,NYWTZ,脑炎,Encephalitis,神经系统感染,脑炎未特指,严重
+G04.00,ACUTE-DISSEMINATED-ENCEPH,JXBSXNY,急性播散性脑炎,Acute disseminated encephalitis,神经系统感染,急性播散性脑脊髓炎,严重
+G05.3,ENCEPHALITIS-VIRAL,BDXNY,病毒性脑炎,Encephalitis in viral diseases,神经系统感染,病毒性脑炎,严重
+A87.0,ENTEROVIRAL-MENINGITIS,CDBNMY,肠道病毒脑膜炎,Enteroviral meningitis,神经系统感染,肠道病毒性脑膜炎,中等
+B00.3,HSV-MENINGITIS,PZBD1XNMY,单纯疱疹病毒脑膜炎,Herpes simplex meningitis,神经系统感染,HSV脑膜炎,严重
+B00.4,HSV-ENCEPHALITIS,PZBD1XNY,单纯疱疹病毒脑炎,Herpes simplex encephalitis,神经系统感染,单纯疱疹病毒性脑炎,严重
+G06.0,BRAIN-ABSCESS,NNZ,脑脓肿,Brain abscess,神经系统感染,颅内脓肿,严重
+G06.1,SPINAL-ABSCESS,JSNZ,脊髓脓肿,Spinal epidural abscess,神经系统感染,椎管内脓肿,严重
+N18.9,CKD,MXSZB,慢性肾病,Chronic kidney disease,肾脏疾病,慢性肾脏病未特指,严重
+N18.1,CKD-1,MXSZB1Q,CKD 1期,CKD stage 1,肾脏疾病,慢性肾病1期GFR≥90,轻度
+N18.2,CKD-2,MXSZB2Q,CKD 2期,CKD stage 2,肾脏疾病,慢性肾病2期GFR60-89,轻度
+N18.30,CKD-3A,MXSZB3AQ,CKD 3A期,CKD stage 3a,肾脏疾病,慢性肾病3a期GFR45-59,中等
+N18.31,CKD-3B,MXSZB3BQ,CKD 3B期,CKD stage 3b,肾脏疾病,慢性肾病3b期GFR30-44,中等
+N18.4,CKD-4,MXSZB4Q,CKD 4期,CKD stage 4,肾脏疾病,慢性肾病4期GFR15-29,严重
+N18.5,CKD-5,MXSZB5Q,CKD 5期,CKD stage 5,肾脏疾病,慢性肾病5期GFR<15,严重
+N18.6,ESRD,MQQSZB,终末期肾病,End stage renal disease,肾脏疾病,终末期肾脏病,严重
+N17.9,AKI,JXSZSS,急性肾损伤,Acute kidney injury,肾脏疾病,急性肾损伤,严重
+N17.0,AKI-TUBULAR,JXSGXSZSS,急性肾小管坏死,Acute tubular necrosis,肾脏疾病,急性肾小管坏死性肾损伤,严重
+N17.1,AKI-CORTICAL,JXSPZHXS,急性皮质坏死,Acute cortical necrosis,肾脏疾病,急性肾皮质坏死,危重
+N17.2,AKI-MEDULLARY,JXSZZHXS,急性髓质坏死,Acute medullary necrosis,肾脏疾病,急性肾髓质坏死,严重
+N04.9,NEPHROTIC,SZZHZ,肾病综合征,Nephrotic syndrome,肾脏疾病,肾病综合征,严重
+N04.0,MINIMAL-CHANGE,WBXBGZSZ,微小病变肾病,Minimal change nephrotic syndrome,肾脏疾病,微小病变型肾病综合征,严重
+N04.1,FOCAL-SEGMENTAL,JDKJXYHB,局灶节段硬化,Focal segmental glomerulosclerosis,肾脏疾病,局灶节段性肾小球硬化,严重
+N04.2,MEMBRANOUS-NEPHROPATHY,MXSZB,膜性肾病,Membranous nephropathy,肾脏疾病,膜性肾小球肾病,严重
+N00.9,ACUTE-GN,JXSJQSXY,急性肾小球肾炎,Acute nephritic syndrome,肾脏疾病,急性肾炎综合征,严重
+N00.0,POSTSTREP-GN,LJQJHSJQSXY,链球菌后肾小球肾炎,Poststreptococcal glomerulonephritis,肾脏疾病,链球菌感染后肾小球肾炎,严重
+N01.9,RPGN,JJXSJQSXY,急进性肾小球肾炎,Rapidly progressive nephritic syndrome,肾脏疾病,急进性肾炎综合征,危重
+N03.9,CHRONIC-GN,MXSJQSXY,慢性肾小球肾炎,Chronic nephritic syndrome,肾脏疾病,慢性肾炎综合征,严重
+N03.2,IGA-NEPHROPATHY,IGASZB,IgA肾病,IgA nephropathy,肾脏疾病,IgA肾病,严重
+N05.2,HENOCH-SCHONLEIN,GMSXXZXSZB,过敏性紫癜性肾炎,Henoch-Schonlein purpura nephritis,肾脏疾病,过敏性紫癜肾炎,严重
+N12,PYELONEPHRITIS,SZJYYWTZ,肾盂肾炎,Tubulo-interstitial nephritis,肾脏疾病,肾盂肾炎未特指,严重
+N10,ACUTE-PYELONEPHRITIS,JXSZJY,急性肾盂肾炎,Acute pyelonephritis,肾脏疾病,急性肾盂肾炎,严重
+N11.9,CHRONIC-PYELONEPHRITIS,MXSZJY,慢性肾盂肾炎,Chronic pyelonephritis,肾脏疾病,慢性肾盂肾炎,严重
+N14.0,ANALGESIC-NEPHROPATHY,ZTYSZB,止痛剂肾病,Analgesic nephropathy,肾脏疾病,止痛剂肾病,严重
+N14.1,DRUG-NEPHROPATHY,YWXSZB,药物性肾病,Nephropathy induced by drugs,肾脏疾病,药物诱导的肾病,严重
+N14.2,CONTRAST-NEPHROPATHY,DBZSZB,对比剂肾病,Contrast-induced nephropathy,肾脏疾病,造影剂肾病,中等
+N15.0,RENAL-ABSCESS,SZJYNZ,肾盂肾炎性脓肿,Renal abscess,肾脏疾病,肾及肾周脓肿,严重
+N15.1,PERINEPHRIC-ABSCESS,SZZNZ,肾周脓肿,Perinephric abscess,肾脏疾病,肾周围脓肿,严重
+N25.0,RENAL-TUBULAR-ACIDOSIS,SZGXSZD,肾小管酸中毒,Renal tubular acidosis,肾脏疾病,肾性小管性酸中毒,中等
+N25.81,RENAL-TUBULAR-DISORDER,SZGXGNZ,肾小管功能障碍,Renal tubular disorder,肾脏疾病,肾小管功能障碍,中等
+N26.9,RENAL-ATROPHY,SZWS,肾萎缩,Renal atrophy,肾脏疾病,肾萎缩未特指,严重
+N28.0,RENAL-INFARCT,SZGS,肾梗死,Ischemia and infarction of kidney,肾脏疾病,肾动脉栓塞和梗死,严重
+N39.0,UTI,MNLDGR,泌尿道感染,UTI,泌尿系统疾病,尿路感染,中等
+N30.00,ACUTE-CYSTITIS,JXPGY,急性膀胱炎,Acute cystitis,泌尿系统疾病,急性膀胱炎,中等
+N30.10,INTERSTITIAL-CYSTITIS,JZXPGY,间质性膀胱炎,Interstitial cystitis,泌尿系统疾病,间质性膀胱炎,严重
+N30.20,CHRONIC-CYSTITIS,MXPGY,慢性膀胱炎,Chronic cystitis,泌尿系统疾病,慢性膀胱炎,中等
+N30.30,TRIGONITIS,PGSQY,膀胱三角炎,Trigonitis,泌尿系统疾病,膀胱三角区炎症,中等
+N34.1,URETHRITIS,NDGY,尿道炎,Nonspecific urethritis,泌尿系统疾病,非特异性尿道炎,轻度
+N20.0,KIDNEY-STONE,SZJS,肾结石,Kidney stone,泌尿系统疾病,肾结石,中等
+N20.1,URETER-STONE,SNGGJS,输尿管结石,Ureteral stone,泌尿系统疾病,输尿管结石,中等
+N20.2,BLADDER-STONE,PGJS,膀胱结石,Bladder stone,泌尿系统疾病,膀胱结石,中等
+N21.0,URETHRAL-STONE,NDJS,尿道结石,Urethral calculus,泌尿系统疾病,尿道结石,中等
+N22,STAGHORN-CALCULUS,LSJXJS,鹿角型结石,Staghorn calculus,泌尿系统疾病,鹿角型肾结石,严重
+N13.0,HYDRONEPHROSIS,JSS,肾积水,Hydronephrosis,泌尿系统疾病,肾盂积水,中等
+N13.1,HYDROURETER,SNGGJS,输尿管积水,Hydroureter,泌尿系统疾病,输尿管扩张积水,中等
+N13.30,PYONEPHROSIS,JNSZJY,积脓性肾盂肾炎,Pyonephrosis,泌尿系统疾病,肾盂积脓,严重
+N13.5,URETERAL-STRICTURE,SNGGXZ,输尿管狭窄,Ureteral stricture,泌尿系统疾病,输尿管狭窄和扭结,中等
+N31.9,NEUROGENIC-BLADDER,SJXPG,神经性膀胱,Neurogenic bladder,泌尿系统疾病,神经源性膀胱,中等
+N31.0,FLACCID-BLADDER,CHXSJXPG,弛缓性神经性膀胱,Flaccid neurogenic bladder,泌尿系统疾病,弛缓性神经源性膀胱,中等
+N31.1,REFLEX-BLADDER,FSXSJXPG,反射性神经性膀胱,Reflex neurogenic bladder,泌尿系统疾病,反射性神经源性膀胱,中等
+N32.81,OVERACTIVE-BLADDER,PGGHDHZ,膀胱过度活动症,Overactive bladder,泌尿系统疾病,膀胱过度活动症,中等
+N39.3,STRESS-INCONTINENCE,YLJXNY,压力性尿失禁,Stress incontinence,泌尿系统疾病,压力性尿失禁,中等
+N39.41,URGE-INCONTINENCE,JBXNY,急迫性尿失禁,Urge incontinence,泌尿系统疾病,急迫性尿失禁,中等
+N39.46,MIXED-INCONTINENCE,HHXNY,混合性尿失禁,Mixed incontinence,泌尿系统疾病,混合型尿失禁,中等
+N40.0,BPH,LXQLXZS,良性前列腺增生,BPH,泌尿系统疾病-男科,良性前列腺增生,轻度
+N40.1,BPH-LUTS,QLXZSMNDZZ,前列腺增生伴下尿路症状,BPH with LUTS,泌尿系统疾病-男科,前列腺增生伴下尿路症状,中等
+N41.9,PROSTATITIS,QLXY,前列腺炎,Prostatitis,泌尿系统疾病-男科,前列腺炎,中等
+N41.0,ACUTE-PROSTATITIS,JXQLXY,急性前列腺炎,Acute prostatitis,泌尿系统疾病-男科,急性前列腺炎,严重
+N41.1,CHRONIC-PROSTATITIS,MXQLXY,慢性前列腺炎,Chronic prostatitis,泌尿系统疾病-男科,慢性前列腺炎,中等
+N42.82,PROSTATODYNIA,QLXT,前列腺痛,Prostatodynia,泌尿系统疾病-男科,前列腺痛综合征,中等
+N43.3,HYDROCELE,GJJS,睾丸鞘膜积液,Hydrocele,泌尿系统疾病-男科,鞘膜积液,轻度
+N44.00,TESTICULAR-TORSION,GJNZ,睾丸扭转,Torsion of testis,泌尿系统疾病-男科,睾丸扭转,危重
+N45.1,EPIDIDYMITIS,FWXY,附睾炎,Epididymitis,泌尿系统疾病-男科,附睾炎,中等
+N45.3,ORCHITIS,GYY,睾丸炎,Orchitis,泌尿系统疾病-男科,睾丸炎,中等
+N48.30,PRIAPISM,YBQB,阴茎异常勃起,Priapism,泌尿系统疾病-男科,阴茎持续勃起症,严重
+N50.82,SCROTAL-MASS,YBZNW,阴囊肿物,Scrotal mass,泌尿系统疾病-男科,阴囊肿块,中等

@@ -1,0 +1,70 @@
+ICD-10代码,速记码,拼音码,中文名称,英文名称,分类,描述,严重程度
+K21.9,GERD,WSFLLXJBY,胃食管反流病,GERD,消化系统疾病,胃食管反流病,中等
+K25.9,PU-GASTRIC,WKY,胃溃疡,Gastric ulcer,消化系统疾病,胃溃疡,中等
+K26.9,PU-DUODENAL,SEZCKYKYWC,十二指肠溃疡,Duodenal ulcer,消化系统疾病,十二指肠溃疡,中等
+K29.70,GASTRITIS,WY,胃炎,Gastritis,消化系统疾病,胃炎未特指,轻度
+K29.00,GASTRITIS-ACUTE,JXWY,急性胃炎,Acute gastritis,消化系统疾病,急性胃炎,中等
+K29.50,GASTRITIS-CHRONIC,MXWY,慢性胃炎,Chronic atrophic gastritis,消化系统疾病,慢性萎缩性胃炎,中等
+K92.2,GI-BLEED,XHDCX,消化道出血,GI hemorrhage,消化系统疾病,胃肠出血,严重
+K92.0,HEMATEMESIS,TUX,吐血,Hematemesis,消化系统疾病,呕血,严重
+K92.1,MELENA,HXBWTZ,黑便,Melena,消化系统疾病,黑便未特指,严重
+K70.30,ALD-CIRRHOSIS,JJXGGYHB,酒精性肝硬化,Alcoholic cirrhosis,消化系统疾病-肝病,酒精性肝硬化,严重
+K74.60,CIRRHOSIS,GGHYWTZ,肝硬化,Cirrhosis,消化系统疾病-肝病,肝硬化未特指,严重
+K72.00,ACUTE-LIVER-FAIL,JXGSJ,急性肝衰竭,Acute liver failure,消化系统疾病-肝病,急性肝功能衰竭,危重
+K76.7,HEPATORENAL-SYND,GSZZHZ,肝肾综合征,Hepatorenal syndrome,消化系统疾病-肝病,肝肾综合征,危重
+K51.90,UC,KYXJCY,溃疡性结肠炎,Ulcerative colitis,炎症性肠病,溃疡性结肠炎,严重
+K50.90,CROHN,KLEB,克罗恩病,Crohn disease,炎症性肠病,克罗恩病,严重
+K57.90,DIVERTICULITIS,JCXSYWTZ,结肠憩室炎,Diverticulitis,消化系统疾病,憩室炎未特指,中等
+K85.90,PANCREATITIS-ACUTE,JXYXY,急性胰腺炎,Acute pancreatitis,消化系统疾病,急性胰腺炎,严重
+K86.1,PANCREATITIS-CHRONIC,MXYXY,慢性胰腺炎,Chronic pancreatitis,消化系统疾病,慢性胰腺炎,严重
+K80.20,CHOLELITHIASIS,DNJSZWDNDY,胆囊结石,Cholelithiasis,消化系统疾病,胆囊结石无胆囊炎,中等
+K81.9,CHOLECYSTITIS,DNDY,胆囊炎,Cholecystitis,消化系统疾病,胆囊炎,中等
+K83.0,CHOLANGITIS,DGDY,胆管炎,Cholangitis,消化系统疾病,胆管炎,严重
+K65.9,PERITONITIS,FMYWTZ,腹膜炎,Peritonitis,消化系统疾病,腹膜炎未特指,严重
+K40.90,HERNIA-INGUINAL,GWSQ,腹股沟疝,Inguinal hernia,腹壁疾病,腹股沟疝未嵌顿,中等
+K42.9,HERNIA-UMBILICAL,QS,脐疝,Umbilical hernia,腹壁疾病,脐疝未嵌顿,轻度
+K56.60,SBO,XBXCGZ,小肠梗阻,Small bowel obstruction,消化系统急症,部分性小肠梗阻,严重
+K56.41,ILEUS,FJXCGZ,麻痹性肠梗阻,Paralytic ileus,消化系统急症,麻痹性肠梗阻,严重
+K55.0,MESENTERIC-ISCH,JXCXMXQX,急性肠系膜缺血,Acute mesenteric ischemia,消化系统急症,肠系膜血管缺血,危重
+G40.909,EPILEPSY,DX,癫痫,Epilepsy,神经系统疾病,癫痫未特指,严重
+G40.A09,STATUS-EPILEPSY,DXCZZT,癫痫持续状态,Status epilepticus,神经系统疾病,癫痫持续状态,危重
+G20,PARKINSON,PJSB,帕金森病,Parkinson disease,神经系统疾病,帕金森病,严重
+G30.9,ALZHEIMER,ADCDB,阿尔茨海默病,Alzheimer disease,神经系统疾病,阿尔茨海默病未特指,严重
+G31.84,MCI,QDRZSGZ,轻度认知损害,Mild cognitive impairment,神经系统疾病,轻度认知功能障碍,中等
+F03.90,DEMENTIA,CDB,痴呆,Dementia,神经系统疾病,痴呆未特指,严重
+G35,MS,DFXYHB,多发性硬化,Multiple sclerosis,神经系统疾病,多发性硬化症,严重
+G61.0,GBS,JLJBZHZ,吉兰-巴雷综合征,Guillain-Barre syndrome,神经系统疾病,格林巴利综合征,严重
+G70.00,MG,ZWLSSJ,重症肌无力,Myasthenia gravis,神经肌肉疾病,重症肌无力无急性加重,严重
+G43.909,MIGRAINE,PT,偏头痛,Migraine,头痛疾病,偏头痛未特指,中等
+G44.1,VASCULAR-HA,XGXTT,血管性头痛,Vascular headache,头痛疾病,血管性头痛,中等
+G44.209,TTH,ZJXTT,紧张性头痛,Tension-type headache,头痛疾病,紧张型头痛,轻度
+G47.419,NARCOLEPSY,FZXSDBC,发作性睡病,Narcolepsy,睡眠障碍,发作性睡病,中等
+G47.20,CIRCADIAN-DISORDER,ZYRJZSGZ,昼夜节律紊乱,Circadian rhythm sleep disorder,睡眠障碍,昼夜节律睡眠障碍,中等
+G62.9,POLYNEUROPATHY,DFXSJBY,多发性神经病,Polyneuropathy,周围神经病,多发性神经病变,中等
+G56.00,CTS,WGGZHZ,腕管综合征,Carpal tunnel syndrome,周围神经病,腕管综合征,中等
+G51.0,BELL-PALSY,MBSMB,面瘫,Bell palsy,周围神经病,贝尔面瘫,中等
+G93.1,ANOXIC-BRAIN,QYXNSSZ,缺氧性脑损伤,Anoxic brain damage,中枢神经系统损伤,缺氧缺血性脑损伤,严重
+G93.6,CEREBRAL-EDEMA,NSF,脑水肿,Cerebral edema,中枢神经系统损伤,脑水肿,严重
+G03.9,MENINGITIS,NMYWTZ,脑膜炎,Meningitis,神经系统感染,脑膜炎未特指,严重
+G04.90,ENCEPHALITIS,NYWTZ,脑炎,Encephalitis,神经系统感染,脑炎未特指,严重
+N18.9,CKD,MXSZB,慢性肾病,Chronic kidney disease,肾脏疾病,慢性肾脏病未特指,严重
+N18.1,CKD-1,MXSZB1Q,CKD 1期,CKD stage 1,肾脏疾病,慢性肾病1期,轻度
+N18.2,CKD-2,MXSZB2Q,CKD 2期,CKD stage 2,肾脏疾病,慢性肾病2期,轻度
+N18.3,CKD-3,MXSZB3Q,CKD 3期,CKD stage 3,肾脏疾病,慢性肾病3期,中等
+N18.4,CKD-4,MXSZB4Q,CKD 4期,CKD stage 4,肾脏疾病,慢性肾病4期,严重
+N18.5,CKD-5,MXSZB5Q,CKD 5期,CKD stage 5,肾脏疾病,慢性肾病5期,严重
+N18.6,ESRD,MQQSZB,终末期肾病,End stage renal disease,肾脏疾病,终末期肾脏病,严重
+N17.9,AKI,JXSZSS,急性肾损伤,Acute kidney injury,肾脏疾病,急性肾损伤,严重
+N04.9,NEPHROTIC,SZZHZ,肾病综合征,Nephrotic syndrome,肾脏疾病,肾病综合征,严重
+N00.9,NEPHRITIS,JXSJQSXY,急性肾小球肾炎,Acute nephritic syndrome,肾脏疾病,急性肾炎综合征,严重
+N03.9,CHRONIC-GN,MXSJQSXY,慢性肾小球肾炎,Chronic nephritic syndrome,肾脏疾病,慢性肾炎综合征,严重
+N12,PYELONEPHRITIS,SZJYYWTZ,肾盂肾炎,Tubulo-interstitial nephritis,肾脏疾病,肾盂肾炎未特指,严重
+N39.0,UTI,MNLDGR,泌尿道感染,UTI,泌尿系统疾病,尿路感染,中等
+N30.90,CYSTITIS,PGYWTZ,膀胱炎,Cystitis,泌尿系统疾病,膀胱炎未特指,轻度
+N20.0,KIDNEY-STONE,SZJS,肾结石,Kidney stone,泌尿系统疾病,肾结石,中等
+N20.1,URETER-STONE,SNGGJS,输尿管结石,Ureteral stone,泌尿系统疾病,输尿管结石,中等
+N20.2,BLADDER-STONE,PGJS,膀胱结石,Bladder stone,泌尿系统疾病,膀胱结石,中等
+N13.0,HYDRONEPHROSIS,JSS,肾积水,Hydronephrosis,泌尿系统疾病,肾盂积水,中等
+N31.9,NEUROGENIC-BLADDER,SJXPG,神经性膀胱,Neurogenic bladder,泌尿系统疾病,神经源性膀胱,中等
+N40.0,BPH,LXQLXZS,良性前列腺增生,BPH,泌尿系统疾病-男科,良性前列腺增生,轻度
+N41.9,PROSTATITIS,QLXY,前列腺炎,Prostatitis,泌尿系统疾病-男科,前列腺炎,中等

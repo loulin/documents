@@ -1,0 +1,65 @@
+ICD-10代码,速记码,拼音码,中文名称,英文名称,分类,描述,严重程度
+J45.909,ASTHMA,XC,哮喘,Asthma,呼吸系统疾病,哮喘未特指,中等
+J45.20,ASTHMA-MILD-PERS,QDZCCXXC,轻度持续性哮喘,Mild persistent asthma,呼吸系统疾病,轻度持续性哮喘,轻度
+J45.30,ASTHM-MOD-PERS,ZDZCCXXC,中度持续性哮喘,Moderate persistent asthma,呼吸系统疾病,中度持续性哮喘,中等
+J45.40,ASTHMA-SEV-PERS,ZDZCCXXC,重度持续性哮喘,Severe persistent asthma,呼吸系统疾病,重度持续性哮喘,严重
+J45.901,ASTHMA-EXAC,XCJXFZ,哮喘急性发作,Asthma with acute exacerbation,呼吸系统疾病,哮喘急性加重,严重
+J45.902,STATUS-ASTHMA,XCCZZT,哮喘持续状态,Status asthmaticus,呼吸系统疾病,重度哮喘持续状态,危重
+J44.9,COPD,MZFXXTJBWTZ,慢阻肺,COPD,呼吸系统疾病,慢性阻塞性肺疾病,严重
+J44.0,COPD-EXAC,MZFXXTJBJXFZ,慢阻肺急性加重,COPD with acute exacerbation,呼吸系统疾病,慢阻肺急性加重,严重
+J44.1,COPD-AE,MZFXXTJBJXFZ,慢阻肺急性加重,COPD with acute lower respiratory infection,呼吸系统疾病,慢阻肺伴急性下呼吸道感染,严重
+J43.9,EMPHYSEMA,FQ,肺气肿,Emphysema,呼吸系统疾病,肺气肿未特指,中等
+J42,CHRONIC-BRONCH,MXQGY,慢性支气管炎,Chronic bronchitis,呼吸系统疾病,慢性支气管炎未特指,中等
+J18.9,PNEUMONIA,FY,肺炎,Pneumonia,呼吸系统疾病,肺炎未特指,严重
+J18.1,LOBAR-PNA,DYFY,大叶性肺炎,Lobar pneumonia,呼吸系统疾病,大叶性肺炎,严重
+J18.0,BRONCHOPNA,ZQGFY,支气管肺炎,Bronchopneumonia,呼吸系统疾病,支气管肺炎,严重
+J15.0,KLEBSIELLA-PNA,KBXJFY,克雷伯菌肺炎,Klebsiella pneumonia,呼吸系统疾病,肺炎克雷伯菌肺炎,严重
+J15.1,PSEUDO-PNA,TJGNJFY,铜绿假单胞菌肺炎,Pseudomonas pneumonia,呼吸系统疾病,铜绿假单胞菌肺炎,严重
+J15.7,MYCO-PNA,ZJTFY,支原体肺炎,Mycoplasma pneumonia,呼吸系统疾病,肺炎支原体肺炎,中等
+J12.9,VIRAL-PNA,BDXFY,病毒性肺炎,Viral pneumonia,呼吸系统疾病,病毒性肺炎未特指,中等
+J13,PNEUMO-PNA,FJQJFY,肺炎球菌肺炎,Pneumococcal pneumonia,呼吸系统疾病,肺炎链球菌肺炎,严重
+J69.0,ASPIRATION-PNA,WXFY,吸入性肺炎,Aspiration pneumonia,呼吸系统疾病,误吸性肺炎,严重
+J95.851,VAP,HXJXGFY,呼吸机相关性肺炎,Ventilator associated pneumonia,呼吸系统疾病,呼吸机相关肺炎,严重
+J85.2,LUNG-ABSCESS,FNZ,肺脓肿,Lung abscess,呼吸系统疾病,肺脓肿未伴肺炎,严重
+J86.9,EMPYEMA,NXJNZ,脓胸,Pyothorax,呼吸系统疾病,脓胸未特指,严重
+J90,PLEURAL-EFFUSION,XQJS,胸腔积液,Pleural effusion,呼吸系统疾病,胸腔积液未特指,中等
+J94.2,HEMOTHORAX,XQJx,血胸,Hemothorax,呼吸系统疾病,胸腔积血,严重
+J93.9,PNEUMOTHORAX,QX,气胸,Pneumothorax,呼吸系统疾病,气胸未特指,中等
+J93.0,SPONT-PTX,ZFQX,自发性气胸,Spontaneous tension pneumothorax,呼吸系统疾病,自发性气胸,严重
+J93.11,PRIMARY-PTX,YFXZFQX,原发性自发气胸,Primary spontaneous pneumothorax,呼吸系统疾病,原发性自发性气胸,中等
+J93.12,SECOND-PTX,JFXZFQX,继发性自发气胸,Secondary spontaneous pneumothorax,呼吸系统疾病,继发性自发性气胸,严重
+J93.83,TENSION-PTX,ZLDQX,张力性气胸,Tension pneumothorax,呼吸系统疾病,张力性气胸,危重
+A15.0,TB-LUNG,FJH,肺结核,Pulmonary tuberculosis,呼吸系统疾病-感染,肺结核涂片阳性,严重
+A15.5,TB-LARYNX,HJHJH,喉结核,Tuberculosis of larynx,呼吸系统疾病-感染,喉结核,严重
+A15.6,TB-PLEURAL,JHMXJY,结核性胸膜炎,Tuberculous pleurisy,呼吸系统疾病-感染,结核性胸腔积液,严重
+A16.2,TB-NO-BACT,FJHWXJXXZ,肺结核无细菌学证实,Tuberculosis of lung without bacteriological confirmation,呼吸系统疾病-感染,肺结核细菌学阴性,中等
+J84.10,IPF,TZXFTJHB,特发性肺纤维化,Idiopathic pulmonary fibrosis,间质性肺病,特发性肺间质纤维化,严重
+J84.89,ILD,JZXFB,间质性肺病,Interstitial lung disease,间质性肺病,其他间质性肺疾病,严重
+J84.17,NSIP,FTXXFB,非特异性间质性肺炎,Nonspecific interstitial pneumonitis,间质性肺病,NSIP,严重
+J96.00,ACUTE-RF,JXHXSJ,急性呼吸衰竭,Acute respiratory failure,呼吸衰竭,急性呼吸功能衰竭,危重
+J96.10,CHRONIC-RF,MXHXSJ,慢性呼吸衰竭,Chronic respiratory failure,呼吸衰竭,慢性呼吸功能衰竭,严重
+J96.20,ACUTE-ON-CRF,MXJXJXHXSJ,慢性呼衰急性加重,Acute on chronic respiratory failure,呼吸衰竭,慢性呼吸衰竭急性加重,危重
+J80,ARDS,JXHXZPZHZ,急性呼吸窘迫综合征,ARDS,呼吸衰竭,成人呼吸窘迫综合征,危重
+J81.0,PULM-EDEMA,FJSFXFS,肺水肿,Pulmonary edema,肺循环疾病,急性肺水肿,危重
+J47.9,BRONCHIECTASIS,ZQGKZ,支气管扩张,Bronchiectasis,慢性气道病,支气管扩张症,中等
+J47.0,BRONCHIECT-EXAC,ZQGKZJXFZ,支气管扩张急性加重,Bronchiectasis with acute exacerbation,慢性气道病,支气管扩张急性加重,严重
+J98.01,BRONCHOSPASM,ZQGJL,支气管痉挛,Acute bronchospasm,气道反应性疾病,急性支气管痉挛,中等
+J98.11,ATELECTASIS,FBZ,肺不张,Atelectasis,肺实质疾病,肺不张,中等
+J98.4,PULM-COLLAPSE,FDXTS,肺萎陷,Pulmonary collapse,肺实质疾病,其他肺萎陷,严重
+J34.2,NASAL-POLYP,BQX,鼻息肉,Deviated nasal septum,上气道疾病,鼻中隔偏曲,轻度
+J06.9,URI,SGHXDGR,上呼吸道感染,Upper respiratory infection,上气道感染,急性上呼吸道感染,轻度
+J20.9,ACUTE-BRONCH,JXZQGY,急性支气管炎,Acute bronchitis,下气道感染,急性支气管炎,中等
+J30.1,ALLERGIC-RHINITIS,GMXBY,过敏性鼻炎,Allergic rhinitis,变态反应性疾病,花粉性鼻炎,轻度
+J32.9,CHRONIC-SINUS,MXBDY,慢性鼻窦炎,Chronic sinusitis,慢性鼻窦疾病,慢性鼻窦炎未特指,轻度
+G47.33,OSA,ZSDXHXZT,阻塞性睡眠呼吸暂停,Obstructive sleep apnea,睡眠呼吸障碍,阻塞性睡眠呼吸暂停,中等
+G47.30,SLEEP-APNEA,SDXHXZTZHZ,睡眠呼吸暂停综合征,Sleep apnea,睡眠呼吸障碍,睡眠呼吸暂停未特指,中等
+J68.0,BRONCH-CHEM,HXWZQGY,化学物质致支气管炎,Bronchitis due to chemicals,职业性肺病,化学性支气管炎,严重
+J63.0,SILICOSIS,GFB,矽肺,Silicosis,职业性肺病,矽肺病,严重
+J62.0,PNEUMOCONIOSIS,CFFB,尘肺,Pneumoconiosis due to coal dust,职业性肺病,煤工尘肺,严重
+D86.9,SARCOID,JZB,结节病,Sarcoidosis,肉芽肿性疾病,结节病未特指,中等
+D86.0,SARCOID-LUNG,FJZB,肺结节病,Sarcoidosis of lung,肉芽肿性疾病,肺结节病,中等
+Z87.01,HX-PNEUMONIA,FYBS,肺炎病史,Personal history of pneumonia,既往呼吸系统病史,既往肺炎史,管理
+Z87.09,HX-RESP,HXXTJBBS,呼吸系统疾病史,Personal history of respiratory disease,既往呼吸系统病史,既往呼吸系统疾病,管理
+Z43.0,TRACHEOSTOMY,QGQKZT,气管切开状态,Tracheostomy status,呼吸支持状态,气管切开术后,管理
+Z99.11,VENT-DEPEND,YLHXJ,依赖呼吸机,Dependence on ventilator,呼吸支持状态,呼吸机依赖状态,管理
+Z99.12,O2-LONG-TERM,CQJYYZL,长期家庭氧疗,Long-term oxygen therapy,呼吸支持状态,长期氧疗,管理

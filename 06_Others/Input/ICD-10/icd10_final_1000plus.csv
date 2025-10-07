@@ -1,0 +1,1039 @@
+ICD-10代码,速记码,拼音码,中文名称,英文名称,分类,描述,严重程度
+E10,T1DM,1XTNB,1型糖尿病,Type 1 diabetes mellitus,主要诊断,胰岛素依赖性糖尿病,严重
+E10.0,T1DM-COMA,1XTNBBHM,1型糖尿病伴昏迷,Type 1 diabetes mellitus with coma,并发症,1型糖尿病伴发昏迷状态,危重
+E10.1,T1DM-KA,1XTNBBTZSSZD,1型糖尿病伴酮症酸中毒,Type 1 diabetes mellitus with ketoacidosis,并发症,1型糖尿病伴发酮症酸中毒,危重
+E10.2,T1DM-KIDNEY,1XTNBBSZBJZ,1型糖尿病伴肾脏并发症,Type 1 diabetes mellitus with kidney complications,并发症,1型糖尿病性肾病,严重
+E10.3,T1DM-EYE,1XTNBBYBBJZ,1型糖尿病伴眼部并发症,Type 1 diabetes mellitus with ophthalmic complications,并发症,1型糖尿病性视网膜病变,严重
+E10.4,T1DM-NEURO,1XTNBBSJXTBJZ,1型糖尿病伴神经系统并发症,Type 1 diabetes mellitus with neurological complications,并发症,1型糖尿病性神经病变,严重
+E10.5,T1DM-CIRCU,1XTNBBXHXTBJZ,1型糖尿病伴循环系统并发症,Type 1 diabetes mellitus with circulatory complications,并发症,1型糖尿病性血管病变,严重
+E10.6,T1DM-OTHER,1XTNBBQTTZBFJZ,1型糖尿病伴其他特指并发症,Type 1 diabetes mellitus with other specified complications,并发症,1型糖尿病伴其他并发症,中等
+E10.7,T1DM-MULTI,1XTNBBDFXBJZ,1型糖尿病伴多发性并发症,Type 1 diabetes mellitus with multiple complications,并发症,1型糖尿病伴多种并发症,严重
+E10.8,T1DM-UNSP,1XTNBBWTZBJZ,1型糖尿病伴未特指并发症,Type 1 diabetes mellitus with unspecified complications,并发症,1型糖尿病伴未明确并发症,中等
+E10.9,T1DM-SIMPLE,1XTNBBBJZ,1型糖尿病不伴并发症,Type 1 diabetes mellitus without complications,主要诊断,无并发症的1型糖尿病,中等
+E11,T2DM,2XTNB,2型糖尿病,Type 2 diabetes mellitus,主要诊断,非胰岛素依赖性糖尿病,中等
+E11.0,T2DM-COMA,2XTNBBHM,2型糖尿病伴昏迷,Type 2 diabetes mellitus with coma,并发症,2型糖尿病伴发昏迷状态,危重
+E11.1,T2DM-KA,2XTNBBTZSSZD,2型糖尿病伴酮症酸中毒,Type 2 diabetes mellitus with ketoacidosis,并发症,2型糖尿病伴发酮症酸中毒,危重
+E11.2,T2DM-KIDNEY,2XTNBBSZBJZ,2型糖尿病伴肾脏并发症,Type 2 diabetes mellitus with kidney complications,并发症,2型糖尿病性肾病,严重
+E11.3,T2DM-EYE,2XTNBBYBBJZ,2型糖尿病伴眼部并发症,Type 2 diabetes mellitus with ophthalmic complications,并发症,2型糖尿病性视网膜病变,严重
+E11.4,T2DM-NEURO,2XTNBBSJXTBJZ,2型糖尿病伴神经系统并发症,Type 2 diabetes mellitus with neurological complications,并发症,2型糖尿病性神经病变,严重
+E11.5,T2DM-CIRCU,2XTNBBXHXTBJZ,2型糖尿病伴循环系统并发症,Type 2 diabetes mellitus with circulatory complications,并发症,2型糖尿病性血管病变,严重
+E11.6,T2DM-OTHER,2XTNBBQTTZBFJZ,2型糖尿病伴其他特指并发症,Type 2 diabetes mellitus with other specified complications,并发症,2型糖尿病伴其他并发症,中等
+E11.7,T2DM-MULTI,2XTNBBDFXBJZ,2型糖尿病伴多发性并发症,Type 2 diabetes mellitus with multiple complications,并发症,2型糖尿病伴多种并发症,严重
+E11.8,T2DM-UNSP,2XTNBBWTZBJZ,2型糖尿病伴未特指并发症,Type 2 diabetes mellitus with unspecified complications,并发症,2型糖尿病伴未明确并发症,中等
+E11.9,T2DM-SIMPLE,2XTNBBBJZ,2型糖尿病不伴并发症,Type 2 diabetes mellitus without complications,主要诊断,无并发症的2型糖尿病,轻度
+E12,MRDM,YYBGXGTNB,营养不良相关糖尿病,Malnutrition-related diabetes mellitus,特殊类型,由营养不良引起的糖尿病,严重
+E12.0,MRDM-COMA,YYBGXGTNBBHM,营养不良相关糖尿病伴昏迷,Malnutrition-related diabetes mellitus with coma,并发症,营养不良相关糖尿病伴昏迷,危重
+E12.1,MRDM-KA,YYBGXGTNBBTZSSZD,营养不良相关糖尿病伴酮症酸中毒,Malnutrition-related diabetes mellitus with ketoacidosis,并发症,营养不良相关糖尿病伴酮症酸中毒,危重
+E12.2,MRDM-KIDNEY,YYBGXGTNBBSZBJZ,营养不良相关糖尿病伴肾脏并发症,Malnutrition-related diabetes mellitus with kidney complications,并发症,营养不良相关糖尿病性肾病,严重
+E12.3,MRDM-EYE,YYBGXGTNBBYBBJZ,营养不良相关糖尿病伴眼部并发症,Malnutrition-related diabetes mellitus with ophthalmic complications,并发症,营养不良相关糖尿病性视网膜病变,严重
+E12.4,MRDM-NEURO,YYBGXGTNBBSJXTBJZ,营养不良相关糖尿病伴神经系统并发症,Malnutrition-related diabetes mellitus with neurological complications,并发症,营养不良相关糖尿病性神经病变,严重
+E12.5,MRDM-CIRCU,YYBGXGTNBBXHXTBJZ,营养不良相关糖尿病伴循环系统并发症,Malnutrition-related diabetes mellitus with circulatory complications,并发症,营养不良相关糖尿病性血管病变,严重
+E12.6,MRDM-OTHER,YYBGXGTNBBQTTZBFJZ,营养不良相关糖尿病伴其他特指并发症,Malnutrition-related diabetes mellitus with other specified complications,并发症,营养不良相关糖尿病伴其他并发症,中等
+E12.7,MRDM-MULTI,YYBGXGTNBBDFXBJZ,营养不良相关糖尿病伴多发性并发症,Malnutrition-related diabetes mellitus with multiple complications,并发症,营养不良相关糖尿病伴多种并发症,严重
+E12.8,MRDM-UNSP,YYBGXGTNBBWTZBJZ,营养不良相关糖尿病伴未特指并发症,Malnutrition-related diabetes mellitus with unspecified complications,并发症,营养不良相关糖尿病伴未明确并发症,中等
+E12.9,MRDM-SIMPLE,YYBGXGTNBBBJZ,营养不良相关糖尿病不伴并发症,Malnutrition-related diabetes mellitus without complications,特殊类型,无并发症的营养不良相关糖尿病,中等
+E13,OSDM,QTTZDTNB,其他特指的糖尿病,Other specified diabetes mellitus,特殊类型,其他类型的糖尿病,中等
+E13.0,OSDM-COMA,QTTZDTNBBHM,其他特指糖尿病伴昏迷,Other specified diabetes mellitus with coma,并发症,其他特指糖尿病伴昏迷,危重
+E13.1,OSDM-KA,QTTZDTNBBTZSSZD,其他特指糖尿病伴酮症酸中毒,Other specified diabetes mellitus with ketoacidosis,并发症,其他特指糖尿病伴酮症酸中毒,危重
+E13.2,OSDM-KIDNEY,QTTZDTNBBSZBJZ,其他特指糖尿病伴肾脏并发症,Other specified diabetes mellitus with kidney complications,并发症,其他特指糖尿病性肾病,严重
+E13.3,OSDM-EYE,QTTZDTNBBYBBJZ,其他特指糖尿病伴眼部并发症,Other specified diabetes mellitus with ophthalmic complications,并发症,其他特指糖尿病性视网膜病变,严重
+E13.4,OSDM-NEURO,QTTZDTNBBSJXTBJZ,其他特指糖尿病伴神经系统并发症,Other specified diabetes mellitus with neurological complications,并发症,其他特指糖尿病性神经病变,严重
+E13.5,OSDM-CIRCU,QTTZDTNBBXHXTBJZ,其他特指糖尿病伴循环系统并发症,Other specified diabetes mellitus with circulatory complications,并发症,其他特指糖尿病性血管病变,严重
+E13.6,OSDM-OTHER,QTTZDTNBBQTTZBFJZ,其他特指糖尿病伴其他特指并发症,Other specified diabetes mellitus with other specified complications,并发症,其他特指糖尿病伴其他并发症,中等
+E13.7,OSDM-MULTI,QTTZDTNBBDFXBJZ,其他特指糖尿病伴多发性并发症,Other specified diabetes mellitus with multiple complications,并发症,其他特指糖尿病伴多种并发症,严重
+E13.8,OSDM-UNSP,QTTZDTNBBWTZBJZ,其他特指糖尿病伴未特指并发症,Other specified diabetes mellitus with unspecified complications,并发症,其他特指糖尿病伴未明确并发症,中等
+E13.9,OSDM-SIMPLE,QTTZDTNBBBJZ,其他特指糖尿病不伴并发症,Other specified diabetes mellitus without complications,特殊类型,无并发症的其他特指糖尿病,中等
+E14,UDM,WTZDTNB,未特指的糖尿病,Unspecified diabetes mellitus,未分类,类型未明确的糖尿病,中等
+E14.0,UDM-COMA,WTZDTNBBHM,未特指糖尿病伴昏迷,Unspecified diabetes mellitus with coma,并发症,未特指糖尿病伴昏迷,危重
+E14.1,UDM-KA,WTZDTNBBTZSSZD,未特指糖尿病伴酮症酸中毒,Unspecified diabetes mellitus with ketoacidosis,并发症,未特指糖尿病伴酮症酸中毒,危重
+E14.2,UDM-KIDNEY,WTZDTNBBSZBJZ,未特指糖尿病伴肾脏并发症,Unspecified diabetes mellitus with kidney complications,并发症,未特指糖尿病性肾病,严重
+E14.3,UDM-EYE,WTZDTNBBYBBJZ,未特指糖尿病伴眼部并发症,Unspecified diabetes mellitus with ophthalmic complications,并发症,未特指糖尿病性视网膜病变,严重
+E14.4,UDM-NEURO,WTZDTNBBSJXTBJZ,未特指糖尿病伴神经系统并发症,Unspecified diabetes mellitus with neurological complications,并发症,未特指糖尿病性神经病变,严重
+E14.5,UDM-CIRCU,WTZDTNBBXHXTBJZ,未特指糖尿病伴循环系统并发症,Unspecified diabetes mellitus with circulatory complications,并发症,未特指糖尿病性血管病变,严重
+E14.6,UDM-OTHER,WTZDTNBBQTTZBFJZ,未特指糖尿病伴其他特指并发症,Unspecified diabetes mellitus with other specified complications,并发症,未特指糖尿病伴其他并发症,中等
+E14.7,UDM-MULTI,WTZDTNBBDFXBJZ,未特指糖尿病伴多发性并发症,Unspecified diabetes mellitus with multiple complications,并发症,未特指糖尿病伴多种并发症,严重
+E14.8,UDM-UNSP,WTZDTNBBWTZBJZ,未特指糖尿病伴未特指并发症,Unspecified diabetes mellitus with unspecified complications,并发症,未特指糖尿病伴未明确并发症,中等
+E14.9,UDM-SIMPLE,WTZDTNBBBJZ,未特指糖尿病不伴并发症,Unspecified diabetes mellitus without complications,未分类,无并发症的未特指糖尿病,轻度
+O24,PDM,RSQTNB,妊娠期糖尿病,Diabetes mellitus in pregnancy,妊娠相关,妊娠期间的糖尿病,中等
+O24.0,PDM-T1,RSQTNB-1X,妊娠前糖尿病-1型,Pre-existing diabetes mellitus - type 1,妊娠相关,孕前已有1型糖尿病,严重
+O24.1,PDM-T2,RSQTNB-2X,妊娠前糖尿病-2型,Pre-existing diabetes mellitus - type 2,妊娠相关,孕前已有2型糖尿病,中等
+O24.2,PDM-MR,RSQTNB-YYBGXG,妊娠前糖尿病-营养不良相关,Pre-existing diabetes mellitus - malnutrition-related,妊娠相关,孕前营养不良相关糖尿病,严重
+O24.3,PDM-UNSP,RSQTNB-WTZ,妊娠前糖尿病-未特指,Pre-existing diabetes mellitus - unspecified,妊娠相关,孕前糖尿病类型未明,中等
+O24.40,GDM,RSQTNB,妊娠期糖尿病,Diabetes mellitus arising in pregnancy,妊娠相关,妊娠期间新发糖尿病,中等
+O24.9,PDM-UNK,RSQTNB-WTZ,妊娠期糖尿病-未特指,Diabetes mellitus in pregnancy - unspecified,妊娠相关,妊娠期糖尿病未详细分类,中等
+P70.0,IOD-GDM,TEHXSEDXTZHZ,胎儿和新生儿低血糖综合征,Syndrome of infant of mother with gestational diabetes,新生儿,妊娠期糖尿病母亲的婴儿综合征,中等
+P70.1,IOD-DM,TEHXSEDXTZHZ,胎儿和新生儿低血糖综合征,Syndrome of infant of a diabetic mother,新生儿,糖尿病母亲的婴儿综合征,中等
+P70.2,NDM,XSEETNB,新生儿糖尿病,Neonatal diabetes mellitus,新生儿,新生儿期糖尿病,严重
+E15,NDHC,FTNBXGXTXHM,非糖尿病性高血糖性昏迷,Nondiabetic hypoglycemic coma,相关疾病,非糖尿病引起的低血糖昏迷,危重
+E16.0,DIH,YWXDXTBBHM,药物性低血糖不伴昏迷,Drug-induced hypoglycemia without coma,相关疾病,药物引起的低血糖,中等
+E16.1,OH,QTDXT,其他低血糖,Other hypoglycemia,相关疾病,其他原因的低血糖,轻度
+E16.2,HU,WTZDXT,未特指的低血糖,Hypoglycemia unspecified,相关疾病,原因不明的低血糖,轻度
+R73.0,AGT,TNLYCG,糖耐量异常,Abnormal glucose tolerance test,糖尿病前期,葡萄糖耐量受损,轻度
+R73.01,IFG,KFDXTSW,空腹血糖受损,Impaired fasting glucose,糖尿病前期,空腹血糖异常,轻度
+R73.02,IGT,TNLYSW,糖耐量受损,Impaired glucose tolerance,糖尿病前期,餐后血糖异常,轻度
+R73.03,PREDIAB,TNBQQ,糖尿病前期,Prediabetes,糖尿病前期,糖尿病前期状态,轻度
+R73.9,HYPERGLY,XTYCGWTZ,血糖异常未特指,Hyperglycemia unspecified,相关疾病,未明确的血糖异常,轻度
+Z79.4,LTINS,CQSYYDSS,长期使用胰岛素,Long term current use of insulin,治疗相关,长期胰岛素治疗状态,管理
+Z79.84,LTOHD,CQSYKFJTXY,长期使用口服降血糖药,Long term current use of oral hypoglycemic drugs,治疗相关,长期口服降糖药治疗,管理
+Z13.1,DMSCREEN,TNBSC,糖尿病筛查,Encounter for screening for diabetes mellitus,预防,糖尿病筛查检查,预防
+Z71.3,DMNUTRI,TNBYSZX,糖尿病饮食咨询,Dietary counseling and surveillance,教育管理,糖尿病饮食指导,管理
+E88.81,METS,DXZHZ,代谢综合征,Metabolic syndrome,代谢疾病,代谢综合征X,中等
+E88.89,OMET,QTTZDXWL,其他特指的代谢紊乱,Other specified metabolic disorders,代谢疾病,其他代谢异常,中等
+E66,OB,FP,肥胖,Obesity,代谢疾病,肥胖症,中等
+E66.0,OB-DIET,YSGLDZ,饮食过量所致的肥胖,Obesity due to excess calories,代谢疾病,单纯性肥胖,中等
+E66.1,OB-DRUG,YWXFP,药物性肥胖,Drug-induced obesity,代谢疾病,药物引起的肥胖,中等
+E66.2,OB-MORB,JDFPBPPTQBZ,极度肥胖伴肺泡通气不足,Morbid obesity with alveolar hypoventilation,代谢疾病,病理性肥胖伴呼吸功能不全,严重
+E66.8,OB-OTH,QTFP,其他肥胖,Other obesity,代谢疾病,其他类型肥胖,中等
+E66.9,OB-UNSP,FPWTZ,肥胖未特指,Obesity unspecified,代谢疾病,肥胖症未分类,中等
+Z68.1,BMI-L,TZZSXHYD,体重指数19.9或以下,Body mass index 19.9 or less,体重管理,低体重指数,轻度
+Z68.2,BMI-N,TZZSZCCHCZ,体重指数20.0-29.9,Body mass index 20.0-29.9,体重管理,正常或超重体重指数,轻度
+Z68.3,BMI-OB,TZZSYPFP,体重指数30.0-39.9,Body mass index 30.0-39.9,体重管理,肥胖体重指数,中等
+Z68.4,BMI-MO,TZZSJJYS,体重指数40.0及以上,Body mass index 40.0 and greater,体重管理,病理性肥胖体重指数,严重
+Z51.6,WLT,JZ,减重治疗,Desensitization to allergens,减重治疗,减肥治疗,管理
+Z71.82,WLC,JZZX,减重咨询,Exercise counseling,减重治疗,减重指导咨询,管理
+O24.4,GDM-GEN,RSQTNB,妊娠期糖尿病,Gestational diabetes mellitus,妊娠糖尿病,妊娠期间新发糖尿病,中等
+O24.41,GDM-DIET,RSQTNB-YSKZ,妊娠期糖尿病-饮食控制,Gestational diabetes mellitus in pregnancy controlled by diet,妊娠糖尿病,饮食控制的妊娠糖尿病,轻度
+O24.42,GDM-INS,RSQTNB-YSSKZ,妊娠期糖尿病-胰岛素控制,Gestational diabetes mellitus in pregnancy controlled by insulin,妊娠糖尿病,胰岛素控制的妊娠糖尿病,中等
+O24.43,GDM-UNCTRL,RSQTNB-WKZ,妊娠期糖尿病-未控制,Gestational diabetes mellitus in pregnancy uncontrolled,妊娠糖尿病,未控制的妊娠糖尿病,严重
+Z86.32,HXGDM,RSTNBS,妊娠糖尿病史,Personal history of gestational diabetes,妊娠糖尿病,既往妊娠糖尿病史,管理
+E79.0,GOUT-PRI,YFXTFGJB,原发性痛风性关节病,Primary gout,痛风,原发性痛风关节炎,中等
+E79.1,GOUT-LEAD,QZDXTFGJB,铅中毒性痛风性关节病,Lead-induced gout,痛风,铅中毒引起的痛风,严重
+E79.2,GOUT-DRUG,YWXTFGJB,药物性痛风性关节病,Drug-induced gout,痛风,药物引起的痛风,中等
+E79.3,GOUT-REN,JFYSZSZHTFGJB,继发于肾脏损害的痛风性关节病,Gout secondary to renal impairment,痛风,肾功能不全继发痛风,严重
+E79.8,PURIN-OTH,QTPHLHLDDXWL,其他嘌呤和嘧啶代谢紊乱,Other disorders of purine and pyrimidine metabolism,痛风,其他嘌呤代谢异常,中等
+E79.9,PURIN-UNSP,PHLHLDDXWLWTZ,嘌呤和嘧啶代谢紊乱未特指,Disorder of purine and pyrimidine metabolism unspecified,痛风,嘌呤代谢异常未分类,中等
+M10.0,GOUT-ID,TFXTF,特发性痛风,Idiopathic gout,痛风,特发性痛风关节炎,中等
+M10.1,GOUT-LEAD2,QZDXTF,铅中毒性痛风,Lead-induced gout,痛风,铅中毒性痛风关节炎,严重
+M10.2,GOUT-DRUG2,YWXTF,药物性痛风,Drug-induced gout,痛风,药物性痛风关节炎,中等
+M10.3,GOUT-REN2,JFYSZSZHTF,继发于肾脏损害的痛风,Gout due to renal impairment,痛风,继发于肾病的痛风,严重
+M10.4,GOUT-SEC,QTJFXTF,其他继发性痛风,Other secondary gout,痛风,其他继发性痛风,中等
+M10.9,GOUT-UNSP,TFWTZ,痛风未特指,Gout unspecified,痛风,痛风未分类,中等
+E83.39,PHOS-OTH,QTLDXHLSQWL,其他磷代谢和磷酸酶紊乱,Other disorders of phosphorus metabolism and phosphatases,高尿酸血症,其他磷代谢异常,轻度
+R82.99,URIN-ABN,NYQTYCGFX,尿液其他异常发现,Other abnormal findings in urine,高尿酸血症,尿液异常包括尿酸,轻度
+C25,PANC-CA,YZEL,胰腺恶性肿瘤,Malignant neoplasm of pancreas,胰腺癌,胰腺癌,危重
+C25.0,PANC-HEAD,YZEL,胰头恶性肿瘤,Malignant neoplasm of head of pancreas,胰腺癌,胰头癌,危重
+C25.1,PANC-BODY,YZEL,胰体恶性肿瘤,Malignant neoplasm of body of pancreas,胰腺癌,胰体癌,危重
+C25.2,PANC-TAIL,YZEL,胰尾恶性肿瘤,Malignant neoplasm of tail of pancreas,胰腺癌,胰尾癌,危重
+C25.3,PANC-DUCT,YZEL,胰腺导管恶性肿瘤,Malignant neoplasm of pancreatic duct,胰腺癌,胰管癌,危重
+C25.4,PANC-ISLET,YDXBEL,胰岛细胞恶性肿瘤,Malignant neoplasm of endocrine pancreas,胰腺癌,胰岛细胞癌,危重
+C25.7,PANC-OTH,YQTBWEL,胰腺其他部位恶性肿瘤,Malignant neoplasm of other parts of pancreas,胰腺癌,胰腺其他部位癌,危重
+C25.8,PANC-OVER,YZCDBWEL,胰腺重叠部位恶性肿瘤,Malignant neoplasm of overlapping sites of pancreas,胰腺癌,胰腺多部位癌,危重
+C25.9,PANC-UNSP,YELWTZ,胰腺恶性肿瘤未特指,Malignant neoplasm of pancreas unspecified,胰腺癌,胰腺癌未分类,危重
+D13.6,PANC-BEN,YLXZL,胰腺良性肿瘤,Benign neoplasm of pancreas,胰腺肿瘤,胰腺良性肿瘤,轻度
+D13.7,ISLET-BEN,YDXBLXZL,胰岛细胞良性肿瘤,Benign neoplasm of endocrine pancreas,胰腺肿瘤,胰岛细胞良性肿瘤,轻度
+K76.0,NAFLD,ZFG,脂肪肝未特指,Fatty liver unspecified,脂肪肝,脂肪肝病,中等
+K75.81,NASH,FJJXZFXGG,非酒精性脂肪性肝病,Nonalcoholic steatohepatitis,脂肪肝,非酒精性脂肪肝,中等
+K70.0,AFLD,JJXZFG,酒精性脂肪肝,Alcoholic fatty liver,脂肪肝,酒精性脂肪肝,中等
+K70.1,AH,JJXGY,酒精性肝炎,Alcoholic hepatitis,脂肪肝,酒精性肝炎,严重
+K70.2,AF,JJXGQWHHX,酒精性肝纤维化和硬化,Alcoholic fibrosis and sclerosis of liver,脂肪肝,酒精性肝硬化,严重
+K70.3,AC,JJXGHX,酒精性肝硬化,Alcoholic cirrhosis of liver,脂肪肝,酒精性肝硬化,严重
+K70.4,AHF,JJXGSJ,酒精性肝衰竭,Alcoholic hepatic failure,脂肪肝,酒精性肝衰竭,危重
+K70.9,ALD-UNSP,JJXGGBWTZ,酒精性肝病未特指,Alcoholic liver disease unspecified,脂肪肝,酒精性肝病未分类,中等
+K72.90,HF,GSJWTZBBHM,肝衰竭未特指不伴昏迷,Hepatic failure unspecified without coma,脂肪肝,肝功能衰竭,危重
+K73.0,CPH,MXCCXGYWTZ,慢性持续性肝炎未特指,Chronic persistent hepatitis not elsewhere classified,脂肪肝,慢性肝炎,严重
+K73.2,CAH,MXHDXGYWTZ,慢性活动性肝炎未特指,Chronic active hepatitis not elsewhere classified,脂肪肝,慢性活动性肝炎,严重
+K73.9,CH-UNSP,MXGYWTZ,慢性肝炎未特指,Chronic hepatitis unspecified,脂肪肝,慢性肝炎未分类,中等
+E00,CRET,XKXJXZSJ,先天性碘缺乏综合征,Congenital iodine-deficiency syndrome,甲状腺疾病,先天性克汀病,严重
+E00.0,CRET-NEUR,XKXJXZSJBSJXTBX,先天性碘缺乏综合征伴神经系统表现,Congenital iodine-deficiency syndrome neurological type,甲状腺疾病,神经性克汀病,严重
+E00.1,CRET-MYX,XKXJXZSJBZXSW,先天性碘缺乏综合征伴粘液性水肿,Congenital iodine-deficiency syndrome myxedematous type,甲状腺疾病,粘液性水肿型克汀病,严重
+E00.2,CRET-MIX,XKXJXZSJBHX,先天性碘缺乏综合征伴混合型,Congenital iodine-deficiency syndrome mixed type,甲状腺疾病,混合型克汀病,严重
+E00.9,CRET-UNSP,XKXJXZSJWTZ,先天性碘缺乏综合征未特指,Congenital iodine-deficiency syndrome unspecified,甲状腺疾病,克汀病未分类,严重
+E01,IOD-REL,JXZJBHQTJXZJB,碘相关性甲状腺肿和其他碘相关性甲状腺疾病,Iodine-deficiency-related thyroid disorders and allied conditions,甲状腺疾病,碘缺乏相关甲状腺病,中等
+E01.0,IOD-GOITRE,JXZDJXZZ,碘缺乏性弥漫性甲状腺肿,Iodine-deficiency-related diffuse goitre,甲状腺疾病,碘缺乏性甲状腺肿,中等
+E01.1,IOD-MULTI,JXZDJXZFJ,碘缺乏性多结节性甲状腺肿,Iodine-deficiency-related multinodular goitre,甲状腺疾病,碘缺乏性多结节甲状腺肿,中等
+E01.2,IOD-GOITRE-US,JXZDJXZZWTZ,碘缺乏性甲状腺肿未特指,Iodine-deficiency-related goitre unspecified,甲状腺疾病,碘缺乏性甲状腺肿未分类,中等
+E01.8,IOD-OTH,QTJXZJB,其他碘缺乏相关性甲状腺疾病,Other iodine-deficiency-related thyroid disorders,甲状腺疾病,其他碘缺乏甲状腺病,中等
+E02,SUBCLIN-HYPO,YLXJXZGNDX,亚临床性甲状腺功能减退,Subclinical iodine-deficiency hypothyroidism,甲状腺疾病,亚临床甲减,轻度
+E03,HYPO,QTJXZGNDX,其他甲状腺功能减退,Other hypothyroidism,甲状腺疾病,甲状腺功能减退症,中等
+E03.0,CONG-HYPO,XKXJXZGNDX,先天性甲状腺功能减退伴弥漫性甲状腺肿,Congenital hypothyroidism with diffuse goitre,甲状腺疾病,先天性甲减伴甲状腺肿,严重
+E03.1,CONG-HYPO-NG,XKXJXZGNDXBMFJXZZ,先天性甲状腺功能减退不伴弥漫性甲状腺肿,Congenital hypothyroidism without goitre,甲状腺疾病,先天性甲减不伴甲状腺肿,严重
+E03.2,DRUG-HYPO,YWJQTWZHQ,药物及其他外源性物质所致甲状腺功能减退,Hypothyroidism due to medicaments and other exogenous substances,甲状腺疾病,药物性甲减,中等
+E03.3,POST-INF-HYPO,GRHJXZGNDX,感染后甲状腺功能减退,Postinfectious hypothyroidism,甲状腺疾病,感染后甲减,中等
+E03.4,ATRO-HYPO,JXZWSJXZGNDX,甲状腺萎缩所致甲状腺功能减退,Atrophy of thyroid acquired,甲状腺疾病,甲状腺萎缩性甲减,中等
+E03.5,MYX-COMA,ZXSWHM,粘液性水肿昏迷,Myxoedema coma,甲状腺疾病,粘液水肿昏迷,危重
+E03.8,HYPO-OTH,QTJXZGNDX,其他特指甲状腺功能减退,Other specified hypothyroidism,甲状腺疾病,其他甲减,中等
+E03.9,HYPO-UNSP,JXZGNDXWTZ,甲状腺功能减退未特指,Hypothyroidism unspecified,甲状腺疾病,甲减未分类,中等
+E04,NONTOX-GOITRE,FDXJXZZ,非毒性甲状腺肿,Other nontoxic goitre,甲状腺疾病,非毒性甲状腺肿,轻度
+E04.0,NONTOX-DIF,FDXMFJXZZ,非毒性弥漫性甲状腺肿,Nontoxic diffuse goitre,甲状腺疾病,非毒性弥漫性甲状腺肿,轻度
+E04.1,NONTOX-UNI,FDXDJJXZZ,非毒性单结节性甲状腺肿,Nontoxic single thyroid nodule,甲状腺疾病,非毒性单结节甲状腺肿,轻度
+E04.2,NONTOX-MULTI,FDXDJJXZZ,非毒性多结节性甲状腺肿,Nontoxic multinodular goitre,甲状腺疾病,非毒性多结节甲状腺肿,中等
+E04.8,NONTOX-OTH,QTFDXJXZZ,其他特指非毒性甲状腺肿,Other specified nontoxic goitre,甲状腺疾病,其他非毒性甲状腺肿,轻度
+E04.9,NONTOX-UNSP,FDXJXZZWTZ,非毒性甲状腺肿未特指,Nontoxic goitre unspecified,甲状腺疾病,非毒性甲状腺肿未分类,轻度
+E05,HYPER,JXZGNKJ,甲状腺毒症,Thyrotoxicosis,甲状腺疾病,甲状腺功能亢进症,中等
+E05.0,HYPER-DIF-GOITRE,DXJXZZJXZDZ,毒性弥漫性甲状腺肿,Thyrotoxicosis with diffuse goitre,甲状腺疾病,弥漫性毒性甲状腺肿,中等
+E05.1,HYPER-UNI-NOD,DXDJJJXZDZ,毒性单结节性甲状腺肿,Thyrotoxicosis with toxic single thyroid nodule,甲状腺疾病,毒性单结节甲状腺肿,中等
+E05.2,HYPER-MULTI-NOD,DXDJJJXZDZ,毒性多结节性甲状腺肿,Thyrotoxicosis with toxic multinodular goitre,甲状腺疾病,毒性多结节甲状腺肿,中等
+E05.3,HYPER-ECTOP,YWTJXZZDZ,异位甲状腺组织甲状腺毒症,Thyrotoxicosis from ectopic thyroid tissue,甲状腺疾病,异位甲状腺毒症,中等
+E05.4,HYPER-FACTIT,RWXJXZDZ,人为性甲状腺毒症,Thyrotoxicosis factitia,甲状腺疾病,人工甲亢,中等
+E05.5,HYPER-CRISIS,JXZWJ,甲状腺危机,Thyroid crisis or storm,甲状腺疾病,甲亢危象,危重
+E05.8,HYPER-OTH,QTJXZDZ,其他甲状腺毒症,Other thyrotoxicosis,甲状腺疾病,其他甲状腺毒症,中等
+E05.9,HYPER-UNSP,JXZDZWTZ,甲状腺毒症未特指,Thyrotoxicosis unspecified,甲状腺疾病,甲状腺毒症未分类,中等
+E06,THYROID,JXZY,甲状腺炎,Thyroiditis,甲状腺疾病,甲状腺炎,中等
+E06.0,ACUTE-THYROID,JXJXZY,急性甲状腺炎,Acute thyroiditis,甲状腺疾病,急性甲状腺炎,中等
+E06.1,SUBACUTE-THYROID,YJXJXZY,亚急性甲状腺炎,Subacute thyroiditis,甲状腺疾病,亚急性甲状腺炎,中等
+E06.2,CHRONIC-THYROID,MXJXZY,慢性甲状腺炎伴一过性甲状腺毒症,Chronic thyroiditis with transient thyrotoxicosis,甲状腺疾病,慢性甲状腺炎,中等
+E06.3,AUTO-THYROID,ZSMXJXZY,自身免疫性甲状腺炎,Autoimmune thyroiditis,甲状腺疾病,自身免疫性甲状腺炎,中等
+E06.4,DRUG-THYROID,YWXJXZY,药物性甲状腺炎,Drug-induced thyroiditis,甲状腺疾病,药物性甲状腺炎,中等
+E06.5,RIEDEL-THYROID,QTTSJXZY,其他慢性甲状腺炎,Riedel thyroiditis,甲状腺疾病,Riedel甲状腺炎,中等
+E06.9,THYROIDITIS-UNSP,JXZYWTZ,甲状腺炎未特指,Thyroiditis unspecified,甲状腺疾病,甲状腺炎未分类,中等
+E07,THYROID-OTH,QTJXZJB,其他甲状腺疾病,Other disorders of thyroid,甲状腺疾病,其他甲状腺疾病,轻度
+E07.0,HYPER-SECRETION,JXZSSGJFM,甲状腺素分泌过多,Hypersecretion of calcitonin,甲状腺疾病,甲状腺素分泌过多,轻度
+E07.1,DYSHORMON-GOITRE,JXZSSHJXZZ,甲状腺激素生成障碍性甲状腺肿,Dyshormogenetic goitre,甲状腺疾病,激素合成障碍性甲状腺肿,中等
+E07.8,THYROID-SPEC-OTH,QTTZJXZJB,其他特指甲状腺疾病,Other specified disorders of thyroid,甲状腺疾病,其他特指甲状腺病,轻度
+E07.9,THYROID-DIS-UNSP,JXZJBWTZ,甲状腺疾病未特指,Disorder of thyroid unspecified,甲状腺疾病,甲状腺疾病未分类,轻度
+C73,THYROID-CA,JXZEL,甲状腺恶性肿瘤,Malignant neoplasm of thyroid gland,甲状腺肿瘤,甲状腺癌,危重
+C73.0,PAPIL-CA,RZXJXZEL,乳头状甲状腺癌,Papillary carcinoma of thyroid,甲状腺肿瘤,乳头状甲状腺癌,危重
+C73.1,FOLLIC-CA,LZBXJXZEL,滤泡性甲状腺癌,Follicular carcinoma of thyroid,甲状腺肿瘤,滤泡性甲状腺癌,危重
+C73.2,MEDUL-CA,SZXJXZEL,髓样甲状腺癌,Medullary carcinoma of thyroid,甲状腺肿瘤,髓样甲状腺癌,危重
+C73.3,ANAPLAS-CA,WTXTJXZEL,未分化甲状腺癌,Anaplastic carcinoma of thyroid,甲状腺肿瘤,未分化甲状腺癌,危重
+C73.9,THYROID-CA-US,JXZELWTZ,甲状腺恶性肿瘤未特指,Malignant neoplasm of thyroid gland unspecified,甲状腺肿瘤,甲状腺癌未分类,危重
+D34,THYROID-BEN,JXZLXZL,甲状腺良性肿瘤,Benign neoplasm of thyroid gland,甲状腺肿瘤,甲状腺良性肿瘤,轻度
+D44.0,THYROID-UNC,JXZWDXXZL,甲状腺不确定性肿瘤,Neoplasm of uncertain behavior of thyroid gland,甲状腺肿瘤,甲状腺不确定性肿瘤,中等
+Z90.02,THYROID-ABS,HQJXZQCSSZT,获得性甲状腺全切除术后状态,Acquired absence of thyroid part of endocrine glands,甲状腺手术,甲状腺切除后,管理
+Z98.89,POST-THYROID,JXZSSHJZT,甲状腺手术后状态,Other specified postprocedural states,甲状腺手术,甲状腺手术后状态,管理
+E78,LIPID,XZDDXWL,脂蛋白代谢紊乱和其他脂血症,Disorders of lipoprotein metabolism and other lipidaemias,血脂异常,脂质代谢异常,中等
+E78.0,FAM-HYPERCHOL,JZXGGZC,家族性高胆固醇血症,Familial hypercholesterolaemia,血脂异常,家族性高胆固醇血症,中等
+E78.1,FAM-HYPERTG,JZXGGYSZ,家族性高甘油三酯血症,Familial hypertriglyceridaemia,血脂异常,家族性高甘油三酯血症,中等
+E78.2,MIXED-HYPERLIP,HXGXZ,混合性高脂血症,Mixed hyperlipidaemia,血脂异常,混合性高脂血症,中等
+E78.3,HYPERCHYLOM,GLWXZ,高乳糜微粒血症,Hyperchylomicronaemia,血脂异常,高乳糜微粒血症,中等
+E78.4,HYPERLIP-OTH,QTGXZ,其他高脂血症,Other hyperlipidaemia,血脂异常,其他高脂血症,中等
+E78.5,HYPERLIP-UNSP,GXZWTZ,高脂血症未特指,Hyperlipidaemia unspecified,血脂异常,高脂血症未分类,中等
+E78.6,LIPOPROT-DEF,XDBQX,脂蛋白缺乏症,Lipoprotein deficiency,血脂异常,脂蛋白缺乏症,中等
+E78.8,LIPID-OTH,QTXZDDXWL,其他脂蛋白代谢紊乱,Other disorders of lipoprotein metabolism,血脂异常,其他脂蛋白代谢异常,中等
+E78.9,LIPID-UNSP,XZDDXWLWTZ,脂蛋白代谢紊乱未特指,Disorder of lipoprotein metabolism unspecified,血脂异常,脂蛋白代谢紊乱未分类,中等
+I10,HTN-PRIM,YFXGXY,原发性高血压,Essential hypertension,血脂异常,原发性高血压,中等
+I11,HTN-HEART,GXYBXJB,高血压性心脏病,Hypertensive heart disease,血脂异常,高血压心脏病,严重
+I12,HTN-KIDNEY,GXYBSZJB,高血压性肾脏病,Hypertensive kidney disease,血脂异常,高血压肾病,严重
+I13,HTN-HEART-KID,GXYBXZJB,高血压性心脏和肾脏病,Hypertensive heart and kidney disease,血脂异常,高血压心肾疾病,严重
+Z79.899,STATIN,CQSYHZDLJ,长期使用降胆固醇药,Long term current use of other medications,血脂异常,长期他汀类药物治疗,管理
+E27,ADRENAL,QTSXSJB,其他肾上腺疾病,Other disorders of adrenal gland,肾上腺疾病,肾上腺疾病,中等
+E27.0,ADRENAL-HYPER,SXSJB,肾上腺皮质功能亢进症,Adrenocortical hyperfunction,肾上腺疾病,库欣综合征,严重
+E27.1,ADDISON,YFXSXPQGNR,原发性肾上腺皮质功能不全,Primary adrenocortical insufficiency,肾上腺疾病,艾迪生病,严重
+E27.2,ADDISON-CRISIS,ADSSWJ,艾迪生危机,Addisonian crisis,肾上腺疾病,肾上腺危象,危重
+E27.3,DRUG-ADRENAL,YWXSXPQGNR,药物性肾上腺皮质功能不全,Drug-induced adrenocortical insufficiency,肾上腺疾病,药物性肾上腺功能不全,中等
+E27.4,ADRENAL-INSUFF-OTH,QTSXPQGNBQWTZ,其他和未特指肾上腺皮质功能不全,Other and unspecified adrenocortical insufficiency,肾上腺疾病,其他肾上腺皮质功能不全,中等
+E27.5,ADRENAL-MED-HYPER,SXSZGN,肾上腺髓质功能亢进症,Adrenomedullary hyperfunction,肾上腺疾病,嗜铬细胞瘤,严重
+E27.8,ADRENAL-SPEC-OTH,QTTZSXSJB,其他特指肾上腺疾病,Other specified disorders of adrenal gland,肾上腺疾病,其他特指肾上腺疾病,中等
+E27.9,ADRENAL-UNSP,SXSJBWTZ,肾上腺疾病未特指,Disorder of adrenal gland unspecified,肾上腺疾病,肾上腺疾病未分类,中等
+E26,ALDOSTER-HYPER,QTGYZ,醛固酮增多症,Hyperaldosteronism,肾上腺疾病,原发性醛固酮增多症,中等
+E26.0,PRIM-ALDOSTER,YFXQGYZ,原发性醛固酮增多症,Primary hyperaldosteronism,肾上腺疾病,原发性醛固酮增多症,中等
+E26.1,SEC-ALDOSTER,JFXQGYZ,继发性醛固酮增多症,Secondary hyperaldosteronism,肾上腺疾病,继发性醛固酮增多症,中等
+E26.8,ALDOSTER-OTH,QTQGYZ,其他醛固酮增多症,Other hyperaldosteronism,肾上腺疾病,其他醛固酮增多症,中等
+E26.9,ALDOSTER-UNSP,QGYZWTZ,醛固酮增多症未特指,Hyperaldosteronism unspecified,肾上腺疾病,醛固酮增多症未分类,中等
+C74,ADRENAL-CA,SXSZEL,肾上腺恶性肿瘤,Malignant neoplasm of adrenal gland,肾上腺肿瘤,肾上腺癌,危重
+D35.0,ADRENAL-BEN,SXSLXZL,肾上腺良性肿瘤,Benign neoplasm of adrenal gland,肾上腺肿瘤,肾上腺良性肿瘤,轻度
+E83.5,CALCIUM-HIGH,GGJZ,高钙血症,Disorders of calcium metabolism,钙磷代谢,高钙血症,中等
+E83.51,CALCIUM-LOW,DGJZ,低钙血症,Hypocalcemia,钙磷代谢,低钙血症,中等
+E83.30,PHOS-HIGH,GLXZ,高磷血症,Disorders of phosphorus metabolism,钙磷代谢,高磷血症,中等
+E83.31,PHOS-LOW,DLXZ,低磷血症,Familial hypophosphatemia,钙磷代谢,低磷血症,中等
+E55,VIT-D-DEF,WDSQQX,维生素D缺乏,Vitamin D deficiency,钙磷代谢,维生素D缺乏,中等
+E55.0,RICKETS,GLRLB,佝偻病,Rickets active,钙磷代谢,活动性佝偻病,严重
+E55.9,VIT-D-DEF-UNSP,WDSQQXWTZ,维生素D缺乏未特指,Vitamin D deficiency unspecified,钙磷代谢,维生素D缺乏未分类,中等
+E64.3,RICKETS-SEQ,GLRLBHZ,佝偻病后遗症,Sequelae of rickets,钙磷代谢,佝偻病后遗症,轻度
+M80,OSTEOPOROSIS-FRAC,GZSSBBGZ,骨质疏松伴骨折,Osteoporosis with pathological fracture,钙磷代谢,骨质疏松性骨折,严重
+M81,OSTEOPOROSIS,GZSS,骨质疏松不伴骨折,Osteoporosis without pathological fracture,钙磷代谢,骨质疏松症,中等
+M81.0,POST-MENO-OSTEO,JJHGZSS,绝经后骨质疏松,Postmenopausal osteoporosis,钙磷代谢,绝经后骨质疏松,中等
+M81.1,IDIO-OSTEO,TFXGZSS,特发性骨质疏松,Idiopathic osteoporosis,钙磷代谢,特发性骨质疏松,中等
+M81.8,OSTEO-OTH,QTGZSS,其他骨质疏松,Other osteoporosis,钙磷代谢,其他骨质疏松,中等
+M83,OSTEOMALACIA,GRHS,骨软化症,Adult osteomalacia,钙磷代谢,成人骨软化症,中等
+E25,PARA-HYPER,JZPQGNG,甲状旁腺功能亢进和其他甲状旁腺疾病,Disorders of parathyroid gland,甲状旁腺疾病,甲状旁腺功能亢进,中等
+E25.0,PARA-HYPER-PRIM,YFXJZPQGNG,原发性甲状旁腺功能亢进,Primary hyperparathyroidism,甲状旁腺疾病,原发性甲旁亢,中等
+E25.1,PARA-HYPER-SEC,JFXJZPQGNG,继发性甲状旁腺功能亢进,Secondary hyperparathyroidism,甲状旁腺疾病,继发性甲旁亢,中等
+E25.2,PARA-HYPER-OTH,QTJZPQGNG,其他甲状旁腺功能亢进,Other hyperparathyroidism,甲状旁腺疾病,其他甲旁亢,中等
+E20,PARA-HYPO,JZPQGNDX,甲状旁腺功能减退,Hypoparathyroidism,甲状旁腺疾病,甲状旁腺功能减退,中等
+E20.0,IDIO-PARA-HYPO,TFXJZPQGNDX,特发性甲状旁腺功能减退,Idiopathic hypoparathyroidism,甲状旁腺疾病,特发性甲旁减,中等
+E20.1,PSEUDO-PARA-HYPO,WXJZPQGNDX,假性甲状旁腺功能减退,Pseudohypoparathyroidism,甲状旁腺疾病,假性甲旁减,中等
+E20.8,PARA-HYPO-OTH,QTJZPQGNDX,其他甲状旁腺功能减退,Other hypoparathyroidism,甲状旁腺疾病,其他甲旁减,中等
+E20.9,PARA-HYPO-UNSP,JZPQGNDXWTZ,甲状旁腺功能减退未特指,Hypoparathyroidism unspecified,甲状旁腺疾病,甲旁减未分类,中等
+C75.0,PARA-CA,JZPQZEL,甲状旁腺恶性肿瘤,Malignant neoplasm of parathyroid gland,甲状旁腺肿瘤,甲状旁腺癌,危重
+D35.1,PARA-BEN,JZPQLXZL,甲状旁腺良性肿瘤,Benign neoplasm of parathyroid gland,甲状旁腺肿瘤,甲状旁腺良性肿瘤,轻度
+E22,PITUITARY-HYPER,CTGNG,垂体功能亢进,Hyperfunction of pituitary gland,垂体疾病,垂体功能亢进,中等
+E22.0,ACROMEGALY,ZDFD,肢端肥大症,Acromegaly and pituitary gigantism,垂体疾病,肢端肥大症,中等
+E22.1,HYPERPROLACT,GCSZYJZ,高催乳素血症,Hyperprolactinaemia,垂体疾病,高催乳素血症,中等
+E22.2,SIADH,KLDGSSFJZHZ,抗利尿激素分泌不当综合征,Syndrome of inappropriate secretion of antidiuretic hormone,垂体疾病,SIADH综合征,中等
+E22.8,PITUITARY-HYPER-OTH,QTCTGN,其他垂体功能亢进,Other hyperfunction of pituitary gland,垂体疾病,其他垂体功能亢进,中等
+E22.9,PITUITARY-HYPER-UNSP,CTGNWTZ,垂体功能亢进未特指,Hyperfunction of pituitary gland unspecified,垂体疾病,垂体功能亢进未分类,中等
+E23,PITUITARY-HYPO,CTGNDX,垂体功能减退,Hypofunction and other disorders of pituitary gland,垂体疾病,垂体功能减退,严重
+E23.0,PANHYPOPITU,QCTGNDX,全垂体功能减退,Hypopituitarism,垂体疾病,垂体功能减退症,严重
+E23.1,DRUG-PITUITARY,YWXCTGNDX,药物性垂体功能减退,Drug-induced hypopituitarism,垂体疾病,药物性垂体功能减退,中等
+E23.2,DIABETES-INSIP,NDC,尿崩症,Diabetes insipidus,垂体疾病,尿崩症,中等
+E23.3,POST-PROC-PITUITARY,SSHCTGN,术后垂体功能不全,Hypothalamic dysfunction not elsewhere classified,垂体疾病,术后垂体功能不全,严重
+E23.6,PITUITARY-OTH,QTCTWL,其他垂体紊乱,Other disorders of pituitary gland,垂体疾病,其他垂体疾病,中等
+E23.7,PITUITARY-UNSP,CTWLWTZ,垂体紊乱未特指,Disorder of pituitary gland unspecified,垂体疾病,垂体疾病未分类,中等
+D35.2,PITUITARY-BEN,CTLXZL,垂体良性肿瘤,Benign neoplasm of pituitary gland,垂体肿瘤,垂体腺瘤,轻度
+C75.1,PITUITARY-CA,CTZEL,垂体恶性肿瘤,Malignant neoplasm of pituitary gland,垂体肿瘤,垂体癌,危重
+D44.3,PITUITARY-UNC,CTWDXXZL,垂体不确定性肿瘤,Neoplasm of uncertain behavior of pituitary gland,垂体肿瘤,垂体不确定性肿瘤,中等
+I15,HTN-SEC,JFXGXY,继发性高血压,Secondary hypertension,高血压,继发性高血压,中等
+I15.0,HTN-RENO,SXGXY,肾血管性高血压,Renovascular hypertension,高血压,肾血管性高血压,严重
+I15.1,HTN-RENAL,SZXGXY,其他肾性高血压,Hypertension secondary to other renal disorders,高血压,肾性高血压,严重
+I15.2,HTN-ENDO,NFJXJBGXY,内分泌疾病所致高血压,Hypertension secondary to endocrine disorders,高血压,内分泌性高血压,中等
+I15.8,HTN-SEC-OTH,QTJFXGXY,其他继发性高血压,Other secondary hypertension,高血压,其他继发性高血压,中等
+I15.9,HTN-SEC-UNSP,JFXGXYWTZ,继发性高血压未特指,Secondary hypertension unspecified,高血压,继发性高血压未分类,中等
+I16,HTN-CRISIS,GXYWJ,高血压危机,Hypertensive crisis,高血压,高血压危象,危重
+I16.0,HTN-URGENCY,GXYFY,高血压急症,Hypertensive urgency,高血压,高血压急症,危重
+I16.1,HTN-ENCEPH,GXYNB,高血压脑病,Hypertensive encephalopathy,高血压,高血压脑病,危重
+I16.9,HTN-CRISIS-UNSP,GXYWJWTZ,高血压危机未特指,Hypertensive crisis unspecified,高血压,高血压危机未分类,危重
+I67.4,HTN-ENCEPH-CHR,MXGXYNB,慢性高血压脑病,Hypertensive encephalopathy,高血压脑病,慢性高血压脑病,严重
+H35.0,HTN-RETINO,GXYSWMB,高血压视网膜病变,Hypertensive retinopathy,高血压并发症,高血压视网膜病变,严重
+I10.1,BENIGN-HTN,LXGXY,良性高血压,Benign hypertension,高血压,良性高血压,轻度
+I10.9,MALIGN-HTN,EXGXY,恶性高血压,Malignant hypertension,高血压,恶性高血压,危重
+O10,HTN-PREG,RSQGXY,妊娠期高血压疾病,Pre-existing hypertension complicating pregnancy,妊娠高血压,妊娠期高血压,中等
+O10.0,HTN-PREG-ESS,RSQYFXGXY,妊娠合并原发性高血压,Pre-existing essential hypertension complicating pregnancy,妊娠高血压,妊娠合并原发性高血压,中等
+O10.1,HTN-PREG-SEC,RSQJFXGXY,妊娠合并继发性高血压,Pre-existing secondary hypertension complicating pregnancy,妊娠高血压,妊娠合并继发性高血压,严重
+O10.2,HTN-PREG-RENAL,RSQSZGXY,妊娠合并肾性高血压,Pre-existing hypertension with pre-eclampsia,妊娠高血压,妊娠合并肾性高血压,严重
+O10.3,HTN-PREG-HEART,RSQGXYXZB,妊娠合并高血压心脏病,Pre-existing hypertension with heart disease complicating pregnancy,妊娠高血压,妊娠合并高血压心脏病,严重
+O10.4,HTN-PREG-KIDNEY,RSQGXYBB,妊娠合并高血压肾病,Pre-existing hypertension with kidney disease complicating pregnancy,妊娠高血压,妊娠合并高血压肾病,严重
+O10.9,HTN-PREG-UNSP,RSQGXYWTZ,妊娠期高血压未特指,Pre-existing hypertension complicating pregnancy unspecified,妊娠高血压,妊娠期高血压未分类,中等
+O11,HTN-PREG-PROTEIN,RSQQGXY,妊娠期蛋白尿性高血压,Pre-existing hypertension with pre-eclampsia,妊娠高血压,先兆子痫合并慢性高血压,严重
+O13,HTN-GEST,RSXGXY,妊娠性高血压,Gestational hypertension,妊娠高血压,妊娠性高血压,中等
+O14,PRE-ECLAMPSIA,XZQZ,先兆子痫,Pre-eclampsia,妊娠高血压,先兆子痫,严重
+O14.0,PRE-ECLAMP-MILD,QXQZ,轻度先兆子痫,Mild pre-eclampsia,妊娠高血压,轻度先兆子痫,中等
+O14.1,PRE-ECLAMP-SEV,ZXQZ,重度先兆子痫,Severe pre-eclampsia,妊娠高血压,重度先兆子痫,严重
+O14.2,HELLP,HELLPZHZ,HELLP综合征,HELLP syndrome,妊娠高血压,HELLP综合征,危重
+O14.9,PRE-ECLAMP-UNSP,XZQZWTZ,先兆子痫未特指,Pre-eclampsia unspecified,妊娠高血压,先兆子痫未分类,严重
+O15,ECLAMPSIA,QZ,子痫,Eclampsia,妊娠高血压,子痫,危重
+O15.0,ECLAMP-PREG,RSQQZ,妊娠期子痫,Eclampsia in pregnancy,妊娠高血压,妊娠期子痫,危重
+O15.1,ECLAMP-LABOR,FCQQZ,分娩期子痫,Eclampsia in labour,妊娠高血压,分娩期子痫,危重
+O15.2,ECLAMP-PUERP,CHHQZ,产褥期子痫,Eclampsia in the puerperium,妊娠高血压,产褥期子痫,危重
+O15.9,ECLAMP-UNSP,QZWTZ,子痫未特指,Eclampsia unspecified,妊娠高血压,子痫未分类,危重
+O16,HTN-MATERNAL,MXGXYWQBJZ,母体高血压未特指并发症,Maternal hypertension unspecified,妊娠高血压,母体高血压未分类,中等
+E78.00,PURE-HYPERCHOL,DCGGZC,单纯性高胆固醇血症,Pure hypercholesterolemia,血脂异常,单纯性高胆固醇血症,中等
+E78.01,FAM-HYPERCHOL-HETERO,JZXGGZCYZX,家族性高胆固醇血症杂合子,Familial hypercholesterolemia heterozygous,血脂异常,家族性高胆固醇血症杂合子,严重
+E78.10,PURE-HYPERTG,DCXGGYSZ,单纯性高甘油三酯血症,Pure hypertriglyceridemia,血脂异常,单纯性高甘油三酯血症,中等
+E78.70,LOW-HDL,DHDLGJZC,低HDL胆固醇血症,Disorder of bile acid and cholesterol metabolism unspecified,血脂异常,低HDL胆固醇血症,中等
+E78.71,FAMILIAL-LOW-HDL,JZXDHDL,家族性低HDL胆固醇血症,Deficiency of lipoprotein lipase,血脂异常,家族性低HDL胆固醇血症,中等
+E78.72,TANGIER,TJEJB,Tangier病,Tangier disease,血脂异常,Tangier病,中等
+E78.79,LIPOPROT-DEF-OTH,QTXDBQX,其他脂蛋白缺乏症,Other lipoprotein deficiencies,血脂异常,其他脂蛋白缺乏症,中等
+E78.81,LIPOPROT-A-HIGH,GXDB(a),高脂蛋白(a)血症,Elevated lipoprotein(a),血脂异常,高脂蛋白(a)血症,中等
+E78.89,DYSLIPID-OTH,QTXZWL,其他血脂异常,Other specified disorders of lipoprotein metabolism,血脂异常,其他血脂异常,中等
+Z13.220,HTN-SCREEN,GXYSC,高血压筛查,Encounter for screening for lipoid disorders,高血压管理,高血压筛查,预防
+Z79.1,HTN-MED,CQSYKGXY,长期使用抗高血压药,Long term current use of anticoagulants,高血压管理,长期抗高血压治疗,管理
+Z86.79,HTN-HISTORY,GXYS,高血压病史,Personal history of other circulatory system disease,高血压管理,既往高血压史,管理
+B16.9,HBV-ACUTE,JXYXBGY,急性乙型病毒性肝炎,Acute hepatitis B without hepatic coma,感染性疾病,急性乙型肝炎未并发肝性脑病,严重
+B18.0,HBV-DELTA,MXYXGYBDX,慢性乙型病毒性肝炎伴丁型病毒,Chronic hepatitis B with delta-agent,感染性疾病,慢性乙型肝炎合并丁型病毒感染,严重
+B18.1,HBV-CHRON,MXYXGY,慢性乙型病毒性肝炎,Chronic hepatitis B without delta-agent,感染性疾病,慢性乙型肝炎未合并丁型病毒,严重
+B17.10,HCV-ACUTE,JXBXBGY,急性丙型病毒性肝炎,Acute hepatitis C without hepatic coma,感染性疾病,急性丙型肝炎未并发肝性脑病,严重
+B18.2,HCV-CHRON,MXXBGY,慢性丙型病毒性肝炎,Chronic viral hepatitis C,感染性疾病,慢性丙型肝炎,严重
+B96.81,HPYLORI,YMLGJ,幽门螺杆菌感染,Helicobacter pylori infection,感染性疾病,幽门螺杆菌相关感染,中等
+K74.60,CIRRHOSIS,GYHWTZ,肝硬化未特指,Unspecified cirrhosis of liver,肝胆疾病,肝硬化病程未明确病因,严重
+C22.0,HCC,YFXGXBA,原发性肝细胞癌,Liver cell carcinoma,肿瘤,原发性肝细胞癌,危重
+C16.9,GASTRIC-CA,WAWTZ,胃癌未特指,Malignant neoplasm of stomach unspecified,肿瘤,胃部恶性肿瘤未明确分型,危重
+C18.9,COLON-CA,JCAWTZ,结肠癌未特指,Malignant neoplasm of colon unspecified,肿瘤,结肠恶性肿瘤未明确部位,危重
+C20,RECTAL-CA,ZCA,直肠癌,Malignant neoplasm of rectum,肿瘤,直肠恶性肿瘤,危重
+D12.6,COLON-POLYP,JCLX,结肠良性肿瘤,Benign neoplasm of colon unspecified,肠胃疾病,结肠息肉或良性肿瘤,中等
+C34.90,LUNG-CA,FAWTZ,肺癌未特指,Malignant neoplasm of lung unspecified,肿瘤,肺部恶性肿瘤未明确部位,危重
+R91.1,LUNG-NODULE,GLXFJJ,孤立性肺结节,Solitary pulmonary nodule,呼吸系统,孤立性肺结节影像学发现,中等
+C50.919,BREAST-CA,RXAWTZ,乳腺癌未特指,Malignant neoplasm of female breast unspecified site,肿瘤,乳腺恶性肿瘤未分类部位,危重
+D05.10,DCIS,RXDGYWA,乳腺导管原位癌,Intraductal carcinoma in situ of unspecified breast,肿瘤,乳腺导管原位癌病变,严重
+C53.9,CERVIX-CA,GJAWTZ,宫颈癌未特指,Malignant neoplasm of cervix uteri unspecified,肿瘤,宫颈恶性肿瘤未明确分型,危重
+D06.9,CIN3,GJYWA,宫颈原位癌未特指,Carcinoma in situ of cervix uteri unspecified,肿瘤,宫颈高级别上皮内瘤变,严重
+N87.1,CIN2,GJZDBDZ,宫颈中度不典型增生,Moderate cervical dysplasia,妇科,宫颈上皮内瘤变Ⅱ级,中等
+C61,PROSTATE-CA,QLXA,前列腺癌,Malignant neoplasm of prostate,肿瘤,前列腺恶性肿瘤,危重
+I25.10,CAD,GZDMZYX,原发性冠状动脉粥样硬化性心脏病,Atherosclerotic heart disease without angina,心血管,冠心病未伴胸痛,严重
+I25.110,CAD-UA,GZDMZWBD,冠状动脉粥样硬化伴不稳定型心绞痛,Atherosclerotic heart disease with unstable angina,心血管,冠心病伴不稳定型心绞痛,危重
+I21.9,AMI,JXXJGS,急性心肌梗死未特指,Acute myocardial infarction unspecified,心血管,急性心肌梗死未明确部位,危重
+I50.9,CHF-UNSP,XLSJWTZ,心力衰竭未特指,Heart failure unspecified,心血管,心力衰竭未明确类型,严重
+I48.0,AFIB-P,ZFXXFD,阵发性心房颤动,Paroxysmal atrial fibrillation,心血管,阵发性心房颤动,中等
+I48.2,AFIB-C,MXXXFD,慢性心房颤动,Chronic atrial fibrillation,心血管,持续性心房颤动,中等
+I49.9,ARRHY-UNSP,XLSCWTZ,心律失常未特指,Cardiac arrhythmia unspecified,心血管,心律失常未明确类型,中等
+G45.9,TIA,DZXNXX,短暂性脑缺血发作,Transient cerebral ischemic attack unspecified,神经系统,短暂性脑供血不足发作,中等
+I63.9,STROKE,NGSWTZ,脑梗死未特指,Cerebral infarction unspecified,神经系统,脑梗死未明确血管部位,危重
+J44.9,COPD,MZFXWTZ,慢性阻塞性肺疾病未特指,Chronic obstructive pulmonary disease unspecified,呼吸系统,慢阻肺未明确分型,严重
+J44.1,COPD-AE,MZFXJXJZ,慢性阻塞性肺疾病急性加重,Chronic obstructive pulmonary disease with acute exacerbation,呼吸系统,慢阻肺急性加重期,危重
+J45.909,ASTHMA,XCWTZ,哮喘未特指,Unspecified asthma uncomplicated,呼吸系统,哮喘未明确严重程度,中等
+J45.50,ASTHMA-SEV,ZDCXXC,重度持续性哮喘伴危重状态,Severe persistent asthma with status asthmaticus,呼吸系统,重度持续性哮喘并哮喘持续状态,危重
+J18.9,PNEUMONIA,FYWTZ,肺炎未特指病原,Pneumonia unspecified organism,呼吸系统,肺炎病原未明确,严重
+N17.9,AKI,JXSSSWTZ,急性肾损伤未特指,Acute kidney failure unspecified,肾脏疾病,急性肾损伤未明确病因,危重
+N18.3,CKD3,MXSBB3Q,慢性肾病3期,Chronic kidney disease stage 3,肾脏疾病,慢性肾脏病中度减退期,严重
+N18.4,CKD4,MXSBB4Q,慢性肾病4期,Chronic kidney disease stage 4,肾脏疾病,慢性肾脏病重度减退期,严重
+N18.5,CKD5,MXSBB5Q,慢性肾病5期,Chronic kidney disease stage 5,肾脏疾病,慢性肾病终末期前,危重
+N18.6,ESRD,ZMXSZB,终末期肾病,End stage renal disease,肾脏疾病,终末期肾功能衰竭,危重
+N03.9,CHRON-GN,MXSXYWTZ,慢性肾小球肾炎未特指,Chronic nephritic syndrome unspecified,肾脏疾病,慢性肾小球肾炎未明确类型,严重
+N04.9,NEPHROTIC,SBZHZWTZ,肾病综合征未特指,Nephrotic syndrome unspecified,肾脏疾病,肾病综合征未明确病因,严重
+N39.0,UTI,NLGJWTZ,尿路感染未特指,Urinary tract infection site not specified,泌尿系统,尿路感染未明确部位,中等
+G20,PARKINSON,PJSB,帕金森病,Parkinson's disease,神经系统,帕金森病,中等
+G40.909,EPILEPSY,DXWTZ,癫痫未特指,Epilepsy unspecified not intractable,神经系统,癫痫发作未明确类型,中等
+M06.9,RA,LFSGJAWTZ,类风湿关节炎未特指,Rheumatoid arthritis unspecified,风湿免疫,类风湿关节炎未明确关节部位,严重
+M32.9,SLE,XTBLQWTZ,系统性红斑狼疮未特指,Systemic lupus erythematosus unspecified,风湿免疫,系统性红斑狼疮未明确损害范围,严重
+D64.9,ANEMIA,PXWTZ,贫血未特指,Anemia unspecified,血液疾病,贫血病因未明确,中等
+D69.6,THROMBO,XXBJSSWTZ,血小板减少症未特指,Thrombocytopenia unspecified,血液疾病,血小板减少病因未明确,严重
+K85.90,PANCREA-AC,JXYYWTZ,急性胰腺炎未特指,Acute pancreatitis unspecified without necrosis or infection,消化系统,急性胰腺炎未并发坏死或感染,严重
+K51.90,UC,KYXJCYWBFZ,溃疡性结肠炎无并发症,Ulcerative colitis without complications,消化系统,溃疡性结肠炎未并发症,严重
+K50.90,CROHN,KLEBWTZ,克罗恩病未特指无并发症,Crohn disease unspecified site without complications,消化系统,克罗恩病未明确部位无并发症,严重
+C15.9,ESOPH-CA,SGDA,食管癌,Esophageal cancer,恶性肿瘤-消化系统,食管恶性肿瘤,严重
+C15.0,ESOPH-CA-CERV,SGJDSGDA,食管颈段癌,Malignant neoplasm of cervical esophagus,恶性肿瘤-消化系统,食管颈段恶性肿瘤,严重
+C15.1,ESOPH-CA-THOR,SGXDSGDA,食管胸段癌,Malignant neoplasm of thoracic esophagus,恶性肿瘤-消化系统,食管胸段恶性肿瘤,严重
+C15.5,ESOPH-CA-LOW,SGXSDSGDA,食管下段癌,Malignant neoplasm of lower third of esophagus,恶性肿瘤-消化系统,食管下段恶性肿瘤,严重
+C16.9,GASTRIC-CA,WA,胃癌,Gastric cancer,恶性肿瘤-消化系统,胃恶性肿瘤,严重
+C16.0,GASTRIC-CA-CARD,BJWA,贲门癌,Malignant neoplasm of cardia,恶性肿瘤-消化系统,胃贲门恶性肿瘤,严重
+C16.1,GASTRIC-CA-FUND,WDWA,胃底癌,Malignant neoplasm of fundus of stomach,恶性肿瘤-消化系统,胃底恶性肿瘤,严重
+C16.2,GASTRIC-CA-BODY,WTWA,胃体癌,Malignant neoplasm of body of stomach,恶性肿瘤-消化系统,胃体恶性肿瘤,严重
+C16.3,GASTRIC-CA-ANTR,WYWA,胃窦癌,Malignant neoplasm of pyloric antrum,恶性肿瘤-消化系统,胃窦恶性肿瘤,严重
+C16.4,GASTRIC-CA-PYL,WMWA,胃幽门癌,Malignant neoplasm of pylorus,恶性肿瘤-消化系统,幽门恶性肿瘤,严重
+C18.9,COLON-CA,JCDA,结肠癌,Colon cancer,恶性肿瘤-消化系统,结肠恶性肿瘤,严重
+C18.0,COLON-CA-CEC,MJDA,盲肠癌,Malignant neoplasm of cecum,恶性肿瘤-消化系统,盲肠恶性肿瘤,严重
+C18.2,COLON-CA-ASC,SJCDA,升结肠癌,Malignant neoplasm of ascending colon,恶性肿瘤-消化系统,升结肠恶性肿瘤,严重
+C18.3,COLON-CA-HEP,GQQDA,肝曲癌,Malignant neoplasm of hepatic flexure,恶性肿瘤-消化系统,结肠肝曲恶性肿瘤,严重
+C18.4,COLON-CA-TRAN,HJCDA,横结肠癌,Malignant neoplasm of transverse colon,恶性肿瘤-消化系统,横结肠恶性肿瘤,严重
+C18.5,COLON-CA-SPL,PQQDA,脾曲癌,Malignant neoplasm of splenic flexure,恶性肿瘤-消化系统,结肠脾曲恶性肿瘤,严重
+C18.6,COLON-CA-DESC,JJCDA,降结肠癌,Malignant neoplasm of descending colon,恶性肿瘤-消化系统,降结肠恶性肿瘤,严重
+C18.7,COLON-CA-SIG,YZCJCDA,乙状结肠癌,Malignant neoplasm of sigmoid colon,恶性肿瘤-消化系统,乙状结肠恶性肿瘤,严重
+C19,RECT-SIG-CA,ZJJCDA,直肠乙状结肠交界癌,Rectosigmoid junction cancer,恶性肿瘤-消化系统,直肠乙状结肠交界恶性肿瘤,严重
+C20,RECTAL-CA,ZCDA,直肠癌,Rectal cancer,恶性肿瘤-消化系统,直肠恶性肿瘤,严重
+C22.0,HCC,GBXBAZA,肝细胞癌,Hepatocellular carcinoma,恶性肿瘤-消化系统,原发性肝细胞癌,严重
+C22.1,CHOLANGIO-CA,DGXBAZA,胆管细胞癌,Intrahepatic cholangiocarcinoma,恶性肿瘤-消化系统,肝内胆管细胞癌,严重
+C22.9,LIVER-CA,GA,肝癌,Liver cancer unspecified,恶性肿瘤-消化系统,肝恶性肿瘤未特指,严重
+C24.0,EXTRAHEP-BILE-CA,GWDGDA,肝外胆管癌,Extrahepatic bile duct cancer,恶性肿瘤-消化系统,肝外胆管恶性肿瘤,严重
+C23,GB-CA,DNDA,胆囊癌,Gallbladder cancer,恶性肿瘤-消化系统,胆囊恶性肿瘤,严重
+C25.9,PANCREAS-CA,YXDA,胰腺癌,Pancreatic cancer,恶性肿瘤-消化系统,胰腺恶性肿瘤,严重
+C25.0,PANCREAS-CA-HEAD,YXTDA,胰头癌,Malignant neoplasm of head of pancreas,恶性肿瘤-消化系统,胰头恶性肿瘤,严重
+C25.1,PANCREAS-CA-BODY,YXTDA,胰体癌,Malignant neoplasm of body of pancreas,恶性肿瘤-消化系统,胰体恶性肿瘤,严重
+C25.2,PANCREAS-CA-TAIL,YWDA,胰尾癌,Malignant neoplasm of tail of pancreas,恶性肿瘤-消化系统,胰尾恶性肿瘤,严重
+C34.90,LUNG-CA,FA,肺癌,Lung cancer,恶性肿瘤-呼吸系统,肺恶性肿瘤,严重
+C34.10,LUNG-CA-UPPER,FSYDA,肺上叶癌,Malignant neoplasm of upper lobe lung,恶性肿瘤-呼吸系统,肺上叶恶性肿瘤,严重
+C34.30,LUNG-CA-LOWER,FXYDA,肺下叶癌,Malignant neoplasm of lower lobe lung,恶性肿瘤-呼吸系统,肺下叶恶性肿瘤,严重
+C34.20,LUNG-CA-MIDDLE,FZYDA,肺中叶癌,Malignant neoplasm of middle lobe lung,恶性肿瘤-呼吸系统,肺中叶恶性肿瘤,严重
+C50.9,BREAST-CA,RXDA,乳腺癌,Breast cancer,恶性肿瘤-乳腺,乳腺恶性肿瘤,严重
+C50.0,BREAST-CA-NIPPLE,RTZJQDA,乳头乳晕区癌,Malignant neoplasm of nipple and areola,恶性肿瘤-乳腺,乳头乳晕恶性肿瘤,严重
+C50.1,BREAST-CA-CENTRAL,RXYZBDA,乳腺中央部癌,Malignant neoplasm of central portion of breast,恶性肿瘤-乳腺,乳腺中央部恶性肿瘤,严重
+C50.2,BREAST-CA-UIQ,RXSNXQDA,乳腺上内象限癌,Malignant neoplasm of upper-inner quadrant of breast,恶性肿瘤-乳腺,乳腺上内象限恶性肿瘤,严重
+C50.3,BREAST-CA-LIQ,RXXNXQDA,乳腺下内象限癌,Malignant neoplasm of lower-inner quadrant of breast,恶性肿瘤-乳腺,乳腺下内象限恶性肿瘤,严重
+C50.4,BREAST-CA-UOQ,RXSWXQDA,乳腺上外象限癌,Malignant neoplasm of upper-outer quadrant of breast,恶性肿瘤-乳腺,乳腺上外象限恶性肿瘤,严重
+C50.5,BREAST-CA-LOQ,RXXWXQDA,乳腺下外象限癌,Malignant neoplasm of lower-outer quadrant of breast,恶性肿瘤-乳腺,乳腺下外象限恶性肿瘤,严重
+C53.9,CERVIX-CA,GJDA,宫颈癌,Cervical cancer,恶性肿瘤-妇科,宫颈恶性肿瘤,严重
+C54.1,ENDO-CA,ZGNMDA,子宫内膜癌,Endometrial cancer,恶性肿瘤-妇科,子宫内膜恶性肿瘤,严重
+C56,OVARIAN-CA,LCDA,卵巢癌,Ovarian cancer,恶性肿瘤-妇科,卵巢恶性肿瘤,严重
+C61,PROSTATE-CA,QLXDA,前列腺癌,Prostate cancer,恶性肿瘤-泌尿生殖系统,前列腺恶性肿瘤,严重
+C64,KIDNEY-CA,SZDA,肾癌,Kidney cancer,恶性肿瘤-泌尿生殖系统,肾恶性肿瘤,严重
+C64.9,RCC,SZXBAZA,肾细胞癌,Renal cell carcinoma,恶性肿瘤-泌尿生殖系统,肾细胞恶性肿瘤,严重
+C67.9,BLADDER-CA,PGDA,膀胱癌,Bladder cancer,恶性肿瘤-泌尿生殖系统,膀胱恶性肿瘤,严重
+C73,THYROID-CA,ZJXDA,甲状腺癌,Thyroid cancer,恶性肿瘤-内分泌,甲状腺恶性肿瘤,严重
+C43.9,MELANOMA,HSD,黑色素瘤,Melanoma,恶性肿瘤-皮肤,恶性黑色素瘤,严重
+C43.5,MELANOMA-TRUNK,QDSD,躯干黑色素瘤,Malignant melanoma of trunk,恶性肿瘤-皮肤,躯干恶性黑色素瘤,严重
+C44.9,SKIN-CA,PFDA,皮肤癌,Skin cancer,恶性肿瘤-皮肤,皮肤恶性肿瘤,中等
+C71.9,BRAIN-CA,NLDA,脑肿瘤,Brain cancer,恶性肿瘤-神经系统,脑恶性肿瘤,严重
+C71.0,BRAIN-CA-CEREB,DNQZL,大脑肿瘤,Malignant neoplasm of cerebrum,恶性肿瘤-神经系统,大脑恶性肿瘤,严重
+C71.6,BRAIN-CA-CEREB,XNZL,小脑肿瘤,Malignant neoplasm of cerebellum,恶性肿瘤-神经系统,小脑恶性肿瘤,严重
+C79.51,BONE-METS,GZZYDGZZL,骨转移癌,Bone metastasis,恶性肿瘤-转移,骨骼转移性恶性肿瘤,严重
+C78.0,LUNG-METS,FZZYDGZZL,肺转移癌,Lung metastasis,恶性肿瘤-转移,肺转移性恶性肿瘤,严重
+C78.7,LIVER-METS,GZZYDGZZL,肝转移癌,Liver metastasis,恶性肿瘤-转移,肝转移性恶性肿瘤,严重
+C79.31,BRAIN-METS,NLZZYDGZZL,脑转移癌,Brain metastasis,恶性肿瘤-转移,脑转移性恶性肿瘤,严重
+C91.00,ALL,JXLBXBXBL,急性淋巴细胞白血病,Acute lymphoblastic leukemia,恶性肿瘤-血液,急性淋巴细胞白血病未缓解,严重
+C92.00,AML,JXSXBXBL,急性髓系白血病,Acute myeloid leukemia,恶性肿瘤-血液,急性髓系白血病未缓解,严重
+C91.10,CLL,MXLBXBXBL,慢性淋巴细胞白血病,Chronic lymphocytic leukemia,恶性肿瘤-血液,慢性淋巴细胞白血病,严重
+C92.10,CML,MXSXBXBL,慢性髓系白血病,Chronic myeloid leukemia,恶性肿瘤-血液,慢性髓系白血病,严重
+C81.90,HL,HJL,霍奇金淋巴瘤,Hodgkin lymphoma,恶性肿瘤-血液,霍奇金淋巴瘤未特指,严重
+C82.90,NHL-FL,FBXLBL,滤泡性淋巴瘤,Follicular lymphoma,恶性肿瘤-血液,滤泡性淋巴瘤未特指,严重
+C83.30,NHL-DLBCL,MXDBBXLBL,弥漫大B细胞淋巴瘤,Diffuse large B-cell lymphoma,恶性肿瘤-血液,弥漫大B细胞淋巴瘤,严重
+C90.00,MM,DFXGSZL,多发性骨髓瘤,Multiple myeloma,恶性肿瘤-血液,多发性骨髓瘤未缓解,严重
+C49.9,SOFT-TISSUE-SARCOMA,RZZRRL,软组织肉瘤,Soft tissue sarcoma,恶性肿瘤-软组织,软组织恶性肿瘤,严重
+C40.90,BONE-SARCOMA,GZZL,骨肉瘤,Bone sarcoma,恶性肿瘤-骨,骨恶性肿瘤,严重
+C32.9,LARYNX-CA,HDA,喉癌,Laryngeal cancer,恶性肿瘤-头颈,喉恶性肿瘤,严重
+C01,TONGUE-CA,SDA,舌癌,Tongue cancer,恶性肿瘤-头颈,舌恶性肿瘤,严重
+C10.9,PHARYNX-CA,YDA,咽癌,Pharyngeal cancer,恶性肿瘤-头颈,咽恶性肿瘤,严重
+C11.9,NPC,BYDA,鼻咽癌,Nasopharyngeal carcinoma,恶性肿瘤-头颈,鼻咽恶性肿瘤,严重
+C74.90,ADRENAL-CA,SSWZL,肾上腺肿瘤,Adrenal gland cancer,恶性肿瘤-内分泌,肾上腺恶性肿瘤,严重
+C75.1,PITUITARY-CA,CTZL,垂体瘤,Pituitary gland cancer,恶性肿瘤-内分泌,垂体恶性肿瘤,中等
+D09.0,CIS-BLADDER,PGYWZA,膀胱原位癌,Carcinoma in situ of bladder,原位癌,膀胱原位癌,中等
+D05.90,DCIS,RXGZNYWZA,乳腺导管原位癌,Ductal carcinoma in situ,原位癌,乳腺导管原位癌,中等
+D06.9,CIS-CERVIX,GJYWZA,宫颈原位癌,Carcinoma in situ of cervix,原位癌,宫颈原位癌,中等
+D00.1,CIS-ESOPH,SGYWZA,食管原位癌,Carcinoma in situ of esophagus,原位癌,食管原位癌,中等
+D00.2,CIS-GASTRIC,WYWZA,胃原位癌,Carcinoma in situ of stomach,原位癌,胃原位癌,中等
+D01.0,CIS-COLON,JCYWZA,结肠原位癌,Carcinoma in situ of colon,原位癌,结肠原位癌,中等
+D02.2,CIS-LUNG,ZQGYWZA,支气管原位癌,Carcinoma in situ of bronchus and lung,原位癌,支气管肺原位癌,中等
+D12.6,COLON-POLYP,JCXR,结肠息肉,Colon polyp benign,良性肿瘤-消化,结肠良性息肉,轻度
+D13.1,GASTRIC-POLYP,WXR,胃息肉,Gastric polyp benign,良性肿瘤-消化,胃良性息肉,轻度
+D25.9,FIBROID,ZGJL,子宫肌瘤,Uterine fibroid,良性肿瘤-妇科,子宫平滑肌瘤,轻度
+D27.9,OVARIAN-CYST,LCNZ,卵巢囊肿,Ovarian cyst benign,良性肿瘤-妇科,卵巢良性囊肿,轻度
+D29.1,PROSTATE-BPH,QLXZS,前列腺增生,Benign prostatic hyperplasia,良性肿瘤-泌尿,良性前列腺增生,轻度
+D34,THYROID-NODULE,ZJXJJ,甲状腺结节,Thyroid nodule benign,良性肿瘤-内分泌,甲状腺良性结节,轻度
+D35.00,ADRENAL-ADENOMA,SSWXL,肾上腺腺瘤,Adrenal adenoma,良性肿瘤-内分泌,肾上腺良性腺瘤,轻度
+D35.2,PITUITARY-ADENOMA,CTXL,垂体腺瘤,Pituitary adenoma,良性肿瘤-内分泌,垂体良性腺瘤,中等
+D48.0,BONE-TUMOR-UNC,GZZLWDXZWMQ,骨肿瘤性质不确定,Bone tumor uncertain behavior,不确定肿瘤,骨肿瘤性质未明,中等
+D48.1,SOFT-TISSUE-UNC,RZZLXZWMQ,软组织肿瘤性质不确定,Soft tissue tumor uncertain behavior,不确定肿瘤,软组织肿瘤性质未明,中等
+D49.0,DIGEST-TUMOR-UNC,XHXTZLXZWMQ,消化系统肿瘤性质不确定,Digestive tumor uncertain behavior,不确定肿瘤,消化系统肿瘤性质未明,中等
+D49.1,RESP-TUMOR-UNC,HXXTZZLXZWMQ,呼吸系统肿瘤性质不确定,Respiratory tumor uncertain behavior,不确定肿瘤,呼吸系统肿瘤性质未明,中等
+D49.2,GU-TUMOR-UNC,NSSQZZLXZWMQ,泌尿生殖系统肿瘤性质不确定,Genitourinary tumor uncertain behavior,不确定肿瘤,泌尿生殖肿瘤性质未明,中等
+Z85.3,HX-BREAST-CA,RXDABS,乳腺癌病史,Personal history of breast cancer,肿瘤病史,既往乳腺癌史,管理
+Z85.46,HX-PROSTATE-CA,QLXDABS,前列腺癌病史,Personal history of prostate cancer,肿瘤病史,既往前列腺癌史,管理
+Z85.00,HX-DIGEST-CA,XHXTZLBS,消化系统肿瘤病史,Personal history of digestive cancer,肿瘤病史,既往消化系统肿瘤史,管理
+Z85.118,HX-LUNG-CA,FDABS,肺癌病史,Personal history of lung cancer,肿瘤病史,既往肺癌史,管理
+Z51.11,CHEMO,HLJHZL,化疗,Chemotherapy session,肿瘤治疗,化学治疗状态,管理
+Z51.0,RADIO,FSLZL,放疗,Radiotherapy session,肿瘤治疗,放射治疗状态,管理
+Z08,F/U-CA,ZLHSGJC,肿瘤治疗后随访检查,Follow-up after cancer treatment,肿瘤随访,肿瘤治疗后随访,管理
+Z12.11,CA-SCREEN-COLON,JCDAZL,结肠癌筛查,Screening for colon cancer,肿瘤筛查,结直肠癌筛查,预防
+Z12.31,CA-SCREEN-BREAST,RXDAZL,乳腺癌筛查,Screening for breast cancer,肿瘤筛查,乳腺癌筛查,预防
+Z12.5,CA-SCREEN-PROSTATE,QLXDAZL,前列腺癌筛查,Screening for prostate cancer,肿瘤筛查,前列腺癌筛查,预防
+Z12.2,CA-SCREEN-GI,XHXTZLSC,消化系统肿瘤筛查,Screening for GI cancer,肿瘤筛查,消化道肿瘤筛查,预防
+I21.9,AMI,JXJXGJSZGZ,急性心肌梗死,Acute myocardial infarction,心血管疾病-冠心病,急性心肌梗死未特指,危重
+I21.0,STEMI-ANT,QBSTEMI,前壁STEMI,ST elevation MI anterior wall,心血管疾病-冠心病,前壁ST段抬高型心肌梗死,危重
+I21.1,STEMI-INF,XBSTEMI,下壁STEMI,ST elevation MI inferior wall,心血管疾病-冠心病,下壁ST段抬高型心肌梗死,危重
+I21.2,STEMI-LAT,CBSTEMI,侧壁STEMI,ST elevation MI lateral wall,心血管疾病-冠心病,侧壁ST段抬高型心肌梗死,危重
+I21.4,NSTEMI,FSTSTEMI,非ST抬高心梗,Non-ST elevation MI,心血管疾病-冠心病,非ST段抬高型心肌梗死,危重
+I20.0,UA,BWDXXJT,不稳定心绞痛,Unstable angina,心血管疾病-冠心病,不稳定型心绞痛,严重
+I20.1,ANGINA-SPASM,BJXXJT,痉挛性心绞痛,Angina with spasm,心血管疾病-冠心病,血管痉挛性心绞痛,严重
+I20.8,ANGINA-STABLE,WDXXJT,稳定心绞痛,Stable angina,心血管疾病-冠心病,稳定型心绞痛,中等
+I20.9,ANGINA,XXJTWTZ,心绞痛未特指,Angina pectoris unspecified,心血管疾病-冠心病,心绞痛未分类,中等
+I25.10,CAD,GXBGXB,冠心病,Coronary artery disease,心血管疾病-冠心病,动脉粥样硬化性心脏病,严重
+I25.5,ISCHEMIC-CMPY,QXXXJB,缺血性心肌病,Ischemic cardiomyopathy,心血管疾病-冠心病,缺血性心肌病变,严重
+I25.2,OLD-MI,CJXGJSZGZ,陈旧性心肌梗死,Old myocardial infarction,心血管疾病-冠心病,既往心肌梗死,中等
+I50.9,HF,XSBJWTZ,心衰,Heart failure,心血管疾病-心衰,心力衰竭未特指,严重
+I50.1,LVF,ZXSB,左心衰,Left ventricular failure,心血管疾病-心衰,左心室衰竭,严重
+I50.20,HFrEF,SJFXJXSB,射血分数降低心衰,Systolic heart failure,心血管疾病-心衰,收缩性心力衰竭,严重
+I50.30,HFpEF,SJFBCXSB,射血分数保存心衰,Diastolic heart failure,心血管疾病-心衰,舒张性心力衰竭,严重
+I50.41,ACUTE-HF,JXXSB,急性心衰,Acute combined systolic and diastolic heart failure,心血管疾病-心衰,急性心力衰竭,危重
+I50.43,ACUTE-ON-CHF,JXJXMXSB,慢性心衰急性加重,Acute on chronic combined heart failure,心血管疾病-心衰,慢性心衰急性加重,严重
+I50.84,RVHF,YXSB,右心衰,Right heart failure,心血管疾病-心衰,右心室衰竭,严重
+I10,HTN,GXY,高血压,Hypertension,心血管疾病-高血压,原发性高血压,中等
+I11.9,HTN-HD,GXYXXB,高血压心脏病,Hypertensive heart disease,心血管疾病-高血压,高血压性心脏病,严重
+I12.9,HTN-CKD,GXYSZB,高血压肾病,Hypertensive chronic kidney disease,心血管疾病-高血压,高血压性肾病,严重
+I13.0,HTN-HCKD,GXYXXJSZB,高血压心肾病,Hypertensive heart and CKD,心血管疾病-高血压,高血压性心肾病,严重
+I16.9,HYP-CRISIS,GXYWJ,高血压危象,Hypertensive crisis,心血管疾病-高血压,高血压危象,危重
+I16.0,HYP-URGENCY,GXYJZ,高血压急症,Hypertensive urgency,心血管疾病-高血压,高血压急症,严重
+I16.1,HYP-EMERGENCY,GXYWJ,高血压危症,Hypertensive emergency,心血管疾病-高血压,高血压危症伴靶器官损害,危重
+I48.91,AFIB,XZCF,心房颤动,Atrial fibrillation,心血管疾病-心律失常,心房颤动未特指,严重
+I48.0,AFIB-PAROX,ZFXXZCF,阵发性心房颤动,Paroxysmal atrial fibrillation,心血管疾病-心律失常,阵发性房颤,中等
+I48.1,AFIB-PERS,CXXZCF,持续性心房颤动,Persistent atrial fibrillation,心血管疾病-心律失常,持续性房颤,严重
+I48.2,AFIB-PERM,YGJXXZCF,永久性心房颤动,Permanent atrial fibrillation,心血管疾病-心律失常,永久性房颤,严重
+I48.3,AFLUTTER,XZPL,心房扑动,Atrial flutter,心血管疾病-心律失常,心房扑动,中等
+I47.2,VT,SSXSDGSP,室上性心动过速,Ventricular tachycardia,心血管疾病-心律失常,室性心动过速,严重
+I47.1,SVT,SSXXSDGSP,室上性心动过速,Supraventricular tachycardia,心血管疾病-心律失常,室上性心动过速,中等
+I49.01,VF,SXCF,室颤,Ventricular fibrillation,心血管疾病-心律失常,室性颤动,危重
+I46.9,CARDIAC-ARREST,XZTTZGZ,心脏骤停,Cardiac arrest,心血管疾病-心律失常,心脏骤停未特指,危重
+I44.2,AVB-COMPLETE,WQXXZZ,完全性房室传导阻滞,Complete AV block,心血管疾病-心律失常,三度房室传导阻滞,严重
+I44.1,AVB-2ND,ERDXXSZZ,二度房室阻滞,Second degree AV block,心血管疾病-心律失常,二度房室传导阻滞,中等
+I44.0,AVB-1ST,YIDXXSZZ,一度房室阻滞,First degree AV block,心血管疾病-心律失常,一度房室传导阻滞,轻度
+I49.5,SSS,BFBJZHZ,病窦综合征,Sick sinus syndrome,心血管疾病-心律失常,病态窦房结综合征,中等
+I49.8,BRADYCARDIA,XDGSH,心动过缓,Bradycardia,心血管疾病-心律失常,心动过缓,中等
+I34.0,MR,EJBGBBQ,二尖瓣关闭不全,Mitral regurgitation,心血管疾病-瓣膜病,二尖瓣反流,严重
+I34.2,MS,EJBXZ,二尖瓣狭窄,Mitral stenosis,心血管疾病-瓣膜病,二尖瓣狭窄,严重
+I35.0,AS,ZDBXZ,主动脉瓣狭窄,Aortic stenosis,心血管疾病-瓣膜病,主动脉瓣狭窄,严重
+I35.1,AR,ZDBBGBBQ,主动脉瓣关闭不全,Aortic regurgitation,心血管疾病-瓣膜病,主动脉瓣反流,严重
+I36.0,TR,SJBGBBQ,三尖瓣关闭不全,Tricuspid regurgitation,心血管疾病-瓣膜病,三尖瓣反流,中等
+I08.0,RHEUMATIC-MR,FSBEJBGBBQ,风湿性二尖瓣关闭不全,Rheumatic mitral regurgitation,心血管疾病-瓣膜病,风湿性二尖瓣病,严重
+I42.0,DCM,KSXXJB,扩张型心肌病,Dilated cardiomyopathy,心血管疾病-心肌病,扩张型心肌病,严重
+I42.1,HOCM,FSHXFDXXJB,肥厚梗阻性心肌病,Hypertrophic obstructive cardiomyopathy,心血管疾病-心肌病,肥厚梗阻性心肌病,严重
+I42.2,HCM,FSHXXJB,肥厚型心肌病,Hypertrophic cardiomyopathy,心血管疾病-心肌病,肥厚型心肌病,严重
+I42.5,RCM,XZXXJB,限制型心肌病,Restrictive cardiomyopathy,心血管疾病-心肌病,限制型心肌病,严重
+I40.9,MYOCARDITIS,XXJYWTZ,心肌炎,Myocarditis,心血管疾病-心肌病,心肌炎未特指,严重
+I30.9,PERICARDITIS,XBYWTZ,心包炎,Pericarditis,心血管疾病-心包疾病,心包炎未特指,中等
+I31.3,PERIC-EFFUSION,XBJY,心包积液,Pericardial effusion,心血管疾病-心包疾病,心包积液,中等
+I31.1,CONSTRIC-PERIC,SSXXBY,缩窄性心包炎,Constrictive pericarditis,心血管疾病-心包疾病,缩窄性心包炎,严重
+I31.4,TAMPONADE,XBTY,心包填塞,Cardiac tamponade,心血管疾病-心包疾病,心包填塞,危重
+I26.99,PE,FDSL,肺栓塞,Pulmonary embolism,心血管疾病-血栓栓塞,急性肺栓塞,严重
+I26.02,MASSIVE-PE,DZFDSL,大面积肺栓塞,Saddle embolus of pulmonary artery with acute cor pulmonale,心血管疾病-血栓栓塞,大面积肺栓塞伴右心衰,危重
+I80.10,DVT-FEMORAL,GDMJXXZ,股深静脉血栓,DVT of femoral vein,心血管疾病-血栓栓塞,股静脉血栓形成,严重
+I82.40,DVT-LOWER,XZSJMJXXZ,下肢深静脉血栓,DVT of lower extremity,心血管疾病-血栓栓塞,下肢深静脉血栓,严重
+I63.9,STROKE-ISCH,QXZQNGZWTZ,缺血性脑卒中,Ischemic stroke,心血管疾病-脑血管病,缺血性脑梗死,严重
+I61.9,STROKE-HEM,NCZXWTZ,脑出血,Hemorrhagic stroke,心血管疾病-脑血管病,出血性脑卒中,危重
+I60.9,SAH,ZMNXCX,蛛网膜下腔出血,Subarachnoid hemorrhage,心血管疾病-脑血管病,蛛网膜下腔出血,危重
+G45.9,TIA,DWZQXZFZ,短暂性脑缺血发作,Transient ischemic attack,心血管疾病-脑血管病,TIA未特指,中等
+I71.4,AAA-ABD,FZDMLS,腹主动脉瘤,Abdominal aortic aneurysm,心血管疾病-血管病,腹主动脉瘤未破裂,严重
+I71.00,AAA-RUPTURE,FZDMLSPL,主动脉瘤破裂,Aortic aneurysm rupture,心血管疾病-血管病,主动脉瘤破裂,危重
+I71.01,THORACIC-ANEURYSM,XBZDMLS,胸主动脉瘤,Thoracic aortic aneurysm,心血管疾病-血管病,胸主动脉瘤,严重
+I71.03,AORTIC-DISSECTION,ZDMJL,主动脉夹层,Aortic dissection,心血管疾病-血管病,主动脉夹层,危重
+I70.0,ATHEROSCLEROSIS-AORTA,ZDMZYHB,主动脉粥样硬化,Atherosclerosis of aorta,心血管疾病-血管病,主动脉粥样硬化,中等
+I70.2,PAD,WZMDMB,外周动脉疾病,Peripheral arterial disease,心血管疾病-血管病,下肢动脉粥样硬化,严重
+I73.9,PVD,WZXGBJWTZ,外周血管病,Peripheral vascular disease,心血管疾病-血管病,外周血管疾病未特指,中等
+I73.0,RAYNAUD,LNZHZ,雷诺综合征,Raynaud syndrome,心血管疾病-血管病,雷诺现象,轻度
+I27.0,PPHN,YDMGXY,原发性肺动脉高压,Primary pulmonary hypertension,心血管疾病-肺循环,原发性肺高压,严重
+I27.2,SECOND-PH,JFXFDMGXY,继发性肺动脉高压,Secondary pulmonary hypertension,心血管疾病-肺循环,继发性肺高压,严重
+I27.81,COR-PULMONALE,FYDXXB,肺源性心脏病,Cor pulmonale,心血管疾病-肺循环,慢性肺源性心脏病,严重
+Q21.0,VSD,SSJGQS,室间隔缺损,Ventricular septal defect,先天性心脏病,室间隔缺损,中等
+Q21.1,ASD,FZJGQS,房间隔缺损,Atrial septal defect,先天性心脏病,房间隔缺损,中等
+Q25.0,PDA,DMGWBBL,动脉导管未闭,Patent ductus arteriosus,先天性心脏病,动脉导管未闭,中等
+Q21.3,TOF,FLLDZZHX,法洛四联症,Tetralogy of Fallot,先天性心脏病,法洛四联症,严重
+Q20.3,TGA,DDMLWZ,大动脉转位,Transposition of great arteries,先天性心脏病,完全性大动脉转位,严重
+Z95.1,POST-CABG,GZJQQSH,冠状动脉旁路术后,Status post CABG,心脏术后状态,冠脉搭桥术后,管理
+Z95.5,POST-PCI,GJJRSQWZJRSH,冠脉介入术后,Status post coronary angioplasty,心脏术后状态,PCI术后,管理
+Z95.0,PACEMAKER,XZDQCRSQWZ,心脏起搏器植入术后,Cardiac pacemaker in situ,心脏术后状态,心脏起搏器状态,管理
+Z95.810,ICD-DEVICE,XZFCZQCRSQWZ,ICD植入术后,Automatic implantable cardiac defibrillator in situ,心脏术后状态,ICD植入状态,管理
+Z95.2,PROSTHETIC-VALVE,RGGXZBZRSQWZ,人工心脏瓣膜置换术后,Prosthetic heart valve in situ,心脏术后状态,人工瓣膜状态,管理
+Z79.01,ANTICOAG-LONG,CQKNJYZL,长期口服抗凝治疗,Long term use of anticoagulants,抗凝治疗,长期抗凝状态,管理
+Z79.02,ANTIPLATELET-LONG,CQKFKXXBJYZL,长期口服抗血小板治疗,Long term use of antiplatelets,抗血小板治疗,长期抗血小板状态,管理
+J45.909,ASTHMA,XC,哮喘,Asthma,呼吸系统疾病,哮喘未特指,中等
+J45.20,ASTHMA-MILD-PERS,QDZCCXXC,轻度持续性哮喘,Mild persistent asthma,呼吸系统疾病,轻度持续性哮喘,轻度
+J45.30,ASTHM-MOD-PERS,ZDZCCXXC,中度持续性哮喘,Moderate persistent asthma,呼吸系统疾病,中度持续性哮喘,中等
+J45.40,ASTHMA-SEV-PERS,ZDZCCXXC,重度持续性哮喘,Severe persistent asthma,呼吸系统疾病,重度持续性哮喘,严重
+J45.901,ASTHMA-EXAC,XCJXFZ,哮喘急性发作,Asthma with acute exacerbation,呼吸系统疾病,哮喘急性加重,严重
+J45.902,STATUS-ASTHMA,XCCZZT,哮喘持续状态,Status asthmaticus,呼吸系统疾病,重度哮喘持续状态,危重
+J44.9,COPD,MZFXXTJBWTZ,慢阻肺,COPD,呼吸系统疾病,慢性阻塞性肺疾病,严重
+J44.0,COPD-EXAC,MZFXXTJBJXFZ,慢阻肺急性加重,COPD with acute exacerbation,呼吸系统疾病,慢阻肺急性加重,严重
+J44.1,COPD-AE,MZFXXTJBJXFZ,慢阻肺急性加重,COPD with acute lower respiratory infection,呼吸系统疾病,慢阻肺伴急性下呼吸道感染,严重
+J43.9,EMPHYSEMA,FQ,肺气肿,Emphysema,呼吸系统疾病,肺气肿未特指,中等
+J42,CHRONIC-BRONCH,MXQGY,慢性支气管炎,Chronic bronchitis,呼吸系统疾病,慢性支气管炎未特指,中等
+J18.9,PNEUMONIA,FY,肺炎,Pneumonia,呼吸系统疾病,肺炎未特指,严重
+J18.1,LOBAR-PNA,DYFY,大叶性肺炎,Lobar pneumonia,呼吸系统疾病,大叶性肺炎,严重
+J18.0,BRONCHOPNA,ZQGFY,支气管肺炎,Bronchopneumonia,呼吸系统疾病,支气管肺炎,严重
+J15.0,KLEBSIELLA-PNA,KBXJFY,克雷伯菌肺炎,Klebsiella pneumonia,呼吸系统疾病,肺炎克雷伯菌肺炎,严重
+J15.1,PSEUDO-PNA,TJGNJFY,铜绿假单胞菌肺炎,Pseudomonas pneumonia,呼吸系统疾病,铜绿假单胞菌肺炎,严重
+J15.7,MYCO-PNA,ZJTFY,支原体肺炎,Mycoplasma pneumonia,呼吸系统疾病,肺炎支原体肺炎,中等
+J12.9,VIRAL-PNA,BDXFY,病毒性肺炎,Viral pneumonia,呼吸系统疾病,病毒性肺炎未特指,中等
+J13,PNEUMO-PNA,FJQJFY,肺炎球菌肺炎,Pneumococcal pneumonia,呼吸系统疾病,肺炎链球菌肺炎,严重
+J69.0,ASPIRATION-PNA,WXFY,吸入性肺炎,Aspiration pneumonia,呼吸系统疾病,误吸性肺炎,严重
+J95.851,VAP,HXJXGFY,呼吸机相关性肺炎,Ventilator associated pneumonia,呼吸系统疾病,呼吸机相关肺炎,严重
+J85.2,LUNG-ABSCESS,FNZ,肺脓肿,Lung abscess,呼吸系统疾病,肺脓肿未伴肺炎,严重
+J86.9,EMPYEMA,NXJNZ,脓胸,Pyothorax,呼吸系统疾病,脓胸未特指,严重
+J90,PLEURAL-EFFUSION,XQJS,胸腔积液,Pleural effusion,呼吸系统疾病,胸腔积液未特指,中等
+J94.2,HEMOTHORAX,XQJx,血胸,Hemothorax,呼吸系统疾病,胸腔积血,严重
+J93.9,PNEUMOTHORAX,QX,气胸,Pneumothorax,呼吸系统疾病,气胸未特指,中等
+J93.0,SPONT-PTX,ZFQX,自发性气胸,Spontaneous tension pneumothorax,呼吸系统疾病,自发性气胸,严重
+J93.11,PRIMARY-PTX,YFXZFQX,原发性自发气胸,Primary spontaneous pneumothorax,呼吸系统疾病,原发性自发性气胸,中等
+J93.12,SECOND-PTX,JFXZFQX,继发性自发气胸,Secondary spontaneous pneumothorax,呼吸系统疾病,继发性自发性气胸,严重
+J93.83,TENSION-PTX,ZLDQX,张力性气胸,Tension pneumothorax,呼吸系统疾病,张力性气胸,危重
+A15.0,TB-LUNG,FJH,肺结核,Pulmonary tuberculosis,呼吸系统疾病-感染,肺结核涂片阳性,严重
+A15.5,TB-LARYNX,HJHJH,喉结核,Tuberculosis of larynx,呼吸系统疾病-感染,喉结核,严重
+A15.6,TB-PLEURAL,JHMXJY,结核性胸膜炎,Tuberculous pleurisy,呼吸系统疾病-感染,结核性胸腔积液,严重
+A16.2,TB-NO-BACT,FJHWXJXXZ,肺结核无细菌学证实,Tuberculosis of lung without bacteriological confirmation,呼吸系统疾病-感染,肺结核细菌学阴性,中等
+J84.10,IPF,TZXFTJHB,特发性肺纤维化,Idiopathic pulmonary fibrosis,间质性肺病,特发性肺间质纤维化,严重
+J84.89,ILD,JZXFB,间质性肺病,Interstitial lung disease,间质性肺病,其他间质性肺疾病,严重
+J84.17,NSIP,FTXXFB,非特异性间质性肺炎,Nonspecific interstitial pneumonitis,间质性肺病,NSIP,严重
+J96.00,ACUTE-RF,JXHXSJ,急性呼吸衰竭,Acute respiratory failure,呼吸衰竭,急性呼吸功能衰竭,危重
+J96.10,CHRONIC-RF,MXHXSJ,慢性呼吸衰竭,Chronic respiratory failure,呼吸衰竭,慢性呼吸功能衰竭,严重
+J96.20,ACUTE-ON-CRF,MXJXJXHXSJ,慢性呼衰急性加重,Acute on chronic respiratory failure,呼吸衰竭,慢性呼吸衰竭急性加重,危重
+J80,ARDS,JXHXZPZHZ,急性呼吸窘迫综合征,ARDS,呼吸衰竭,成人呼吸窘迫综合征,危重
+J81.0,PULM-EDEMA,FJSFXFS,肺水肿,Pulmonary edema,肺循环疾病,急性肺水肿,危重
+J47.9,BRONCHIECTASIS,ZQGKZ,支气管扩张,Bronchiectasis,慢性气道病,支气管扩张症,中等
+J47.0,BRONCHIECT-EXAC,ZQGKZJXFZ,支气管扩张急性加重,Bronchiectasis with acute exacerbation,慢性气道病,支气管扩张急性加重,严重
+J98.01,BRONCHOSPASM,ZQGJL,支气管痉挛,Acute bronchospasm,气道反应性疾病,急性支气管痉挛,中等
+J98.11,ATELECTASIS,FBZ,肺不张,Atelectasis,肺实质疾病,肺不张,中等
+J98.4,PULM-COLLAPSE,FDXTS,肺萎陷,Pulmonary collapse,肺实质疾病,其他肺萎陷,严重
+J34.2,NASAL-POLYP,BQX,鼻息肉,Deviated nasal septum,上气道疾病,鼻中隔偏曲,轻度
+J06.9,URI,SGHXDGR,上呼吸道感染,Upper respiratory infection,上气道感染,急性上呼吸道感染,轻度
+J20.9,ACUTE-BRONCH,JXZQGY,急性支气管炎,Acute bronchitis,下气道感染,急性支气管炎,中等
+J30.1,ALLERGIC-RHINITIS,GMXBY,过敏性鼻炎,Allergic rhinitis,变态反应性疾病,花粉性鼻炎,轻度
+J32.9,CHRONIC-SINUS,MXBDY,慢性鼻窦炎,Chronic sinusitis,慢性鼻窦疾病,慢性鼻窦炎未特指,轻度
+G47.33,OSA,ZSDXHXZT,阻塞性睡眠呼吸暂停,Obstructive sleep apnea,睡眠呼吸障碍,阻塞性睡眠呼吸暂停,中等
+G47.30,SLEEP-APNEA,SDXHXZTZHZ,睡眠呼吸暂停综合征,Sleep apnea,睡眠呼吸障碍,睡眠呼吸暂停未特指,中等
+J68.0,BRONCH-CHEM,HXWZQGY,化学物质致支气管炎,Bronchitis due to chemicals,职业性肺病,化学性支气管炎,严重
+J63.0,SILICOSIS,GFB,矽肺,Silicosis,职业性肺病,矽肺病,严重
+J62.0,PNEUMOCONIOSIS,CFFB,尘肺,Pneumoconiosis due to coal dust,职业性肺病,煤工尘肺,严重
+D86.9,SARCOID,JZB,结节病,Sarcoidosis,肉芽肿性疾病,结节病未特指,中等
+D86.0,SARCOID-LUNG,FJZB,肺结节病,Sarcoidosis of lung,肉芽肿性疾病,肺结节病,中等
+Z87.01,HX-PNEUMONIA,FYBS,肺炎病史,Personal history of pneumonia,既往呼吸系统病史,既往肺炎史,管理
+Z87.09,HX-RESP,HXXTJBBS,呼吸系统疾病史,Personal history of respiratory disease,既往呼吸系统病史,既往呼吸系统疾病,管理
+Z43.0,TRACHEOSTOMY,QGQKZT,气管切开状态,Tracheostomy status,呼吸支持状态,气管切开术后,管理
+Z99.11,VENT-DEPEND,YLHXJ,依赖呼吸机,Dependence on ventilator,呼吸支持状态,呼吸机依赖状态,管理
+Z99.12,O2-LONG-TERM,CQJYYZL,长期家庭氧疗,Long-term oxygen therapy,呼吸支持状态,长期氧疗,管理
+K21.9,GERD,WSFLLXJBY,胃食管反流病,GERD,消化系统疾病,胃食管反流病,中等
+K21.0,GERD-ESOPH,FSXWSFLLXJBY,反流性食管炎,GERD with esophagitis,消化系统疾病,反流性食管炎,中等
+K22.10,BARRETT,BTSG,Barrett食管,Barrett esophagus,消化系统疾病,Barrett食管无发育不良,中等
+K22.70,ESOPH-ULCER,SGKY,食管溃疡,Esophageal ulcer,消化系统疾病,食管溃疡,严重
+K22.2,ESOPH-OBSTR,SGGZ,食管梗阻,Esophageal obstruction,消化系统疾病,食管梗阻,严重
+K22.3,ESOPH-PERF,SGCZ,食管穿孔,Esophageal perforation,消化系统疾病,食管穿孔,危重
+K22.6,MALLORY-WEISS,MWZHZ,Mallory-Weiss综合征,Mallory-Weiss syndrome,消化系统疾病,贲门黏膜撕裂综合征,严重
+K25.9,PU-GASTRIC,WKY,胃溃疡,Gastric ulcer,消化系统疾病,胃溃疡,中等
+K25.0,PU-GASTRIC-PERF,WKYCZ,胃溃疡穿孔,Gastric ulcer with perforation,消化系统疾病,胃溃疡急性穿孔,危重
+K25.4,PU-GASTRIC-BLEED,WKYCX,胃溃疡出血,Gastric ulcer with hemorrhage,消化系统疾病,胃溃疡伴出血,严重
+K26.9,PU-DUODENAL,SEZCKYKYWC,十二指肠溃疡,Duodenal ulcer,消化系统疾病,十二指肠溃疡,中等
+K26.0,PU-DUODENAL-PERF,SEZCKYCZY,十二指肠溃疡穿孔,Duodenal ulcer with perforation,消化系统疾病,十二指肠溃疡急性穿孔,危重
+K26.4,PU-DUODENAL-BLEED,SEZCKYCX,十二指肠溃疡出血,Duodenal ulcer with hemorrhage,消化系统疾病,十二指肠溃疡伴出血,严重
+K27.9,PEPTIC-ULCER,XXKYWBMWTZ,消化性溃疡部位未特指,Peptic ulcer site unspecified,消化系统疾病,消化性溃疡,中等
+K29.70,GASTRITIS,WY,胃炎,Gastritis,消化系统疾病,胃炎未特指,轻度
+K29.00,GASTRITIS-ACUTE,JXWY,急性胃炎,Acute gastritis,消化系统疾病,急性胃炎,中等
+K29.20,ALCOHOLIC-GASTRITIS,JJXWY,酒精性胃炎,Alcoholic gastritis,消化系统疾病,酒精性胃炎,中等
+K29.30,SUPERFICIAL-GASTRITIS,QBXWY,浅表性胃炎,Chronic superficial gastritis,消化系统疾病,慢性浅表性胃炎,轻度
+K29.40,ATROPHIC-GASTRITIS,WSXWY,萎缩性胃炎,Chronic atrophic gastritis,消化系统疾病,慢性萎缩性胃炎,中等
+K29.50,GASTRITIS-CHRONIC,MXWY,慢性胃炎,Chronic gastritis,消化系统疾病,慢性胃炎未特指,中等
+K29.60,GASTRITIS-HP,MNLJGJWY,幽门螺杆菌胃炎,Gastritis with H pylori,消化系统疾病,幽门螺杆菌相关胃炎,中等
+K29.90,GASTRODUODENITIS,WSEZCXY,胃十二指肠炎,Gastroduodenitis,消化系统疾病,胃十二指肠炎,中等
+K31.84,GASTROPARESIS,WTH,胃轻瘫,Gastroparesis,消化系统疾病,胃轻瘫,中等
+K31.89,GASTRIC-POLYP,WXR,胃息肉,Gastric polyp,消化系统疾病,胃息肉,轻度
+K92.2,GI-BLEED,XHDCX,消化道出血,GI hemorrhage,消化系统疾病,胃肠出血,严重
+K92.0,HEMATEMESIS,TUX,吐血,Hematemesis,消化系统疾病,呕血,严重
+K92.1,MELENA,HXBWTZ,黑便,Melena,消化系统疾病,黑便未特指,严重
+K63.1,LOWER-GI-BLEED,XXHDCX,下消化道出血,Lower GI bleed,消化系统疾病,下消化道出血,严重
+K55.1,CHRONIC-MESEN-ISCH,MXCXMXQX,慢性肠系膜缺血,Chronic mesenteric ischemia,消化系统疾病,慢性肠系膜血管性疾病,严重
+K55.0,ACUTE-MESEN-ISCH,JXCXMXQX,急性肠系膜缺血,Acute mesenteric ischemia,消化系统疾病,急性肠系膜血管缺血,危重
+K55.21,ANGIODYSPLASIA-COLON,JCXGFYY,结肠血管发育异常,Angiodysplasia of colon with hemorrhage,消化系统疾病,结肠血管发育异常伴出血,严重
+K50.00,CROHN-SMALL,XCKRLEB,小肠克罗恩病,Crohn disease of small intestine,炎症性肠病,克罗恩病累及小肠,严重
+K50.10,CROHN-COLON,JCKLEB,结肠克罗恩病,Crohn disease of large intestine,炎症性肠病,克罗恩病累及结肠,严重
+K50.80,CROHN-BOTH,KLEB,克罗恩病累及小肠和结肠,Crohn disease of both small and large intestine,炎症性肠病,克罗恩病累及小肠和结肠,严重
+K51.00,UC-PANCOLITIS,QJCKYXJCY,全结肠溃疡性结肠炎,Ulcerative pancolitis,炎症性肠病,溃疡性全结肠炎,严重
+K51.20,UC-PROCTITIS,KYXZCZCY,溃疡性直肠炎,Ulcerative proctitis,炎症性肠病,溃疡性直肠炎,中等
+K51.30,UC-RECTOSIG,KYXZJJCYY,溃疡性直肠乙状结肠炎,Ulcerative rectosigmoiditis,炎症性肠病,溃疡性直肠乙状结肠炎,中等
+K51.50,UC-LEFT,ZJCKYXJCY,左半结肠溃疡性结肠炎,Left-sided ulcerative colitis,炎症性肠病,左半结肠炎,严重
+K52.9,GASTROENTERITIS,WCDY,胃肠炎,Gastroenteritis,消化系统疾病,非感染性胃肠炎,中等
+K52.1,TOXIC-GASTROENTERITIS,DXWCDY,毒性胃肠炎,Toxic gastroenteritis,消化系统疾病,毒性胃肠炎,严重
+K52.2,ALLERGIC-COLITIS,GMXJCY,过敏性结肠炎,Allergic colitis,消化系统疾病,过敏性结肠炎,中等
+K52.81,EOSINOPHILIC-GASTRITIS,SQXBXWY,嗜酸性粒细胞性胃炎,Eosinophilic gastritis,消化系统疾病,嗜酸性粒细胞胃肠炎,中等
+K52.82,EOSINOPHILIC-COLITIS,SQXBXJCY,嗜酸性粒细胞性结肠炎,Eosinophilic colitis,消化系统疾病,嗜酸性粒细胞结肠炎,中等
+K58.9,IBS,CJZHZ,肠易激综合征,Irritable bowel syndrome,功能性胃肠病,肠易激综合征未特指,轻度
+K58.0,IBS-D,FXXCJZHZ,腹泻型肠易激,IBS with diarrhea,功能性胃肠病,腹泻型肠易激综合征,轻度
+K58.1,IBS-C,BMXCJZHZ,便秘型肠易激,IBS with constipation,功能性胃肠病,便秘型肠易激综合征,轻度
+K59.1,DYSPEPSIA,XHBL,消化不良,Functional dyspepsia,功能性胃肠病,功能性消化不良,轻度
+K59.00,CONSTIPATION,BM,便秘,Constipation,功能性胃肠病,便秘未特指,轻度
+K59.1,DIARRHEA-FUNC,GNXFX,功能性腹泻,Functional diarrhea,功能性胃肠病,功能性腹泻,轻度
+K57.90,DIVERTICULITIS,JCXSYWTZ,结肠憩室炎,Diverticulitis,消化系统疾病,憩室炎未特指,中等
+K57.92,DIVERTICULITIS-BLEED,XSCXJCXSY,憩室炎伴出血,Diverticulitis with bleeding,消化系统疾病,憩室炎伴出血,严重
+K57.32,DIVERTICULITIS-PERF,XSCZCJCXSY,憩室炎伴穿孔,Diverticulitis with perforation,消化系统疾病,憩室炎伴穿孔,危重
+K56.60,SBO,XBXCGZ,小肠梗阻,Small bowel obstruction,消化系统急症,部分性小肠梗阻,严重
+K56.69,SBO-COMPLETE,WQXXCGZ,完全性小肠梗阻,Complete small bowel obstruction,消化系统急症,完全性小肠梗阻,危重
+K56.41,ILEUS,FJXCGZ,麻痹性肠梗阻,Paralytic ileus,消化系统急症,麻痹性肠梗阻,严重
+K56.2,VOLVULUS,CNNZ,肠扭转,Volvulus,消化系统急症,肠扭转,危重
+K56.1,INTUSSUSCEPTION,CDTL,肠套叠,Intussusception,消化系统急症,肠套叠,严重
+K63.2,INTESTINAL-FISTULA,CDL,肠瘘,Intestinal fistula,消化系统疾病,肠瘘,严重
+K65.9,PERITONITIS,FMYWTZ,腹膜炎,Peritonitis,消化系统疾病,腹膜炎未特指,严重
+K65.0,PERITONITIS-ACUTE,JXFMY,急性腹膜炎,Acute peritonitis,消化系统疾病,急性弥漫性腹膜炎,危重
+K65.2,SBP,ZFFXFMY,自发性细菌性腹膜炎,Spontaneous bacterial peritonitis,消化系统疾病,自发性细菌性腹膜炎,严重
+K66.0,PERITONEAL-ADHESION,FMNZ,腹膜粘连,Peritoneal adhesions,消化系统疾病,腹膜粘连,中等
+K70.30,ALD-CIRRHOSIS,JJXGGYHB,酒精性肝硬化,Alcoholic cirrhosis,消化系统疾病-肝病,酒精性肝硬化,严重
+K70.10,ALD-HEPATITIS,JJXGY,酒精性肝炎,Alcoholic hepatitis,消化系统疾病-肝病,酒精性肝炎,严重
+K70.0,FATTY-LIVER-ALC,JJXZFG,酒精性脂肪肝,Alcoholic fatty liver,消化系统疾病-肝病,酒精性脂肪肝,中等
+K76.0,FATTY-LIVER,ZFG,脂肪肝,Fatty liver,消化系统疾病-肝病,脂肪肝未特指,轻度
+K75.81,NAFLD,FJJXZFGB,非酒精性脂肪肝,Nonalcoholic fatty liver disease,消化系统疾病-肝病,非酒精性脂肪肝病,中等
+K75.2,NASH,FJJXZFXGY,非酒精性脂肪性肝炎,Nonalcoholic steatohepatitis,消化系统疾病-肝病,非酒精性脂肪性肝炎,严重
+K74.60,CIRRHOSIS,GGHYWTZ,肝硬化,Cirrhosis,消化系统疾病-肝病,肝硬化未特指,严重
+K74.69,CIRRHOSIS-OTHER,QTGGYH,其他肝硬化,Other cirrhosis,消化系统疾病-肝病,其他肝硬化,严重
+K74.3,PBC,YFXDGXGGYHB,原发性胆汁性肝硬化,Primary biliary cirrhosis,消化系统疾病-肝病,原发性胆汁性胆管炎,严重
+K74.4,PSC,YFXYHXDGGY,原发性硬化性胆管炎,Primary sclerosing cholangitis,消化系统疾病-肝病,原发性硬化性胆管炎,严重
+K72.00,ACUTE-LIVER-FAIL,JXGSJ,急性肝衰竭,Acute liver failure,消化系统疾病-肝病,急性肝功能衰竭,危重
+K72.10,CHRONIC-LIVER-FAIL,MXGSJ,慢性肝衰竭,Chronic liver failure,消化系统疾病-肝病,慢性肝功能衰竭,严重
+K72.90,LIVER-FAIL,GSJWTZ,肝衰竭,Hepatic failure,消化系统疾病-肝病,肝衰竭未特指,危重
+K76.6,PORTAL-HTN,MMGXY,门脉高压,Portal hypertension,消化系统疾病-肝病,门静脉高压,严重
+K76.7,HEPATORENAL-SYND,GSZZHZ,肝肾综合征,Hepatorenal syndrome,消化系统疾病-肝病,肝肾综合征,危重
+I85.00,ESOPH-VARICES,SGJMQZCX,食管静脉曲张出血,Esophageal varices with bleeding,消化系统疾病-肝病,食管静脉曲张伴出血,危重
+I85.10,ESOPH-VARICES-NO-BLEED,SGJMQZWCX,食管静脉曲张无出血,Esophageal varices without bleeding,消化系统疾病-肝病,食管静脉曲张无出血,严重
+K76.81,HEPATOPULMONARY,GFZHZ,肝肺综合征,Hepatopulmonary syndrome,消化系统疾病-肝病,肝肺综合征,严重
+K91.2,POST-GI-SURGERY,XHDSSQZHZ,消化道术后综合征,Postsurgical malabsorption,消化系统疾病,胃肠术后吸收不良,中等
+K85.90,PANCREATITIS-ACUTE,JXYXY,急性胰腺炎,Acute pancreatitis,消化系统疾病,急性胰腺炎,严重
+K85.30,ACUTE-PANC-NECROSIS,JXYHSXYXY,急性坏死性胰腺炎,Acute pancreatitis with infected necrosis,消化系统疾病,急性坏死性胰腺炎,危重
+K85.10,BILIARY-PANCREATITIS,DNYYXYXY,胆源性胰腺炎,Biliary acute pancreatitis,消化系统疾病,胆源性急性胰腺炎,严重
+K85.20,ALCOHOL-PANCREATITIS,JJXYXY,酒精性胰腺炎,Alcohol-induced acute pancreatitis,消化系统疾病,酒精性急性胰腺炎,严重
+K86.1,PANCREATITIS-CHRONIC,MXYXY,慢性胰腺炎,Chronic pancreatitis,消化系统疾病,慢性胰腺炎,严重
+K86.81,PANCREATIC-PSEUDOCYST,YXJNZ,胰腺假囊肿,Pancreatic pseudocyst,消化系统疾病,胰腺假性囊肿,中等
+K80.20,CHOLELITHIASIS,DNJSZWDNDY,胆囊结石,Cholelithiasis,消化系统疾病,胆囊结石无胆囊炎,中等
+K80.00,CHOLELITHIASIS-ACUTE,JXDNJSZDY,急性胆囊结石伴胆囊炎,Cholelithiasis with acute cholecystitis,消化系统疾病,胆囊结石伴急性胆囊炎,严重
+K80.10,CHOLELITHIASIS-CHRONIC,MXDNJSZDY,慢性胆囊结石伴胆囊炎,Cholelithiasis with chronic cholecystitis,消化系统疾病,胆囊结石伴慢性胆囊炎,中等
+K80.30,CBD-STONE,DGJS,胆总管结石,Choledocholithiasis,消化系统疾病,胆总管结石,严重
+K80.50,CBD-STONE-CHOLANGITIS,DGJSBDGY,胆总管结石伴胆管炎,Choledocholithiasis with cholangitis,消化系统疾病,胆总管结石伴胆管炎,严重
+K81.9,CHOLECYSTITIS,DNDY,胆囊炎,Cholecystitis,消化系统疾病,胆囊炎,中等
+K81.0,ACUTE-CHOLECYST,JXDNDY,急性胆囊炎,Acute cholecystitis,消化系统疾病,急性胆囊炎,严重
+K81.1,CHRONIC-CHOLECYST,MXDNDY,慢性胆囊炎,Chronic cholecystitis,消化系统疾病,慢性胆囊炎,中等
+K82.2,GB-PERF,DNCZ,胆囊穿孔,Perforation of gallbladder,消化系统疾病,胆囊穿孔,危重
+K83.0,CHOLANGITIS,DGDY,胆管炎,Cholangitis,消化系统疾病,胆管炎,严重
+K83.01,ACUTE-CHOLANGITIS,JXDGDY,急性胆管炎,Acute cholangitis,消化系统疾病,急性胆管炎,严重
+K83.09,CHOLANGITIS-OTHER,QTDGDY,其他胆管炎,Other cholangitis,消化系统疾病,其他胆管炎,中等
+K40.90,HERNIA-INGUINAL,GWSQ,腹股沟疝,Inguinal hernia,腹壁疾病,腹股沟疝未嵌顿,中等
+K40.30,HERNIA-INGUINAL-BILAT,SCGWSQ,双侧腹股沟疝,Bilateral inguinal hernia,腹壁疾病,双侧腹股沟疝,中等
+K40.40,HERNIA-INGUINAL-INCARCERATED,QDSQGWSQ,嵌顿腹股沟疝,Inguinal hernia with obstruction,腹壁疾病,嵌顿性腹股沟疝,严重
+K41.90,HERNIA-FEMORAL,GS,股疝,Femoral hernia,腹壁疾病,股疝未嵌顿,中等
+K42.9,HERNIA-UMBILICAL,QS,脐疝,Umbilical hernia,腹壁疾病,脐疝未嵌顿,轻度
+K43.9,HERNIA-VENTRAL,FQSQ,腹壁疝,Ventral hernia,腹壁疾病,腹壁疝未嵌顿,中等
+K43.0,HERNIA-INCISIONAL,QKSQWQD,切口疝,Incisional hernia,腹壁疾病,切口疝无嵌顿,中等
+K44.9,HERNIA-DIAPHRAGMATIC,GMKS,膈肌疝,Diaphragmatic hernia,腹壁疾病,膈疝,中等
+K46.9,HERNIA-ABDOMINAL,FBSQWTZ,腹部疝,Abdominal hernia,腹壁疾病,腹部未特指疝,中等
+G40.909,EPILEPSY,DX,癫痫,Epilepsy,神经系统疾病,癫痫未特指,严重
+G40.001,FOCAL-EPILEPSY,JXZDX,局灶性癫痫,Localization-related epilepsy,神经系统疾病,局灶性癫痫,严重
+G40.101,GENERALIZED-EPILEPSY,QMXDX,全面性癫痫,Generalized idiopathic epilepsy,神经系统疾病,全面性癫痫,严重
+G40.201,ABSENCE-EPILEPSY,SSDX,失神癫痫,Childhood absence epilepsy,神经系统疾病,儿童失神癫痫,中等
+G40.301,GRAND-MAL,DDZDX,大发作癫痫,Generalized convulsive epilepsy,神经系统疾病,全面性强直阵挛发作,严重
+G40.A09,STATUS-EPILEPSY,DXCZZT,癫痫持续状态,Status epilepticus,神经系统疾病,癫痫持续状态,危重
+G40.B09,JUVENILE-MYOCLONIC,QSNKLJX,青少年肌阵挛,Juvenile myoclonic epilepsy,神经系统疾病,青少年肌阵挛癫痫,严重
+G20,PARKINSON,PJSB,帕金森病,Parkinson disease,神经系统疾病,帕金森病,严重
+G21.0,PARKINSON-SECOND,JFXPJSB,继发性帕金森,Secondary parkinsonism,神经系统疾病,继发性帕金森综合征,严重
+G23.1,PSP,JXSHXMBMT,进行性核上性麻痹,Progressive supranuclear palsy,神经系统疾病,进行性核上性麻痹,严重
+G23.2,MSA,DFXWSXWS,多系统萎缩,Multiple system atrophy,神经系统疾病,多系统萎缩,严重
+G30.9,ALZHEIMER,ADCDB,阿尔茨海默病,Alzheimer disease,神经系统疾病,阿尔茨海默病未特指,严重
+G30.0,ALZHEIMER-EARLY,ZFDAD,早发型AD,Early-onset Alzheimer disease,神经系统疾病,早发型阿尔茨海默病,严重
+G30.1,ALZHEIMER-LATE,WFDAD,晚发型AD,Late-onset Alzheimer disease,神经系统疾病,晚发型阿尔茨海默病,严重
+G31.01,FRONTOTEMPORAL-DEMENTIA,NQLYSXCDB,额颞叶痴呆,Frontotemporal dementia,神经系统疾病,额颞叶变性痴呆,严重
+G31.83,LEWY-BODY-DEMENTIA,LWTXCDB,路易体痴呆,Dementia with Lewy bodies,神经系统疾病,路易体痴呆,严重
+G31.84,MCI,QDRZSGZ,轻度认知损害,Mild cognitive impairment,神经系统疾病,轻度认知功能障碍,中等
+F01.50,VASCULAR-DEMENTIA,XGXCDB,血管性痴呆,Vascular dementia,神经系统疾病,血管性痴呆,严重
+F03.90,DEMENTIA,CDB,痴呆,Dementia,神经系统疾病,痴呆未特指,严重
+G35,MS,DFXYHB,多发性硬化,Multiple sclerosis,神经系统疾病,多发性硬化症,严重
+G36.0,NMO,SJJYSPYYHB,视神经脊髓炎,Neuromyelitis optica,神经系统疾病,视神经脊髓炎谱系疾病,严重
+G37.3,ACUTE-TRANSVERSE-MYELITIS,JXHJXJZY,急性横贯性脊髓炎,Acute transverse myelitis,神经系统疾病,急性横贯性脊髓炎,严重
+G61.0,GBS,JLJBZHZ,吉兰-巴雷综合征,Guillain-Barre syndrome,神经系统疾病,格林巴利综合征,严重
+G60.0,CIDP,MXFMXSJXTWBY,慢性炎性脱髓鞘性多发性神经病,CIDP,神经系统疾病,慢性炎性脱髓鞘性多发性神经病,严重
+G70.00,MG,ZWLSSJ,重症肌无力,Myasthenia gravis,神经肌肉疾病,重症肌无力无急性加重,严重
+G70.01,MG-CRISIS,ZWLSSJWJ,肌无力危象,Myasthenia gravis with acute exacerbation,神经肌肉疾病,重症肌无力危象,危重
+G71.0,MUSCULAR-DYSTROPHY,JYYSZB,肌营养不良,Muscular dystrophy,神经肌肉疾病,进行性肌营养不良,严重
+G71.11,DMD,DMD,Duchenne肌营养不良,Duchenne muscular dystrophy,神经肌肉疾病,Duchenne型肌营养不良,严重
+G71.2,MYOTONIC-DYSTROPHY,QJXYSZB,强直性肌营养不良,Myotonic disorders,神经肌肉疾病,强直性肌营养不良,严重
+G72.81,CRITICAL-ILLNESS-MYOPATHY,WZBJB,危重病肌病,Critical illness myopathy,神经肌肉疾病,危重病肌病,严重
+G43.909,MIGRAINE,PT,偏头痛,Migraine,头痛疾病,偏头痛未特指,中等
+G43.109,MIGRAINE-AURA,XZPT,先兆偏头痛,Migraine with aura,头痛疾病,有先兆偏头痛,中等
+G43.009,MIGRAINE-NO-AURA,WXZPT,无先兆偏头痛,Migraine without aura,头痛疾病,无先兆偏头痛,中等
+G43.A0,CHRONIC-MIGRAINE,MXPT,慢性偏头痛,Chronic migraine,头痛疾病,慢性偏头痛,严重
+G43.D0,ABDOMINAL-MIGRAINE,FBPT,腹型偏头痛,Abdominal migraine,头痛疾病,腹型偏头痛,中等
+G44.1,VASCULAR-HA,XGXTT,血管性头痛,Vascular headache,头痛疾病,血管性头痛,中等
+G44.209,TTH,ZJXTT,紧张性头痛,Tension-type headache,头痛疾病,紧张型头痛,轻度
+G44.001,CLUSTER-HA,JXTT,丛集性头痛,Cluster headache,头痛疾病,丛集性头痛,严重
+G44.51,TAC,SJXTTBZZZD,三叉神经痛伴自主症状,Trigeminal autonomic cephalalgias,头痛疾病,三叉自主神经性头痛,严重
+G50.0,TRIGEMINAL-NEURALGIA,SJSJT,三叉神经痛,Trigeminal neuralgia,头痛疾病,三叉神经痛,严重
+G44.81,MEDICATION-OVERUSE-HA,YWGDXTT,药物过度使用性头痛,Medication overuse headache,头痛疾病,药物过度使用性头痛,中等
+G47.00,INSOMNIA,SMZ,失眠症,Insomnia,睡眠障碍,失眠未特指,中等
+G47.01,INSOMNIA-PRIMARY,YFXSMZ,原发性失眠,Primary insomnia,睡眠障碍,原发性失眠症,中等
+G47.09,INSOMNIA-SECONDARY,JFXSMZ,继发性失眠,Secondary insomnia,睡眠障碍,继发性失眠症,中等
+G47.419,NARCOLEPSY,FZXSDBC,发作性睡病,Narcolepsy,睡眠障碍,发作性睡病,中等
+G47.411,NARCOLEPSY-CATAPLEXY,FZXSDBCBRX,发作性睡病伴猝倒,Narcolepsy with cataplexy,睡眠障碍,发作性睡病伴猝倒,严重
+G47.20,CIRCADIAN-DISORDER,ZYRJZSGZ,昼夜节律紊乱,Circadian rhythm sleep disorder,睡眠障碍,昼夜节律睡眠障碍,中等
+G47.52,REM-BEHAVIOR,REMXWZ,REM睡眠行为障碍,REM sleep behavior disorder,睡眠障碍,快速眼动睡眠行为障碍,中等
+G25.81,RLS,BBLZHZ,不宁腿综合征,Restless legs syndrome,睡眠障碍,不宁腿综合征,中等
+G47.61,PLMD,ZQXZDZ,周期性肢动障碍,Periodic limb movement disorder,睡眠障碍,周期性肢体运动障碍,中等
+G62.9,POLYNEUROPATHY,DFXSJBY,多发性神经病,Polyneuropathy,周围神经病,多发性神经病变,中等
+G62.0,DRUG-NEUROPATHY,YWXSJBY,药物性神经病,Drug-induced polyneuropathy,周围神经病,药物性多发神经病,中等
+G62.1,ALCOHOLIC-NEUROPATHY,JJXSJBY,酒精性神经病,Alcoholic polyneuropathy,周围神经病,酒精性多发神经病,严重
+G63,DIABETIC-NEUROPATHY,TNBXSJBY,糖尿病神经病,Diabetic neuropathy,周围神经病,糖尿病性神经病变,严重
+G56.00,CTS,WGGZHZ,腕管综合征,Carpal tunnel syndrome,周围神经病,腕管综合征,中等
+G56.20,ULNAR-NEUROPATHY,CSJBY,尺神经病,Ulnar neuropathy,周围神经病,尺神经病变,中等
+G57.00,SCIATIC-NEUROPATHY,ZZSJT,坐骨神经痛,Sciatic neuropathy,周围神经病,坐骨神经病变,中等
+G57.60,PERONEAL-NEUROPATHY,FZSJBY,腓总神经病,Peroneal neuropathy,周围神经病,腓总神经病变,中等
+G51.0,BELL-PALSY,MBSMB,面瘫,Bell palsy,周围神经病,贝尔面瘫,中等
+G52.0,OLFACTORY-NERVE,XSJBY,嗅神经障碍,Olfactory nerve disorder,脑神经病,嗅神经功能障碍,中等
+G52.1,GLOSSOPHARYNGEAL,SHYJSJBY,舌咽神经病,Glossopharyngeal nerve disorder,脑神经病,舌咽神经功能障碍,中等
+G52.2,VAGUS-NEUROPATHY,MZZSJBY,迷走神经病,Vagus nerve disorder,脑神经病,迷走神经功能障碍,严重
+G52.3,HYPOGLOSSAL-NEUROPATHY,SHXSJBY,舌下神经病,Hypoglossal nerve disorder,脑神经病,舌下神经功能障碍,中等
+G93.1,ANOXIC-BRAIN,QYXNSSZ,缺氧性脑损伤,Anoxic brain damage,中枢神经系统损伤,缺氧缺血性脑损伤,严重
+G93.6,CEREBRAL-EDEMA,NSF,脑水肿,Cerebral edema,中枢神经系统损伤,脑水肿,严重
+G93.5,BRAIN-COMPRESSION,NSYX,脑受压,Compression of brain,中枢神经系统损伤,脑组织受压,严重
+G93.89,BRAIN-HERNIATION,NTCx,脑疝,Brain herniation,中枢神经系统损伤,脑疝形成,危重
+G91.2,NPH,ZCZLXJSF,正常颅压脑积水,Normal pressure hydrocephalus,中枢神经系统疾病,正常压力脑积水,严重
+G91.0,COMMUNICATING-HYDRO,JTXJSF,交通性脑积水,Communicating hydrocephalus,中枢神经系统疾病,交通性脑积水,严重
+G03.9,MENINGITIS,NMYWTZ,脑膜炎,Meningitis,神经系统感染,脑膜炎未特指,严重
+G00.9,BACTERIAL-MENINGITIS,XJXNMY,细菌性脑膜炎,Bacterial meningitis,神经系统感染,细菌性脑膜炎未特指,严重
+G00.1,PNEUMO-MENINGITIS,FJQJNMY,肺炎球菌脑膜炎,Pneumococcal meningitis,神经系统感染,肺炎链球菌脑膜炎,严重
+G00.2,STREP-MENINGITIS,LJQJNMY,链球菌脑膜炎,Streptococcal meningitis,神经系统感染,链球菌性脑膜炎,严重
+G00.3,STAPH-MENINGITIS,PQJNMY,葡萄球菌脑膜炎,Staphylococcal meningitis,神经系统感染,葡萄球菌性脑膜炎,严重
+G02.0,VIRAL-MENINGITIS,BDXNMY,病毒性脑膜炎,Viral meningitis,神经系统感染,病毒性脑膜炎,中等
+G03.0,ASEPTIC-MENINGITIS,FJXNMY,非菌性脑膜炎,Nonpyogenic meningitis,神经系统感染,无菌性脑膜炎,中等
+G03.1,CHRONIC-MENINGITIS,MXNMY,慢性脑膜炎,Chronic meningitis,神经系统感染,慢性脑膜炎,严重
+G04.90,ENCEPHALITIS,NYWTZ,脑炎,Encephalitis,神经系统感染,脑炎未特指,严重
+G04.00,ACUTE-DISSEMINATED-ENCEPH,JXBSXNY,急性播散性脑炎,Acute disseminated encephalitis,神经系统感染,急性播散性脑脊髓炎,严重
+G05.3,ENCEPHALITIS-VIRAL,BDXNY,病毒性脑炎,Encephalitis in viral diseases,神经系统感染,病毒性脑炎,严重
+A87.0,ENTEROVIRAL-MENINGITIS,CDBNMY,肠道病毒脑膜炎,Enteroviral meningitis,神经系统感染,肠道病毒性脑膜炎,中等
+B00.3,HSV-MENINGITIS,PZBD1XNMY,单纯疱疹病毒脑膜炎,Herpes simplex meningitis,神经系统感染,HSV脑膜炎,严重
+B00.4,HSV-ENCEPHALITIS,PZBD1XNY,单纯疱疹病毒脑炎,Herpes simplex encephalitis,神经系统感染,单纯疱疹病毒性脑炎,严重
+G06.0,BRAIN-ABSCESS,NNZ,脑脓肿,Brain abscess,神经系统感染,颅内脓肿,严重
+G06.1,SPINAL-ABSCESS,JSNZ,脊髓脓肿,Spinal epidural abscess,神经系统感染,椎管内脓肿,严重
+N18.9,CKD,MXSZB,慢性肾病,Chronic kidney disease,肾脏疾病,慢性肾脏病未特指,严重
+N18.1,CKD-1,MXSZB1Q,CKD 1期,CKD stage 1,肾脏疾病,慢性肾病1期GFR≥90,轻度
+N18.2,CKD-2,MXSZB2Q,CKD 2期,CKD stage 2,肾脏疾病,慢性肾病2期GFR60-89,轻度
+N18.30,CKD-3A,MXSZB3AQ,CKD 3A期,CKD stage 3a,肾脏疾病,慢性肾病3a期GFR45-59,中等
+N18.31,CKD-3B,MXSZB3BQ,CKD 3B期,CKD stage 3b,肾脏疾病,慢性肾病3b期GFR30-44,中等
+N18.4,CKD-4,MXSZB4Q,CKD 4期,CKD stage 4,肾脏疾病,慢性肾病4期GFR15-29,严重
+N18.5,CKD-5,MXSZB5Q,CKD 5期,CKD stage 5,肾脏疾病,慢性肾病5期GFR<15,严重
+N18.6,ESRD,MQQSZB,终末期肾病,End stage renal disease,肾脏疾病,终末期肾脏病,严重
+N17.9,AKI,JXSZSS,急性肾损伤,Acute kidney injury,肾脏疾病,急性肾损伤,严重
+N17.0,AKI-TUBULAR,JXSGXSZSS,急性肾小管坏死,Acute tubular necrosis,肾脏疾病,急性肾小管坏死性肾损伤,严重
+N17.1,AKI-CORTICAL,JXSPZHXS,急性皮质坏死,Acute cortical necrosis,肾脏疾病,急性肾皮质坏死,危重
+N17.2,AKI-MEDULLARY,JXSZZHXS,急性髓质坏死,Acute medullary necrosis,肾脏疾病,急性肾髓质坏死,严重
+N04.9,NEPHROTIC,SZZHZ,肾病综合征,Nephrotic syndrome,肾脏疾病,肾病综合征,严重
+N04.0,MINIMAL-CHANGE,WBXBGZSZ,微小病变肾病,Minimal change nephrotic syndrome,肾脏疾病,微小病变型肾病综合征,严重
+N04.1,FOCAL-SEGMENTAL,JDKJXYHB,局灶节段硬化,Focal segmental glomerulosclerosis,肾脏疾病,局灶节段性肾小球硬化,严重
+N04.2,MEMBRANOUS-NEPHROPATHY,MXSZB,膜性肾病,Membranous nephropathy,肾脏疾病,膜性肾小球肾病,严重
+N00.9,ACUTE-GN,JXSJQSXY,急性肾小球肾炎,Acute nephritic syndrome,肾脏疾病,急性肾炎综合征,严重
+N00.0,POSTSTREP-GN,LJQJHSJQSXY,链球菌后肾小球肾炎,Poststreptococcal glomerulonephritis,肾脏疾病,链球菌感染后肾小球肾炎,严重
+N01.9,RPGN,JJXSJQSXY,急进性肾小球肾炎,Rapidly progressive nephritic syndrome,肾脏疾病,急进性肾炎综合征,危重
+N03.9,CHRONIC-GN,MXSJQSXY,慢性肾小球肾炎,Chronic nephritic syndrome,肾脏疾病,慢性肾炎综合征,严重
+N03.2,IGA-NEPHROPATHY,IGASZB,IgA肾病,IgA nephropathy,肾脏疾病,IgA肾病,严重
+N05.2,HENOCH-SCHONLEIN,GMSXXZXSZB,过敏性紫癜性肾炎,Henoch-Schonlein purpura nephritis,肾脏疾病,过敏性紫癜肾炎,严重
+N12,PYELONEPHRITIS,SZJYYWTZ,肾盂肾炎,Tubulo-interstitial nephritis,肾脏疾病,肾盂肾炎未特指,严重
+N10,ACUTE-PYELONEPHRITIS,JXSZJY,急性肾盂肾炎,Acute pyelonephritis,肾脏疾病,急性肾盂肾炎,严重
+N11.9,CHRONIC-PYELONEPHRITIS,MXSZJY,慢性肾盂肾炎,Chronic pyelonephritis,肾脏疾病,慢性肾盂肾炎,严重
+N14.0,ANALGESIC-NEPHROPATHY,ZTYSZB,止痛剂肾病,Analgesic nephropathy,肾脏疾病,止痛剂肾病,严重
+N14.1,DRUG-NEPHROPATHY,YWXSZB,药物性肾病,Nephropathy induced by drugs,肾脏疾病,药物诱导的肾病,严重
+N14.2,CONTRAST-NEPHROPATHY,DBZSZB,对比剂肾病,Contrast-induced nephropathy,肾脏疾病,造影剂肾病,中等
+N15.0,RENAL-ABSCESS,SZJYNZ,肾盂肾炎性脓肿,Renal abscess,肾脏疾病,肾及肾周脓肿,严重
+N15.1,PERINEPHRIC-ABSCESS,SZZNZ,肾周脓肿,Perinephric abscess,肾脏疾病,肾周围脓肿,严重
+N25.0,RENAL-TUBULAR-ACIDOSIS,SZGXSZD,肾小管酸中毒,Renal tubular acidosis,肾脏疾病,肾性小管性酸中毒,中等
+N25.81,RENAL-TUBULAR-DISORDER,SZGXGNZ,肾小管功能障碍,Renal tubular disorder,肾脏疾病,肾小管功能障碍,中等
+N26.9,RENAL-ATROPHY,SZWS,肾萎缩,Renal atrophy,肾脏疾病,肾萎缩未特指,严重
+N28.0,RENAL-INFARCT,SZGS,肾梗死,Ischemia and infarction of kidney,肾脏疾病,肾动脉栓塞和梗死,严重
+N39.0,UTI,MNLDGR,泌尿道感染,UTI,泌尿系统疾病,尿路感染,中等
+N30.00,ACUTE-CYSTITIS,JXPGY,急性膀胱炎,Acute cystitis,泌尿系统疾病,急性膀胱炎,中等
+N30.10,INTERSTITIAL-CYSTITIS,JZXPGY,间质性膀胱炎,Interstitial cystitis,泌尿系统疾病,间质性膀胱炎,严重
+N30.20,CHRONIC-CYSTITIS,MXPGY,慢性膀胱炎,Chronic cystitis,泌尿系统疾病,慢性膀胱炎,中等
+N30.30,TRIGONITIS,PGSQY,膀胱三角炎,Trigonitis,泌尿系统疾病,膀胱三角区炎症,中等
+N34.1,URETHRITIS,NDGY,尿道炎,Nonspecific urethritis,泌尿系统疾病,非特异性尿道炎,轻度
+N20.0,KIDNEY-STONE,SZJS,肾结石,Kidney stone,泌尿系统疾病,肾结石,中等
+N20.1,URETER-STONE,SNGGJS,输尿管结石,Ureteral stone,泌尿系统疾病,输尿管结石,中等
+N20.2,BLADDER-STONE,PGJS,膀胱结石,Bladder stone,泌尿系统疾病,膀胱结石,中等
+N21.0,URETHRAL-STONE,NDJS,尿道结石,Urethral calculus,泌尿系统疾病,尿道结石,中等
+N22,STAGHORN-CALCULUS,LSJXJS,鹿角型结石,Staghorn calculus,泌尿系统疾病,鹿角型肾结石,严重
+N13.0,HYDRONEPHROSIS,JSS,肾积水,Hydronephrosis,泌尿系统疾病,肾盂积水,中等
+N13.1,HYDROURETER,SNGGJS,输尿管积水,Hydroureter,泌尿系统疾病,输尿管扩张积水,中等
+N13.30,PYONEPHROSIS,JNSZJY,积脓性肾盂肾炎,Pyonephrosis,泌尿系统疾病,肾盂积脓,严重
+N13.5,URETERAL-STRICTURE,SNGGXZ,输尿管狭窄,Ureteral stricture,泌尿系统疾病,输尿管狭窄和扭结,中等
+N31.9,NEUROGENIC-BLADDER,SJXPG,神经性膀胱,Neurogenic bladder,泌尿系统疾病,神经源性膀胱,中等
+N31.0,FLACCID-BLADDER,CHXSJXPG,弛缓性神经性膀胱,Flaccid neurogenic bladder,泌尿系统疾病,弛缓性神经源性膀胱,中等
+N31.1,REFLEX-BLADDER,FSXSJXPG,反射性神经性膀胱,Reflex neurogenic bladder,泌尿系统疾病,反射性神经源性膀胱,中等
+N32.81,OVERACTIVE-BLADDER,PGGHDHZ,膀胱过度活动症,Overactive bladder,泌尿系统疾病,膀胱过度活动症,中等
+N39.3,STRESS-INCONTINENCE,YLJXNY,压力性尿失禁,Stress incontinence,泌尿系统疾病,压力性尿失禁,中等
+N39.41,URGE-INCONTINENCE,JBXNY,急迫性尿失禁,Urge incontinence,泌尿系统疾病,急迫性尿失禁,中等
+N39.46,MIXED-INCONTINENCE,HHXNY,混合性尿失禁,Mixed incontinence,泌尿系统疾病,混合型尿失禁,中等
+N40.0,BPH,LXQLXZS,良性前列腺增生,BPH,泌尿系统疾病-男科,良性前列腺增生,轻度
+N40.1,BPH-LUTS,QLXZSMNDZZ,前列腺增生伴下尿路症状,BPH with LUTS,泌尿系统疾病-男科,前列腺增生伴下尿路症状,中等
+N41.9,PROSTATITIS,QLXY,前列腺炎,Prostatitis,泌尿系统疾病-男科,前列腺炎,中等
+N41.0,ACUTE-PROSTATITIS,JXQLXY,急性前列腺炎,Acute prostatitis,泌尿系统疾病-男科,急性前列腺炎,严重
+N41.1,CHRONIC-PROSTATITIS,MXQLXY,慢性前列腺炎,Chronic prostatitis,泌尿系统疾病-男科,慢性前列腺炎,中等
+N42.82,PROSTATODYNIA,QLXT,前列腺痛,Prostatodynia,泌尿系统疾病-男科,前列腺痛综合征,中等
+N43.3,HYDROCELE,GJJS,睾丸鞘膜积液,Hydrocele,泌尿系统疾病-男科,鞘膜积液,轻度
+N44.00,TESTICULAR-TORSION,GJNZ,睾丸扭转,Torsion of testis,泌尿系统疾病-男科,睾丸扭转,危重
+N45.1,EPIDIDYMITIS,FWXY,附睾炎,Epididymitis,泌尿系统疾病-男科,附睾炎,中等
+N45.3,ORCHITIS,GYY,睾丸炎,Orchitis,泌尿系统疾病-男科,睾丸炎,中等
+N48.30,PRIAPISM,YBQB,阴茎异常勃起,Priapism,泌尿系统疾病-男科,阴茎持续勃起症,严重
+N50.82,SCROTAL-MASS,YBZNW,阴囊肿物,Scrotal mass,泌尿系统疾病-男科,阴囊肿块,中等
+M05.9,RA-SEROPOS,LFSXXLGGJY,类风湿性关节炎,Rheumatoid arthritis seropositive,风湿免疫疾病,血清阳性类风湿关节炎,严重
+M06.9,RA,LFSXGJY,类风湿关节炎,Rheumatoid arthritis,风湿免疫疾病,类风湿关节炎未特指,严重
+M32.9,SLE,XTHBLCB,系统性红斑狼疮,SLE,风湿免疫疾病,系统性红斑狼疮,严重
+M35.00,SJOGREN,GJZHZ,干燥综合征,Sjogren syndrome,风湿免疫疾病,干燥综合征未特指,中等
+M45.9,AS,QZXJZXY,强直性脊柱炎,Ankylosing spondylitis,风湿免疫疾病,强直性脊柱炎,严重
+M10.9,GOUT,TF,痛风,Gout,风湿免疫疾病,痛风未特指,中等
+M10.00,GOUT-IDIO,TFXGJY,痛风性关节炎,Idiopathic gout,风湿免疫疾病,特发性痛风,中等
+M34.9,SYSTEMIC-SCLEROSIS,XTHYHB,系统性硬化症,Systemic sclerosis,风湿免疫疾病,系统性硬化症未特指,严重
+M33.90,DM-PM,PFXY,皮肌炎,Dermatomyositis,风湿免疫疾病,皮肌炎未特指,严重
+M33.20,PM,DFXY,多肌炎,Polymyositis,风湿免疫疾病,多发性肌炎,严重
+M31.30,WEGENER,WGNRLJXXY,韦格纳肉芽肿性血管炎,Wegener granulomatosis,风湿免疫疾病,韦格纳肉芽肿,严重
+M31.5,GCA,JXBDMY,巨细胞动脉炎,Giant cell arteritis,风湿免疫疾病,巨细胞动脉炎,严重
+M31.6,TAKAYASU,DLTDMY,大动脉炎,Takayasu arteritis,风湿免疫疾病,多发性大动脉炎,严重
+M35.2,BEHCET,BSXTB,白塞病,Behcet disease,风湿免疫疾病,白塞综合征,严重
+M79.3,PANNICULITIS,JMZY,脂膜炎,Panniculitis,风湿免疫疾病,脂膜炎未特指,中等
+M15.9,OA-MULTIPLE,DFXGJY,多发性骨关节炎,Polyosteoarthritis,骨关节病,多发性骨关节炎,中等
+M17.9,OA-KNEE,XGJY,膝骨关节炎,Knee osteoarthritis,骨关节病,膝关节骨性关节炎,中等
+M16.9,OA-HIP,KGJY,髋骨关节炎,Hip osteoarthritis,骨关节病,髋关节骨性关节炎,中等
+M81.0,OSTEOPOROSIS-PM,JJHGZSS,绝经后骨质疏松,Postmenopausal osteoporosis,代谢性骨病,绝经后骨质疏松症,中等
+M80.0,OSTEOPOROSIS-FX,GZSSBGZ,骨质疏松伴骨折,Osteoporosis with fracture,代谢性骨病,骨质疏松性骨折,严重
+B20,HIV,AZBGY,艾滋病,HIV disease,传染病-病毒,HIV病毒病,严重
+B18.1,HBV-CHRONIC,YXGYWTZ,乙型肝炎,Chronic viral hepatitis B,传染病-病毒,慢性乙型肝炎,严重
+B18.2,HCV-CHRONIC,BXGYWTZ,丙型肝炎,Chronic viral hepatitis C,传染病-病毒,慢性丙型肝炎,严重
+B15.9,HAV,JXJXGY,急性甲肝,Hepatitis A,传染病-病毒,甲型病毒性肝炎,中等
+B17.10,HEV,DXGYWTZ,戊型肝炎,Acute hepatitis E,传染病-病毒,急性戊型肝炎,中等
+A41.9,SEPSIS,NSX,脓毒症,Sepsis,传染病-细菌,脓毒症未特指,危重
+A41.51,E-COLI-SEPSIS,DDGJNSX,大肠杆菌脓毒症,E coli sepsis,传染病-细菌,大肠埃希菌脓毒症,危重
+R65.20,SEPTIC-SHOCK,GRYXZK,脓毒性休克,Septic shock,传染病-细菌,脓毒性休克,危重
+A40.9,STREP-SEPSIS,LJQJNSX,链球菌脓毒症,Streptococcal sepsis,传染病-细菌,链球菌脓毒症,危重
+A49.01,MRSA,NJYXJHPQJ,耐甲氧西林金葡菌,MRSA infection,传染病-细菌,MRSA感染,严重
+A54.9,GONORRHEA,LB,淋病,Gonococcal infection,传染病-性传播,淋球菌感染,中等
+A51.9,SYPHILIS,MD,梅毒,Syphilis,传染病-性传播,梅毒未特指,严重
+A60.9,HERPES-GENITAL,SZPZGR,生殖器疱疹,Genital herpes,传染病-性传播,生殖器疱疹病毒感染,中等
+B37.3,CANDIDA-VULVO,WYZJY,外阴阴道念珠菌病,Candidiasis of vulva and vagina,传染病-真菌,外阴阴道念珠菌病,轻度
+B59,PNEUMOCYSTIS,FBNZJFY,肺孢子菌肺炎,Pneumocystis pneumonia,传染病-真菌,卡氏肺孢子菌肺炎,严重
+U07.1,COVID-19,XGFYWTZ,COVID-19,COVID-19,传染病-新发,新冠病毒感染,中等
+F32.9,DEPRESSION,YYZ,抑郁症,Depression,精神心理疾病,抑郁症未特指,中等
+F32.0,DEPRESSION-MILD,QDYYZ,轻度抑郁,Mild depressive episode,精神心理疾病,轻度抑郁发作,轻度
+F32.1,DEPRESSION-MOD,ZDYYZ,中度抑郁,Moderate depressive episode,精神心理疾病,中度抑郁发作,中等
+F32.2,DEPRESSION-SEV,ZDYYZ,重度抑郁,Severe depressive episode,精神心理疾病,重度抑郁发作,严重
+F33.9,MDD,FZXYYZ,复发性抑郁,Recurrent depressive disorder,精神心理疾病,复发性抑郁障碍,严重
+F41.9,ANXIETY,JLZ,焦虑症,Anxiety disorder,精神心理疾病,焦虑障碍未特指,中等
+F41.0,PANIC,JKZ,惊恐障碍,Panic disorder,精神心理疾病,惊恐障碍,中等
+F41.1,GAD,GFXJLZ,广泛性焦虑,Generalized anxiety disorder,精神心理疾病,广泛性焦虑障碍,中等
+F31.9,BIPOLAR,SSQGZ,双相情感障碍,Bipolar disorder,精神心理疾病,双相障碍未特指,严重
+F20.9,SCHIZOPHRENIA,JSFZ,精神分裂症,Schizophrenia,精神心理疾病,精神分裂症未特指,严重
+F43.10,PTSD,CSHYJZ,创伤后应激障碍,PTSD,精神心理疾病,创伤后应激障碍,严重
+F90.9,ADHD,ZYYQSJZ,注意缺陷多动障碍,ADHD,精神心理疾病-儿童,注意缺陷多动障碍,中等
+F50.00,ANOREXIA,SNSYQZ,神经性厌食,Anorexia nervosa,精神心理疾病,神经性厌食症,严重
+F50.2,BULIMIA,SNXTBZ,神经性贪食,Bulimia nervosa,精神心理疾病,神经性贪食症,严重
+F10.20,ALCOHOL-DEPEND,JJJL,酒精依赖,Alcohol dependence,精神心理疾病-成瘾,酒精依赖综合征,严重
+F11.20,OPIOID-DEPEND,APLYJL,阿片依赖,Opioid dependence,精神心理疾病-成瘾,阿片类依赖,严重
+F17.200,NICOTINE-DEPEND,YCDYJL,尼古丁依赖,Nicotine dependence,精神心理疾病-成瘾,烟草依赖,中等
+Z86.59,HX-MENTAL,JSBJBS,精神病史,Personal history of mental disorder,精神病史,既往精神障碍史,管理
+O09.90,PREGNANCY,RS,妊娠,Pregnancy,妊娠,正常妊娠未特指,管理
+O14.90,PREECLAMPSIA,ZQZD,子痫前期,Preeclampsia,妊娠并发症,子痫前期,严重
+O15.9,ECLAMPSIA,ZD,子痫,Eclampsia,妊娠并发症,子痫,危重
+O44.1,PLACENTA-PREVIA,QZTP,前置胎盘,Placenta previa,妊娠并发症,前置胎盘伴出血,严重
+O45.9,ABRUPTION,TBZL,胎盘早剥,Placental abruption,妊娠并发症,胎盘早剥,危重
+O36.4,IUGR,GNFYCC,宫内发育迟缓,Intrauterine growth restriction,妊娠并发症,胎儿宫内生长受限,中等
+O60.10,PRETERM-LABOR,QCFZ,早产分娩,Preterm labor,妊娠并发症,先兆早产,严重
+O42.90,PROM,TMSPL,胎膜早破,Premature rupture of membranes,妊娠并发症,胎膜早破未特指,中等
+O70.9,PERINEAL-TEAR,HYSSLWTZ,会阴撕裂,Perineal laceration,分娩并发症,会阴撕裂未特指,中等
+O72.0,PPH,CHHCX,产后出血,Postpartum hemorrhage,分娩并发症,第三产程出血,严重
+O85,PUERPERAL-SEPSIS,CHGR,产后感染,Puerperal sepsis,产褥期并发症,产褥期脓毒症,严重
+O91.23,MASTITIS,RXY,乳腺炎,Mastitis,产褥期并发症,产后乳腺炎,中等
+N97.9,INFERTILITY,BYZ,不孕症,Infertility,生殖健康,女性不孕症,中等
+N46.9,MALE-INFERTILITY,NXBYZ,男性不育,Male infertility,生殖健康,男性不育症,中等
+M05.00,RA-SEROPOS-HAND,SBLFSXXLGGJY,手部类风湿关节炎,RA hand seropositive,风湿免疫疾病-详细,血清阳性类风湿累及手部,严重
+M05.40,RA-MYOPATHY,LFSXJB,类风湿肌病,Rheumatoid myopathy,风湿免疫疾病-详细,类风湿伴肌病,严重
+M05.60,RA-NODULE,LFSXJJ,类风湿结节,Rheumatoid nodule,风湿免疫疾病-详细,类风湿皮下结节,中等
+M05.70,RA-LUNG,LFSXFB,类风湿肺病,RA with lung involvement,风湿免疫疾病-详细,类风湿累及肺,严重
+M05.80,RA-OTHER,LFSXQTLJ,类风湿其他累及,RA with other organ involvement,风湿免疫疾病-详细,类风湿累及其他器官,严重
+M06.00,RA-SERONEG,XQYXLFSXGJY,血清阴性类风湿,RA seronegative,风湿免疫疾病-详细,血清阴性类风湿关节炎,严重
+M06.30,JIA,QSNLFSXGJY,青少年类风湿,Juvenile rheumatoid arthritis,风湿免疫疾病-详细,幼年特发性关节炎,严重
+M06.80,RA-ADULT-ONSET,CRLFSXGJY,成人起病类风湿,Adult-onset Still disease,风湿免疫疾病-详细,成人斯蒂尔病,严重
+M32.10,SLE-ORGAN,XTHBLCBBQGJSZ,SLE伴器官损伤,SLE with organ involvement,风湿免疫疾病-详细,系统性红斑狼疮伴器官受累,严重
+M32.11,LUPUS-NEPHRITIS,LCSXSZY,狼疮性肾炎,Lupus nephritis,风湿免疫疾病-详细,狼疮肾炎,严重
+M32.13,LUPUS-LUNG,LCXFY,狼疮性肺炎,Lupus pneumonitis,风湿免疫疾病-详细,狼疮肺炎,严重
+M32.14,LUPUS-CNS,LCXSJXTB,狼疮性神经系统病,Lupus encephalitis,风湿免疫疾病-详细,狼疮脑病,严重
+M32.15,LUPUS-HEMATOLOGIC,LCXXHXTB,狼疮性血液系统病,Lupus with hematologic involvement,风湿免疫疾病-详细,狼疮累及血液系统,严重
+M35.01,SJOGREN-PRIMARY,YFXGJZHZ,原发性干燥综合征,Primary Sjogren syndrome,风湿免疫疾病-详细,原发性干燥综合征,严重
+M35.02,SJOGREN-SECONDARY,JFXGJZHZ,继发性干燥综合征,Secondary Sjogren syndrome,风湿免疫疾病-详细,继发性干燥综合征,中等
+M45.0,AS-AXIAL,ZJXQZXJZXY,中轴型强直性脊柱炎,Axial ankylosing spondylitis,风湿免疫疾病-详细,中轴型强直性脊柱炎,严重
+M46.1,SACROILIITIS,DZGJY,骶髂关节炎,Sacroiliitis,风湿免疫疾病-详细,骶髂关节炎,严重
+M46.80,SPONDYLOARTHRITIS,JZGJB,脊柱关节病,Spondyloarthritis,风湿免疫疾病-详细,脊柱关节病未特指,严重
+M07.60,PSORIATIC-ARTHRITIS,YXJXGJY,银屑病性关节炎,Psoriatic arthritis,风湿免疫疾病-详细,银屑病关节炎,严重
+M08.00,REACTIVE-ARTHRITIS,FSXGJY,反应性关节炎,Reactive arthritis,风湿免疫疾病-详细,反应性关节炎,中等
+M10.00,GOUT-PRIMARY,YFXTF,原发性痛风,Primary gout,风湿免疫疾病-详细,原发性痛风,中等
+M10.10,LEAD-GOUT,QZDXTF,铅中毒性痛风,Lead-induced gout,风湿免疫疾病-详细,铅中毒痛风,严重
+M10.20,DRUG-GOUT,YWXTF,药物性痛风,Drug-induced gout,风湿免疫疾病-详细,药物诱导痛风,中等
+M10.30,RENAL-GOUT,SZXTF,肾源性痛风,Gout due to renal impairment,风湿免疫疾病-详细,肾功能不全痛风,严重
+M10.40,GOUT-OTHER,QTTF,其他继发性痛风,Secondary gout,风湿免疫疾病-详细,其他继发性痛风,中等
+M11.20,PSEUDOGOUT,JXTF,假痛风,Pseudogout,风湿免疫疾病-详细,焦磷酸钙沉积病,中等
+M34.0,PSS,JXYHB,进行性硬化症,Progressive systemic sclerosis,风湿免疫疾病-详细,进行性系统性硬化,严重
+M34.1,CREST,CRESTZHZ,CREST综合征,CREST syndrome,风湿免疫疾病-详细,局限性硬皮病综合征,中等
+M34.2,SCLERODERMA-SYSTEMIC,XTXGPB,系统性硬皮病,Systemic scleroderma,风湿免疫疾病-详细,系统性硬皮病,严重
+M34.81,MORPHEA,JXHPB,局限性硬皮病,Morphea,风湿免疫疾病-详细,斑块状硬皮病,中等
+M33.00,JDM,QSNPXY,青少年皮肌炎,Juvenile dermatomyositis,风湿免疫疾病-详细,幼年皮肌炎,严重
+M33.10,DM-OTHER,QTDFXY,其他皮肌炎,Other dermatomyositis,风湿免疫疾病-详细,其他皮肌炎,严重
+M33.21,PM-PROGRESSIVE,JXXDFXY,进行性多肌炎,Progressive polymyositis,风湿免疫疾病-详细,进行性多发性肌炎,严重
+M35.3,POLYMYALGIA,FFTZHZ,风湿性多肌痛,Polymyalgia rheumatica,风湿免疫疾病-详细,风湿性多肌痛,中等
+M35.5,RELAPSING-POLYCHONDRITIS,FZXDFRZRY,复发性多软骨炎,Relapsing polychondritis,风湿免疫疾病-详细,复发性多软骨炎,严重
+M30.0,PAN,JJXDMY,结节性多动脉炎,Polyarteritis nodosa,风湿免疫疾病-详细,结节性多动脉炎,严重
+M30.1,KAWASAKI,CQB,川崎病,Kawasaki disease,风湿免疫疾病-详细,川崎病,严重
+M30.3,MPA,XWXDFXDMY,显微镜下多血管炎,Microscopic polyangiitis,风湿免疫疾病-详细,显微镜下多血管炎,严重
+M31.0,CHURG-STRAUSS,CSJLZHZ,嗜酸性肉芽肿性血管炎,Churg-Strauss syndrome,风湿免疫疾病-详细,变应性肉芽肿性血管炎,严重
+M31.1,THROMBOANGIITIS,XSSXMY,血栓闭塞性脉管炎,Thromboangiitis obliterans,风湿免疫疾病-详细,血栓闭塞性脉管炎,严重
+M31.4,AORTIC-ARCH,DMLGZHZ,主动脉弓综合征,Aortic arch syndrome,风湿免疫疾病-详细,主动脉弓综合征,严重
+M31.7,MICROSCOPIC-PAN,XWJJXDMY,显微镜结节性多动脉炎,Microscopic polyarteritis,风湿免疫疾病-详细,显微镜下多动脉炎,严重
+A00.9,CHOLERA,HYL,霍乱,Cholera,传染病-肠道,霍乱未特指,严重
+A01.0,TYPHOID,SHHJB,伤寒,Typhoid fever,传染病-肠道,伤寒,严重
+A01.1,PARATYPHOID-A,JSHHA,副伤寒A,Paratyphoid fever A,传染病-肠道,副伤寒A型,严重
+A02.0,SALMONELLA-ENTERITIS,SMJCDY,沙门菌肠炎,Salmonella enteritis,传染病-肠道,沙门菌肠炎,中等
+A03.0,SHIGELLOSIS,XJJYB,细菌性痢疾,Shigellosis,传染病-肠道,志贺菌痢疾,中等
+A04.7,C-DIFF-COLITIS,NJNZJCY,艰难梭菌肠炎,C diff colitis,传染病-肠道,艰难梭菌性结肠炎,严重
+A05.0,STAPH-FOOD-POISON,PQJWZDWD,葡萄球菌食物中毒,Staphylococcal food poisoning,传染病-肠道,葡萄球菌食物中毒,中等
+A05.1,BOTULISM,RDJ,肉毒杆菌中毒,Botulism,传染病-肠道,肉毒中毒,危重
+A06.0,AMEBIASIS,AJBLY,阿米巴痢疾,Amebic dysentery,传染病-寄生虫,急性阿米巴痢疾,严重
+A06.4,AMEBIC-LIVER-ABSCESS,AJBGNZ,阿米巴肝脓肿,Amebic liver abscess,传染病-寄生虫,阿米巴性肝脓肿,严重
+A07.1,GIARDIASIS,JDZGB,贾第鞭毛虫病,Giardiasis,传染病-寄生虫,贾第虫病,轻度
+A09,GASTROENTERITIS-INFECT,GRXWCDY,感染性胃肠炎,Infectious gastroenteritis,传染病-肠道,感染性胃肠炎,中等
+B00.9,HSV,DCPZBD,单纯疱疹病毒,Herpes simplex,传染病-病毒,单纯疱疹病毒感染,轻度
+B00.1,HSV-ECZEMA,PZXSS,疱疹性湿疹,Herpes eczema,传染病-病毒,疱疹性湿疹,中等
+B01.9,VARICELLA,SDP,水痘,Varicella,传染病-病毒,水痘未并发症,轻度
+B02.9,ZOSTER,DZPZ,带状疱疹,Herpes zoster,传染病-病毒,带状疱疹未并发症,中等
+B02.23,ZOSTER-TRIGEMINAL,SJSJDZPZ,三叉神经带状疱疹,Zoster trigeminal,传染病-病毒,三叉神经带状疱疹,严重
+B02.29,ZOSTER-PHN,PZHSJT,疱疹后神经痛,Postherpetic neuralgia,传染病-病毒,带状疱疹后遗神经痛,中等
+B17.9,VIRAL-HEP-ACUTE,JXBDXGY,急性病毒性肝炎,Acute viral hepatitis,传染病-病毒,急性病毒性肝炎未特指,严重
+B19.9,VIRAL-HEP-UNSPEC,BDXGYWTZ,病毒性肝炎未特指,Viral hepatitis unspecified,传染病-病毒,病毒性肝炎未分型,中等
+B25.9,CMV,JZBD,巨细胞病毒,Cytomegalovirus,传染病-病毒,巨细胞病毒感染,中等
+B26.9,MUMPS,LS,流行性腮腺炎,Mumps,传染病-病毒,流腮未并发症,轻度
+B27.90,EBV-MONO,EBBD,EB病毒单核细胞增多症,Infectious mononucleosis,传染病-病毒,EB病毒感染性单核细胞增多症,中等
+B33.20,VIRAL-CARDITIS,BDXXJY,病毒性心肌炎,Viral carditis,传染病-病毒,病毒性心肌炎,严重
+B34.9,VIRAL-INFECTION,BDXGRWTZ,病毒感染未特指,Viral infection unspecified,传染病-病毒,病毒感染未明确,轻度
+F32.3,DEPRESSION-PSYCHOTIC,JSDYYZ,精神病性抑郁,Depression with psychotic features,精神心理疾病-详细,伴精神病性症状的抑郁,严重
+F32.4,DEPRESSION-POST-PSYCHOTIC,JSBBHYYZ,精神病后抑郁,Post-psychotic depression,精神心理疾病-详细,精神病后抑郁,严重
+F33.0,MDD-MILD,FZXYYZQD,复发性抑郁轻度,Recurrent depression mild,精神心理疾病-详细,复发性抑郁轻度发作,中等
+F33.1,MDD-MODERATE,FZXYYZZD,复发性抑郁中度,Recurrent depression moderate,精神心理疾病-详细,复发性抑郁中度发作,严重
+F33.2,MDD-SEVERE,FZXYYZZD,复发性抑郁重度,Recurrent depression severe,精神心理疾病-详细,复发性抑郁重度发作,严重
+F33.3,MDD-PSYCHOTIC,FZXYYZJSD,复发性抑郁伴精神病,Recurrent depression with psychotic,精神心理疾病-详细,复发性抑郁伴精神病性症状,严重
+F34.1,DYSTHYMIA,EXQGZ,恶劣心境障碍,Dysthymia,精神心理疾病-详细,持续性抑郁障碍,中等
+F31.0,BIPOLAR-HYPOMANIC,SSQGZQZFDZ,双相轻躁狂,Bipolar hypomanic episode,精神心理疾病-详细,双相障碍轻躁狂发作,中等
+F31.1,BIPOLAR-MANIC,SSQGZZFDZ,双相躁狂,Bipolar manic episode,精神心理疾病-详细,双相障碍躁狂发作,严重
+F31.2,BIPOLAR-MANIC-PSYCHOTIC,SSQGZZFJSD,双相躁狂伴精神病,Bipolar manic with psychotic,精神心理疾病-详细,双相躁狂伴精神病性症状,严重
+F31.3,BIPOLAR-DEPRESSED-MILD,SSQGZYYZQD,双相抑郁轻度,Bipolar depressed mild,精神心理疾病-详细,双相障碍抑郁轻度,中等
+F31.4,BIPOLAR-DEPRESSED-MODERATE,SSQGZYYZZD,双相抑郁中度,Bipolar depressed moderate,精神心理疾病-详细,双相障碍抑郁中度,严重
+F31.5,BIPOLAR-DEPRESSED-SEVERE,SSQGZYYZZD,双相抑郁重度,Bipolar depressed severe,精神心理疾病-详细,双相障碍抑郁重度,严重
+F31.6,BIPOLAR-MIXED,SSQGZHHFDZ,双相混合发作,Bipolar mixed episode,精神心理疾病-详细,双相障碍混合发作,严重
+F31.73,BIPOLAR-I,I型双相,Bipolar I disorder in partial remission,精神心理疾病-详细,I型双相障碍,严重
+F31.81,BIPOLAR-II,II型双相,Bipolar II disorder,精神心理疾病-详细,II型双相障碍,严重
+F20.0,SCHIZ-PARANOID,PWXJSFZ,偏执型精神分裂,Paranoid schizophrenia,精神心理疾病-详细,偏执型精神分裂症,严重
+F20.1,SCHIZ-DISORGANIZED,ZNXJSFZ,紊乱型精神分裂,Disorganized schizophrenia,精神心理疾病-详细,紊乱型精神分裂症,严重
+F20.2,SCHIZ-CATATONIC,JZXJSFZ,紧张型精神分裂,Catatonic schizophrenia,精神心理疾病-详细,紧张型精神分裂症,严重
+F20.3,SCHIZ-UNDIFFERENTIATED,WFHXJSFZ,未分化型精神分裂,Undifferentiated schizophrenia,精神心理疾病-详细,未分化型精神分裂症,严重
+F20.5,SCHIZ-RESIDUAL,CLYXJSFZ,残留型精神分裂,Residual schizophrenia,精神心理疾病-详细,残留型精神分裂症,中等
+F22,DELUSIONAL,WXXJSFZ,妄想性精神障碍,Delusional disorder,精神心理疾病-详细,持续性妄想障碍,严重
+F23,BRIEF-PSYCHOTIC,DJXJSB,短期精神病,Brief psychotic disorder,精神心理疾病-详细,急性短暂性精神病性障碍,严重
+F25.0,SCHIZOAFFECTIVE-DEP,JSFZXQGZYYZ,分裂情感障碍抑郁型,Schizoaffective disorder depressive type,精神心理疾病-详细,分裂情感性障碍抑郁型,严重
+F25.1,SCHIZOAFFECTIVE-MANIC,JSFZXQGZZZ,分裂情感障碍躁狂型,Schizoaffective disorder manic type,精神心理疾病-详细,分裂情感性障碍躁狂型,严重
+F25.8,SCHIZOAFFECTIVE-MIXED,JSFZXQGZHH,分裂情感障碍混合型,Schizoaffective disorder mixed type,精神心理疾病-详细,分裂情感性障碍混合型,严重

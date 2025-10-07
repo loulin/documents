@@ -9,12 +9,12 @@
         .container { max-width: 800px; margin: auto; background: white; padding: 2em; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
         h1, h2 { color: #333; }
         .summary { background-color: #e9ecef; padding: 1em; border-radius: 4px; margin-bottom: 2em; }
-        .result-card { border: 1px solid #ddd; border-radius: 4px; margin-bottom: 1em; padding: 1em; }
-        .result-card h3 { margin-top: 0; }
-        .severity-高危, .severity-极高, .severity-重度 { color: #dc3545; font-weight: bold; }
+        .result-card, .medication-card, .interaction-card { border: 1px solid #ddd; border-radius: 4px; margin-bottom: 1em; padding: 1em; }
+        .result-card h3, .medication-card h3, .interaction-card h3 { margin-top: 0; }
+        .severity-高危, .severity-极高, .severity-重度, .interaction-warning { color: #dc3545; font-weight: bold; }
         .severity-中危, .severity-中度 { color: #fd7e14; font-weight: bold; }
         .severity-低危, .severity-轻度 { color: #ffc107; }
-        a { color: #007bff; text-decoration: none; }
+        a { color: #007bff; text-decoration: none; } 
     </style>
 </head>
 <body>
@@ -28,7 +28,8 @@
         </div>
         {% endif %}
 
-        <h2>详细解读</h2>
+        {% if results %}
+        <h2>详细解读 (检验项目)</h2>
         {% for result in results %}
         <div class="result-card">
             <h3>{{ result.item_name }}</h3>
@@ -41,6 +42,32 @@
             {% endif %}
         </div>
         {% endfor %}
+        {% endif %}
+
+        {% if medications %}
+        <h2>识别出的药品</h2>
+        {% for med in medications %}
+        <div class="medication-card">
+            <h3>{{ med.name }} ({{ med.generic_name }})</h3>
+            <p><strong>剂量/用法:</strong> {{ med.dosage }}</p>
+            <p><strong>适应症:</strong> {{ med.indications }}</p>
+            <p><strong>不良反应:</strong> {{ med.side_effects }}</p>
+            <p><strong>禁忌症:</strong> {{ med.contraindications }}</p>
+            <p><strong>药物相互作用:</strong> {{ med.interactions }}</p>
+        </div>
+        {% endfor %}
+        {% endif %}
+
+        {% if interactions %}
+        <h2>潜在的药物-检验相互作用</h2>
+        {% for interaction in interactions %}
+        <div class="interaction-card">
+            <h3>{{ interaction.drug }} 与 {{ interaction.lab_test }}</h3>
+            <p class="interaction-warning"><strong>类型:</strong> {{ interaction.interaction_type }}</p>
+            <p><strong>详情:</strong> {{ interaction.details }}</p>
+        </div>
+        {% endfor %}
+        {% endif %}
 
         <hr>
         <p><em>免责声明：本结果仅供参考，不能替代专业医疗建议。请务必咨询您的医生。</em></p>
