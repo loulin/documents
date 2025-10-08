@@ -1,0 +1,49 @@
+flowchart TD
+    subgraph Source["数据源"]
+        A1[Schema CSV<br/>(检验/影像/症状)]
+        A2[ICD-10 扩展]
+        A3[药品库<br/>merged_drug_database]
+        A4[LOINC 面板<br/>Comprehensive_Lab_Tests]
+        A5[指南与教育文档<br/>PhysicianEdu/科普]
+    end
+
+    subgraph Data["数据与治理层"]
+        B1[字段标准化<br/>编码映射]
+        B2[元数据字典<br/>质量标签]
+        B3[数据校验<br/>规则引擎]
+    end
+
+    subgraph Knowledge["知识图谱与检索层"]
+        C1[医学知识图谱<br/>疾病->检查->治疗->教育]
+        C2[结构化检索<br/>编码/字段索引]
+        C3[文本向量检索<br/>指南段落]
+        C4[工具服务<br/>风险评分/药物交互]
+    end
+
+    subgraph LLM["生成与安全层"]
+        D1[上下文构建<br/>(结构化+文本+工具结果)]
+        D2[LLM 推理生成]
+        D3[安全守卫<br/>禁忌/免责声明]
+        D4[引用溯源<br/>版本记录]
+    end
+
+    subgraph Apps["应用层"]
+        E1[医生助手<br/>诊疗建议/并发症预警]
+        E2[患者助手<br/>报告解读/随访计划]
+    end
+
+    subgraph Feedback["反馈闭环"]
+        F1[日志监控]
+        F2[人工审核<br/>医学委员会]
+        F3[模型提示词与<br/>知识库更新]
+    end
+
+    A1 & A2 & A3 & A4 & A5 --> B1
+    B1 --> B2 --> B3 --> C1
+    C1 --> C2 --> D1
+    C1 --> C3 --> D1
+    C2 --> C4 --> D1
+    D1 --> D2 --> D3 --> D4 --> E1
+    D1 --> D2 --> D3 --> D4 --> E2
+    E1 & E2 --> F1 --> F2 --> F3 --> C1
+    F3 --> B2
